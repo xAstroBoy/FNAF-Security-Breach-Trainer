@@ -366,8 +366,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/AstroClient/Core/Compression
-/AstroClient/mongocrypt.dll
-/AstroClient/libmongocrypt.so
-/AstroClient/libmongocrypt.dylib
-AstroClient/AstroClient.csproj.user
