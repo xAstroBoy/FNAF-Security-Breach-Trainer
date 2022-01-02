@@ -1,0 +1,38 @@
+﻿#pragma once
+
+// Name: FNAF Security Breach, Version: 1
+
+
+/*!!DEFINE!!*/
+
+/*!!HELPER_DEF!!*/
+
+/*!!HELPER_INC!!*/
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+//---------------------------------------------------------------------------
+// Script Structs
+//---------------------------------------------------------------------------
+
+// UserDefinedStruct FNAFRayTraceQualitySettings.FNAFRayTraceQualitySettings
+// 0x0038
+struct FFNAFRayTraceQualitySettings
+{
+	TEnumAsByte<FNAFQualityCommands_EFNAFQualityCommands> QualityCommand_2_C7DD91854562814E8D8E86B7724E319A;         // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_XHNB[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FString                                     Low_11_DB36ADC840CE017840C1D1AA7EBFA73A;                   // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Medium_12_4646F7154FBB94FF5F4D02A8031478B9;                // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     High_13_20A2DD094E903BC1888A79976F3D4226;                  // 0x0028(0x0010) (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

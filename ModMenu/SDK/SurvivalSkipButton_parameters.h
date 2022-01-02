@@ -1,0 +1,117 @@
+﻿#pragma once
+
+// Name: FNAF Security Breach, Version: 1
+
+
+/*!!DEFINE!!*/
+
+/*!!HELPER_DEF!!*/
+
+/*!!HELPER_INC!!*/
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+//---------------------------------------------------------------------------
+// Parameters
+//---------------------------------------------------------------------------
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractViewLocation
+struct ASurvivalSkipButton_C_GetInteractViewLocation_Params
+{
+	bool                                               Valid;                                                     // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     WorldLocation;                                             // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractViewAngles
+struct ASurvivalSkipButton_C_GetInteractViewAngles_Params
+{
+	fnaf9_ECameraAngleFlags                            AnglesToCheck;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.GetHUDInstruction
+struct ASurvivalSkipButton_C_GetHUDInstruction_Params
+{
+	struct FText                                       Instruction;                                               // 0x0000(0x0018)  (Parm, OutParm)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.InteractIgnoresTrace
+struct ASurvivalSkipButton_C_InteractIgnoresTrace_Params
+{
+	bool                                               IgnoreTrace;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.GetInstructionOverride
+struct ASurvivalSkipButton_C_GetInstructionOverride_Params
+{
+	struct FText                                       Instruction;                                               // 0x0000(0x0018)  (Parm, OutParm)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractibleType
+struct ASurvivalSkipButton_C_GetInteractibleType_Params
+{
+	TEnumAsByte<InteractibleType_EInteractibleType>    Type;                                                      // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<InteractiblePressType_EInteractiblePressType> PressType;                                                 // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.CanPlayerInteract
+struct ASurvivalSkipButton_C_CanPlayerInteract_Params
+{
+	bool                                               CanInteract;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	fnaf9_EConditionFailReason                         CantReason;                                                // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.UpdateUIOnTick
+struct ASurvivalSkipButton_C_UpdateUIOnTick_Params
+{
+	bool                                               Output;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.UserConstructionScript
+struct ASurvivalSkipButton_C_UserConstructionScript_Params
+{
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerInteractCancel
+struct ASurvivalSkipButton_C_OnPlayerInteractCancel_Params
+{
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerHoverEnter
+struct ASurvivalSkipButton_C_OnPlayerHoverEnter_Params
+{
+	class APawn*                                       PlayerPawn;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerHoverExit
+struct ASurvivalSkipButton_C_OnPlayerHoverExit_Params
+{
+	class APawn*                                       PlayerPawn;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.ReceiveBeginPlay
+struct ASurvivalSkipButton_C_ReceiveBeginPlay_Params
+{
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerInteract
+struct ASurvivalSkipButton_C_OnPlayerInteract_Params
+{
+	class APawn*                                       PlayerPawn;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                           PlayerController;                                          // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SurvivalSkipButton.SurvivalSkipButton_C.ExecuteUbergraph_SurvivalSkipButton
+struct ASurvivalSkipButton_C_ExecuteUbergraph_SurvivalSkipButton_Params
+{
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

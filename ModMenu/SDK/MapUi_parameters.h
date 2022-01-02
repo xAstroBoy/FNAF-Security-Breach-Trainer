@@ -1,0 +1,228 @@
+﻿#pragma once
+
+// Name: FNAF Security Breach, Version: 1
+
+
+/*!!DEFINE!!*/
+
+/*!!HELPER_DEF!!*/
+
+/*!!HELPER_INC!!*/
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+//---------------------------------------------------------------------------
+// Parameters
+//---------------------------------------------------------------------------
+
+// Function MapUi.MapUI_C.RechargeStationLocations
+struct UMapUI_C_RechargeStationLocations_Params
+{
+	struct FVector2D                                   LMapPosition;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.FreddyLocation
+struct UMapUI_C_FreddyLocation_Params
+{
+	struct FVector2D                                   LMapPosition;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.CheckForOverlapping
+struct UMapUI_C_CheckForOverlapping_Params
+{
+};
+
+// Function MapUi.MapUI_C.SetupMapDisplay
+struct UMapUI_C_SetupMapDisplay_Params
+{
+};
+
+// Function MapUi.MapUI_C.GetFloorLevel
+struct UMapUI_C_GetFloorLevel_Params
+{
+	struct FName                                       Floor;                                                     // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.Recalculate Map
+struct UMapUI_C_Recalculate_Map_Params
+{
+};
+
+// Function MapUi.MapUI_C.Recalculate Icons 
+struct UMapUI_C_Recalculate_Icons__Params
+{
+	struct FVector2D                                   Map_Position;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                              Objects;                                                   // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	TArray<class UUserWidget*>                         Icons_to_Use;                                              // 0x0018(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash)
+	TEnumAsByte<MinimapIconTypes_EMinimapIconTypes>    Object_Type;                                               // 0x0028(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.Get_MapImage_ColorAndOpacity_1
+struct UMapUI_C_Get_MapImage_ColorAndOpacity_1_Params
+{
+	struct FLinearColor                                ReturnValue;                                               // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.RecalculateMapAndIcons
+struct UMapUI_C_RecalculateMapAndIcons_Params
+{
+	bool                                               OnlyShowCurrentMissionCam;                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function MapUi.MapUI_C.InuputNext
+struct UMapUI_C_InuputNext_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputPrevious
+struct UMapUI_C_InputPrevious_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputClose
+struct UMapUI_C_InputClose_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputBack
+struct UMapUI_C_InputBack_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputAccept
+struct UMapUI_C_InputAccept_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputPrimary
+struct UMapUI_C_InputPrimary_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputSecondary
+struct UMapUI_C_InputSecondary_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputTertiary
+struct UMapUI_C_InputTertiary_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputOpen
+struct UMapUI_C_InputOpen_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputZoom
+struct UMapUI_C_InputZoom_Params
+{
+	struct FVector2D                                   Axis;                                                      // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.InputDpadDirection
+struct UMapUI_C_InputDpadDirection_Params
+{
+	struct FVector2D                                   Direction;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.PreConstruct
+struct UMapUI_C_PreConstruct_Params
+{
+	bool                                               IsDesignTime;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function MapUi.MapUI_C.Recalc
+struct UMapUI_C_Recalc_Params
+{
+};
+
+// Function MapUi.MapUI_C.Camera Clicked
+struct UMapUI_C_Camera_Clicked_Params
+{
+	class UCameraIcon_C*                               Sender;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.Alerted
+struct UMapUI_C_Alerted_Params
+{
+	class ASecurityCamera*                             SecurityCamera;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.On Camera Lost Sight
+struct UMapUI_C_On_Camera_Lost_Sight_Params
+{
+	class ASecurityCamera*                             SecurityCamera;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.InputCycle
+struct UMapUI_C_InputCycle_Params
+{
+	int                                                Increment;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.NextFloor
+struct UMapUI_C_NextFloor_Params
+{
+};
+
+// Function MapUi.MapUI_C.PrevFloor
+struct UMapUI_C_PrevFloor_Params
+{
+};
+
+// Function MapUi.MapUI_C.Reset
+struct UMapUI_C_Reset_Params
+{
+};
+
+// Function MapUi.MapUI_C.InputOptionAxis
+struct UMapUI_C_InputOptionAxis_Params
+{
+	struct FVector2D                                   Axis;                                                      // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.Zoom
+struct UMapUI_C_Zoom_Params
+{
+	struct FVector2D                                   zoom_amount;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.InputMoveAxis
+struct UMapUI_C_InputMoveAxis_Params
+{
+	struct FVector2D                                   Axis;                                                      // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.InputLookAxis
+struct UMapUI_C_InputLookAxis_Params
+{
+	struct FVector2D                                   Axis;                                                      // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.Construct
+struct UMapUI_C_Construct_Params
+{
+};
+
+// Function MapUi.MapUI_C.ExecuteUbergraph_MapUI
+struct UMapUI_C_ExecuteUbergraph_MapUI_Params
+{
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MapUi.MapUI_C.CameraClickedInMap__DelegateSignature
+struct UMapUI_C_CameraClickedInMap__DelegateSignature_Params
+{
+	class ASecurityCamera*                             Camera;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
