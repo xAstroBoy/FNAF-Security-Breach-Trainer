@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "CheatsCode.h"
 #include <sstream>
 #include <thread>
@@ -44,14 +45,14 @@ namespace Cheats
 				}
 			}
 
-			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::AEnableFreddyCallTrigger_C>();
+			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
 			if (!FazBlasterAmmo1.empty())
 			{
 				for (auto& mods : FazBlasterAmmo1)
 				{
 					if (mods != nullptr)
 					{
-						mods->CanCallFreddy = true;
+						mods->FreddySettings.bCanCallFreddy = true;
 					}
 				}
 			}
@@ -79,14 +80,14 @@ namespace Cheats
 				}
 			}
 
-			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::AEnableFreddyCallTrigger_C>();
+			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
 			if (!FazBlasterAmmo1.empty())
 			{
 				for (auto& mods : FazBlasterAmmo1)
 				{
 					if (mods != nullptr)
 					{
-						mods->CanEnterExitFreddy = true;
+						mods->FreddySettings.bCanEnterExitFreddy = true;
 					}
 				}
 			}
@@ -282,17 +283,17 @@ namespace Cheats
 					}
 				}
 			}
-			auto DoorDrain1 = CG::UObject::FindObjects<CG::ADoorLockSystem_C>();
-			if (!DoorDrain1.empty())
-			{
-				for (auto& mods : DoorDrain1)
-				{
-					if (mods != nullptr)
-					{
-						mods->AmountToDrain = 0;
-					}
-				}
-			}
+			//auto DoorDrain1 = CG::UObject::FindObjects<CG::ADoorLockSystem_C>();
+			//if (!DoorDrain1.empty())
+			//{
+			//	for (auto& mods : DoorDrain1)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			mods->AmountToDrain = 0;
+			//		}
+			//	}
+			//}
 			auto DoorDrain2 = CG::UObject::FindObjects<CG::USecurityOfficeActivatableHandler_C>();
 			if (!DoorDrain2.empty())
 			{

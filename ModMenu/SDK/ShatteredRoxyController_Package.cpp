@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ShatteredRoxyController_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RIG_PROP_DJMMHallway_Skeleton_ABP_Package.h"
 
 namespace CG

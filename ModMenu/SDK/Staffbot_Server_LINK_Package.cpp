@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Staffbot_Server_LINK_Package.h"
 
 namespace CG

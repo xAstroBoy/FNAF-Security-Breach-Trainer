@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "OcclusionTrace_Package.h"
 
 namespace CG

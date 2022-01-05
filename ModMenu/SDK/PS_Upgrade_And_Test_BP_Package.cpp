@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PS_Upgrade_And_Test_BP_Package.h"
 
 namespace CG

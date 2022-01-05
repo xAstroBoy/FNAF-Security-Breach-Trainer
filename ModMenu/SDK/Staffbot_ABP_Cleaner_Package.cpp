@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Staffbot_ABP_Cleaner_Package.h"
 
 namespace CG

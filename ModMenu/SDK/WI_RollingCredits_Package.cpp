@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_RollingCredits_Package.h"
 
 namespace CG

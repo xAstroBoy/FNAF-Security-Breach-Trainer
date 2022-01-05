@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "InstructionCard_Decorator_Package.h"
 
 namespace CG

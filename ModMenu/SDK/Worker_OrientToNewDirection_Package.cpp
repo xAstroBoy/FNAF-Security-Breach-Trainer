@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Worker_OrientToNewDirection_Package.h"
 
 namespace CG

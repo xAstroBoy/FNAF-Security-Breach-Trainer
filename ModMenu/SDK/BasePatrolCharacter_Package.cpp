@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BasePatrolCharacter_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "SM_DinerA_ExteriorStairsA_Package.h"
 
 namespace CG

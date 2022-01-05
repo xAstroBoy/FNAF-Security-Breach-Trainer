@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "MissionUpdateTrigger_WestArcade_Package.h"
 
 namespace CG

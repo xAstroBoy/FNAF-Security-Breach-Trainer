@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_Health_Fazerblast_Package.h"
 
 namespace CG

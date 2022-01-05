@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BP_MiniGame_Activator_Package.h"
 
 namespace CG

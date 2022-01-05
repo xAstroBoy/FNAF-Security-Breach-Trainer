@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Animatronic_ABP_FreddyEnding_Package.h"
 
 namespace CG

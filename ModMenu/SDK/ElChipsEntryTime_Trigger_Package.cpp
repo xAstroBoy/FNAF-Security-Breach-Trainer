@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ElChipsEntryTime_Trigger_Package.h"
 
 namespace CG

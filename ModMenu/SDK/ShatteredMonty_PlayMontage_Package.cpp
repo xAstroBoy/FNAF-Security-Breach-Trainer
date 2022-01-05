@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ShatteredMonty_PlayMontage_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "DbgHourSkipPathSelect_Package.h"
 
 namespace CG

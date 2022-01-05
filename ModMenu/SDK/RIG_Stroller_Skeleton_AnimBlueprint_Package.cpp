@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RIG_Stroller_Skeleton_AnimBlueprint_Package.h"
 
 namespace CG

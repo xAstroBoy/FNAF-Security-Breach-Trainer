@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "FindClosestSplinePoint_Package.h"
 
 namespace CG

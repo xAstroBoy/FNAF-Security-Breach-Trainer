@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Animatronic_ABP_ShatteredChica_Package.h"
 
 namespace CG

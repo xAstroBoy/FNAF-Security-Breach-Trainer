@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "StaircaseRoomTrigger_Package.h"
 
 namespace CG

@@ -138,6 +138,9 @@
     <ClInclude Include="imgui\imgui_internal.h">
       <Filter>imgui</Filter>
     </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mem.cpp">
@@ -146,103 +149,97 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>pch</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BasicHelper.cpp">
+    <ClCompile Include="SDK\BasicTypes_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\CoreUObject_functions.cpp">
+    <ClCompile Include="SDK\CoreUObject_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\UMG_functions.cpp">
+    <ClCompile Include="SDK\UMG_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Engine_functions.cpp">
+    <ClCompile Include="SDK\Engine_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Gregory_functions.cpp">
+    <ClCompile Include="SDK\Gregory_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\FazblasterChargeUI_functions.cpp">
+    <ClCompile Include="SDK\FazblasterChargeUI_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\LevelSequence_functions.cpp">
+    <ClCompile Include="SDK\LevelSequence_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Cinematic_Actor_Monty_functions.cpp">
+    <ClCompile Include="SDK\EQ_LaserGun_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\EQ_LaserGun_functions.cpp">
+    <ClCompile Include="SDK\LaserGun_Interactable_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\LaserGun_Interactable_functions.cpp">
+    <ClCompile Include="SDK\Equippable_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Equippable_functions.cpp">
+    <ClCompile Include="SDK\TitlePC_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\TitlePC_functions.cpp">
+    <ClCompile Include="SDK\fnaf9_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\fnaf9_functions.cpp">
+    <ClCompile Include="SDK\MainGamePC_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\MainGamePC_functions.cpp">
+    <ClCompile Include="SDK\FBPC_SharedController_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\FBPC_SharedController_functions.cpp">
+    <ClCompile Include="SDK\PlayerInteractHoldComponent_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\PlayerInteractHoldComponent_functions.cpp">
+    <ClCompile Include="SDK\WI_PowerLevel_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\WI_PowerLevel_functions.cpp">
+    <ClCompile Include="SDK\Freddy_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Freddy_functions.cpp">
+    <ClCompile Include="SDK\BP_PowerMeter_Door_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_PowerMeter_Door_functions.cpp">
+    <ClCompile Include="SDK\ActivatableBase_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\DoorLockSystem_functions.cpp">
+    <ClCompile Include="SDK\SaveGameActor_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\ActivatableBase_functions.cpp">
+    <ClCompile Include="SDK\OGM_Underground_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SaveGameActor_functions.cpp">
+    <ClCompile Include="SDK\MGM_OfficeGameManger_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\OGM_Underground_functions.cpp">
+    <ClCompile Include="SDK\BP_MiniGameManger_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\MGM_OfficeGameManger_functions.cpp">
+    <ClCompile Include="SDK\WI_Health_Fazerblast_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_MiniGameManger_functions.cpp">
+    <ClCompile Include="SDK\WI_Empty_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\WI_Health_Fazerblast_functions.cpp">
+    <ClCompile Include="SDK\TitleUI_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\WI_Empty_functions.cpp">
+    <ClCompile Include="SDK\E_SurvivalLives_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\TitleUI_functions.cpp">
+    <ClCompile Include="SDK\BackstageOffice_Door_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\E_SurvivalLives_functions.cpp">
+    <ClCompile Include="SDK\BP_DoorMaster_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BackstageOffice_Door_functions.cpp">
+    <ClCompile Include="SDK\AttackDoor_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_DoorMaster_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\AttackDoor_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\AIModule_functions.cpp">
+    <ClCompile Include="SDK\AIModule_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
     <ClCompile Include="CheatsCode.cpp">

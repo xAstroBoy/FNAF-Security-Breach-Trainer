@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "MagicLeapIdentity_Package.h"
 
 namespace CG

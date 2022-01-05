@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BT_GetPoint_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Greg_FirstPerson_ABP_Package.h"
 
 namespace CG

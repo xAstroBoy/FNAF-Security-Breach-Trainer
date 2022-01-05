@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "OGM_VannyBattle_Package.h"
 
 namespace CG

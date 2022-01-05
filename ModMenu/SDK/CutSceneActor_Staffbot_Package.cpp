@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "CutSceneActor_Staffbot_Package.h"
 
 namespace CG

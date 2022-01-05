@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "StaffbotKitchenHUD_Instruction_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "GameplayTasks_Package.h"
 
 namespace CG

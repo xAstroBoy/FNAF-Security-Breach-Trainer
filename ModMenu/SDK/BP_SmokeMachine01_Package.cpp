@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BP_SmokeMachine01_Package.h"
 
 namespace CG

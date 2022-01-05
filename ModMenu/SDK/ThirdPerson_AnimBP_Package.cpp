@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ThirdPerson_AnimBP_Package.h"
 
 namespace CG

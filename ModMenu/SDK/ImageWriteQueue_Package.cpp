@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ImageWriteQueue_Package.h"
 
 namespace CG

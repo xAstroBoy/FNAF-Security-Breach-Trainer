@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "SplinePathwayMotionComponent_Package.h"
 
 namespace CG

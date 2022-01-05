@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "SecurityOffice_Daycare_Package.h"
 
 namespace CG

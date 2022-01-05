@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "EQ_LaserGun_Package.h"
 
 namespace CG

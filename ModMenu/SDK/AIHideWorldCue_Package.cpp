@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "AIHideWorldCue_Package.h"
 
 namespace CG

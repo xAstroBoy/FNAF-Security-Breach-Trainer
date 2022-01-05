@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "SurvivalMissionTextFormatter_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "UI_TextAndIcons_Package.h"
 
 namespace CG

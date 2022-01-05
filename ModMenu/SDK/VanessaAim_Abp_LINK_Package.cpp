@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "VanessaAim_Abp_LINK_Package.h"
 
 namespace CG

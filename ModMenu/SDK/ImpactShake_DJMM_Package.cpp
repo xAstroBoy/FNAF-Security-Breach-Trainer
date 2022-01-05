@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ImpactShake_DJMM_Package.h"
 
 namespace CG

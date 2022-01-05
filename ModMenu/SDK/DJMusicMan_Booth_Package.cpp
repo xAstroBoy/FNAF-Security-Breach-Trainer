@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "DJMusicMan_Booth_Package.h"
 
 namespace CG

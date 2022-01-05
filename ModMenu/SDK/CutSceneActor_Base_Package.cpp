@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "CutSceneActor_Base_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BotHeadFixer_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RIG_DJ_Music_Man_ABP_Package.h"
 
 namespace CG

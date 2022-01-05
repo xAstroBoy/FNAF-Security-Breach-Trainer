@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_Option_Language_Package.h"
 
 namespace CG

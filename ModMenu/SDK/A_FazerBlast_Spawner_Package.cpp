@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "A_FazerBlast_Spawner_Package.h"
 
 namespace CG

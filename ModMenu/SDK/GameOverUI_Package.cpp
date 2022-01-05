@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "GameOverUI_Package.h"
 
 namespace CG

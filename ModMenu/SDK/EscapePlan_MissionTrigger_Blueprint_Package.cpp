@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "EscapePlan_MissionTrigger_Blueprint_Package.h"
 
 namespace CG

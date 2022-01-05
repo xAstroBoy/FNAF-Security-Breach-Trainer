@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_Gregory_Flashlight_Package.h"
 
 namespace CG

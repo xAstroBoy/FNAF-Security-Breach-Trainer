@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Pre_Speaker_Package.h"
 
 namespace CG

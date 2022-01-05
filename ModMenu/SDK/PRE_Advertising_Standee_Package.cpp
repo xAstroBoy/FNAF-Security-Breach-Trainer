@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PRE_Advertising_Standee_Package.h"
 
 namespace CG

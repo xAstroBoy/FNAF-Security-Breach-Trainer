@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "TitlePC_Package.h"
 
 namespace CG

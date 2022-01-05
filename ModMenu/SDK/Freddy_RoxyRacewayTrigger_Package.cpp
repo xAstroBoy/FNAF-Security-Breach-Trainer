@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Freddy_RoxyRacewayTrigger_Package.h"
 
 namespace CG

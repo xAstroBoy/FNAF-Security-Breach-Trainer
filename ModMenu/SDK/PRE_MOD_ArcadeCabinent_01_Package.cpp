@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PRE_MOD_ArcadeCabinent_01_Package.h"
 
 namespace CG

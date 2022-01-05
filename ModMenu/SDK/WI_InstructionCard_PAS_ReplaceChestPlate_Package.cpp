@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_InstructionCard_PAS_ReplaceChestPlate_Package.h"
 
 namespace CG

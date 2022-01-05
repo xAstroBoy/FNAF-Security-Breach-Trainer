@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PowerStation_DaycareAirlock_Package.h"
 
 namespace CG

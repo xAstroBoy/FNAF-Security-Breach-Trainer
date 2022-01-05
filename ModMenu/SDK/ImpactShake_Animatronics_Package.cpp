@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ImpactShake_Animatronics_Package.h"
 
 namespace CG

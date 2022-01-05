@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Staffbot_Fazertag_LINK_Package.h"
 
 namespace CG

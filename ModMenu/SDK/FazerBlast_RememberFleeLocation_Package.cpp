@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "FazerBlast_RememberFleeLocation_Package.h"
 
 namespace CG

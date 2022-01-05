@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "DBG_SeekerWidget_Package.h"
 
 namespace CG

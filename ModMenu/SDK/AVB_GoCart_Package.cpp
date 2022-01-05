@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "AVB_GoCart_Package.h"
 
 namespace CG

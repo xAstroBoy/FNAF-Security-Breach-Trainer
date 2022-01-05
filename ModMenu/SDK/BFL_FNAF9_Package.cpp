@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BFL_FNAF9_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "AIC_Racer_Package.h"
 
 namespace CG

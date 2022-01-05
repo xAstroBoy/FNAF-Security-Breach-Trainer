@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Staffbot_ABP_Racer_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PathPointType_Package.h"
 
 namespace CG

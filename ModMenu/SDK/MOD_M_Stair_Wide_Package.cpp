@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "MOD_M_Stair_Wide_Package.h"
 
 namespace CG

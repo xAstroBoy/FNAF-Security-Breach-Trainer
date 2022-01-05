@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Cable01_PAS02_ABP_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "TurnstileBarOpenable_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PRE_Elevator_General_Package.h"
 
 namespace CG

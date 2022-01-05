@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "StaffBotWorkerPath_Package.h"
 
 namespace CG

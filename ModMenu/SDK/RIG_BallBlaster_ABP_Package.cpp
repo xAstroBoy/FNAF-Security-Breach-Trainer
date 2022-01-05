@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RIG_BallBlaster_ABP_Package.h"
 
 namespace CG

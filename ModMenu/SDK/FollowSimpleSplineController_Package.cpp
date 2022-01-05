@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "FollowSimpleSplineController_Package.h"
 
 namespace CG

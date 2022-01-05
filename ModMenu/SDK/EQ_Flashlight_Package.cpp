@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "EQ_Flashlight_Package.h"
 
 namespace CG

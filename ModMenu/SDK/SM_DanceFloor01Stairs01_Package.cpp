@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "SM_DanceFloor01Stairs01_Package.h"
 
 namespace CG

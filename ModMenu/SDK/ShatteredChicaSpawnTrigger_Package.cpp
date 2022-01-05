@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ShatteredChicaSpawnTrigger_Package.h"
 
 namespace CG

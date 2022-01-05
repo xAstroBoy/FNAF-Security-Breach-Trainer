@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "MedScan_Sequence_Package.h"
 
 namespace CG

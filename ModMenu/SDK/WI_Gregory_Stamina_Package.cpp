@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_Gregory_Stamina_Package.h"
 
 namespace CG

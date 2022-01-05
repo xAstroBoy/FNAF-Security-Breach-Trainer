@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Animatrronic_Aim_ABP_LINK_Package.h"
 
 namespace CG

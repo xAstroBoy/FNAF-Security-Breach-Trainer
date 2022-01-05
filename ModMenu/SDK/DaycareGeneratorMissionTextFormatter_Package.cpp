@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "DaycareGeneratorMissionTextFormatter_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BP_LazerPlanetManager_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BI_Culture_Package.h"
 
 namespace CG

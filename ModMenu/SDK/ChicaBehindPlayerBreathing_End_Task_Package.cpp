@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ChicaBehindPlayerBreathing_End_Task_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Staffbot_Cleaner_LINK_Package.h"
 
 namespace CG

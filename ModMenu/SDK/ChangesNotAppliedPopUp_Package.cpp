@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ChangesNotAppliedPopUp_Package.h"
 
 namespace CG

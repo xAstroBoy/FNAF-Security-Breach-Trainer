@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BoingyBoxABP_Package.h"
 
 namespace CG

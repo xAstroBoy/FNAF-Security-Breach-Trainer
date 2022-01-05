@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Synthesis_Package.h"
 
 namespace CG

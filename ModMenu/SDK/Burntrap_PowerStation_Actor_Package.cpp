@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Burntrap_PowerStation_Actor_Package.h"
 
 namespace CG

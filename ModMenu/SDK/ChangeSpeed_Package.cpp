@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ChangeSpeed_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RandomWeightedBool_Package.h"
 
 namespace CG

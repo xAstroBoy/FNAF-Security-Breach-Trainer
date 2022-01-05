@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Stroller_HidePoint_Package.h"
 
 namespace CG

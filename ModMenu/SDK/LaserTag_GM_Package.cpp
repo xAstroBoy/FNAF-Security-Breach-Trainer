@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "LaserTag_GM_Package.h"
 
 namespace CG

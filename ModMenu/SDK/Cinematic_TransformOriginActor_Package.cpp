@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Cinematic_TransformOriginActor_Package.h"
 
 namespace CG

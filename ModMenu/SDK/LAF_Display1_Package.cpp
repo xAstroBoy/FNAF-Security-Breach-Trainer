@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "LAF_Display1_Package.h"
 
 namespace CG

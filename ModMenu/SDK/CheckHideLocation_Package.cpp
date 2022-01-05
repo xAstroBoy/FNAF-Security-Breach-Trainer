@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "CheckHideLocation_Package.h"
 
 namespace CG

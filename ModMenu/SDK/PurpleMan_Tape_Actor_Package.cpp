@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "PurpleMan_Tape_Actor_Package.h"
 
 namespace CG

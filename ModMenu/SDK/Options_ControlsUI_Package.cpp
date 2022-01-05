@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Options_ControlsUI_Package.h"
 
 namespace CG

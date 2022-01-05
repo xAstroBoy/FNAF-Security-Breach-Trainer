@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Progressbar_TitleSkipUI_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "LoadingDock_Escalator_MissionTrigger_Package.h"
 
 namespace CG

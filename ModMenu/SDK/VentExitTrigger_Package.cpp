@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "VentExitTrigger_Package.h"
 
 namespace CG

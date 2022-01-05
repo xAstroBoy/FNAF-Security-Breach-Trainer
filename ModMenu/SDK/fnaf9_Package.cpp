@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "fnaf9_Package.h"
 
 namespace CG

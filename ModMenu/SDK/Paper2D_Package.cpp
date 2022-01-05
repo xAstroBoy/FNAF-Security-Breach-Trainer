@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Paper2D_Package.h"
 
 namespace CG

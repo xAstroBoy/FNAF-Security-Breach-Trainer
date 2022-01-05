@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Slide_AtriumtoKitchen_Vent_Package.h"
 
 namespace CG

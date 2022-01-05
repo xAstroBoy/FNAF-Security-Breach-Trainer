@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BP_Fazerblast_CaptureFlagButton_Package.h"
 
 namespace CG

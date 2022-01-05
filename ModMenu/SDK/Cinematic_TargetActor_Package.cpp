@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Cinematic_TargetActor_Package.h"
 
 namespace CG

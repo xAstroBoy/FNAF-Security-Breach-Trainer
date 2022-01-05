@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BP_NoiseMakingTowerBase_Plates_Package.h"
 
 namespace CG

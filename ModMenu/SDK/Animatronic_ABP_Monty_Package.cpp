@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Animatronic_ABP_Monty_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "ExitPopUp_Package.h"
 
 namespace CG

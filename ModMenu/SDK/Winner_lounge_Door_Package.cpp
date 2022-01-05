@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Winner_lounge_Door_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "GamepadButtonDecorator_Package.h"
 
 namespace CG

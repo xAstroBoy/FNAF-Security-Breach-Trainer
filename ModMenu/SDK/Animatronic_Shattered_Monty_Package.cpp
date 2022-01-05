@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Animatronic_Shattered_Monty_Package.h"
 
 namespace CG

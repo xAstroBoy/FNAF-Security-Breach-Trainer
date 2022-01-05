@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "RIG_Glamrock_Freddy_PartsServ_ABP_Package.h"
 
 namespace CG

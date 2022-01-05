@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "WI_InstructionCard_PAS_ReplaceBowtie_Package.h"
 
 namespace CG

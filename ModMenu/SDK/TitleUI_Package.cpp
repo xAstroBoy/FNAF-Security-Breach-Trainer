@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "TitleUI_Package.h"
 
 namespace CG

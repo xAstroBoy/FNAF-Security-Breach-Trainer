@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "BeverageCart_HidePoint_Package.h"
 
 namespace CG

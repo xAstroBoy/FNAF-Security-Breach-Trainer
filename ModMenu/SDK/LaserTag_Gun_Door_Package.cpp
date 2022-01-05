@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "LaserTag_Gun_Door_Package.h"
 
 namespace CG

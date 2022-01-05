@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "West_Arcade_Package.h"
 
 namespace CG

@@ -3,6 +3,7 @@
  * Version: 2
  */
 
+#include "../pch.h"
 #include "Fazerblast_BotVO_Package.h"
 
 namespace CG
