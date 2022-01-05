@@ -175,7 +175,7 @@ namespace CG
 		class FField*                                              ChildProperties;                                         // 0x0050(0x0008) PREDEFINED PROPERTY
 		int32_t                                                    PropertySize;                                            // 0x0058(0x0004) PREDEFINED PROPERTY
 		int32_t                                                    MinAlignment;                                            // 0x005C(0x0004) PREDEFINED PROPERTY
-		TArray<uint8_t_t_t>                                        Script;                                                  // 0x0060(0x0010) PREDEFINED PROPERTY
+		TArray<uint8_t>                                            Script;                                                  // 0x0060(0x0010) PREDEFINED PROPERTY
 		class FProperty*                                           PropertyLink;                                            // 0x0070(0x0008) PREDEFINED PROPERTY
 		class FProperty*                                           RefLink;                                                 // 0x0078(0x0008) PREDEFINED PROPERTY
 		class FProperty*                                           DestructorLink;                                          // 0x0080(0x0008) PREDEFINED PROPERTY
@@ -242,12 +242,12 @@ namespace CG
 	{
 	public:
 		int32_t                                                    FunctionFlags;                                           // 0x00B0(0x0004) PREDEFINED PROPERTY
-		uint8_t_t                                                  NumParms;                                                // 0x00B4(0x0001) PREDEFINED PROPERTY
-		uint16_t_t                                                 ParmsSize;                                               // 0x00B5(0x0002) PREDEFINED PROPERTY
+		uint8_t                                                    NumParms;                                                // 0x00B4(0x0001) PREDEFINED PROPERTY
+		uint16_t                                                   ParmsSize;                                               // 0x00B5(0x0002) PREDEFINED PROPERTY
 		unsigned char                                              pad_8Y2SNFSL3K;                                          // 0x00B7(0x0001) PREDEFINED PROPERTY
-		uint16_t_t                                                 ReturnValueOffset;                                       // 0x00B8(0x0002) PREDEFINED PROPERTY
-		uint16_t_t                                                 RPCId;                                                   // 0x00BA(0x0002) PREDEFINED PROPERTY
-		uint16_t_t                                                 RPCResponseId;                                           // 0x00BC(0x0002) PREDEFINED PROPERTY
+		uint16_t                                                   ReturnValueOffset;                                       // 0x00B8(0x0002) PREDEFINED PROPERTY
+		uint16_t                                                   RPCId;                                                   // 0x00BA(0x0002) PREDEFINED PROPERTY
+		uint16_t												   RPCResponseId;                                           // 0x00BC(0x0002) PREDEFINED PROPERTY
 		unsigned char                                              pad_AV9F9SSPFN;                                          // 0x00BE(0x0002) PREDEFINED PROPERTY
 		class UProperty*                                           FirstPropertyToInit;                                     // 0x00C0(0x0008) PREDEFINED PROPERTY
 		class UFunction*                                           EventGraphFunction;                                      // 0x00C8(0x0008) PREDEFINED PROPERTY
