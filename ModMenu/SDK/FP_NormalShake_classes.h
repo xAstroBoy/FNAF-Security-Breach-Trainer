@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass FP_NormalShake.FP_NormalShake_C
-// 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
-class UFP_NormalShake_C : public UCameraShake
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass FP_NormalShake.FP_NormalShake_C
+	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
+	 */
+	class UFP_NormalShake_C : public FEngine_UCameraShake
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass FP_NormalShake.FP_NormalShake_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

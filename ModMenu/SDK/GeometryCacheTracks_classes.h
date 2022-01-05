@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,45 +11,34 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class GeometryCacheTracks.MovieSceneGeometryCacheSection
-// 0x0040 (FullSize[0x0120] - InheritedSize[0x00E0])
-class UMovieSceneGeometryCacheSection : public UMovieSceneSection
-{
-public:
-	struct FMovieSceneGeometryCacheParams              Params;                                                    // 0x00E0(0x0040) (Edit, NativeAccessSpecifierPublic)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class GeometryCacheTracks.MovieSceneGeometryCacheSection
+	 * Size -> 0x0040 (FullSize[0x0120] - InheritedSize[0x00E0])
+	 */
+	class UMovieSceneGeometryCacheSection : public UMovieSceneSection
 	{
-		static UClass* ptr = UObject::FindClass("Class GeometryCacheTracks.MovieSceneGeometryCacheSection");
-		return ptr;
-	}
+	public:
+		struct FMovieSceneGeometryCacheParams                      Params;                                                  // 0x00E0(0x0040) Edit, NativeAccessSpecifierPublic
 
+	public:
+		static UClass* StaticClass();
+	};
 
-
-};
-
-// Class GeometryCacheTracks.MovieSceneGeometryCacheTrack
-// 0x0010 (FullSize[0x0068] - InheritedSize[0x0058])
-class UMovieSceneGeometryCacheTrack : public UMovieSceneNameableTrack
-{
-public:
-	TArray<class UMovieSceneSection*>                  AnimationSections;                                         // 0x0058(0x0010) (ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-
-	static UClass* StaticClass()
+	/**
+	 * Class GeometryCacheTracks.MovieSceneGeometryCacheTrack
+	 * Size -> 0x0010 (FullSize[0x0068] - InheritedSize[0x0058])
+	 */
+	class UMovieSceneGeometryCacheTrack : public UMovieSceneNameableTrack
 	{
-		static UClass* ptr = UObject::FindClass("Class GeometryCacheTracks.MovieSceneGeometryCacheTrack");
-		return ptr;
-	}
+	public:
+		TArray<class UMovieSceneSection*>                          AnimationSections;                                       // 0x0058(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,33 +11,27 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass SwitchAISeekerBT.SwitchAISeekerBT_C
-// 0x0060 (FullSize[0x0108] - InheritedSize[0x00A8])
-class USwitchAISeekerBT_C : public UBTTask_BlueprintBase
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x00A8(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	bool                                               UseBlackboard;                                             // 0x00B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_HAI2[0x7];                                     // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	unsigned char                                      BTAsset[0x28];                                             // 0x00B1(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-	struct FBlackboardKeySelector                      BehaviorTreeAssetKey;                                      // 0x00E0(0x0028) (Edit, BlueprintVisible)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass SwitchAISeekerBT.SwitchAISeekerBT_C
+	 * Size -> 0x0060 (FullSize[0x0108] - InheritedSize[0x00A8])
+	 */
+	class USwitchAISeekerBT_C : public UBTTask_BlueprintBase
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass SwitchAISeekerBT.SwitchAISeekerBT_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		bool                                                       UseBlackboard;                                           // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_HW5D[0x7];                                   // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              BTAsset[0x28];                                           // 0x00B1(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		struct FBlackboardKeySelector                              BehaviorTreeAssetKey;                                    // 0x00E0(0x0028) Edit, BlueprintVisible
 
-
-
-	void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-	void ExecuteUbergraph_SwitchAISeekerBT(int EntryPoint);
-};
+	public:
+		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
+		void ExecuteUbergraph_SwitchAISeekerBT(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// AnimBlueprintGeneratedClass Animatronic_ABP_Cutscenes.Animatronic_ABP_Cutscenes_C
-// 0x0000 (FullSize[0x8DE8] - InheritedSize[0x8DE8])
-class UAnimatronic_ABP_Cutscenes_C : public UAnimatronic_ABP_MASTER_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * AnimBlueprintGeneratedClass Animatronic_ABP_Cutscenes.Animatronic_ABP_Cutscenes_C
+	 * Size -> 0x0000 (FullSize[0x8DE8] - InheritedSize[0x8DE8])
+	 */
+	class UAnimatronic_ABP_Cutscenes_C : public UAnimatronic_ABP_MASTER_C
 	{
-		static UClass* ptr = UObject::FindClass("AnimBlueprintGeneratedClass Animatronic_ABP_Cutscenes.Animatronic_ABP_Cutscenes_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

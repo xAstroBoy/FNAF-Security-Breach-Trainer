@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,32 +11,26 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass LaserTag_Gun_Door.LaserTag_Gun_Door_C
-// 0x000D (FullSize[0x0288] - InheritedSize[0x027B])
-class ALaserTag_Gun_Door_C : public ALaserTag_Door_C
-{
-public:
-	unsigned char                                      UnknownData_EPE0[0x5];                                     // 0x027B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0280(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass LaserTag_Gun_Door.LaserTag_Gun_Door_C
+	 * Size -> 0x000D (FullSize[0x0288] - InheritedSize[0x027B])
+	 */
+	class ALaserTag_Gun_Door_C : public ALaserTag_Door_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass LaserTag_Gun_Door.LaserTag_Gun_Door_C");
-		return ptr;
-	}
+	public:
+		unsigned char                                              UnknownData_50KS[0x5];                                   // 0x027B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0280(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void PlayerPickedUpLaserGun(bool PickedUp);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void ExecuteUbergraph_LaserTag_Gun_Door(int EntryPoint);
-};
+	public:
+		void PlayerPickedUpLaserGun(bool PickedUp);
+		void ReceiveBeginPlay();
+		void ReceiveTick(float DeltaSeconds);
+		void ExecuteUbergraph_LaserTag_Gun_Door(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,17 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Script Structs
-//---------------------------------------------------------------------------
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * UserDefinedStruct FreddyVOTypeArray.FreddyVOTypeArray
+	 * Size -> 0x0010
+	 */
+	struct FFreddyVOTypeArray
+	{
+	public:
+		TArray<class UDialogueWave*>                               VOArray_3_A22825F343C4AE420D8657ADE9FE6E19;              // 0x0000(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
 
-// UserDefinedStruct FreddyVOTypeArray.FreddyVOTypeArray
-// 0x0010
-struct FFreddyVOTypeArray
-{
-	TArray<class UDialogueWave*>                       VOArray_3_A22825F343C4AE420D8657ADE9FE6E19;                // 0x0000(0x0010) (Edit, BlueprintVisible, HasGetValueTypeHash)
-
-};
+	};
 
 }
 

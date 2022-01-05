@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass AIHideCueTester.AIHideCueTester_C
-// 0x0000 (FullSize[0x0238] - InheritedSize[0x0238])
-class AAIHideCueTester_C : public AAIHideWorldCue_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass AIHideCueTester.AIHideCueTester_C
+	 * Size -> 0x0000 (FullSize[0x0238] - InheritedSize[0x0238])
+	 */
+	class AAIHideCueTester_C : public AAIHideWorldCue_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass AIHideCueTester.AIHideCueTester_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

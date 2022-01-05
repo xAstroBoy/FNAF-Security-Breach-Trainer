@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,27 +11,21 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class AnimationCore.AnimationDataSourceRegistry
-// 0x0050 (FullSize[0x0078] - InheritedSize[0x0028])
-class UAnimationDataSourceRegistry : public UObject
-{
-public:
-	TMap<struct FName, TWeakObjectPtr<class UObject>>  DataSources;                                               // 0x0028(0x0050) (Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class AnimationCore.AnimationDataSourceRegistry
+	 * Size -> 0x0050 (FullSize[0x0078] - InheritedSize[0x0028])
+	 */
+	class UAnimationDataSourceRegistry : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class AnimationCore.AnimationDataSourceRegistry");
-		return ptr;
-	}
+	public:
+		TMap<class FName, TWeakObjectPtr<class UObject>>           DataSources;                                             // 0x0028(0x0050) Transient, UObjectWrapper, NativeAccessSpecifierPrivate
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

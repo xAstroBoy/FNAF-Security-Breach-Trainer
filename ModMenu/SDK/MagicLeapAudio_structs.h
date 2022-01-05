@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,17 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Script Structs
-//---------------------------------------------------------------------------
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * ScriptStruct MagicLeapAudio.MagicLeapAudioDummyStruct
+	 * Size -> 0x0001
+	 */
+	struct FMagicLeapAudioDummyStruct
+	{
+	public:
+		unsigned char                                              UnknownData_49XU[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
-// ScriptStruct MagicLeapAudio.MagicLeapAudioDummyStruct
-// 0x0001
-struct FMagicLeapAudioDummyStruct
-{
-	unsigned char                                      UnknownData_QXNX[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
-
-};
+	};
 
 }
 

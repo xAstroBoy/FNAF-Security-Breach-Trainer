@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,27 +11,21 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass Cinematic_TransformOriginActor.Cinematic_TransformOriginActor_C
-// 0x0008 (FullSize[0x0230] - InheritedSize[0x0228])
-class ACinematic_TransformOriginActor_C : public AActor
-{
-public:
-	class USceneComponent*                             DefaultSceneRoot;                                          // 0x0228(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass Cinematic_TransformOriginActor.Cinematic_TransformOriginActor_C
+	 * Size -> 0x0008 (FullSize[0x0230] - InheritedSize[0x0228])
+	 */
+	class ACinematic_TransformOriginActor_C : public AActor
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass Cinematic_TransformOriginActor.Cinematic_TransformOriginActor_C");
-		return ptr;
-	}
+	public:
+		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0228(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

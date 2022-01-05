@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,30 +11,24 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class FacialAnimation.AudioCurveSourceComponent
-// 0x0040 (FullSize[0x0810] - InheritedSize[0x07D0])
-class UAudioCurveSourceComponent : public UAudioComponent
-{
-public:
-	unsigned char                                      UnknownData_LSWY[0x8];                                     // 0x07D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FName                                       CurveSourceBindingName;                                    // 0x07D8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              CurveSyncOffset;                                           // 0x07E0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BFLF[0x2C];                                    // 0x07E4(0x002C) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class FacialAnimation.AudioCurveSourceComponent
+	 * Size -> 0x0040 (FullSize[0x0810] - InheritedSize[0x07D0])
+	 */
+	class UAudioCurveSourceComponent : public UAudioComponent
 	{
-		static UClass* ptr = UObject::FindClass("Class FacialAnimation.AudioCurveSourceComponent");
-		return ptr;
-	}
+	public:
+		unsigned char                                              UnknownData_3GVZ[0x8];                                   // 0x07D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FName                                                CurveSourceBindingName;                                  // 0x07D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      CurveSyncOffset;                                         // 0x07E0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_MYWM[0x2C];                                  // 0x07E4(0x002C) MISSED OFFSET (PADDING)
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

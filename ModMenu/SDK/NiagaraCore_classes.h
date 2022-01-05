@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,43 +11,28 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class NiagaraCore.NiagaraMergeable
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UNiagaraMergeable : public UObject
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class NiagaraCore.NiagaraMergeable
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UNiagaraMergeable : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class NiagaraCore.NiagaraMergeable");
-		return ptr;
-	}
+	public:
+		static UClass* StaticClass();
+	};
 
-
-
-};
-
-// Class NiagaraCore.NiagaraDataInterfaceBase
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UNiagaraDataInterfaceBase : public UNiagaraMergeable
-{
-public:
-
-
-	static UClass* StaticClass()
+	/**
+	 * Class NiagaraCore.NiagaraDataInterfaceBase
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UNiagaraDataInterfaceBase : public UNiagaraMergeable
 	{
-		static UClass* ptr = UObject::FindClass("Class NiagaraCore.NiagaraDataInterfaceBase");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

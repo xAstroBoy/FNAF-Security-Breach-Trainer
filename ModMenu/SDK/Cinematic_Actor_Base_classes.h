@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,31 +11,25 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass Cinematic_Actor_Base.Cinematic_Actor_Base_C
-// 0x0024 (FullSize[0x024C] - InheritedSize[0x0228])
-class ACinematic_Actor_Base_C : public AActor
-{
-public:
-	class USkeletalMeshComponent*                      SkeletalMesh;                                              // 0x0228(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                             Scene;                                                     // 0x0230(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSeekerHourlyUpdate>                 HourlyMaterials;                                           // 0x0238(0x0010) (Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int                                                IndexToUse;                                                // 0x0248(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass Cinematic_Actor_Base.Cinematic_Actor_Base_C
+	 * Size -> 0x0024 (FullSize[0x024C] - InheritedSize[0x0228])
+	 */
+	class ACinematic_Actor_Base_C : public AActor
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass Cinematic_Actor_Base.Cinematic_Actor_Base_C");
-		return ptr;
-	}
+	public:
+		class USkeletalMeshComponent*                              SkeletalMesh;                                            // 0x0228(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class USceneComponent*                                     Scene;                                                   // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		TArray<struct FSeekerHourlyUpdate>                         HourlyMaterials;                                         // 0x0238(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		int                                                        IndexToUse;                                              // 0x0248(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
-
-
-	void Set_Up_Materials();
-};
+	public:
+		void Set_Up_Materials();
+		static UClass* StaticClass();
+	};
 
 }
 

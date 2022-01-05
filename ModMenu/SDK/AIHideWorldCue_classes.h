@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,32 +11,26 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass AIHideWorldCue.AIHideWorldCue_C
-// 0x0010 (FullSize[0x0238] - InheritedSize[0x0228])
-class AAIHideWorldCue_C : public AActor
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0228(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                             DefaultSceneRoot;                                          // 0x0230(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass AIHideWorldCue.AIHideWorldCue_C
+	 * Size -> 0x0010 (FullSize[0x0238] - InheritedSize[0x0228])
+	 */
+	class AAIHideWorldCue_C : public AActor
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass AIHideWorldCue.AIHideWorldCue_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
-
-
-	void SetupWorldCue();
-	void ResetWorldCue();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_AIHideWorldCue(int EntryPoint);
-};
+	public:
+		void SetupWorldCue();
+		void ResetWorldCue();
+		void ReceiveBeginPlay();
+		void ExecuteUbergraph_AIHideWorldCue(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

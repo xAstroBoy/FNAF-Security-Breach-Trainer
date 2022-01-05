@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,17 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Script Structs
-//---------------------------------------------------------------------------
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * UserDefinedStruct LobbyInstructionCardSetup.LobbyInstructionCardSetup
+	 * Size -> 0x0050
+	 */
+	struct FLobbyInstructionCardSetup
+	{
+	public:
+		TMap<fnaf9_ESWGInputDeviceType, class UTexture*>           Mapping_5_B90853C241FEFFD376AA10A0D6F0B02E;              // 0x0000(0x0050) Edit, BlueprintVisible
 
-// UserDefinedStruct LobbyInstructionCardSetup.LobbyInstructionCardSetup
-// 0x0050
-struct FLobbyInstructionCardSetup
-{
-	TMap<fnaf9_ESWGInputDeviceType, class UTexture*>   Mapping_5_B90853C241FEFFD376AA10A0D6F0B02E;                // 0x0000(0x0050) (Edit, BlueprintVisible)
-
-};
+	};
 
 }
 

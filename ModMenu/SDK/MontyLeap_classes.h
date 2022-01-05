@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass MontyLeap.MontyLeap_C
-// 0x0000 (FullSize[0x0138] - InheritedSize[0x0138])
-class UMontyLeap_C : public URoxyLeap_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass MontyLeap.MontyLeap_C
+	 * Size -> 0x0000 (FullSize[0x0138] - InheritedSize[0x0138])
+	 */
+	class UMontyLeap_C : public URoxyLeap_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass MontyLeap.MontyLeap_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

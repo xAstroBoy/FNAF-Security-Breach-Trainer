@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,27 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class SWGAIUtils.SWGAIUtilLibrary
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class USWGAIUtilLibrary : public UBlueprintFunctionLibrary
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class SWGAIUtils.SWGAIUtilLibrary
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class USWGAIUtilLibrary : public UBlueprintFunctionLibrary
 	{
-		static UClass* ptr = UObject::FindClass("Class SWGAIUtils.SWGAIUtilLibrary");
-		return ptr;
-	}
-
-
-
-	void STATIC_ClearAllBlackboardValues(class UBlackboardComponent* Blackboard);
-};
+	public:
+		void STATIC_ClearAllBlackboardValues(class UBlackboardComponent* Blackboard);
+		static UClass* StaticClass();
+	};
 
 }
 

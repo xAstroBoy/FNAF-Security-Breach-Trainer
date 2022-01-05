@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,50 +11,35 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class MagicLeapHandMeshing.MagicLeapHandMeshingComponent
-// 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
-class UMagicLeapHandMeshingComponent : public UActorComponent
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class MagicLeapHandMeshing.MagicLeapHandMeshingComponent
+	 * Size -> 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
+	 */
+	class UMagicLeapHandMeshingComponent : public UActorComponent
 	{
-		static UClass* ptr = UObject::FindClass("Class MagicLeapHandMeshing.MagicLeapHandMeshingComponent");
-		return ptr;
-	}
+	public:
+		void SetUseWeightedNormals(bool bInUseWeightedNormals);
+		bool DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		bool ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		static UClass* StaticClass();
+	};
 
-
-
-	void SetUseWeightedNormals(bool bInUseWeightedNormals);
-	bool DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-	bool ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-};
-
-// Class MagicLeapHandMeshing.MagicLeapHandMeshingFunctionLibrary
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UMagicLeapHandMeshingFunctionLibrary : public UBlueprintFunctionLibrary
-{
-public:
-
-
-	static UClass* StaticClass()
+	/**
+	 * Class MagicLeapHandMeshing.MagicLeapHandMeshingFunctionLibrary
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UMagicLeapHandMeshingFunctionLibrary : public UBlueprintFunctionLibrary
 	{
-		static UClass* ptr = UObject::FindClass("Class MagicLeapHandMeshing.MagicLeapHandMeshingFunctionLibrary");
-		return ptr;
-	}
-
-
-
-	bool STATIC_DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-	bool STATIC_DestroyClient();
-	bool STATIC_CreateClient();
-	bool STATIC_ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-};
+	public:
+		bool STATIC_DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		bool STATIC_DestroyClient();
+		bool STATIC_CreateClient();
+		bool STATIC_ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		static UClass* StaticClass();
+	};
 
 }
 

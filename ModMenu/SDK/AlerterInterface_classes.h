@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,33 +11,25 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass AlerterInterface.AlerterInterface_C
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UAlerterInterface_C : public UInterface
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass AlerterInterface.AlerterInterface_C
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UAlerterInterface_C : public UInterface
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass AlerterInterface.AlerterInterface_C");
-		return ptr;
-	}
-
-
-
-	void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts);
-	void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts);
-	void IsWarningFinished(bool* Finished);
-	void Stop_Warning();
-	void Start_Warning(int WarningCount);
-	void Stop_Alert(const struct FName& Alert);
-	void Start_Alert(const struct FName& Alert);
-};
+	public:
+		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts);
+		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts);
+		void IsWarningFinished(bool* Finished);
+		void Stop_Warning();
+		void Start_Warning(int WarningCount);
+		void Stop_Alert(const class FName& Alert);
+		void Start_Alert(const class FName& Alert);
+		static UClass* StaticClass();
+	};
 
 }
 

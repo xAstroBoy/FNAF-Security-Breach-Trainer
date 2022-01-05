@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,19 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Enums
-//---------------------------------------------------------------------------
-
-// Enum MoviePlayer.EMoviePlaybackType
-enum class MoviePlayer_EMoviePlaybackType : uint8_t
-{
-	MT_Normal                      = 0,
-	MT_Looped                      = 1,
-	MT_LoadingLoop                 = 2,
-	MT_MAX                         = 3,
-
-};
+	// --------------------------------------------------
+	// # Enums
+	// --------------------------------------------------
+	/**
+	 * Enum MoviePlayer.EMoviePlaybackType
+	 */
+	enum class MoviePlayer_EMoviePlaybackType : uint8_t
+	{
+		MT_Normal      = 0,
+		MT_Looped      = 1,
+		MT_LoadingLoop = 2,
+		MT_MAX         = 3
+	};
 
 }
 

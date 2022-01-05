@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass P_VukKartRacer.P_VukKartRacer_C
-// 0x0000 (FullSize[0x0380] - InheritedSize[0x0380])
-class AP_VukKartRacer_C : public AVCartVehicleAddedOnAfter_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass P_VukKartRacer.P_VukKartRacer_C
+	 * Size -> 0x0000 (FullSize[0x0380] - InheritedSize[0x0380])
+	 */
+	class AP_VukKartRacer_C : public AVCartVehicleAddedOnAfter_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass P_VukKartRacer.P_VukKartRacer_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

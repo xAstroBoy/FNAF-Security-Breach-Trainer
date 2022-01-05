@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,28 +11,22 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class SignificanceManager.SignificanceManager
-// 0x00F8 (FullSize[0x0120] - InheritedSize[0x0028])
-class USignificanceManager : public UObject
-{
-public:
-	unsigned char                                      UnknownData_MK1C[0xE0];                                    // 0x0028(0x00E0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FSoftClassPath                              SignificanceManagerClassName;                              // 0x0108(0x0018) (Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class SignificanceManager.SignificanceManager
+	 * Size -> 0x00F8 (FullSize[0x0120] - InheritedSize[0x0028])
+	 */
+	class USignificanceManager : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class SignificanceManager.SignificanceManager");
-		return ptr;
-	}
+	public:
+		unsigned char                                              UnknownData_VOWQ[0xE0];                                  // 0x0028(0x00E0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FSoftClassPath                                      SignificanceManagerClassName;                            // 0x0108(0x0018) Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

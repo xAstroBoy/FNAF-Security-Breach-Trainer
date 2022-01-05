@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,28 +11,22 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass NavDistanceServiceBase.NavDistanceServiceBase_C
-// 0x0028 (FullSize[0x00C0] - InheritedSize[0x0098])
-class UNavDistanceServiceBase_C : public UBTService_BlueprintBase
-{
-public:
-	struct FBlackboardKeySelector                      NavDistanceKey;                                            // 0x0098(0x0028) (Edit, BlueprintVisible)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass NavDistanceServiceBase.NavDistanceServiceBase_C
+	 * Size -> 0x0028 (FullSize[0x00C0] - InheritedSize[0x0098])
+	 */
+	class UNavDistanceServiceBase_C : public UBTService_BlueprintBase
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass NavDistanceServiceBase.NavDistanceServiceBase_C");
-		return ptr;
-	}
+	public:
+		struct FBlackboardKeySelector                              NavDistanceKey;                                          // 0x0098(0x0028) Edit, BlueprintVisible
 
-
-
-	void NavDistance(class AActor* AIPawn, class APawn* OtherPawn, float* OutDistance);
-};
+	public:
+		void NavDistance(class AActor* AIPawn, class APawn* OtherPawn, float* OutDistance);
+		static UClass* StaticClass();
+	};
 
 }
 

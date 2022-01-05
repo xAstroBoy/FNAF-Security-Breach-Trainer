@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,29 +11,23 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass SurvivalVanessaSpawnInTrigger.SurvivalVanessaSpawnInTrigger_C
-// 0x0008 (FullSize[0x0278] - InheritedSize[0x0270])
-class ASurvivalVanessaSpawnInTrigger_C : public APlayerTrigger
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0270(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass SurvivalVanessaSpawnInTrigger.SurvivalVanessaSpawnInTrigger_C
+	 * Size -> 0x0008 (FullSize[0x0278] - InheritedSize[0x0270])
+	 */
+	class ASurvivalVanessaSpawnInTrigger_C : public APlayerTrigger
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass SurvivalVanessaSpawnInTrigger.SurvivalVanessaSpawnInTrigger_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void OnTriggered();
-	void ExecuteUbergraph_SurvivalVanessaSpawnInTrigger(int EntryPoint);
-};
+	public:
+		void OnTriggered();
+		void ExecuteUbergraph_SurvivalVanessaSpawnInTrigger(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

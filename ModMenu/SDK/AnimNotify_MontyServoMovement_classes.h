@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass AnimNotify_MontyServoMovement.AnimNotify_MontyServoMovement_C
-// 0x0000 (FullSize[0x0058] - InheritedSize[0x0058])
-class UAnimNotify_MontyServoMovement_C : public UAnimNotify_ServoMovement_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass AnimNotify_MontyServoMovement.AnimNotify_MontyServoMovement_C
+	 * Size -> 0x0000 (FullSize[0x0058] - InheritedSize[0x0058])
+	 */
+	class UAnimNotify_MontyServoMovement_C : public UAnimNotify_ServoMovement_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass AnimNotify_MontyServoMovement.AnimNotify_MontyServoMovement_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

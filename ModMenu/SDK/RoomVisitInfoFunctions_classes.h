@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,28 +11,20 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass RoomVisitInfoFunctions.RoomVisitInfoFunctions_C
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class URoomVisitInfoFunctions_C : public UBlueprintFunctionLibrary
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass RoomVisitInfoFunctions.RoomVisitInfoFunctions_C
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class URoomVisitInfoFunctions_C : public UBlueprintFunctionLibrary
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass RoomVisitInfoFunctions.RoomVisitInfoFunctions_C");
-		return ptr;
-	}
-
-
-
-	void STATIC_FindPreviousVisitInfo(TArray<struct FRoomVisitInfo>* NewParam, class UObject* __WorldContext, bool* Found, int* ItemIndex, struct FRoomVisitInfo* Item);
-	void STATIC_FindRoomVisitInfo(TArray<struct FRoomVisitInfo>* RoomVisitInfoArray, class ARoomAreaBase* Room, class UObject* __WorldContext, bool* Found, int* FoundIndex, struct FRoomVisitInfo* Item);
-};
+	public:
+		void STATIC_FindPreviousVisitInfo(TArray<struct FRoomVisitInfo>* NewParam, class UObject* __WorldContext, bool* Found, int* ItemIndex, struct FRoomVisitInfo* Item);
+		void STATIC_FindRoomVisitInfo(TArray<struct FRoomVisitInfo>* RoomVisitInfoArray, class ARoomAreaBase* Room, class UObject* __WorldContext, bool* Found, int* FoundIndex, struct FRoomVisitInfo* Item);
+		static UClass* StaticClass();
+	};
 
 }
 

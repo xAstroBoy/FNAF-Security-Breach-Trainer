@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,33 +11,35 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Enums
-//---------------------------------------------------------------------------
+	// --------------------------------------------------
+	// # Enums
+	// --------------------------------------------------
+	/**
+	 * Enum UdpMessaging.EUdpMessageFormat
+	 */
+	enum class UdpMessaging_EUdpMessageFormat : uint8_t
+	{
+		EUdpMessageFormat__None                   = 0,
+		EUdpMessageFormat__Json                   = 1,
+		EUdpMessageFormat__TaggedProperty         = 2,
+		EUdpMessageFormat__CborPlatformEndianness = 3,
+		EUdpMessageFormat__CborStandardEndianness = 4,
+		EUdpMessageFormat__EUdpMessageFormat_MAX  = 5
+	};
 
-// Enum UdpMessaging.EUdpMessageFormat
-enum class UdpMessaging_EUdpMessageFormat : uint8_t
-{
-	EUdpMessageFormat__None        = 0,
-	EUdpMessageFormat__Json        = 1,
-	EUdpMessageFormat__TaggedProperty = 2,
-	EUdpMessageFormat__CborPlatformEndianness = 3,
-	EUdpMessageFormat__CborStandardEndianness = 4,
-	EUdpMessageFormat__EUdpMessageFormat_MAX = 5,
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * ScriptStruct UdpMessaging.UdpMockMessage
+	 * Size -> 0x0010
+	 */
+	struct FUdpMockMessage
+	{
+	public:
+		TArray<unsigned char>                                      Data;                                                    // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
-};
-
-//---------------------------------------------------------------------------
-// Script Structs
-//---------------------------------------------------------------------------
-
-// ScriptStruct UdpMessaging.UdpMockMessage
-// 0x0010
-struct FUdpMockMessage
-{
-	TArray<unsigned char>                              Data;                                                      // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
+	};
 
 }
 

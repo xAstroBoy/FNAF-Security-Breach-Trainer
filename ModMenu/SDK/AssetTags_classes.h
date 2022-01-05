@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,32 +11,24 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class AssetTags.AssetTagsSubsystem
-// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
-class UAssetTagsSubsystem : public UEngineSubsystem
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class AssetTags.AssetTagsSubsystem
+	 * Size -> 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
+	 */
+	class UAssetTagsSubsystem : public UEngineSubsystem
 	{
-		static UClass* ptr = UObject::FindClass("Class AssetTags.AssetTagsSubsystem");
-		return ptr;
-	}
-
-
-
-	TArray<struct FName> GetCollectionsContainingAssetPtr(class UObject* AssetPtr);
-	TArray<struct FName> GetCollectionsContainingAssetData(const struct FAssetData& AssetData);
-	TArray<struct FName> GetCollectionsContainingAsset(const struct FName& AssetPathName);
-	TArray<struct FName> GetCollections();
-	TArray<struct FAssetData> GetAssetsInCollection(const struct FName& Name);
-	bool CollectionExists(const struct FName& Name);
-};
+	public:
+		TArray<class FName> GetCollectionsContainingAssetPtr(class UObject* AssetPtr);
+		TArray<class FName> GetCollectionsContainingAssetData(const struct FAssetData& AssetData);
+		TArray<class FName> GetCollectionsContainingAsset(const class FName& AssetPathName);
+		TArray<class FName> GetCollections();
+		TArray<struct FAssetData> GetAssetsInCollection(const class FName& Name);
+		bool CollectionExists(const class FName& Name);
+		static UClass* StaticClass();
+	};
 
 }
 

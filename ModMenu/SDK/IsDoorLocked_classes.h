@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,28 +11,22 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass IsDoorLocked.IsDoorLocked_C
-// 0x0028 (FullSize[0x00C8] - InheritedSize[0x00A0])
-class UIsDoorLocked_C : public UBTDecorator_BlueprintBase
-{
-public:
-	struct FBlackboardKeySelector                      DoorKey;                                                   // 0x00A0(0x0028) (Edit, BlueprintVisible)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass IsDoorLocked.IsDoorLocked_C
+	 * Size -> 0x0028 (FullSize[0x00C8] - InheritedSize[0x00A0])
+	 */
+	class UIsDoorLocked_C : public UBTDecorator_BlueprintBase
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass IsDoorLocked.IsDoorLocked_C");
-		return ptr;
-	}
+	public:
+		struct FBlackboardKeySelector                              DoorKey;                                                 // 0x00A0(0x0028) Edit, BlueprintVisible
 
-
-
-	bool PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-};
+	public:
+		bool PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn);
+		static UClass* StaticClass();
+	};
 
 }
 

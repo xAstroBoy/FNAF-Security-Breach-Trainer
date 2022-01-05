@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,27 +11,21 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class NetCore.NetAnalyticsAggregatorConfig
-// 0x0010 (FullSize[0x0038] - InheritedSize[0x0028])
-class UNetAnalyticsAggregatorConfig : public UObject
-{
-public:
-	TArray<struct FNetAnalyticsDataConfig>             NetAnalyticsData;                                          // 0x0028(0x0010) (ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class NetCore.NetAnalyticsAggregatorConfig
+	 * Size -> 0x0010 (FullSize[0x0038] - InheritedSize[0x0028])
+	 */
+	class UNetAnalyticsAggregatorConfig : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class NetCore.NetAnalyticsAggregatorConfig");
-		return ptr;
-	}
+	public:
+		TArray<struct FNetAnalyticsDataConfig>                     NetAnalyticsData;                                        // 0x0028(0x0010) ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass DmgTypeBP_Environmental.DmgTypeBP_Environmental_C
-// 0x0000 (FullSize[0x0040] - InheritedSize[0x0040])
-class UDmgTypeBP_Environmental_C : public UDamageType
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass DmgTypeBP_Environmental.DmgTypeBP_Environmental_C
+	 * Size -> 0x0000 (FullSize[0x0040] - InheritedSize[0x0040])
+	 */
+	class UDmgTypeBP_Environmental_C : public UDamageType
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass DmgTypeBP_Environmental.DmgTypeBP_Environmental_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,33 +11,27 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// AnimBlueprintGeneratedClass Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C
-// 0x0008 (FullSize[0x8DF0] - InheritedSize[0x8DE8])
-class UAnimatronic_ABP_ShatteredChica_C : public UAnimatronic_ABP_MASTER_C
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x8DE8(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * AnimBlueprintGeneratedClass Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C
+	 * Size -> 0x0008 (FullSize[0x8DF0] - InheritedSize[0x8DE8])
+	 */
+	class UAnimatronic_ABP_ShatteredChica_C : public UAnimatronic_ABP_MASTER_C
 	{
-		static UClass* ptr = UObject::FindClass("AnimBlueprintGeneratedClass Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x8DE8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void footstep();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void BlueprintBeginPlay();
-	void AnimNotify_R_Foot_Down();
-	void AnimNotify_L_Foot_Down();
-	void ExecuteUbergraph_Animatronic_ABP_ShatteredChica(int EntryPoint);
-};
+	public:
+		void footstep();
+		void BlueprintUpdateAnimation(float DeltaTimeX);
+		void BlueprintBeginPlay();
+		void AnimNotify_R_Foot_Down();
+		void AnimNotify_L_Foot_Down();
+		void ExecuteUbergraph_Animatronic_ABP_ShatteredChica(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

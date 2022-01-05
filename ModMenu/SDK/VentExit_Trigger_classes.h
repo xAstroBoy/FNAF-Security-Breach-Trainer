@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,32 +11,26 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass VentExit_Trigger.VentExit_Trigger_C
-// 0x0060 (FullSize[0x02D8] - InheritedSize[0x0278])
-class AVentExit_Trigger_C : public APlayerTriggerWithConditionComps
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0278(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	class UMissionStateCondition*                      MissionStateCondition;                                     // 0x0280(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      LineSkipper[0x28];                                         // 0x0288(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-	unsigned char                                      chicaPawn[0x28];                                           // 0x02B0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass VentExit_Trigger.VentExit_Trigger_C
+	 * Size -> 0x0060 (FullSize[0x02D8] - InheritedSize[0x0278])
+	 */
+	class AVentExit_Trigger_C : public APlayerTriggerWithConditionComps
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass VentExit_Trigger.VentExit_Trigger_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0278(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              LineSkipper[0x28];                                       // 0x0288(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              chicaPawn[0x28];                                         // 0x02B0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
-
-
-	void OnTriggered();
-	void ExecuteUbergraph_VentExit_Trigger(int EntryPoint);
-};
+	public:
+		void OnTriggered();
+		void ExecuteUbergraph_VentExit_Trigger(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

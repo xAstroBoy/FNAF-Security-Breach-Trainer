@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// WidgetBlueprintGeneratedClass SaveStationText.SaveStationText_C
-// 0x0000 (FullSize[0x0230] - InheritedSize[0x0230])
-class USaveStationText_C : public UUserWidget
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * WidgetBlueprintGeneratedClass SaveStationText.SaveStationText_C
+	 * Size -> 0x0000 (FullSize[0x0230] - InheritedSize[0x0230])
+	 */
+	class USaveStationText_C : public UUserWidget
 	{
-		static UClass* ptr = UObject::FindClass("WidgetBlueprintGeneratedClass SaveStationText.SaveStationText_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

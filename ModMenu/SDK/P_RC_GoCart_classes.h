@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,29 +11,23 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass P_RC_GoCart.P_RC_GoCart_C
-// 0x0008 (FullSize[0x0378] - InheritedSize[0x0370])
-class AP_RC_GoCart_C : public AP_GoKart_C
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0370(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass P_RC_GoCart.P_RC_GoCart_C
+	 * Size -> 0x0008 (FullSize[0x0378] - InheritedSize[0x0370])
+	 */
+	class AP_RC_GoCart_C : public AP_GoKart_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass P_RC_GoCart.P_RC_GoCart_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0370(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void ReceiveTick(float DeltaSeconds);
-	void ExecuteUbergraph_P_RC_GoCart(int EntryPoint);
-};
+	public:
+		void ReceiveTick(float DeltaSeconds);
+		void ExecuteUbergraph_P_RC_GoCart(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

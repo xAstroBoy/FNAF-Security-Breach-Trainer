@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,18 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Enums
-//---------------------------------------------------------------------------
-
-// UserDefinedEnum FreddyVOType.FreddyVOType
-enum class FreddyVOType_EFreddyVOType : uint8_t
-{
-	FreddyVOType__NewEnumerator0   = 0,
-	FreddyVOType__NewEnumerator1   = 1,
-	FreddyVOType__FreddyVOType_MAX = 2,
-
-};
+	// --------------------------------------------------
+	// # Enums
+	// --------------------------------------------------
+	/**
+	 * UserDefinedEnum FreddyVOType.FreddyVOType
+	 */
+	enum class FreddyVOType_EFreddyVOType : uint8_t
+	{
+		FreddyVOType__NewEnumerator0   = 0,
+		FreddyVOType__NewEnumerator1   = 1,
+		FreddyVOType__FreddyVOType_MAX = 2
+	};
 
 }
 

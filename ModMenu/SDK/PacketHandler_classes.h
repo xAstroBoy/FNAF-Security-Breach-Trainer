@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,44 +11,31 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class PacketHandler.HandlerComponentFactory
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UHandlerComponentFactory : public UObject
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class PacketHandler.HandlerComponentFactory
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UHandlerComponentFactory : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class PacketHandler.HandlerComponentFactory");
-		return ptr;
-	}
+	public:
+		static UClass* StaticClass();
+	};
 
-
-
-};
-
-// Class PacketHandler.PacketHandlerProfileConfig
-// 0x0010 (FullSize[0x0038] - InheritedSize[0x0028])
-class UPacketHandlerProfileConfig : public UObject
-{
-public:
-	TArray<struct FString>                             Components;                                                // 0x0028(0x0010) (ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-
-	static UClass* StaticClass()
+	/**
+	 * Class PacketHandler.PacketHandlerProfileConfig
+	 * Size -> 0x0010 (FullSize[0x0038] - InheritedSize[0x0028])
+	 */
+	class UPacketHandlerProfileConfig : public UObject
 	{
-		static UClass* ptr = UObject::FindClass("Class PacketHandler.PacketHandlerProfileConfig");
-		return ptr;
-	}
+	public:
+		TArray<class FString>                                      Components;                                              // 0x0028(0x0010) ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

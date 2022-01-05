@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,38 +11,32 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass RotationThreshold.RotationThreshold_C
-// 0x003C (FullSize[0x00EC] - InheritedSize[0x00B0])
-class URotationThreshold_C : public UActorComponent
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x00B0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	struct FRotator                                    PreviousRotation;                                          // 0x00B8(0x000C) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	float                                              TotalRotationDelta;                                        // 0x00C4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              RotationThreshold;                                         // 0x00C8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LSSQ[0x4];                                     // 0x00CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FScriptMulticastDelegate                    OnRotationThresholdReached;                                // 0x00D0(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FRotator                                    RotationDelta;                                             // 0x00E0(0x000C) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass RotationThreshold.RotationThreshold_C
+	 * Size -> 0x003C (FullSize[0x00EC] - InheritedSize[0x00B0])
+	 */
+	class URotationThreshold_C : public UActorComponent
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass RotationThreshold.RotationThreshold_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00B0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FRotator                                            PreviousRotation;                                        // 0x00B8(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		float                                                      TotalRotationDelta;                                      // 0x00C4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      RotationThreshold;                                       // 0x00C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_691T[0x4];                                   // 0x00CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             OnRotationThresholdReached;                              // 0x00D0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
+		struct FRotator                                            RotationDelta;                                           // 0x00E0(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
-
-
-	void Start();
-	void ReceiveTick(float DeltaSeconds);
-	void Stop();
-	void ExecuteUbergraph_RotationThreshold(int EntryPoint);
-	void OnRotationThresholdReached__DelegateSignature();
-};
+	public:
+		void Start();
+		void ReceiveTick(float DeltaSeconds);
+		void Stop();
+		void ExecuteUbergraph_RotationThreshold(int EntryPoint);
+		void OnRotationThresholdReached__DelegateSignature();
+		static UClass* StaticClass();
+	};
 
 }
 

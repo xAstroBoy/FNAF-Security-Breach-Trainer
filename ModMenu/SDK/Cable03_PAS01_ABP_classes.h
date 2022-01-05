@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,26 +11,18 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// AnimBlueprintGeneratedClass Cable03_PAS01_ABP.Cable03_PAS01_ABP_C
-// 0x0000 (FullSize[0x05E0] - InheritedSize[0x05E0])
-class UCable03_PAS01_ABP_C : public UCable_ABP_C
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * AnimBlueprintGeneratedClass Cable03_PAS01_ABP.Cable03_PAS01_ABP_C
+	 * Size -> 0x0000 (FullSize[0x05E0] - InheritedSize[0x05E0])
+	 */
+	class UCable03_PAS01_ABP_C : public UCable_ABP_C
 	{
-		static UClass* ptr = UObject::FindClass("AnimBlueprintGeneratedClass Cable03_PAS01_ABP.Cable03_PAS01_ABP_C");
-		return ptr;
-	}
-
-
-
-};
+	public:
+		static UClass* StaticClass();
+	};
 
 }
 

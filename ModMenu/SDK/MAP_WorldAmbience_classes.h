@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,29 +11,23 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass MAP_WorldAmbience.MAP_WorldAmbience_C
-// 0x0008 (FullSize[0x0238] - InheritedSize[0x0230])
-class AMAP_WorldAmbience_C : public ALevelScriptActor
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0230(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass MAP_WorldAmbience.MAP_WorldAmbience_C
+	 * Size -> 0x0008 (FullSize[0x0238] - InheritedSize[0x0230])
+	 */
+	class AMAP_WorldAmbience_C : public ALevelScriptActor
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass MAP_WorldAmbience.MAP_WorldAmbience_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0230(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_MAP_WorldAmbience(int EntryPoint);
-};
+	public:
+		void ReceiveBeginPlay();
+		void ExecuteUbergraph_MAP_WorldAmbience(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,27 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// Class AutomationUtils.AutomationUtilsBlueprintLibrary
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UAutomationUtilsBlueprintLibrary : public UBlueprintFunctionLibrary
-{
-public:
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class AutomationUtils.AutomationUtilsBlueprintLibrary
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UAutomationUtilsBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
-		static UClass* ptr = UObject::FindClass("Class AutomationUtils.AutomationUtilsBlueprintLibrary");
-		return ptr;
-	}
-
-
-
-	void STATIC_TakeGameplayAutomationScreenshot(const struct FString& ScreenshotName, float MaxGlobalError, float MaxLocalError, const struct FString& MapNameOverride);
-};
+	public:
+		void STATIC_TakeGameplayAutomationScreenshot(const class FString& ScreenshotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride);
+		static UClass* StaticClass();
+	};
 
 }
 

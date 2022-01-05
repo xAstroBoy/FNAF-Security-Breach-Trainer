@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,32 +11,26 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Classes
-//---------------------------------------------------------------------------
-
-// BlueprintGeneratedClass VannyController.VannyController_C
-// 0x0008 (FullSize[0x03E0] - InheritedSize[0x03D8])
-class AVannyController_C : public AAISeekerController_C
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x03D8(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-
-
-	static UClass* StaticClass()
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass VannyController.VannyController_C
+	 * Size -> 0x0008 (FullSize[0x03E0] - InheritedSize[0x03D8])
+	 */
+	class AVannyController_C : public AAISeekerController_C
 	{
-		static UClass* ptr = UObject::FindClass("BlueprintGeneratedClass VannyController.VannyController_C");
-		return ptr;
-	}
+	public:
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03D8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
-
-
-	void ReceiveBeginPlay();
-	void OnRoomChanged(class ARoomAreaBase* Room);
-	void UpdateRoomSetup();
-	void OnPlayerEnteredRoom(class ARoomAreaBase* Room);
-	void ExecuteUbergraph_VannyController(int EntryPoint);
-};
+	public:
+		void ReceiveBeginPlay();
+		void OnRoomChanged(class ARoomAreaBase* Room);
+		void UpdateRoomSetup();
+		void OnPlayerEnteredRoom(class ARoomAreaBase* Room);
+		void ExecuteUbergraph_VannyController(int EntryPoint);
+		static UClass* StaticClass();
+	};
 
 }
 

@@ -1,13 +1,9 @@
 ﻿#pragma once
 
-// Name: FNAF Security Breach, Version: 1
-
-
-/*!!DEFINE!!*/
-
-/*!!HELPER_DEF!!*/
-
-/*!!HELPER_INC!!*/
+/**
+ * Name: FNAF Security Breach
+ * Version: 2
+ */
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x01)
@@ -15,17 +11,19 @@
 
 namespace CG
 {
-//---------------------------------------------------------------------------
-// Script Structs
-//---------------------------------------------------------------------------
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * ScriptStruct MagicLeapImageTracker.MagicLeapImageTrackerTarget
+	 * Size -> 0x00B0
+	 */
+	struct FMagicLeapImageTrackerTarget
+	{
+	public:
+		unsigned char                                              UnknownData_R6FZ[0xB0];                                  // 0x0000(0x00B0) MISSED OFFSET (PADDING)
 
-// ScriptStruct MagicLeapImageTracker.MagicLeapImageTrackerTarget
-// 0x00B0
-struct FMagicLeapImageTrackerTarget
-{
-	unsigned char                                      UnknownData_K2I0[0xB0];                                    // 0x0000(0x00B0) MISSED OFFSET (PADDING)
-
-};
+	};
 
 }
 
