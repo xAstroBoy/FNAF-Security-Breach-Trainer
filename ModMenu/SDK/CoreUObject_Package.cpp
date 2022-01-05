@@ -878,8 +878,8 @@ namespace CG
 	 */
 	UObject* UClass::CreateDefaultObject()
 	{
-		// return nullptr;
-		return GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
+		return nullptr;
+		//return GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
 	}
 
 	/**

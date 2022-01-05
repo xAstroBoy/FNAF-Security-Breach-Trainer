@@ -94,7 +94,7 @@ namespace CG
 		void GetClosestActiveNoiseMaker(bool* Found, class ABP_NoiseMakingTowerDaycareInteractible_C** Noise_Maker);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void SetDeskBlockers(TEnumAsByte<Engine_ECollisionEnabled> NewType);
-		void Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation);
+		//void Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation);
 		void On_Office_Game_Activated();
 		void On_Scenario_Changed();
 		void Spawn_Sunman();

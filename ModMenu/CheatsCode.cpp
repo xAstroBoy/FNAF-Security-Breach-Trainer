@@ -45,17 +45,17 @@ namespace Cheats
 				}
 			}
 
-			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
-			if (!FazBlasterAmmo1.empty())
-			{
-				for (auto& mods : FazBlasterAmmo1)
-				{
-					if (mods != nullptr)
-					{
-						mods->FreddySettings.bCanCallFreddy = true;
-					}
-				}
-			}
+			//auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
+			//if (!FazBlasterAmmo1.empty())
+			//{
+			//	for (auto& mods : FazBlasterAmmo1)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			mods->FreddySettings.bCanCallFreddy = true;
+			//		}
+			//	}
+			//}
 
 		}
 		catch (const std::exception& ex)
@@ -80,17 +80,17 @@ namespace Cheats
 				}
 			}
 
-			auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
-			if (!FazBlasterAmmo1.empty())
-			{
-				for (auto& mods : FazBlasterAmmo1)
-				{
-					if (mods != nullptr)
-					{
-						mods->FreddySettings.bCanEnterExitFreddy = true;
-					}
-				}
-			}
+			//auto FazBlasterAmmo1 = CG::UObject::FindObjects<CG::FFNAFMissionTaskInfo>();
+			//if (!FazBlasterAmmo1.empty())
+			//{
+			//	for (auto& mods : FazBlasterAmmo1)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			mods->FreddySettings.bCanEnterExitFreddy = true;
+			//		}
+			//	}
+			//}
 
 		}
 		catch (const std::exception& ex)

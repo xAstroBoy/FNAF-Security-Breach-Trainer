@@ -9558,11 +9558,13 @@ namespace CG
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		if (Hour != nullptr)
-			*Hour = params.Hour;
-		if (Minute != nullptr)
-			*Minute = params.Minute;
+
+
+		// Broken
+		//if (Hour != nullptr)
+		//	*Hour = params.Hour;
+		//if (Minute != nullptr)
+		//	*Minute = params.Minute;
 	}
 
 	/**

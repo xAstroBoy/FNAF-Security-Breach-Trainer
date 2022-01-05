@@ -175,22 +175,25 @@ namespace CG
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FRotator                                    Roation                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ASecurityOffice_Daycare_C::Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Moonman");
-		
-		ASecurityOffice_Daycare_C_Moonman_Params params {};
-		params.Sunman = Sunman;
-		params.Behavior_Tree = Behavior_Tree;
-		params.Location = Location;
-		params.Roation = Roation;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
+	 
+	 // Broken
+	 
+//	void ASecurityOffice_Daycare_C::Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation)
+//	{
+//		static UFunction* fn = nullptr;
+//		if (!fn)
+//			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Moonman");
+//		
+//		ASecurityOffice_Daycare_C_Moonman_Params params {};
+//		params.Sunman = Sunman;
+//		params.Behavior_Tree = Behavior_Tree;
+//		params.Location = Location;
+//		params.Roation = Roation;
+//		
+//		auto flags = fn->FunctionFlags;
+//		UObject::ProcessEvent(fn, &params);
+//		fn->FunctionFlags = flags;
+//	}
 
 	/**
 	 * Function:

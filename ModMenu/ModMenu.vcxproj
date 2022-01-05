@@ -203,9 +203,12 @@
     <ClCompile Include="SDK\CoreUObject_Package.cpp" />
     <ClCompile Include="SDK\Engine_Package.cpp" />
     <ClCompile Include="SDK\Equippable_Package.cpp" />
+    <ClCompile Include="SDK\EQ_Flashbeacon_Package.cpp" />
+    <ClCompile Include="SDK\EQ_Flashlight_Package.cpp" />
     <ClCompile Include="SDK\EQ_LaserGun_Package.cpp" />
     <ClCompile Include="SDK\E_SurvivalLives_Package.cpp" />
     <ClCompile Include="SDK\FazblasterChargeUI_Package.cpp" />
+    <ClCompile Include="SDK\FazcamChargeUI_Package.cpp" />
     <ClCompile Include="SDK\FBPC_SharedController_Package.cpp" />
     <ClCompile Include="SDK\fnaf9_Package.cpp" />
     <ClCompile Include="SDK\Freddy_Package.cpp" />
@@ -214,9 +217,12 @@
     <ClCompile Include="SDK\LevelSequence_Package.cpp" />
     <ClCompile Include="SDK\MainGamePC_Package.cpp" />
     <ClCompile Include="SDK\MGM_OfficeGameManger_Package.cpp" />
+    <ClCompile Include="SDK\OGM_Kitchen_Package.cpp" />
     <ClCompile Include="SDK\OGM_Underground_Package.cpp" />
     <ClCompile Include="SDK\PlayerInteractHoldComponent_Package.cpp" />
     <ClCompile Include="SDK\SaveGameActor_Package.cpp" />
+    <ClCompile Include="SDK\SecurityOfficeActivatableHandler_Package.cpp" />
+    <ClCompile Include="SDK\SecurityOffice_Daycare_Package.cpp" />
     <ClCompile Include="SDK\TitlePC_Package.cpp" />
     <ClCompile Include="SDK\TitleUI_Package.cpp" />
     <ClCompile Include="SDK\UMG_Package.cpp" />
