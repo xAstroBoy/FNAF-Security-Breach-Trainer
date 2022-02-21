@@ -201,7 +201,9 @@
     <ClCompile Include="SDK\BP_DoorMaster_Package.cpp" />
     <ClCompile Include="SDK\BP_MiniGameManger_Package.cpp" />
     <ClCompile Include="SDK\BP_PowerMeter_Door_Package.cpp" />
+    <ClCompile Include="SDK\Burntrap_Freddy_Package.cpp" />
     <ClCompile Include="SDK\CoreUObject_Package.cpp" />
+    <ClCompile Include="SDK\DJMusicMan_Package.cpp" />
     <ClCompile Include="SDK\Engine_Package.cpp" />
     <ClCompile Include="SDK\Equippable_Package.cpp" />
     <ClCompile Include="SDK\EQ_Flashbeacon_Package.cpp" />
@@ -218,12 +220,14 @@
     <ClCompile Include="SDK\LevelSequence_Package.cpp" />
     <ClCompile Include="SDK\MainGamePC_Package.cpp" />
     <ClCompile Include="SDK\MGM_OfficeGameManger_Package.cpp" />
+    <ClCompile Include="SDK\Moonman_Package.cpp" />
     <ClCompile Include="SDK\OGM_Kitchen_Package.cpp" />
     <ClCompile Include="SDK\OGM_Underground_Package.cpp" />
     <ClCompile Include="SDK\PlayerInteractHoldComponent_Package.cpp" />
     <ClCompile Include="SDK\SaveGameActor_Package.cpp" />
     <ClCompile Include="SDK\SecurityOfficeActivatableHandler_Package.cpp" />
     <ClCompile Include="SDK\SecurityOffice_Daycare_Package.cpp" />
+    <ClCompile Include="SDK\Sunman_Package.cpp" />
     <ClCompile Include="SDK\TitlePC_Package.cpp" />
     <ClCompile Include="SDK\TitleUI_Package.cpp" />
     <ClCompile Include="SDK\UMG_Package.cpp" />

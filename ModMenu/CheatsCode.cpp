@@ -139,22 +139,26 @@ namespace Cheats
 	{
 		try
 		{
-			//auto Savegame1 = CG::UObject::FindObjects<CG::ASaveGameActor_C>();
-			//if (!Savegame1.empty())
-			//{
-			//	for (auto& mods : Savegame1)
-			//	{
-			//		if (mods != nullptr)
-			//		{
-			//			if (mods->PlayerTrigger != nullptr) // Shielded with Empty or Nullptr triggers.
-			//			{
-			//				mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
-			//				//mods->IsActive = true;
-			//				//mods->Glitching = false;
-			//			}
-			//		}
-			//	}
-			//}
+			auto Savegame1 = CG::UObject::FindObjects<CG::ASaveGameActor_C>();
+			if (!Savegame1.empty())
+			{
+				for (auto& mods : Savegame1)
+				{
+					if (mods != nullptr)
+					{
+						if (mods->PlayerTrigger != nullptr) // Shielded with Empty or Nullptr triggers.
+						{
+							mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
+							mods->IsActive = true;
+							mods->Glitching = false;
+							if (mods->PlayerTrigger != nullptr)
+							{
+								mods->PlayerTrigger->SetActive(true, false);
+							}
+						}
+					}
+				}
+			}
 			auto Savegame2 = CG::UObject::FindObjects<CG::UFNAFSaveGameSystem>();
 			if (!Savegame2.empty())
 			{
@@ -224,140 +228,10 @@ namespace Cheats
 	{
 		try
 		{
-			/*	auto Jumpscare1 = CG::UObject::FindObjects<CG::UAnimatronicJiggleABP_C>();
-				if (!Jumpscare1.empty())
-				{
-					for (auto& mods : Jumpscare1)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare2 = CG::UObject::FindObjects<CG::UAnimatronic_ABP_MASTER_C>();
-				if (!Jumpscare2.empty())
-				{
-					for (auto& mods : Jumpscare2)
-					{
-						if (mods != nullptr)
-						{
-							mods->__CustomProperty_canJumpscare_4A98D0BF4A4FE0BE4AE282A8BE4A4087 = false;
-							mods->__CustomProperty_canJumpscare_A7B4335C4CEF28D881FD46973C5B180B = false;
-							mods->__CustomProperty_canJumpscare_36C8EED645279F9E89604C9B2DE3C578 = false;
-							mods->__CustomProperty_canJumpscare_F15EA70C496B6393A39F2F97DAC31403 = false;
-							mods->__CustomProperty_canJumpscare_3EDAFDCC4A84BB1E732F7B9A7CD159B9 = false;
-							mods->canJumpscare = false;
-
-						}
-					}
-				}
-				auto Jumpscare3 = CG::UObject::FindObjects<CG::UMoonman_Daycare_ABP_C>();
-				if (!Jumpscare3.empty())
-				{
-					for (auto& mods : Jumpscare3)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare4 = CG::UObject::FindObjects<CG::URIG_DJ_Music_Man_ABP_C>();
-				if (!Jumpscare4.empty())
-				{
-					for (auto& mods : Jumpscare4)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare5 = CG::UObject::FindObjects<CG::URIG_Endo_Skeleton_ABP_C>();
-				if (!Jumpscare5.empty())
-				{
-					for (auto& mods : Jumpscare5)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare6 = CG::UObject::FindObjects<CG::URIG_Glamrock_Freddy_PartsServ_ABP_C>();
-				if (!Jumpscare6.empty())
-				{
-					for (auto& mods : Jumpscare6)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare7 = CG::UObject::FindObjects<CG::UStaffbot_ABP_C>();
-				if (!Jumpscare7.empty())
-				{
-					for (auto& mods : Jumpscare7)
-					{
-						if (mods != nullptr)
-						{
-							mods->__CustomProperty_CanJumpscare_BCAB4F524DF88F3CDCCB3B8890C6DE16 = false;
-
-							mods->__CustomProperty_CanJumpscare_41487E5C4BB83CC4B35EB7AB8EAFE4BB = false;
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare8 = CG::UObject::FindObjects<CG::UStaffbot_Security_LINK_C>();
-				if (!Jumpscare8.empty())
-				{
-					for (auto& mods : Jumpscare8)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare9 = CG::UObject::FindObjects<CG::UTentacle_ABP_C>();
-				if (!Jumpscare9.empty())
-				{
-					for (auto& mods : Jumpscare9)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare10 = CG::UObject::FindObjects<CG::UVanny_ABP_C>();
-				if (!Jumpscare10.empty())
-				{
-					for (auto& mods : Jumpscare10)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}
-				auto Jumpscare11 = CG::UObject::FindObjects<CG::UVanessa_ABP_C>();
-				if (!Jumpscare11.empty())
-				{
-					for (auto& mods : Jumpscare11)
-					{
-						if (mods != nullptr)
-						{
-							mods->canJumpscare = false;
-						}
-					}
-				}*/
-			auto Jumpscare12 = CG::UObject::FindObjects<CG::AAISeeker_C>();
-			if (!Jumpscare12.empty())
+			auto monty_roxy_chica = CG::UObject::FindObjects<CG::AAISeeker_C>();
+			if (!monty_roxy_chica.empty())
 			{
-				for (auto& mods : Jumpscare12)
+				for (auto& mods : monty_roxy_chica)
 				{
 					if (mods != nullptr)
 					{
@@ -370,6 +244,79 @@ namespace Cheats
 					}
 				}
 			}
+			auto burntrap_freddy = CG::UObject::FindObjects<CG::ABurntrap_Freddy_C>();
+			if (!burntrap_freddy.empty())
+			{
+				for (auto& mods : burntrap_freddy)
+				{
+					if (mods != nullptr)
+					{
+						if (mods->PlayerCaptureTrigger != nullptr)
+						{
+							//ConsoleWrite("Destroyed a Freddy BurnTrap PlayerCaptureTrigger!");
+							mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
+						}
+
+					}
+				}
+			}
+			auto DJMusicMan = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
+			if (!DJMusicMan.empty())
+			{
+				for (auto& mods : DJMusicMan)
+				{
+					if (mods != nullptr)
+					{
+						if (mods->PlayerCaptureTrigger1 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger1!");
+							mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
+						}
+
+						if (mods->PlayerCaptureTrigger2 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger2!");
+							mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
+						}
+
+						if (mods->PlayerCaptureTrigger3 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger3!");
+							mods->PlayerCaptureTrigger3->K2_DestroyComponent(mods->PlayerCaptureTrigger3);
+						}
+
+						if (mods->PlayerCaptureTrigger4 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger4!");
+							mods->PlayerCaptureTrigger4->K2_DestroyComponent(mods->PlayerCaptureTrigger4);
+						}
+
+					}
+				}
+			}
+			auto Moonman = CG::UObject::FindObjects<CG::AMoonman_C>();
+			if (!Moonman.empty())
+			{
+				for (auto& mods : Moonman)
+				{
+					if (mods != nullptr)
+					{
+						if (mods->PlayerCaptureTrigger1 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger1!");
+							mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
+						}
+
+						if (mods->PlayerCaptureTrigger2 != nullptr)
+						{
+							//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger2!");
+							mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
+						}
+
+					}
+				}
+			}
+
 		}
 		catch (const std::exception& ex)
 		{
