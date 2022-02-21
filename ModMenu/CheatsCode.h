@@ -5,7 +5,6 @@ namespace Cheats
 {
 	static bool isTrainerGuiActive = false;
 
-
 	static bool HasBackuppedFreddyPower = false;
 	static bool UnlimitedJumpBool_Enabled = false;
 	static bool UnlimitedFazBlasterAmmo_Enabled = false;
@@ -19,18 +18,17 @@ namespace Cheats
 	static bool FreezeFreddyPower_Enabled = false;
 	static bool UnlimitedStaminaBool_Enabled = false;
 	static bool UnlimitedFazWatchBool_Enabled = false;
+	static bool NoJumpscares_Enabled = false;
+
+	static bool AllowAlwaysSaving_Enabled = false;
 
 	static bool FreddyCanBeAlwaysCalled_Enabled = false;
 	static bool FreddyGregoryCanAlwaysEnter_Enabled = false;
 
 	static CG::UFNAFInventorySystem* Active_UFNAFInventorySystem = nullptr;
 
-
-
 	static int MaxFreddyPower = 0;
 	static int CurrentFreddyPower = 0;
-
-
 
 	void UnlimitedFazerBlasterLifes();
 	void ToggleDebugMenuMiniGame();
@@ -48,17 +46,18 @@ namespace Cheats
 	void Freddy_Always_CanCallFreddy();
 
 	int Get_MaxFreddyPower();
-	void Set_MaxFreddyPower(int& value);
-
+	void Set_MaxFreddyPower(const int& value);
 
 	int Get_CurrentFreddyPower();
-	void Set_CurrentFreddyPower(int& value);
+	void Set_CurrentFreddyPower(const int& value);
 
 	bool Get_UnlimitedFazwatchPower();
-	void Set_UnlimitedFazwatchPower(bool& value);
+	void Set_UnlimitedFazwatchPower(const bool& value);
 
 	bool Get_UnlimitedStamina();
-	void Set_UnlimitedStamina(bool& value);
+	void Set_UnlimitedStamina(const bool& value);
+
+	void DisableJumpscares();
 
 	CG::UFNAFInventorySystem* Get_UFNAFInventorySystem();
 }

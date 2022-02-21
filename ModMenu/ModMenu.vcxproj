@@ -45,7 +45,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <CLRSupport>false</CLRSupport>
   </PropertyGroup>
@@ -194,6 +194,7 @@
     <ClCompile Include="mem.cpp" />
     <ClCompile Include="SDK\ActivatableBase_Package.cpp" />
     <ClCompile Include="SDK\AIModule_Package.cpp" />
+    <ClCompile Include="SDK\AISeeker_Package.cpp" />
     <ClCompile Include="SDK\AttackDoor_Package.cpp" />
     <ClCompile Include="SDK\BackstageOffice_Door_Package.cpp" />
     <ClCompile Include="SDK\BasicTypes_Package.cpp" />
@@ -226,6 +227,19 @@
     <ClCompile Include="SDK\TitlePC_Package.cpp" />
     <ClCompile Include="SDK\TitleUI_Package.cpp" />
     <ClCompile Include="SDK\UMG_Package.cpp" />
+    <ClCompile Include="SDK\AnimatronicJiggleABP_Package.cpp" />
+    <ClCompile Include="SDK\Animatronic_ABP_MASTER_Package.cpp" />
+    <ClCompile Include="SDK\Moonman_Daycare_ABP_Package.cpp" />
+    <ClCompile Include="SDK\RIG_DJ_Music_Man_ABP_Package.cpp" />
+    <ClCompile Include="SDK\RIG_Endo_Skeleton_ABP_Package.cpp" />
+    <ClCompile Include="SDK\RIG_Glamrock_Freddy_PartsServ_ABP_Package.cpp" />
+    <ClCompile Include="SDK\Staffbot_ABP_Package.cpp" />
+    <ClCompile Include="SDK\Staffbot_ABP_Racer_Package.cpp" />
+    <ClCompile Include="SDK\Staffbot_PartyPass_LINK_Package.cpp" />
+    <ClCompile Include="SDK\Staffbot_Security_LINK_Package.cpp" />
+    <ClCompile Include="SDK\Tentacle_ABP_Package.cpp" />
+    <ClCompile Include="SDK\Vanny_ABP_Package.cpp" />
+    <ClCompile Include="SDK\Vanessa_ABP_Package.cpp" />
     <ClCompile Include="SDK\WI_Empty_Package.cpp" />
     <ClCompile Include="SDK\WI_Health_Fazerblast_Package.cpp" />
     <ClCompile Include="SDK\WI_PowerLevel_Package.cpp" />

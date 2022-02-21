@@ -11,13 +11,12 @@ namespace Cheats
 {
 #pragma region Game Instances
 
-
 	CG::UFNAFInventorySystem* Get_UFNAFInventorySystem() // This Uses A Parse mechanism to get the active and used array mechanism, instead of looping every time!
 	{
-		if(Active_UFNAFInventorySystem == nullptr)
+		if (Active_UFNAFInventorySystem == nullptr)
 		{
 			auto FnafInventory = CG::UObject::FindObjects<CG::UFNAFInventorySystem>()[1];
-			if(FnafInventory != nullptr)
+			if (FnafInventory != nullptr)
 			{
 				Active_UFNAFInventorySystem = FnafInventory;
 				return FnafInventory;
@@ -25,7 +24,6 @@ namespace Cheats
 		}
 		return Active_UFNAFInventorySystem;
 	}
-
 
 #pragma endregion
 
@@ -99,7 +97,6 @@ namespace Cheats
 		}
 	}
 
-
 	void UnlimitedFazerBlasterLifes()
 	{
 		try
@@ -142,14 +139,31 @@ namespace Cheats
 	{
 		try
 		{
-			auto FazBlasterAmmo = CG::UObject::FindObjects<CG::ASaveGameActor_C>();
-			if (!FazBlasterAmmo.empty())
+			//auto Savegame1 = CG::UObject::FindObjects<CG::ASaveGameActor_C>();
+			//if (!Savegame1.empty())
+			//{
+			//	for (auto& mods : Savegame1)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			if (mods->PlayerTrigger != nullptr) // Shielded with Empty or Nullptr triggers.
+			//			{
+			//				mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
+			//				//mods->IsActive = true;
+			//				//mods->Glitching = false;
+			//			}
+			//		}
+			//	}
+			//}
+			auto Savegame2 = CG::UObject::FindObjects<CG::UFNAFSaveGameSystem>();
+			if (!Savegame2.empty())
 			{
-				for (auto& mods : FazBlasterAmmo)
+				for (auto& mods : Savegame2)
 				{
 					if (mods != nullptr)
 					{
-						mods->IsActive = true;
+						mods->bIsSavingAllowed = true;
+						mods->SetIsSavingAllowed(true);
 					}
 				}
 			}
@@ -183,7 +197,6 @@ namespace Cheats
 		}
 	}
 
-
 	void UnlimitedJump()
 	{
 		try
@@ -207,23 +220,180 @@ namespace Cheats
 		}
 	}
 
+	void DisableJumpscares()
+	{
+		try
+		{
+			/*	auto Jumpscare1 = CG::UObject::FindObjects<CG::UAnimatronicJiggleABP_C>();
+				if (!Jumpscare1.empty())
+				{
+					for (auto& mods : Jumpscare1)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare2 = CG::UObject::FindObjects<CG::UAnimatronic_ABP_MASTER_C>();
+				if (!Jumpscare2.empty())
+				{
+					for (auto& mods : Jumpscare2)
+					{
+						if (mods != nullptr)
+						{
+							mods->__CustomProperty_canJumpscare_4A98D0BF4A4FE0BE4AE282A8BE4A4087 = false;
+							mods->__CustomProperty_canJumpscare_A7B4335C4CEF28D881FD46973C5B180B = false;
+							mods->__CustomProperty_canJumpscare_36C8EED645279F9E89604C9B2DE3C578 = false;
+							mods->__CustomProperty_canJumpscare_F15EA70C496B6393A39F2F97DAC31403 = false;
+							mods->__CustomProperty_canJumpscare_3EDAFDCC4A84BB1E732F7B9A7CD159B9 = false;
+							mods->canJumpscare = false;
+
+						}
+					}
+				}
+				auto Jumpscare3 = CG::UObject::FindObjects<CG::UMoonman_Daycare_ABP_C>();
+				if (!Jumpscare3.empty())
+				{
+					for (auto& mods : Jumpscare3)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare4 = CG::UObject::FindObjects<CG::URIG_DJ_Music_Man_ABP_C>();
+				if (!Jumpscare4.empty())
+				{
+					for (auto& mods : Jumpscare4)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare5 = CG::UObject::FindObjects<CG::URIG_Endo_Skeleton_ABP_C>();
+				if (!Jumpscare5.empty())
+				{
+					for (auto& mods : Jumpscare5)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare6 = CG::UObject::FindObjects<CG::URIG_Glamrock_Freddy_PartsServ_ABP_C>();
+				if (!Jumpscare6.empty())
+				{
+					for (auto& mods : Jumpscare6)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare7 = CG::UObject::FindObjects<CG::UStaffbot_ABP_C>();
+				if (!Jumpscare7.empty())
+				{
+					for (auto& mods : Jumpscare7)
+					{
+						if (mods != nullptr)
+						{
+							mods->__CustomProperty_CanJumpscare_BCAB4F524DF88F3CDCCB3B8890C6DE16 = false;
+
+							mods->__CustomProperty_CanJumpscare_41487E5C4BB83CC4B35EB7AB8EAFE4BB = false;
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare8 = CG::UObject::FindObjects<CG::UStaffbot_Security_LINK_C>();
+				if (!Jumpscare8.empty())
+				{
+					for (auto& mods : Jumpscare8)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare9 = CG::UObject::FindObjects<CG::UTentacle_ABP_C>();
+				if (!Jumpscare9.empty())
+				{
+					for (auto& mods : Jumpscare9)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare10 = CG::UObject::FindObjects<CG::UVanny_ABP_C>();
+				if (!Jumpscare10.empty())
+				{
+					for (auto& mods : Jumpscare10)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}
+				auto Jumpscare11 = CG::UObject::FindObjects<CG::UVanessa_ABP_C>();
+				if (!Jumpscare11.empty())
+				{
+					for (auto& mods : Jumpscare11)
+					{
+						if (mods != nullptr)
+						{
+							mods->canJumpscare = false;
+						}
+					}
+				}*/
+			auto Jumpscare12 = CG::UObject::FindObjects<CG::AAISeeker_C>();
+			if (!Jumpscare12.empty())
+			{
+				for (auto& mods : Jumpscare12)
+				{
+					if (mods != nullptr)
+					{
+						if (mods->PlayerCaptureTrigger != nullptr)
+						{
+							//ConsoleWrite("Destroyed a PlayerCaptureTrigger!");
+							mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
+						}
+
+					}
+				}
+			}
+		}
+		catch (const std::exception& ex)
+		{
+			std::cout << "Thread exited with exception: " << ex.what() << "\n";
+		}
+	}
+
 	void UnlimitedFlashLight()
 	{
 		try
 		{
 
-		auto FazBlasterAmmo = CG::UObject::FindObjects<CG::AEQ_Flashlight_C>();
-		if (!FazBlasterAmmo.empty())
-		{
-			for (auto& mods : FazBlasterAmmo)
+			auto FazBlasterAmmo = CG::UObject::FindObjects<CG::AEQ_Flashlight_C>();
+			if (!FazBlasterAmmo.empty())
 			{
-				if (mods != nullptr)
+				for (auto& mods : FazBlasterAmmo)
 				{
-					mods->PowerPerSecond = static_cast<float>(999999999);
-					mods->hasPower = true;
+					if (mods != nullptr)
+					{
+						mods->PowerPerSecond = static_cast<float>(999999999);
+						mods->hasPower = true;
+					}
 				}
 			}
-		}
 		}
 		catch (const std::exception& ex)
 		{
@@ -364,7 +534,6 @@ namespace Cheats
 		}
 	}
 
-
 	int Get_CurrentFreddyPower()
 	{
 		if (Get_UFNAFInventorySystem() != nullptr)
@@ -373,7 +542,7 @@ namespace Cheats
 		}
 		return 0;
 	}
-	void Set_CurrentFreddyPower(int& value)
+	void Set_CurrentFreddyPower(const int& value)
 	{
 		if (Get_UFNAFInventorySystem() != nullptr)
 		{
@@ -389,7 +558,7 @@ namespace Cheats
 		}
 		return 0;
 	}
-	void Set_MaxFreddyPower(int& value)
+	void Set_MaxFreddyPower(const int& value)
 	{
 		if (Get_UFNAFInventorySystem() != nullptr)
 		{
@@ -404,7 +573,7 @@ namespace Cheats
 		}
 		return false;
 	}
-	void Set_UnlimitedFazwatchPower(bool& value)
+	void Set_UnlimitedFazwatchPower(const bool& value)
 	{
 		if (Get_UFNAFInventorySystem() != nullptr)
 		{
@@ -419,11 +588,48 @@ namespace Cheats
 		}
 		return false;
 	}
-	void Set_UnlimitedStamina(bool& value)
+	void Set_UnlimitedStamina(const bool& value)
 	{
 		if (Get_UFNAFInventorySystem() != nullptr)
 		{
 			Get_UFNAFInventorySystem()->bUnlimitedStamina = value;
+		}
+	}
+	void Get_AllArchievements()
+	{
+		auto TileDebugMenu = CG::UObject::FindObjects<CG::UTitleUI_C>();
+		if (!TileDebugMenu.empty())
+		{
+			for (auto& mods : TileDebugMenu)
+			{
+				if (mods != nullptr)
+				{
+					mods->DebugMenu = true;
+				}
+			}
+		}
+		auto DebugMenu2 = CG::UObject::FindObjects<CG::ATitlePC_C>();
+		if (!DebugMenu2.empty())
+		{
+			for (auto& mods : DebugMenu2)
+			{
+				if (mods != nullptr)
+				{
+					mods->EnableDebugFullMenu = true;
+				}
+			}
+		}
+
+		auto DebugMenu3 = CG::UObject::FindObjects<CG::AMainGamePC_C>();
+		if (!DebugMenu3.empty())
+		{
+			for (auto& mods : DebugMenu3)
+			{
+				if (mods != nullptr)
+				{
+					mods->OnToggleDevUI();
+				}
+			}
 		}
 	}
 
@@ -553,7 +759,6 @@ namespace Cheats
 			{
 				Get_UFNAFInventorySystem()->NumAvailableFlash = 999999999;
 			}
-
 
 			auto powerlevel = CG::UObject::FindObjects<CG::UWI_PowerLevel_C>();
 			if (!powerlevel.empty())

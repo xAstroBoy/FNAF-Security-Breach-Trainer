@@ -5,8 +5,6 @@
 #include "SDK.h"
 #include <thread>
 
-
-
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 Present oPresent;
@@ -23,11 +21,9 @@ void InitImGui()
 	io.ConfigFlags = ImGuiConfigFlags_NoMouseCursorChange;
 	ImGui_ImplWin32_Init(window);
 	ImGui_ImplDX11_Init(pDevice, pContext);
-
 }
 
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-
 	if (ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
 		return true;
 
@@ -36,28 +32,25 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 typedef BOOL(WINAPI* hk_SetCursorPos)(int, int);
 hk_SetCursorPos origSetCursorPos = NULL;
 
-
-
 void ToggleGUI()
 {
 	Cheats::isTrainerGuiActive = !Cheats::isTrainerGuiActive;
 	//ConsoleTools::ConsoleWrite("GUI : " + ConsoleTools::bool_as_text(Cheats::isTrainerGuiActive));
 }
 
-
 bool init = false;
 HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
 	if (!init)
 	{
-		if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D11Device), (void**)& pDevice)))
+		if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D11Device), (void**)&pDevice)))
 		{
 			pDevice->GetImmediateContext(&pContext);
 			DXGI_SWAP_CHAIN_DESC sd;
 			pSwapChain->GetDesc(&sd);
 			window = sd.OutputWindow;
 			ID3D11Texture2D* pBackBuffer;
-			pSwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)& pBackBuffer);
+			pSwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&pBackBuffer);
 			pDevice->CreateRenderTargetView(pBackBuffer, NULL, &mainRenderTargetView);
 			pBackBuffer->Release();
 			oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)WndProc);
@@ -155,6 +148,9 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			ImGui::SetCursorPos(ImVec2(17.5, 81.5));
 			ImGui::Checkbox("Freeze Doors Power", &Cheats::NoPowerDrainingDoors_Enabled);
 
+			ImGui::SetCursorPos(ImVec2(17.5, 163));
+			ImGui::Checkbox("Force Enable Save points", &Cheats::AllowAlwaysSaving_Enabled);
+
 			ImGui::EndChild();
 
 			ImGui::SetCursorPos(ImVec2(17, 235));
@@ -165,6 +161,9 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 
 			ImGui::SetCursorPos(ImVec2(17.5, 55.5));
 			ImGui::Checkbox("FazBlaster GodMode", &Cheats::FazBlasterGodMode_Enabled);
+
+			ImGui::SetCursorPos(ImVec2(17.5, 110.0));
+			ImGui::Checkbox("No Jumpscares", &Cheats::NoJumpscares_Enabled);
 			ImGui::EndChild();
 
 			ImGui::SetCursorPos(ImVec2(523, 169));
@@ -200,9 +199,14 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			{
 				Cheats::ToggleDevUI();
 			}
+			//ImGui::SetCursorPos(ImVec2(47, 87.5));
+			//if (ImGui::Button("Get All Achievements", ImVec2(156, 49)))
+			//{
+			//	Cheats::ToggleDevUI();
+			//}
 
 			ImGui::SetCursorPos(ImVec2(65, 13.5));
-			ImGui::Text("Invoke Game Dev UI");
+			ImGui::Text("Game Dev Events");
 
 			ImGui::EndChild();
 
@@ -216,7 +220,6 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 				Cheats::Set_CurrentFreddyPower(Cheats::CurrentFreddyPower);
 			}
 			ImGui::PopItemWidth();
-
 
 			ImGui::SetCursorPos(ImVec2(30.5, 11.5));
 			ImGui::Text("Freddy Power");
@@ -234,7 +237,6 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			ImGui::PopItemWidth();
 
 			ImGui::EndChild();
-
 
 			ImGui::End();
 		}
@@ -278,6 +280,16 @@ void ExecutorThread()
 		{
 			Cheats::NoPowerDrainingDoors();
 		}
+		if (Cheats::NoJumpscares_Enabled)
+		{
+			Cheats::DisableJumpscares();
+		}
+
+		if (Cheats::AllowAlwaysSaving_Enabled)
+		{
+			Cheats::ForceSaveGameFeature();
+		}
+
 		if (Cheats::FazBlasterGodMode_Enabled)
 		{
 			Cheats::UnlimitedFazerBlasterLifes();
@@ -294,8 +306,6 @@ void ExecutorThread()
 		{
 			Cheats::Freddy_Always_CanCallFreddy();
 		}
-
-
 
 		if (Cheats::FreezeFreddyPower_Enabled)
 		{
@@ -314,23 +324,22 @@ void ExecutorThread()
 		Cheats::UnlimitedStaminaBool_Enabled = Cheats::Get_UnlimitedStamina();
 		Cheats::CurrentFreddyPower = Cheats::Get_CurrentFreddyPower();
 		Cheats::MaxFreddyPower = Cheats::Get_MaxFreddyPower();
-
-	} 
+	}
 }
 
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
 	CG::InitSdk();
 
-	//// Console (Used Mainly for Debug Purpose) (not needed)
-	//ConsoleTools::ShowConsole();
+	// Console (Used Mainly for Debug Purpose) (not needed)
+	ConsoleTools::ShowConsole();
 
 	bool init_hook = false;
 	do
 	{
 		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
 		{
-			kiero::bind(8, (void**)& oPresent, hkPresent);
+			kiero::bind(8, (void**)&oPresent, hkPresent);
 			std::thread executor(ExecutorThread);
 			executor.detach();
 			init_hook = true;

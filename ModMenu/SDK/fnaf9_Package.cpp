@@ -24,10 +24,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIHiderInterface.ExitHideMode");
-		
-		UAIHiderInterface_ExitHideMode_Params params {};
+
+		UAIHiderInterface_ExitHideMode_Params params{};
 		params.HideActor = HideActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -46,10 +46,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIHiderInterface.EnterHideMode");
-		
-		UAIHiderInterface_EnterHideMode_Params params {};
+
+		UAIHiderInterface_EnterHideMode_Params params{};
 		params.HideActor = HideActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -80,9 +80,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.UnregisterSeekerPath");
-		
-		UAIManagementSystem_UnregisterSeekerPath_Params params {};
-		
+
+		UAIManagementSystem_UnregisterSeekerPath_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -102,10 +102,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.UnRegisterAI");
-		
-		UAIManagementSystem_UnRegisterAI_Params params {};
+
+		UAIManagementSystem_UnRegisterAI_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -123,9 +123,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.UnpauseManager");
-		
-		UAIManagementSystem_UnpauseManager_Params params {};
-		
+
+		UAIManagementSystem_UnpauseManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -143,9 +143,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.StoreEndoStates");
-		
-		UAIManagementSystem_StoreEndoStates_Params params {};
-		
+
+		UAIManagementSystem_StoreEndoStates_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -163,9 +163,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.StartManager");
-		
-		UAIManagementSystem_StartManager_Params params {};
-		
+
+		UAIManagementSystem_StartManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -187,16 +187,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnVannyOrVanessa");
-		
-		UAIManagementSystem_SpawnVannyOrVanessa_Params params {};
+
+		UAIManagementSystem_SpawnVannyOrVanessa_Params params{};
 		params.bSpawnVanny = bSpawnVanny;
 		params.LatentActionInfo = LatentActionInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutSpawned != nullptr)
 			*bOutSpawned = params.bOutSpawned;
 	}
@@ -216,12 +216,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnSpecificAIAtSpawnPoint");
-		
-		UAIManagementSystem_SpawnSpecificAIAtSpawnPoint_Params params {};
+
+		UAIManagementSystem_SpawnSpecificAIAtSpawnPoint_Params params{};
 		params.SpawnPoint = SpawnPoint;
 		params.AIType = AIType;
 		params.ForceShattered = ForceShattered;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -244,18 +244,18 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIWithTransformAndPath");
-		
-		UAIManagementSystem_SpawnAIWithTransformAndPath_Params params {};
+
+		UAIManagementSystem_SpawnAIWithTransformAndPath_Params params{};
 		params.AIType = AIType;
 		params.bForceShattered = bForceShattered;
 		params.SpawnTransform = SpawnTransform;
 		params.PathName = PathName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -278,23 +278,23 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAITypeWithTransformSafe");
-		
-		UAIManagementSystem_SpawnAITypeWithTransformSafe_Params params {};
+
+		UAIManagementSystem_SpawnAITypeWithTransformSafe_Params params{};
 		params.AIType = AIType;
 		params.SpawnTransform = SpawnTransform;
 		params.ForceShattered = ForceShattered;
 		params.CollisionOverrideMethod = CollisionOverrideMethod;
 		params.Owner = Owner;
 		params.bForceRespawn = bForceRespawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (success != nullptr)
 			*success = params.success;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -315,19 +315,19 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAITypeWithTransform");
-		
-		UAIManagementSystem_SpawnAITypeWithTransform_Params params {};
+
+		UAIManagementSystem_SpawnAITypeWithTransform_Params params{};
 		params.AIType = AIType;
 		params.SpawnTransform = SpawnTransform;
 		params.ForceShattered = ForceShattered;
 		params.CollisionOverrideMethod = CollisionOverrideMethod;
 		params.Owner = Owner;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -346,17 +346,17 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAITypeAtLocation");
-		
-		UAIManagementSystem_SpawnAITypeAtLocation_Params params {};
+
+		UAIManagementSystem_SpawnAITypeAtLocation_Params params{};
 		params.AIType = AIType;
 		params.SpawnLocation = SpawnLocation;
 		params.ForceShattered = ForceShattered;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -375,17 +375,17 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIOnPathNearLocation");
-		
-		UAIManagementSystem_SpawnAIOnPathNearLocation_Params params {};
+
+		UAIManagementSystem_SpawnAIOnPathNearLocation_Params params{};
 		params.AIType = AIType;
 		params.Location = Location;
 		params.PathName = PathName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -404,17 +404,17 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIOnPath");
-		
-		UAIManagementSystem_SpawnAIOnPath_Params params {};
+
+		UAIManagementSystem_SpawnAIOnPath_Params params{};
 		params.AIType = AIType;
 		params.bForceShattered = bForceShattered;
 		params.PathName = PathName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -429,9 +429,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAINearPlayer");
-		
-		UAIManagementSystem_SpawnAINearPlayer_Params params {};
-		
+
+		UAIManagementSystem_SpawnAINearPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -449,9 +449,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIFar");
-		
-		UAIManagementSystem_SpawnAIFar_Params params {};
-		
+
+		UAIManagementSystem_SpawnAIFar_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -472,11 +472,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIAtSpawnPoint");
-		
-		UAIManagementSystem_SpawnAIAtSpawnPoint_Params params {};
+
+		UAIManagementSystem_SpawnAIAtSpawnPoint_Params params{};
 		params.SpawnPoint = SpawnPoint;
 		params.bForceShattered = bForceShattered;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -496,10 +496,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SpawnAIAtDistance");
-		
-		UAIManagementSystem_SpawnAIAtDistance_Params params {};
+
+		UAIManagementSystem_SpawnAIAtDistance_Params params{};
 		params.Distance = Distance;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -519,10 +519,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetWorldSpawnEnabled");
-		
-		UAIManagementSystem_SetWorldSpawnEnabled_Params params {};
+
+		UAIManagementSystem_SetWorldSpawnEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -542,10 +542,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetVanessaSpawnEnable");
-		
-		UAIManagementSystem_SetVanessaSpawnEnable_Params params {};
+
+		UAIManagementSystem_SetVanessaSpawnEnable_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -565,10 +565,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetUseStagedSpawns");
-		
-		UAIManagementSystem_SetUseStagedSpawns_Params params {};
+
+		UAIManagementSystem_SetUseStagedSpawns_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -588,10 +588,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetSpawningEnabled");
-		
-		UAIManagementSystem_SetSpawningEnabled_Params params {};
+
+		UAIManagementSystem_SetSpawningEnabled_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -611,10 +611,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetExpectedAI");
-		
-		UAIManagementSystem_SetExpectedAI_Params params {};
+
+		UAIManagementSystem_SetExpectedAI_Params params{};
 		params.AITypes = AITypes;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -632,9 +632,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetAllAIExpected");
-		
-		UAIManagementSystem_SetAllAIExpected_Params params {};
-		
+
+		UAIManagementSystem_SetAllAIExpected_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -654,10 +654,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SetAITeleportEnabled");
-		
-		UAIManagementSystem_SetAITeleportEnabled_Params params {};
+
+		UAIManagementSystem_SetAITeleportEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -678,11 +678,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SendVanessaAlert");
-		
-		UAIManagementSystem_SendVanessaAlert_Params params {};
+
+		UAIManagementSystem_SendVanessaAlert_Params params{};
 		params.TypesToAlert = TypesToAlert;
 		params.NumberToAlert = NumberToAlert;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -704,12 +704,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.SendGeneralAlert");
-		
-		UAIManagementSystem_SendGeneralAlert_Params params {};
+
+		UAIManagementSystem_SendGeneralAlert_Params params{};
 		params.AlertLocation = AlertLocation;
 		params.TypesToAlert = TypesToAlert;
 		params.NumberToAlert = NumberToAlert;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -727,9 +727,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RespawnEndos");
-		
-		UAIManagementSystem_RespawnEndos_Params params {};
-		
+
+		UAIManagementSystem_RespawnEndos_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -747,9 +747,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RespawnAnimatronics");
-		
-		UAIManagementSystem_RespawnAnimatronics_Params params {};
-		
+
+		UAIManagementSystem_RespawnAnimatronics_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -767,9 +767,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RespawnAllAI");
-		
-		UAIManagementSystem_RespawnAllAI_Params params {};
-		
+
+		UAIManagementSystem_RespawnAllAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -787,9 +787,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.Reset");
-		
-		UAIManagementSystem_Reset_Params params {};
-		
+
+		UAIManagementSystem_Reset_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -809,10 +809,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RemoveExpectedAI");
-		
-		UAIManagementSystem_RemoveExpectedAI_Params params {};
+
+		UAIManagementSystem_RemoveExpectedAI_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -832,10 +832,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RemoveCharacterByType");
-		
-		UAIManagementSystem_RemoveCharacterByType_Params params {};
+
+		UAIManagementSystem_RemoveCharacterByType_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -853,9 +853,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RemoveAllCharacters");
-		
-		UAIManagementSystem_RemoveAllCharacters_Params params {};
-		
+
+		UAIManagementSystem_RemoveAllCharacters_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -873,9 +873,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RegisterSeekerPath");
-		
-		UAIManagementSystem_RegisterSeekerPath_Params params {};
-		
+
+		UAIManagementSystem_RegisterSeekerPath_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -895,10 +895,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.RegisterAI");
-		
-		UAIManagementSystem_RegisterAI_Params params {};
+
+		UAIManagementSystem_RegisterAI_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -919,11 +919,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.PawnExitedRoom");
-		
-		UAIManagementSystem_PawnExitedRoom_Params params {};
+
+		UAIManagementSystem_PawnExitedRoom_Params params{};
 		params.AIPawn = AIPawn;
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -944,11 +944,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.PawnEnteringRoom");
-		
-		UAIManagementSystem_PawnEnteringRoom_Params params {};
+
+		UAIManagementSystem_PawnEnteringRoom_Params params{};
 		params.AIPawn = AIPawn;
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -969,11 +969,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.PawnEnteredRoom");
-		
-		UAIManagementSystem_PawnEnteredRoom_Params params {};
+
+		UAIManagementSystem_PawnEnteredRoom_Params params{};
 		params.AIPawn = AIPawn;
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -991,9 +991,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.PauseManager");
-		
-		UAIManagementSystem_PauseManager_Params params {};
-		
+
+		UAIManagementSystem_PauseManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1014,11 +1014,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.OnWorldStateChanged");
-		
-		UAIManagementSystem_OnWorldStateChanged_Params params {};
+
+		UAIManagementSystem_OnWorldStateChanged_Params params{};
 		params.NewState = NewState;
 		params.OldState = OldState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1036,9 +1036,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.OnVannyPathsCollected");
-		
-		UAIManagementSystem_OnVannyPathsCollected_Params params {};
-		
+
+		UAIManagementSystem_OnVannyPathsCollected_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1059,11 +1059,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.OnPawnEndPlay");
-		
-		UAIManagementSystem_OnPawnEndPlay_Params params {};
+
+		UAIManagementSystem_OnPawnEndPlay_Params params{};
 		params.DestroyedPawn = DestroyedPawn;
 		params.EndPlayReason = EndPlayReason;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1081,9 +1081,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.OnAlertDistancesCollected");
-		
-		UAIManagementSystem_OnAlertDistancesCollected_Params params {};
-		
+
+		UAIManagementSystem_OnAlertDistancesCollected_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1103,10 +1103,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.OnAIFellOutOfWorld");
-		
-		UAIManagementSystem_OnAIFellOutOfWorld_Params params {};
+
+		UAIManagementSystem_OnAIFellOutOfWorld_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1124,14 +1124,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsWorldSpawnEnabled");
-		
-		UAIManagementSystem_IsWorldSpawnEnabled_Params params {};
-		
+
+		UAIManagementSystem_IsWorldSpawnEnabled_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1146,14 +1146,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsUsingStagedSpawns");
-		
-		UAIManagementSystem_IsUsingStagedSpawns_Params params {};
-		
+
+		UAIManagementSystem_IsUsingStagedSpawns_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1168,14 +1168,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsSpawningEnabled");
-		
-		UAIManagementSystem_IsSpawningEnabled_Params params {};
-		
+
+		UAIManagementSystem_IsSpawningEnabled_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1192,15 +1192,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsRoomOccupied");
-		
-		UAIManagementSystem_IsRoomOccupied_Params params {};
+
+		UAIManagementSystem_IsRoomOccupied_Params params{};
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1217,15 +1217,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsRoomBeingEntered");
-		
-		UAIManagementSystem_IsRoomBeingEntered_Params params {};
+
+		UAIManagementSystem_IsRoomBeingEntered_Params params{};
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1240,14 +1240,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.IsAITeleportEnabled");
-		
-		UAIManagementSystem_IsAITeleportEnabled_Params params {};
-		
+
+		UAIManagementSystem_IsAITeleportEnabled_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1262,14 +1262,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetTimeSinceLastEncounter");
-		
-		UAIManagementSystem_GetTimeSinceLastEncounter_Params params {};
-		
+
+		UAIManagementSystem_GetTimeSinceLastEncounter_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1284,14 +1284,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetRoomDistancesToPlayer");
-		
-		UAIManagementSystem_GetRoomDistancesToPlayer_Params params {};
-		
+
+		UAIManagementSystem_GetRoomDistancesToPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1308,15 +1308,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetRoomAIPawnIsIn");
-		
-		UAIManagementSystem_GetRoomAIPawnIsIn_Params params {};
+
+		UAIManagementSystem_GetRoomAIPawnIsIn_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1333,15 +1333,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetRoomAIPawnIsEntering");
-		
-		UAIManagementSystem_GetRoomAIPawnIsEntering_Params params {};
+
+		UAIManagementSystem_GetRoomAIPawnIsEntering_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1358,15 +1358,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetPawnForType");
-		
-		UAIManagementSystem_GetPawnForType_Params params {};
+
+		UAIManagementSystem_GetPawnForType_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1384,16 +1384,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetPawnClassForType");
-		
-		UAIManagementSystem_GetPawnClassForType_Params params {};
+
+		UAIManagementSystem_GetPawnClassForType_Params params{};
 		params.AIType = AIType;
 		params.bForceShattered = bForceShattered;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1411,11 +1411,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetPathForAI");
-		
-		UAIManagementSystem_GetPathForAI_Params params {};
+
+		UAIManagementSystem_GetPathForAI_Params params{};
 		params.AIType = AIType;
 		params.PathName = PathName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -1433,14 +1433,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetExistingPawnTypes");
-		
-		UAIManagementSystem_GetExistingPawnTypes_Params params {};
-		
+
+		UAIManagementSystem_GetExistingPawnTypes_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1457,15 +1457,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetExistingPawn");
-		
-		UAIManagementSystem_GetExistingPawn_Params params {};
+
+		UAIManagementSystem_GetExistingPawn_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1483,14 +1483,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetCurrentVannyMeterValuesAsPercentage");
-		
-		UAIManagementSystem_GetCurrentVannyMeterValuesAsPercentage_Params params {};
-		
+
+		UAIManagementSystem_GetCurrentVannyMeterValuesAsPercentage_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCurrentValuePercent != nullptr)
 			*OutCurrentValuePercent = params.OutCurrentValuePercent;
 		if (OutSoftMaxPercent != nullptr)
@@ -1512,14 +1512,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetCurrentVannyMeterValues");
-		
-		UAIManagementSystem_GetCurrentVannyMeterValues_Params params {};
-		
+
+		UAIManagementSystem_GetCurrentVannyMeterValues_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (CurrentValue != nullptr)
 			*CurrentValue = params.CurrentValue;
 		if (Max != nullptr)
@@ -1539,14 +1539,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetCurrentVannyMeterPercentage");
-		
-		UAIManagementSystem_GetCurrentVannyMeterPercentage_Params params {};
-		
+
+		UAIManagementSystem_GetCurrentVannyMeterPercentage_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1561,14 +1561,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetCachedDistances");
-		
-		UAIManagementSystem_GetCachedDistances_Params params {};
-		
+
+		UAIManagementSystem_GetCachedDistances_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1587,15 +1587,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetCachedDistanceFor");
-		
-		UAIManagementSystem_GetCachedDistanceFor_Params params {};
+
+		UAIManagementSystem_GetCachedDistanceFor_Params params{};
 		params.Pawn = Pawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutResultValid != nullptr)
 			*bOutResultValid = params.bOutResultValid;
 		if (OutResult != nullptr)
@@ -1615,15 +1615,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllSpawnPointsFor");
-		
-		UAIManagementSystem_GetAllSpawnPointsFor_Params params {};
+
+		UAIManagementSystem_GetAllSpawnPointsFor_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1638,14 +1638,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllSpawnPoints");
-		
-		UAIManagementSystem_GetAllSpawnPoints_Params params {};
-		
+
+		UAIManagementSystem_GetAllSpawnPoints_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1660,14 +1660,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllRegisteredAI");
-		
-		UAIManagementSystem_GetAllRegisteredAI_Params params {};
-		
+
+		UAIManagementSystem_GetAllRegisteredAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1684,14 +1684,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllAnimatronicPawns");
-		
-		UAIManagementSystem_GetAllAnimatronicPawns_Params params {};
-		
+
+		UAIManagementSystem_GetAllAnimatronicPawns_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutAnimatronicPawns != nullptr)
 			*OutAnimatronicPawns = params.OutAnimatronicPawns;
 	}
@@ -1709,15 +1709,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllAIInRoomAtMost");
-		
-		UAIManagementSystem_GetAllAIInRoomAtMost_Params params {};
+
+		UAIManagementSystem_GetAllAIInRoomAtMost_Params params{};
 		params.numRooms = numRooms;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1732,14 +1732,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAllAI");
-		
-		UAIManagementSystem_GetAllAI_Params params {};
-		
+
+		UAIManagementSystem_GetAllAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1754,14 +1754,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAIPawnsWithSightToPlayer");
-		
-		UAIManagementSystem_GetAIPawnsWithSightToPlayer_Params params {};
-		
+
+		UAIManagementSystem_GetAIPawnsWithSightToPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1778,15 +1778,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAIPawnsEnteringRoom");
-		
-		UAIManagementSystem_GetAIPawnsEnteringRoom_Params params {};
+
+		UAIManagementSystem_GetAIPawnsEnteringRoom_Params params{};
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1803,15 +1803,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.GetAIPawnInRoom");
-		
-		UAIManagementSystem_GetAIPawnInRoom_Params params {};
+
+		UAIManagementSystem_GetAIPawnInRoom_Params params{};
 		params.Room = Room;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1828,15 +1828,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindSpawnPointClosestToDistance");
-		
-		UAIManagementSystem_FindSpawnPointClosestToDistance_Params params {};
+
+		UAIManagementSystem_FindSpawnPointClosestToDistance_Params params{};
 		params.Distance = Distance;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1858,18 +1858,18 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindSpawnNotVisibleAtDistance");
-		
-		UAIManagementSystem_FindSpawnNotVisibleAtDistance_Params params {};
+
+		UAIManagementSystem_FindSpawnNotVisibleAtDistance_Params params{};
 		params.Distance = Distance;
 		params.SpawnType = SpawnType;
 		params.PawnForNavProperties = PawnForNavProperties;
 		params.LatentInfo = LatentInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutSpawnPointsResult != nullptr)
 			*OutSpawnPointsResult = params.OutSpawnPointsResult;
 		if (OutDistances != nullptr)
@@ -1890,18 +1890,18 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindRandomPatrolPointOutOfView");
-		
-		UAIManagementSystem_FindRandomPatrolPointOutOfView_Params params {};
+
+		UAIManagementSystem_FindRandomPatrolPointOutOfView_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutLocation != nullptr)
 			*OutLocation = params.OutLocation;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1916,14 +1916,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindFurthestSpawnPoint");
-		
-		UAIManagementSystem_FindFurthestSpawnPoint_Params params {};
-		
+
+		UAIManagementSystem_FindFurthestSpawnPoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1938,14 +1938,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindClosestSpawnPoint");
-		
-		UAIManagementSystem_FindClosestSpawnPoint_Params params {};
-		
+
+		UAIManagementSystem_FindClosestSpawnPoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -1966,16 +1966,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindClosestPatrolPointOutOfView");
-		
-		UAIManagementSystem_FindClosestPatrolPointOutOfView_Params params {};
+
+		UAIManagementSystem_FindClosestPatrolPointOutOfView_Params params{};
 		params.AIPawn = AIPawn;
 		params.LatentActionInfo = LatentActionInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutResultValid != nullptr)
 			*bOutResultValid = params.bOutResultValid;
 		if (OutLocation != nullptr)
@@ -2001,16 +2001,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.FindClosestPathPointForAI");
-		
-		UAIManagementSystem_FindClosestPathPointForAI_Params params {};
+
+		UAIManagementSystem_FindClosestPathPointForAI_Params params{};
 		params.AIPawn = AIPawn;
 		params.LatentInfo = LatentInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutResultValid != nullptr)
 			*OutResultValid = params.OutResultValid;
 		if (OutPointIndex != nullptr)
@@ -2032,10 +2032,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.ExitedHiding");
-		
-		UAIManagementSystem_ExitedHiding_Params params {};
+
+		UAIManagementSystem_ExitedHiding_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2053,9 +2053,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.DestroyAllAINotVisible");
-		
-		UAIManagementSystem_DestroyAllAINotVisible_Params params {};
-		
+
+		UAIManagementSystem_DestroyAllAINotVisible_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2075,10 +2075,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.DestroyAllAIInRoomsAtleast");
-		
-		UAIManagementSystem_DestroyAllAIInRoomsAtleast_Params params {};
+
+		UAIManagementSystem_DestroyAllAIInRoomsAtleast_Params params{};
 		params.RoomDist = RoomDist;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2096,9 +2096,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.DestroyAllAI");
-		
-		UAIManagementSystem_DestroyAllAI_Params params {};
-		
+
+		UAIManagementSystem_DestroyAllAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2116,9 +2116,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.ClearExpectedAI");
-		
-		UAIManagementSystem_ClearExpectedAI_Params params {};
-		
+
+		UAIManagementSystem_ClearExpectedAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2141,15 +2141,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.CalculateAllAIDistances");
-		
-		UAIManagementSystem_CalculateAllAIDistances_Params params {};
+
+		UAIManagementSystem_CalculateAllAIDistances_Params params{};
 		params.LatentInfo = LatentInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (DistanceResults != nullptr)
 			*DistanceResults = params.DistanceResults;
 		if (bOutClosestIsValid != nullptr)
@@ -2172,11 +2172,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.ApplySound");
-		
-		UAIManagementSystem_ApplySound_Params params {};
+
+		UAIManagementSystem_ApplySound_Params params{};
 		params.Strength = Strength;
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2196,10 +2196,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.ApplyCollect");
-		
-		UAIManagementSystem_ApplyCollect_Params params {};
+
+		UAIManagementSystem_ApplyCollect_Params params{};
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2217,14 +2217,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.AnyPawnInPlayerRoom");
-		
-		UAIManagementSystem_AnyPawnInPlayerRoom_Params params {};
-		
+
+		UAIManagementSystem_AnyPawnInPlayerRoom_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2241,10 +2241,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.AISpottedPlayer");
-		
-		UAIManagementSystem_AISpottedPlayer_Params params {};
+
+		UAIManagementSystem_AISpottedPlayer_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2264,10 +2264,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.AILostSightOfPlayer");
-		
-		UAIManagementSystem_AILostSightOfPlayer_Params params {};
+
+		UAIManagementSystem_AILostSightOfPlayer_Params params{};
 		params.AIPawn = AIPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2287,10 +2287,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.AdjustVannyMeter");
-		
-		UAIManagementSystem_AdjustVannyMeter_Params params {};
+
+		UAIManagementSystem_AdjustVannyMeter_Params params{};
 		params.Amount = Amount;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2310,10 +2310,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AIManagementSystem.AddExpectedAI");
-		
-		UAIManagementSystem_AddExpectedAI_Params params {};
+
+		UAIManagementSystem_AddExpectedAI_Params params{};
 		params.AIType = AIType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2348,11 +2348,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.SetPointType");
-		
-		UPathPointProvider_SetPointType_Params params {};
+
+		UPathPointProvider_SetPointType_Params params{};
 		params.PointIndex = PointIndex;
 		params.PointType = PointType;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -2372,11 +2372,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.SetPointLocation");
-		
-		UPathPointProvider_SetPointLocation_Params params {};
+
+		UPathPointProvider_SetPointLocation_Params params{};
 		params.PointIndex = PointIndex;
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -2396,11 +2396,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.RemovePointConnection");
-		
-		UPathPointProvider_RemovePointConnection_Params params {};
+
+		UPathPointProvider_RemovePointConnection_Params params{};
 		params.PointIndex = PointIndex;
 		params.PointToDisconnectIndex = PointToDisconnectIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -2419,10 +2419,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.RemovePoint");
-		
-		UPathPointProvider_RemovePoint_Params params {};
+
+		UPathPointProvider_RemovePoint_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -2441,14 +2441,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetPointType");
-		
-		UPathPointProvider_GetPointType_Params params {};
+
+		UPathPointProvider_GetPointType_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2465,14 +2465,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetPointsConnectedTo");
-		
-		UPathPointProvider_GetPointsConnectedTo_Params params {};
+
+		UPathPointProvider_GetPointsConnectedTo_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2489,14 +2489,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetPointLocation");
-		
-		UPathPointProvider_GetPointLocation_Params params {};
+
+		UPathPointProvider_GetPointLocation_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2513,14 +2513,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetPointColor");
-		
-		UPathPointProvider_GetPointColor_Params params {};
+
+		UPathPointProvider_GetPointColor_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2535,13 +2535,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetNumberOfPathPoints");
-		
-		UPathPointProvider_GetNumberOfPathPoints_Params params {};
-		
+
+		UPathPointProvider_GetNumberOfPathPoints_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2556,13 +2556,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.GetAvailablePointTypes");
-		
-		UPathPointProvider_GetAvailablePointTypes_Params params {};
-		
+
+		UPathPointProvider_GetAvailablePointTypes_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2580,11 +2580,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.AddPointConnection");
-		
-		UPathPointProvider_AddPointConnection_Params params {};
+
+		UPathPointProvider_AddPointConnection_Params params{};
 		params.PointIndex = PointIndex;
 		params.PointToConnectIndex = PointToConnectIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -2603,14 +2603,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PathPointProvider.AddPoint");
-		
-		UPathPointProvider_AddPoint_Params params {};
+
+		UPathPointProvider_AddPoint_Params params{};
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2669,10 +2669,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.SetTriggerActive");
-		
-		APlayerTrigger_SetTriggerActive_Params params {};
+
+		APlayerTrigger_SetTriggerActive_Params params{};
 		params.bActive = bActive;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2690,9 +2690,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.SaveActivated");
-		
-		APlayerTrigger_SaveActivated_Params params {};
-		
+
+		APlayerTrigger_SaveActivated_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2713,11 +2713,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.OnWorldObjectStateChanged");
-		
-		APlayerTrigger_OnWorldObjectStateChanged_Params params {};
+
+		APlayerTrigger_OnWorldObjectStateChanged_Params params{};
 		params.ObjectName = ObjectName;
 		params.ObjectState = ObjectState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2735,9 +2735,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.OnTriggerStay");
-		
-		APlayerTrigger_OnTriggerStay_Params params {};
-		
+
+		APlayerTrigger_OnTriggerStay_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2755,9 +2755,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.OnTriggered");
-		
-		APlayerTrigger_OnTriggered_Params params {};
-		
+
+		APlayerTrigger_OnTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2775,14 +2775,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.IsTriggerStateSet");
-		
-		APlayerTrigger_IsTriggerStateSet_Params params {};
-		
+
+		APlayerTrigger_IsTriggerStateSet_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2797,14 +2797,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.IsTriggerActive");
-		
-		APlayerTrigger_IsTriggerActive_Params params {};
-		
+
+		APlayerTrigger_IsTriggerActive_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2819,9 +2819,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.ForceTrigger");
-		
-		APlayerTrigger_ForceTrigger_Params params {};
-		
+
+		APlayerTrigger_ForceTrigger_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2839,14 +2839,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PlayerTrigger.CanTrigger");
-		
-		APlayerTrigger_CanTrigger_Params params {};
-		
+
+		APlayerTrigger_CanTrigger_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -2877,10 +2877,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AISpawnTrigger.OnAISpawnedFailure");
-		
-		AAISpawnTrigger_OnAISpawnedFailure_Params params {};
+
+		AAISpawnTrigger_OnAISpawnedFailure_Params params{};
 		params.SpawnedPawn = SpawnedPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2900,10 +2900,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.AISpawnTrigger.OnAISpawned");
-		
-		AAISpawnTrigger_OnAISpawned_Params params {};
+
+		AAISpawnTrigger_OnAISpawned_Params params{};
 		params.SpawnedPawn = SpawnedPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -2969,22 +2969,22 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.CameraHelperFunctions.IsLocationInCameraView");
-		
-		UCameraHelperFunctions_IsLocationInCameraView_Params params {};
+
+		UCameraHelperFunctions_IsLocationInCameraView_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.Location = Location;
 		params.CameraAngles = CameraAngles;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutHorizontalAngle != nullptr)
 			*OutHorizontalAngle = params.OutHorizontalAngle;
 		if (OutVerticalAngle != nullptr)
 			*OutVerticalAngle = params.OutVerticalAngle;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3004,16 +3004,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.CameraHelperFunctions.GetLocationAnglesFromCamera");
-		
-		UCameraHelperFunctions_GetLocationAnglesFromCamera_Params params {};
+
+		UCameraHelperFunctions_GetLocationAnglesFromCamera_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutHorizontalAngle != nullptr)
 			*OutHorizontalAngle = params.OutHorizontalAngle;
 		if (OutVerticalAngle != nullptr)
@@ -3045,14 +3045,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.CameraTrigger.GetAlertType");
-		
-		UCameraTrigger_GetAlertType_Params params {};
-		
+
+		UCameraTrigger_GetAlertType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3081,9 +3081,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionalCheckComponent.OnConditionUpdated");
-		
-		UConditionalCheckComponent_OnConditionUpdated_Params params {};
-		
+
+		UConditionalCheckComponent_OnConditionUpdated_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3117,10 +3117,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionCheckInterface.UnbindConditionUpdatedDelegate");
-		
-		UConditionCheckInterface_UnbindConditionUpdatedDelegate_Params params {};
+
+		UConditionCheckInterface_UnbindConditionUpdatedDelegate_Params params{};
 		params.OnConditionResultUpdated = OnConditionResultUpdated;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3138,14 +3138,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionCheckInterface.ConditionsMet");
-		
-		UConditionCheckInterface_ConditionsMet_Params params {};
-		
+
+		UConditionCheckInterface_ConditionsMet_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3162,10 +3162,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionCheckInterface.BindConditionUpdatedDelegate");
-		
-		UConditionCheckInterface_BindConditionUpdatedDelegate_Params params {};
+
+		UConditionCheckInterface_BindConditionUpdatedDelegate_Params params{};
 		params.OnConditionResultUpdated = OnConditionResultUpdated;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3200,15 +3200,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.RemoveConditionDelegate");
-		
-		UConditionFunctionLibrary_RemoveConditionDelegate_Params params {};
+
+		UConditionFunctionLibrary_RemoveConditionDelegate_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (DelegateHandle != nullptr)
 			*DelegateHandle = params.DelegateHandle;
 	}
@@ -3227,15 +3227,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.HasMetComponentConditionsWithGet");
-		
-		UConditionFunctionLibrary_HasMetComponentConditionsWithGet_Params params {};
+
+		UConditionFunctionLibrary_HasMetComponentConditionsWithGet_Params params{};
 		params.ActorToCheck = ActorToCheck;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutConditionsMet != nullptr)
 			*bOutConditionsMet = params.bOutConditionsMet;
 	}
@@ -3253,15 +3253,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.HasMetComponentConditions");
-		
-		UConditionFunctionLibrary_HasMetComponentConditions_Params params {};
+
+		UConditionFunctionLibrary_HasMetComponentConditions_Params params{};
 		params.ActorToCheck = ActorToCheck;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3278,15 +3278,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.HasMetAnyComponentConditions");
-		
-		UConditionFunctionLibrary_HasMetAnyComponentConditions_Params params {};
+
+		UConditionFunctionLibrary_HasMetAnyComponentConditions_Params params{};
 		params.ActorToCheck = ActorToCheck;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3303,10 +3303,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.CallConditionUpdate");
-		
-		UConditionFunctionLibrary_CallConditionUpdate_Params params {};
+
+		UConditionFunctionLibrary_CallConditionUpdate_Params params{};
 		params.DelegateHandle = DelegateHandle;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3327,15 +3327,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ConditionFunctionLibrary.AddConditionDelegate");
-		
-		UConditionFunctionLibrary_AddConditionDelegate_Params params {};
+
+		UConditionFunctionLibrary_AddConditionDelegate_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (DelegateHandle != nullptr)
 			*DelegateHandle = params.DelegateHandle;
 	}
@@ -3367,10 +3367,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetSecurityLevel");
-		
-		UDoorComponent_SetSecurityLevel_Params params {};
+
+		UDoorComponent_SetSecurityLevel_Params params{};
 		params.NewSecurityLevel = NewSecurityLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3390,10 +3390,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetPlayerBlocker");
-		
-		UDoorComponent_SetPlayerBlocker_Params params {};
+
+		UDoorComponent_SetPlayerBlocker_Params params{};
 		params.InPlayerBlocker = InPlayerBlocker;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3413,10 +3413,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetLockedForPlayer");
-		
-		UDoorComponent_SetLockedForPlayer_Params params {};
+
+		UDoorComponent_SetLockedForPlayer_Params params{};
 		params.bLocked = bLocked;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3436,10 +3436,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetLockedForAI");
-		
-		UDoorComponent_SetLockedForAI_Params params {};
+
+		UDoorComponent_SetLockedForAI_Params params{};
 		params.bLocked = bLocked;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3459,10 +3459,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetAutomaticDoorEnableForPlayer");
-		
-		UDoorComponent_SetAutomaticDoorEnableForPlayer_Params params {};
+
+		UDoorComponent_SetAutomaticDoorEnableForPlayer_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3482,10 +3482,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.SetAutomaticDoorEnableForAI");
-		
-		UDoorComponent_SetAutomaticDoorEnableForAI_Params params {};
+
+		UDoorComponent_SetAutomaticDoorEnableForAI_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3505,10 +3505,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.PawnExitedDoor");
-		
-		UDoorComponent_PawnExitedDoor_Params params {};
+
+		UDoorComponent_PawnExitedDoor_Params params{};
 		params.Pawn = Pawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3528,10 +3528,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.PawnEnteredDoor");
-		
-		UDoorComponent_PawnEnteredDoor_Params params {};
+
+		UDoorComponent_PawnEnteredDoor_Params params{};
 		params.Pawn = Pawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3549,14 +3549,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.IsLockedForPlayer");
-		
-		UDoorComponent_IsLockedForPlayer_Params params {};
-		
+
+		UDoorComponent_IsLockedForPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3571,14 +3571,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.IsLockedForAI");
-		
-		UDoorComponent_IsLockedForAI_Params params {};
-		
+
+		UDoorComponent_IsLockedForAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3597,15 +3597,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.HasMetConditions");
-		
-		UDoorComponent_HasMetConditions_Params params {};
+
+		UDoorComponent_HasMetConditions_Params params{};
 		params.BasePlayerCharacter = BasePlayerCharacter;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bConditionsMet != nullptr)
 			*bConditionsMet = params.bConditionsMet;
 		if (FailReason != nullptr)
@@ -3623,14 +3623,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.HasDoorInitialized");
-		
-		UDoorComponent_HasDoorInitialized_Params params {};
-		
+
+		UDoorComponent_HasDoorInitialized_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3645,14 +3645,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetPawnsInDoor");
-		
-		UDoorComponent_GetPawnsInDoor_Params params {};
-		
+
+		UDoorComponent_GetPawnsInDoor_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3667,14 +3667,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetIsAutomaticDoorEnabledForPlayer");
-		
-		UDoorComponent_GetIsAutomaticDoorEnabledForPlayer_Params params {};
-		
+
+		UDoorComponent_GetIsAutomaticDoorEnabledForPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3689,14 +3689,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetIsAutomaticDoorEnabledForAI");
-		
-		UDoorComponent_GetIsAutomaticDoorEnabledForAI_Params params {};
-		
+
+		UDoorComponent_GetIsAutomaticDoorEnabledForAI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3713,15 +3713,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetDoorSideFromLocation");
-		
-		UDoorComponent_GetDoorSideFromLocation_Params params {};
+
+		UDoorComponent_GetDoorSideFromLocation_Params params{};
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3738,15 +3738,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetDoorSideFromActor");
-		
-		UDoorComponent_GetDoorSideFromActor_Params params {};
+
+		UDoorComponent_GetDoorSideFromActor_Params params{};
 		params.Actor = Actor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3761,14 +3761,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.GetCurrentRequirements");
-		
-		UDoorComponent_GetCurrentRequirements_Params params {};
-		
+
+		UDoorComponent_GetCurrentRequirements_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3783,9 +3783,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.ForceOpen");
-		
-		UDoorComponent_ForceOpen_Params params {};
-		
+
+		UDoorComponent_ForceOpen_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3803,9 +3803,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.ForceClose");
-		
-		UDoorComponent_ForceClose_Params params {};
-		
+
+		UDoorComponent_ForceClose_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3825,10 +3825,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.CopyConditions");
-		
-		UDoorComponent_CopyConditions_Params params {};
+
+		UDoorComponent_CopyConditions_Params params{};
 		params.OtherDoorComponent = OtherDoorComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3850,15 +3850,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorComponent.CanPawnOpenDoor");
-		
-		UDoorComponent_CanPawnOpenDoor_Params params {};
+
+		UDoorComponent_CanPawnOpenDoor_Params params{};
 		params.Pawn = Pawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutConditionsMet != nullptr)
 			*bOutConditionsMet = params.bOutConditionsMet;
 		if (OutFailReason != nullptr)
@@ -3894,12 +3894,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorInteractor.OnOverlappedDoor");
-		
-		UDoorInteractor_OnOverlappedDoor_Params params {};
+
+		UDoorInteractor_OnOverlappedDoor_Params params{};
 		params.bCanEnterDoor = bCanEnterDoor;
 		params.CantEnterReason = CantEnterReason;
 		params.DoorComponent = DoorComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3917,9 +3917,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorInteractor.OnEndOverlapDoor");
-		
-		UDoorInteractor_OnEndOverlapDoor_Params params {};
-		
+
+		UDoorInteractor_OnEndOverlapDoor_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -3939,15 +3939,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.DoorInteractor.DoorEntryNotAllowed");
-		
-		UDoorInteractor_DoorEntryNotAllowed_Params params {};
+
+		UDoorInteractor_DoorEntryNotAllowed_Params params{};
 		params.DoorComponent = DoorComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -3990,9 +3990,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.ToggleFullAIDisplay");
-		
-		Afnaf9GameModeBase_ToggleFullAIDisplay_Params params {};
-		
+
+		Afnaf9GameModeBase_ToggleFullAIDisplay_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4010,9 +4010,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.StartRepairGame");
-		
-		Afnaf9GameModeBase_StartRepairGame_Params params {};
-		
+
+		Afnaf9GameModeBase_StartRepairGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4032,10 +4032,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.SetAIDisplay");
-		
-		Afnaf9GameModeBase_SetAIDisplay_Params params {};
+
+		Afnaf9GameModeBase_SetAIDisplay_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4055,10 +4055,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.RoomHeatDisplay");
-		
-		Afnaf9GameModeBase_RoomHeatDisplay_Params params {};
+
+		Afnaf9GameModeBase_RoomHeatDisplay_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4078,10 +4078,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.POIVisible");
-		
-		Afnaf9GameModeBase_POIVisible_Params params {};
+
+		Afnaf9GameModeBase_POIVisible_Params params{};
 		params.bVisible = bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4101,10 +4101,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.POIDetectionVisible");
-		
-		Afnaf9GameModeBase_POIDetectionVisible_Params params {};
+
+		Afnaf9GameModeBase_POIDetectionVisible_Params params{};
 		params.bVisible = bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4124,10 +4124,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.PlayerFlashlightVis");
-		
-		Afnaf9GameModeBase_PlayerFlashlightVis_Params params {};
+
+		Afnaf9GameModeBase_PlayerFlashlightVis_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4147,10 +4147,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.OnRoomHeatDisplayChanged");
-		
-		Afnaf9GameModeBase_OnRoomHeatDisplayChanged_Params params {};
+
+		Afnaf9GameModeBase_OnRoomHeatDisplayChanged_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4169,10 +4169,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.OnPlayerFlashlightVis");
-		
-		Afnaf9GameModeBase_OnPlayerFlashlightVis_Params params {};
+
+		Afnaf9GameModeBase_OnPlayerFlashlightVis_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4189,9 +4189,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.OnForceSpawnVanny");
-		
-		Afnaf9GameModeBase_OnForceSpawnVanny_Params params {};
-		
+
+		Afnaf9GameModeBase_OnForceSpawnVanny_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4210,10 +4210,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.OnAIPawnsVis");
-		
-		Afnaf9GameModeBase_OnAIPawnsVis_Params params {};
+
+		Afnaf9GameModeBase_OnAIPawnsVis_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4230,14 +4230,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.IsAIDisplayOn");
-		
-		Afnaf9GameModeBase_IsAIDisplayOn_Params params {};
-		
+
+		Afnaf9GameModeBase_IsAIDisplayOn_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4252,9 +4252,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.ForceSpawnVanny");
-		
-		Afnaf9GameModeBase_ForceSpawnVanny_Params params {};
-		
+
+		Afnaf9GameModeBase_ForceSpawnVanny_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4272,9 +4272,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.FinishRepairGame");
-		
-		Afnaf9GameModeBase_FinishRepairGame_Params params {};
-		
+
+		Afnaf9GameModeBase_FinishRepairGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4294,10 +4294,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.fnaf9GameModeBase.AIPawnsVis");
-		
-		Afnaf9GameModeBase_AIPawnsVis_Params params {};
+
+		Afnaf9GameModeBase_AIPawnsVis_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4329,14 +4329,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFAchievementUtils.GetAllAchievements");
-		
-		UFNAFAchievementUtils_GetAllAchievements_Params params {};
-		
+
+		UFNAFAchievementUtils_GetAllAchievements_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4365,14 +4365,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFAISpawnPoint.GetAIType");
-		
-		AFNAFAISpawnPoint_GetAIType_Params params {};
-		
+
+		AFNAFAISpawnPoint_GetAIType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4401,9 +4401,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBaseCharacter.OnFellOutOfWorld");
-		
-		AFNAFBaseCharacter_OnFellOutOfWorld_Params params {};
-		
+
+		AFNAFBaseCharacter_OnFellOutOfWorld_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4452,11 +4452,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerCharacter.TeleportPlayerWithCameraLocation");
-		
-		AFNAFBasePlayerCharacter_TeleportPlayerWithCameraLocation_Params params {};
+
+		AFNAFBasePlayerCharacter_TeleportPlayerWithCameraLocation_Params params{};
 		params.CameraWorldLocation = CameraWorldLocation;
 		params.Yaw = Yaw;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4477,11 +4477,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerCharacter.TeleportPlayer");
-		
-		AFNAFBasePlayerCharacter_TeleportPlayer_Params params {};
+
+		AFNAFBasePlayerCharacter_TeleportPlayer_Params params{};
 		params.WorldLocation = WorldLocation;
 		params.Yaw = Yaw;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4499,9 +4499,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerCharacter.OnKillZLevelsLoaded");
-		
-		AFNAFBasePlayerCharacter_OnKillZLevelsLoaded_Params params {};
-		
+
+		AFNAFBasePlayerCharacter_OnKillZLevelsLoaded_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4519,14 +4519,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerCharacter.GetPlayerPawnType");
-		
-		AFNAFBasePlayerCharacter_GetPlayerPawnType_Params params {};
-		
+
+		AFNAFBasePlayerCharacter_GetPlayerPawnType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4544,14 +4544,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerCharacter.GetLastSavedLocationAndRotation");
-		
-		AFNAFBasePlayerCharacter_GetLastSavedLocationAndRotation_Params params {};
-		
+
+		AFNAFBasePlayerCharacter_GetLastSavedLocationAndRotation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (LastSavedLocation != nullptr)
 			*LastSavedLocation = params.LastSavedLocation;
 		if (LastSavedRotation != nullptr)
@@ -4583,9 +4583,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnUsingGamepadChanged");
-		
-		AFNAFBasePlayerController_OnUsingGamepadChanged_Params params {};
-		
+
+		AFNAFBasePlayerController_OnUsingGamepadChanged_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4603,9 +4603,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnTriggerVannyScare");
-		
-		AFNAFBasePlayerController_OnTriggerVannyScare_Params params {};
-		
+
+		AFNAFBasePlayerController_OnTriggerVannyScare_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4622,9 +4622,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnToggleLocalizationQA");
-		
-		AFNAFBasePlayerController_OnToggleLocalizationQA_Params params {};
-		
+
+		AFNAFBasePlayerController_OnToggleLocalizationQA_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4641,9 +4641,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnToggleFlightMode");
-		
-		AFNAFBasePlayerController_OnToggleFlightMode_Params params {};
-		
+
+		AFNAFBasePlayerController_OnToggleFlightMode_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4660,9 +4660,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnToggleDevUI");
-		
-		AFNAFBasePlayerController_OnToggleDevUI_Params params {};
-		
+
+		AFNAFBasePlayerController_OnToggleDevUI_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4679,9 +4679,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnToggleCinemaMode");
-		
-		AFNAFBasePlayerController_OnToggleCinemaMode_Params params {};
-		
+
+		AFNAFBasePlayerController_OnToggleCinemaMode_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4698,9 +4698,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.OnDebugSequenceEntered");
-		
-		AFNAFBasePlayerController_OnDebugSequenceEntered_Params params {};
-		
+
+		AFNAFBasePlayerController_OnDebugSequenceEntered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4717,14 +4717,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.IsUsingGamepad");
-		
-		AFNAFBasePlayerController_IsUsingGamepad_Params params {};
-		
+
+		AFNAFBasePlayerController_IsUsingGamepad_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4739,9 +4739,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.GiveVIPAchievement");
-		
-		AFNAFBasePlayerController_GiveVIPAchievement_Params params {};
-		
+
+		AFNAFBasePlayerController_GiveVIPAchievement_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -4758,14 +4758,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.GetCurrentKeysDown");
-		
-		AFNAFBasePlayerController_GetCurrentKeysDown_Params params {};
-		
+
+		AFNAFBasePlayerController_GetCurrentKeysDown_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4782,15 +4782,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFBasePlayerController.AnyOtherKeysDown");
-		
-		AFNAFBasePlayerController_AnyOtherKeysDown_Params params {};
+
+		AFNAFBasePlayerController_AnyOtherKeysDown_Params params{};
 		params.Key = Key;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4821,10 +4821,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFCheatManager.UpgradeFreddy");
-		
-		UFNAFCheatManager_UpgradeFreddy_Params params {};
+
+		UFNAFCheatManager_UpgradeFreddy_Params params{};
 		params.Type = Type;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4842,9 +4842,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFCheatManager.ToggleDebugCloaking");
-		
-		UFNAFCheatManager_ToggleDebugCloaking_Params params {};
-		
+
+		UFNAFCheatManager_ToggleDebugCloaking_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4864,10 +4864,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFCheatManager.SetDebugCloaking");
-		
-		UFNAFCheatManager_SetDebugCloaking_Params params {};
+
+		UFNAFCheatManager_SetDebugCloaking_Params params{};
 		params.Value = Value;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4885,14 +4885,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFCheatManager.GetDebugCloaking");
-		
-		UFNAFCheatManager_GetDebugCloaking_Params params {};
-		
+
+		UFNAFCheatManager_GetDebugCloaking_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4910,11 +4910,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFCheatManager.ApplyQualitySettings");
-		
-		UFNAFCheatManager_ApplyQualitySettings_Params params {};
+
+		UFNAFCheatManager_ApplyQualitySettings_Params params{};
 		params.VisualQualityLevel = VisualQualityLevel;
 		params.RayTraceQualityLevel = RayTraceQualityLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4946,9 +4946,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventObject.TriggerEvent");
-		
-		UFNAFEventObject_TriggerEvent_Params params {};
-		
+
+		UFNAFEventObject_TriggerEvent_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -4966,14 +4966,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventObject.IsEventFinished");
-		
-		UFNAFEventObject_IsEventFinished_Params params {};
-		
+
+		UFNAFEventObject_IsEventFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -4988,14 +4988,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventObject.CanPlayEvent");
-		
-		UFNAFEventObject_CanPlayEvent_Params params {};
-		
+
+		UFNAFEventObject_CanPlayEvent_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5024,9 +5024,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.UnpauseEventSystem");
-		
-		UFNAFEventSystem_UnpauseEventSystem_Params params {};
-		
+
+		UFNAFEventSystem_UnpauseEventSystem_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5046,10 +5046,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.StoreEventTriggered");
-		
-		UFNAFEventSystem_StoreEventTriggered_Params params {};
+
+		UFNAFEventSystem_StoreEventTriggered_Params params{};
 		params.EventTag = EventTag;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5067,9 +5067,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.StopEventTimer");
-		
-		UFNAFEventSystem_StopEventTimer_Params params {};
-		
+
+		UFNAFEventSystem_StopEventTimer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5087,9 +5087,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.StartEventTimer");
-		
-		UFNAFEventSystem_StartEventTimer_Params params {};
-		
+
+		UFNAFEventSystem_StartEventTimer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5110,11 +5110,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.SetEventTimeSeconds");
-		
-		UFNAFEventSystem_SetEventTimeSeconds_Params params {};
+
+		UFNAFEventSystem_SetEventTimeSeconds_Params params{};
 		params.MinTimeBetweenEvents = MinTimeBetweenEvents;
 		params.MaxTimeBetweenEvents = MaxTimeBetweenEvents;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5134,10 +5134,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.SetEventActorWeight");
-		
-		UFNAFEventSystem_SetEventActorWeight_Params params {};
+
+		UFNAFEventSystem_SetEventActorWeight_Params params{};
 		params.NewWeight = NewWeight;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5157,10 +5157,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.SetCurrentAudioComponent");
-		
-		UFNAFEventSystem_SetCurrentAudioComponent_Params params {};
+
+		UFNAFEventSystem_SetCurrentAudioComponent_Params params{};
 		params.EventSoundCue = EventSoundCue;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5178,9 +5178,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.PauseEventSystem");
-		
-		UFNAFEventSystem_PauseEventSystem_Params params {};
-		
+
+		UFNAFEventSystem_PauseEventSystem_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5198,9 +5198,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.OnAudioFinished");
-		
-		UFNAFEventSystem_OnAudioFinished_Params params {};
-		
+
+		UFNAFEventSystem_OnAudioFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5220,15 +5220,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFEventSystem.HasEventBeenTriggered");
-		
-		UFNAFEventSystem_HasEventBeenTriggered_Params params {};
+
+		UFNAFEventSystem_HasEventBeenTriggered_Params params{};
 		params.EventTag = EventTag;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5259,10 +5259,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.StartGamePlay");
-		
-		UFNAFGameInstanceBase_StartGamePlay_Params params {};
+
+		UFNAFGameInstanceBase_StartGamePlay_Params params{};
 		params.GameType = GameType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5282,10 +5282,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.SetVisualQualityLevel");
-		
-		UFNAFGameInstanceBase_SetVisualQualityLevel_Params params {};
+
+		UFNAFGameInstanceBase_SetVisualQualityLevel_Params params{};
 		params.Level = Level;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5305,10 +5305,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.SetSplashFinished");
-		
-		UFNAFGameInstanceBase_SetSplashFinished_Params params {};
+
+		UFNAFGameInstanceBase_SetSplashFinished_Params params{};
 		params.bFinished = bFinished;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5328,10 +5328,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.SetRayTraceQualityLevel");
-		
-		UFNAFGameInstanceBase_SetRayTraceQualityLevel_Params params {};
+
+		UFNAFGameInstanceBase_SetRayTraceQualityLevel_Params params{};
 		params.Level = Level;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5349,9 +5349,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.ProcessActivityIntent");
-		
-		UFNAFGameInstanceBase_ProcessActivityIntent_Params params {};
-		
+
+		UFNAFGameInstanceBase_ProcessActivityIntent_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5369,9 +5369,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.OnGameActivityLoadComplete");
-		
-		UFNAFGameInstanceBase_OnGameActivityLoadComplete_Params params {};
-		
+
+		UFNAFGameInstanceBase_OnGameActivityLoadComplete_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5389,9 +5389,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.OnApplicationReactivated");
-		
-		UFNAFGameInstanceBase_OnApplicationReactivated_Params params {};
-		
+
+		UFNAFGameInstanceBase_OnApplicationReactivated_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5409,9 +5409,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.OnApplicationDeactivated");
-		
-		UFNAFGameInstanceBase_OnApplicationDeactivated_Params params {};
-		
+
+		UFNAFGameInstanceBase_OnApplicationDeactivated_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5429,9 +5429,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.LogGameClockDelegates");
-		
-		UFNAFGameInstanceBase_LogGameClockDelegates_Params params {};
-		
+
+		UFNAFGameInstanceBase_LogGameClockDelegates_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5449,14 +5449,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.IsNormalPlay");
-		
-		UFNAFGameInstanceBase_IsNormalPlay_Params params {};
-		
+
+		UFNAFGameInstanceBase_IsNormalPlay_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5471,14 +5471,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.IsLoadingActivity");
-		
-		UFNAFGameInstanceBase_IsLoadingActivity_Params params {};
-		
+
+		UFNAFGameInstanceBase_IsLoadingActivity_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5493,14 +5493,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.IsFromTitle");
-		
-		UFNAFGameInstanceBase_IsFromTitle_Params params {};
-		
+
+		UFNAFGameInstanceBase_IsFromTitle_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5515,14 +5515,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.HasSplashFinished");
-		
-		UFNAFGameInstanceBase_HasSplashFinished_Params params {};
-		
+
+		UFNAFGameInstanceBase_HasSplashFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5537,14 +5537,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetVisualQualityLevel");
-		
-		UFNAFGameInstanceBase_GetVisualQualityLevel_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetVisualQualityLevel_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5559,14 +5559,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetRayTraceQualityLevel");
-		
-		UFNAFGameInstanceBase_GetRayTraceQualityLevel_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetRayTraceQualityLevel_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5581,14 +5581,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetIsShippingConfig");
-		
-		UFNAFGameInstanceBase_GetIsShippingConfig_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetIsShippingConfig_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5603,14 +5603,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetGPUBenchmarkResult");
-		
-		UFNAFGameInstanceBase_GetGPUBenchmarkResult_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetGPUBenchmarkResult_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5625,14 +5625,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetCurrentGameType");
-		
-		UFNAFGameInstanceBase_GetCurrentGameType_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetCurrentGameType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5647,14 +5647,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetCPUBenchmarkResult");
-		
-		UFNAFGameInstanceBase_GetCPUBenchmarkResult_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetCPUBenchmarkResult_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5669,14 +5669,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFGameInstanceBase.GetAllLoadedLevelsString");
-		
-		UFNAFGameInstanceBase_GetAllLoadedLevelsString_Params params {};
-		
+
+		UFNAFGameInstanceBase_GetAllLoadedLevelsString_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5733,14 +5733,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInputDeviceSystem.GetCurrentInputDevice");
-		
-		UFNAFInputDeviceSystem_GetCurrentInputDevice_Params params {};
-		
+
+		UFNAFInputDeviceSystem_GetCurrentInputDevice_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5783,14 +5783,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.UsePartyPass");
-		
-		UFNAFInventorySystem_UsePartyPass_Params params {};
-		
+
+		UFNAFInventorySystem_UsePartyPass_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -5807,14 +5807,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.UseFlash");
-		
-		UFNAFInventorySystem_UseFlash_Params params {};
-		
+
+		UFNAFInventorySystem_UseFlash_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (bOutFlashUsed != nullptr)
 			*bOutFlashUsed = params.bOutFlashUsed;
 	}
@@ -5830,9 +5830,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetupNewGame");
-		
-		UFNAFInventorySystem_SetupNewGame_Params params {};
-		
+
+		UFNAFInventorySystem_SetupNewGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5852,10 +5852,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetSecurityLevel");
-		
-		UFNAFInventorySystem_SetSecurityLevel_Params params {};
+
+		UFNAFInventorySystem_SetSecurityLevel_Params params{};
 		params.NewSecurityLevel = NewSecurityLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5875,10 +5875,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetPowerLevel_Freddy");
-		
-		UFNAFInventorySystem_SetPowerLevel_Freddy_Params params {};
+
+		UFNAFInventorySystem_SetPowerLevel_Freddy_Params params{};
 		params.InPowerLevel = InPowerLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5898,10 +5898,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetPowerLevel_Fazwatch");
-		
-		UFNAFInventorySystem_SetPowerLevel_Fazwatch_Params params {};
+
+		UFNAFInventorySystem_SetPowerLevel_Fazwatch_Params params{};
 		params.InPowerLevel = InPowerLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5921,10 +5921,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetPartyLevel");
-		
-		UFNAFInventorySystem_SetPartyLevel_Params params {};
+
+		UFNAFInventorySystem_SetPartyLevel_Params params{};
 		params.NewPartyLevel = NewPartyLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5944,10 +5944,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetMessageViewed");
-		
-		UFNAFInventorySystem_SetMessageViewed_Params params {};
+
+		UFNAFInventorySystem_SetMessageViewed_Params params{};
 		params.Message = Message;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5967,10 +5967,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetMaxPowerLevel_Freddy");
-		
-		UFNAFInventorySystem_SetMaxPowerLevel_Freddy_Params params {};
+
+		UFNAFInventorySystem_SetMaxPowerLevel_Freddy_Params params{};
 		params.NewMax = NewMax;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -5990,10 +5990,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetMaxPowerLevel_Fazwatch");
-		
-		UFNAFInventorySystem_SetMaxPowerLevel_Fazwatch_Params params {};
+
+		UFNAFInventorySystem_SetMaxPowerLevel_Fazwatch_Params params{};
 		params.NewMax = NewMax;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6013,10 +6013,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetItemViewed");
-		
-		UFNAFInventorySystem_SetItemViewed_Params params {};
+
+		UFNAFInventorySystem_SetItemViewed_Params params{};
 		params.Item = Item;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6036,10 +6036,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.SetFlashlightStationID");
-		
-		UFNAFInventorySystem_SetFlashlightStationID_Params params {};
+
+		UFNAFInventorySystem_SetFlashlightStationID_Params params{};
 		params.StationID = StationID;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6057,9 +6057,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.ResetFreddyPower");
-		
-		UFNAFInventorySystem_ResetFreddyPower_Params params {};
-		
+
+		UFNAFInventorySystem_ResetFreddyPower_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6077,9 +6077,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.ResetFlashlightPower");
-		
-		UFNAFInventorySystem_ResetFlashlightPower_Params params {};
-		
+
+		UFNAFInventorySystem_ResetFlashlightPower_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6097,9 +6097,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.ResetFlashes");
-		
-		UFNAFInventorySystem_ResetFlashes_Params params {};
-		
+
+		UFNAFInventorySystem_ResetFlashes_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6119,10 +6119,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.RemoveMessage");
-		
-		UFNAFInventorySystem_RemoveMessage_Params params {};
+
+		UFNAFInventorySystem_RemoveMessage_Params params{};
 		params.Message = Message;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6142,10 +6142,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.RemoveItem");
-		
-		UFNAFInventorySystem_RemoveItem_Params params {};
+
+		UFNAFInventorySystem_RemoveItem_Params params{};
 		params.Item = Item;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6163,9 +6163,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.RemoveEverything");
-		
-		UFNAFInventorySystem_RemoveEverything_Params params {};
-		
+
+		UFNAFInventorySystem_RemoveEverything_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6185,15 +6185,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.IsVIPItem");
-		
-		UFNAFInventorySystem_IsVIPItem_Params params {};
+
+		UFNAFInventorySystem_IsVIPItem_Params params{};
 		params.Item = Item;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6210,15 +6210,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.IsMessageValid");
-		
-		UFNAFInventorySystem_IsMessageValid_Params params {};
+
+		UFNAFInventorySystem_IsMessageValid_Params params{};
 		params.Message = Message;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6235,15 +6235,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.IsItemValid");
-		
-		UFNAFInventorySystem_IsItemValid_Params params {};
+
+		UFNAFInventorySystem_IsItemValid_Params params{};
 		params.Item = Item;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6260,15 +6260,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasSecurityClearance");
-		
-		UFNAFInventorySystem_HasSecurityClearance_Params params {};
+
+		UFNAFInventorySystem_HasSecurityClearance_Params params{};
 		params.InSecurityLevel = InSecurityLevel;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6285,15 +6285,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasMessageBeenViewed");
-		
-		UFNAFInventorySystem_HasMessageBeenViewed_Params params {};
+
+		UFNAFInventorySystem_HasMessageBeenViewed_Params params{};
 		params.ItemOrMessage = ItemOrMessage;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6310,15 +6310,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasMessage");
-		
-		UFNAFInventorySystem_HasMessage_Params params {};
+
+		UFNAFInventorySystem_HasMessage_Params params{};
 		params.SearchMessage = SearchMessage;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6335,15 +6335,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasItemBeenViewed");
-		
-		UFNAFInventorySystem_HasItemBeenViewed_Params params {};
+
+		UFNAFInventorySystem_HasItemBeenViewed_Params params{};
 		params.ItemOrMessage = ItemOrMessage;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6360,15 +6360,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasItem");
-		
-		UFNAFInventorySystem_HasItem_Params params {};
+
+		UFNAFInventorySystem_HasItem_Params params{};
 		params.searchItem = searchItem;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6385,15 +6385,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasEnoughPower_Freddy");
-		
-		UFNAFInventorySystem_HasEnoughPower_Freddy_Params params {};
+
+		UFNAFInventorySystem_HasEnoughPower_Freddy_Params params{};
 		params.PowerRequired = PowerRequired;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6410,15 +6410,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasEnoughPower_Fazwatch");
-		
-		UFNAFInventorySystem_HasEnoughPower_Fazwatch_Params params {};
+
+		UFNAFInventorySystem_HasEnoughPower_Fazwatch_Params params{};
 		params.PowerRequired = PowerRequired;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6433,14 +6433,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.HasAvailablePartyPass");
-		
-		UFNAFInventorySystem_HasAvailablePartyPass_Params params {};
-		
+
+		UFNAFInventorySystem_HasAvailablePartyPass_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6455,9 +6455,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetTapesListenedTo");
-		
-		UFNAFInventorySystem_GetTapesListenedTo_Params params {};
-		
+
+		UFNAFInventorySystem_GetTapesListenedTo_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6475,14 +6475,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetStaminaUpgradeMultiplier");
-		
-		UFNAFInventorySystem_GetStaminaUpgradeMultiplier_Params params {};
-		
+
+		UFNAFInventorySystem_GetStaminaUpgradeMultiplier_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6497,14 +6497,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetNumberOfUnreadMessages");
-		
-		UFNAFInventorySystem_GetNumberOfUnreadMessages_Params params {};
-		
+
+		UFNAFInventorySystem_GetNumberOfUnreadMessages_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6523,15 +6523,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetMessageInfo");
-		
-		UFNAFInventorySystem_GetMessageInfo_Params params {};
+
+		UFNAFInventorySystem_GetMessageInfo_Params params{};
 		params.MessageName = MessageName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMessageInfo != nullptr)
 			*OutMessageInfo = params.OutMessageInfo;
 		if (OutFound != nullptr)
@@ -6549,14 +6549,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetMaxFlashes");
-		
-		UFNAFInventorySystem_GetMaxFlashes_Params params {};
-		
+
+		UFNAFInventorySystem_GetMaxFlashes_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6575,15 +6575,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetItemInfo");
-		
-		UFNAFInventorySystem_GetItemInfo_Params params {};
+
+		UFNAFInventorySystem_GetItemInfo_Params params{};
 		params.ItemName = ItemName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutItemInfo != nullptr)
 			*OutItemInfo = params.OutItemInfo;
 		if (OutFound != nullptr)
@@ -6601,14 +6601,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetFreddyUpgradeMutliplier");
-		
-		UFNAFInventorySystem_GetFreddyUpgradeMutliplier_Params params {};
-		
+
+		UFNAFInventorySystem_GetFreddyUpgradeMutliplier_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6623,14 +6623,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetFreddyMaxPower");
-		
-		UFNAFInventorySystem_GetFreddyMaxPower_Params params {};
-		
+
+		UFNAFInventorySystem_GetFreddyMaxPower_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6645,14 +6645,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetFlashlightUpgradMultiplier");
-		
-		UFNAFInventorySystem_GetFlashlightUpgradMultiplier_Params params {};
-		
+
+		UFNAFInventorySystem_GetFlashlightUpgradMultiplier_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6667,14 +6667,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetFlashlightStationID");
-		
-		UFNAFInventorySystem_GetFlashlightStationID_Params params {};
-		
+
+		UFNAFInventorySystem_GetFlashlightStationID_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6689,14 +6689,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetFlashlightMaxPower");
-		
-		UFNAFInventorySystem_GetFlashlightMaxPower_Params params {};
-		
+
+		UFNAFInventorySystem_GetFlashlightMaxPower_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6711,14 +6711,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetCollectedPartyPasses");
-		
-		UFNAFInventorySystem_GetCollectedPartyPasses_Params params {};
-		
+
+		UFNAFInventorySystem_GetCollectedPartyPasses_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6735,15 +6735,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.GetAllSurvivalItemsOfType");
-		
-		UFNAFInventorySystem_GetAllSurvivalItemsOfType_Params params {};
+
+		UFNAFInventorySystem_GetAllSurvivalItemsOfType_Params params{};
 		params.SurvivalCategory = SurvivalCategory;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6758,9 +6758,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.ClearFlashlightStationID");
-		
-		UFNAFInventorySystem_ClearFlashlightStationID_Params params {};
-		
+
+		UFNAFInventorySystem_ClearFlashlightStationID_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6778,14 +6778,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.CanUseFlashBeacon");
-		
-		UFNAFInventorySystem_CanUseFlashBeacon_Params params {};
-		
+
+		UFNAFInventorySystem_CanUseFlashBeacon_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6803,11 +6803,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AwardMessage");
-		
-		UFNAFInventorySystem_AwardMessage_Params params {};
+
+		UFNAFInventorySystem_AwardMessage_Params params{};
 		params.Message = Message;
 		params.bNotify = bNotify;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6828,11 +6828,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AwardItem");
-		
-		UFNAFInventorySystem_AwardItem_Params params {};
+
+		UFNAFInventorySystem_AwardItem_Params params{};
 		params.Item = Item;
 		params.bNotify = bNotify;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6852,15 +6852,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AdjustPower_Freddy");
-		
-		UFNAFInventorySystem_AdjustPower_Freddy_Params params {};
+
+		UFNAFInventorySystem_AdjustPower_Freddy_Params params{};
 		params.ChangeAmount = ChangeAmount;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6877,15 +6877,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AdjustPower_Fazwatch");
-		
-		UFNAFInventorySystem_AdjustPower_Fazwatch_Params params {};
+
+		UFNAFInventorySystem_AdjustPower_Fazwatch_Params params{};
 		params.ChangeAmount = ChangeAmount;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6902,10 +6902,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AddTapeListenedTo");
-		
-		UFNAFInventorySystem_AddTapeListenedTo_Params params {};
+
+		UFNAFInventorySystem_AddTapeListenedTo_Params params{};
 		params.InTapeListenedTo = InTapeListenedTo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6923,9 +6923,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AddEverything");
-		
-		UFNAFInventorySystem_AddEverything_Params params {};
-		
+
+		UFNAFInventorySystem_AddEverything_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -6943,14 +6943,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFInventorySystem.AddBrokenPlate");
-		
-		UFNAFInventorySystem_AddBrokenPlate_Params params {};
-		
+
+		UFNAFInventorySystem_AddBrokenPlate_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -6981,10 +6981,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.UnregisterStreamingSource");
-		
-		UFNAFLevelManager_UnregisterStreamingSource_Params params {};
+
+		UFNAFLevelManager_UnregisterStreamingSource_Params params{};
 		params.SceneComponent = SceneComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7004,10 +7004,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.UnregisterPawnStreamingSource");
-		
-		UFNAFLevelManager_UnregisterPawnStreamingSource_Params params {};
+
+		UFNAFLevelManager_UnregisterPawnStreamingSource_Params params{};
 		params.SceneComponent = SceneComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7027,10 +7027,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.SetPlayerPawn");
-		
-		UFNAFLevelManager_SetPlayerPawn_Params params {};
+
+		UFNAFLevelManager_SetPlayerPawn_Params params{};
 		params.PlayerPawn = PlayerPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7050,10 +7050,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.SetLevelStreamingEnable");
-		
-		UFNAFLevelManager_SetLevelStreamingEnable_Params params {};
+
+		UFNAFLevelManager_SetLevelStreamingEnable_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7073,10 +7073,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RemoveLevelsFromStreamingSource");
-		
-		UFNAFLevelManager_RemoveLevelsFromStreamingSource_Params params {};
+
+		UFNAFLevelManager_RemoveLevelsFromStreamingSource_Params params{};
 		params.StreamingSource = StreamingSource;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7096,10 +7096,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RemoveLevelArray");
-		
-		UFNAFLevelManager_RemoveLevelArray_Params params {};
+
+		UFNAFLevelManager_RemoveLevelArray_Params params{};
 		params.Levels = Levels;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7119,10 +7119,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RemoveLevel");
-		
-		UFNAFLevelManager_RemoveLevel_Params params {};
+
+		UFNAFLevelManager_RemoveLevel_Params params{};
 		params.LevelToUnload = LevelToUnload;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7140,9 +7140,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RemoveAllLevels");
-		
-		UFNAFLevelManager_RemoveAllLevels_Params params {};
-		
+
+		UFNAFLevelManager_RemoveAllLevels_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7162,10 +7162,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RegisterStreamingSource");
-		
-		UFNAFLevelManager_RegisterStreamingSource_Params params {};
+
+		UFNAFLevelManager_RegisterStreamingSource_Params params{};
 		params.SceneComponent = SceneComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7185,10 +7185,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.RegisterPawnStreamingSource");
-		
-		UFNAFLevelManager_RegisterPawnStreamingSource_Params params {};
+
+		UFNAFLevelManager_RegisterPawnStreamingSource_Params params{};
 		params.SceneComponent = SceneComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7206,14 +7206,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.IsLevelStreamingEnable");
-		
-		UFNAFLevelManager_IsLevelStreamingEnable_Params params {};
-		
+
+		UFNAFLevelManager_IsLevelStreamingEnable_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7228,14 +7228,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.GetStreamingSources");
-		
-		UFNAFLevelManager_GetStreamingSources_Params params {};
-		
+
+		UFNAFLevelManager_GetStreamingSources_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7252,15 +7252,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.GetLevelNamesForComponent");
-		
-		UFNAFLevelManager_GetLevelNamesForComponent_Params params {};
+
+		UFNAFLevelManager_GetLevelNamesForComponent_Params params{};
 		params.SceneComponent = SceneComponent;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7277,10 +7277,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.AddLevelToLoad");
-		
-		UFNAFLevelManager_AddLevelToLoad_Params params {};
+
+		UFNAFLevelManager_AddLevelToLoad_Params params{};
 		params.LevelToLoad = LevelToLoad;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7300,10 +7300,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.AddLevelsFromStreamingSourceToLoad");
-		
-		UFNAFLevelManager_AddLevelsFromStreamingSourceToLoad_Params params {};
+
+		UFNAFLevelManager_AddLevelsFromStreamingSourceToLoad_Params params{};
 		params.StreamingSource = StreamingSource;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7323,10 +7323,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFLevelManager.AddLevelArrayToLoad");
-		
-		UFNAFLevelManager_AddLevelArrayToLoad_Params params {};
+
+		UFNAFLevelManager_AddLevelArrayToLoad_Params params{};
 		params.LevelsToLoad = LevelsToLoad;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7360,10 +7360,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.TeleportAI");
-		
-		UFNAFManagedAI_TeleportAI_Params params {};
+
+		UFNAFManagedAI_TeleportAI_Params params{};
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7383,10 +7383,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.StartMoveTo");
-		
-		UFNAFManagedAI_StartMoveTo_Params params {};
+
+		UFNAFManagedAI_StartMoveTo_Params params{};
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7406,10 +7406,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.SendVanessaAlert");
-		
-		UFNAFManagedAI_SendVanessaAlert_Params params {};
+
+		UFNAFManagedAI_SendVanessaAlert_Params params{};
 		params.VanessaPawn = VanessaPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7429,10 +7429,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.SendPositionalAlert");
-		
-		UFNAFManagedAI_SendPositionalAlert_Params params {};
+
+		UFNAFManagedAI_SendPositionalAlert_Params params{};
 		params.Location = Location;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7450,14 +7450,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.IsShatteredVersion");
-		
-		UFNAFManagedAI_IsShatteredVersion_Params params {};
-		
+
+		UFNAFManagedAI_IsShatteredVersion_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7472,14 +7472,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.GetManagedAIType");
-		
-		UFNAFManagedAI_GetManagedAIType_Params params {};
-		
+
+		UFNAFManagedAI_GetManagedAIType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7494,14 +7494,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.GetCurrentPathName");
-		
-		UFNAFManagedAI_GetCurrentPathName_Params params {};
-		
+
+		UFNAFManagedAI_GetCurrentPathName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7516,9 +7516,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.ForceTrackToPlayer");
-		
-		UFNAFManagedAI_ForceTrackToPlayer_Params params {};
-		
+
+		UFNAFManagedAI_ForceTrackToPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7536,9 +7536,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.EndTrackToPlayer");
-		
-		UFNAFManagedAI_EndTrackToPlayer_Params params {};
-		
+
+		UFNAFManagedAI_EndTrackToPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7556,14 +7556,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFManagedAI.CanReceiveAlert");
-		
-		UFNAFManagedAI_CanReceiveAlert_Params params {};
-		
+
+		UFNAFManagedAI_CanReceiveAlert_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7606,9 +7606,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.SetupNewGame");
-		
-		UFNAFMissionSystem_SetupNewGame_Params params {};
-		
+
+		UFNAFMissionSystem_SetupNewGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7629,11 +7629,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.SetMissionInfoState");
-		
-		UFNAFMissionSystem_SetMissionInfoState_Params params {};
+
+		UFNAFMissionSystem_SetMissionInfoState_Params params{};
 		params.MissionName = MissionName;
 		params.InfoState = InfoState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7653,10 +7653,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.RemoveActiveMission");
-		
-		UFNAFMissionSystem_RemoveActiveMission_Params params {};
+
+		UFNAFMissionSystem_RemoveActiveMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7676,10 +7676,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.NotifyMissionUpdate");
-		
-		UFNAFMissionSystem_NotifyMissionUpdate_Params params {};
+
+		UFNAFMissionSystem_NotifyMissionUpdate_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -7699,15 +7699,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.IsValidMission");
-		
-		UFNAFMissionSystem_IsValidMission_Params params {};
+
+		UFNAFMissionSystem_IsValidMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7724,15 +7724,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.IsMissionActiveOrCompleted");
-		
-		UFNAFMissionSystem_IsMissionActiveOrCompleted_Params params {};
+
+		UFNAFMissionSystem_IsMissionActiveOrCompleted_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7747,14 +7747,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.IsInSurvivalMode");
-		
-		UFNAFMissionSystem_IsInSurvivalMode_Params params {};
-		
+
+		UFNAFMissionSystem_IsInSurvivalMode_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7771,15 +7771,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.IsCompletedMission");
-		
-		UFNAFMissionSystem_IsCompletedMission_Params params {};
+
+		UFNAFMissionSystem_IsCompletedMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7796,15 +7796,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.IsActiveMission");
-		
-		UFNAFMissionSystem_IsActiveMission_Params params {};
+
+		UFNAFMissionSystem_IsActiveMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7819,14 +7819,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetTrackedMissions");
-		
-		UFNAFMissionSystem_GetTrackedMissions_Params params {};
-		
+
+		UFNAFMissionSystem_GetTrackedMissions_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7841,14 +7841,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetTaskTable");
-		
-		UFNAFMissionSystem_GetTaskTable_Params params {};
-		
+
+		UFNAFMissionSystem_GetTaskTable_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7867,15 +7867,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetTaskInfo");
-		
-		UFNAFMissionSystem_GetTaskInfo_Params params {};
+
+		UFNAFMissionSystem_GetTaskInfo_Params params{};
 		params.TaskName = TaskName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionTaskInfo != nullptr)
 			*OutMissionTaskInfo = params.OutMissionTaskInfo;
 		if (OutValidTask != nullptr)
@@ -7898,16 +7898,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetTaskByIndex");
-		
-		UFNAFMissionSystem_GetTaskByIndex_Params params {};
+
+		UFNAFMissionSystem_GetTaskByIndex_Params params{};
 		params.MissionName = MissionName;
 		params.TaskIndex = TaskIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionTaskInfo != nullptr)
 			*OutMissionTaskInfo = params.OutMissionTaskInfo;
 		if (OutValidTask != nullptr)
@@ -7925,14 +7925,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMissionTable");
-		
-		UFNAFMissionSystem_GetMissionTable_Params params {};
-		
+
+		UFNAFMissionSystem_GetMissionTable_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -7951,15 +7951,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMissionState");
-		
-		UFNAFMissionSystem_GetMissionState_Params params {};
+
+		UFNAFMissionSystem_GetMissionState_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionState != nullptr)
 			*OutMissionState = params.OutMissionState;
 		if (OutValidMission != nullptr)
@@ -7981,15 +7981,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMissionInfo");
-		
-		UFNAFMissionSystem_GetMissionInfo_Params params {};
+
+		UFNAFMissionSystem_GetMissionInfo_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionInfo != nullptr)
 			*OutMissionInfo = params.OutMissionInfo;
 		if (OutValidMission != nullptr)
@@ -8011,15 +8011,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMissionFromTask");
-		
-		UFNAFMissionSystem_GetMissionFromTask_Params params {};
+
+		UFNAFMissionSystem_GetMissionFromTask_Params params{};
 		params.TaskName = TaskName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionInfo != nullptr)
 			*OutMissionInfo = params.OutMissionInfo;
 		if (OutValidMission != nullptr)
@@ -8041,15 +8041,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMissionFromMessage");
-		
-		UFNAFMissionSystem_GetMissionFromMessage_Params params {};
+
+		UFNAFMissionSystem_GetMissionFromMessage_Params params{};
 		params.MessageName = MessageName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMissionName != nullptr)
 			*OutMissionName = params.OutMissionName;
 		if (OutMissionStateIndex != nullptr)
@@ -8070,16 +8070,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetMarkersForMission");
-		
-		UFNAFMissionSystem_GetMarkersForMission_Params params {};
+
+		UFNAFMissionSystem_GetMarkersForMission_Params params{};
 		params.MissionName = MissionName;
 		params.MissionStateIndex = MissionStateIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8094,14 +8094,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetCompletedMissions");
-		
-		UFNAFMissionSystem_GetCompletedMissions_Params params {};
-		
+
+		UFNAFMissionSystem_GetCompletedMissions_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8118,14 +8118,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetAreaMarkerCounts");
-		
-		UFNAFMissionSystem_GetAreaMarkerCounts_Params params {};
-		
+
+		UFNAFMissionSystem_GetAreaMarkerCounts_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (MapOfCounts != nullptr)
 			*MapOfCounts = params.MapOfCounts;
 	}
@@ -8141,14 +8141,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetAllMissionNames");
-		
-		UFNAFMissionSystem_GetAllMissionNames_Params params {};
-		
+
+		UFNAFMissionSystem_GetAllMissionNames_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8163,14 +8163,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetAllMissionMarkers");
-		
-		UFNAFMissionSystem_GetAllMissionMarkers_Params params {};
-		
+
+		UFNAFMissionSystem_GetAllMissionMarkers_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8185,14 +8185,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetAllCurrentMarkers");
-		
-		UFNAFMissionSystem_GetAllCurrentMarkers_Params params {};
-		
+
+		UFNAFMissionSystem_GetAllCurrentMarkers_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8207,14 +8207,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.GetActiveMissions");
-		
-		UFNAFMissionSystem_GetActiveMissions_Params params {};
-		
+
+		UFNAFMissionSystem_GetActiveMissions_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8232,11 +8232,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.CompleteMissionTask");
-		
-		UFNAFMissionSystem_CompleteMissionTask_Params params {};
+
+		UFNAFMissionSystem_CompleteMissionTask_Params params{};
 		params.MissionName = MissionName;
 		params.TaskIndex = TaskIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8256,10 +8256,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.CompleteMission");
-		
-		UFNAFMissionSystem_CompleteMission_Params params {};
+
+		UFNAFMissionSystem_CompleteMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8280,15 +8280,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.BranchMissionStatus");
-		
-		UFNAFMissionSystem_BranchMissionStatus_Params params {};
+
+		UFNAFMissionSystem_BranchMissionStatus_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (Status != nullptr)
 			*Status = params.Status;
 	}
@@ -8306,10 +8306,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFMissionSystem.AddActiveMission");
-		
-		UFNAFMissionSystem_AddActiveMission_Params params {};
+
+		UFNAFMissionSystem_AddActiveMission_Params params{};
 		params.MissionName = MissionName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8341,13 +8341,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFPawnTypeProviderInterface.GetPlayerPawnType");
-		
-		UFNAFPawnTypeProviderInterface_GetPlayerPawnType_Params params {};
-		
+
+		UFNAFPawnTypeProviderInterface_GetPlayerPawnType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8378,10 +8378,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveData.SetHourOfCheckpoint");
-		
-		UFNAFSaveData_SetHourOfCheckpoint_Params params {};
+
+		UFNAFSaveData_SetHourOfCheckpoint_Params params{};
 		params.InHour = InHour;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8413,9 +8413,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SetupPIE");
-		
-		UFNAFSaveGameSystem_SetupPIE_Params params {};
-		
+
+		UFNAFSaveGameSystem_SetupPIE_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8433,9 +8433,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SetupNewSurvivalGame");
-		
-		UFNAFSaveGameSystem_SetupNewSurvivalGame_Params params {};
-		
+
+		UFNAFSaveGameSystem_SetupNewSurvivalGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8455,10 +8455,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SetupNewGameOnSlot");
-		
-		UFNAFSaveGameSystem_SetupNewGameOnSlot_Params params {};
+
+		UFNAFSaveGameSystem_SetupNewGameOnSlot_Params params{};
 		params.originalSlotName = originalSlotName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8476,9 +8476,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SetupNewGame");
-		
-		UFNAFSaveGameSystem_SetupNewGame_Params params {};
-		
+
+		UFNAFSaveGameSystem_SetupNewGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8498,10 +8498,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SetIsSavingAllowed");
-		
-		UFNAFSaveGameSystem_SetIsSavingAllowed_Params params {};
+
+		UFNAFSaveGameSystem_SetIsSavingAllowed_Params params{};
 		params.IsSavingAllowed = IsSavingAllowed;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8519,9 +8519,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SaveCurrentGame");
-		
-		UFNAFSaveGameSystem_SaveCurrentGame_Params params {};
-		
+
+		UFNAFSaveGameSystem_SaveCurrentGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8539,9 +8539,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SaveCheckpoint");
-		
-		UFNAFSaveGameSystem_SaveCheckpoint_Params params {};
-		
+
+		UFNAFSaveGameSystem_SaveCheckpoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8559,9 +8559,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.SaveArcade");
-		
-		UFNAFSaveGameSystem_SaveArcade_Params params {};
-		
+
+		UFNAFSaveGameSystem_SaveArcade_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8579,9 +8579,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.Reset_SaveSlots");
-		
-		UFNAFSaveGameSystem_Reset_SaveSlots_Params params {};
-		
+
+		UFNAFSaveGameSystem_Reset_SaveSlots_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8602,11 +8602,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.Rename_SaveSlot");
-		
-		UFNAFSaveGameSystem_Rename_SaveSlot_Params params {};
+
+		UFNAFSaveGameSystem_Rename_SaveSlot_Params params{};
 		params.originalSlotName = originalSlotName;
 		params.renamedSlotName = renamedSlotName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8624,14 +8624,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.PreviousSaveIsAuto");
-		
-		UFNAFSaveGameSystem_PreviousSaveIsAuto_Params params {};
-		
+
+		UFNAFSaveGameSystem_PreviousSaveIsAuto_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8646,9 +8646,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.LoadWorldTransitSave");
-		
-		UFNAFSaveGameSystem_LoadWorldTransitSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_LoadWorldTransitSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8668,15 +8668,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.LoadSaveSlotData");
-		
-		UFNAFSaveGameSystem_LoadSaveSlotData_Params params {};
+
+		UFNAFSaveGameSystem_LoadSaveSlotData_Params params{};
 		params.SlotName = SlotName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8691,9 +8691,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.LoadCheckpoint");
-		
-		UFNAFSaveGameSystem_LoadCheckpoint_Params params {};
-		
+
+		UFNAFSaveGameSystem_LoadCheckpoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8711,9 +8711,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.LoadAutoSave");
-		
-		UFNAFSaveGameSystem_LoadAutoSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_LoadAutoSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8733,10 +8733,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.LoadActivitySave");
-		
-		UFNAFSaveGameSystem_LoadActivitySave_Params params {};
+
+		UFNAFSaveGameSystem_LoadActivitySave_Params params{};
 		params.InActivityId = InActivityId;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8754,14 +8754,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.IsSavingAllowed");
-		
-		UFNAFSaveGameSystem_IsSavingAllowed_Params params {};
-		
+
+		UFNAFSaveGameSystem_IsSavingAllowed_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8776,14 +8776,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.HasSaveData");
-		
-		UFNAFSaveGameSystem_HasSaveData_Params params {};
-		
+
+		UFNAFSaveGameSystem_HasSaveData_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8798,14 +8798,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.HasPreviousSave");
-		
-		UFNAFSaveGameSystem_HasPreviousSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_HasPreviousSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8820,14 +8820,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.HasAutoSave");
-		
-		UFNAFSaveGameSystem_HasAutoSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_HasAutoSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8844,15 +8844,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.HasActivitySave");
-		
-		UFNAFSaveGameSystem_HasActivitySave_Params params {};
+
+		UFNAFSaveGameSystem_HasActivitySave_Params params{};
 		params.InActivityId = InActivityId;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8867,14 +8867,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.GetGameIteration");
-		
-		UFNAFSaveGameSystem_GetGameIteration_Params params {};
-		
+
+		UFNAFSaveGameSystem_GetGameIteration_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -8891,14 +8891,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.Get_SaveSlotNameData");
-		
-		UFNAFSaveGameSystem_Get_SaveSlotNameData_Params params {};
-		
+
+		UFNAFSaveGameSystem_Get_SaveSlotNameData_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (SaveSlots_Map != nullptr)
 			*SaveSlots_Map = params.SaveSlots_Map;
 	}
@@ -8914,9 +8914,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.FinalizeCheckpoint");
-		
-		UFNAFSaveGameSystem_FinalizeCheckpoint_Params params {};
-		
+
+		UFNAFSaveGameSystem_FinalizeCheckpoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8936,10 +8936,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.DeleteSaveGameByName");
-		
-		UFNAFSaveGameSystem_DeleteSaveGameByName_Params params {};
+
+		UFNAFSaveGameSystem_DeleteSaveGameByName_Params params{};
 		params.SlotName = SlotName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8959,10 +8959,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.DeleteSavedGame_BySlot");
-		
-		UFNAFSaveGameSystem_DeleteSavedGame_BySlot_Params params {};
+
+		UFNAFSaveGameSystem_DeleteSavedGame_BySlot_Params params{};
 		params.saveSlotNumber = saveSlotNumber;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -8980,9 +8980,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.CreateWorldTransitSave");
-		
-		UFNAFSaveGameSystem_CreateWorldTransitSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_CreateWorldTransitSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9000,9 +9000,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.CreatePotentialCheckpoint");
-		
-		UFNAFSaveGameSystem_CreatePotentialCheckpoint_Params params {};
-		
+
+		UFNAFSaveGameSystem_CreatePotentialCheckpoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9020,9 +9020,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.AutoSave");
-		
-		UFNAFSaveGameSystem_AutoSave_Params params {};
-		
+
+		UFNAFSaveGameSystem_AutoSave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9046,18 +9046,18 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.AsyncSaveGame");
-		
-		UFNAFSaveGameSystem_AsyncSaveGame_Params params {};
+
+		UFNAFSaveGameSystem_AsyncSaveGame_Params params{};
 		params.originalSlotName = originalSlotName;
 		params.isANewSlot = isANewSlot;
 		params.isCurrentSlot = isCurrentSlot;
 		params.Renamed_SaveSlot = Renamed_SaveSlot;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (internal_SlotName != nullptr)
 			*internal_SlotName = params.internal_SlotName;
 	}
@@ -9073,9 +9073,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.AsyncLoadGameLastLoaded");
-		
-		UFNAFSaveGameSystem_AsyncLoadGameLastLoaded_Params params {};
-		
+
+		UFNAFSaveGameSystem_AsyncLoadGameLastLoaded_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9097,16 +9097,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSaveGameSystem.AsyncLoadGame");
-		
-		UFNAFSaveGameSystem_AsyncLoadGame_Params params {};
+
+		UFNAFSaveGameSystem_AsyncLoadGame_Params params{};
 		params.originalSlotName = originalSlotName;
 		params.isContinueSelected = isContinueSelected;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (internal_SlotName != nullptr)
 			*internal_SlotName = params.internal_SlotName;
 	}
@@ -9138,10 +9138,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.FNAFSightSystem.SetSightSystemDisplay");
-		
-		UFNAFSightSystem_SetSightSystemDisplay_Params params {};
+
+		UFNAFSightSystem_SetSightSystemDisplay_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9187,9 +9187,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.StartNextHour");
-		
-		UGameClockSystem_StartNextHour_Params params {};
-		
+
+		UGameClockSystem_StartNextHour_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9211,12 +9211,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetGameTimeEvent");
-		
-		UGameClockSystem_SetGameTimeEvent_Params params {};
+
+		UGameClockSystem_SetGameTimeEvent_Params params{};
 		params.Delegate = Delegate;
 		params.Hour = Hour;
 		params.Minute = Minute;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9236,10 +9236,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetGameEndEvent");
-		
-		UGameClockSystem_SetGameEndEvent_Params params {};
+
+		UGameClockSystem_SetGameEndEvent_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9261,12 +9261,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetCurrentTime");
-		
-		UGameClockSystem_SetCurrentTime_Params params {};
+
+		UGameClockSystem_SetCurrentTime_Params params{};
 		params.Hour = Hour;
 		params.Minute = Minute;
 		params.bPlayDelegates = bPlayDelegates;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9286,10 +9286,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetCurrentMinute");
-		
-		UGameClockSystem_SetCurrentMinute_Params params {};
+
+		UGameClockSystem_SetCurrentMinute_Params params{};
 		params.Minute = Minute;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9309,10 +9309,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetCurrentHour");
-		
-		UGameClockSystem_SetCurrentHour_Params params {};
+
+		UGameClockSystem_SetCurrentHour_Params params{};
 		params.Hour = Hour;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9332,10 +9332,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetClockRunning");
-		
-		UGameClockSystem_SetClockRunning_Params params {};
+
+		UGameClockSystem_SetClockRunning_Params params{};
 		params.bRunClock = bRunClock;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9355,10 +9355,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetClockRateInMinutesPerHour");
-		
-		UGameClockSystem_SetClockRateInMinutesPerHour_Params params {};
+
+		UGameClockSystem_SetClockRateInMinutesPerHour_Params params{};
 		params.MinutesPerHour = MinutesPerHour;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9378,10 +9378,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.SetClockRate");
-		
-		UGameClockSystem_SetClockRate_Params params {};
+
+		UGameClockSystem_SetClockRate_Params params{};
 		params.TotalRealHours = TotalRealHours;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9402,11 +9402,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.ResetTimeDelegatesUpTo");
-		
-		UGameClockSystem_ResetTimeDelegatesUpTo_Params params {};
+
+		UGameClockSystem_ResetTimeDelegatesUpTo_Params params{};
 		params.Hour = Hour;
 		params.Minute = Minute;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9424,9 +9424,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.OnNormalModeTriggered");
-		
-		UGameClockSystem_OnNormalModeTriggered_Params params {};
-		
+
+		UGameClockSystem_OnNormalModeTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9444,9 +9444,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.OnMoonmanLiteTriggered");
-		
-		UGameClockSystem_OnMoonmanLiteTriggered_Params params {};
-		
+
+		UGameClockSystem_OnMoonmanLiteTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9464,9 +9464,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.OnMoonmanIntermediateTriggered");
-		
-		UGameClockSystem_OnMoonmanIntermediateTriggered_Params params {};
-		
+
+		UGameClockSystem_OnMoonmanIntermediateTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9484,9 +9484,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.OnMoonmanDangerTriggered");
-		
-		UGameClockSystem_OnMoonmanDangerTriggered_Params params {};
-		
+
+		UGameClockSystem_OnMoonmanDangerTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9504,14 +9504,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.IsClockRunning");
-		
-		UGameClockSystem_IsClockRunning_Params params {};
-		
+
+		UGameClockSystem_IsClockRunning_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9526,14 +9526,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.GetCurrentTimeInSeconds");
-		
-		UGameClockSystem_GetCurrentTimeInSeconds_Params params {};
-		
+
+		UGameClockSystem_GetCurrentTimeInSeconds_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9546,33 +9546,32 @@ namespace CG
 	 * 		int                                                Hour                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int                                                Minute                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::GetCurrentTime(int* Hour, int* Minute)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.GetCurrentTime");
-		
-		UGameClockSystem_GetCurrentTime_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
+	 //void UGameClockSystem::GetCurrentTime(int* Hour, int* Minute)
+	 //{
+	 //	static UFunction* fn = nullptr;
+	 //	if (!fn)
+	 //		fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.GetCurrentTime");
+	 //	
+	 //	UGameClockSystem_GetCurrentTime_Params params {};
+	 //	
+	 //	auto flags = fn->FunctionFlags;
+	 //	fn->FunctionFlags |= 0x00000400;
+	 //	UObject::ProcessEvent(fn, &params);
+	 //	fn->FunctionFlags = flags;
 
+	 //	// Broken
+	 //	//if (Hour != nullptr)
+	 //	//	*Hour = params.Hour;
+	 //	//if (Minute != nullptr)
+	 //	//	*Minute = params.Minute;
+	 //}
 
-		// Broken
-		//if (Hour != nullptr)
-		//	*Hour = params.Hour;
-		//if (Minute != nullptr)
-		//	*Minute = params.Minute;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameClockSystem.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
+	 /**
+	  * Function:
+	  * 		Offset -> 0x00000000
+	  * 		Name   -> PredefindFunction UGameClockSystem.StaticClass
+	  * 		Flags  -> (Predefined, Static)
+	  */
 	UClass* UGameClockSystem::StaticClass()
 	{
 		static UClass* ptr = nullptr;
@@ -9592,9 +9591,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameTypeCheckComponent.OnNotAllowedGameType");
-		
-		UGameTypeCheckComponent_OnNotAllowedGameType_Params params {};
-		
+
+		UGameTypeCheckComponent_OnNotAllowedGameType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9612,9 +9611,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameTypeCheckComponent.OnAllowedGameType");
-		
-		UGameTypeCheckComponent_OnAllowedGameType_Params params {};
-		
+
+		UGameTypeCheckComponent_OnAllowedGameType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9632,14 +9631,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.GameTypeCheckComponent.IsAllowed");
-		
-		UGameTypeCheckComponent_IsAllowed_Params params {};
-		
+
+		UGameTypeCheckComponent_IsAllowed_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9698,10 +9697,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.StartSearch");
-		
-		UHideObjectInterface_StartSearch_Params params {};
+
+		UHideObjectInterface_StartSearch_Params params{};
 		params.SearcherPawn = SearcherPawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9721,10 +9720,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.PlayBotSearchSound");
-		
-		UHideObjectInterface_PlayBotSearchSound_Params params {};
+
+		UHideObjectInterface_PlayBotSearchSound_Params params{};
 		params.SearcherActor = SearcherActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9742,9 +9741,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.OnPlayerLeave");
-		
-		UHideObjectInterface_OnPlayerLeave_Params params {};
-		
+
+		UHideObjectInterface_OnPlayerLeave_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9764,10 +9763,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.OnPlayerHide");
-		
-		UHideObjectInterface_OnPlayerHide_Params params {};
+
+		UHideObjectInterface_OnPlayerHide_Params params{};
 		params.PlayerCharacter = PlayerCharacter;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9788,14 +9787,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.GetSearchLocation");
-		
-		UHideObjectInterface_GetSearchLocation_Params params {};
-		
+
+		UHideObjectInterface_GetSearchLocation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (Location != nullptr)
 			*Location = params.Location;
 		if (Rotation != nullptr)
@@ -9813,14 +9812,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.GetHideType");
-		
-		UHideObjectInterface_GetHideType_Params params {};
-		
+
+		UHideObjectInterface_GetHideType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9835,14 +9834,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.GetHideLocation");
-		
-		UHideObjectInterface_GetHideLocation_Params params {};
-		
+
+		UHideObjectInterface_GetHideLocation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9857,14 +9856,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.GetHiddenPlayer");
-		
-		UHideObjectInterface_GetHiddenPlayer_Params params {};
-		
+
+		UHideObjectInterface_GetHiddenPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9879,9 +9878,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.HideObjectInterface.EndSearch");
-		
-		UHideObjectInterface_EndSearch_Params params {};
-		
+
+		UHideObjectInterface_EndSearch_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9915,17 +9914,17 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.InstructionCardRowBlueprintFunctionLibrary.GetControllerInstructionCard");
-		
-		UInstructionCardRowBlueprintFunctionLibrary_GetControllerInstructionCard_Params params {};
-		
+
+		UInstructionCardRowBlueprintFunctionLibrary_GetControllerInstructionCard_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (MyStructRef != nullptr)
 			*MyStructRef = params.MyStructRef;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -9958,12 +9957,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.InventoryConditionalComponent.SetNewConditions");
-		
-		UInventoryConditionalComponent_SetNewConditions_Params params {};
+
+		UInventoryConditionalComponent_SetNewConditions_Params params{};
 		params.NewRequiredInventoryItem = NewRequiredInventoryItem;
 		params.NewRequiredSecurityLevel = NewRequiredSecurityLevel;
 		params.NewRequiresPartyPass = NewRequiresPartyPass;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -9984,11 +9983,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.InventoryConditionalComponent.OnMessageCollected");
-		
-		UInventoryConditionalComponent_OnMessageCollected_Params params {};
+
+		UInventoryConditionalComponent_OnMessageCollected_Params params{};
 		params.ItemName = ItemName;
 		params.MessageTableStruct = MessageTableStruct;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10009,11 +10008,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.InventoryConditionalComponent.OnItemCollected");
-		
-		UInventoryConditionalComponent_OnItemCollected_Params params {};
+
+		UInventoryConditionalComponent_OnItemCollected_Params params{};
 		params.ItemName = ItemName;
 		params.InventoryTableStruct = InventoryTableStruct;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10034,14 +10033,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.InventoryConditionalComponent.HasMetConditions");
-		
-		UInventoryConditionalComponent_HasMetConditions_Params params {};
-		
+
+		UInventoryConditionalComponent_HasMetConditions_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutConditionsMet != nullptr)
 			*OutConditionsMet = params.OutConditionsMet;
 		if (OutFailReason != nullptr)
@@ -10075,10 +10074,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ItemCollectListenerComponent.SetEventsEnabled");
-		
-		UItemCollectListenerComponent_SetEventsEnabled_Params params {};
+
+		UItemCollectListenerComponent_SetEventsEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10099,11 +10098,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ItemCollectListenerComponent.OnItemCollectedHandler");
-		
-		UItemCollectListenerComponent_OnItemCollectedHandler_Params params {};
+
+		UItemCollectListenerComponent_OnItemCollectedHandler_Params params{};
 		params.ItemName = ItemName;
 		params.InventoryItemInfo = InventoryItemInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10121,14 +10120,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.ItemCollectListenerComponent.GetEventsEnabled");
-		
-		UItemCollectListenerComponent_GetEventsEnabled_Params params {};
-		
+
+		UItemCollectListenerComponent_GetEventsEnabled_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10159,10 +10158,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LevelStreamViewpoint.SetStreamingEnable");
-		
-		ULevelStreamViewpoint_SetStreamingEnable_Params params {};
+
+		ULevelStreamViewpoint_SetStreamingEnable_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10180,9 +10179,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LevelStreamViewpoint.OnLevelManagerUpdated");
-		
-		ULevelStreamViewpoint_OnLevelManagerUpdated_Params params {};
-		
+
+		ULevelStreamViewpoint_OnLevelManagerUpdated_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10200,14 +10199,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LevelStreamViewpoint.GetStreamingLevelNames");
-		
-		ULevelStreamViewpoint_GetStreamingLevelNames_Params params {};
-		
+
+		ULevelStreamViewpoint_GetStreamingLevelNames_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10222,14 +10221,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LevelStreamViewpoint.AnyLevelsLoaded");
-		
-		ULevelStreamViewpoint_AnyLevelsLoaded_Params params {};
-		
+
+		ULevelStreamViewpoint_AnyLevelsLoaded_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10258,9 +10257,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightingMaterialManager.OnLevelVisible");
-		
-		ALightingMaterialManager_OnLevelVisible_Params params {};
-		
+
+		ALightingMaterialManager_OnLevelVisible_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10278,9 +10277,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightingMaterialManager.OnBeginLightScenarioChange");
-		
-		ALightingMaterialManager_OnBeginLightScenarioChange_Params params {};
-		
+
+		ALightingMaterialManager_OnBeginLightScenarioChange_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10300,10 +10299,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightingMaterialManager.OnActivateSpecialLightingScenerio");
-		
-		ALightingMaterialManager_OnActivateSpecialLightingScenerio_Params params {};
+
+		ALightingMaterialManager_OnActivateSpecialLightingScenerio_Params params{};
 		params.Key = Key;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10337,10 +10336,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.UnbindOnEndScenarioChange");
-		
-		ULightScenarioManager_UnbindOnEndScenarioChange_Params params {};
+
+		ULightScenarioManager_UnbindOnEndScenarioChange_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10360,10 +10359,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.UnbindOnBeginScenarioChange");
-		
-		ULightScenarioManager_UnbindOnBeginScenarioChange_Params params {};
+
+		ULightScenarioManager_UnbindOnBeginScenarioChange_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10384,11 +10383,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.SetInitialScenario");
-		
-		ULightScenarioManager_SetInitialScenario_Params params {};
+
+		ULightScenarioManager_SetInitialScenario_Params params{};
 		params.Area = Area;
 		params.Scenario = Scenario;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10406,9 +10405,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnUnloadFinished");
-		
-		ULightScenarioManager_OnUnloadFinished_Params params {};
-		
+
+		ULightScenarioManager_OnUnloadFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10426,9 +10425,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnTick");
-		
-		ULightScenarioManager_OnTick_Params params {};
-		
+
+		ULightScenarioManager_OnTick_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10446,9 +10445,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnLoadFinished");
-		
-		ULightScenarioManager_OnLoadFinished_Params params {};
-		
+
+		ULightScenarioManager_OnLoadFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10466,9 +10465,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnFadeoutFinished");
-		
-		ULightScenarioManager_OnFadeoutFinished_Params params {};
-		
+
+		ULightScenarioManager_OnFadeoutFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10486,9 +10485,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnChangeAreaUnloadFinished");
-		
-		ULightScenarioManager_OnChangeAreaUnloadFinished_Params params {};
-		
+
+		ULightScenarioManager_OnChangeAreaUnloadFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10506,9 +10505,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.OnChangeAreaLoadFinished");
-		
-		ULightScenarioManager_OnChangeAreaLoadFinished_Params params {};
-		
+
+		ULightScenarioManager_OnChangeAreaLoadFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10526,14 +10525,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.IsChangingScenario");
-		
-		ULightScenarioManager_IsChangingScenario_Params params {};
-		
+
+		ULightScenarioManager_IsChangingScenario_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10552,15 +10551,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.GetLightScenarioAreaFromMap");
-		
-		ULightScenarioManager_GetLightScenarioAreaFromMap_Params params {};
+
+		ULightScenarioManager_GetLightScenarioAreaFromMap_Params params{};
 		params.MapName = MapName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutArea != nullptr)
 			*OutArea = params.OutArea;
 		if (OutScenario != nullptr)
@@ -10581,16 +10580,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.GetLevelNameFromAreaScenario");
-		
-		ULightScenarioManager_GetLevelNameFromAreaScenario_Params params {};
+
+		ULightScenarioManager_GetLevelNameFromAreaScenario_Params params{};
 		params.Area = Area;
 		params.Scenario = Scenario;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10605,14 +10604,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.GetCurrentLightingScenario");
-		
-		ULightScenarioManager_GetCurrentLightingScenario_Params params {};
-		
+
+		ULightScenarioManager_GetCurrentLightingScenario_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10627,14 +10626,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.GetCurrentArea");
-		
-		ULightScenarioManager_GetCurrentArea_Params params {};
-		
+
+		ULightScenarioManager_GetCurrentArea_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10649,9 +10648,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.EndLoadSequence");
-		
-		ULightScenarioManager_EndLoadSequence_Params params {};
-		
+
+		ULightScenarioManager_EndLoadSequence_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10672,11 +10671,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.ChangeScenario");
-		
-		ULightScenarioManager_ChangeScenario_Params params {};
+
+		ULightScenarioManager_ChangeScenario_Params params{};
 		params.NewScenario = NewScenario;
 		params.bUseFade = bUseFade;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10696,10 +10695,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.ChangeArea");
-		
-		ULightScenarioManager_ChangeArea_Params params {};
+
+		ULightScenarioManager_ChangeArea_Params params{};
 		params.Area = Area;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10719,10 +10718,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.BindOnEndScenarioChange");
-		
-		ULightScenarioManager_BindOnEndScenarioChange_Params params {};
+
+		ULightScenarioManager_BindOnEndScenarioChange_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10742,10 +10741,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.BindOnBeginScenarioChange");
-		
-		ULightScenarioManager_BindOnBeginScenarioChange_Params params {};
+
+		ULightScenarioManager_BindOnBeginScenarioChange_Params params{};
 		params.Delegate = Delegate;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10763,9 +10762,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.LightScenarioManager.BeginLoadSequence");
-		
-		ULightScenarioManager_BeginLoadSequence_Params params {};
-		
+
+		ULightScenarioManager_BeginLoadSequence_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10825,14 +10824,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.Localization.GetLocalizationCulture");
-		
-		ULocalization_GetLocalizationCulture_Params params {};
-		
+
+		ULocalization_GetLocalizationCulture_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10849,10 +10848,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.Localization.ChangeLocalizationCulture");
-		
-		ULocalization_ChangeLocalizationCulture_Params params {};
+
+		ULocalization_ChangeLocalizationCulture_Params params{};
 		params.Culture = Culture;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10889,13 +10888,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionDisplayQueueLibrary.PushMissionUpdate");
-		
-		UMissionDisplayQueueLibrary_PushMissionUpdate_Params params {};
+
+		UMissionDisplayQueueLibrary_PushMissionUpdate_Params params{};
 		params.UpdateType = UpdateType;
 		params.MissionName = MissionName;
 		params.MissionInfo = MissionInfo;
 		params.MissionState = MissionState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10915,14 +10914,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionDisplayQueueLibrary.HasMissionUpdateInQueue");
-		
-		UMissionDisplayQueueLibrary_HasMissionUpdateInQueue_Params params {};
-		
+
+		UMissionDisplayQueueLibrary_HasMissionUpdateInQueue_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (MissionInQueue != nullptr)
 			*MissionInQueue = params.MissionInQueue;
 	}
@@ -10938,14 +10937,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionDisplayQueueLibrary.GetNextMissionUpdate");
-		
-		UMissionDisplayQueueLibrary_GetNextMissionUpdate_Params params {};
-		
+
+		UMissionDisplayQueueLibrary_GetNextMissionUpdate_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -10960,9 +10959,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionDisplayQueueLibrary.ClearMissionUpdateQueue");
-		
-		UMissionDisplayQueueLibrary_ClearMissionUpdateQueue_Params params {};
-		
+
+		UMissionDisplayQueueLibrary_ClearMissionUpdateQueue_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -10994,14 +10993,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionMarker.GetStateIndex");
-		
-		AMissionMarker_GetStateIndex_Params params {};
-		
+
+		AMissionMarker_GetStateIndex_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11016,14 +11015,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionMarker.GetMissionName");
-		
-		AMissionMarker_GetMissionName_Params params {};
-		
+
+		AMissionMarker_GetMissionName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11056,12 +11055,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionStateCondition.OnMissionUpdated");
-		
-		UMissionStateCondition_OnMissionUpdated_Params params {};
+
+		UMissionStateCondition_OnMissionUpdated_Params params{};
 		params.InMissionName = InMissionName;
 		params.MissionState = MissionState;
 		params.MissionInfo = MissionInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11079,14 +11078,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MissionStateCondition.HasMetConditions");
-		
-		UMissionStateCondition_HasMetConditions_Params params {};
-		
+
+		UMissionStateCondition_HasMetConditions_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11117,10 +11116,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.UnRegisterSpawn");
-		
-		UMoonmanManagementSystem_UnRegisterSpawn_Params params {};
+
+		UMoonmanManagementSystem_UnRegisterSpawn_Params params{};
 		params.InSpawnPoint = InSpawnPoint;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11138,9 +11137,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.UnpauseMoonmanManager");
-		
-		UMoonmanManagementSystem_UnpauseMoonmanManager_Params params {};
-		
+
+		UMoonmanManagementSystem_UnpauseMoonmanManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11158,9 +11157,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.StartMoonmanLiteManager");
-		
-		UMoonmanManagementSystem_StartMoonmanLiteManager_Params params {};
-		
+
+		UMoonmanManagementSystem_StartMoonmanLiteManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11178,9 +11177,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.StartMoonmanDangerManager");
-		
-		UMoonmanManagementSystem_StartMoonmanDangerManager_Params params {};
-		
+
+		UMoonmanManagementSystem_StartMoonmanDangerManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11200,10 +11199,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.RegisterSpawn");
-		
-		UMoonmanManagementSystem_RegisterSpawn_Params params {};
+
+		UMoonmanManagementSystem_RegisterSpawn_Params params{};
 		params.InSpawnPoint = InSpawnPoint;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11221,9 +11220,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.PauseMoonmanManager");
-		
-		UMoonmanManagementSystem_PauseMoonmanManager_Params params {};
-		
+
+		UMoonmanManagementSystem_PauseMoonmanManager_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11244,11 +11243,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.OnWorldStateChanged");
-		
-		UMoonmanManagementSystem_OnWorldStateChanged_Params params {};
+
+		UMoonmanManagementSystem_OnWorldStateChanged_Params params{};
 		params.NewState = NewState;
 		params.PrevState = PrevState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11268,15 +11267,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.GetAllMMSpawnPointsFor");
-		
-		UMoonmanManagementSystem_GetAllMMSpawnPointsFor_Params params {};
+
+		UMoonmanManagementSystem_GetAllMMSpawnPointsFor_Params params{};
 		params.MMAnimation = MMAnimation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11291,14 +11290,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanManagementSystem.GetAllMMSpawnPoints");
-		
-		UMoonmanManagementSystem_GetAllMMSpawnPoints_Params params {};
-		
+
+		UMoonmanManagementSystem_GetAllMMSpawnPoints_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11329,10 +11328,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetSpawnProbability");
-		
-		AMoonmanSpawnPoint_SetSpawnProbability_Params params {};
+
+		AMoonmanSpawnPoint_SetSpawnProbability_Params params{};
 		params.tempProbability = tempProbability;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11352,10 +11351,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetShouldFollowPlayer");
-		
-		AMoonmanSpawnPoint_SetShouldFollowPlayer_Params params {};
+
+		AMoonmanSpawnPoint_SetShouldFollowPlayer_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11375,10 +11374,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetMMAnimCategory");
-		
-		AMoonmanSpawnPoint_SetMMAnimCategory_Params params {};
+
+		AMoonmanSpawnPoint_SetMMAnimCategory_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11398,10 +11397,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsTriggered");
-		
-		AMoonmanSpawnPoint_SetIsTriggered_Params params {};
+
+		AMoonmanSpawnPoint_SetIsTriggered_Params params{};
 		params.isTriggered = isTriggered;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11421,10 +11420,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsStationary");
-		
-		AMoonmanSpawnPoint_SetIsStationary_Params params {};
+
+		AMoonmanSpawnPoint_SetIsStationary_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11444,10 +11443,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsSpawned");
-		
-		AMoonmanSpawnPoint_SetIsSpawned_Params params {};
+
+		AMoonmanSpawnPoint_SetIsSpawned_Params params{};
 		params.IsSpawned = IsSpawned;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11467,10 +11466,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsSingleUse");
-		
-		AMoonmanSpawnPoint_SetIsSingleUse_Params params {};
+
+		AMoonmanSpawnPoint_SetIsSingleUse_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11490,10 +11489,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsMMDetected");
-		
-		AMoonmanSpawnPoint_SetIsMMDetected_Params params {};
+
+		AMoonmanSpawnPoint_SetIsMMDetected_Params params{};
 		params.IsSkeletonDetected = IsSkeletonDetected;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11513,10 +11512,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetIsAnimLoop");
-		
-		AMoonmanSpawnPoint_SetIsAnimLoop_Params params {};
+
+		AMoonmanSpawnPoint_SetIsAnimLoop_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11536,10 +11535,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetHasSpawnedOnce");
-		
-		AMoonmanSpawnPoint_SetHasSpawnedOnce_Params params {};
+
+		AMoonmanSpawnPoint_SetHasSpawnedOnce_Params params{};
 		params.HasSpawnedOnce = HasSpawnedOnce;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11559,10 +11558,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetHasLookedOnce");
-		
-		AMoonmanSpawnPoint_SetHasLookedOnce_Params params {};
+
+		AMoonmanSpawnPoint_SetHasLookedOnce_Params params{};
 		params.HasLookedOnce = HasLookedOnce;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11582,10 +11581,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetCanSpawn");
-		
-		AMoonmanSpawnPoint_SetCanSpawn_Params params {};
+
+		AMoonmanSpawnPoint_SetCanSpawn_Params params{};
 		params.canSpawn = canSpawn;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11605,10 +11604,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetCanPopUp");
-		
-		AMoonmanSpawnPoint_SetCanPopUp_Params params {};
+
+		AMoonmanSpawnPoint_SetCanPopUp_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11628,10 +11627,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.SetAimHeadAtPlayer");
-		
-		AMoonmanSpawnPoint_SetAimHeadAtPlayer_Params params {};
+
+		AMoonmanSpawnPoint_SetAimHeadAtPlayer_Params params{};
 		params.In = In;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11651,10 +11650,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.OnSetAIDisplay");
-		
-		AMoonmanSpawnPoint_OnSetAIDisplay_Params params {};
+
+		AMoonmanSpawnPoint_OnSetAIDisplay_Params params{};
 		params.enable = enable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -11672,14 +11671,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetSpawnProbability");
-		
-		AMoonmanSpawnPoint_GetSpawnProbability_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetSpawnProbability_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11694,14 +11693,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetOriginalProbability");
-		
-		AMoonmanSpawnPoint_GetOriginalProbability_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetOriginalProbability_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11716,14 +11715,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetMMAnimSeq_Array");
-		
-		AMoonmanSpawnPoint_GetMMAnimSeq_Array_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetMMAnimSeq_Array_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11738,14 +11737,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetMMAnimCategory");
-		
-		AMoonmanSpawnPoint_GetMMAnimCategory_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetMMAnimCategory_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11760,14 +11759,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsTriggered");
-		
-		AMoonmanSpawnPoint_GetIsTriggered_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsTriggered_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11782,14 +11781,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsStationary");
-		
-		AMoonmanSpawnPoint_GetIsStationary_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsStationary_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11804,14 +11803,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsSpawned");
-		
-		AMoonmanSpawnPoint_GetIsSpawned_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsSpawned_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11826,14 +11825,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsSingleUse");
-		
-		AMoonmanSpawnPoint_GetIsSingleUse_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsSingleUse_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11848,14 +11847,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsMMDetected");
-		
-		AMoonmanSpawnPoint_GetIsMMDetected_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsMMDetected_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11870,14 +11869,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsFollowPlayerTrue");
-		
-		AMoonmanSpawnPoint_GetIsFollowPlayerTrue_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsFollowPlayerTrue_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11892,14 +11891,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetIsAnimLoop");
-		
-		AMoonmanSpawnPoint_GetIsAnimLoop_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetIsAnimLoop_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11914,14 +11913,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetHasSpawnedOnce");
-		
-		AMoonmanSpawnPoint_GetHasSpawnedOnce_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetHasSpawnedOnce_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11936,14 +11935,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetHasLookedOnce");
-		
-		AMoonmanSpawnPoint_GetHasLookedOnce_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetHasLookedOnce_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11958,14 +11957,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetCanSpawn");
-		
-		AMoonmanSpawnPoint_GetCanSpawn_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetCanSpawn_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -11980,14 +11979,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetCanPopUp");
-		
-		AMoonmanSpawnPoint_GetCanPopUp_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetCanPopUp_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12002,14 +12001,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.GetAimHeadAtPlayer");
-		
-		AMoonmanSpawnPoint_GetAimHeadAtPlayer_Params params {};
-		
+
+		AMoonmanSpawnPoint_GetAimHeadAtPlayer_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12027,11 +12026,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.MoonmanSpawnPoint.DetectTheSpawnPoint");
-		
-		AMoonmanSpawnPoint_DetectTheSpawnPoint_Params params {};
+
+		AMoonmanSpawnPoint_DetectTheSpawnPoint_Params params{};
 		params.passed_HitActor = passed_HitActor;
 		params.passed_bVisible = passed_bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12063,9 +12062,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PatrollerInterface.SetPatrolPath");
-		
-		UPatrollerInterface_SetPatrolPath_Params params {};
-		
+
+		UPatrollerInterface_SetPatrolPath_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12085,10 +12084,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PatrollerInterface.SetCurrentPatrolPointIndex");
-		
-		UPatrollerInterface_SetCurrentPatrolPointIndex_Params params {};
+
+		UPatrollerInterface_SetCurrentPatrolPointIndex_Params params{};
 		params.PatrolPointIndex = PatrolPointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12106,9 +12105,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PatrollerInterface.GetPatrolPath");
-		
-		UPatrollerInterface_GetPatrolPath_Params params {};
-		
+
+		UPatrollerInterface_GetPatrolPath_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12126,14 +12125,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.PatrollerInterface.GetCurrentPatrolPointIndex");
-		
-		UPatrollerInterface_GetCurrentPatrolPointIndex_Params params {};
-		
+
+		UPatrollerInterface_GetCurrentPatrolPointIndex_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12190,9 +12189,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.PostSaveGame");
-		
-		USaveHandlerInterface_PostSaveGame_Params params {};
-		
+
+		USaveHandlerInterface_PostSaveGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12210,9 +12209,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.PostGameLoad");
-		
-		USaveHandlerInterface_PostGameLoad_Params params {};
-		
+
+		USaveHandlerInterface_PostGameLoad_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12232,10 +12231,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.OnStoreGameData");
-		
-		USaveHandlerInterface_OnStoreGameData_Params params {};
+
+		USaveHandlerInterface_OnStoreGameData_Params params{};
 		params.SaveDataObject = SaveDataObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12255,10 +12254,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.OnGameDataLoaded");
-		
-		USaveHandlerInterface_OnGameDataLoaded_Params params {};
+
+		USaveHandlerInterface_OnGameDataLoaded_Params params{};
 		params.SaveDataObject = SaveDataObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12278,10 +12277,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.OnCheckpointSave");
-		
-		USaveHandlerInterface_OnCheckpointSave_Params params {};
+
+		USaveHandlerInterface_OnCheckpointSave_Params params{};
 		params.SaveDataObject = SaveDataObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12301,10 +12300,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SaveHandlerInterface.OnCheckpointLoad");
-		
-		USaveHandlerInterface_OnCheckpointLoad_Params params {};
+
+		USaveHandlerInterface_OnCheckpointLoad_Params params{};
 		params.SaveDataObject = SaveDataObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12336,9 +12335,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.StopOfficeMode");
-		
-		ASecurityCamera_StopOfficeMode_Params params {};
-		
+
+		ASecurityCamera_StopOfficeMode_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12356,9 +12355,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.StartOfficeMode");
-		
-		ASecurityCamera_StartOfficeMode_Params params {};
-		
+
+		ASecurityCamera_StartOfficeMode_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12378,10 +12377,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.SetPlayerDetectorEnabled");
-		
-		ASecurityCamera_SetPlayerDetectorEnabled_Params params {};
+
+		ASecurityCamera_SetPlayerDetectorEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12401,10 +12400,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.SetEnemeyDetectorEnabled");
-		
-		ASecurityCamera_SetEnemeyDetectorEnabled_Params params {};
+
+		ASecurityCamera_SetEnemeyDetectorEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12425,11 +12424,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.OnPlayerDetectorSightChanged");
-		
-		ASecurityCamera_OnPlayerDetectorSightChanged_Params params {};
+
+		ASecurityCamera_OnPlayerDetectorSightChanged_Params params{};
 		params.UpdatedActor = UpdatedActor;
 		params.bVisible = bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12447,9 +12446,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.OnOfficeModeStarted");
-		
-		ASecurityCamera_OnOfficeModeStarted_Params params {};
-		
+
+		ASecurityCamera_OnOfficeModeStarted_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -12469,11 +12468,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.OnEnemyDetectorSightChanged");
-		
-		ASecurityCamera_OnEnemyDetectorSightChanged_Params params {};
+
+		ASecurityCamera_OnEnemyDetectorSightChanged_Params params{};
 		params.UpdatedActor = UpdatedActor;
 		params.bVisible = bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12493,15 +12492,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.IsCameraUnlocked");
-		
-		ASecurityCamera_IsCameraUnlocked_Params params {};
+
+		ASecurityCamera_IsCameraUnlocked_Params params{};
 		params.OnlyShowCurrentMission = OnlyShowCurrentMission;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12516,14 +12515,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.HasDetectedEnemies");
-		
-		ASecurityCamera_HasDetectedEnemies_Params params {};
-		
+
+		ASecurityCamera_HasDetectedEnemies_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12538,14 +12537,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.GetVisibleEnemies");
-		
-		ASecurityCamera_GetVisibleEnemies_Params params {};
-		
+
+		ASecurityCamera_GetVisibleEnemies_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12560,13 +12559,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.GetPlayerSceneCapture");
-		
-		ASecurityCamera_GetPlayerSceneCapture_Params params {};
-		
+
+		ASecurityCamera_GetPlayerSceneCapture_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12581,14 +12580,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.GetCaptureTarget");
-		
-		ASecurityCamera_GetCaptureTarget_Params params {};
-		
+
+		ASecurityCamera_GetCaptureTarget_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12603,9 +12602,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCamera.CaptureView");
-		
-		ASecurityCamera_CaptureView_Params params {};
-		
+
+		ASecurityCamera_CaptureView_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -12638,10 +12637,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCameraSystem.PlayerSpotted");
-		
-		USecurityCameraSystem_PlayerSpotted_Params params {};
+
+		USecurityCameraSystem_PlayerSpotted_Params params{};
 		params.SecurityCamera = SecurityCamera;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12659,14 +12658,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SecurityCameraSystem.GetAllSecurityCameras");
-		
-		USecurityCameraSystem_GetAllSecurityCameras_Params params {};
-		
+
+		USecurityCameraSystem_GetAllSecurityCameras_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12695,13 +12694,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SeekerPatrolPath.GetSpawnType");
-		
-		USeekerPatrolPath_GetSpawnType_Params params {};
-		
+
+		USeekerPatrolPath_GetSpawnType_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12716,13 +12715,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SeekerPatrolPath.GetPathName");
-		
-		USeekerPatrolPath_GetPathName_Params params {};
-		
+
+		USeekerPatrolPath_GetPathName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -12753,10 +12752,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetSightType");
-		
-		USightComponent_SetSightType_Params params {};
+
+		USightComponent_SetSightType_Params params{};
 		params.InSightType = InSightType;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12778,12 +12777,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetSightParams");
-		
-		USightComponent_SetSightParams_Params params {};
+
+		USightComponent_SetSightParams_Params params{};
 		params.Angle = Angle;
 		params.MinDistance = MinDistance;
 		params.MaxDistance = MaxDistance;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12803,10 +12802,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetSightEnabled");
-		
-		USightComponent_SetSightEnabled_Params params {};
+
+		USightComponent_SetSightEnabled_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12826,10 +12825,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetSightAngle");
-		
-		USightComponent_SetSightAngle_Params params {};
+
+		USightComponent_SetSightAngle_Params params{};
 		params.Angle = Angle;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12849,10 +12848,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetIncludeTags");
-		
-		USightComponent_SetIncludeTags_Params params {};
+
+		USightComponent_SetIncludeTags_Params params{};
 		params.InIgnoreTags = InIgnoreTags;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12875,13 +12874,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetFrustumTypeParams");
-		
-		USightComponent_SetFrustumTypeParams_Params params {};
+
+		USightComponent_SetFrustumTypeParams_Params params{};
 		params.InMinYaw = InMinYaw;
 		params.InMaxYaw = InMaxYaw;
 		params.InMinPitch = InMinPitch;
 		params.InMaxPitch = InMaxPitch;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12901,10 +12900,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetEndDistance");
-		
-		USightComponent_SetEndDistance_Params params {};
+
+		USightComponent_SetEndDistance_Params params{};
 		params.Distance = Distance;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12924,10 +12923,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.SetAspectRatio");
-		
-		USightComponent_SetAspectRatio_Params params {};
+
+		USightComponent_SetAspectRatio_Params params{};
 		params.Ratio = Ratio;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12947,10 +12946,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.OnVisualQueryResults");
-		
-		USightComponent_OnVisualQueryResults_Params params {};
+
+		USightComponent_OnVisualQueryResults_Params params{};
 		params.DetectedSources = DetectedSources;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12970,10 +12969,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.OnVisibleActorDestroyed");
-		
-		USightComponent_OnVisibleActorDestroyed_Params params {};
+
+		USightComponent_OnVisibleActorDestroyed_Params params{};
 		params.DestroyedActor = DestroyedActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -12993,10 +12992,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.OnMoonManQueryResults");
-		
-		USightComponent_OnMoonManQueryResults_Params params {};
+
+		USightComponent_OnMoonManQueryResults_Params params{};
 		params.MoonManSpawnPoints = MoonManSpawnPoints;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13014,14 +13013,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.IsUsingConeSight");
-		
-		USightComponent_IsUsingConeSight_Params params {};
-		
+
+		USightComponent_IsUsingConeSight_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13036,14 +13035,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.IsSightEnabled");
-		
-		USightComponent_IsSightEnabled_Params params {};
-		
+
+		USightComponent_IsSightEnabled_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13060,15 +13059,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.IsActorVisible");
-		
-		USightComponent_IsActorVisible_Params params {};
+
+		USightComponent_IsActorVisible_Params params{};
 		params.Actor = Actor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13083,14 +13082,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetVisibleActors");
-		
-		USightComponent_GetVisibleActors_Params params {};
-		
+
+		USightComponent_GetVisibleActors_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13105,14 +13104,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetStartDistance");
-		
-		USightComponent_GetStartDistance_Params params {};
-		
+
+		USightComponent_GetStartDistance_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13127,14 +13126,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetSightAngle");
-		
-		USightComponent_GetSightAngle_Params params {};
-		
+
+		USightComponent_GetSightAngle_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13149,14 +13148,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetMinYaw");
-		
-		USightComponent_GetMinYaw_Params params {};
-		
+
+		USightComponent_GetMinYaw_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13171,14 +13170,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetMinPitch");
-		
-		USightComponent_GetMinPitch_Params params {};
-		
+
+		USightComponent_GetMinPitch_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13193,14 +13192,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetMaxYaw");
-		
-		USightComponent_GetMaxYaw_Params params {};
-		
+
+		USightComponent_GetMaxYaw_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13215,14 +13214,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetMaxPitch");
-		
-		USightComponent_GetMaxPitch_Params params {};
-		
+
+		USightComponent_GetMaxPitch_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13237,14 +13236,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetIncludeTags");
-		
-		USightComponent_GetIncludeTags_Params params {};
-		
+
+		USightComponent_GetIncludeTags_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13264,14 +13263,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetFrustumTypeParams");
-		
-		USightComponent_GetFrustumTypeParams_Params params {};
-		
+
+		USightComponent_GetFrustumTypeParams_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutMinYaw != nullptr)
 			*OutMinYaw = params.OutMinYaw;
 		if (OutMaxYaw != nullptr)
@@ -13293,14 +13292,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetEndDistance");
-		
-		USightComponent_GetEndDistance_Params params {};
-		
+
+		USightComponent_GetEndDistance_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13315,14 +13314,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SightComponent.GetAspectRatio");
-		
-		USightComponent_GetAspectRatio_Params params {};
-		
+
+		USightComponent_GetAspectRatio_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13351,9 +13350,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.StopFollowingSpline");
-		
-		USplineFollowMovementComponent_StopFollowingSpline_Params params {};
-		
+
+		USplineFollowMovementComponent_StopFollowingSpline_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13371,9 +13370,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.StartFollowingSpline");
-		
-		USplineFollowMovementComponent_StartFollowingSpline_Params params {};
-		
+
+		USplineFollowMovementComponent_StartFollowingSpline_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13393,10 +13392,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.SetSplineToFollow");
-		
-		USplineFollowMovementComponent_SetSplineToFollow_Params params {};
+
+		USplineFollowMovementComponent_SetSplineToFollow_Params params{};
 		params.Spline = Spline;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13416,10 +13415,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.SetDistanceAlongSpline");
-		
-		USplineFollowMovementComponent_SetDistanceAlongSpline_Params params {};
+
+		USplineFollowMovementComponent_SetDistanceAlongSpline_Params params{};
 		params.Distance = Distance;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13437,14 +13436,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.IsFollowingSpline");
-		
-		USplineFollowMovementComponent_IsFollowingSpline_Params params {};
-		
+
+		USplineFollowMovementComponent_IsFollowingSpline_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13459,14 +13458,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineFollowMovementComponent.GetCurrentDistance");
-		
-		USplineFollowMovementComponent_GetCurrentDistance_Params params {};
-		
+
+		USplineFollowMovementComponent_GetCurrentDistance_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13498,16 +13497,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SplineUtils.GetApproxDistanceClosestToWorldLocation");
-		
-		USplineUtils_GetApproxDistanceClosestToWorldLocation_Params params {};
+
+		USplineUtils_GetApproxDistanceClosestToWorldLocation_Params params{};
 		params.Pos_WS = Pos_WS;
 		params.Spline = Spline;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13538,10 +13537,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateComponent.SetObjectState");
-		
-		UWorldStateComponent_SetObjectState_Params params {};
+
+		UWorldStateComponent_SetObjectState_Params params{};
 		params.bEnabled = bEnabled;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13559,14 +13558,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateComponent.HasValidSaveName");
-		
-		UWorldStateComponent_HasValidSaveName_Params params {};
-		
+
+		UWorldStateComponent_HasValidSaveName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13581,14 +13580,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateComponent.GetObjectState");
-		
-		UWorldStateComponent_GetObjectState_Params params {};
-		
+
+		UWorldStateComponent_GetObjectState_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13620,11 +13619,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StoreActiveStateOnTrigger.OnActorTriggered");
-		
-		UStoreActiveStateOnTrigger_OnActorTriggered_Params params {};
+
+		UStoreActiveStateOnTrigger_OnActorTriggered_Params params{};
 		params.OverlappedActor = OverlappedActor;
 		params.OtherActor = OtherActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13661,13 +13660,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.LoadStreamingLevelsAtLocation");
-		
-		UStreamingLevelUtil_LoadStreamingLevelsAtLocation_Params params {};
+
+		UStreamingLevelUtil_LoadStreamingLevelsAtLocation_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.WorldLocation = WorldLocation;
 		params.bEnableVolumesAfterLoad = bEnableVolumesAfterLoad;
 		params.LatentInfo = LatentInfo;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13688,16 +13687,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.GetAllStreamingVolumesAtLocation");
-		
-		UStreamingLevelUtil_GetAllStreamingVolumesAtLocation_Params params {};
+
+		UStreamingLevelUtil_GetAllStreamingVolumesAtLocation_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13714,15 +13713,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.GetAllStreamingVolumes");
-		
-		UStreamingLevelUtil_GetAllStreamingVolumes_Params params {};
+
+		UStreamingLevelUtil_GetAllStreamingVolumes_Params params{};
 		params.WorldContextObject = WorldContextObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13740,16 +13739,16 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.GetAllStreamingLevelsAtLocation");
-		
-		UStreamingLevelUtil_GetAllStreamingLevelsAtLocation_Params params {};
+
+		UStreamingLevelUtil_GetAllStreamingLevelsAtLocation_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13766,15 +13765,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.GetAllStreamingLevels");
-		
-		UStreamingLevelUtil_GetAllStreamingLevels_Params params {};
+
+		UStreamingLevelUtil_GetAllStreamingLevels_Params params{};
 		params.WorldContextObject = WorldContextObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13791,15 +13790,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.GetAllLevels");
-		
-		UStreamingLevelUtil_GetAllLevels_Params params {};
+
+		UStreamingLevelUtil_GetAllLevels_Params params{};
 		params.WorldContextObject = WorldContextObject;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13817,11 +13816,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLevelUtil.EnableAllStreamingVolumes");
-		
-		UStreamingLevelUtil_EnableAllStreamingVolumes_Params params {};
+
+		UStreamingLevelUtil_EnableAllStreamingVolumes_Params params{};
 		params.WorldContextObject = WorldContextObject;
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13855,10 +13854,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLoadComponent.StartAsyncLoadForLocation");
-		
-		UStreamingLoadComponent_StartAsyncLoadForLocation_Params params {};
+
+		UStreamingLoadComponent_StartAsyncLoadForLocation_Params params{};
 		params.WorldLocation = WorldLocation;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13876,9 +13875,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLoadComponent.OnLevelLoaded");
-		
-		UStreamingLoadComponent_OnLevelLoaded_Params params {};
-		
+
+		UStreamingLoadComponent_OnLevelLoaded_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13896,14 +13895,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLoadComponent.IsStreamingLevels");
-		
-		UStreamingLoadComponent_IsStreamingLevels_Params params {};
-		
+
+		UStreamingLoadComponent_IsStreamingLevels_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -13920,10 +13919,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.StreamingLoadComponent.EnableAllStreamingVolumes");
-		
-		UStreamingLoadComponent_EnableAllStreamingVolumes_Params params {};
+
+		UStreamingLoadComponent_EnableAllStreamingVolumes_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13969,9 +13968,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemPackage.OnSetup");
-		
-		ASurvivalItemPackage_OnSetup_Params params {};
-		
+
+		ASurvivalItemPackage_OnSetup_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -13989,14 +13988,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemPackage.HasCollected");
-		
-		ASurvivalItemPackage_HasCollected_Params params {};
-		
+
+		ASurvivalItemPackage_HasCollected_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14011,9 +14010,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemPackage.Collect");
-		
-		ASurvivalItemPackage_Collect_Params params {};
-		
+
+		ASurvivalItemPackage_Collect_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14047,10 +14046,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.RandomizeSurvivalItems");
-		
-		ASurvivalItemRandomizer_RandomizeSurvivalItems_Params params {};
+
+		ASurvivalItemRandomizer_RandomizeSurvivalItems_Params params{};
 		params.bSpawnAllLocations = bSpawnAllLocations;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14070,15 +14069,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.HasCollected");
-		
-		ASurvivalItemRandomizer_HasCollected_Params params {};
+
+		ASurvivalItemRandomizer_HasCollected_Params params{};
 		params.Package = Package;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14097,14 +14096,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetYellowScore");
-		
-		ASurvivalItemRandomizer_GetYellowScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetYellowScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14128,14 +14127,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetRedScore");
-		
-		ASurvivalItemRandomizer_GetRedScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetRedScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14159,14 +14158,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetPurpleScore");
-		
-		ASurvivalItemRandomizer_GetPurpleScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetPurpleScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14190,14 +14189,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetPinkScore");
-		
-		ASurvivalItemRandomizer_GetPinkScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetPinkScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14217,14 +14216,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetPackagesSortedByDistance");
-		
-		ASurvivalItemRandomizer_GetPackagesSortedByDistance_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetPackagesSortedByDistance_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14243,14 +14242,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetGreenScore");
-		
-		ASurvivalItemRandomizer_GetGreenScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetGreenScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14274,14 +14273,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.SurvivalItemRandomizer.GetGoldScore");
-		
-		ASurvivalItemRandomizer_GetGoldScore_Params params {};
-		
+
+		ASurvivalItemRandomizer_GetGoldScore_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutCount != nullptr)
 			*OutCount = params.OutCount;
 		if (OutPointsPerPackage != nullptr)
@@ -14329,9 +14328,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.UpdateMissionComponent.UpdateMission");
-		
-		UUpdateMissionComponent_UpdateMission_Params params {};
-		
+
+		UUpdateMissionComponent_UpdateMission_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14349,14 +14348,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.UpdateMissionComponent.IsMissionFinished");
-		
-		UUpdateMissionComponent_IsMissionFinished_Params params {};
-		
+
+		UUpdateMissionComponent_IsMissionFinished_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14371,14 +14370,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.UpdateMissionComponent.HasMetCondition");
-		
-		UUpdateMissionComponent_HasMetCondition_Params params {};
-		
+
+		UUpdateMissionComponent_HasMetCondition_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14393,14 +14392,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.UpdateMissionComponent.GetMissionName");
-		
-		UUpdateMissionComponent_GetMissionName_Params params {};
-		
+
+		UUpdateMissionComponent_GetMissionName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14431,10 +14430,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.SetVisualOffsetLocations");
-		
-		UVisualSourceComponent_SetVisualOffsetLocations_Params params {};
+
+		UVisualSourceComponent_SetVisualOffsetLocations_Params params{};
 		params.InVisualOffsets = InVisualOffsets;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14455,11 +14454,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.SetVisualOffset");
-		
-		UVisualSourceComponent_SetVisualOffset_Params params {};
+
+		UVisualSourceComponent_SetVisualOffset_Params params{};
 		params.PointIndex = PointIndex;
 		params.visualOffset = visualOffset;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14479,10 +14478,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.SetSourceVisibility");
-		
-		UVisualSourceComponent_SetSourceVisibility_Params params {};
+
+		UVisualSourceComponent_SetSourceVisibility_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14502,10 +14501,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.RemoveVisualOffset");
-		
-		UVisualSourceComponent_RemoveVisualOffset_Params params {};
+
+		UVisualSourceComponent_RemoveVisualOffset_Params params{};
 		params.PointIndex = PointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14523,14 +14522,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.GetVisualOffsets");
-		
-		UVisualSourceComponent_GetVisualOffsets_Params params {};
-		
+
+		UVisualSourceComponent_GetVisualOffsets_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14545,14 +14544,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.GetVisualLocations");
-		
-		UVisualSourceComponent_GetVisualLocations_Params params {};
-		
+
+		UVisualSourceComponent_GetVisualLocations_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14567,14 +14566,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.GetSourceVisibility");
-		
-		UVisualSourceComponent_GetSourceVisibility_Params params {};
-		
+
+		UVisualSourceComponent_GetSourceVisibility_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14589,14 +14588,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.GetDetectedVisualLocation");
-		
-		UVisualSourceComponent_GetDetectedVisualLocation_Params params {};
-		
+
+		UVisualSourceComponent_GetDetectedVisualLocation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14615,12 +14614,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.VisualSourceComponent.DetectTheSource");
-		
-		UVisualSourceComponent_DetectTheSource_Params params {};
+
+		UVisualSourceComponent_DetectTheSource_Params params{};
 		params.VSLocation = VSLocation;
 		params.passed_HitActor = passed_HitActor;
 		params.passed_bVisible = passed_bVisible;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14654,10 +14653,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateHandlerComponent.SetObjectState");
-		
-		UWorldStateHandlerComponent_SetObjectState_Params params {};
+
+		UWorldStateHandlerComponent_SetObjectState_Params params{};
 		params.bEnable = bEnable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14678,11 +14677,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateHandlerComponent.OnObjectStateChangedHandle");
-		
-		UWorldStateHandlerComponent_OnObjectStateChangedHandle_Params params {};
+
+		UWorldStateHandlerComponent_OnObjectStateChangedHandle_Params params{};
 		params.ObjectName = ObjectName;
 		params.ObjectState = ObjectState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14700,9 +14699,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateHandlerComponent.OnObjectStateChangedEvent");
-		
-		UWorldStateHandlerComponent_OnObjectStateChangedEvent_Params params {};
-		
+
+		UWorldStateHandlerComponent_OnObjectStateChangedEvent_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14720,14 +14719,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateHandlerComponent.HasValidSaveName");
-		
-		UWorldStateHandlerComponent_HasValidSaveName_Params params {};
-		
+
+		UWorldStateHandlerComponent_HasValidSaveName_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14742,14 +14741,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateHandlerComponent.GetObjectState");
-		
-		UWorldStateHandlerComponent_GetObjectState_Params params {};
-		
+
+		UWorldStateHandlerComponent_GetObjectState_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -14782,12 +14781,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.StartMinigame");
-		
-		UWorldStateSystem_StartMinigame_Params params {};
+
+		UWorldStateSystem_StartMinigame_Params params{};
 		params.MinigameName = MinigameName;
 		params.GameState = GameState;
 		params.MinigameActor = MinigameActor;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14807,10 +14806,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetWorldState");
-		
-		UWorldStateSystem_SetWorldState_Params params {};
+
+		UWorldStateSystem_SetWorldState_Params params{};
 		params.NewState = NewState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14828,9 +14827,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetupNewGame");
-		
-		UWorldStateSystem_SetupNewGame_Params params {};
-		
+
+		UWorldStateSystem_SetupNewGame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14850,10 +14849,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetSurvivalMaxDeaths");
-		
-		UWorldStateSystem_SetSurvivalMaxDeaths_Params params {};
+
+		UWorldStateSystem_SetSurvivalMaxDeaths_Params params{};
 		params.MaxDeaths = MaxDeaths;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14873,10 +14872,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetSurvivalDifficulty");
-		
-		UWorldStateSystem_SetSurvivalDifficulty_Params params {};
+
+		UWorldStateSystem_SetSurvivalDifficulty_Params params{};
 		params.Difficulty = Difficulty;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14896,10 +14895,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetRandomSeed");
-		
-		UWorldStateSystem_SetRandomSeed_Params params {};
+
+		UWorldStateSystem_SetRandomSeed_Params params{};
 		params.Seed = Seed;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14919,10 +14918,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetPowerStationAvailable");
-		
-		UWorldStateSystem_SetPowerStationAvailable_Params params {};
+
+		UWorldStateSystem_SetPowerStationAvailable_Params params{};
 		params.bAvailable = bAvailable;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14942,10 +14941,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetPlayerInPowerStation");
-		
-		UWorldStateSystem_SetPlayerInPowerStation_Params params {};
+
+		UWorldStateSystem_SetPlayerInPowerStation_Params params{};
 		params.InPowerStationID = InPowerStationID;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14965,10 +14964,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetPlayerInFreddy");
-		
-		UWorldStateSystem_SetPlayerInFreddy_Params params {};
+
+		UWorldStateSystem_SetPlayerInFreddy_Params params{};
 		params.bInFreddy = bInFreddy;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -14986,9 +14985,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetPlayerHasUsedHidingSpot");
-		
-		UWorldStateSystem_SetPlayerHasUsedHidingSpot_Params params {};
-		
+
+		UWorldStateSystem_SetPlayerHasUsedHidingSpot_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15008,10 +15007,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetFreddySick");
-		
-		UWorldStateSystem_SetFreddySick_Params params {};
+
+		UWorldStateSystem_SetFreddySick_Params params{};
 		params.bIsSick = bIsSick;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15031,10 +15030,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetFreddyPatrolPoint");
-		
-		UWorldStateSystem_SetFreddyPatrolPoint_Params params {};
+
+		UWorldStateSystem_SetFreddyPatrolPoint_Params params{};
 		params.PatrolPointIndex = PatrolPointIndex;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15054,10 +15053,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetCurrentActivityId");
-		
-		UWorldStateSystem_SetCurrentActivityId_Params params {};
+
+		UWorldStateSystem_SetCurrentActivityId_Params params{};
 		params.InActivityId = InActivityId;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15077,10 +15076,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetCanEnterExitFreddy");
-		
-		UWorldStateSystem_SetCanEnterExitFreddy_Params params {};
+
+		UWorldStateSystem_SetCanEnterExitFreddy_Params params{};
 		params.bCanEnterExit = bCanEnterExit;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15100,10 +15099,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetCanCallFreddy");
-		
-		UWorldStateSystem_SetCanCallFreddy_Params params {};
+
+		UWorldStateSystem_SetCanCallFreddy_Params params{};
 		params.bCanCall = bCanCall;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15123,10 +15122,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetArcadeState");
-		
-		UWorldStateSystem_SetArcadeState_Params params {};
+
+		UWorldStateSystem_SetArcadeState_Params params{};
 		params.InArcadeState = InArcadeState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15146,10 +15145,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.SetAIState");
-		
-		UWorldStateSystem_SetAIState_Params params {};
+
+		UWorldStateSystem_SetAIState_Params params{};
 		params.InAIState = InAIState;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15169,10 +15168,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.RemoveActivated");
-		
-		UWorldStateSystem_RemoveActivated_Params params {};
+
+		UWorldStateSystem_RemoveActivated_Params params{};
 		params.ActivatableName = ActivatableName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15190,14 +15189,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.IsPowerStationAvailable");
-		
-		UWorldStateSystem_IsPowerStationAvailable_Params params {};
-		
+
+		UWorldStateSystem_IsPowerStationAvailable_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15212,14 +15211,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.IsPlayerInFreddy");
-		
-		UWorldStateSystem_IsPlayerInFreddy_Params params {};
-		
+
+		UWorldStateSystem_IsPlayerInFreddy_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15234,14 +15233,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.IsFreddySick");
-		
-		UWorldStateSystem_IsFreddySick_Params params {};
-		
+
+		UWorldStateSystem_IsFreddySick_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15258,15 +15257,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.IsActivated");
-		
-		UWorldStateSystem_IsActivated_Params params {};
+
+		UWorldStateSystem_IsActivated_Params params{};
 		params.ActivatableName = ActivatableName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15281,14 +15280,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.HasPlayerUsedHidingSpot");
-		
-		UWorldStateSystem_HasPlayerUsedHidingSpot_Params params {};
-		
+
+		UWorldStateSystem_HasPlayerUsedHidingSpot_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15303,14 +15302,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetWorldState");
-		
-		UWorldStateSystem_GetWorldState_Params params {};
-		
+
+		UWorldStateSystem_GetWorldState_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15325,14 +15324,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetSurvivalMaxDeaths");
-		
-		UWorldStateSystem_GetSurvivalMaxDeaths_Params params {};
-		
+
+		UWorldStateSystem_GetSurvivalMaxDeaths_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15347,14 +15346,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetSurvivalDifficulty");
-		
-		UWorldStateSystem_GetSurvivalDifficulty_Params params {};
-		
+
+		UWorldStateSystem_GetSurvivalDifficulty_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15372,14 +15371,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetSavedPlayerLocationAndRotation");
-		
-		UWorldStateSystem_GetSavedPlayerLocationAndRotation_Params params {};
-		
+
+		UWorldStateSystem_GetSavedPlayerLocationAndRotation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutWorldLocation != nullptr)
 			*OutWorldLocation = params.OutWorldLocation;
 		if (OutWorldRotation != nullptr)
@@ -15401,14 +15400,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetSavedFreddyLocationAndRotation");
-		
-		UWorldStateSystem_GetSavedFreddyLocationAndRotation_Params params {};
-		
+
+		UWorldStateSystem_GetSavedFreddyLocationAndRotation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutFreddyInWorld != nullptr)
 			*OutFreddyInWorld = params.OutFreddyInWorld;
 		if (OutWorldLocation != nullptr)
@@ -15428,14 +15427,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetRandomSeed");
-		
-		UWorldStateSystem_GetRandomSeed_Params params {};
-		
+
+		UWorldStateSystem_GetRandomSeed_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15453,14 +15452,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetPowerStationInfo");
-		
-		UWorldStateSystem_GetPowerStationInfo_Params params {};
-		
+
+		UWorldStateSystem_GetPowerStationInfo_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutPlayerInPowerStation != nullptr)
 			*OutPlayerInPowerStation = params.OutPlayerInPowerStation;
 		if (OutPowerStationID != nullptr)
@@ -15478,14 +15477,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetLivesRemaining");
-		
-		UWorldStateSystem_GetLivesRemaining_Params params {};
-		
+
+		UWorldStateSystem_GetLivesRemaining_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15500,14 +15499,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetFreddyPawn");
-		
-		UWorldStateSystem_GetFreddyPawn_Params params {};
-		
+
+		UWorldStateSystem_GetFreddyPawn_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15522,14 +15521,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetFreddyPatrolPoint");
-		
-		UWorldStateSystem_GetFreddyPatrolPoint_Params params {};
-		
+
+		UWorldStateSystem_GetFreddyPatrolPoint_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15544,14 +15543,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetCurrentSpottedCount");
-		
-		UWorldStateSystem_GetCurrentSpottedCount_Params params {};
-		
+
+		UWorldStateSystem_GetCurrentSpottedCount_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15566,14 +15565,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetCurrentMinigameActor");
-		
-		UWorldStateSystem_GetCurrentMinigameActor_Params params {};
-		
+
+		UWorldStateSystem_GetCurrentMinigameActor_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15588,14 +15587,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetCurrentMinigame");
-		
-		UWorldStateSystem_GetCurrentMinigame_Params params {};
-		
+
+		UWorldStateSystem_GetCurrentMinigame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15610,14 +15609,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetCurrentDeathCount");
-		
-		UWorldStateSystem_GetCurrentDeathCount_Params params {};
-		
+
+		UWorldStateSystem_GetCurrentDeathCount_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15632,14 +15631,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetCurrentActivityId");
-		
-		UWorldStateSystem_GetCurrentActivityId_Params params {};
-		
+
+		UWorldStateSystem_GetCurrentActivityId_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15654,14 +15653,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetArcadeState");
-		
-		UWorldStateSystem_GetArcadeState_Params params {};
-		
+
+		UWorldStateSystem_GetArcadeState_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15676,14 +15675,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.GetAIState");
-		
-		UWorldStateSystem_GetAIState_Params params {};
-		
+
+		UWorldStateSystem_GetAIState_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15698,9 +15697,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.EndMinigame");
-		
-		UWorldStateSystem_EndMinigame_Params params {};
-		
+
+		UWorldStateSystem_EndMinigame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15720,10 +15719,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.DebugSetPlayerHasUsedHidingSpot");
-		
-		UWorldStateSystem_DebugSetPlayerHasUsedHidingSpot_Params params {};
+
+		UWorldStateSystem_DebugSetPlayerHasUsedHidingSpot_Params params{};
 		params.HasHid = HasHid;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15741,9 +15740,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.ClearPlayerInPowerStation");
-		
-		UWorldStateSystem_ClearPlayerInPowerStation_Params params {};
-		
+
+		UWorldStateSystem_ClearPlayerInPowerStation_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15764,14 +15763,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.CanStartMinigame");
-		
-		UWorldStateSystem_CanStartMinigame_Params params {};
-		
+
+		UWorldStateSystem_CanStartMinigame_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (CanStart != nullptr)
 			*CanStart = params.CanStart;
 		if (reason != nullptr)
@@ -15789,14 +15788,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.CanEnterExitFreddy");
-		
-		UWorldStateSystem_CanEnterExitFreddy_Params params {};
-		
+
+		UWorldStateSystem_CanEnterExitFreddy_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15811,14 +15810,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.CanCallFreddy");
-		
-		UWorldStateSystem_CanCallFreddy_Params params {};
-		
+
+		UWorldStateSystem_CanCallFreddy_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		return params.ReturnValue;
 	}
 
@@ -15833,9 +15832,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.AddSpotted");
-		
-		UWorldStateSystem_AddSpotted_Params params {};
-		
+
+		UWorldStateSystem_AddSpotted_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15855,14 +15854,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.AddDeath");
-		
-		UWorldStateSystem_AddDeath_Params params {};
-		
+
+		UWorldStateSystem_AddDeath_Params params{};
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
+
 		if (OutRemainingLives != nullptr)
 			*OutRemainingLives = params.OutRemainingLives;
 	}
@@ -15880,10 +15879,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function fnaf9.WorldStateSystem.AddActivated");
-		
-		UWorldStateSystem_AddActivated_Params params {};
+
+		UWorldStateSystem_AddActivated_Params params{};
 		params.ActivatableName = ActivatableName;
-		
+
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
@@ -15905,5 +15904,4 @@ namespace CG
 	}
 
 }
-
 
