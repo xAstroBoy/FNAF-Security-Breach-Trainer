@@ -146,15 +146,12 @@ namespace Cheats
 				{
 					if (mods != nullptr)
 					{
-						if (mods->PlayerTrigger != nullptr) // Shielded with Empty or Nullptr triggers.
+						mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
+						mods->IsActive = true;
+						mods->Glitching = false;
+						if (mods->PlayerTrigger != nullptr)
 						{
-							mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
-							mods->IsActive = true;
-							mods->Glitching = false;
-							if (mods->PlayerTrigger != nullptr)
-							{
-								mods->PlayerTrigger->SetActive(true, false);
-							}
+							mods->PlayerTrigger->SetActive(true, false);
 						}
 					}
 				}
