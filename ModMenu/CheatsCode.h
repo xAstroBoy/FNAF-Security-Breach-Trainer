@@ -5,7 +5,6 @@ namespace Cheats
 {
 	static bool isTrainerGuiActive = false;
 
-	static bool HasBackuppedFreddyPower = false;
 	static bool UnlimitedJumpBool_Enabled = false;
 	static bool UnlimitedFazBlasterAmmo_Enabled = false;
 	static bool RemoveBlasterCooldown_Enabled = false;
@@ -15,7 +14,6 @@ namespace Cheats
 	static bool NoPowerDrainingDoors_Enabled = false;
 	static bool FazBlasterGodMode_Enabled = false;
 	static bool NoChicaBeakCooldown_Enabled = false;
-	static bool FreezeFreddyPower_Enabled = false;
 	static bool UnlimitedStaminaBool_Enabled = false;
 	static bool UnlimitedFazWatchBool_Enabled = false;
 	static bool NoJumpscares_Enabled = false;
@@ -25,8 +23,8 @@ namespace Cheats
 	static bool FreddyCanBeAlwaysCalled_Enabled = false;
 	static bool FreddyGregoryCanAlwaysEnter_Enabled = false;
 
-	static CG::UFNAFInventorySystem* Active_UFNAFInventorySystem = nullptr;
-
+	static bool FreezeFreddyPower_Enabled = false;
+	static bool HasBackuppedFreddyPower = false;
 	// Higher than that , the risk of jumpscare is there.
 	static int MaxFreddyPower = 4500;
 	static int CurrentFreddyPower = 4500;
@@ -58,7 +56,9 @@ namespace Cheats
 	bool Get_UnlimitedStamina();
 	void Set_UnlimitedStamina(const bool& value);
 
-	void DisableJumpscares();
+	void SemiGodmode();
 
 	CG::UFNAFInventorySystem* Get_UFNAFInventorySystem();
+	static CG::UFNAFInventorySystem* Active_UFNAFInventorySystem = nullptr;
+
 }

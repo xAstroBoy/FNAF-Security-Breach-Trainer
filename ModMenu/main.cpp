@@ -163,7 +163,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			ImGui::Checkbox("FazBlaster GodMode", &Cheats::FazBlasterGodMode_Enabled);
 
 			ImGui::SetCursorPos(ImVec2(17.5, 110.0));
-			ImGui::Checkbox("No Jumpscares", &Cheats::NoJumpscares_Enabled);
+			ImGui::Checkbox("Semi GodMode", &Cheats::NoJumpscares_Enabled);
 			ImGui::EndChild();
 
 			ImGui::SetCursorPos(ImVec2(523, 169));
@@ -282,7 +282,7 @@ void ExecutorThread()
 		}
 		if (Cheats::NoJumpscares_Enabled)
 		{
-			Cheats::DisableJumpscares();
+			Cheats::SemiGodmode();
 		}
 
 		if (Cheats::AllowAlwaysSaving_Enabled)

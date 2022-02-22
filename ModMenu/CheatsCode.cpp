@@ -220,11 +220,15 @@ namespace Cheats
 			std::cout << "Thread exited with exception: " << ex.what() << "\n";
 		}
 	}
-
-	void DisableJumpscares()
+	void SemiGodmode()
 	{
 		try
 		{
+			// This will Disable most of the AIs Jumpscares
+			// Monty, Chica, Roxy, Vanessa, Vanny , Endos, Blob (God Mode Confirmed on them)
+			// Moonman, Mini-music man Still unaffected
+			// TODO: Figure out how moonman and mini-music man jumpscare mechanism works and disable it.
+
 			auto GeneralAI = CG::UObject::FindObjects<CG::AAISeeker_C>();
 			if (!GeneralAI.empty())
 			{
