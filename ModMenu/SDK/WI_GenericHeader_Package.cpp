@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_GenericHeader_Package.h"
 
 namespace CG
 {
@@ -142,9 +141,9 @@ namespace CG
 	 * 		Name   -> Function WI_GenericHeader.WI_GenericHeader_C.ExecuteUbergraph_WI_GenericHeader
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_GenericHeader_C::ExecuteUbergraph_WI_GenericHeader(int EntryPoint)
+	void UWI_GenericHeader_C::ExecuteUbergraph_WI_GenericHeader(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

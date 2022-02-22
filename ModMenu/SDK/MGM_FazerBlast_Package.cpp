@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MGM_FazerBlast_Package.h"
 
 namespace CG
 {
@@ -83,9 +82,9 @@ namespace CG
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnEnd
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void AMGM_FazerBlast_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -125,9 +124,9 @@ namespace CG
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               I_Leaving                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                I_TaskIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            I_TaskIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::UpdateMissionTask(bool I_Leaving, int I_TaskIndex)
+	void AMGM_FazerBlast_C::UpdateMissionTask(bool I_Leaving, int32_t I_TaskIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -272,9 +271,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::OnFailure_EE39226D48E410FC896D9D8565A580FF(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AMGM_FazerBlast_C::OnFailure_EE39226D48E410FC896D9D8565A580FF(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -298,9 +297,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::OnSuccess_EE39226D48E410FC896D9D8565A580FF(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AMGM_FazerBlast_C::OnSuccess_EE39226D48E410FC896D9D8565A580FF(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -488,11 +487,11 @@ namespace CG
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bFromSweep                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FHitResult                                  SweepResult                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	 */
-	void AMGM_FazerBlast_C::BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+	void AMGM_FazerBlast_C::BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -538,9 +537,9 @@ namespace CG
 	 * Parameters:
 	 * 		bool                                               Locked                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Closed                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                Lost_Doors                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Lost_Doors                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::DoorLock(bool Locked, bool Closed, int Lost_Doors)
+	void AMGM_FazerBlast_C::DoorLock(bool Locked, bool Closed, int32_t Lost_Doors)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -809,9 +808,9 @@ namespace CG
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.ExecuteUbergraph_MGM_FazerBlast
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMGM_FazerBlast_C::ExecuteUbergraph_MGM_FazerBlast(int EntryPoint)
+	void AMGM_FazerBlast_C::ExecuteUbergraph_MGM_FazerBlast(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

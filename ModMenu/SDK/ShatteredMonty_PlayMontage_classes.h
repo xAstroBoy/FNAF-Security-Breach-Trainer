@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		TEnumAsByte<Engine_EMovementMode>                          OldMoveMode;                                             // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		Engine_EMovementMode                                       OldMoveMode;                                             // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void OnNotifyEnd_346277884B529EC47D005089EEA3225A(const class FName& NotifyName);
@@ -36,7 +36,7 @@ namespace CG
 		void OnBlendOut_6A1833664A5861686F7AB89310EA782D(const class FName& NotifyName);
 		void OnCompleted_6A1833664A5861686F7AB89310EA782D(const class FName& NotifyName);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_ShatteredMonty_PlayMontage(int EntryPoint);
+		void ExecuteUbergraph_ShatteredMonty_PlayMontage(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

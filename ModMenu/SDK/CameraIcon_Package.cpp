@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CameraIcon_Package.h"
 
 namespace CG
 {
@@ -156,9 +155,9 @@ namespace CG
 	 * 		Name   -> Function CameraIcon.CameraIcon_C.ExecuteUbergraph_CameraIcon
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCameraIcon_C::ExecuteUbergraph_CameraIcon(int EntryPoint)
+	void UCameraIcon_C::ExecuteUbergraph_CameraIcon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

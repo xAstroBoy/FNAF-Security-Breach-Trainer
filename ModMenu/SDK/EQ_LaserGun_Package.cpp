@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EQ_LaserGun_Package.h"
 
 namespace CG
 {
@@ -348,9 +347,9 @@ namespace CG
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.ExecuteUbergraph_EQ_LaserGun
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_LaserGun_C::ExecuteUbergraph_EQ_LaserGun(int EntryPoint)
+	void AEQ_LaserGun_C::ExecuteUbergraph_EQ_LaserGun(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

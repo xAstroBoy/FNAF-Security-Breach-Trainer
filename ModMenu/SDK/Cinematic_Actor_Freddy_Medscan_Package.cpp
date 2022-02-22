@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Cinematic_Actor_Freddy_Medscan_Package.h"
 
 namespace CG
 {

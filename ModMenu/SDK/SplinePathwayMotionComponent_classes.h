@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_SplinePathwayMotionComponent(int EntryPoint);
+		void ExecuteUbergraph_SplinePathwayMotionComponent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

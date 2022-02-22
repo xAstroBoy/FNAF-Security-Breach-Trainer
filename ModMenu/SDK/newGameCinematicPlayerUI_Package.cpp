@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "newGameCinematicPlayerUI_Package.h"
 
 namespace CG
 {
@@ -139,9 +138,9 @@ namespace CG
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.ExecuteUbergraph_NewGameCinematicPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UNewGameCinematicPlayerUI_C::ExecuteUbergraph_NewGameCinematicPlayerUI(int EntryPoint)
+	void UNewGameCinematicPlayerUI_C::ExecuteUbergraph_NewGameCinematicPlayerUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

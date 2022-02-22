@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_FreddyEnterExitPawn(int EntryPoint);
+		void ExecuteUbergraph_FreddyEnterExitPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

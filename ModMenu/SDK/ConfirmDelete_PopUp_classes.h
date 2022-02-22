@@ -39,7 +39,7 @@ namespace CG
 		void BndEvt__BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 		void UserBackedOut();
 		void SetFileName(const class FString& FileForDeletion);
-		void ExecuteUbergraph_ConfirmDelete_PopUp(int EntryPoint);
+		void ExecuteUbergraph_ConfirmDelete_PopUp(int32_t EntryPoint);
 		void DeleteGameFile__DelegateSignature();
 		void DeleteMenu_BackedOut__DelegateSignature();
 		static UClass* StaticClass();

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Button_FreddyGreenRoomBackDoor_Package.h"
 
 namespace CG
 {
@@ -68,9 +67,9 @@ namespace CG
 	 * 		Name   -> Function Button_FreddyGreenRoomBackDoor.Button_FreddyGreenRoomBackDoor_C.ExecuteUbergraph_Button_FreddyGreenRoomBackDoor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AButton_FreddyGreenRoomBackDoor_C::ExecuteUbergraph_Button_FreddyGreenRoomBackDoor(int EntryPoint)
+	void AButton_FreddyGreenRoomBackDoor_C::ExecuteUbergraph_Button_FreddyGreenRoomBackDoor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

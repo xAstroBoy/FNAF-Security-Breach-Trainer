@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_ButtonRemapping_Package.h"
 
 namespace CG
 {
@@ -448,9 +447,9 @@ namespace CG
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ExecuteUbergraph_WI_ButtonRemapping
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_ButtonRemapping_C::ExecuteUbergraph_WI_ButtonRemapping(int EntryPoint)
+	void UWI_ButtonRemapping_C::ExecuteUbergraph_WI_ButtonRemapping(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

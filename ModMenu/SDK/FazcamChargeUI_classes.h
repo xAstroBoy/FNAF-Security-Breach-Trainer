@@ -37,7 +37,7 @@ namespace CG
 		void CameraFlashed(float RechargeTime);
 		void Recharge();
 		void PlayRechargeSFX();
-		void ExecuteUbergraph_FazcamChargeUI(int EntryPoint);
+		void ExecuteUbergraph_FazcamChargeUI(int32_t EntryPoint);
 		void RechargeDone__DelegateSignature();
 		static UClass* StaticClass();
 	};

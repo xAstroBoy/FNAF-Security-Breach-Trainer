@@ -28,7 +28,7 @@ namespace CG
 
 	public:
 		void PlaySound(bool Play);
-		void ExecuteUbergraph_Pre_Speaker(int EntryPoint);
+		void ExecuteUbergraph_Pre_Speaker(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

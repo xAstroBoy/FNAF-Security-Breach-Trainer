@@ -34,7 +34,7 @@ namespace CG
 		void BP_OnItemSelectionChanged(bool bIsSelected);
 		void OnListItemObjectSet(class UObject* ListItemObject);
 		void On_Task_Checked(class UDebugTaskUI_C* Task, bool IsChecked);
-		void ExecuteUbergraph_DbgMissionEntryUI(int EntryPoint);
+		void ExecuteUbergraph_DbgMissionEntryUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

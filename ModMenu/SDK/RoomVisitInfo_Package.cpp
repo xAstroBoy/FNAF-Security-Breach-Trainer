@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoomVisitInfo_Package.h"
 
 namespace CG
 {

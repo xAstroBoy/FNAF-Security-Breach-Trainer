@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Title_SaveSlotButton_Package.h"
 
 namespace CG
 {
@@ -144,11 +143,11 @@ namespace CG
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FString                                      SaveFileName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	 * 		int                                                GameHour                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            GameHour                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FDateTime                                   DateTimeWhenSaved                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                GameplayTime_Sec                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            GameplayTime_Sec                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_SaveSlotButton_C::SetDisplayedData(const class FString& SaveFileName, int GameHour, const struct FDateTime& DateTimeWhenSaved, int GameplayTime_Sec)
+	void UTitle_SaveSlotButton_C::SetDisplayedData(const class FString& SaveFileName, int32_t GameHour, const struct FDateTime& DateTimeWhenSaved, int32_t GameplayTime_Sec)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -193,9 +192,9 @@ namespace CG
 	 * 		Name   -> Function Title_SaveSlotButton.Title_SaveSlotButton_C.ExecuteUbergraph_Title_SaveSlotButton
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_SaveSlotButton_C::ExecuteUbergraph_Title_SaveSlotButton(int EntryPoint)
+	void UTitle_SaveSlotButton_C::ExecuteUbergraph_Title_SaveSlotButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

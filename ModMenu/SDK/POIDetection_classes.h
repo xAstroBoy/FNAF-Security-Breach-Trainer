@@ -32,7 +32,7 @@ namespace CG
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void Clear_Values();
-		void ExecuteUbergraph_POIDetection(int EntryPoint);
+		void ExecuteUbergraph_POIDetection(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

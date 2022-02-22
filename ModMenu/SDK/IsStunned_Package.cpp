@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "IsStunned_Package.h"
 
 namespace CG
 {

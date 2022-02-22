@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Title_Slidebar_Package.h"
 
 namespace CG
 {
@@ -256,9 +255,9 @@ namespace CG
 	 * 		Name   -> Function Title_Slidebar.Title_Slidebar_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_Slidebar_C::InputCycle(int Increment)
+	void UTitle_Slidebar_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -428,9 +427,9 @@ namespace CG
 	 * 		Name   -> Function Title_Slidebar.Title_Slidebar_C.ExecuteUbergraph_Title_Slidebar
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_Slidebar_C::ExecuteUbergraph_Title_Slidebar(int EntryPoint)
+	void UTitle_Slidebar_C::ExecuteUbergraph_Title_Slidebar(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

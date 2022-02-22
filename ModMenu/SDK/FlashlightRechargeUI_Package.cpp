@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FlashlightRechargeUI_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function FlashlightRechargeUI.FlashlightRechargeUI_C.ExecuteUbergraph_FlashlightRechargeUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFlashlightRechargeUI_C::ExecuteUbergraph_FlashlightRechargeUI(int EntryPoint)
+	void UFlashlightRechargeUI_C::ExecuteUbergraph_FlashlightRechargeUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

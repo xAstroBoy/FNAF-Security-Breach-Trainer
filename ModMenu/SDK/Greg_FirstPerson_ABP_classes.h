@@ -71,17 +71,17 @@ namespace CG
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_2;                           // 0x16B0(0x0028)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose;                             // 0x16D8(0x0028)
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x1700(0x0048)
-		TEnumAsByte<GregoryAnimItemEnum_EGregoryAnimItemEnum>      ItemEnum;                                                // 0x1748(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		GregoryAnimItemEnum_EGregoryAnimItemEnum                   ItemEnum;                                                // 0x1748(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HasFazWatch;                                             // 0x1749(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       bFazwatchUP;                                             // 0x174A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JGIZ[0x1];                                   // 0x174B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_F6HO[0x1];                                   // 0x174B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpeedInput;                                              // 0x174C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isMoving;                                                // 0x1750(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_MHOE[0x7];                                   // 0x1751(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BZK3[0x7];                                   // 0x1751(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AGregory_C*                                          GregPawn;                                                // 0x1758(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       SwitchItem;                                              // 0x1760(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isDown;                                                  // 0x1761(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_7136[0x6];                                   // 0x1762(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HHBZ[0x6];                                   // 0x1762(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AEquippable_C*                                       NewEquip;                                                // 0x1768(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanPlayFazWatchAnim;                                     // 0x1770(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -112,7 +112,7 @@ namespace CG
 		void PrimaryActionAnimEvent();
 		void FazWatchEvent(bool Reset);
 		void BlueprintBeginPlay();
-		void ExecuteUbergraph_Greg_FirstPerson_ABP(int EntryPoint);
+		void ExecuteUbergraph_Greg_FirstPerson_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

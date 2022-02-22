@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CustomMeshComponent_Package.h"
 
 namespace CG
 {

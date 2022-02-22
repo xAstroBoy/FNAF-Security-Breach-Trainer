@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazWatch_ABP_Package.h"
 
 namespace CG
 {
@@ -101,9 +100,9 @@ namespace CG
 	 * 		Name   -> Function FazWatch_ABP.FazWatch_ABP_C.ExecuteUbergraph_FazWatch_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazWatch_ABP_C::ExecuteUbergraph_FazWatch_ABP(int EntryPoint)
+	void UFazWatch_ABP_C::ExecuteUbergraph_FazWatch_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

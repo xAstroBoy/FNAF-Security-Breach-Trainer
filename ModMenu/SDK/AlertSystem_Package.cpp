@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AlertSystem_Package.h"
 
 namespace CG
 {
@@ -20,9 +19,9 @@ namespace CG
 	 * 		class FName                                        Alert                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<fnaf9_EFNAFAISpawnType>                     TypesToAlert                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		int                                                NumberToAlert                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NumberToAlert                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAlertSystem_C::Send_Alert(const class FName& Alert, const struct FVector& Location, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberToAlert)
+	void AAlertSystem_C::Send_Alert(const class FName& Alert, const struct FVector& Location, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -45,9 +44,9 @@ namespace CG
 	 * 		Name   -> Function AlertSystem.AlertSystem_C.ExecuteUbergraph_AlertSystem
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAlertSystem_C::ExecuteUbergraph_AlertSystem(int EntryPoint)
+	void AAlertSystem_C::ExecuteUbergraph_AlertSystem(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

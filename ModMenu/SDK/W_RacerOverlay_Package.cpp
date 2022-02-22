@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "W_RacerOverlay_Package.h"
 
 namespace CG
 {
@@ -290,9 +289,9 @@ namespace CG
 	 * 		Name   -> Function W_RacerOverlay.W_RacerOverlay_C.ExecuteUbergraph_W_RacerOverlay
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UW_RacerOverlay_C::ExecuteUbergraph_W_RacerOverlay(int EntryPoint)
+	void UW_RacerOverlay_C::ExecuteUbergraph_W_RacerOverlay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

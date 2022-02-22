@@ -28,7 +28,7 @@ namespace CG
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void Update_Distance(class AActor* InputPin);
-		void ExecuteUbergraph_ActorNavDistance(int EntryPoint);
+		void ExecuteUbergraph_ActorNavDistance(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

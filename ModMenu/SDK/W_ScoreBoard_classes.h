@@ -24,7 +24,7 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0230(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UVerticalBox*                                        DataBox;                                                 // 0x0238(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UImage*                                              Image_66;                                                // 0x0240(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class ACheckPointMgr_C*                                    CheckpointManger;                                        // 0x0248(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class ACheckPointMgr_C*                                    CheckPointManger;                                        // 0x0248(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void GetCanMove(bool* CanMove);
@@ -35,7 +35,7 @@ namespace CG
 		void Construct();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void GameEnd();
-		void ExecuteUbergraph_W_ScoreBoard(int EntryPoint);
+		void ExecuteUbergraph_W_ScoreBoard(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

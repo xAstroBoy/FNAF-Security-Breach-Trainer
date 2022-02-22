@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Feedback_Package.h"
 
 namespace CG
 {
@@ -118,9 +117,9 @@ namespace CG
 	 * 		Name   -> Function WI_Feedback.WI_Feedback_C.ShowFeedback
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                CurrentStreak                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CurrentStreak                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Feedback_C::ShowFeedback(int CurrentStreak)
+	void UWI_Feedback_C::ShowFeedback(int32_t CurrentStreak)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -202,9 +201,9 @@ namespace CG
 	 * 		Name   -> Function WI_Feedback.WI_Feedback_C.ExecuteUbergraph_WI_Feedback
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Feedback_C::ExecuteUbergraph_WI_Feedback(int EntryPoint)
+	void UWI_Feedback_C::ExecuteUbergraph_WI_Feedback(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

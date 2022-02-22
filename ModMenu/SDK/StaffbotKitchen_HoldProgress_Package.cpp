@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotKitchen_HoldProgress_Package.h"
 
 namespace CG
 {
@@ -172,9 +171,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.ExecuteUbergraph_StaffbotKitchen_HoldProgress
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbotKitchen_HoldProgress_C::ExecuteUbergraph_StaffbotKitchen_HoldProgress(int EntryPoint)
+	void UStaffbotKitchen_HoldProgress_C::ExecuteUbergraph_StaffbotKitchen_HoldProgress(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

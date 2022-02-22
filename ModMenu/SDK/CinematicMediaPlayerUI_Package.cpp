@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CinematicMediaPlayerUI_Package.h"
 
 namespace CG
 {
@@ -240,9 +239,9 @@ namespace CG
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.ExecuteUbergraph_CinematicMediaPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCinematicMediaPlayerUI_C::ExecuteUbergraph_CinematicMediaPlayerUI(int EntryPoint)
+	void UCinematicMediaPlayerUI_C::ExecuteUbergraph_CinematicMediaPlayerUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

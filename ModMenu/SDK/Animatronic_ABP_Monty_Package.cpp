@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Animatronic_ABP_Monty_Package.h"
 
 namespace CG
 {
@@ -421,9 +420,9 @@ namespace CG
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.ExecuteUbergraph_Animatronic_ABP_Monty
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_Monty_C::ExecuteUbergraph_Animatronic_ABP_Monty(int EntryPoint)
+	void UAnimatronic_ABP_Monty_C::ExecuteUbergraph_Animatronic_ABP_Monty(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

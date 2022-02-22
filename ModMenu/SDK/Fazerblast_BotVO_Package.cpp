@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Fazerblast_BotVO_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function Fazerblast_BotVO.Fazerblast_BotVO_C.ExecuteUbergraph_Fazerblast_BotVO
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazerblast_BotVO_C::ExecuteUbergraph_Fazerblast_BotVO(int EntryPoint)
+	void UFazerblast_BotVO_C::ExecuteUbergraph_Fazerblast_BotVO(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

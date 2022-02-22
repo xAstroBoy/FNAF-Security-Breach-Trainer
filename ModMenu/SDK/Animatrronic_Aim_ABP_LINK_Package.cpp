@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Animatrronic_Aim_ABP_LINK_Package.h"
 
 namespace CG
 {
@@ -141,9 +140,9 @@ namespace CG
 	 * 		Name   -> Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.ExecuteUbergraph_Animatrronic_Aim_ABP_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatrronic_Aim_ABP_LINK_C::ExecuteUbergraph_Animatrronic_Aim_ABP_LINK(int EntryPoint)
+	void UAnimatrronic_Aim_ABP_LINK_C::ExecuteUbergraph_Animatrronic_Aim_ABP_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

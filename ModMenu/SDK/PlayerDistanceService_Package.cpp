@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerDistanceService_Package.h"
 
 namespace CG
 {
@@ -113,9 +112,9 @@ namespace CG
 	 * 		Name   -> Function PlayerDistanceService.PlayerDistanceService_C.ExecuteUbergraph_PlayerDistanceService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerDistanceService_C::ExecuteUbergraph_PlayerDistanceService(int EntryPoint)
+	void UPlayerDistanceService_C::ExecuteUbergraph_PlayerDistanceService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

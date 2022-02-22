@@ -27,7 +27,7 @@ namespace CG
 		void SetActivated();
 		void OnActivatorDone(class AActor* Activator);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void ActivateObject(class AActor* Activator);
 		static UClass* StaticClass();
 	};

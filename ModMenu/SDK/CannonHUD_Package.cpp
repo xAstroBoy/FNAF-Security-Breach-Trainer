@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CannonHUD_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function CannonHUD.CannonHUD_C.Update Shots
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                ShotsRemaining                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ShotsRemaining                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCannonHUD_C::Update_Shots(int ShotsRemaining)
+	void UCannonHUD_C::Update_Shots(int32_t ShotsRemaining)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function CannonHUD.CannonHUD_C.ExecuteUbergraph_CannonHUD
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCannonHUD_C::ExecuteUbergraph_CannonHUD(int EntryPoint)
+	void UCannonHUD_C::ExecuteUbergraph_CannonHUD(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

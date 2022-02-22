@@ -55,7 +55,7 @@ namespace CG
 		void InputOptionAxis(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void ReceiveBeginPlay();
@@ -63,7 +63,7 @@ namespace CG
 		void InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_15(float AxisValue);
 		void InpAxisEvt_Turn_K2Node_InputAxisEvent_16(float AxisValue);
 		void InpAxisEvt_LookUp_K2Node_InputAxisEvent_17(float AxisValue);
-		void ExecuteUbergraph_ItemModelTumbler(int EntryPoint);
+		void ExecuteUbergraph_ItemModelTumbler(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

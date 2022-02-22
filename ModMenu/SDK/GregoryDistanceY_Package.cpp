@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GregoryDistanceY_Package.h"
 
 namespace CG
 {
@@ -89,9 +88,9 @@ namespace CG
 	 * 		Name   -> Function GregoryDistanceY.GregoryDistanceY_C.ExecuteUbergraph_GregoryDistanceY
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGregoryDistanceY_C::ExecuteUbergraph_GregoryDistanceY(int EntryPoint)
+	void UGregoryDistanceY_C::ExecuteUbergraph_GregoryDistanceY(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

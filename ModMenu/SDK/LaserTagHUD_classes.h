@@ -34,15 +34,15 @@ namespace CG
 		class UTextBlock*                                          ScoreText;                                               // 0x0280(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTextBlock*                                          ScoreText_2;                                             // 0x0288(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		UMG_ESlateVisibility                                       CrossHairLaserGunVisibility;                             // 0x0290(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_DPL3[0x3];                                   // 0x0291(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        LaserTagCountdownInt;                                    // 0x0294(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_WMAW[0x3];                                   // 0x0291(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    LaserTagCountdownInt;                                    // 0x0294(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FText                                                GameOverUIText;                                          // 0x0298(0x0018) Edit, BlueprintVisible, DisableEditOnInstance
-		int                                                        SecondsRemianing;                                        // 0x02B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        MinutesRemaining;                                        // 0x02B4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    SecondsRemianing;                                        // 0x02B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    MinutesRemaining;                                        // 0x02B4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		int Get_CurrentHighScore();
-		int Get_LaserTagCountdown();
+		int32_t Get_CurrentHighScore();
+		int32_t Get_LaserTagCountdown();
 		class FText Get_CurrentScore();
 		class FText GameOver_Text();
 		UMG_ESlateVisibility Get_CrossHairLaserGun_Visibility();
@@ -53,7 +53,7 @@ namespace CG
 		void HideUI();
 		void Construct();
 		void Display_Go_Text();
-		void ExecuteUbergraph_LaserTagHUD(int EntryPoint);
+		void ExecuteUbergraph_LaserTagHUD(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

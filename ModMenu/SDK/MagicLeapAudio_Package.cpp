@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapAudio_Package.h"
 
 namespace CG
 {

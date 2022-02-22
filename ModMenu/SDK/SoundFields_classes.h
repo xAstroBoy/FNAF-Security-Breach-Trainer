@@ -21,8 +21,8 @@ namespace CG
 	class UAmbisonicsEncodingSettings : public USoundfieldEncodingSettingsBase
 	{
 	public:
-		int                                                        AmbisonicsOrder;                                         // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_GCMC[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
+		int32_t                                                    AmbisonicsOrder;                                         // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_4R89[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

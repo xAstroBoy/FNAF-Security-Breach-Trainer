@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AC_VehicleMechanics_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function AC_VehicleMechanics.AC_VehicleMechanics_C.CATAirFix
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Wheels                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Wheels                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAC_VehicleMechanics_C::CATAirFix(int Wheels)
+	void UAC_VehicleMechanics_C::CATAirFix(int32_t Wheels)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -89,9 +88,9 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVector                                     NormalPlane                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Sterring                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WheelsDown                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WheelsDown                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAC_VehicleMechanics_C::ApplyLateralFriction(const struct FVector& NormalPlane, float Sterring, int WheelsDown)
+	void UAC_VehicleMechanics_C::ApplyLateralFriction(const struct FVector& NormalPlane, float Sterring, int32_t WheelsDown)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -115,9 +114,9 @@ namespace CG
 	 * Parameters:
 	 * 		float                                              Throddle                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     FloorNormal                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WheelsDown                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WheelsDown                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAC_VehicleMechanics_C::DoThroddle(float Throddle, const struct FVector& FloorNormal, int WheelsDown)
+	void UAC_VehicleMechanics_C::DoThroddle(float Throddle, const struct FVector& FloorNormal, int32_t WheelsDown)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -286,9 +285,9 @@ namespace CG
 	 * 		Name   -> Function AC_VehicleMechanics.AC_VehicleMechanics_C.ExecuteUbergraph_AC_VehicleMechanics
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAC_VehicleMechanics_C::ExecuteUbergraph_AC_VehicleMechanics(int EntryPoint)
+	void UAC_VehicleMechanics_C::ExecuteUbergraph_AC_VehicleMechanics(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

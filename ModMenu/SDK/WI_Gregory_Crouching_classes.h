@@ -27,16 +27,16 @@ namespace CG
 		class UImage*                                              WithFlashlight;                                          // 0x0258(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UImage*                                              WithoutFlashlight;                                       // 0x0260(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       IsStanding;                                              // 0x0268(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IIFR[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M2HV[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         HasFlashlight;                                           // 0x0270(0x0088) Edit, BlueprintVisible, DisableEditOnInstance
-		int                                                        LastState;                                               // 0x02F8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    LastState;                                               // 0x02F8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanEscape;                                               // 0x02FC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Escaping;                                                // 0x02FD(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_F5GM[0x2];                                   // 0x02FE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OE6B[0x2];                                   // 0x02FE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      EscapeCountdown;                                         // 0x0300(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      TimeToEscape;                                            // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Spotted;                                                 // 0x0308(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_GBJM[0x3];                                   // 0x0309(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GWTK[0x3];                                   // 0x0309(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpottedCountdown;                                        // 0x030C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MinTimeSpotted;                                          // 0x0310(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
@@ -47,14 +47,14 @@ namespace CG
 		void ShowCrouchingImage();
 		void OnFailure_1EEBCFB84FF35A61CCA67DBBFADBC509();
 		void OnSuccess_1EEBCFB84FF35A61CCA67DBBFADBC509();
-		void OnFailure_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
+		void OnFailure_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void Construct();
 		void Crouch(bool BeginCrouch);
-		void UpdateAlertColor(int AlertStatus);
+		void UpdateAlertColor(int32_t AlertStatus);
 		void HideOnUnpossess();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_WI_Gregory_Crouching(int EntryPoint);
+		void ExecuteUbergraph_WI_Gregory_Crouching(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

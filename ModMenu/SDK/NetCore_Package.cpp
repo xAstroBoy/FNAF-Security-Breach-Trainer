@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "NetCore_Package.h"
 
 namespace CG
 {

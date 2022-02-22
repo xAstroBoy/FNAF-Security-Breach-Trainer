@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void BlueprintBeginPlay();
-		void ExecuteUbergraph_Staffbot_ABP_Comedy(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_ABP_Comedy(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

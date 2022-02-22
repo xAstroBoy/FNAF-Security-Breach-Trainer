@@ -36,14 +36,14 @@ namespace CG
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void OnPlayerInteractCancel();
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void ReceiveBeginPlay();
 		void BndEvt__Sphere_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void ExecuteUbergraph_ThrowableObject(int EntryPoint);
+		void ExecuteUbergraph_ThrowableObject(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

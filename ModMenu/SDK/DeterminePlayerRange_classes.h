@@ -23,14 +23,14 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FBlackboardKeySelector                              PlayerRangeKey;                                          // 0x00C8(0x0028) Edit, BlueprintVisible
-		TEnumAsByte<AIPlayerRange_EAIPlayerRange>                  InnerRangeEnum;                                          // 0x00F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<AIPlayerRange_EAIPlayerRange>                  OuterRangeEnum;                                          // 0x00F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		AIPlayerRange_EAIPlayerRange                               InnerRangeEnum;                                          // 0x00F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		AIPlayerRange_EAIPlayerRange                               OuterRangeEnum;                                          // 0x00F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void Determine_Range(class AActor* AIPawn);
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void ExecuteUbergraph_DeterminePlayerRange(int EntryPoint);
+		void ExecuteUbergraph_DeterminePlayerRange(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Eula_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function WI_Eula.WI_Eula_C.ExecuteUbergraph_WI_Eula
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Eula_C::ExecuteUbergraph_WI_Eula(int EntryPoint)
+	void UWI_Eula_C::ExecuteUbergraph_WI_Eula(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

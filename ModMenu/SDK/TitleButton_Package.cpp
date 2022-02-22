@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TitleButton_Package.h"
 
 namespace CG
 {
@@ -263,9 +262,9 @@ namespace CG
 	 * 		Name   -> Function TitleButton.TitleButton_C.ExecuteUbergraph_TitleButton
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleButton_C::ExecuteUbergraph_TitleButton(int EntryPoint)
+	void UTitleButton_C::ExecuteUbergraph_TitleButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

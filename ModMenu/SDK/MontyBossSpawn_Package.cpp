@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyBossSpawn_Package.h"
 
 namespace CG
 {
@@ -60,9 +59,9 @@ namespace CG
 	 * 		Name   -> Function MontyBossSpawn.MontyBossSpawn_C.ExecuteUbergraph_MontyBossSpawn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMontyBossSpawn_C::ExecuteUbergraph_MontyBossSpawn(int EntryPoint)
+	void AMontyBossSpawn_C::ExecuteUbergraph_MontyBossSpawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

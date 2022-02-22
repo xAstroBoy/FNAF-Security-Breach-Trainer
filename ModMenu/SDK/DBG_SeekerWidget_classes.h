@@ -28,7 +28,7 @@ namespace CG
 	public:
 		class FText Get_CurrentRoomText_Text_1();
 		void Setup(class AAISeeker_C* AISeeker);
-		void ExecuteUbergraph_DBG_SeekerWidget(int EntryPoint);
+		void ExecuteUbergraph_DBG_SeekerWidget(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FogVolume_Package.h"
 
 namespace CG
 {
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function FogVolume.FogVolume_C.ExecuteUbergraph_FogVolume
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFogVolume_C::ExecuteUbergraph_FogVolume(int EntryPoint)
+	void AFogVolume_C::ExecuteUbergraph_FogVolume(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

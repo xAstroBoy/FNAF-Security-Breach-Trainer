@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SplinePathwayManager_Package.h"
 
 namespace CG
 {
@@ -240,9 +239,9 @@ namespace CG
 	 * 		struct FSplineFollowerContext                      StructRef                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	 * 		bool                                               UseDistance                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              Distance                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		SplineFollowDirection_ESplineFollowDirection       Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASplinePathwayManager_C::SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction)
+	void ASplinePathwayManager_C::SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, SplineFollowDirection_ESplineFollowDirection Direction)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

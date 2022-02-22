@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "P_GoKart_Package.h"
 
 namespace CG
 {
@@ -447,9 +446,9 @@ namespace CG
 	 * 		Name   -> Function P_GoKart.P_GoKart_C.ExecuteUbergraph_P_GoKart
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AP_GoKart_C::ExecuteUbergraph_P_GoKart(int EntryPoint)
+	void AP_GoKart_C::ExecuteUbergraph_P_GoKart(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

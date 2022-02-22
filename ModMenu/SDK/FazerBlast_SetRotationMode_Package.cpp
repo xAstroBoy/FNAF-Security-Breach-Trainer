@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazerBlast_SetRotationMode_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function FazerBlast_SetRotationMode.FazerBlast_SetRotationMode_C.ExecuteUbergraph_FazerBlast_SetRotationMode
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazerBlast_SetRotationMode_C::ExecuteUbergraph_FazerBlast_SetRotationMode(int EntryPoint)
+	void UFazerBlast_SetRotationMode_C::ExecuteUbergraph_FazerBlast_SetRotationMode(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

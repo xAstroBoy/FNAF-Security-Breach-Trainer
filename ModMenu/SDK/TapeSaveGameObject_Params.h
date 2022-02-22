@@ -27,7 +27,7 @@ namespace CG
 	struct UTapeSaveGameObject_C_GetNoOfTapesDone_Params
 	{
 	public:
-		int                                                        NoOfTapesPlayed;                                         // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    NoOfTapesPlayed;                                         // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

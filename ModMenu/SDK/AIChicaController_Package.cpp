@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AIChicaController_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function AIChicaController.AIChicaController_C.ExecuteUbergraph_AIChicaController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIChicaController_C::ExecuteUbergraph_AIChicaController(int EntryPoint)
+	void AAIChicaController_C::ExecuteUbergraph_AIChicaController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

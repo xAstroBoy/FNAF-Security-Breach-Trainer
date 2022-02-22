@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyDynamicsABP_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function MontyDynamicsABP.MontyDynamicsABP_C.ExecuteUbergraph_MontyDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMontyDynamicsABP_C::ExecuteUbergraph_MontyDynamicsABP(int EntryPoint)
+	void UMontyDynamicsABP_C::ExecuteUbergraph_MontyDynamicsABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

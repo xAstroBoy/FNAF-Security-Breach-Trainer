@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoonManStates_Package.h"
 
 namespace CG
 {

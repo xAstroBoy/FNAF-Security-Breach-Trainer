@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazerBlast_RememberFleeLocation_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function FazerBlast_RememberFleeLocation.FazerBlast_RememberFleeLocation_C.ExecuteUbergraph_FazerBlast_RememberFleeLocation
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazerBlast_RememberFleeLocation_C::ExecuteUbergraph_FazerBlast_RememberFleeLocation(int EntryPoint)
+	void UFazerBlast_RememberFleeLocation_C::ExecuteUbergraph_FazerBlast_RememberFleeLocation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

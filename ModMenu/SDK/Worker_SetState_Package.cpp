@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_SetState_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Worker_SetState.Worker_SetState_C.ExecuteUbergraph_Worker_SetState
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_SetState_C::ExecuteUbergraph_Worker_SetState(int EntryPoint)
+	void UWorker_SetState_C::ExecuteUbergraph_Worker_SetState(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -36,7 +36,7 @@ namespace CG
 		void BndEvt__ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 		void BndEvt__BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 		void UserBackedOut();
-		void ExecuteUbergraph_ChangesNotAppliedPopUp(int EntryPoint);
+		void ExecuteUbergraph_ChangesNotAppliedPopUp(int32_t EntryPoint);
 		void ExitWithoutSaving__DelegateSignature();
 		void CloseThisPrompt__DelegateSignature();
 		static UClass* StaticClass();

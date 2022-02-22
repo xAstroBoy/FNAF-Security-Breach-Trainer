@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_SplashScreen_Package.h"
 
 namespace CG
 {
@@ -188,9 +187,9 @@ namespace CG
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.ExecuteUbergraph_WI_SplashScreen
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_SplashScreen_C::ExecuteUbergraph_WI_SplashScreen(int EntryPoint)
+	void UWI_SplashScreen_C::ExecuteUbergraph_WI_SplashScreen(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

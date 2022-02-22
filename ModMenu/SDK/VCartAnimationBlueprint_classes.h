@@ -29,7 +29,7 @@ namespace CG
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
-		void ExecuteUbergraph_VCartAnimationBlueprint(int EntryPoint);
+		void ExecuteUbergraph_VCartAnimationBlueprint(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

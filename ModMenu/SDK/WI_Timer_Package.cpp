@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Timer_Package.h"
 
 namespace CG
 {
@@ -223,9 +222,9 @@ namespace CG
 	 * 		Name   -> Function WI_Timer.WI_Timer_C.ExecuteUbergraph_WI_Timer
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Timer_C::ExecuteUbergraph_WI_Timer(int EntryPoint)
+	void UWI_Timer_C::ExecuteUbergraph_WI_Timer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

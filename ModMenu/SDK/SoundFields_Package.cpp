@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SoundFields_Package.h"
 
 namespace CG
 {

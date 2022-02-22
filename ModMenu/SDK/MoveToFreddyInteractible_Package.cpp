@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoveToFreddyInteractible_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function MoveToFreddyInteractible.MoveToFreddyInteractible_C.OnMoveFinished_0D6A96F54A9CABBACEB7D981B96EB764
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<AIModule_EPathFollowingResult>         Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIModule_EPathFollowingResult                      Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AAIController*                               AIController                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMoveToFreddyInteractible_C::OnMoveFinished_0D6A96F54A9CABBACEB7D981B96EB764(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController)
+	void UMoveToFreddyInteractible_C::OnMoveFinished_0D6A96F54A9CABBACEB7D981B96EB764(AIModule_EPathFollowingResult Result, class AAIController* AIController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,9 +83,9 @@ namespace CG
 	 * 		Name   -> Function MoveToFreddyInteractible.MoveToFreddyInteractible_C.ExecuteUbergraph_MoveToFreddyInteractible
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMoveToFreddyInteractible_C::ExecuteUbergraph_MoveToFreddyInteractible(int EntryPoint)
+	void UMoveToFreddyInteractible_C::ExecuteUbergraph_MoveToFreddyInteractible(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -28,10 +28,10 @@ namespace CG
 		float                                                      SamplePointRadius;                                       // 0x0128(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      SampleDistance;                                          // 0x012C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             Direction;                                               // 0x0130(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        TraceLimit;                                              // 0x013C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    TraceLimit;                                              // 0x013C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       FleeOrFollow;                                            // 0x0140(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Debug;                                                   // 0x0141(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JJ7O[0x2];                                   // 0x0142(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TYZW[0x2];                                   // 0x0142(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      DebugTime;                                               // 0x0144(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MaxTiltZ;                                                // 0x0148(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      SurfacePadding;                                          // 0x014C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -53,7 +53,7 @@ namespace CG
 		void NavRays_Cast(class APawn* ControlledPawn, TArray<class AActor*>* ActorsToIgnore, struct FVector* Direction, struct FVector* Start, TArray<struct FVector>* NavRay_Ends);
 		void Process(class APawn** ControlledPawn);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FazerBlast_FindLocationAtDistance(int EntryPoint);
+		void ExecuteUbergraph_FazerBlast_FindLocationAtDistance(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

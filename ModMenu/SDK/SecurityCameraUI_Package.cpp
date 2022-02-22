@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SecurityCameraUI_Package.h"
 
 namespace CG
 {
@@ -18,9 +17,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector2D                                   Dir                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Direction                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Direction                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Get_Direction(const struct FVector2D& Dir, int* Direction)
+	void USecurityCameraUI_C::Get_Direction(const struct FVector2D& Dir, int32_t* Direction)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -44,10 +43,10 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UWidget*                                     CameraIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Dir                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Dir                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Get_Camera_Comparison_Value(class UWidget* CameraIcon, int Dir, float* Value)
+	void USecurityCameraUI_C::Get_Camera_Comparison_Value(class UWidget* CameraIcon, int32_t Dir, float* Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -95,11 +94,11 @@ namespace CG
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.FindCurrentCameraRow
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Index                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<class UCameraIcon_C*>                       CameraRow                                                  (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
-	 * 		int                                                WhichRow                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WhichRow                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::FindCurrentCameraRow(int* Index, TArray<class UCameraIcon_C*>* CameraRow, int* WhichRow)
+	void USecurityCameraUI_C::FindCurrentCameraRow(int32_t* Index, TArray<class UCameraIcon_C*>* CameraRow, int32_t* WhichRow)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -486,9 +485,9 @@ namespace CG
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.CycleCamera
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                inc                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            inc                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::CycleCamera(int inc)
+	void USecurityCameraUI_C::CycleCamera(int32_t inc)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1142,9 +1141,9 @@ namespace CG
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::InputCycle(int Increment)
+	void USecurityCameraUI_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1164,9 +1163,9 @@ namespace CG
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.ExecuteUbergraph_SecurityCameraUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::ExecuteUbergraph_SecurityCameraUI(int EntryPoint)
+	void USecurityCameraUI_C::ExecuteUbergraph_SecurityCameraUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

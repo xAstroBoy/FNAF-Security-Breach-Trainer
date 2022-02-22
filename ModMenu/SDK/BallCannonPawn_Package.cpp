@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BallCannonPawn_Package.h"
 
 namespace CG
 {
@@ -184,9 +183,9 @@ namespace CG
 	 * 		Name   -> Function BallCannonPawn.BallCannonPawn_C.ExecuteUbergraph_BallCannonPawn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABallCannonPawn_C::ExecuteUbergraph_BallCannonPawn(int EntryPoint)
+	void ABallCannonPawn_C::ExecuteUbergraph_BallCannonPawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

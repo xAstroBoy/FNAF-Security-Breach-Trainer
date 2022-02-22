@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MovieScene_Package.h"
 
 namespace CG
 {
@@ -31,9 +30,9 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetRowIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewRowIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewRowIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSection::SetRowIndex(int NewRowIndex)
+	void UMovieSceneSection::SetRowIndex(int32_t NewRowIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -54,9 +53,9 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPreRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InPreRollFrames                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InPreRollFrames                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSection::SetPreRollFrames(int InPreRollFrames)
+	void UMovieSceneSection::SetPreRollFrames(int32_t InPreRollFrames)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPostRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InPostRollFrames                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InPostRollFrames                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSection::SetPostRollFrames(int InPostRollFrames)
+	void UMovieSceneSection::SetPostRollFrames(int32_t InPostRollFrames)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -100,9 +99,9 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetOverlapPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewPriority                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewPriority                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSection::SetOverlapPriority(int NewPriority)
+	void UMovieSceneSection::SetOverlapPriority(int32_t NewPriority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -259,7 +258,7 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetRowIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UMovieSceneSection::GetRowIndex()
+	int32_t UMovieSceneSection::GetRowIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -281,7 +280,7 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPreRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UMovieSceneSection::GetPreRollFrames()
+	int32_t UMovieSceneSection::GetPreRollFrames()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -303,7 +302,7 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPostRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UMovieSceneSection::GetPostRollFrames()
+	int32_t UMovieSceneSection::GetPostRollFrames()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -325,7 +324,7 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetOverlapPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UMovieSceneSection::GetOverlapPriority()
+	int32_t UMovieSceneSection::GetOverlapPriority()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -656,10 +655,10 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetFrameRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                StartFrame                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Duration                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            StartFrame                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Duration                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSequencePlayer::SetFrameRange(int StartFrame, int Duration)
+	void UMovieSceneSequencePlayer::SetFrameRange(int32_t StartFrame, int32_t Duration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -934,9 +933,9 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumLoops                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoops                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
+	void UMovieSceneSequencePlayer::PlayLooping(int32_t NumLoops)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1356,7 +1355,7 @@ namespace CG
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UMovieSceneSequencePlayer::GetFrameDuration()
+	int32_t UMovieSceneSequencePlayer::GetFrameDuration()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

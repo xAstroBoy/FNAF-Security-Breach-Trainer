@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "W_Speedometer_Package.h"
 
 namespace CG
 {
@@ -61,9 +60,9 @@ namespace CG
 	 * 		Name   -> Function W_Speedometer.W_Speedometer_C.ExecuteUbergraph_W_Speedometer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UW_Speedometer_C::ExecuteUbergraph_W_Speedometer(int EntryPoint)
+	void UW_Speedometer_C::ExecuteUbergraph_W_Speedometer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

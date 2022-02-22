@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "W_LaserOverLay_Package.h"
 
 namespace CG
 {
@@ -540,9 +539,9 @@ namespace CG
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.ExecuteUbergraph_W_LaserOverLay
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UW_LaserOverLay_C::ExecuteUbergraph_W_LaserOverLay(int EntryPoint)
+	void UW_LaserOverLay_C::ExecuteUbergraph_W_LaserOverLay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

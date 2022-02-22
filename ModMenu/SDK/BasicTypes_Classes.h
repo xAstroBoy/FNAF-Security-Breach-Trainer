@@ -532,6 +532,14 @@ namespace CG
 	{
 	};
 
+	/**
+	 * PredefinedClass BasicTypes.ObjectNames
+	 * Size -> 0x0000
+	 */
+	class ObjectNames
+	{
+	};
+
 }
 
 #ifdef _MSC_VER

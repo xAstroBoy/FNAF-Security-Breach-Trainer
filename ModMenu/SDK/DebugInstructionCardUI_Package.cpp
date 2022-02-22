@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugInstructionCardUI_Package.h"
 
 namespace CG
 {
@@ -66,10 +65,10 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UUserWidget*                                 InstructionCardWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> InstructionCardType                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type_E_InstructionCard_Type      InstructionCardType                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDebugInstructionCardButton_C*               CreatedButton                                              (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugInstructionCardUI_C::AddCardButton(class UUserWidget* InstructionCardWidget, TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> InstructionCardType, class UDebugInstructionCardButton_C** CreatedButton)
+	void UDebugInstructionCardUI_C::AddCardButton(class UUserWidget* InstructionCardWidget, E_InstructionCard_Type_E_InstructionCard_Type InstructionCardType, class UDebugInstructionCardButton_C** CreatedButton)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -134,9 +133,9 @@ namespace CG
 	 * 		Name   -> Function DebugInstructionCardUI.DebugInstructionCardUI_C.ExecuteUbergraph_DebugInstructionCardUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugInstructionCardUI_C::ExecuteUbergraph_DebugInstructionCardUI(int EntryPoint)
+	void UDebugInstructionCardUI_C::ExecuteUbergraph_DebugInstructionCardUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

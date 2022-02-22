@@ -23,21 +23,21 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00B0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class FName                                                MissionToUpdate;                                         // 0x00B8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        StateToUpdate;                                           // 0x00C0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    StateToUpdate;                                           // 0x00C0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CompleteMission;                                         // 0x00C4(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
 		void DeactivateObject(class AActor* Deactivator);
 		void SetDeactivated();
 		void ActivateObject(class AActor* Activator);
 		void ReceiveBeginPlay();
-		void ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason);
+		void ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason);
 		void SetActivated();
 		void OnActivatorDone(class AActor* Activator);
-		void ExecuteUbergraph_TriggerMissionOnActivated(int EntryPoint);
+		void ExecuteUbergraph_TriggerMissionOnActivated(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

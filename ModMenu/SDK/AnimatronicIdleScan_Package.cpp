@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AnimatronicIdleScan_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function AnimatronicIdleScan.AnimatronicIdleScan_C.ExecuteUbergraph_AnimatronicIdleScan
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronicIdleScan_C::ExecuteUbergraph_AnimatronicIdleScan(int EntryPoint)
+	void UAnimatronicIdleScan_C::ExecuteUbergraph_AnimatronicIdleScan(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -30,7 +30,7 @@ namespace CG
 		void SetVisible(bool IsVisible);
 		void SetInstructionText(const class FText& InText);
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_StaffbotKitchenHUD_Instruction(int EntryPoint);
+		void ExecuteUbergraph_StaffbotKitchenHUD_Instruction(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

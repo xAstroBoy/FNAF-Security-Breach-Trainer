@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AIC_FazerBlast_Package.h"
 
 namespace CG
 {
@@ -197,9 +196,9 @@ namespace CG
 	 * Parameters:
 	 * 		bool                                               Reset                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     AddFleeLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIC_FazerBlast_C::UpdateFleeArrayTargets(bool Reset, const struct FVector& AddFleeLocation, int ArrayLimit)
+	void AAIC_FazerBlast_C::UpdateFleeArrayTargets(bool Reset, const struct FVector& AddFleeLocation, int32_t ArrayLimit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -223,9 +222,9 @@ namespace CG
 	 * Parameters:
 	 * 		bool                                               Reset                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     AddFleeLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIC_FazerBlast_C::UpdateFleeArrayLocations(bool Reset, const struct FVector& AddFleeLocation, int ArrayLimit)
+	void AAIC_FazerBlast_C::UpdateFleeArrayLocations(bool Reset, const struct FVector& AddFleeLocation, int32_t ArrayLimit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -249,11 +248,11 @@ namespace CG
 	 * Parameters:
 	 * 		bool                                               Reset                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     AddFleeLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ArrayLimit                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<struct FVector>                             TargetArray                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	 * 		bool                                               Debug                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AAIC_FazerBlast_C::UpdateFleeArray(bool Reset, const struct FVector& AddFleeLocation, int ArrayLimit, TArray<struct FVector> TargetArray, bool Debug)
+	void AAIC_FazerBlast_C::UpdateFleeArray(bool Reset, const struct FVector& AddFleeLocation, int32_t ArrayLimit, TArray<struct FVector> TargetArray, bool Debug)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -575,9 +574,9 @@ namespace CG
 	 * 		Name   -> Function AIC_FazerBlast.AIC_FazerBlast_C.ExecuteUbergraph_AIC_FazerBlast
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIC_FazerBlast_C::ExecuteUbergraph_AIC_FazerBlast(int EntryPoint)
+	void AAIC_FazerBlast_C::ExecuteUbergraph_AIC_FazerBlast(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

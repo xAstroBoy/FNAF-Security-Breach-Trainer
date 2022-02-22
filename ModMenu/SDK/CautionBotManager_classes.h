@@ -29,7 +29,7 @@ namespace CG
 		void Register_Caution_Bot(class ACautionBot_C* CautionBot);
 		void Unregister_Caution_Bot(class ACautionBot_C* CautionBot);
 		void On_Spill(class AActor* SpillActor);
-		void ExecuteUbergraph_CautionBotManager(int EntryPoint);
+		void ExecuteUbergraph_CautionBotManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

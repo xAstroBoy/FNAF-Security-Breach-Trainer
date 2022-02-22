@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_SecurityScreenDisplay_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function WI_SecurityScreenDisplay.WI_SecurityScreenDisplay_C.ExecuteUbergraph_WI_SecurityScreenDisplay
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_SecurityScreenDisplay_C::ExecuteUbergraph_WI_SecurityScreenDisplay(int EntryPoint)
+	void UWI_SecurityScreenDisplay_C::ExecuteUbergraph_WI_SecurityScreenDisplay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

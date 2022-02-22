@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LineSkipper_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function LineSkipper.LineSkipper_C.ExecuteUbergraph_LineSkipper
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALineSkipper_C::ExecuteUbergraph_LineSkipper(int EntryPoint)
+	void ALineSkipper_C::ExecuteUbergraph_LineSkipper(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

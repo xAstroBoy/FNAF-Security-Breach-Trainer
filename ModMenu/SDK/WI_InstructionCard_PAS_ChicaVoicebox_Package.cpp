@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_PAS_ChicaVoicebox_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function WI_InstructionCard_PAS_ChicaVoicebox.WI_InstructionCard_PAS_ChicaVoicebox_C.ExecuteUbergraph_WI_InstructionCard_PAS_ChicaVoicebox
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_InstructionCard_PAS_ChicaVoicebox_C::ExecuteUbergraph_WI_InstructionCard_PAS_ChicaVoicebox(int EntryPoint)
+	void UWI_InstructionCard_PAS_ChicaVoicebox_C::ExecuteUbergraph_WI_InstructionCard_PAS_ChicaVoicebox(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

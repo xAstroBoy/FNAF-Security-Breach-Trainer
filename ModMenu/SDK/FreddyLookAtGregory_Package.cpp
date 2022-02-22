@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyLookAtGregory_Package.h"
 
 namespace CG
 {
@@ -91,9 +90,9 @@ namespace CG
 	 * 		Name   -> Function FreddyLookAtGregory.FreddyLookAtGregory_C.ExecuteUbergraph_FreddyLookAtGregory
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFreddyLookAtGregory_C::ExecuteUbergraph_FreddyLookAtGregory(int EntryPoint)
+	void UFreddyLookAtGregory_C::ExecuteUbergraph_FreddyLookAtGregory(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

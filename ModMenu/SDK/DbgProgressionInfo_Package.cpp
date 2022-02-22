@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgProgressionInfo_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_BuildAPizza_Package.h"
 
 namespace CG
 {
@@ -122,9 +121,9 @@ namespace CG
 	 * 		Name   -> Function BP_BuildAPizza.BP_BuildAPizza_C.ChangeState
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_BuildAPizza_C::ChangeState(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep)
+	void ABP_BuildAPizza_C::ChangeState(PizzaStep_EPizzaStep PizzaStep)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -144,9 +143,9 @@ namespace CG
 	 * 		Name   -> Function BP_BuildAPizza.BP_BuildAPizza_C.ExecuteUbergraph_BP_BuildAPizza
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_BuildAPizza_C::ExecuteUbergraph_BP_BuildAPizza(int EntryPoint)
+	void ABP_BuildAPizza_C::ExecuteUbergraph_BP_BuildAPizza(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -53,7 +53,7 @@ namespace CG
 		void BndEvt__WI_PowerLevel_K2Node_ComponentBoundEvent_0_LowPowerAlert__DelegateSignature();
 		void ChangeBackgroundImage();
 		void Construct();
-		void ExecuteUbergraph_FreddyOverlay(int EntryPoint);
+		void ExecuteUbergraph_FreddyOverlay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

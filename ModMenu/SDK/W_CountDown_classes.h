@@ -25,8 +25,8 @@ namespace CG
 		class UWidgetAnimation*                                    GoAnimation;                                             // 0x0238(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash
 		class UWidgetAnimation*                                    CountAnimation;                                          // 0x0240(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash
 		class UTextBlock*                                          TextBlock_54;                                            // 0x0248(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		int                                                        CountDownAmount;                                         // 0x0250(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        CountDownNumber;                                         // 0x0254(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    CountDownAmount;                                         // 0x0250(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    CountDownNumber;                                         // 0x0254(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void GetCanMove(bool* CanMove);
@@ -40,7 +40,7 @@ namespace CG
 		void StartRaceCountdown(float TimeTillStart);
 		void PlayGo_();
 		void Reset();
-		void ExecuteUbergraph_W_CountDown(int EntryPoint);
+		void ExecuteUbergraph_W_CountDown(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

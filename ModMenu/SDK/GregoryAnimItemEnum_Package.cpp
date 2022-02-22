@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GregoryAnimItemEnum_Package.h"
 
 namespace CG
 {

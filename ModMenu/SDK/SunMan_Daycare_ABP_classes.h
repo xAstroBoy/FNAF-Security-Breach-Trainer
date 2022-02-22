@@ -55,15 +55,15 @@ namespace CG
 		bool                                                       Valid;                                                   // 0x0EA8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isPhase2;                                                // 0x0EA9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isMoving;                                                // 0x0EAA(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZG78[0x1];                                   // 0x0EAB(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_80W8[0x1];                                   // 0x0EAB(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpeedInput;                                              // 0x0EAC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isBlockingPlayer;                                        // 0x0EB0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DDX1[0x3];                                   // 0x0EB1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3B6U[0x3];                                   // 0x0EB1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Direction;                                               // 0x0EB4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      NewVar_1;                                                // 0x0EB8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsCrouched;                                              // 0x0EBC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CarryingPlayer;                                          // 0x0EBD(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_10MH[0x2];                                   // 0x0EBE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IUV4[0x2];                                   // 0x0EBE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                Phase;                                                   // 0x0EC0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isSad;                                                   // 0x0EC8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       HeadAim;                                                 // 0x0EC9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -71,8 +71,8 @@ namespace CG
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
 		void footstep();
-		bool LineTraceForOrientation(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType, TArray<struct FHitResult>* OutHits);
-		bool LineTraceForIK(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType, struct FHitResult* OutHit);
+		bool LineTraceForOrientation(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, Engine_EDrawDebugTrace DrawDebugType, TArray<struct FHitResult>* OutHits);
+		bool LineTraceForIK(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, Engine_EDrawDebugTrace DrawDebugType, struct FHitResult* OutHit);
 		void OnNotifyEnd_DE44DD3745D008724B66B28647672BDD(const class FName& NotifyName);
 		void OnNotifyBegin_DE44DD3745D008724B66B28647672BDD(const class FName& NotifyName);
 		void OnInterrupted_DE44DD3745D008724B66B28647672BDD(const class FName& NotifyName);
@@ -132,7 +132,7 @@ namespace CG
 		void AnimNotify_R_Foot_Down();
 		void isCarryingPlayerEvent(bool CarryingPlayer);
 		void Exit_Event();
-		void ExecuteUbergraph_SunMan_Daycare_ABP(int EntryPoint);
+		void ExecuteUbergraph_SunMan_Daycare_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

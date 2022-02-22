@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ImpromptuHandrailBP_Package.h"
 
 namespace CG
 {

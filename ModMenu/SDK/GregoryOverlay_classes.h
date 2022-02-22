@@ -53,7 +53,7 @@ namespace CG
 		void DestroyThisHUD(class AActor* DestroyedActor);
 		void ToggleReticle(bool HoldingFazerBlaster);
 		void ShowHeldItemWidget();
-		void ExecuteUbergraph_GregoryOverlay(int EntryPoint);
+		void ExecuteUbergraph_GregoryOverlay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

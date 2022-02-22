@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserGun_Interactable_Package.h"
 
 namespace CG
 {

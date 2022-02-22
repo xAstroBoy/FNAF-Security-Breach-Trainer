@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RandomFloatRange_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function RandomFloatRange.RandomFloatRange_C.ExecuteUbergraph_RandomFloatRange
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URandomFloatRange_C::ExecuteUbergraph_RandomFloatRange(int EntryPoint)
+	void URandomFloatRange_C::ExecuteUbergraph_RandomFloatRange(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

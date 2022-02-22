@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "P_VukKartRacer_Staffbot_Package.h"
 
 namespace CG
 {
@@ -197,9 +196,9 @@ namespace CG
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ExecuteUbergraph_P_VukKartRacer_Staffbot
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AP_VukKartRacer_Staffbot_C::ExecuteUbergraph_P_VukKartRacer_Staffbot(int EntryPoint)
+	void AP_VukKartRacer_Staffbot_C::ExecuteUbergraph_P_VukKartRacer_Staffbot(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

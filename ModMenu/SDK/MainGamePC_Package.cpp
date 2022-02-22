@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MainGamePC_Package.h"
 
 namespace CG
 {
@@ -931,9 +930,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::OnFailure_6EE19B10415A6B32590DEAA77ED60D09(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AMainGamePC_C::OnFailure_6EE19B10415A6B32590DEAA77ED60D09(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -957,9 +956,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::OnSuccess_6EE19B10415A6B32590DEAA77ED60D09(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AMainGamePC_C::OnSuccess_6EE19B10415A6B32590DEAA77ED60D09(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1382,9 +1381,9 @@ namespace CG
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set Flying Collision
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Engine_ECollisionEnabled>              FlyingCollisionMode                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_ECollisionEnabled                           FlyingCollisionMode                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::Set_Flying_Collision(TEnumAsByte<Engine_ECollisionEnabled> FlyingCollisionMode)
+	void AMainGamePC_C::Set_Flying_Collision(Engine_ECollisionEnabled FlyingCollisionMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1681,10 +1680,10 @@ namespace CG
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Distortion
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Minute                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Hour                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Minute                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::Distortion(int Hour, int Minute)
+	void AMainGamePC_C::Distortion(int32_t Hour, int32_t Minute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1784,9 +1783,9 @@ namespace CG
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ExecuteUbergraph_MainGamePC
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::ExecuteUbergraph_MainGamePC(int EntryPoint)
+	void AMainGamePC_C::ExecuteUbergraph_MainGamePC(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

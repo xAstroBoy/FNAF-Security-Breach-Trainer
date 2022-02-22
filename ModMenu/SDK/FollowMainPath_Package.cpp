@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FollowMainPath_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function FollowMainPath.FollowMainPath_C.OnMoveFinished_7D0AA3AC4EB43CAA4E635F8BC89D68DB
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<AIModule_EPathFollowingResult>         Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIModule_EPathFollowingResult                      Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AAIController*                               AIController                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFollowMainPath_C::OnMoveFinished_7D0AA3AC4EB43CAA4E635F8BC89D68DB(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController)
+	void UFollowMainPath_C::OnMoveFinished_7D0AA3AC4EB43CAA4E635F8BC89D68DB(AIModule_EPathFollowingResult Result, class AAIController* AIController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -108,9 +107,9 @@ namespace CG
 	 * 		Name   -> Function FollowMainPath.FollowMainPath_C.ExecuteUbergraph_FollowMainPath
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFollowMainPath_C::ExecuteUbergraph_FollowMainPath(int EntryPoint)
+	void UFollowMainPath_C::ExecuteUbergraph_FollowMainPath(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function WI_InstructionCard.WI_InstructionCard_C.ExecuteUbergraph_WI_InstructionCard
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_InstructionCard_C::ExecuteUbergraph_WI_InstructionCard(int EntryPoint)
+	void UWI_InstructionCard_C::ExecuteUbergraph_WI_InstructionCard(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

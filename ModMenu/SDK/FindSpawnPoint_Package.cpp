@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindSpawnPoint_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function FindSpawnPoint.FindSpawnPoint_C.ExecuteUbergraph_FindSpawnPoint
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindSpawnPoint_C::ExecuteUbergraph_FindSpawnPoint(int EntryPoint)
+	void UFindSpawnPoint_C::ExecuteUbergraph_FindSpawnPoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayVO_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PlayVO.PlayVO_C.ExecuteUbergraph_PlayVO
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayVO_C::ExecuteUbergraph_PlayVO(int EntryPoint)
+	void UPlayVO_C::ExecuteUbergraph_PlayVO(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

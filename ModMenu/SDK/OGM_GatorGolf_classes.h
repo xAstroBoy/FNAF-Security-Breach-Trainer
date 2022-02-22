@@ -21,7 +21,7 @@ namespace CG
 	class AOGM_GatorGolf_C : public AMGM_OfficeGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_4HI0[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TIYV[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USetupSplineMovement_C*                              SetupSplineMovement;                                     // 0x02B8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              SpawnLoaction[0x28];                                     // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class APawn*                                               AiBot;                                                   // 0x02E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerPlacementLocator_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function PlayerPlacementLocator.PlayerPlacementLocator_C.ExecuteUbergraph_PlayerPlacementLocator
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerPlacementLocator_C::ExecuteUbergraph_PlayerPlacementLocator(int EntryPoint)
+	void APlayerPlacementLocator_C::ExecuteUbergraph_PlayerPlacementLocator(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

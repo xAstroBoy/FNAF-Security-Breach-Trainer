@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DetermineChaseOptions_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function DetermineChaseOptions.DetermineChaseOptions_C.ExecuteUbergraph_DetermineChaseOptions
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDetermineChaseOptions_C::ExecuteUbergraph_DetermineChaseOptions(int EntryPoint)
+	void UDetermineChaseOptions_C::ExecuteUbergraph_DetermineChaseOptions(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

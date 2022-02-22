@@ -31,7 +31,7 @@ namespace CG
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void Finish_Movement(class APawn* ControlledPawn);
-		void ExecuteUbergraph_FollowSplineWithCollision(int EntryPoint);
+		void ExecuteUbergraph_FollowSplineWithCollision(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

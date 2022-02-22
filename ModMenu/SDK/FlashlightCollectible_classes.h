@@ -21,7 +21,7 @@ namespace CG
 	class AFlashlightCollectible_C : public ACollectible_C
 	{
 	public:
-		unsigned char                                              UnknownData_65DC[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9T9C[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0288(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UStaticMeshComponent*                                Flashlight;                                              // 0x0290(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       FlashlightAvailable;                                     // 0x0298(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -32,7 +32,7 @@ namespace CG
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void OnLoadCollected();
-		void ExecuteUbergraph_FlashlightCollectible(int EntryPoint);
+		void ExecuteUbergraph_FlashlightCollectible(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

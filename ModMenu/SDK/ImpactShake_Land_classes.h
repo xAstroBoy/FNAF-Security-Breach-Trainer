@@ -6,7 +6,7 @@
  */
 
 #ifdef _MSC_VER
-	#pragma pack(push, 0x01)
+#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -27,5 +27,5 @@ namespace CG
 }
 
 #ifdef _MSC_VER
-	#pragma pack(pop)
+#pragma pack(pop)
 #endif

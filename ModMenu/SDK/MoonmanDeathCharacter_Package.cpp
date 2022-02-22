@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoonmanDeathCharacter_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function MoonmanDeathCharacter.MoonmanDeathCharacter_C.OnMoveFinished_01A10D084E477107D60080A61618D4FF
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<AIModule_EPathFollowingResult>         Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIModule_EPathFollowingResult                      Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AAIController*                               AIController                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMoonmanDeathCharacter_C::OnMoveFinished_01A10D084E477107D60080A61618D4FF(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController)
+	void AMoonmanDeathCharacter_C::OnMoveFinished_01A10D084E477107D60080A61618D4FF(AIModule_EPathFollowingResult Result, class AAIController* AIController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -145,9 +144,9 @@ namespace CG
 	 * 		Name   -> Function MoonmanDeathCharacter.MoonmanDeathCharacter_C.ExecuteUbergraph_MoonmanDeathCharacter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMoonmanDeathCharacter_C::ExecuteUbergraph_MoonmanDeathCharacter(int EntryPoint)
+	void AMoonmanDeathCharacter_C::ExecuteUbergraph_MoonmanDeathCharacter(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

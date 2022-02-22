@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredMonty_Package.h"
 
 namespace CG
 {
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredMonty.ShatteredMonty_C.ExecuteUbergraph_ShatteredMonty
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMonty_C::ExecuteUbergraph_ShatteredMonty(int EntryPoint)
+	void AShatteredMonty_C::ExecuteUbergraph_ShatteredMonty(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

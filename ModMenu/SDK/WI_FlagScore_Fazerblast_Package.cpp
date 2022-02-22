@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_FlagScore_Fazerblast_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function WI_FlagScore_Fazerblast.WI_FlagScore_Fazerblast_C.UpdateScore
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                UpdateScore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            UpdateScore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_FlagScore_Fazerblast_C::UpdateScore(int UpdateScore)
+	void UWI_FlagScore_Fazerblast_C::UpdateScore(int32_t UpdateScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -202,9 +201,9 @@ namespace CG
 	 * 		Name   -> Function WI_FlagScore_Fazerblast.WI_FlagScore_Fazerblast_C.ExecuteUbergraph_WI_FlagScore_Fazerblast
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_FlagScore_Fazerblast_C::ExecuteUbergraph_WI_FlagScore_Fazerblast(int EntryPoint)
+	void UWI_FlagScore_Fazerblast_C::ExecuteUbergraph_WI_FlagScore_Fazerblast(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

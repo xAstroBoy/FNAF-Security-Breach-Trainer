@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "InterpMoveComponent_Package.h"
 
 namespace CG
 {
@@ -63,9 +62,9 @@ namespace CG
 	 * 		Name   -> Function InterpMoveComponent.InterpMoveComponent_C.ExecuteUbergraph_InterpMoveComponent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UInterpMoveComponent_C::ExecuteUbergraph_InterpMoveComponent(int EntryPoint)
+	void UInterpMoveComponent_C::ExecuteUbergraph_InterpMoveComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

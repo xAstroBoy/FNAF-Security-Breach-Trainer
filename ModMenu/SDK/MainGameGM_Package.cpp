@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MainGameGM_Package.h"
 
 namespace CG
 {
@@ -531,9 +530,9 @@ namespace CG
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UEnvQueryInstanceBlueprintWrapper*           QueryInstance                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<AIModule_EEnvQueryStatus>              QueryStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIModule_EEnvQueryStatus                           QueryStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGameGM_C::On_Freddy_Teleport_Query_Finished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<AIModule_EEnvQueryStatus> QueryStatus)
+	void AMainGameGM_C::On_Freddy_Teleport_Query_Finished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, AIModule_EEnvQueryStatus QueryStatus)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -554,9 +553,9 @@ namespace CG
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.ExecuteUbergraph_MainGameGM
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGameGM_C::ExecuteUbergraph_MainGameGM(int EntryPoint)
+	void AMainGameGM_C::ExecuteUbergraph_MainGameGM(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

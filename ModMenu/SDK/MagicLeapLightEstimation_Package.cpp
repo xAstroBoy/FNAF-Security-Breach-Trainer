@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapLightEstimation_Package.h"
 
 namespace CG
 {

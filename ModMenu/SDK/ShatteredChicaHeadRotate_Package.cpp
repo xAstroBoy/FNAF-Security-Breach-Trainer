@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredChicaHeadRotate_Package.h"
 
 namespace CG
 {
@@ -91,9 +90,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredChicaHeadRotate.ShatteredChicaHeadRotate_C.ExecuteUbergraph_ShatteredChicaHeadRotate
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UShatteredChicaHeadRotate_C::ExecuteUbergraph_ShatteredChicaHeadRotate(int EntryPoint)
+	void UShatteredChicaHeadRotate_C::ExecuteUbergraph_ShatteredChicaHeadRotate(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -30,7 +30,7 @@ namespace CG
 	struct UWI_FloatingButtonIcon_C_SetButtonImage_Params
 	{
 	public:
-		TEnumAsByte<E_PSButtons_E_PSButtons>                       Button_Type;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_PSButtons_E_PSButtons                                    Button_Type;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -50,7 +50,7 @@ namespace CG
 	struct UWI_FloatingButtonIcon_C_ExecuteUbergraph_WI_FloatingButtonIcon_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

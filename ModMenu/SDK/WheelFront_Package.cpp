@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WheelFront_Package.h"
 
 namespace CG
 {

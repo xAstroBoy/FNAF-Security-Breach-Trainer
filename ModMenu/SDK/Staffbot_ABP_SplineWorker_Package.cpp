@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_ABP_SplineWorker_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_SplineWorker.Staffbot_ABP_SplineWorker_C.ExecuteUbergraph_Staffbot_ABP_SplineWorker
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_SplineWorker_C::ExecuteUbergraph_Staffbot_ABP_SplineWorker(int EntryPoint)
+	void UStaffbot_ABP_SplineWorker_C::ExecuteUbergraph_Staffbot_ABP_SplineWorker(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

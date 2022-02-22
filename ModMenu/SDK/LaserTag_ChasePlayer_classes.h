@@ -31,7 +31,7 @@ namespace CG
 	public:
 		void FollowPlayer(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_LaserTag_ChasePlayer(int EntryPoint);
+		void ExecuteUbergraph_LaserTag_ChasePlayer(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

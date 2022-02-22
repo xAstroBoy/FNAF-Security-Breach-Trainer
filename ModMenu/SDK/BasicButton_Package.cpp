@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BasicButton_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function BasicButton.BasicButton_C.ChangeColor
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                ChangeColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ChangeColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABasicButton_C::ChangeColor(int ChangeColor)
+	void ABasicButton_C::ChangeColor(int32_t ChangeColor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -164,9 +163,9 @@ namespace CG
 	 * 		Name   -> Function BasicButton.BasicButton_C.ExecuteUbergraph_BasicButton
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABasicButton_C::ExecuteUbergraph_BasicButton(int EntryPoint)
+	void ABasicButton_C::ExecuteUbergraph_BasicButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

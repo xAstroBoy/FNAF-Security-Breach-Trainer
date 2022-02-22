@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShootingBall_Package.h"
 
 namespace CG
 {
@@ -66,9 +65,9 @@ namespace CG
 	 * 		Name   -> Function ShootingBall.ShootingBall_C.ExecuteUbergraph_ShootingBall
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShootingBall_C::ExecuteUbergraph_ShootingBall(int EntryPoint)
+	void AShootingBall_C::ExecuteUbergraph_ShootingBall(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

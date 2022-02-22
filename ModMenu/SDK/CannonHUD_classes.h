@@ -25,8 +25,8 @@ namespace CG
 		class UTextBlock*                                          NumShots;                                                // 0x0238(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void Update_Shots(int ShotsRemaining);
-		void ExecuteUbergraph_CannonHUD(int EntryPoint);
+		void Update_Shots(int32_t ShotsRemaining);
+		void ExecuteUbergraph_CannonHUD(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

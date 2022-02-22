@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChicaBehindPlayerBreathing_End_Task_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function ChicaBehindPlayerBreathing_End_Task.ChicaBehindPlayerBreathing_End_Task_C.ExecuteUbergraph_ChicaBehindPlayerBreathing_End_Task
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChicaBehindPlayerBreathing_End_Task_C::ExecuteUbergraph_ChicaBehindPlayerBreathing_End_Task(int EntryPoint)
+	void UChicaBehindPlayerBreathing_End_Task_C::ExecuteUbergraph_ChicaBehindPlayerBreathing_End_Task(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -34,7 +34,7 @@ namespace CG
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
@@ -47,7 +47,7 @@ namespace CG
 		void SetDeactivated();
 		void OnPlayerInteractCancel();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_GeneratorBase_BP(int EntryPoint);
+		void ExecuteUbergraph_GeneratorBase_BP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

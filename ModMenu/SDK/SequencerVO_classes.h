@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void PlayVO(class UAkAudioEvent* VO, class AActor* Actor, bool Freddy, float MaxRadiusPercent);
-		void ExecuteUbergraph_SequencerVO(int EntryPoint);
+		void ExecuteUbergraph_SequencerVO(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SecurityOfficePowerMeter_Package.h"
 
 namespace CG
 {
@@ -121,9 +120,9 @@ namespace CG
 	 * 		Name   -> Function SecurityOfficePowerMeter.SecurityOfficePowerMeter_C.EndGame
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityOfficePowerMeter_C::EndGame(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void ASecurityOfficePowerMeter_C::EndGame(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -143,9 +142,9 @@ namespace CG
 	 * 		Name   -> Function SecurityOfficePowerMeter.SecurityOfficePowerMeter_C.ExecuteUbergraph_SecurityOfficePowerMeter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityOfficePowerMeter_C::ExecuteUbergraph_SecurityOfficePowerMeter(int EntryPoint)
+	void ASecurityOfficePowerMeter_C::ExecuteUbergraph_SecurityOfficePowerMeter(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

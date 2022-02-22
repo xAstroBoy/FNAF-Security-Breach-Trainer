@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredMontyPile_Package.h"
 
 namespace CG
 {
@@ -57,9 +56,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMontyPile_C::OnFailure_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AShatteredMontyPile_C::OnFailure_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -83,9 +82,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMontyPile_C::OnSuccess_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AShatteredMontyPile_C::OnSuccess_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -109,9 +108,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMontyPile_C::OnFailure_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AShatteredMontyPile_C::OnFailure_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -135,9 +134,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMontyPile_C::OnSuccess_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AShatteredMontyPile_C::OnSuccess_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -295,9 +294,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredMontyPile.ShatteredMontyPile_C.ExecuteUbergraph_ShatteredMontyPile
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredMontyPile_C::ExecuteUbergraph_ShatteredMontyPile(int EntryPoint)
+	void AShatteredMontyPile_C::ExecuteUbergraph_ShatteredMontyPile(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

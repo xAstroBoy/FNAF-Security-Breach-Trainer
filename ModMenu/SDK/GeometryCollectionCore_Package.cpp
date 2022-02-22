@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GeometryCollectionCore_Package.h"
 
 namespace CG
 {

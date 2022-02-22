@@ -37,7 +37,7 @@ namespace CG
 		void Leave_Cannon();
 		void ReceiveTick(float DeltaSeconds);
 		void Fire();
-		void ExecuteUbergraph_BallCannonPawn(int EntryPoint);
+		void ExecuteUbergraph_BallCannonPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

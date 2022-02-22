@@ -29,7 +29,7 @@ namespace CG
 		void PreConstruct(bool IsDesignTime);
 		void OnInitialized();
 		void InputDeviceChanged();
-		void ExecuteUbergraph_WI_Option_Language_DebugShortcut(int EntryPoint);
+		void ExecuteUbergraph_WI_Option_Language_DebugShortcut(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredChicaHeadRotateTimer_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredChicaHeadRotateTimer.ShatteredChicaHeadRotateTimer_C.ExecuteUbergraph_ShatteredChicaHeadRotateTimer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UShatteredChicaHeadRotateTimer_C::ExecuteUbergraph_ShatteredChicaHeadRotateTimer(int EntryPoint)
+	void UShatteredChicaHeadRotateTimer_C::ExecuteUbergraph_ShatteredChicaHeadRotateTimer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

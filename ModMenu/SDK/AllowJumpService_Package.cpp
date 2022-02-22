@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AllowJumpService_Package.h"
 
 namespace CG
 {
@@ -71,9 +70,9 @@ namespace CG
 	 * 		Name   -> Function AllowJumpService.AllowJumpService_C.ExecuteUbergraph_AllowJumpService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAllowJumpService_C::ExecuteUbergraph_AllowJumpService(int EntryPoint)
+	void UAllowJumpService_C::ExecuteUbergraph_AllowJumpService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Overlay_Package.h"
 
 namespace CG
 {

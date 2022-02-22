@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OGM_Underground_Package.h"
 
 namespace CG
 {
@@ -46,9 +45,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.PlayerRequestEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Underground_C::PlayerRequestEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void AOGM_Underground_C::PlayerRequestEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -177,9 +176,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.OnEnd
 	 * 		Flags  -> (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Underground_C::OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void AOGM_Underground_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -468,9 +467,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.ExecuteUbergraph_OGM_Underground
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Underground_C::ExecuteUbergraph_OGM_Underground(int EntryPoint)
+	void AOGM_Underground_C::ExecuteUbergraph_OGM_Underground(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GameOverUI_Package.h"
 
 namespace CG
 {
@@ -294,9 +293,9 @@ namespace CG
 	 * 		Name   -> Function GameOverUI.GameOverUI_C.ExecuteUbergraph_GameOverUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGameOverUI_C::ExecuteUbergraph_GameOverUI(int EntryPoint)
+	void UGameOverUI_C::ExecuteUbergraph_GameOverUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

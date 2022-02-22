@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "IsPlayerHiding_Package.h"
 
 namespace CG
 {

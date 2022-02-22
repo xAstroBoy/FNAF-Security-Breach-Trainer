@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Gregory_Clock_Package.h"
 
 namespace CG
 {
@@ -76,9 +75,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Clock_C::OnFailure_9627632E42AF1548717DA3A133495CE7(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void UWI_Gregory_Clock_C::OnFailure_9627632E42AF1548717DA3A133495CE7(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -102,9 +101,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Clock_C::OnSuccess_9627632E42AF1548717DA3A133495CE7(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void UWI_Gregory_Clock_C::OnSuccess_9627632E42AF1548717DA3A133495CE7(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -188,9 +187,9 @@ namespace CG
 	 * 		Name   -> Function WI_Gregory_Clock.WI_Gregory_Clock_C.ExecuteUbergraph_WI_Gregory_Clock
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Clock_C::ExecuteUbergraph_WI_Gregory_Clock(int EntryPoint)
+	void UWI_Gregory_Clock_C::ExecuteUbergraph_WI_Gregory_Clock(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

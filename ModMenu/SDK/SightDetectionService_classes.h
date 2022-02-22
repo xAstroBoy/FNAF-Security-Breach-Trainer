@@ -32,7 +32,7 @@ namespace CG
 		void Sight_Cleanup(class USightComponent* SightComponent);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void Internal_Sight_Setup(class APawn* ControlledPawn);
-		void ExecuteUbergraph_SightDetectionService(int EntryPoint);
+		void ExecuteUbergraph_SightDetectionService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_PowerMeter_Door_Package.h"
 
 namespace CG
 {
@@ -154,9 +153,9 @@ namespace CG
 	 * 		Name   -> Function BP_PowerMeter_Door.BP_PowerMeter_Door_C.ExecuteUbergraph_BP_PowerMeter_Door
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_PowerMeter_Door_C::ExecuteUbergraph_BP_PowerMeter_Door(int EntryPoint)
+	void ABP_PowerMeter_Door_C::ExecuteUbergraph_BP_PowerMeter_Door(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

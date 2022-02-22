@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoveToPlayersHidingSpot_Package.h"
 
 namespace CG
 {
@@ -48,10 +47,10 @@ namespace CG
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.OnMoveFinished_0E1FC4584AE08718647C04A951D545C1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<AIModule_EPathFollowingResult>         Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIModule_EPathFollowingResult                      Result                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AAIController*                               AIController                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMoveToPlayersHidingSpot_C::OnMoveFinished_0E1FC4584AE08718647C04A951D545C1(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController)
+	void UMoveToPlayersHidingSpot_C::OnMoveFinished_0E1FC4584AE08718647C04A951D545C1(AIModule_EPathFollowingResult Result, class AAIController* AIController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -141,9 +140,9 @@ namespace CG
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.ExecuteUbergraph_MoveToPlayersHidingSpot
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMoveToPlayersHidingSpot_C::ExecuteUbergraph_MoveToPlayersHidingSpot(int EntryPoint)
+	void UMoveToPlayersHidingSpot_C::ExecuteUbergraph_MoveToPlayersHidingSpot(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

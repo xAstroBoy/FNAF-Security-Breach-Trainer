@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Sewer_Generator_Package.h"
 
 namespace CG
 {
@@ -99,9 +98,9 @@ namespace CG
 	 * 		Name   -> Function Sewer_Generator.Sewer_Generator_C.ExecuteUbergraph_Sewer_Generator
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASewer_Generator_C::ExecuteUbergraph_Sewer_Generator(int EntryPoint)
+	void ASewer_Generator_C::ExecuteUbergraph_Sewer_Generator(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

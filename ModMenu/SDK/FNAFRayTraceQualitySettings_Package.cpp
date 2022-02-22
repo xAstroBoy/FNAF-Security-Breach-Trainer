@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FNAFRayTraceQualitySettings_Package.h"
 
 namespace CG
 {

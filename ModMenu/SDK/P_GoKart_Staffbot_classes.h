@@ -32,7 +32,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_P_GoKart_Staffbot(int EntryPoint);
+		void ExecuteUbergraph_P_GoKart_Staffbot(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

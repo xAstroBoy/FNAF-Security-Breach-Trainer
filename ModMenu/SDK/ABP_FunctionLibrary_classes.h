@@ -21,7 +21,7 @@ namespace CG
 	class UABP_FunctionLibrary_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_Check_if_Onscreen(class UAnimInstance* TargetAnimInstance, float Tolerance, bool isJumpscaring, bool Override, class UObject* __WorldContext, bool* isOnScreen1);
+		void STATIC_Check_if_Onscreen(class UAnimInstance* TargetAnimInstance, float Tolerance, bool IsJumpscaring, bool Override, class UObject* __WorldContext, bool* isOnScreen1);
 		static UClass* StaticClass();
 	};
 

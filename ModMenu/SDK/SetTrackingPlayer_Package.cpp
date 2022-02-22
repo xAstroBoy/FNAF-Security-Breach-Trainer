@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetTrackingPlayer_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetTrackingPlayer.SetTrackingPlayer_C.ExecuteUbergraph_SetTrackingPlayer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetTrackingPlayer_C::ExecuteUbergraph_SetTrackingPlayer(int EntryPoint)
+	void USetTrackingPlayer_C::ExecuteUbergraph_SetTrackingPlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

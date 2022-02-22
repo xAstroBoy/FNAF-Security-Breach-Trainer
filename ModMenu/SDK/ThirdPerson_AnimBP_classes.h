@@ -37,7 +37,7 @@ namespace CG
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0620(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0650(0x00B0)
 		bool                                                       IsInAir_;                                                // 0x0700(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LVX5[0x3];                                   // 0x0701(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_L76B[0x3];                                   // 0x0701(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Speed;                                                   // 0x0704(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
@@ -45,7 +45,7 @@ namespace CG
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_175FFF54400CA0EC412B7083B0989D7E();
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_F867B5374C7EFB9ED9010FA7431019DF();
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void ExecuteUbergraph_ThirdPerson_AnimBP(int EntryPoint);
+		void ExecuteUbergraph_ThirdPerson_AnimBP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RandomBoolWeighted_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function RandomBoolWeighted.RandomBoolWeighted_C.ExecuteUbergraph_RandomBoolWeighted
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URandomBoolWeighted_C::ExecuteUbergraph_RandomBoolWeighted(int EntryPoint)
+	void URandomBoolWeighted_C::ExecuteUbergraph_RandomBoolWeighted(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

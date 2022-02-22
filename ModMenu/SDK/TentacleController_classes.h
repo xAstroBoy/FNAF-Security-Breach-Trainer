@@ -21,11 +21,11 @@ namespace CG
 	class ATentacleController_C : public AActivatableBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_LVHJ[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7WR0[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UAkComponent*                                        Ak;                                                      // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      Intro_Delay;                                             // 0x0280(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_26YZ[0x4];                                   // 0x0284(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7480[0x4];                                   // 0x0284(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class APRE_Ventilation_BustOpen_C*>                 Vents;                                                   // 0x0288(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, HasGetValueTypeHash
 		class AOGM_Underground_C*                                  OGM;                                                     // 0x0298(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      End_Delay;                                               // 0x02A0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -36,7 +36,7 @@ namespace CG
 		void On_Activate();
 		void Activate_Tentacle_Closest_To_Player();
 		void SetDeactivated();
-		void ExecuteUbergraph_TentacleController(int EntryPoint);
+		void ExecuteUbergraph_TentacleController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_Freddy_Attack_Unstun(int EntryPoint);
+		void ExecuteUbergraph_Freddy_Attack_Unstun(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

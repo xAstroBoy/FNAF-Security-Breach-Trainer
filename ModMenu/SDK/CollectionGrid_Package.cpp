@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CollectionGrid_Package.h"
 
 namespace CG
 {
@@ -79,10 +78,10 @@ namespace CG
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.PopulateInventoryGrid
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_InventoryCollectionType_E_InventoryCollectionType> EInventoryCollectionType                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InventoryCollectionType_E_InventoryCollectionType EInventoryCollectionType                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		fnaf9_EInventoryItemCategory                       EInventoryItemCategory                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCollectionGrid_C::PopulateInventoryGrid(TEnumAsByte<E_InventoryCollectionType_E_InventoryCollectionType> EInventoryCollectionType, fnaf9_EInventoryItemCategory EInventoryItemCategory)
+	void UCollectionGrid_C::PopulateInventoryGrid(E_InventoryCollectionType_E_InventoryCollectionType EInventoryCollectionType, fnaf9_EInventoryItemCategory EInventoryItemCategory)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -127,9 +126,9 @@ namespace CG
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.ExecuteUbergraph_CollectionGrid
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCollectionGrid_C::ExecuteUbergraph_CollectionGrid(int EntryPoint)
+	void UCollectionGrid_C::ExecuteUbergraph_CollectionGrid(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

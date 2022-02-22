@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_PerformTask_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Worker_PerformTask.Worker_PerformTask_C.ExecuteUbergraph_Worker_PerformTask
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_PerformTask_C::ExecuteUbergraph_Worker_PerformTask(int EntryPoint)
+	void UWorker_PerformTask_C::ExecuteUbergraph_Worker_PerformTask(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

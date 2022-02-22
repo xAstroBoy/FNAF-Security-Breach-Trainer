@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DJMM_Enum_Package.h"
 
 namespace CG
 {

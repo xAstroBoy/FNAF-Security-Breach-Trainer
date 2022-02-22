@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindLocationInFront_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindLocationInFront.FindLocationInFront_C.ExecuteUbergraph_FindLocationInFront
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindLocationInFront_C::ExecuteUbergraph_FindLocationInFront(int EntryPoint)
+	void UFindLocationInFront_C::ExecuteUbergraph_FindLocationInFront(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

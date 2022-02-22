@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_FinalScore_Package.h"
 
 namespace CG
 {
@@ -161,9 +160,9 @@ namespace CG
 	 * 		Name   -> Function WI_FinalScore.WI_FinalScore_C.ExecuteUbergraph_WI_FinalScore
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_FinalScore_C::ExecuteUbergraph_WI_FinalScore(int EntryPoint)
+	void UWI_FinalScore_C::ExecuteUbergraph_WI_FinalScore(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

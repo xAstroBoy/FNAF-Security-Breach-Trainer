@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PickAndPlayAudioCue_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PickAndPlayAudioCue.PickAndPlayAudioCue_C.ExecuteUbergraph_PickAndPlayAudioCue
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPickAndPlayAudioCue_C::ExecuteUbergraph_PickAndPlayAudioCue(int EntryPoint)
+	void UPickAndPlayAudioCue_C::ExecuteUbergraph_PickAndPlayAudioCue(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

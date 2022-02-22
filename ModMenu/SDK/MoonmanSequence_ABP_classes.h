@@ -76,7 +76,7 @@ namespace CG
 		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend_2;                        // 0x1540(0x00C0)
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x1600(0x0078)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace_2;                   // 0x1678(0x0020)
-		unsigned char                                              UnknownData_VW8R[0x8];                                   // 0x1698(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z7Q1[0x8];                                   // 0x1698(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics;                              // 0x16A0(0x0440)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x1AE0(0x0020)
 		struct FAnimNode_RotationOffsetBlendSpace                  AnimGraphNode_RotationOffsetBlendSpace;                  // 0x1B00(0x0188)
@@ -91,26 +91,26 @@ namespace CG
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x2188(0x0078)
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x2200(0x0048)
 		fnaf9_EMMAnimCategory                                      Animation_Category;                                      // 0x2248(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		unsigned char                                              UnknownData_KBB7[0x7];                                   // 0x2249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YIUZ[0x7];                                   // 0x2249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UAnimSequence*>                               Poses;                                                   // 0x2250(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		class UAnimSequence*                                       AnimSeq;                                                 // 0x2260(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        RandomPoseSelector;                                      // 0x2268(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_UIMD[0x4];                                   // 0x226C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    RandomPoseSelector;                                      // 0x2268(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_6ELE[0x4];                                   // 0x226C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AMoonmanSequenceActor_C*                             MMSeqActor;                                              // 0x2270(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isAnimLooped;                                            // 0x2278(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isHeadAimAtPlayer;                                       // 0x2279(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZALY[0x2];                                   // 0x227A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BAYM[0x2];                                   // 0x227A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             PlayerLocation;                                          // 0x227C(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            HeadRotation;                                            // 0x2288(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Enable_Hat_Simulation;                                   // 0x2294(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_CF4Y[0x3];                                   // 0x2295(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9G6G[0x3];                                   // 0x2295(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      HatSimulationAlpha;                                      // 0x2298(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HeadAnimBlend;                                           // 0x229C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            L_Eye_Rotation;                                          // 0x22A0(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FRotator                                            R_Eye_Rotation;                                          // 0x22AC(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FRotator                                            ActorRotation;                                           // 0x22B8(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       SnapOrientation;                                         // 0x22C4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NEJW[0x3];                                   // 0x22C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_37C7[0x3];                                   // 0x22C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AGregory_C*                                          Gregory;                                                 // 0x22C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             PlayerHeadLocation;                                      // 0x22D0(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HeadLayerBlend;                                          // 0x22DC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -128,7 +128,7 @@ namespace CG
 		void AnimNotify_DestroyActor();
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_674E5E8F431332E8A0C36ABC5FF5FC0E();
 		void BlueprintBeginPlay();
-		void ExecuteUbergraph_MoonmanSequence_ABP(int EntryPoint);
+		void ExecuteUbergraph_MoonmanSequence_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

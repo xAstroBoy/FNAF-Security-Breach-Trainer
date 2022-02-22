@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MovieSceneCapture_Package.h"
 
 namespace CG
 {
@@ -397,7 +396,7 @@ namespace CG
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
+	int32_t UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

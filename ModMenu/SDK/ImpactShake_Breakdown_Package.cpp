@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ImpactShake_Breakdown_Package.h"
 
 namespace CG
 {

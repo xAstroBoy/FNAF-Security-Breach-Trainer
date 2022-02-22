@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SignificanceManager_Package.h"
 
 namespace CG
 {

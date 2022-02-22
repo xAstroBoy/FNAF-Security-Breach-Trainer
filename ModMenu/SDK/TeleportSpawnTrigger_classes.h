@@ -25,10 +25,10 @@ namespace CG
 		class UStaticMeshComponent*                                Sphere;                                                  // 0x02B8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USphereComponent*                                    DistanceSphere;                                          // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      ReactivationTime;                                        // 0x02C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_FQRM[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VP7U[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class APawn*                                               Spawned_Pawn;                                            // 0x02D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Should_Reactivate_On_Spawn;                              // 0x02D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_FNM1[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PS8Z[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Seeker_Patrol_Path[0x28];                                // 0x02D9(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
@@ -41,7 +41,7 @@ namespace CG
 		void Enable_Trigger();
 		void Disable_Trigger();
 		void Reactivation_Timer();
-		void ExecuteUbergraph_TeleportSpawnTrigger(int EntryPoint);
+		void ExecuteUbergraph_TeleportSpawnTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

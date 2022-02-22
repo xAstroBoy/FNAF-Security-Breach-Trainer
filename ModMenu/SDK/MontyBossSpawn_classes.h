@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void Spawn(class AActor** NewParam);
 		void SpawnOld();
-		void ExecuteUbergraph_MontyBossSpawn(int EntryPoint);
+		void ExecuteUbergraph_MontyBossSpawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

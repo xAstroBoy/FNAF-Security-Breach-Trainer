@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PatrolPointType_Package.h"
 
 namespace CG
 {

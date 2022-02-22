@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "E_SurvivalLives_Package.h"
 
 namespace CG
 {

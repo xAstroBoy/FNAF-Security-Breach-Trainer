@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CharacterMaterialSwapInfo_Package.h"
 
 namespace CG
 {

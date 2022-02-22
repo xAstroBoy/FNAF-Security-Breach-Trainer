@@ -22,11 +22,11 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x01F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		unsigned char                                              StaffBot[0x28];                                          // 0x01F8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              Staffbot[0x28];                                          // 0x01F8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_AlwaysFaceCameraComponent_Kitchen(int EntryPoint);
+		void ExecuteUbergraph_AlwaysFaceCameraComponent_Kitchen(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -26,14 +26,14 @@ namespace CG
 		struct FBlackboardKeySelector                              BBPointOfInterestLocation;                               // 0x0128(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              BBPointOfInterestIndex;                                  // 0x0150(0x0028) Edit, BlueprintVisible
 		float                                                      POISearchRadius;                                         // 0x0178(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_1AW3[0x4];                                   // 0x017C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XPND[0x4];                                   // 0x017C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              BBPointOfInterestRoom;                                   // 0x0180(0x0028) Edit, BlueprintVisible
 		TArray<struct FPOIResult>                                  PossiblePOIs;                                            // 0x01A8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 
 	public:
 		void DeterminePoint();
 		void Receive_Execute_AI_With_Room(class AAIController* OwnerController, class APawn* ControlledPawn, class ARoomAreaBase* Room);
-		void ExecuteUbergraph_FindPointOfInterest(int EntryPoint);
+		void ExecuteUbergraph_FindPointOfInterest(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

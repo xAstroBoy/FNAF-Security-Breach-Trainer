@@ -36,7 +36,7 @@ namespace CG
 	public:
 		void UpdatePizzaStep();
 		void PizzaCompleted();
-		void Complete_Current_Pizza_Step(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep);
+		void Complete_Current_Pizza_Step(PizzaStep_EPizzaStep PizzaStep);
 		void InstructionsInit(bool IsDesignTime);
 		float Get_DoorPower_Percent_1();
 		class FText Get_DownloadTimeRemaining_Text_1();
@@ -46,7 +46,7 @@ namespace CG
 		void ShowErrorMessage();
 		void TakePizzaInstructions();
 		void ClearInstructions();
-		void ExecuteUbergraph_StaffbotKitchenHUD(int EntryPoint);
+		void ExecuteUbergraph_StaffbotKitchenHUD(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

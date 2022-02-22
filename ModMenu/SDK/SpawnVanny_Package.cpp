@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SpawnVanny_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SpawnVanny.SpawnVanny_C.ExecuteUbergraph_SpawnVanny
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USpawnVanny_C::ExecuteUbergraph_SpawnVanny(int EntryPoint)
+	void USpawnVanny_C::ExecuteUbergraph_SpawnVanny(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

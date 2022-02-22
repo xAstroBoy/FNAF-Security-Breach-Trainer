@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerCrouchingService_Package.h"
 
 namespace CG
 {
@@ -86,9 +85,9 @@ namespace CG
 	 * 		Name   -> Function PlayerCrouchingService.PlayerCrouchingService_C.ExecuteUbergraph_PlayerCrouchingService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerCrouchingService_C::ExecuteUbergraph_PlayerCrouchingService(int EntryPoint)
+	void UPlayerCrouchingService_C::ExecuteUbergraph_PlayerCrouchingService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

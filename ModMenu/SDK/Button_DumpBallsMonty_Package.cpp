@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Button_DumpBallsMonty_Package.h"
 
 namespace CG
 {
@@ -134,9 +133,9 @@ namespace CG
 	 * 		Name   -> Function Button_DumpBallsMonty.Button_DumpBallsMonty_C.ExecuteUbergraph_Button_DumpBallsMonty
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AButton_DumpBallsMonty_C::ExecuteUbergraph_Button_DumpBallsMonty(int EntryPoint)
+	void AButton_DumpBallsMonty_C::ExecuteUbergraph_Button_DumpBallsMonty(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

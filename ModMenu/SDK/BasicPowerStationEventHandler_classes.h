@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void StartPowerStationEvent(class APowerStation_Actor_C* PowerStation, class APowerStationPlayerInteractible_C* PowerStationInteract);
-		void ExecuteUbergraph_BasicPowerStationEventHandler(int EntryPoint);
+		void ExecuteUbergraph_BasicPowerStationEventHandler(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

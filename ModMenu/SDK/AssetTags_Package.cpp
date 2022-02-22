@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AssetTags_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BT_GetPoint_Package.h"
 
 namespace CG
 {
@@ -118,9 +117,9 @@ namespace CG
 	 * 		Name   -> Function BT_GetPoint.BT_GetPoint_C.ExecuteUbergraph_BT_GetPoint
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBT_GetPoint_C::ExecuteUbergraph_BT_GetPoint(int EntryPoint)
+	void UBT_GetPoint_C::ExecuteUbergraph_BT_GetPoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

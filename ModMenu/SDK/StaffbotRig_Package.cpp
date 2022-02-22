@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotRig_Package.h"
 
 namespace CG
 {

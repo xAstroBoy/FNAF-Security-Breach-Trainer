@@ -31,7 +31,7 @@ namespace CG
 		void PreConstruct(bool IsDesignTime);
 		void Construct();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_WI_ImageScaled(int EntryPoint);
+		void ExecuteUbergraph_WI_ImageScaled(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

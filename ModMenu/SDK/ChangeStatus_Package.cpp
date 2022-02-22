@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChangeStatus_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ChangeStatus.ChangeStatus_C.ExecuteUbergraph_ChangeStatus
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChangeStatus_C::ExecuteUbergraph_ChangeStatus(int EntryPoint)
+	void UChangeStatus_C::ExecuteUbergraph_ChangeStatus(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

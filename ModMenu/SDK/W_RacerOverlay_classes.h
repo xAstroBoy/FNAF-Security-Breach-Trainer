@@ -49,7 +49,7 @@ namespace CG
 		void Construct();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void EndRace();
-		void ExecuteUbergraph_W_RacerOverlay(int EntryPoint);
+		void ExecuteUbergraph_W_RacerOverlay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

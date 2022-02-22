@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OGM_Kitchen_Package.h"
 
 namespace CG
 {
@@ -42,9 +41,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Activator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<ActivatableState_EActivatableState>    CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ActivatableState_EActivatableState                 CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState)
+	void AOGM_Kitchen_C::GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -153,9 +152,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Kitchen.OGM_Kitchen_C.OnEnd
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void AOGM_Kitchen_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -421,9 +420,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Kitchen.OGM_Kitchen_C.CompleteCurrentPizzaStep
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::CompleteCurrentPizzaStep(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep)
+	void AOGM_Kitchen_C::CompleteCurrentPizzaStep(PizzaStep_EPizzaStep PizzaStep)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -521,9 +520,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::OnFailure_9CEE3F5D496058D0154EDB89656BFCC1(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AOGM_Kitchen_C::OnFailure_9CEE3F5D496058D0154EDB89656BFCC1(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -547,9 +546,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::OnSuccess_9CEE3F5D496058D0154EDB89656BFCC1(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AOGM_Kitchen_C::OnSuccess_9CEE3F5D496058D0154EDB89656BFCC1(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1130,9 +1129,9 @@ namespace CG
 	 * 		Name   -> Function OGM_Kitchen.OGM_Kitchen_C.ExecuteUbergraph_OGM_Kitchen
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_Kitchen_C::ExecuteUbergraph_OGM_Kitchen(int EntryPoint)
+	void AOGM_Kitchen_C::ExecuteUbergraph_OGM_Kitchen(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

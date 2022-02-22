@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Cable_ABP_Package.h"
 
 namespace CG
 {
@@ -183,9 +182,9 @@ namespace CG
 	 * 		Name   -> Function Cable_ABP.Cable_ABP_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum   GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCable_ABP_C::PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum)
+	void UCable_ABP_C::PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -287,9 +286,9 @@ namespace CG
 	 * 		Name   -> Function Cable_ABP.Cable_ABP_C.ExecuteUbergraph_Cable_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCable_ABP_C::ExecuteUbergraph_Cable_ABP(int EntryPoint)
+	void UCable_ABP_C::ExecuteUbergraph_Cable_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

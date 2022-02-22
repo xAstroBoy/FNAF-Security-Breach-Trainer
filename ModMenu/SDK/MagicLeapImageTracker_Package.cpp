@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapImageTracker_Package.h"
 
 namespace CG
 {
@@ -78,9 +77,9 @@ namespace CG
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.SetMaxSimultaneousTargets
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                MaxSimultaneousTargets                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            MaxSimultaneousTargets                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapImageTrackerFunctionLibrary::STATIC_SetMaxSimultaneousTargets(int MaxSimultaneousTargets)
+	void UMagicLeapImageTrackerFunctionLibrary::STATIC_SetMaxSimultaneousTargets(int32_t MaxSimultaneousTargets)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -123,7 +122,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.GetMaxSimultaneousTargets
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
-	int UMagicLeapImageTrackerFunctionLibrary::STATIC_GetMaxSimultaneousTargets()
+	int32_t UMagicLeapImageTrackerFunctionLibrary::STATIC_GetMaxSimultaneousTargets()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

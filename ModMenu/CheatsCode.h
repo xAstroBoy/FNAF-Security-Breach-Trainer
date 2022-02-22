@@ -16,6 +16,7 @@ namespace Cheats
 	static bool UnlimitedStaminaBool_Enabled = false;
 	static bool UnlimitedFazWatchBool_Enabled = false;
 	static bool NoJumpscares_Enabled = false;
+	static bool MiniGames_UnlimitedHealth_Enabled = false;
 
 	static bool AllowAlwaysSaving_Enabled = false;
 
@@ -24,6 +25,7 @@ namespace Cheats
 
 	static bool FreezeFreddyPower_Enabled = false;
 	static bool HasBackuppedFreddyPower = false;
+
 	// Higher than that , the risk of jumpscare is there.
 	static int MaxFreddyPower = 4500;
 	static int CurrentFreddyPower = 4500;
@@ -42,6 +44,7 @@ namespace Cheats
 	void RemoveFazCamCooldownTime();
 	void Freddy_Always_CanEnterExitFreddy();
 	void Freddy_Always_CanCallFreddy();
+	void MinigamesGodMode();
 
 	int Get_MaxFreddyPower();
 	void Set_MaxFreddyPower(const int& value);

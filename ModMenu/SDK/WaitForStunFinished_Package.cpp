@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WaitForStunFinished_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function WaitForStunFinished.WaitForStunFinished_C.ExecuteUbergraph_WaitForStunFinished
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWaitForStunFinished_C::ExecuteUbergraph_WaitForStunFinished(int EntryPoint)
+	void UWaitForStunFinished_C::ExecuteUbergraph_WaitForStunFinished(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

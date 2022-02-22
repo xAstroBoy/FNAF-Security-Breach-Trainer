@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SaveGameSettings_Package.h"
 
 namespace CG
 {
@@ -74,10 +73,10 @@ namespace CG
 	 * 		Name   -> Function SaveGameSettings.SaveGameSettings_C.GetMediaForCurrentHour
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Lasted_Played_Hour                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Lasted_Played_Hour                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UMediaSource*                                Game_Hour_Video                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USaveGameSettings_C::GetMediaForCurrentHour(int* Lasted_Played_Hour, class UMediaSource** Game_Hour_Video)
+	void USaveGameSettings_C::GetMediaForCurrentHour(int32_t* Lasted_Played_Hour, class UMediaSource** Game_Hour_Video)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

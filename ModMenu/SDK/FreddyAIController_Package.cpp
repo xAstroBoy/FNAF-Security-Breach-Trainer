@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyAIController_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.SetAIState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<FreddyAIState_EFreddyAIState>          State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		FreddyAIState_EFreddyAIState                       State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyAIController_C::SetAIState(TEnumAsByte<FreddyAIState_EFreddyAIState> State)
+	void AFreddyAIController_C::SetAIState(FreddyAIState_EFreddyAIState State)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -538,9 +537,9 @@ namespace CG
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ExecuteUbergraph_FreddyAIController
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyAIController_C::ExecuteUbergraph_FreddyAIController(int EntryPoint)
+	void AFreddyAIController_C::ExecuteUbergraph_FreddyAIController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

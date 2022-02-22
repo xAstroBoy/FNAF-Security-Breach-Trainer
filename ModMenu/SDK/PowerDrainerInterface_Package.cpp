@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PowerDrainerInterface_Package.h"
 
 namespace CG
 {

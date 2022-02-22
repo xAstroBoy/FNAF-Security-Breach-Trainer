@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UI_TextAndIcons_Package.h"
 
 namespace CG
 {
@@ -107,9 +106,9 @@ namespace CG
 	 * 		Name   -> Function UI_TextAndIcons.UI_TextAndIcons_C.ExecuteUbergraph_UI_TextAndIcons
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUI_TextAndIcons_C::ExecuteUbergraph_UI_TextAndIcons(int EntryPoint)
+	void UUI_TextAndIcons_C::ExecuteUbergraph_UI_TextAndIcons(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

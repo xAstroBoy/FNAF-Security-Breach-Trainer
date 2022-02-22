@@ -42,7 +42,7 @@ namespace CG
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_AA8A20DA426FE42437EAEC96C303478B();
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_E784316543D17854009593A51F7141AE();
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void ExecuteUbergraph_AVB_GoCart(int EntryPoint);
+		void ExecuteUbergraph_AVB_GoCart(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

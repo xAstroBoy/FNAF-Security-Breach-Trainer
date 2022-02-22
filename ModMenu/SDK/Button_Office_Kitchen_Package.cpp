@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Button_Office_Kitchen_Package.h"
 
 namespace CG
 {
@@ -176,9 +175,9 @@ namespace CG
 	 * 		Name   -> Function Button_Office_Kitchen.Button_Office_Kitchen_C.ExecuteUbergraph_Button_Office_Kitchen
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AButton_Office_Kitchen_C::ExecuteUbergraph_Button_Office_Kitchen(int EntryPoint)
+	void AButton_Office_Kitchen_C::ExecuteUbergraph_Button_Office_Kitchen(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SplineForkDetectService_Package.h"
 
 namespace CG
 {
@@ -89,9 +88,9 @@ namespace CG
 	 * 		Name   -> Function SplineForkDetectService.SplineForkDetectService_C.ExecuteUbergraph_SplineForkDetectService
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USplineForkDetectService_C::ExecuteUbergraph_SplineForkDetectService(int EntryPoint)
+	void USplineForkDetectService_C::ExecuteUbergraph_SplineForkDetectService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

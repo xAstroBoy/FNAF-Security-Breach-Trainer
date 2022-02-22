@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RequestPlayerLocation_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function RequestPlayerLocation.RequestPlayerLocation_C.ExecuteUbergraph_RequestPlayerLocation
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URequestPlayerLocation_C::ExecuteUbergraph_RequestPlayerLocation(int EntryPoint)
+	void URequestPlayerLocation_C::ExecuteUbergraph_RequestPlayerLocation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

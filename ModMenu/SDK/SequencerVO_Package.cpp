@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SequencerVO_Package.h"
 
 namespace CG
 {
@@ -45,9 +44,9 @@ namespace CG
 	 * 		Name   -> Function SequencerVO.SequencerVO_C.ExecuteUbergraph_SequencerVO
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASequencerVO_C::ExecuteUbergraph_SequencerVO(int EntryPoint)
+	void ASequencerVO_C::ExecuteUbergraph_SequencerVO(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

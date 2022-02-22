@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OutOfBoundsCue_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function OutOfBoundsCue.OutOfBoundsCue_C.ExecuteUbergraph_OutOfBoundsCue
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOutOfBoundsCue_C::ExecuteUbergraph_OutOfBoundsCue(int EntryPoint)
+	void AOutOfBoundsCue_C::ExecuteUbergraph_OutOfBoundsCue(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

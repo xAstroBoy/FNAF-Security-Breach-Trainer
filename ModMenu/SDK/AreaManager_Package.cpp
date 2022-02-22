@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AreaManager_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function AreaManager.AreaManager_C.ExecuteUbergraph_AreaManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAreaManager_C::ExecuteUbergraph_AreaManager(int EntryPoint)
+	void AAreaManager_C::ExecuteUbergraph_AreaManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -99,9 +98,9 @@ namespace CG
 	 * 		Name   -> Function AreaManager.AreaManager_C.OnPlayerEnteredArea__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Areas_EAreas>                          NewArea                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Areas_EAreas                                       NewArea                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAreaManager_C::OnPlayerEnteredArea__DelegateSignature(TEnumAsByte<Areas_EAreas> NewArea)
+	void AAreaManager_C::OnPlayerEnteredArea__DelegateSignature(Areas_EAreas NewArea)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

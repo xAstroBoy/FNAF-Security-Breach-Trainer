@@ -34,17 +34,17 @@ namespace CG
 		class UImage*                                              ImageView;                                               // 0x0280(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TMap<class UInventoryItemButton_C*, class FString>         ItemInfoMap;                                             // 0x0288(0x0050) Edit, BlueprintVisible, ContainsInstancedReference
 		class UItemCollectionUI_C*                                 ItemCollectionRef;                                       // 0x02D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<E_InventoryCollectionType_E_InventoryCollectionType> InventoryGrid;                                           // 0x02E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_U7XE[0x3];                                   // 0x02E1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        RowsInGrid;                                              // 0x02E4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		E_InventoryCollectionType_E_InventoryCollectionType        InventoryGrid;                                           // 0x02E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_BIA9[0x3];                                   // 0x02E1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    RowsInGrid;                                              // 0x02E4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void IsFirstChildSelected(bool* FirstChildSelected);
 		void SelectFirstItemInGrid();
 		void ClearSelected();
-		void PopulateInventoryGrid(TEnumAsByte<E_InventoryCollectionType_E_InventoryCollectionType> EInventoryCollectionType, fnaf9_EInventoryItemCategory EInventoryItemCategory);
+		void PopulateInventoryGrid(E_InventoryCollectionType_E_InventoryCollectionType EInventoryCollectionType, fnaf9_EInventoryItemCategory EInventoryItemCategory);
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_CollectionGrid(int EntryPoint);
+		void ExecuteUbergraph_CollectionGrid(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

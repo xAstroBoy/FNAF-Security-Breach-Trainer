@@ -36,23 +36,23 @@ namespace CG
 		bool DoorEntryNotAllowed(class UDoorComponent* DoorComponent);
 		void GetStartTurnTowardsEvent(class UAkAudioEvent** StartTurnTowards);
 		void GetEndTurnTowardsEvent(class UAkAudioEvent** EndTurnTowards);
-		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts);
+		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts);
 		void IsWarningFinished(bool* Finished);
-		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts);
+		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts);
 		void ForceKill(bool Animate_);
 		void GameStart();
 		void GameEnd();
 		void GameExit();
 		void PlayerHit(const struct FHitResult& Hit);
 		void ReceiveBeginPlay();
-		void ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason);
+		void ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason);
 		void LaserHit(class AEQ_LaserGun_C* Gun, const struct FHitResult& HitResult);
 		void Start_Alert(const class FName& Alert);
 		void Start_Movement();
 		void Stop_Warning();
 		void End_Movement();
 		void Start_Head_Movement();
-		void Start_Warning(int WarningCount);
+		void Start_Warning(int32_t WarningCount);
 		void End_Head_Movement();
 		void Stop_Alert(const class FName& Alert);
 		void Start_Arm_Movement();
@@ -60,7 +60,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void OnOverlappedDoor(bool bCanEnterDoor, fnaf9_EConditionFailReason CantEnterReason, class UDoorComponent* DoorComponent);
 		void OnEndOverlapDoor();
-		void ExecuteUbergraph_CautionBot(int EntryPoint);
+		void ExecuteUbergraph_CautionBot(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

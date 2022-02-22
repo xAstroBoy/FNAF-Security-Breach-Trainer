@@ -28,12 +28,12 @@ namespace CG
 		TArray<struct FDbgSkipOption>                              SkipInfo;                                                // 0x0258(0x0010) Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash
 
 	public:
-		void GetSkipRoute(int Index, TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>* SkipRoute);
+		void GetSkipRoute(int32_t Index, DbgPlayerPaths_EDbgPlayerPaths* SkipRoute);
 		void PreConstruct(bool IsDesignTime);
 		void BndEvt__Button_PrizeCounter_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__Button_LoadingDock_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-		void ExecuteUbergraph_DbgHourSkipPathSelect(int EntryPoint);
-		void OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam);
+		void ExecuteUbergraph_DbgHourSkipPathSelect(int32_t EntryPoint);
+		void OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam);
 		static UClass* StaticClass();
 	};
 

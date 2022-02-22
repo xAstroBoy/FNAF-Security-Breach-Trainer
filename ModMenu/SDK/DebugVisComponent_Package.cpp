@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugVisComponent_Package.h"
 
 namespace CG
 {
@@ -62,9 +61,9 @@ namespace CG
 	 * 		Name   -> Function DebugVisComponent.DebugVisComponent_C.ExecuteUbergraph_DebugVisComponent
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugVisComponent_C::ExecuteUbergraph_DebugVisComponent(int EntryPoint)
+	void UDebugVisComponent_C::ExecuteUbergraph_DebugVisComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

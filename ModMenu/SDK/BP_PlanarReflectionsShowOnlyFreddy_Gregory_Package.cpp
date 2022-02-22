@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_PlanarReflectionsShowOnlyFreddy_Gregory_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy-Gregory
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory(int EntryPoint)
+	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

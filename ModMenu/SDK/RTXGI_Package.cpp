@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RTXGI_Package.h"
 
 namespace CG
 {

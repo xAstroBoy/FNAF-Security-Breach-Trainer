@@ -42,7 +42,7 @@ namespace CG
 		void SequencerVO_Event_2(class ASequencerVO_C* SequencerVO, class UAkAudioEvent* VO, class AActor* Actor, bool Freddy);
 		void PlanarReflection2_Event_1(class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C* PlanarReflection2);
 		void SequencerVO_Event_3(class ASequencerVO_C* SequencerVO, class UAkAudioEvent* VO, class AActor* Actor, bool Freddy, float MaxRadiusPercent);
-		void ExecuteUbergraph_SequenceDirector(int EntryPoint);
+		void ExecuteUbergraph_SequenceDirector(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

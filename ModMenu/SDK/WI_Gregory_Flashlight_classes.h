@@ -34,7 +34,7 @@ namespace CG
 		struct FColor                                              LowFlashlightBorder;                                     // 0x0298(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FColor                                              FullFlashlightBorder;                                    // 0x029C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UStaminaComponent_C*                                 Stamina;                                                 // 0x02A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        PowerState;                                              // 0x02A8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    PowerState;                                              // 0x02A8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      PowerLevel;                                              // 0x02AC(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       InitialDelay;                                            // 0x02B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -44,8 +44,8 @@ namespace CG
 		void PickedUpFlashlight();
 		void ShowPowerLevel();
 		void Construct();
-		void ExecuteUbergraph_WI_Gregory_Flashlight(int EntryPoint);
-		void PowerLevelDispatch__DelegateSignature(int PowerLevel);
+		void ExecuteUbergraph_WI_Gregory_Flashlight(int32_t EntryPoint);
+		void PowerLevelDispatch__DelegateSignature(int32_t PowerLevel);
 		static UClass* StaticClass();
 	};
 

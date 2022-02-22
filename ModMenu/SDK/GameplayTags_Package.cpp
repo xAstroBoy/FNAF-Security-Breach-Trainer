@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GameplayTags_Package.h"
 
 namespace CG
 {
@@ -526,7 +525,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FGameplayTagContainer                       TagContainer                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer)
+	int32_t UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

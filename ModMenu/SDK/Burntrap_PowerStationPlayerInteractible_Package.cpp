@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Burntrap_PowerStationPlayerInteractible_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Burntrap_PowerStationPlayerInteractible.Burntrap_PowerStationPlayerInteractible_C.ExecuteUbergraph_Burntrap_PowerStationPlayerInteractible
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABurntrap_PowerStationPlayerInteractible_C::ExecuteUbergraph_Burntrap_PowerStationPlayerInteractible(int EntryPoint)
+	void ABurntrap_PowerStationPlayerInteractible_C::ExecuteUbergraph_Burntrap_PowerStationPlayerInteractible(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

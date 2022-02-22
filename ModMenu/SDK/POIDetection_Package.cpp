@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "POIDetection_Package.h"
 
 namespace CG
 {
@@ -62,9 +61,9 @@ namespace CG
 	 * 		Name   -> Function POIDetection.POIDetection_C.ExecuteUbergraph_POIDetection
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPOIDetection_C::ExecuteUbergraph_POIDetection(int EntryPoint)
+	void UPOIDetection_C::ExecuteUbergraph_POIDetection(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -27,7 +27,7 @@ namespace CG
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone_2;                              // 0x03B0(0x0108)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_2;                              // 0x04B8(0x0128)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone;                                // 0x05E0(0x0128)
-		unsigned char                                              UnknownData_YS46[0x8];                                   // 0x0708(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AQHX[0x8];                                   // 0x0708(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_2;                                  // 0x0710(0x01B0)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt;                                    // 0x08C0(0x01B0)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0A70(0x0020)
@@ -37,7 +37,7 @@ namespace CG
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
-		void ExecuteUbergraph_AlienHelm_ABP(int EntryPoint);
+		void ExecuteUbergraph_AlienHelm_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

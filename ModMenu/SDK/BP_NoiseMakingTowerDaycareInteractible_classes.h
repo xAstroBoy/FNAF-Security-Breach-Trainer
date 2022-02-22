@@ -30,8 +30,8 @@ namespace CG
 		class USceneComponent*                                     Scene;                                                   // 0x02D8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   Fall_Animation;                                          // 0x02E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   Reset_Animation;                                         // 0x02E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        Count;                                                   // 0x02F0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_XE1R[0x4];                                   // 0x02F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    Count;                                                   // 0x02F0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_X15Z[0x4];                                   // 0x02F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Security_Office_Daycare[0x28];                           // 0x02F4(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              LineSkipper[0x28];                                       // 0x0320(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
@@ -44,7 +44,7 @@ namespace CG
 		void Reset01Anim();
 		void Reset02Anim();
 		void Reset03Anim();
-		void ExecuteUbergraph_BP_NoiseMakingTowerDaycareInteractible(int EntryPoint);
+		void ExecuteUbergraph_BP_NoiseMakingTowerDaycareInteractible(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

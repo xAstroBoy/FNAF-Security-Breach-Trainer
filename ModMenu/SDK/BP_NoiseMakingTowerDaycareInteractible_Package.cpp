@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_NoiseMakingTowerDaycareInteractible_Package.h"
 
 namespace CG
 {
@@ -185,9 +184,9 @@ namespace CG
 	 * 		Name   -> Function BP_NoiseMakingTowerDaycareInteractible.BP_NoiseMakingTowerDaycareInteractible_C.ExecuteUbergraph_BP_NoiseMakingTowerDaycareInteractible
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_NoiseMakingTowerDaycareInteractible_C::ExecuteUbergraph_BP_NoiseMakingTowerDaycareInteractible(int EntryPoint)
+	void ABP_NoiseMakingTowerDaycareInteractible_C::ExecuteUbergraph_BP_NoiseMakingTowerDaycareInteractible(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

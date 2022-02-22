@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerInteractComponent_Package.h"
 
 namespace CG
 {
@@ -289,9 +288,9 @@ namespace CG
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ExecuteUbergraph_PlayerInteractComponent
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerInteractComponent_C::ExecuteUbergraph_PlayerInteractComponent(int EntryPoint)
+	void UPlayerInteractComponent_C::ExecuteUbergraph_PlayerInteractComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

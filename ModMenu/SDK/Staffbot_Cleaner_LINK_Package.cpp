@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_Cleaner_LINK_Package.h"
 
 namespace CG
 {
@@ -104,16 +103,16 @@ namespace CG
 	 * 		Name   -> Function Staffbot_Cleaner_LINK.Staffbot_Cleaner_LINK_C.AlertEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               isAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_Cleaner_LINK_C::AlertEvent(bool isAlerting)
+	void UStaffbot_Cleaner_LINK_C::AlertEvent(bool IsAlerting)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_Cleaner_LINK.Staffbot_Cleaner_LINK_C.AlertEvent");
 		
 		UStaffbot_Cleaner_LINK_C_AlertEvent_Params params {};
-		params.isAlerting = isAlerting;
+		params.IsAlerting = IsAlerting;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -380,16 +379,16 @@ namespace CG
 	 * 		Name   -> Function Staffbot_Cleaner_LINK.Staffbot_Cleaner_LINK_C.JumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               canJumpscare                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CanJumpscare                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_Cleaner_LINK_C::JumpscareEvent(bool canJumpscare)
+	void UStaffbot_Cleaner_LINK_C::JumpscareEvent(bool CanJumpscare)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_Cleaner_LINK.Staffbot_Cleaner_LINK_C.JumpscareEvent");
 		
 		UStaffbot_Cleaner_LINK_C_JumpscareEvent_Params params {};
-		params.canJumpscare = canJumpscare;
+		params.CanJumpscare = CanJumpscare;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -425,9 +424,9 @@ namespace CG
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsWarning                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_Cleaner_LINK_C::WarningEvent(bool IsWarning, int WarningCount)
+	void UStaffbot_Cleaner_LINK_C::WarningEvent(bool IsWarning, int32_t WarningCount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -448,9 +447,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_Cleaner_LINK.Staffbot_Cleaner_LINK_C.ExecuteUbergraph_Staffbot_Cleaner_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_Cleaner_LINK_C::ExecuteUbergraph_Staffbot_Cleaner_LINK(int EntryPoint)
+	void UStaffbot_Cleaner_LINK_C::ExecuteUbergraph_Staffbot_Cleaner_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

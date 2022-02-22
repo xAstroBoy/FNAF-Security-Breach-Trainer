@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HourlyMoonManSequence_Package.h"
 
 namespace CG
 {
@@ -670,9 +669,9 @@ namespace CG
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ExecuteUbergraph_HourlyMoonManSequence
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::ExecuteUbergraph_HourlyMoonManSequence(int EntryPoint)
+	void AHourlyMoonManSequence_C::ExecuteUbergraph_HourlyMoonManSequence(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

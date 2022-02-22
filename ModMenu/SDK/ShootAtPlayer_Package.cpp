@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShootAtPlayer_Package.h"
 
 namespace CG
 {
@@ -276,9 +275,9 @@ namespace CG
 	 * 		Name   -> Function ShootAtPlayer.ShootAtPlayer_C.ExecuteUbergraph_ShootAtPlayer
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UShootAtPlayer_C::ExecuteUbergraph_ShootAtPlayer(int EntryPoint)
+	void UShootAtPlayer_C::ExecuteUbergraph_ShootAtPlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

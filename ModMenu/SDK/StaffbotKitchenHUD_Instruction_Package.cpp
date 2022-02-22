@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotKitchenHUD_Instruction_Package.h"
 
 namespace CG
 {
@@ -102,9 +101,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotKitchenHUD_Instruction.StaffbotKitchenHUD_Instruction_C.ExecuteUbergraph_StaffbotKitchenHUD_Instruction
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbotKitchenHUD_Instruction_C::ExecuteUbergraph_StaffbotKitchenHUD_Instruction(int EntryPoint)
+	void UStaffbotKitchenHUD_Instruction_C::ExecuteUbergraph_StaffbotKitchenHUD_Instruction(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

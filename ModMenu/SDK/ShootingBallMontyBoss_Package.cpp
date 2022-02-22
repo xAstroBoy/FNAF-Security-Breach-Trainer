@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShootingBallMontyBoss_Package.h"
 
 namespace CG
 {
@@ -53,9 +52,9 @@ namespace CG
 	 * 		Name   -> Function ShootingBallMontyBoss.ShootingBallMontyBoss_C.ExecuteUbergraph_ShootingBallMontyBoss
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShootingBallMontyBoss_C::ExecuteUbergraph_ShootingBallMontyBoss(int EntryPoint)
+	void AShootingBallMontyBoss_C::ExecuteUbergraph_ShootingBallMontyBoss(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

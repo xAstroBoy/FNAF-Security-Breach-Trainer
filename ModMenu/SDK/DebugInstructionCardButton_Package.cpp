@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugInstructionCardButton_Package.h"
 
 namespace CG
 {
@@ -122,9 +121,9 @@ namespace CG
 	 * 		Name   -> Function DebugInstructionCardButton.DebugInstructionCardButton_C.ExecuteUbergraph_DebugInstructionCardButton
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugInstructionCardButton_C::ExecuteUbergraph_DebugInstructionCardButton(int EntryPoint)
+	void UDebugInstructionCardButton_C::ExecuteUbergraph_DebugInstructionCardButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_P_RC_GoCart(int EntryPoint);
+		void ExecuteUbergraph_P_RC_GoCart(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

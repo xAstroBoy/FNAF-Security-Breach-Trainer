@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "KeyBindingIcon_Package.h"
 
 namespace CG
 {
@@ -99,9 +98,9 @@ namespace CG
 	 * 		Name   -> Function KeyBindingIcon.KeyBindingIcon_C.ExecuteUbergraph_KeyBindingIcon
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UKeyBindingIcon_C::ExecuteUbergraph_KeyBindingIcon(int EntryPoint)
+	void UKeyBindingIcon_C::ExecuteUbergraph_KeyBindingIcon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

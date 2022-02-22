@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UI_Mission_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FFNAFMissionInfo                            Mission                                                    (BlueprintVisible, BlueprintReadOnly, Parm)
-	 * 		int                                                CurrentIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CurrentIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUI_Mission_C::Update(const class FName& Name, const struct FFNAFMissionInfo& Mission, int CurrentIndex)
+	void UUI_Mission_C::Update(const class FName& Name, const struct FFNAFMissionInfo& Mission, int32_t CurrentIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -307,9 +306,9 @@ namespace CG
 	 * 		Name   -> Function UI_Mission.UI_Mission_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUI_Mission_C::InputCycle(int Increment)
+	void UUI_Mission_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -457,9 +456,9 @@ namespace CG
 	 * 		Name   -> Function UI_Mission.UI_Mission_C.ExecuteUbergraph_UI_Mission
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUI_Mission_C::ExecuteUbergraph_UI_Mission(int EntryPoint)
+	void UUI_Mission_C::ExecuteUbergraph_UI_Mission(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

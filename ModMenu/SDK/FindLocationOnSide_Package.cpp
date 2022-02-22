@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindLocationOnSide_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindLocationOnSide.FindLocationOnSide_C.ExecuteUbergraph_FindLocationOnSide
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindLocationOnSide_C::ExecuteUbergraph_FindLocationOnSide(int EntryPoint)
+	void UFindLocationOnSide_C::ExecuteUbergraph_FindLocationOnSide(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

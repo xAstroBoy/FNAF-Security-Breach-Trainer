@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DJMusicHandler_Package.h"
 
 namespace CG
 {
@@ -37,9 +36,9 @@ namespace CG
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                BeatIndex                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            BeatIndex                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADJMusicHandler_C::Set_Beat_Enabled(bool enable, int BeatIndex)
+	void ADJMusicHandler_C::Set_Beat_Enabled(bool enable, int32_t BeatIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -98,9 +97,9 @@ namespace CG
 	 * 		Name   -> Function DJMusicHandler.DJMusicHandler_C.ExecuteUbergraph_DJMusicHandler
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADJMusicHandler_C::ExecuteUbergraph_DJMusicHandler(int EntryPoint)
+	void ADJMusicHandler_C::ExecuteUbergraph_DJMusicHandler(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

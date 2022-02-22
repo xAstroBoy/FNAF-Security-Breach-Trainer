@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChangesNotAppliedPopUp_Package.h"
 
 namespace CG
 {
@@ -139,9 +138,9 @@ namespace CG
 	 * 		Name   -> Function ChangesNotAppliedPopUp.ChangesNotAppliedPopUp_C.ExecuteUbergraph_ChangesNotAppliedPopUp
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChangesNotAppliedPopUp_C::ExecuteUbergraph_ChangesNotAppliedPopUp(int EntryPoint)
+	void UChangesNotAppliedPopUp_C::ExecuteUbergraph_ChangesNotAppliedPopUp(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

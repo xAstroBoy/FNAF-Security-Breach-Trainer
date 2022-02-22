@@ -33,7 +33,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_Button_Office_Kitchen(int EntryPoint);
+		void ExecuteUbergraph_Button_Office_Kitchen(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

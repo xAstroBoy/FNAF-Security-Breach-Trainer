@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetDaycareWanderpoint_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetDaycareWanderpoint.SetDaycareWanderpoint_C.ExecuteUbergraph_SetDaycareWanderpoint
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetDaycareWanderpoint_C::ExecuteUbergraph_SetDaycareWanderpoint(int EntryPoint)
+	void USetDaycareWanderpoint_C::ExecuteUbergraph_SetDaycareWanderpoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

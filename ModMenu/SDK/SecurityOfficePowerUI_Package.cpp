@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SecurityOfficePowerUI_Package.h"
 
 namespace CG
 {
@@ -61,9 +60,9 @@ namespace CG
 	 * 		Name   -> Function SecurityOfficePowerUI.SecurityOfficePowerUI_C.ExecuteUbergraph_SecurityOfficePowerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityOfficePowerUI_C::ExecuteUbergraph_SecurityOfficePowerUI(int EntryPoint)
+	void USecurityOfficePowerUI_C::ExecuteUbergraph_SecurityOfficePowerUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

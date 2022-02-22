@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LMMSplinePathwayManager_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.ExecuteUbergraph_LMMSplinePathwayManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALMMSplinePathwayManager_C::ExecuteUbergraph_LMMSplinePathwayManager(int EntryPoint)
+	void ALMMSplinePathwayManager_C::ExecuteUbergraph_LMMSplinePathwayManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

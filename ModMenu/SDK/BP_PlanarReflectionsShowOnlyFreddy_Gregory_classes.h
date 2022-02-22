@@ -35,7 +35,7 @@ namespace CG
 		void TurnSSR_ON();
 		void ReceiveBeginPlay();
 		void Set_Refelection(bool bNewVisibility);
-		void ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory(int EntryPoint);
+		void ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

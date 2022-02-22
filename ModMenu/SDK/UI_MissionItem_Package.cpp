@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UI_MissionItem_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function UI_MissionItem.UI_MissionItem_C.ExecuteUbergraph_UI_MissionItem
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUI_MissionItem_C::ExecuteUbergraph_UI_MissionItem(int EntryPoint)
+	void UUI_MissionItem_C::ExecuteUbergraph_UI_MissionItem(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

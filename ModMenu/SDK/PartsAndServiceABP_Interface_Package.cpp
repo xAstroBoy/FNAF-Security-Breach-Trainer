@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PartsAndServiceABP_Interface_Package.h"
 
 namespace CG
 {
@@ -200,9 +199,9 @@ namespace CG
 	 * 		Name   -> Function PartsAndServiceABP_Interface.PartsAndServiceABP_Interface_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum   GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPartsAndServiceABP_Interface_C::PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum)
+	void UPartsAndServiceABP_Interface_C::PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

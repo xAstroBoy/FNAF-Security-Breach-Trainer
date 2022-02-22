@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoonmanSequence_ABP_Package.h"
 
 namespace CG
 {
@@ -234,9 +233,9 @@ namespace CG
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.ExecuteUbergraph_MoonmanSequence_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMoonmanSequence_ABP_C::ExecuteUbergraph_MoonmanSequence_ABP(int EntryPoint)
+	void UMoonmanSequence_ABP_C::ExecuteUbergraph_MoonmanSequence_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

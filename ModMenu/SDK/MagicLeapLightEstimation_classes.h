@@ -23,7 +23,7 @@ namespace CG
 	public:
 		bool                                                       UseGlobalAmbience;                                       // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseColorTemp;                                            // 0x00B1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QPA2[0xE];                                   // 0x00B2(0x000E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_L4UL[0xE];                                   // 0x00B2(0x000E) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

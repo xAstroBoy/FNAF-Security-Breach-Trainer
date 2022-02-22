@@ -23,13 +23,13 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0230(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UOverlay*                                            Overlay_47;                                              // 0x0238(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type;                                                    // 0x0240(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		E_InstructionCard_Type_E_InstructionCard_Type              Type;                                                    // 0x0240(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void UpdateCard();
 		void PreConstruct(bool IsDesignTime);
 		void Construct();
-		void ExecuteUbergraph_WI_InstructionCard(int EntryPoint);
+		void ExecuteUbergraph_WI_InstructionCard(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GetLocationFromPath_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function GetLocationFromPath.GetLocationFromPath_C.ExecuteUbergraph_GetLocationFromPath
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGetLocationFromPath_C::ExecuteUbergraph_GetLocationFromPath(int EntryPoint)
+	void UGetLocationFromPath_C::ExecuteUbergraph_GetLocationFromPath(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

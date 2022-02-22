@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyEnterExitPawn_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function FreddyEnterExitPawn.FreddyEnterExitPawn_C.ExecuteUbergraph_FreddyEnterExitPawn
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyEnterExitPawn_C::ExecuteUbergraph_FreddyEnterExitPawn(int EntryPoint)
+	void AFreddyEnterExitPawn_C::ExecuteUbergraph_FreddyEnterExitPawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

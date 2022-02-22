@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HeadAimService_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function HeadAimService.HeadAimService_C.ExecuteUbergraph_HeadAimService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UHeadAimService_C::ExecuteUbergraph_HeadAimService(int EntryPoint)
+	void UHeadAimService_C::ExecuteUbergraph_HeadAimService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

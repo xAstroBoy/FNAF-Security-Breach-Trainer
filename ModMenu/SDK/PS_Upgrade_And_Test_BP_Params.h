@@ -41,8 +41,8 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_GetInteractibleType_Params
 	{
 	public:
-		TEnumAsByte<InteractibleType_EInteractibleType>            Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		TEnumAsByte<InteractiblePressType_EInteractiblePressType>  PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		InteractibleType_EInteractibleType                         Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		InteractiblePressType_EInteractiblePressType               PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -103,7 +103,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_HandleButtonMaterialState_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ColorEnum;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   ColorEnum;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -227,8 +227,8 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_Handle_Face_Button_Click_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color1;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color2;                                                  // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   Color1;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   Color2;                                                  // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -266,7 +266,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_HandleTestingClickEvent_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   WireColor;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       ClickedConnector;                                        // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
@@ -277,7 +277,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_HandleAttachDetachClickEvent_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   WireColor;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       ClickedConnector;                                        // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
@@ -389,7 +389,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_PartsAndServiceGame_Params
 	{
 	public:
-		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum           GameEnum;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -502,7 +502,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_ClickedWire_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   WireColor;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       ClickedConnector;                                        // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
@@ -520,7 +520,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_ClickedTestButton_Params
 	{
 	public:
-		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ButtonColor;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum   ButtonColor;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       ClickedButton;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
@@ -616,7 +616,7 @@ namespace CG
 	struct APS_Upgrade_And_Test_BP_C_ExecuteUbergraph_PS_Upgrade_And_Test_BP_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ItemCollectionUI_Package.h"
 
 namespace CG
 {
@@ -312,9 +311,9 @@ namespace CG
 	 * 		Name   -> Function ItemCollectionUI.ItemCollectionUI_C.ExecuteUbergraph_ItemCollectionUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UItemCollectionUI_C::ExecuteUbergraph_ItemCollectionUI(int EntryPoint)
+	void UItemCollectionUI_C::ExecuteUbergraph_ItemCollectionUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

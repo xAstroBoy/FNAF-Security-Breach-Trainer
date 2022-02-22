@@ -29,7 +29,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_PlayerPlacementLocator(int EntryPoint);
+		void ExecuteUbergraph_PlayerPlacementLocator(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

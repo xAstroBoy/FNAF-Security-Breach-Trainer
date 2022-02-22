@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindClosestBallCannon_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindClosestBallCannon.FindClosestBallCannon_C.ExecuteUbergraph_FindClosestBallCannon
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindClosestBallCannon_C::ExecuteUbergraph_FindClosestBallCannon(int EntryPoint)
+	void UFindClosestBallCannon_C::ExecuteUbergraph_FindClosestBallCannon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

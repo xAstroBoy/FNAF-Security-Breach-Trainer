@@ -30,7 +30,7 @@ namespace CG
 
 	public:
 		void Setup_Spline_Movement(class APawn* Pawn);
-		void ExecuteUbergraph_SetupSplineMovement(int EntryPoint);
+		void ExecuteUbergraph_SetupSplineMovement(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

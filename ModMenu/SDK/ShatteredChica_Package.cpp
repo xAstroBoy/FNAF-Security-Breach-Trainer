@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredChica_Package.h"
 
 namespace CG
 {
@@ -218,9 +217,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.ExecuteUbergraph_ShatteredChica
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredChica_C::ExecuteUbergraph_ShatteredChica(int EntryPoint)
+	void AShatteredChica_C::ExecuteUbergraph_ShatteredChica(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

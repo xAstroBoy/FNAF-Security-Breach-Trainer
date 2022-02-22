@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PS_Upgrade_Freddy_ColorEnum_Package.h"
 
 namespace CG
 {

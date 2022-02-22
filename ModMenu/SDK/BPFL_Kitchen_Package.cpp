@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BPFL_Kitchen_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function BPFL_Kitchen.BPFL_Kitchen_C.GetPizzaStationInstruction
 	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	class FText UBPFL_Kitchen_C::STATIC_GetPizzaStationInstruction(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep, class UObject* __WorldContext)
+	class FText UBPFL_Kitchen_C::STATIC_GetPizzaStationInstruction(PizzaStep_EPizzaStep PizzaStep, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -43,10 +42,10 @@ namespace CG
 	 * 		Name   -> Function BPFL_Kitchen.BPFL_Kitchen_C.GetPizzaStationName
 	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	class FText UBPFL_Kitchen_C::STATIC_GetPizzaStationName(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep, class UObject* __WorldContext)
+	class FText UBPFL_Kitchen_C::STATIC_GetPizzaStationName(PizzaStep_EPizzaStep PizzaStep, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

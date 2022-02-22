@@ -29,7 +29,7 @@ namespace CG
 		void CheckPlayerInRange();
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_PlayerNearHidingLocation(int EntryPoint);
+		void ExecuteUbergraph_PlayerNearHidingLocation(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

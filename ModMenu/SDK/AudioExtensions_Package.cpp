@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AudioExtensions_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebuggableAICharacter_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function DebuggableAICharacter.DebuggableAICharacter_C.ExecuteUbergraph_DebuggableAICharacter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADebuggableAICharacter_C::ExecuteUbergraph_DebuggableAICharacter(int EntryPoint)
+	void ADebuggableAICharacter_C::ExecuteUbergraph_DebuggableAICharacter(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FBPC_SharedController_Package.h"
 
 namespace CG
 {
@@ -149,7 +148,7 @@ namespace CG
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	int AFBPC_SharedController_C::PostEventWithSubtitles(class UAkAudioEvent* AkEvent, class AActor* Actor)
+	int32_t AFBPC_SharedController_C::PostEventWithSubtitles(class UAkAudioEvent* AkEvent, class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -410,9 +409,9 @@ namespace CG
 	 * 		Name   -> Function FBPC_SharedController.FBPC_SharedController_C.ExecuteUbergraph_FBPC_SharedController
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFBPC_SharedController_C::ExecuteUbergraph_FBPC_SharedController(int EntryPoint)
+	void AFBPC_SharedController_C::ExecuteUbergraph_FBPC_SharedController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

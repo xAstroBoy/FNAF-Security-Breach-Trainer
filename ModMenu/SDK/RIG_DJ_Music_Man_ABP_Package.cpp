@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RIG_DJ_Music_Man_ABP_Package.h"
 
 namespace CG
 {
@@ -1532,9 +1531,9 @@ namespace CG
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.ExecuteUbergraph_RIG_DJ_Music_Man_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_DJ_Music_Man_ABP_C::ExecuteUbergraph_RIG_DJ_Music_Man_ABP(int EntryPoint)
+	void URIG_DJ_Music_Man_ABP_C::ExecuteUbergraph_RIG_DJ_Music_Man_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

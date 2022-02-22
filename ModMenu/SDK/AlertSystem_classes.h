@@ -26,8 +26,8 @@ namespace CG
 		class FScriptMulticastDelegate                             OnAlert;                                                 // 0x0238(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void Send_Alert(const class FName& Alert, const struct FVector& Location, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberToAlert);
-		void ExecuteUbergraph_AlertSystem(int EntryPoint);
+		void Send_Alert(const class FName& Alert, const struct FVector& Location, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert);
+		void ExecuteUbergraph_AlertSystem(int32_t EntryPoint);
 		void OnAlert__DelegateSignature(const class FName& Alert, const struct FVector& Location);
 		static UClass* StaticClass();
 	};

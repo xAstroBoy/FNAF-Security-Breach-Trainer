@@ -35,7 +35,7 @@ namespace CG
 		void BndEvt__Mission_Vanish_Condition_K2Node_ComponentBoundEvent_4_OnMissionStateConditionMetDelegate__DelegateSignature();
 		void BndEvt__Mission_Vanish_Condition_K2Node_ComponentBoundEvent_5_OnMissionStateConditionMetDelegate__DelegateSignature();
 		void Post_Game_State();
-		void ExecuteUbergraph_DJMusicMan_Booth(int EntryPoint);
+		void ExecuteUbergraph_DJMusicMan_Booth(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

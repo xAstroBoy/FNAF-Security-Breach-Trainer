@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Functions_Traces_Package.h"
 
 namespace CG
 {
@@ -23,7 +22,7 @@ namespace CG
 	 * 		float                                              SurfaceSampleDepth                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              SurfaceSampleInterval                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              SurfacePadding                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<Engine_ETraceTypeQuery>                TraceChannel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_ETraceTypeQuery                             TraceChannel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bTraceComplex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		TArray<class AActor*>                              ActorsToIgnore                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	 * 		bool                                               bIgnoreSelf                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -42,7 +41,7 @@ namespace CG
 	 * 		struct FVector                                     ReturnLocation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<struct FVector>                             ReturnLocationNodes                                        (Parm, OutParm, HasGetValueTypeHash)
 	 */
-	bool UFunctions_Traces_C::STATIC_LineTraceByChannelAcrossSurfaces__Conform_(const struct FVector& Start, const struct FVector& End, const struct FVector& Normal, float SurfaceSampleDepth, float SurfaceSampleInterval, float SurfacePadding, TEnumAsByte<Engine_ETraceTypeQuery> TraceChannel, bool bTraceComplex, TArray<class AActor*> ActorsToIgnore, bool bIgnoreSelf, bool Debug, const struct FLinearColor& DebugInputStartColor, const struct FLinearColor& DebugInputLineColor, const struct FLinearColor& DebugInputEndColor, const struct FLinearColor& DebugTraceSurfaceSampleColor, const struct FLinearColor& DebugTracePaddingColor, const struct FLinearColor& DebugTraceReconnectColor, const struct FLinearColor& DebugTraceIntervalColor, const struct FLinearColor& DebugTraceResultFailColor, const struct FLinearColor& DebugTraceResultSuccessColor, float DebugTime, class UObject* __WorldContext, struct FVector* ReturnLocation, TArray<struct FVector>* ReturnLocationNodes)
+	bool UFunctions_Traces_C::STATIC_LineTraceByChannelAcrossSurfaces__Conform_(const struct FVector& Start, const struct FVector& End, const struct FVector& Normal, float SurfaceSampleDepth, float SurfaceSampleInterval, float SurfacePadding, Engine_ETraceTypeQuery TraceChannel, bool bTraceComplex, TArray<class AActor*> ActorsToIgnore, bool bIgnoreSelf, bool Debug, const struct FLinearColor& DebugInputStartColor, const struct FLinearColor& DebugInputLineColor, const struct FLinearColor& DebugInputEndColor, const struct FLinearColor& DebugTraceSurfaceSampleColor, const struct FLinearColor& DebugTracePaddingColor, const struct FLinearColor& DebugTraceReconnectColor, const struct FLinearColor& DebugTraceIntervalColor, const struct FLinearColor& DebugTraceResultFailColor, const struct FLinearColor& DebugTraceResultSuccessColor, float DebugTime, class UObject* __WorldContext, struct FVector* ReturnLocation, TArray<struct FVector>* ReturnLocationNodes)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -94,10 +93,10 @@ namespace CG
 	 * 		struct FVector                                     Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Length                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              SurfacePadding                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<Engine_ETraceTypeQuery>                TraceChannel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_ETraceTypeQuery                             TraceChannel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bTraceComplex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		TArray<class AActor*>                              ActorsToIgnore                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		TEnumAsByte<Engine_EDrawDebugTrace>                DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EDrawDebugTrace                             DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bIgnoreSelf                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FLinearColor                                TraceColor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FLinearColor                                TraceHitColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -106,7 +105,7 @@ namespace CG
 	 * 		struct FVector                                     ReturnLocation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<struct FHitResult>                          ReturnHits                                                 (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
 	 */
-	bool UFunctions_Traces_C::STATIC_LineTraceByChannelAcrossSurfaces__Slide_(const struct FVector& Start, const struct FVector& Direction, float Length, float SurfacePadding, TEnumAsByte<Engine_ETraceTypeQuery> TraceChannel, bool bTraceComplex, TArray<class AActor*> ActorsToIgnore, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType, bool bIgnoreSelf, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime, class UObject* __WorldContext, struct FVector* ReturnLocation, TArray<struct FHitResult>* ReturnHits)
+	bool UFunctions_Traces_C::STATIC_LineTraceByChannelAcrossSurfaces__Slide_(const struct FVector& Start, const struct FVector& Direction, float Length, float SurfacePadding, Engine_ETraceTypeQuery TraceChannel, bool bTraceComplex, TArray<class AActor*> ActorsToIgnore, Engine_EDrawDebugTrace DrawDebugType, bool bIgnoreSelf, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime, class UObject* __WorldContext, struct FVector* ReturnLocation, TArray<struct FHitResult>* ReturnHits)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

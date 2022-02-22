@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SignalActorLoaded_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function SignalActorLoaded.SignalActorLoaded_C.ExecuteUbergraph_SignalActorLoaded
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASignalActorLoaded_C::ExecuteUbergraph_SignalActorLoaded(int EntryPoint)
+	void ASignalActorLoaded_C::ExecuteUbergraph_SignalActorLoaded(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

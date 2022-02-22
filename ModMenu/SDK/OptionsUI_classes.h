@@ -83,15 +83,15 @@ namespace CG
 		class UTitle_ComboBox_C*                                   WindowMode_ComboBox;                                     // 0x0408(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       SubMenuOpen;                                             // 0x0410(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		SlateCore_EColorVisionDeficiency                           ColorBlindnessType;                                      // 0x0411(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_AL5Q[0x2];                                   // 0x0412(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DFTP[0x2];                                   // 0x0412(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      ColorBlindnessSeverity;                                  // 0x0414(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FString                                              ColorBlindnessString;                                    // 0x0418(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		struct FIntPoint                                           _720_x_480_Res;                                          // 0x0428(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FIntPoint                                           _1280_x_720_Res;                                         // 0x0430(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FIntPoint                                           _1920_x_1080_Res;                                        // 0x0438(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FIntPoint                                           _2560_x_1440_Res;                                        // 0x0440(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<Engine_EWindowMode>                            FullscreenMode;                                          // 0x0448(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_IC5O[0x7];                                   // 0x0449(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		Engine_EWindowMode                                         FullscreenMode;                                          // 0x0448(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_B5KF[0x7];                                   // 0x0449(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              PlayerSettingsData;                                      // 0x0450(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		class USaveGameSettings_C*                                 SaveGameObject;                                          // 0x0460(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UTitleUI_C*                                          TitleUI;                                                 // 0x0468(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -100,14 +100,14 @@ namespace CG
 		bool                                                       ChangesMadeAndNotSaved;                                  // 0x0479(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       RaytraceOrVisualQualityChanged;                          // 0x047A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       ApplyDefaultAndRestart;                                  // 0x047B(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_4VFI[0x4];                                   // 0x047C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DM53[0x4];                                   // 0x047C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USaveGameSettings_C*                                 TempSaveGameObject;                                      // 0x0480(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void UpdateSubtitles();
 		void SettingsVisibility_Platform();
 		UMG_ESlateVisibility Get_BackgroundAndSkrim_Visibility();
-		void StartingResolution(const struct FIntPoint& Resolution, int* Index);
+		void StartingResolution(const struct FIntPoint& Resolution, int32_t* Index);
 		void Get_Severity_Visibility();
 		void ShowMenuAndHighlightPrevious();
 		SlateCore_ECheckBoxState Get_InvertedGamepad_CheckBox_CheckedState_1();
@@ -125,7 +125,7 @@ namespace CG
 		void InputOptionAxis(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void Construct();
@@ -176,7 +176,7 @@ namespace CG
 		void ChangesApplied();
 		void ApplyVisualChangesThenRestart();
 		void WarningPopup();
-		void ExecuteUbergraph_OptionsUI(int EntryPoint);
+		void ExecuteUbergraph_OptionsUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

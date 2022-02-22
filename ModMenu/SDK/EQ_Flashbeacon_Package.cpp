@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EQ_Flashbeacon_Package.h"
 
 namespace CG
 {
@@ -131,9 +130,9 @@ namespace CG
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.ExecuteUbergraph_EQ_Flashbeacon
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_Flashbeacon_C::ExecuteUbergraph_EQ_Flashbeacon(int EntryPoint)
+	void AEQ_Flashbeacon_C::ExecuteUbergraph_EQ_Flashbeacon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

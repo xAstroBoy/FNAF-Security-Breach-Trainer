@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CalcRoxyLeap_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function CalcRoxyLeap.CalcRoxyLeap_C.ExecuteUbergraph_CalcRoxyLeap
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCalcRoxyLeap_C::ExecuteUbergraph_CalcRoxyLeap(int EntryPoint)
+	void UCalcRoxyLeap_C::ExecuteUbergraph_CalcRoxyLeap(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

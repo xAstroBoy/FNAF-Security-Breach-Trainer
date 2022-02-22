@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyOverlay_Package.h"
 
 namespace CG
 {
@@ -179,9 +178,9 @@ namespace CG
 	 * 		Name   -> Function FreddyOverlay.FreddyOverlay_C.ExecuteUbergraph_FreddyOverlay
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFreddyOverlay_C::ExecuteUbergraph_FreddyOverlay(int EntryPoint)
+	void UFreddyOverlay_C::ExecuteUbergraph_FreddyOverlay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

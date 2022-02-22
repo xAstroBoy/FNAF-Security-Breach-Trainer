@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Subtitles_Package.h"
 
 namespace CG
 {
@@ -397,9 +396,9 @@ namespace CG
 	 * 		Name   -> Function WI_Subtitles.WI_Subtitles_C.ExecuteUbergraph_WI_Subtitles
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Subtitles_C::ExecuteUbergraph_WI_Subtitles(int EntryPoint)
+	void UWI_Subtitles_C::ExecuteUbergraph_WI_Subtitles(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

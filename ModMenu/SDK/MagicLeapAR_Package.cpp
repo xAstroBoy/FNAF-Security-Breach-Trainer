@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapAR_Package.h"
 
 namespace CG
 {

@@ -35,7 +35,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature();
-		void ExecuteUbergraph_PlayerSlidePawn(int EntryPoint);
+		void ExecuteUbergraph_PlayerSlidePawn(int32_t EntryPoint);
 		void OnFinishedFollowingSpline__DelegateSignature();
 		static UClass* StaticClass();
 	};

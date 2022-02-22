@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_SignalDoorActorLoaded(int EntryPoint);
+		void ExecuteUbergraph_SignalDoorActorLoaded(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

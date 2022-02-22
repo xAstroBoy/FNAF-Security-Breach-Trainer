@@ -24,7 +24,7 @@ namespace CG
 		class FName                                                MissionName;                                             // 0x0028(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int StateIndex, class FText* FormattedTaskTitleText);
+		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int32_t StateIndex, class FText* FormattedTaskTitleText);
 		static UClass* StaticClass();
 	};
 

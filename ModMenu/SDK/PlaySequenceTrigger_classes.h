@@ -32,24 +32,24 @@ namespace CG
 		class AActor*                                              PlayerCam;                                               // 0x0300(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                sequence_key;                                            // 0x0308(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       DisablePlayerInput;                                      // 0x0310(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IJY9[0x3];                                   // 0x0311(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QXCJ[0x3];                                   // 0x0311(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                WwiseCinematicState;                                     // 0x0314(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                WwiseCinematicStateGroup;                                // 0x031C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_DJ7E[0x4];                                   // 0x0324(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OX39[0x4];                                   // 0x0324(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              LMMSplineFollowerActor[0x28];                            // 0x0324(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       DestroyAI;                                               // 0x0350(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_UOKU[0x7];                                   // 0x0351(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HXZ6[0x7];                                   // 0x0351(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              LMMSplineFollowerManager[0x28];                          // 0x0351(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       PlayLeadingEmitter;                                      // 0x0380(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_AGWQ[0x7];                                   // 0x0381(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4GAX[0x7];                                   // 0x0381(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAudioEvent*                                       EmitterStopEvent;                                        // 0x0388(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Hide_Hud;                                                // 0x0390(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void OnFailure_D36A04E9448D6961DBDCAA8A29E6DAD3();
 		void OnSuccess_D36A04E9448D6961DBDCAA8A29E6DAD3();
-		void OnFailure_1FFE06E54298CB19BCF15CA245E7FD55(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_1FFE06E54298CB19BCF15CA245E7FD55(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
+		void OnFailure_1FFE06E54298CB19BCF15CA245E7FD55(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_1FFE06E54298CB19BCF15CA245E7FD55(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void OnTriggered();
 		void Take_Over_Camera();
 		void On_Sequence_Stop_Event();
@@ -57,7 +57,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void On_Sequence_Starting();
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
-		void ExecuteUbergraph_PlaySequenceTrigger(int EntryPoint);
+		void ExecuteUbergraph_PlaySequenceTrigger(int32_t EntryPoint);
 		void On_Sequence_Stop__DelegateSignature();
 		static UClass* StaticClass();
 	};

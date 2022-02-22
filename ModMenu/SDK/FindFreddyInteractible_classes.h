@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void GetRandomInteractible(class AActor** Output);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindFreddyInteractible(int EntryPoint);
+		void ExecuteUbergraph_FindFreddyInteractible(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

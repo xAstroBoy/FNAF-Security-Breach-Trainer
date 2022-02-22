@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoxyLeap_Package.h"
 
 namespace CG
 {
@@ -91,9 +90,9 @@ namespace CG
 	 * 		Name   -> Function RoxyLeap.RoxyLeap_C.ExecuteUbergraph_RoxyLeap
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URoxyLeap_C::ExecuteUbergraph_RoxyLeap(int EntryPoint)
+	void URoxyLeap_C::ExecuteUbergraph_RoxyLeap(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -43,7 +43,7 @@ namespace CG
 		void BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature();
 		void BndEvt__MissionStateHandler1_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature();
 		void BndEvt__MissionStateHandler1_K2Node_ComponentBoundEvent_5_OnMissionStateAleadyHit__DelegateSignature();
-		void ExecuteUbergraph_P_VukKartRacer_Staffbot(int EntryPoint);
+		void ExecuteUbergraph_P_VukKartRacer_Staffbot(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

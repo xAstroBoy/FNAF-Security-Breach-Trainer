@@ -21,8 +21,8 @@ namespace CG
 	class UBPFL_Kitchen_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		class FText STATIC_GetPizzaStationInstruction(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep, class UObject* __WorldContext);
-		class FText STATIC_GetPizzaStationName(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep, class UObject* __WorldContext);
+		class FText STATIC_GetPizzaStationInstruction(PizzaStep_EPizzaStep PizzaStep, class UObject* __WorldContext);
+		class FText STATIC_GetPizzaStationName(PizzaStep_EPizzaStep PizzaStep, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

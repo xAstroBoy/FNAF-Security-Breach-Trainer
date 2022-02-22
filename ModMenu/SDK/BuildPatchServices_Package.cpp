@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BuildPatchServices_Package.h"
 
 namespace CG
 {

@@ -23,11 +23,11 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FBlackboardKeySelector                              StateKey;                                                // 0x00B0(0x0028) Edit, BlueprintVisible
-		TEnumAsByte<FreddyAIState_EFreddyAIState>                  NewState;                                                // 0x00D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		FreddyAIState_EFreddyAIState                               NewState;                                                // 0x00D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_ChangeFreddyState(int EntryPoint);
+		void ExecuteUbergraph_ChangeFreddyState(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

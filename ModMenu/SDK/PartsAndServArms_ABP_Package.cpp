@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PartsAndServArms_ABP_Package.h"
 
 namespace CG
 {
@@ -376,9 +375,9 @@ namespace CG
 	 * 		Name   -> Function PartsAndServArms_ABP.PartsAndServArms_ABP_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum   GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPartsAndServArms_ABP_C::PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum)
+	void UPartsAndServArms_ABP_C::PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -398,9 +397,9 @@ namespace CG
 	 * 		Name   -> Function PartsAndServArms_ABP.PartsAndServArms_ABP_C.ExecuteUbergraph_PartsAndServArms_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPartsAndServArms_ABP_C::ExecuteUbergraph_PartsAndServArms_ABP(int EntryPoint)
+	void UPartsAndServArms_ABP_C::ExecuteUbergraph_PartsAndServArms_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

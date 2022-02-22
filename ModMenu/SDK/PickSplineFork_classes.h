@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_PickSplineFork(int EntryPoint);
+		void ExecuteUbergraph_PickSplineFork(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

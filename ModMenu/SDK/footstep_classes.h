@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void Step();
-		void ExecuteUbergraph_footstep(int EntryPoint);
+		void ExecuteUbergraph_footstep(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

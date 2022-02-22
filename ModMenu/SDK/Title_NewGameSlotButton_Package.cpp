@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Title_NewGameSlotButton_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function Title_NewGameSlotButton.Title_NewGameSlotButton_C.ExecuteUbergraph_Title_NewGameSlotButton
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_NewGameSlotButton_C::ExecuteUbergraph_Title_NewGameSlotButton(int EntryPoint)
+	void UTitle_NewGameSlotButton_C::ExecuteUbergraph_Title_NewGameSlotButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

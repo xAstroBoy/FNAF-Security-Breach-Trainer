@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GatorRideSpline_Package.h"
 
 namespace CG
 {
@@ -115,9 +114,9 @@ namespace CG
 	 * 		Name   -> Function GatorRideSpline.GatorRideSpline_C.ExecuteUbergraph_GatorRideSpline
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AGatorRideSpline_C::ExecuteUbergraph_GatorRideSpline(int EntryPoint)
+	void AGatorRideSpline_C::ExecuteUbergraph_GatorRideSpline(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

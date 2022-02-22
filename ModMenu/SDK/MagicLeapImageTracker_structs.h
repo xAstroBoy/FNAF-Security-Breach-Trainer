@@ -21,7 +21,7 @@ namespace CG
 	struct FMagicLeapImageTrackerTarget
 	{
 	public:
-		unsigned char                                              UnknownData_R6FZ[0xB0];                                  // 0x0000(0x00B0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6BFG[0xB0];                                  // 0x0000(0x00B0) MISSED OFFSET (PADDING)
 
 	};
 

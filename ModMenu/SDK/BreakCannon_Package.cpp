@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BreakCannon_Package.h"
 
 namespace CG
 {
@@ -261,9 +260,9 @@ namespace CG
 	 * 		Name   -> Function BreakCannon.BreakCannon_C.ExecuteUbergraph_BreakCannon
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBreakCannon_C::ExecuteUbergraph_BreakCannon(int EntryPoint)
+	void UBreakCannon_C::ExecuteUbergraph_BreakCannon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

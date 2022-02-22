@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FrameRateActor_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function FrameRateActor.FrameRateActor_C.ExecuteUbergraph_FrameRateActor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFrameRateActor_C::ExecuteUbergraph_FrameRateActor(int EntryPoint)
+	void AFrameRateActor_C::ExecuteUbergraph_FrameRateActor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

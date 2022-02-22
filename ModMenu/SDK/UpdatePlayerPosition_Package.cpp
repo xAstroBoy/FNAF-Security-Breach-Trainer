@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UpdatePlayerPosition_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function UpdatePlayerPosition.UpdatePlayerPosition_C.ExecuteUbergraph_UpdatePlayerPosition
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UUpdatePlayerPosition_C::ExecuteUbergraph_UpdatePlayerPosition(int EntryPoint)
+	void UUpdatePlayerPosition_C::ExecuteUbergraph_UpdatePlayerPosition(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AVB_GoCart_Package.h"
 
 namespace CG
 {
@@ -141,9 +140,9 @@ namespace CG
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.ExecuteUbergraph_AVB_GoCart
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAVB_GoCart_C::ExecuteUbergraph_AVB_GoCart(int EntryPoint)
+	void UAVB_GoCart_C::ExecuteUbergraph_AVB_GoCart(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

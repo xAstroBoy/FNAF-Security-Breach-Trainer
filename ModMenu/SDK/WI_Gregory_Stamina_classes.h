@@ -42,8 +42,8 @@ namespace CG
 		void On_Stamina_Depleted();
 		void On_Stamina_Replenished();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_WI_Gregory_Stamina(int EntryPoint);
-		void PowerLevelDispatch__DelegateSignature(int PowerLevel);
+		void ExecuteUbergraph_WI_Gregory_Stamina(int32_t EntryPoint);
+		void PowerLevelDispatch__DelegateSignature(int32_t PowerLevel);
 		static UClass* StaticClass();
 	};
 

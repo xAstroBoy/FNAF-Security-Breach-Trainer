@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_ImageScaled_Package.h"
 
 namespace CG
 {
@@ -101,9 +100,9 @@ namespace CG
 	 * 		Name   -> Function WI_ImageScaled.WI_ImageScaled_C.ExecuteUbergraph_WI_ImageScaled
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_ImageScaled_C::ExecuteUbergraph_WI_ImageScaled(int EntryPoint)
+	void UWI_ImageScaled_C::ExecuteUbergraph_WI_ImageScaled(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BPI_Player_Package.h"
 
 namespace CG
 {

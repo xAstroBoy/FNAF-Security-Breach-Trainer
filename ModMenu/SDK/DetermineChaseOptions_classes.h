@@ -22,13 +22,13 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		int                                                        NumHidingSpotsToSearch;                                  // 0x00B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    NumHidingSpotsToSearch;                                  // 0x00B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      StayInRoomWeight;                                        // 0x00B4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FBlackboardKeySelector                              BBDecision;                                              // 0x00B8(0x0028) Edit, BlueprintVisible
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_DetermineChaseOptions(int EntryPoint);
+		void ExecuteUbergraph_DetermineChaseOptions(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

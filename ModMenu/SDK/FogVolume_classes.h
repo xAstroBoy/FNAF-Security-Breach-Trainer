@@ -30,7 +30,7 @@ namespace CG
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void ReceiveActorEndOverlap(class AActor* OtherActor);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_FogVolume(int EntryPoint);
+		void ExecuteUbergraph_FogVolume(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

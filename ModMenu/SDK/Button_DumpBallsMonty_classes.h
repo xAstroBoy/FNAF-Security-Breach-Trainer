@@ -21,7 +21,7 @@ namespace CG
 	class AButton_DumpBallsMonty_C : public APlaySequenceTrigger_C
 	{
 	public:
-		unsigned char                                              UnknownData_78ZP[0x7];                                   // 0x0391(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DL2G[0x7];                                   // 0x0391(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0398(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UUpdateMissionComponent*                             Montys_Claws;                                            // 0x03A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UChildActorComponent*                                Button;                                                  // 0x03A8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -37,7 +37,7 @@ namespace CG
 		void OnTriggered();
 		void On_Player_Interact();
 		void On_Sequence_Stop_Event();
-		void ExecuteUbergraph_Button_DumpBallsMonty(int EntryPoint);
+		void ExecuteUbergraph_Button_DumpBallsMonty(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

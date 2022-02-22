@@ -89,7 +89,7 @@ namespace CG
 		class FName                                                Spine1_jnt;                                              // 0x14F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Valid;                                                   // 0x14F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isPhase2;                                                // 0x14F9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       canJumpscare;                                            // 0x14FA(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       CanJumpscare;                                            // 0x14FA(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isPanic;                                                 // 0x14FB(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsCrouched;                                              // 0x14FC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsInTubes;                                               // 0x14FD(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -106,8 +106,8 @@ namespace CG
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
-		bool LineTraceForOrientation(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType, TArray<struct FHitResult>* OutHits);
-		bool LineTraceForIK(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType, struct FHitResult* OutHit);
+		bool LineTraceForOrientation(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, Engine_EDrawDebugTrace DrawDebugType, TArray<struct FHitResult>* OutHits);
+		bool LineTraceForIK(const class FName& InSocketName, const struct FVector& StartOffset, const struct FVector& EndOffset, Engine_EDrawDebugTrace DrawDebugType, struct FHitResult* OutHit);
 		void FreddyEndIdle(bool Off);
 		void CutSceneSpineBlender(bool Off, class ULevelSequencePlayer* Sequence);
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_C82573104A0C2721E49FF7A141C0BE1F();
@@ -167,7 +167,7 @@ namespace CG
 		void Spotlight_Aim_Actor(class AActor* AimActor);
 		void AnimNotify_CableDownEvent();
 		void AnimNotify_CableUpEvent();
-		void ExecuteUbergraph_Moonman_Daycare_ABP(int EntryPoint);
+		void ExecuteUbergraph_Moonman_Daycare_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

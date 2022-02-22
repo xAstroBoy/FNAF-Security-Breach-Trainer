@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MobilePatchingUtils_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.Mount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                PakOrder                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PakOrder                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      MountPoint                                                 (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMobileInstalledContent::Mount(int PakOrder, const class FString& MountPoint)
+	bool UMobileInstalledContent::Mount(int32_t PakOrder, const class FString& MountPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

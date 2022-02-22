@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BI_RoxyRacerEvents_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserTag_ChasePlayer_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function LaserTag_ChasePlayer.LaserTag_ChasePlayer_C.ExecuteUbergraph_LaserTag_ChasePlayer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULaserTag_ChasePlayer_C::ExecuteUbergraph_LaserTag_ChasePlayer(int EntryPoint)
+	void ULaserTag_ChasePlayer_C::ExecuteUbergraph_LaserTag_ChasePlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Empty_Package.h"
 
 namespace CG
 {

@@ -73,7 +73,7 @@ namespace CG
 		void BndEvt__NoButton_2_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature();
 		void ShowConfirmationOverwriteMenu();
 		void BackButton();
-		void ExecuteUbergraph_SaveGameUI(int EntryPoint);
+		void ExecuteUbergraph_SaveGameUI(int32_t EntryPoint);
 		void OnSaveGame__DelegateSignature();
 		static UClass* StaticClass();
 	};

@@ -44,7 +44,7 @@ namespace CG
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
-		void ExecuteUbergraph_Staffbot_Fazertag_LINK(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_Fazertag_LINK(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

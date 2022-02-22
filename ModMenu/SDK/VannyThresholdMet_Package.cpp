@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VannyThresholdMet_Package.h"
 
 namespace CG
 {

@@ -48,7 +48,7 @@ namespace CG
 		class USceneComponent*                                     SecA;                                                    // 0x02E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x02F0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      PlayRate;                                                // 0x02F8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_UQEF[0x4];                                   // 0x02FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7PQN[0x4];                                   // 0x02FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   Prop_ArcadeCab01b_SecA;                                  // 0x0300(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   Prop_ServiceCart_SecA;                                   // 0x0308(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   Prop_Locker_SecB;                                        // 0x0310(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -68,7 +68,7 @@ namespace CG
 		void AssignAnims(class USkeletalMeshComponent* SkeletalMesh, class UAnimSequenceBase* AnimInput);
 		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_DJMM_Chase_Blocker_Actor(int EntryPoint);
+		void ExecuteUbergraph_DJMM_Chase_Blocker_Actor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

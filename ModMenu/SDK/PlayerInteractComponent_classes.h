@@ -42,7 +42,7 @@ namespace CG
 		void Attempt_Interact();
 		void Cancel_Current_Interact();
 		void Set_Interact_Enable(bool Enabled);
-		void ExecuteUbergraph_PlayerInteractComponent(int EntryPoint);
+		void ExecuteUbergraph_PlayerInteractComponent(int32_t EntryPoint);
 		void OnInteractibleChanged__DelegateSignature(class UObject* Interactible);
 		static UClass* StaticClass();
 	};

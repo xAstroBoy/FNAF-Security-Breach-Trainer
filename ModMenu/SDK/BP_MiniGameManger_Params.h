@@ -58,7 +58,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_PlayerCanEndGame_Params
 	{
 	public:
-		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>           EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_EndMiniGameType_E_EndMiniGameType                        EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       CanEnd;                                                  // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
@@ -80,7 +80,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_PlayerRequestEnd_Params
 	{
 	public:
-		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>           EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_EndMiniGameType_E_EndMiniGameType                        EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -102,7 +102,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_OnEnd_Params
 	{
 	public:
-		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>           EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_EndMiniGameType_E_EndMiniGameType                        EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -164,7 +164,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_QuitToMainMenu_Params
 	{
 	public:
-		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>           End_Type;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_EndMiniGameType_E_EndMiniGameType                        End_Type;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -181,7 +181,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_ExecuteUbergraph_BP_MiniGameManger_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -191,7 +191,7 @@ namespace CG
 	struct ABP_MiniGameManger_C_OnGameEnd__DelegateSignature_Params
 	{
 	public:
-		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>           EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_EndMiniGameType_E_EndMiniGameType                        EndType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

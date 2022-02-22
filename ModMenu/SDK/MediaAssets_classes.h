@@ -21,7 +21,7 @@ namespace CG
 	class UMediaSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_9DYA[0x58];                                  // 0x0028(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WSYZ[0x58];                                  // 0x0028(0x0058) MISSED OFFSET (PADDING)
 
 	public:
 		bool Validate();
@@ -55,7 +55,7 @@ namespace CG
 	public:
 		class FString                                              FilePath;                                                // 0x0088(0x0010) Edit, BlueprintVisible, ZeroConstructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       PrecacheFile;                                            // 0x0098(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6D9X[0x17];                                  // 0x0099(0x0017) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FWY2[0x17];                                  // 0x0099(0x0017) MISSED OFFSET (PADDING)
 
 	public:
 		void SetFilePath(const class FString& Path);
@@ -69,9 +69,9 @@ namespace CG
 	class UMediaBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_EnumerateWebcamCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int Filter);
-		void STATIC_EnumerateVideoCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int Filter);
-		void STATIC_EnumerateAudioCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int Filter);
+		void STATIC_EnumerateWebcamCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32_t Filter);
+		void STATIC_EnumerateVideoCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32_t Filter);
+		void STATIC_EnumerateAudioCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32_t Filter);
 		static UClass* StaticClass();
 	};
 
@@ -111,20 +111,20 @@ namespace CG
 		struct FTimespan                                           CacheBehindGame;                                         // 0x00B8(0x0008) BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       NativeAudioOut;                                          // 0x00C0(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       PlayOnOpen;                                              // 0x00C1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_W1O0[0x2];                                   // 0x00C2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SAZI[0x2];                                   // 0x00C2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Shuffle : 1;                                             // 0x00C4(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Loop : 1;                                                // 0x00C4(0x0001) BIT_FIELD Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_VO2W[0x3];                                   // 0x00C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XRL2[0x3];                                   // 0x00C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMediaPlaylist*                                      Playlist;                                                // 0x00C8(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		int                                                        PlaylistIndex;                                           // 0x00D0(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_EQJN[0x4];                                   // 0x00D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    PlaylistIndex;                                           // 0x00D0(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_1BU3[0x4];                                   // 0x00D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTimespan                                           TimeDelay;                                               // 0x00D8(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      HorizontalFieldOfView;                                   // 0x00E0(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      VerticalFieldOfView;                                     // 0x00E4(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		struct FRotator                                            ViewRotation;                                            // 0x00E8(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_Y8UW[0x2C];                                  // 0x00F4(0x002C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QTA4[0x2C];                                  // 0x00F4(0x002C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FGuid                                               PlayerGuid;                                              // 0x0120(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_NRWD[0x8];                                   // 0x0130(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M5UW[0x8];                                   // 0x0130(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		bool SupportsSeeking();
@@ -132,8 +132,8 @@ namespace CG
 		bool SupportsRate(float Rate, bool Unthinned);
 		bool SetViewRotation(const struct FRotator& Rotation, bool Absolute);
 		bool SetViewField(float Horizontal, float Vertical, bool Absolute);
-		bool SetVideoTrackFrameRate(int TrackIndex, int FormatIndex, float FrameRate);
-		bool SetTrackFormat(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex, int FormatIndex);
+		bool SetVideoTrackFrameRate(int32_t TrackIndex, int32_t FormatIndex, float FrameRate);
+		bool SetTrackFormat(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex, int32_t FormatIndex);
 		void SetTimeDelay(const struct FTimespan& TimeDelay);
 		bool SetRate(float Rate);
 		bool SetNativeVolume(float Volume);
@@ -141,7 +141,7 @@ namespace CG
 		bool SetLooping(bool Looping);
 		void SetDesiredPlayerName(const class FName& PlayerName);
 		void SetBlockOnTime(const struct FTimespan& Time);
-		bool SelectTrack(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex);
+		bool SelectTrack(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex);
 		bool Seek(const struct FTimespan& Time);
 		bool Rewind();
 		bool Reopen();
@@ -153,7 +153,7 @@ namespace CG
 		bool OpenSourceWithOptions(class UMediaSource* MediaSource, const struct FMediaPlayerOptions& Options);
 		void OpenSourceLatent(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class UMediaSource* MediaSource, const struct FMediaPlayerOptions& Options, bool* bSuccess);
 		bool OpenSource(class UMediaSource* MediaSource);
-		bool OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index);
+		bool OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32_t Index);
 		bool OpenPlaylist(class UMediaPlaylist* InPlaylist);
 		bool OpenFile(const class FString& FilePath);
 		bool Next();
@@ -167,35 +167,35 @@ namespace CG
 		bool IsBuffering();
 		bool HasError();
 		struct FRotator GetViewRotation();
-		class FString GetVideoTrackType(int TrackIndex, int FormatIndex);
-		struct FFloatRange GetVideoTrackFrameRates(int TrackIndex, int FormatIndex);
-		float GetVideoTrackFrameRate(int TrackIndex, int FormatIndex);
-		struct FIntPoint GetVideoTrackDimensions(int TrackIndex, int FormatIndex);
-		float GetVideoTrackAspectRatio(int TrackIndex, int FormatIndex);
+		class FString GetVideoTrackType(int32_t TrackIndex, int32_t FormatIndex);
+		struct FFloatRange GetVideoTrackFrameRates(int32_t TrackIndex, int32_t FormatIndex);
+		float GetVideoTrackFrameRate(int32_t TrackIndex, int32_t FormatIndex);
+		struct FIntPoint GetVideoTrackDimensions(int32_t TrackIndex, int32_t FormatIndex);
+		float GetVideoTrackAspectRatio(int32_t TrackIndex, int32_t FormatIndex);
 		float GetVerticalFieldOfView();
 		class FString GetUrl();
-		class FString GetTrackLanguage(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex);
-		int GetTrackFormat(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex);
-		class FText GetTrackDisplayName(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex);
+		class FString GetTrackLanguage(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex);
+		int32_t GetTrackFormat(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex);
+		class FText GetTrackDisplayName(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex);
 		struct FTimespan GetTimeDelay();
 		struct FTimespan GetTime();
 		void GetSupportedRates(TArray<struct FFloatRange>* OutRates, bool Unthinned);
-		int GetSelectedTrack(MediaAssets_EMediaPlayerTrack TrackType);
+		int32_t GetSelectedTrack(MediaAssets_EMediaPlayerTrack TrackType);
 		float GetRate();
-		int GetPlaylistIndex();
+		int32_t GetPlaylistIndex();
 		class UMediaPlaylist* GetPlaylist();
 		class FName GetPlayerName();
-		int GetNumTracks(MediaAssets_EMediaPlayerTrack TrackType);
-		int GetNumTrackFormats(MediaAssets_EMediaPlayerTrack TrackType, int TrackIndex);
+		int32_t GetNumTracks(MediaAssets_EMediaPlayerTrack TrackType);
+		int32_t GetNumTrackFormats(MediaAssets_EMediaPlayerTrack TrackType, int32_t TrackIndex);
 		class FText GetMediaName();
 		struct FTimespan GetLastVideoSampleProcessedTime();
 		struct FTimespan GetLastAudioSampleProcessedTime();
 		float GetHorizontalFieldOfView();
 		struct FTimespan GetDuration();
 		class FName GetDesiredPlayerName();
-		class FString GetAudioTrackType(int TrackIndex, int FormatIndex);
-		int GetAudioTrackSampleRate(int TrackIndex, int FormatIndex);
-		int GetAudioTrackChannels(int TrackIndex, int FormatIndex);
+		class FString GetAudioTrackType(int32_t TrackIndex, int32_t FormatIndex);
+		int32_t GetAudioTrackSampleRate(int32_t TrackIndex, int32_t FormatIndex);
+		int32_t GetAudioTrackChannels(int32_t TrackIndex, int32_t FormatIndex);
 		void Close();
 		bool CanPlayUrl(const class FString& URL);
 		bool CanPlaySource(class UMediaSource* MediaSource);
@@ -213,15 +213,15 @@ namespace CG
 		TArray<class UMediaSource*>                                Items;                                                   // 0x0028(0x0010) Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 
 	public:
-		bool Replace(int Index, class UMediaSource* Replacement);
-		bool RemoveAt(int Index);
+		bool Replace(int32_t Index, class UMediaSource* Replacement);
+		bool RemoveAt(int32_t Index);
 		bool Remove(class UMediaSource* MediaSource);
-		int Num();
-		void Insert(class UMediaSource* MediaSource, int Index);
-		class UMediaSource* GetRandom(int* OutIndex);
-		class UMediaSource* GetPrevious(int* InOutIndex);
-		class UMediaSource* GetNext(int* InOutIndex);
-		class UMediaSource* Get(int Index);
+		int32_t Num();
+		void Insert(class UMediaSource* MediaSource, int32_t Index);
+		class UMediaSource* GetRandom(int32_t* OutIndex);
+		class UMediaSource* GetPrevious(int32_t* InOutIndex);
+		class UMediaSource* GetNext(int32_t* InOutIndex);
+		class UMediaSource* Get(int32_t Index);
 		bool AddUrl(const class FString& URL);
 		bool AddFile(const class FString& FilePath);
 		bool Add(class UMediaSource* MediaSource);
@@ -236,19 +236,19 @@ namespace CG
 	{
 	public:
 		MediaAssets_EMediaSoundChannels                            Channels;                                                // 0x06D0(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NUMY[0x3];                                   // 0x06D0(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_O0TS[0x3];                                   // 0x06D0(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 		bool                                                       DynamicRateAdjustment;                                   // 0x06D4(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GSN6[0x3];                                   // 0x06D5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_H47H[0x3];                                   // 0x06D5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      RateAdjustmentFactor;                                    // 0x06D8(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FFloatRange                                         RateAdjustmentRange;                                     // 0x06DC(0x0010) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VXAU[0x4];                                   // 0x06EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BBLS[0x4];                                   // 0x06EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMediaPlayer*                                        MediaPlayer;                                             // 0x06F0(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_FVBE[0x1D8];                                 // 0x06F8(0x01D8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KROO[0x1D8];                                 // 0x06F8(0x01D8) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSpectralAnalysisSettings(TArray<float> InFrequenciesToAnalyze, MediaAssets_EMediaSoundComponentFFTSize InFFTSize);
 		void SetMediaPlayer(class UMediaPlayer* NewMediaPlayer);
-		void SetEnvelopeFollowingsettings(int AttackTimeMsec, int ReleaseTimeMsec);
+		void SetEnvelopeFollowingsettings(int32_t AttackTimeMsec, int32_t ReleaseTimeMsec);
 		void SetEnableSpectralAnalysis(bool bInSpectralAnalysisEnabled);
 		void SetEnableEnvelopeFollowing(bool bInEnvelopeFollowing);
 		TArray<struct FMediaSoundComponentSpectralData> GetSpectralData();
@@ -265,22 +265,22 @@ namespace CG
 	class UMediaTexture : public UTexture
 	{
 	public:
-		TEnumAsByte<Engine_ETextureAddress>                        AddressX;                                                // 0x00B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TEnumAsByte<Engine_ETextureAddress>                        AddressY;                                                // 0x00B9(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		Engine_ETextureAddress                                     AddressX;                                                // 0x00B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		Engine_ETextureAddress                                     AddressY;                                                // 0x00B9(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       AutoClear;                                               // 0x00BA(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UEXB[0x1];                                   // 0x00BB(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BSJ3[0x1];                                   // 0x00BB(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FLinearColor                                        ClearColor;                                              // 0x00BC(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       EnableGenMips;                                           // 0x00CC(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              NumMips;                                                 // 0x00CD(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7VIE[0x2];                                   // 0x00CE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CFGJ[0x2];                                   // 0x00CE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMediaPlayer*                                        MediaPlayer;                                             // 0x00D0(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_3YXP[0xB0];                                  // 0x00D8(0x00B0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AYYL[0xB0];                                  // 0x00D8(0x00B0) MISSED OFFSET (PADDING)
 
 	public:
 		void SetMediaPlayer(class UMediaPlayer* NewMediaPlayer);
-		int GetWidth();
+		int32_t GetWidth();
 		class UMediaPlayer* GetMediaPlayer();
-		int GetHeight();
+		int32_t GetHeight();
 		float GetAspectRatio();
 		static UClass* StaticClass();
 	};
@@ -319,8 +319,8 @@ namespace CG
 	{
 	public:
 		bool                                                       bUseTimeSynchronization;                                 // 0x0088(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MWRD[0x3];                                   // 0x0089(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        FrameDelay;                                              // 0x008C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_6HAK[0x3];                                   // 0x0089(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    FrameDelay;                                              // 0x008C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		double                                                     TimeDelay;                                               // 0x0090(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:

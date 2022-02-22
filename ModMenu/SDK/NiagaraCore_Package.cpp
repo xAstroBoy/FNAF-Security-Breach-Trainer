@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "NiagaraCore_Package.h"
 
 namespace CG
 {

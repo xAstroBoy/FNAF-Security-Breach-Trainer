@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Roxy_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function Roxy.Roxy_C.ExecuteUbergraph_Roxy
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ARoxy_C::ExecuteUbergraph_Roxy(int EntryPoint)
+	void ARoxy_C::ExecuteUbergraph_Roxy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

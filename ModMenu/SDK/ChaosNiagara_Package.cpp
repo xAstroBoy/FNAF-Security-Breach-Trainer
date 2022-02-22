@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChaosNiagara_Package.h"
 
 namespace CG
 {

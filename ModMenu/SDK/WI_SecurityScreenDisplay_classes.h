@@ -30,7 +30,7 @@ namespace CG
 	public:
 		void UpdateWidget();
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_WI_SecurityScreenDisplay(int EntryPoint);
+		void ExecuteUbergraph_WI_SecurityScreenDisplay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

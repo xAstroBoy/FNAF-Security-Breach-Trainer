@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CutSceneActor_Base_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function CutSceneActor_Base.CutSceneActor_Base_C.ExecuteUbergraph_CutSceneActor_Base
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACutSceneActor_Base_C::ExecuteUbergraph_CutSceneActor_Base(int EntryPoint)
+	void ACutSceneActor_Base_C::ExecuteUbergraph_CutSceneActor_Base(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

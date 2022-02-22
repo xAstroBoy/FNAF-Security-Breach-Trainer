@@ -20,7 +20,7 @@ namespace CG
 	struct AFreddyInteractibleActor_C_GetFreddyVO_Params
 	{
 	public:
-		TEnumAsByte<FreddyVOType_EFreddyVOType>                    VOType;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		FreddyVOType_EFreddyVOType                                 VOType;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		TArray<class UDialogueWave*>                               FreddyDialog;                                            // 0x0008(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
 
 	};

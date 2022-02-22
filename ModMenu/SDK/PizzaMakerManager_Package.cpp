@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PizzaMakerManager_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function PizzaMakerManager.PizzaMakerManager_C.FinishStep
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APizzaMakerManager_C::FinishStep(TEnumAsByte<PizzaStep_EPizzaStep> Step)
+	void APizzaMakerManager_C::FinishStep(PizzaStep_EPizzaStep Step)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function PizzaMakerManager.PizzaMakerManager_C.MoveToPizzaStep
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APizzaMakerManager_C::MoveToPizzaStep(TEnumAsByte<PizzaStep_EPizzaStep> Step)
+	void APizzaMakerManager_C::MoveToPizzaStep(PizzaStep_EPizzaStep Step)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function PizzaMakerManager.PizzaMakerManager_C.Step Completed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               Step                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APizzaMakerManager_C::Step_Completed(TEnumAsByte<PizzaStep_EPizzaStep> Step)
+	void APizzaMakerManager_C::Step_Completed(PizzaStep_EPizzaStep Step)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -140,9 +139,9 @@ namespace CG
 	 * 		Name   -> Function PizzaMakerManager.PizzaMakerManager_C.ExecuteUbergraph_PizzaMakerManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APizzaMakerManager_C::ExecuteUbergraph_PizzaMakerManager(int EntryPoint)
+	void APizzaMakerManager_C::ExecuteUbergraph_PizzaMakerManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

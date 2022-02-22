@@ -52,10 +52,10 @@ namespace CG
 		void SetLevelLoadedDisplay(bool On);
 		void SetLevelStreamersDisplay(bool On);
 		void SetVannyMeterDisplay(bool On);
-		void Set_Frame_Rate(int FPS);
+		void Set_Frame_Rate(int32_t FPS);
 		void Set_Frame_Rate_Display(bool On);
 		void Set_Lighting_Scenario_Display(bool On);
-		void ExecuteUbergraph_DebugOverlay(int EntryPoint);
+		void ExecuteUbergraph_DebugOverlay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

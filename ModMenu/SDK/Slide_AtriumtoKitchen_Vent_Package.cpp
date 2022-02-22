@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Slide_AtriumtoKitchen_Vent_Package.h"
 
 namespace CG
 {
@@ -79,9 +78,9 @@ namespace CG
 	 * 		Name   -> Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.ExecuteUbergraph_Slide_AtriumtoKitchen_Vent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASlide_AtriumtoKitchen_Vent_C::ExecuteUbergraph_Slide_AtriumtoKitchen_Vent(int EntryPoint)
+	void ASlide_AtriumtoKitchen_Vent_C::ExecuteUbergraph_Slide_AtriumtoKitchen_Vent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

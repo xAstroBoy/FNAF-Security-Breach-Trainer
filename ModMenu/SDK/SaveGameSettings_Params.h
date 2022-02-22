@@ -41,7 +41,7 @@ namespace CG
 	struct USaveGameSettings_C_GetMediaForCurrentHour_Params
 	{
 	public:
-		int                                                        Lasted_Played_Hour;                                      // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    Lasted_Played_Hour;                                      // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UMediaSource*                                        Game_Hour_Video;                                         // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};

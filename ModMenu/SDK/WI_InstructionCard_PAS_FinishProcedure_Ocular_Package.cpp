@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_PAS_FinishProcedure_Ocular_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function WI_InstructionCard_PAS_FinishProcedure_Ocular.WI_InstructionCard_PAS_FinishProcedure_Ocular_C.ExecuteUbergraph_WI_InstructionCard_PAS_FinishProcedure_Ocular
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_InstructionCard_PAS_FinishProcedure_Ocular_C::ExecuteUbergraph_WI_InstructionCard_PAS_FinishProcedure_Ocular(int EntryPoint)
+	void UWI_InstructionCard_PAS_FinishProcedure_Ocular_C::ExecuteUbergraph_WI_InstructionCard_PAS_FinishProcedure_Ocular(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

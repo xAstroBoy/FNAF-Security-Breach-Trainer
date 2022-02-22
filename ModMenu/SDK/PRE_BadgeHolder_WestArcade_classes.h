@@ -21,7 +21,7 @@ namespace CG
 	class APRE_BadgeHolder_WestArcade_C : public APRE_BadgeHolder_C
 	{
 	public:
-		unsigned char                                              UnknownData_VJ50[0x5];                                   // 0x02EB(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9VBM[0x5];                                   // 0x02EB(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMissionStateCondition*                              DJ_Music_Man_Condition1;                                 // 0x02F0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UMissionStateCondition*                              DJ_Music_Man_Condition;                                  // 0x02F8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 

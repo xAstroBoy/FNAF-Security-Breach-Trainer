@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Option_Language_DebugShortcut_Package.h"
 
 namespace CG
 {
@@ -96,9 +95,9 @@ namespace CG
 	 * 		Name   -> Function WI_Option_Language_DebugShortcut.WI_Option_Language_DebugShortcut_C.ExecuteUbergraph_WI_Option_Language_DebugShortcut
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Option_Language_DebugShortcut_C::ExecuteUbergraph_WI_Option_Language_DebugShortcut(int EntryPoint)
+	void UWI_Option_Language_DebugShortcut_C::ExecuteUbergraph_WI_Option_Language_DebugShortcut(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

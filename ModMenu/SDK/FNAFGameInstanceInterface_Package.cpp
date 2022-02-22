@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FNAFGameInstanceInterface_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FNAFGameInstanceInterface.FNAFGameInstanceInterface_C.ChangeHourlyActivity
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                HourIndex                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            HourIndex                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstanceInterface_C::ChangeHourlyActivity(int HourIndex)
+	void UFNAFGameInstanceInterface_C::ChangeHourlyActivity(int32_t HourIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

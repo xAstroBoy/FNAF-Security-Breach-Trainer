@@ -174,7 +174,7 @@ namespace CG
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone;                                // 0x3830(0x0108)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x3938(0x0020)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x3958(0x0020)
-		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum;                                                // 0x3978(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum           GameEnum;                                                // 0x3978(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HatOn;                                                   // 0x3979(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       HeadOn;                                                  // 0x397A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       ArmOpen;                                                 // 0x397B(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -186,8 +186,8 @@ namespace CG
 		bool                                                       L_Eye_IN;                                                // 0x3981(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       R_eye_In;                                                // 0x3982(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       test;                                                    // 0x3983(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       canJumpscare;                                            // 0x3984(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DSTX[0x3];                                   // 0x3985(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       CanJumpscare;                                            // 0x3984(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_9M8Q[0x3];                                   // 0x3985(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UDataTable*                                          AnimVODT;                                                // 0x3988(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequence*                                       JawAnim;                                                 // 0x3990(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanTalk;                                                 // 0x3998(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -245,7 +245,7 @@ namespace CG
 		void Searching(fnaf9_EHideObjectType Hide_Type);
 		void TurnEvent(float TurnDegrees);
 		void HeadAimEvent(bool OnOff);
-		void PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum);
+		void PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum);
 		void Off(bool Off);
 		void Close(bool Close);
 		void TestButton_B();
@@ -257,7 +257,7 @@ namespace CG
 		void CanJumpscareEvent();
 		void VoAnimEvent(class UAkAudioEvent* AK_Event);
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_7875F3AC4CFA6AAD15B9DCB01AE4A642();
-		void ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP(int EntryPoint);
+		void ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

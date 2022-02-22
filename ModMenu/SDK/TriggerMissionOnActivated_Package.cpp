@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TriggerMissionOnActivated_Package.h"
 
 namespace CG
 {
@@ -42,9 +41,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Activator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<ActivatableState_EActivatableState>    CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ActivatableState_EActivatableState                 CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTriggerMissionOnActivated_C::GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState)
+	void UTriggerMissionOnActivated_C::GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -178,9 +177,9 @@ namespace CG
 	 * 		Name   -> Function TriggerMissionOnActivated.TriggerMissionOnActivated_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTriggerMissionOnActivated_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
+	void UTriggerMissionOnActivated_C::ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -241,9 +240,9 @@ namespace CG
 	 * 		Name   -> Function TriggerMissionOnActivated.TriggerMissionOnActivated_C.ExecuteUbergraph_TriggerMissionOnActivated
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTriggerMissionOnActivated_C::ExecuteUbergraph_TriggerMissionOnActivated(int EntryPoint)
+	void UTriggerMissionOnActivated_C::ExecuteUbergraph_TriggerMissionOnActivated(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

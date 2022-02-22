@@ -31,7 +31,7 @@ namespace CG
 	public:
 		void ReceiveTick(float DeltaSeconds);
 		void Begin_Interp(const struct FVector& Start_Position, const struct FVector& End_Position);
-		void ExecuteUbergraph_InterpMoveComponent(int EntryPoint);
+		void ExecuteUbergraph_InterpMoveComponent(int32_t EntryPoint);
 		void OnInterpFinished__DelegateSignature();
 		static UClass* StaticClass();
 	};

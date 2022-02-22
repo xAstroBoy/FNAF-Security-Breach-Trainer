@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindNextBallCannon_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindNextBallCannon.FindNextBallCannon_C.ExecuteUbergraph_FindNextBallCannon
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindNextBallCannon_C::ExecuteUbergraph_FindNextBallCannon(int EntryPoint)
+	void UFindNextBallCannon_C::ExecuteUbergraph_FindNextBallCannon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

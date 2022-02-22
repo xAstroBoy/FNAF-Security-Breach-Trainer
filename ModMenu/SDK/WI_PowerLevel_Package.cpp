@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_PowerLevel_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function WI_PowerLevel.WI_PowerLevel_C.PowerLevelUpdate
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_PowerLevel_C::PowerLevelUpdate(int PowerLevel)
+	void UWI_PowerLevel_C::PowerLevelUpdate(int32_t PowerLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -223,9 +222,9 @@ namespace CG
 	 * 		Name   -> Function WI_PowerLevel.WI_PowerLevel_C.ExecuteUbergraph_WI_PowerLevel
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_PowerLevel_C::ExecuteUbergraph_WI_PowerLevel(int EntryPoint)
+	void UWI_PowerLevel_C::ExecuteUbergraph_WI_PowerLevel(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

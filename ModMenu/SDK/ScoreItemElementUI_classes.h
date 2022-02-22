@@ -29,9 +29,9 @@ namespace CG
 		class FText                                                Text;                                                    // 0x0258(0x0018) Edit, BlueprintVisible, ExposeOnSpawn
 
 	public:
-		void SetScore(int Count, int PointsPerItem, int Score);
+		void SetScore(int32_t Count, int32_t PointsPerItem, int32_t Score);
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_ScoreItemElementUI(int EntryPoint);
+		void ExecuteUbergraph_ScoreItemElementUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

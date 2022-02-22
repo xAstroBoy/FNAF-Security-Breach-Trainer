@@ -25,26 +25,26 @@ namespace CG
 		class UAIPathComponent*                                    AIPath;                                                  // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsLooping;                                               // 0x0240(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_MTY1[0x3];                                   // 0x0241(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XKQY[0x3];                                   // 0x0241(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      WaitTime;                                                // 0x0244(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<struct FPointStruct>                                Points;                                                  // 0x0248(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
 
 	public:
-		struct FLinearColor GetPointColor(int PointIndex);
+		struct FLinearColor GetPointColor(int32_t PointIndex);
 		TArray<class FText> GetAvailablePointTypes();
-		int GetPointType(int PointIndex);
-		int AddPoint(const struct FVector& Location);
-		TArray<int> GetPointsConnectedTo(int PointIndex);
-		int GetNumberOfPathPoints();
-		struct FVector GetPointLocation(int PointIndex);
-		void RemovePointInternal(int IndexToRemove, int InputPin);
+		int32_t GetPointType(int32_t PointIndex);
+		int32_t AddPoint(const struct FVector& Location);
+		TArray<int32_t> GetPointsConnectedTo(int32_t PointIndex);
+		int32_t GetNumberOfPathPoints();
+		struct FVector GetPointLocation(int32_t PointIndex);
+		void RemovePointInternal(int32_t IndexToRemove, int32_t InputPin);
 		void ReceiveBeginPlay();
-		void SetPointLocation(int PointIndex, const struct FVector& Location);
-		void AddPointConnection(int PointIndex, int PointToConnectIndex);
-		void RemovePoint(int PointIndex);
-		void RemovePointConnection(int PointIndex, int PointToDisconnectIndex);
-		void SetPointType(int PointIndex, int PointType);
-		void ExecuteUbergraph_PatrolPath(int EntryPoint);
+		void SetPointLocation(int32_t PointIndex, const struct FVector& Location);
+		void AddPointConnection(int32_t PointIndex, int32_t PointToConnectIndex);
+		void RemovePoint(int32_t PointIndex);
+		void RemovePointConnection(int32_t PointIndex, int32_t PointToDisconnectIndex);
+		void SetPointType(int32_t PointIndex, int32_t PointType);
+		void ExecuteUbergraph_PatrolPath(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

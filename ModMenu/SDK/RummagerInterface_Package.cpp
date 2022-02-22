@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RummagerInterface_Package.h"
 
 namespace CG
 {

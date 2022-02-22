@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerTeleportHandler_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function PlayerTeleportHandler.PlayerTeleportHandler_C.ExecuteUbergraph_PlayerTeleportHandler
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerTeleportHandler_C::ExecuteUbergraph_PlayerTeleportHandler(int EntryPoint)
+	void APlayerTeleportHandler_C::ExecuteUbergraph_PlayerTeleportHandler(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

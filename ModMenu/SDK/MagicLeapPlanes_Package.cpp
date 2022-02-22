@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapPlanes_Package.h"
 
 namespace CG
 {

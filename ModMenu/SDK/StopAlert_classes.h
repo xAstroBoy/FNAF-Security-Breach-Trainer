@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_StopAlert(int EntryPoint);
+		void ExecuteUbergraph_StopAlert(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

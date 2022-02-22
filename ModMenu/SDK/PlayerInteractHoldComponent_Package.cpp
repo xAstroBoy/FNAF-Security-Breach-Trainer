@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerInteractHoldComponent_Package.h"
 
 namespace CG
 {
@@ -122,9 +121,9 @@ namespace CG
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.ExecuteUbergraph_PlayerInteractHoldComponent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerInteractHoldComponent_C::ExecuteUbergraph_PlayerInteractHoldComponent(int EntryPoint)
+	void UPlayerInteractHoldComponent_C::ExecuteUbergraph_PlayerInteractHoldComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

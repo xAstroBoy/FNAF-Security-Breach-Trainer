@@ -37,7 +37,7 @@ namespace CG
 	public:
 		void GetInterpolatedFloatOverScore(float A, float B, float* Output);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void ExecuteUbergraph_AllowJumpService(int EntryPoint);
+		void ExecuteUbergraph_AllowJumpService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

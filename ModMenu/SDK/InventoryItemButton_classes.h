@@ -30,8 +30,8 @@ namespace CG
 		class UItemCollectionUI_C*                                 ItemCollectionMenu;                                      // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UStaticMesh*                                         ItemModel;                                               // 0x0270(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsSelected;                                              // 0x0278(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_74X8[0x3];                                   // 0x0279(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        RowNumber;                                               // 0x027C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_9W27[0x3];                                   // 0x0279(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    RowNumber;                                               // 0x027C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HasHoverFocus;                                           // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
@@ -42,7 +42,7 @@ namespace CG
 		void BndEvt__IconButton_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_InventoryItemButton(int EntryPoint);
+		void ExecuteUbergraph_InventoryItemButton(int32_t EntryPoint);
 		void ItemSelected__DelegateSignature();
 		static UClass* StaticClass();
 	};

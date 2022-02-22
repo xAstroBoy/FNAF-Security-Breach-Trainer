@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChangeSpeed_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ChangeSpeed.ChangeSpeed_C.ExecuteUbergraph_ChangeSpeed
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChangeSpeed_C::ExecuteUbergraph_ChangeSpeed(int EntryPoint)
+	void UChangeSpeed_C::ExecuteUbergraph_ChangeSpeed(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

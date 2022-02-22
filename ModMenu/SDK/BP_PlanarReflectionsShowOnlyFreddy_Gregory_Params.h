@@ -44,7 +44,7 @@ namespace CG
 	struct ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C_ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

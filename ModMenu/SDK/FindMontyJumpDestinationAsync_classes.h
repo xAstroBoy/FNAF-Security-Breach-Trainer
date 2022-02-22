@@ -30,7 +30,7 @@ namespace CG
 		struct FVector                                             MontyLocation;                                           // 0x00F0(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             NavQueryExtent;                                          // 0x00FC(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             MontySpawnOffset;                                        // 0x0108(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_XUCM[0x4];                                   // 0x0114(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5QP0[0x4];                                   // 0x0114(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              BBJumpMarker;                                            // 0x0118(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              BBAllowJump;                                             // 0x0140(0x0028) Edit, BlueprintVisible
 		struct FVector                                             PlayerForward;                                           // 0x0168(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -40,7 +40,7 @@ namespace CG
 		void GetInterpolatedFloatOverScore(float A, float B, float* Output);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindMontyJumpDestinationAsync(int EntryPoint);
+		void ExecuteUbergraph_FindMontyJumpDestinationAsync(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

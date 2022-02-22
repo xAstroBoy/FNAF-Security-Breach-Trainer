@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Camera_Package.h"
 
 namespace CG
 {
@@ -439,9 +438,9 @@ namespace CG
 	 * 		Name   -> Function Camera.Camera_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACamera_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
+	void ACamera_C::ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -545,9 +544,9 @@ namespace CG
 	 * 		Name   -> Function Camera.Camera_C.ExecuteUbergraph_Camera
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACamera_C::ExecuteUbergraph_Camera(int EntryPoint)
+	void ACamera_C::ExecuteUbergraph_Camera(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

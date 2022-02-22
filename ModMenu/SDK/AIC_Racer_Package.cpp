@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AIC_Racer_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function AIC_Racer.AIC_Racer_C.ExecuteUbergraph_AIC_Racer
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIC_Racer_C::ExecuteUbergraph_AIC_Racer(int EntryPoint)
+	void AAIC_Racer_C::ExecuteUbergraph_AIC_Racer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

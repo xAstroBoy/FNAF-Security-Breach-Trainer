@@ -26,7 +26,7 @@ namespace CG
 	public:
 		void BlueprintUpdateAnimation(float DeltaTimeX);
 		void BlueprintBeginPlay();
-		void ExecuteUbergraph_Staffbot_ABP_Cutscene(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_ABP_Cutscene(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void ExecuteUbergraph_DisplayLocationService(int EntryPoint);
+		void ExecuteUbergraph_DisplayLocationService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

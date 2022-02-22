@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BurntrapHackPointBP_Package.h"
 
 namespace CG
 {

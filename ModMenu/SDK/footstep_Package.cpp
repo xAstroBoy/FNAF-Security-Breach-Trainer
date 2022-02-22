@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "footstep_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function footstep.footstep_C.ExecuteUbergraph_footstep
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void Afootstep_C::ExecuteUbergraph_footstep(int EntryPoint)
+	void Afootstep_C::ExecuteUbergraph_footstep(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

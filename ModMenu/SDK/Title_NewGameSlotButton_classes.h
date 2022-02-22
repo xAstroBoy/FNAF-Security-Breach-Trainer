@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void BndEvt__TitleButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_Title_NewGameSlotButton(int EntryPoint);
+		void ExecuteUbergraph_Title_NewGameSlotButton(int32_t EntryPoint);
 		void OnSlotClicked__DelegateSignature(const class FString& SaveSlot);
 		static UClass* StaticClass();
 	};

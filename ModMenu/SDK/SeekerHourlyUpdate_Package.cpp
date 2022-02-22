@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SeekerHourlyUpdate_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MedScan_Sequence_Package.h"
 
 namespace CG
 {
@@ -433,9 +432,9 @@ namespace CG
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int EntryPoint)
+	void USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

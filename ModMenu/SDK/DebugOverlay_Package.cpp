@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugOverlay_Package.h"
 
 namespace CG
 {
@@ -377,9 +376,9 @@ namespace CG
 	 * 		Name   -> Function DebugOverlay.DebugOverlay_C.Set Frame Rate
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                FPS                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            FPS                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugOverlay_C::Set_Frame_Rate(int FPS)
+	void UDebugOverlay_C::Set_Frame_Rate(int32_t FPS)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -443,9 +442,9 @@ namespace CG
 	 * 		Name   -> Function DebugOverlay.DebugOverlay_C.ExecuteUbergraph_DebugOverlay
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugOverlay_C::ExecuteUbergraph_DebugOverlay(int EntryPoint)
+	void UDebugOverlay_C::ExecuteUbergraph_DebugOverlay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

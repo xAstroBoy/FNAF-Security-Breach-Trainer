@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HideAnimInterface_Package.h"
 
 namespace CG
 {

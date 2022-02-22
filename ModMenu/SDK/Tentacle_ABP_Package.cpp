@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Tentacle_ABP_Package.h"
 
 namespace CG
 {
@@ -1046,9 +1045,9 @@ namespace CG
 	 * 		Name   -> Function Tentacle_ABP.Tentacle_ABP_C.ExecuteUbergraph_Tentacle_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTentacle_ABP_C::ExecuteUbergraph_Tentacle_ABP(int EntryPoint)
+	void UTentacle_ABP_C::ExecuteUbergraph_Tentacle_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

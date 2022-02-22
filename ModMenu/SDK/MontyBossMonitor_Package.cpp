@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyBossMonitor_Package.h"
 
 namespace CG
 {
@@ -61,9 +60,9 @@ namespace CG
 	 * 		Name   -> Function MontyBossMonitor.MontyBossMonitor_C.ExecuteUbergraph_MontyBossMonitor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMontyBossMonitor_C::ExecuteUbergraph_MontyBossMonitor(int EntryPoint)
+	void AMontyBossMonitor_C::ExecuteUbergraph_MontyBossMonitor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ResetWeight_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ResetWeight.ResetWeight_C.ExecuteUbergraph_ResetWeight
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UResetWeight_C::ExecuteUbergraph_ResetWeight(int EntryPoint)
+	void UResetWeight_C::ExecuteUbergraph_ResetWeight(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

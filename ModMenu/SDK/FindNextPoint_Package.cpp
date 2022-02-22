@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindNextPoint_Package.h"
 
 namespace CG
 {
@@ -18,14 +17,14 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Controlled_Pawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                CurrentPathIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PreviousPathIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CurrentPathIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PreviousPathIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FinishAtEnd                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                NextPathPointIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NextPathPointIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     NextPointLocation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FoundPoint                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFindNextPoint_C::Find_Next_Point(class APawn* Controlled_Pawn, int CurrentPathIndex, int PreviousPathIndex, bool FinishAtEnd, int* NextPathPointIndex, struct FVector* NextPointLocation, bool* FoundPoint)
+	void UFindNextPoint_C::Find_Next_Point(class APawn* Controlled_Pawn, int32_t CurrentPathIndex, int32_t PreviousPathIndex, bool FinishAtEnd, int32_t* NextPathPointIndex, struct FVector* NextPointLocation, bool* FoundPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -79,9 +78,9 @@ namespace CG
 	 * 		Name   -> Function FindNextPoint.FindNextPoint_C.ExecuteUbergraph_FindNextPoint
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindNextPoint_C::ExecuteUbergraph_FindNextPoint(int EntryPoint)
+	void UFindNextPoint_C::ExecuteUbergraph_FindNextPoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

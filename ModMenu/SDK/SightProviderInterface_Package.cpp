@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SightProviderInterface_Package.h"
 
 namespace CG
 {

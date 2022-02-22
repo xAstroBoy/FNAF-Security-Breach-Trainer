@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayFreddyInteractibleVO_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PlayFreddyInteractibleVO.PlayFreddyInteractibleVO_C.ExecuteUbergraph_PlayFreddyInteractibleVO
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayFreddyInteractibleVO_C::ExecuteUbergraph_PlayFreddyInteractibleVO(int EntryPoint)
+	void UPlayFreddyInteractibleVO_C::ExecuteUbergraph_PlayFreddyInteractibleVO(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

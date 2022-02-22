@@ -22,10 +22,10 @@ namespace CG
 	{
 	public:
 		unsigned char                                              Generators[0x10];                                        // 0x0030(0x0010) UNKNOWN PROPERTY: ArrayProperty
-		int                                                        Count;                                                   // 0x0040(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Count;                                                   // 0x0040(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int StateIndex, class FText* FormattedTaskTitleText);
+		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int32_t StateIndex, class FText* FormattedTaskTitleText);
 		static UClass* StaticClass();
 	};
 

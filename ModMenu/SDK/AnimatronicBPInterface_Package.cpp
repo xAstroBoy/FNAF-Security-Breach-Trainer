@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AnimatronicBPInterface_Package.h"
 
 namespace CG
 {

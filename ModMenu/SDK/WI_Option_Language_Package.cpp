@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Option_Language_Package.h"
 
 namespace CG
 {
@@ -56,9 +55,9 @@ namespace CG
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class FString                                      SelectedItem                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<SlateCore_ESelectInfo>                 SelectionType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		SlateCore_ESelectInfo                              SelectionType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Option_Language_C::BndEvt__Language_BoxString_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, TEnumAsByte<SlateCore_ESelectInfo> SelectionType)
+	void UWI_Option_Language_C::BndEvt__Language_BoxString_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, SlateCore_ESelectInfo SelectionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -120,9 +119,9 @@ namespace CG
 	 * 		Name   -> Function WI_Option_Language.WI_Option_Language_C.ExecuteUbergraph_WI_Option_Language
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Option_Language_C::ExecuteUbergraph_WI_Option_Language(int EntryPoint)
+	void UWI_Option_Language_C::ExecuteUbergraph_WI_Option_Language(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

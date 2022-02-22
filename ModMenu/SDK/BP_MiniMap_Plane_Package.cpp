@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_MiniMap_Plane_Package.h"
 
 namespace CG
 {

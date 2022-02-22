@@ -36,7 +36,7 @@ namespace CG
 		void OnBlendOut_4BA8AEFF461D0D9538C45595C4F82DA5(const class FName& NotifyName);
 		void OnCompleted_4BA8AEFF461D0D9538C45595C4F82DA5(const class FName& NotifyName);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_BreakCannon(int EntryPoint);
+		void ExecuteUbergraph_BreakCannon(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

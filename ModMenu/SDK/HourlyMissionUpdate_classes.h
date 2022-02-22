@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void Give_Hourly_Mission();
 		void On_Audio_Finished();
-		void ExecuteUbergraph_HourlyMissionUpdate(int EntryPoint);
+		void ExecuteUbergraph_HourlyMissionUpdate(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

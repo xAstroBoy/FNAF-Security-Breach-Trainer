@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FlashlightRechargeState_Package.h"
 
 namespace CG
 {

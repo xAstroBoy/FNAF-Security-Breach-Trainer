@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChicaRummagePoint_Package.h"
 
 namespace CG
 {

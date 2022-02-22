@@ -25,7 +25,7 @@ namespace CG
 		TMap<class FName, class UMissionTextFormatter_C*>          MissionFormatterInstances;                               // 0x0078(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
-		void GetFormattedMissionText(const class FName& MissionName, const struct FFNAFMissionState& MissionState, const struct FFNAFMissionInfo& MissionInfo, const struct FFNAFMissionTaskInfo& TaskInfo, int StateIndex, class FText* FormattedText);
+		void GetFormattedMissionText(const class FName& MissionName, const struct FFNAFMissionState& MissionState, const struct FFNAFMissionInfo& MissionInfo, const struct FFNAFMissionTaskInfo& TaskInfo, int32_t StateIndex, class FText* FormattedText);
 		static UClass* StaticClass();
 	};
 

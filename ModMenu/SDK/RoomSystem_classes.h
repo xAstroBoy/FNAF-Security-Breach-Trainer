@@ -47,7 +47,7 @@ namespace CG
 	class UDoorInterface : public UInterface
 	{
 	public:
-		void SetSecurityLevel(int NewSecurityLevel);
+		void SetSecurityLevel(int32_t NewSecurityLevel);
 		void SetDoorRequiredItem(const class FName& ItemName);
 		void SetDoorLockPlayer(bool Lock);
 		void SetDoorLockAI(bool Lock);
@@ -97,28 +97,28 @@ namespace CG
 		class FName                                                MapName;                                                 // 0x0228(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class USceneComponent*                                     CharacterDetectorsRoot;                                  // 0x0230(0x0008) Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class UBoxComponent*>                               CharacterDetectors;                                      // 0x0238(0x0010) Edit, ExportObject, ZeroConstructor, Transient, EditConst, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TMap<int, struct FVector>                                  RoomEntryPoints;                                         // 0x0248(0x0050) Edit, EditConst, NativeAccessSpecifierPrivate
+		TMap<int32_t, struct FVector>                              RoomEntryPoints;                                         // 0x0248(0x0050) Edit, EditConst, NativeAccessSpecifierPrivate
 		TArray<struct FRoomAdjacencyInfo>                          AdjacentRooms;                                           // 0x0298(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class AActor*>                                      HideActors;                                              // 0x02A8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class AActor*>                                      AIHideActors;                                            // 0x02B8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class AActor*>                                      AICharactersInRoom;                                      // 0x02C8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FVector>                                     PointsOfInterest;                                        // 0x02D8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bPlayerIsInRoom;                                         // 0x02E8(0x0001) Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_V1NL[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Q9EY[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
 
 	public:
-		void SetPOIVisited(int Index);
-		void ResetPOIHeat(int Index);
+		void SetPOIVisited(int32_t Index);
+		void ResetPOIHeat(int32_t Index);
 		bool IsLocationInRoom(const struct FVector& Location);
 		float GetTotalRoomArea();
 		TArray<struct FVector> GetRoomPoints(float PointDelta);
-		TMap<int, struct FVector> GetRoomEntryPoints();
-		struct FVector GetRoomEntryPoint(int EntryIndex);
+		TMap<int32_t, struct FVector> GetRoomEntryPoints();
+		struct FVector GetRoomEntryPoint(int32_t EntryIndex);
 		TArray<struct FRoomAdjacencyInfo> GetRoomAdjacency(class ARoomAreaBase* Room);
 		struct FVector GetRandomLocationInRoom();
 		TArray<struct FPointOfInterestRuntimeInfo> GetPointsOfInterestInfo();
 		TArray<struct FVector> GetPointsOfInterest();
-		struct FPointOfInterestRuntimeInfo GetPointOfInterestInfoByIndex(int Index);
+		struct FPointOfInterestRuntimeInfo GetPointOfInterestInfoByIndex(int32_t Index);
 		float GetPlayerHeat();
 		class FName GetMapName();
 		TArray<class AActor*> GetDoors();
@@ -130,8 +130,8 @@ namespace CG
 		TArray<struct FRoomAdjacencyInfo> GetAllAdjacentRoomInfos();
 		float GetAIHeat();
 		struct FRoomAdjacencyInfo GetAdjacentInfoFromDoor(class AActor* Door);
-		void ClearPOIVisited(int Index);
-		void AdjustPOIHeat(int Index, float Amount);
+		void ClearPOIVisited(int32_t Index);
+		void AdjustPOIHeat(int32_t Index, float Amount);
 		static UClass* StaticClass();
 	};
 
@@ -146,7 +146,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnPlayerExitedRoom;                                      // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomLoaded;                                            // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomUnloaded;                                          // 0x0060(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SOUF[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UC08[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
 
 	public:
 		void StartRoomSystem();
@@ -164,8 +164,8 @@ namespace CG
 		TArray<class ARoomAreaBase*> GetPlayerCurrentRooms();
 		void GetHighestHeatPOIFromArray(TArray<struct FPOIResult> POIArray, bool* bValid, struct FPOIResult* OutResult);
 		void GetClosestPointOfInterest(const struct FVector& WorldLocation, bool* bOutValid, struct FPOIResult* OutResult);
-		TMap<class ARoomAreaBase*, int> GetAllRoomDistancesFromRoom(class ARoomAreaBase* Room);
-		TMap<class ARoomAreaBase*, int> GetAllRoomDistancesFromPlayerRoom();
+		TMap<class ARoomAreaBase*, int32_t> GetAllRoomDistancesFromRoom(class ARoomAreaBase* Room);
+		TMap<class ARoomAreaBase*, int32_t> GetAllRoomDistancesFromPlayerRoom();
 		void AdjustClosestPointOfInterestHeat(const struct FVector& WorldLocation, float Amount);
 		static UClass* StaticClass();
 	};

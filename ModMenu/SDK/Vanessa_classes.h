@@ -21,7 +21,7 @@ namespace CG
 	class AVanessa_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_VZ0A[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PK0P[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UStaticMeshComponent*                                GodRay;                                                  // 0x0800(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USpotLightComponent*                                 Flashlight_Light;                                        // 0x0808(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -30,17 +30,17 @@ namespace CG
 		unsigned char                                              LostAndFoundSpawnLocation[0x28];                         // 0x0820(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       SendingToLostAndFound;                                   // 0x0848(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       PlayerLooking;                                           // 0x0849(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_SWI9[0x6];                                   // 0x084A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5WOG[0x6];                                   // 0x084A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<fnaf9_EFNAFAISpawnType>                             TypesToSpawn;                                            // 0x0850(0x0010) Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash
-		int                                                        NumToSpawn;                                              // 0x0860(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		int32_t                                                    NumToSpawn;                                              // 0x0860(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 
 	public:
 		void RequestPlayerInformation(struct FVector* PlayerLocation, bool* HasValidInfo);
-		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts);
+		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts);
 		void IsWarningFinished(bool* Finished);
 		fnaf9_EAlertType GetAlertType();
 		void GetShouldCheckHidingLocations(bool* ShouldCheckHidingLocations);
-		void GetRoomSeekMode(TEnumAsByte<RoomSeekMode_ERoomSeekMode>* SeekMode);
+		void GetRoomSeekMode(RoomSeekMode_ERoomSeekMode* SeekMode);
 		void OnNotifyEnd_FA4713CB499BFC26786D6E8E8597FB63(const class FName& NotifyName);
 		void OnNotifyBegin_FA4713CB499BFC26786D6E8E8597FB63(const class FName& NotifyName);
 		void OnInterrupted_FA4713CB499BFC26786D6E8E8597FB63(const class FName& NotifyName);
@@ -56,11 +56,11 @@ namespace CG
 		void Stop_Alert(const class FName& Alert);
 		void ReceiveTick(float DeltaSeconds);
 		void Stop_Warning();
-		void Start_Warning(int WarningCount);
+		void Start_Warning(int32_t WarningCount);
 		void Blocked_By_AI_Time_Up();
-		void PlayVoiceType(TEnumAsByte<AIVoiceOverType_EAIVoiceOverType> VoiceTag);
-		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts);
-		void ExecuteUbergraph_Vanessa(int EntryPoint);
+		void PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag);
+		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts);
+		void ExecuteUbergraph_Vanessa(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoonmanFollowSimpleSplineController_Package.h"
 
 namespace CG
 {

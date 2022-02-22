@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MeshDescription_Package.h"
 
 namespace CG
 {
@@ -57,10 +56,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                PerimeterIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PerimeterIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::SetPolygonVertexInstance(const struct FPolygonID& PolygonID, int PerimeterIndex, const struct FVertexInstanceID& VertexInstanceID)
+	void UMeshDescriptionBase::SetPolygonVertexInstance(const struct FPolygonID& PolygonID, int32_t PerimeterIndex, const struct FVertexInstanceID& VertexInstanceID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -131,9 +130,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewVertices
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewVertices                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewVertices                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewVertices(int NumberOfNewVertices)
+	void UMeshDescriptionBase::ReserveNewVertices(int32_t NumberOfNewVertices)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -154,9 +153,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewVertexInstances
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewVertexInstances                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewVertexInstances                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewVertexInstances(int NumberOfNewVertexInstances)
+	void UMeshDescriptionBase::ReserveNewVertexInstances(int32_t NumberOfNewVertexInstances)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -177,9 +176,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewTriangles
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewTriangles                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewTriangles                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewTriangles(int NumberOfNewTriangles)
+	void UMeshDescriptionBase::ReserveNewTriangles(int32_t NumberOfNewTriangles)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -200,9 +199,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewPolygons
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewPolygons                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewPolygons                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewPolygons(int NumberOfNewPolygons)
+	void UMeshDescriptionBase::ReserveNewPolygons(int32_t NumberOfNewPolygons)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -223,9 +222,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewPolygonGroups
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewPolygonGroups                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewPolygonGroups                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewPolygonGroups(int NumberOfNewPolygonGroups)
+	void UMeshDescriptionBase::ReserveNewPolygonGroups(int32_t NumberOfNewPolygonGroups)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -246,9 +245,9 @@ namespace CG
 	 * 		Name   -> Function MeshDescription.MeshDescriptionBase.ReserveNewEdges
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NumberOfNewEdges                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberOfNewEdges                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMeshDescriptionBase::ReserveNewEdges(int NumberOfNewEdges)
+	void UMeshDescriptionBase::ReserveNewEdges(int32_t NumberOfNewEdges)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -945,9 +944,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FTriangleID                                 TriangleID                                                 (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVertexInstanceID UMeshDescriptionBase::GetTriangleVertexInstance(const struct FTriangleID& TriangleID, int Index)
+	struct FVertexInstanceID UMeshDescriptionBase::GetTriangleVertexInstance(const struct FTriangleID& TriangleID, int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1291,7 +1290,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexVertexInstances(const struct FVertexID& VertexID)
+	int32_t UMeshDescriptionBase::GetNumVertexVertexInstances(const struct FVertexID& VertexID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1316,7 +1315,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID)
+	int32_t UMeshDescriptionBase::GetNumVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1341,7 +1340,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID)
+	int32_t UMeshDescriptionBase::GetNumVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1366,7 +1365,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexConnectedTriangles(const struct FVertexID& VertexID)
+	int32_t UMeshDescriptionBase::GetNumVertexConnectedTriangles(const struct FVertexID& VertexID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1391,7 +1390,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexConnectedPolygons(const struct FVertexID& VertexID)
+	int32_t UMeshDescriptionBase::GetNumVertexConnectedPolygons(const struct FVertexID& VertexID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1416,7 +1415,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumVertexConnectedEdges(const struct FVertexID& VertexID)
+	int32_t UMeshDescriptionBase::GetNumVertexConnectedEdges(const struct FVertexID& VertexID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1441,7 +1440,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumPolygonVertices(const struct FPolygonID& PolygonID)
+	int32_t UMeshDescriptionBase::GetNumPolygonVertices(const struct FPolygonID& PolygonID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1466,7 +1465,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumPolygonTriangles(const struct FPolygonID& PolygonID)
+	int32_t UMeshDescriptionBase::GetNumPolygonTriangles(const struct FPolygonID& PolygonID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1491,7 +1490,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumPolygonInternalEdges(const struct FPolygonID& PolygonID)
+	int32_t UMeshDescriptionBase::GetNumPolygonInternalEdges(const struct FPolygonID& PolygonID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1516,7 +1515,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FPolygonGroupID                             PolygonGroupID                                             (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID)
+	int32_t UMeshDescriptionBase::GetNumPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1541,7 +1540,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumEdgeConnectedTriangles(const struct FEdgeID& EdgeID)
+	int32_t UMeshDescriptionBase::GetNumEdgeConnectedTriangles(const struct FEdgeID& EdgeID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1566,7 +1565,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UMeshDescriptionBase::GetNumEdgeConnectedPolygons(const struct FEdgeID& EdgeID)
+	int32_t UMeshDescriptionBase::GetNumEdgeConnectedPolygons(const struct FEdgeID& EdgeID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1617,9 +1616,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                VertexNumber                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VertexNumber                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVertexID UMeshDescriptionBase::GetEdgeVertex(const struct FEdgeID& EdgeID, int VertexNumber)
+	struct FVertexID UMeshDescriptionBase::GetEdgeVertex(const struct FEdgeID& EdgeID, int32_t VertexNumber)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

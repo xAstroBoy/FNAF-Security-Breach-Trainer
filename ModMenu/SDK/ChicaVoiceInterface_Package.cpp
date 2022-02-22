@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChicaVoiceInterface_Package.h"
 
 namespace CG
 {

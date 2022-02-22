@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BI_Culture_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function BI_Culture.BI_Culture_C.OnCultureChanged
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<fnaf9_ELocalizationCulture>            Culture                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		fnaf9_ELocalizationCulture                         Culture                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBI_Culture_C::OnCultureChanged(TEnumAsByte<fnaf9_ELocalizationCulture> Culture)
+	void UBI_Culture_C::OnCultureChanged(fnaf9_ELocalizationCulture Culture)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FirstPersonCharacter_Package.h"
 
 namespace CG
 {
@@ -1254,9 +1253,9 @@ namespace CG
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ExecuteUbergraph_FirstPersonCharacter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFirstPersonCharacter_C::ExecuteUbergraph_FirstPersonCharacter(int EntryPoint)
+	void AFirstPersonCharacter_C::ExecuteUbergraph_FirstPersonCharacter(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

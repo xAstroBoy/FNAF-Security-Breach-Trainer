@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PickSplineClosestToPlayer_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PickSplineClosestToPlayer.PickSplineClosestToPlayer_C.ExecuteUbergraph_PickSplineClosestToPlayer
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPickSplineClosestToPlayer_C::ExecuteUbergraph_PickSplineClosestToPlayer(int EntryPoint)
+	void UPickSplineClosestToPlayer_C::ExecuteUbergraph_PickSplineClosestToPlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

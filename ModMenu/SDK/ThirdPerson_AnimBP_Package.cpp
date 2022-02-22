@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ThirdPerson_AnimBP_Package.h"
 
 namespace CG
 {
@@ -101,9 +100,9 @@ namespace CG
 	 * 		Name   -> Function ThirdPerson_AnimBP.ThirdPerson_AnimBP_C.ExecuteUbergraph_ThirdPerson_AnimBP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UThirdPerson_AnimBP_C::ExecuteUbergraph_ThirdPerson_AnimBP(int EntryPoint)
+	void UThirdPerson_AnimBP_C::ExecuteUbergraph_ThirdPerson_AnimBP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

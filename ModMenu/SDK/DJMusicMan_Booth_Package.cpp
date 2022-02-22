@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DJMusicMan_Booth_Package.h"
 
 namespace CG
 {
@@ -150,9 +149,9 @@ namespace CG
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.ExecuteUbergraph_DJMusicMan_Booth
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADJMusicMan_Booth_C::ExecuteUbergraph_DJMusicMan_Booth(int EntryPoint)
+	void ADJMusicMan_Booth_C::ExecuteUbergraph_DJMusicMan_Booth(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

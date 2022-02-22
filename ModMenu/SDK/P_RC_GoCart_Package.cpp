@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "P_RC_GoCart_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function P_RC_GoCart.P_RC_GoCart_C.ExecuteUbergraph_P_RC_GoCart
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AP_RC_GoCart_C::ExecuteUbergraph_P_RC_GoCart(int EntryPoint)
+	void AP_RC_GoCart_C::ExecuteUbergraph_P_RC_GoCart(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

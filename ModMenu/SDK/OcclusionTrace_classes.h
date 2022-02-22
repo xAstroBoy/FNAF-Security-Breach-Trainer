@@ -30,7 +30,7 @@ namespace CG
 	public:
 		void GetOcclusion(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float y_offset, bool SingleTraceOnly);
 		void GetOcclusionForLocation(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float y_offset, const struct FVector& Location, bool SingleTraceOnly);
-		void ExecuteUbergraph_OcclusionTrace(int EntryPoint);
+		void ExecuteUbergraph_OcclusionTrace(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

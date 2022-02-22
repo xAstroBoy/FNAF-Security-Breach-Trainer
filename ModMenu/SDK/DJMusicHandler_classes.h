@@ -28,10 +28,10 @@ namespace CG
 
 	public:
 		void UserConstructionScript();
-		void Set_Beat_Enabled(bool enable, int BeatIndex);
+		void Set_Beat_Enabled(bool enable, int32_t BeatIndex);
 		void ReceiveBeginPlay();
 		void Disable_All_Beats();
-		void ExecuteUbergraph_DJMusicHandler(int EntryPoint);
+		void ExecuteUbergraph_DJMusicHandler(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -44,7 +44,7 @@ namespace CG
 		void NewMessageAdded(const class FName& MessageName, const struct FFNAFMessageTableStruct& MessageInfo);
 		void New_Message();
 		void UpdateFazWatchColor();
-		void ExecuteUbergraph_WI_Freddy_FazNotification(int EntryPoint);
+		void ExecuteUbergraph_WI_Freddy_FazNotification(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Gregory_ABP_Package.h"
 
 namespace CG
 {
@@ -1103,9 +1102,9 @@ namespace CG
 	 * 		Name   -> Function Gregory_ABP.Gregory_ABP_C.ExecuteUbergraph_Gregory_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGregory_ABP_C::ExecuteUbergraph_Gregory_ABP(int EntryPoint)
+	void UGregory_ABP_C::ExecuteUbergraph_Gregory_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

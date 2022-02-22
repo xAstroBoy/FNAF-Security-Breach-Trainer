@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyPowerProximityActor_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function FreddyPowerProximityActor.FreddyPowerProximityActor_C.Setup Proximity
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                FreddyPower                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            FreddyPower                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyPowerProximityActor_C::Setup_Proximity(int FreddyPower)
+	void AFreddyPowerProximityActor_C::Setup_Proximity(int32_t FreddyPower)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function FreddyPowerProximityActor.FreddyPowerProximityActor_C.ExecuteUbergraph_FreddyPowerProximityActor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyPowerProximityActor_C::ExecuteUbergraph_FreddyPowerProximityActor(int EntryPoint)
+	void AFreddyPowerProximityActor_C::ExecuteUbergraph_FreddyPowerProximityActor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

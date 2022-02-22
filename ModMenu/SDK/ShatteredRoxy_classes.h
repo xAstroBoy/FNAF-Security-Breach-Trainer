@@ -21,7 +21,7 @@ namespace CG
 	class AShatteredRoxy_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_99Q1[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KRH7[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
@@ -29,7 +29,7 @@ namespace CG
 		void Handle_Sight(class AActor* Updated_Actor, bool Visible);
 		void Stop_Investigating_Sound();
 		void OnListenStarted();
-		void ExecuteUbergraph_ShatteredRoxy(int EntryPoint);
+		void ExecuteUbergraph_ShatteredRoxy(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

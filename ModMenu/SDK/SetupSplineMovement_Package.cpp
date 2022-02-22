@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetupSplineMovement_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function SetupSplineMovement.SetupSplineMovement_C.ExecuteUbergraph_SetupSplineMovement
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetupSplineMovement_C::ExecuteUbergraph_SetupSplineMovement(int EntryPoint)
+	void USetupSplineMovement_C::ExecuteUbergraph_SetupSplineMovement(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SeekerPatrolPath_Package.h"
 
 namespace CG
 {
@@ -78,9 +77,9 @@ namespace CG
 	 * 		Name   -> Function SeekerPatrolPath.SeekerPatrolPath_C.ExecuteUbergraph_SeekerPatrolPath
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASeekerPatrolPath_C::ExecuteUbergraph_SeekerPatrolPath(int EntryPoint)
+	void ASeekerPatrolPath_C::ExecuteUbergraph_SeekerPatrolPath(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EnterMazeTransition_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function EnterMazeTransition.EnterMazeTransition_C.ExecuteUbergraph_EnterMazeTransition
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UEnterMazeTransition_C::ExecuteUbergraph_EnterMazeTransition(int EntryPoint)
+	void UEnterMazeTransition_C::ExecuteUbergraph_EnterMazeTransition(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

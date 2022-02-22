@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void enable();
 		void Disable();
-		void ExecuteUbergraph_AnimBP_Base(int EntryPoint);
+		void ExecuteUbergraph_AnimBP_Base(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

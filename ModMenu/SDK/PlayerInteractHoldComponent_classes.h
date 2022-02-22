@@ -27,7 +27,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnHoldCompleted;                                         // 0x00C0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		float                                                      Percentage;                                              // 0x00D0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HitSuccess;                                              // 0x00D4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_Z2S9[0x3];                                   // 0x00D5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BJBP[0x3];                                   // 0x00D5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UWI_Gregory_Interact_C*                              InteractWidget;                                          // 0x00D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
@@ -36,7 +36,7 @@ namespace CG
 		void Stop_Hold_Timer();
 		void ReceiveTick(float DeltaSeconds);
 		void Start_Hold_Timer();
-		void ExecuteUbergraph_PlayerInteractHoldComponent(int EntryPoint);
+		void ExecuteUbergraph_PlayerInteractHoldComponent(int32_t EntryPoint);
 		void OnHoldCompleted__DelegateSignature();
 		static UClass* StaticClass();
 	};

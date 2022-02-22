@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgMissionObject_Package.h"
 
 namespace CG
 {

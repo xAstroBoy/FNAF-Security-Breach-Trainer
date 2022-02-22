@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerAIController_Package.h"
 
 namespace CG
 {

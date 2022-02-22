@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ResetNoiseMaker_Package.h"
 
 namespace CG
 {
@@ -261,9 +260,9 @@ namespace CG
 	 * 		Name   -> Function ResetNoiseMaker.ResetNoiseMaker_C.ExecuteUbergraph_ResetNoiseMaker
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UResetNoiseMaker_C::ExecuteUbergraph_ResetNoiseMaker(int EntryPoint)
+	void UResetNoiseMaker_C::ExecuteUbergraph_ResetNoiseMaker(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

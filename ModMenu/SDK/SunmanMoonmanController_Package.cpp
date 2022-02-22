@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SunmanMoonmanController_Package.h"
 
 namespace CG
 {

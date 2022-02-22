@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_PartyPass_LINK_Package.h"
 
 namespace CG
 {
@@ -79,9 +78,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_PartyPass_LINK.Staffbot_PartyPass_LINK_C.ExecuteUbergraph_Staffbot_PartyPass_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_PartyPass_LINK_C::ExecuteUbergraph_Staffbot_PartyPass_LINK(int EntryPoint)
+	void UStaffbot_PartyPass_LINK_C::ExecuteUbergraph_Staffbot_PartyPass_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

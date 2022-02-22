@@ -35,7 +35,7 @@ namespace CG
 		void On_Spline_Follower_Overlapped(class ASplineFollowerBase_C* SplineFollower);
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void ReceiveActorEndOverlap(class AActor* OtherActor);
-		void ExecuteUbergraph_SplinePathFork(int EntryPoint);
+		void ExecuteUbergraph_SplinePathFork(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

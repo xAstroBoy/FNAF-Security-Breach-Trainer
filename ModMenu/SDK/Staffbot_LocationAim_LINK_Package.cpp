@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_LocationAim_LINK_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_LocationAim_LINK.Staffbot_LocationAim_LINK_C.ExecuteUbergraph_Staffbot_LocationAim_LINK
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_LocationAim_LINK_C::ExecuteUbergraph_Staffbot_LocationAim_LINK(int EntryPoint)
+	void UStaffbot_LocationAim_LINK_C::ExecuteUbergraph_Staffbot_LocationAim_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

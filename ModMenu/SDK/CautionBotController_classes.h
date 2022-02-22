@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void MoveToSpill(const struct FVector& SpillLocation);
-		void ExecuteUbergraph_CautionBotController(int EntryPoint);
+		void ExecuteUbergraph_CautionBotController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

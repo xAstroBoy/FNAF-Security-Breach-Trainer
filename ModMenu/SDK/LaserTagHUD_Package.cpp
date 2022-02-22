@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserTagHUD_Package.h"
 
 namespace CG
 {
@@ -17,7 +16,7 @@ namespace CG
 	 * 		Name   -> Function LaserTagHUD.LaserTagHUD_C.Get_CurrentHighScore
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
-	int ULaserTagHUD_C::Get_CurrentHighScore()
+	int32_t ULaserTagHUD_C::Get_CurrentHighScore()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -38,7 +37,7 @@ namespace CG
 	 * 		Name   -> Function LaserTagHUD.LaserTagHUD_C.Get_LaserTagCountdown
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
-	int ULaserTagHUD_C::Get_LaserTagCountdown()
+	int32_t ULaserTagHUD_C::Get_LaserTagCountdown()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -257,9 +256,9 @@ namespace CG
 	 * 		Name   -> Function LaserTagHUD.LaserTagHUD_C.ExecuteUbergraph_LaserTagHUD
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULaserTagHUD_C::ExecuteUbergraph_LaserTagHUD(int EntryPoint)
+	void ULaserTagHUD_C::ExecuteUbergraph_LaserTagHUD(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

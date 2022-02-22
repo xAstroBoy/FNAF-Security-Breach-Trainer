@@ -33,7 +33,7 @@ namespace CG
 		void AnimNotify_L_Hand_Down();
 		void AnimNotify_R_Hand_Down();
 		void PoundDoorEvent(bool PoundDoor);
-		void ExecuteUbergraph_Animatronic_Shattered_Monty(int EntryPoint);
+		void ExecuteUbergraph_Animatronic_Shattered_Monty(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Gregory_Crouching_Package.h"
 
 namespace CG
 {
@@ -136,9 +135,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Crouching_C::OnFailure_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void UWI_Gregory_Crouching_C::OnFailure_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -162,9 +161,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Crouching_C::OnSuccess_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void UWI_Gregory_Crouching_C::OnSuccess_939A65B5496246CF92D6CDB315E2B149(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -227,9 +226,9 @@ namespace CG
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.UpdateAlertColor
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                AlertStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            AlertStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Crouching_C::UpdateAlertColor(int AlertStatus)
+	void UWI_Gregory_Crouching_C::UpdateAlertColor(int32_t AlertStatus)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -292,9 +291,9 @@ namespace CG
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.ExecuteUbergraph_WI_Gregory_Crouching
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Crouching_C::ExecuteUbergraph_WI_Gregory_Crouching(int EntryPoint)
+	void UWI_Gregory_Crouching_C::ExecuteUbergraph_WI_Gregory_Crouching(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

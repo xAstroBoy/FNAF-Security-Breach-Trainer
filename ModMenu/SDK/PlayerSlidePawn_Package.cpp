@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerSlidePawn_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.ExecuteUbergraph_PlayerSlidePawn
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerSlidePawn_C::ExecuteUbergraph_PlayerSlidePawn(int EntryPoint)
+	void APlayerSlidePawn_C::ExecuteUbergraph_PlayerSlidePawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

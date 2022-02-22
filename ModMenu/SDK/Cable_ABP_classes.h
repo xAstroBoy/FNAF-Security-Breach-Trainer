@@ -34,7 +34,7 @@ namespace CG
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x04E8(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0518(0x00B0)
 		bool                                                       CableIN;                                                 // 0x05C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LMLM[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JRTW[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   InAnim;                                                  // 0x05D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   OutAnim;                                                 // 0x05D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
@@ -47,12 +47,12 @@ namespace CG
 		void TestButton_B();
 		void VoiceBoxSwap(bool Off);
 		void TestButton_R();
-		void PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum);
+		void PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum);
 		void ResetFreddy();
 		void BlueprintUpdateAnimation(float DeltaTimeX);
 		void BlueprintBeginPlay();
 		void Out(bool In);
-		void ExecuteUbergraph_Cable_ABP(int EntryPoint);
+		void ExecuteUbergraph_Cable_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

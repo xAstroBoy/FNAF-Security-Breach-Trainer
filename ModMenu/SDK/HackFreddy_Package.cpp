@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HackFreddy_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function HackFreddy.HackFreddy_C.ExecuteUbergraph_HackFreddy
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UHackFreddy_C::ExecuteUbergraph_HackFreddy(int EntryPoint)
+	void UHackFreddy_C::ExecuteUbergraph_HackFreddy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

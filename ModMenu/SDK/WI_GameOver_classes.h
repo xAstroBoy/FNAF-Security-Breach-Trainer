@@ -36,7 +36,7 @@ namespace CG
 		void Construct();
 		void DestroyThisShowFinalScore();
 		void DisplayGameOver();
-		void ExecuteUbergraph_WI_GameOver(int EntryPoint);
+		void ExecuteUbergraph_WI_GameOver(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

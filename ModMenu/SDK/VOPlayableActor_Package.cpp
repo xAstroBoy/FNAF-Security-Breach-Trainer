@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VOPlayableActor_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function VOPlayableActor.VOPlayableActor_C.PlayVoiceType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<AIVoiceOverType_EAIVoiceOverType>      VoiceTag                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIVoiceOverType_EAIVoiceOverType                   VoiceTag                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVOPlayableActor_C::PlayVoiceType(TEnumAsByte<AIVoiceOverType_EAIVoiceOverType> VoiceTag)
+	void UVOPlayableActor_C::PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

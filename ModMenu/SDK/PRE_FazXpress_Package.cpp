@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PRE_FazXpress_Package.h"
 
 namespace CG
 {
@@ -254,9 +253,9 @@ namespace CG
 	 * 		Name   -> Function PRE_FazXpress.PRE_FazXpress_C.ExecuteUbergraph_PRE_FazXpress
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_FazXpress_C::ExecuteUbergraph_PRE_FazXpress(int EntryPoint)
+	void APRE_FazXpress_C::ExecuteUbergraph_PRE_FazXpress(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OGM_GatorGolf_Package.h"
 
 namespace CG
 {

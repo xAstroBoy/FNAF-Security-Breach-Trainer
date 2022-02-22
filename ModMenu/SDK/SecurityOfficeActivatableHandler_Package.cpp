@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SecurityOfficeActivatableHandler_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function SecurityOfficeActivatableHandler.SecurityOfficeActivatableHandler_C.ExecuteUbergraph_SecurityOfficeActivatableHandler
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityOfficeActivatableHandler_C::ExecuteUbergraph_SecurityOfficeActivatableHandler(int EntryPoint)
+	void USecurityOfficeActivatableHandler_C::ExecuteUbergraph_SecurityOfficeActivatableHandler(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

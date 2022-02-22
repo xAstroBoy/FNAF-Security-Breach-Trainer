@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazcamChargeUI_Package.h"
 
 namespace CG
 {
@@ -115,9 +114,9 @@ namespace CG
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.ExecuteUbergraph_FazcamChargeUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazcamChargeUI_C::ExecuteUbergraph_FazcamChargeUI(int EntryPoint)
+	void UFazcamChargeUI_C::ExecuteUbergraph_FazcamChargeUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

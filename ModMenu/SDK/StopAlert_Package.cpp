@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StopAlert_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function StopAlert.StopAlert_C.ExecuteUbergraph_StopAlert
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStopAlert_C::ExecuteUbergraph_StopAlert(int EntryPoint)
+	void UStopAlert_C::ExecuteUbergraph_StopAlert(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

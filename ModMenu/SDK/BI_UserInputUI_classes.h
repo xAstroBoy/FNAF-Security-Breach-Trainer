@@ -23,7 +23,7 @@ namespace CG
 	public:
 		void Reset();
 		void InputDpadDirection(const struct FVector2D& Direction);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputZoom(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputOptionAxis(const struct FVector2D& Axis);

@@ -28,9 +28,9 @@ namespace CG
 		class UPlayerInteractHoldComponent_C*                      PlayerInteractHoldComponent;                             // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0250(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanCollect;                                              // 0x0258(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_0AFE[0x3];                                   // 0x0259(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1TJ4[0x3];                                   // 0x0259(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                ItemName;                                                // 0x025C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_HZE8[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QC77[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnCollected;                                             // 0x0268(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class UAkAudioEvent*                                       BeginCollectEvent;                                       // 0x0278(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IgnoreLineTrace;                                         // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
@@ -43,12 +43,12 @@ namespace CG
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void OnFailure_D3AC52D842E427EB7E4EDAB625EC5B5E();
 		void OnSuccess_D3AC52D842E427EB7E4EDAB625EC5B5E();
-		void OnFailure_3BC4A1A24EC40E0AB1D7189ADE855CD5(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_3BC4A1A24EC40E0AB1D7189ADE855CD5(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
+		void OnFailure_3BC4A1A24EC40E0AB1D7189ADE855CD5(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_3BC4A1A24EC40E0AB1D7189ADE855CD5(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void OnCollect();
 		void OnBeginCollect();
 		void ReceiveBeginPlay();
@@ -60,7 +60,7 @@ namespace CG
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void OnPlayerInteractCancel();
 		void CheckForSugarHighAchievement();
-		void ExecuteUbergraph_Collectible(int EntryPoint);
+		void ExecuteUbergraph_Collectible(int32_t EntryPoint);
 		void OnCollected__DelegateSignature();
 		static UClass* StaticClass();
 	};

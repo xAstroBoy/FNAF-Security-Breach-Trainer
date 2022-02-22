@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Cinematic_Actor_Freddy_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function Cinematic_Actor_Freddy.Cinematic_Actor_Freddy_C.ExecuteUbergraph_Cinematic_Actor_Freddy
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACinematic_Actor_Freddy_C::ExecuteUbergraph_Cinematic_Actor_Freddy(int EntryPoint)
+	void ACinematic_Actor_Freddy_C::ExecuteUbergraph_Cinematic_Actor_Freddy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

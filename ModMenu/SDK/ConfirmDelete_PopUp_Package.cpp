@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ConfirmDelete_PopUp_Package.h"
 
 namespace CG
 {
@@ -163,9 +162,9 @@ namespace CG
 	 * 		Name   -> Function ConfirmDelete_PopUp.ConfirmDelete_PopUp_C.ExecuteUbergraph_ConfirmDelete_PopUp
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UConfirmDelete_PopUp_C::ExecuteUbergraph_ConfirmDelete_PopUp(int EntryPoint)
+	void UConfirmDelete_PopUp_C::ExecuteUbergraph_ConfirmDelete_PopUp(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

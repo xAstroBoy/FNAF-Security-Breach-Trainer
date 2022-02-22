@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SaveGameUI_Package.h"
 
 namespace CG
 {
@@ -389,9 +388,9 @@ namespace CG
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.ExecuteUbergraph_SaveGameUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USaveGameUI_C::ExecuteUbergraph_SaveGameUI(int EntryPoint)
+	void USaveGameUI_C::ExecuteUbergraph_SaveGameUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

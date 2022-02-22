@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WaitWhileStringsAreEqual_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function WaitWhileStringsAreEqual.WaitWhileStringsAreEqual_C.ExecuteUbergraph_WaitWhileStringsAreEqual
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWaitWhileStringsAreEqual_C::ExecuteUbergraph_WaitWhileStringsAreEqual(int EntryPoint)
+	void UWaitWhileStringsAreEqual_C::ExecuteUbergraph_WaitWhileStringsAreEqual(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

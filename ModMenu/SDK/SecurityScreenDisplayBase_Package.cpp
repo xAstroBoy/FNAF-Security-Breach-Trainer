@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SecurityScreenDisplayBase_Package.h"
 
 namespace CG
 {
@@ -172,9 +171,9 @@ namespace CG
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.SetToInstructionCard
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type_E_InstructionCard_Type      Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::SetToInstructionCard(TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type)
+	void ASecurityScreenDisplayBase_C::SetToInstructionCard(E_InstructionCard_Type_E_InstructionCard_Type Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -232,9 +231,9 @@ namespace CG
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
+	void ASecurityScreenDisplayBase_C::ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -256,9 +255,9 @@ namespace CG
 	 * Parameters:
 	 * 		struct FCinematicCutscene                          Video                                                      (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 * 		class UMediaPlayer*                                MediaPlayer                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Element_Index                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Element_Index                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::PlayVideo(const struct FCinematicCutscene& Video, class UMediaPlayer* MediaPlayer, int Element_Index)
+	void ASecurityScreenDisplayBase_C::PlayVideo(const struct FCinematicCutscene& Video, class UMediaPlayer* MediaPlayer, int32_t Element_Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -299,9 +298,9 @@ namespace CG
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ExecuteUbergraph_SecurityScreenDisplayBase
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::ExecuteUbergraph_SecurityScreenDisplayBase(int EntryPoint)
+	void ASecurityScreenDisplayBase_C::ExecuteUbergraph_SecurityScreenDisplayBase(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

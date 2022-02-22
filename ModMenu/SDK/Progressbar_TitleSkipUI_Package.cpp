@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Progressbar_TitleSkipUI_Package.h"
 
 namespace CG
 {
@@ -172,9 +171,9 @@ namespace CG
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.ExecuteUbergraph_Progressbar_TitleSkipUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UProgressbar_TitleSkipUI_C::ExecuteUbergraph_Progressbar_TitleSkipUI(int EntryPoint)
+	void UProgressbar_TitleSkipUI_C::ExecuteUbergraph_Progressbar_TitleSkipUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

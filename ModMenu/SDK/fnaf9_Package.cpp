@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "fnaf9_Package.h"
 
 namespace CG
 {
@@ -671,9 +670,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		TArray<fnaf9_EFNAFAISpawnType>                     TypesToAlert                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumberToAlert                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberToAlert                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::SendVanessaAlert(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberToAlert)
+	void UAIManagementSystem::SendVanessaAlert(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -697,9 +696,9 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVector                                     AlertLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<fnaf9_EFNAFAISpawnType>                     TypesToAlert                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumberToAlert                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumberToAlert                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::SendGeneralAlert(const struct FVector& AlertLocation, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberToAlert)
+	void UAIManagementSystem::SendGeneralAlert(const struct FVector& AlertLocation, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1052,9 +1051,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActor*                                      DestroyedPawn                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::OnPawnEndPlay(class AActor* DestroyedPawn, TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
+	void UAIManagementSystem::OnPawnEndPlay(class AActor* DestroyedPawn, Engine_EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1279,7 +1278,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.AIManagementSystem.GetRoomDistancesToPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	TMap<class APawn*, int> UAIManagementSystem::GetRoomDistancesToPlayer()
+	TMap<class APawn*, int32_t> UAIManagementSystem::GetRoomDistancesToPlayer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1702,9 +1701,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.AIManagementSystem.GetAllAIInRoomAtMost
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                numRooms                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            numRooms                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<class APawn*> UAIManagementSystem::GetAllAIInRoomAtMost(int numRooms)
+	TArray<class APawn*> UAIManagementSystem::GetAllAIInRoomAtMost(int32_t numRooms)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1959,9 +1958,9 @@ namespace CG
 	 * 		bool                                               bOutResultValid                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     OutLocation                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentActionInfo                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::FindClosestPatrolPointOutOfView(class APawn* AIPawn, bool* bOutResultValid, struct FVector* OutLocation, const struct FLatentActionInfo& LatentActionInfo, int* OutPointIndex)
+	void UAIManagementSystem::FindClosestPatrolPointOutOfView(class APawn* AIPawn, bool* bOutResultValid, struct FVector* OutLocation, const struct FLatentActionInfo& LatentActionInfo, int32_t* OutPointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1992,11 +1991,11 @@ namespace CG
 	 * Parameters:
 	 * 		class APawn*                                       AIPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               OutResultValid                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     OutLocation                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::FindClosestPathPointForAI(class APawn* AIPawn, bool* OutResultValid, int* OutPointIndex, struct FVector* OutLocation, const struct FLatentActionInfo& LatentInfo)
+	void UAIManagementSystem::FindClosestPathPointForAI(class APawn* AIPawn, bool* OutResultValid, int32_t* OutPointIndex, struct FVector* OutLocation, const struct FLatentActionInfo& LatentInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2068,9 +2067,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.AIManagementSystem.DestroyAllAIInRoomsAtleast
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                RoomDist                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            RoomDist                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::DestroyAllAIInRoomsAtleast(int RoomDist)
+	void UAIManagementSystem::DestroyAllAIInRoomsAtleast(int32_t RoomDist)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2133,10 +2132,10 @@ namespace CG
 	 * Parameters:
 	 * 		TArray<struct FAIDistanceResult>                   DistanceResults                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOutClosestIsValid                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                ClosestIndex                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ClosestIndex                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAIManagementSystem::CalculateAllAIDistances(TArray<struct FAIDistanceResult>* DistanceResults, bool* bOutClosestIsValid, int* ClosestIndex, const struct FLatentActionInfo& LatentInfo)
+	void UAIManagementSystem::CalculateAllAIDistances(TArray<struct FAIDistanceResult>* DistanceResults, bool* bOutClosestIsValid, int32_t* ClosestIndex, const struct FLatentActionInfo& LatentInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2340,10 +2339,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.SetPointType
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                PointType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPathPointProvider::SetPointType(int PointIndex, int PointType)
+	void UPathPointProvider::SetPointType(int32_t PointIndex, int32_t PointType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2364,10 +2363,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.SetPointLocation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPathPointProvider::SetPointLocation(int PointIndex, const struct FVector& Location)
+	void UPathPointProvider::SetPointLocation(int32_t PointIndex, const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2388,10 +2387,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.RemovePointConnection
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                PointToDisconnectIndex                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointToDisconnectIndex                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPathPointProvider::RemovePointConnection(int PointIndex, int PointToDisconnectIndex)
+	void UPathPointProvider::RemovePointConnection(int32_t PointIndex, int32_t PointToDisconnectIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2412,9 +2411,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.RemovePoint
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPathPointProvider::RemovePoint(int PointIndex)
+	void UPathPointProvider::RemovePoint(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2434,9 +2433,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.GetPointType
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UPathPointProvider::GetPointType(int PointIndex)
+	int32_t UPathPointProvider::GetPointType(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2458,9 +2457,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.GetPointsConnectedTo
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<int> UPathPointProvider::GetPointsConnectedTo(int PointIndex)
+	TArray<int32_t> UPathPointProvider::GetPointsConnectedTo(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2482,9 +2481,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.GetPointLocation
 	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UPathPointProvider::GetPointLocation(int PointIndex)
+	struct FVector UPathPointProvider::GetPointLocation(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2506,9 +2505,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.GetPointColor
 	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FLinearColor UPathPointProvider::GetPointColor(int PointIndex)
+	struct FLinearColor UPathPointProvider::GetPointColor(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2530,7 +2529,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.GetNumberOfPathPoints
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
-	int UPathPointProvider::GetNumberOfPathPoints()
+	int32_t UPathPointProvider::GetNumberOfPathPoints()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2572,10 +2571,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PathPointProvider.AddPointConnection
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                PointToConnectIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointToConnectIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPathPointProvider::AddPointConnection(int PointIndex, int PointToConnectIndex)
+	void UPathPointProvider::AddPointConnection(int32_t PointIndex, int32_t PointToConnectIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2598,7 +2597,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UPathPointProvider::AddPoint(const struct FVector& Location)
+	int32_t UPathPointProvider::AddPoint(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3360,9 +3359,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.DoorComponent.SetSecurityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDoorComponent::SetSecurityLevel(int NewSecurityLevel)
+	void UDoorComponent::SetSecurityLevel(int32_t NewSecurityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4902,10 +4901,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFCheatManager.ApplyQualitySettings
 	 * 		Flags  -> (Final, Exec, Native, Public)
 	 * Parameters:
-	 * 		int                                                VisualQualityLevel                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                RayTraceQualityLevel                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VisualQualityLevel                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            RayTraceQualityLevel                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFCheatManager::ApplyQualitySettings(int VisualQualityLevel, int RayTraceQualityLevel)
+	void UFNAFCheatManager::ApplyQualitySettings(int32_t VisualQualityLevel, int32_t RayTraceQualityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5275,9 +5274,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFGameInstanceBase.SetVisualQualityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Level                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Level                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFGameInstanceBase::SetVisualQualityLevel(int Level)
+	void UFNAFGameInstanceBase::SetVisualQualityLevel(int32_t Level)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5321,9 +5320,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFGameInstanceBase.SetRayTraceQualityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Level                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Level                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFGameInstanceBase::SetRayTraceQualityLevel(int Level)
+	void UFNAFGameInstanceBase::SetRayTraceQualityLevel(int32_t Level)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5532,7 +5531,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFGameInstanceBase.GetVisualQualityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
-	int UFNAFGameInstanceBase::GetVisualQualityLevel()
+	int32_t UFNAFGameInstanceBase::GetVisualQualityLevel()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5554,7 +5553,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFGameInstanceBase.GetRayTraceQualityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
-	int UFNAFGameInstanceBase::GetRayTraceQualityLevel()
+	int32_t UFNAFGameInstanceBase::GetRayTraceQualityLevel()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5845,9 +5844,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetSecurityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetSecurityLevel(int NewSecurityLevel)
+	void UFNAFInventorySystem::SetSecurityLevel(int32_t NewSecurityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5868,9 +5867,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetPowerLevel_Freddy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InPowerLevel                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InPowerLevel                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetPowerLevel_Freddy(int InPowerLevel)
+	void UFNAFInventorySystem::SetPowerLevel_Freddy(int32_t InPowerLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5891,9 +5890,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetPowerLevel_Fazwatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InPowerLevel                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InPowerLevel                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetPowerLevel_Fazwatch(int InPowerLevel)
+	void UFNAFInventorySystem::SetPowerLevel_Fazwatch(int32_t InPowerLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5914,9 +5913,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetPartyLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewPartyLevel                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewPartyLevel                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetPartyLevel(int NewPartyLevel)
+	void UFNAFInventorySystem::SetPartyLevel(int32_t NewPartyLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5960,9 +5959,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetMaxPowerLevel_Freddy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewMax                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewMax                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetMaxPowerLevel_Freddy(int NewMax)
+	void UFNAFInventorySystem::SetMaxPowerLevel_Freddy(int32_t NewMax)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5983,9 +5982,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetMaxPowerLevel_Fazwatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewMax                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewMax                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetMaxPowerLevel_Fazwatch(int NewMax)
+	void UFNAFInventorySystem::SetMaxPowerLevel_Fazwatch(int32_t NewMax)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6029,9 +6028,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.SetFlashlightStationID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                StationID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            StationID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFInventorySystem::SetFlashlightStationID(int StationID)
+	void UFNAFInventorySystem::SetFlashlightStationID(int32_t StationID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6253,9 +6252,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.HasSecurityClearance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                InSecurityLevel                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InSecurityLevel                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UFNAFInventorySystem::HasSecurityClearance(int InSecurityLevel)
+	bool UFNAFInventorySystem::HasSecurityClearance(int32_t InSecurityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6378,9 +6377,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.HasEnoughPower_Freddy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                PowerRequired                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PowerRequired                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UFNAFInventorySystem::HasEnoughPower_Freddy(int PowerRequired)
+	bool UFNAFInventorySystem::HasEnoughPower_Freddy(int32_t PowerRequired)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6403,9 +6402,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.HasEnoughPower_Fazwatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                PowerRequired                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PowerRequired                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UFNAFInventorySystem::HasEnoughPower_Fazwatch(int PowerRequired)
+	bool UFNAFInventorySystem::HasEnoughPower_Fazwatch(int32_t PowerRequired)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6492,7 +6491,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.GetNumberOfUnreadMessages
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFInventorySystem::GetNumberOfUnreadMessages()
+	int32_t UFNAFInventorySystem::GetNumberOfUnreadMessages()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6544,7 +6543,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.GetMaxFlashes
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFInventorySystem::GetMaxFlashes()
+	int32_t UFNAFInventorySystem::GetMaxFlashes()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6618,7 +6617,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.GetFreddyMaxPower
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFInventorySystem::GetFreddyMaxPower()
+	int32_t UFNAFInventorySystem::GetFreddyMaxPower()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6662,7 +6661,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.GetFlashlightStationID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFInventorySystem::GetFlashlightStationID()
+	int32_t UFNAFInventorySystem::GetFlashlightStationID()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6684,7 +6683,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.GetFlashlightMaxPower
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFInventorySystem::GetFlashlightMaxPower()
+	int32_t UFNAFInventorySystem::GetFlashlightMaxPower()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6845,9 +6844,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.AdjustPower_Freddy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ChangeAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ChangeAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UFNAFInventorySystem::AdjustPower_Freddy(int ChangeAmount)
+	bool UFNAFInventorySystem::AdjustPower_Freddy(int32_t ChangeAmount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6870,9 +6869,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.AdjustPower_Fazwatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ChangeAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ChangeAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UFNAFInventorySystem::AdjustPower_Fazwatch(int ChangeAmount)
+	bool UFNAFInventorySystem::AdjustPower_Fazwatch(int32_t ChangeAmount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6938,7 +6937,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFInventorySystem.AddBrokenPlate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
-	int UFNAFInventorySystem::AddBrokenPlate()
+	int32_t UFNAFInventorySystem::AddBrokenPlate()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7622,9 +7621,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                InfoState                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InfoState                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFMissionSystem::SetMissionInfoState(const class FName& MissionName, int InfoState)
+	void UFNAFMissionSystem::SetMissionInfoState(const class FName& MissionName, int32_t InfoState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7889,11 +7888,11 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                TaskIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TaskIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FFNAFMissionTaskInfo                        OutMissionTaskInfo                                         (Parm, OutParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               OutValidTask                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFMissionSystem::GetTaskByIndex(const class FName& MissionName, int TaskIndex, struct FFNAFMissionTaskInfo* OutMissionTaskInfo, bool* OutValidTask)
+	void UFNAFMissionSystem::GetTaskByIndex(const class FName& MissionName, int32_t TaskIndex, struct FFNAFMissionTaskInfo* OutMissionTaskInfo, bool* OutValidTask)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8034,9 +8033,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        MessageName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        OutMissionName                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutMissionStateIndex                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutMissionStateIndex                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFMissionSystem::GetMissionFromMessage(const class FName& MessageName, class FName* OutMissionName, int* OutMissionStateIndex)
+	void UFNAFMissionSystem::GetMissionFromMessage(const class FName& MessageName, class FName* OutMissionName, int32_t* OutMissionStateIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8063,9 +8062,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                MissionStateIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            MissionStateIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<class AMissionMarker*> UFNAFMissionSystem::GetMarkersForMission(const class FName& MissionName, int MissionStateIndex)
+	TArray<class AMissionMarker*> UFNAFMissionSystem::GetMarkersForMission(const class FName& MissionName, int32_t MissionStateIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8111,9 +8110,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFMissionSystem.GetAreaMarkerCounts
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		TMap<fnaf9_ELevelArea, int>                        MapOfCounts                                                (Parm, OutParm, NativeAccessSpecifierPublic)
+	 * 		TMap<fnaf9_ELevelArea, int32_t>                    MapOfCounts                                                (Parm, OutParm, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFMissionSystem::GetAreaMarkerCounts(TMap<fnaf9_ELevelArea, int>* MapOfCounts)
+	void UFNAFMissionSystem::GetAreaMarkerCounts(TMap<fnaf9_ELevelArea, int32_t>* MapOfCounts)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8225,9 +8224,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                TaskIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TaskIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFMissionSystem::CompleteMissionTask(const class FName& MissionName, int TaskIndex)
+	void UFNAFMissionSystem::CompleteMissionTask(const class FName& MissionName, int32_t TaskIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8371,9 +8370,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFSaveData.SetHourOfCheckpoint
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InHour                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InHour                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFSaveData::SetHourOfCheckpoint(int InHour)
+	void UFNAFSaveData::SetHourOfCheckpoint(int32_t InHour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8862,7 +8861,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFSaveGameSystem.GetGameIteration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UFNAFSaveGameSystem::GetGameIteration()
+	int32_t UFNAFSaveGameSystem::GetGameIteration()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8952,9 +8951,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.FNAFSaveGameSystem.DeleteSavedGame_BySlot
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                saveSlotNumber                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            saveSlotNumber                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFNAFSaveGameSystem::DeleteSavedGame_BySlot(int saveSlotNumber)
+	void UFNAFSaveGameSystem::DeleteSavedGame_BySlot(int32_t saveSlotNumber)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9203,10 +9202,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		int                                                Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetGameTimeEvent(const class FScriptDelegate& Delegate, int Hour, int Minute)
+	void UGameClockSystem::SetGameTimeEvent(const class FScriptDelegate& Delegate, int32_t Hour, int32_t Minute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9252,11 +9251,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.SetCurrentTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bPlayDelegates                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetCurrentTime(int Hour, int Minute, bool bPlayDelegates)
+	void UGameClockSystem::SetCurrentTime(int32_t Hour, int32_t Minute, bool bPlayDelegates)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9279,9 +9278,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.SetCurrentMinute
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetCurrentMinute(int Minute)
+	void UGameClockSystem::SetCurrentMinute(int32_t Minute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9302,9 +9301,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.SetCurrentHour
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetCurrentHour(int Hour)
+	void UGameClockSystem::SetCurrentHour(int32_t Hour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9348,9 +9347,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.SetClockRateInMinutesPerHour
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                MinutesPerHour                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            MinutesPerHour                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetClockRateInMinutesPerHour(int MinutesPerHour)
+	void UGameClockSystem::SetClockRateInMinutesPerHour(int32_t MinutesPerHour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9371,9 +9370,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.SetClockRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TotalRealHours                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TotalRealHours                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::SetClockRate(int TotalRealHours)
+	void UGameClockSystem::SetClockRate(int32_t TotalRealHours)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9394,10 +9393,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.ResetTimeDelegatesUpTo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGameClockSystem::ResetTimeDelegatesUpTo(int Hour, int Minute)
+	void UGameClockSystem::ResetTimeDelegatesUpTo(int32_t Hour, int32_t Minute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9543,27 +9542,26 @@ namespace CG
 	 * 		Name   -> Function fnaf9.GameClockSystem.GetCurrentTime
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Minute                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Hour                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Minute                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	 //void UGameClockSystem::GetCurrentTime(int* Hour, int* Minute)
+	 //void UGameClockSystem::GetCurrentTime(int32_t* Hour, int32_t* Minute)
 	 //{
 	 //	static UFunction* fn = nullptr;
 	 //	if (!fn)
 	 //		fn = UObject::FindObject<UFunction>("Function fnaf9.GameClockSystem.GetCurrentTime");
-	 //	
-	 //	UGameClockSystem_GetCurrentTime_Params params {};
-	 //	
+
+	 //	UGameClockSystem_GetCurrentTime_Params params{};
+
 	 //	auto flags = fn->FunctionFlags;
 	 //	fn->FunctionFlags |= 0x00000400;
 	 //	UObject::ProcessEvent(fn, &params);
 	 //	fn->FunctionFlags = flags;
 
-	 //	// Broken
-	 //	//if (Hour != nullptr)
-	 //	//	*Hour = params.Hour;
-	 //	//if (Minute != nullptr)
-	 //	//	*Minute = params.Minute;
+	 //	if (Hour != nullptr)
+	 //		*Hour = params.Hour;
+	 //	if (Minute != nullptr)
+	 //		*Minute = params.Minute;
 	 //}
 
 	 /**
@@ -9949,10 +9947,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        NewRequiredInventoryItem                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NewRequiredSecurityLevel                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewRequiredSecurityLevel                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               NewRequiresPartyPass                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UInventoryConditionalComponent::SetNewConditions(const class FName& NewRequiredInventoryItem, int NewRequiredSecurityLevel, bool NewRequiresPartyPass)
+	void UInventoryConditionalComponent::SetNewConditions(const class FName& NewRequiredInventoryItem, int32_t NewRequiredSecurityLevel, bool NewRequiresPartyPass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10375,10 +10373,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.LightScenarioManager.SetInitialScenario
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		fnaf9_ELightingScenario                            Scenario                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ULightScenarioManager::SetInitialScenario(int Area, fnaf9_ELightingScenario Scenario)
+	void ULightScenarioManager::SetInitialScenario(int32_t Area, fnaf9_ELightingScenario Scenario)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10572,10 +10570,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.LightScenarioManager.GetLevelNameFromAreaScenario
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		fnaf9_ELightingScenario                            Scenario                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FName ULightScenarioManager::GetLevelNameFromAreaScenario(int Area, fnaf9_ELightingScenario Scenario)
+	class FName ULightScenarioManager::GetLevelNameFromAreaScenario(int32_t Area, fnaf9_ELightingScenario Scenario)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10621,7 +10619,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.LightScenarioManager.GetCurrentArea
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int ULightScenarioManager::GetCurrentArea()
+	int32_t ULightScenarioManager::GetCurrentArea()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10688,9 +10686,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.LightScenarioManager.ChangeArea
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Area                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ULightScenarioManager::ChangeArea(int Area)
+	void ULightScenarioManager::ChangeArea(int32_t Area)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10819,7 +10817,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.Localization.GetLocalizationCulture
 	 * 		Flags  -> (Final, Native, Static, Private, BlueprintCallable)
 	 */
-	TEnumAsByte<fnaf9_ELocalizationCulture> ULocalization::STATIC_GetLocalizationCulture()
+	fnaf9_ELocalizationCulture ULocalization::STATIC_GetLocalizationCulture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10841,9 +10839,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.Localization.ChangeLocalizationCulture
 	 * 		Flags  -> (Final, Native, Static, Private, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<fnaf9_ELocalizationCulture>            Culture                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		fnaf9_ELocalizationCulture                         Culture                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ULocalization::STATIC_ChangeLocalizationCulture(TEnumAsByte<fnaf9_ELocalizationCulture> Culture)
+	void ULocalization::STATIC_ChangeLocalizationCulture(fnaf9_ELocalizationCulture Culture)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10988,7 +10986,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.MissionMarker.GetStateIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int AMissionMarker::GetStateIndex()
+	int32_t AMissionMarker::GetStateIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12077,9 +12075,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PatrollerInterface.SetCurrentPatrolPointIndex
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PatrolPointIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PatrolPointIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPatrollerInterface::SetCurrentPatrolPointIndex(int PatrolPointIndex)
+	void UPatrollerInterface::SetCurrentPatrolPointIndex(int32_t PatrolPointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12120,7 +12118,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.PatrollerInterface.GetCurrentPatrolPointIndex
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
-	int UPatrollerInterface::GetCurrentPatrolPointIndex()
+	int32_t UPatrollerInterface::GetCurrentPatrolPointIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14087,11 +14085,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetYellowScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetYellowScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetYellowScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14118,11 +14116,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetRedScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetRedScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetRedScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14149,11 +14147,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetPurpleScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetPurpleScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetPurpleScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14180,11 +14178,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetPinkScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetPinkScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetPinkScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14233,11 +14231,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetGreenScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetGreenScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetGreenScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14264,11 +14262,11 @@ namespace CG
 	 * 		Name   -> Function fnaf9.SurvivalItemRandomizer.GetGoldScore
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutCount                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPointsPerPackage                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutScore                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASurvivalItemRandomizer::GetGoldScore(int* OutCount, int* OutPointsPerPackage, int* OutScore)
+	void ASurvivalItemRandomizer::GetGoldScore(int32_t* OutCount, int32_t* OutPointsPerPackage, int32_t* OutScore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14446,10 +14444,10 @@ namespace CG
 	 * 		Name   -> Function fnaf9.VisualSourceComponent.SetVisualOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     visualOffset                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UVisualSourceComponent::SetVisualOffset(int PointIndex, const struct FVector& visualOffset)
+	void UVisualSourceComponent::SetVisualOffset(int32_t PointIndex, const struct FVector& visualOffset)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14494,9 +14492,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.VisualSourceComponent.RemoveVisualOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UVisualSourceComponent::RemoveVisualOffset(int PointIndex)
+	void UVisualSourceComponent::RemoveVisualOffset(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14842,9 +14840,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.SetSurvivalMaxDeaths
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                MaxDeaths                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            MaxDeaths                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::SetSurvivalMaxDeaths(int MaxDeaths)
+	void UWorldStateSystem::SetSurvivalMaxDeaths(int32_t MaxDeaths)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14888,9 +14886,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.SetRandomSeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::SetRandomSeed(int Seed)
+	void UWorldStateSystem::SetRandomSeed(int32_t Seed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14934,9 +14932,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.SetPlayerInPowerStation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InPowerStationID                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InPowerStationID                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::SetPlayerInPowerStation(int InPowerStationID)
+	void UWorldStateSystem::SetPlayerInPowerStation(int32_t InPowerStationID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15023,9 +15021,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.SetFreddyPatrolPoint
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                PatrolPointIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PatrolPointIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::SetFreddyPatrolPoint(int PatrolPointIndex)
+	void UWorldStateSystem::SetFreddyPatrolPoint(int32_t PatrolPointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15319,7 +15317,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetSurvivalMaxDeaths
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetSurvivalMaxDeaths()
+	int32_t UWorldStateSystem::GetSurvivalMaxDeaths()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15422,7 +15420,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetRandomSeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetRandomSeed()
+	int32_t UWorldStateSystem::GetRandomSeed()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15445,9 +15443,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		bool                                               OutPlayerInPowerStation                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                OutPowerStationID                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutPowerStationID                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::GetPowerStationInfo(bool* OutPlayerInPowerStation, int* OutPowerStationID)
+	void UWorldStateSystem::GetPowerStationInfo(bool* OutPlayerInPowerStation, int32_t* OutPowerStationID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15472,7 +15470,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetLivesRemaining
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetLivesRemaining()
+	int32_t UWorldStateSystem::GetLivesRemaining()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15516,7 +15514,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetFreddyPatrolPoint
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetFreddyPatrolPoint()
+	int32_t UWorldStateSystem::GetFreddyPatrolPoint()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15538,7 +15536,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetCurrentSpottedCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetCurrentSpottedCount()
+	int32_t UWorldStateSystem::GetCurrentSpottedCount()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15604,7 +15602,7 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.GetCurrentDeathCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWorldStateSystem::GetCurrentDeathCount()
+	int32_t UWorldStateSystem::GetCurrentDeathCount()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15847,9 +15845,9 @@ namespace CG
 	 * 		Name   -> Function fnaf9.WorldStateSystem.AddDeath
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OutRemainingLives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutRemainingLives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWorldStateSystem::AddDeath(int* OutRemainingLives)
+	void UWorldStateSystem::AddDeath(int32_t* OutRemainingLives)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

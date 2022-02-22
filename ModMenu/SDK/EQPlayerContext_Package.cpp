@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EQPlayerContext_Package.h"
 
 namespace CG
 {

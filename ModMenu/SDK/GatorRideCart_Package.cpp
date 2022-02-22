@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GatorRideCart_Package.h"
 
 namespace CG
 {
@@ -123,9 +122,9 @@ namespace CG
 	 * 		Name   -> Function GatorRideCart.GatorRideCart_C.ExecuteUbergraph_GatorRideCart
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AGatorRideCart_C::ExecuteUbergraph_GatorRideCart(int EntryPoint)
+	void AGatorRideCart_C::ExecuteUbergraph_GatorRideCart(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

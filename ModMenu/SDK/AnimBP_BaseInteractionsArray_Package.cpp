@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AnimBP_BaseInteractionsArray_Package.h"
 
 namespace CG
 {

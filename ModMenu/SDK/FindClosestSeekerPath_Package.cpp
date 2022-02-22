@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindClosestSeekerPath_Package.h"
 
 namespace CG
 {
@@ -17,14 +16,14 @@ namespace CG
 	 * 		Name   -> Function FindClosestSeekerPath.FindClosestSeekerPath_C.Find Best Next Point
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APatrolPath_C*                               InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     PointLocation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     PawnPosition                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                BestNextPointIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            BestNextPointIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     BestNextPointLocation                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindClosestSeekerPath_C::Find_Best_Next_Point(int PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int* BestNextPointIndex, struct FVector* BestNextPointLocation)
+	void UFindClosestSeekerPath_C::Find_Best_Next_Point(int32_t PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int32_t* BestNextPointIndex, struct FVector* BestNextPointLocation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -76,9 +75,9 @@ namespace CG
 	 * 		Name   -> Function FindClosestSeekerPath.FindClosestSeekerPath_C.ExecuteUbergraph_FindClosestSeekerPath
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindClosestSeekerPath_C::ExecuteUbergraph_FindClosestSeekerPath(int EntryPoint)
+	void UFindClosestSeekerPath_C::ExecuteUbergraph_FindClosestSeekerPath(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

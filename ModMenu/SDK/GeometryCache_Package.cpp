@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GeometryCache_Package.h"
 
 namespace CG
 {
@@ -484,7 +483,7 @@ namespace CG
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetNumberOfFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UGeometryCacheComponent::GetNumberOfFrames()
+	int32_t UGeometryCacheComponent::GetNumberOfFrames()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

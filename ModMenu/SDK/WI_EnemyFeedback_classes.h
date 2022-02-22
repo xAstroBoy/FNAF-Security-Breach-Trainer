@@ -29,7 +29,7 @@ namespace CG
 		void PlayFeedback(float Damage);
 		void EndFeedback();
 		void Construct();
-		void ExecuteUbergraph_WI_EnemyFeedback(int EntryPoint);
+		void ExecuteUbergraph_WI_EnemyFeedback(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

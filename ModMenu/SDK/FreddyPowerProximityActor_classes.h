@@ -30,8 +30,8 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void Setup_Proximity(int FreddyPower);
-		void ExecuteUbergraph_FreddyPowerProximityActor(int EntryPoint);
+		void Setup_Proximity(int32_t FreddyPower);
+		void ExecuteUbergraph_FreddyPowerProximityActor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

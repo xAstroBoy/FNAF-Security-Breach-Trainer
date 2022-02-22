@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredChicaSpawnTrigger_Package.h"
 
 namespace CG
 {
@@ -99,9 +98,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ExecuteUbergraph_ShatteredChicaSpawnTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredChicaSpawnTrigger_C::ExecuteUbergraph_ShatteredChicaSpawnTrigger(int EntryPoint)
+	void AShatteredChicaSpawnTrigger_C::ExecuteUbergraph_ShatteredChicaSpawnTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FlashlightCollectible_Package.h"
 
 namespace CG
 {
@@ -130,9 +129,9 @@ namespace CG
 	 * 		Name   -> Function FlashlightCollectible.FlashlightCollectible_C.ExecuteUbergraph_FlashlightCollectible
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightCollectible_C::ExecuteUbergraph_FlashlightCollectible(int EntryPoint)
+	void AFlashlightCollectible_C::ExecuteUbergraph_FlashlightCollectible(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

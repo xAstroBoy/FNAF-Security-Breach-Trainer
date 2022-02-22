@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "A_FazerBlast_FlagAttackSpawner_Package.h"
 
 namespace CG
 {
@@ -101,9 +100,9 @@ namespace CG
 	 * 		Name   -> Function A_FazerBlast_FlagAttackSpawner.A_FazerBlast_FlagAttackSpawner_C.ExecuteUbergraph_A_FazerBlast_FlagAttackSpawner
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AA_FazerBlast_FlagAttackSpawner_C::ExecuteUbergraph_A_FazerBlast_FlagAttackSpawner(int EntryPoint)
+	void AA_FazerBlast_FlagAttackSpawner_C::ExecuteUbergraph_A_FazerBlast_FlagAttackSpawner(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

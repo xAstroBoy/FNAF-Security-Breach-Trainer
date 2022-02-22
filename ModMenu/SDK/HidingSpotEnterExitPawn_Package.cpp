@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HidingSpotEnterExitPawn_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function HidingSpotEnterExitPawn.HidingSpotEnterExitPawn_C.ExecuteUbergraph_HidingSpotEnterExitPawn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHidingSpotEnterExitPawn_C::ExecuteUbergraph_HidingSpotEnterExitPawn(int EntryPoint)
+	void AHidingSpotEnterExitPawn_C::ExecuteUbergraph_HidingSpotEnterExitPawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

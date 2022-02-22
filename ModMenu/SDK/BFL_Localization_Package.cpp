@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BFL_Localization_Package.h"
 
 namespace CG
 {

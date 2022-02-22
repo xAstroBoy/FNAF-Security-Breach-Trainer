@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void GetHideActor(TArray<class AActor*>* HideActors, class AAIController* AIController, class APawn* Pawn, class AActor** Actor);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindHidingLocation(int EntryPoint);
+		void ExecuteUbergraph_FindHidingLocation(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

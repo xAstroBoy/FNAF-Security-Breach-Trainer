@@ -36,7 +36,7 @@ namespace CG
 		void CancelHold();
 		void Begin_Hold();
 		void CompleteHoldProgress();
-		void ExecuteUbergraph_StaffbotKitchen_HoldProgress(int EntryPoint);
+		void ExecuteUbergraph_StaffbotKitchen_HoldProgress(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

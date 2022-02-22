@@ -31,7 +31,7 @@ namespace CG
 	public:
 		void Setup();
 		void On_Panel_Activate();
-		void ExecuteUbergraph_SecurityOfficeActivatableHandler(int EntryPoint);
+		void ExecuteUbergraph_SecurityOfficeActivatableHandler(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

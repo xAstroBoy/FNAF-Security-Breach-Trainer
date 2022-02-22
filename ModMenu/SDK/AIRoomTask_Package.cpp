@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AIRoomTask_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function AIRoomTask.AIRoomTask_C.ExecuteUbergraph_AIRoomTask
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAIRoomTask_C::ExecuteUbergraph_AIRoomTask(int EntryPoint)
+	void UAIRoomTask_C::ExecuteUbergraph_AIRoomTask(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

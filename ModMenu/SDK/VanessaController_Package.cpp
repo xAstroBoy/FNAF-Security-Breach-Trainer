@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VanessaController_Package.h"
 
 namespace CG
 {

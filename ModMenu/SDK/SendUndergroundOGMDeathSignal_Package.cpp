@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SendUndergroundOGMDeathSignal_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SendUndergroundOGMDeathSignal.SendUndergroundOGMDeathSignal_C.ExecuteUbergraph_SendUndergroundOGMDeathSignal
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USendUndergroundOGMDeathSignal_C::ExecuteUbergraph_SendUndergroundOGMDeathSignal(int EntryPoint)
+	void USendUndergroundOGMDeathSignal_C::ExecuteUbergraph_SendUndergroundOGMDeathSignal(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

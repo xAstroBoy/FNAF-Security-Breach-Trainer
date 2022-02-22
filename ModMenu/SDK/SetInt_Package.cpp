@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetInt_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetInt.SetInt_C.ExecuteUbergraph_SetInt
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetInt_C::ExecuteUbergraph_SetInt(int EntryPoint)
+	void USetInt_C::ExecuteUbergraph_SetInt(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -31,7 +31,7 @@ namespace CG
 		SlateCore_ECheckBoxState Get_HaveItemCheckbox_CheckedState_1();
 		void Setup(const class FName& InventoryItemName);
 		void BndEvt__HaveItemCheckbox_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void ExecuteUbergraph_DebugInventoryItem(int EntryPoint);
+		void ExecuteUbergraph_DebugInventoryItem(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

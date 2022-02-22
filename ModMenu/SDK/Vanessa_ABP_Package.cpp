@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Vanessa_ABP_Package.h"
 
 namespace CG
 {
@@ -205,9 +204,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsRight                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TEnumAsByte<Engine_EDrawDebugTrace>                DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EDrawDebugTrace                             DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	bool UVanessa_ABP_C::Perform_Scan_Trace(bool IsRight, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType)
+	bool UVanessa_ABP_C::Perform_Scan_Trace(bool IsRight, Engine_EDrawDebugTrace DrawDebugType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -231,9 +230,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsRightFoot                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TEnumAsByte<Engine_EDrawDebugTrace>                DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_EDrawDebugTrace                             DrawDebugType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVanessa_ABP_C::Perform_Foot_IK(bool IsRightFoot, TEnumAsByte<Engine_EDrawDebugTrace> DrawDebugType)
+	void UVanessa_ABP_C::Perform_Foot_IK(bool IsRightFoot, Engine_EDrawDebugTrace DrawDebugType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2046,9 +2045,9 @@ namespace CG
 	 * 		Name   -> Function Vanessa_ABP.Vanessa_ABP_C.ExecuteUbergraph_Vanessa_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVanessa_ABP_C::ExecuteUbergraph_Vanessa_ABP(int EntryPoint)
+	void UVanessa_ABP_C::ExecuteUbergraph_Vanessa_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void Update_Percentage(float Percentage);
 		void Reset();
-		void ExecuteUbergraph_FlashlightRechargeUI(int EntryPoint);
+		void ExecuteUbergraph_FlashlightRechargeUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

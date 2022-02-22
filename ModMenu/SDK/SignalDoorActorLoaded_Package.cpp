@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SignalDoorActorLoaded_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function SignalDoorActorLoaded.SignalDoorActorLoaded_C.ExecuteUbergraph_SignalDoorActorLoaded
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASignalDoorActorLoaded_C::ExecuteUbergraph_SignalDoorActorLoaded(int EntryPoint)
+	void ASignalDoorActorLoaded_C::ExecuteUbergraph_SignalDoorActorLoaded(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

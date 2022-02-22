@@ -23,13 +23,13 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		bool                                                       EnableHeadAim;                                           // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_0YL2[0x7];                                   // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZMY1[0x7];                                   // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              TargetActor;                                             // 0x00B8(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              TargetLocation;                                          // 0x00E0(0x0028) Edit, BlueprintVisible
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_SetHeadAim(int EntryPoint);
+		void ExecuteUbergraph_SetHeadAim(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

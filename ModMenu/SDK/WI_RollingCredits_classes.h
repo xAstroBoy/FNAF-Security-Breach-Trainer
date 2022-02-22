@@ -42,7 +42,7 @@ namespace CG
 	public:
 		void ResetCredits();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_WI_RollingCredits(int EntryPoint);
+		void ExecuteUbergraph_WI_RollingCredits(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

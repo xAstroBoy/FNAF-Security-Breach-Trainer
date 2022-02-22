@@ -27,8 +27,8 @@ namespace CG
 		unsigned char                                              Security_Office[0x28];                                   // 0x0240(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
-		void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex);
-		void ExecuteUbergraph_JungleGymExitTrigger(int EntryPoint);
+		void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
+		void ExecuteUbergraph_JungleGymExitTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

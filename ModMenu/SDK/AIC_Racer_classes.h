@@ -28,7 +28,7 @@ namespace CG
 
 	public:
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_AIC_Racer(int EntryPoint);
+		void ExecuteUbergraph_AIC_Racer(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

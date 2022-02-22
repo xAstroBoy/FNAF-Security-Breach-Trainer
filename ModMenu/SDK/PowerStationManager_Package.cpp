@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PowerStationManager_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PowerStationID                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PowerStationID                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APowerStationManager_C::GetPowerStationID(class APowerStation_Actor_C* PowerStation, int* PowerStationID)
+	void APowerStationManager_C::GetPowerStationID(class APowerStation_Actor_C* PowerStation, int32_t* PowerStationID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -83,10 +82,10 @@ namespace CG
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.GetPowerStationByID
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APowerStationManager_C::GetPowerStationByID(int PowerStationID, class APowerStation_Actor_C** PowerStation)
+	void APowerStationManager_C::GetPowerStationByID(int32_t PowerStationID, class APowerStation_Actor_C** PowerStation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -150,9 +149,9 @@ namespace CG
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.ExecuteUbergraph_PowerStationManager
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APowerStationManager_C::ExecuteUbergraph_PowerStationManager(int EntryPoint)
+	void APowerStationManager_C::ExecuteUbergraph_PowerStationManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -173,9 +172,9 @@ namespace CG
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APowerStationManager_C::OnPowerStationEntered__DelegateSignature(class APowerStation_Actor_C* PowerStation, int PowerStationID)
+	void APowerStationManager_C::OnPowerStationEntered__DelegateSignature(class APowerStation_Actor_C* PowerStation, int32_t PowerStationID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

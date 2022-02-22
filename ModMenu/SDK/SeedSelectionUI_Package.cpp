@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SeedSelectionUI_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function SeedSelectionUI.SeedSelectionUI_C.GetSeedInteger
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                SeedSingleInt                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            SeedSingleInt                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USeedSelectionUI_C::GetSeedInteger(int* SeedSingleInt)
+	void USeedSelectionUI_C::GetSeedInteger(int32_t* SeedSingleInt)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -250,9 +249,9 @@ namespace CG
 	 * 		Name   -> Function SeedSelectionUI.SeedSelectionUI_C.ExecuteUbergraph_SeedSelectionUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USeedSelectionUI_C::ExecuteUbergraph_SeedSelectionUI(int EntryPoint)
+	void USeedSelectionUI_C::ExecuteUbergraph_SeedSelectionUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

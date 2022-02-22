@@ -50,12 +50,12 @@ namespace CG
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0A98(0x00B0)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0B48(0x0020)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0B68(0x0020)
-		unsigned char                                              UnknownData_NIZB[0x8];                                   // 0x0B88(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MEZZ[0x8];                                   // 0x0B88(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_2;                            // 0x0B90(0x0440)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics;                              // 0x0FD0(0x0440)
-		TEnumAsByte<AnimatronicModeEnum_EAnimatronicModeEnum>      AnimationMode;                                           // 0x1410(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		AnimatronicModeEnum_EAnimatronicModeEnum                   AnimationMode;                                           // 0x1410(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       LoopCutScene;                                            // 0x1411(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_THX8[0x6];                                   // 0x1412(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5T2A[0x6];                                   // 0x1412(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   CutSceneAnim;                                            // 0x1418(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class ABurntrap_C*                                         Pawn;                                                    // 0x1420(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      DeltaTimeX;                                              // 0x1428(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -109,7 +109,7 @@ namespace CG
 		void BlueprintBeginPlay();
 		void CanDieEvent(bool Off);
 		void CanHackEvent(bool Off);
-		void ExecuteUbergraph_Burntrap_ABP(int EntryPoint);
+		void ExecuteUbergraph_Burntrap_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Gregory_Stamina_Package.h"
 
 namespace CG
 {
@@ -155,9 +154,9 @@ namespace CG
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.ExecuteUbergraph_WI_Gregory_Stamina
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Stamina_C::ExecuteUbergraph_WI_Gregory_Stamina(int EntryPoint)
+	void UWI_Gregory_Stamina_C::ExecuteUbergraph_WI_Gregory_Stamina(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -177,9 +176,9 @@ namespace CG
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.PowerLevelDispatch__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Gregory_Stamina_C::PowerLevelDispatch__DelegateSignature(int PowerLevel)
+	void UWI_Gregory_Stamina_C::PowerLevelDispatch__DelegateSignature(int32_t PowerLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

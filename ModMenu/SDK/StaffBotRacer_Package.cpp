@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffBotRacer_Package.h"
 
 namespace CG
 {

@@ -21,7 +21,7 @@ namespace CG
 	class APlayerControlledStaffBot_Kitchen_C : public APlayerControlledStaffBot_C
 	{
 	public:
-		unsigned char                                              UnknownData_MX32[0x4];                                   // 0x0504(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9ZYN[0x4];                                   // 0x0504(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0508(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USpotLightComponent*                                 SpotLight;                                               // 0x0510(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     CameraAttachment;                                        // 0x0518(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -42,7 +42,7 @@ namespace CG
 		void Setup(class AOGM_Kitchen_C* I_OGM_Kitchen);
 		void ReceiveTick(float DeltaSeconds);
 		void InpAxisEvt_Turn_K2Node_InputAxisEvent_1(float AxisValue);
-		void ExecuteUbergraph_PlayerControlledStaffBot_Kitchen(int EntryPoint);
+		void ExecuteUbergraph_PlayerControlledStaffBot_Kitchen(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

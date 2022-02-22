@@ -24,7 +24,7 @@ namespace CG
 		struct FMagicLeapSharedWorldSharedData                     SharedWorldData;                                         // 0x0310(0x0010) BlueprintVisible, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnNewLocalDataFromClients;                               // 0x0320(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		float                                                      PinSelectionConfidenceThreshold;                         // 0x0330(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4T6U[0xA4];                                  // 0x0334(0x00A4) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3707[0xA4];                                  // 0x0334(0x00A4) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AMagicLeapSharedWorldPlayerController*               ChosenOne;                                               // 0x03D8(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 
 	public:
@@ -62,7 +62,7 @@ namespace CG
 	class AMagicLeapSharedWorldPlayerController : public APlayerController
 	{
 	public:
-		unsigned char                                              UnknownData_G7H8[0x18];                                  // 0x0578(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LNY2[0x18];                                  // 0x0578(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		void ServerSetLocalWorldData(const struct FMagicLeapSharedWorldLocalData& LocalWorldReplicationData);

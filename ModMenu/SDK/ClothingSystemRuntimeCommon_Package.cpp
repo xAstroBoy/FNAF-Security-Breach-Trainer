@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ClothingSystemRuntimeCommon_Package.h"
 
 namespace CG
 {

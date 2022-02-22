@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_MontyJumpTell(int EntryPoint);
+		void ExecuteUbergraph_MontyJumpTell(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

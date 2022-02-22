@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Freddy_FazNotification_Package.h"
 
 namespace CG
 {
@@ -232,9 +231,9 @@ namespace CG
 	 * 		Name   -> Function WI_Freddy_FazNotification.WI_Freddy_FazNotification_C.ExecuteUbergraph_WI_Freddy_FazNotification
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Freddy_FazNotification_C::ExecuteUbergraph_WI_Freddy_FazNotification(int EntryPoint)
+	void UWI_Freddy_FazNotification_C::ExecuteUbergraph_WI_Freddy_FazNotification(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "InventoryItemButton_Package.h"
 
 namespace CG
 {
@@ -158,9 +157,9 @@ namespace CG
 	 * 		Name   -> Function InventoryItemButton.InventoryItemButton_C.ExecuteUbergraph_InventoryItemButton
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UInventoryItemButton_C::ExecuteUbergraph_InventoryItemButton(int EntryPoint)
+	void UInventoryItemButton_C::ExecuteUbergraph_InventoryItemButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

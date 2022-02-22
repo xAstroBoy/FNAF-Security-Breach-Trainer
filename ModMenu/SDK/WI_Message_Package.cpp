@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Message_Package.h"
 
 namespace CG
 {
@@ -382,9 +381,9 @@ namespace CG
 	 * 		Name   -> Function WI_Message.WI_Message_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Message_C::InputCycle(int Increment)
+	void UWI_Message_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -677,9 +676,9 @@ namespace CG
 	 * 		Name   -> Function WI_Message.WI_Message_C.ExecuteUbergraph_WI_Message
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Message_C::ExecuteUbergraph_WI_Message(int EntryPoint)
+	void UWI_Message_C::ExecuteUbergraph_WI_Message(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

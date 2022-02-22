@@ -34,7 +34,7 @@ namespace CG
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone;                                // 0x0510(0x0108)
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0618(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0648(0x00B0)
-		unsigned char                                              UnknownData_DDRX[0x8];                                   // 0x06F8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FTVN[0x8];                                   // 0x06F8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_RigidBody                                 AnimGraphNode_RigidBody;                                 // 0x0700(0x0590)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0C90(0x0020)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0CB0(0x0020)
@@ -43,7 +43,7 @@ namespace CG
 		float                                                      CrankRotationSpeed;                                      // 0x0CD8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      CrankTargetSpeed;                                        // 0x0CDC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsOpen;                                                  // 0x0CE0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_Q7J3[0x3];                                   // 0x0CE1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2E8Q[0x3];                                   // 0x0CE1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                Present_Root_jntSocket;                                  // 0x0CE4(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       EnableRigidBody;                                         // 0x0CEC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -57,7 +57,7 @@ namespace CG
 		void Stop_Crank();
 		void AnimNotify_ModelSwap();
 		void AnimNotify_EnableRigidBody();
-		void ExecuteUbergraph_BoingyBoxABP(int EntryPoint);
+		void ExecuteUbergraph_BoingyBoxABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

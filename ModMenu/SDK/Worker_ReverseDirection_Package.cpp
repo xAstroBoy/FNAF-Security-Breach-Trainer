@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_ReverseDirection_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Worker_ReverseDirection.Worker_ReverseDirection_C.ExecuteUbergraph_Worker_ReverseDirection
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_ReverseDirection_C::ExecuteUbergraph_Worker_ReverseDirection(int EntryPoint)
+	void UWorker_ReverseDirection_C::ExecuteUbergraph_Worker_ReverseDirection(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

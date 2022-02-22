@@ -28,11 +28,11 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void BndEvt__MontySphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__MontySphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1(float AxisValue);
 		void ReceivePossessed(class AController* NewController);
 		void Fire();
-		void ExecuteUbergraph_BallCannonLimitedShotsPawn(int EntryPoint);
+		void ExecuteUbergraph_BallCannonLimitedShotsPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

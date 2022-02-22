@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_Health_Fazerblast_Package.h"
 
 namespace CG
 {
@@ -161,9 +160,9 @@ namespace CG
 	 * 		Name   -> Function WI_Health_Fazerblast.WI_Health_Fazerblast_C.EnemyHit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                HitValue                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            HitValue                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Health_Fazerblast_C::EnemyHit(int HitValue)
+	void UWI_Health_Fazerblast_C::EnemyHit(int32_t HitValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -243,9 +242,9 @@ namespace CG
 	 * 		Name   -> Function WI_Health_Fazerblast.WI_Health_Fazerblast_C.ExecuteUbergraph_WI_Health_Fazerblast
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_Health_Fazerblast_C::ExecuteUbergraph_WI_Health_Fazerblast(int EntryPoint)
+	void UWI_Health_Fazerblast_C::ExecuteUbergraph_WI_Health_Fazerblast(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

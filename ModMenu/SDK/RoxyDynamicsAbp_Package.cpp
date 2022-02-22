@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoxyDynamicsAbp_Package.h"
 
 namespace CG
 {
@@ -214,9 +213,9 @@ namespace CG
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.ExecuteUbergraph_RoxyDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URoxyDynamicsABP_C::ExecuteUbergraph_RoxyDynamicsABP(int EntryPoint)
+	void URoxyDynamicsABP_C::ExecuteUbergraph_RoxyDynamicsABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

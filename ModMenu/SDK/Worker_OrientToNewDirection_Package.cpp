@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_OrientToNewDirection_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function Worker_OrientToNewDirection.Worker_OrientToNewDirection_C.ExecuteUbergraph_Worker_OrientToNewDirection
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_OrientToNewDirection_C::ExecuteUbergraph_Worker_OrientToNewDirection(int EntryPoint)
+	void UWorker_OrientToNewDirection_C::ExecuteUbergraph_Worker_OrientToNewDirection(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -21,7 +21,7 @@ namespace CG
 	class ASlide_AtriumtoKitchen_Vent_C : public ASlideSystem_C
 	{
 	public:
-		unsigned char                                              UnknownData_EXWC[0x4];                                   // 0x028C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_T7JL[0x4];                                   // 0x028C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0290(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateHandler_C*                              FlashlightMissionComplete;                               // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class ALMMSplineFollower_C*                                SplineFollower;                                          // 0x02A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -30,7 +30,7 @@ namespace CG
 		void GetInstructionOverride(class FText* Instruction);
 		void On_Slide_Entered();
 		void FinishedSliding();
-		void ExecuteUbergraph_Slide_AtriumtoKitchen_Vent(int EntryPoint);
+		void ExecuteUbergraph_Slide_AtriumtoKitchen_Vent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

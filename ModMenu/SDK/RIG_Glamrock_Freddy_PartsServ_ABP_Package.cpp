@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RIG_Glamrock_Freddy_PartsServ_ABP_Package.h"
 
 namespace CG
 {
@@ -1100,9 +1099,9 @@ namespace CG
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum   GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_Glamrock_Freddy_PartsServ_ABP_C::PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum)
+	void URIG_Glamrock_Freddy_PartsServ_ABP_C::PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1343,9 +1342,9 @@ namespace CG
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_Glamrock_Freddy_PartsServ_ABP_C::ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP(int EntryPoint)
+	void URIG_Glamrock_Freddy_PartsServ_ABP_C::ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void ChangeVisuals(bool enable, class UMeshComponent* Mesh, class UMaterialInterface* Material);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_DebugVisComponent(int EntryPoint);
+		void ExecuteUbergraph_DebugVisComponent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

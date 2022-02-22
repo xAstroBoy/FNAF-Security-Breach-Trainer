@@ -26,14 +26,14 @@ namespace CG
 		class UImage*                                              SeedKey;                                                 // 0x0240(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UButton*                                             Up_Button;                                               // 0x0248(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		TArray<struct FSlateBrush>                                 SeedOptionsArray;                                        // 0x0250(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		int                                                        SeedIndex;                                               // 0x0260(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    SeedIndex;                                               // 0x0260(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       FirstHover_Up;                                           // 0x0264(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       FirstHover_Down;                                         // 0x0265(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void HighlightDownButton();
 		void HighlightUpButton();
-		void GetSeedInteger(int* SeedSingleInt);
+		void GetSeedInteger(int32_t* SeedSingleInt);
 		void BndEvt__Up_Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__Down_Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
 		void Construct();
@@ -43,7 +43,7 @@ namespace CG
 		void Focus();
 		void BndEvt__Down_Button_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature();
 		void BndEvt__Up_Button_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature();
-		void ExecuteUbergraph_SeedSelectionUI(int EntryPoint);
+		void ExecuteUbergraph_SeedSelectionUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

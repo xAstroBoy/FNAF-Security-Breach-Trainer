@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerNavDistance_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function PlayerNavDistance.PlayerNavDistance_C.ExecuteUbergraph_PlayerNavDistance
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerNavDistance_C::ExecuteUbergraph_PlayerNavDistance(int EntryPoint)
+	void UPlayerNavDistance_C::ExecuteUbergraph_PlayerNavDistance(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

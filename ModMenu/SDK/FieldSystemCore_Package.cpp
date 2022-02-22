@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FieldSystemCore_Package.h"
 
 namespace CG
 {

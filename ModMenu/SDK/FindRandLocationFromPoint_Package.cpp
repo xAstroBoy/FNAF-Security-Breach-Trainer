@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindRandLocationFromPoint_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindRandLocationFromPoint.FindRandLocationFromPoint_C.ExecuteUbergraph_FindRandLocationFromPoint
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindRandLocationFromPoint_C::ExecuteUbergraph_FindRandLocationFromPoint(int EntryPoint)
+	void UFindRandLocationFromPoint_C::ExecuteUbergraph_FindRandLocationFromPoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

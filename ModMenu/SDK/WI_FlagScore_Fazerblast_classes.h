@@ -31,13 +31,13 @@ namespace CG
 		class UTextBlock*                                          ScoreText;                                               // 0x0278(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTextBlock*                                          ScoreValueText;                                          // 0x0280(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTextBlock*                                          UpdateScoreText;                                         // 0x0288(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		int                                                        Score;                                                   // 0x0290(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		int                                                        WinScore;                                                // 0x0294(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Score;                                                   // 0x0290(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		int32_t                                                    WinScore;                                                // 0x0294(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UWI_Feedback_C*                                      FeedBackReference;                                       // 0x0298(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             GameWon;                                                 // 0x02A0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void UpdateScore(int UpdateScore);
+		void UpdateScore(int32_t UpdateScore);
 		void LaserHit(class AEQ_LaserGun_C* Gun, const struct FHitResult& HitResult);
 		void ForceKill(bool Animate_);
 		void GameExit();
@@ -46,7 +46,7 @@ namespace CG
 		void FlagCaptured();
 		void GameEnd();
 		void GameStart();
-		void ExecuteUbergraph_WI_FlagScore_Fazerblast(int EntryPoint);
+		void ExecuteUbergraph_WI_FlagScore_Fazerblast(int32_t EntryPoint);
 		void GameWon__DelegateSignature();
 		static UClass* StaticClass();
 	};

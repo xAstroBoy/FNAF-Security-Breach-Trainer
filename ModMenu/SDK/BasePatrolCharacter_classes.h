@@ -23,15 +23,15 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x04D8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class APatrolPath_C*                                       PatrolPoints;                                            // 0x04E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        StartingPoint;                                           // 0x04E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    StartingPoint;                                           // 0x04E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		int GetCurrentPatrolPointIndex();
+		int32_t GetCurrentPatrolPointIndex();
 		void GetPatrolPath();
-		void SetCurrentPatrolPointIndex(int PatrolPointIndex);
+		void SetCurrentPatrolPointIndex(int32_t PatrolPointIndex);
 		void SetPatrolPath();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_BasePatrolCharacter(int EntryPoint);
+		void ExecuteUbergraph_BasePatrolCharacter(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -29,7 +29,7 @@ namespace CG
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void UpdateDistance(class AActor* ControlledPawn);
 		void ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_PlayerDistanceService(int EntryPoint);
+		void ExecuteUbergraph_PlayerDistanceService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

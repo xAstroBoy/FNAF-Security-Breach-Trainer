@@ -37,10 +37,10 @@ namespace CG
 		unsigned char                                              MontyBossTeleportLocator[0x28];                          // 0x0298(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              ChicaBossTeleportLocator[0x28];                          // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       CompletingTasks;                                         // 0x02E8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_UJY4[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JUAW[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        TasksUpdated;                                            // 0x02F0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		int                                                        SelectedSkipPaths;                                       // 0x0300(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        SkipPathState;                                           // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    SelectedSkipPaths;                                       // 0x0300(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    SkipPathState;                                           // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              RoxyBossTeleportLocator[0x28];                           // 0x0308(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              VannyBossTeleportLocator[0x28];                          // 0x0330(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              BurntrapBossTeleportLocator[0x28];                       // 0x0358(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -54,7 +54,7 @@ namespace CG
 		void Spawn_Or_Teleport_Freddy(const struct FTransform& Destination, bool SickFreddy, class AFreddy_C** Freddy);
 		void SetUpTaskActivateStates(const class FName& TaskName);
 		void AwardTaskItems(const class FName& TaskName);
-		void CompleteMissionTask(const class FName& MissionName, int InfoState);
+		void CompleteMissionTask(const class FName& MissionName, int32_t InfoState);
 		void UpdateDependentMissions(const class FName& MissionName, TArray<class FName>* TasksUpdated);
 		void AwardItems(TArray<class FName>* Array);
 		void OnBP_OnGetItemChildren_1(class UObject* Item, TArray<class UObject*>* Children);
@@ -64,12 +64,12 @@ namespace CG
 		void BndEvt__MontyBossButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__ChicaBossButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__StartHour6Button_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
-		void BndEvt__DbgHour3SkipPathSelect_K2Node_ComponentBoundEvent_4_OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam);
-		void BndEvt__DbgHour6SkipPathSelect_K2Node_ComponentBoundEvent_5_OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam);
+		void BndEvt__DbgHour3SkipPathSelect_K2Node_ComponentBoundEvent_4_OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam);
+		void BndEvt__DbgHour6SkipPathSelect_K2Node_ComponentBoundEvent_5_OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam);
 		void BndEvt__RoxyBossButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__VannyBossButton_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__BurntrapBossButton_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature();
-		void ExecuteUbergraph_DebugMissionUI(int EntryPoint);
+		void ExecuteUbergraph_DebugMissionUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

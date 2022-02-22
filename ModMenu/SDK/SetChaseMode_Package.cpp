@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetChaseMode_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetChaseMode.SetChaseMode_C.ExecuteUbergraph_SetChaseMode
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetChaseMode_C::ExecuteUbergraph_SetChaseMode(int EntryPoint)
+	void USetChaseMode_C::ExecuteUbergraph_SetChaseMode(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

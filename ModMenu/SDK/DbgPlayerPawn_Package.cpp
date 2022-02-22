@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgPlayerPawn_Package.h"
 
 namespace CG
 {
@@ -17,7 +16,7 @@ namespace CG
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.GetCollisionMode
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
-	TEnumAsByte<Engine_ECollisionEnabled> ADbgPlayerPawn_C::GetCollisionMode()
+	Engine_ECollisionEnabled ADbgPlayerPawn_C::GetCollisionMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -38,9 +37,9 @@ namespace CG
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.Set Collision Mode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Engine_ECollisionEnabled>              NewType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Engine_ECollisionEnabled                           NewType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADbgPlayerPawn_C::Set_Collision_Mode(TEnumAsByte<Engine_ECollisionEnabled> NewType)
+	void ADbgPlayerPawn_C::Set_Collision_Mode(Engine_ECollisionEnabled NewType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -60,9 +59,9 @@ namespace CG
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.ExecuteUbergraph_DbgPlayerPawn
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADbgPlayerPawn_C::ExecuteUbergraph_DbgPlayerPawn(int EntryPoint)
+	void ADbgPlayerPawn_C::ExecuteUbergraph_DbgPlayerPawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

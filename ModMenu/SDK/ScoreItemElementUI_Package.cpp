@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ScoreItemElementUI_Package.h"
 
 namespace CG
 {
@@ -17,11 +16,11 @@ namespace CG
 	 * 		Name   -> Function ScoreItemElementUI.ScoreItemElementUI_C.SetScore
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointsPerItem                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Score                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointsPerItem                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Score                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UScoreItemElementUI_C::SetScore(int Count, int PointsPerItem, int Score)
+	void UScoreItemElementUI_C::SetScore(int32_t Count, int32_t PointsPerItem, int32_t Score)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function ScoreItemElementUI.ScoreItemElementUI_C.ExecuteUbergraph_ScoreItemElementUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UScoreItemElementUI_C::ExecuteUbergraph_ScoreItemElementUI(int EntryPoint)
+	void UScoreItemElementUI_C::ExecuteUbergraph_ScoreItemElementUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

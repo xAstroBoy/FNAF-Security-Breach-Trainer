@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SightDetectionService_Package.h"
 
 namespace CG
 {
@@ -181,9 +180,9 @@ namespace CG
 	 * 		Name   -> Function SightDetectionService.SightDetectionService_C.ExecuteUbergraph_SightDetectionService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USightDetectionService_C::ExecuteUbergraph_SightDetectionService(int EntryPoint)
+	void USightDetectionService_C::ExecuteUbergraph_SightDetectionService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

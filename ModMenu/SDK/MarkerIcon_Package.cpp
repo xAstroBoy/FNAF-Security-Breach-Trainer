@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MarkerIcon_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function MarkerIcon.MarkerIcon_C.ExecuteUbergraph_MarkerIcon
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMarkerIcon_C::ExecuteUbergraph_MarkerIcon(int EntryPoint)
+	void UMarkerIcon_C::ExecuteUbergraph_MarkerIcon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

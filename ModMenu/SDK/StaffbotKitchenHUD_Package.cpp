@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotKitchenHUD_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotKitchenHUD.StaffbotKitchenHUD_C.Complete Current Pizza Step
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PizzaStep_EPizzaStep>                  PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PizzaStep_EPizzaStep                               PizzaStep                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbotKitchenHUD_C::Complete_Current_Pizza_Step(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep)
+	void UStaffbotKitchenHUD_C::Complete_Current_Pizza_Step(PizzaStep_EPizzaStep PizzaStep)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -258,9 +257,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotKitchenHUD.StaffbotKitchenHUD_C.ExecuteUbergraph_StaffbotKitchenHUD
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbotKitchenHUD_C::ExecuteUbergraph_StaffbotKitchenHUD(int EntryPoint)
+	void UStaffbotKitchenHUD_C::ExecuteUbergraph_StaffbotKitchenHUD(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

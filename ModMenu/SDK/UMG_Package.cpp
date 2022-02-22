@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UMG_Package.h"
 
 namespace CG
 {
@@ -474,9 +473,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Widget.SetCursor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<CoreUObject_EMouseCursor>              InCursor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		CoreUObject_EMouseCursor                           InCursor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWidget::SetCursor(TEnumAsByte<CoreUObject_EMouseCursor> InCursor)
+	void UWidget::SetCursor(CoreUObject_EMouseCursor InCursor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -746,10 +745,10 @@ namespace CG
 	 * 		Name   -> Function UMG.Widget.HasMouseCaptureByUser
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                UserIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                PointerIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            UserIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PointerIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UWidget::HasMouseCaptureByUser(int UserIndex, int PointerIndex)
+	bool UWidget::HasMouseCaptureByUser(int32_t UserIndex, int32_t PointerIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1142,7 +1141,7 @@ namespace CG
 	 * 		Name   -> DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
-	TEnumAsByte<CoreUObject_EMouseCursor> UWidget::GetMouseCursor__DelegateSignature()
+	CoreUObject_EMouseCursor UWidget::GetMouseCursor__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1206,7 +1205,7 @@ namespace CG
 	 * 		Name   -> DelegateFunction UMG.Widget.GetInt32__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
-	int UWidget::GetInt32__DelegateSignature()
+	int32_t UWidget::GetInt32__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1483,9 +1482,9 @@ namespace CG
 	 * 		Name   -> Function UMG.PanelWidget.RemoveChildAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPanelWidget::RemoveChildAt(int Index)
+	bool UPanelWidget::RemoveChildAt(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1580,7 +1579,7 @@ namespace CG
 	 * 		Name   -> Function UMG.PanelWidget.GetChildrenCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UPanelWidget::GetChildrenCount()
+	int32_t UPanelWidget::GetChildrenCount()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1604,7 +1603,7 @@ namespace CG
 	 * Parameters:
 	 * 		class UWidget*                                     Content                                                    (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UPanelWidget::GetChildIndex(class UWidget* Content)
+	int32_t UPanelWidget::GetChildIndex(class UWidget* Content)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1627,9 +1626,9 @@ namespace CG
 	 * 		Name   -> Function UMG.PanelWidget.GetChildAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UWidget* UPanelWidget::GetChildAt(int Index)
+	class UWidget* UPanelWidget::GetChildAt(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1869,9 +1868,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BackgroundBlur.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBackgroundBlur::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UBackgroundBlur::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1938,9 +1937,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BackgroundBlur.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBackgroundBlur::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UBackgroundBlur::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1984,9 +1983,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BackgroundBlur.SetBlurRadius
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InBlurRadius                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InBlurRadius                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBackgroundBlur::SetBlurRadius(int InBlurRadius)
+	void UBackgroundBlur::SetBlurRadius(int32_t InBlurRadius)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2058,9 +2057,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BackgroundBlurSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBackgroundBlurSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UBackgroundBlurSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2104,9 +2103,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BackgroundBlurSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBackgroundBlurSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UBackgroundBlurSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2191,9 +2190,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Border.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBorder::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UBorder::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2237,9 +2236,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Border.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBorder::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UBorder::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2457,9 +2456,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BorderSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBorderSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UBorderSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2503,9 +2502,9 @@ namespace CG
 	 * 		Name   -> Function UMG.BorderSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBorderSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UBorderSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2576,9 +2575,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Button.SetTouchMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EButtonTouchMethod>          InTouchMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EButtonTouchMethod                       InTouchMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UButton::SetTouchMethod(TEnumAsByte<SlateCore_EButtonTouchMethod> InTouchMethod)
+	void UButton::SetTouchMethod(SlateCore_EButtonTouchMethod InTouchMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2622,9 +2621,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Button.SetPressMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EButtonPressMethod>          InPressMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EButtonPressMethod                       InPressMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UButton::SetPressMethod(TEnumAsByte<SlateCore_EButtonPressMethod> InPressMethod)
+	void UButton::SetPressMethod(SlateCore_EButtonPressMethod InPressMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2668,9 +2667,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Button.SetClickMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EButtonClickMethod>          InClickMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EButtonClickMethod                       InClickMethod                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UButton::SetClickMethod(TEnumAsByte<SlateCore_EButtonClickMethod> InClickMethod)
+	void UButton::SetClickMethod(SlateCore_EButtonClickMethod InClickMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2750,9 +2749,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ButtonSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UButtonSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UButtonSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2796,9 +2795,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ButtonSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UButtonSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UButtonSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2872,9 +2871,9 @@ namespace CG
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetZOrder
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InZOrder                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InZOrder                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCanvasPanelSlot::SetZOrder(int InZOrder)
+	void UCanvasPanelSlot::SetZOrder(int32_t InZOrder)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3102,7 +3101,7 @@ namespace CG
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetZOrder
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UCanvasPanelSlot::GetZOrder()
+	int32_t UCanvasPanelSlot::GetZOrder()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3500,9 +3499,9 @@ namespace CG
 	 * 		Name   -> Function UMG.CircularThrobber.SetNumberOfPieces
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InNumberOfPieces                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InNumberOfPieces                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCircularThrobber::SetNumberOfPieces(int InNumberOfPieces)
+	void UCircularThrobber::SetNumberOfPieces(int32_t InNumberOfPieces)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3632,9 +3631,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ComboBoxString.SetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UComboBoxString::SetSelectedIndex(int Index)
+	void UComboBoxString::SetSelectedIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3701,9 +3700,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		class FString                                      SelectedItem                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ESelectInfo>                 SelectionType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ESelectInfo                              SelectionType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UComboBoxString::OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, TEnumAsByte<SlateCore_ESelectInfo> SelectionType)
+	void UComboBoxString::OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, SlateCore_ESelectInfo SelectionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3787,7 +3786,7 @@ namespace CG
 	 * 		Name   -> Function UMG.ComboBoxString.GetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UComboBoxString::GetSelectedIndex()
+	int32_t UComboBoxString::GetSelectedIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3809,7 +3808,7 @@ namespace CG
 	 * 		Name   -> Function UMG.ComboBoxString.GetOptionCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UComboBoxString::GetOptionCount()
+	int32_t UComboBoxString::GetOptionCount()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3831,9 +3830,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ComboBoxString.GetOptionAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UComboBoxString::GetOptionAtIndex(int Index)
+	class FString UComboBoxString::GetOptionAtIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3858,7 +3857,7 @@ namespace CG
 	 * Parameters:
 	 * 		class FString                                      Option                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UComboBoxString::FindOptionIndex(const class FString& Option)
+	int32_t UComboBoxString::FindOptionIndex(const class FString& Option)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4064,7 +4063,7 @@ namespace CG
 	 * 		Name   -> Function UMG.DynamicEntryBoxBase.GetNumEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UDynamicEntryBoxBase::GetNumEntries()
+	int32_t UDynamicEntryBoxBase::GetNumEntries()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4252,9 +4251,9 @@ namespace CG
 	 * 		Name   -> Function UMG.EditableText.SetJustification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_ETextJustify>                    InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_ETextJustify                                 InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEditableText::SetJustification(TEnumAsByte<Slate_ETextJustify> InJustification)
+	void UEditableText::SetJustification(Slate_ETextJustify InJustification)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4345,9 +4344,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ETextCommit>                 CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ETextCommit                              CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEditableText::OnEditableTextCommittedEvent__DelegateSignature(const class FText& Text, TEnumAsByte<SlateCore_ETextCommit> CommitMethod)
+	void UEditableText::OnEditableTextCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4449,9 +4448,9 @@ namespace CG
 	 * 		Name   -> Function UMG.EditableTextBox.SetJustification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_ETextJustify>                    InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_ETextJustify                                 InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEditableTextBox::SetJustification(TEnumAsByte<Slate_ETextJustify> InJustification)
+	void UEditableTextBox::SetJustification(Slate_ETextJustify InJustification)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4565,9 +4564,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ETextCommit>                 CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ETextCommit                              CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEditableTextBox::OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, TEnumAsByte<SlateCore_ETextCommit> CommitMethod)
+	void UEditableTextBox::OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4806,10 +4805,10 @@ namespace CG
 	 * 		Name   -> Function UMG.GridPanel.SetRowFill
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ColumnIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ColumnIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Coefficient                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridPanel::SetRowFill(int ColumnIndex, float Coefficient)
+	void UGridPanel::SetRowFill(int32_t ColumnIndex, float Coefficient)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4831,10 +4830,10 @@ namespace CG
 	 * 		Name   -> Function UMG.GridPanel.SetColumnFill
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ColumnIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ColumnIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Coefficient                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridPanel::SetColumnFill(int ColumnIndex, float Coefficient)
+	void UGridPanel::SetColumnFill(int32_t ColumnIndex, float Coefficient)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4857,10 +4856,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UWidget*                                     Content                                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UGridSlot* UGridPanel::AddChildToGrid(class UWidget* Content, int InRow, int InColumn)
+	class UGridSlot* UGridPanel::AddChildToGrid(class UWidget* Content, int32_t InRow, int32_t InColumn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4899,9 +4898,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UGridSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4922,9 +4921,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetRowSpan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InRowSpan                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InRowSpan                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetRowSpan(int InRowSpan)
+	void UGridSlot::SetRowSpan(int32_t InRowSpan)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4945,9 +4944,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetRow
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetRow(int InRow)
+	void UGridSlot::SetRow(int32_t InRow)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5014,9 +5013,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetLayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InLayer                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InLayer                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetLayer(int InLayer)
+	void UGridSlot::SetLayer(int32_t InLayer)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5037,9 +5036,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UGridSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5060,9 +5059,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetColumnSpan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InColumnSpan                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InColumnSpan                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetColumnSpan(int InColumnSpan)
+	void UGridSlot::SetColumnSpan(int32_t InColumnSpan)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5083,9 +5082,9 @@ namespace CG
 	 * 		Name   -> Function UMG.GridSlot.SetColumn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGridSlot::SetColumn(int InColumn)
+	void UGridSlot::SetColumn(int32_t InColumn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5159,9 +5158,9 @@ namespace CG
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UHorizontalBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UHorizontalBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5228,9 +5227,9 @@ namespace CG
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UHorizontalBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UHorizontalBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5839,7 +5838,7 @@ namespace CG
 	 * 		Name   -> Function UMG.Int32Binding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
-	int UInt32Binding::GetValue()
+	int32_t UInt32Binding::GetValue()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6368,9 +6367,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.SetSelectionMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_ESelectionMode>                  SelectionMode                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_ESelectionMode                               SelectionMode                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UListView::SetSelectionMode(TEnumAsByte<Slate_ESelectionMode> SelectionMode)
+	void UListView::SetSelectionMode(Slate_ESelectionMode SelectionMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6391,9 +6390,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.SetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UListView::SetSelectedIndex(int Index)
+	void UListView::SetSelectedIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6414,9 +6413,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.ScrollIndexIntoView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UListView::ScrollIndexIntoView(int Index)
+	void UListView::ScrollIndexIntoView(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6460,9 +6459,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.NavigateToIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UListView::NavigateToIndex(int Index)
+	void UListView::NavigateToIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6505,7 +6504,7 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.GetNumItems
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UListView::GetNumItems()
+	int32_t UListView::GetNumItems()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6549,9 +6548,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.GetItemAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UObject* UListView::GetItemAt(int Index)
+	class UObject* UListView::GetItemAt(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6576,7 +6575,7 @@ namespace CG
 	 * Parameters:
 	 * 		class UObject*                                     Item                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int UListView::GetIndexForItem(class UObject* Item)
+	int32_t UListView::GetIndexForItem(class UObject* Item)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6810,7 +6809,7 @@ namespace CG
 	 * 		Name   -> Function UMG.ListView.BP_GetNumItemsSelected
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UListView::BP_GetNumItemsSelected()
+	int32_t UListView::BP_GetNumItemsSelected()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6968,9 +6967,9 @@ namespace CG
 	 * 		Name   -> Function UMG.MenuAnchor.SetPlacement
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EMenuPlacement>              InPlacement                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EMenuPlacement                           InPlacement                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMenuAnchor::SetPlacement(TEnumAsByte<SlateCore_EMenuPlacement> InPlacement)
+	void UMenuAnchor::SetPlacement(SlateCore_EMenuPlacement InPlacement)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7137,7 +7136,7 @@ namespace CG
 	 * 		Name   -> Function UMG.MouseCursorBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
-	TEnumAsByte<CoreUObject_EMouseCursor> UMouseCursorBinding::GetValue()
+	CoreUObject_EMouseCursor UMouseCursorBinding::GetValue()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7243,9 +7242,9 @@ namespace CG
 	 * 		Name   -> Function UMG.TextLayoutWidget.SetJustification
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_ETextJustify>                    InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_ETextJustify                                 InJustification                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UTextLayoutWidget::SetJustification(TEnumAsByte<Slate_ETextJustify> InJustification)
+	void UTextLayoutWidget::SetJustification(Slate_ETextJustify InJustification)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7373,9 +7372,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ETextCommit>                 CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ETextCommit                              CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMultiLineEditableText::OnMultiLineEditableTextCommittedEvent__DelegateSignature(const class FText& Text, TEnumAsByte<SlateCore_ETextCommit> CommitMethod)
+	void UMultiLineEditableText::OnMultiLineEditableTextCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7592,9 +7591,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ETextCommit>                 CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ETextCommit                              CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, TEnumAsByte<SlateCore_ETextCommit> CommitMethod)
+	void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7776,9 +7775,9 @@ namespace CG
 	 * 		Name   -> Function UMG.OverlaySlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UOverlaySlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UOverlaySlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7822,9 +7821,9 @@ namespace CG
 	 * 		Name   -> Function UMG.OverlaySlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UOverlaySlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UOverlaySlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7965,10 +7964,10 @@ namespace CG
 	 * 		Name   -> Function UMG.RetainerBox.SetRenderingPhase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                RenderPhase                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                TotalPhases                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            RenderPhase                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TotalPhases                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void URetainerBox::SetRenderingPhase(int RenderPhase, int TotalPhases)
+	void URetainerBox::SetRenderingPhase(int32_t RenderPhase, int32_t TotalPhases)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8476,9 +8475,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScaleBox.SetStretchDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_EStretchDirection>               InStretchDirection                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_EStretchDirection                            InStretchDirection                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScaleBox::SetStretchDirection(TEnumAsByte<Slate_EStretchDirection> InStretchDirection)
+	void UScaleBox::SetStretchDirection(Slate_EStretchDirection InStretchDirection)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8499,9 +8498,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScaleBox.SetStretch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<Slate_EStretch>                        InStretch                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Slate_EStretch                                     InStretch                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScaleBox::SetStretch(TEnumAsByte<Slate_EStretch> InStretch)
+	void UScaleBox::SetStretch(Slate_EStretch InStretch)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8559,9 +8558,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScaleBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScaleBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UScaleBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8605,9 +8604,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScaleBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScaleBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UScaleBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8796,9 +8795,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScrollBox.SetOrientation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EOrientation>                NewOrientation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EOrientation                             NewOrientation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScrollBox::SetOrientation(TEnumAsByte<SlateCore_EOrientation> NewOrientation)
+	void UScrollBox::SetOrientation(SlateCore_EOrientation NewOrientation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9080,9 +9079,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScrollBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScrollBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UScrollBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9126,9 +9125,9 @@ namespace CG
 	 * 		Name   -> Function UMG.ScrollBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UScrollBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UScrollBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9521,9 +9520,9 @@ namespace CG
 	 * 		Name   -> Function UMG.SizeBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USizeBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void USizeBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9567,9 +9566,9 @@ namespace CG
 	 * 		Name   -> Function UMG.SizeBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USizeBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void USizeBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10444,9 +10443,9 @@ namespace CG
 	 * 		Name   -> Function UMG.SpinBox.SetMinFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USpinBox::SetMinFractionalDigits(int NewValue)
+	void USpinBox::SetMinFractionalDigits(int32_t NewValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10513,9 +10512,9 @@ namespace CG
 	 * 		Name   -> Function UMG.SpinBox.SetMaxFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USpinBox::SetMaxFractionalDigits(int NewValue)
+	void USpinBox::SetMaxFractionalDigits(int32_t NewValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10606,9 +10605,9 @@ namespace CG
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		float                                              InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<SlateCore_ETextCommit>                 CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_ETextCommit                              CommitMethod                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USpinBox::OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, TEnumAsByte<SlateCore_ETextCommit> CommitMethod)
+	void USpinBox::OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, SlateCore_ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10736,7 +10735,7 @@ namespace CG
 	 * 		Name   -> Function UMG.SpinBox.GetMinFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int USpinBox::GetMinFractionalDigits()
+	int32_t USpinBox::GetMinFractionalDigits()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10802,7 +10801,7 @@ namespace CG
 	 * 		Name   -> Function UMG.SpinBox.GetMaxFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int USpinBox::GetMaxFractionalDigits()
+	int32_t USpinBox::GetMaxFractionalDigits()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11307,9 +11306,9 @@ namespace CG
 	 * 		Name   -> Function UMG.Throbber.SetNumberOfPieces
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InNumberOfPieces                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InNumberOfPieces                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UThrobber::SetNumberOfPieces(int InNumberOfPieces)
+	void UThrobber::SetNumberOfPieces(int32_t InNumberOfPieces)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11681,10 +11680,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UWidget*                                     Content                                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UUniformGridSlot* UUniformGridPanel::AddChildToUniformGrid(class UWidget* Content, int InRow, int InColumn)
+	class UUniformGridSlot* UUniformGridPanel::AddChildToUniformGrid(class UWidget* Content, int32_t InRow, int32_t InColumn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11723,9 +11722,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UniformGridSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUniformGridSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UUniformGridSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11746,9 +11745,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UniformGridSlot.SetRow
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InRow                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUniformGridSlot::SetRow(int InRow)
+	void UUniformGridSlot::SetRow(int32_t InRow)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11769,9 +11768,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UniformGridSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUniformGridSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UUniformGridSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11792,9 +11791,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UniformGridSlot.SetColumn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InColumn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUniformGridSlot::SetColumn(int InColumn)
+	void UUniformGridSlot::SetColumn(int32_t InColumn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11970,9 +11969,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ActionName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<Engine_EInputEvent>                    EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Engine_EInputEvent                                 EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUserWidget::StopListeningForInputAction(const class FName& ActionName, TEnumAsByte<Engine_EInputEvent> EventType)
+	void UUserWidget::StopListeningForInputAction(const class FName& ActionName, Engine_EInputEvent EventType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12174,9 +12173,9 @@ namespace CG
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UWidgetAnimation*                            InAnimation                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUserWidget::SetNumLoopsToPlay(class UWidgetAnimation* InAnimation, int NumLoopsToPlay)
+	void UUserWidget::SetNumLoopsToPlay(class UWidgetAnimation* InAnimation, int32_t NumLoopsToPlay)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12198,9 +12197,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UserWidget.SetInputActionPriority
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                NewPriority                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewPriority                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUserWidget::SetInputActionPriority(int NewPriority)
+	void UUserWidget::SetInputActionPriority(int32_t NewPriority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12470,12 +12469,12 @@ namespace CG
 	 * 		class UWidgetAnimation*                            InAnimation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              StartAtTime                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              EndAtTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<UMG_EUMGSequencePlayMode>              PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		UMG_EUMGSequencePlayMode                           PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PlaybackSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRestoreState                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UUMGSequencePlayer* UUserWidget::PlayAnimationTimeRange(class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int NumLoopsToPlay, TEnumAsByte<UMG_EUMGSequencePlayMode> PlayMode, float PlaybackSpeed, bool bRestoreState)
+	class UUMGSequencePlayer* UUserWidget::PlayAnimationTimeRange(class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, UMG_EUMGSequencePlayMode PlayMode, float PlaybackSpeed, bool bRestoreState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12564,12 +12563,12 @@ namespace CG
 	 * Parameters:
 	 * 		class UWidgetAnimation*                            InAnimation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              StartAtTime                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<UMG_EUMGSequencePlayMode>              PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		UMG_EUMGSequencePlayMode                           PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PlaybackSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRestoreState                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UUMGSequencePlayer* UUserWidget::PlayAnimation(class UWidgetAnimation* InAnimation, float StartAtTime, int NumLoopsToPlay, TEnumAsByte<UMG_EUMGSequencePlayMode> PlayMode, float PlaybackSpeed, bool bRestoreState)
+	class UUMGSequencePlayer* UUserWidget::PlayAnimation(class UWidgetAnimation* InAnimation, float StartAtTime, int32_t NumLoopsToPlay, UMG_EUMGSequencePlayMode PlayMode, float PlaybackSpeed, bool bRestoreState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13469,11 +13468,11 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ActionName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<Engine_EInputEvent>                    EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Engine_EInputEvent                                 EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bConsume                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Callback                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUserWidget::ListenForInputAction(const class FName& ActionName, TEnumAsByte<Engine_EInputEvent> EventType, bool bConsume, const class FScriptDelegate& Callback)
+	void UUserWidget::ListenForInputAction(const class FName& ActionName, Engine_EInputEvent EventType, bool bConsume, const class FScriptDelegate& Callback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13909,9 +13908,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UserWidget.AddToViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ZOrder                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ZOrder                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUserWidget::AddToViewport(int ZOrder)
+	void UUserWidget::AddToViewport(int32_t ZOrder)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13932,9 +13931,9 @@ namespace CG
 	 * 		Name   -> Function UMG.UserWidget.AddToPlayerScreen
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ZOrder                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ZOrder                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UUserWidget::AddToPlayerScreen(int ZOrder)
+	bool UUserWidget::AddToPlayerScreen(int32_t ZOrder)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14010,9 +14009,9 @@ namespace CG
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UVerticalBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UVerticalBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14079,9 +14078,9 @@ namespace CG
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UVerticalBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UVerticalBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14526,11 +14525,11 @@ namespace CG
 	 * 		class UWidgetAnimation*                            InAnimation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              StartAtTime                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              EndAtTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<UMG_EUMGSequencePlayMode>              PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		UMG_EUMGSequencePlayMode                           PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PlaybackSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::STATIC_CreatePlayAnimationTimeRangeProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int NumLoopsToPlay, TEnumAsByte<UMG_EUMGSequencePlayMode> PlayMode, float PlaybackSpeed)
+	class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::STATIC_CreatePlayAnimationTimeRangeProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, UMG_EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14566,11 +14565,11 @@ namespace CG
 	 * 		class UUserWidget*                                 Widget                                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UWidgetAnimation*                            InAnimation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              StartAtTime                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<UMG_EUMGSequencePlayMode>              PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NumLoopsToPlay                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		UMG_EUMGSequencePlayMode                           PlayMode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PlaybackSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::STATIC_CreatePlayAnimationProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, int NumLoopsToPlay, TEnumAsByte<UMG_EUMGSequencePlayMode> PlayMode, float PlaybackSpeed)
+	class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::STATIC_CreatePlayAnimationProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, int32_t NumLoopsToPlay, UMG_EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14987,11 +14986,11 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TEnumAsByte<CoreUObject_EMouseCursor>              CursorShape                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		CoreUObject_EMouseCursor                           CursorShape                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        CursorName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector2D                                   HotSpot                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UWidgetBlueprintLibrary::STATIC_SetHardwareCursor(class UObject* WorldContextObject, TEnumAsByte<CoreUObject_EMouseCursor> CursorShape, const class FName& CursorName, const struct FVector2D& HotSpot)
+	bool UWidgetBlueprintLibrary::STATIC_SetHardwareCursor(class UObject* WorldContextObject, CoreUObject_EMouseCursor CursorShape, const class FName& CursorName, const struct FVector2D& HotSpot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15238,10 +15237,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UTexture2D*                                  Texture                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSlateBrush UWidgetBlueprintLibrary::STATIC_MakeBrushFromTexture(class UTexture2D* Texture, int Width, int Height)
+	struct FSlateBrush UWidgetBlueprintLibrary::STATIC_MakeBrushFromTexture(class UTexture2D* Texture, int32_t Width, int32_t Height)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15267,10 +15266,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UMaterialInterface*                          Material                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSlateBrush UWidgetBlueprintLibrary::STATIC_MakeBrushFromMaterial(class UMaterialInterface* Material, int Width, int Height)
+	struct FSlateBrush UWidgetBlueprintLibrary::STATIC_MakeBrushFromMaterial(class UMaterialInterface* Material, int32_t Width, int32_t Height)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -15768,11 +15767,11 @@ namespace CG
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FVector2D                                   Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFont*                                       Font                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                FontSize                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            FontSize                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        FontTypeFace                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                Tint                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWidgetBlueprintLibrary::STATIC_DrawTextFormatted(struct FPaintContext* Context, const class FText& Text, const struct FVector2D& Position, class UFont* Font, int FontSize, const class FName& FontTypeFace, const struct FLinearColor& Tint)
+	void UWidgetBlueprintLibrary::STATIC_DrawTextFormatted(struct FPaintContext* Context, const class FText& Text, const struct FVector2D& Position, class UFont* Font, int32_t FontSize, const class FName& FontTypeFace, const struct FLinearColor& Tint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -17919,9 +17918,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcher.SetActiveWidgetIndex
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWidgetSwitcher::SetActiveWidgetIndex(int Index)
+	void UWidgetSwitcher::SetActiveWidgetIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -17965,9 +17964,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetWidgetAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UWidget* UWidgetSwitcher::GetWidgetAtIndex(int Index)
+	class UWidget* UWidgetSwitcher::GetWidgetAtIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -17990,7 +17989,7 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetNumWidgets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWidgetSwitcher::GetNumWidgets()
+	int32_t UWidgetSwitcher::GetNumWidgets()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18012,7 +18011,7 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UWidgetSwitcher::GetActiveWidgetIndex()
+	int32_t UWidgetSwitcher::GetActiveWidgetIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18070,9 +18069,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcherSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWidgetSwitcherSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UWidgetSwitcherSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18116,9 +18115,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWidgetSwitcherSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UWidgetSwitcherSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18167,9 +18166,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WindowTitleBarArea.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWindowTitleBarArea::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UWindowTitleBarArea::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18213,9 +18212,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WindowTitleBarArea.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWindowTitleBarArea::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UWindowTitleBarArea::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18250,9 +18249,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWindowTitleBarAreaSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UWindowTitleBarAreaSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18296,9 +18295,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWindowTitleBarAreaSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UWindowTitleBarAreaSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18395,9 +18394,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EVerticalAlignment>          InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EVerticalAlignment                       InVerticalAlignment                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWrapBoxSlot::SetVerticalAlignment(TEnumAsByte<SlateCore_EVerticalAlignment> InVerticalAlignment)
+	void UWrapBoxSlot::SetVerticalAlignment(SlateCore_EVerticalAlignment InVerticalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -18441,9 +18440,9 @@ namespace CG
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		TEnumAsByte<SlateCore_EHorizontalAlignment>        InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		SlateCore_EHorizontalAlignment                     InHorizontalAlignment                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UWrapBoxSlot::SetHorizontalAlignment(TEnumAsByte<SlateCore_EHorizontalAlignment> InHorizontalAlignment)
+	void UWrapBoxSlot::SetHorizontalAlignment(SlateCore_EHorizontalAlignment InHorizontalAlignment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AIShatteredMontyController_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function AIShatteredMontyController.AIShatteredMontyController_C.ExecuteUbergraph_AIShatteredMontyController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAIShatteredMontyController_C::ExecuteUbergraph_AIShatteredMontyController(int EntryPoint)
+	void AAIShatteredMontyController_C::ExecuteUbergraph_AIShatteredMontyController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

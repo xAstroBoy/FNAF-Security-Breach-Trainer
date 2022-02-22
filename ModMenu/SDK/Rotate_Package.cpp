@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Rotate_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function Rotate.Rotate_C.ExecuteUbergraph_Rotate
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URotate_C::ExecuteUbergraph_Rotate(int EntryPoint)
+	void URotate_C::ExecuteUbergraph_Rotate(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

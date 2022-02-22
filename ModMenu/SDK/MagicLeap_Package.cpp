@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeap_Package.h"
 
 namespace CG
 {
@@ -42,9 +41,9 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                InNumPages                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            InNumPages                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UInAppPurchaseComponent::TryGetPurchaseHistoryAsync(int InNumPages)
+	bool UInAppPurchaseComponent::TryGetPurchaseHistoryAsync(int32_t InNumPages)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -442,7 +441,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetPlatformAPILevel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMagicLeapHMDFunctionLibrary::STATIC_GetPlatformAPILevel()
+	int32_t UMagicLeapHMDFunctionLibrary::STATIC_GetPlatformAPILevel()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -464,7 +463,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionRevision
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionRevision()
+	int32_t UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionRevision()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -486,7 +485,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMinor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionMinor()
+	int32_t UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionMinor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -508,7 +507,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMajor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionMajor()
+	int32_t UMagicLeapHMDFunctionLibrary::STATIC_GetMLSDKVersionMajor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -552,7 +551,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMinimumAPILevel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UMagicLeapHMDFunctionLibrary::STATIC_GetMinimumAPILevel()
+	int32_t UMagicLeapHMDFunctionLibrary::STATIC_GetMinimumAPILevel()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -693,11 +692,11 @@ namespace CG
 	 * Parameters:
 	 * 		struct FGuid                                       ID                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FVector>                             Vertices                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int>                                        Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FVector>                             Normals                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      Confidence                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated__DelegateSignature(const struct FGuid& ID, TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector> Normals, TArray<float> Confidence)
+	void UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated__DelegateSignature(const struct FGuid& ID, TArray<struct FVector> Vertices, TArray<int32_t> Triangles, TArray<struct FVector> Normals, TArray<float> Confidence)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -721,7 +720,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
-	int UMagicLeapMeshTrackerComponent::GetNumQueuedBlockUpdates()
+	int32_t UMagicLeapMeshTrackerComponent::GetNumQueuedBlockUpdates()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -964,13 +963,13 @@ namespace CG
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Direction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     UpVector                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              HorizontalFovDegrees                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               CollideWithUnobserved                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                UserData                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            UserData                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FMagicLeapRaycastQueryParams UMagicLeapRaycastFunctionLibrary::STATIC_MakeRaycastQueryParams(const struct FVector& Position, const struct FVector& Direction, const struct FVector& UpVector, int Width, int Height, float HorizontalFovDegrees, bool CollideWithUnobserved, int UserData)
+	struct FMagicLeapRaycastQueryParams UMagicLeapRaycastFunctionLibrary::STATIC_MakeRaycastQueryParams(const struct FVector& Position, const struct FVector& Direction, const struct FVector& UpVector, int32_t Width, int32_t Height, float HorizontalFovDegrees, bool CollideWithUnobserved, int32_t UserData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

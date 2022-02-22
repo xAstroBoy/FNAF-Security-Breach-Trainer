@@ -21,7 +21,7 @@ namespace CG
 	struct FTrackRenderData
 	{
 	public:
-		unsigned char                                              UnknownData_PHBV[0x70];                                  // 0x0000(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LOG9[0x70];                                  // 0x0000(0x0070) MISSED OFFSET (PADDING)
 
 	};
 
@@ -32,7 +32,7 @@ namespace CG
 	struct FGeometryCacheMeshData
 	{
 	public:
-		unsigned char                                              UnknownData_UTGD[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KX86[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
 
 	};
 
@@ -43,7 +43,7 @@ namespace CG
 	struct FGeometryCacheVertexInfo
 	{
 	public:
-		unsigned char                                              UnknownData_0895[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PL0C[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	};
 
@@ -54,7 +54,7 @@ namespace CG
 	struct FGeometryCacheMeshBatchInfo
 	{
 	public:
-		unsigned char                                              UnknownData_ZZH9[0xC];                                   // 0x0000(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3Z4V[0xC];                                   // 0x0000(0x000C) MISSED OFFSET (PADDING)
 
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BasicTypes_Package.h"
 
 namespace CG
 {

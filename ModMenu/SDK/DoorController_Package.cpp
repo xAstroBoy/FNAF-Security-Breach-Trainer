@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DoorController_Package.h"
 
 namespace CG
 {
@@ -112,9 +111,9 @@ namespace CG
 	 * 		Name   -> Function DoorController.DoorController_C.ExecuteUbergraph_DoorController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADoorController_C::ExecuteUbergraph_DoorController(int EntryPoint)
+	void ADoorController_C::ExecuteUbergraph_DoorController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

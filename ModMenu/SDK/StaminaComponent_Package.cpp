@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaminaComponent_Package.h"
 
 namespace CG
 {
@@ -183,9 +182,9 @@ namespace CG
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.ExecuteUbergraph_StaminaComponent
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaminaComponent_C::ExecuteUbergraph_StaminaComponent(int EntryPoint)
+	void UStaminaComponent_C::ExecuteUbergraph_StaminaComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ImgMediaFactory_Package.h"
 
 namespace CG
 {

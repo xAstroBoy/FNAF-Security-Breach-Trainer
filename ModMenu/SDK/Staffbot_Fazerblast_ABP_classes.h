@@ -28,7 +28,7 @@ namespace CG
 		void BlueprintUpdateAnimation(float DeltaTimeX);
 		void BlueprintBeginPlay();
 		void FazerblastDestroy_Event();
-		void ExecuteUbergraph_Staffbot_Fazerblast_ABP(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_Fazerblast_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WmfMediaFactory_Package.h"
 
 namespace CG
 {

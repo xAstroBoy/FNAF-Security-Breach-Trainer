@@ -37,8 +37,8 @@ namespace CG
 		void CompleteHoldProgress();
 		void SetHoldProgress(float Percentage);
 		void Construct();
-		void ExecuteUbergraph_WI_Gregory_Interact(int EntryPoint);
-		void PowerLevelDispatch__DelegateSignature(int PowerLevel);
+		void ExecuteUbergraph_WI_Gregory_Interact(int32_t EntryPoint);
+		void PowerLevelDispatch__DelegateSignature(int32_t PowerLevel);
 		static UClass* StaticClass();
 	};
 

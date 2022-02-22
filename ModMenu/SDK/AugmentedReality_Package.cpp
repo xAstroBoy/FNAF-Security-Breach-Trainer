@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AugmentedReality_Package.h"
 
 namespace CG
 {
@@ -422,7 +421,7 @@ namespace CG
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTracked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UARSessionConfig::GetMaxNumSimultaneousImagesTracked()
+	int32_t UARSessionConfig::GetMaxNumSimultaneousImagesTracked()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2410,10 +2409,10 @@ namespace CG
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdatePreviewImageData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
-	 * 		int                                                Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void AARSharedWorldPlayerController::ClientUpdatePreviewImageData(int Offset, TArray<unsigned char> Buffer)
+	void AARSharedWorldPlayerController::ClientUpdatePreviewImageData(int32_t Offset, TArray<unsigned char> Buffer)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2435,10 +2434,10 @@ namespace CG
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdateARWorldData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
-	 * 		int                                                Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void AARSharedWorldPlayerController::ClientUpdateARWorldData(int Offset, TArray<unsigned char> Buffer)
+	void AARSharedWorldPlayerController::ClientUpdateARWorldData(int32_t Offset, TArray<unsigned char> Buffer)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2460,10 +2459,10 @@ namespace CG
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientInitSharedWorld
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
-	 * 		int                                                PreviewImageSize                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                ARWorldDataSize                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            PreviewImageSize                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ARWorldDataSize                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void AARSharedWorldPlayerController::ClientInitSharedWorld(int PreviewImageSize, int ARWorldDataSize)
+	void AARSharedWorldPlayerController::ClientInitSharedWorld(int32_t PreviewImageSize, int32_t ARWorldDataSize)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2760,7 +2759,7 @@ namespace CG
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int UARTrackedGeometry::GetLastUpdateFrameNumber()
+	int32_t UARTrackedGeometry::GetLastUpdateFrameNumber()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

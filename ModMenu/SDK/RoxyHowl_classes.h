@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_RoxyHowl(int EntryPoint);
+		void ExecuteUbergraph_RoxyHowl(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

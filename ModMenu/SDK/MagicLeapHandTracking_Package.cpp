@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapHandTracking_Package.h"
 
 namespace CG
 {

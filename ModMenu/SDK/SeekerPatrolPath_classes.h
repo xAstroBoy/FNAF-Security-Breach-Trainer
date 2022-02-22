@@ -23,14 +23,14 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0258(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		fnaf9_EFNAFAISpawnType                                     PathType;                                                // 0x0260(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_CP0F[0x3];                                   // 0x0261(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JILO[0x3];                                   // 0x0261(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                PathName;                                                // 0x0264(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		class FName GetPathName();
 		fnaf9_EFNAFAISpawnType GetSpawnType();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_SeekerPatrolPath(int EntryPoint);
+		void ExecuteUbergraph_SeekerPatrolPath(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

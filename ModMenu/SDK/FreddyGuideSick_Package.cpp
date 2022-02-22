@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyGuideSick_Package.h"
 
 namespace CG
 {
@@ -17,7 +16,7 @@ namespace CG
 	 * 		Name   -> Function FreddyGuideSick.FreddyGuideSick_C.GetCurrentPatrolPointIndex
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
-	int AFreddyGuideSick_C::GetCurrentPatrolPointIndex()
+	int32_t AFreddyGuideSick_C::GetCurrentPatrolPointIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -218,9 +217,9 @@ namespace CG
 	 * 		Name   -> Function FreddyGuideSick.FreddyGuideSick_C.SetCurrentPatrolPointIndex
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PatrolPointIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PatrolPointIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyGuideSick_C::SetCurrentPatrolPointIndex(int PatrolPointIndex)
+	void AFreddyGuideSick_C::SetCurrentPatrolPointIndex(int32_t PatrolPointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -262,9 +261,9 @@ namespace CG
 	 * 		Name   -> Function FreddyGuideSick.FreddyGuideSick_C.ExecuteUbergraph_FreddyGuideSick
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyGuideSick_C::ExecuteUbergraph_FreddyGuideSick(int EntryPoint)
+	void AFreddyGuideSick_C::ExecuteUbergraph_FreddyGuideSick(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

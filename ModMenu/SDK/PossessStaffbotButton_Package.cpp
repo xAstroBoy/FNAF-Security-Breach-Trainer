@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PossessStaffbotButton_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PossessStaffbotButton.PossessStaffbotButton_C.ExecuteUbergraph_PossessStaffbotButton
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APossessStaffbotButton_C::ExecuteUbergraph_PossessStaffbotButton(int EntryPoint)
+	void APossessStaffbotButton_C::ExecuteUbergraph_PossessStaffbotButton(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

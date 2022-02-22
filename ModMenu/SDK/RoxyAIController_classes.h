@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_RoxyAIController(int EntryPoint);
+		void ExecuteUbergraph_RoxyAIController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

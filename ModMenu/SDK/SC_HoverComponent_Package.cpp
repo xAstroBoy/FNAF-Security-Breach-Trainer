@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SC_HoverComponent_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function SC_HoverComponent.SC_HoverComponent_C.ExecuteUbergraph_SC_HoverComponent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USC_HoverComponent_C::ExecuteUbergraph_SC_HoverComponent(int EntryPoint)
+	void USC_HoverComponent_C::ExecuteUbergraph_SC_HoverComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

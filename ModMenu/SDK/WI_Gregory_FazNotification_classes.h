@@ -40,7 +40,7 @@ namespace CG
 		void EnemyOnCamera(class ASecurityCamera* SecurityCamera);
 		void Lost_Sight(class ASecurityCamera* SecurityCamera);
 		void NewUnreadMessage(const class FName& MessageName, const struct FFNAFMessageTableStruct& MessageInfo);
-		void ExecuteUbergraph_WI_Gregory_FazNotification(int EntryPoint);
+		void ExecuteUbergraph_WI_Gregory_FazNotification(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

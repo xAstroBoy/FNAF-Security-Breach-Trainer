@@ -24,7 +24,7 @@ namespace CG
 		void CanPerformEvent(bool Off);
 		void SecurityTurnEvent(float Time);
 		void FazerblastDestroy_Event();
-		void AlertEvent(bool isAlerting);
+		void AlertEvent(bool IsAlerting);
 		void PlayerSpendsPartyPass_Event();
 		void PlayerHasPartyPass_Event(bool HasPartyPass);
 		void isStunnedEvent(bool IsStunned);
@@ -36,8 +36,8 @@ namespace CG
 		void TaskEvent(bool DoTask, class AStaffbotTaskPlacement_C* TargetTask);
 		void PerformEvent();
 		void SellEvent();
-		void JumpscareEvent(bool canJumpscare);
-		void WarningEvent(bool IsWarning, int WarningCount);
+		void JumpscareEvent(bool CanJumpscare);
+		void WarningEvent(bool IsWarning, int32_t WarningCount);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PhysicsSoundImpact_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function PhysicsSoundImpact.PhysicsSoundImpact_C.ExecuteUbergraph_PhysicsSoundImpact
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPhysicsSoundImpact_C::ExecuteUbergraph_PhysicsSoundImpact(int EntryPoint)
+	void UPhysicsSoundImpact_C::ExecuteUbergraph_PhysicsSoundImpact(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BurntrapController_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerCameraOverride_Package.h"
 
 namespace CG
 {
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function PlayerCameraOverride.PlayerCameraOverride_C.ExecuteUbergraph_PlayerCameraOverride
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerCameraOverride_C::ExecuteUbergraph_PlayerCameraOverride(int EntryPoint)
+	void APlayerCameraOverride_C::ExecuteUbergraph_PlayerCameraOverride(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

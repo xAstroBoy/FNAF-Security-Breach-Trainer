@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "S_SubtitleLine_Package.h"
 
 namespace CG
 {

@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void Skip_Line();
-		void ExecuteUbergraph_LineSkipper(int EntryPoint);
+		void ExecuteUbergraph_LineSkipper(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

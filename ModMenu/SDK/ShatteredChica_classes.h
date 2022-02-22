@@ -21,7 +21,7 @@ namespace CG
 	class AShatteredChica_C : public AChica_C
 	{
 	public:
-		unsigned char                                              UnknownData_WIV7[0x4];                                   // 0x0814(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DFPG[0x4];                                   // 0x0814(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0818(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UInterpMoveComponent_C*                              InterpMoveComponent;                                     // 0x0820(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             HeadAimLocation_1;                                       // 0x0828(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -44,7 +44,7 @@ namespace CG
 		void On_Head_Spin_Time();
 		void Stop_Head_Spin_Timer();
 		void Stop_Head_Spin();
-		void ExecuteUbergraph_ShatteredChica(int EntryPoint);
+		void ExecuteUbergraph_ShatteredChica(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

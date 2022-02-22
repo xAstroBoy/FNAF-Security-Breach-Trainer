@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_MiniGameManger_Package.h"
 
 namespace CG
 {
@@ -117,10 +116,10 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerCanEndGame
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               CanEnd                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABP_MiniGameManger_C::PlayerCanEndGame(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType, bool* CanEnd)
+	void ABP_MiniGameManger_C::PlayerCanEndGame(E_EndMiniGameType_E_EndMiniGameType EndType, bool* CanEnd)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -169,9 +168,9 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerRequestEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::PlayerRequestEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void ABP_MiniGameManger_C::PlayerRequestEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -220,9 +219,9 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.OnEnd
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void ABP_MiniGameManger_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -378,9 +377,9 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.QuitToMainMenu
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   End_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                End_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::QuitToMainMenu(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> End_Type)
+	void ABP_MiniGameManger_C::QuitToMainMenu(E_EndMiniGameType_E_EndMiniGameType End_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -419,9 +418,9 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.ExecuteUbergraph_BP_MiniGameManger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::ExecuteUbergraph_BP_MiniGameManger(int EntryPoint)
+	void ABP_MiniGameManger_C::ExecuteUbergraph_BP_MiniGameManger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -441,9 +440,9 @@ namespace CG
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.OnGameEnd__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType>   EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::OnGameEnd__DelegateSignature(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType)
+	void ABP_MiniGameManger_C::OnGameEnd__DelegateSignature(E_EndMiniGameType_E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

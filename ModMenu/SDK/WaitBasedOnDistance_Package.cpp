@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WaitBasedOnDistance_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function WaitBasedOnDistance.WaitBasedOnDistance_C.ExecuteUbergraph_WaitBasedOnDistance
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWaitBasedOnDistance_C::ExecuteUbergraph_WaitBasedOnDistance(int EntryPoint)
+	void UWaitBasedOnDistance_C::ExecuteUbergraph_WaitBasedOnDistance(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

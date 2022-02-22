@@ -34,7 +34,7 @@ namespace CG
 		class UFNAFSaveData*                                       SaveSlotData;                                            // 0x0298(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		bool                                                       isSaving;                                                // 0x02A0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       first_hover;                                             // 0x02A1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_OI59[0x6];                                   // 0x02A2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A1WD[0x6];                                   // 0x02A2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FButtonStyle                                        SaveSlot_ButtonStyle;                                    // 0x02A8(0x0278) Edit, BlueprintVisible, DisableEditOnInstance
 		class USaveGameUI_C*                                       SaveGameUI_Ref;                                          // 0x0520(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		class UTitleUI_C*                                          TitleUI_Ref;                                             // 0x0528(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
@@ -47,9 +47,9 @@ namespace CG
 		void BndEvt__Top_Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__Top_Button_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
 		void TriggerSave();
-		void SetDisplayedData(const class FString& SaveFileName, int GameHour, const struct FDateTime& DateTimeWhenSaved, int GameplayTime_Sec);
+		void SetDisplayedData(const class FString& SaveFileName, int32_t GameHour, const struct FDateTime& DateTimeWhenSaved, int32_t GameplayTime_Sec);
 		void Set_Slot_Save_Data(class UFNAFSaveData* SaveData);
-		void ExecuteUbergraph_Title_SaveSlotButton(int EntryPoint);
+		void ExecuteUbergraph_Title_SaveSlotButton(int32_t EntryPoint);
 		void OnHovered__DelegateSignature();
 		void OnClicked__DelegateSignature();
 		static UClass* StaticClass();

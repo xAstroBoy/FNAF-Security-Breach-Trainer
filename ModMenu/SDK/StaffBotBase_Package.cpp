@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffBotBase_Package.h"
 
 namespace CG
 {
@@ -234,9 +233,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<fnaf9_EFNAFAISpawnType>                     TypesToAlert                                               (Parm, OutParm, HasGetValueTypeHash)
-	 * 		int                                                NumberOfAlerts                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NumberOfAlerts                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts)
+	void AStaffBotBase_C::GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -429,9 +428,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::OnFailure_371B42EB46E3E0D10174CD8948725F67(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AStaffBotBase_C::OnFailure_371B42EB46E3E0D10174CD8948725F67(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -455,9 +454,9 @@ namespace CG
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::OnSuccess_371B42EB46E3E0D10174CD8948725F67(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void AStaffBotBase_C::OnSuccess_371B42EB46E3E0D10174CD8948725F67(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -683,9 +682,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<fnaf9_EFNAFAISpawnType>                     TypesToAlert                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		int                                                NumberOfAlerts                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NumberOfAlerts                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts)
+	void AStaffBotBase_C::SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -828,16 +827,16 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.Send Alert
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               isAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AStaffBotBase_C::Send_Alert(bool isAlerting)
+	void AStaffBotBase_C::Send_Alert(bool IsAlerting)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StaffBotBase.StaffBotBase_C.Send Alert");
 		
 		AStaffBotBase_C_Send_Alert_Params params {};
-		params.isAlerting = isAlerting;
+		params.IsAlerting = IsAlerting;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -985,9 +984,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.Start Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::Start_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::Start_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1007,9 +1006,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.End Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::End_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::End_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1029,9 +1028,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.Start Head Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::Start_Head_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::Start_Head_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1051,9 +1050,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.End Head Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::End_Head_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::End_Head_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1073,9 +1072,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.Start Arm Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::Start_Arm_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::Start_Arm_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1095,9 +1094,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.End Arm Movement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>    Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		StaffbotJob_Anim_EStaffbotJob_Anim                 Bot_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::End_Arm_Movement(TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim> Bot_Type)
+	void AStaffBotBase_C::End_Arm_Movement(StaffbotJob_Anim_EStaffbotJob_Anim Bot_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1117,9 +1116,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.Start Warning
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::Start_Warning(int WarningCount)
+	void AStaffBotBase_C::Start_Warning(int32_t WarningCount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1183,11 +1182,11 @@ namespace CG
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bFromSweep                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FHitResult                                  SweepResult                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	 */
-	void AStaffBotBase_C::BndEvt__AutoAlertRadius_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+	void AStaffBotBase_C::BndEvt__AutoAlertRadius_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1215,9 +1214,9 @@ namespace CG
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::BndEvt__AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
+	void AStaffBotBase_C::BndEvt__AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1338,9 +1337,9 @@ namespace CG
 	 * 		Name   -> Function StaffBotBase.StaffBotBase_C.ExecuteUbergraph_StaffBotBase
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotBase_C::ExecuteUbergraph_StaffBotBase(int EntryPoint)
+	void AStaffBotBase_C::ExecuteUbergraph_StaffBotBase(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

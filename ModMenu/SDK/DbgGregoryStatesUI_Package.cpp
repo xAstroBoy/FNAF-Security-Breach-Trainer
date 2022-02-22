@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgGregoryStatesUI_Package.h"
 
 namespace CG
 {
@@ -297,9 +296,9 @@ namespace CG
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.ExecuteUbergraph_DbgGregoryStatesUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDbgGregoryStatesUI_C::ExecuteUbergraph_DbgGregoryStatesUI(int EntryPoint)
+	void UDbgGregoryStatesUI_C::ExecuteUbergraph_DbgGregoryStatesUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

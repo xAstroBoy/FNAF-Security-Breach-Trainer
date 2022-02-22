@@ -27,7 +27,7 @@ namespace CG
 		class UStaticMeshComponent*                                MOD_FreddyCart;                                          // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USplineFollowMovementComponent*                      SplineFollowMovement;                                    // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0250(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		int                                                        LoopingAudioPlayingID;                                   // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    LoopingAudioPlayingID;                                   // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void ReceiveBeginPlay();
@@ -35,7 +35,7 @@ namespace CG
 		void PlayMovementLoop();
 		void StopMovementLoop();
 		void BndEvt__MOD_FreddyCart_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-		void ExecuteUbergraph_GatorRideCart(int EntryPoint);
+		void ExecuteUbergraph_GatorRideCart(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

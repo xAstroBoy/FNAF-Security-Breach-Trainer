@@ -21,19 +21,19 @@ namespace CG
 	class APresentCollectible_C : public ACollectible_C
 	{
 	public:
-		unsigned char                                              UnknownData_CGJB[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3E3P[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0288(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USphereComponent*                                    CollectionVisionBlocker;                                 // 0x0290(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UStaticMeshComponent*                                StaticLid;                                               // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USkeletalMeshComponent*                              BoingyBox;                                               // 0x02A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       can_stop;                                                // 0x02A8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_U4EZ[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YOAC[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UAkAudioEvent*>                               CrankSoundList;                                          // 0x02B0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		class UAkAudioEvent*                                       CrankSound;                                              // 0x02C0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<PrizeMaterialOptions_EPrizeMaterialOptions>    ColorChoice;                                             // 0x02C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		PrizeMaterialOptions_EPrizeMaterialOptions                 ColorChoice;                                             // 0x02C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void UserConstructionScript();
 		void ReceiveBeginPlay();
 		void OnBeginCollect();
@@ -41,7 +41,7 @@ namespace CG
 		void OnCancelCollect();
 		void OnLoadCollected();
 		void Reset_Animation();
-		void ExecuteUbergraph_PresentCollectible(int EntryPoint);
+		void ExecuteUbergraph_PresentCollectible(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

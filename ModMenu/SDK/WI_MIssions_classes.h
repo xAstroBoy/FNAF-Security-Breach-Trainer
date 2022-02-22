@@ -25,12 +25,12 @@ namespace CG
 		class UVerticalBox*                                        MissionBox;                                              // 0x0238(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UScrollBox*                                          ScrollBox;                                               // 0x0240(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		TArray<struct FFNAFMissionState>                           Missions;                                                // 0x0248(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		int                                                        CurrentIndex;                                            // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    CurrentIndex;                                            // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Has_New;                                                 // 0x025C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LCPZ[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WBBX[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector2D                                           axisInput;                                               // 0x0260(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector2D                                           Current_input;                                           // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        Recent_Mission_Index;                                    // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Recent_Mission_Index;                                    // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void MoveMenu(const struct FVector2D& InVec);
@@ -44,7 +44,7 @@ namespace CG
 		void InputLookAxis(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void Construct();
@@ -56,7 +56,7 @@ namespace CG
 		void InputMoveAxis(const struct FVector2D& Axis);
 		void InputClose();
 		void InputAccept();
-		void ExecuteUbergraph_WI_MIssions(int EntryPoint);
+		void ExecuteUbergraph_WI_MIssions(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

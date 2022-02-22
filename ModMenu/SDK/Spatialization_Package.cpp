@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Spatialization_Package.h"
 
 namespace CG
 {

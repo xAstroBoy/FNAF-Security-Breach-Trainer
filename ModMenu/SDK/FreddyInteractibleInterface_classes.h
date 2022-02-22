@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		void GetFreddyActionLocationAndRotation(struct FVector* Location, struct FRotator* Rotation);
-		void GetFreddyVO(TEnumAsByte<FreddyVOType_EFreddyVOType> VOType, TArray<class UDialogueWave*>* FreddyDialog);
+		void GetFreddyVO(FreddyVOType_EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog);
 		static UClass* StaticClass();
 	};
 

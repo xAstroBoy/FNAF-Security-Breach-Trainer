@@ -20,7 +20,7 @@ namespace CG
 	struct AStaffbotWorker_Manager_Base_C_ModelSwap_Func_Params
 	{
 	public:
-		class AStaffBotWorker_SplineFollower_C*                    StaffBot;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class AStaffBotWorker_SplineFollower_C*                    Staffbot;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AStaffbotTaskPlacement_C*                            TaskPoint;                                               // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
@@ -69,7 +69,7 @@ namespace CG
 	struct AStaffbotWorker_Manager_Base_C_ExecuteUbergraph_StaffbotWorker_Manager_Base_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

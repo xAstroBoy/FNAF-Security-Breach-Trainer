@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MissionTextFormatterFactory_Package.h"
 
 namespace CG
 {
@@ -21,10 +20,10 @@ namespace CG
 	 * 		struct FFNAFMissionState                           MissionState                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 	 * 		struct FFNAFMissionInfo                            MissionInfo                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 	 * 		struct FFNAFMissionTaskInfo                        TaskInfo                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-	 * 		int                                                StateIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            StateIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FText                                        FormattedText                                              (Parm, OutParm)
 	 */
-	void UMissionTextFormatterFactory_C::GetFormattedMissionText(const class FName& MissionName, const struct FFNAFMissionState& MissionState, const struct FFNAFMissionInfo& MissionInfo, const struct FFNAFMissionTaskInfo& TaskInfo, int StateIndex, class FText* FormattedText)
+	void UMissionTextFormatterFactory_C::GetFormattedMissionText(const class FName& MissionName, const struct FFNAFMissionState& MissionState, const struct FFNAFMissionInfo& MissionInfo, const struct FFNAFMissionTaskInfo& TaskInfo, int32_t StateIndex, class FText* FormattedText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

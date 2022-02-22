@@ -30,7 +30,7 @@ namespace CG
 		void TestButton_Y();
 		void TestButton_B();
 		void TestButton_R();
-		void PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum);
+		void PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TeleportSpawnTrigger_Package.h"
 
 namespace CG
 {
@@ -203,9 +202,9 @@ namespace CG
 	 * 		Name   -> Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.ExecuteUbergraph_TeleportSpawnTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ATeleportSpawnTrigger_C::ExecuteUbergraph_TeleportSpawnTrigger(int EntryPoint)
+	void ATeleportSpawnTrigger_C::ExecuteUbergraph_TeleportSpawnTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

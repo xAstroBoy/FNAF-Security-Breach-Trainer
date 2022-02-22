@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void UpdateSpeedometer(float Speed);
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_W_Speedometer(int EntryPoint);
+		void ExecuteUbergraph_W_Speedometer(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

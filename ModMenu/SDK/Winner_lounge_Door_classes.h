@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void WinnerLoungeDoorOpen();
-		void ExecuteUbergraph_Winner_lounge_Door(int EntryPoint);
+		void ExecuteUbergraph_Winner_lounge_Door(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

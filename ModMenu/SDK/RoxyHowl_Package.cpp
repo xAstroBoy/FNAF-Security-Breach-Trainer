@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoxyHowl_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function RoxyHowl.RoxyHowl_C.ExecuteUbergraph_RoxyHowl
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URoxyHowl_C::ExecuteUbergraph_RoxyHowl(int EntryPoint)
+	void URoxyHowl_C::ExecuteUbergraph_RoxyHowl(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

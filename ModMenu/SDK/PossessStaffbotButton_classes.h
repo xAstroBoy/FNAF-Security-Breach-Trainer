@@ -21,13 +21,13 @@ namespace CG
 	class APossessStaffbotButton_C : public ABasicButton_C
 	{
 	public:
-		unsigned char                                              UnknownData_9UBS[0x2];                                   // 0x02EE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BXDK[0x2];                                   // 0x02EE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class APlayerControlledStaffBot_C*                         StaffBot;                                                // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class APlayerControlledStaffBot_C*                         Staffbot;                                                // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void ExecuteUbergraph_PossessStaffbotButton(int EntryPoint);
+		void ExecuteUbergraph_PossessStaffbotButton(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

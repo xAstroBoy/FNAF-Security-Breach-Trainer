@@ -31,19 +31,19 @@ namespace CG
 	class UMeshDescriptionBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_XAHB[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JF8L[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
 
 	public:
 		void SetVertexPosition(const struct FVertexID& VertexID, const struct FVector& Position);
-		void SetPolygonVertexInstance(const struct FPolygonID& PolygonID, int PerimeterIndex, const struct FVertexInstanceID& VertexInstanceID);
+		void SetPolygonVertexInstance(const struct FPolygonID& PolygonID, int32_t PerimeterIndex, const struct FVertexInstanceID& VertexInstanceID);
 		void SetPolygonPolygonGroup(const struct FPolygonID& PolygonID, const struct FPolygonGroupID& PolygonGroupID);
 		void ReversePolygonFacing(const struct FPolygonID& PolygonID);
-		void ReserveNewVertices(int NumberOfNewVertices);
-		void ReserveNewVertexInstances(int NumberOfNewVertexInstances);
-		void ReserveNewTriangles(int NumberOfNewTriangles);
-		void ReserveNewPolygons(int NumberOfNewPolygons);
-		void ReserveNewPolygonGroups(int NumberOfNewPolygonGroups);
-		void ReserveNewEdges(int NumberOfNewEdges);
+		void ReserveNewVertices(int32_t NumberOfNewVertices);
+		void ReserveNewVertexInstances(int32_t NumberOfNewVertexInstances);
+		void ReserveNewTriangles(int32_t NumberOfNewTriangles);
+		void ReserveNewPolygons(int32_t NumberOfNewPolygons);
+		void ReserveNewPolygonGroups(int32_t NumberOfNewPolygonGroups);
+		void ReserveNewEdges(int32_t NumberOfNewEdges);
 		bool IsVertexValid(const struct FVertexID& VertexID);
 		bool IsVertexOrphaned(const struct FVertexID& VertexID);
 		bool IsVertexInstanceValid(const struct FVertexInstanceID& VertexInstanceID);
@@ -70,7 +70,7 @@ namespace CG
 		void GetVertexAdjacentVertices(const struct FVertexID& VertexID, TArray<struct FVertexID>* OutAdjacentVertexIDs);
 		void GetTriangleVertices(const struct FTriangleID& TriangleID, TArray<struct FVertexID>* OutVertexIDs);
 		void GetTriangleVertexInstances(const struct FTriangleID& TriangleID, TArray<struct FVertexInstanceID>* OutVertexInstanceIDs);
-		struct FVertexInstanceID GetTriangleVertexInstance(const struct FTriangleID& TriangleID, int Index);
+		struct FVertexInstanceID GetTriangleVertexInstance(const struct FTriangleID& TriangleID, int32_t Index);
 		struct FPolygonGroupID GetTrianglePolygonGroup(const struct FTriangleID& TriangleID);
 		struct FPolygonID GetTrianglePolygon(const struct FTriangleID& TriangleID);
 		void GetTriangleEdges(const struct FTriangleID& TriangleID, TArray<struct FEdgeID>* OutEdgeIDs);
@@ -83,20 +83,20 @@ namespace CG
 		void GetPolygonInternalEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutEdgeIDs);
 		void GetPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID, TArray<struct FPolygonID>* OutPolygonIDs);
 		void GetPolygonAdjacentPolygons(const struct FPolygonID& PolygonID, TArray<struct FPolygonID>* OutPolygonIDs);
-		int GetNumVertexVertexInstances(const struct FVertexID& VertexID);
-		int GetNumVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID);
-		int GetNumVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID);
-		int GetNumVertexConnectedTriangles(const struct FVertexID& VertexID);
-		int GetNumVertexConnectedPolygons(const struct FVertexID& VertexID);
-		int GetNumVertexConnectedEdges(const struct FVertexID& VertexID);
-		int GetNumPolygonVertices(const struct FPolygonID& PolygonID);
-		int GetNumPolygonTriangles(const struct FPolygonID& PolygonID);
-		int GetNumPolygonInternalEdges(const struct FPolygonID& PolygonID);
-		int GetNumPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID);
-		int GetNumEdgeConnectedTriangles(const struct FEdgeID& EdgeID);
-		int GetNumEdgeConnectedPolygons(const struct FEdgeID& EdgeID);
+		int32_t GetNumVertexVertexInstances(const struct FVertexID& VertexID);
+		int32_t GetNumVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID);
+		int32_t GetNumVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID);
+		int32_t GetNumVertexConnectedTriangles(const struct FVertexID& VertexID);
+		int32_t GetNumVertexConnectedPolygons(const struct FVertexID& VertexID);
+		int32_t GetNumVertexConnectedEdges(const struct FVertexID& VertexID);
+		int32_t GetNumPolygonVertices(const struct FPolygonID& PolygonID);
+		int32_t GetNumPolygonTriangles(const struct FPolygonID& PolygonID);
+		int32_t GetNumPolygonInternalEdges(const struct FPolygonID& PolygonID);
+		int32_t GetNumPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID);
+		int32_t GetNumEdgeConnectedTriangles(const struct FEdgeID& EdgeID);
+		int32_t GetNumEdgeConnectedPolygons(const struct FEdgeID& EdgeID);
 		void GetEdgeVertices(const struct FEdgeID& EdgeID, TArray<struct FVertexID>* OutVertexIDs);
-		struct FVertexID GetEdgeVertex(const struct FEdgeID& EdgeID, int VertexNumber);
+		struct FVertexID GetEdgeVertex(const struct FEdgeID& EdgeID, int32_t VertexNumber);
 		void GetEdgeConnectedTriangles(const struct FEdgeID& EdgeID, TArray<struct FTriangleID>* OutConnectedTriangleIDs);
 		void GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID, TArray<struct FPolygonID>* OutConnectedPolygonIDs);
 		void Empty();

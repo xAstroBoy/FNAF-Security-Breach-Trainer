@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Freddy_Charge_ABP_Package.h"
 
 namespace CG
 {
@@ -970,9 +969,9 @@ namespace CG
 	 * 		Name   -> Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.ExecuteUbergraph_Freddy_Charge_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFreddy_Charge_ABP_C::ExecuteUbergraph_Freddy_Charge_ABP(int EntryPoint)
+	void UFreddy_Charge_ABP_C::ExecuteUbergraph_Freddy_Charge_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

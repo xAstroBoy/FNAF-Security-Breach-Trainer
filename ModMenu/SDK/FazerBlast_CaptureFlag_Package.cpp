@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazerBlast_CaptureFlag_Package.h"
 
 namespace CG
 {
@@ -175,9 +174,9 @@ namespace CG
 	 * 		Name   -> Function FazerBlast_CaptureFlag.FazerBlast_CaptureFlag_C.ExecuteUbergraph_FazerBlast_CaptureFlag
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazerBlast_CaptureFlag_C::ExecuteUbergraph_FazerBlast_CaptureFlag(int EntryPoint)
+	void UFazerBlast_CaptureFlag_C::ExecuteUbergraph_FazerBlast_CaptureFlag(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -20,7 +20,7 @@ namespace CG
 	struct UVOPlayableActor_C_PlayVoiceType_Params
 	{
 	public:
-		TEnumAsByte<AIVoiceOverType_EAIVoiceOverType>              VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		AIVoiceOverType_EAIVoiceOverType                           VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

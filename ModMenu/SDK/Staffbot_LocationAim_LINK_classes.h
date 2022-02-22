@@ -45,16 +45,16 @@ namespace CG
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x1010(0x0020)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x1030(0x0020)
 		bool                                                       IsHeadAiming;                                            // 0x1050(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_P78X[0x3];                                   // 0x1051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5PN2[0x3];                                   // 0x1051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRotator                                            AimRotChest;                                             // 0x1054(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FVector                                             AimTarget;                                               // 0x1060(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      AimAlpha;                                                // 0x106C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<StaffbotJob_Anim_EStaffbotJob_Anim>            jobEnum;                                                 // 0x1070(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		StaffbotJob_Anim_EStaffbotJob_Anim                         jobEnum;                                                 // 0x1070(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void ExecuteUbergraph_Staffbot_LocationAim_LINK(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_LocationAim_LINK(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

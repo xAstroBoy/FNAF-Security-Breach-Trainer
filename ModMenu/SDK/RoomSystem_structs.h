@@ -23,10 +23,10 @@ namespace CG
 	public:
 		unsigned char                                              Room[0x28];                                              // 0x0000(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              DoorActor[0x28];                                         // 0x0028(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		int                                                        ThisRoomPointIndex;                                      // 0x0050(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int                                                        DestinationRoomPointIndex;                               // 0x0054(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    ThisRoomPointIndex;                                      // 0x0050(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    DestinationRoomPointIndex;                               // 0x0054(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      DistanceBetweenPoints;                                   // 0x0058(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IW8J[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_H7WU[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -38,8 +38,8 @@ namespace CG
 	{
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_700S[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<int>                                                IndexToVisiblePoints;                                    // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_YLY2[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<int32_t>                                            IndexToVisiblePoints;                                    // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
 
@@ -64,8 +64,8 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int                                                        Index;                                                   // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_C9DK[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (PADDING)
+		int32_t                                                    Index;                                                   // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_CPLH[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -78,7 +78,7 @@ namespace CG
 	public:
 		struct FPOIIndex                                           Index;                                                   // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FPointOfInterestRuntimeInfo                         Info;                                                    // 0x0010(0x0014) Edit, BlueprintVisible, EditConst, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LC9C[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1P66[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "HandrailScalingMethod_Package.h"
 
 namespace CG
 {

@@ -41,7 +41,7 @@ namespace CG
 		void SetFonts();
 		void SetTextFields(const class FText& LeftSide, const class FName& ActionMappingName, const class FText& Middle, const class FName& ActionMappingName2, const class FText& RightSide);
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_UI_TextAndIcons(int EntryPoint);
+		void ExecuteUbergraph_UI_TextAndIcons(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

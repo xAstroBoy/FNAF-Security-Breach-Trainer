@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MultiInputActivator_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function MultiInputActivator.MultiInputActivator_C.GetNumberActivated
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                NumberActivated                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NumberActivated                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMultiInputActivator_C::GetNumberActivated(int* NumberActivated)
+	void AMultiInputActivator_C::GetNumberActivated(int32_t* NumberActivated)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -42,9 +41,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               AllOn                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                Count                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Count                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMultiInputActivator_C::CheckAllActivatorsOn(bool* AllOn, int* Count)
+	void AMultiInputActivator_C::CheckAllActivatorsOn(bool* AllOn, int32_t* Count)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -150,9 +149,9 @@ namespace CG
 	 * 		Name   -> Function MultiInputActivator.MultiInputActivator_C.ExecuteUbergraph_MultiInputActivator
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMultiInputActivator_C::ExecuteUbergraph_MultiInputActivator(int EntryPoint)
+	void AMultiInputActivator_C::ExecuteUbergraph_MultiInputActivator(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -172,10 +171,10 @@ namespace CG
 	 * 		Name   -> Function MultiInputActivator.MultiInputActivator_C.OnCanActivate__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Activator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMultiInputActivator_C::OnCanActivate__DelegateSignature(int Count, class AActor* Activator)
+	void AMultiInputActivator_C::OnCanActivate__DelegateSignature(int32_t Count, class AActor* Activator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -196,10 +195,10 @@ namespace CG
 	 * 		Name   -> Function MultiInputActivator.MultiInputActivator_C.OnCantActivate__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Count                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Activator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMultiInputActivator_C::OnCantActivate__DelegateSignature(int Count, class AActor* Activator)
+	void AMultiInputActivator_C::OnCantActivate__DelegateSignature(int32_t Count, class AActor* Activator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

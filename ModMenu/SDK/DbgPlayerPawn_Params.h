@@ -20,7 +20,7 @@ namespace CG
 	struct ADbgPlayerPawn_C_GetCollisionMode_Params
 	{
 	public:
-		TEnumAsByte<Engine_ECollisionEnabled>                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		Engine_ECollisionEnabled                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -30,7 +30,7 @@ namespace CG
 	struct ADbgPlayerPawn_C_Set_Collision_Mode_Params
 	{
 	public:
-		TEnumAsByte<Engine_ECollisionEnabled>                      NewType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		Engine_ECollisionEnabled                                   NewType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -40,7 +40,7 @@ namespace CG
 	struct ADbgPlayerPawn_C_ExecuteUbergraph_DbgPlayerPawn_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "GregoryOverlay_Package.h"
 
 namespace CG
 {
@@ -140,9 +139,9 @@ namespace CG
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ExecuteUbergraph_GregoryOverlay
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGregoryOverlay_C::ExecuteUbergraph_GregoryOverlay(int EntryPoint)
+	void UGregoryOverlay_C::ExecuteUbergraph_GregoryOverlay(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -36,7 +36,7 @@ namespace CG
 		void Set_Fog_Scenario(const class FName& FogScenario);
 		void Add_Overlapped_Volume(class AFogVolume_C* Item);
 		void Remove_Overlapped_Volume(class AFogVolume_C* Item);
-		void ExecuteUbergraph_FogSystem(int EntryPoint);
+		void ExecuteUbergraph_FogSystem(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

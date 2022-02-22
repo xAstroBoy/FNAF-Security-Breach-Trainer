@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BasePatrolController_Package.h"
 
 namespace CG
 {
@@ -104,9 +103,9 @@ namespace CG
 	 * 		Name   -> Function BasePatrolController.BasePatrolController_C.ExecuteUbergraph_BasePatrolController
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABasePatrolController_C::ExecuteUbergraph_BasePatrolController(int EntryPoint)
+	void ABasePatrolController_C::ExecuteUbergraph_BasePatrolController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

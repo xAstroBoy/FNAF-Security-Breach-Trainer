@@ -32,7 +32,7 @@ namespace CG
 
 	public:
 		void Setup(const class FText& MissionName, const class FText& MissionDescription, bool ContainsIcon, const class FText& LeftText, const class FName& KeyName, const class FText& RightText);
-		void ExecuteUbergraph_MissionInfoElementHUD(int EntryPoint);
+		void ExecuteUbergraph_MissionInfoElementHUD(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

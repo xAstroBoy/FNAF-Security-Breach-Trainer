@@ -29,8 +29,8 @@ namespace CG
 		class UTextBlock*                                          SettingsName_text;                                       // 0x0258(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class FText                                                TextValue;                                               // 0x0260(0x0018) Edit, BlueprintVisible, ExposeOnSpawn
 		TArray<class FString>                                      ComboBoxValues;                                          // 0x0278(0x0010) Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash
-		int                                                        DefaultValue;                                            // 0x0288(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		int                                                        CurrentValue;                                            // 0x028C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    DefaultValue;                                            // 0x0288(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		int32_t                                                    CurrentValue;                                            // 0x028C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             ChangesApplied;                                          // 0x0290(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class FScriptMulticastDelegate                             ArrowKeyPressed;                                         // 0x02A0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class UAkAudioEvent*                                       HoveredEvent;                                            // 0x02B0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -39,7 +39,7 @@ namespace CG
 	public:
 		struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
 		struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-		void CycleThroughComboBox(int Next);
+		void CycleThroughComboBox(int32_t Next);
 		void HasFocus(class UButton* Button);
 		void PreConstruct(bool IsDesignTime);
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -47,10 +47,10 @@ namespace CG
 		void BndEvt__LeftArrow_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
 		void BndEvt__LeftArrow_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature();
 		void BndEvt__RightArrow_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
-		void StartingValue(int Index);
+		void StartingValue(int32_t Index);
 		void SetToDefault();
 		void ApplyChanges();
-		void ExecuteUbergraph_Title_ComboBox(int EntryPoint);
+		void ExecuteUbergraph_Title_ComboBox(int32_t EntryPoint);
 		void ArrowKeyPressed__DelegateSignature();
 		void ChangesApplied__DelegateSignature();
 		static UClass* StaticClass();

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Synthesis_Package.h"
 
 namespace CG
 {
@@ -371,10 +370,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		Synthesis_ESynth1OscType                           OscType                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscType(int OscIndex, Synthesis_ESynth1OscType OscType)
+	void UModularSynthComponent::SetOscType(int32_t OscIndex, Synthesis_ESynth1OscType OscType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -419,10 +418,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscSemitones
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Semitones                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscSemitones(int OscIndex, float Semitones)
+	void UModularSynthComponent::SetOscSemitones(int32_t OscIndex, float Semitones)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -444,10 +443,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscPulsewidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Pulsewidth                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscPulsewidth(int OscIndex, float Pulsewidth)
+	void UModularSynthComponent::SetOscPulsewidth(int32_t OscIndex, float Pulsewidth)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -469,10 +468,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscOctave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Octave                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscOctave(int OscIndex, float Octave)
+	void UModularSynthComponent::SetOscOctave(int32_t OscIndex, float Octave)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -494,10 +493,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              OscGainMod                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscGainMod(int OscIndex, float OscGainMod)
+	void UModularSynthComponent::SetOscGainMod(int32_t OscIndex, float OscGainMod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -519,10 +518,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              OscGain                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscGain(int OscIndex, float OscGain)
+	void UModularSynthComponent::SetOscGain(int32_t OscIndex, float OscGain)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -544,10 +543,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              OscFreqMod                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscFrequencyMod(int OscIndex, float OscFreqMod)
+	void UModularSynthComponent::SetOscFrequencyMod(int32_t OscIndex, float OscFreqMod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -569,10 +568,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscCents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OscIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Cents                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetOscCents(int OscIndex, float Cents)
+	void UModularSynthComponent::SetOscCents(int32_t OscIndex, float Cents)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -801,10 +800,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		Synthesis_ESynthLFOType                            LFOType                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOType(int LFOIndex, Synthesis_ESynthLFOType LFOType)
+	void UModularSynthComponent::SetLFOType(int32_t LFOIndex, Synthesis_ESynthLFOType LFOType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -826,10 +825,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		Synthesis_ESynthLFOPatchType                       LFOPatchType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOPatch(int LFOIndex, Synthesis_ESynthLFOPatchType LFOPatchType)
+	void UModularSynthComponent::SetLFOPatch(int32_t LFOIndex, Synthesis_ESynthLFOPatchType LFOPatchType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -851,10 +850,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		Synthesis_ESynthLFOMode                            LFOMode                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOMode(int LFOIndex, Synthesis_ESynthLFOMode LFOMode)
+	void UModularSynthComponent::SetLFOMode(int32_t LFOIndex, Synthesis_ESynthLFOMode LFOMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -876,10 +875,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              GainMod                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOGainMod(int LFOIndex, float GainMod)
+	void UModularSynthComponent::SetLFOGainMod(int32_t LFOIndex, float GainMod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -901,10 +900,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Gain                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOGain(int LFOIndex, float Gain)
+	void UModularSynthComponent::SetLFOGain(int32_t LFOIndex, float Gain)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -926,10 +925,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              FrequencyModHz                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOFrequencyMod(int LFOIndex, float FrequencyModHz)
+	void UModularSynthComponent::SetLFOFrequencyMod(int32_t LFOIndex, float FrequencyModHz)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -951,10 +950,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            LFOIndex                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              FrequencyHz                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::SetLFOFrequency(int LFOIndex, float FrequencyHz)
+	void UModularSynthComponent::SetLFOFrequency(int32_t LFOIndex, float FrequencyHz)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1395,10 +1394,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Note                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Velocity                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Velocity                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Duration                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UModularSynthComponent::NoteOn(float Note, int Velocity, float Duration)
+	void UModularSynthComponent::NoteOn(float Note, int32_t Velocity, float Duration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2460,10 +2459,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTapDelayInfo                               TapInfo                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void USubmixEffectTapDelayPreset::SetTap(int TapId, const struct FTapDelayInfo& TapInfo)
+	void USubmixEffectTapDelayPreset::SetTap(int32_t TapId, const struct FTapDelayInfo& TapInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2531,9 +2530,9 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USubmixEffectTapDelayPreset::RemoveTap(int TapId)
+	void USubmixEffectTapDelayPreset::RemoveTap(int32_t TapId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2554,9 +2553,9 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		TArray<int>                                        TapIds                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    TapIds                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USubmixEffectTapDelayPreset::GetTapIds(TArray<int>* TapIds)
+	void USubmixEffectTapDelayPreset::GetTapIds(TArray<int32_t>* TapIds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2579,10 +2578,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TapId                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTapDelayInfo                               TapInfo                                                    (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void USubmixEffectTapDelayPreset::GetTap(int TapId, struct FTapDelayInfo* TapInfo)
+	void USubmixEffectTapDelayPreset::GetTap(int32_t TapId, struct FTapDelayInfo* TapInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2628,9 +2627,9 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.AddTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TapId                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TapId                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USubmixEffectTapDelayPreset::AddTap(int* TapId)
+	void USubmixEffectTapDelayPreset::AddTap(int32_t* TapId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3176,10 +3175,10 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Note                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                Velocity                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Velocity                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Duration                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UGranularSynth::NoteOn(float Note, int Velocity, float Duration)
+	void UGranularSynth::NoteOn(float Note, int32_t Velocity, float Duration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3919,11 +3918,11 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                KeyframeIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            KeyframeIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              NewValue                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USynthComponentMonoWaveTable::SetCurveValue(int TableIndex, int KeyframeIndex, float NewValue)
+	bool USynthComponentMonoWaveTable::SetCurveValue(int32_t TableIndex, int32_t KeyframeIndex, float NewValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3948,10 +3947,10 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              InNewTangent                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USynthComponentMonoWaveTable::SetCurveTangent(int TableIndex, float InNewTangent)
+	bool USynthComponentMonoWaveTable::SetCurveTangent(int32_t TableIndex, float InNewTangent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3976,9 +3975,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		Synthesis_ECurveInterpolationType                  InterpolationType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USynthComponentMonoWaveTable::SetCurveInterpolationType(Synthesis_ECurveInterpolationType InterpolationType, int TableIndex)
+	bool USynthComponentMonoWaveTable::SetCurveInterpolationType(Synthesis_ECurveInterpolationType InterpolationType, int32_t TableIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4186,9 +4185,9 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.RefreshWaveTable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USynthComponentMonoWaveTable::RefreshWaveTable(int Index)
+	void USynthComponentMonoWaveTable::RefreshWaveTable(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4277,7 +4276,7 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
-	int USynthComponentMonoWaveTable::GetNumTableEntries()
+	int32_t USynthComponentMonoWaveTable::GetNumTableEntries()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4299,7 +4298,7 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int USynthComponentMonoWaveTable::GetMaxTableIndex()
+	int32_t USynthComponentMonoWaveTable::GetMaxTableIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4346,9 +4345,9 @@ namespace CG
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            TableIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float USynthComponentMonoWaveTable::GetCurveTangent(int TableIndex)
+	float USynthComponentMonoWaveTable::GetCurveTangent(int32_t TableIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

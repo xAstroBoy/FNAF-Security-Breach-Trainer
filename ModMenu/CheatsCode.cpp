@@ -223,15 +223,33 @@ namespace Cheats
 		}
 	}
 
-	void DestroyActorComponent(CG::UObject* value)
+	void MinigamesGodMode()
 	{
-		if (value != nullptr)
+		try
 		{
-			auto Engine = CG::UObject::FindObjects<CG::UActorComponent>()[1];
-			if (Engine != nullptr)
+			auto PrincessQuestUI = CG::UObject::FindObjects<CG::UPlayerUI_C>();
+			if (!PrincessQuestUI.empty())
 			{
-				Engine->K2_DestroyComponent(value);
+				for (auto& mods : PrincessQuestUI)
+				{
+					if (mods != nullptr)
+					{
+						mods->HealFull();
+					}
+				}
 			}
+		}
+		catch (const std::exception& ex)
+		{
+			std::cout << "Thread exited with exception: " << ex.what() << "\n";
+		}
+	}
+
+	void DestroyUBoxComponent(CG::UBoxComponent* Actor)
+	{
+		if (Actor != nullptr)
+		{
+			Actor->K2_DestroyComponent(Actor);
 		}
 	}
 
@@ -256,8 +274,11 @@ namespace Cheats
 					{
 						if (mods->PlayerCaptureTrigger != nullptr)
 						{
-							ConsoleWrite("Destroyed a PlayerCaptureTrigger in " + mods->SearchActor->GetName());
-							DestroyActorComponent(mods->PlayerCaptureTrigger);
+							if (mods->Owner != nullptr)
+							{
+								ConsoleWrite("Destroyed a PlayerCaptureTrigger in " + mods->Owner->GetName());
+							}
+							DestroyUBoxComponent(mods->PlayerCaptureTrigger);
 						}
 
 					}

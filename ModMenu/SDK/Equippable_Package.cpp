@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Equippable_Package.h"
 
 namespace CG
 {
@@ -93,9 +92,9 @@ namespace CG
 	 * 		Name   -> Function Equippable.Equippable_C.ExecuteUbergraph_Equippable
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEquippable_C::ExecuteUbergraph_Equippable(int EntryPoint)
+	void AEquippable_C::ExecuteUbergraph_Equippable(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

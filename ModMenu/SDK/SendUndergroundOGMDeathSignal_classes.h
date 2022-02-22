@@ -22,11 +22,11 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		int                                                        Type;                                                    // 0x00B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Type;                                                    // 0x00B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_SendUndergroundOGMDeathSignal(int EntryPoint);
+		void ExecuteUbergraph_SendUndergroundOGMDeathSignal(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

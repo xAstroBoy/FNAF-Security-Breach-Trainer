@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DBG_SeekerWidget_Package.h"
 
 namespace CG
 {
@@ -60,9 +59,9 @@ namespace CG
 	 * 		Name   -> Function DBG_SeekerWidget.DBG_SeekerWidget_C.ExecuteUbergraph_DBG_SeekerWidget
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDBG_SeekerWidget_C::ExecuteUbergraph_DBG_SeekerWidget(int EntryPoint)
+	void UDBG_SeekerWidget_C::ExecuteUbergraph_DBG_SeekerWidget(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -33,7 +33,7 @@ namespace CG
 		void BndEvt__Button_89_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__Button_89_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
 		void Construct();
-		void ExecuteUbergraph_DebugInstructionCardButton(int EntryPoint);
+		void ExecuteUbergraph_DebugInstructionCardButton(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

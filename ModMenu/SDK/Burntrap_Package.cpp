@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Burntrap_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function Burntrap.Burntrap_C.ExecuteUbergraph_Burntrap
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABurntrap_C::ExecuteUbergraph_Burntrap(int EntryPoint)
+	void ABurntrap_C::ExecuteUbergraph_Burntrap(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

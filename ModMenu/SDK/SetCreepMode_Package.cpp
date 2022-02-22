@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetCreepMode_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetCreepMode.SetCreepMode_C.ExecuteUbergraph_SetCreepMode
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetCreepMode_C::ExecuteUbergraph_SetCreepMode(int EntryPoint)
+	void USetCreepMode_C::ExecuteUbergraph_SetCreepMode(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

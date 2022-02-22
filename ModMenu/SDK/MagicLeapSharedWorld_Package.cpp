@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapSharedWorld_Package.h"
 
 namespace CG
 {

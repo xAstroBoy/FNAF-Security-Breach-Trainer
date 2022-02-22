@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugTaskUI_Package.h"
 
 namespace CG
 {
@@ -121,9 +120,9 @@ namespace CG
 	 * 		Name   -> Function DebugTaskUI.DebugTaskUI_C.ExecuteUbergraph_DebugTaskUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugTaskUI_C::ExecuteUbergraph_DebugTaskUI(int EntryPoint)
+	void UDebugTaskUI_C::ExecuteUbergraph_DebugTaskUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

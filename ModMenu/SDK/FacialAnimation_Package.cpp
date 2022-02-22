@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FacialAnimation_Package.h"
 
 namespace CG
 {

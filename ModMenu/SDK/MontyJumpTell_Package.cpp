@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyJumpTell_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function MontyJumpTell.MontyJumpTell_C.ExecuteUbergraph_MontyJumpTell
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMontyJumpTell_C::ExecuteUbergraph_MontyJumpTell(int EntryPoint)
+	void AMontyJumpTell_C::ExecuteUbergraph_MontyJumpTell(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

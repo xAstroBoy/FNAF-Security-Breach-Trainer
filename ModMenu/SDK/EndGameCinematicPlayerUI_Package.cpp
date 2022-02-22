@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EndGameCinematicPlayerUI_Package.h"
 
 namespace CG
 {
@@ -155,9 +154,9 @@ namespace CG
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.ExecuteUbergraph_EndGameCinematicPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UEndGameCinematicPlayerUI_C::ExecuteUbergraph_EndGameCinematicPlayerUI(int EntryPoint)
+	void UEndGameCinematicPlayerUI_C::ExecuteUbergraph_EndGameCinematicPlayerUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

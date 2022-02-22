@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyLeap_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayRummage_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function PlayRummage.PlayRummage_C.ExecuteUbergraph_PlayRummage
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayRummage_C::ExecuteUbergraph_PlayRummage(int EntryPoint)
+	void UPlayRummage_C::ExecuteUbergraph_PlayRummage(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

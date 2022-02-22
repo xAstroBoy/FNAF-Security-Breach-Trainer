@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ReverseSplineDirection_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ReverseSplineDirection.ReverseSplineDirection_C.ExecuteUbergraph_ReverseSplineDirection
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UReverseSplineDirection_C::ExecuteUbergraph_ReverseSplineDirection(int EntryPoint)
+	void UReverseSplineDirection_C::ExecuteUbergraph_ReverseSplineDirection(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

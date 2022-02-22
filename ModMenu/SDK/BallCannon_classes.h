@@ -32,8 +32,8 @@ namespace CG
 		class UCannonHUD_C*                                        HUD;                                                     // 0x02C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class ABallCannonPawn_C*                                   ControllingPawn;                                         // 0x02D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             OnShotFired;                                             // 0x02D8(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
-		int                                                        NumberTargetsHit;                                        // 0x02E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_4Z23[0x4];                                   // 0x02EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    NumberTargetsHit;                                        // 0x02E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_DXAJ[0x4];                                   // 0x02EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              Ball_Actor_Class;                                        // 0x02F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UClass*                                              Ball_Cannon_Pawn_Class;                                  // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              FogVolume[0x28];                                         // 0x0300(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -45,7 +45,7 @@ namespace CG
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void CanFire(bool* CanFire);
 		void InpActEvt_PrimaryAction_K2Node_InputActionEvent_1(const struct FKey& Key);
@@ -61,7 +61,7 @@ namespace CG
 		void ReceiveUnpossessed(class AController* OldController);
 		void OnExit();
 		void On_Target_Hit();
-		void ExecuteUbergraph_BallCannon(int EntryPoint);
+		void ExecuteUbergraph_BallCannon(int32_t EntryPoint);
 		void OnShotFired__DelegateSignature(class ABallCannon_C* BallCannon);
 		static UClass* StaticClass();
 	};

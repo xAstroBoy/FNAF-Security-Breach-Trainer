@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AudioEmitterInterface_Package.h"
 
 namespace CG
 {

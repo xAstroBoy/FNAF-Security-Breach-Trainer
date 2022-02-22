@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MaterialShaderQualitySettings_Package.h"
 
 namespace CG
 {

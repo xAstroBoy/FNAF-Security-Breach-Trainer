@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "InteractiblePressType_Package.h"
 
 namespace CG
 {

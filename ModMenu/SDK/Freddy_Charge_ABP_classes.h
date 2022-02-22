@@ -27,12 +27,12 @@ namespace CG
 		float                                                      __CustomProperty_EaringDynamicAlpha_3C79D5AB4F16FF815D4D6F828B42F6EC; // 0x0320(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_3C79D5AB4F16FF815D4D6F828B42F6EC; // 0x0324(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_3C79D5AB4F16FF815D4D6F828B42F6EC; // 0x0328(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_F5WH[0x7];                                   // 0x0329(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X862[0x7];                                   // 0x0329(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_2;                         // 0x0330(0x00A0)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_EC3BEC384F117C5D506776A52C8201B8; // 0x03D0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_EC3BEC384F117C5D506776A52C8201B8; // 0x03D4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_EC3BEC384F117C5D506776A52C8201B8; // 0x03D8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_9FUN[0x4];                                   // 0x03DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_D6J0[0x4];                                   // 0x03DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph;                           // 0x03E0(0x00A0)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_4;                                  // 0x0480(0x01B0)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_3;                                  // 0x0630(0x01B0)
@@ -46,7 +46,7 @@ namespace CG
 		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x0C88(0x00C0)
 		struct FVector                                             HeadAimTarget;                                           // 0x0D48(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HeadAim;                                                 // 0x0D54(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_7EST[0x3];                                   // 0x0D55(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GMIG[0x3];                                   // 0x0D55(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             HeadAimLoc;                                              // 0x0D58(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            HeadAimRot;                                              // 0x0D64(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -96,7 +96,7 @@ namespace CG
 		void HeadAimEvent(bool OnOff);
 		void SetHeadAimTarget(const struct FVector& AimLocation);
 		void Wave();
-		void ExecuteUbergraph_Freddy_Charge_ABP(int EntryPoint);
+		void ExecuteUbergraph_Freddy_Charge_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

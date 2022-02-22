@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindFreddyInteractible_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function FindFreddyInteractible.FindFreddyInteractible_C.ExecuteUbergraph_FindFreddyInteractible
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindFreddyInteractible_C::ExecuteUbergraph_FindFreddyInteractible(int EntryPoint)
+	void UFindFreddyInteractible_C::ExecuteUbergraph_FindFreddyInteractible(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

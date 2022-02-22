@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugInventoryItem_Package.h"
 
 namespace CG
 {
@@ -103,9 +102,9 @@ namespace CG
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.ExecuteUbergraph_DebugInventoryItem
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugInventoryItem_C::ExecuteUbergraph_DebugInventoryItem(int EntryPoint)
+	void UDebugInventoryItem_C::ExecuteUbergraph_DebugInventoryItem(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapEyeTracker_Package.h"
 
 namespace CG
 {

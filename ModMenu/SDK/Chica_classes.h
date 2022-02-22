@@ -21,7 +21,7 @@ namespace CG
 	class AChica_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_GURA[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YKQZ[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class FName                                                GarbageDetectedBB;                                       // 0x0800(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                GarbageLocationBB;                                       // 0x0808(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -32,7 +32,7 @@ namespace CG
 		void On_Garbage_Detected(const struct FVector& GarbageLocation);
 		void Smash_In_Compactor();
 		void Set_Creep_Mode(bool enable);
-		void ExecuteUbergraph_Chica(int EntryPoint);
+		void ExecuteUbergraph_Chica(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

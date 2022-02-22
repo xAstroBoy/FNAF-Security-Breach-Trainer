@@ -34,7 +34,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature();
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_GregoryEjectPawn(int EntryPoint);
+		void ExecuteUbergraph_GregoryEjectPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -196,7 +196,7 @@ namespace CG
 	struct FBrushStampData
 	{
 	public:
-		unsigned char                                              UnknownData_4AA1[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZY9U[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
 
 	};
 
@@ -208,7 +208,7 @@ namespace CG
 	{
 	public:
 		class UInputBehavior*                                      Behavior;                                                // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OFAZ[0x18];                                  // 0x0008(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_W4JB[0x18];                                  // 0x0008(0x0018) MISSED OFFSET (PADDING)
 
 	};
 
@@ -219,7 +219,7 @@ namespace CG
 	struct FActiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_N5UG[0x30];                                  // 0x0000(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M9G1[0x30];                                  // 0x0000(0x0030) MISSED OFFSET (PADDING)
 
 	};
 
@@ -254,7 +254,7 @@ namespace CG
 	struct FInputRayHit
 	{
 	public:
-		unsigned char                                              UnknownData_6RP1[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WRUN[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
 
 	};
 

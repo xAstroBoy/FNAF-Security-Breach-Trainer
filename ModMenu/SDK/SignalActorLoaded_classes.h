@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_SignalActorLoaded(int EntryPoint);
+		void ExecuteUbergraph_SignalActorLoaded(int32_t EntryPoint);
 		void OnActorLoaded__DelegateSignature(class AActor* LoadedActor);
 		static UClass* StaticClass();
 	};

@@ -59,20 +59,20 @@ namespace CG
 	public:
 		void UpdateFlashlightMeter(float Power);
 		UMG_ESlateVisibility GetVisibility_NewMessageStar();
-		void CategoryButtonBackground(int Index);
+		void CategoryButtonBackground(int32_t Index);
 		void ColorTextOnUnhovered(class UTextBlock* Text);
 		void ColorTextOnHovered(class UTextBlock* Text);
 		void SetupMapDisplay();
 		UMG_ESlateVisibility GetVisibility_NewMissionStar();
 		UMG_ESlateVisibility GetControllerVisible();
-		void SignalSiwtch(int Direction);
+		void SignalSiwtch(int32_t Direction);
 		void InputOpen();
 		void Construct();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void SetupMenus();
 		void BndEvt__Cam_Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__Map_Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-		void SwitchTab(int CurrentWidget, bool PlaySound);
+		void SwitchTab(int32_t CurrentWidget, bool PlaySound);
 		void BndEvt__Notes_Button_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__PanSlider_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature(float Value);
 		void InputMoveAxis(const struct FVector2D& Axis);
@@ -87,7 +87,7 @@ namespace CG
 		void InputBack();
 		void InputClose();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void BndEvt__Cam_Button_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature();
@@ -100,7 +100,7 @@ namespace CG
 		void BndEvt__Messages_Button_K2Node_ComponentBoundEvent_13_OnButtonHoverEvent__DelegateSignature();
 		void BndEvt__Messages_Button_K2Node_ComponentBoundEvent_14_OnButtonHoverEvent__DelegateSignature();
 		void OpenToNewMessage();
-		void ExecuteUbergraph_MasterUI(int EntryPoint);
+		void ExecuteUbergraph_MasterUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

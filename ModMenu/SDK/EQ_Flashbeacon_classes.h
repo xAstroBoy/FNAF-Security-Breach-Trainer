@@ -27,7 +27,7 @@ namespace CG
 		class UTextRenderComponent*                                TextRender;                                              // 0x0258(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        TimerHandle;                                             // 0x0260(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse_;                                                 // 0x0268(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_5Z1G[0x3];                                   // 0x0269(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UJVO[0x3];                                   // 0x0269(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      CoolDownTime;                                            // 0x026C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UGregoryOverlay_C*                                   GregoryOverlay;                                          // 0x0270(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
@@ -38,7 +38,7 @@ namespace CG
 		void ResetCamUse();
 		void Recharging();
 		void RechargeDone();
-		void ExecuteUbergraph_EQ_Flashbeacon(int EntryPoint);
+		void ExecuteUbergraph_EQ_Flashbeacon(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

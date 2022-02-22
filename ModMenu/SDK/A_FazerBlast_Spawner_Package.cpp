@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "A_FazerBlast_Spawner_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function A_FazerBlast_Spawner.A_FazerBlast_Spawner_C.ExecuteUbergraph_A_FazerBlast_Spawner
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AA_FazerBlast_Spawner_C::ExecuteUbergraph_A_FazerBlast_Spawner(int EntryPoint)
+	void AA_FazerBlast_Spawner_C::ExecuteUbergraph_A_FazerBlast_Spawner(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

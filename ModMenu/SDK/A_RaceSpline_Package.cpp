@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "A_RaceSpline_Package.h"
 
 namespace CG
 {

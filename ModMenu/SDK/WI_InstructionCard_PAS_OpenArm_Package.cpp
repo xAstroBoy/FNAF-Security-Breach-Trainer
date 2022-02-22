@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_PAS_OpenArm_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function WI_InstructionCard_PAS_OpenArm.WI_InstructionCard_PAS_OpenArm_C.ExecuteUbergraph_WI_InstructionCard_PAS_OpenArm
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_InstructionCard_PAS_OpenArm_C::ExecuteUbergraph_WI_InstructionCard_PAS_OpenArm(int EntryPoint)
+	void UWI_InstructionCard_PAS_OpenArm_C::ExecuteUbergraph_WI_InstructionCard_PAS_OpenArm(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

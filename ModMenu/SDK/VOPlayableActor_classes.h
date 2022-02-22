@@ -21,7 +21,7 @@ namespace CG
 	class UVOPlayableActor_C : public UInterface
 	{
 	public:
-		void PlayVoiceType(TEnumAsByte<AIVoiceOverType_EAIVoiceOverType> VoiceTag);
+		void PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag);
 		static UClass* StaticClass();
 	};
 

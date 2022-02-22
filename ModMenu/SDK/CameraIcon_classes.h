@@ -39,7 +39,7 @@ namespace CG
 		void AlertEvent();
 		void AdjustButton();
 		void BndEvt__HackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
-		void ExecuteUbergraph_CameraIcon(int EntryPoint);
+		void ExecuteUbergraph_CameraIcon(int32_t EntryPoint);
 		void CameraClicked__DelegateSignature(class UCameraIcon_C* Sender);
 		static UClass* StaticClass();
 	};

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PointStruct_Package.h"
 
 namespace CG
 {

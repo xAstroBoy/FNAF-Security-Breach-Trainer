@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindHidingLocationWithoutPlayer_Package.h"
 
 namespace CG
 {

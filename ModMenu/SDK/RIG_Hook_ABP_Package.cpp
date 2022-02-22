@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RIG_Hook_ABP_Package.h"
 
 namespace CG
 {
@@ -84,9 +83,9 @@ namespace CG
 	 * 		Name   -> Function RIG_Hook_ABP.RIG_Hook_ABP_C.ExecuteUbergraph_RIG_Hook_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_Hook_ABP_C::ExecuteUbergraph_RIG_Hook_ABP(int EntryPoint)
+	void URIG_Hook_ABP_C::ExecuteUbergraph_RIG_Hook_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

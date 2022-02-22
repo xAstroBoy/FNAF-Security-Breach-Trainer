@@ -31,7 +31,7 @@ namespace CG
 
 	public:
 		void Set_Marker();
-		void ExecuteUbergraph_MarkerIcon(int EntryPoint);
+		void ExecuteUbergraph_MarkerIcon(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

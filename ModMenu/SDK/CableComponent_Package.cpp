@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CableComponent_Package.h"
 
 namespace CG
 {

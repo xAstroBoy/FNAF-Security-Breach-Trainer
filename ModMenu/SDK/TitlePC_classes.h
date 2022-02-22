@@ -28,7 +28,7 @@ namespace CG
 		float                                                      TimeNeededToSkip;                                        // 0x05D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsIntroVideoPlaying;                                     // 0x05DC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsSkipButtonHeld;                                        // 0x05DD(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6X6S[0x2];                                   // 0x05DE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O9QI[0x2];                                   // 0x05DE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UWI_SplashScreen_C*                                  SplashScreen;                                            // 0x05E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       EnableDebugFullMenu;                                     // 0x05E8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -42,7 +42,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();
 		void OnDebugSequenceEntered();
-		void ExecuteUbergraph_TitlePC(int EntryPoint);
+		void ExecuteUbergraph_TitlePC(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

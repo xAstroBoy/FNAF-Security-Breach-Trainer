@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotWorker_Manager_Base_Package.h"
 
 namespace CG
 {
@@ -17,17 +16,17 @@ namespace CG
 	 * 		Name   -> Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ModelSwap_Func
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		class AStaffBotWorker_SplineFollower_C*            StaffBot                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AStaffBotWorker_SplineFollower_C*            Staffbot                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AStaffbotTaskPlacement_C*                    TaskPoint                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffbotWorker_Manager_Base_C::ModelSwap_Func(class AStaffBotWorker_SplineFollower_C* StaffBot, class AStaffbotTaskPlacement_C* TaskPoint)
+	void AStaffbotWorker_Manager_Base_C::ModelSwap_Func(class AStaffBotWorker_SplineFollower_C* Staffbot, class AStaffbotTaskPlacement_C* TaskPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ModelSwap_Func");
 		
 		AStaffbotWorker_Manager_Base_C_ModelSwap_Func_Params params {};
-		params.StaffBot = StaffBot;
+		params.Staffbot = Staffbot;
 		params.TaskPoint = TaskPoint;
 		
 		auto flags = fn->FunctionFlags;
@@ -139,9 +138,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ExecuteUbergraph_StaffbotWorker_Manager_Base
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffbotWorker_Manager_Base_C::ExecuteUbergraph_StaffbotWorker_Manager_Base(int EntryPoint)
+	void AStaffbotWorker_Manager_Base_C::ExecuteUbergraph_StaffbotWorker_Manager_Base(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

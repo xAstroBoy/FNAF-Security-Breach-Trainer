@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_CheckTask_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function Worker_CheckTask.Worker_CheckTask_C.ExecuteUbergraph_Worker_CheckTask
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_CheckTask_C::ExecuteUbergraph_Worker_CheckTask(int EntryPoint)
+	void UWorker_CheckTask_C::ExecuteUbergraph_Worker_CheckTask(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -36,7 +36,7 @@ namespace CG
 		void RecurseSpline();
 		void FindClosestDistAlongSpline(class ASplinePathway_C* Spline, const struct FVector& WorldLocation, float* DistAlongSpline);
 		void FindClosestSplineAndPoint(const struct FVector& WorldLocation, TArray<class ASplinePathway_C*>* Splines, class ASplinePathway_C** Spline, struct FVector* SplineLocation);
-		void SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction);
+		void SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, SplineFollowDirection_ESplineFollowDirection Direction);
 		void GetPositionAtDistance(float DeltaDistance, struct FSplineFollowerContext* Context, struct FVector* WorldLocation, struct FVector* Forward);
 		void UserConstructionScript();
 		static UClass* StaticClass();

@@ -37,22 +37,22 @@ namespace CG
 		unsigned char                                              SkipButton[0x28];                                        // 0x02F0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       is_skipped;                                              // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       WaitingForDoorLocked;                                    // 0x0319(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6A54[0x6];                                   // 0x031A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6LSH[0x6];                                   // 0x031A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FLobbyInstructionCardSetup>                  Textures;                                                // 0x0320(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		unsigned char                                              Screens[0x10];                                           // 0x0330(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		struct FTimerHandle                                        SpawnChicaTimer;                                         // 0x0340(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void SetAllScreensToInstructionCard(TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type);
+		void SetAllScreensToInstructionCard(E_InstructionCard_Type_E_InstructionCard_Type Type);
 		void OnSecondAudioFinished(AkAudio_EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
-		void SetScreenToInstructionCard(int Screen_Index, TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type);
+		void SetScreenToInstructionCard(int32_t Screen_Index, E_InstructionCard_Type_E_InstructionCard_Type Type);
 		void SetAllScreensToWidget(class UClass* Class);
-		void SetScreenToWidget(int Screen_Index, class UClass* Class);
+		void SetScreenToWidget(int32_t Screen_Index, class UClass* Class);
 		void SetAllScreensToStatic();
-		void SetAllScreensToTexture(int TextureIndex);
-		void SetScreenToTexture(int Screen_Index, int Card_Index, TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type);
-		class UTexture* GetScreenTexture(int Index);
-		void SetScreenToStatic(int ScreenIndex);
+		void SetAllScreensToTexture(int32_t TextureIndex);
+		void SetScreenToTexture(int32_t Screen_Index, int32_t Card_Index, E_InstructionCard_Type_E_InstructionCard_Type Type);
+		class UTexture* GetScreenTexture(int32_t Index);
+		void SetScreenToStatic(int32_t ScreenIndex);
 		void Setup2(AkAudio_EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
 		void FinishInstructions();
 		void Setup(bool Skip);
@@ -64,16 +64,16 @@ namespace CG
 		void OnStoreGameData(class UFNAFSaveData* SaveDataObject);
 		void PostGameLoad();
 		void PostSaveGame();
-		void BndEvt__PlayerCompleteTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__PlayerCompleteTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void Finish_Instructions_Part_1();
 		void ReceiveBeginPlay();
 		void DelaySpawnChica();
 		void LockAndWait();
 		void Run_Dialog_Instruction_Cards();
 		void SpawnChica();
-		void BndEvt__SpawnChicaTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__SpawnChicaTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_SurvivalStartupSequence(int EntryPoint);
+		void ExecuteUbergraph_SurvivalStartupSequence(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

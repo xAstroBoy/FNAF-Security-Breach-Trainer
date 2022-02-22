@@ -30,7 +30,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void On_Sound_Heard(const struct FVector& SoundLocation);
 		void Stop_Investigating_Sound();
-		void ExecuteUbergraph_ShatteredRoxyController(int EntryPoint);
+		void ExecuteUbergraph_ShatteredRoxyController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

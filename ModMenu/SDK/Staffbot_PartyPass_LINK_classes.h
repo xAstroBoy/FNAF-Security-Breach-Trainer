@@ -66,7 +66,7 @@ namespace CG
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0F38(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0F68(0x00B0)
 		bool                                                       Stunned;                                                 // 0x1018(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       canJumpscare;                                            // 0x1019(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       CanJumpscare;                                            // 0x1019(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsRequesting;                                            // 0x101A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       PassReceived;                                            // 0x101B(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       HasPass;                                                 // 0x101C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -76,7 +76,7 @@ namespace CG
 		void AnimGraph(struct FPoseLink* AnimGraph);
 		void AnimNotify_Select_Anim();
 		void AnimNotify_DanceDone();
-		void ExecuteUbergraph_Staffbot_PartyPass_LINK(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_PartyPass_LINK(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

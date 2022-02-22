@@ -70,7 +70,7 @@ namespace CG
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_56;                         // 0x1020(0x0078)
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_45;                            // 0x1098(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine_10;                           // 0x10C8(0x00B0)
-		unsigned char                                              UnknownData_VKXX[0x8];                                   // 0x1178(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7KEJ[0x8];                                   // 0x1178(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_TwoBoneIK                                 AnimGraphNode_TwoBoneIK_2;                               // 0x1180(0x01E0)
 		struct FAnimNode_TwoBoneIK                                 AnimGraphNode_TwoBoneIK;                                 // 0x1360(0x01E0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_16;                         // 0x1540(0x00B8)
@@ -107,24 +107,24 @@ namespace CG
 		float                                                      __CustomProperty_EaringDynamicAlpha_A350582A4109134061835A96AB5CBFD1; // 0x22D8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_A350582A4109134061835A96AB5CBFD1; // 0x22DC(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_A350582A4109134061835A96AB5CBFD1; // 0x22E0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QKLW[0x7];                                   // 0x22E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GBSC[0x7];                                   // 0x22E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_21;                        // 0x22E8(0x00A0)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_80F9264F45878299AAE3AEBA5FB92ED9; // 0x2388(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_80F9264F45878299AAE3AEBA5FB92ED9; // 0x238C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_80F9264F45878299AAE3AEBA5FB92ED9; // 0x2390(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_KBV5[0x4];                                   // 0x2394(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_17Q8[0x4];                                   // 0x2394(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_20;                        // 0x2398(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_13;                         // 0x2438(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_31;                          // 0x24F0(0x0028)
 		float                                                      __CustomProperty_EaringDynamicAlpha_8D56E8DE458598EEF596B0829547ECC6; // 0x2518(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_8D56E8DE458598EEF596B0829547ECC6; // 0x251C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_8D56E8DE458598EEF596B0829547ECC6; // 0x2520(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QGXN[0x7];                                   // 0x2521(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_89D5[0x7];                                   // 0x2521(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_19;                        // 0x2528(0x00A0)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_33FCBB2E4848ADCF1144D3B148CF28DC; // 0x25C8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_33FCBB2E4848ADCF1144D3B148CF28DC; // 0x25CC(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_33FCBB2E4848ADCF1144D3B148CF28DC; // 0x25D0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_IR12[0x4];                                   // 0x25D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_U47O[0x4];                                   // 0x25D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_18;                        // 0x25D8(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_12;                         // 0x2678(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_30;                          // 0x2730(0x0028)
@@ -132,10 +132,10 @@ namespace CG
 		float                                                      __CustomProperty_EaringDynamicAlpha_C420AC5B4D5E2B1A56CB07BE6F13FDFA; // 0x2780(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_C420AC5B4D5E2B1A56CB07BE6F13FDFA; // 0x2784(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_C420AC5B4D5E2B1A56CB07BE6F13FDFA; // 0x2788(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_T0IU[0x7];                                   // 0x2789(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IL4A[0x7];                                   // 0x2789(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_17;                        // 0x2790(0x00A0)
 		bool                                                       __CustomProperty_canJumpscare_4A98D0BF4A4FE0BE4AE282A8BE4A4087; // 0x2830(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_1NFV[0x3];                                   // 0x2831(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_T125[0x3];                                   // 0x2831(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_4A98D0BF4A4FE0BE4AE282A8BE4A4087; // 0x2834(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_4A98D0BF4A4FE0BE4AE282A8BE4A4087; // 0x2838(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_4A98D0BF4A4FE0BE4AE282A8BE4A4087; // 0x283C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -144,17 +144,17 @@ namespace CG
 		float                                                      __CustomProperty_HairDynamicAlpha_46E51DA64037F36A41E472B0BD85AD8C; // 0x2908(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_TailDynamicAlpha_46E51DA64037F36A41E472B0BD85AD8C; // 0x290C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Roxy_46E51DA64037F36A41E472B0BD85AD8C; // 0x2910(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_576I[0x7];                                   // 0x2911(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JR3M[0x7];                                   // 0x2911(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_15;                        // 0x2918(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_11;                         // 0x29B8(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_27;                          // 0x2A70(0x0028)
 		float                                                      __CustomProperty_EaringDynamicAlpha_E4EB72D1428FECD634E2D79C867AE48E; // 0x2A98(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_E4EB72D1428FECD634E2D79C867AE48E; // 0x2A9C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_E4EB72D1428FECD634E2D79C867AE48E; // 0x2AA0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_H0OE[0x7];                                   // 0x2AA1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XJKD[0x7];                                   // 0x2AA1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_14;                        // 0x2AA8(0x00A0)
 		bool                                                       __CustomProperty_canJumpscare_A7B4335C4CEF28D881FD46973C5B180B; // 0x2B48(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_R5AP[0x3];                                   // 0x2B49(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_22ZQ[0x3];                                   // 0x2B49(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_A7B4335C4CEF28D881FD46973C5B180B; // 0x2B4C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_A7B4335C4CEF28D881FD46973C5B180B; // 0x2B50(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_A7B4335C4CEF28D881FD46973C5B180B; // 0x2B54(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -163,17 +163,17 @@ namespace CG
 		float                                                      __CustomProperty_HairDynamicAlpha_68504CFF461F61B61AB865A8F594D2BB; // 0x2C20(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_TailDynamicAlpha_68504CFF461F61B61AB865A8F594D2BB; // 0x2C24(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Roxy_68504CFF461F61B61AB865A8F594D2BB; // 0x2C28(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_9VUM[0x7];                                   // 0x2C29(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_K51I[0x7];                                   // 0x2C29(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_12;                        // 0x2C30(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_10;                         // 0x2CD0(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_25;                          // 0x2D88(0x0028)
 		float                                                      __CustomProperty_EaringDynamicAlpha_F47A5DA04B36F7DDCA79FBB868A2A8AF; // 0x2DB0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_F47A5DA04B36F7DDCA79FBB868A2A8AF; // 0x2DB4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_F47A5DA04B36F7DDCA79FBB868A2A8AF; // 0x2DB8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_KLDO[0x7];                                   // 0x2DB9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JZH0[0x7];                                   // 0x2DB9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_11;                        // 0x2DC0(0x00A0)
 		bool                                                       __CustomProperty_canJumpscare_36C8EED645279F9E89604C9B2DE3C578; // 0x2E60(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_B0ET[0x3];                                   // 0x2E61(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P90X[0x3];                                   // 0x2E61(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_36C8EED645279F9E89604C9B2DE3C578; // 0x2E64(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_36C8EED645279F9E89604C9B2DE3C578; // 0x2E68(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_36C8EED645279F9E89604C9B2DE3C578; // 0x2E6C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -182,18 +182,18 @@ namespace CG
 		float                                                      __CustomProperty_HairDynamicAlpha_E8A73B37462F412E5830418423953C42; // 0x2F38(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_Shattered_E8A73B37462F412E5830418423953C42; // 0x2F3C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       __CustomProperty_AnimDynamics_Chica_E8A73B37462F412E5830418423953C42; // 0x2F3D(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_K6IG[0x2];                                   // 0x2F3E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SD56[0x2];                                   // 0x2F3E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_EaringDynamicAlpha_E8A73B37462F412E5830418423953C42; // 0x2F40(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_JUMA[0x4];                                   // 0x2F44(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XBUL[0x4];                                   // 0x2F44(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_9;                         // 0x2F48(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_9;                          // 0x2FE8(0x00B8)
 		float                                                      __CustomProperty_EaringDynamicAlpha_FFB784B9485073B91FE3ECBEA26DF051; // 0x30A0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_EarDynamicAlpha_FFB784B9485073B91FE3ECBEA26DF051; // 0x30A4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Ears_FFB784B9485073B91FE3ECBEA26DF051; // 0x30A8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6LXP[0x7];                                   // 0x30A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PR9C[0x7];                                   // 0x30A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_8;                         // 0x30B0(0x00A0)
 		bool                                                       __CustomProperty_canJumpscare_F15EA70C496B6393A39F2F97DAC31403; // 0x3150(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_7NDD[0x3];                                   // 0x3151(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CJAH[0x3];                                   // 0x3151(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_F15EA70C496B6393A39F2F97DAC31403; // 0x3154(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_F15EA70C496B6393A39F2F97DAC31403; // 0x3158(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_F15EA70C496B6393A39F2F97DAC31403; // 0x315C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -202,25 +202,25 @@ namespace CG
 		float                                                      __CustomProperty_HairDynamicAlpha_2F8BFB3B4426004054F6CAAC69DF4D5D; // 0x3228(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_Shattered_2F8BFB3B4426004054F6CAAC69DF4D5D; // 0x322C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       __CustomProperty_AnimDynamics_Chica_2F8BFB3B4426004054F6CAAC69DF4D5D; // 0x322D(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QINH[0x2];                                   // 0x322E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3147[0x2];                                   // 0x322E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_EaringDynamicAlpha_2F8BFB3B4426004054F6CAAC69DF4D5D; // 0x3230(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_Y8DA[0x4];                                   // 0x3234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S303[0x4];                                   // 0x3234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_6;                         // 0x3238(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_8;                          // 0x32D8(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_22;                          // 0x3390(0x0028)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_21;                          // 0x33B8(0x0028)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_20;                          // 0x33E0(0x0028)
 		bool                                                       __CustomProperty_canJumpscare_3EDAFDCC4A84BB1E732F7B9A7CD159B9; // 0x3408(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_R8BN[0x3];                                   // 0x3409(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CU8P[0x3];                                   // 0x3409(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_3EDAFDCC4A84BB1E732F7B9A7CD159B9; // 0x340C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_3EDAFDCC4A84BB1E732F7B9A7CD159B9; // 0x3410(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_3EDAFDCC4A84BB1E732F7B9A7CD159B9; // 0x3414(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_5;                         // 0x3418(0x00A0)
 		bool                                                       __CustomProperty_Shattered_746CD4E74A231D30C2C38B87E151D165; // 0x34B8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6DO0[0x3];                                   // 0x34B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RI5G[0x3];                                   // 0x34B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_TailDynamicAlpha_746CD4E74A231D30C2C38B87E151D165; // 0x34BC(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Monty_746CD4E74A231D30C2C38B87E151D165; // 0x34C0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_UXWJ[0x7];                                   // 0x34C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UV1W[0x7];                                   // 0x34C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_4;                         // 0x34C8(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_7;                          // 0x3568(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_19;                          // 0x3620(0x0028)
@@ -228,27 +228,27 @@ namespace CG
 		float                                                      __CustomProperty_Shoulderpad_DynamicAlpha_6E9BE69E40CAFCE64B2D93BD2DEF5066; // 0x3670(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleAlphaScale_6E9BE69E40CAFCE64B2D93BD2DEF5066; // 0x3674(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      __CustomProperty_JiggleDynamicAlpha_6E9BE69E40CAFCE64B2D93BD2DEF5066; // 0x3678(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_8IR0[0x4];                                   // 0x367C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FM5Y[0x4];                                   // 0x367C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_3;                         // 0x3680(0x00A0)
 		bool                                                       __CustomProperty_Shattered_0B37308D42AD096770ABB5AECB361FAF; // 0x3720(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_4UEA[0x3];                                   // 0x3721(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_33T6[0x3];                                   // 0x3721(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_TailDynamicAlpha_0B37308D42AD096770ABB5AECB361FAF; // 0x3724(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_AnimDynamics_Monty_0B37308D42AD096770ABB5AECB361FAF; // 0x3728(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_1YEE[0x7];                                   // 0x3729(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S755[0x7];                                   // 0x3729(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph_2;                         // 0x3730(0x00A0)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_6;                          // 0x37D0(0x00B8)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_17;                          // 0x3888(0x0028)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace_2;                   // 0x38B0(0x0020)
 		bool                                                       __CustomProperty_OverrideHeadAim_998EF9964CF95A594EEC6797BB479F4E; // 0x38D0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       __CustomProperty_isOpen_998EF9964CF95A594EEC6797BB479F4E; // 0x38D1(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		TEnumAsByte<AnimatronicModeEnum_EAnimatronicModeEnum>      __CustomProperty_AnimatronicMode_998EF9964CF95A594EEC6797BB479F4E; // 0x38D2(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_UIHN[0x1];                                   // 0x38D3(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		AnimatronicModeEnum_EAnimatronicModeEnum                   __CustomProperty_AnimatronicMode_998EF9964CF95A594EEC6797BB479F4E; // 0x38D2(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_4J0R[0x1];                                   // 0x38D3(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      __CustomProperty_isTurningAlpha_998EF9964CF95A594EEC6797BB479F4E; // 0x38D4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       __CustomProperty_isTurning_998EF9964CF95A594EEC6797BB479F4E; // 0x38D8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TQXA[0x3];                                   // 0x38D9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IGNR[0x3];                                   // 0x38D9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRotator                                            __CustomProperty_SpineTurnRot_998EF9964CF95A594EEC6797BB479F4E; // 0x38DC(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       __CustomProperty_isHeadAiming_998EF9964CF95A594EEC6797BB479F4E; // 0x38E8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LYF8[0x3];                                   // 0x38E9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J3JR[0x3];                                   // 0x38E9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRotator                                            __CustomProperty_HeadAimRot_998EF9964CF95A594EEC6797BB479F4E; // 0x38EC(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor
 		float                                                      __CustomProperty_HeadAimAlpha_998EF9964CF95A594EEC6797BB479F4E; // 0x38F8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             __CustomProperty_HeadAimTarget_998EF9964CF95A594EEC6797BB479F4E; // 0x38FC(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -487,10 +487,10 @@ namespace CG
 		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x89A0(0x00C0)
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x8A60(0x0048)
 		float                                                      DeltaTimeX;                                              // 0x8AA8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_OOQO[0x4];                                   // 0x8AAC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_U7LT[0x4];                                   // 0x8AAC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AAISeeker_C*                                         Pawn;                                                    // 0x8AB0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isMoving;                                                // 0x8AB8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JU37[0x3];                                   // 0x8AB9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OO8P[0x3];                                   // 0x8AB9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      MoveSpeedInput;                                          // 0x8ABC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HeadAimAlpha;                                            // 0x8AC0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            HeadAimRot;                                              // 0x8AC4(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -499,9 +499,9 @@ namespace CG
 		struct FVector                                             PVTarget_L;                                              // 0x8AE8(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             PVTarget_R;                                              // 0x8AF4(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             HeadAimTarget;                                           // 0x8B00(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       canJumpscare;                                            // 0x8B0C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       CanJumpscare;                                            // 0x8B0C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsHeadAiming;                                            // 0x8B0D(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_V8FX[0x2];                                   // 0x8B0E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MO1O[0x2];                                   // 0x8B0E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      TurnDegrees;                                             // 0x8B10(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanTurn;                                                 // 0x8B14(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		fnaf9_EHideObjectType                                      HideType;                                                // 0x8B15(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -510,17 +510,17 @@ namespace CG
 		bool                                                       isRummaging;                                             // 0x8B18(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsOpen;                                                  // 0x8B19(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanScan;                                                 // 0x8B1A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_RYVH[0x1];                                   // 0x8B1B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        ScanVariation;                                           // 0x8B1C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_8B1C[0x1];                                   // 0x8B1B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    ScanVariation;                                           // 0x8B1C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsSpotted;                                               // 0x8B20(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Stop_L;                                                  // 0x8B21(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_1HZ6[0x2];                                   // 0x8B22(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3S1I[0x2];                                   // 0x8B22(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpottedDelayTime;                                        // 0x8B24(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        SpottedTimer;                                            // 0x8B28(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		float                                                      IK_Interp_Speed;                                         // 0x8B30(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        AlertLevel;                                              // 0x8B34(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        HidingSpaceType;                                         // 0x8B38(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_E17V[0x4];                                   // 0x8B3C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    AlertLevel;                                              // 0x8B34(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    HidingSpaceType;                                         // 0x8B38(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_2SVK[0x4];                                   // 0x8B3C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USkeletalMeshComponent*                              CharacterMesh;                                           // 0x8B40(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UPhysicalAnimationComponent*                         PhysicalAnimationComponent;                              // 0x8B48(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<class FName>                                        SimulationBones;                                         // 0x8B50(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
@@ -544,35 +544,35 @@ namespace CG
 		bool                                                       AnimDynamics_Monty;                                      // 0x8BD3(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       AnimDynamics_Chica;                                      // 0x8BD4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanRun;                                                  // 0x8BD5(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_S37R[0x2];                                   // 0x8BD6(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KG0K[0x2];                                   // 0x8BD6(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      RunSpeed;                                                // 0x8BD8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      WalkSpeed;                                               // 0x8BDC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      ChestAimAlpha;                                           // 0x8BE0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       IsPreview;                                               // 0x8BE4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       isPreview;                                               // 0x8BE4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanScanL;                                                // 0x8BE5(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanScanR;                                                // 0x8BE6(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_FRVF[0x1];                                   // 0x8BE7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OKR6[0x1];                                   // 0x8BE7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Scan_Direction_Float;                                    // 0x8BE8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      ScanTime;                                                // 0x8BEC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UCurveFloat*                                         Scan_Curve;                                              // 0x8BF0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Is_Stunned;                                              // 0x8BF8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_99KV[0x3];                                   // 0x8BF9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YUDC[0x3];                                   // 0x8BF9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      MovementOrient;                                          // 0x8BFC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      PitchAim;                                                // 0x8C00(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      YawAim;                                                  // 0x8C04(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       isTurning;                                               // 0x8C08(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsTurning;                                               // 0x8C08(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanBlink;                                                // 0x8C09(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_N686[0x2];                                   // 0x8C0A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DE4U[0x2];                                   // 0x8C0A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRotator                                            L_ear_Rot;                                               // 0x8C0C(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FRotator                                            R_ear_Rot;                                               // 0x8C18(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		float                                                      JiggleDynamicAlpha;                                      // 0x8C24(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanBreakThrough;                                         // 0x8C28(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       ApplyFeetIK;                                             // 0x8C29(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DWO3[0x6];                                   // 0x8C2A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O1UO[0x6];                                   // 0x8C2A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   CutSceneAnim;                                            // 0x8C30(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       LoopCutScene;                                            // 0x8C38(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		TEnumAsByte<AnimatronicModeEnum_EAnimatronicModeEnum>      AnimatronicModeEnum;                                     // 0x8C39(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_2HIA[0x2];                                   // 0x8C3A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		AnimatronicModeEnum_EAnimatronicModeEnum                   AnimatronicModeEnum;                                     // 0x8C39(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_SEHP[0x2];                                   // 0x8C3A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      JiggleScaleTarget;                                       // 0x8C3C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      EarDynamicAlpha;                                         // 0x8C40(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HairDynamicAlpha;                                        // 0x8C44(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -588,7 +588,7 @@ namespace CG
 		class FName                                                UseCurves;                                               // 0x8C7C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                HairAlpha;                                               // 0x8C84(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Shattered;                                               // 0x8C8C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_0S9A[0x3];                                   // 0x8C8D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6KO3[0x3];                                   // 0x8C8D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      IK_Foot_Offset;                                          // 0x8C90(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                ShoulderPadAlpha;                                        // 0x8C94(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            CurrentControlRotation;                                  // 0x8C9C(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -599,20 +599,20 @@ namespace CG
 		struct FRotator                                            CurrentWorldJointRotation;                               // 0x8CC8(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FRotator                                            TargetControlRotation;                                   // 0x8CD4(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		float                                                      RotationDelta;                                           // 0x8CE0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_VVVM[0x4];                                   // 0x8CE4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M48T[0x4];                                   // 0x8CE4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AAISeeker_C*                                         AISeeker;                                                // 0x8CE8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       TrackingPlayer;                                          // 0x8CF0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_A2O7[0x3];                                   // 0x8CF1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0PC0[0x3];                                   // 0x8CF1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      ScanTimeRandom;                                          // 0x8CF4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      ScanMotionAlpha;                                         // 0x8CF8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ScanTimerSet;                                            // 0x8CFC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_D4YA[0x3];                                   // 0x8CFD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_H8HC[0x3];                                   // 0x8CFD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      FreddyChestOpenTime;                                     // 0x8D00(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HeadAimInterpSpeed;                                      // 0x8D04(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      TieAlpha;                                                // 0x8D08(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       SnapOrient;                                              // 0x8D0C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isLanding;                                               // 0x8D0D(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_8FI5[0x2];                                   // 0x8D0E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YJYZ[0x2];                                   // 0x8D0E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, float>                                   CurvesDict;                                              // 0x8D10(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		float                                                      CamshakeFallOff_Locomotion;                              // 0x8D60(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HeadAimClamp;                                            // 0x8D64(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -625,24 +625,24 @@ namespace CG
 		bool                                                       LieDown;                                                 // 0x8D6E(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanLeap;                                                 // 0x8D6F(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanScanBoth;                                             // 0x8D70(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_2EQD[0x3];                                   // 0x8D71(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_E7EL[0x3];                                   // 0x8D71(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      AI_TurnPlayrate;                                         // 0x8D74(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       OverrideJumpscareJoint;                                  // 0x8D78(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_FQRG[0x3];                                   // 0x8D79(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JRLA[0x3];                                   // 0x8D79(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      MaximumAimCone;                                          // 0x8D7C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MinimumAimCone;                                          // 0x8D80(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       TurnOverride;                                            // 0x8D84(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_EF14[0x3];                                   // 0x8D85(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YJ84[0x3];                                   // 0x8D85(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      WalkAlpha;                                               // 0x8D88(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isCrying;                                                // 0x8D8C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_854H[0x3];                                   // 0x8D8D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_06FB[0x3];                                   // 0x8D8D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      TargetWalkSpeed;                                         // 0x8D90(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       GregInteracting;                                         // 0x8D94(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DYNJ[0x3];                                   // 0x8D95(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FO59[0x3];                                   // 0x8D95(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UDataTable*                                          AnimVODT;                                                // 0x8D98(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequence*                                       JawAnim;                                                 // 0x8DA0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanTalk;                                                 // 0x8DA8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_YV06[0x3];                                   // 0x8DA9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_V7EB[0x3];                                   // 0x8DA9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      EyeTwitch;                                               // 0x8DAC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanEyeTwitch;                                            // 0x8DB0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       LeapRecovery;                                            // 0x8DB1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -651,18 +651,18 @@ namespace CG
 		bool                                                       FirstPersonAImSpace;                                     // 0x8DB4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       EndingIdle;                                              // 0x8DB5(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       DisableHeadAim;                                          // 0x8DB6(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6CA9[0x1];                                   // 0x8DB7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S2P0[0x1];                                   // 0x8DB7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpineLayerAlpha;                                         // 0x8DB8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       SpineLayerAlphaLoop;                                     // 0x8DBC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_MYLY[0x3];                                   // 0x8DBD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0ZG4[0x3];                                   // 0x8DBD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      AdditiveAnimAimAlpha;                                    // 0x8DC0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_NA3A[0x4];                                   // 0x8DC4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LUSX[0x4];                                   // 0x8DC4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTimerHandle                                        CurrentTalkTimer;                                        // 0x8DC8(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		bool                                                       FreddyTurnInPlace;                                       // 0x8DD0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TNC7[0x3];                                   // 0x8DD1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_I6YB[0x3];                                   // 0x8DD1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      FreddyTurnInPlaceDirection;                              // 0x8DD4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       FreddyTurnInPlaceL;                                      // 0x8DD8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZKB9[0x7];                                   // 0x8DD9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NL8S[0x7];                                   // 0x8DD9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   FreddyWave;                                              // 0x8DE0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
@@ -777,7 +777,7 @@ namespace CG
 		void CutsceneGrateEvent(class ULevelSequencePlayer* SequencePlayer);
 		void GrateSequenceStop();
 		void CutsceneSpineStop();
-		void ExecuteUbergraph_Animatronic_ABP_MASTER(int EntryPoint);
+		void ExecuteUbergraph_Animatronic_ABP_MASTER(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

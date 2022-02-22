@@ -21,7 +21,7 @@ namespace CG
 	class AInvisibleCollectible_C : public ACollectible_C
 	{
 	public:
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		static UClass* StaticClass();
 	};

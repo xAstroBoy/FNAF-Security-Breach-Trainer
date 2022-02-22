@@ -28,16 +28,16 @@ namespace CG
 		class UImage*                                              Image_115;                                               // 0x0250(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UWidgetSwitcher*                                     InstructionCardSwitcher;                                 // 0x0258(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       FirstButtonHasBeenSet;                                   // 0x0260(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_A5KP[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZC5Z[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UDebugInstructionCardButton_C*                       FirstButton;                                             // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 		void ShowNewCard(class UClass* Instruction_Card);
-		void AddCardButton(class UUserWidget* InstructionCardWidget, TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> InstructionCardType, class UDebugInstructionCardButton_C** CreatedButton);
+		void AddCardButton(class UUserWidget* InstructionCardWidget, E_InstructionCard_Type_E_InstructionCard_Type InstructionCardType, class UDebugInstructionCardButton_C** CreatedButton);
 		void Construct();
 		void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-		void ExecuteUbergraph_DebugInstructionCardUI(int EntryPoint);
+		void ExecuteUbergraph_DebugInstructionCardUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ImpactShake_Jump_Package.h"
 
 namespace CG
 {

@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_MontyAIController(int EntryPoint);
+		void ExecuteUbergraph_MontyAIController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

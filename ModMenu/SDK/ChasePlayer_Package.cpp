@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChasePlayer_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ChasePlayer.ChasePlayer_C.ExecuteUbergraph_ChasePlayer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChasePlayer_C::ExecuteUbergraph_ChasePlayer(int EntryPoint)
+	void UChasePlayer_C::ExecuteUbergraph_ChasePlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

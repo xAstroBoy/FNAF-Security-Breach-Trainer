@@ -31,7 +31,7 @@ namespace CG
 	public:
 		void BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_ShootingBall(int EntryPoint);
+		void ExecuteUbergraph_ShootingBall(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

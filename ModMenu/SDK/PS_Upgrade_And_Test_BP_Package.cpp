@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PS_Upgrade_And_Test_BP_Package.h"
 
 namespace CG
 {
@@ -68,10 +67,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.GetInteractibleType
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<InteractibleType_EInteractibleType>    Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<InteractiblePressType_EInteractiblePressType> PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		InteractibleType_EInteractibleType                 Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		InteractiblePressType_EInteractiblePressType       PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APS_Upgrade_And_Test_BP_C::GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType)
+	void APS_Upgrade_And_Test_BP_C::GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -218,9 +217,9 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.HandleButtonMaterialState
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ColorEnum                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum ColorEnum                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APS_Upgrade_And_Test_BP_C::HandleButtonMaterialState(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ColorEnum)
+	void APS_Upgrade_And_Test_BP_C::HandleButtonMaterialState(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum ColorEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -525,10 +524,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.Handle Face Button Click
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color1                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color2                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum Color1                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum Color2                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APS_Upgrade_And_Test_BP_C::Handle_Face_Button_Click(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color1, TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> Color2)
+	void APS_Upgrade_And_Test_BP_C::Handle_Face_Button_Click(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum Color1, PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum Color2)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -625,10 +624,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.HandleTestingClickEvent
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum WireColor                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ClickedConnector                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APS_Upgrade_And_Test_BP_C::HandleTestingClickEvent(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum>* WireColor, bool* ClickedConnector)
+	void APS_Upgrade_And_Test_BP_C::HandleTestingClickEvent(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum* WireColor, bool* ClickedConnector)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -652,10 +651,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.HandleAttachDetachClickEvent
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum WireColor                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ClickedConnector                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APS_Upgrade_And_Test_BP_C::HandleAttachDetachClickEvent(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum>* WireColor, bool* ClickedConnector)
+	void APS_Upgrade_And_Test_BP_C::HandleAttachDetachClickEvent(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum* WireColor, bool* ClickedConnector)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -912,9 +911,9 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum   GameEnum                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APS_Upgrade_And_Test_BP_C::PartsAndServiceGame(TEnumAsByte<PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum> GameEnum)
+	void APS_Upgrade_And_Test_BP_C::PartsAndServiceGame(PartsAndServiceAnimEnum_EPartsAndServiceAnimEnum GameEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1182,10 +1181,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.ClickedWire
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum WireColor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ClickedConnector                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APS_Upgrade_And_Test_BP_C::ClickedWire(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> WireColor, bool ClickedConnector)
+	void APS_Upgrade_And_Test_BP_C::ClickedWire(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum WireColor, bool ClickedConnector)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1225,10 +1224,10 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.ClickedTestButton
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ButtonColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum ButtonColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ClickedButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APS_Upgrade_And_Test_BP_C::ClickedTestButton(TEnumAsByte<PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum> ButtonColor, bool ClickedButton)
+	void APS_Upgrade_And_Test_BP_C::ClickedTestButton(PS_Upgrade_Freddy_ColorEnum_EPS_Upgrade_Freddy_ColorEnum ButtonColor, bool ClickedButton)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1454,9 +1453,9 @@ namespace CG
 	 * 		Name   -> Function PS_Upgrade_And_Test_BP.PS_Upgrade_And_Test_BP_C.ExecuteUbergraph_PS_Upgrade_And_Test_BP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APS_Upgrade_And_Test_BP_C::ExecuteUbergraph_PS_Upgrade_And_Test_BP(int EntryPoint)
+	void APS_Upgrade_And_Test_BP_C::ExecuteUbergraph_PS_Upgrade_And_Test_BP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

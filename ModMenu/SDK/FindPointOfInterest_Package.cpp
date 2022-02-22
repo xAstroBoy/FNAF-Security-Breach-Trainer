@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindPointOfInterest_Package.h"
 
 namespace CG
 {
@@ -62,9 +61,9 @@ namespace CG
 	 * 		Name   -> Function FindPointOfInterest.FindPointOfInterest_C.ExecuteUbergraph_FindPointOfInterest
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindPointOfInterest_C::ExecuteUbergraph_FindPointOfInterest(int EntryPoint)
+	void UFindPointOfInterest_C::ExecuteUbergraph_FindPointOfInterest(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

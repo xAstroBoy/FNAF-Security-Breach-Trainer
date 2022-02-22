@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazerBlast_FindLocationAtDistance_Package.h"
 
 namespace CG
 {
@@ -228,9 +227,9 @@ namespace CG
 	 * 		Name   -> Function FazerBlast_FindLocationAtDistance.FazerBlast_FindLocationAtDistance_C.ExecuteUbergraph_FazerBlast_FindLocationAtDistance
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazerBlast_FindLocationAtDistance_C::ExecuteUbergraph_FazerBlast_FindLocationAtDistance(int EntryPoint)
+	void UFazerBlast_FindLocationAtDistance_C::ExecuteUbergraph_FazerBlast_FindLocationAtDistance(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

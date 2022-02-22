@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserTag_Gun_Door_Package.h"
 
 namespace CG
 {
@@ -80,9 +79,9 @@ namespace CG
 	 * 		Name   -> Function LaserTag_Gun_Door.LaserTag_Gun_Door_C.ExecuteUbergraph_LaserTag_Gun_Door
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALaserTag_Gun_Door_C::ExecuteUbergraph_LaserTag_Gun_Door(int EntryPoint)
+	void ALaserTag_Gun_Door_C::ExecuteUbergraph_LaserTag_Gun_Door(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

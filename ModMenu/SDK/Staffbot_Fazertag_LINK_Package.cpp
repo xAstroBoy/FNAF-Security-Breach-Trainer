@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_Fazertag_LINK_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_Fazertag_LINK.Staffbot_Fazertag_LINK_C.ExecuteUbergraph_Staffbot_Fazertag_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_Fazertag_LINK_C::ExecuteUbergraph_Staffbot_Fazertag_LINK(int EntryPoint)
+	void UStaffbot_Fazertag_LINK_C::ExecuteUbergraph_Staffbot_Fazertag_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

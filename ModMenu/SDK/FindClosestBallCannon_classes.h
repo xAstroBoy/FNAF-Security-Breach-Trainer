@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindClosestBallCannon(int EntryPoint);
+		void ExecuteUbergraph_FindClosestBallCannon(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

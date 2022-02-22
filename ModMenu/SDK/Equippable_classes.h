@@ -30,7 +30,7 @@ namespace CG
 		void PutAway();
 		void PrimaryAction();
 		void SecondaryAction();
-		void ExecuteUbergraph_Equippable(int EntryPoint);
+		void ExecuteUbergraph_Equippable(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

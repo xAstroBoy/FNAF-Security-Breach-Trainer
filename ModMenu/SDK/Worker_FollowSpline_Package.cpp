@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_FollowSpline_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function Worker_FollowSpline.Worker_FollowSpline_C.ExecuteUbergraph_Worker_FollowSpline
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_FollowSpline_C::ExecuteUbergraph_Worker_FollowSpline(int EntryPoint)
+	void UWorker_FollowSpline_C::ExecuteUbergraph_Worker_FollowSpline(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

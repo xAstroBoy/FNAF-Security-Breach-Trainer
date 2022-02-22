@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WaitWhileBoolsAreEqual_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function WaitWhileBoolsAreEqual.WaitWhileBoolsAreEqual_C.ExecuteUbergraph_WaitWhileBoolsAreEqual
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWaitWhileBoolsAreEqual_C::ExecuteUbergraph_WaitWhileBoolsAreEqual(int EntryPoint)
+	void UWaitWhileBoolsAreEqual_C::ExecuteUbergraph_WaitWhileBoolsAreEqual(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

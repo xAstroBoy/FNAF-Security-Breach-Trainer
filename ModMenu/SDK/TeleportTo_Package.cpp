@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TeleportTo_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function TeleportTo.TeleportTo_C.ExecuteUbergraph_TeleportTo
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTeleportTo_C::ExecuteUbergraph_TeleportTo(int EntryPoint)
+	void UTeleportTo_C::ExecuteUbergraph_TeleportTo(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

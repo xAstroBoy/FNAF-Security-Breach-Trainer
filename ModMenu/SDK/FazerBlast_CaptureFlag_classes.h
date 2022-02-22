@@ -32,7 +32,7 @@ namespace CG
 		void OnBlendOut_A5776C054CA2FE15A95E72ACB4658B88(const class FName& NotifyName);
 		void OnCompleted_A5776C054CA2FE15A95E72ACB4658B88(const class FName& NotifyName);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FazerBlast_CaptureFlag(int EntryPoint);
+		void ExecuteUbergraph_FazerBlast_CaptureFlag(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

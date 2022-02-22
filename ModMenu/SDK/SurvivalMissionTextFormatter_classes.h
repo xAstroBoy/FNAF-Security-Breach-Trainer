@@ -24,7 +24,7 @@ namespace CG
 		unsigned char                                              SurvivalRandomizer[0x28];                                // 0x0030(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
-		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int StateIndex, class FText* FormattedTaskTitleText);
+		void GetFormattedText(const class FText& TaskTitleText, const struct FFNAFMissionState& MissionState, int32_t StateIndex, class FText* FormattedTaskTitleText);
 		static UClass* StaticClass();
 	};
 

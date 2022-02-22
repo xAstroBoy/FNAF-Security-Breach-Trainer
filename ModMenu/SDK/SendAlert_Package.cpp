@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SendAlert_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SendAlert.SendAlert_C.ExecuteUbergraph_SendAlert
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USendAlert_C::ExecuteUbergraph_SendAlert(int EntryPoint)
+	void USendAlert_C::ExecuteUbergraph_SendAlert(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

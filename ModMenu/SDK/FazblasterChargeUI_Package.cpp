@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazblasterChargeUI_Package.h"
 
 namespace CG
 {
@@ -248,9 +247,9 @@ namespace CG
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.ExecuteUbergraph_FazblasterChargeUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazblasterChargeUI_C::ExecuteUbergraph_FazblasterChargeUI(int EntryPoint)
+	void UFazblasterChargeUI_C::ExecuteUbergraph_FazblasterChargeUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

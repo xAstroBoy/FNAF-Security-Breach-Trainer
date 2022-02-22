@@ -29,7 +29,7 @@ namespace CG
 		void BlueprintBeginPlay();
 		void AnimNotify_R_Foot_Down();
 		void AnimNotify_L_Foot_Down();
-		void ExecuteUbergraph_Animatronic_ABP_ShatteredChica(int EntryPoint);
+		void ExecuteUbergraph_Animatronic_ABP_ShatteredChica(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

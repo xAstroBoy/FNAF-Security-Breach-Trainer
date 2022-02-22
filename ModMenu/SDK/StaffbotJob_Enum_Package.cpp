@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotJob_Enum_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerIsVisible_Package.h"
 
 namespace CG
 {

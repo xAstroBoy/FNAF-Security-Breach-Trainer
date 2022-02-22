@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EQGSpawnPoints_Package.h"
 
 namespace CG
 {

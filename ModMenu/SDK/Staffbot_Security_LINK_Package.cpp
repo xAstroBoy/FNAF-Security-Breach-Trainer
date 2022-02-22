@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_Security_LINK_Package.h"
 
 namespace CG
 {
@@ -101,9 +100,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_Security_LINK.Staffbot_Security_LINK_C.ExecuteUbergraph_Staffbot_Security_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_Security_LINK_C::ExecuteUbergraph_Staffbot_Security_LINK(int EntryPoint)
+	void UStaffbot_Security_LINK_C::ExecuteUbergraph_Staffbot_Security_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FollowSpline_Package.h"
 
 namespace CG
 {
@@ -89,9 +88,9 @@ namespace CG
 	 * 		Name   -> Function FollowSpline.FollowSpline_C.ExecuteUbergraph_FollowSpline
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFollowSpline_C::ExecuteUbergraph_FollowSpline(int EntryPoint)
+	void UFollowSpline_C::ExecuteUbergraph_FollowSpline(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

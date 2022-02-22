@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FazwatchMapUI_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function FazwatchMapUI.FazwatchMapUI_C.FloorButtonUsed
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                FloorIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            FloorIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazwatchMapUI_C::FloorButtonUsed(int FloorIndex)
+	void UFazwatchMapUI_C::FloorButtonUsed(int32_t FloorIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -279,9 +278,9 @@ namespace CG
 	 * 		Name   -> Function FazwatchMapUI.FazwatchMapUI_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazwatchMapUI_C::InputCycle(int Increment)
+	void UFazwatchMapUI_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -728,9 +727,9 @@ namespace CG
 	 * 		Name   -> Function FazwatchMapUI.FazwatchMapUI_C.ExecuteUbergraph_FazwatchMapUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFazwatchMapUI_C::ExecuteUbergraph_FazwatchMapUI(int EntryPoint)
+	void UFazwatchMapUI_C::ExecuteUbergraph_FazwatchMapUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

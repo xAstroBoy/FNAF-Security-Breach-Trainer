@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BackstageOffice_Door_Package.h"
 
 namespace CG
 {
@@ -178,9 +177,9 @@ namespace CG
 	 * 		Name   -> Function BackstageOffice_Door.BackstageOffice_Door_C.ExecuteUbergraph_BackstageOffice_Door
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABackstageOffice_Door_C::ExecuteUbergraph_BackstageOffice_Door(int EntryPoint)
+	void ABackstageOffice_Door_C::ExecuteUbergraph_BackstageOffice_Door(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FlashlightRechargeStationManager_Package.h"
 
 namespace CG
 {
@@ -102,7 +101,7 @@ namespace CG
 	 * Parameters:
 	 * 		class AFlashlightRechargeStation_C*                Input                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	int AFlashlightRechargeStationManager_C::GetStationID(class AFlashlightRechargeStation_C* Input)
+	int32_t AFlashlightRechargeStationManager_C::GetStationID(class AFlashlightRechargeStation_C* Input)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -316,9 +315,9 @@ namespace CG
 	 * 		Name   -> Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.ExecuteUbergraph_FlashlightRechargeStationManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStationManager_C::ExecuteUbergraph_FlashlightRechargeStationManager(int EntryPoint)
+	void AFlashlightRechargeStationManager_C::ExecuteUbergraph_FlashlightRechargeStationManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

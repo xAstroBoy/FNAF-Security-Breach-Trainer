@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffbotWorker_Controller_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function StaffbotWorker_Controller.StaffbotWorker_Controller_C.ExecuteUbergraph_StaffbotWorker_Controller
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffbotWorker_Controller_C::ExecuteUbergraph_StaffbotWorker_Controller(int EntryPoint)
+	void AStaffbotWorker_Controller_C::ExecuteUbergraph_StaffbotWorker_Controller(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

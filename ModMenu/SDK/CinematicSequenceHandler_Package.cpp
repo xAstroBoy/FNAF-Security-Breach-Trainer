@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CinematicSequenceHandler_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function CinematicSequenceHandler.CinematicSequenceHandler_C.ExecuteUbergraph_CinematicSequenceHandler
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCinematicSequenceHandler_C::ExecuteUbergraph_CinematicSequenceHandler(int EntryPoint)
+	void UCinematicSequenceHandler_C::ExecuteUbergraph_CinematicSequenceHandler(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

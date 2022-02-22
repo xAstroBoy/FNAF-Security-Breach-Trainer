@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Animatronic_ABP_Chica_Package.h"
 
 namespace CG
 {
@@ -115,9 +114,9 @@ namespace CG
 	 * 		Name   -> Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.ExecuteUbergraph_Animatronic_ABP_Chica
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_Chica_C::ExecuteUbergraph_Animatronic_ABP_Chica(int EntryPoint)
+	void UAnimatronic_ABP_Chica_C::ExecuteUbergraph_Animatronic_ABP_Chica(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

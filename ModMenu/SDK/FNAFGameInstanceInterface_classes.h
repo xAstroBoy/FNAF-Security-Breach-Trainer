@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		void GetGameType(fnaf9_EFNAFGameType* GameType);
-		void ChangeHourlyActivity(int HourIndex);
+		void ChangeHourlyActivity(int32_t HourIndex);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Winner_lounge_Door_Package.h"
 
 namespace CG
 {
@@ -55,9 +54,9 @@ namespace CG
 	 * 		Name   -> Function Winner_lounge_Door.Winner_lounge_Door_C.ExecuteUbergraph_Winner_lounge_Door
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AWinner_lounge_Door_C::ExecuteUbergraph_Winner_lounge_Door(int EntryPoint)
+	void AWinner_lounge_Door_C::ExecuteUbergraph_Winner_lounge_Door(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

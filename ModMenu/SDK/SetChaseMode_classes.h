@@ -25,16 +25,16 @@ namespace CG
 		bool                                                       ChaseMode;                                               // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       AffectHeadAim;                                           // 0x00B1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       TrackPlayer;                                             // 0x00B2(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_OVTH[0x5];                                   // 0x00B3(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KQBW[0x5];                                   // 0x00B3(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              TrackingLocation;                                        // 0x00B8(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              TrackingActor;                                           // 0x00E0(0x0028) Edit, BlueprintVisible
 		bool                                                       UseOverrideSpeed;                                        // 0x0108(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZCME[0x3];                                   // 0x0109(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QDU3[0x3];                                   // 0x0109(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      OverrideSpeed;                                           // 0x010C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_SetChaseMode(int EntryPoint);
+		void ExecuteUbergraph_SetChaseMode(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

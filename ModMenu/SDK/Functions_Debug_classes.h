@@ -21,7 +21,7 @@ namespace CG
 	class UFunctions_Debug_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_DrawDebugGrid(const struct FVector& Center, const struct FVector& Extent, const struct FVector& Anchor, int TileX, int TileY, int TileZ, bool WithinExtent, const struct FLinearColor& LineColor, bool SpectrumColors, const struct FRotator& Rotation, float Duration, float Thickness, class UObject* __WorldContext);
+		void STATIC_DrawDebugGrid(const struct FVector& Center, const struct FVector& Extent, const struct FVector& Anchor, int32_t TileX, int32_t TileY, int32_t TileZ, bool WithinExtent, const struct FLinearColor& LineColor, bool SpectrumColors, const struct FRotator& Rotation, float Duration, float Thickness, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

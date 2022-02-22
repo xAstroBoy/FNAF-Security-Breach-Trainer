@@ -29,7 +29,7 @@ namespace CG
 		class FName                                                KeyName;                                                 // 0x02A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		TMap<class FString, class FString>                         ExtraIcons;                                              // 0x02A8(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       Override;                                                // 0x02F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IYKM[0x7];                                   // 0x02F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DZ06[0x7];                                   // 0x02F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<struct FKey, class FString>                           IconMap;                                                 // 0x0300(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
@@ -37,7 +37,7 @@ namespace CG
 		void Set_Icon();
 		void ToggleIcon();
 		void PreConstruct(bool IsDesignTime);
-		void ExecuteUbergraph_KeyBindingIcon(int EntryPoint);
+		void ExecuteUbergraph_KeyBindingIcon(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

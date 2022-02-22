@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EarDynamicsABP_Package.h"
 
 namespace CG
 {
@@ -119,9 +118,9 @@ namespace CG
 	 * 		Name   -> Function EarDynamicsABP.EarDynamicsABP_C.ExecuteUbergraph_EarDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UEarDynamicsABP_C::ExecuteUbergraph_EarDynamicsABP(int EntryPoint)
+	void UEarDynamicsABP_C::ExecuteUbergraph_EarDynamicsABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -21,11 +21,11 @@ namespace CG
 	class UAlerterInterface_C : public UInterface
 	{
 	public:
-		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int NumberOfAlerts);
-		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int* NumberOfAlerts);
+		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts);
+		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts);
 		void IsWarningFinished(bool* Finished);
 		void Stop_Warning();
-		void Start_Warning(int WarningCount);
+		void Start_Warning(int32_t WarningCount);
 		void Stop_Alert(const class FName& Alert);
 		void Start_Alert(const class FName& Alert);
 		static UClass* StaticClass();

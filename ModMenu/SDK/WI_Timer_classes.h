@@ -38,7 +38,7 @@ namespace CG
 		void GameEnd();
 		void ShowTimer();
 		void HideTimer();
-		void ExecuteUbergraph_WI_Timer(int EntryPoint);
+		void ExecuteUbergraph_WI_Timer(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

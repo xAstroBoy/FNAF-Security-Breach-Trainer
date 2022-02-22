@@ -30,7 +30,7 @@ namespace CG
 		void GetSplineFollowerContext(struct FSplineFollowerContext* SplineFollowerContext);
 		void ReceiveBeginPlay();
 		void SetSplineFollowerContext(const struct FSplineFollowerContext& SplineFollowerContext);
-		void ExecuteUbergraph_FreddyOffice(int EntryPoint);
+		void ExecuteUbergraph_FreddyOffice(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

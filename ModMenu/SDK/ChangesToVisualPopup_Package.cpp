@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChangesToVisualPopup_Package.h"
 
 namespace CG
 {
@@ -139,9 +138,9 @@ namespace CG
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.ExecuteUbergraph_ChangesToVisualPopup
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChangesToVisualPopup_C::ExecuteUbergraph_ChangesToVisualPopup(int EntryPoint)
+	void UChangesToVisualPopup_C::ExecuteUbergraph_ChangesToVisualPopup(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

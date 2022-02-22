@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MainGameStartupSequence_Package.h"
 
 namespace CG
 {
@@ -240,9 +239,9 @@ namespace CG
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.ExecuteUbergraph_MainGameStartupSequence
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGameStartupSequence_C::ExecuteUbergraph_MainGameStartupSequence(int EntryPoint)
+	void AMainGameStartupSequence_C::ExecuteUbergraph_MainGameStartupSequence(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

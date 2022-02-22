@@ -25,10 +25,10 @@ namespace CG
 		struct FVector                                             LeapDestination;                                         // 0x00B0(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             LeapStart;                                               // 0x00BC(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      FrameDistance;                                           // 0x00C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_ZG8E[0x4];                                   // 0x00CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6461[0x4];                                   // 0x00CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              LeapDestinationKey;                                      // 0x00D0(0x0028) Edit, BlueprintVisible
 		bool                                                       TickLeap;                                                // 0x00F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_27EP[0x7];                                   // 0x00F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XWSO[0x7];                                   // 0x00F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UAkAudioEvent*>                               PrepVO;                                                  // 0x0100(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class UAkAudioEvent*>                               MissedVO;                                                // 0x0110(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		class UAkAudioEvent*                                       LeapPrepSound;                                           // 0x0120(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -39,7 +39,7 @@ namespace CG
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_RoxyLeap(int EntryPoint);
+		void ExecuteUbergraph_RoxyLeap(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

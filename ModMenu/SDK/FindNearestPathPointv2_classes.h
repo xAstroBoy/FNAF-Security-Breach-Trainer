@@ -25,9 +25,9 @@ namespace CG
 		struct FBlackboardKeySelector                              BB_PathIndex;                                            // 0x00B0(0x0028) Edit, BlueprintVisible
 
 	public:
-		void FindPathPoint(class AActor* Character, int* NearestPoint);
+		void FindPathPoint(class AActor* Character, int32_t* NearestPoint);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindNearestPathPointv2(int EntryPoint);
+		void ExecuteUbergraph_FindNearestPathPointv2(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

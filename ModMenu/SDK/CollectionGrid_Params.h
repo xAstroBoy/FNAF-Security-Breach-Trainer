@@ -44,7 +44,7 @@ namespace CG
 	struct UCollectionGrid_C_PopulateInventoryGrid_Params
 	{
 	public:
-		TEnumAsByte<E_InventoryCollectionType_E_InventoryCollectionType> EInventoryCollectionType;                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		E_InventoryCollectionType_E_InventoryCollectionType        EInventoryCollectionType;                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		fnaf9_EInventoryItemCategory                               EInventoryItemCategory;                                  // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
@@ -66,7 +66,7 @@ namespace CG
 	struct UCollectionGrid_C_ExecuteUbergraph_CollectionGrid_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

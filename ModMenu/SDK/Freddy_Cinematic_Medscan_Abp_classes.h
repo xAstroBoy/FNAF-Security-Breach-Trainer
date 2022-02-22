@@ -39,7 +39,7 @@ namespace CG
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
-		void ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp(int EntryPoint);
+		void ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

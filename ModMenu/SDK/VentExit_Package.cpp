@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VentExit_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function VentExit.VentExit_C.ExecuteUbergraph_VentExit
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AVentExit_C::ExecuteUbergraph_VentExit(int EntryPoint)
+	void AVentExit_C::ExecuteUbergraph_VentExit(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

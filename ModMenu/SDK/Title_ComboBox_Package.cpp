@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Title_ComboBox_Package.h"
 
 namespace CG
 {
@@ -69,9 +68,9 @@ namespace CG
 	 * 		Name   -> Function Title_ComboBox.Title_ComboBox_C.CycleThroughComboBox
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Next                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Next                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_ComboBox_C::CycleThroughComboBox(int Next)
+	void UTitle_ComboBox_C::CycleThroughComboBox(int32_t Next)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -235,9 +234,9 @@ namespace CG
 	 * 		Name   -> Function Title_ComboBox.Title_ComboBox_C.StartingValue
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_ComboBox_C::StartingValue(int Index)
+	void UTitle_ComboBox_C::StartingValue(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -295,9 +294,9 @@ namespace CG
 	 * 		Name   -> Function Title_ComboBox.Title_ComboBox_C.ExecuteUbergraph_Title_ComboBox
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitle_ComboBox_C::ExecuteUbergraph_Title_ComboBox(int EntryPoint)
+	void UTitle_ComboBox_C::ExecuteUbergraph_Title_ComboBox(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_ABP_Racer_Package.h"
 
 namespace CG
 {
@@ -248,16 +247,16 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.AlertEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               isAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_ABP_Racer_C::AlertEvent(bool isAlerting)
+	void UStaffbot_ABP_Racer_C::AlertEvent(bool IsAlerting)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.AlertEvent");
 		
 		UStaffbot_ABP_Racer_C_AlertEvent_Params params {};
-		params.isAlerting = isAlerting;
+		params.IsAlerting = IsAlerting;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -390,16 +389,16 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.JumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               canJumpscare                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CanJumpscare                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_ABP_Racer_C::JumpscareEvent(bool canJumpscare)
+	void UStaffbot_ABP_Racer_C::JumpscareEvent(bool CanJumpscare)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.JumpscareEvent");
 		
 		UStaffbot_ABP_Racer_C_JumpscareEvent_Params params {};
-		params.canJumpscare = canJumpscare;
+		params.CanJumpscare = CanJumpscare;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -413,9 +412,9 @@ namespace CG
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsWarning                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Racer_C::WarningEvent(bool IsWarning, int WarningCount)
+	void UStaffbot_ABP_Racer_C::WarningEvent(bool IsWarning, int32_t WarningCount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -499,10 +498,10 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.Change_PA_Profile_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Staffbot_PA_Enum_EStaffbot_PA_Enum>    ProfileEnum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Staffbot_PA_Enum_EStaffbot_PA_Enum                 ProfileEnum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bIncludeSelf                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_ABP_Racer_C::Change_PA_Profile_Event(TEnumAsByte<Staffbot_PA_Enum_EStaffbot_PA_Enum> ProfileEnum, bool bIncludeSelf)
+	void UStaffbot_ABP_Racer_C::Change_PA_Profile_Event(Staffbot_PA_Enum_EStaffbot_PA_Enum ProfileEnum, bool bIncludeSelf)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -599,9 +598,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.SetConstraintProfile_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<Staffbot_Constraint_Enum_EStaffbot_Constraint_Enum> Con_ProfileEnum                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Staffbot_Constraint_Enum_EStaffbot_Constraint_Enum Con_ProfileEnum                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Racer_C::SetConstraintProfile_Event(TEnumAsByte<Staffbot_Constraint_Enum_EStaffbot_Constraint_Enum> Con_ProfileEnum)
+	void UStaffbot_ABP_Racer_C::SetConstraintProfile_Event(Staffbot_Constraint_Enum_EStaffbot_Constraint_Enum Con_ProfileEnum)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -768,9 +767,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Racer.Staffbot_ABP_Racer_C.ExecuteUbergraph_Staffbot_ABP_Racer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Racer_C::ExecuteUbergraph_Staffbot_ABP_Racer(int EntryPoint)
+	void UStaffbot_ABP_Racer_C::ExecuteUbergraph_Staffbot_ABP_Racer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

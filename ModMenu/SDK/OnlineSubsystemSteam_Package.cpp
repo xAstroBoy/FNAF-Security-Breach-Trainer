@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OnlineSubsystemSteam_Package.h"
 
 namespace CG
 {

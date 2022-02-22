@@ -26,7 +26,7 @@ namespace CG
 		unsigned char                                              TargetActor[0x28];                                       // 0x0200(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      LookAtTime;                                              // 0x0228(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       UseTime;                                                 // 0x022C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_2LUP[0x3];                                   // 0x022D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4ADG[0x3];                                   // 0x022D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class APlayerCameraOverride_C*                             PlayerCameraOverride;                                    // 0x0230(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       Sound;                                                   // 0x0238(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Hide_Previous_Pawn;                                      // 0x0240(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
@@ -36,7 +36,7 @@ namespace CG
 	public:
 		void Release_Camera();
 		void Take_Over_Camera();
-		void ExecuteUbergraph_CameraOverrideComponent(int EntryPoint);
+		void ExecuteUbergraph_CameraOverrideComponent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

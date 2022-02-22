@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VanessaAim_Abp_LINK_Package.h"
 
 namespace CG
 {
@@ -103,9 +102,9 @@ namespace CG
 	 * 		Name   -> Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.ExecuteUbergraph_VanessaAim_Abp_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVanessaAim_Abp_LINK_C::ExecuteUbergraph_VanessaAim_Abp_LINK(int EntryPoint)
+	void UVanessaAim_Abp_LINK_C::ExecuteUbergraph_VanessaAim_Abp_LINK(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

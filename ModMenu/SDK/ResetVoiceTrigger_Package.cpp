@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ResetVoiceTrigger_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ResetVoiceTrigger.ResetVoiceTrigger_C.ExecuteUbergraph_ResetVoiceTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UResetVoiceTrigger_C::ExecuteUbergraph_ResetVoiceTrigger(int EntryPoint)
+	void UResetVoiceTrigger_C::ExecuteUbergraph_ResetVoiceTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

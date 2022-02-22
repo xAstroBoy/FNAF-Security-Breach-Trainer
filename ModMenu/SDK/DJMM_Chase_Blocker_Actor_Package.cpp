@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DJMM_Chase_Blocker_Actor_Package.h"
 
 namespace CG
 {
@@ -149,9 +148,9 @@ namespace CG
 	 * 		Name   -> Function DJMM_Chase_Blocker_Actor.DJMM_Chase_Blocker_Actor_C.ExecuteUbergraph_DJMM_Chase_Blocker_Actor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADJMM_Chase_Blocker_Actor_C::ExecuteUbergraph_DJMM_Chase_Blocker_Actor(int EntryPoint)
+	void ADJMM_Chase_Blocker_Actor_C::ExecuteUbergraph_DJMM_Chase_Blocker_Actor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

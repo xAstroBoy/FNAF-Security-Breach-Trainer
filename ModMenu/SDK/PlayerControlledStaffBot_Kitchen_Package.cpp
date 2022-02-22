@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerControlledStaffBot_Kitchen_Package.h"
 
 namespace CG
 {
@@ -162,9 +161,9 @@ namespace CG
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ExecuteUbergraph_PlayerControlledStaffBot_Kitchen
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerControlledStaffBot_Kitchen_C::ExecuteUbergraph_PlayerControlledStaffBot_Kitchen(int EntryPoint)
+	void APlayerControlledStaffBot_Kitchen_C::ExecuteUbergraph_PlayerControlledStaffBot_Kitchen(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

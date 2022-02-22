@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void Update_Percentage(float InPercent);
 		void Update_Time(float TimeRemaining);
-		void ExecuteUbergraph_SecurityOfficePowerUI(int EntryPoint);
+		void ExecuteUbergraph_SecurityOfficePowerUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

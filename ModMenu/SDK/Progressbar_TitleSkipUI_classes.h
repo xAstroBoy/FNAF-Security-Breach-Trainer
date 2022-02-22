@@ -37,7 +37,7 @@ namespace CG
 		void CancelHold();
 		void Begin_Hold();
 		void CompleteHoldProgress();
-		void ExecuteUbergraph_Progressbar_TitleSkipUI(int EntryPoint);
+		void ExecuteUbergraph_Progressbar_TitleSkipUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

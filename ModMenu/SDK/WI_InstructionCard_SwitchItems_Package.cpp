@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_SwitchItems_Package.h"
 
 namespace CG
 {

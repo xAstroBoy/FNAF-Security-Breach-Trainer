@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerControlledStaffBot_Package.h"
 
 namespace CG
 {
@@ -121,9 +120,9 @@ namespace CG
 	 * 		Name   -> Function PlayerControlledStaffBot.PlayerControlledStaffBot_C.ExecuteUbergraph_PlayerControlledStaffBot
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlayerControlledStaffBot_C::ExecuteUbergraph_PlayerControlledStaffBot(int EntryPoint)
+	void APlayerControlledStaffBot_C::ExecuteUbergraph_PlayerControlledStaffBot(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserTagCountDown_Package.h"
 
 namespace CG
 {
@@ -98,9 +97,9 @@ namespace CG
 	 * 		Name   -> Function LaserTagCountDown.LaserTagCountDown_C.ExecuteUbergraph_LaserTagCountDown
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALaserTagCountDown_C::ExecuteUbergraph_LaserTagCountDown(int EntryPoint)
+	void ALaserTagCountDown_C::ExecuteUbergraph_LaserTagCountDown(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_FloatingButtonIcon_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function WI_FloatingButtonIcon.WI_FloatingButtonIcon_C.SetButtonImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_PSButtons_E_PSButtons>               Button_Type                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_PSButtons_E_PSButtons                            Button_Type                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_FloatingButtonIcon_C::SetButtonImage(TEnumAsByte<E_PSButtons_E_PSButtons> Button_Type)
+	void UWI_FloatingButtonIcon_C::SetButtonImage(E_PSButtons_E_PSButtons Button_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -83,9 +82,9 @@ namespace CG
 	 * 		Name   -> Function WI_FloatingButtonIcon.WI_FloatingButtonIcon_C.ExecuteUbergraph_WI_FloatingButtonIcon
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_FloatingButtonIcon_C::ExecuteUbergraph_WI_FloatingButtonIcon(int EntryPoint)
+	void UWI_FloatingButtonIcon_C::ExecuteUbergraph_WI_FloatingButtonIcon(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyInteractibleActor_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function FreddyInteractibleActor.FreddyInteractibleActor_C.GetFreddyVO
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<FreddyVOType_EFreddyVOType>            VOType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		FreddyVOType_EFreddyVOType                         VOType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<class UDialogueWave*>                       FreddyDialog                                               (Parm, OutParm, HasGetValueTypeHash)
 	 */
-	void AFreddyInteractibleActor_C::GetFreddyVO(TEnumAsByte<FreddyVOType_EFreddyVOType> VOType, TArray<class UDialogueWave*>* FreddyDialog)
+	void AFreddyInteractibleActor_C::GetFreddyVO(FreddyVOType_EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

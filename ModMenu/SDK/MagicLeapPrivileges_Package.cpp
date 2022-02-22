@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapPrivileges_Package.h"
 
 namespace CG
 {

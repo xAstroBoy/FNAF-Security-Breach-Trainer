@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "InteractiveToolsFramework_Package.h"
 
 namespace CG
 {

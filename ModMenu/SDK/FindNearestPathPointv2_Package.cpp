@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindNearestPathPointv2_Package.h"
 
 namespace CG
 {
@@ -18,9 +17,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Character                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                NearestPoint                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NearestPoint                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindNearestPathPointv2_C::FindPathPoint(class AActor* Character, int* NearestPoint)
+	void UFindNearestPathPointv2_C::FindPathPoint(class AActor* Character, int32_t* NearestPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function FindNearestPathPointv2.FindNearestPathPointv2_C.ExecuteUbergraph_FindNearestPathPointv2
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindNearestPathPointv2_C::ExecuteUbergraph_FindNearestPathPointv2(int EntryPoint)
+	void UFindNearestPathPointv2_C::ExecuteUbergraph_FindNearestPathPointv2(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

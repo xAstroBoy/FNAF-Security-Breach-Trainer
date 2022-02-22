@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_Underground_VentDoor_Package.h"
 
 namespace CG
 {
@@ -161,9 +160,9 @@ namespace CG
 	 * 		Name   -> Function BP_Underground_VentDoor.BP_Underground_VentDoor_C.SetSecurityLevel
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                NewSecurityLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NewSecurityLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_Underground_VentDoor_C::SetSecurityLevel(int NewSecurityLevel)
+	void ABP_Underground_VentDoor_C::SetSecurityLevel(int32_t NewSecurityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -347,9 +346,9 @@ namespace CG
 	 * 		Name   -> Function BP_Underground_VentDoor.BP_Underground_VentDoor_C.ExecuteUbergraph_BP_Underground_VentDoor
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_Underground_VentDoor_C::ExecuteUbergraph_BP_Underground_VentDoor(int EntryPoint)
+	void ABP_Underground_VentDoor_C::ExecuteUbergraph_BP_Underground_VentDoor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

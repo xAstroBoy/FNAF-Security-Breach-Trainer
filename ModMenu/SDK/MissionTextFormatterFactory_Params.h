@@ -24,7 +24,7 @@ namespace CG
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0008(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0028(0x0048)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		struct FFNAFMissionTaskInfo                                TaskInfo;                                                // 0x0070(0x00D8)  (BlueprintVisible, BlueprintReadOnly, Parm)
-		int                                                        StateIndex;                                              // 0x0148(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    StateIndex;                                              // 0x0148(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class FText                                                FormattedText;                                           // 0x0150(0x0018)  (Parm, OutParm)
 
 	};

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CameraRenderTargetObject_Package.h"
 
 namespace CG
 {

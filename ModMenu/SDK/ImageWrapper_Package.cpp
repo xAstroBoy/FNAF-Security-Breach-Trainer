@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ImageWrapper_Package.h"
 
 namespace CG
 {

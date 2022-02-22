@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Greg_FirstPerson_ABP_Package.h"
 
 namespace CG
 {
@@ -573,9 +572,9 @@ namespace CG
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ExecuteUbergraph_Greg_FirstPerson_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGreg_FirstPerson_ABP_C::ExecuteUbergraph_Greg_FirstPerson_ABP(int EntryPoint)
+	void UGreg_FirstPerson_ABP_C::ExecuteUbergraph_Greg_FirstPerson_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

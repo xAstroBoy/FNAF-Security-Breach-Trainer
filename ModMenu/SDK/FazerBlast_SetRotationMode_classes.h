@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void Set(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FazerBlast_SetRotationMode(int EntryPoint);
+		void ExecuteUbergraph_FazerBlast_SetRotationMode(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

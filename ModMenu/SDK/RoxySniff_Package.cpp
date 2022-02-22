@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoxySniff_Package.h"
 
 namespace CG
 {
@@ -65,9 +64,9 @@ namespace CG
 	 * 		Name   -> Function RoxySniff.RoxySniff_C.ExecuteUbergraph_RoxySniff
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URoxySniff_C::ExecuteUbergraph_RoxySniff(int EntryPoint)
+	void URoxySniff_C::ExecuteUbergraph_RoxySniff(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

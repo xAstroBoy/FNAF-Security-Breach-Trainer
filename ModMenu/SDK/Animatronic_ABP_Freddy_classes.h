@@ -29,7 +29,7 @@ namespace CG
 		bool                                                       isopen_sound;                                            // 0x8DF4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       GamePlayOpenChest;                                       // 0x8DF5(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       AllowSound;                                              // 0x8DF6(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_XPW0[0x1];                                   // 0x8DF7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_57OO[0x1];                                   // 0x8DF7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             PawnVelocity;                                            // 0x8DF8(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             ZeroVector;                                              // 0x8E04(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            AimRotation;                                             // 0x8E10(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -37,7 +37,7 @@ namespace CG
 		float                                                      TurnThreshold;                                           // 0x8E28(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      ChestOpenDistance;                                       // 0x8E2C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       waveMontage;                                             // 0x8E30(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_WB33[0x3];                                   // 0x8E31(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YIPA[0x3];                                   // 0x8E31(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      waveWaitTime;                                            // 0x8E34(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FRotator                                            TurnInPlaceRot;                                          // 0x8E38(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FRotator                                            LastTurnInPlaceRot;                                      // 0x8E44(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -63,7 +63,7 @@ namespace CG
 		void AnimNotify_chestexit();
 		void PlayWaveAnim();
 		void StopwaveEvent();
-		void ExecuteUbergraph_Animatronic_ABP_Freddy(int EntryPoint);
+		void ExecuteUbergraph_Animatronic_ABP_Freddy(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

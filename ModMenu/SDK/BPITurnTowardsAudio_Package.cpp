@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BPITurnTowardsAudio_Package.h"
 
 namespace CG
 {

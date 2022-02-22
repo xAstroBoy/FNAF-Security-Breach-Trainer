@@ -33,15 +33,15 @@ namespace CG
 		class UBoxComponent*                                       PlayerInteract;                                          // 0x0270(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanStartCapture;                                         // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_MSKJ[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CM9N[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AttackerSpawnDestinationPair[0x50];                      // 0x0281(0x0050) UNKNOWN PROPERTY: MapProperty
 		unsigned char                                              CapturerSpawn[0x28];                                     // 0x02D8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Manager_Reference[0x28];                                 // 0x0300(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       Spawn_Capture_Bot;                                       // 0x0328(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       EmitterPlaying;                                          // 0x0329(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IYKT[0x6];                                   // 0x032A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TZ3H[0x6];                                   // 0x032A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              OcclusionTrace[0x28];                                    // 0x032A(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		int                                                        Color;                                                   // 0x0358(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Color;                                                   // 0x0358(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
@@ -50,7 +50,7 @@ namespace CG
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UserConstructionScript();
 		void StopEmitter();
@@ -60,7 +60,7 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void On_Interact_Done();
-		void ChangeColor(int ChangeColor);
+		void ChangeColor(int32_t ChangeColor);
 		void Robot_Captured(class AC_FazerBlast_Bot_C* CapturingBot);
 		void SpawnRobots();
 		void DespawnRobots();
@@ -68,7 +68,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void ToggleInRange(bool InRange);
 		void Reset();
-		void ExecuteUbergraph_BP_Fazerblast_CaptureFlagButton(int EntryPoint);
+		void ExecuteUbergraph_BP_Fazerblast_CaptureFlagButton(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

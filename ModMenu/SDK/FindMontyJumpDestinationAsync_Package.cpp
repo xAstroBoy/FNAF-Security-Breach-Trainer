@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindMontyJumpDestinationAsync_Package.h"
 
 namespace CG
 {
@@ -119,9 +118,9 @@ namespace CG
 	 * 		Name   -> Function FindMontyJumpDestinationAsync.FindMontyJumpDestinationAsync_C.ExecuteUbergraph_FindMontyJumpDestinationAsync
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindMontyJumpDestinationAsync_C::ExecuteUbergraph_FindMontyJumpDestinationAsync(int EntryPoint)
+	void UFindMontyJumpDestinationAsync_C::ExecuteUbergraph_FindMontyJumpDestinationAsync(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

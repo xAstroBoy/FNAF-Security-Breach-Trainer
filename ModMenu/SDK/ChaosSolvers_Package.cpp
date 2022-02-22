@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChaosSolvers_Package.h"
 
 namespace CG
 {

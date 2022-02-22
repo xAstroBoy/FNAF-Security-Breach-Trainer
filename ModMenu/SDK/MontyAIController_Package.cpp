@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyAIController_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function MontyAIController.MontyAIController_C.ExecuteUbergraph_MontyAIController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMontyAIController_C::ExecuteUbergraph_MontyAIController(int EntryPoint)
+	void AMontyAIController_C::ExecuteUbergraph_MontyAIController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

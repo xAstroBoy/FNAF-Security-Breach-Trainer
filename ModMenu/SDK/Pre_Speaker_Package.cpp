@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Pre_Speaker_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function Pre_Speaker.Pre_Speaker_C.ExecuteUbergraph_Pre_Speaker
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APre_Speaker_C::ExecuteUbergraph_Pre_Speaker(int EntryPoint)
+	void APre_Speaker_C::ExecuteUbergraph_Pre_Speaker(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

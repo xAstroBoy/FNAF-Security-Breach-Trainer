@@ -20,7 +20,7 @@ namespace CG
 	struct UBI_Culture_C_OnCultureChanged_Params
 	{
 	public:
-		TEnumAsByte<fnaf9_ELocalizationCulture>                    Culture;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		fnaf9_ELocalizationCulture                                 Culture;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

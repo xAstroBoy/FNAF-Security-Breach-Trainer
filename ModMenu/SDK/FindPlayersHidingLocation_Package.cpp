@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindPlayersHidingLocation_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindPlayersHidingLocation.FindPlayersHidingLocation_C.ExecuteUbergraph_FindPlayersHidingLocation
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindPlayersHidingLocation_C::ExecuteUbergraph_FindPlayersHidingLocation(int EntryPoint)
+	void UFindPlayersHidingLocation_C::ExecuteUbergraph_FindPlayersHidingLocation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

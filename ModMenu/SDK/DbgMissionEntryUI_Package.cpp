@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgMissionEntryUI_Package.h"
 
 namespace CG
 {
@@ -152,9 +151,9 @@ namespace CG
 	 * 		Name   -> Function DbgMissionEntryUI.DbgMissionEntryUI_C.ExecuteUbergraph_DbgMissionEntryUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDbgMissionEntryUI_C::ExecuteUbergraph_DbgMissionEntryUI(int EntryPoint)
+	void UDbgMissionEntryUI_C::ExecuteUbergraph_DbgMissionEntryUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AudioCapture_Package.h"
 
 namespace CG
 {

@@ -53,7 +53,7 @@ namespace CG
 		class FString                                              SettingsSlotName;                                        // 0x0308(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class URichTextBlock*>                              KeysInUse;                                               // 0x0318(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		bool                                                       AdjustFocus;                                             // 0x0328(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_0RWW[0x7];                                   // 0x0329(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FNAU[0x7];                                   // 0x0329(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UWI_ButtonRemapping_C*                               RemapWidgetInFocus;                                      // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ChangesMadeAndNotSaved_Controls;                         // 0x0338(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -75,7 +75,7 @@ namespace CG
 		void RevertChangedValues();
 		void BndEvt__ApplyChangesButton_Controls_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
 		void Updateicons();
-		void ExecuteUbergraph_Options_ControlsUI(int EntryPoint);
+		void ExecuteUbergraph_Options_ControlsUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

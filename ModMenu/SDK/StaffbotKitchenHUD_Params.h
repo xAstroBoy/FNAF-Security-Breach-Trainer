@@ -34,7 +34,7 @@ namespace CG
 	struct UStaffbotKitchenHUD_C_Complete_Current_Pizza_Step_Params
 	{
 	public:
-		TEnumAsByte<PizzaStep_EPizzaStep>                          PizzaStep;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PizzaStep_EPizzaStep                                       PizzaStep;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -119,7 +119,7 @@ namespace CG
 	struct UStaffbotKitchenHUD_C_ExecuteUbergraph_StaffbotKitchenHUD_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

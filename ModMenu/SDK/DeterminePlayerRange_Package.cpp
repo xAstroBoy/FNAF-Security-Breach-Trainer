@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DeterminePlayerRange_Package.h"
 
 namespace CG
 {
@@ -89,9 +88,9 @@ namespace CG
 	 * 		Name   -> Function DeterminePlayerRange.DeterminePlayerRange_C.ExecuteUbergraph_DeterminePlayerRange
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDeterminePlayerRange_C::ExecuteUbergraph_DeterminePlayerRange(int EntryPoint)
+	void UDeterminePlayerRange_C::ExecuteUbergraph_DeterminePlayerRange(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

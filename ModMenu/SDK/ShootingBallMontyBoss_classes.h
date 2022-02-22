@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-		void ExecuteUbergraph_ShootingBallMontyBoss(int EntryPoint);
+		void ExecuteUbergraph_ShootingBallMontyBoss(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

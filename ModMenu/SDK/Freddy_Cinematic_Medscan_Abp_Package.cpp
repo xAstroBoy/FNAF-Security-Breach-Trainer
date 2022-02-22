@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Freddy_Cinematic_Medscan_Abp_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function Freddy_Cinematic_Medscan_Abp.Freddy_Cinematic_Medscan_Abp_C.ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFreddy_Cinematic_Medscan_Abp_C::ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp(int EntryPoint)
+	void UFreddy_Cinematic_Medscan_Abp_C::ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

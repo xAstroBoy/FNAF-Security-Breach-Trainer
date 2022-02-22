@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AndroidPermission_Package.h"
 
 namespace CG
 {

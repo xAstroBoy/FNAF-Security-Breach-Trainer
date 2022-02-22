@@ -71,7 +71,7 @@ namespace CG
 	struct FTimedDataChannelSampleTime
 	{
 	public:
-		unsigned char                                              UnknownData_3FLU[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_I25O[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	};
 

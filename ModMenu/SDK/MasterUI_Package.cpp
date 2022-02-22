@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MasterUI_Package.h"
 
 namespace CG
 {
@@ -60,9 +59,9 @@ namespace CG
 	 * 		Name   -> Function MasterUI.MasterUI_C.CategoryButtonBackground
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMasterUI_C::CategoryButtonBackground(int Index)
+	void UMasterUI_C::CategoryButtonBackground(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -187,9 +186,9 @@ namespace CG
 	 * 		Name   -> Function MasterUI.MasterUI_C.SignalSiwtch
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMasterUI_C::SignalSiwtch(int Direction)
+	void UMasterUI_C::SignalSiwtch(int32_t Direction)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -328,10 +327,10 @@ namespace CG
 	 * 		Name   -> Function MasterUI.MasterUI_C.SwitchTab
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                CurrentWidget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CurrentWidget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               PlaySound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UMasterUI_C::SwitchTab(int CurrentWidget, bool PlaySound)
+	void UMasterUI_C::SwitchTab(int32_t CurrentWidget, bool PlaySound)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -633,9 +632,9 @@ namespace CG
 	 * 		Name   -> Function MasterUI.MasterUI_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMasterUI_C::InputCycle(int Increment)
+	void UMasterUI_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -886,9 +885,9 @@ namespace CG
 	 * 		Name   -> Function MasterUI.MasterUI_C.ExecuteUbergraph_MasterUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMasterUI_C::ExecuteUbergraph_MasterUI(int EntryPoint)
+	void UMasterUI_C::ExecuteUbergraph_MasterUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

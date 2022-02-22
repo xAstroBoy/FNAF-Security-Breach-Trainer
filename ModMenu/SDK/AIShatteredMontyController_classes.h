@@ -26,7 +26,7 @@ namespace CG
 	public:
 		void Setup_Hiding();
 		void End_Hiding();
-		void ExecuteUbergraph_AIShatteredMontyController(int EntryPoint);
+		void ExecuteUbergraph_AIShatteredMontyController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_UpdatePlayerPosition(int EntryPoint);
+		void ExecuteUbergraph_UpdatePlayerPosition(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

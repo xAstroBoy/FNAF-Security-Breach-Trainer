@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Kitchen_EmergencyUIActor_Package.h"
 
 namespace CG
 {
@@ -60,9 +59,9 @@ namespace CG
 	 * 		Name   -> Function Kitchen_EmergencyUIActor.Kitchen_EmergencyUIActor_C.ExecuteUbergraph_Kitchen_EmergencyUIActor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AKitchen_EmergencyUIActor_C::ExecuteUbergraph_Kitchen_EmergencyUIActor(int EntryPoint)
+	void AKitchen_EmergencyUIActor_C::ExecuteUbergraph_Kitchen_EmergencyUIActor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

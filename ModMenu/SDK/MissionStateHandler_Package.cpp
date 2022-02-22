@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MissionStateHandler_Package.h"
 
 namespace CG
 {
@@ -109,9 +108,9 @@ namespace CG
 	 * 		Name   -> Function MissionStateHandler.MissionStateHandler_C.ExecuteUbergraph_MissionStateHandler
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMissionStateHandler_C::ExecuteUbergraph_MissionStateHandler(int EntryPoint)
+	void UMissionStateHandler_C::ExecuteUbergraph_MissionStateHandler(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

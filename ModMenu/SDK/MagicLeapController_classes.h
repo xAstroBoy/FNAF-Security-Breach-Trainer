@@ -29,7 +29,7 @@ namespace CG
 		bool STATIC_PlayControllerLEDEffect(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerLEDEffect LEDEffect, MagicLeapController_EMagicLeapControllerLEDSpeed LEDSpeed, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec);
 		bool STATIC_PlayControllerLED(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec);
 		bool STATIC_PlayControllerHapticFeedback(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerHapticPattern HapticPattern, MagicLeapController_EMagicLeapControllerHapticIntensity Intensity);
-		int STATIC_MaxSupportedMagicLeapControllers();
+		int32_t STATIC_MaxSupportedMagicLeapControllers();
 		bool STATIC_IsMLControllerConnected(const class FName& MotionSource);
 		void STATIC_InvertControllerMapping();
 		class FName STATIC_GetMotionSourceForHand(InputCore_EControllerHand Hand);
@@ -37,7 +37,7 @@ namespace CG
 		InputCore_EControllerHand STATIC_GetHandForMotionSource(const class FName& MotionSource);
 		MagicLeapController_EMagicLeapControllerType STATIC_GetControllerType(const class FName& MotionSource);
 		MagicLeapController_EMagicLeapControllerTrackingMode STATIC_GetControllerTrackingMode();
-		bool STATIC_GetControllerMapping(int ControllerIndex, InputCore_EControllerHand* Hand);
+		bool STATIC_GetControllerMapping(int32_t ControllerIndex, InputCore_EControllerHand* Hand);
 		static UClass* StaticClass();
 	};
 
@@ -48,11 +48,11 @@ namespace CG
 	class UMagicLeapTouchpadGesturesComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_6DTL[0x8];                                   // 0x00B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M03Y[0x8];                                   // 0x00B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnTouchpadGestureStart;                                  // 0x00B8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnTouchpadGestureContinue;                               // 0x00C8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnTouchpadGestureEnd;                                    // 0x00D8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V8G0[0x58];                                  // 0x00E8(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_87V0[0x58];                                  // 0x00E8(0x0058) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

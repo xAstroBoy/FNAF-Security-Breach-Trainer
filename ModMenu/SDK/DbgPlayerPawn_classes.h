@@ -26,9 +26,9 @@ namespace CG
 		class UPointLightComponent*                                PointLight;                                              // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:
-		TEnumAsByte<Engine_ECollisionEnabled> GetCollisionMode();
-		void Set_Collision_Mode(TEnumAsByte<Engine_ECollisionEnabled> NewType);
-		void ExecuteUbergraph_DbgPlayerPawn(int EntryPoint);
+		Engine_ECollisionEnabled GetCollisionMode();
+		void Set_Collision_Mode(Engine_ECollisionEnabled NewType);
+		void ExecuteUbergraph_DbgPlayerPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

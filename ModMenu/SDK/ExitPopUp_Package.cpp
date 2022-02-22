@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ExitPopUp_Package.h"
 
 namespace CG
 {
@@ -141,9 +140,9 @@ namespace CG
 	 * 		Name   -> Function ExitPopUp.ExitPopUp_C.ExecuteUbergraph_ExitPopUp
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UExitPopUp_C::ExecuteUbergraph_ExitPopUp(int EntryPoint)
+	void UExitPopUp_C::ExecuteUbergraph_ExitPopUp(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

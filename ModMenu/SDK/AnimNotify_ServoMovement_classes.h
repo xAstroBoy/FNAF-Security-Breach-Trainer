@@ -21,7 +21,7 @@ namespace CG
 	class UAnimNotify_ServoMovement_C : public UAnimNotify_AkLoopingAudio_C
 	{
 	public:
-		unsigned char                                              UnknownData_O9FB[0x1];                                   // 0x0053(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z34V[0x1];                                   // 0x0053(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Velocity;                                                // 0x0054(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:

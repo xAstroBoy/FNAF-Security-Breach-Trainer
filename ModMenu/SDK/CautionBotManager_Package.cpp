@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CautionBotManager_Package.h"
 
 namespace CG
 {
@@ -83,9 +82,9 @@ namespace CG
 	 * 		Name   -> Function CautionBotManager.CautionBotManager_C.ExecuteUbergraph_CautionBotManager
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACautionBotManager_C::ExecuteUbergraph_CautionBotManager(int EntryPoint)
+	void ACautionBotManager_C::ExecuteUbergraph_CautionBotManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

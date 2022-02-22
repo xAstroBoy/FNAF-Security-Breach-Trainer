@@ -35,7 +35,7 @@ namespace CG
 	public:
 		void BndEvt__YesButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 		void BndEvt__NoButton_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-		void ExecuteUbergraph_InvertControlsUI(int EntryPoint);
+		void ExecuteUbergraph_InvertControlsUI(int32_t EntryPoint);
 		void OnOptionSelected__DelegateSignature();
 		static UClass* StaticClass();
 	};

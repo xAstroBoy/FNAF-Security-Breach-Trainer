@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void Update(const class FText& InText, bool Complete, bool HideTask);
-		void ExecuteUbergraph_UI_MissionItem(int EntryPoint);
+		void ExecuteUbergraph_UI_MissionItem(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

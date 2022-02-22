@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ActivatableState_Package.h"
 
 namespace CG
 {

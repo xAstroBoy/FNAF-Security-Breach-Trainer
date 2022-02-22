@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Chica_Package.h"
 
 namespace CG
 {
@@ -99,9 +98,9 @@ namespace CG
 	 * 		Name   -> Function Chica.Chica_C.ExecuteUbergraph_Chica
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AChica_C::ExecuteUbergraph_Chica(int EntryPoint)
+	void AChica_C::ExecuteUbergraph_Chica(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

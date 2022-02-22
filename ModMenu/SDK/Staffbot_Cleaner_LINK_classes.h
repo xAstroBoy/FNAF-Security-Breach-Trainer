@@ -53,17 +53,17 @@ namespace CG
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0D70(0x0020)
 		struct FAnimNode_Constraint                                AnimGraphNode_Constraint;                                // 0x0D90(0x0108)
 		bool                                                       isAiming;                                                // 0x0E98(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IZ9B[0x3];                                   // 0x0E99(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        WarningLevel;                                            // 0x0E9C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_1DN7[0x3];                                   // 0x0E99(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    WarningLevel;                                            // 0x0E9C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsWarning;                                               // 0x0EA0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       isAlerting;                                              // 0x0EA1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsAlerting;                                              // 0x0EA1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
 		void PlayerSpendsPartyPass_Event();
 		void PlayerHasPartyPass_Event(bool HasPartyPass);
 		void isStunnedEvent(bool IsStunned);
-		void AlertEvent(bool isAlerting);
+		void AlertEvent(bool IsAlerting);
 		void R_IK_Arm_Target_Event(const struct FVector& Target);
 		void L_IK_Arm_Target_Event(const struct FVector& Target);
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_Staffbot_Cleaner_LINK_AnimGraphNode_Constraint_2520A5094B444F56489B55B2836AE1CB();
@@ -76,10 +76,10 @@ namespace CG
 		void PerformEvent();
 		void CanPerformEvent(bool Off);
 		void SellEvent();
-		void JumpscareEvent(bool canJumpscare);
+		void JumpscareEvent(bool CanJumpscare);
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void WarningEvent(bool IsWarning, int WarningCount);
-		void ExecuteUbergraph_Staffbot_Cleaner_LINK(int EntryPoint);
+		void WarningEvent(bool IsWarning, int32_t WarningCount);
+		void ExecuteUbergraph_Staffbot_Cleaner_LINK(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

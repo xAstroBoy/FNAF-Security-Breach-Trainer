@@ -29,7 +29,7 @@ namespace CG
 		bool                                                       ForceStandaloneSubtitles;                                // 0x05E2(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Debug;                                                   // 0x05E3(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Debug_Subtitles;                                         // 0x05E4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IYQ5[0x3];                                   // 0x05E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZGCR[0x3];                                   // 0x05E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              PauseUIClass;                                            // 0x05E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UUserWidget*                                         PauseWidget;                                             // 0x05F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
@@ -40,7 +40,7 @@ namespace CG
 		void ShowFazwatch();
 		void HideFazwatch();
 		void EndPostEventWithSubtitles(AkAudio_EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
-		int PostEventWithSubtitles(class UAkAudioEvent* AkEvent, class AActor* Actor);
+		int32_t PostEventWithSubtitles(class UAkAudioEvent* AkEvent, class AActor* Actor);
 		void EndSubtitleDisplay();
 		void BeginSubtitleDisplay(const class FString& Key, class AActor* Actor, const class FString& FallbackSourceString, float Duration, float MaxRadiusPercent, bool SanitizeKey, bool HighPriority);
 		void EnsureSubtitles(bool* IsValid);
@@ -52,7 +52,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void Click_To_Unpause();
 		void OnToggleLocalizationQA();
-		void ExecuteUbergraph_FBPC_SharedController(int EntryPoint);
+		void ExecuteUbergraph_FBPC_SharedController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

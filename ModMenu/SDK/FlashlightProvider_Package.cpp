@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FlashlightProvider_Package.h"
 
 namespace CG
 {

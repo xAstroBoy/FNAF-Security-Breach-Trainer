@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TitlePC_Package.h"
 
 namespace CG
 {
@@ -206,9 +205,9 @@ namespace CG
 	 * 		Name   -> Function TitlePC.TitlePC_C.ExecuteUbergraph_TitlePC
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ATitlePC_C::ExecuteUbergraph_TitlePC(int EntryPoint)
+	void ATitlePC_C::ExecuteUbergraph_TitlePC(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

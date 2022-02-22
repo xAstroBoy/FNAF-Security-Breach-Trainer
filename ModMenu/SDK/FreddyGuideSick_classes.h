@@ -28,7 +28,7 @@ namespace CG
 		bool                                                       Freddy_Audio_Playing_;                                   // 0x0938(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		int GetCurrentPatrolPointIndex();
+		int32_t GetCurrentPatrolPointIndex();
 		void GetPatrolPath();
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
 		void OnCheckpointSave(class UFNAFSaveData* SaveDataObject);
@@ -38,9 +38,9 @@ namespace CG
 		void ReceiveBeginPlay();
 		void Try_Entering();
 		void SetPatrolPath();
-		void SetCurrentPatrolPointIndex(int PatrolPointIndex);
+		void SetCurrentPatrolPointIndex(int32_t PatrolPointIndex);
 		void OnStoreGameData(class UFNAFSaveData* SaveDataObject);
-		void ExecuteUbergraph_FreddyGuideSick(int EntryPoint);
+		void ExecuteUbergraph_FreddyGuideSick(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

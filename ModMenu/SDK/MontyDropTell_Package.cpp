@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyDropTell_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function MontyDropTell.MontyDropTell_C.ExecuteUbergraph_MontyDropTell
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMontyDropTell_C::ExecuteUbergraph_MontyDropTell(int EntryPoint)
+	void AMontyDropTell_C::ExecuteUbergraph_MontyDropTell(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

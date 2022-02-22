@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TensionControl_Package.h"
 
 namespace CG
 {
@@ -18,11 +17,11 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<struct FAIDistanceResult>                   Array                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		int                                                Dimension_1                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Dimension_1                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Condition                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              NavDistance                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ATensionControl_C::GetDistVal(TArray<struct FAIDistanceResult>* Array, int Dimension_1, bool Condition, float* NavDistance)
+	void ATensionControl_C::GetDistVal(TArray<struct FAIDistanceResult>* Array, int32_t Dimension_1, bool Condition, float* NavDistance)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -165,9 +164,9 @@ namespace CG
 	 * 		Name   -> Function TensionControl.TensionControl_C.ExecuteUbergraph_TensionControl
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ATensionControl_C::ExecuteUbergraph_TensionControl(int EntryPoint)
+	void ATensionControl_C::ExecuteUbergraph_TensionControl(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

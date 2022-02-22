@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RoomSystem_Package.h"
 
 namespace CG
 {
@@ -179,9 +178,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetSecurityLevel
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDoorInterface::SetSecurityLevel(int NewSecurityLevel)
+	void UDoorInterface::SetSecurityLevel(int32_t NewSecurityLevel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -608,9 +607,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.SetPOIVisited
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ARoomAreaBase::SetPOIVisited(int Index)
+	void ARoomAreaBase::SetPOIVisited(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -631,9 +630,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ResetPOIHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ARoomAreaBase::ResetPOIHeat(int Index)
+	void ARoomAreaBase::ResetPOIHeat(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -726,7 +725,7 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoints
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	TMap<int, struct FVector> ARoomAreaBase::GetRoomEntryPoints()
+	TMap<int32_t, struct FVector> ARoomAreaBase::GetRoomEntryPoints()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -748,9 +747,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                EntryIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            EntryIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector ARoomAreaBase::GetRoomEntryPoint(int EntryIndex)
+	struct FVector ARoomAreaBase::GetRoomEntryPoint(int32_t EntryIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -864,9 +863,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointOfInterestInfoByIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FPointOfInterestRuntimeInfo ARoomAreaBase::GetPointOfInterestInfoByIndex(int Index)
+	struct FPointOfInterestRuntimeInfo ARoomAreaBase::GetPointOfInterestInfoByIndex(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1134,9 +1133,9 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ClearPOIVisited
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ARoomAreaBase::ClearPOIVisited(int Index)
+	void ARoomAreaBase::ClearPOIVisited(int32_t Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1157,10 +1156,10 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.AdjustPOIHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Amount                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ARoomAreaBase::AdjustPOIHeat(int Index, float Amount)
+	void ARoomAreaBase::AdjustPOIHeat(int32_t Index, float Amount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1596,7 +1595,7 @@ namespace CG
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TMap<class ARoomAreaBase*, int> URoomSystem::GetAllRoomDistancesFromRoom(class ARoomAreaBase* Room)
+	TMap<class ARoomAreaBase*, int32_t> URoomSystem::GetAllRoomDistancesFromRoom(class ARoomAreaBase* Room)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1619,7 +1618,7 @@ namespace CG
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetAllRoomDistancesFromPlayerRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	TMap<class ARoomAreaBase*, int> URoomSystem::GetAllRoomDistancesFromPlayerRoom()
+	TMap<class ARoomAreaBase*, int32_t> URoomSystem::GetAllRoomDistancesFromPlayerRoom()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

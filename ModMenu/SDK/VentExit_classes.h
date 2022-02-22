@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void On_Vent_Exited();
-		void ExecuteUbergraph_VentExit(int EntryPoint);
+		void ExecuteUbergraph_VentExit(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_MIssions_Package.h"
 
 namespace CG
 {
@@ -235,9 +234,9 @@ namespace CG
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_MIssions_C::InputCycle(int Increment)
+	void UWI_MIssions_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -487,9 +486,9 @@ namespace CG
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.ExecuteUbergraph_WI_MIssions
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_MIssions_C::ExecuteUbergraph_WI_MIssions(int EntryPoint)
+	void UWI_MIssions_C::ExecuteUbergraph_WI_MIssions(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

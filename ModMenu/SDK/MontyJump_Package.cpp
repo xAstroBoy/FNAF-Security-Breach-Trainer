@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MontyJump_Package.h"
 
 namespace CG
 {
@@ -177,9 +176,9 @@ namespace CG
 	 * 		Name   -> Function MontyJump.MontyJump_C.ExecuteUbergraph_MontyJump
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMontyJump_C::ExecuteUbergraph_MontyJump(int EntryPoint)
+	void UMontyJump_C::ExecuteUbergraph_MontyJump(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

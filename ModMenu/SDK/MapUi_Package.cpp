@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MapUi_Package.h"
 
 namespace CG
 {
@@ -145,9 +144,9 @@ namespace CG
 	 * 		struct FVector2D                                   Map_Position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<class AActor*>                              Objects                                                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	 * 		TArray<class UUserWidget*>                         Icons_to_Use                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash)
-	 * 		TEnumAsByte<MinimapIconTypes_EMinimapIconTypes>    Object_Type                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		MinimapIconTypes_EMinimapIconTypes                 Object_Type                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMapUI_C::Recalculate_Icons_(const struct FVector2D& Map_Position, TArray<class AActor*>* Objects, TArray<class UUserWidget*>* Icons_to_Use, TEnumAsByte<MinimapIconTypes_EMinimapIconTypes> Object_Type)
+	void UMapUI_C::Recalculate_Icons_(const struct FVector2D& Map_Position, TArray<class AActor*>* Objects, TArray<class UUserWidget*>* Icons_to_Use, MinimapIconTypes_EMinimapIconTypes Object_Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -538,9 +537,9 @@ namespace CG
 	 * 		Name   -> Function MapUi.MapUI_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMapUI_C::InputCycle(int Increment)
+	void UMapUI_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -724,9 +723,9 @@ namespace CG
 	 * 		Name   -> Function MapUi.MapUI_C.ExecuteUbergraph_MapUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMapUI_C::ExecuteUbergraph_MapUI(int EntryPoint)
+	void UMapUI_C::ExecuteUbergraph_MapUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

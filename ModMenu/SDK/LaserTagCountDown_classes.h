@@ -33,7 +33,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void Start_Count_down();
 		void Start_Game_Session_Timer();
-		void ExecuteUbergraph_LaserTagCountDown(int EntryPoint);
+		void ExecuteUbergraph_LaserTagCountDown(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

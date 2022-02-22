@@ -46,7 +46,7 @@ namespace CG
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace_2;                   // 0x4F80(0x0020)
 		struct FAnimNode_LinkedInputPose                           AnimGraphNode_LinkedInputPose;                           // 0x4FA0(0x0078)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace_2;                   // 0x5018(0x0020)
-		unsigned char                                              UnknownData_5SMA[0x8];                                   // 0x5038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_988G[0x8];                                   // 0x5038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_3;                            // 0x5040(0x0440)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_3;                                  // 0x5480(0x01B0)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_15;                             // 0x5630(0x0128)
@@ -54,7 +54,7 @@ namespace CG
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x5778(0x0020)
 		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose_2;                          // 0x5798(0x00B8)
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone_3;                              // 0x5850(0x0108)
-		unsigned char                                              UnknownData_B0VZ[0x8];                                   // 0x5958(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EG4V[0x8];                                   // 0x5958(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_2;                            // 0x5960(0x0440)
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x5DA0(0x0030)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_14;                             // 0x5DD0(0x0128)
@@ -70,13 +70,13 @@ namespace CG
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_4;                              // 0x6960(0x0128)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_3;                              // 0x6A88(0x0128)
 		struct FAnimNode_Constraint                                AnimGraphNode_Constraint;                                // 0x6BB0(0x0108)
-		unsigned char                                              UnknownData_YVM1[0x8];                                   // 0x6CB8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RQ26[0x8];                                   // 0x6CB8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics;                              // 0x6CC0(0x0440)
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone_2;                              // 0x7100(0x0108)
-		unsigned char                                              UnknownData_D9XV[0x8];                                   // 0x7208(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6OYK[0x8];                                   // 0x7208(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_2;                                  // 0x7210(0x01B0)
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone;                                // 0x73C0(0x0108)
-		unsigned char                                              UnknownData_Q1RD[0x8];                                   // 0x74C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WYPI[0x8];                                   // 0x74C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt;                                    // 0x74D0(0x01B0)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone_2;                              // 0x7680(0x0128)
 		struct FAnimNode_SpringBone                                AnimGraphNode_SpringBone;                                // 0x77A8(0x0128)
@@ -87,12 +87,12 @@ namespace CG
 		float                                                      JiggleDynamicAlpha;                                      // 0x7A78(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      JiggleAlphaScale;                                        // 0x7A7C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Shoulderpad_DynamicAlpha;                                // 0x7A80(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       canJumpscare;                                            // 0x7A84(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       CanJumpscare;                                            // 0x7A84(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void ExecuteUbergraph_AnimatronicJiggleABP(int EntryPoint);
+		void ExecuteUbergraph_AnimatronicJiggleABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

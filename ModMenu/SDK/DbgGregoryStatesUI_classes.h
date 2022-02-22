@@ -44,7 +44,7 @@ namespace CG
 		void BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 		void BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 		void BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void ExecuteUbergraph_DbgGregoryStatesUI(int EntryPoint);
+		void ExecuteUbergraph_DbgGregoryStatesUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

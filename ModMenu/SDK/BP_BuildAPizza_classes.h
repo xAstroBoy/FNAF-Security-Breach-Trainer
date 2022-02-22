@@ -41,8 +41,8 @@ namespace CG
 		void CopyPizza(class UChildActorComponent* pizza);
 		void ChangeStateHelper();
 		void UserConstructionScript();
-		void ChangeState(TEnumAsByte<PizzaStep_EPizzaStep> PizzaStep);
-		void ExecuteUbergraph_BP_BuildAPizza(int EntryPoint);
+		void ChangeState(PizzaStep_EPizzaStep PizzaStep);
+		void ExecuteUbergraph_BP_BuildAPizza(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

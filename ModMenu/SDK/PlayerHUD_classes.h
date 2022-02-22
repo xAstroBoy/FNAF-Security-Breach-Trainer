@@ -53,15 +53,15 @@ namespace CG
 		class UTextBlock*                                          VersionNumber;                                           // 0x0318(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UWI_InstructionCard_C*                               WI_InstructionCard;                                      // 0x0320(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       Loaded_Kitchen;                                          // 0x0328(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_V8PI[0x3];                                   // 0x0329(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O79Z[0x3];                                   // 0x0329(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                InteractionsTableID;                                     // 0x032C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_VYTO[0x4];                                   // 0x0334(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TXG6[0x4];                                   // 0x0334(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMaterialInstanceDynamic*                            HoldProgressMaterial;                                    // 0x0338(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        HideObjectiveListTimer;                                  // 0x0340(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		struct FLinearColor                                        OriginalStaminaColor;                                    // 0x0348(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsRunningHold;                                           // 0x0358(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_AVPX[0x7];                                   // 0x0359(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type>> InstructionCardsList;                                    // 0x0360(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_13GD[0x7];                                   // 0x0359(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<E_InstructionCard_Type_E_InstructionCard_Type>      InstructionCardsList;                                    // 0x0360(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		TMap<class FString, class UTexture2D*>                     CollectedItemsQue;                                       // 0x0370(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		TArray<class FText>                                        CollectedItemNameList;                                   // 0x03C0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class UTexture2D*>                                  CollectedItemImageList;                                  // 0x03D0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
@@ -73,7 +73,7 @@ namespace CG
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
 		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
@@ -86,18 +86,18 @@ namespace CG
 		void Finished_DB237C8C45C17E7AA2665584748A4975();
 		void OnFailure_BF721F5A4230E920D7AB0496A5DE48C6();
 		void OnSuccess_BF721F5A4230E920D7AB0496A5DE48C6();
-		void OnFailure_AB03661843CC503A6CB2D5BF99086A7C(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_AB03661843CC503A6CB2D5BF99086A7C(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
+		void OnFailure_AB03661843CC503A6CB2D5BF99086A7C(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_AB03661843CC503A6CB2D5BF99086A7C(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void OnFailure_7DBB82C44AE86FE3123C8CA2C34C6B7D();
 		void OnSuccess_7DBB82C44AE86FE3123C8CA2C34C6B7D();
-		void OnFailure_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
+		void OnFailure_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void Finished_185BD7B94C5005FD6F01E39AB745E86F();
 		void Finished_10D10B594F13742D8823F39890BDEC3D();
 		void Finished_7533C45845F3B117AD0CED818D58DFA6();
 		void On_Trailer_Mode_Changed(bool TrailerEnabled);
 		void Hide_Objective_List();
-		void On_Party_Level_Updated(int NewLevel);
+		void On_Party_Level_Updated(int32_t NewLevel);
 		void Set_Skip_Info();
 		void SetRechargeStationText(bool On);
 		void On_Item_Collected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo);
@@ -107,8 +107,8 @@ namespace CG
 		void Hide_Informational_Message();
 		void On_Stamina_Depleted();
 		void On_Stamina_Replenished();
-		void On_Security_Level_Updated(int NewLevel);
-		void ShowInstructions(TEnumAsByte<E_InstructionCard_Type_E_InstructionCard_Type> Type);
+		void On_Security_Level_Updated(int32_t NewLevel);
+		void ShowInstructions(E_InstructionCard_Type_E_InstructionCard_Type Type);
 		void HideInstructions();
 		void PlayInstructionCardAnim();
 		void Setup_Objective_Display(const class FText& InText);
@@ -126,15 +126,15 @@ namespace CG
 		void Setup_Interactible_Display(class UObject* Interactible);
 		void On_End_Save();
 		void On_Begin_Save();
-		void Update(int Level, bool HasRtx, bool Has2080);
+		void Update(int32_t Level, bool HasRtx, bool Has2080);
 		void OnPlayerInteractCancel();
 		void HideRequirementPanel();
-		void On_Party_Pass_Used(int NewLevel);
+		void On_Party_Pass_Used(int32_t NewLevel);
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void Construct();
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
-		void ExecuteUbergraph_PlayerHUD(int EntryPoint);
+		void ExecuteUbergraph_PlayerHUD(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

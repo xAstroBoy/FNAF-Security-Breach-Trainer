@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffBotWorkerState_Package.h"
 
 namespace CG
 {

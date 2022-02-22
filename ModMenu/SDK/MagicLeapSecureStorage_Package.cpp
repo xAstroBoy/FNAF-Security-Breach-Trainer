@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapSecureStorage_Package.h"
 
 namespace CG
 {
@@ -180,9 +179,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureInt(const class FString& Key, int DataToStore)
+	bool UMagicLeapSecureStorage::STATIC_PutSecureInt(const class FString& Key, int32_t DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -288,9 +287,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int>                                        DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureArray(const class FString& Key, TArray<int> DataToStore)
+	bool UMagicLeapSecureStorage::STATIC_PutSecureArray(const class FString& Key, TArray<int32_t> DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -489,9 +488,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureInt(const class FString& Key, int* DataToRetrieve)
+	bool UMagicLeapSecureStorage::STATIC_GetSecureInt(const class FString& Key, int32_t* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -605,9 +604,9 @@ namespace CG
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int>                                        DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureArray(const class FString& Key, TArray<int>* DataToRetrieve)
+	bool UMagicLeapSecureStorage::STATIC_GetSecureArray(const class FString& Key, TArray<int32_t>* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

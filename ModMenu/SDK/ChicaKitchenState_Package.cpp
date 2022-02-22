@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChicaKitchenState_Package.h"
 
 namespace CG
 {

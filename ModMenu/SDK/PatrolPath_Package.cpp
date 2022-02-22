@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PatrolPath_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.GetPointColor
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	struct FLinearColor APatrolPath_C::GetPointColor(int PointIndex)
+	struct FLinearColor APatrolPath_C::GetPointColor(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -62,9 +61,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.GetPointType
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	int APatrolPath_C::GetPointType(int PointIndex)
+	int32_t APatrolPath_C::GetPointType(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -88,7 +87,7 @@ namespace CG
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	int APatrolPath_C::AddPoint(const struct FVector& Location)
+	int32_t APatrolPath_C::AddPoint(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -110,9 +109,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.GetPointsConnectedTo
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	TArray<int> APatrolPath_C::GetPointsConnectedTo(int PointIndex)
+	TArray<int32_t> APatrolPath_C::GetPointsConnectedTo(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -134,7 +133,7 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.GetNumberOfPathPoints
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
-	int APatrolPath_C::GetNumberOfPathPoints()
+	int32_t APatrolPath_C::GetNumberOfPathPoints()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -155,9 +154,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.GetPointLocation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	struct FVector APatrolPath_C::GetPointLocation(int PointIndex)
+	struct FVector APatrolPath_C::GetPointLocation(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -179,10 +178,10 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.RemovePointInternal
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                IndexToRemove                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            IndexToRemove                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::RemovePointInternal(int IndexToRemove, int InputPin)
+	void APatrolPath_C::RemovePointInternal(int32_t IndexToRemove, int32_t InputPin)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -222,10 +221,10 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.SetPointLocation
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Location                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::SetPointLocation(int PointIndex, const struct FVector& Location)
+	void APatrolPath_C::SetPointLocation(int32_t PointIndex, const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -246,10 +245,10 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.AddPointConnection
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointToConnectIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointToConnectIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::AddPointConnection(int PointIndex, int PointToConnectIndex)
+	void APatrolPath_C::AddPointConnection(int32_t PointIndex, int32_t PointToConnectIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -270,9 +269,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.RemovePoint
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::RemovePoint(int PointIndex)
+	void APatrolPath_C::RemovePoint(int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -292,10 +291,10 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.RemovePointConnection
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointToDisconnectIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointToDisconnectIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::RemovePointConnection(int PointIndex, int PointToDisconnectIndex)
+	void APatrolPath_C::RemovePointConnection(int32_t PointIndex, int32_t PointToDisconnectIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -316,10 +315,10 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.SetPointType
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointType                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointType                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::SetPointType(int PointIndex, int PointType)
+	void APatrolPath_C::SetPointType(int32_t PointIndex, int32_t PointType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -340,9 +339,9 @@ namespace CG
 	 * 		Name   -> Function PatrolPath.PatrolPath_C.ExecuteUbergraph_PatrolPath
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APatrolPath_C::ExecuteUbergraph_PatrolPath(int EntryPoint)
+	void APatrolPath_C::ExecuteUbergraph_PatrolPath(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

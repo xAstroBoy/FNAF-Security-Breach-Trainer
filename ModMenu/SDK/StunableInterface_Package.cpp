@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StunableInterface_Package.h"
 
 namespace CG
 {

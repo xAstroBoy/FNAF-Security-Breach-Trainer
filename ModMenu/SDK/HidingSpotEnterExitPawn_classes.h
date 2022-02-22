@@ -27,7 +27,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void ExecuteUbergraph_HidingSpotEnterExitPawn(int EntryPoint);
+		void ExecuteUbergraph_HidingSpotEnterExitPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

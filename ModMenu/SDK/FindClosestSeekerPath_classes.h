@@ -27,9 +27,9 @@ namespace CG
 		struct FBlackboardKeySelector                              PatrolLocation;                                          // 0x0100(0x0028) Edit, BlueprintVisible
 
 	public:
-		void Find_Best_Next_Point(int PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int* BestNextPointIndex, struct FVector* BestNextPointLocation);
+		void Find_Best_Next_Point(int32_t PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int32_t* BestNextPointIndex, struct FVector* BestNextPointLocation);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_FindClosestSeekerPath(int EntryPoint);
+		void ExecuteUbergraph_FindClosestSeekerPath(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

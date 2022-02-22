@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VariantManagerContent_Package.h"
 
 namespace CG
 {
@@ -42,9 +41,9 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSets.GetVariantSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                VariantSetIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VariantSetIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UVariantSet* ULevelVariantSets::GetVariantSet(int VariantSetIndex)
+	class UVariantSet* ULevelVariantSets::GetVariantSet(int32_t VariantSetIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -67,7 +66,7 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSets.GetNumVariantSets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int ULevelVariantSets::GetNumVariantSets()
+	int32_t ULevelVariantSets::GetNumVariantSets()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -130,10 +129,10 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                VariantSetIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int                                                VariantIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VariantSetIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VariantIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool ALevelVariantSetsActor::SwitchOnVariantByIndex(int VariantSetIndex, int VariantIndex)
+	bool ALevelVariantSetsActor::SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -397,9 +396,9 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.SwitchActor.SelectOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                OptionIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OptionIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ASwitchActor::SelectOption(int OptionIndex)
+	void ASwitchActor::SelectOption(int32_t OptionIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -420,7 +419,7 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.SwitchActor.GetSelectedOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
-	int ASwitchActor::GetSelectedOption()
+	int32_t ASwitchActor::GetSelectedOption()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -565,7 +564,7 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.Variant.GetNumActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UVariant::GetNumActors()
+	int32_t UVariant::GetNumActors()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -609,9 +608,9 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.Variant.GetActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                ActorIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ActorIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AActor* UVariant::GetActor(int ActorIndex)
+	class AActor* UVariant::GetActor(int32_t ActorIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -710,9 +709,9 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetVariant
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                VariantIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            VariantIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UVariant* UVariantSet::GetVariant(int VariantIndex)
+	class UVariant* UVariantSet::GetVariant(int32_t VariantIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -735,7 +734,7 @@ namespace CG
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetNumVariants
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
-	int UVariantSet::GetNumVariants()
+	int32_t UVariantSet::GetNumVariants()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

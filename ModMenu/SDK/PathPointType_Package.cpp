@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PathPointType_Package.h"
 
 namespace CG
 {

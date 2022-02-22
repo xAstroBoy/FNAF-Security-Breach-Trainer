@@ -21,7 +21,7 @@ namespace CG
 	class UBI_Culture_C : public UInterface
 	{
 	public:
-		void OnCultureChanged(TEnumAsByte<fnaf9_ELocalizationCulture> Culture);
+		void OnCultureChanged(fnaf9_ELocalizationCulture Culture);
 		static UClass* StaticClass();
 	};
 

@@ -21,7 +21,7 @@ namespace CG
 	class AMonty_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_RVFR[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6JPK[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x0800(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
@@ -29,7 +29,7 @@ namespace CG
 		void EnterHideMode(class AActor* HideActor);
 		void ReceiveBeginPlay();
 		void Stun();
-		void ExecuteUbergraph_Monty(int EntryPoint);
+		void ExecuteUbergraph_Monty(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

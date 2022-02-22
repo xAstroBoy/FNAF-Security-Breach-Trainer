@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OptionsUI_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FIntPoint                                   Resolution                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Index                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Index                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UOptionsUI_C::StartingResolution(const struct FIntPoint& Resolution, int* Index)
+	void UOptionsUI_C::StartingResolution(const struct FIntPoint& Resolution, int32_t* Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -441,9 +440,9 @@ namespace CG
 	 * 		Name   -> Function OptionsUI.OptionsUI_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UOptionsUI_C::InputCycle(int Increment)
+	void UOptionsUI_C::InputCycle(int32_t Increment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1419,9 +1418,9 @@ namespace CG
 	 * 		Name   -> Function OptionsUI.OptionsUI_C.ExecuteUbergraph_OptionsUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UOptionsUI_C::ExecuteUbergraph_OptionsUI(int EntryPoint)
+	void UOptionsUI_C::ExecuteUbergraph_OptionsUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

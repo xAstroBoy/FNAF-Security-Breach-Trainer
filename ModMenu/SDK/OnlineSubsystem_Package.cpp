@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OnlineSubsystem_Package.h"
 
 namespace CG
 {

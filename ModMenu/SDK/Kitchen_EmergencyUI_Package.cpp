@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Kitchen_EmergencyUI_Package.h"
 
 namespace CG
 {
@@ -74,9 +73,9 @@ namespace CG
 	 * 		Name   -> Function Kitchen_EmergencyUI.Kitchen_EmergencyUI_C.ExecuteUbergraph_Kitchen_EmergencyUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UKitchen_EmergencyUI_C::ExecuteUbergraph_Kitchen_EmergencyUI(int EntryPoint)
+	void UKitchen_EmergencyUI_C::ExecuteUbergraph_Kitchen_EmergencyUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

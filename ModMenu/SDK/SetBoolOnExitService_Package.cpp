@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetBoolOnExitService_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetBoolOnExitService.SetBoolOnExitService_C.ExecuteUbergraph_SetBoolOnExitService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetBoolOnExitService_C::ExecuteUbergraph_SetBoolOnExitService(int EntryPoint)
+	void USetBoolOnExitService_C::ExecuteUbergraph_SetBoolOnExitService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

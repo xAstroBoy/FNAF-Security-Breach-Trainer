@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_ABP_Cutscene_Package.h"
 
 namespace CG
 {
@@ -58,9 +57,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Cutscene.Staffbot_ABP_Cutscene_C.ExecuteUbergraph_Staffbot_ABP_Cutscene
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Cutscene_C::ExecuteUbergraph_Staffbot_ABP_Cutscene(int EntryPoint)
+	void UStaffbot_ABP_Cutscene_C::ExecuteUbergraph_Staffbot_ABP_Cutscene(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

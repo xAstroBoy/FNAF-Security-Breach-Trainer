@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AttackDoor_Package.h"
 
 namespace CG
 {
@@ -91,9 +90,9 @@ namespace CG
 	 * 		Name   -> Function AttackDoor.AttackDoor_C.ExecuteUbergraph_AttackDoor
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAttackDoor_C::ExecuteUbergraph_AttackDoor(int EntryPoint)
+	void UAttackDoor_C::ExecuteUbergraph_AttackDoor(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

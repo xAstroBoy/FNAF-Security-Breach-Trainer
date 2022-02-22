@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DebugMissionUI_Package.h"
 
 namespace CG
 {
@@ -185,9 +184,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                InfoState                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            InfoState                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugMissionUI_C::CompleteMissionTask(const class FName& MissionName, int InfoState)
+	void UDebugMissionUI_C::CompleteMissionTask(const class FName& MissionName, int32_t InfoState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -406,9 +405,9 @@ namespace CG
 	 * 		Name   -> Function DebugMissionUI.DebugMissionUI_C.BndEvt__DbgHour3SkipPathSelect_K2Node_ComponentBoundEvent_4_OnPathSelected__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>        NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		DbgPlayerPaths_EDbgPlayerPaths                     NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugMissionUI_C::BndEvt__DbgHour3SkipPathSelect_K2Node_ComponentBoundEvent_4_OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam)
+	void UDebugMissionUI_C::BndEvt__DbgHour3SkipPathSelect_K2Node_ComponentBoundEvent_4_OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -428,9 +427,9 @@ namespace CG
 	 * 		Name   -> Function DebugMissionUI.DebugMissionUI_C.BndEvt__DbgHour6SkipPathSelect_K2Node_ComponentBoundEvent_5_OnPathSelected__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>        NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		DbgPlayerPaths_EDbgPlayerPaths                     NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugMissionUI_C::BndEvt__DbgHour6SkipPathSelect_K2Node_ComponentBoundEvent_5_OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam)
+	void UDebugMissionUI_C::BndEvt__DbgHour6SkipPathSelect_K2Node_ComponentBoundEvent_5_OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -507,9 +506,9 @@ namespace CG
 	 * 		Name   -> Function DebugMissionUI.DebugMissionUI_C.ExecuteUbergraph_DebugMissionUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugMissionUI_C::ExecuteUbergraph_DebugMissionUI(int EntryPoint)
+	void UDebugMissionUI_C::ExecuteUbergraph_DebugMissionUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

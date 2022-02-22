@@ -36,7 +36,7 @@ namespace CG
 		class URichTextBlock*                                      BackButtonRichText_6;                                    // 0x0290(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTitleButton_C*                                      Backstage;                                               // 0x0298(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTitleButton_C*                                      BalloonBoyMinigame;                                      // 0x02A0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UImage*                                              BlackBackground;                                         // 0x02A8(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UImage*                                              Blackbackground;                                         // 0x02A8(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTitleButton_C*                                      Bowling;                                                 // 0x02B0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTitleButton_C*                                      BurntrapBattle;                                          // 0x02B8(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UTitleButton_C*                                      Character_Gallery;                                       // 0x02C0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
@@ -136,15 +136,15 @@ namespace CG
 		class UWI_RollingCredits_C*                                WI_RollingCredits;                                       // 0x05B0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       DebugMenu;                                               // 0x05B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       AllowContinueNewGame;                                    // 0x05B9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_3SIB[0x6];                                   // 0x05BA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TGGG[0x6];                                   // 0x05BA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              SlotForNewGame;                                          // 0x05C0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class UUserWidget*>                                 DifficultySelectors;                                     // 0x05D0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		TArray<class UTitleButton_C*>                              TimeSelectors;                                           // 0x05E0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		TArray<class UTitleButton_C*>                              LivesSelectors;                                          // 0x05F0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
-		int                                                        LastMenuIndex;                                           // 0x0600(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        SeedSelectionIndex;                                      // 0x0604(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    LastMenuIndex;                                           // 0x0600(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    SeedSelectionIndex;                                      // 0x0604(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ButtonHover;                                             // 0x0608(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_R92U[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_N7FP[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FCinematicCutscene                                  FNAF_INTRO_mp4;                                          // 0x0610(0x0040) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             IntroPlaying;                                            // 0x0650(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		struct FButtonStyle                                        MenuButtonStyle;                                         // 0x0660(0x0278) Edit, BlueprintVisible
@@ -152,8 +152,8 @@ namespace CG
 		struct FTextBlockStyle                                     TextBlockStyle;                                          // 0x08E0(0x0268) Edit, BlueprintVisible
 		class UMediaTexture*                                       CinematicBackgroundVideo;                                // 0x0B48(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UMediaPlayer*                                        CinematicMedia;                                          // 0x0B50(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        GameHour;                                                // 0x0B58(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_T0VG[0x4];                                   // 0x0B5C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    GameHour;                                                // 0x0B58(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_WSW1[0x4];                                   // 0x0B5C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTitle_SaveSlotButton_C*                             TitleSaveSlotSelected;                                   // 0x0B60(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              GlobalAmbience[0x28];                                    // 0x0B68(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       BackgroundVideoPlaying;                                  // 0x0B90(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -171,11 +171,11 @@ namespace CG
 		void SetFocusIfUsingGamepad();
 		void GetKeyboardFocusBack();
 		void RandomizerHoverHighlight();
-		void GetSeed(int* Seed);
-		void SetSurvivalLives(TEnumAsByte<E_SurvivalLives_E_SurvivalLives> Value);
-		void SetSurvivalTime(int MinutesPerHour);
+		void GetSeed(int32_t* Seed);
+		void SetSurvivalLives(E_SurvivalLives_E_SurvivalLives Value);
+		void SetSurvivalTime(int32_t MinutesPerHour);
 		void SetSurvivalSelection(fnaf9_ESurvivalDifficulty SurvivalDifficulty);
-		void SetClockRate(int MinutesPerHour);
+		void SetClockRate(int32_t MinutesPerHour);
 		UMG_ESlateVisibility Get_RayTracingBox_Visibility_1();
 		void FadeToLoad(const class FScriptDelegate& Event);
 		void Finished_071044F543A717F54FDA6B941362F78E();
@@ -237,7 +237,7 @@ namespace CG
 		void BndEvt__PrincessQuestAct2_K2Node_ComponentBoundEvent_73_OnClicked__DelegateSignature();
 		void BndEvt__PrincessQuestAct3_K2Node_ComponentBoundEvent_74_OnClicked__DelegateSignature();
 		void BndEvt__MiniGolf_Course2_K2Node_ComponentBoundEvent_75_OnClicked__DelegateSignature();
-		void LoadMiniGolfCourse(int CourseIndex);
+		void LoadMiniGolfCourse(int32_t CourseIndex);
 		void BndEvt__MiniGolf_Course3_K2Node_ComponentBoundEvent_76_OnClicked__DelegateSignature();
 		void BndEvt__PlayButton_K2Node_ComponentBoundEvent_78_OnClicked__DelegateSignature();
 		void AddNewGameButtonUI();
@@ -262,7 +262,7 @@ namespace CG
 		void Setup_Delete_Slots();
 		void UpdateButtonsVisibility();
 		void HideMouseWhenNotUsingKeyboard();
-		void ExecuteUbergraph_TitleUI(int EntryPoint);
+		void ExecuteUbergraph_TitleUI(int32_t EntryPoint);
 		void IntroPlaying__DelegateSignature();
 		static UClass* StaticClass();
 	};

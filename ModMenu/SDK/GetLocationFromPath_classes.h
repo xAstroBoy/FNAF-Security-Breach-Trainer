@@ -28,7 +28,7 @@ namespace CG
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_GetLocationFromPath(int EntryPoint);
+		void ExecuteUbergraph_GetLocationFromPath(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

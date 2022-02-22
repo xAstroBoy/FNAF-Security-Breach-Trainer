@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerNearHidingLocation_Package.h"
 
 namespace CG
 {
@@ -86,9 +85,9 @@ namespace CG
 	 * 		Name   -> Function PlayerNearHidingLocation.PlayerNearHidingLocation_C.ExecuteUbergraph_PlayerNearHidingLocation
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerNearHidingLocation_C::ExecuteUbergraph_PlayerNearHidingLocation(int EntryPoint)
+	void UPlayerNearHidingLocation_C::ExecuteUbergraph_PlayerNearHidingLocation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

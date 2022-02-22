@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BT_MoveToVuk_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function BT_MoveToVuk.BT_MoveToVuk_C.ExecuteUbergraph_BT_MoveToVuk
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBT_MoveToVuk_C::ExecuteUbergraph_BT_MoveToVuk(int EntryPoint)
+	void UBT_MoveToVuk_C::ExecuteUbergraph_BT_MoveToVuk(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

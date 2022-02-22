@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DisplayLocationService_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function DisplayLocationService.DisplayLocationService_C.ExecuteUbergraph_DisplayLocationService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDisplayLocationService_C::ExecuteUbergraph_DisplayLocationService(int EntryPoint)
+	void UDisplayLocationService_C::ExecuteUbergraph_DisplayLocationService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

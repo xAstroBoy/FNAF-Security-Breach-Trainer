@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VCartAnimationBlueprint_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function VCartAnimationBlueprint.VCartAnimationBlueprint_C.ExecuteUbergraph_VCartAnimationBlueprint
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVCartAnimationBlueprint_C::ExecuteUbergraph_VCartAnimationBlueprint(int EntryPoint)
+	void UVCartAnimationBlueprint_C::ExecuteUbergraph_VCartAnimationBlueprint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

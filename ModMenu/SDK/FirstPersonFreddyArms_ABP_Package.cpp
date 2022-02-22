@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FirstPersonFreddyArms_ABP_Package.h"
 
 namespace CG
 {
@@ -910,9 +909,9 @@ namespace CG
 	 * 		Name   -> Function FirstPersonFreddyArms_ABP.FirstPersonFreddyArms_ABP_C.ExecuteUbergraph_FirstPersonFreddyArms_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFirstPersonFreddyArms_ABP_C::ExecuteUbergraph_FirstPersonFreddyArms_ABP(int EntryPoint)
+	void UFirstPersonFreddyArms_ABP_C::ExecuteUbergraph_FirstPersonFreddyArms_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

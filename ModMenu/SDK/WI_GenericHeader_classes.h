@@ -38,7 +38,7 @@ namespace CG
 		struct FSlateBrush GetNewTexture();
 		void PreConstruct(bool IsDesignTime);
 		void UpdateData();
-		void ExecuteUbergraph_WI_GenericHeader(int EntryPoint);
+		void ExecuteUbergraph_WI_GenericHeader(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

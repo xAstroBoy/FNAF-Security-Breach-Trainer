@@ -31,7 +31,7 @@ namespace CG
 		void UpdateUIOnTick(bool* Output);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void OnPlayerInteractCancel();
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		static UClass* StaticClass();
 	};

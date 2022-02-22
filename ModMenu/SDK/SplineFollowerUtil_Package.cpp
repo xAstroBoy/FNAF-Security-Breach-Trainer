@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SplineFollowerUtil_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function SplineFollowerUtil.SplineFollowerUtil_C.SplineDirectionToMult
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		SplineFollowDirection_ESplineFollowDirection       Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	float USplineFollowerUtil_C::STATIC_SplineDirectionToMult(TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction, class UObject* __WorldContext)
+	float USplineFollowerUtil_C::STATIC_SplineDirectionToMult(SplineFollowDirection_ESplineFollowDirection Direction, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

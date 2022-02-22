@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FP_CrouchBob_Package.h"
 
 namespace CG
 {

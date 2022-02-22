@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetHearingEnable_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetHearingEnable.SetHearingEnable_C.ExecuteUbergraph_SetHearingEnable
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetHearingEnable_C::ExecuteUbergraph_SetHearingEnable(int EntryPoint)
+	void USetHearingEnable_C::ExecuteUbergraph_SetHearingEnable(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

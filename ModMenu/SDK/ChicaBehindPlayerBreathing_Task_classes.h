@@ -26,7 +26,7 @@ namespace CG
 	public:
 		void ReceiveExecute(class AActor* OwnerActor);
 		void ReceiveAbort(class AActor* OwnerActor);
-		void ExecuteUbergraph_ChicaBehindPlayerBreathing_Task(int EntryPoint);
+		void ExecuteUbergraph_ChicaBehindPlayerBreathing_Task(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

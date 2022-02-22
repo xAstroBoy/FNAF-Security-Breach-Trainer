@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ActorNavDistance_Package.h"
 
 namespace CG
 {
@@ -89,9 +88,9 @@ namespace CG
 	 * 		Name   -> Function ActorNavDistance.ActorNavDistance_C.ExecuteUbergraph_ActorNavDistance
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UActorNavDistance_C::ExecuteUbergraph_ActorNavDistance(int EntryPoint)
+	void UActorNavDistance_C::ExecuteUbergraph_ActorNavDistance(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

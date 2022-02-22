@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ExitToTitlePopUp_Package.h"
 
 namespace CG
 {
@@ -141,9 +140,9 @@ namespace CG
 	 * 		Name   -> Function ExitToTitlePopUp.ExitToTitlePopUp_C.ExecuteUbergraph_ExitToTitlePopUp
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UExitToTitlePopUp_C::ExecuteUbergraph_ExitToTitlePopUp(int EntryPoint)
+	void UExitToTitlePopUp_C::ExecuteUbergraph_ExitToTitlePopUp(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

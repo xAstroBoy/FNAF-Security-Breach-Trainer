@@ -34,7 +34,7 @@ namespace CG
 		void ReceivePossessed(class AController* NewController);
 		void Release_Player_Control();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_PlayerControlledStaffBot(int EntryPoint);
+		void ExecuteUbergraph_PlayerControlledStaffBot(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

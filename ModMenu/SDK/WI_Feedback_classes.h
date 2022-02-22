@@ -45,11 +45,11 @@ namespace CG
 		void GameEnd();
 		void GameExit();
 		void PlayerHit(const struct FHitResult& Hit);
-		void ShowFeedback(int CurrentStreak);
+		void ShowFeedback(int32_t CurrentStreak);
 		void AreaCaptured_Event();
 		void AreaLost_Event();
 		void LaserHit(class AEQ_LaserGun_C* Gun, const struct FHitResult& HitResult);
-		void ExecuteUbergraph_WI_Feedback(int EntryPoint);
+		void ExecuteUbergraph_WI_Feedback(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

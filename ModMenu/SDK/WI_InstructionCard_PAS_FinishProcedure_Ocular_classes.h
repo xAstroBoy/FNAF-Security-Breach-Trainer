@@ -31,7 +31,7 @@ namespace CG
 
 	public:
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-		void ExecuteUbergraph_WI_InstructionCard_PAS_FinishProcedure_Ocular(int EntryPoint);
+		void ExecuteUbergraph_WI_InstructionCard_PAS_FinishProcedure_Ocular(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

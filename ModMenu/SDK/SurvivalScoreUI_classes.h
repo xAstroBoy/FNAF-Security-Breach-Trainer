@@ -33,7 +33,7 @@ namespace CG
 
 	public:
 		void Construct();
-		void ExecuteUbergraph_SurvivalScoreUI(int EntryPoint);
+		void ExecuteUbergraph_SurvivalScoreUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

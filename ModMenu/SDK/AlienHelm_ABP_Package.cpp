@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AlienHelm_ABP_Package.h"
 
 namespace CG
 {
@@ -43,9 +42,9 @@ namespace CG
 	 * 		Name   -> Function AlienHelm_ABP.AlienHelm_ABP_C.ExecuteUbergraph_AlienHelm_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAlienHelm_ABP_C::ExecuteUbergraph_AlienHelm_ABP(int EntryPoint)
+	void UAlienHelm_ABP_C::ExecuteUbergraph_AlienHelm_ABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

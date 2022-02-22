@@ -23,7 +23,7 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0278(0x0030)
-		unsigned char                                              UnknownData_A9BF[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YYLO[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_TwoBoneIK                                 AnimGraphNode_TwoBoneIK;                                 // 0x02B0(0x01E0)
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone;                                // 0x0490(0x0108)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0598(0x0020)
@@ -35,7 +35,7 @@ namespace CG
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
-		void ExecuteUbergraph_Staffbot_Server_LINK(int EntryPoint);
+		void ExecuteUbergraph_Staffbot_Server_LINK(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

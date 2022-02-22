@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FreddyAIState_Package.h"
 
 namespace CG
 {

@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ToggleCursorVisibility(bool Visible);
-		void ExecuteUbergraph_MouseCursorUI(int EntryPoint);
+		void ExecuteUbergraph_MouseCursorUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

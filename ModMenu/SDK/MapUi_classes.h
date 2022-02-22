@@ -55,7 +55,7 @@ namespace CG
 		class URetainerBox*                                        Mask;                                                    // 0x0328(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UImage*                                              PlayerPos;                                               // 0x0330(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		float                                                      DistanceFromPlayer;                                      // 0x0338(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_U3KL[0x4];                                   // 0x033C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HZA7[0x4];                                   // 0x033C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class UCameraIcon_C*, class ASecurityCamera*>         CameraIconMap;                                           // 0x0340(0x0050) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		TArray<class UCameraIcon_C*>                               CameraIcons;                                             // 0x0390(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		class UCameraIcon_C*                                       LastSelection;                                           // 0x03A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -68,12 +68,12 @@ namespace CG
 		struct FVector2D                                           BottomRightBound;                                        // 0x0448(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector2D                                           MinimapScale;                                            // 0x0450(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<class UMarkerIcon_C*>                               MarkerIcons;                                             // 0x0458(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
-		int                                                        CurrentIndex;                                            // 0x0468(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_12Q8[0x4];                                   // 0x046C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    CurrentIndex;                                            // 0x0468(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_5MZR[0x4];                                   // 0x046C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ABP_MiniMap_Plane_C*                                 MiniMapReference;                                        // 0x0470(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       GolfMode;                                                // 0x0478(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       OnlyShowCurrentMissionCam;                               // 0x0479(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_KFXK[0x6];                                   // 0x047A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_45ES[0x6];                                   // 0x047A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        MapNames;                                                // 0x0480(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class UImage*>                                      ChargeStation_Icons;                                     // 0x0490(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 
@@ -84,7 +84,7 @@ namespace CG
 		void SetupMapDisplay();
 		void GetFloorLevel(class FName* Floor);
 		void Recalculate_Map();
-		void Recalculate_Icons_(const struct FVector2D& Map_Position, TArray<class AActor*>* Objects, TArray<class UUserWidget*>* Icons_to_Use, TEnumAsByte<MinimapIconTypes_EMinimapIconTypes> Object_Type);
+		void Recalculate_Icons_(const struct FVector2D& Map_Position, TArray<class AActor*>* Objects, TArray<class UUserWidget*>* Icons_to_Use, MinimapIconTypes_EMinimapIconTypes Object_Type);
 		struct FLinearColor Get_MapImage_ColorAndOpacity_1();
 		void RecalculateMapAndIcons(bool OnlyShowCurrentMissionCam);
 		void InuputNext();
@@ -103,7 +103,7 @@ namespace CG
 		void Camera_Clicked(class UCameraIcon_C* Sender);
 		void Alerted(class ASecurityCamera* SecurityCamera);
 		void On_Camera_Lost_Sight(class ASecurityCamera* SecurityCamera);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void NextFloor();
 		void PrevFloor();
 		void Reset();
@@ -112,7 +112,7 @@ namespace CG
 		void InputMoveAxis(const struct FVector2D& Axis);
 		void InputLookAxis(const struct FVector2D& Axis);
 		void Construct();
-		void ExecuteUbergraph_MapUI(int EntryPoint);
+		void ExecuteUbergraph_MapUI(int32_t EntryPoint);
 		void CameraClickedInMap__DelegateSignature(class ASecurityCamera* Camera);
 		static UClass* StaticClass();
 	};

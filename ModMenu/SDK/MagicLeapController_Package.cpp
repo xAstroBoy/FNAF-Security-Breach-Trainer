@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapController_Package.h"
 
 namespace CG
 {
@@ -259,7 +258,7 @@ namespace CG
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.MaxSupportedMagicLeapControllers
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
-	int UMagicLeapControllerFunctionLibrary::STATIC_MaxSupportedMagicLeapControllers()
+	int32_t UMagicLeapControllerFunctionLibrary::STATIC_MaxSupportedMagicLeapControllers()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -448,10 +447,10 @@ namespace CG
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerMapping
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
-	 * 		int                                                ControllerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            ControllerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_GetControllerMapping(int ControllerIndex, InputCore_EControllerHand* Hand)
+	bool UMagicLeapControllerFunctionLibrary::STATIC_GetControllerMapping(int32_t ControllerIndex, InputCore_EControllerHand* Hand)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

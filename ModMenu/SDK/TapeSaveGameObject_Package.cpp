@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TapeSaveGameObject_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.GetNoOfTapesDone
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                NoOfTapesPlayed                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            NoOfTapesPlayed                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTapeSaveGameObject_C::GetNoOfTapesDone(int* NoOfTapesPlayed)
+	void UTapeSaveGameObject_C::GetNoOfTapesDone(int32_t* NoOfTapesPlayed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

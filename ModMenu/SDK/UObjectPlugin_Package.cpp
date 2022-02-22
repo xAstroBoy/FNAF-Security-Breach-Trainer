@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "UObjectPlugin_Package.h"
 
 namespace CG
 {

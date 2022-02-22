@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AISeekerController_Package.h"
 
 namespace CG
 {
@@ -430,9 +429,9 @@ namespace CG
 	 * 		Name   -> Function AISeekerController.AISeekerController_C.ExecuteUbergraph_AISeekerController
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAISeekerController_C::ExecuteUbergraph_AISeekerController(int EntryPoint)
+	void AAISeekerController_C::ExecuteUbergraph_AISeekerController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

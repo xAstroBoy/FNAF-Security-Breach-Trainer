@@ -21,7 +21,7 @@ namespace CG
 	class ABP_ReturnFazerBlaster_C : public AActivatableBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_SXLC[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A1SR[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UInventoryConditionalComponent*                      InventoryConditional;                                    // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -30,20 +30,20 @@ namespace CG
 		unsigned char                                              Manager[0x28];                                           // 0x0298(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Button[0x28];                                            // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Elevator[0x28];                                          // 0x02E8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		TEnumAsByte<ActivatableState_EActivatableState>            State;                                                   // 0x0310(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_9XCV[0x7];                                   // 0x0311(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		ActivatableState_EActivatableState                         State;                                                   // 0x0310(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_2HC8[0x7];                                   // 0x0311(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Door[0x28];                                              // 0x0311(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
 		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetHUDInstruction(class FText* Instruction);
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void OnPlayerInteractCancel();
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
@@ -52,7 +52,7 @@ namespace CG
 		void SetActivated();
 		void DeactivateObject(class AActor* Deactivator);
 		void SetDeactivated();
-		void ExecuteUbergraph_BP_ReturnFazerBlaster(int EntryPoint);
+		void ExecuteUbergraph_BP_ReturnFazerBlaster(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

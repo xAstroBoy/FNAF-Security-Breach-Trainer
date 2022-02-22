@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChicaDynamicsAbp_Package.h"
 
 namespace CG
 {
@@ -100,9 +99,9 @@ namespace CG
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.ExecuteUbergraph_ChicaDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChicaDynamicsABP_C::ExecuteUbergraph_ChicaDynamicsABP(int EntryPoint)
+	void UChicaDynamicsABP_C::ExecuteUbergraph_ChicaDynamicsABP(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

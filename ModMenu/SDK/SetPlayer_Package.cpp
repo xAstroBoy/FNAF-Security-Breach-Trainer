@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetPlayer_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SetPlayer.SetPlayer_C.ExecuteUbergraph_SetPlayer
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetPlayer_C::ExecuteUbergraph_SetPlayer(int EntryPoint)
+	void USetPlayer_C::ExecuteUbergraph_SetPlayer(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

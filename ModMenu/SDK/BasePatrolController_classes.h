@@ -30,7 +30,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void BndEvt__AIPerception_K2Node_ComponentBoundEvent_1_PerceptionUpdatedDelegate__DelegateSignature(TArray<class AActor*> UpdatedActors);
 		void SecurityCameraAlert(class ASecurityCamera* SecurityCamera);
-		void ExecuteUbergraph_BasePatrolController(int EntryPoint);
+		void ExecuteUbergraph_BasePatrolController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

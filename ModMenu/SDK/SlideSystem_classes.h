@@ -26,7 +26,7 @@ namespace CG
 		class USphereComponent*                                    PlayerEntranceTrigger;                                   // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0248(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TGHD[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DTQ5[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              SlideLevelSequence[0x28];                                // 0x0249(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		struct FMovieSceneSequencePlaybackSettings                 SequenceOptions;                                         // 0x0278(0x0014) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
 
@@ -37,7 +37,7 @@ namespace CG
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void OnPlayerInteractCancel();
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
@@ -46,7 +46,7 @@ namespace CG
 		void On_Slide_Entered();
 		void ReturnControl();
 		void FinishedSliding();
-		void ExecuteUbergraph_SlideSystem(int EntryPoint);
+		void ExecuteUbergraph_SlideSystem(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

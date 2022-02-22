@@ -31,7 +31,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
 		void Spawn_AI();
-		void ExecuteUbergraph_A_FazerBlast_Spawner(int EntryPoint);
+		void ExecuteUbergraph_A_FazerBlast_Spawner(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

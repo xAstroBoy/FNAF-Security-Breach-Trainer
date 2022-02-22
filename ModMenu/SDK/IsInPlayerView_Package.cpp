@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "IsInPlayerView_Package.h"
 
 namespace CG
 {

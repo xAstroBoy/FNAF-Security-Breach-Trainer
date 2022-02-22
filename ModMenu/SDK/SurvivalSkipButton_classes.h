@@ -36,7 +36,7 @@ namespace CG
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void UserConstructionScript();
@@ -45,7 +45,7 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void ReceiveBeginPlay();
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void ExecuteUbergraph_SurvivalSkipButton(int EntryPoint);
+		void ExecuteUbergraph_SurvivalSkipButton(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

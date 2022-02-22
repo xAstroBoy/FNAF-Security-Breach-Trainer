@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_ABP_Comedy_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C.ExecuteUbergraph_Staffbot_ABP_Comedy
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Comedy_C::ExecuteUbergraph_Staffbot_ABP_Comedy(int EntryPoint)
+	void UStaffbot_ABP_Comedy_C::ExecuteUbergraph_Staffbot_ABP_Comedy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

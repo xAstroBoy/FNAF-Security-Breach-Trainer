@@ -31,7 +31,7 @@ namespace CG
 		void Finished_55E1AB854ACBCB1BF91A97A02522234D();
 		void ShowEmergencyText();
 		void Construct();
-		void ExecuteUbergraph_Kitchen_EmergencyUI(int EntryPoint);
+		void ExecuteUbergraph_Kitchen_EmergencyUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

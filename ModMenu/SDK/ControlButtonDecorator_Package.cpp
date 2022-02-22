@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ControlButtonDecorator_Package.h"
 
 namespace CG
 {

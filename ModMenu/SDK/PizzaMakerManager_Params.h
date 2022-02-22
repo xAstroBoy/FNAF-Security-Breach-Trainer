@@ -20,7 +20,7 @@ namespace CG
 	struct APizzaMakerManager_C_FinishStep_Params
 	{
 	public:
-		TEnumAsByte<PizzaStep_EPizzaStep>                          Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PizzaStep_EPizzaStep                                       Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -30,7 +30,7 @@ namespace CG
 	struct APizzaMakerManager_C_MoveToPizzaStep_Params
 	{
 	public:
-		TEnumAsByte<PizzaStep_EPizzaStep>                          Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PizzaStep_EPizzaStep                                       Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -47,7 +47,7 @@ namespace CG
 	struct APizzaMakerManager_C_Step_Completed_Params
 	{
 	public:
-		TEnumAsByte<PizzaStep_EPizzaStep>                          Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		PizzaStep_EPizzaStep                                       Step;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -71,7 +71,7 @@ namespace CG
 	struct APizzaMakerManager_C_ExecuteUbergraph_PizzaMakerManager_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

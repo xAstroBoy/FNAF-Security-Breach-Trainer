@@ -46,8 +46,8 @@ namespace CG
 		struct FKey                                                DownKey;                                                 // 0x02F0(0x0018) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		struct FKey                                                GamepadUp;                                               // 0x0308(0x0018) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		struct FKey                                                GamepadDown;                                             // 0x0320(0x0018) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		int                                                        PreviousIndex;                                           // 0x0338(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_E3FM[0x4];                                   // 0x033C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    PreviousIndex;                                           // 0x0338(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_19H2[0x4];                                   // 0x033C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAudioEvent*                                       ClickedEvent;                                            // 0x0340(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       HoveredEvent;                                            // 0x0348(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       PopUpWasClosed;                                          // 0x0350(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -66,7 +66,7 @@ namespace CG
 		void InputOptionAxis(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -85,7 +85,7 @@ namespace CG
 		void BndEvt__ExitToTitlePopUp_K2Node_ComponentBoundEvent_8_BackButton_Exit__DelegateSignature();
 		void BndEvt__ExitPopUp_K2Node_ComponentBoundEvent_3_Exit_BackedOut__DelegateSignature();
 		void BndEvt__ExitGameButton_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature();
-		void ExecuteUbergraph_PauseUI(int EntryPoint);
+		void ExecuteUbergraph_PauseUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

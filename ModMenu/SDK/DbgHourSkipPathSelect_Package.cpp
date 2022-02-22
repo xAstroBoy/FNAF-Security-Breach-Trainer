@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DbgHourSkipPathSelect_Package.h"
 
 namespace CG
 {
@@ -17,10 +16,10 @@ namespace CG
 	 * 		Name   -> Function DbgHourSkipPathSelect.DbgHourSkipPathSelect_C.GetSkipRoute
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>        SkipRoute                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Index                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		DbgPlayerPaths_EDbgPlayerPaths                     SkipRoute                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDbgHourSkipPathSelect_C::GetSkipRoute(int Index, TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>* SkipRoute)
+	void UDbgHourSkipPathSelect_C::GetSkipRoute(int32_t Index, DbgPlayerPaths_EDbgPlayerPaths* SkipRoute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -103,9 +102,9 @@ namespace CG
 	 * 		Name   -> Function DbgHourSkipPathSelect.DbgHourSkipPathSelect_C.ExecuteUbergraph_DbgHourSkipPathSelect
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDbgHourSkipPathSelect_C::ExecuteUbergraph_DbgHourSkipPathSelect(int EntryPoint)
+	void UDbgHourSkipPathSelect_C::ExecuteUbergraph_DbgHourSkipPathSelect(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -125,9 +124,9 @@ namespace CG
 	 * 		Name   -> Function DbgHourSkipPathSelect.DbgHourSkipPathSelect_C.OnPathSelected__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths>        NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		DbgPlayerPaths_EDbgPlayerPaths                     NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDbgHourSkipPathSelect_C::OnPathSelected__DelegateSignature(TEnumAsByte<DbgPlayerPaths_EDbgPlayerPaths> NewParam)
+	void UDbgHourSkipPathSelect_C::OnPathSelected__DelegateSignature(DbgPlayerPaths_EDbgPlayerPaths NewParam)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

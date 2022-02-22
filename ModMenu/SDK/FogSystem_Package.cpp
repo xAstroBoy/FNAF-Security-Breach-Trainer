@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FogSystem_Package.h"
 
 namespace CG
 {
@@ -105,9 +104,9 @@ namespace CG
 	 * 		Name   -> Function FogSystem.FogSystem_C.ExecuteUbergraph_FogSystem
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFogSystem_C::ExecuteUbergraph_FogSystem(int EntryPoint)
+	void AFogSystem_C::ExecuteUbergraph_FogSystem(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

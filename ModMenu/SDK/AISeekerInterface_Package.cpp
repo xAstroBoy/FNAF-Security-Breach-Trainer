@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AISeekerInterface_Package.h"
 
 namespace CG
 {
@@ -108,9 +107,9 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              Distance                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<AIPlayerRange_EAIPlayerRange>          Range                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		AIPlayerRange_EAIPlayerRange                       Range                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::GetRangeOfDistance(float Distance, TEnumAsByte<AIPlayerRange_EAIPlayerRange>* Range)
+	void UAISeekerInterface_C::GetRangeOfDistance(float Distance, AIPlayerRange_EAIPlayerRange* Range)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -270,9 +269,9 @@ namespace CG
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetAlertState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                AlertState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            AlertState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::SetAlertState(int AlertState)
+	void UAISeekerInterface_C::SetAlertState(int32_t AlertState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -316,9 +315,9 @@ namespace CG
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetRoomSeekMode
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<RoomSeekMode_ERoomSeekMode>            SeekMode                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RoomSeekMode_ERoomSeekMode                         SeekMode                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::GetRoomSeekMode(TEnumAsByte<RoomSeekMode_ERoomSeekMode>* SeekMode)
+	void UAISeekerInterface_C::GetRoomSeekMode(RoomSeekMode_ERoomSeekMode* SeekMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -411,10 +410,10 @@ namespace CG
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointIndex                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Valid                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAISeekerInterface_C::FindBestPOI(class ARoomAreaBase* Room, int* PointIndex, bool* Valid)
+	void UAISeekerInterface_C::FindBestPOI(class ARoomAreaBase* Room, int32_t* PointIndex, bool* Valid)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -440,9 +439,9 @@ namespace CG
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::SearchPointOfInterest(class ARoomAreaBase* Room, int PointIndex)
+	void UAISeekerInterface_C::SearchPointOfInterest(class ARoomAreaBase* Room, int32_t PointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

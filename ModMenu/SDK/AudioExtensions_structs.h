@@ -23,7 +23,7 @@ namespace CG
 	public:
 		class FName                                                Control;                                                 // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Value;                                                   // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7Y5P[0x8];                                   // 0x000C(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_D773[0x8];                                   // 0x000C(0x0008) MISSED OFFSET (PADDING)
 
 	};
 

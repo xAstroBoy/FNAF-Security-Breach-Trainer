@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PickSplineFork_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function PickSplineFork.PickSplineFork_C.ExecuteUbergraph_PickSplineFork
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPickSplineFork_C::ExecuteUbergraph_PickSplineFork(int EntryPoint)
+	void UPickSplineFork_C::ExecuteUbergraph_PickSplineFork(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Monty_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function Monty.Monty_C.ExecuteUbergraph_Monty
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMonty_C::ExecuteUbergraph_Monty(int EntryPoint)
+	void AMonty_C::ExecuteUbergraph_Monty(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

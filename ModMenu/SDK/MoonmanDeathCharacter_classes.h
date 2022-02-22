@@ -23,17 +23,17 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x04C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		float                                                      Time;                                                    // 0x04C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_IEOO[0x4];                                   // 0x04CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OT0G[0x4];                                   // 0x04CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UMaterialInterface*>                          DBG_MaterialMapping;                                     // 0x04D0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 
 	public:
-		void OnMoveFinished_01A10D084E477107D60080A61618D4FF(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController);
+		void OnMoveFinished_01A10D084E477107D60080A61618D4FF(AIModule_EPathFollowingResult Result, class AAIController* AIController);
 		void OnRequestFailed_01A10D084E477107D60080A61618D4FF();
 		void ReceiveBeginPlay();
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void ReceiveTick(float DeltaSeconds);
 		void OnDebugVis(bool enable);
-		void ExecuteUbergraph_MoonmanDeathCharacter(int EntryPoint);
+		void ExecuteUbergraph_MoonmanDeathCharacter(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

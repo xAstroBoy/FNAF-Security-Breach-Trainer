@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ViewInformationService_Package.h"
 
 namespace CG
 {
@@ -67,9 +66,9 @@ namespace CG
 	 * 		Name   -> Function ViewInformationService.ViewInformationService_C.ExecuteUbergraph_ViewInformationService
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UViewInformationService_C::ExecuteUbergraph_ViewInformationService(int EntryPoint)
+	void UViewInformationService_C::ExecuteUbergraph_ViewInformationService(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

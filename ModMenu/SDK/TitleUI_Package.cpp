@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TitleUI_Package.h"
 
 namespace CG
 {
@@ -257,9 +256,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.GetSeed
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		int                                                Seed                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Seed                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::GetSeed(int* Seed)
+	void UTitleUI_C::GetSeed(int32_t* Seed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -281,9 +280,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetSurvivalLives
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		TEnumAsByte<E_SurvivalLives_E_SurvivalLives>       Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_SurvivalLives_E_SurvivalLives                    Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::SetSurvivalLives(TEnumAsByte<E_SurvivalLives_E_SurvivalLives> Value)
+	void UTitleUI_C::SetSurvivalLives(E_SurvivalLives_E_SurvivalLives Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -303,9 +302,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetSurvivalTime
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                MinutesPerHour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            MinutesPerHour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::SetSurvivalTime(int MinutesPerHour)
+	void UTitleUI_C::SetSurvivalTime(int32_t MinutesPerHour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -347,9 +346,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetClockRate
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                MinutesPerHour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            MinutesPerHour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::SetClockRate(int MinutesPerHour)
+	void UTitleUI_C::SetClockRate(int32_t MinutesPerHour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1556,9 +1555,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.LoadMiniGolfCourse
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                CourseIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CourseIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::LoadMiniGolfCourse(int CourseIndex)
+	void UTitleUI_C::LoadMiniGolfCourse(int32_t CourseIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2034,9 +2033,9 @@ namespace CG
 	 * 		Name   -> Function TitleUI.TitleUI_C.ExecuteUbergraph_TitleUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::ExecuteUbergraph_TitleUI(int EntryPoint)
+	void UTitleUI_C::ExecuteUbergraph_TitleUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

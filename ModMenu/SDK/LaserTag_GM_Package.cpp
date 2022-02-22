@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LaserTag_GM_Package.h"
 
 namespace CG
 {
@@ -17,9 +16,9 @@ namespace CG
 	 * 		Name   -> Function LaserTag_GM.LaserTag_GM_C.SubtractPlayerScore
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Score_Change                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Score_Change                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALaserTag_GM_C::SubtractPlayerScore(int Score_Change)
+	void ALaserTag_GM_C::SubtractPlayerScore(int32_t Score_Change)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -153,9 +152,9 @@ namespace CG
 	 * 		Name   -> Function LaserTag_GM.LaserTag_GM_C.ExecuteUbergraph_LaserTag_GM
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALaserTag_GM_C::ExecuteUbergraph_LaserTag_GM(int EntryPoint)
+	void ALaserTag_GM_C::ExecuteUbergraph_LaserTag_GM(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

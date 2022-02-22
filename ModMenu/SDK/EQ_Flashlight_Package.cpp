@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EQ_Flashlight_Package.h"
 
 namespace CG
 {
@@ -517,9 +516,9 @@ namespace CG
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ExecuteUbergraph_EQ_Flashlight
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_Flashlight_C::ExecuteUbergraph_EQ_Flashlight(int EntryPoint)
+	void AEQ_Flashlight_C::ExecuteUbergraph_EQ_Flashlight(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

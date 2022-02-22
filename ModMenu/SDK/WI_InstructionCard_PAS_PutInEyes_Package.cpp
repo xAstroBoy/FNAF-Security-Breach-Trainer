@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_PAS_PutInEyes_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function WI_InstructionCard_PAS_PutInEyes.WI_InstructionCard_PAS_PutInEyes_C.ExecuteUbergraph_WI_InstructionCard_PAS_PutInEyes
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_InstructionCard_PAS_PutInEyes_C::ExecuteUbergraph_WI_InstructionCard_PAS_PutInEyes(int EntryPoint)
+	void UWI_InstructionCard_PAS_PutInEyes_C::ExecuteUbergraph_WI_InstructionCard_PAS_PutInEyes(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

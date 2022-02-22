@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SwitchAISeekerBT_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function SwitchAISeekerBT.SwitchAISeekerBT_C.ExecuteUbergraph_SwitchAISeekerBT
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USwitchAISeekerBT_C::ExecuteUbergraph_SwitchAISeekerBT(int EntryPoint)
+	void USwitchAISeekerBT_C::ExecuteUbergraph_SwitchAISeekerBT(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

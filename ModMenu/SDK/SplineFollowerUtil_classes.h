@@ -21,7 +21,7 @@ namespace CG
 	class USplineFollowerUtil_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		float STATIC_SplineDirectionToMult(TEnumAsByte<SplineFollowDirection_ESplineFollowDirection> Direction, class UObject* __WorldContext);
+		float STATIC_SplineDirectionToMult(SplineFollowDirection_ESplineFollowDirection Direction, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

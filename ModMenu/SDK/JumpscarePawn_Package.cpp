@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "JumpscarePawn_Package.h"
 
 namespace CG
 {
@@ -235,9 +234,9 @@ namespace CG
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.ExecuteUbergraph_JumpscarePawn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AJumpscarePawn_C::ExecuteUbergraph_JumpscarePawn(int EntryPoint)
+	void AJumpscarePawn_C::ExecuteUbergraph_JumpscarePawn(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

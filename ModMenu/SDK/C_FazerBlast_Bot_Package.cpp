@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "C_FazerBlast_Bot_Package.h"
 
 namespace CG
 {
@@ -17,7 +16,7 @@ namespace CG
 	 * 		Name   -> Function C_FazerBlast_Bot.C_FazerBlast_Bot_C.GetCurrentPatrolPointIndex
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
-	int AC_FazerBlast_Bot_C::GetCurrentPatrolPointIndex()
+	int32_t AC_FazerBlast_Bot_C::GetCurrentPatrolPointIndex()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -140,9 +139,9 @@ namespace CG
 	 * 		Name   -> Function C_FazerBlast_Bot.C_FazerBlast_Bot_C.SetCurrentPatrolPointIndex
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                PatrolPointIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PatrolPointIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AC_FazerBlast_Bot_C::SetCurrentPatrolPointIndex(int PatrolPointIndex)
+	void AC_FazerBlast_Bot_C::SetCurrentPatrolPointIndex(int32_t PatrolPointIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -306,9 +305,9 @@ namespace CG
 	 * 		Name   -> Function C_FazerBlast_Bot.C_FazerBlast_Bot_C.ExecuteUbergraph_C_FazerBlast_Bot
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AC_FazerBlast_Bot_C::ExecuteUbergraph_C_FazerBlast_Bot(int EntryPoint)
+	void AC_FazerBlast_Bot_C::ExecuteUbergraph_C_FazerBlast_Bot(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -28,7 +28,7 @@ namespace CG
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void Is_Player_Crouching();
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_PlayerCrouchingService(int EntryPoint);
+		void ExecuteUbergraph_PlayerCrouchingService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

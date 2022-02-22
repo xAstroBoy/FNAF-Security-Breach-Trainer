@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Functions_AINavigation_Package.h"
 
 namespace CG
 {
@@ -21,7 +20,7 @@ namespace CG
 	 * 		float                                              EdgePadding                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              MaxRadius                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              TestIncrement                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                AngleResolution                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            AngleResolution                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               VisibleFromLocation                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		TArray<class AActor*>                              ActorsToIgnore                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	 * 		bool                                               DrawDebug                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -31,7 +30,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     ReturnLocation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	bool UFunctions_AINavigation_C::STATIC_GetClosestPointOnNavigationMesh__Horizontal_(const struct FVector& Location, float EdgePadding, float MaxRadius, float TestIncrement, int AngleResolution, bool VisibleFromLocation, TArray<class AActor*>* ActorsToIgnore, bool DrawDebug, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime, class UObject* __WorldContext, struct FVector* ReturnLocation)
+	bool UFunctions_AINavigation_C::STATIC_GetClosestPointOnNavigationMesh__Horizontal_(const struct FVector& Location, float EdgePadding, float MaxRadius, float TestIncrement, int32_t AngleResolution, bool VisibleFromLocation, TArray<class AActor*>* ActorsToIgnore, bool DrawDebug, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime, class UObject* __WorldContext, struct FVector* ReturnLocation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

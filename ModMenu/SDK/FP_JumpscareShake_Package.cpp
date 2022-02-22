@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FP_JumpscareShake_Package.h"
 
 namespace CG
 {

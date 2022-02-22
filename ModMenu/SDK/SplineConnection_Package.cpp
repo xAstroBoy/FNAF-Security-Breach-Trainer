@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SplineConnection_Package.h"
 
 namespace CG
 {

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MoonManDistortionActor1_Package.h"
 
 namespace CG
 {
@@ -96,9 +95,9 @@ namespace CG
 	 * 		Name   -> Function MoonManDistortionActor1.MoonManDistortionActor1_C.ExecuteUbergraph_MoonManDistortionActor1
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMoonManDistortionActor1_C::ExecuteUbergraph_MoonManDistortionActor1(int EntryPoint)
+	void AMoonManDistortionActor1_C::ExecuteUbergraph_MoonManDistortionActor1(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

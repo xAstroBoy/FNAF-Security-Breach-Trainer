@@ -25,7 +25,7 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             OnGameStart;                                             // 0x0238(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		bool                                                       Started;                                                 // 0x0248(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NV4Q[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7M83[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnGameEnd;                                               // 0x0250(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class FName                                                ItemAward;                                               // 0x0260(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FString                                              Name;                                                    // 0x0268(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
@@ -40,11 +40,11 @@ namespace CG
 		void On_Skip();
 		void AwardItemToPlayer();
 		void GetIsGameActive(bool* Active_);
-		void PlayerCanEndGame(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType, bool* CanEnd);
+		void PlayerCanEndGame(E_EndMiniGameType_E_EndMiniGameType EndType, bool* CanEnd);
 		bool PlayerCanStartGame(fnaf9_ECantStartMinigameReason* reason);
-		void PlayerRequestEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType);
+		void PlayerRequestEnd(E_EndMiniGameType_E_EndMiniGameType EndType);
 		void PlayerRequestStart(bool ForceStart, bool* Started, fnaf9_ECantStartMinigameReason* reason);
-		void OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType);
+		void OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType);
 		void On_Start();
 		void Handle_Misc();
 		void HandlePlayer();
@@ -52,10 +52,10 @@ namespace CG
 		void HandleAI();
 		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();
-		void QuitToMainMenu(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> End_Type);
+		void QuitToMainMenu(E_EndMiniGameType_E_EndMiniGameType End_Type);
 		void GregoryKilled();
-		void ExecuteUbergraph_BP_MiniGameManger(int EntryPoint);
-		void OnGameEnd__DelegateSignature(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType);
+		void ExecuteUbergraph_BP_MiniGameManger(int32_t EntryPoint);
+		void OnGameEnd__DelegateSignature(E_EndMiniGameType_E_EndMiniGameType EndType);
 		void OnGameStart__DelegateSignature();
 		static UClass* StaticClass();
 	};

@@ -31,7 +31,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void Event_Post_Spawn_Logic(class APawn* Pawn);
 		void OnTriggered();
-		void ExecuteUbergraph_ShatteredChicaSpawnTrigger(int EntryPoint);
+		void ExecuteUbergraph_ShatteredChicaSpawnTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

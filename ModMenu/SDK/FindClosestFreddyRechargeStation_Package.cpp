@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "FindClosestFreddyRechargeStation_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function FindClosestFreddyRechargeStation.FindClosestFreddyRechargeStation_C.ExecuteUbergraph_FindClosestFreddyRechargeStation
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFindClosestFreddyRechargeStation_C::ExecuteUbergraph_FindClosestFreddyRechargeStation(int EntryPoint)
+	void UFindClosestFreddyRechargeStation_C::ExecuteUbergraph_FindClosestFreddyRechargeStation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

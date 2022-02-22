@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "DJMMBPInterface_Package.h"
 
 namespace CG
 {

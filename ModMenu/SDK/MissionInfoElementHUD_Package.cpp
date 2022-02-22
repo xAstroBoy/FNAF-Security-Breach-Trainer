@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MissionInfoElementHUD_Package.h"
 
 namespace CG
 {
@@ -49,9 +48,9 @@ namespace CG
 	 * 		Name   -> Function MissionInfoElementHUD.MissionInfoElementHUD_C.ExecuteUbergraph_MissionInfoElementHUD
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UMissionInfoElementHUD_C::ExecuteUbergraph_MissionInfoElementHUD(int EntryPoint)
+	void UMissionInfoElementHUD_C::ExecuteUbergraph_MissionInfoElementHUD(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EyeBlinkUI_Package.h"
 
 namespace CG
 {
@@ -162,9 +161,9 @@ namespace CG
 	 * 		Name   -> Function EyeBlinkUI.EyeBlinkUI_C.ExecuteUbergraph_EyeBlinkUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UEyeBlinkUI_C::ExecuteUbergraph_EyeBlinkUI(int EntryPoint)
+	void UEyeBlinkUI_C::ExecuteUbergraph_EyeBlinkUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

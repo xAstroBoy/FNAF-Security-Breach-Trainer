@@ -28,7 +28,7 @@ namespace CG
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_CheckHideLocation(int EntryPoint);
+		void ExecuteUbergraph_CheckHideLocation(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

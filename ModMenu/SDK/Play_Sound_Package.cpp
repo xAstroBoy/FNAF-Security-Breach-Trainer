@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Play_Sound_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function Play_Sound.Play_Sound_C.ExecuteUbergraph_Play_Sound
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlay_Sound_C::ExecuteUbergraph_Play_Sound(int EntryPoint)
+	void UPlay_Sound_C::ExecuteUbergraph_Play_Sound(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

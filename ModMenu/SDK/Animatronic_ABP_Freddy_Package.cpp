@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Animatronic_ABP_Freddy_Package.h"
 
 namespace CG
 {
@@ -387,9 +386,9 @@ namespace CG
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.ExecuteUbergraph_Animatronic_ABP_Freddy
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_Freddy_C::ExecuteUbergraph_Animatronic_ABP_Freddy(int EntryPoint)
+	void UAnimatronic_ABP_Freddy_C::ExecuteUbergraph_Animatronic_ABP_Freddy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -22,7 +22,7 @@ namespace CG
 	public:
 		class FText                                                TaskTitleText;                                           // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0018(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm)
-		int                                                        StateIndex;                                              // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    StateIndex;                                              // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class FText                                                FormattedTaskTitleText;                                  // 0x0040(0x0018)  (Parm, OutParm)
 
 	};

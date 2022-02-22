@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OcclusionTrace_Package.h"
 
 namespace CG
 {
@@ -83,9 +82,9 @@ namespace CG
 	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.ExecuteUbergraph_OcclusionTrace
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOcclusionTrace_C::ExecuteUbergraph_OcclusionTrace(int EntryPoint)
+	void AOcclusionTrace_C::ExecuteUbergraph_OcclusionTrace(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

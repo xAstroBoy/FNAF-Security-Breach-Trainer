@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "W_ScoreBoard_Package.h"
 
 namespace CG
 {
@@ -185,9 +184,9 @@ namespace CG
 	 * 		Name   -> Function W_ScoreBoard.W_ScoreBoard_C.ExecuteUbergraph_W_ScoreBoard
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UW_ScoreBoard_C::ExecuteUbergraph_W_ScoreBoard(int EntryPoint)
+	void UW_ScoreBoard_C::ExecuteUbergraph_W_ScoreBoard(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

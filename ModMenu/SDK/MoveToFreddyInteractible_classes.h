@@ -25,10 +25,10 @@ namespace CG
 		struct FBlackboardKeySelector                              FreddyInteractibleKey;                                   // 0x00B0(0x0028) Edit, BlueprintVisible
 
 	public:
-		void OnMoveFinished_0D6A96F54A9CABBACEB7D981B96EB764(TEnumAsByte<AIModule_EPathFollowingResult> Result, class AAIController* AIController);
+		void OnMoveFinished_0D6A96F54A9CABBACEB7D981B96EB764(AIModule_EPathFollowingResult Result, class AAIController* AIController);
 		void OnRequestFailed_0D6A96F54A9CABBACEB7D981B96EB764();
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void ExecuteUbergraph_MoveToFreddyInteractible(int EntryPoint);
+		void ExecuteUbergraph_MoveToFreddyInteractible(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

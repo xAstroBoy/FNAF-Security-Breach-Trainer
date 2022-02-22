@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void GetUIWidget(class UKitchen_EmergencyUI_C** AsKitchenEmergencyUI);
 		void PlayEmergencyText();
-		void ExecuteUbergraph_Kitchen_EmergencyUIActor(int EntryPoint);
+		void ExecuteUbergraph_Kitchen_EmergencyUIActor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -44,7 +44,7 @@ namespace CG
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_FazWatch_ABP_AnimGraphNode_SequencePlayer_AFA778E8410A0C1F14F22FB8924933AC();
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_FazWatch_ABP_AnimGraphNode_SequencePlayer_98F9360D42701DDE07D54E8A72B2544C();
 		void BlueprintUpdateAnimation(float DeltaTimeX);
-		void ExecuteUbergraph_FazWatch_ABP(int EntryPoint);
+		void ExecuteUbergraph_FazWatch_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

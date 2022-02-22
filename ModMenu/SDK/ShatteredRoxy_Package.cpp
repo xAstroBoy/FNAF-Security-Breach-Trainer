@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ShatteredRoxy_Package.h"
 
 namespace CG
 {
@@ -98,9 +97,9 @@ namespace CG
 	 * 		Name   -> Function ShatteredRoxy.ShatteredRoxy_C.ExecuteUbergraph_ShatteredRoxy
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredRoxy_C::ExecuteUbergraph_ShatteredRoxy(int EntryPoint)
+	void AShatteredRoxy_C::ExecuteUbergraph_ShatteredRoxy(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "AlwaysFaceCameraComponent_Kitchen_Package.h"
 
 namespace CG
 {
@@ -39,9 +38,9 @@ namespace CG
 	 * 		Name   -> Function AlwaysFaceCameraComponent_Kitchen.AlwaysFaceCameraComponent_Kitchen_C.ExecuteUbergraph_AlwaysFaceCameraComponent_Kitchen
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAlwaysFaceCameraComponent_Kitchen_C::ExecuteUbergraph_AlwaysFaceCameraComponent_Kitchen(int EntryPoint)
+	void UAlwaysFaceCameraComponent_Kitchen_C::ExecuteUbergraph_AlwaysFaceCameraComponent_Kitchen(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

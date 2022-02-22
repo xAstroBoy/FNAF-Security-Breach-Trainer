@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StopInvestigating_Package.h"
 
 namespace CG
 {
@@ -63,9 +62,9 @@ namespace CG
 	 * 		Name   -> Function StopInvestigating.StopInvestigating_C.ExecuteUbergraph_StopInvestigating
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStopInvestigating_C::ExecuteUbergraph_StopInvestigating(int EntryPoint)
+	void UStopInvestigating_C::ExecuteUbergraph_StopInvestigating(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

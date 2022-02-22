@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ChangeFreddyState_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function ChangeFreddyState.ChangeFreddyState_C.ExecuteUbergraph_ChangeFreddyState
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UChangeFreddyState_C::ExecuteUbergraph_ChangeFreddyState(int EntryPoint)
+	void UChangeFreddyState_C::ExecuteUbergraph_ChangeFreddyState(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

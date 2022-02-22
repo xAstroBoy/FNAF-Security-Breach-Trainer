@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Options_ControlsUI_Package.h"
 
 namespace CG
 {
@@ -355,9 +354,9 @@ namespace CG
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.ExecuteUbergraph_Options_ControlsUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UOptions_ControlsUI_C::ExecuteUbergraph_Options_ControlsUI(int EntryPoint)
+	void UOptions_ControlsUI_C::ExecuteUbergraph_Options_ControlsUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

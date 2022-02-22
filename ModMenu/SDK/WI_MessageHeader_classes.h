@@ -43,12 +43,12 @@ namespace CG
 		void InputOptionAxis(const struct FVector2D& Axis);
 		void InputOpen();
 		void InputZoom(const struct FVector2D& Axis);
-		void InputCycle(int Increment);
+		void InputCycle(int32_t Increment);
 		void InputDpadDirection(const struct FVector2D& Direction);
 		void Reset();
 		void InputAccept();
 		void BndEvt__ExpandableArea_786_K2Node_ComponentBoundEvent_1_OnExpandableAreaExpansionChanged__DelegateSignature(class UExpandableArea* Area, bool bIsExpanded);
-		void ExecuteUbergraph_WI_MessageHeader(int EntryPoint);
+		void ExecuteUbergraph_WI_MessageHeader(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

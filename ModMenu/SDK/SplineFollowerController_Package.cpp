@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SplineFollowerController_Package.h"
 
 namespace CG
 {
@@ -36,9 +35,9 @@ namespace CG
 	 * 		Name   -> Function SplineFollowerController.SplineFollowerController_C.ExecuteUbergraph_SplineFollowerController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASplineFollowerController_C::ExecuteUbergraph_SplineFollowerController(int EntryPoint)
+	void ASplineFollowerController_C::ExecuteUbergraph_SplineFollowerController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

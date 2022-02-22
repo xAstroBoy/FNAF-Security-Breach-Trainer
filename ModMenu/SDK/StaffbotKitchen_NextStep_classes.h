@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void UpdateInstructionsText(const class FText& Next_Step);
-		void ExecuteUbergraph_StaffbotKitchen_NextStep(int EntryPoint);
+		void ExecuteUbergraph_StaffbotKitchen_NextStep(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

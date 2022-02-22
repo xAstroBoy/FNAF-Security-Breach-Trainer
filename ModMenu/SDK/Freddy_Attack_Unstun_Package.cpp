@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Freddy_Attack_Unstun_Package.h"
 
 namespace CG
 {
@@ -41,9 +40,9 @@ namespace CG
 	 * 		Name   -> Function Freddy_Attack_Unstun.Freddy_Attack_Unstun_C.ExecuteUbergraph_Freddy_Attack_Unstun
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFreddy_Attack_Unstun_C::ExecuteUbergraph_Freddy_Attack_Unstun(int EntryPoint)
+	void UFreddy_Attack_Unstun_C::ExecuteUbergraph_Freddy_Attack_Unstun(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

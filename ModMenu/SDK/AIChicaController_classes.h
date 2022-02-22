@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_AIChicaController(int EntryPoint);
+		void ExecuteUbergraph_AIChicaController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_InstructionCard_SecurityBadges_Package.h"
 
 namespace CG
 {

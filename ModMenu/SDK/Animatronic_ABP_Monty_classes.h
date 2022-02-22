@@ -43,7 +43,7 @@ namespace CG
 		void SetJiggle(float JiggleScaleTarget, float Shoulderpad_DynamicAlpha, float TailDynamicAlpha);
 		void JumpEvent(bool CanJump);
 		void LandEvent();
-		void ExecuteUbergraph_Animatronic_ABP_Monty(int EntryPoint);
+		void ExecuteUbergraph_Animatronic_ABP_Monty(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

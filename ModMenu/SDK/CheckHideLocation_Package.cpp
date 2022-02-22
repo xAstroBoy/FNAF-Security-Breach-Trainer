@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "CheckHideLocation_Package.h"
 
 namespace CG
 {
@@ -91,9 +90,9 @@ namespace CG
 	 * 		Name   -> Function CheckHideLocation.CheckHideLocation_C.ExecuteUbergraph_CheckHideLocation
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCheckHideLocation_C::ExecuteUbergraph_CheckHideLocation(int EntryPoint)
+	void UCheckHideLocation_C::ExecuteUbergraph_CheckHideLocation(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

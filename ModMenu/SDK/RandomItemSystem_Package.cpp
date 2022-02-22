@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "RandomItemSystem_Package.h"
 
 namespace CG
 {

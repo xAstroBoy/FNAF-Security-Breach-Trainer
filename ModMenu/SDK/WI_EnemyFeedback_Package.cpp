@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WI_EnemyFeedback_Package.h"
 
 namespace CG
 {
@@ -77,9 +76,9 @@ namespace CG
 	 * 		Name   -> Function WI_EnemyFeedback.WI_EnemyFeedback_C.ExecuteUbergraph_WI_EnemyFeedback
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWI_EnemyFeedback_C::ExecuteUbergraph_WI_EnemyFeedback(int EntryPoint)
+	void UWI_EnemyFeedback_C::ExecuteUbergraph_WI_EnemyFeedback(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

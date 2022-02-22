@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MagicLeapHandMeshing_Package.h"
 
 namespace CG
 {
