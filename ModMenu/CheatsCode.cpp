@@ -234,8 +234,7 @@ namespace Cheats
 				{
 					if (mods != nullptr)
 					{
-						mods->PlayerMaxHP = 999999999;
-						mods->PlayerHP = 999999999;
+						mods->PlayerHP = mods->PlayerMaxHP;
 						// Get Sword in Princess quest 1
 						if (!mods->HasSword)
 						{
