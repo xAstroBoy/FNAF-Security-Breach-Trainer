@@ -257,40 +257,42 @@ namespace Cheats
 					}
 				}
 			}
-			auto DJMusicMan = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
-			if (!DJMusicMan.empty())
-			{
-				for (auto& mods : DJMusicMan)
-				{
-					if (mods != nullptr)
-					{
-						if (mods->PlayerCaptureTrigger1 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger1!");
-							mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
-						}
 
-						if (mods->PlayerCaptureTrigger2 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger2!");
-							mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
-						}
+			// Possible game-breaking (Suspecting the triggers are the one that start the mission for repairing robot head)
+			//auto DJMusicMan = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
+			//if (!DJMusicMan.empty())
+			//{
+			//	for (auto& mods : DJMusicMan)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			if (mods->PlayerCaptureTrigger1 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger1!");
+			//				mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
+			//			}
 
-						if (mods->PlayerCaptureTrigger3 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger3!");
-							mods->PlayerCaptureTrigger3->K2_DestroyComponent(mods->PlayerCaptureTrigger3);
-						}
+			//			if (mods->PlayerCaptureTrigger2 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger2!");
+			//				mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
+			//			}
 
-						if (mods->PlayerCaptureTrigger4 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger4!");
-							mods->PlayerCaptureTrigger4->K2_DestroyComponent(mods->PlayerCaptureTrigger4);
-						}
+			//			if (mods->PlayerCaptureTrigger3 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger3!");
+			//				mods->PlayerCaptureTrigger3->K2_DestroyComponent(mods->PlayerCaptureTrigger3);
+			//			}
 
-					}
-				}
-			}
+			//			if (mods->PlayerCaptureTrigger4 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger4!");
+			//				mods->PlayerCaptureTrigger4->K2_DestroyComponent(mods->PlayerCaptureTrigger4);
+			//			}
+
+			//		}
+			//	}
+			//}
 			auto Moonman = CG::UObject::FindObjects<CG::AMoonman_C>();
 			if (!Moonman.empty())
 			{
