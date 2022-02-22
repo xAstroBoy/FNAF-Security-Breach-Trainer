@@ -148,7 +148,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			ImGui::SetCursorPos(ImVec2(17.5, 81.5));
 			ImGui::Checkbox("Freeze Doors Power", &Cheats::NoPowerDrainingDoors_Enabled);
 
-			ImGui::SetCursorPos(ImVec2(17.5, 163));
+			ImGui::SetCursorPos(ImVec2(17.5, 133));
 			ImGui::Checkbox("Force Enable Save points", &Cheats::AllowAlwaysSaving_Enabled);
 
 			ImGui::EndChild();

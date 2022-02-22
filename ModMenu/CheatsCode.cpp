@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "CheatsCode.h"
+
+#include <functional>
 #include <sstream>
 #include <thread>
 
@@ -220,12 +222,28 @@ namespace Cheats
 			std::cout << "Thread exited with exception: " << ex.what() << "\n";
 		}
 	}
+
+	void DestroyActorComponent(CG::UObject* value)
+	{
+		if (value != nullptr)
+		{
+			auto Engine = CG::UObject::FindObjects<CG::UActorComponent>()[1];
+			if (Engine != nullptr)
+			{
+				Engine->K2_DestroyComponent(value);
+			}
+		}
+	}
+
 	void SemiGodmode()
 	{
 		try
 		{
 			// This will Disable most of the AIs Jumpscares
 			// Monty, Chica, Roxy, Vanessa, Vanny , Endos, Blob (God Mode Confirmed on them)
+
+			// TODO: TEST Big MusicMan
+			// TODO: ADD Option to include staffbots (excluding mapbots)
 			// Moonman, Mini-music man Still unaffected
 			// TODO: Figure out how moonman and mini-music man jumpscare mechanism works and disable it.
 
@@ -238,29 +256,31 @@ namespace Cheats
 					{
 						if (mods->PlayerCaptureTrigger != nullptr)
 						{
-							//ConsoleWrite("Destroyed a PlayerCaptureTrigger!");
-							mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
+							ConsoleWrite("Destroyed a PlayerCaptureTrigger in " + mods->SearchActor->GetName());
+							DestroyActorComponent(mods->PlayerCaptureTrigger);
 						}
 
 					}
 				}
 			}
-			auto burntrap_freddy = CG::UObject::FindObjects<CG::ABurntrap_Freddy_C>();
-			if (!burntrap_freddy.empty())
-			{
-				for (auto& mods : burntrap_freddy)
-				{
-					if (mods != nullptr)
-					{
-						if (mods->PlayerCaptureTrigger != nullptr)
-						{
-							//ConsoleWrite("Destroyed a Freddy BurnTrap PlayerCaptureTrigger!");
-							mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
-						}
 
-					}
-				}
-			}
+			// IS this really required?
+			//auto burntrap_freddy = CG::UObject::FindObjects<CG::ABurntrap_Freddy_C>();
+			//if (!burntrap_freddy.empty())
+			//{
+			//	for (auto& mods : burntrap_freddy)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			if (mods->PlayerCaptureTrigger != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a Freddy BurnTrap PlayerCaptureTrigger!");
+			//				mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
+			//			}
+
+			//		}
+			//	}
+			//}
 
 			// Possible game-breaking (Suspecting the triggers are the one that start the mission for repairing robot head)
 			//auto DJMusicMan = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
@@ -634,8 +654,14 @@ namespace Cheats
 				{
 					if (mods != nullptr)
 					{
-						mods->HoldToCollectTime = 0;
-						mods->CollectionTime = 0;
+						if (mods->HoldToCollectTime != 0)
+						{
+							mods->HoldToCollectTime = 0;
+						}
+						if (mods->CollectionTime != 0)
+						{
+							mods->CollectionTime = 0;
+						}
 					}
 				}
 			}
