@@ -27,8 +27,9 @@ namespace Cheats
 
 	static CG::UFNAFInventorySystem* Active_UFNAFInventorySystem = nullptr;
 
-	static int MaxFreddyPower = 0;
-	static int CurrentFreddyPower = 0;
+	// Higher than that , the risk of jumpscare is there.
+	static int MaxFreddyPower = 4500;
+	static int CurrentFreddyPower = 4500;
 
 	void UnlimitedFazerBlasterLifes();
 	void ToggleDebugMenuMiniGame();

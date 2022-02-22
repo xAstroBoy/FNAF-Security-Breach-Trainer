@@ -225,10 +225,10 @@ namespace Cheats
 	{
 		try
 		{
-			auto monty_roxy_chica = CG::UObject::FindObjects<CG::AAISeeker_C>();
-			if (!monty_roxy_chica.empty())
+			auto GeneralAI = CG::UObject::FindObjects<CG::AAISeeker_C>();
+			if (!GeneralAI.empty())
 			{
-				for (auto& mods : monty_roxy_chica)
+				for (auto& mods : GeneralAI)
 				{
 					if (mods != nullptr)
 					{
@@ -293,28 +293,30 @@ namespace Cheats
 			//		}
 			//	}
 			//}
-			auto Moonman = CG::UObject::FindObjects<CG::AMoonman_C>();
-			if (!Moonman.empty())
-			{
-				for (auto& mods : Moonman)
-				{
-					if (mods != nullptr)
-					{
-						if (mods->PlayerCaptureTrigger1 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger1!");
-							mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
-						}
 
-						if (mods->PlayerCaptureTrigger2 != nullptr)
-						{
-							//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger2!");
-							mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
-						}
+			// Makes game crash (Suspiciously)
+			//auto Moonman = CG::UObject::FindObjects<CG::AMoonman_C>();
+			//if (!Moonman.empty())
+			//{
+			//	for (auto& mods : Moonman)
+			//	{
+			//		if (mods != nullptr)
+			//		{
+			//			if (mods->PlayerCaptureTrigger1 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger1!");
+			//				mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
+			//			}
 
-					}
-				}
-			}
+			//			if (mods->PlayerCaptureTrigger2 != nullptr)
+			//			{
+			//				//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger2!");
+			//				mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
+			//			}
+
+			//		}
+			//	}
+			//}
 
 		}
 		catch (const std::exception& ex)
