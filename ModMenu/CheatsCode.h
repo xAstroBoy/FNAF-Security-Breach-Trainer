@@ -16,7 +16,7 @@ namespace Cheats
 	static bool UnlimitedStaminaBool_Enabled = false;
 	static bool UnlimitedFazWatchBool_Enabled = false;
 	static bool NoJumpscares_Enabled = false;
-	static bool MiniGames_UnlimitedHealth_Enabled = false;
+	static bool PrincessQuestGodMode_Enabled = false;
 
 	static bool AllowAlwaysSaving_Enabled = false;
 
@@ -44,7 +44,7 @@ namespace Cheats
 	void RemoveFazCamCooldownTime();
 	void Freddy_Always_CanEnterExitFreddy();
 	void Freddy_Always_CanCallFreddy();
-	void MinigamesGodMode();
+	void PrincessQuestGodMode();
 
 	int Get_MaxFreddyPower();
 	void Set_MaxFreddyPower(const int& value);

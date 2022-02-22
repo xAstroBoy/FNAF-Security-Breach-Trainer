@@ -163,7 +163,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			ImGui::Checkbox("FazBlaster GodMode", &Cheats::FazBlasterGodMode_Enabled);
 
 			ImGui::SetCursorPos(ImVec2(17.5, 110.0));
-			ImGui::Checkbox("Minigames GodMode", &Cheats::MiniGames_UnlimitedHealth_Enabled);
+			ImGui::Checkbox("Princess Quest GodMode", &Cheats::PrincessQuestGodMode_Enabled);
 
 			ImGui::SetCursorPos(ImVec2(17.5, 160.0));
 			ImGui::Checkbox("Semi GodMode", &Cheats::NoJumpscares_Enabled);
@@ -287,9 +287,9 @@ void ExecutorThread()
 		{
 			Cheats::SemiGodmode();
 		}
-		if (Cheats::MiniGames_UnlimitedHealth_Enabled)
+		if (Cheats::PrincessQuestGodMode_Enabled)
 		{
-			Cheats::MinigamesGodMode();
+			Cheats::PrincessQuestGodMode();
 		}
 
 		if (Cheats::AllowAlwaysSaving_Enabled)

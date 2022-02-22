@@ -223,18 +223,39 @@ namespace Cheats
 		}
 	}
 
-	void MinigamesGodMode()
+	void PrincessQuestGodMode()
 	{
 		try
 		{
-			auto PrincessQuestUI = CG::UObject::FindObjects<CG::UPlayerUI_C>();
+			auto PrincessQuestUI = CG::UObject::FindObjects<CG::APlayerPawn_C>();
 			if (!PrincessQuestUI.empty())
 			{
 				for (auto& mods : PrincessQuestUI)
 				{
 					if (mods != nullptr)
 					{
-						mods->HealFull();
+						mods->PlayerMaxHP = 999999999;
+						mods->PlayerHP = 999999999;
+						// Get Sword in Princess quest 1
+						if (!mods->HasSword)
+						{
+							mods->HasSword = true;
+						}
+						// Activate attack mode
+						if (!mods->CanAttack)
+						{
+							mods->CanAttack = true;
+						}
+						// Disable Damage 
+						if (mods->CanBeDamaged)
+						{
+							mods->CanBeDamaged = false;
+						}
+
+						if (!mods->CanMove)
+						{
+							mods->CanMove = true;
+						}
 					}
 				}
 			}
