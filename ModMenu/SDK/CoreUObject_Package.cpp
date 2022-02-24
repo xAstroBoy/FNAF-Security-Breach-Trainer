@@ -4,6 +4,7 @@
  */
 
 #include "../pch.h"
+#include "../CheatsCode.h"
 
 namespace CG
 {
@@ -752,8 +753,10 @@ namespace CG
 	 * 		class UFunction*                                   function
 	 * 		void*                                              parms
 	 */
+
 	void UObject::ProcessEvent(class UFunction* function, void* parms)
 	{
+		// DEFAULT : 66
 		GetVFunction<void(*)(UObject*, class UFunction*, void*)>(this, 66)(this, function, parms);
 	}
 

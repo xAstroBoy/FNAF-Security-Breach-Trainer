@@ -396,6 +396,7 @@
     <None Include="imgui\misc\debuggers\imgui.gdb">
       <Filter>imgui\misc\debuggers</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="imgui\misc\debuggers\imgui.natvis">

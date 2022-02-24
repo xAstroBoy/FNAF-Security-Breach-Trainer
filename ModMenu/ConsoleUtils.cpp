@@ -7,7 +7,7 @@
 
 namespace ConsoleTools
 {
-	void ConsoleWrite(std::string text)
+	void ConsoleWrite(const std::string text)
 	{
 		std::cout << text << std::endl;
 	}

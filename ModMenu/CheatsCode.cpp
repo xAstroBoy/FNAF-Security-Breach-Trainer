@@ -139,6 +139,7 @@ namespace Cheats
 
 	void ForceSaveGameFeature()
 	{
+		return; // Not needed (ProcessEvent patch)
 		try
 		{
 			auto Savegame1 = CG::UObject::FindObjects<CG::ASaveGameActor_C>();
@@ -148,25 +149,8 @@ namespace Cheats
 				{
 					if (mods != nullptr)
 					{
-						mods->CanPlayerInteract(new bool(true), new CG::fnaf9_EConditionFailReason(CG::fnaf9_EConditionFailReason::EConditionFailReason__None));
 						mods->IsActive = true;
 						mods->Glitching = false;
-						if (mods->PlayerTrigger != nullptr)
-						{
-							mods->PlayerTrigger->SetActive(true, false);
-						}
-					}
-				}
-			}
-			auto Savegame2 = CG::UObject::FindObjects<CG::UFNAFSaveGameSystem>();
-			if (!Savegame2.empty())
-			{
-				for (auto& mods : Savegame2)
-				{
-					if (mods != nullptr)
-					{
-						mods->bIsSavingAllowed = true;
-						mods->SetIsSavingAllowed(true);
 					}
 				}
 			}
@@ -265,11 +249,20 @@ namespace Cheats
 		}
 	}
 
-	void DestroyUBoxComponent(CG::UBoxComponent* Actor)
+	void EditUBoxTrigger(CG::AActor* Owner, CG::UBoxComponent* Trigger)
 	{
-		if (Actor != nullptr)
+		if (Owner != nullptr)
 		{
-			Actor->K2_DestroyComponent(Actor);
+			if (Trigger != nullptr)
+			{
+
+				if (!Trigger->IsBeingDestroyed())
+				{
+					std::string OwnerName = Owner->GetName();
+					Owner->K2_DestroyComponent(Trigger);
+					ConsoleWrite("Removed Collision from " + OwnerName);
+				}
+			}
 		}
 	}
 
@@ -280,9 +273,9 @@ namespace Cheats
 			// This will Disable most of the AIs Jumpscares
 			// Monty, Chica, Roxy, Vanessa, Vanny , Endos, Blob (God Mode Confirmed on them)
 
-			// TODO: TEST Big MusicMan
-			// TODO: ADD Option to include staffbots (excluding mapbots)
-			// Moonman, Mini-music man Still unaffected
+			// TODO: ADD Option to include staffbots (excluding map bots)
+
+			// BUG : Moonman, Music Man &  Mini-music man Still unaffected
 			// TODO: Figure out how moonman and mini-music man jumpscare mechanism works and disable it.
 
 			auto GeneralAI = CG::UObject::FindObjects<CG::AAISeeker_C>();
@@ -294,18 +287,13 @@ namespace Cheats
 					{
 						if (mods->PlayerCaptureTrigger != nullptr)
 						{
-							if (mods->Owner != nullptr)
-							{
-								ConsoleWrite("Destroyed a PlayerCaptureTrigger in " + mods->Owner->GetName());
-							}
-							DestroyUBoxComponent(mods->PlayerCaptureTrigger);
+							EditUBoxTrigger(mods->PlayerCaptureTrigger->GetOwner(), mods->PlayerCaptureTrigger);
 						}
-
 					}
 				}
 			}
 
-			// IS this really required?
+			//// IS this really required?
 			//auto burntrap_freddy = CG::UObject::FindObjects<CG::ABurntrap_Freddy_C>();
 			//if (!burntrap_freddy.empty())
 			//{
@@ -313,53 +301,57 @@ namespace Cheats
 			//	{
 			//		if (mods != nullptr)
 			//		{
-			//			if (mods->PlayerCaptureTrigger != nullptr)
-			//			{
-			//				//ConsoleWrite("Destroyed a Freddy BurnTrap PlayerCaptureTrigger!");
-			//				mods->PlayerCaptureTrigger->K2_DestroyComponent(mods->PlayerCaptureTrigger);
-			//			}
 
+			//			if (mods->Owner != nullptr)
+			//			{
+			//				if (mods->PlayerCaptureTrigger != nullptr)
+			//				{
+			//					EditUBoxTrigger(mods->PlayerCaptureTrigger->GetOwner(), mods->PlayerCaptureTrigger);
+			//				}
+
+			//			}
 			//		}
 			//	}
 			//}
 
-			// Possible game-breaking (Suspecting the triggers are the one that start the mission for repairing robot head)
-			//auto DJMusicMan = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
-			//if (!DJMusicMan.empty())
+			// Get only the active MusicMan (It might change)
+			// TODO: Figure a way to make it more reliable instead of waiting for Spawning.
+			// BUG : EDITING THIS CAUSES GAME TO CRASH IN ANY WAY! TRIED EVERYTHING (CRASH ORIGINATES IN BASICTYPES_PACKAGE.H VTABLE)
+			//auto MusicMans = CG::UObject::FindObjects<CG::ADJMusicMan_C>();
+			//if (!MusicMans.empty())
 			//{
-			//	for (auto& mods : DJMusicMan)
+			//	for (auto& mods : MusicMans)
 			//	{
 			//		if (mods != nullptr)
 			//		{
-			//			if (mods->PlayerCaptureTrigger1 != nullptr)
-			//			{
-			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger1!");
-			//				mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
-			//			}
 
-			//			if (mods->PlayerCaptureTrigger2 != nullptr)
+			//			if (mods != nullptr)
 			//			{
-			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger2!");
-			//				mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
-			//			}
+			//				if (mods->PlayerCaptureTrigger1 != nullptr)
+			//				{
+			//					EditUBoxTrigger(mods->PlayerCaptureTrigger1->GetOwner(), mods->PlayerCaptureTrigger1);
+			//				}
 
-			//			if (mods->PlayerCaptureTrigger3 != nullptr)
-			//			{
-			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger3!");
-			//				mods->PlayerCaptureTrigger3->K2_DestroyComponent(mods->PlayerCaptureTrigger3);
-			//			}
+			//				if (mods->PlayerCaptureTrigger2 != nullptr)
+			//				{
+			//					EditUBoxTrigger(mods->PlayerCaptureTrigger2->GetOwner(), mods->PlayerCaptureTrigger2);
+			//				}
 
-			//			if (mods->PlayerCaptureTrigger4 != nullptr)
-			//			{
-			//				//ConsoleWrite("Destroyed a DJ Music Man PlayerCaptureTrigger4!");
-			//				mods->PlayerCaptureTrigger4->K2_DestroyComponent(mods->PlayerCaptureTrigger4);
-			//			}
+			//				if (mods->PlayerCaptureTrigger3 != nullptr)
+			//				{
+			//					EditUBoxTrigger(mods->PlayerCaptureTrigger3->GetOwner(), mods->PlayerCaptureTrigger3);
+			//				}
 
+			//				if (mods->PlayerCaptureTrigger4 != nullptr)
+			//				{
+			//					EditUBoxTrigger(mods->PlayerCaptureTrigger4->GetOwner(), mods->PlayerCaptureTrigger4);
+			//				}
+			//			}
 			//		}
 			//	}
 			//}
 
-			// Makes game crash (Suspiciously)
+			// BUG : Makes game crash  (CRASH ORIGINATES IN BASICTYPES_PACKAGE.H VTABLE)
 			//auto Moonman = CG::UObject::FindObjects<CG::AMoonman_C>();
 			//if (!Moonman.empty())
 			//{
@@ -369,16 +361,13 @@ namespace Cheats
 			//		{
 			//			if (mods->PlayerCaptureTrigger1 != nullptr)
 			//			{
-			//				//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger1!");
-			//				mods->PlayerCaptureTrigger1->K2_DestroyComponent(mods->PlayerCaptureTrigger1);
+			//				EditUBoxTrigger(mods->PlayerCaptureTrigger1->GetOwner(), mods->PlayerCaptureTrigger1);
 			//			}
 
 			//			if (mods->PlayerCaptureTrigger2 != nullptr)
 			//			{
-			//				//ConsoleWrite("Destroyed a MoonMan PlayerCaptureTrigger2!");
-			//				mods->PlayerCaptureTrigger2->K2_DestroyComponent(mods->PlayerCaptureTrigger2);
+			//				EditUBoxTrigger(mods->PlayerCaptureTrigger2->GetOwner(), mods->PlayerCaptureTrigger2);
 			//			}
-
 			//		}
 			//	}
 			//}
