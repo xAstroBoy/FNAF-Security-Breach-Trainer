@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_NoiseMakingTower_KiddieRide_Rocket_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_NoiseMakingTower_KiddieRide_Rocket.BP_NoiseMakingTower_KiddieRide_Rocket_C.Ride_Motion__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_NoiseMakingTower_KiddieRide_Rocket.BP_NoiseMakingTower_KiddieRide_Rocket_C.Ride_Motion__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -51,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_NoiseMakingTower_KiddieRide_Rocket.BP_NoiseMakingTower_KiddieRide_Rocket_C.Ride_Motion__SoundTriggger__EventFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -70,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_NoiseMakingTower_KiddieRide_Rocket.BP_NoiseMakingTower_KiddieRide_Rocket_C.On Triggered
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -92,13 +91,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_NoiseMakingTower_KiddieRide_Rocket.BP_NoiseMakingTower_KiddieRide_Rocket_C.ExecuteUbergraph_BP_NoiseMakingTower_KiddieRide_Rocket
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_NoiseMakingTower_KiddieRide_Rocket_C::ExecuteUbergraph_BP_NoiseMakingTower_KiddieRide_Rocket(int EntryPoint)
+	void ABP_NoiseMakingTower_KiddieRide_Rocket_C::ExecuteUbergraph_BP_NoiseMakingTower_KiddieRide_Rocket(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

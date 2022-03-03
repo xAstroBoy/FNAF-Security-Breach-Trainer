@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.RemoveFocus
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.Get_MessageBox_Visibility_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InuputNext
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -71,7 +71,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputPrevious
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputClose
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputBack
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputPrimary
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -147,7 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputSecondary
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputTertiary
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -185,7 +185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputMoveAxis
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputLookAxis
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -229,7 +229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputOptionAxis
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputOpen
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -270,7 +270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputZoom
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputCycle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -314,7 +314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputDpadDirection
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -336,7 +336,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.Reset
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -355,7 +355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.InputAccept
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -374,7 +374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.BndEvt__ExpandableArea_786_K2Node_ComponentBoundEvent_1_OnExpandableAreaExpansionChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -398,7 +398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_MessageHeader.WI_MessageHeader_C.ExecuteUbergraph_WI_MessageHeader
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

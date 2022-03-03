@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractViewLocation
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractViewAngles
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.GetHUDInstruction
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.InteractIgnoresTrace
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.GetInstructionOverride
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.GetInteractibleType
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -162,7 +162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.CanPlayerInteract
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -189,7 +189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.UpdateUIOnTick
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.UserConstructionScript
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerInteractCancel
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerHoverEnter
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerHoverExit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -295,7 +295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -314,7 +314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.OnPlayerInteract
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -338,7 +338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SurvivalSkipButton.SurvivalSkipButton_C.ExecuteUbergraph_SurvivalSkipButton
 	 * 		Flags  -> (Final)
 	 * Parameters:

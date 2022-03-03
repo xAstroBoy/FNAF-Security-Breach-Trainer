@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerCameraOverride.PlayerCameraOverride_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerCameraOverride.PlayerCameraOverride_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerCameraOverride.PlayerCameraOverride_C.ReceiveUnpossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerCameraOverride.PlayerCameraOverride_C.ExecuteUbergraph_PlayerCameraOverride
 	 * 		Flags  -> (Final)
 	 * Parameters:

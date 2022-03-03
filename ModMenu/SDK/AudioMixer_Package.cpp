@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A3D0
+	 * 		Offset -> 0x01E5B0B0
 	 * 		Name   -> Function AudioMixer.SynthComponent.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A0F0
+	 * 		Offset -> 0x01E5ADD0
 	 * 		Name   -> Function AudioMixer.SynthComponent.Start
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A070
+	 * 		Offset -> 0x01E5AD50
 	 * 		Name   -> Function AudioMixer.SynthComponent.SetVolumeMultiplier
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59FA0
+	 * 		Offset -> 0x01E5AC80
 	 * 		Name   -> Function AudioMixer.SynthComponent.SetSubmixSend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E591E0
+	 * 		Offset -> 0x01E59EC0
 	 * 		Name   -> Function AudioMixer.SynthComponent.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A6B0
+	 * 		Offset -> 0x01E5B390
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.TrimAudioCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A4A0
+	 * 		Offset -> 0x01E5B180
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.StopRecordingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A3F0
+	 * 		Offset -> 0x01E5B0D0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.StopAnalyzingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A2D0
+	 * 		Offset -> 0x01E5AFB0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.StartRecordingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -262,7 +262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E5A110
+	 * 		Offset -> 0x01E5ADF0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.StartAnalyzingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -295,7 +295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59960
+	 * 		Offset -> 0x01E5A640
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E598B0
+	 * 		Offset -> 0x01E5A590
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.ResumeRecordingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -349,7 +349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59780
+	 * 		Offset -> 0x01E5A460
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.ReplaceSoundEffectSubmix
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -378,7 +378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59690
+	 * 		Offset -> 0x01E5A370
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffectPresetAtIndex
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -405,7 +405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E595A0
+	 * 		Offset -> 0x01E5A280
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffectPreset
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -432,7 +432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E594B0
+	 * 		Offset -> 0x01E5A190
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -459,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59400
+	 * 		Offset -> 0x01E5A0E0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -484,7 +484,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59330
+	 * 		Offset -> 0x01E5A010
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.PrimeSoundForPlayback
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -509,7 +509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E592C0
+	 * 		Offset -> 0x01E59FA0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.PrimeSoundCueForPlayback
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -532,7 +532,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59210
+	 * 		Offset -> 0x01E59EF0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.PauseRecordingOutput
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -557,7 +557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59060
+	 * 		Offset -> 0x01E59D40
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.GetPhaseForFrequencies
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -588,7 +588,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58FA0
+	 * 		Offset -> 0x01E59C80
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -615,7 +615,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58E20
+	 * 		Offset -> 0x01E59B00
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.GetMagnitudeForFrequencies
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -646,7 +646,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58D70
+	 * 		Offset -> 0x01E59A50
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.ClearSubmixEffects
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -671,7 +671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58D00
+	 * 		Offset -> 0x01E599E0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -694,7 +694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58C10
+	 * 		Offset -> 0x01E598F0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.AddSubmixEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58B10
+	 * 		Offset -> 0x01E597F0
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -750,7 +750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E58A60
+	 * 		Offset -> 0x01E59740
 	 * 		Name   -> Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59B10
+	 * 		Offset -> 0x01E5A7F0
 	 * 		Name   -> Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -812,7 +812,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59A90
+	 * 		Offset -> 0x01E5A770
 	 * 		Name   -> Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -849,7 +849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42520
+	 * 		Offset -> 0x00B42560
 	 * 		Name   -> Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59EA0
+	 * 		Offset -> 0x01E5AB80
 	 * 		Name   -> Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -913,7 +913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59CE0
+	 * 		Offset -> 0x01E5A9C0
 	 * 		Name   -> Function AudioMixer.SubmixEffectReverbPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -950,7 +950,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59DA0
+	 * 		Offset -> 0x01E5AA80
 	 * 		Name   -> Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -977,7 +977,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E59C20
+	 * 		Offset -> 0x01E5A900
 	 * 		Name   -> Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

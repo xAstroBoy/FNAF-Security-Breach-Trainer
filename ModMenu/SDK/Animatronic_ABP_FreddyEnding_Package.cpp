@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Animatronic_ABP_FreddyEnding_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.TurnFunciton
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.footstep
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -73,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -92,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -111,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -133,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -155,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.AnimNotify_R_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -174,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.AnimNotify_L_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -193,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.Open Chest
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -212,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.Close Chest
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -231,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.Force Open
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -250,7 +249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.Force Close
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -269,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -288,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.AnimNotify_chest_open
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -307,7 +306,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.AnimNotify_chest_close
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -326,7 +325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.AnimNotify_chestexit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -345,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.VoAnimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -367,13 +366,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_FreddyEnding.Animatronic_ABP_FreddyEnding_C.ExecuteUbergraph_Animatronic_ABP_FreddyEnding
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_FreddyEnding_C::ExecuteUbergraph_Animatronic_ABP_FreddyEnding(int EntryPoint)
+	void UAnimatronic_ABP_FreddyEnding_C::ExecuteUbergraph_Animatronic_ABP_FreddyEnding(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

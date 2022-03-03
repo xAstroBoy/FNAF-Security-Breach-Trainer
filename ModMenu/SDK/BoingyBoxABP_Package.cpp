@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BoingyBoxABP_AnimGraphNode_ModifyBone_F94B1B084B276CB9908A59B3D9DC8C24
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -77,7 +77,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.Esplode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.Set Esploded
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.Start Crank
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -137,7 +137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.Stop Crank
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.AnimNotify_ModelSwap
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.AnimNotify_EnableRigidBody
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BoingyBoxABP.BoingyBoxABP_C.ExecuteUbergraph_BoingyBoxABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

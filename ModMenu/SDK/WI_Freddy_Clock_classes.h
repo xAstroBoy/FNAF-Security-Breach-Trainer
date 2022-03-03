@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * WidgetBlueprintGeneratedClass WI_Freddy_Clock.WI_Freddy_Clock_C
-	 * Size -> 0x0048 (FullSize[0x0288] - InheritedSize[0x0240])
+	 * Size -> 0x0049 (FullSize[0x0289] - InheritedSize[0x0240])
 	 */
 	class UWI_Freddy_Clock_C : public UWI_Empty_C
 	{
@@ -28,8 +28,9 @@ namespace CG
 		class UTextBlock*                                          ClockText;                                               // 0x0260(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class FText                                                Am_Pm;                                                   // 0x0268(0x0018) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       PM;                                                      // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_SVVI[0x3];                                   // 0x0281(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YULE[0x3];                                   // 0x0281(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    MinuteTracker;                                           // 0x0284(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       ForcedClock;                                             // 0x0288(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void Finished_1FD1C2C64919F01584174C814C8F4342();

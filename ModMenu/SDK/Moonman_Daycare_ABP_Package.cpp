@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.LineTraceForOrientation
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -70,7 +70,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.LineTraceForIK
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.FreddyEndIdle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CutSceneSpineBlender
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_C82573104A0C2721E49FF7A141C0BE1F
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -169,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.UpdateLeapInfo
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -195,7 +195,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_479407CF4241F7EF8239B0969719ED44
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -214,7 +214,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.LeapLoopEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -236,7 +236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EndoBowlingCrawlEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -255,7 +255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EndoSpawnInBowlingEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanDieEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -296,7 +296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanHackEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -318,7 +318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.VoAnimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -340,7 +340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.RoxyCrying
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -362,7 +362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.FreddyCorrupted
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -384,7 +384,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.ForceAnimOverride
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -406,7 +406,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EnterFreddyOverrideEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -428,7 +428,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_B8F527D748FC1E0438253396F91786A7
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -447,7 +447,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_1C593DE44B2619381E58F6BB2A08CDA3
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -466,7 +466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanLeapEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -488,7 +488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanLieDownEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -510,7 +510,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_7129D59D4B79FB26C3FDC7BA9036F7E3
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -529,7 +529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsSickEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -551,7 +551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanWaveEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -573,7 +573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_35C602E145D3DEC16DB5C9ADB9C6F6FF
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -592,7 +592,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.PoundDoorEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -614,7 +614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.StopScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -633,7 +633,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_EE3F8781470BCC1A5918FFAF95357165
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -652,7 +652,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.LandEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -671,7 +671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.JumpEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -693,7 +693,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.ForceScanStates
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -721,7 +721,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.Breakthrough
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -740,7 +740,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -759,7 +759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.RummagingDoneEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -778,7 +778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsNotFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -797,7 +797,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -816,7 +816,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanRummageEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -835,7 +835,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.Stun Event
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -857,7 +857,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanRunEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -879,7 +879,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.StartScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -898,7 +898,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_ModifyBone_6A7DF53B433FB2358918EA8C14AE6181
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -917,7 +917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -939,7 +939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.OpenDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -958,7 +958,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.Open
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -977,7 +977,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.SearchingDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -996,7 +996,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.Searching
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1018,7 +1018,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.TurnEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1040,7 +1040,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1062,7 +1062,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CutsceneGrateEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1084,7 +1084,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1106,7 +1106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1125,7 +1125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.PanicEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1147,7 +1147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsPhase2_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1169,7 +1169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsInTubesEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1191,7 +1191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IsBlockingPlayer_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1213,7 +1213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.ForceWalkEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1235,7 +1235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.IscarryingPlayer_EVENT
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1257,7 +1257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Moonman_Daycare_ABP_AnimGraphNode_TransitionResult_7E9541D441FDC2825D6C088D584F8F2B
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1276,7 +1276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.Spotlight Aim Actor
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1298,7 +1298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.AnimNotify_CableDownEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1317,7 +1317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.AnimNotify_CableUpEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1336,7 +1336,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Moonman_Daycare_ABP.Moonman_Daycare_ABP_C.ExecuteUbergraph_Moonman_Daycare_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

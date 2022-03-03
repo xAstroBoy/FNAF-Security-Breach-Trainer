@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "A_Elevator_StreamViewpoint_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function A_Elevator_StreamViewpoint.A_Elevator_StreamViewpoint_C.IsStreamingEnabled
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
@@ -34,7 +33,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function A_Elevator_StreamViewpoint.A_Elevator_StreamViewpoint_C.SetStreamingEnable
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

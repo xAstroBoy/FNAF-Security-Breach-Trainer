@@ -15,6 +15,26 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Gregory.Gregory_C.IsSwitchingItems
+	 */
+	struct AGregory_C_IsSwitchingItems_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function Gregory.Gregory_C.IsInAir
+	 */
+	struct AGregory_C_IsInAir_Params
+	{
+	public:
+		bool                                                       InAir;                                                   // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function Gregory.Gregory_C.PlayerEnteringExitingFreddy
 	 */
 	struct AGregory_C_PlayerEnteringExitingFreddy_Params
@@ -31,6 +51,16 @@ namespace CG
 	{
 	public:
 		class USightComponent*                                     Sight;                                                   // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function Gregory.Gregory_C.CanJumpInternal
+	 */
+	struct AGregory_C_CanJumpInternal_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 	};
 
@@ -108,12 +138,12 @@ namespace CG
 	};
 
 	/**
-	 * Function Gregory.Gregory_C.IsFazWatchUp
+	 * Function Gregory.Gregory_C.IsFazwatchUp
 	 */
-	struct AGregory_C_IsFazWatchUp_Params
+	struct AGregory_C_IsFazwatchUp_Params
 	{
 	public:
-		bool                                                       IsFazWatchUp;                                            // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       IsFazwatchUp;                                            // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
 
@@ -251,9 +281,9 @@ namespace CG
 	};
 
 	/**
-	 * Function Gregory.Gregory_C.StunInRange
+	 * Function Gregory.Gregory_C.Stun in Range
 	 */
-	struct AGregory_C_StunInRange_Params
+	struct AGregory_C_Stun_in_Range_Params
 	{
 	};
 
@@ -277,16 +307,6 @@ namespace CG
 	};
 
 	/**
-	 * Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_3
-	 */
-	struct AGregory_C_InpActEvt_Run_K2Node_InputActionEvent_3_Params
-	{
-	public:
-		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_2
 	 */
 	struct AGregory_C_InpActEvt_Run_K2Node_InputActionEvent_2_Params
@@ -297,9 +317,9 @@ namespace CG
 	};
 
 	/**
-	 * Function Gregory.Gregory_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_1
+	 * Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_1
 	 */
-	struct AGregory_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_1_Params
+	struct AGregory_C_InpActEvt_Run_K2Node_InputActionEvent_1_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -680,6 +700,9 @@ namespace CG
 	 */
 	struct AGregory_C_HideHUD_Params
 	{
+	public:
+		bool                                                       Hide_Progress_Wheel;                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
 	};
 
 	/**
@@ -806,6 +829,13 @@ namespace CG
 	 * Function Gregory.Gregory_C.AwardSayCheese
 	 */
 	struct AGregory_C_AwardSayCheese_Params
+	{
+	};
+
+	/**
+	 * Function Gregory.Gregory_C.VisualChangeItem
+	 */
+	struct AGregory_C_VisualChangeItem_Params
 	{
 	};
 

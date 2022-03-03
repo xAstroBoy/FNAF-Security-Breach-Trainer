@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SpawnMoonmanSplineFollowerTrigger.SpawnMoonmanSplineFollowerTrigger_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SpawnMoonmanSplineFollowerTrigger.SpawnMoonmanSplineFollowerTrigger_C.ExecuteUbergraph_SpawnMoonmanSplineFollowerTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:

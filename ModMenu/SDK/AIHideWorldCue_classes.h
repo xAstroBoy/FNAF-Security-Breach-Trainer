@@ -28,7 +28,7 @@ namespace CG
 		void SetupWorldCue();
 		void ResetWorldCue();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_AIHideWorldCue(int EntryPoint);
+		void ExecuteUbergraph_AIHideWorldCue(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

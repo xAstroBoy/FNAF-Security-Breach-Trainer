@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.OnTriggerPointHit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.Event_OnSplineEndReached
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.ExecuteUbergraph_LMMSplinePathwayManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

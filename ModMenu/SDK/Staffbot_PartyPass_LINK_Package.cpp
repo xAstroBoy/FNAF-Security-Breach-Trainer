@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_PartyPass_LINK.Staffbot_PartyPass_LINK_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_PartyPass_LINK.Staffbot_PartyPass_LINK_C.AnimNotify_Select Anim
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_PartyPass_LINK.Staffbot_PartyPass_LINK_C.AnimNotify_DanceDone
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_PartyPass_LINK.Staffbot_PartyPass_LINK_C.ExecuteUbergraph_Staffbot_PartyPass_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:

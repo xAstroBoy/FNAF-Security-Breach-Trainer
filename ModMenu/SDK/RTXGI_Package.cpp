@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x005DF250
+	 * 		Offset -> 0x005DF270
 	 * 		Name   -> Function RTXGI.DDGIBlueprintLibrary.ClearProbeData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x005DF2C0
+	 * 		Offset -> 0x005DF2E0
 	 * 		Name   -> Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes
 	 * 		Flags  -> (Final, Exec, Native, Public)
 	 */

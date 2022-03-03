@@ -38,6 +38,13 @@ namespace CG
 	};
 
 	/**
+	 * Function HackFreddy.HackFreddy_C.SetFlameTrapsActivatableStateToOff
+	 */
+	struct UHackFreddy_C_SetFlameTrapsActivatableStateToOff_Params
+	{
+	};
+
+	/**
 	 * Function HackFreddy.HackFreddy_C.ExecuteUbergraph_HackFreddy
 	 */
 	struct UHackFreddy_C_ExecuteUbergraph_HackFreddy_Params

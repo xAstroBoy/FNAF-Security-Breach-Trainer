@@ -24,7 +24,7 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FBlackboardKeySelector                              BBBool;                                                  // 0x00B0(0x0028) Edit, BlueprintVisible
 		float                                                      WeightChange;                                            // 0x00D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_T4ZW[0x4];                                   // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XYE8[0x4];                                   // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBlackboardKeySelector                              BBCurrentWeight;                                         // 0x00E0(0x0028) Edit, BlueprintVisible
 
 	public:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_7C9FF6714F9BBF14154763B96D29759D
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_4A2B64FA4A21788011957FB8CBA6D8F9
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_AA8A20DA426FE42437EAEC96C303478B
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AVB_GoCart_AnimGraphNode_ModifyBone_E784316543D17854009593A51F7141AE
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AVB_GoCart.AVB_GoCart_C.ExecuteUbergraph_AVB_GoCart
 	 * 		Flags  -> (Final)
 	 * Parameters:

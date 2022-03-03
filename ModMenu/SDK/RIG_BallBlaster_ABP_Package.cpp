@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_BallBlaster_ABP_AnimGraphNode_ModifyBone_9ADFD5044E6B48D4FAEBE692EED0D647
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_BallBlaster_ABP_AnimGraphNode_ModifyBone_66DFD46844C5CAD2432A8CAA2334DB9F
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.AnimNotify_ModelSwap
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -117,7 +117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_BallBlaster_ABP.RIG_BallBlaster_ABP_C.ExecuteUbergraph_RIG_BallBlaster_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

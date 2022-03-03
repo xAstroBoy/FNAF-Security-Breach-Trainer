@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2C50
+	 * 		Offset -> 0x00AF2C90
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetPtr
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2B10
+	 * 		Offset -> 0x00AF2B50
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetData
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2A30
+	 * 		Offset -> 0x00AF2A70
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF29B0
+	 * 		Offset -> 0x00AF29F0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2820
+	 * 		Offset -> 0x00AF2860
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetAssetsInCollection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2790
+	 * 		Offset -> 0x00AF27D0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.CollectionExists
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

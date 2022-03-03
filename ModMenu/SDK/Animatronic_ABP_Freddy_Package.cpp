@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.TurnFunciton
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.footstep
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_R_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -173,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_L_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Open Chest
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Close Chest
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -230,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Force Open
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -249,7 +249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Force Close
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chest_open
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -306,7 +306,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chest_close
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -325,7 +325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chestexit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -344,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.PlayWaveAnim
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -363,7 +363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.StopwaveEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -382,7 +382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.ExecuteUbergraph_Animatronic_ABP_Freddy
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

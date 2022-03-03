@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.footstep
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnNotifyEnd_4374FFD04F83864AB8D8DC944BB33B0D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnNotifyBegin_4374FFD04F83864AB8D8DC944BB33B0D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnInterrupted_4374FFD04F83864AB8D8DC944BB33B0D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnBlendOut_4374FFD04F83864AB8D8DC944BB33B0D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -119,7 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnCompleted_4374FFD04F83864AB8D8DC944BB33B0D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -141,7 +141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnNotifyEnd_29D5167C4A6E4CEC4A933997F1F8CA34
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -163,7 +163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnNotifyBegin_29D5167C4A6E4CEC4A933997F1F8CA34
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -185,7 +185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnInterrupted_29D5167C4A6E4CEC4A933997F1F8CA34
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnBlendOut_29D5167C4A6E4CEC4A933997F1F8CA34
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -229,7 +229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnCompleted_29D5167C4A6E4CEC4A933997F1F8CA34
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_R_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_L_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -330,7 +330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_MontyLand
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -349,7 +349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.SetJiggle
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -375,7 +375,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.JumpEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -397,7 +397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.LandEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -416,7 +416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.ExecuteUbergraph_Animatronic_ABP_Monty
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.ResetProgress
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.Finished_9CAE6DC54C746275C8040A8BDC343447
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.Finished_C56CA68D4602C0F33CEAA6AEEF91C1ED
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.SetHoldProgress
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.CancelHold
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.Begin Hold
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.CompleteHoldProgress
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -167,7 +167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_HoldProgress.StaffbotKitchen_HoldProgress_C.ExecuteUbergraph_StaffbotKitchen_HoldProgress
 	 * 		Flags  -> (Final)
 	 * Parameters:

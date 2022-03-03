@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanReceiveAlert
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
@@ -33,7 +33,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsShatteredVersion
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
@@ -54,7 +54,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetCurrentPathName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetManagedAIType
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CalculateAndApplyHeadAim
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -139,7 +139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanWhileMovingFunction
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -158,7 +158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CameraShake_MontyLand
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -177,7 +177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CameraShake
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -196,7 +196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Dynamic Alpha Blend Func
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ApplyControlRotation
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlendJiggleAlphaToTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -269,7 +269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlinkFunction
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -288,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Procedural Scan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.PerformScanTrace
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -331,7 +331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EnableAnimDynamics
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -359,7 +359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AppyPhysicalAnimationToBone
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -383,7 +383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SetInitialHeadAimFunction
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -402,7 +402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Setup Physical Animation
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Perform Foot IK
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -443,7 +443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -465,7 +465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -487,7 +487,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -509,7 +509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -531,7 +531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_3C038C4C41E515C7EAF663BC143B1F84
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -553,7 +553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -575,7 +575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -597,7 +597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -619,7 +619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -641,7 +641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -663,7 +663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -701,7 +701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendPositionalAlert
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendVanessaAlert
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -745,7 +745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartMoveTo
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -767,7 +767,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TeleportAI
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SearchingDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -808,7 +808,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -827,7 +827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsNotFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -846,7 +846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceScanStates
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -874,7 +874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceAnimOverride
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyCorrupted
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -918,7 +918,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanHackEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -940,7 +940,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanDieEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -962,7 +962,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoSpawnInBowlingEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -981,7 +981,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoBowlingCrawlEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1000,7 +1000,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Spotlight Aim Actor
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1022,7 +1022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1041,7 +1041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ModifyBone_3B824F8E48009B840B4521ABEADE8F4F
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1060,7 +1060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1082,7 +1082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_IsSpottedEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1101,7 +1101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SpottedTimerOverEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1120,7 +1120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StartScanEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1139,7 +1139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_FinishedScanEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1158,7 +1158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_TurnCompleteEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1177,7 +1177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsSpottedEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1196,7 +1196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -1215,7 +1215,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_L_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1234,7 +1234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_R_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1253,7 +1253,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_SearchEnd
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1272,7 +1272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StartingSearchLoop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1291,7 +1291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OpenDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1310,7 +1310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Searching
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1332,7 +1332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TurnEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1354,7 +1354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1376,7 +1376,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Open
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1395,7 +1395,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1414,7 +1414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1433,7 +1433,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1455,7 +1455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanRunEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1477,7 +1477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Stun Event
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1499,7 +1499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanRummageEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1518,7 +1518,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.RummagingDoneEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1537,7 +1537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_AnimDoneRummaging
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1556,7 +1556,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanBlinkEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1578,7 +1578,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_BlinkNotify
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1616,7 +1616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Breakthrough
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1635,7 +1635,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_BreakthroughEnd
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1654,7 +1654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanTimerEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1673,7 +1673,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanWhileMoving
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1692,7 +1692,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StopScanEventLocal
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1711,7 +1711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceTrackToPlayer
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1730,7 +1730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndTrackToPlayer
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1749,7 +1749,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.JumpEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1771,7 +1771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_TurnOffScanningEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1790,7 +1790,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StopScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1809,7 +1809,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_HidingSpotEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1828,7 +1828,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_SearchKillEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1847,7 +1847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnterSearchStateEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1866,7 +1866,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.PoundDoorEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1888,7 +1888,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanWaveEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1910,7 +1910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsSickEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1932,7 +1932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanLieDownEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1954,7 +1954,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanLeapEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1976,7 +1976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EnterFreddyOverrideEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1998,7 +1998,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.LandEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -2017,7 +2017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.RoxyCrying
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2039,7 +2039,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.VoAnimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2061,7 +2061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnteredLeapEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2080,7 +2080,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StunOverEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2099,7 +2099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnableBlendSpace
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2118,7 +2118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_DisableBlendSpace
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2137,7 +2137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.LeapLoopEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2159,7 +2159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.UpdateLeapInfo
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2185,7 +2185,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyEndIdle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2207,7 +2226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutSceneSpineBlender
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2231,7 +2250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.UpdateAlpha
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2250,7 +2269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutsceneGrateEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2272,7 +2291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GrateSequenceStop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2291,7 +2310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutsceneSpineStop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2310,7 +2329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ExecuteUbergraph_Animatronic_ABP_MASTER
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

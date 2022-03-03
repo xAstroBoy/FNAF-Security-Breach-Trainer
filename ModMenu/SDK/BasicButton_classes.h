@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BasicButton.BasicButton_C
-	 * Size -> 0x0016 (FullSize[0x02EE] - InheritedSize[0x02D8])
+	 * Size -> 0x0017 (FullSize[0x02EF] - InheritedSize[0x02D8])
 	 */
 	class ABasicButton_C : public AButtonBase_C
 	{
@@ -26,6 +26,7 @@ namespace CG
 		int32_t                                                    Color;                                                   // 0x02E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Slanted;                                                 // 0x02EC(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       SFXInitialized;                                          // 0x02ED(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       ChangeColorOnActivated;                                  // 0x02EE(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void UserConstructionScript();

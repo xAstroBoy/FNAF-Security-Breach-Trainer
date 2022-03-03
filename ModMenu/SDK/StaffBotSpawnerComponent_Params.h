@@ -46,7 +46,7 @@ namespace CG
 	struct UStaffBotSpawnerComponent_C_ReceiveEndPlay_Params
 	{
 	public:
-		TEnumAsByte<Engine_EEndPlayReason>                         EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		Engine_EEndPlayReason                                      EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -56,7 +56,7 @@ namespace CG
 	struct UStaffBotSpawnerComponent_C_ExecuteUbergraph_StaffBotSpawnerComponent_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

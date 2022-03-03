@@ -32,7 +32,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void Update();
-		void ExecuteUbergraph_ScreenStaticSwitcher(int EntryPoint);
+		void ExecuteUbergraph_ScreenStaticSwitcher(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

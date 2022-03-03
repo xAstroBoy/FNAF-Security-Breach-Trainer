@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.SwapImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.SetCorrectCrouchingImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.HideCrouchingImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.ShowCrouchingImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnFailure_1EEBCFB84FF35A61CCA67DBBFADBC509
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnSuccess_1EEBCFB84FF35A61CCA67DBBFADBC509
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnFailure_939A65B5496246CF92D6CDB315E2B149
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -155,7 +155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnSuccess_939A65B5496246CF92D6CDB315E2B149
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -200,7 +200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Crouch
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.UpdateAlertColor
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -244,7 +244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.HideOnUnpossess
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -263,7 +263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.ExecuteUbergraph_WI_Gregory_Crouching
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ActorUtils.ActorUtils_C.GetClosestActorFromList
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

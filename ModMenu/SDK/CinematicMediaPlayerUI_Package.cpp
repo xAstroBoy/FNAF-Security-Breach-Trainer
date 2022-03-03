@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Begin Video
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Eyes Open 2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Eyes Open 1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.NewGameIntroVideo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.StopIntroVideo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Eyes Shut 2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Eyes Shut 1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -170,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Stop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -189,7 +189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Play
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.ExecuteUbergraph_CinematicMediaPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -257,7 +257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicMediaPlayerUI.CinematicMediaPlayerUI_C.OnStop__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

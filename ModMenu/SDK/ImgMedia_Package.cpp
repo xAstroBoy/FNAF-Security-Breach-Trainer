@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A95590
+	 * 		Offset -> 0x00A955D0
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.SetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A954C0
+	 * 		Offset -> 0x00A95500
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A953F0
+	 * 		Offset -> 0x00A95430
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetProxies
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:

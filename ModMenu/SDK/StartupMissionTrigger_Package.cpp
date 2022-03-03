@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.CanDeactivate
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.GetActivatableState
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.CanActivate
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Check Destroy Intro
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.SetReflection
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -137,7 +137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.OnActivatorDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.SetActivated
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.DeactivateObject
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -200,7 +200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.SetDeactivated
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -219,7 +219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.ActivateObject
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -241,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Possess
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -263,7 +263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Start New Game Mission
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -282,7 +282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -301,7 +301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__VanessaRemoveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -333,7 +333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__LookOutWindowTrigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -365,7 +365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Fazwatch Collected
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -384,7 +384,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Back Door Open
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -403,7 +403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Side Door Entered
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -431,7 +431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Enable Door Trigger
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -450,7 +450,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Wrong Door
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -474,7 +474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Vanessa Spawn
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -493,7 +493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Debug Skipped
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.GregoryScared
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -534,7 +534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Return Rotation
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -553,7 +553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__RotationThreshold_K2Node_ComponentBoundEvent_1_OnRotationThresholdReached__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__LeftRotationThreshold_K2Node_ComponentBoundEvent_3_OnThresholdReached__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -591,7 +591,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__RightRotationThreshold_K2Node_ComponentBoundEvent_4_OnThresholdReached__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -610,7 +610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__DownRotationThreshold_K2Node_ComponentBoundEvent_5_OnThresholdReached__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -629,7 +629,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.BndEvt__UpRotationThreshold_K2Node_ComponentBoundEvent_6_OnThresholdReached__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -648,7 +648,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Freddy Exited
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -667,7 +667,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.On Player Possessed Gregory
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -689,7 +689,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Skip All
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -708,7 +708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Continue from save after door
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -727,7 +727,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.Bind Posses for Finish
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -746,7 +746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StartupMissionTrigger.StartupMissionTrigger_C.ExecuteUbergraph_StartupMissionTrigger
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

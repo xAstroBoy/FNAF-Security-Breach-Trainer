@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomVisitInfoFunctions.RoomVisitInfoFunctions_C.FindPreviousVisitInfo
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -47,7 +47,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomVisitInfoFunctions.RoomVisitInfoFunctions_C.FindRoomVisitInfo
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

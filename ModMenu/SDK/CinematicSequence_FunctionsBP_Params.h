@@ -15,6 +15,28 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCineComponent
+	 */
+	struct UCinematicSequence_FunctionsBP_C_ApplyPlayerCamSettingsToCineComponent_Params
+	{
+	public:
+		class UCameraComponent*                                    CameraComponent;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UObject*                                             __WorldContext;                                          // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCine
+	 */
+	struct UCinematicSequence_FunctionsBP_C_ApplyPlayerCamSettingsToCine_Params
+	{
+	public:
+		class ACineCameraActor*                                    CineCamera;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UObject*                                             __WorldContext;                                          // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.MatchPlayerCamPPSettings
 	 */
 	struct UCinematicSequence_FunctionsBP_C_MatchPlayerCamPPSettings_Params

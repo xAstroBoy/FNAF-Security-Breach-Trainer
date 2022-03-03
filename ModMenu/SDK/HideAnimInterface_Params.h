@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function HideAnimInterface.HideAnimInterface_C.SetPeek
+	 */
+	struct UHideAnimInterface_C_SetPeek_Params
+	{
+	public:
+		bool                                                       ShouldPeek;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function HideAnimInterface.HideAnimInterface_C.SetAnim
 	 */
 	struct UHideAnimInterface_C_SetAnim_Params

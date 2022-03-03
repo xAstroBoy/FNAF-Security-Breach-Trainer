@@ -16,12 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Animatronic_ABP_Chica.Animatronic_ABP_Chica_C
-	 * Size -> 0x0008 (FullSize[0x8DF0] - InheritedSize[0x8DE8])
+	 * Size -> 0x000F (FullSize[0x8E18] - InheritedSize[0x8E09])
 	 */
 	class UAnimatronic_ABP_Chica_C : public UAnimatronic_ABP_MASTER_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x8DE8(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		unsigned char                                              UnknownData_KFBN[0x7];                                   // 0x8E09(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x8E10(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void footstep();

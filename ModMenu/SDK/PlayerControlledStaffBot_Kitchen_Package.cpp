@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ReturnToStart
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.OnJumped
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ChangeLightState
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.Setup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -113,7 +113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerControlledStaffBot_Kitchen.PlayerControlledStaffBot_Kitchen_C.ExecuteUbergraph_PlayerControlledStaffBot_Kitchen
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

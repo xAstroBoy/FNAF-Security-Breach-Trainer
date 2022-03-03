@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.SetNewLockState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.DoorOpeningTimeline__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.DoorOpeningTimeline__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -106,7 +106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.BndEvt__CylinderDoorLock_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.PlayOpenSFXStart
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.PlayOpenSFXEnd
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -226,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.PlayCloseSFXStart
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -245,7 +245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.PlayCloseSFXEnd
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -264,7 +264,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartsandService_Door.PRE_PartsandService_Door_C.ExecuteUbergraph_PRE_PartsandService_Door
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

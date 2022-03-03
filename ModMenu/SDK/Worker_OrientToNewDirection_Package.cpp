@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Worker_OrientToNewDirection.Worker_OrientToNewDirection_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Worker_OrientToNewDirection.Worker_OrientToNewDirection_C.ExecuteUbergraph_Worker_OrientToNewDirection
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

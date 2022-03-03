@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Cinematic_Actor_Freddy.Cinematic_Actor_Freddy_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Cinematic_Actor_Freddy.Cinematic_Actor_Freddy_C.ExecuteUbergraph_Cinematic_Actor_Freddy
 	 * 		Flags  -> (Final)
 	 * Parameters:

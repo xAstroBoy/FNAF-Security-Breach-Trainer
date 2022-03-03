@@ -28,8 +28,8 @@ namespace CG
 		void BlueprintBeginPlay();
 		void AimHead_Event(bool AimHead);
 		void CanJumpscareEvent();
-		void JumpscareEvent(bool canJumpscare);
-		void ExecuteUbergraph_Staffbot_ABP_Security(int EntryPoint);
+		void JumpscareEvent(bool CanJumpscare);
+		void ExecuteUbergraph_Staffbot_ABP_Security(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -26,7 +26,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void On_Activatable_Activated();
-		void ExecuteUbergraph_UpdateMissionOnActivated(int EntryPoint);
+		void ExecuteUbergraph_UpdateMissionOnActivated(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

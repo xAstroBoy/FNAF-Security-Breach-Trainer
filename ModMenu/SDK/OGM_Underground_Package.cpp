@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.PlayerRequestStart
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -41,7 +41,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.PlayerRequestEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.UpdateVentPowerDrain
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -89,7 +89,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.UpdateVentDoorMeter
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.UpdateDoorPowerDrain
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.UpdateDoorMeters
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.OnPlayerEnter
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.OnEnd
 	 * 		Flags  -> (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.On Start
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 */
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Enter Part 1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Enter Part 2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Burntrap Wave
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Monty Wave
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Tangle Wave
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -330,7 +330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Burntrap Death
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -349,7 +349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Monty Death
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -368,7 +368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Tangle Death
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -387,7 +387,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Chica
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -406,7 +406,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Monty
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -425,7 +425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Roxy
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -444,17 +444,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.Spawn Burntrap Freddy
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		struct FTransform                                  SpawnTransform                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 */
-	void AOGM_Underground_C::Spawn_Burntrap_Freddy()
+	void AOGM_Underground_C::Spawn_Burntrap_Freddy(const struct FTransform& SpawnTransform)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_Underground.OGM_Underground_C.Spawn Burntrap Freddy");
 		
 		AOGM_Underground_C_Spawn_Burntrap_Freddy_Params params {};
+		params.SpawnTransform = SpawnTransform;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -463,7 +466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OGM_Underground.OGM_Underground_C.ExecuteUbergraph_OGM_Underground
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

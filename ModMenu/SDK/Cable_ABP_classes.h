@@ -34,7 +34,7 @@ namespace CG
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x04E8(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0518(0x00B0)
 		bool                                                       CableIN;                                                 // 0x05C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JRTW[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PJQF[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   InAnim;                                                  // 0x05D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   OutAnim;                                                 // 0x05D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 

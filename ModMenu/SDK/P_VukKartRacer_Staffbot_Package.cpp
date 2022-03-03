@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ReceiveActorBeginOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ReceivePossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.Force Interact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_0_OnMissionStateHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.BndEvt__MissionStateHandler1_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -173,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.BndEvt__MissionStateHandler1_K2Node_ComponentBoundEvent_5_OnMissionStateAleadyHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function P_VukKartRacer_Staffbot.P_VukKartRacer_Staffbot_C.ExecuteUbergraph_P_VukKartRacer_Staffbot
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

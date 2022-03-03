@@ -40,7 +40,7 @@ namespace CG
 		void BndEvt__VannyButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 		void BndEvt__StayButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 		void RefreshVannyLogic();
-		void ExecuteUbergraph_FinalChoiceUI(int EntryPoint);
+		void ExecuteUbergraph_FinalChoiceUI(int32_t EntryPoint);
 		void Vanny__DelegateSignature();
 		void Leave__DelegateSignature();
 		void Stay__DelegateSignature();

@@ -54,7 +54,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CACA80
+	 * 		Offset -> 0x01CAD760
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CACA60
+	 * 		Offset -> 0x01CAD740
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_StartProfilingTimer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAC7B0
+	 * 		Offset -> 0x01CAD490
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAC6A0
+	 * 		Offset -> 0x01CAD380
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAC420
+	 * 		Offset -> 0x01CAD100
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -223,7 +223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAC330
+	 * 		Offset -> 0x01CAD010
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_EndProfilingTimer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAC070
+	 * 		Offset -> 0x01CACD50
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -293,7 +293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CABF70
+	 * 		Offset -> 0x01CACC50
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -322,7 +322,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CABB60
+	 * 		Offset -> 0x01CAC840
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromSockets
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -371,7 +371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAB950
+	 * 		Offset -> 0x01CAC630
 	 * 		Name   -> Function AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromPositionHistory
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -422,7 +422,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAD030
+	 * 		Offset -> 0x01CADD10
 	 * 		Name   -> Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -447,7 +447,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CACF50
+	 * 		Offset -> 0x01CADC30
 	 * 		Name   -> Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -472,7 +472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CACE80
+	 * 		Offset -> 0x01CADB60
 	 * 		Name   -> Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -497,7 +497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CACDB0
+	 * 		Offset -> 0x01CADA90
 	 * 		Name   -> Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -522,7 +522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CAB7D0
+	 * 		Offset -> 0x01CAC4B0
 	 * 		Name   -> Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

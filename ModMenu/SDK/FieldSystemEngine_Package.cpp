@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029693E0
+	 * 		Offset -> 0x0296A090
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ResetFieldSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969230
+	 * 		Offset -> 0x02969EE0
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969080
+	 * 		Offset -> 0x02969D30
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968F60
+	 * 		Offset -> 0x02969C10
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968DF0
+	 * 		Offset -> 0x02969AA0
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968CD0
+	 * 		Offset -> 0x02969980
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -205,7 +205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968B80
+	 * 		Offset -> 0x02969830
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -234,7 +234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968A60
+	 * 		Offset -> 0x02969710
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -261,7 +261,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02968910
+	 * 		Offset -> 0x029695C0
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -318,7 +318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969730
+	 * 		Offset -> 0x0296A3E0
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -357,7 +357,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029697C0
+	 * 		Offset -> 0x0296A470
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -452,7 +452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969730
+	 * 		Offset -> 0x0296A3E0
 	 * 		Name   -> Function FieldSystemEngine.UniformInteger.SetUniformInteger
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -491,7 +491,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969FC0
+	 * 		Offset -> 0x0296AC70
 	 * 		Name   -> Function FieldSystemEngine.RadialIntMask.SetRadialIntMask
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -538,7 +538,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A260
+	 * 		Offset -> 0x0296AF10
 	 * 		Name   -> Function FieldSystemEngine.UniformScalar.SetUniformScalar
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -577,7 +577,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969DA0
+	 * 		Offset -> 0x0296AA50
 	 * 		Name   -> Function FieldSystemEngine.RadialFalloff.SetRadialFalloff
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -628,7 +628,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969B20
+	 * 		Offset -> 0x0296A7D0
 	 * 		Name   -> Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -681,7 +681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969400
+	 * 		Offset -> 0x0296A0B0
 	 * 		Name   -> Function FieldSystemEngine.BoxFalloff.SetBoxFalloff
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -730,7 +730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969850
+	 * 		Offset -> 0x0296A500
 	 * 		Name   -> Function FieldSystemEngine.NoiseField.SetNoiseField
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A180
+	 * 		Offset -> 0x0296AE30
 	 * 		Name   -> Function FieldSystemEngine.UniformVector.SetUniformVector
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -814,7 +814,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A180
+	 * 		Offset -> 0x0296AE30
 	 * 		Name   -> Function FieldSystemEngine.RadialVector.SetRadialVector
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -855,7 +855,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A260
+	 * 		Offset -> 0x0296AF10
 	 * 		Name   -> Function FieldSystemEngine.RandomVector.SetRandomVector
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -894,7 +894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029699D0
+	 * 		Offset -> 0x0296A680
 	 * 		Name   -> Function FieldSystemEngine.OperatorField.SetOperatorField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -939,7 +939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A320
+	 * 		Offset -> 0x0296AFD0
 	 * 		Name   -> Function FieldSystemEngine.ToIntegerField.SetToIntegerField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -978,7 +978,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A320
+	 * 		Offset -> 0x0296AFD0
 	 * 		Name   -> Function FieldSystemEngine.ToFloatField.SetToFloatField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1017,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969630
+	 * 		Offset -> 0x0296A2E0
 	 * 		Name   -> Function FieldSystemEngine.CullingField.SetCullingField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1060,7 +1060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A2F0
+	 * 		Offset -> 0x0296AFA0
 	 * 		Name   -> Function FieldSystemEngine.ReturnResultsTerminal.SetReturnResultsTerminal
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */

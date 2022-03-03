@@ -83,33 +83,33 @@ namespace CG
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_2;                           // 0x1C38(0x0028)
 		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x1C60(0x00C0)
 		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose;                             // 0x1D20(0x0028)
-		unsigned char                                              UnknownData_IORY[0x8];                                   // 0x1D48(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6ILV[0x8];                                   // 0x1D48(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_2;                                  // 0x1D50(0x01B0)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt;                                    // 0x1F00(0x01B0)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x20B0(0x0020)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x20D0(0x0020)
 		struct FAnimNode_ModifyBone                                AnimGraphNode_ModifyBone;                                // 0x20F0(0x0108)
-		bool                                                       canJumpscare;                                            // 0x21F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_5X40[0x3];                                   // 0x21F9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       CanJumpscare;                                            // 0x21F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_8ARP[0x3];                                   // 0x21F9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                BeingWatched;                                            // 0x21FC(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       EndoIsBeingWatched;                                      // 0x2204(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       AimEyes;                                                 // 0x2205(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_C2TH[0x2];                                   // 0x2206(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MNA9[0x2];                                   // 0x2206(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             AimLocation;                                             // 0x2208(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsStunned;                                               // 0x2214(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanRun;                                                  // 0x2215(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_Y2O9[0x2];                                   // 0x2216(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        RandomLocomotion;                                        // 0x2218(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		unsigned char                                              UnknownData_68PG[0x2];                                   // 0x2216(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    RandomLocomotion;                                        // 0x2218(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		float                                                      SpeedInput;                                              // 0x221C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      IdleStartPosition;                                       // 0x2220(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       NewVar_1;                                                // 0x2224(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isHanging;                                               // 0x2225(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn
-		unsigned char                                              UnknownData_ATMW[0x2];                                   // 0x2226(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        EndoHangingInt;                                          // 0x2228(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		unsigned char                                              UnknownData_VIL9[0x4];                                   // 0x222C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LF0Q[0x2];                                   // 0x2226(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    EndoHangingInt;                                          // 0x2228(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		unsigned char                                              UnknownData_K3AE[0x4];                                   // 0x222C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   SpawnInBowlingAnim;                                      // 0x2230(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       BowlingSpawn;                                            // 0x2238(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_3OF8[0x3];                                   // 0x2239(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JHQ5[0x3];                                   // 0x2239(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      BowlingPlayRate;                                         // 0x223C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       AimOverride;                                             // 0x2240(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -172,7 +172,7 @@ namespace CG
 		void EndoSpawnInBowlingEvent();
 		void EndoBowlingCrawlEvent();
 		void HeadAimEvent(bool OnOff);
-		void ExecuteUbergraph_RIG_Endo_Skeleton_ABP(int EntryPoint);
+		void ExecuteUbergraph_RIG_Endo_Skeleton_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

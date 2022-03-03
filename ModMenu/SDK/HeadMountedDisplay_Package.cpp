@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD4D0
+	 * 		Offset -> 0x019AE1B0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.UpdateExternalTrackingHMDPosition
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -49,7 +49,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD3F0
+	 * 		Offset -> 0x019AE0D0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetWorldToMetersScale
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD300
+	 * 		Offset -> 0x019ADFE0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetTrackingOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD210
+	 * 		Offset -> 0x019ADEF0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenTexture
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD020
+	 * 		Offset -> 0x019ADD00
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenModeTexturePlusEyeLayout
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -155,7 +155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACFB0
+	 * 		Offset -> 0x019ADC90
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACB50
+	 * 		Offset -> 0x019AD830
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetClippingPlanes
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -203,7 +203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACA20
+	 * 		Offset -> 0x019AD700
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ResetOrientationAndPosition
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC9D0
+	 * 		Offset -> 0x019AD6B0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsSpectatorScreenModeControllable
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CDB0
+	 * 		Offset -> 0x00A2CDF0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsInLowPersistenceMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -272,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC6B0
+	 * 		Offset -> 0x019AD390
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -294,7 +294,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC680
+	 * 		Offset -> 0x019AD360
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayConnected
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -316,7 +316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC5E0
+	 * 		Offset -> 0x019AD2C0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsDeviceTracking
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -341,7 +341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC590
+	 * 		Offset -> 0x019AD270
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.HasValidTrackingPosition
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -363,7 +363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC500
+	 * 		Offset -> 0x019AD1E0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetWorldToMetersScale
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -388,7 +388,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC420
+	 * 		Offset -> 0x019AD100
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetVRFocusState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -416,7 +416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC360
+	 * 		Offset -> 0x019AD040
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingToWorldTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -441,7 +441,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABF80
+	 * 		Offset -> 0x019ACC60
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingSensorParameters
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -495,7 +495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABF40
+	 * 		Offset -> 0x019ACC20
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -517,7 +517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABF10
+	 * 		Offset -> 0x019ACBF0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetScreenPercentage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -539,7 +539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABCA0
+	 * 		Offset -> 0x019AC980
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPositionalTrackingCameraParameters
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -582,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABC70
+	 * 		Offset -> 0x019AC950
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPixelDensity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -604,7 +604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABAD0
+	 * 		Offset -> 0x019AC7B0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetOrientationAndPosition
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -632,7 +632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABAA0
+	 * 		Offset -> 0x019AC780
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetNumOfTrackingSensors
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -654,7 +654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB930
+	 * 		Offset -> 0x019AC610
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDWornState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -676,7 +676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB8F0
+	 * 		Offset -> 0x019AC5D0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDDeviceName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -698,7 +698,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB6C0
+	 * 		Offset -> 0x019AC3A0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDeviceWorldPose
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -736,7 +736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB4D0
+	 * 		Offset -> 0x019AC1B0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDevicePose
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -772,7 +772,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB380
+	 * 		Offset -> 0x019AC060
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnumerateTrackedDevices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -799,7 +799,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB090
+	 * 		Offset -> 0x019ABD70
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableLowPersistenceMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -822,7 +822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB010
+	 * 		Offset -> 0x019ABCF0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableHMD
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -847,7 +847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AACC0
+	 * 		Offset -> 0x019AB9A0
 	 * 		Name   -> Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.CalibrateExternalTrackingToHMD
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -884,7 +884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD370
+	 * 		Offset -> 0x019AE050
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -907,7 +907,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD280
+	 * 		Offset -> 0x019ADF60
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -930,7 +930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACF20
+	 * 		Offset -> 0x019ADC00
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -953,7 +953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACC80
+	 * 		Offset -> 0x019AD960
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -976,7 +976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACC00
+	 * 		Offset -> 0x019AD8E0
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -999,7 +999,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACAD0
+	 * 		Offset -> 0x019AD7B0
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1022,7 +1022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1041,7 +1041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACA00
+	 * 		Offset -> 0x019AD6E0
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.IsTracked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1063,7 +1063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC330
+	 * 		Offset -> 0x019AD010
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1085,7 +1085,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABBA0
+	 * 		Offset -> 0x019AC880
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1114,7 +1114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB960
+	 * 		Offset -> 0x019AC640
 	 * 		Name   -> Function HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1157,7 +1157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACD00
+	 * 		Offset -> 0x019AD9E0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.SetIsControllerMotionTrackingEnabledByDefault
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1180,7 +1180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC910
+	 * 		Offset -> 0x019AD5F0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1207,7 +1207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC850
+	 * 		Offset -> 0x019AD530
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForDevice
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1234,7 +1234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC7D0
+	 * 		Offset -> 0x019AD4B0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1259,7 +1259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC7A0
+	 * 		Offset -> 0x019AD480
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackedDeviceCountManagementNecessary
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1281,7 +1281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC6E0
+	 * 		Offset -> 0x019AD3C0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionSourceTracking
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1308,7 +1308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABA70
+	 * 		Offset -> 0x019AC750
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMotionTrackingEnabledControllerCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1330,7 +1330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ABA40
+	 * 		Offset -> 0x019AC720
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMaximumMotionTrackedControllerCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1352,7 +1352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB490
+	 * 		Offset -> 0x019AC170
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetActiveTrackingSystemName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1374,7 +1374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB300
+	 * 		Offset -> 0x019ABFE0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnumerateMotionSources
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1396,7 +1396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB240
+	 * 		Offset -> 0x019ABF20
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1423,7 +1423,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB180
+	 * 		Offset -> 0x019ABE60
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfDevice
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1450,7 +1450,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AB100
+	 * 		Offset -> 0x019ABDE0
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingForComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1475,7 +1475,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAF60
+	 * 		Offset -> 0x019ABC40
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1500,7 +1500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAEB0
+	 * 		Offset -> 0x019ABB90
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfDevice
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1525,7 +1525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAE40
+	 * 		Offset -> 0x019ABB20
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfControllersForPlayer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1548,7 +1548,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAE20
+	 * 		Offset -> 0x019ABB00
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfAllControllers
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1568,7 +1568,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AADB0
+	 * 		Offset -> 0x019ABA90
 	 * 		Name   -> Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingForComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1605,7 +1605,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAA90
+	 * 		Offset -> 0x019AB770
 	 * 		Name   -> Function HeadMountedDisplay.XRAssetFunctionLibrary.AddNamedDeviceVisualizationComponentBlocking
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1642,7 +1642,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AA460
+	 * 		Offset -> 0x019AB140
 	 * 		Name   -> Function HeadMountedDisplay.XRAssetFunctionLibrary.AddDeviceVisualizationComponentBlocking
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1687,7 +1687,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AA800
+	 * 		Offset -> 0x019AB4E0
 	 * 		Name   -> Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddNamedDeviceVisualizationComponentAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1727,7 +1727,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AA240
+	 * 		Offset -> 0x019AAF20
 	 * 		Name   -> Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddDeviceVisualizationComponentAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1776,7 +1776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AD4B0
+	 * 		Offset -> 0x019AE190
 	 * 		Name   -> Function HeadMountedDisplay.XRLoadingScreenFunctionLibrary.ShowLoadingScreen
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1796,7 +1796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACD80
+	 * 		Offset -> 0x019ADA60
 	 * 		Name   -> Function HeadMountedDisplay.XRLoadingScreenFunctionLibrary.SetLoadingScreen
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1827,7 +1827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AC5C0
+	 * 		Offset -> 0x019AD2A0
 	 * 		Name   -> Function HeadMountedDisplay.XRLoadingScreenFunctionLibrary.HideLoadingScreen
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1847,7 +1847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AAD90
+	 * 		Offset -> 0x019ABA70
 	 * 		Name   -> Function HeadMountedDisplay.XRLoadingScreenFunctionLibrary.ClearLoadingScreenSplashes
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1867,7 +1867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019AA620
+	 * 		Offset -> 0x019AB300
 	 * 		Name   -> Function HeadMountedDisplay.XRLoadingScreenFunctionLibrary.AddLoadingScreenSplash
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:

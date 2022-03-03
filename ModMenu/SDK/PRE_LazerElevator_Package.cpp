@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Elevator Light Sequence Worker
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.UserConstructionScript
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.LaserTag Elevator Position__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.LaserTag Elevator Position__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Intensity__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Intensity__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.OnCheckpointSave
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.OnGameDataLoaded
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -170,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.OnStoreGameData
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.PostGameLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.PostSaveGame
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -230,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.OpenLaserTagDoor
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -249,7 +249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.BndEvt__StartGame_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -277,7 +277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Start Elevator Drop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -296,7 +296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -315,7 +315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.ForceDIsableAllDoors
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -334,7 +334,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.ResetElevatorToTop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -353,7 +353,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Flash Lights to Red
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -372,7 +372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Start
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Reset
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -410,7 +410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.OnCheckpointLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -432,7 +432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.PreStartLevatorDrop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -451,7 +451,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Construct Reset
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -470,7 +470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.ExecuteUbergraph_PRE_LazerElevator
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_LazerElevator.PRE_LazerElevator_C.Event game Mode__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

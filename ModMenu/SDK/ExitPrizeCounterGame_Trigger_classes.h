@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void OnTriggered();
-		void ExecuteUbergraph_ExitPrizeCounterGame_Trigger(int EntryPoint);
+		void ExecuteUbergraph_ExitPrizeCounterGame_Trigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBD70
+	 * 		Offset -> 0x00AFBDB0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StopLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBD40
+	 * 		Offset -> 0x00AFBD80
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StartLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBCC0
+	 * 		Offset -> 0x00AFBD00
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBBC0
+	 * 		Offset -> 0x00AFBC00
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.InitLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBBA0
+	 * 		Offset -> 0x00AFBBE0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBB60
+	 * 		Offset -> 0x00AFBBA0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBB30
+	 * 		Offset -> 0x00AFBB70
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

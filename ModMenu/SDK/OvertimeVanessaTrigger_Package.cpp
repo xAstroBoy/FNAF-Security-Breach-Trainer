@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "OvertimeVanessaTrigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OvertimeVanessaTrigger.OvertimeVanessaTrigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,13 +31,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OvertimeVanessaTrigger.OvertimeVanessaTrigger_C.ExecuteUbergraph_OvertimeVanessaTrigger
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOvertimeVanessaTrigger_C::ExecuteUbergraph_OvertimeVanessaTrigger(int EntryPoint)
+	void AOvertimeVanessaTrigger_C::ExecuteUbergraph_OvertimeVanessaTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -12,18 +12,18 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ABP_FunctionLibrary.ABP_FunctionLibrary_C.Check if Onscreen
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UAnimInstance*                               TargetAnimInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Tolerance                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               IsJumpscaring                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               isJumpscaring                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Override                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               isOnScreen1                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UABP_FunctionLibrary_C::STATIC_Check_if_Onscreen(class UAnimInstance* TargetAnimInstance, float Tolerance, bool IsJumpscaring, bool Override, class UObject* __WorldContext, bool* isOnScreen1)
+	void UABP_FunctionLibrary_C::STATIC_Check_if_Onscreen(class UAnimInstance* TargetAnimInstance, float Tolerance, bool isJumpscaring, bool Override, class UObject* __WorldContext, bool* isOnScreen1)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -32,7 +32,7 @@ namespace CG
 		UABP_FunctionLibrary_C_Check_if_Onscreen_Params params {};
 		params.TargetAnimInstance = TargetAnimInstance;
 		params.Tolerance = Tolerance;
-		params.IsJumpscaring = IsJumpscaring;
+		params.isJumpscaring = isJumpscaring;
 		params.Override = Override;
 		params.__WorldContext = __WorldContext;
 		

@@ -30,7 +30,7 @@ namespace CG
 		class AMainGameGM_C*                                       GameMode;                                                // 0x0278(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		unsigned char                                              StartupMission[0x28];                                    // 0x0280(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       IsNormalPlay;                                            // 0x02A8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_AF6T[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_76DB[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              WorldEntrance[0x28];                                     // 0x02A9(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class AGregory_C*                                          GregoryPawn;                                             // 0x02D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              FreddySurvivalStart[0x28];                               // 0x02E0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -53,6 +53,7 @@ namespace CG
 		void Survival_Vanessa_Setup();
 		void On_Respawn_Levels_Loaded();
 		void FreddyBootedUp();
+		void End_Loading_Screen();
 		void ExecuteUbergraph_MainGameStartupSequence(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

@@ -348,7 +348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007B6120
+	 * 		Offset -> 0x007B6160
 	 * 		Name   -> Function DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserDataValueForKey
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -375,7 +375,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007B5F70
+	 * 		Offset -> 0x007B5FB0
 	 * 		Name   -> Function DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserDataKeysAndValuesForValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -407,7 +407,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007B5EF0
+	 * 		Offset -> 0x007B5F30
 	 * 		Name   -> Function DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -460,7 +460,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007B6220
+	 * 		Offset -> 0x007B6260
 	 * 		Name   -> Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AlwaysFaceCameraComponent.AlwaysFaceCameraComponent_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AlwaysFaceCameraComponent.AlwaysFaceCameraComponent_C.ExecuteUbergraph_AlwaysFaceCameraComponent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

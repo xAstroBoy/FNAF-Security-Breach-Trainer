@@ -12,7 +12,130 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInstructionOverride
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FText                                        Instruction                                                (Parm, OutParm)
+	 */
+	void ASecurityOffice_Daycare_C::GetInstructionOverride(class FText* Instruction)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInstructionOverride");
+		
+		ASecurityOffice_Daycare_C_GetInstructionOverride_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Instruction != nullptr)
+			*Instruction = params.Instruction;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractibleType
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		InteractibleType_EInteractibleType                 Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		InteractiblePressType_EInteractiblePressType       PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ASecurityOffice_Daycare_C::GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractibleType");
+		
+		ASecurityOffice_Daycare_C_GetInteractibleType_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Type != nullptr)
+			*Type = params.Type;
+		if (PressType != nullptr)
+			*PressType = params.PressType;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.UpdateUIOnTick
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               Output                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ASecurityOffice_Daycare_C::UpdateUIOnTick(bool* Output)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.UpdateUIOnTick");
+		
+		ASecurityOffice_Daycare_C_UpdateUIOnTick_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Output != nullptr)
+			*Output = params.Output;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.InteractIgnoresTrace
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               IgnoreTrace                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ASecurityOffice_Daycare_C::InteractIgnoresTrace(bool* IgnoreTrace)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.InteractIgnoresTrace");
+		
+		ASecurityOffice_Daycare_C_InteractIgnoresTrace_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IgnoreTrace != nullptr)
+			*IgnoreTrace = params.IgnoreTrace;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractViewAngles
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		fnaf9_ECameraAngleFlags                            AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ASecurityOffice_Daycare_C::GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractViewAngles");
+		
+		ASecurityOffice_Daycare_C_GetInteractViewAngles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (AnglesToCheck != nullptr)
+			*AnglesToCheck = params.AnglesToCheck;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.IsInPhase
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -24,21 +147,21 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.IsInPhase");
-
-		ASecurityOffice_Daycare_C_IsInPhase_Params params{};
+		
+		ASecurityOffice_Daycare_C_IsInPhase_Params params {};
 		params.Phase = Phase;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-
+		
 		if (Is_In_Phase != nullptr)
 			*Is_In_Phase = params.Is_In_Phase;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetFirstOverlappingLight
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -50,13 +173,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetFirstOverlappingLight");
-
-		ASecurityOffice_Daycare_C_GetFirstOverlappingLight_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_GetFirstOverlappingLight_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-
+		
 		if (Found != nullptr)
 			*Found = params.Found;
 		if (Light != nullptr)
@@ -65,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CheckGeneratorStage
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -76,20 +199,20 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CheckGeneratorStage");
-
-		ASecurityOffice_Daycare_C_CheckGeneratorStage_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_CheckGeneratorStage_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-
+		
 		if (Stage_2 != nullptr)
 			*Stage_2 = params.Stage_2;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetClosestActiveNoiseMaker
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -101,13 +224,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetClosestActiveNoiseMaker");
-
-		ASecurityOffice_Daycare_C_GetClosestActiveNoiseMaker_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_GetClosestActiveNoiseMaker_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-
+		
 		if (Found != nullptr)
 			*Found = params.Found;
 		if (Noise_Maker != nullptr)
@@ -116,7 +239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CanPlayerInteract
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -128,13 +251,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CanPlayerInteract");
-
-		ASecurityOffice_Daycare_C_CanPlayerInteract_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_CanPlayerInteract_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-
+		
 		if (CanInteract != nullptr)
 			*CanInteract = params.CanInteract;
 		if (CantReason != nullptr)
@@ -143,7 +266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SetDeskBlockers
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -154,10 +277,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SetDeskBlockers");
-
-		ASecurityOffice_Daycare_C_SetDeskBlockers_Params params{};
+		
+		ASecurityOffice_Daycare_C_SetDeskBlockers_Params params {};
 		params.NewType = NewType;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -165,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Moonman
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -174,37 +297,18 @@ namespace CG
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FRotator                                    Roation                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	 //void ASecurityOffice_Daycare_C::Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation)
-	 //{
-	 //	static UFunction* fn = nullptr;
-	 //	if (!fn)
-	 //		fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Moonman");
-	 //	
-	 //	ASecurityOffice_Daycare_C_Moonman_Params params {};
-	 //	params.Sunman = Sunman;
-	 //	params.Behavior_Tree = Behavior_Tree;
-	 //	params.Location = Location;
-	 //	params.Roation = Roation;
-	 //	
-	 //	auto flags = fn->FunctionFlags;
-	 //	UObject::ProcessEvent(fn, &params);
-	 //	fn->FunctionFlags = flags;
-	 //}
-
-	 /**
-	  * Function:
-	  * 		Offset -> 0x00EE6700
-	  * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Office Game Activated
-	  * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	  */
-	void ASecurityOffice_Daycare_C::On_Office_Game_Activated()
+	void ASecurityOffice_Daycare_C::Moonman(bool Sunman, class UBehaviorTree* Behavior_Tree, const struct FVector& Location, const struct FRotator& Roation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Office Game Activated");
-
-		ASecurityOffice_Daycare_C_On_Office_Game_Activated_Params params{};
-
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Moonman");
+		
+		ASecurityOffice_Daycare_C_Moonman_Params params {};
+		params.Sunman = Sunman;
+		params.Behavior_Tree = Behavior_Tree;
+		params.Location = Location;
+		params.Roation = Roation;
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -212,7 +316,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Office Game Activated
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void ASecurityOffice_Daycare_C::On_Office_Game_Activated()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Office Game Activated");
+		
+		ASecurityOffice_Daycare_C_On_Office_Game_Activated_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Scenario Changed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -221,9 +344,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Scenario Changed");
-
-		ASecurityOffice_Daycare_C_On_Scenario_Changed_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_On_Scenario_Changed_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -231,7 +354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Sunman
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -240,9 +363,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Sunman");
-
-		ASecurityOffice_Daycare_C_Spawn_Sunman_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_Spawn_Sunman_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -250,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -259,9 +382,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 1");
-
-		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_1_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_1_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -269,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -281,11 +404,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 2");
-
-		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_2_Params params{};
+		
+		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_2_Params params {};
 		params.Location = Location;
 		params.Rotation = Rotation;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -293,7 +416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -302,9 +425,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ReceiveBeginPlay");
-
-		ASecurityOffice_Daycare_C_ReceiveBeginPlay_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_ReceiveBeginPlay_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -312,7 +435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 2 Spline Follower
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -324,11 +447,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Spawn Moonman Phase 2 Spline Follower");
-
-		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_2_Spline_Follower_Params params{};
+		
+		ASecurityOffice_Daycare_C_Spawn_Moonman_Phase_2_Spline_Follower_Params params {};
 		params.Location = Location;
 		params.Rotation = Rotation;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -336,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Generator Activated
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -348,11 +471,11 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Generator Activated");
-
-		ASecurityOffice_Daycare_C_Generator_Activated_Params params{};
+		
+		ASecurityOffice_Daycare_C_Generator_Activated_Params params {};
 		params.Count = Count;
 		params.Activator = Activator;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -360,7 +483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerBlocker_0_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -375,14 +498,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerBlocker_0_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__PlayerBlocker_0_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params params{};
+		
+		ASecurityOffice_Daycare_C_BndEvt__PlayerBlocker_0_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params params {};
 		params.HitComponent = HitComponent;
 		params.OtherActor = OtherActor;
 		params.OtherComp = OtherComp;
 		params.NormalImpulse = NormalImpulse;
 		params.Hit = Hit;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -390,7 +513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerBlocker_1_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -405,14 +528,14 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerBlocker_1_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__PlayerBlocker_1_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature_Params params{};
+		
+		ASecurityOffice_Daycare_C_BndEvt__PlayerBlocker_1_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature_Params params {};
 		params.HitComponent = HitComponent;
 		params.OtherActor = OtherActor;
 		params.OtherComp = OtherComp;
 		params.NormalImpulse = NormalImpulse;
 		params.Hit = Hit;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -420,7 +543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Player Leaving Desk Area no flashlight
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -431,10 +554,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Player Leaving Desk Area no flashlight");
-
-		ASecurityOffice_Daycare_C_Player_Leaving_Desk_Area_no_flashlight_Params params{};
+		
+		ASecurityOffice_Daycare_C_Player_Leaving_Desk_Area_no_flashlight_Params params {};
 		params.OtherActor = OtherActor;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -442,7 +565,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__FlashlightCollectListener_K2Node_ComponentBoundEvent_2_OnCorrectItemCollectedDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -451,9 +574,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__FlashlightCollectListener_K2Node_ComponentBoundEvent_2_OnCorrectItemCollectedDelegate__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__FlashlightCollectListener_K2Node_ComponentBoundEvent_2_OnCorrectItemCollectedDelegate__DelegateSignature_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_BndEvt__FlashlightCollectListener_K2Node_ComponentBoundEvent_2_OnCorrectItemCollectedDelegate__DelegateSignature_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -461,7 +584,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -477,15 +600,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__DeskArea_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params params{};
+		
+		ASecurityOffice_Daycare_C_BndEvt__DeskArea_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params params {};
 		params.OverlappedComponent = OverlappedComponent;
 		params.OtherActor = OtherActor;
 		params.OtherComp = OtherComp;
 		params.OtherBodyIndex = OtherBodyIndex;
 		params.bFromSweep = bFromSweep;
 		params.SweepResult = SweepResult;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -493,7 +616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -507,13 +630,13 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__DeskArea_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature_Params params{};
+		
+		ASecurityOffice_Daycare_C_BndEvt__DeskArea_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature_Params params {};
 		params.OverlappedComponent = OverlappedComponent;
 		params.OtherActor = OtherActor;
 		params.OtherComp = OtherComp;
 		params.OtherBodyIndex = OtherBodyIndex;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -521,7 +644,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Chase
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -530,9 +653,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Chase");
-
-		ASecurityOffice_Daycare_C_EnterPhase1Chase_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase1Chase_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -540,7 +663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase5PlayerInLight
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -551,10 +674,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase5PlayerInLight");
-
-		ASecurityOffice_Daycare_C_EnterPhase5PlayerInLight_Params params{};
+		
+		ASecurityOffice_Daycare_C_EnterPhase5PlayerInLight_Params params {};
 		params.InvestigationLocation = InvestigationLocation;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -562,7 +685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase4End
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -571,9 +694,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase4End");
-
-		ASecurityOffice_Daycare_C_EnterPhase4End_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase4End_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -581,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase3DeskPace
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -590,9 +713,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase3DeskPace");
-
-		ASecurityOffice_Daycare_C_EnterPhase3DeskPace_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase3DeskPace_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -600,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase2Noisemaker
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -611,10 +734,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase2Noisemaker");
-
-		ASecurityOffice_Daycare_C_EnterPhase2Noisemaker_Params params{};
+		
+		ASecurityOffice_Daycare_C_EnterPhase2Noisemaker_Params params {};
 		params.NoiseMaker = NoiseMaker;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -622,7 +745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Wait
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -631,9 +754,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Wait");
-
-		ASecurityOffice_Daycare_C_EnterPhase1Wait_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase1Wait_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -641,7 +764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Carry
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -650,9 +773,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Carry");
-
-		ASecurityOffice_Daycare_C_EnterPhase1Carry_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase1Carry_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -660,7 +783,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Dance
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -669,9 +792,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase1Dance");
-
-		ASecurityOffice_Daycare_C_EnterPhase1Dance_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase1Dance_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -679,7 +802,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExitPhase5PlayerInLight
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -688,9 +811,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExitPhase5PlayerInLight");
-
-		ASecurityOffice_Daycare_C_ExitPhase5PlayerInLight_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_ExitPhase5PlayerInLight_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -698,7 +821,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExitPhase3DeskPace
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -707,9 +830,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExitPhase3DeskPace");
-
-		ASecurityOffice_Daycare_C_ExitPhase3DeskPace_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_ExitPhase3DeskPace_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -717,7 +840,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Doors Opened
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -726,9 +849,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.On Doors Opened");
-
-		ASecurityOffice_Daycare_C_On_Doors_Opened_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_On_Doors_Opened_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -736,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea1_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -752,15 +875,15 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__DeskArea1_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
-
-		ASecurityOffice_Daycare_C_BndEvt__DeskArea1_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature_Params params{};
+		
+		ASecurityOffice_Daycare_C_BndEvt__DeskArea1_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature_Params params {};
 		params.OverlappedComponent = OverlappedComponent;
 		params.OtherActor = OtherActor;
 		params.OtherComp = OtherComp;
 		params.OtherBodyIndex = OtherBodyIndex;
 		params.bFromSweep = bFromSweep;
 		params.SweepResult = SweepResult;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -768,7 +891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SequenceOnStop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -777,9 +900,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SequenceOnStop");
-
-		ASecurityOffice_Daycare_C_SequenceOnStop_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_SequenceOnStop_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -787,7 +910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SetMazeState
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -800,12 +923,12 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.SetMazeState");
-
-		ASecurityOffice_Daycare_C_SetMazeState_Params params{};
+		
+		ASecurityOffice_Daycare_C_SetMazeState_Params params {};
 		params.InsideMaze = InsideMaze;
 		params.Location = Location;
 		params.Rotation = Rotation;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -813,7 +936,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Phase3Maze
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -822,9 +945,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Phase3Maze");
-
-		ASecurityOffice_Daycare_C_Phase3Maze_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_Phase3Maze_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -832,7 +955,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterSplinePathToExit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -841,9 +964,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterSplinePathToExit");
-
-		ASecurityOffice_Daycare_C_EnterSplinePathToExit_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterSplinePathToExit_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -851,7 +974,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase2PathToEntrance
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -860,9 +983,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterPhase2PathToEntrance");
-
-		ASecurityOffice_Daycare_C_EnterPhase2PathToEntrance_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterPhase2PathToEntrance_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -870,7 +993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CompleteFlashlightTask
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -879,9 +1002,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.CompleteFlashlightTask");
-
-		ASecurityOffice_Daycare_C_CompleteFlashlightTask_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_CompleteFlashlightTask_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -889,7 +1012,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterMazeTransition
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -898,9 +1021,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.EnterMazeTransition");
-
-		ASecurityOffice_Daycare_C_EnterMazeTransition_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_EnterMazeTransition_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -908,7 +1031,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Sunman setup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -917,9 +1040,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.Sunman setup");
-
-		ASecurityOffice_Daycare_C_Sunman_setup_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_Sunman_setup_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -927,7 +1050,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.DaycareEndCleanup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -936,9 +1059,9 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.DaycareEndCleanup");
-
-		ASecurityOffice_Daycare_C_DaycareEndCleanup_Params params{};
-
+		
+		ASecurityOffice_Daycare_C_DaycareEndCleanup_Params params {};
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -946,7 +1069,69 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteract
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class APlayerController*                           PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ASecurityOffice_Daycare_C::OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteract");
+		
+		ASecurityOffice_Daycare_C_OnPlayerInteract_Params params {};
+		params.PlayerPawn = PlayerPawn;
+		params.PlayerController = PlayerController;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteractCancel
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void ASecurityOffice_Daycare_C::OnPlayerInteractCancel()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteractCancel");
+		
+		ASecurityOffice_Daycare_C_OnPlayerInteractCancel_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void ASecurityOffice_Daycare_C::BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature");
+		
+		ASecurityOffice_Daycare_C_BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExecuteUbergraph_SecurityOffice_Daycare
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -957,10 +1142,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.ExecuteUbergraph_SecurityOffice_Daycare");
-
-		ASecurityOffice_Daycare_C_ExecuteUbergraph_SecurityOffice_Daycare_Params params{};
+		
+		ASecurityOffice_Daycare_C_ExecuteUbergraph_SecurityOffice_Daycare_Params params {};
 		params.EntryPoint = EntryPoint;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -981,4 +1166,5 @@ namespace CG
 	}
 
 }
+
 

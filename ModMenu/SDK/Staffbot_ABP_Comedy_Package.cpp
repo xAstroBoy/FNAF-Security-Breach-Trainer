@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C.ExecuteUbergraph_Staffbot_ABP_Comedy
 	 * 		Flags  -> (Final)
 	 * Parameters:

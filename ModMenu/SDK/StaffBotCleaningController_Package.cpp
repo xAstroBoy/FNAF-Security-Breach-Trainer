@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "StaffBotCleaningController_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffBotCleaningController.StaffBotCleaningController_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,13 +31,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffBotCleaningController.StaffBotCleaningController_C.ExecuteUbergraph_StaffBotCleaningController
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStaffBotCleaningController_C::ExecuteUbergraph_StaffBotCleaningController(int EntryPoint)
+	void AStaffBotCleaningController_C::ExecuteUbergraph_StaffBotCleaningController(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

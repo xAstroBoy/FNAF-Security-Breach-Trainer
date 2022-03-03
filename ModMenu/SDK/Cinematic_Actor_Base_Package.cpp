@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Cinematic_Actor_Base.Cinematic_Actor_Base_C.Set Up Materials
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */

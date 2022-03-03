@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BFL_FNAF9.BFL_FNAF9_C.PreMainMenuCleanup
 	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

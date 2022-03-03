@@ -188,6 +188,9 @@ namespace CG
 	 */
 	struct AOGM_Underground_C_Spawn_Burntrap_Freddy_Params
 	{
+	public:
+		struct FTransform                                          SpawnTransform;                                          // 0x0000(0x0030)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+
 	};
 
 	/**

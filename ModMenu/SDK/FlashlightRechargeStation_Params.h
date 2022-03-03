@@ -98,13 +98,6 @@ namespace CG
 	};
 
 	/**
-	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReturnFlashlight
-	 */
-	struct AFlashlightRechargeStation_C_ReturnFlashlight_Params
-	{
-	};
-
-	/**
 	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.SetupWithFlashlight
 	 */
 	struct AFlashlightRechargeStation_C_SetupWithFlashlight_Params
@@ -191,12 +184,33 @@ namespace CG
 	};
 
 	/**
+	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteract
+	 */
+	struct AFlashlightRechargeStation_C_OnPlayerInteract_Params
+	{
+	public:
+		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.FlaslightStationOpenClose
 	 */
 	struct AFlashlightRechargeStation_C_FlaslightStationOpenClose_Params
 	{
 	public:
 		bool                                                       Open;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverExit
+	 */
+	struct AFlashlightRechargeStation_C_OnPlayerHoverExit_Params
+	{
+	public:
+		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -208,13 +222,12 @@ namespace CG
 	};
 
 	/**
-	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteract
+	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverEnter
 	 */
-	struct AFlashlightRechargeStation_C_OnPlayerInteract_Params
+	struct AFlashlightRechargeStation_C_OnPlayerHoverEnter_Params
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -271,23 +284,10 @@ namespace CG
 	};
 
 	/**
-	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverExit
+	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReturnFlashlight
 	 */
-	struct AFlashlightRechargeStation_C_OnPlayerHoverExit_Params
+	struct AFlashlightRechargeStation_C_ReturnFlashlight_Params
 	{
-	public:
-		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverEnter
-	 */
-	struct AFlashlightRechargeStation_C_OnPlayerHoverEnter_Params
-	{
-	public:
-		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**

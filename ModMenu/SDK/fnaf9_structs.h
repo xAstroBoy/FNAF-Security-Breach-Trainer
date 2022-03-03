@@ -48,10 +48,11 @@ namespace CG
 		EInventoryItemCategory__Trophy                     = 5,
 		EInventoryItemCategory__LostAndFound               = 6,
 		EInventoryItemCategory__Character                  = 7,
-		EInventoryItemCategory__SecurityBadge              = 8,
-		EInventoryItemCategory__PartyBadge                 = 9,
-		EInventoryItemCategory__RetroCD                    = 10,
-		EInventoryItemCategory__EInventoryItemCategory_MAX = 11
+		EInventoryItemCategory__Clothing                   = 8,
+		EInventoryItemCategory__SecurityBadge              = 9,
+		EInventoryItemCategory__PartyBadge                 = 10,
+		EInventoryItemCategory__RetroCD                    = 11,
+		EInventoryItemCategory__EInventoryItemCategory_MAX = 12
 	};
 
 	/**
@@ -424,7 +425,7 @@ namespace CG
 		bool                                                       bStartOpen;                                              // 0x002F(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsAutomaticDoorForPlayer;                               // 0x0030(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsAutomaticDoorForAI;                                   // 0x0031(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S2KV[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0N7B[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (PADDING)
 
 	};
 
@@ -435,7 +436,7 @@ namespace CG
 	struct FPawnInDoorwayInfo
 	{
 	public:
-		unsigned char                                              UnknownData_DP2T[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1GVW[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	};
 
@@ -446,7 +447,7 @@ namespace CG
 	struct FFNAFEventSystemData
 	{
 	public:
-		unsigned char                                              UnknownData_8YG7[0x50];                                  // 0x0000(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LT1S[0x50];                                  // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 	};
 
@@ -459,7 +460,7 @@ namespace CG
 	public:
 		class FName                                                PathName;                                                // 0x0000(0x0008) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsShattered;                                            // 0x0008(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WIVO[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EA17[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -484,7 +485,7 @@ namespace CG
 	public:
 		unsigned char                                              ActivatedObjects[0x50];                                  // 0x0000(0x0050) UNKNOWN PROPERTY: SetProperty
 		bool                                                       bFreddyInWorld;                                          // 0x0050(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QCJL[0x3];                                   // 0x0051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6Z7B[0x3];                                   // 0x0051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             FreddyPosition;                                          // 0x0054(0x000C) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FRotator                                            FreddyRotation;                                          // 0x0060(0x000C) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bCanCallFreddy;                                          // 0x006C(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -493,10 +494,10 @@ namespace CG
 		bool                                                       bUseSickFreddy;                                          // 0x006F(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bPlayerUsedHidingSpace;                                  // 0x0070(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCanUsePowerStation;                                     // 0x0071(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AM7D[0x2];                                   // 0x0072(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OQS8[0x2];                                   // 0x0072(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    FreddyPatrolPoint;                                       // 0x0074(0x0004) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		fnaf9_EFNAFGameState                                       GameState;                                               // 0x0078(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SPF9[0x7];                                   // 0x0079(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LVOK[0x7];                                   // 0x0079(0x0007) MISSED OFFSET (PADDING)
 
 	};
 
@@ -510,7 +511,7 @@ namespace CG
 		int32_t                                                    HighScore;                                               // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Played;                                                  // 0x0004(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Glitched;                                                // 0x0005(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_43IR[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_II30[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (PADDING)
 
 	};
 
@@ -524,7 +525,7 @@ namespace CG
 		int32_t                                                    HighScore;                                               // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Played;                                                  // 0x0004(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Glitched;                                                // 0x0005(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_87DH[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_X4CB[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (PADDING)
 
 	};
 
@@ -537,7 +538,7 @@ namespace CG
 	public:
 		int32_t                                                    HighScore;                                               // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Played;                                                  // 0x0004(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_H7UZ[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AZMP[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -550,7 +551,7 @@ namespace CG
 	public:
 		int32_t                                                    HighScore;                                               // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Played;                                                  // 0x0004(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_67PG[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HEHN[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -563,7 +564,7 @@ namespace CG
 	public:
 		int32_t                                                    HighScore;                                               // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Played;                                                  // 0x0004(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6068[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B7L6[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -618,7 +619,7 @@ namespace CG
 		struct FPrincessQuestOneSaveData                           PrincessQuestOne;                                        // 0x0028(0x0002) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FPrincessQuestTwoSaveData                           PrincessQuestTwo;                                        // 0x002A(0x0002) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FPrincessQuestThreeSaveData                         PrincessQuestThree;                                      // 0x002C(0x0002) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JWB1[0x2];                                   // 0x002E(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VSK0[0x2];                                   // 0x002E(0x0002) MISSED OFFSET (PADDING)
 
 	};
 
@@ -631,31 +632,12 @@ namespace CG
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       HasViewed;                                               // 0x0008(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PD6E[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z8JE[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int64_t                                                    CollectionTime;                                          // 0x0010(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    GameHour;                                                // 0x0018(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    GameMinute;                                              // 0x001C(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    PlayIteration;                                           // 0x0020(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YP2V[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
-
-	};
-
-	/**
-	 * ScriptStruct fnaf9.FNAFInventorySaveData
-	 * Size -> 0x0088
-	 */
-	struct FFNAFInventorySaveData
-	{
-	public:
-		TArray<struct FFNAFItemCollectInfo>                        InventoryItems;                                          // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FFNAFItemCollectInfo>                        Messages;                                                // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    SecurityLevel;                                           // 0x0020(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    UsedPartyPassCount;                                      // 0x0024(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    NumFlashCharges;                                         // 0x0028(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    FlashlightInStationID;                                   // 0x002C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              TapesListenedTo[0x50];                                   // 0x0030(0x0050) UNKNOWN PROPERTY: SetProperty
-		int32_t                                                    DishesBroken;                                            // 0x0080(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PFR8[0x4];                                   // 0x0084(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JYHM[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -680,7 +662,7 @@ namespace CG
 	public:
 		class FName                                                Name;                                                    // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		fnaf9_EMissionStatus                                       Status;                                                  // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X735[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X4RC[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    InfoState;                                               // 0x000C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<int32_t>                                            CompletedTasks;                                          // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
@@ -722,6 +704,43 @@ namespace CG
 		int32_t                                                    GameIteration;                                           // 0x0004(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    GameHour;                                                // 0x0008(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    GameMinute;                                              // 0x000C(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+
+	};
+
+	/**
+	 * ScriptStruct fnaf9.FNAFInventorySaveData
+	 * Size -> 0x0088
+	 */
+	struct FFNAFInventorySaveData
+	{
+	public:
+		TArray<struct FFNAFItemCollectInfo>                        InventoryItems;                                          // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FFNAFItemCollectInfo>                        Messages;                                                // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    SecurityLevel;                                           // 0x0020(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    UsedPartyPassCount;                                      // 0x0024(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    NumFlashCharges;                                         // 0x0028(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    FlashlightInStationID;                                   // 0x002C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              TapesListenedTo[0x50];                                   // 0x0030(0x0050) UNKNOWN PROPERTY: SetProperty
+		int32_t                                                    DishesBroken;                                            // 0x0080(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_G8XU[0x4];                                   // 0x0084(0x0004) MISSED OFFSET (PADDING)
+
+	};
+
+	/**
+	 * ScriptStruct fnaf9.FNAFAISaveData
+	 * Size -> 0x0068
+	 */
+	struct FFNAFAISaveData
+	{
+	public:
+		bool                                                       bShatteredChica;                                         // 0x0000(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bShatteredRoxy;                                          // 0x0001(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bShatteredMonty;                                         // 0x0002(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bWorldSpawnEnabled;                                      // 0x0003(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bAITeleportEnabled;                                      // 0x0004(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_35WN[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TMap<fnaf9_EFNAFAISpawnType, struct FAnimatronicState>     AnimatronicStates;                                       // 0x0008(0x0050) SaveGame, NativeAccessSpecifierPublic
+		TArray<struct FEndoSaveData>                               Endos;                                                   // 0x0058(0x0010) ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
 
@@ -794,7 +813,7 @@ namespace CG
 		fnaf9_EInventoryItemCategory                               Category;                                                // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		fnaf9_EInventoryItemSurvivalCategory                       SurvivalCategory;                                        // 0x0009(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       PrizeVIP;                                                // 0x000A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MNKV[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VZH7[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FText                                                ItemDisplayName;                                         // 0x0010(0x0018) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		class UTexture2D*                                          ItemIcon;                                                // 0x0028(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UStaticMesh*                                         ItemModel;                                               // 0x0030(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -813,7 +832,7 @@ namespace CG
 		class FText                                                Description;                                             // 0x0020(0x0018) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		unsigned char                                              Sound[0x28];                                             // 0x0038(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       InGame;                                                  // 0x0060(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9W7P[0x7];                                   // 0x0061(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZLUG[0x7];                                   // 0x0061(0x0007) MISSED OFFSET (PADDING)
 
 	};
 
@@ -828,7 +847,7 @@ namespace CG
 		TArray<class FName>                                        TaskNames;                                               // 0x0020(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bValidForSurvival;                                       // 0x0030(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowAllTasks;                                           // 0x0031(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3WLP[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YNVC[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        DependentMissions;                                       // 0x0038(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
@@ -841,7 +860,7 @@ namespace CG
 	{
 	public:
 		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_K8BG[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SW6K[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                PathName;                                                // 0x0004(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
@@ -855,7 +874,7 @@ namespace CG
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0008(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7HBH[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7456[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      NavDistance;                                             // 0x000C(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
@@ -879,7 +898,7 @@ namespace CG
 	struct FConditionResultDelegates
 	{
 	public:
-		unsigned char                                              UnknownData_ZNT6[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7LZJ[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	};
 
@@ -894,7 +913,7 @@ namespace CG
 		bool                                                       bCanEnterExitFreddy;                                     // 0x0001(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCanCallFreddy;                                          // 0x0002(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSickFreddy;                                             // 0x0003(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_98AX[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IL1Z[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              LocationActor[0x28];                                     // 0x0004(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	};
@@ -907,7 +926,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bClockRunning;                                           // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0AR3[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_U3TL[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Hour;                                                    // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Minute;                                                  // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
@@ -930,7 +949,7 @@ namespace CG
 		struct FMissionFreddySettings                              FreddySettings;                                          // 0x0098(0x0030) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FMissionClockSettings                               ClockSettings;                                           // 0x00C8(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bSkipEnabled;                                            // 0x00D4(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NUQN[0x3];                                   // 0x00D5(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DL5K[0x3];                                   // 0x00D5(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -965,9 +984,9 @@ namespace CG
 	{
 	public:
 		fnaf9_EMissionUpdateType                                   UpdateType;                                              // 0x0000(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BZEA[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4489[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                MissionName;                                             // 0x0004(0x0008) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UVZM[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PQB9[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0010(0x0048) BlueprintVisible, NativeAccessSpecifierPublic
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0058(0x0020) BlueprintVisible, NativeAccessSpecifierPublic
 
@@ -982,24 +1001,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         DefaultBrush;                                            // 0x0008(0x0088) Edit, NativeAccessSpecifierPublic
 		TMap<fnaf9_ESWGInputDeviceType, struct FSlateBrush>        PerControllerBrush;                                      // 0x0090(0x0050) Edit, NativeAccessSpecifierPublic
-
-	};
-
-	/**
-	 * ScriptStruct fnaf9.FNAFAISaveData
-	 * Size -> 0x0068
-	 */
-	struct FFNAFAISaveData
-	{
-	public:
-		bool                                                       bShatteredChica;                                         // 0x0000(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bShatteredRoxy;                                          // 0x0001(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bShatteredMonty;                                         // 0x0002(0x0001) BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bWorldSpawnEnabled;                                      // 0x0003(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bAITeleportEnabled;                                      // 0x0004(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ML3W[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TMap<fnaf9_EFNAFAISpawnType, struct FAnimatronicState>     AnimatronicStates;                                       // 0x0008(0x0050) SaveGame, NativeAccessSpecifierPublic
-		TArray<struct FEndoSaveData>                               Endos;                                                   // 0x0058(0x0010) ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
 

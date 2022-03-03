@@ -32,12 +32,12 @@ namespace CG
 		float                                                      Timeline_0_FlickeringIntensity_A1496DB149BC8BBC56B98E96F25145CC; // 0x0254(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Timeline_0_ScreenRadius_A1496DB149BC8BBC56B98E96F25145CC; // 0x0258(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Timeline_0_GlobalIntensity_A1496DB149BC8BBC56B98E96F25145CC; // 0x025C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<Engine_ETimelineDirection>                     Timeline_0__Direction_A1496DB149BC8BBC56B98E96F25145CC;  // 0x0260(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_2H9H[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		Engine_ETimelineDirection                                  Timeline_0__Direction_A1496DB149BC8BBC56B98E96F25145CC;  // 0x0260(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_QJ4H[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTimelineComponent*                                  Timeline_1;                                              // 0x0268(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UMaterialInstanceDynamic*                            DistortMaterial;                                         // 0x0270(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      LUT_Intensity;                                           // 0x0278(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_70SI[0x4];                                   // 0x027C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TF0F[0x4];                                   // 0x027C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UCurveFloat*                                         BiasCurve;                                               // 0x0280(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
@@ -45,7 +45,7 @@ namespace CG
 		void Timeline_0__UpdateFunc();
 		void ReceiveBeginPlay();
 		void Set_Level(float Level);
-		void ExecuteUbergraph_VannyDistortionActor(int EntryPoint);
+		void ExecuteUbergraph_VannyDistortionActor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

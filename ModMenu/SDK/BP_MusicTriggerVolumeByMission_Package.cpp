@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_MusicTriggerVolumeByMission_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.CheckForActiveMissions
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -37,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -56,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.ActivateMusic
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -75,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.DeactivateMusic
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -94,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.OnActiveMissionUpdated
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -120,16 +119,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.BndEvt__TriggerComponent_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MusicTriggerVolumeByMission_C::BndEvt__TriggerComponent_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
+	void ABP_MusicTriggerVolumeByMission_C::BndEvt__TriggerComponent_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -148,7 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.ResetTrigger
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -167,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -186,13 +185,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_MusicTriggerVolumeByMission.BP_MusicTriggerVolumeByMission_C.ExecuteUbergraph_BP_MusicTriggerVolumeByMission
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MusicTriggerVolumeByMission_C::ExecuteUbergraph_BP_MusicTriggerVolumeByMission(int EntryPoint)
+	void ABP_MusicTriggerVolumeByMission_C::ExecuteUbergraph_BP_MusicTriggerVolumeByMission(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

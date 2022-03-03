@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_FC851C1A482D0EB90D351EB182A70816
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_0D5787354BDCA8A4C28C6491ED8B9069
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_E86E69654BE8D46B28661F9414A83F97
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_BEA798F7478DFA35A57250B6505E900F
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_D379C77F42689EAFB9156186575B1F2C
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_D8B7B35C4A76CC07ABEC24807152335A
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Out
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Spotlight Aim Actor
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CutsceneGrateEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -216,7 +216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_LayeredBoneBlend_77BE12994B420B52B517D689753232C8
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CutSceneSpineBlender
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -259,7 +259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_473022F1433570D290E9FD8BDCDCE0BB
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -278,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.FreddyEndIdle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -300,7 +300,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.UpdateLeapInfo
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -326,7 +326,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.LeapLoopEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -348,7 +348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EndoBowlingCrawlEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -367,7 +367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EndoSpawnInBowlingEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -386,7 +386,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanDieEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -408,7 +408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanHackEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -430,7 +430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.RoxyCrying
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -452,7 +452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.FreddyCorrupted
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -474,7 +474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.ForceAnimOverride
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -496,7 +496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EnterFreddyOverrideEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -518,7 +518,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanLeapEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -540,7 +540,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanLieDownEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -562,7 +562,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.IsSickEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -584,7 +584,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanWaveEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -606,7 +606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_17A9306F413DEF9624D3D4836F855D87
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -625,7 +625,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_E36876DF47030BAC38F21E92E906C314
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -644,7 +644,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_4A9829A047F878E86C08CAAD96EA8749
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -663,7 +663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.PoundDoorEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -685,7 +685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.StopScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.LandEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.JumpEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -745,7 +745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.ForceScanStates
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Breakthrough
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -792,7 +792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -811,7 +811,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.RummagingDoneEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -830,7 +830,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.IsNotFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -849,7 +849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.IsFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -868,7 +868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanRummageEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -887,7 +887,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Stun Event
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -909,7 +909,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanRunEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -931,7 +931,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.StartScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -950,7 +950,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -972,7 +972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.OpenDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -991,7 +991,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Open
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1010,7 +1010,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.SearchingDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1029,7 +1029,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Searching
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1051,7 +1051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.TurnEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1073,7 +1073,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1095,7 +1095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.PartsAndServiceGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1117,7 +1117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Off
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1139,7 +1139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.Close
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1161,7 +1161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.TestButton_B
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1180,7 +1180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.TestButton_G
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1199,7 +1199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.TestButton_R
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1218,7 +1218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.TestButton_Y
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1237,7 +1237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.ResetFreddy
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1256,7 +1256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.VoiceBoxSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1278,7 +1278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1297,7 +1297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.VoAnimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1319,7 +1319,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP_AnimGraphNode_TransitionResult_7875F3AC4CFA6AAD15B9DCB01AE4A642
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1338,7 +1338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_Glamrock_Freddy_PartsServ_ABP.RIG_Glamrock_Freddy_PartsServ_ABP_C.ExecuteUbergraph_RIG_Glamrock_Freddy_PartsServ_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

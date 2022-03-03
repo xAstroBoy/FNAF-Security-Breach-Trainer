@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.SpawnFreddy
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.Is Main Game
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.RespawnPlayer
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -83,7 +83,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.Spawn Sequence
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -102,7 +102,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.OnRetry
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -121,7 +121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -140,7 +140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.Setup Survival
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.Survival Mission Startup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.Survival Vanessa Setup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -197,7 +197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.On Respawn Levels Loaded
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -216,7 +216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.FreddyBootedUp
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -235,7 +235,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.End Loading Screen
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void AMainGameStartupSequence_C::End_Loading_Screen()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameStartupSequence.MainGameStartupSequence_C.End Loading Screen");
+		
+		AMainGameStartupSequence_C_End_Loading_Screen_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGameStartupSequence.MainGameStartupSequence_C.ExecuteUbergraph_MainGameStartupSequence
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

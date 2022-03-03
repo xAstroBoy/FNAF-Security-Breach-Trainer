@@ -21,7 +21,7 @@ namespace CG
 	class AOGM_VannyBattle_C : public AMGM_OfficeGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_RX0D[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A3CE[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UBoxComponent*                                       Drop_Trigger;                                            // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     Vanny_Drop;                                              // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -42,16 +42,20 @@ namespace CG
 		bool                                                       Active;                                                  // 0x0400(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		void OnEnd(TEnumAsByte<E_EndMiniGameType_E_EndMiniGameType> EndType);
+		void OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType);
 		void On_Start();
-		void OnFailure_C3E8CEE64F273648654604A1E4026F01();
-		void OnSuccess_C3E8CEE64F273648654604A1E4026F01();
-		void OnFailure_D8EC7FD343756DEFCAD9FBBDE672C6F4(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void OnSuccess_D8EC7FD343756DEFCAD9FBBDE672C6F4(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag);
-		void BndEvt__Drop_Trigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void OnFailure_51304B0B49067B4078771F8EA879D31D();
+		void OnSuccess_51304B0B49067B4078771F8EA879D31D();
+		void OnFailure_09F97D64470242AC12A058B1AC7CE376(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_09F97D64470242AC12A058B1AC7CE376(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnFailure_51304B0B49067B4078771F8E7573F813();
+		void OnSuccess_51304B0B49067B4078771F8E7573F813();
+		void OnFailure_09F97D64470242AC12A058B17176C878(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_09F97D64470242AC12A058B17176C878(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void BndEvt__Drop_Trigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void Vanny_Destroy();
 		void Vanny_Redeem();
-		void ExecuteUbergraph_OGM_VannyBattle(int EntryPoint);
+		void ExecuteUbergraph_OGM_VannyBattle(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

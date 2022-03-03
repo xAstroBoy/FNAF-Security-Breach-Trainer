@@ -34,7 +34,7 @@ namespace CG
 	struct ABP_LazerPlanetManager_C_ExecuteUbergraph_BP_LazerPlanetManager_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

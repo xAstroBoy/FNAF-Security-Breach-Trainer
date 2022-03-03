@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaBehindPlayerBreathing_End_Task.ChicaBehindPlayerBreathing_End_Task_C.ReceiveExecute
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaBehindPlayerBreathing_End_Task.ChicaBehindPlayerBreathing_End_Task_C.ExecuteUbergraph_ChicaBehindPlayerBreathing_End_Task
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -35,7 +35,7 @@ namespace CG
 	 */
 	bool InitSdk()
 	{
-		return InitSdk("fnaf9-Win64-Shipping.exe", 0x42DCA30, 0x42C4080);
+		return InitSdk("fnaf9-Win64-Shipping.exe", 0x42DDCB0, 0x42C5300);
 	}
 
 	// --------------------------------------------------

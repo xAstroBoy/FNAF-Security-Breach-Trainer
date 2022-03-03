@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function HideInActor.HideInActor_C.IsEnterExitPlaying
+	 */
+	struct AHideInActor_C_IsEnterExitPlaying_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function HideInActor.HideInActor_C.GetHiddenPlayer
 	 */
 	struct AHideInActor_C_GetHiddenPlayer_Params
@@ -222,16 +232,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function HideInActor.HideInActor_C.ReceiveTick
-	 */
-	struct AHideInActor_C_ReceiveTick_Params
-	{
-	public:
-		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

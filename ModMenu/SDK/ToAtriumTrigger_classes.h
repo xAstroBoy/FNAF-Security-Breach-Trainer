@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_ToAtriumTrigger(int EntryPoint);
+		void ExecuteUbergraph_ToAtriumTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

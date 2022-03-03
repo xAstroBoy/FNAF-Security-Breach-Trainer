@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Animatronic_ABP_Cutscenes.Animatronic_ABP_Cutscenes_C
-	 * Size -> 0x0000 (FullSize[0x8DE8] - InheritedSize[0x8DE8])
+	 * Size -> 0x0000 (FullSize[0x8E09] - InheritedSize[0x8E09])
 	 */
 	class UAnimatronic_ABP_Cutscenes_C : public UAnimatronic_ABP_MASTER_C
 	{

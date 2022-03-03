@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.GetInstructionOverride
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.On Slide Entered
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.FinishedSliding
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.ExecuteUbergraph_Slide_AtriumtoKitchen_Vent
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A70060
+	 * 		Offset -> 0x00A700A0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.SetMotionSourceForHand
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F770
+	 * 		Offset -> 0x00A6F7B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.SetControllerTrackingMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FF20
+	 * 		Offset -> 0x00A6FF60
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayLEDPattern
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FD70
+	 * 		Offset -> 0x00A6FDB0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayLEDEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FC80
+	 * 		Offset -> 0x00A6FCC0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayHapticPattern
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FAD0
+	 * 		Offset -> 0x00A6FB10
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerLEDEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F990
+	 * 		Offset -> 0x00A6F9D0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerLED
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -225,7 +225,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F890
+	 * 		Offset -> 0x00A6F8D0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerHapticFeedback
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63090
+	 * 		Offset -> 0x00A630D0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.MaxSupportedMagicLeapControllers
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -276,7 +276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F670
+	 * 		Offset -> 0x00A6F6B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.IsMLControllerConnected
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -301,7 +301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F870
+	 * 		Offset -> 0x00A6F8B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.InvertControllerMapping
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -321,7 +321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F7F0
+	 * 		Offset -> 0x00A6F830
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetMotionSourceForHand
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -346,7 +346,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F770
+	 * 		Offset -> 0x00A6F7B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetMLControllerType
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -371,7 +371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F6F0
+	 * 		Offset -> 0x00A6F730
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetHandForMotionSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -396,7 +396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F670
+	 * 		Offset -> 0x00A6F6B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerType
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F640
+	 * 		Offset -> 0x00A6F680
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerTrackingMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -443,7 +443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F570
+	 * 		Offset -> 0x00A6F5B0
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerMapping
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

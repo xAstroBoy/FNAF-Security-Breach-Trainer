@@ -64,6 +64,16 @@ namespace CG
 	};
 
 	/**
+	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.OnMediaOpened
+	 */
+	struct UNewGameCinematicPlayerUI_C_OnMediaOpened_Params
+	{
+	public:
+		class FString                                              OpenedUrl;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.ExecuteUbergraph_NewGameCinematicPlayerUI
 	 */
 	struct UNewGameCinematicPlayerUI_C_ExecuteUbergraph_NewGameCinematicPlayerUI_Params

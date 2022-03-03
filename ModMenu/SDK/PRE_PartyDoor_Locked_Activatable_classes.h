@@ -21,18 +21,18 @@ namespace CG
 	class APRE_PartyDoor_Locked_Activatable_C : public APRE_PartyDoor_Long_C
 	{
 	public:
-		unsigned char                                              UnknownData_RZK6[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DZMO[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0348(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		TEnumAsByte<ActivatableState_EActivatableState>            State;                                                   // 0x0350(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		ActivatableState_EActivatableState                         State;                                                   // 0x0350(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void ActivateObject(class AActor* Activator);
 		void SetActivated();
 		void OnPlayerInteract_2(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void ExecuteUbergraph_PRE_PartyDoor_Locked_Activatable(int EntryPoint);
+		void ExecuteUbergraph_PRE_PartyDoor_Locked_Activatable(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

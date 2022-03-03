@@ -28,7 +28,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_Escalator_Trigger(int EntryPoint);
+		void ExecuteUbergraph_Escalator_Trigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

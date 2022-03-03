@@ -32,12 +32,12 @@ namespace CG
 		float                                                      P_WallMaxDistance;                                       // 0x026C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      P_DeltaSeconds;                                          // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       P_Open;                                                  // 0x0274(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_GA04[0x3];                                   // 0x0275(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SZSX[0x3];                                   // 0x0275(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      P_CurrentOpenPercent;                                    // 0x0278(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       AutoSetup;                                               // 0x027C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn
-		unsigned char                                              UnknownData_VHG7[0x3];                                   // 0x027D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YWUV[0x3];                                   // 0x027D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              TransformReference[0x28];                                // 0x027D(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		unsigned char                                              UnknownData_RSOJ[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DK5L[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          TransformFallback;                                       // 0x02B0(0x0030) Edit, BlueprintVisible, IsPlainOldData, NoDestructor
 		struct FS_Elevator_DoorSweep                               Settings;                                                // 0x02E0(0x0028) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
@@ -50,7 +50,7 @@ namespace CG
 		void UserConstructionScript();
 		void ReceiveTick(float DeltaSeconds);
 		void TriggerClose();
-		void ExecuteUbergraph_A_Elevator_DoorSweep(int EntryPoint);
+		void ExecuteUbergraph_A_Elevator_DoorSweep(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

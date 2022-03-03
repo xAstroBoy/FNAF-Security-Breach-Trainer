@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Show Bullet Hole On Right Side
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Show Bullet Hole On Left Side
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.SetBulletHoleArrays
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -79,7 +79,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.SetUiBoxes
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.TimeToClock
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -119,7 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Finished_565209FF4FA8A1F49BEDA5817DE676B6
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Finished_E74EDFA44B5A2D70CC1C6982C6122863
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Finished_B5851330420BF607E3D4F8A157310C95
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.PlayerHit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -198,7 +198,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.UpdateValues
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -217,7 +217,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Hit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -236,7 +236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.DamageIndicator
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -255,7 +255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.HideBullets_Left
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -293,7 +293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -315,7 +315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.HideBullets_Right
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -334,7 +334,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.GameEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -353,7 +353,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.ForceKill
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -375,7 +375,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.LaserHit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -399,7 +399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.GameExit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -418,7 +418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.CapturedTheFlag
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.LostTheFlag
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -456,7 +456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.DestroyThisHUD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -478,7 +478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.GameStart
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -497,7 +497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.TriggerYouWin
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -516,7 +516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.TriggerGameOver
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -535,7 +535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function W_LaserOverLay.W_LaserOverLay_C.ExecuteUbergraph_W_LaserOverLay
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

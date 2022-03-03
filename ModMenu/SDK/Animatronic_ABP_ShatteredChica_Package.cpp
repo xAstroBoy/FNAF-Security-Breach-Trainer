@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.footstep
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.AnimNotify_R_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.AnimNotify_L_Foot_Down
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.ExecuteUbergraph_Animatronic_ABP_ShatteredChica
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShootingBallMontyBoss.ShootingBallMontyBoss_C.ReceiveHit
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -48,7 +48,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShootingBallMontyBoss.ShootingBallMontyBoss_C.ExecuteUbergraph_ShootingBallMontyBoss
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

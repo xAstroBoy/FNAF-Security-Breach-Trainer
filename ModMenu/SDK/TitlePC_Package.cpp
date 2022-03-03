@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.InpActEvt_Escape_K2Node_InputKeyEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.InpActEvt_AnyKey_K2Node_InputKeyEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.OnToggleLocalizationQA
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -141,7 +141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -163,7 +163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -182,7 +182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.OnDebugSequenceEntered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -201,7 +201,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitlePC.TitlePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3
+	 * 		Flags  -> (BlueprintEvent)
+	 * Parameters:
+	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ATitlePC_C::InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3(float AxisValue)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitlePC.TitlePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3");
+		
+		ATitlePC_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3_Params params {};
+		params.AxisValue = AxisValue;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitlePC.TitlePC_C.ExecuteUbergraph_TitlePC
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void On_12_30();
-		void ExecuteUbergraph_LobbyFirstHourManager(int EntryPoint);
+		void ExecuteUbergraph_LobbyFirstHourManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

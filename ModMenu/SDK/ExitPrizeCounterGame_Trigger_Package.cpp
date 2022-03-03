@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ExitPrizeCounterGame_Trigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ExitPrizeCounterGame_Trigger.ExitPrizeCounterGame_Trigger_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ExitPrizeCounterGame_Trigger.ExitPrizeCounterGame_Trigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ExitPrizeCounterGame_Trigger.ExitPrizeCounterGame_Trigger_C.ExecuteUbergraph_ExitPrizeCounterGame_Trigger
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AExitPrizeCounterGame_Trigger_C::ExecuteUbergraph_ExitPrizeCounterGame_Trigger(int EntryPoint)
+	void AExitPrizeCounterGame_Trigger_C::ExecuteUbergraph_ExitPrizeCounterGame_Trigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

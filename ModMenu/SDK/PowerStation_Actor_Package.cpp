@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.GetPlayerInteractor
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.ForceEnterPowerStation
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.SetPlayerCollision
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -77,7 +77,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.PlungerMovement__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.PlungerMovement__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.DoorMovement__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.DoorMovement__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.BndEvt__Box1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -236,7 +236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.Setup From Load
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -255,7 +255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.PowerPump
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.DoorOpenClose
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -296,7 +296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.TriggerFreddyPawnAnimation
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -315,7 +315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -337,7 +337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.BndEvt__FreddyTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -365,7 +365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.BndEvt__WavingTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -393,7 +393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.PlayDoorOpenSFXCinematic
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -412,7 +412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.PlayDoorCloseSFXCinematic
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -431,7 +431,48 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.OnOverlapFreddyTrigger
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class AActor*                                      Other_Actor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void APowerStation_Actor_C::OnOverlapFreddyTrigger(class AActor* Other_Actor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PowerStation_Actor.PowerStation_Actor_C.OnOverlapFreddyTrigger");
+		
+		APowerStation_Actor_C_OnOverlapFreddyTrigger_Params params {};
+		params.Other_Actor = Other_Actor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.FreddyReachedPowerStation
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void APowerStation_Actor_C::FreddyReachedPowerStation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PowerStation_Actor.PowerStation_Actor_C.FreddyReachedPowerStation");
+		
+		APowerStation_Actor_C_FreddyReachedPowerStation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PowerStation_Actor.PowerStation_Actor_C.ExecuteUbergraph_PowerStation_Actor
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

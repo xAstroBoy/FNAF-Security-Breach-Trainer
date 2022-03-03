@@ -21,6 +21,7 @@ namespace CG
 	class UHideAnimInterface_C : public UInterface
 	{
 	public:
+		void SetPeek(bool ShouldPeek);
 		void SetAnim(class UAnimSequence* Animation);
 		void SetEnterRotation(class APawn* PlayerPawn);
 		void StartSearch(class APawn* SearcherPawn);

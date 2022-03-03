@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LobbyFirstHourManager_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LobbyFirstHourManager.LobbyFirstHourManager_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LobbyFirstHourManager.LobbyFirstHourManager_C.On 12:30
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LobbyFirstHourManager.LobbyFirstHourManager_C.ExecuteUbergraph_LobbyFirstHourManager
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALobbyFirstHourManager_C::ExecuteUbergraph_LobbyFirstHourManager(int EntryPoint)
+	void ALobbyFirstHourManager_C::ExecuteUbergraph_LobbyFirstHourManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

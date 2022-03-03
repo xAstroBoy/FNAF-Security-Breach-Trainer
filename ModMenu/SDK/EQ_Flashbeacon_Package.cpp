@@ -12,7 +12,31 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.Get Anim Item Type
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		GregoryAnimItemEnum_EGregoryAnimItemEnum           AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AEQ_Flashbeacon_C::Get_Anim_Item_Type(GregoryAnimItemEnum_EGregoryAnimItemEnum* AnimType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashbeacon.EQ_Flashbeacon_C.Get Anim Item Type");
+		
+		AEQ_Flashbeacon_C_Get_Anim_Item_Type_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (AnimType != nullptr)
+			*AnimType = params.AnimType;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.PutAway
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.PullOut
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.PrimaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.ResetCamUse
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -88,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.Recharging
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -107,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.RechargeDone
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -126,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashbeacon.EQ_Flashbeacon_C.ExecuteUbergraph_EQ_Flashbeacon
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

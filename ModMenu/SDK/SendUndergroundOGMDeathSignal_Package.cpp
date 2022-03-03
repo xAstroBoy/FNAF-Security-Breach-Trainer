@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SendUndergroundOGMDeathSignal.SendUndergroundOGMDeathSignal_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SendUndergroundOGMDeathSignal.SendUndergroundOGMDeathSignal_C.ExecuteUbergraph_SendUndergroundOGMDeathSignal
 	 * 		Flags  -> (Final)
 	 * Parameters:

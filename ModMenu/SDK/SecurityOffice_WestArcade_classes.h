@@ -21,7 +21,7 @@ namespace CG
 	class ASecurityOffice_WestArcade_C : public AMGM_OfficeGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_VS5N[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MECY[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UBoxComponent*                                       Monty_Post_Game_Spawn;                                   // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -37,7 +37,7 @@ namespace CG
 		class AButtonBase_C*                                       DJButton_6;                                              // 0x0318(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    NumButtonsActivated;                                     // 0x0320(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                MissionName;                                             // 0x0324(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_SDZ3[0x4];                                   // 0x032C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M306[0x4];                                   // 0x032C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Animation_Land_Mines[0x10];                              // 0x032C(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		class ADJMusicMan_C*                                       Spawned_DJ_Music_Man;                                    // 0x0340(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Hallway_Chase_Spawn[0x28];                               // 0x0348(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -51,11 +51,11 @@ namespace CG
 		unsigned char                                              Monty_Patrol_Path[0x28];                                 // 0x0420(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class APawn*                                               Monty;                                                   // 0x0448(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanRepair;                                               // 0x0450(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NDOP[0x7];                                   // 0x0451(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G6QQ[0x7];                                   // 0x0451(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ADJMusicMan_Booth_C*                                 DJMM_Booth;                                              // 0x0458(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Chica_Patrol_Path[0x28];                                 // 0x0460(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      MusicState;                                              // 0x0488(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_WOUV[0x4];                                   // 0x048C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JZ0C[0x4];                                   // 0x048C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              MusicHandler[0x28];                                      // 0x048C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:

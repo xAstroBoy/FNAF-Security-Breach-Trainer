@@ -26,7 +26,7 @@ namespace CG
 		unsigned char                                              DoorActors[0x10];                                        // 0x0238(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		int32_t                                                    SettingSecurity;                                         // 0x0248(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                SettingNewItem;                                          // 0x024C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_C4KN[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z6TL[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnDoorsOpened;                                           // 0x0258(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		unsigned char                                              DoorsNeedingUpdate[0x50];                                // 0x0268(0x0050) UNKNOWN PROPERTY: SetProperty
 		bool                                                       LockState;                                               // 0x02B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor

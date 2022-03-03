@@ -39,13 +39,13 @@ namespace CG
 		class FName                                                KeyName;                                                 // 0x02C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 		bool                                                       AddNewMapping;                                           // 0x02D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       IsSelectingKey1;                                         // 0x02D1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_AEAN[0x6];                                   // 0x02D2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZW4I[0x6];                                   // 0x02D2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKey                                                Default_PC_Key1;                                         // 0x02D8(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FKey                                                Default_PC_Key2;                                         // 0x02F0(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FKey                                                Default_Gamepad_Key1;                                    // 0x0308(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FKey                                                Default_Gamepad_Key2;                                    // 0x0320(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		bool                                                       IsSelectingKey2;                                         // 0x0338(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_GSAO[0x7];                                   // 0x0339(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YOL0[0x7];                                   // 0x0339(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UOptions_ControlsUI_C*                               OptionsControlsUI;                                       // 0x0340(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TMap<struct FKey, class FString>                           DisplayArray_3;                                          // 0x0348(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		struct FKey                                                TempKey1;                                                // 0x0398(0x0018) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
@@ -73,6 +73,7 @@ namespace CG
 		void ForceHideImage(bool HideKey1);
 		void UpdateFnafInstanceMappings();
 		void RemoveSpecificBindings(const struct FKey& KeyToRemove);
+		void ReapplyPreviousMappings();
 		void ExecuteUbergraph_WI_ButtonRemapping(int32_t EntryPoint);
 		void OnHovered__DelegateSignature();
 		void OnClicked__DelegateSignature();

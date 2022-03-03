@@ -21,7 +21,7 @@ namespace CG
 	class AShatteredRoxy_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_KRH7[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BIYB[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:

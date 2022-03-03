@@ -21,6 +21,8 @@ namespace CG
 	class UCinematicSequence_FunctionsBP_C : public UBlueprintFunctionLibrary
 	{
 	public:
+		void STATIC_ApplyPlayerCamSettingsToCineComponent(class UCameraComponent* CameraComponent, class UObject* __WorldContext);
+		void STATIC_ApplyPlayerCamSettingsToCine(class ACineCameraActor* CineCamera, class UObject* __WorldContext);
 		void STATIC_MatchPlayerCamPPSettings(class UCameraComponent* GameplayCamera, class UCineCameraComponent* CinemaCamera, class UObject* __WorldContext);
 		void STATIC_SetDisableControllerInputs(bool DisableActionInput, bool IgnoreLookInput, bool IgnoreMoveInput, class UObject* __WorldContext);
 		void STATIC_MatchPlayerCameraSettings(class UCameraComponent* TargetGamePlayCamera, class UCineCameraComponent* TargetCinemaCamera, class UObject* __WorldContext);

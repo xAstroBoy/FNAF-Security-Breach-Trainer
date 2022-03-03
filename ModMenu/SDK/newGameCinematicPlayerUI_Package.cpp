@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.StopIntroVideo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.NewGameIntroVideo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -77,7 +77,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.MakeTextVisibleAgain
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.StartTextFadeAway
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.SetText
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -134,7 +134,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.OnMediaOpened
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FString                                      OpenedUrl                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	 */
+	void UNewGameCinematicPlayerUI_C::OnMediaOpened(const class FString& OpenedUrl)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.OnMediaOpened");
+		
+		UNewGameCinematicPlayerUI_C_OnMediaOpened_Params params {};
+		params.OpenedUrl = OpenedUrl;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.ExecuteUbergraph_NewGameCinematicPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		SWGPlatformUtil_ESWGPlatform                               BuildPlatform;                                           // 0x0038(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_R8AR[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T3OU[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

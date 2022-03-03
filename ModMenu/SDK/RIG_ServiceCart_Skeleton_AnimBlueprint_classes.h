@@ -28,7 +28,7 @@ namespace CG
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0368(0x0020)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0388(0x0020)
 		float                                                      Yaw_Rot;                                                 // 0x03A8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_JG8Q[0x4];                                   // 0x03AC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GNCR[0x4];                                   // 0x03AC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   PlayAnim;                                                // 0x03B0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanPlay;                                                 // 0x03B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -36,8 +36,9 @@ namespace CG
 		void AnimGraph(struct FPoseLink* AnimGraph);
 		void SetEnterRotation(class APawn* PlayerPawn);
 		void StartSearch(class APawn* SearcherPawn);
+		void SetPeek(bool ShouldPeek);
 		void SetAnim(class UAnimSequence* Animation);
-		void ExecuteUbergraph_RIG_ServiceCart_Skeleton_AnimBlueprint(int EntryPoint);
+		void ExecuteUbergraph_RIG_ServiceCart_Skeleton_AnimBlueprint(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

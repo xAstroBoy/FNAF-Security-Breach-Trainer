@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEvent_EnsureConstants_MultiplePositions
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEventWithSubtitles_EnsureConstants_MultiplePositions
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEventWithSubtitles_EnsureConstants
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

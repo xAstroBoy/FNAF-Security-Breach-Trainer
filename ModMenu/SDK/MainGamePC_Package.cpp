@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetListenerOverridePosition
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -42,7 +42,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.EnableListenerOverride
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetListenerPosition
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SaveGameCallbackForSettings
 	 * 		Flags  -> (Private, BlueprintCallable, BlueprintEvent)
 	 */
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SaveGameSettings
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateLastGameHourPlayed
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ResetViewTetheringOffsets
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateControlRotation
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetViewTethering
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -218,7 +218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.LoadPlayerSettings
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -237,7 +237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.EnableAllInputs
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -256,7 +256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.RestoreFreddyMovement
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -278,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ForceFreddyMovement
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -305,7 +305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.AfterUnpause
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.AfterPause
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -343,7 +343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetLatestDistortionLevel
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -364,7 +364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetupDebugHUD
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -383,7 +383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetupPlayerHUD
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -402,7 +402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Lower Watch
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Raise Watch
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -440,7 +440,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_18
+	 * 		Flags  -> (BlueprintEvent)
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_18(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_18");
+		
+		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_18_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_17
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -462,19 +484,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_16
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_16
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_16(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_SecondaryAction_K2Node_InputActionEvent_16(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_16");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_16");
 		
-		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_16_Params params {};
+		AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_16_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -484,19 +506,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_15
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_15
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_SecondaryAction_K2Node_InputActionEvent_15(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Switch__Item_1_K2Node_InputActionEvent_15(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_15");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_15");
 		
-		AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_15_Params params {};
+		AMainGamePC_C_InpActEvt_Switch__Item_1_K2Node_InputActionEvent_15_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -506,19 +528,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_14
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_14
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_1_K2Node_InputActionEvent_14(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Switch__Item_2_K2Node_InputActionEvent_14(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_14");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_14");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_1_K2Node_InputActionEvent_14_Params params {};
+		AMainGamePC_C_InpActEvt_Switch__Item_2_K2Node_InputActionEvent_14_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -528,19 +550,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_13
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_13
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_2_K2Node_InputActionEvent_13(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Switch__Item_3_K2Node_InputActionEvent_13(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_13");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_13");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_2_K2Node_InputActionEvent_13_Params params {};
+		AMainGamePC_C_InpActEvt_Switch__Item_3_K2Node_InputActionEvent_13_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -550,19 +572,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_12
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_12
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_3_K2Node_InputActionEvent_12(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_12(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_12");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_12");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_3_K2Node_InputActionEvent_12_Params params {};
+		AMainGamePC_C_InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_12_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -572,19 +594,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_11
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_11
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_11(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_11(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_11");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_11");
 		
-		AMainGamePC_C_InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_11_Params params {};
+		AMainGamePC_C_InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_11_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -594,19 +616,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_10
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_10
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_10(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Menu_K2Node_InputActionEvent_10(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_10");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_10");
 		
-		AMainGamePC_C_InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_10_Params params {};
+		AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_10_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -616,29 +638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_9
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	 */
-	void AMainGamePC_C::InpActEvt_Menu_K2Node_InputActionEvent_9(const struct FKey& Key)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_9");
-		
-		AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_9_Params params {};
-		params.Key = Key;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_5
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -660,19 +660,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_8
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_9
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Crouch_K2Node_InputActionEvent_8(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Crouch_K2Node_InputActionEvent_9(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_8");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_9");
 		
-		AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_8_Params params {};
+		AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_9_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_L_K2Node_InputKeyEvent_4
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -704,7 +704,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_8
+	 * 		Flags  -> (BlueprintEvent)
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_8(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_8");
+		
+		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_8_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_7
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -726,29 +748,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_6
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	 */
-	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_6(const struct FKey& Key)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_6");
-		
-		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_6_Params params {};
-		params.Key = Key;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -770,7 +770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -792,19 +792,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_5
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_6
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_CallFreddy_K2Node_InputActionEvent_5(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_CallFreddy_K2Node_InputActionEvent_6(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_5");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_6");
 		
-		AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_5_Params params {};
+		AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_6_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -814,7 +814,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_5
+	 * 		Flags  -> (BlueprintEvent)
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_5(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_5");
+		
+		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_5_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_4
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -836,19 +858,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_3
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_3(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Throw_Object_K2Node_InputActionEvent_3(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_3");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_3");
 		
-		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_3_Params params {};
+		AMainGamePC_C_InpActEvt_Throw_Object_K2Node_InputActionEvent_3_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -858,19 +880,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_2
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Throw_Object_K2Node_InputActionEvent_2(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_2(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_2");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2");
 		
-		AMainGamePC_C_InpActEvt_Throw_Object_K2Node_InputActionEvent_2_Params params {};
+		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_2_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -880,7 +902,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -902,7 +924,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_G_K2Node_InputKeyEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -924,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnFailure_6EE19B10415A6B32590DEAA77ED60D09
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -950,7 +972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSuccess_6EE19B10415A6B32590DEAA77ED60D09
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -976,7 +998,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnFailure_FBC690684B1BE226BF1F8C8CFDCC99F5
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -995,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSuccess_FBC690684B1BE226BF1F8C8CFDCC99F5
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1014,7 +1036,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnGameDataLoaded
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1036,7 +1058,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.PostGameLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1055,7 +1077,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.PostSaveGame
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1074,7 +1096,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_158
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1096,7 +1118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_173
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1118,7 +1140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPlayerKilled
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1137,7 +1159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1156,7 +1178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPlayerWin
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1175,7 +1197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_182
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1197,7 +1219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_193
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1219,7 +1241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_TurnRate_K2Node_InputAxisEvent_39
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1241,7 +1263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_54
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1263,7 +1285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnRetry
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1282,7 +1304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.LowerWatch
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1301,7 +1323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleFlightMode
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1320,7 +1342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnEnter_SaveGameTrigger
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1339,7 +1361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleDevUI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1358,7 +1380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Enter Flying Mode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1377,7 +1399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set Flying Collision
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1399,7 +1421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSaveGameSelected
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1418,7 +1440,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set Flying Speed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1440,7 +1462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleCinemaMode
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1459,7 +1481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceiveUnPossess
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -1481,7 +1503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceivePossess
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -1503,7 +1525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnTriggerVannyScare
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1522,7 +1544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnCheckpointSave
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1544,7 +1566,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnCheckpointLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1566,7 +1588,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.On Possessed Pawn Destroyed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1588,7 +1610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1610,7 +1632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_OptionsUp_K2Node_InputAxisEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1632,7 +1654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_OptionsLeft_K2Node_InputAxisEvent_6
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1654,7 +1676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnStoreGameData
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1676,7 +1698,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Distortion
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1700,7 +1722,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Stop Distortion
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1719,7 +1741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.DebugCloseUI
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1738,7 +1760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GiveVIPAchievement
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -1757,7 +1779,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_ZoomSecurityCamera_K2Node_InputAxisEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1779,7 +1801,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ExecuteUbergraph_MainGamePC
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -1801,7 +1823,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSettingsSaved__DelegateSignature
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class USaveGameSettings_C*                         Settings                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::OnSettingsSaved__DelegateSignature(class USaveGameSettings_C* Settings)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.OnSettingsSaved__DelegateSignature");
+		
+		AMainGamePC_C_OnSettingsSaved__DelegateSignature_Params params {};
+		params.Settings = Settings;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSkip__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1820,7 +1864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPossessedPawnChanged__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

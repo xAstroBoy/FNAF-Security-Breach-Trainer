@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass PlayerAndAIHideInActor.PlayerAndAIHideInActor_C
-	 * Size -> 0x0024 (FullSize[0x0349] - InheritedSize[0x0325])
+	 * Size -> 0x0023 (FullSize[0x0349] - InheritedSize[0x0326])
 	 */
 	class APlayerAndAIHideInActor_C : public AHideInActor_C
 	{
 	public:
-		unsigned char                                              UnknownData_J2OD[0x3];                                   // 0x0325(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FC5P[0x2];                                   // 0x0326(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0328(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UChildActorComponent*                                AIHideCue;                                               // 0x0330(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UBillboardComponent*                                 AIReleasePosition;                                       // 0x0338(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -33,9 +33,9 @@ namespace CG
 		class AActor* GetHideCueActor();
 		void GetHideLocationAndRotation(struct FVector* Location, struct FRotator* Rotation);
 		bool IsPlayerInAttackRange();
-		void BndEvt__PlayerAttackDetector_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-		void BndEvt__PlayerAttackDetector_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex);
-		void ExecuteUbergraph_PlayerAndAIHideInActor(int EntryPoint);
+		void BndEvt__PlayerAttackDetector_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__PlayerAttackDetector_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
+		void ExecuteUbergraph_PlayerAndAIHideInActor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

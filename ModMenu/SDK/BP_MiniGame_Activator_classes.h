@@ -27,17 +27,17 @@ namespace CG
 		class USphereComponent*                                    Sphere;                                                  // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0250(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		TEnumAsByte<E_MiniGame_Activator_Type_E_MiniGame_Activator_Type> Type;                                                    // 0x0251(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		E_MiniGame_Activator_Type_E_MiniGame_Activator_Type        Type;                                                    // 0x0251(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
 		void CanDeactivate(bool* CanDeactivate);
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
 		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
@@ -48,7 +48,7 @@ namespace CG
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void LoadMiniGolfCourse(int CourseIndex);
+		void LoadMiniGolfCourse(int32_t CourseIndex);
 		void Load_Mini_Game_Level(const class FName& LevelName);
 		void DeactivateObject(class AActor* Deactivator);
 		void SetActivated();
@@ -56,7 +56,7 @@ namespace CG
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void ReceiveActorEndOverlap(class AActor* OtherActor);
 		void ActivateObject(class AActor* Activator);
-		void ExecuteUbergraph_BP_MiniGame_Activator(int EntryPoint);
+		void ExecuteUbergraph_BP_MiniGame_Activator(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

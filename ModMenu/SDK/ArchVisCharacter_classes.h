@@ -49,7 +49,7 @@ namespace CG
 		float                                                      WalkingFriction;                                         // 0x063C(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      WalkingSpeed;                                            // 0x0640(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      WalkingAcceleration;                                     // 0x0644(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZF18[0x18];                                  // 0x0648(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YFBM[0x18];                                  // 0x0648(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

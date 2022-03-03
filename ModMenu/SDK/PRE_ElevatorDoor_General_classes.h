@@ -29,7 +29,7 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void ForceDoorClose();
 		void ForceDoorOpen();
-		void ExecuteUbergraph_PRE_ElevatorDoor_General(int EntryPoint);
+		void ExecuteUbergraph_PRE_ElevatorDoor_General(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VanessaSpawnPoint_Package.h"
 
 namespace CG
 {

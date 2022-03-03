@@ -188,6 +188,23 @@ namespace CG
 	};
 
 	/**
+	 * Function PowerStation_Actor.PowerStation_Actor_C.OnOverlapFreddyTrigger
+	 */
+	struct APowerStation_Actor_C_OnOverlapFreddyTrigger_Params
+	{
+	public:
+		class AActor*                                              Other_Actor;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PowerStation_Actor.PowerStation_Actor_C.FreddyReachedPowerStation
+	 */
+	struct APowerStation_Actor_C_FreddyReachedPowerStation_Params
+	{
+	};
+
+	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.ExecuteUbergraph_PowerStation_Actor
 	 */
 	struct APowerStation_Actor_C_ExecuteUbergraph_PowerStation_Actor_Params

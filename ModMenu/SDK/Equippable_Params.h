@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Equippable.Equippable_C.Get Anim Item Type
+	 */
+	struct AEquippable_C_Get_Anim_Item_Type_Params
+	{
+	public:
+		GregoryAnimItemEnum_EGregoryAnimItemEnum                   AnimType;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function Equippable.Equippable_C.PullOut
 	 */
 	struct AEquippable_C_PullOut_Params

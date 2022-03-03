@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "MAP_WorldAmbience_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MAP_WorldAmbience.MAP_WorldAmbience_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,13 +31,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MAP_WorldAmbience.MAP_WorldAmbience_C.ExecuteUbergraph_MAP_WorldAmbience
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMAP_WorldAmbience_C::ExecuteUbergraph_MAP_WorldAmbience(int EntryPoint)
+	void AMAP_WorldAmbience_C::ExecuteUbergraph_MAP_WorldAmbience(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

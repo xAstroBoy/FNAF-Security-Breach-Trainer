@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Timeline_0__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Timeline_0__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Timeline_1__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Timeline_1__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Timeline_1__NewTrack_2__EventFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.On Jumpscare Kill Timer Up
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.ReceivePossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -170,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Stop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -189,7 +189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.Possess Gregory
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -208,7 +208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -230,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumpscarePawn.JumpscarePawn_C.ExecuteUbergraph_JumpscarePawn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01ED82B0
+	 * 		Offset -> 0x01ED8F90
 	 * 		Name   -> Function StaticMeshDescription.StaticMeshDescription.SetVertexInstanceUV
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01ED81D0
+	 * 		Offset -> 0x01ED8EB0
 	 * 		Name   -> Function StaticMeshDescription.StaticMeshDescription.SetPolygonGroupMaterialSlotName
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01ED8100
+	 * 		Offset -> 0x01ED8DE0
 	 * 		Name   -> Function StaticMeshDescription.StaticMeshDescription.GetVertexInstanceUV
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01ED7DD0
+	 * 		Offset -> 0x01ED8AB0
 	 * 		Name   -> Function StaticMeshDescription.StaticMeshDescription.CreateCube
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:

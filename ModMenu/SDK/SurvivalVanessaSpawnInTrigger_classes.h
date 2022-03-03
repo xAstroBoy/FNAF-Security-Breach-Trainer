@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_SurvivalVanessaSpawnInTrigger(int EntryPoint);
+		void ExecuteUbergraph_SurvivalVanessaSpawnInTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

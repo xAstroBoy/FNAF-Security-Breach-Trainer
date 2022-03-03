@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass Stroller_HidePoint.Stroller_HidePoint_C
-	 * Size -> 0x0033 (FullSize[0x0358] - InheritedSize[0x0325])
+	 * Size -> 0x0032 (FullSize[0x0358] - InheritedSize[0x0326])
 	 */
 	class AStroller_HidePoint_C : public AHideInActor_C
 	{
 	public:
-		unsigned char                                              UnknownData_R5J9[0x3];                                   // 0x0325(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Y7TD[0x2];                                   // 0x0326(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0328(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UArrowComponent*                                     Arrow1;                                                  // 0x0330(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USpotLightComponent*                                 SpotLight;                                               // 0x0338(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -31,9 +31,10 @@ namespace CG
 
 	public:
 		void GetSkeletalMesh(class USkeletalMeshComponent** SkeletalMesh);
-		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
+		void ReceiveBeginPlay();
 		void OnPlayerLeave();
-		void ExecuteUbergraph_Stroller_HidePoint(int EntryPoint);
+		void OnPlayerHide(class ACharacter* PlayerCharacter);
+		void ExecuteUbergraph_Stroller_HidePoint(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

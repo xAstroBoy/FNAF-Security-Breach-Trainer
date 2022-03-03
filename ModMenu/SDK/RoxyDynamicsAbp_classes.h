@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		unsigned char                                              UnknownData_XKP5[0x8];                                   // 0x0278(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5YB5[0x8];                                   // 0x0278(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_5;                            // 0x0280(0x0440)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_4;                            // 0x06C0(0x0440)
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_3;                          // 0x0B00(0x0078)
@@ -32,7 +32,7 @@ namespace CG
 		struct FAnimNode_ApplyAdditive                             AnimGraphNode_ApplyAdditive;                             // 0x0C78(0x00C8)
 		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0D40(0x0020)
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x0D60(0x0078)
-		unsigned char                                              UnknownData_S2ZN[0x8];                                   // 0x0DD8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_N0UV[0x8];                                   // 0x0DD8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_3;                            // 0x0DE0(0x0440)
 		struct FAnimNode_LinkedInputPose                           AnimGraphNode_LinkedInputPose;                           // 0x1220(0x0078)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x1298(0x0020)
@@ -40,11 +40,11 @@ namespace CG
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x1378(0x0078)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_2;                            // 0x13F0(0x0440)
 		struct FAnimNode_Constraint                                AnimGraphNode_Constraint;                                // 0x1830(0x0108)
-		unsigned char                                              UnknownData_3W38[0x8];                                   // 0x1938(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_46D0[0x8];                                   // 0x1938(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics;                              // 0x1940(0x0440)
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x1D80(0x0030)
 		bool                                                       AnimDynamics_Roxy;                                       // 0x1DB0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BYCD[0x3];                                   // 0x1DB1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CY7M[0x3];                                   // 0x1DB1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      TailDynamicAlpha;                                        // 0x1DB4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      HairDynamicAlpha;                                        // 0x1DB8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 

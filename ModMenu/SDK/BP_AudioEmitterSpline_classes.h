@@ -29,7 +29,7 @@ namespace CG
 		float                                                      FalloffDistance;                                         // 0x0254(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      TickInterval;                                            // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       bSoundIsActive;                                          // 0x025C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_5I8B[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EF23[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              OcclusionTrace[0x28];                                    // 0x025D(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       EmitterPlaying;                                          // 0x0288(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
@@ -39,7 +39,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
 		void ToggleInRange(bool InRange);
-		void ExecuteUbergraph_BP_AudioEmitterSpline(int EntryPoint);
+		void ExecuteUbergraph_BP_AudioEmitterSpline(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

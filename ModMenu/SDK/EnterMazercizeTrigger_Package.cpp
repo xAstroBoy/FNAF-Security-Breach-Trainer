@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EnterMazercizeTrigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EnterMazercizeTrigger.EnterMazercizeTrigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,13 +31,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EnterMazercizeTrigger.EnterMazercizeTrigger_C.ExecuteUbergraph_EnterMazercizeTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEnterMazercizeTrigger_C::ExecuteUbergraph_EnterMazercizeTrigger(int EntryPoint)
+	void AEnterMazercizeTrigger_C::ExecuteUbergraph_EnterMazercizeTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

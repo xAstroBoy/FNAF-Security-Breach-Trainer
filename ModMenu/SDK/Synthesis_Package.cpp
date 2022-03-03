@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B2A0
+	 * 		Offset -> 0x00B3B2E0
 	 * 		Name   -> Function Synthesis.ModularSynthLibrary.AddModularSynthPresetToBankAsset
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -67,7 +67,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D810
+	 * 		Offset -> 0x00B3D850
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSynthPreset
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D790
+	 * 		Offset -> 0x00B3D7D0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -113,7 +113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D710
+	 * 		Offset -> 0x00B3D750
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayWetlevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D690
+	 * 		Offset -> 0x00B3D6D0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D610
+	 * 		Offset -> 0x00B3D650
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -182,7 +182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D590
+	 * 		Offset -> 0x00B3D5D0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -205,7 +205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D500
+	 * 		Offset -> 0x00B3D540
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayIsEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D480
+	 * 		Offset -> 0x00B3D4C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayFeedback
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D400
+	 * 		Offset -> 0x00B3D440
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSpread
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D380
+	 * 		Offset -> 0x00B3D3C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -297,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D300
+	 * 		Offset -> 0x00B3D340
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPortamento
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D280
+	 * 		Offset -> 0x00B3D2C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPitchBend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -343,7 +343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D200
+	 * 		Offset -> 0x00B3D240
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -366,7 +366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D140
+	 * 		Offset -> 0x00B3D180
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3D0B0
+	 * 		Offset -> 0x00B3D0F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscSync
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -414,7 +414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CFE0
+	 * 		Offset -> 0x00B3D020
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscSemitones
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -439,7 +439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CF10
+	 * 		Offset -> 0x00B3CF50
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscPulsewidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -464,7 +464,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CE40
+	 * 		Offset -> 0x00B3CE80
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscOctave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -489,7 +489,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CD70
+	 * 		Offset -> 0x00B3CDB0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CCA0
+	 * 		Offset -> 0x00B3CCE0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -539,7 +539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CBD0
+	 * 		Offset -> 0x00B3CC10
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -564,7 +564,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CB00
+	 * 		Offset -> 0x00B3CB40
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscCents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -589,7 +589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CA80
+	 * 		Offset -> 0x00B3CAC0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -612,7 +612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3CA00
+	 * 		Offset -> 0x00B3CA40
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -635,7 +635,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C980
+	 * 		Offset -> 0x00B3C9C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -658,7 +658,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C8F0
+	 * 		Offset -> 0x00B3C930
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -681,7 +681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C870
+	 * 		Offset -> 0x00B3C8B0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C7F0
+	 * 		Offset -> 0x00B3C830
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -727,7 +727,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C770
+	 * 		Offset -> 0x00B3C7B0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -750,7 +750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C6E0
+	 * 		Offset -> 0x00B3C720
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C660
+	 * 		Offset -> 0x00B3C6A0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -796,7 +796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C5A0
+	 * 		Offset -> 0x00B3C5E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -821,7 +821,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C4E0
+	 * 		Offset -> 0x00B3C520
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -846,7 +846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C420
+	 * 		Offset -> 0x00B3C460
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -871,7 +871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C350
+	 * 		Offset -> 0x00B3C390
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C280
+	 * 		Offset -> 0x00B3C2C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -921,7 +921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C1B0
+	 * 		Offset -> 0x00B3C1F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -946,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C0E0
+	 * 		Offset -> 0x00B3C120
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -971,7 +971,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3C060
+	 * 		Offset -> 0x00B3C0A0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetGainDb
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -994,7 +994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BFE0
+	 * 		Offset -> 0x00B3C020
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1017,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BF60
+	 * 		Offset -> 0x00B3BFA0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterQMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1040,7 +1040,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BEE0
+	 * 		Offset -> 0x00B3BF20
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterQ
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1063,7 +1063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BE60
+	 * 		Offset -> 0x00B3BEA0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1086,7 +1086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BDE0
+	 * 		Offset -> 0x00B3BE20
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1109,7 +1109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BD60
+	 * 		Offset -> 0x00B3BDA0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterAlgorithm
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1132,7 +1132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BCD0
+	 * 		Offset -> 0x00B3BD10
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableUnison
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1155,7 +1155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BC40
+	 * 		Offset -> 0x00B3BC80
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableRetrigger
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1178,7 +1178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BBB0
+	 * 		Offset -> 0x00B3BBF0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnablePolyphony
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BAE0
+	 * 		Offset -> 0x00B3BB20
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnablePatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1228,7 +1228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3BA50
+	 * 		Offset -> 0x00B3BA90
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableLegato
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1251,7 +1251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B9D0
+	 * 		Offset -> 0x00B3BA10
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1274,7 +1274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B950
+	 * 		Offset -> 0x00B3B990
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1297,7 +1297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B8D0
+	 * 		Offset -> 0x00B3B910
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusFeedback
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1320,7 +1320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B840
+	 * 		Offset -> 0x00B3B880
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1343,7 +1343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B7C0
+	 * 		Offset -> 0x00B3B800
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1366,7 +1366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B740
+	 * 		Offset -> 0x00B3B780
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1389,7 +1389,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B630
+	 * 		Offset -> 0x00B3B670
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1416,7 +1416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B520
+	 * 		Offset -> 0x00B3B560
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1443,7 +1443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B3B3E0
+	 * 		Offset -> 0x00B3B420
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.CreatePatch
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1486,7 +1486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42310
+	 * 		Offset -> 0x00B42350
 	 * 		Name   -> Function Synthesis.SourceEffectBitCrusherPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1523,7 +1523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B423C0
+	 * 		Offset -> 0x00B42400
 	 * 		Name   -> Function Synthesis.SourceEffectChorusPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1560,7 +1560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42470
+	 * 		Offset -> 0x00B424B0
 	 * 		Name   -> Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1611,7 +1611,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42C90
+	 * 		Offset -> 0x00B42CD0
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1634,7 +1634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B425D0
+	 * 		Offset -> 0x00B42610
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1657,7 +1657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42210
+	 * 		Offset -> 0x00B42250
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1694,7 +1694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42520
+	 * 		Offset -> 0x00B42560
 	 * 		Name   -> Function Synthesis.SourceEffectEQPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1731,7 +1731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42680
+	 * 		Offset -> 0x00B426C0
 	 * 		Name   -> Function Synthesis.SourceEffectFilterPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1768,7 +1768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42730
+	 * 		Offset -> 0x00B42770
 	 * 		Name   -> Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1805,7 +1805,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B427E0
+	 * 		Offset -> 0x00B42820
 	 * 		Name   -> Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1842,7 +1842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42890
+	 * 		Offset -> 0x00B428D0
 	 * 		Name   -> Function Synthesis.SourceEffectPannerPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1879,7 +1879,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42940
+	 * 		Offset -> 0x00B42980
 	 * 		Name   -> Function Synthesis.SourceEffectPhaserPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1916,7 +1916,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42A00
+	 * 		Offset -> 0x00B42A40
 	 * 		Name   -> Function Synthesis.SourceEffectRingModulationPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1953,7 +1953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42AA0
+	 * 		Offset -> 0x00B42AE0
 	 * 		Name   -> Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1990,7 +1990,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42B50
+	 * 		Offset -> 0x00B42B90
 	 * 		Name   -> Function Synthesis.SourceEffectStereoDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2027,7 +2027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42890
+	 * 		Offset -> 0x00B428D0
 	 * 		Name   -> Function Synthesis.SourceEffectWaveShaperPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2078,7 +2078,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42BF0
+	 * 		Offset -> 0x00B42C30
 	 * 		Name   -> Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2101,7 +2101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B42290
+	 * 		Offset -> 0x00B422D0
 	 * 		Name   -> Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2138,7 +2138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48380
+	 * 		Offset -> 0x00B483C0
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2161,7 +2161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B478C0
+	 * 		Offset -> 0x00B47900
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetInterpolationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2184,7 +2184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46A90
+	 * 		Offset -> 0x00B46AD0
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetDelay
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2207,7 +2207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45C40
+	 * 		Offset -> 0x00B45C80
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.GetMaxDelayInMilliseconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2243,7 +2243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48440
+	 * 		Offset -> 0x00B48480
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2266,7 +2266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B471B0
+	 * 		Offset -> 0x00B471F0
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2289,7 +2289,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47130
+	 * 		Offset -> 0x00B47170
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterQMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2312,7 +2312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B470B0
+	 * 		Offset -> 0x00B470F0
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterQ
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2335,7 +2335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46C10
+	 * 		Offset -> 0x00B46C50
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2358,7 +2358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46B90
+	 * 		Offset -> 0x00B46BD0
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2381,7 +2381,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46B10
+	 * 		Offset -> 0x00B46B50
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2418,7 +2418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B484F0
+	 * 		Offset -> 0x00B48530
 	 * 		Name   -> Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2455,7 +2455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48900
+	 * 		Offset -> 0x00B48940
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2480,7 +2480,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B485B0
+	 * 		Offset -> 0x00B485F0
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2503,7 +2503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47940
+	 * 		Offset -> 0x00B47980
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetInterpolationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2526,7 +2526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B462E0
+	 * 		Offset -> 0x00B46320
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2549,7 +2549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45E00
+	 * 		Offset -> 0x00B45E40
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2574,7 +2574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45D20
+	 * 		Offset -> 0x00B45D60
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2601,7 +2601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45C60
+	 * 		Offset -> 0x00B45CA0
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetMaxDelayInMilliseconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2623,7 +2623,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45A10
+	 * 		Offset -> 0x00B45A50
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.AddTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2662,7 +2662,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B489E0
+	 * 		Offset -> 0x00B48A20
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2685,7 +2685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48770
+	 * 		Offset -> 0x00B487B0
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2708,7 +2708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48670
+	 * 		Offset -> 0x00B486B0
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetSliderHandleColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2731,7 +2731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B479C0
+	 * 		Offset -> 0x00B47A00
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2754,7 +2754,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47830
+	 * 		Offset -> 0x00B47870
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetIndentHandle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2777,7 +2777,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45EB0
+	 * 		Offset -> 0x00B45EF0
 	 * 		Name   -> Function Synthesis.Synth2DSlider.GetValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2813,7 +2813,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B487F0
+	 * 		Offset -> 0x00B48830
 	 * 		Name   -> Function Synthesis.GranularSynth.SetSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2836,7 +2836,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B486F0
+	 * 		Offset -> 0x00B48730
 	 * 		Name   -> Function Synthesis.GranularSynth.SetSoundWave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2859,7 +2859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B482F0
+	 * 		Offset -> 0x00B48330
 	 * 		Name   -> Function Synthesis.GranularSynth.SetScrubMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2882,7 +2882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48270
+	 * 		Offset -> 0x00B482B0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetReleaseTimeMsec
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2905,7 +2905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47BD0
+	 * 		Offset -> 0x00B47C10
 	 * 		Name   -> Function Synthesis.GranularSynth.SetPlayheadTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2932,7 +2932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47B50
+	 * 		Offset -> 0x00B47B90
 	 * 		Name   -> Function Synthesis.GranularSynth.SetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2955,7 +2955,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B476F0
+	 * 		Offset -> 0x00B47730
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainVolume
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2980,7 +2980,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B477B0
+	 * 		Offset -> 0x00B477F0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainsPerSecond
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3003,7 +3003,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47670
+	 * 		Offset -> 0x00B476B0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainProbability
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3026,7 +3026,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B475B0
+	 * 		Offset -> 0x00B475F0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainPitch
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3051,7 +3051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B474F0
+	 * 		Offset -> 0x00B47530
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainPan
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3076,7 +3076,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47470
+	 * 		Offset -> 0x00B474B0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainEnvelopeType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3099,7 +3099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B473B0
+	 * 		Offset -> 0x00B473F0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainDuration
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3124,7 +3124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46780
+	 * 		Offset -> 0x00B467C0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3147,7 +3147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46780
+	 * 		Offset -> 0x00B467C0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3170,7 +3170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46070
+	 * 		Offset -> 0x00B460B0
 	 * 		Name   -> Function Synthesis.GranularSynth.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3197,7 +3197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45F20
+	 * 		Offset -> 0x00B45F60
 	 * 		Name   -> Function Synthesis.GranularSynth.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3222,7 +3222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45EF0
+	 * 		Offset -> 0x00B45F30
 	 * 		Name   -> Function Synthesis.GranularSynth.IsLoaded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3244,7 +3244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45CF0
+	 * 		Offset -> 0x00B45D30
 	 * 		Name   -> Function Synthesis.GranularSynth.GetSampleDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3266,7 +3266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45AA0
+	 * 		Offset -> 0x00B45AE0
 	 * 		Name   -> Function Synthesis.GranularSynth.GetCurrentPlayheadTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3316,7 +3316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48A60
+	 * 		Offset -> 0x00B48AA0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3339,7 +3339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48870
+	 * 		Offset -> 0x00B488B0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetSustainPedalState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3362,7 +3362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47DD0
+	 * 		Offset -> 0x00B47E10
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3385,7 +3385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47D50
+	 * 		Offset -> 0x00B47D90
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3408,7 +3408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47CD0
+	 * 		Offset -> 0x00B47D10
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3431,7 +3431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B481F0
+	 * 		Offset -> 0x00B48230
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3454,7 +3454,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48170
+	 * 		Offset -> 0x00B481B0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3477,7 +3477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B480E0
+	 * 		Offset -> 0x00B48120
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3500,7 +3500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B48060
+	 * 		Offset -> 0x00B480A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3523,7 +3523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47FE0
+	 * 		Offset -> 0x00B48020
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3546,7 +3546,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47F50
+	 * 		Offset -> 0x00B47F90
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3569,7 +3569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47ED0
+	 * 		Offset -> 0x00B47F10
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3592,7 +3592,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47E50
+	 * 		Offset -> 0x00B47E90
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3615,7 +3615,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47AD0
+	 * 		Offset -> 0x00B47B10
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterResonance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3638,7 +3638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47A50
+	 * 		Offset -> 0x00B47A90
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3661,7 +3661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47330
+	 * 		Offset -> 0x00B47370
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyWithMidiNote
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3684,7 +3684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B472B0
+	 * 		Offset -> 0x00B472F0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyPitchBend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3707,7 +3707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47230
+	 * 		Offset -> 0x00B47270
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3730,7 +3730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46FB0
+	 * 		Offset -> 0x00B46FF0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3753,7 +3753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46F30
+	 * 		Offset -> 0x00B46F70
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3776,7 +3776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B47030
+	 * 		Offset -> 0x00B47070
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopenDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3799,7 +3799,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46EA0
+	 * 		Offset -> 0x00B46EE0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3822,7 +3822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46E20
+	 * 		Offset -> 0x00B46E60
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3845,7 +3845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46D90
+	 * 		Offset -> 0x00B46DD0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3868,7 +3868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46D10
+	 * 		Offset -> 0x00B46D50
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3891,7 +3891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46C90
+	 * 		Offset -> 0x00B46CD0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3914,7 +3914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46990
+	 * 		Offset -> 0x00B469D0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3943,7 +3943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B468C0
+	 * 		Offset -> 0x00B46900
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3970,7 +3970,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46800
+	 * 		Offset -> 0x00B46840
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3997,7 +3997,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46700
+	 * 		Offset -> 0x00B46740
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4020,7 +4020,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46680
+	 * 		Offset -> 0x00B466C0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4043,7 +4043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B465F0
+	 * 		Offset -> 0x00B46630
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4066,7 +4066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46570
+	 * 		Offset -> 0x00B465B0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4089,7 +4089,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B464F0
+	 * 		Offset -> 0x00B46530
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4112,7 +4112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46460
+	 * 		Offset -> 0x00B464A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4135,7 +4135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B463E0
+	 * 		Offset -> 0x00B46420
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4158,7 +4158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46360
+	 * 		Offset -> 0x00B463A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4181,7 +4181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46260
+	 * 		Offset -> 0x00B462A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.RefreshWaveTable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4204,7 +4204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46240
+	 * 		Offset -> 0x00B46280
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.RefreshAllWaveTables
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4224,7 +4224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B46180
+	 * 		Offset -> 0x00B461C0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4249,7 +4249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45FF0
+	 * 		Offset -> 0x00B46030
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4272,7 +4272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45CC0
+	 * 		Offset -> 0x00B45D00
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4294,7 +4294,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45C80
+	 * 		Offset -> 0x00B45CC0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4316,7 +4316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45B60
+	 * 		Offset -> 0x00B45BA0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4341,7 +4341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B45AD0
+	 * 		Offset -> 0x00B45B10
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4380,7 +4380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49B60
+	 * 		Offset -> 0x00B49BA0
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetSoundWave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4403,7 +4403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49AE0
+	 * 		Offset -> 0x00B49B20
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetScrubTimeWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4426,7 +4426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49A50
+	 * 		Offset -> 0x00B49A90
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetScrubMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4449,7 +4449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49990
+	 * 		Offset -> 0x00B499D0
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetPitch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4474,7 +4474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B497F0
+	 * 		Offset -> 0x00B49830
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SeekToTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4501,7 +4501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B497C0
+	 * 		Offset -> 0x00B49800
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.IsLoaded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4523,7 +4523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49760
+	 * 		Offset -> 0x00B497A0
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetSampleDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4545,7 +4545,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49730
+	 * 		Offset -> 0x00B49770
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4567,7 +4567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49700
+	 * 		Offset -> 0x00B49740
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressPercent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4603,7 +4603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49C60
+	 * 		Offset -> 0x00B49CA0
 	 * 		Name   -> Function Synthesis.SynthKnob.SetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4626,7 +4626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49BE0
+	 * 		Offset -> 0x00B49C20
 	 * 		Name   -> Function Synthesis.SynthKnob.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4649,7 +4649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49900
+	 * 		Offset -> 0x00B49940
 	 * 		Name   -> Function Synthesis.SynthKnob.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4672,7 +4672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B49790
+	 * 		Offset -> 0x00B497D0
 	 * 		Name   -> Function Synthesis.SynthKnob.GetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

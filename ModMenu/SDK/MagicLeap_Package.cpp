@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63B00
+	 * 		Offset -> 0x00A63B40
 	 * 		Name   -> Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63A70
+	 * 		Offset -> 0x00A63AB0
 	 * 		Name   -> Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63990
+	 * 		Offset -> 0x00A639D0
 	 * 		Name   -> Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A638D0
+	 * 		Offset -> 0x00A63910
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetStabilizationDepthActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -299,7 +299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63810
+	 * 		Offset -> 0x00A63850
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetFocusActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63790
+	 * 		Offset -> 0x00A637D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBaseRotation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -347,7 +347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63790
+	 * 		Offset -> 0x00A637D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBasePosition
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63790
+	 * 		Offset -> 0x00A637D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBaseOrientation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -393,7 +393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63760
+	 * 		Offset -> 0x00A637A0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.SetAppReady
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -415,7 +415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63120
+	 * 		Offset -> 0x00A63160
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.IsRunningOnMagicLeapHMD
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63090
+	 * 		Offset -> 0x00A630D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetPlatformAPILevel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -459,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63090
+	 * 		Offset -> 0x00A630D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionRevision
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -481,7 +481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63090
+	 * 		Offset -> 0x00A630D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMinor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -503,7 +503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63090
+	 * 		Offset -> 0x00A630D0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMajor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -525,7 +525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63010
+	 * 		Offset -> 0x00A63050
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -547,7 +547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A630C0
+	 * 		Offset -> 0x00A63100
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMinimumAPILevel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -569,7 +569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62F80
+	 * 		Offset -> 0x00A62FC0
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetHeadTrackingState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -596,7 +596,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62DF0
+	 * 		Offset -> 0x00A62E30
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetHeadTrackingMapEvents
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 */
@@ -618,7 +618,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62D40
+	 * 		Offset -> 0x00A62D80
 	 * 		Name   -> Function MagicLeap.MagicLeapHMDFunctionLibrary.GetGraphicsClientPerformanceInfo
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -659,7 +659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63640
+	 * 		Offset -> 0x00A63680
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -686,7 +686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -716,7 +716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A630F0
+	 * 		Offset -> 0x00A63130
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -738,7 +738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62CC0
+	 * 		Offset -> 0x00A62D00
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -761,7 +761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62CA0
+	 * 		Offset -> 0x00A62CE0
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -781,7 +781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62C20
+	 * 		Offset -> 0x00A62C60
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -804,7 +804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A62B80
+	 * 		Offset -> 0x00A62BC0
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -852,7 +852,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63520
+	 * 		Offset -> 0x00A63560
 	 * 		Name   -> Function MagicLeap.MagicLeapMeshBlockSelectorInterface.SelectMeshBlocks
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -893,7 +893,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A633D0
+	 * 		Offset -> 0x00A63410
 	 * 		Name   -> Function MagicLeap.MagicLeapRaycastComponent.RequestRaycast
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -920,7 +920,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeap.MagicLeapRaycastComponent.RaycastResultDelegate__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 * Parameters:
@@ -956,7 +956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63150
+	 * 		Offset -> 0x00A63190
 	 * 		Name   -> Function MagicLeap.MagicLeapRaycastFunctionLibrary.MakeRaycastQueryParams
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:

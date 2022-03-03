@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_InstructionCard_PAS_ReplaceBowtie.WI_InstructionCard_PAS_ReplaceBowtie_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_InstructionCard_PAS_ReplaceBowtie.WI_InstructionCard_PAS_ReplaceBowtie_C.ExecuteUbergraph_WI_InstructionCard_PAS_ReplaceBowtie
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

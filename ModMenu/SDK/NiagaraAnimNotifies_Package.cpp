@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFBC0
+	 * 		Offset -> 0x007BFC00
 	 * 		Name   -> Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 */

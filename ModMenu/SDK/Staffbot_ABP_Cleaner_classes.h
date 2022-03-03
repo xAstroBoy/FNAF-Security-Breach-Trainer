@@ -29,9 +29,9 @@ namespace CG
 		void BlueprintUpdateAnimation(float DeltaTimeX);
 		void BlueprintBeginPlay();
 		void isStunnedEvent(bool IsStunned);
-		void WarningEvent(bool IsWarning, int WarningCount);
-		void AlertEvent(bool isAlerting);
-		void ExecuteUbergraph_Staffbot_ABP_Cleaner(int EntryPoint);
+		void WarningEvent(bool IsWarning, int32_t WarningCount);
+		void AlertEvent(bool IsAlerting);
+		void ExecuteUbergraph_Staffbot_ABP_Cleaner(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

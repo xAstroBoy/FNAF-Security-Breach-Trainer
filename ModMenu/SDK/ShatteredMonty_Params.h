@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function ShatteredMonty.ShatteredMonty_C.ExitHideMode
+	 */
+	struct AShatteredMonty_C_ExitHideMode_Params
+	{
+	public:
+		class AActor*                                              HideActor;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function ShatteredMonty.ShatteredMonty_C.ReceiveBeginPlay
 	 */
 	struct AShatteredMonty_C_ReceiveBeginPlay_Params
@@ -25,16 +35,6 @@ namespace CG
 	 * Function ShatteredMonty.ShatteredMonty_C.EnterHideMode
 	 */
 	struct AShatteredMonty_C_EnterHideMode_Params
-	{
-	public:
-		class AActor*                                              HideActor;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function ShatteredMonty.ShatteredMonty_C.ExitHideMode
-	 */
-	struct AShatteredMonty_C_ExitHideMode_Params
 	{
 	public:
 		class AActor*                                              HideActor;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

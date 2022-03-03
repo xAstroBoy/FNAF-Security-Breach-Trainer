@@ -29,7 +29,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_LoadingDock_Escalator_MissionTrigger(int EntryPoint);
+		void ExecuteUbergraph_LoadingDock_Escalator_MissionTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlayerIsFreddy_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerIsFreddy.PlayerIsFreddy_C.PerformConditionCheckAI
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

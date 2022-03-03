@@ -25,12 +25,12 @@ namespace CG
 		TArray<class FName>                                        PackagePaths;                                            // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class FName>                                        ObjectPaths;                                             // 0x0020(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class FName>                                        ClassNames;                                              // 0x0030(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_15SA[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IH8Q[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              RecursiveClassesExclusionSet[0x50];                      // 0x0040(0x0050) UNKNOWN PROPERTY: SetProperty
 		bool                                                       bRecursivePaths;                                         // 0x00E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRecursiveClasses;                                       // 0x00E1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIncludeOnlyOnDiskAssets;                                // 0x00E2(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZONH[0x5];                                   // 0x00E3(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZXCV[0x5];                                   // 0x00E3(0x0005) MISSED OFFSET (PADDING)
 
 	};
 
@@ -70,7 +70,7 @@ namespace CG
 		class FName                                                PackagePath;                                             // 0x0010(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                AssetName;                                               // 0x0018(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                AssetClass;                                              // 0x0020(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FYER[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QN9P[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	};
 

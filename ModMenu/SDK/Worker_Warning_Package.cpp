@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Worker_Warning_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Worker_Warning.Worker_Warning_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -37,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Worker_Warning.Worker_Warning_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -63,13 +62,37 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Worker_Warning.Worker_Warning_C.ReceiveAbortAI
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * Parameters:
+	 * 		class AAIController*                               OwnerController                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UWorker_Warning_C::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Worker_Warning.Worker_Warning_C.ReceiveAbortAI");
+		
+		UWorker_Warning_C_ReceiveAbortAI_Params params {};
+		params.OwnerController = OwnerController;
+		params.ControlledPawn = ControlledPawn;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Worker_Warning.Worker_Warning_C.ExecuteUbergraph_Worker_Warning
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UWorker_Warning_C::ExecuteUbergraph_Worker_Warning(int EntryPoint)
+	void UWorker_Warning_C::ExecuteUbergraph_Worker_Warning(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

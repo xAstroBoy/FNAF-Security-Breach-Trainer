@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_RoxyLoadingDockTrigger(int EntryPoint);
+		void ExecuteUbergraph_RoxyLoadingDockTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

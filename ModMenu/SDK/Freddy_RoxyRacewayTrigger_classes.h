@@ -28,14 +28,14 @@ namespace CG
 		class UArrowComponent*                                     RoxySpawnIn;                                             // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USkeletalMeshComponent*                              SickFreddy;                                              // 0x02A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       VO_finished;                                             // 0x02A8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DHUP[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IKU8[0x7];                                   // 0x02A9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              LineSkipper[0x28];                                       // 0x02A9(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void OnTriggered();
 		void BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_0_OnTimeEnd__DelegateSignature();
-		void ExecuteUbergraph_Freddy_RoxyRacewayTrigger(int EntryPoint);
+		void ExecuteUbergraph_Freddy_RoxyRacewayTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

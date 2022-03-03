@@ -23,7 +23,7 @@ namespace CG
 	public:
 		TArray<struct FNamedInterface>                             NamedInterfaces;                                         // 0x0028(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FNamedInterfaceDef>                          NamedInterfaceDefs;                                      // 0x0038(0x0010) ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_GL6M[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DABQ[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

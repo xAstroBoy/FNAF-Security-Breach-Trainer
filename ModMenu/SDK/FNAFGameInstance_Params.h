@@ -25,6 +25,16 @@ namespace CG
 	};
 
 	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality
+	 */
+	struct UFNAFGameInstance_C_ApplyDLSSQuality_Params
+	{
+	public:
+		FNAFDLSSLevel_EFNAFDLSSLevel                               DLSSLevel;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function FNAFGameInstance.FNAFGameInstance_C.GetDefaultMappings
 	 */
 	struct UFNAFGameInstance_C_GetDefaultMappings_Params
@@ -313,6 +323,44 @@ namespace CG
 	};
 
 	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2139E3F145F43A454CDBE3A76C9037C4
+	 */
+	struct UFNAFGameInstance_C_OnFailure_2139E3F145F43A454CDBE3A76C9037C4_Params
+	{
+	};
+
+	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2139E3F145F43A454CDBE3A76C9037C4
+	 */
+	struct UFNAFGameInstance_C_OnSuccess_2139E3F145F43A454CDBE3A76C9037C4_Params
+	{
+	};
+
+	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_AC5026394EF21AF1261C85BD63C2D5E9
+	 */
+	struct UFNAFGameInstance_C_OnFailure_AC5026394EF21AF1261C85BD63C2D5E9_Params
+	{
+	public:
+		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9
+	 */
+	struct UFNAFGameInstance_C_OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9_Params
+	{
+	public:
+		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function FNAFGameInstance.FNAFGameInstance_C.LoadMiniGameLevel
 	 */
 	struct UFNAFGameInstance_C_LoadMiniGameLevel_Params
@@ -440,7 +488,8 @@ namespace CG
 	public:
 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel             QualityLevel;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel         RayTraceLevel;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		SWGPlatformUtil_ESWGPlatform                               Platform;                                                // 0x0002(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		FNAFDLSSLevel_EFNAFDLSSLevel                               DLSSLevel;                                               // 0x0002(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		SWGPlatformUtil_ESWGPlatform                               Platform;                                                // 0x0003(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -507,6 +556,16 @@ namespace CG
 	 */
 	struct UFNAFGameInstance_C_CheckForLostAndFoundAchievement_Params
 	{
+	};
+
+	/**
+	 * Function FNAFGameInstance.FNAFGameInstance_C.Check For ShatteredDreams Achievement
+	 */
+	struct UFNAFGameInstance_C_Check_For_ShatteredDreams_Achievement_Params
+	{
+	public:
+		E_ShatteredBotTypes_E_ShatteredBotTypes                    Shattered_Bot_Type;                                      // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
 	};
 
 	/**

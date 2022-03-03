@@ -16,16 +16,16 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FreddyGuideSick.FreddyGuideSick_C
-	 * Size -> 0x0021 (FullSize[0x0939] - InheritedSize[0x0918])
+	 * Size -> 0x0021 (FullSize[0x0941] - InheritedSize[0x0920])
 	 */
 	class AFreddyGuideSick_C : public AFreddy_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0918(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class APatrolPath_C*                                       PathActor;                                               // 0x0920(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		class FName                                                PathActorKey;                                            // 0x0928(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class FName                                                PatrolPointIndexKey;                                     // 0x0930(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Freddy_Audio_Playing_;                                   // 0x0938(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0920(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class APatrolPath_C*                                       PathActor;                                               // 0x0928(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		class FName                                                PathActorKey;                                            // 0x0930(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class FName                                                PatrolPointIndexKey;                                     // 0x0938(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       Freddy_Audio_Playing_;                                   // 0x0940(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		int32_t GetCurrentPatrolPointIndex();

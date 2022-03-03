@@ -33,19 +33,19 @@ namespace CG
 		class UWidgetComponent*                                    Widget1;                                                 // 0x0270(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UStaticMeshComponent*                                Cube;                                                    // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsClosed;                                                // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6JJH[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z9Q0[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequence*                                       CloseAnim;                                               // 0x0288(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		void Close_Gate();
 		void BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature();
 		void BndEvt__PlanAEscape_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature();
 		void ReceiveBeginPlay();
-		void Close_Gate();
 		void BndEvt__GetOutFinished_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature();
 		void Set_Open();
 		void Set_Closed();
 		void BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_5_OnTimeStart__DelegateSignature();
-		void ExecuteUbergraph_LobbyMainEntrance(int EntryPoint);
+		void ExecuteUbergraph_LobbyMainEntrance(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

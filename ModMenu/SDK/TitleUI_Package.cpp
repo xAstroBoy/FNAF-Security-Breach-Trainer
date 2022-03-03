@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.CreateDeleteList
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.OnPreviewKeyDown
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.CreateLoadButton
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.NewGameButton_Visibility
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Debug_Visible_Menus
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.GetCurrentWidgetsUpperButton
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetupButtonStyle
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.LoadPlayerSettings
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -195,7 +195,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetFocusIfUsingGamepad
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -214,7 +214,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.GetKeyboardFocusBack
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -233,7 +233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.RandomizerHoverHighlight
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -252,7 +252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.GetSeed
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -276,7 +276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetSurvivalLives
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetSurvivalTime
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetSurvivalSelection
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -342,7 +342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetClockRate
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -364,7 +364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Get_RayTracingBox_Visibility_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -385,7 +385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.FadeToLoad
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -407,26 +407,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UTitleUI_C::Finished_071044F543A717F54FDA6B941362F78E()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E");
-		
-		UTitleUI_C_Finished_071044F543A717F54FDA6B941362F78E_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Finished_633E73144EEFFCA673A1CEB9A7478126
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -445,20 +426,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.Load Mini Game Level
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        LevelName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTitleUI_C::Load_Mini_Game_Level(const class FName& LevelName)
+	void UTitleUI_C::Finished_071044F543A717F54FDA6B941362F78E()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Load Mini Game Level");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E");
 		
-		UTitleUI_C_Load_Mini_Game_Level_Params params {};
-		params.LevelName = LevelName;
+		UTitleUI_C_Finished_071044F543A717F54FDA6B941362F78E_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -467,17 +445,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.AddNewGameButtonUI
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
-	void UTitleUI_C::BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature()
+	void UTitleUI_C::AddNewGameButtonUI()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.AddNewGameButtonUI");
 		
-		UTitleUI_C_BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature_Params params {};
+		UTitleUI_C_AddNewGameButtonUI_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -486,102 +464,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UTitleUI_C::BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature");
-		
-		UTitleUI_C_BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UTitleUI_C::BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-		
-		UTitleUI_C_BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UTitleUI_C::BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature");
-		
-		UTitleUI_C_BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UTitleUI_C::BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature");
-		
-		UTitleUI_C_BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UTitleUI_C::BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature");
-		
-		UTitleUI_C_BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -600,7 +483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -619,17 +502,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature()
+	void UTitleUI_C::BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature_Params params {};
+		UTitleUI_C_BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -638,17 +521,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature()
+	void UTitleUI_C::BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature_Params params {};
+		UTitleUI_C_BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -657,17 +540,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature()
+	void UTitleUI_C::BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature_Params params {};
+		UTitleUI_C_BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -676,17 +559,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature()
+	void UTitleUI_C::BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature_Params params {};
+		UTitleUI_C_BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -695,20 +578,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.LoadWorldToArea
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        Area                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::LoadWorldToArea(const class FName& Area)
+	void UTitleUI_C::BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.LoadWorldToArea");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_LoadWorldToArea_Params params {};
-		params.Area = Area;
+		UTitleUI_C_BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -717,17 +597,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.Continue New Game
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
 	 */
-	void UTitleUI_C::Continue_New_Game()
+	void UTitleUI_C::BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Continue New Game");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature");
 		
-		UTitleUI_C_Continue_New_Game_Params params {};
+		UTitleUI_C_BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -736,7 +616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -755,7 +635,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -774,7 +654,83 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UTitleUI_C::BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature");
+		
+		UTitleUI_C_BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UTitleUI_C::BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature");
+		
+		UTitleUI_C_BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UTitleUI_C::BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature");
+		
+		UTitleUI_C_BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UTitleUI_C::BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature");
+		
+		UTitleUI_C_BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -796,7 +752,48 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.LoadWorldToArea
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FName                                        Area                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UTitleUI_C::LoadWorldToArea(const class FName& Area)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.LoadWorldToArea");
+		
+		UTitleUI_C_LoadWorldToArea_Params params {};
+		params.Area = Area;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.Continue New Game
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UTitleUI_C::Continue_New_Game()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Continue New Game");
+		
+		UTitleUI_C_Continue_New_Game_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.On New Game Existing Slot
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -818,7 +815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__NewSlotButton_K2Node_ComponentBoundEvent_24_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -837,7 +834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Bowling_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -856,7 +853,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ConstructTest_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -875,7 +872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__GatorGolf_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -894,7 +891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__OptionsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -913,7 +910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__SurvivalModeButton_K2Node_ComponentBoundEvent_28_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -932,7 +929,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_0_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -951,7 +948,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_1_K2Node_ComponentBoundEvent_35_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -970,7 +967,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_2_K2Node_ComponentBoundEvent_38_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -989,7 +986,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_3_K2Node_ComponentBoundEvent_40_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1008,7 +1005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_4_K2Node_ComponentBoundEvent_42_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1027,7 +1024,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__TitleButton_C_5_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1046,7 +1043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Survival_Start_Button_K2Node_ComponentBoundEvent_44_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1065,7 +1062,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Survival_Lives_1_K2Node_ComponentBoundEvent_45_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1084,7 +1081,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Survival_Lives_10_K2Node_ComponentBoundEvent_46_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1103,7 +1100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Survival_Lives_Infinite_K2Node_ComponentBoundEvent_47_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1122,7 +1119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__RoxyRacers_K2Node_ComponentBoundEvent_49_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1141,7 +1138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Lobby_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1160,7 +1157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Daycare_K2Node_ComponentBoundEvent_52_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1179,7 +1176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Kitchen_K2Node_ComponentBoundEvent_53_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1198,7 +1195,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PrizeCounter_K2Node_ComponentBoundEvent_54_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1217,7 +1214,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__DJWestArcade_K2Node_ComponentBoundEvent_55_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1236,7 +1233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Endogeddon_K2Node_ComponentBoundEvent_56_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1255,7 +1252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PizzaSim_K2Node_ComponentBoundEvent_57_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1274,7 +1271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Load Level
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1296,7 +1293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__SurvivalSpawnAllPossibleLocations_K2Node_ComponentBoundEvent_50_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1318,7 +1315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ChicaFeedingFrenzy_K2Node_ComponentBoundEvent_58_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1337,7 +1334,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PrincessQuest2_K2Node_ComponentBoundEvent_59_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1356,7 +1353,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.ToggleMainMenu
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1375,7 +1372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1399,7 +1396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__Button_135_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1418,7 +1415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__RandomSeed_Button_K2Node_ComponentBoundEvent_63_OnButtonHoverEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1437,7 +1434,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__RandomSeed_Button_K2Node_ComponentBoundEvent_65_OnButtonHoverEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1456,7 +1453,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.RandomizerKeyboardFocus
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1475,7 +1472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__LightTest_K2Node_ComponentBoundEvent_48_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1494,7 +1491,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PrincessQuestAct2_K2Node_ComponentBoundEvent_73_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1513,7 +1510,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PrincessQuestAct3_K2Node_ComponentBoundEvent_74_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1532,7 +1529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__MiniGolf_Course2_K2Node_ComponentBoundEvent_75_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1551,7 +1548,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.LoadMiniGolfCourse
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1573,7 +1570,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__MiniGolf_Course3_K2Node_ComponentBoundEvent_76_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1592,7 +1589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__PlayButton_K2Node_ComponentBoundEvent_78_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1611,26 +1608,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.AddNewGameButtonUI
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UTitleUI_C::AddNewGameButtonUI()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.AddNewGameButtonUI");
-		
-		UTitleUI_C_AddNewGameButtonUI_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__BackButton_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1649,7 +1627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.GamepadBackButtonPressed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1668,7 +1646,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ExtrasButton_K2Node_ComponentBoundEvent_81_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1687,7 +1665,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.AcceptTextVisibility
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1706,7 +1684,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.Load Mini Game Level
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FName                                        LevelName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UTitleUI_C::Load_Mini_Game_Level(const class FName& LevelName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Load Mini Game Level");
+		
+		UTitleUI_C_Load_Mini_Game_Level_Params params {};
+		params.LevelName = LevelName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_79_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1725,7 +1725,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BackgroundVideo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1744,7 +1744,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__CreditsButton_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1763,17 +1763,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function TitleUI.TitleUI_C.ExitGamePopUp
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.ExitGamePopup
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
-	void UTitleUI_C::ExitGamePopUp()
+	void UTitleUI_C::ExitGamePopup()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.ExitGamePopUp");
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.ExitGamePopup");
 		
-		UTitleUI_C_ExitGamePopUp_Params params {};
+		UTitleUI_C_ExitGamePopup_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1782,7 +1782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__BurntrapBattle_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1801,7 +1801,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__VannyBattle_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1820,7 +1820,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.LoadSaveSlot
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1839,7 +1839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.FinalVideoBackgroundCheck
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1858,7 +1858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__DeleteGameButton_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1877,7 +1877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.CloseSubMenu
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1896,7 +1896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.FileSelectedForDelete
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1915,7 +1915,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ConfirmDelete_PopUp_K2Node_ComponentBoundEvent_11_DeleteGameFile__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1934,7 +1934,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.BndEvt__ConfirmDelete_PopUp_K2Node_ComponentBoundEvent_12_DeleteMenu_BackedOut__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1953,7 +1953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.SetupLoadFiles
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1972,7 +1972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.Setup Delete Slots
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1991,7 +1991,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.UpdateButtonsVisibility
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2010,7 +2010,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.HideMouseWhenNotUsingKeyboard
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -2029,7 +2029,45 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.CaptureFocusWithThumbstick
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UTitleUI_C::CaptureFocusWithThumbstick()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.CaptureFocusWithThumbstick");
+		
+		UTitleUI_C_CaptureFocusWithThumbstick_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function TitleUI.TitleUI_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UTitleUI_C::Destruct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function TitleUI.TitleUI_C.Destruct");
+		
+		UTitleUI_C_Destruct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.ExecuteUbergraph_TitleUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -2051,7 +2089,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TitleUI.TitleUI_C.IntroPlaying__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

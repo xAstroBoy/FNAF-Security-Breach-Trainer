@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "SetEndoState_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SetEndoState.SetEndoState_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -37,13 +36,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SetEndoState.SetEndoState_C.ExecuteUbergraph_SetEndoState
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetEndoState_C::ExecuteUbergraph_SetEndoState(int EntryPoint)
+	void USetEndoState_C::ExecuteUbergraph_SetEndoState(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

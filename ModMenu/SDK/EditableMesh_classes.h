@@ -34,7 +34,7 @@ namespace CG
 		class UGeometryCollection*                                 GeometryCollection;                                      // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UGeometryCollection*                                 OriginalGeometryCollection;                              // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    GeometryCollectionLODIndex;                              // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_52IK[0x9C];                                  // 0x003C(0x009C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5P8B[0x9C];                                  // 0x003C(0x009C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -47,14 +47,14 @@ namespace CG
 	class UEditableMesh : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_1A3R[0x390];                                 // 0x0028(0x0390) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A3ZV[0x390];                                 // 0x0028(0x0390) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UEditableMeshAdapter*>                        Adapters;                                                // 0x03B8(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5RI9[0x8];                                   // 0x03C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DTOP[0x8];                                   // 0x03C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    TextureCoordinateCount;                                  // 0x03D0(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Y9TB[0x148];                                 // 0x03D4(0x0148) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FCY8[0x148];                                 // 0x03D4(0x0148) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    PendingCompactCounter;                                   // 0x051C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    SubdivisionCount;                                        // 0x0520(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7C4G[0x1E4];                                 // 0x0524(0x01E4) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BSIW[0x1E4];                                 // 0x0524(0x01E4) MISSED OFFSET (PADDING)
 
 	public:
 		void WeldVertices(TArray<struct FVertexID> VertexIDs, struct FVertexID* OutNewVertexID);
@@ -210,7 +210,7 @@ namespace CG
 		class UStaticMesh*                                         StaticMesh;                                              // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UStaticMesh*                                         OriginalStaticMesh;                                      // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    StaticMeshLODIndex;                                      // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_LIF2[0xA4];                                  // 0x003C(0x00A4) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1NQ9[0xA4];                                  // 0x003C(0x00A4) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

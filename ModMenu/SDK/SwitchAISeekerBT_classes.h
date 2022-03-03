@@ -23,7 +23,7 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		bool                                                       UseBlackboard;                                           // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_PP9Y[0x7];                                   // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_63ID[0x7];                                   // 0x00B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              BTAsset[0x28];                                           // 0x00B1(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		struct FBlackboardKeySelector                              BehaviorTreeAssetKey;                                    // 0x00E0(0x0028) Edit, BlueprintVisible
 

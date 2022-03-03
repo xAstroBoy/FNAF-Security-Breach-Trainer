@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PRE_PartyDoor_Long_UnlockAfterMission_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Long_UnlockAfterMission.PRE_PartyDoor_Long_UnlockAfterMission_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_0_OnMissionStateHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Long_UnlockAfterMission.PRE_PartyDoor_Long_UnlockAfterMission_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Long_UnlockAfterMission.PRE_PartyDoor_Long_UnlockAfterMission_C.ExecuteUbergraph_PRE_PartyDoor_Long_UnlockAfterMission
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_PartyDoor_Long_UnlockAfterMission_C::ExecuteUbergraph_PRE_PartyDoor_Long_UnlockAfterMission(int EntryPoint)
+	void APRE_PartyDoor_Long_UnlockAfterMission_C::ExecuteUbergraph_PRE_PartyDoor_Long_UnlockAfterMission(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

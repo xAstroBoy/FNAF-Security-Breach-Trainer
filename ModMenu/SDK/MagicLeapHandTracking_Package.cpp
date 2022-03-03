@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7E100
+	 * 		Offset -> 0x00A7E140
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.SetStaticGestureConfidenceThreshold
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DF90
+	 * 		Offset -> 0x00A7DFD0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.SetConfiguration
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -82,7 +82,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DF10
+	 * 		Offset -> 0x00A7DF50
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.IsHoldingControl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DE90
+	 * 		Offset -> 0x00A7DED0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetStaticGestureConfidenceThreshold
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DD90
+	 * 		Offset -> 0x00A7DDD0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetMotionSourceForHandKeypoint
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -163,7 +163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DCC0
+	 * 		Offset -> 0x00A7DD00
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetMagicLeapHandTrackingLiveLinkSource
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DB60
+	 * 		Offset -> 0x00A7DBA0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandThumbTip
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -221,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7DA90
+	 * 		Offset -> 0x00A7DAD0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandKeypointForMotionSource
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D930
+	 * 		Offset -> 0x00A7D970
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandIndexFingerTip
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -281,7 +281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D860
+	 * 		Offset -> 0x00A7D8A0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenterNormalized
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -310,7 +310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D740
+	 * 		Offset -> 0x00A7D780
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenter
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -339,7 +339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D4B0
+	 * 		Offset -> 0x00A7D4F0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypointTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -372,7 +372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D650
+	 * 		Offset -> 0x00A7D690
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypoints
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -401,7 +401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D3D0
+	 * 		Offset -> 0x00A7D410
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGestureConfidence
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -430,7 +430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D300
+	 * 		Offset -> 0x00A7D340
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGesture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -459,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A7D160
+	 * 		Offset -> 0x00A7D1A0
 	 * 		Name   -> Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetConfiguration
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

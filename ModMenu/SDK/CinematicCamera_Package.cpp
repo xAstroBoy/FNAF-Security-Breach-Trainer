@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9980
+	 * 		Offset -> 0x01DFA660
 	 * 		Name   -> Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9690
+	 * 		Offset -> 0x01DFA370
 	 * 		Name   -> Function CinematicCamera.CineCameraActor.GetCineCameraComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9B10
+	 * 		Offset -> 0x01DFA7F0
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetLensPresetByName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -121,7 +121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9A70
+	 * 		Offset -> 0x01DFA750
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF99D0
+	 * 		Offset -> 0x01DFA6B0
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -167,7 +167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF99A0
+	 * 		Offset -> 0x01DFA680
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -189,7 +189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF98A0
+	 * 		Offset -> 0x01DFA580
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9820
+	 * 		Offset -> 0x01DFA500
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetLensPresetName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -233,7 +233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF97F0
+	 * 		Offset -> 0x01DFA4D0
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -255,7 +255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF9770
+	 * 		Offset -> 0x01DFA450
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -277,7 +277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF96B0
+	 * 		Offset -> 0x01DFA390
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

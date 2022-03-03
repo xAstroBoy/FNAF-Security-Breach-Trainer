@@ -24,8 +24,8 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      Flash_NewTrack_0_3E6B0B244509C68F95AC899478D47DF9;       // 0x0238(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<Engine_ETimelineDirection>                     Flash__Direction_3E6B0B244509C68F95AC899478D47DF9;       // 0x023C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_YOTL[0x3];                                   // 0x023D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		Engine_ETimelineDirection                                  Flash__Direction_3E6B0B244509C68F95AC899478D47DF9;       // 0x023C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_MG4Z[0x3];                                   // 0x023D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTimelineComponent*                                  Flash;                                                   // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class AStaticMeshActor*                                    RefTOStrips;                                             // 0x0248(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class AStaticMeshActor*                                    Ray1;                                                    // 0x0250(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -53,7 +53,7 @@ namespace CG
 		void Activate();
 		void Reset();
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_BP_SoundBoothManager(int EntryPoint);
+		void ExecuteUbergraph_BP_SoundBoothManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

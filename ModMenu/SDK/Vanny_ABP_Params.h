@@ -92,18 +92,6 @@ namespace CG
 	};
 
 	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.UpdateLeapInfo
-	 */
-	struct UVanny_ABP_C_UpdateLeapInfo_Params
-	{
-	public:
-		struct FVector                                             ActorLocation;                                           // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FVector                                             Destination;                                             // 0x000C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		float                                                      Distance;                                                // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.LeapLoopEvent
 	 */
 	struct UVanny_ABP_C_LeapLoopEvent_Params
@@ -138,6 +126,18 @@ namespace CG
 	};
 
 	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.UpdateLeapInfo
+	 */
+	struct UVanny_ABP_C_UpdateLeapInfo_Params
+	{
+	public:
+		struct FVector                                             ActorLocation;                                           // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		struct FVector                                             Destination;                                             // 0x000C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		float                                                      Distance;                                                // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.CanHackEvent
 	 */
 	struct UVanny_ABP_C_CanHackEvent_Params
@@ -168,6 +168,16 @@ namespace CG
 	};
 
 	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.FreddyCorrupted
+	 */
+	struct UVanny_ABP_C_FreddyCorrupted_Params
+	{
+	public:
+		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TwoBoneIK_773EEE614788793E2C7EE6AEE76EC7AA
 	 */
 	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TwoBoneIK_773EEE614788793E2C7EE6AEE76EC7AA_Params
@@ -179,16 +189,6 @@ namespace CG
 	 */
 	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TwoBoneIK_774B3C0A43A12CED83BD8F8A76AA5201_Params
 	{
-	};
-
-	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.FreddyCorrupted
-	 */
-	struct UVanny_ABP_C_FreddyCorrupted_Params
-	{
-	public:
-		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -205,6 +205,16 @@ namespace CG
 	 * Function Vanny_ABP.Vanny_ABP_C.EnterFreddyOverrideEvent
 	 */
 	struct UVanny_ABP_C_EnterFreddyOverrideEvent_Params
+	{
+	public:
+		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.CanLeapEvent
+	 */
+	struct UVanny_ABP_C_CanLeapEvent_Params
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -229,16 +239,6 @@ namespace CG
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		class ULevelSequencePlayer*                                Sequence;                                                // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.CanLeapEvent
-	 */
-	struct UVanny_ABP_C_CanLeapEvent_Params
-	{
-	public:
-		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
 
@@ -273,6 +273,13 @@ namespace CG
 	};
 
 	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.StopScan
+	 */
+	struct UVanny_ABP_C_StopScan_Params
+	{
+	};
+
+	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.CutsceneGrateEvent
 	 */
 	struct UVanny_ABP_C_CutsceneGrateEvent_Params
@@ -280,23 +287,6 @@ namespace CG
 	public:
 		class ULevelSequencePlayer*                                SequencePlayer;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	};
-
-	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.Spotlight Aim Actor
-	 */
-	struct UVanny_ABP_C_Spotlight_Aim_Actor_Params
-	{
-	public:
-		class AActor*                                              AimActor;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.StopScan
-	 */
-	struct UVanny_ABP_C_StopScan_Params
-	{
 	};
 
 	/**
@@ -314,13 +304,6 @@ namespace CG
 	};
 
 	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_BlendListByBool_4112D5E24846CAD77ED5268E263F386E
-	 */
-	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_BlendListByBool_4112D5E24846CAD77ED5268E263F386E_Params
-	{
-	};
-
-	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.JumpEvent
 	 */
 	struct UVanny_ABP_C_JumpEvent_Params
@@ -328,6 +311,20 @@ namespace CG
 	public:
 		bool                                                       CanJump;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_BlendListByBool_4112D5E24846CAD77ED5268E263F386E
+	 */
+	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_BlendListByBool_4112D5E24846CAD77ED5268E263F386E_Params
+	{
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_76F1A1E9459450E653946FBDD7A15E7E
+	 */
+	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_76F1A1E9459450E653946FBDD7A15E7E_Params
+	{
 	};
 
 	/**
@@ -344,17 +341,20 @@ namespace CG
 	};
 
 	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_76F1A1E9459450E653946FBDD7A15E7E
-	 */
-	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_76F1A1E9459450E653946FBDD7A15E7E_Params
-	{
-	};
-
-	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.Breakthrough
 	 */
 	struct UVanny_ABP_C_Breakthrough_Params
 	{
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.Spotlight Aim Actor
+	 */
+	struct UVanny_ABP_C_Spotlight_Aim_Actor_Params
+	{
+	public:
+		class AActor*                                              AimActor;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
 	};
 
 	/**
@@ -434,6 +434,16 @@ namespace CG
 	};
 
 	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.SetPeek
+	 */
+	struct UVanny_ABP_C_SetPeek_Params
+	{
+	public:
+		bool                                                       ShouldPeek;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.SetAnim
 	 */
 	struct UVanny_ABP_C_SetAnim_Params
@@ -451,6 +461,13 @@ namespace CG
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_A121EC7A4201730FB0EA35B05D9B8E64
+	 */
+	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_A121EC7A4201730FB0EA35B05D9B8E64_Params
+	{
 	};
 
 	/**
@@ -492,20 +509,6 @@ namespace CG
 	};
 
 	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_A121EC7A4201730FB0EA35B05D9B8E64
-	 */
-	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_SequencePlayer_A121EC7A4201730FB0EA35B05D9B8E64_Params
-	{
-	};
-
-	/**
-	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_E3D575E54B378E795162C089DC80FF75
-	 */
-	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_E3D575E54B378E795162C089DC80FF75_Params
-	{
-	};
-
-	/**
 	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_3BB8A3A34C396EB7775C40A0FF08A440
 	 */
 	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_3BB8A3A34C396EB7775C40A0FF08A440_Params
@@ -523,6 +526,13 @@ namespace CG
 	 * Function Vanny_ABP.Vanny_ABP_C.AnimNotify_BeginRun
 	 */
 	struct UVanny_ABP_C_AnimNotify_BeginRun_Params
+	{
+	};
+
+	/**
+	 * Function Vanny_ABP.Vanny_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_E3D575E54B378E795162C089DC80FF75
+	 */
+	struct UVanny_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Vanny_ABP_AnimGraphNode_TransitionResult_E3D575E54B378E795162C089DC80FF75_Params
 	{
 	};
 
@@ -648,7 +658,7 @@ namespace CG
 	struct UVanny_ABP_C_ExecuteUbergraph_Vanny_ABP_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

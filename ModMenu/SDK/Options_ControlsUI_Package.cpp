@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.OnPreviewKeyDown
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.GetAllKeys
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.Set References
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.Get_VerticalInvert
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -100,26 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UOptions_ControlsUI_C::BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature");
-		
-		UOptions_ControlsUI_C_BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__HapticSens_Slidebar_K2Node_ComponentBoundEvent_6_SliderValueChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -138,26 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UOptions_ControlsUI_C::BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature");
-		
-		UOptions_ControlsUI_C_BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -176,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -198,7 +160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__GamepadVerticalSens_Slidebar_K2Node_ComponentBoundEvent_0_SliderValueChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -217,7 +179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__GamepadHorizontalSens_Slidebar_K2Node_ComponentBoundEvent_1_SliderValueChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -236,7 +198,45 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UOptions_ControlsUI_C::BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature");
+		
+		UOptions_ControlsUI_C_BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature
+	 * 		Flags  -> (BlueprintEvent)
+	 */
+	void UOptions_ControlsUI_C::BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature");
+		
+		UOptions_ControlsUI_C_BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__RestoreDefaultsButton_Controls_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -255,7 +255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__SprintToggle_ComboBox_1_K2Node_ComponentBoundEvent_4_ArrowKeyPressed__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.SetSavedValues
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -293,7 +293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.RevertChangedValues
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -312,7 +312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__ApplyChangesButton_Controls_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -331,7 +331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.Updateicons
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -350,7 +350,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.ReapplySavedMappings
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UOptions_ControlsUI_C::ReapplySavedMappings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Options_ControlsUI.Options_ControlsUI_C.ReapplySavedMappings");
+		
+		UOptions_ControlsUI_C_ReapplySavedMappings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Options_ControlsUI.Options_ControlsUI_C.ExecuteUbergraph_Options_ControlsUI
 	 * 		Flags  -> (Final)
 	 * Parameters:

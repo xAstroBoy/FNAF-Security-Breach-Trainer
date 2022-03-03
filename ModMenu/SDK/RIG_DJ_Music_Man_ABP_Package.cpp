@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CamShakeScale
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.UpdateLeapInfo
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_E4EE56FD477D41A6FD9038823314F52B
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.LeapLoopEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_BA34BC744693B5283F9F2087F21B025F
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EndoBowlingCrawlEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -169,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EndoSpawnInBowlingEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.FreddyEndIdle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_DA3CEDB6474FADAC83D740A555E914BA
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -229,7 +229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanDieEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanHackEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.VoAnimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -295,7 +295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.RoxyCrying
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -317,7 +317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.FreddyCorrupted
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -339,7 +339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.ForceAnimOverride
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -361,7 +361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EnterFreddyOverrideEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -383,7 +383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanLeapEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -405,7 +405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanLieDownEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -427,7 +427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.IsSickEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -449,7 +449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanWaveEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -471,7 +471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.PoundDoorEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -493,7 +493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.StopScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -512,7 +512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.LandEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -531,7 +531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.JumpEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -553,7 +553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.ForceScanStates
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Breakthrough
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -600,7 +600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.OnAnimInstanceSwap
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -619,7 +619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.RummagingDoneEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -638,7 +638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.IsNotFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.IsFirstPersonEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -676,7 +676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanRummageEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -695,7 +695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Stun Event
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -717,7 +717,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CutSceneSpineBlender
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -741,7 +741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanRunEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -763,7 +763,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.StartScan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -782,7 +782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.SetHeadAimTarget
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -804,7 +804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.OpenDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -823,7 +823,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Open
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -842,7 +842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.SearchingDone
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -861,7 +861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Searching
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -883,7 +883,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_LayeredBoneBlend_AE9AC9D746CB3B7B4358ECA182D07D77
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -902,7 +902,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_912542354E41E38FF0BDDBA540255CDB
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -921,7 +921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.TurnEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -943,7 +943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.HeadAimEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -965,7 +965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_64B47A9440776F2579137CA803CB45B7
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -984,7 +984,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_ModifyBone_2A5E612B44172A1CB0AE189CC3489105
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1003,7 +1003,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1025,7 +1025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Set Door
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1047,7 +1047,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Set Reach
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1069,7 +1069,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_L1_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1088,7 +1088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_L2_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1107,7 +1107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_L3_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1126,7 +1126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_R1_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1145,7 +1145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_R2_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1164,7 +1164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_R3_Contact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1183,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.TubeCanLeave
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1205,7 +1205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.TubePhase2
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1227,7 +1227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Jumpscare
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1249,7 +1249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.TubeCanGrab
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1271,7 +1271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CutsceneGrateEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1293,7 +1293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_DJ_Music_Man_ABP_AnimGraphNode_TransitionResult_7090029B4C67C42BFE84D2935884BA85
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1312,7 +1312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_Exit_L_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1331,7 +1331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_Exit_R_Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1350,7 +1350,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_DoneExitingBathroom
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1369,7 +1369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_BeginRateScale
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1388,7 +1388,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_EndRateScale
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1407,7 +1407,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.Spotlight Aim Actor
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1429,7 +1429,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -1448,7 +1448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_HasNotReversedEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1467,7 +1467,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.AnimNotify_HasReversedEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1486,7 +1486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.ThrowObject
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1508,7 +1508,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.CanJumpscareEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1527,7 +1527,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_DJ_Music_Man_ABP.RIG_DJ_Music_Man_ABP_C.ExecuteUbergraph_RIG_DJ_Music_Man_ABP
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

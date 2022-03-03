@@ -15,6 +15,13 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.PlaySequence
+	 */
+	struct APlaySequenceTrigger_EndChoice_C_PlaySequence_Params
+	{
+	};
+
+	/**
 	 * Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.FireEscapeConditionCheck
 	 */
 	struct APlaySequenceTrigger_EndChoice_C_FireEscapeConditionCheck_Params
@@ -46,7 +53,7 @@ namespace CG
 	public:
 		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int                                                        WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -58,7 +65,7 @@ namespace CG
 	public:
 		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int                                                        WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 
@@ -126,12 +133,26 @@ namespace CG
 	};
 
 	/**
+	 * Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Stay VO Finished
+	 */
+	struct APlaySequenceTrigger_EndChoice_C_On_Stay_VO_Finished_Params
+	{
+	};
+
+	/**
+	 * Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ResetTrigger
+	 */
+	struct APlaySequenceTrigger_EndChoice_C_ResetTrigger_Params
+	{
+	};
+
+	/**
 	 * Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ExecuteUbergraph_PlaySequenceTrigger_EndChoice
 	 */
 	struct APlaySequenceTrigger_EndChoice_C_ExecuteUbergraph_PlaySequenceTrigger_EndChoice_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

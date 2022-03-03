@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WaitWhileBoolsAreEqual.WaitWhileBoolsAreEqual_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WaitWhileBoolsAreEqual.WaitWhileBoolsAreEqual_C.ExecuteUbergraph_WaitWhileBoolsAreEqual
 	 * 		Flags  -> (Final)
 	 * Parameters:

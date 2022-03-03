@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7130
+	 * 		Offset -> 0x007A7170
 	 * 		Name   -> Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7390
+	 * 		Offset -> 0x007A73D0
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7080
+	 * 		Offset -> 0x007A70C0
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A6FC0
+	 * 		Offset -> 0x007A7000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -170,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A6F90
+	 * 		Offset -> 0x007A6FD0
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -220,7 +220,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A71E0
+	 * 		Offset -> 0x007A7220
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7100
+	 * 		Offset -> 0x007A7140
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */

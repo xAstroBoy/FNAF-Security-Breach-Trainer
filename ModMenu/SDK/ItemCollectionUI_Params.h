@@ -15,6 +15,28 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function ItemCollectionUI.ItemCollectionUI_C.GoToRetroCatOrAllCat
+	 */
+	struct UItemCollectionUI_C_GoToRetroCatOrAllCat_Params
+	{
+	public:
+		SlateCore_EUINavigation                                    Navigation;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UWidget*                                             ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function ItemCollectionUI.ItemCollectionUI_C.GoToFirstItemInGrid
+	 */
+	struct UItemCollectionUI_C_GoToFirstItemInGrid_Params
+	{
+	public:
+		SlateCore_EUINavigation                                    Navigation;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UWidget*                                             ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function ItemCollectionUI.ItemCollectionUI_C.OnKeyDown
 	 */
 	struct UItemCollectionUI_C_OnKeyDown_Params
@@ -124,6 +146,13 @@ namespace CG
 	 * Function ItemCollectionUI.ItemCollectionUI_C.BndEvt__RetroCDButton_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
 	 */
 	struct UItemCollectionUI_C_BndEvt__RetroCDButton_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature_Params
+	{
+	};
+
+	/**
+	 * Function ItemCollectionUI.ItemCollectionUI_C.BndEvt__AllButton_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
+	 */
+	struct UItemCollectionUI_C_BndEvt__AllButton_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature_Params
 	{
 	};
 

@@ -53,44 +53,6 @@ namespace CG
 	};
 
 	/**
-	 * Function ShatteredMontyPile.ShatteredMontyPile_C.OnFailure_BE8F1D784F4D64083536E28939128882
-	 */
-	struct AShatteredMontyPile_C_OnFailure_BE8F1D784F4D64083536E28939128882_Params
-	{
-	public:
-		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function ShatteredMontyPile.ShatteredMontyPile_C.OnSuccess_BE8F1D784F4D64083536E28939128882
-	 */
-	struct AShatteredMontyPile_C_OnSuccess_BE8F1D784F4D64083536E28939128882_Params
-	{
-	public:
-		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function ShatteredMontyPile.ShatteredMontyPile_C.OnFailure_784BAEFD4B25502D92084086769DB95B
-	 */
-	struct AShatteredMontyPile_C_OnFailure_784BAEFD4B25502D92084086769DB95B_Params
-	{
-	};
-
-	/**
-	 * Function ShatteredMontyPile.ShatteredMontyPile_C.OnSuccess_784BAEFD4B25502D92084086769DB95B
-	 */
-	struct AShatteredMontyPile_C_OnSuccess_784BAEFD4B25502D92084086769DB95B_Params
-	{
-	};
-
-	/**
 	 * Function ShatteredMontyPile.ShatteredMontyPile_C.ReceiveBeginPlay
 	 */
 	struct AShatteredMontyPile_C_ReceiveBeginPlay_Params

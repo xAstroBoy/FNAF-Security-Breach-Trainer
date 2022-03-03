@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF8670
+	 * 		Offset -> 0x00AF86B0
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndToComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF8570
+	 * 		Offset -> 0x00AF85B0
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndTo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF84C0
+	 * 		Offset -> 0x00AF8500
 	 * 		Name   -> Function CableComponent.CableComponent.GetCableParticleLocations
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF8490
+	 * 		Offset -> 0x00AF84D0
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF8460
+	 * 		Offset -> 0x00AF84A0
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

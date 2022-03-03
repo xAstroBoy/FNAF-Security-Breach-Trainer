@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9120
+	 * 		Offset -> 0x029A9DF0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -413,7 +413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9090
+	 * 		Offset -> 0x029A9D60
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8F20
+	 * 		Offset -> 0x029A9BF0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8D70
+	 * 		Offset -> 0x029A9A40
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.GetTransform
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -551,7 +551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8DE0
+	 * 		Offset -> 0x029A9AB0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
 	 * 		Flags  -> (Native, Public, Const)
 	 */
@@ -573,7 +573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8C80
+	 * 		Offset -> 0x029A9950
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
 	 * Parameters:
@@ -601,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8BD0
+	 * 		Offset -> 0x029A98A0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetOrigin
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -623,7 +623,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8B90
+	 * 		Offset -> 0x029A9860
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetDirection
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -659,7 +659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9000
+	 * 		Offset -> 0x029A9CD0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
 	 * 		Flags  -> (Native, Public, Const)
 	 * Parameters:
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BAD0E0
+	 * 		Offset -> 0x029A9820
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.EndUpdate
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -716,7 +716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BA2A90
+	 * 		Offset -> 0x00BA31A0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -750,7 +750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8E10
+	 * 		Offset -> 0x029A9AE0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8C10
+	 * 		Offset -> 0x029A98E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
 	 * 		Flags  -> (Native, Public, Const)
 	 */
@@ -795,7 +795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8B70
+	 * 		Offset -> 0x029A9840
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -815,7 +815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BAD0E0
+	 * 		Offset -> 0x029A9820
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -849,7 +849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8E90
+	 * 		Offset -> 0x029A9B60
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -872,7 +872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8C40
+	 * 		Offset -> 0x029A9910
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -894,7 +894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A8B70
+	 * 		Offset -> 0x029A9840
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -914,7 +914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BAD0E0
+	 * 		Offset -> 0x029A9820
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
 	 * 		Flags  -> (Native, Public)
 	 */

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_Fazertag_LINK.Staffbot_Fazertag_LINK_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_Fazertag_LINK.Staffbot_Fazertag_LINK_C.ExecuteUbergraph_Staffbot_Fazertag_LINK
 	 * 		Flags  -> (Final)
 	 * Parameters:

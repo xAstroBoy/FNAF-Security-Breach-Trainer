@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass OGM_Kitchen.OGM_Kitchen_C
-	 * Size -> 0x02B2 (FullSize[0x0563] - InheritedSize[0x02B1])
+	 * Size -> 0x02C7 (FullSize[0x0578] - InheritedSize[0x02B1])
 	 */
 	class AOGM_Kitchen_C : public AMGM_OfficeGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_6SSI[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P41T[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UTimeCheckComponent_C*                               TimeCheckComponent;                                      // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UWorldStateHandlerComponent*                         WorldStateHandler_KitchenChicaStart;                     // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -31,15 +31,15 @@ namespace CG
 		class UArrowComponent*                                     KitchenStaffBotSpawn;                                    // 0x02E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       Debug_JumpToLastStep;                                    // 0x02F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       P_CompletedPizza;                                        // 0x02F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_854S[0x6];                                   // 0x02F2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_F5JC[0x6];                                   // 0x02F2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              PizzaMakerManager[0x28];                                 // 0x02F2(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       Debug_FastStations;                                      // 0x0320(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BX42[0x7];                                   // 0x0321(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YML6[0x7];                                   // 0x0321(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UStaffbotKitchenHUD_C*                               HUD;                                                     // 0x0328(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class APlayerControlledStaffBot_Kitchen_C*                 P_StaffBot;                                              // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              ChicaManager[0x28];                                      // 0x0338(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      P_DoorPower;                                             // 0x0360(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_1REP[0x4];                                   // 0x0364(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VB43[0x4];                                   // 0x0364(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              OfficeDoor[0x28];                                        // 0x0364(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      InitialDoorPower;                                        // 0x0390(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      P_DeltaSeconds;                                          // 0x0394(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -51,16 +51,16 @@ namespace CG
 		bool                                                       skip_audio;                                              // 0x0440(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       playRandomVO;                                            // 0x0441(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       VO_finished;                                             // 0x0442(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NR26[0x5];                                   // 0x0443(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_I8FL[0x5];                                   // 0x0443(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AKitchen_EmergencyUIActor_C*                         EmergencyUI;                                             // 0x0448(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Bot_Sequence_Trigger[0x28];                              // 0x0450(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              LineSkipper[0x28];                                       // 0x0478(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       enableCountdownRTPC;                                     // 0x04A0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       VOPlaying;                                               // 0x04A1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_YZDX[0x6];                                   // 0x04A2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PLKE[0x6];                                   // 0x04A2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UAkAudioEvent*>                               ChicaVOLines;                                            // 0x04A8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		bool                                                       gameover;                                                // 0x04B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DJ98[0x3];                                   // 0x04B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_45DX[0x3];                                   // 0x04B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    PCTowerEmitterEvent;                                     // 0x04BC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Monitor[0x28];                                           // 0x04C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Tower[0x28];                                             // 0x04E8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -69,6 +69,8 @@ namespace CG
 		bool                                                       LoadInChicaPizza;                                        // 0x0560(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       CanVOPlay;                                               // 0x0561(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       SauceAdded;                                              // 0x0562(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_M7IR[0x5];                                   // 0x0563(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              KitchenDoors[0x10];                                      // 0x0563(0x0010) UNKNOWN PROPERTY: ArrayProperty
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);

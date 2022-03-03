@@ -2218,6 +2218,17 @@ namespace CG
 	};
 
 	/**
+	 * Function fnaf9.FNAFGameInstanceBase.GetGameTipTextByIndex
+	 */
+	struct UFNAFGameInstanceBase_GetGameTipTextByIndex_Params
+	{
+	public:
+		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FText                                                ReturnValue;                                             // 0x0008(0x0018)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+	};
+
+	/**
 	 * Function fnaf9.FNAFGameInstanceBase.GetCurrentGameType
 	 */
 	struct UFNAFGameInstanceBase_GetCurrentGameType_Params
@@ -2245,6 +2256,20 @@ namespace CG
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.EndLoadingScreen
+	 */
+	struct UFNAFGameInstanceBase_EndLoadingScreen_Params
+	{
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.BeginLoadingScreen
+	 */
+	struct UFNAFGameInstanceBase_BeginLoadingScreen_Params
+	{
 	};
 
 	/**
@@ -3856,6 +3881,16 @@ namespace CG
 	{
 	public:
 		class ACharacter*                                          PlayerCharacter;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	};
+
+	/**
+	 * Function fnaf9.HideObjectInterface.IsEnterExitPlaying
+	 */
+	struct UHideObjectInterface_IsEnterExitPlaying_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	};
 
@@ -5905,6 +5940,16 @@ namespace CG
 	};
 
 	/**
+	 * Function fnaf9.WorldStateSystem.SetCanShowInstructionCards
+	 */
+	struct UWorldStateSystem_SetCanShowInstructionCards_Params
+	{
+	public:
+		bool                                                       bCanShowInstructionCards;                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	};
+
+	/**
 	 * Function fnaf9.WorldStateSystem.SetCanEnterExitFreddy
 	 */
 	struct UWorldStateSystem_SetCanEnterExitFreddy_Params
@@ -6211,6 +6256,16 @@ namespace CG
 	public:
 		bool                                                       CanStart;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		fnaf9_ECantStartMinigameReason                             reason;                                                  // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.CanShowInstructionCards
+	 */
+	struct UWorldStateSystem_CanShowInstructionCards_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	};
 

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB2460
+	 * 		Offset -> 0x01EB3140
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.RemoveGameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -41,7 +41,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB2340
+	 * 		Offset -> 0x01EB3020
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB21D0
+	 * 		Offset -> 0x01EB2EB0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagContainerTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB2080
+	 * 		Offset -> 0x01EB2D60
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1FC0
+	 * 		Offset -> 0x01EB2CA0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1ED0
+	 * 		Offset -> 0x01EB2BB0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MatchesTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1D90
+	 * 		Offset -> 0x01EB2A70
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MatchesAnyTags
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1C80
+	 * 		Offset -> 0x01EB2960
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1BF0
+	 * 		Offset -> 0x01EB28D0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -257,7 +257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1AC0
+	 * 		Offset -> 0x01EB27A0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -282,7 +282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1A10
+	 * 		Offset -> 0x01EB26F0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1940
+	 * 		Offset -> 0x01EB2620
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromArray
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1860
+	 * 		Offset -> 0x01EB2540
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.IsTagQueryEmpty
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -357,7 +357,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB17E0
+	 * 		Offset -> 0x01EB24C0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.IsGameplayTagValid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -382,7 +382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB16A0
+	 * 		Offset -> 0x01EB2380
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.HasTag
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -411,7 +411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1480
+	 * 		Offset -> 0x01EB2160
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.HasAnyTags
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -440,7 +440,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1230
+	 * 		Offset -> 0x01EB1F10
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.HasAllTags
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -469,7 +469,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1110
+	 * 		Offset -> 0x01EB1DF0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -494,7 +494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0FA0
+	 * 		Offset -> 0x01EB1C80
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.GetTagName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -519,7 +519,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0E20
+	 * 		Offset -> 0x01EB1B00
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -544,7 +544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0D20
+	 * 		Offset -> 0x01EB1A00
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -569,7 +569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0C50
+	 * 		Offset -> 0x01EB1930
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -594,7 +594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0A80
+	 * 		Offset -> 0x01EB1760
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.GetAllActorsOfClassMatchingTagQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -625,7 +625,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0930
+	 * 		Offset -> 0x01EB1610
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -652,7 +652,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0870
+	 * 		Offset -> 0x01EB1550
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -679,7 +679,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0790
+	 * 		Offset -> 0x01EB1470
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0630
+	 * 		Offset -> 0x01EB1310
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -731,7 +731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0510
+	 * 		Offset -> 0x01EB11F0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.BreakGameplayTagContainer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -758,7 +758,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB03E0
+	 * 		Offset -> 0x01EB10C0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.AppendGameplayTagContainers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -785,7 +785,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB02E0
+	 * 		Offset -> 0x01EB0FC0
 	 * 		Name   -> Function GameplayTags.BlueprintGameplayTagLibrary.AddGameplayTag
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -826,7 +826,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1600
+	 * 		Offset -> 0x01EB22E0
 	 * 		Name   -> Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -851,7 +851,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB13B0
+	 * 		Offset -> 0x01EB2090
 	 * 		Name   -> Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -876,7 +876,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB1040
+	 * 		Offset -> 0x01EB1D20
 	 * 		Name   -> Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -901,7 +901,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EB0EE0
+	 * 		Offset -> 0x01EB1BC0
 	 * 		Name   -> Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:

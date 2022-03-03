@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_GregoryCrouch_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -33,7 +33,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyEnterExit_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -54,7 +54,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyCall_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_RoxyEyes_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_ChicaBeak_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -117,7 +117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_MontyClaws_CheckedState_1
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -160,7 +160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -182,7 +182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -226,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -270,7 +270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.ExecuteUbergraph_DbgGregoryStatesUI
 	 * 		Flags  -> (Final)
 	 * Parameters:

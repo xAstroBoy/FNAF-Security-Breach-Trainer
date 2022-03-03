@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.FindClosestHideLocation
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -43,7 +43,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.OnMoveFinished_0E1FC4584AE08718647C04A951D545C1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -67,7 +67,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.OnRequestFailed_0E1FC4584AE08718647C04A951D545C1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoveToPlayersHidingSpot.MoveToPlayersHidingSpot_C.ExecuteUbergraph_MoveToPlayersHidingSpot
 	 * 		Flags  -> (Final)
 	 * Parameters:

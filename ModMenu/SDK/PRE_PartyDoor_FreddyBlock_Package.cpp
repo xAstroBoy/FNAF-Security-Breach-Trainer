@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PRE_PartyDoor_FreddyBlock_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -51,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Opening
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -70,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Closing
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -89,13 +88,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.ExecuteUbergraph_PRE_PartyDoor_FreddyBlock
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_PartyDoor_FreddyBlock_C::ExecuteUbergraph_PRE_PartyDoor_FreddyBlock(int EntryPoint)
+	void APRE_PartyDoor_FreddyBlock_C::ExecuteUbergraph_PRE_PartyDoor_FreddyBlock(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

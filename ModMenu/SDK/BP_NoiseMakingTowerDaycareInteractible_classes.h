@@ -31,7 +31,7 @@ namespace CG
 		class UAnimSequenceBase*                                   Fall_Animation;                                          // 0x02E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimSequenceBase*                                   Reset_Animation;                                         // 0x02E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    Count;                                                   // 0x02F0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_X15Z[0x4];                                   // 0x02F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AGRG[0x4];                                   // 0x02F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Security_Office_Daycare[0x28];                           // 0x02F4(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              LineSkipper[0x28];                                       // 0x0320(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 

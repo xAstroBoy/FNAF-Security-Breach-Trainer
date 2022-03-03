@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_MAP_WorldAmbience(int EntryPoint);
+		void ExecuteUbergraph_MAP_WorldAmbience(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

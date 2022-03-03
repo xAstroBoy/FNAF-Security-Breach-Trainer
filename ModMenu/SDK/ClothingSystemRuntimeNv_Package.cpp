@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x027F4470
+	 * 		Offset -> 0x027F5120
 	 * 		Name   -> Function ClothingSystemRuntimeNv.ClothingSimulationInteractorNv.SetAnimDriveDamperStiffness
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

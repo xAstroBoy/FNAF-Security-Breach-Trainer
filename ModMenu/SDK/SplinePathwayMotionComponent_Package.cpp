@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SplinePathwayMotionComponent.SplinePathwayMotionComponent_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function SplinePathwayMotionComponent.SplinePathwayMotionComponent_C.ExecuteUbergraph_SplinePathwayMotionComponent
 	 * 		Flags  -> (Final)
 	 * Parameters:

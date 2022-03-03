@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6C10
+	 * 		Offset -> 0x01BE78F0
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -65,7 +65,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6B50
+	 * 		Offset -> 0x01BE7830
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6A80
+	 * 		Offset -> 0x01BE7760
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007B6220
+	 * 		Offset -> 0x007B6260
 	 * 		Name   -> Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE66F0
+	 * 		Offset -> 0x01BE73D0
 	 * 		Name   -> Function Landscape.LandscapeProxy.EditorApplySpline
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6660
+	 * 		Offset -> 0x01BE7340
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE65E0
+	 * 		Offset -> 0x01BE72C0
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -227,7 +227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6560
+	 * 		Offset -> 0x01BE7240
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE64E0
+	 * 		Offset -> 0x01BE71C0
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6460
+	 * 		Offset -> 0x01BE7140
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D10
+	 * 		Offset -> 0x00875D50
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.RequestLandscapeUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -344,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.Render
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -372,7 +372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.Initialize
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
@@ -398,7 +398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -436,7 +436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE4C50
+	 * 		Offset -> 0x01BE5930
 	 * 		Name   -> Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -461,7 +461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE4B70
+	 * 		Offset -> 0x01BE5850
 	 * 		Name   -> Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -488,7 +488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE4B70
+	 * 		Offset -> 0x01BE5850
 	 * 		Name   -> Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -585,7 +585,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE4CE0
+	 * 		Offset -> 0x01BE59C0
 	 * 		Name   -> Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -733,7 +733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BE6A00
+	 * 		Offset -> 0x01BE76E0
 	 * 		Name   -> Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

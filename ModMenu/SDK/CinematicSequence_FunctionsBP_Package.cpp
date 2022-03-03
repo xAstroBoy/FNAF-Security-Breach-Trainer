@@ -12,7 +12,55 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCineComponent
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class UCameraComponent*                            CameraComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UCinematicSequence_FunctionsBP_C::STATIC_ApplyPlayerCamSettingsToCineComponent(class UCameraComponent* CameraComponent, class UObject* __WorldContext)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCineComponent");
+		
+		UCinematicSequence_FunctionsBP_C_ApplyPlayerCamSettingsToCineComponent_Params params {};
+		params.CameraComponent = CameraComponent;
+		params.__WorldContext = __WorldContext;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCine
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class ACineCameraActor*                            CineCamera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UCinematicSequence_FunctionsBP_C::STATIC_ApplyPlayerCamSettingsToCine(class ACineCameraActor* CineCamera, class UObject* __WorldContext)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.ApplyPlayerCamSettingsToCine");
+		
+		UCinematicSequence_FunctionsBP_C_ApplyPlayerCamSettingsToCine_Params params {};
+		params.CineCamera = CineCamera;
+		params.__WorldContext = __WorldContext;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.MatchPlayerCamPPSettings
 	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.SetDisableControllerInputs
 	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -66,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.MatchPlayerCameraSettings
 	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -92,7 +140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.CinematicTeleportPlayer Func
 	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -120,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.Cinematic GetCurrentPlayerCam Func
 	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -146,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CinematicSequence_FunctionsBP.CinematicSequence_FunctionsBP_C.Cinematic Blend Player Cam Func
 	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

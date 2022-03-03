@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.ReceiveActorBeginOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.Event Post Spawn Logic
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -94,7 +94,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.End Animation Sequence
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -113,7 +113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AnimationMusicManTeleportSpawnTrigger.AnimationMusicManTeleportSpawnTrigger_C.ExecuteUbergraph_AnimationMusicManTeleportSpawnTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:

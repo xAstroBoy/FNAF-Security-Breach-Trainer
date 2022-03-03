@@ -16,12 +16,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass StaffBotSecurityPatrol.StaffBotSecurityPatrol_C
-	 * Size -> 0x006A (FullSize[0x06BC] - InheritedSize[0x0652])
+	 * Size -> 0x0064 (FullSize[0x06BC] - InheritedSize[0x0658])
 	 */
 	class AStaffBotSecurityPatrol_C : public AStaffBotBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_20LG[0x6];                                   // 0x0652(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0658(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USpotLightComponent*                                 SpotLight;                                               // 0x0660(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UStaticMeshComponent*                                GodRay;                                                  // 0x0668(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -40,7 +39,7 @@ namespace CG
 		bool DoorEntryNotAllowed(class UDoorComponent* DoorComponent);
 		void SetSplineFollowerContext(const struct FSplineFollowerContext& SplineFollowerContext);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_StaffBotSecurityPatrol(int EntryPoint);
+		void ExecuteUbergraph_StaffBotSecurityPatrol(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

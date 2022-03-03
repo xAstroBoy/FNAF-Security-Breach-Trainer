@@ -33,13 +33,13 @@ namespace CG
 		class UBoxComponent*                                       PlayerInteract;                                          // 0x0270(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanStartCapture;                                         // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_CM9N[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OW8R[0x7];                                   // 0x0281(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AttackerSpawnDestinationPair[0x50];                      // 0x0281(0x0050) UNKNOWN PROPERTY: MapProperty
 		unsigned char                                              CapturerSpawn[0x28];                                     // 0x02D8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Manager_Reference[0x28];                                 // 0x0300(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       Spawn_Capture_Bot;                                       // 0x0328(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       EmitterPlaying;                                          // 0x0329(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TZ3H[0x6];                                   // 0x032A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1FD8[0x6];                                   // 0x032A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              OcclusionTrace[0x28];                                    // 0x032A(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		int32_t                                                    Color;                                                   // 0x0358(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 

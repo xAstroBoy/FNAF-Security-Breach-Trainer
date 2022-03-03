@@ -21,7 +21,7 @@ namespace CG
 	class APRE_PartyDoor_Long_InteractOpen_C : public APRE_PartyDoor_Long_C
 	{
 	public:
-		unsigned char                                              UnknownData_OTTQ[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XP9J[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0348(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class ULightAreaDoorComponent_C*                           LightAreaDoorComponent;                                  // 0x0350(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
@@ -30,7 +30,7 @@ namespace CG
 		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
-		void GetInteractibleType(TEnumAsByte<InteractibleType_EInteractibleType>* Type, TEnumAsByte<InteractiblePressType_EInteractiblePressType>* PressType);
+		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
@@ -39,7 +39,7 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void ReceiveBeginPlay();
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void ExecuteUbergraph_PRE_PartyDoor_Long_InteractOpen(int EntryPoint);
+		void ExecuteUbergraph_PRE_PartyDoor_Long_InteractOpen(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -26,6 +26,7 @@ namespace CG
 		class FName                                                Name;                                                    // 0x0238(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		void Get_Anim_Item_Type(GregoryAnimItemEnum_EGregoryAnimItemEnum* AnimType);
 		void PullOut();
 		void PutAway();
 		void PrimaryAction();

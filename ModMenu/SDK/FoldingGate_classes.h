@@ -28,7 +28,7 @@ namespace CG
 		class UWorldStateComponent*                                WorldState;                                              // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     Scene;                                                   // 0x0250(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       Open;                                                    // 0x0258(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_EAWK[0x7];                                   // 0x0259(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NW5L[0x7];                                   // 0x0259(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              DoorManager[0x28];                                       // 0x0259(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
@@ -41,11 +41,11 @@ namespace CG
 		void SetDoorLockAI(bool Lock);
 		void SetDoorLockPlayer(bool Lock);
 		void SetDoorRequiredItem(const class FName& ItemName);
-		void SetSecurityLevel(int NewSecurityLevel);
+		void SetSecurityLevel(int32_t NewSecurityLevel);
 		void ReceiveBeginPlay();
 		void ForceDoorOpen();
-		void BndEvt__AIInteraction_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-		void BndEvt__AIInteraction_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex);
+		void BndEvt__AIInteraction_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__AIInteraction_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
 		void ForceDoorClose();
 		void Open_For_AI();
 		void Close_For_AI();
@@ -53,7 +53,7 @@ namespace CG
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
 		void PostGameLoad();
 		void OnCheckpointSave(class UFNAFSaveData* SaveDataObject);
-		void ExecuteUbergraph_FoldingGate(int EntryPoint);
+		void ExecuteUbergraph_FoldingGate(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

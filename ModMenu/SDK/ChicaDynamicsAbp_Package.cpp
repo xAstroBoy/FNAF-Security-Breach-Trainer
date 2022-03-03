@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ChicaDynamicsABP_AnimGraphNode_AnimDynamics_24ABA2374DD4480E3F207EAB5F2C0215
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ChicaDynamicsABP_AnimGraphNode_RigidBody_D1A8DEF14E01AF9939F1ABA66697AA9D
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ChicaDynamicsABP_AnimGraphNode_AnimDynamics_8DE6188741D2F3247D3D34B8F1DD3F01
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ChicaDynamicsAbp.ChicaDynamicsABP_C.ExecuteUbergraph_ChicaDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

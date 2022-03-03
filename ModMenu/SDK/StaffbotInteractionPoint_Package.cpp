@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotInteractionPoint.StaffbotInteractionPoint_C.BndEvt__InteractionResetCollision_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotInteractionPoint.StaffbotInteractionPoint_C.BndEvt__InteractionPoint_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotInteractionPoint.StaffbotInteractionPoint_C.ExecuteUbergraph_StaffbotInteractionPoint
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

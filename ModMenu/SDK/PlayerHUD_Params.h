@@ -249,6 +249,110 @@ namespace CG
 	};
 
 	/**
+	 * Function PlayerHUD.PlayerHUD_C.On Information Anim Finished
+	 */
+	struct UPlayerHUD_C_On_Information_Anim_Finished_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Update Hold Progress
+	 */
+	struct UPlayerHUD_C_Update_Hold_Progress_Params
+	{
+	public:
+		float                                                      Percent;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress
+	 */
+	struct UPlayerHUD_C_Cancel_Hold_Progress_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Complete Hold Progress
+	 */
+	struct UPlayerHUD_C_Complete_Hold_Progress_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Init Hold Progress
+	 */
+	struct UPlayerHUD_C_Init_Hold_Progress_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.On Security Level Updated
+	 */
+	struct UPlayerHUD_C_On_Security_Level_Updated_Params
+	{
+	public:
+		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Update
+	 */
+	struct UPlayerHUD_C_Update_Params
+	{
+	public:
+		int32_t                                                    Level;                                                   // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		bool                                                       HasRtx;                                                  // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       Has2080;                                                 // 0x0005(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.On Party Level Updated
+	 */
+	struct UPlayerHUD_C_On_Party_Level_Updated_Params
+	{
+	public:
+		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Setup Collected Display
+	 */
+	struct UPlayerHUD_C_Setup_Collected_Display_Params
+	{
+	public:
+		class FName                                                CollectedItem;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.On Party Pass Used
+	 */
+	struct UPlayerHUD_C_On_Party_Pass_Used_Params
+	{
+	public:
+		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.On Begin Save
+	 */
+	struct UPlayerHUD_C_On_Begin_Save_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.On End Save
+	 */
+	struct UPlayerHUD_C_On_End_Save_Params
+	{
+	};
+
+	/**
 	 * Function PlayerHUD.PlayerHUD_C.On Trailer Mode Changed
 	 */
 	struct UPlayerHUD_C_On_Trailer_Mode_Changed_Params
@@ -263,16 +367,6 @@ namespace CG
 	 */
 	struct UPlayerHUD_C_Hide_Objective_List_Params
 	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.On Party Level Updated
-	 */
-	struct UPlayerHUD_C_On_Party_Level_Updated_Params
-	{
-	public:
-		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -353,16 +447,6 @@ namespace CG
 	};
 
 	/**
-	 * Function PlayerHUD.PlayerHUD_C.On Security Level Updated
-	 */
-	struct UPlayerHUD_C_On_Security_Level_Updated_Params
-	{
-	public:
-		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function PlayerHUD.PlayerHUD_C.ShowInstructions
 	 */
 	struct UPlayerHUD_C_ShowInstructions_Params
@@ -404,146 +488,6 @@ namespace CG
 	};
 
 	/**
-	 * Function PlayerHUD.PlayerHUD_C.Init Hold Progress
-	 */
-	struct UPlayerHUD_C_Init_Hold_Progress_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Complete Hold Progress
-	 */
-	struct UPlayerHUD_C_Complete_Hold_Progress_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress
-	 */
-	struct UPlayerHUD_C_Cancel_Hold_Progress_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Update Hold Progress
-	 */
-	struct UPlayerHUD_C_Update_Hold_Progress_Params
-	{
-	public:
-		float                                                      Percent;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.ShowCollectedItemDisplay
-	 */
-	struct UPlayerHUD_C_ShowCollectedItemDisplay_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.On Information Anim Finished
-	 */
-	struct UPlayerHUD_C_On_Information_Anim_Finished_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.DebugStopShowingItemsCollected
-	 */
-	struct UPlayerHUD_C_DebugStopShowingItemsCollected_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Setup Collected Display
-	 */
-	struct UPlayerHUD_C_Setup_Collected_Display_Params
-	{
-	public:
-		class FName                                                CollectedItem;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.MoveMissionHUD
-	 */
-	struct UPlayerHUD_C_MoveMissionHUD_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.OnPlayerInteract
-	 */
-	struct UPlayerHUD_C_OnPlayerInteract_Params
-	{
-	public:
-		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Setup Interactible Display
-	 */
-	struct UPlayerHUD_C_Setup_Interactible_Display_Params
-	{
-	public:
-		class UObject*                                             Interactible;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.On End Save
-	 */
-	struct UPlayerHUD_C_On_End_Save_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.On Begin Save
-	 */
-	struct UPlayerHUD_C_On_Begin_Save_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.Update
-	 */
-	struct UPlayerHUD_C_Update_Params
-	{
-	public:
-		int32_t                                                    Level;                                                   // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		bool                                                       HasRtx;                                                  // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		bool                                                       Has2080;                                                 // 0x0005(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.OnPlayerInteractCancel
-	 */
-	struct UPlayerHUD_C_OnPlayerInteractCancel_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.HideRequirementPanel
-	 */
-	struct UPlayerHUD_C_HideRequirementPanel_Params
-	{
-	};
-
-	/**
-	 * Function PlayerHUD.PlayerHUD_C.On Party Pass Used
-	 */
-	struct UPlayerHUD_C_On_Party_Pass_Used_Params
-	{
-	public:
-		int32_t                                                    NewLevel;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function PlayerHUD.PlayerHUD_C.Tick
 	 */
 	struct UPlayerHUD_C_Tick_Params
@@ -578,6 +522,62 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.ShowCollectedItemDisplay
+	 */
+	struct UPlayerHUD_C_ShowCollectedItemDisplay_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.DebugStopShowingItemsCollected
+	 */
+	struct UPlayerHUD_C_DebugStopShowingItemsCollected_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.MoveMissionHUD
+	 */
+	struct UPlayerHUD_C_MoveMissionHUD_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.OnPlayerInteract
+	 */
+	struct UPlayerHUD_C_OnPlayerInteract_Params
+	{
+	public:
+		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.OnPlayerInteractCancel
+	 */
+	struct UPlayerHUD_C_OnPlayerInteractCancel_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.HideRequirementPanel
+	 */
+	struct UPlayerHUD_C_HideRequirementPanel_Params
+	{
+	};
+
+	/**
+	 * Function PlayerHUD.PlayerHUD_C.Setup Interactible Display
+	 */
+	struct UPlayerHUD_C_Setup_Interactible_Display_Params
+	{
+	public:
+		class UObject*                                             Interactible;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

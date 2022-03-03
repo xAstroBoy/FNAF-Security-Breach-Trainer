@@ -97,7 +97,7 @@ namespace CG
 	{
 	public:
 		class FName                                                KeyName;                                                 // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_XSYT[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZRSM[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 	};
 

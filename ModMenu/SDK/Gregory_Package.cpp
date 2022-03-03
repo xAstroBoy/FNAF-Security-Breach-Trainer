@@ -12,9 +12,54 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Gregory.Gregory_C.PlayerEnteringExitingFreddy
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.IsSwitchingItems
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 */
+	bool AGregory_C::IsSwitchingItems()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.IsSwitchingItems");
+		
+		AGregory_C_IsSwitchingItems_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.IsInAir
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               InAir                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AGregory_C::IsInAir(bool* InAir)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.IsInAir");
+		
+		AGregory_C_IsInAir_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (InAir != nullptr)
+			*InAir = params.InAir;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.PlayerEnteringExitingFreddy
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		bool                                               Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -36,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GetSightComponent
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -60,7 +105,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.CanJumpInternal
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+	 */
+	bool AGregory_C::CanJumpInternal()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.CanJumpInternal");
+		
+		AGregory_C_CanJumpInternal_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ForceWatchLower
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -79,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GetLevelStreamViewpoint
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -103,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ToggleRedReticle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -122,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.UpdateVisualSource
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -141,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GetHideSearchLocation
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -168,7 +234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Setup Movement Speed
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -187,7 +253,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.SetupWalkSpeed
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -206,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.SetupRunSpeed
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -225,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ShowInstructions
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -247,31 +313,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Gregory.Gregory_C.IsFazWatchUp
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.IsFazwatchUp
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
-	 * 		bool                                               IsFazWatchUp                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsFazwatchUp                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AGregory_C::IsFazWatchUp(bool* IsFazWatchUp)
+	void AGregory_C::IsFazwatchUp(bool* IsFazwatchUp)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.IsFazWatchUp");
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.IsFazwatchUp");
 		
-		AGregory_C_IsFazWatchUp_Params params {};
+		AGregory_C_IsFazwatchUp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (IsFazWatchUp != nullptr)
-			*IsFazWatchUp = params.IsFazWatchUp;
+		if (IsFazwatchUp != nullptr)
+			*IsFazwatchUp = params.IsFazwatchUp;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.LethalJumpscare
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -301,7 +367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Non Lethal Jumpscare
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -327,7 +393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.On Item Removed
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -351,7 +417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GetRunSpeed
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 */
@@ -372,7 +438,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.On Item Collected
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -396,7 +462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptSwitch:Item3
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -415,7 +481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.SwitchItem
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -437,7 +503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptSwitch:Item2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -456,7 +522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptSwitch:Item1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -475,7 +541,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.SetInUse
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -497,7 +563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.EndLazerTag
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -516,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.StartLazerTag
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -535,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ShouldDoLazerTag
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -559,7 +625,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.IsFlashlightActive
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -580,17 +646,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Gregory.Gregory_C.StunInRange
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.Stun in Range
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
-	void AGregory_C::StunInRange()
+	void AGregory_C::Stun_in_Range()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.StunInRange");
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.Stun in Range");
 		
-		AGregory_C_StunInRange_Params params {};
+		AGregory_C_Stun_in_Range_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -599,7 +665,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GetFlashlightLocationAndDirection
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -629,7 +695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ToggleFlashlight
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -648,29 +714,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_3
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	 */
-	void AGregory_C::InpActEvt_Run_K2Node_InputActionEvent_3(const struct FKey& Key)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_3");
-		
-		AGregory_C_InpActEvt_Run_K2Node_InputActionEvent_3_Params params {};
-		params.Key = Key;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -692,19 +736,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Gregory.Gregory_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_1
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AGregory_C::InpActEvt_CallFreddy_K2Node_InputActionEvent_1(const struct FKey& Key)
+	void AGregory_C::InpActEvt_Run_K2Node_InputActionEvent_1(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_1");
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.InpActEvt_Run_K2Node_InputActionEvent_1");
 		
-		AGregory_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_1_Params params {};
+		AGregory_C_InpActEvt_Run_K2Node_InputActionEvent_1_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -714,7 +758,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnFailure_7DE12DBC48FB7B17F57E7D93C24D4EB7
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -733,7 +777,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnSuccess_7DE12DBC48FB7B17F57E7D93C24D4EB7
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -752,7 +796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnFailure_D277383849041D09D51CF2BB341D6125
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -778,7 +822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnSuccess_D277383849041D09D51CF2BB341D6125
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -804,7 +848,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnFailure_7326E6ED4D8708615D3D6F94085DAB1A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -823,7 +867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnSuccess_7326E6ED4D8708615D3D6F94085DAB1A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -842,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnFailure_DCAEB8064AAF100FF80986844E21FAAA
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -868,7 +912,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnSuccess_DCAEB8064AAF100FF80986844E21FAAA
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -894,7 +938,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnCheckpointSave
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -916,7 +960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnGameDataLoaded
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -938,7 +982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnStoreGameData
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -960,7 +1004,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.PostGameLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -979,7 +1023,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.PostSaveGame
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -998,7 +1042,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceiveActorBeginOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1020,7 +1064,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1042,7 +1086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Attempt Hide
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1068,7 +1112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceiveActorEndOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1090,7 +1134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Attempt Interact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1112,7 +1156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Kill
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1131,7 +1175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -1153,7 +1197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptPrimaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1175,7 +1219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptSecondaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1197,7 +1241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AttemptThrow
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1216,7 +1260,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1235,7 +1279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Peek
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1261,7 +1305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.LeaveHidingSpace
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1280,7 +1324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Force Flashlight State
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1304,7 +1348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.On Interact Release
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1323,7 +1367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceivePossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1345,7 +1389,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Attempt Freddy Call
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1364,7 +1408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GregoryHeadBob
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1383,7 +1427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GregoryCrouch
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1402,7 +1446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.GregoryUnCrouch
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1421,7 +1465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ForceCrouchMode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1445,7 +1489,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.StopSprinting
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1464,7 +1508,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.EjectSequence
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1483,7 +1527,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.K2_OnStartCrouch
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1507,7 +1551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.K2_OnEndCrouch
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1531,7 +1575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.BndEvt__SprintStamina_K2Node_ComponentBoundEvent_0_OnStaminaDepleted__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1550,7 +1594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.BndEvt__SprintStamina_K2Node_ComponentBoundEvent_1_OnStaminaReplenished__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1569,7 +1613,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ReceiveUnpossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1591,17 +1635,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.HideHUD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               Hide_Progress_Wheel                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AGregory_C::HideHUD()
+	void AGregory_C::HideHUD(bool Hide_Progress_Wheel)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.HideHUD");
 		
 		AGregory_C_HideHUD_Params params {};
+		params.Hide_Progress_Wheel = Hide_Progress_Wheel;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1610,7 +1657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ShowHUD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1629,7 +1676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.CallFreddy
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1648,7 +1695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnJumped
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -1667,7 +1714,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnLanded
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -1689,7 +1736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ItemCollected
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1713,7 +1760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Held Item Instructions
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1735,7 +1782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Event Call Freddy Instructions
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1754,7 +1801,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Return To Gregory
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1773,7 +1820,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.TriggerSurpriseAchievement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1792,7 +1839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.Arm Roll__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1811,7 +1858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.RollForLower
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1833,7 +1880,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.RollForRaise
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1855,7 +1902,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.SwitchItemWithAnim
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1877,7 +1924,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnCheckpointLoad
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1899,7 +1946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.AwardSayCheese
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1918,7 +1965,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Gregory.Gregory_C.VisualChangeItem
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void AGregory_C::VisualChangeItem()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Gregory.Gregory_C.VisualChangeItem");
+		
+		AGregory_C_VisualChangeItem_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.ExecuteUbergraph_Gregory
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -1940,7 +2006,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.PickedUpFlashlight__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1959,7 +2025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnLethalJumpScare__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1978,7 +2044,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnKill__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1997,7 +2063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Gregory.Gregory_C.OnNonLethalScareComplete__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

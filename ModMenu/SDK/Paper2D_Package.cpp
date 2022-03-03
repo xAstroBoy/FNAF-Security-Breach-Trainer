@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C990
+	 * 		Offset -> 0x0079C9D0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -65,7 +65,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C8D0
+	 * 		Offset -> 0x0079C910
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetTotalDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C0D0
+	 * 		Offset -> 0x0079C110
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C040
+	 * 		Offset -> 0x0079C080
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -139,7 +139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BF90
+	 * 		Offset -> 0x0079BFD0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumKeyFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -161,7 +161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BF60
+	 * 		Offset -> 0x0079BFA0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -183,7 +183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BCB0
+	 * 		Offset -> 0x0079BCF0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -238,7 +238,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DBB0
+	 * 		Offset -> 0x0079DBF0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -258,7 +258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D7C0
+	 * 		Offset -> 0x0079D800
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetSpriteColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -281,7 +281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D5B0
+	 * 		Offset -> 0x0079D5F0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D700
+	 * 		Offset -> 0x0079D740
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -329,7 +329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D630
+	 * 		Offset -> 0x0079D670
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -354,7 +354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D530
+	 * 		Offset -> 0x0079D570
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetNewTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -377,7 +377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D4A0
+	 * 		Offset -> 0x0079D4E0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -400,7 +400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D110
+	 * 		Offset -> 0x0079D150
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetFlipbook
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -425,7 +425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D020
+	 * 		Offset -> 0x0079D060
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.ReverseFromEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -445,7 +445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D000
+	 * 		Offset -> 0x0079D040
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Reverse
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -465,7 +465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE60
+	 * 		Offset -> 0x0079CEA0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.PlayFromStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -485,7 +485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE40
+	 * 		Offset -> 0x0079CE80
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -505,7 +505,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CD90
+	 * 		Offset -> 0x0079CDD0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -528,7 +528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C960
+	 * 		Offset -> 0x0079C9A0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsReversing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -550,7 +550,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C930
+	 * 		Offset -> 0x0079C970
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C900
+	 * 		Offset -> 0x0079C940
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -594,7 +594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BFB0
+	 * 		Offset -> 0x0079BFF0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -616,7 +616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C010
+	 * 		Offset -> 0x0079C050
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -638,7 +638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BFE0
+	 * 		Offset -> 0x0079C020
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -660,7 +660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BAF0
+	 * 		Offset -> 0x0079BB30
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BAC0
+	 * 		Offset -> 0x0079BB00
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLength
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BA90
+	 * 		Offset -> 0x0079BAD0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -726,7 +726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BA60
+	 * 		Offset -> 0x0079BAA0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbook
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -776,7 +776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DCE0
+	 * 		Offset -> 0x0079DD20
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -809,7 +809,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DBD0
+	 * 		Offset -> 0x0079DC10
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor
 	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -838,7 +838,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DB20
+	 * 		Offset -> 0x0079DB60
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -861,7 +861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CEA0
+	 * 		Offset -> 0x0079CEE0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB50
+	 * 		Offset -> 0x0079BB90
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -917,7 +917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB20
+	 * 		Offset -> 0x0079BB60
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -939,7 +939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B890
+	 * 		Offset -> 0x0079B8D0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.ClearInstances
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -959,7 +959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B480
+	 * 		Offset -> 0x0079B4C0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.AddInstance
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1060,7 +1060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CA30
+	 * 		Offset -> 0x0079CA70
 	 * 		Name   -> Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1103,7 +1103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D840
+	 * 		Offset -> 0x0079D880
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSpriteColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1126,7 +1126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D110
+	 * 		Offset -> 0x0079D150
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSprite
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1151,7 +1151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BA60
+	 * 		Offset -> 0x0079BAA0
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.GetSprite
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D8C0
+	 * 		Offset -> 0x0079D900
 	 * 		Name   -> Function Paper2D.PaperTerrainComponent.SetTerrainColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1308,7 +1308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DAA0
+	 * 		Offset -> 0x0079DAE0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMapColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1331,7 +1331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D110
+	 * 		Offset -> 0x0079D150
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMap
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1356,7 +1356,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D940
+	 * 		Offset -> 0x0079D980
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1385,7 +1385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D3D0
+	 * 		Offset -> 0x0079D410
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1410,7 +1410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D1B0
+	 * 		Offset -> 0x0079D1F0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerCollision
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1445,7 +1445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D040
+	 * 		Offset -> 0x0079D080
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1470,7 +1470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CF40
+	 * 		Offset -> 0x0079CF80
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.ResizeMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1495,7 +1495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE80
+	 * 		Offset -> 0x0079CEC0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.RebuildCollision
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1515,7 +1515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE10
+	 * 		Offset -> 0x0079CE50
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.OwnsTileMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1537,7 +1537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CD70
+	 * 		Offset -> 0x0079CDB0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.MakeTileMapEditable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1557,7 +1557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C5B0
+	 * 		Offset -> 0x0079C5F0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTilePolygon
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1590,7 +1590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C570
+	 * 		Offset -> 0x0079C5B0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileMapColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1612,7 +1612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C410
+	 * 		Offset -> 0x0079C450
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCornerPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1643,7 +1643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C2B0
+	 * 		Offset -> 0x0079C2F0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCenterPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1674,7 +1674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C1A0
+	 * 		Offset -> 0x0079C1E0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1703,7 +1703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BE20
+	 * 		Offset -> 0x0079BE60
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetMapSize
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1734,7 +1734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BD80
+	 * 		Offset -> 0x0079BDC0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetLayerColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1759,7 +1759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B8B0
+	 * 		Offset -> 0x0079B8F0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.CreateNewTileMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1792,7 +1792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B640
+	 * 		Offset -> 0x0079B680
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.AddNewLayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1842,7 +1842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CBC0
+	 * 		Offset -> 0x0079CC00
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.MakeTile
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1875,7 +1875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C830
+	 * 		Offset -> 0x0079C870
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1900,7 +1900,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C760
+	 * 		Offset -> 0x0079C7A0
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1925,7 +1925,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B670
+	 * 		Offset -> 0x0079B6B0
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.BreakTile
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:

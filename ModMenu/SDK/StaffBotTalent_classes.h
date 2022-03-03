@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass StaffBotTalent.StaffBotTalent_C
-	 * Size -> 0x0000 (FullSize[0x0652] - InheritedSize[0x0652])
+	 * Size -> 0x0000 (FullSize[0x0658] - InheritedSize[0x0658])
 	 */
 	class AStaffBotTalent_C : public AStaffBotBase_C
 	{

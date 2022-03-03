@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void ExecuteUbergraph_Security_PlayTurnAnim(int EntryPoint);
+		void ExecuteUbergraph_Security_PlayTurnAnim(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

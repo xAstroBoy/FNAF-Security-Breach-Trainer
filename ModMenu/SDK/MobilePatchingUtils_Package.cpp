@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFE20
+	 * 		Offset -> 0x00AFFE60
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.Mount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFCB0
+	 * 		Offset -> 0x00AFFCF0
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetInstalledContentSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -61,7 +61,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFAB0
+	 * 		Offset -> 0x00AFFAF0
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetDiskFreeSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B000E0
+	 * 		Offset -> 0x00B00120
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.StartInstall
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFDF0
+	 * 		Offset -> 0x00AFFE30
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFCE0
+	 * 		Offset -> 0x00AFFD20
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetRequiredDiskSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFBE0
+	 * 		Offset -> 0x00AFFC20
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetInstallProgress
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFB40
+	 * 		Offset -> 0x00AFFB80
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadStatusText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFB10
+	 * 		Offset -> 0x00AFFB50
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFAE0
+	 * 		Offset -> 0x00AFFB20
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFF00
+	 * 		Offset -> 0x00AFFF40
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -299,7 +299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A63760
+	 * 		Offset -> 0x00A637A0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -321,7 +321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFD10
+	 * 		Offset -> 0x00AFFD50
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetSupportedPlatformNames
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -343,7 +343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFC10
+	 * 		Offset -> 0x00AFFC50
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -368,7 +368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFA30
+	 * 		Offset -> 0x00AFFA70
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetActiveDeviceProfileName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */

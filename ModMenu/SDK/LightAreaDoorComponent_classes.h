@@ -26,7 +26,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void On_Area_Change_Finished();
-		void ExecuteUbergraph_LightAreaDoorComponent(int EntryPoint);
+		void ExecuteUbergraph_LightAreaDoorComponent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

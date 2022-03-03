@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PRE_PartyDoor_Locked_Activatable_Package.h"
 
 namespace CG
 {
@@ -13,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.GetActivatableState
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Activator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TEnumAsByte<ActivatableState_EActivatableState>    CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ActivatableState_EActivatableState                 CurrentState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_PartyDoor_Locked_Activatable_C::GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState)
+	void APRE_PartyDoor_Locked_Activatable_C::GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -39,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.CanActivate
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -68,7 +67,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.CanPlayerInteract
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -95,7 +94,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.ActivateObject
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -117,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.SetActivated
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -136,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.OnPlayerInteract_2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -160,13 +159,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PRE_PartyDoor_Locked_Activatable.PRE_PartyDoor_Locked_Activatable_C.ExecuteUbergraph_PRE_PartyDoor_Locked_Activatable
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_PartyDoor_Locked_Activatable_C::ExecuteUbergraph_PRE_PartyDoor_Locked_Activatable(int EntryPoint)
+	void APRE_PartyDoor_Locked_Activatable_C::ExecuteUbergraph_PRE_PartyDoor_Locked_Activatable(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

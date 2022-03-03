@@ -553,6 +553,13 @@ namespace CG
 	};
 
 	/**
+	 * Function OptionsUI.OptionsUI_C.BndEvt__PCDLSSLevel_ComboBox_K2Node_ComponentBoundEvent_24_ArrowKeyPressed__DelegateSignature
+	 */
+	struct UOptionsUI_C_BndEvt__PCDLSSLevel_ComboBox_K2Node_ComponentBoundEvent_24_ArrowKeyPressed__DelegateSignature_Params
+	{
+	};
+
+	/**
 	 * Function OptionsUI.OptionsUI_C.ExecuteUbergraph_OptionsUI
 	 */
 	struct UOptionsUI_C_ExecuteUbergraph_OptionsUI_Params

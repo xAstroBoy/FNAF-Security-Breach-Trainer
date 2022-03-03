@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function EQ_Flashbeacon.EQ_Flashbeacon_C.Get Anim Item Type
+	 */
+	struct AEQ_Flashbeacon_C_Get_Anim_Item_Type_Params
+	{
+	public:
+		GregoryAnimItemEnum_EGregoryAnimItemEnum                   AnimType;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function EQ_Flashbeacon.EQ_Flashbeacon_C.PutAway
 	 */
 	struct AEQ_Flashbeacon_C_PutAway_Params

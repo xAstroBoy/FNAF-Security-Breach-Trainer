@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_PROP_DJMMHallway_Skeleton_ABP.RIG_PROP_DJMMHallway_Skeleton_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RIG_PROP_DJMMHallway_Skeleton_ABP.RIG_PROP_DJMMHallway_Skeleton_ABP_C.ExecuteUbergraph_RIG_PROP_DJMMHallway_Skeleton_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

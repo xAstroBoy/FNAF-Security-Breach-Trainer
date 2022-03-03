@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A576A0
+	 * 		Offset -> 0x00A576E0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.UnPin
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57570
+	 * 		Offset -> 0x00A575B0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57540
+	 * 		Offset -> 0x00A57580
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -79,7 +79,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A574B0
+	 * 		Offset -> 0x00A574F0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.PinActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57450
+	 * 		Offset -> 0x00A57490
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -167,7 +167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A572F0
+	 * 		Offset -> 0x00A57330
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A573A0
+	 * 		Offset -> 0x00A573E0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -221,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57260
+	 * 		Offset -> 0x00A572A0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -260,7 +260,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57600
+	 * 		Offset -> 0x00A57640
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.UnBindToOnMagicLeapARPinUpdatedDelegate
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -283,7 +283,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57480
+	 * 		Offset -> 0x00A574C0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.IsTrackerValid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -305,7 +305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A571D0
+	 * 		Offset -> 0x00A57210
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetNumAvailableARPins
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A570E0
+	 * 		Offset -> 0x00A57120
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetClosestARPin
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -361,7 +361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A57000
+	 * 		Offset -> 0x00A57040
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetAvailableARPins
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56F20
+	 * 		Offset -> 0x00A56F60
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinStateToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -415,7 +415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56E20
+	 * 		Offset -> 0x00A56E60
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -444,7 +444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56C90
+	 * 		Offset -> 0x00A56CD0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinPositionAndOrientation_TrackingSpace
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -479,7 +479,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56B00
+	 * 		Offset -> 0x00A56B40
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinPositionAndOrientation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56AD0
+	 * 		Offset -> 0x00A56B10
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.DestroyTracker
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -536,7 +536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56AA0
+	 * 		Offset -> 0x00A56AE0
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.CreateTracker
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -558,7 +558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A56A00
+	 * 		Offset -> 0x00A56A40
 	 * 		Name   -> Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.BindToOnMagicLeapARPinUpdatedDelegate
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

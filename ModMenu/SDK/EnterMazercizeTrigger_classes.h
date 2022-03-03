@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_EnterMazercizeTrigger(int EntryPoint);
+		void ExecuteUbergraph_EnterMazercizeTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

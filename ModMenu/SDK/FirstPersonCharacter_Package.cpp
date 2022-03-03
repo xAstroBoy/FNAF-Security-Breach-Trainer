@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.GetCamera
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.DoorEntryNotAllowed
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.GetFlashlightLocationAndDirection
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.GetLevelStreamViewpoint
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ChooseBallFX
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.SetGravityEnable
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -160,7 +160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.UpdateSettings
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -179,7 +179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Handle Jump Audio
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -198,7 +198,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Handle Land Audio
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -217,7 +217,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.GetPlayerHUD
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -241,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.SetupSpringArm
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -263,7 +263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.footstep
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -282,7 +282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Arm Roll__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -301,7 +301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Arm Roll__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Timeline_0__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -339,7 +339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Timeline_0__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -358,7 +358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Timeline_0__CamShakeTrigger__EventFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -377,7 +377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.InpActEvt_Interact_K2Node_InputActionEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -399,7 +399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.InpActEvt_Interact_K2Node_InputActionEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.InpActEvt_Q_K2Node_InputKeyEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -443,7 +443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.InpActEvt_TMPZOOM_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -465,7 +465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.RollForLower
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -487,7 +487,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.PressAndReleaseMouse
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -509,7 +509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Teleport Player With Offset
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -533,7 +533,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Teleport Player With Delta Yaw
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -557,7 +557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.OnControllerType Changed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -579,7 +579,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ReceiveUnpossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -601,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.On Interact Release
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -620,7 +620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Attempt Freddy Call
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -639,7 +639,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ReceivePossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -661,7 +661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -680,7 +680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptThrow
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -699,7 +699,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptSwitch:Item3
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -718,7 +718,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptSwitch:Item2
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -737,7 +737,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.CamShakeEvent_DJMM
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -759,7 +759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.CameraShakeEvent_Animatronics
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -781,7 +781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptSwitch:Item1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -800,7 +800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.CamShakeEvent_Landing
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -819,7 +819,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptSecondaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -841,7 +841,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.CamShakeEvent_Jumping
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -860,7 +860,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.CameraShakeEvent_MontyLand
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -882,7 +882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.OnOverlappedDoor
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -908,7 +908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.OnEndOverlapDoor
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -927,7 +927,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.SwitchGIVolume
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -946,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.SwitchColorForScenario
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -965,7 +965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.AttemptPrimaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -987,7 +987,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Attempt Interact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1009,7 +1009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.SetFOV
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1028,7 +1028,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1050,7 +1050,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.RollForRaise
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1072,7 +1072,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Pause
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1091,7 +1091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Set Interact Enable
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1113,7 +1113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Use Chica Beak
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1132,7 +1132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Use Monty Claws
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1151,7 +1151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.Use Roxy Eyes
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1170,7 +1170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1189,7 +1189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.PauseHaptics
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1208,7 +1208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.StartHaptics
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1227,7 +1227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.InteractableHaptics
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1249,7 +1249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FirstPersonCharacter.FirstPersonCharacter_C.ExecuteUbergraph_FirstPersonCharacter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

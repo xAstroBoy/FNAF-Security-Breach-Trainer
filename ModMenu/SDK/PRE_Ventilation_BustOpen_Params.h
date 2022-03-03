@@ -39,9 +39,9 @@ namespace CG
 	};
 
 	/**
-	 * Function PRE_Ventilation_BustOpen.PRE_Ventilation_BustOpen_C.Idle
+	 * Function PRE_Ventilation_BustOpen.PRE_Ventilation_BustOpen_C.IDLE
 	 */
-	struct APRE_Ventilation_BustOpen_C_Idle_Params
+	struct APRE_Ventilation_BustOpen_C_IDLE_Params
 	{
 	};
 

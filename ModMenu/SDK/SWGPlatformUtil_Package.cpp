@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696C70
+	 * 		Offset -> 0x00696C90
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.SwitchOnPlatform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696BA0
+	 * 		Offset -> 0x00696BC0
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.StartActivity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696A90
+	 * 		Offset -> 0x00696AB0
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.SetActivityAvailability
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696A00
+	 * 		Offset -> 0x00696A20
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.IsInEditorSwitch
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968C0
+	 * 		Offset -> 0x006968E0
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.IsInEditor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696970
+	 * 		Offset -> 0x00696990
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetVersionString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968F0
+	 * 		Offset -> 0x00696910
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGPU
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968C0
+	 * 		Offset -> 0x006968E0
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetBuildPlatform
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -216,7 +216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006967B0
+	 * 		Offset -> 0x006967D0
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.EndActivity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

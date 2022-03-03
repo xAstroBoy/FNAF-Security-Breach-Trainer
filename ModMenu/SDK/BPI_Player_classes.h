@@ -21,6 +21,9 @@ namespace CG
 	class UBPI_Player_C : public UInterface
 	{
 	public:
+		void VisualChangeItem();
+		bool IsSwitchingItems();
+		void IsInAir(bool* InAir);
 		void PlayerEnteringExitingFreddy(bool* Value);
 		static UClass* StaticClass();
 	};

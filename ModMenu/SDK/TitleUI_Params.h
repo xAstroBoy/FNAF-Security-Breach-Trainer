@@ -186,13 +186,6 @@ namespace CG
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E
-	 */
-	struct UTitleUI_C_Finished_071044F543A717F54FDA6B941362F78E_Params
-	{
-	};
-
-	/**
 	 * Function TitleUI.TitleUI_C.Finished_633E73144EEFFCA673A1CEB9A7478126
 	 */
 	struct UTitleUI_C_Finished_633E73144EEFFCA673A1CEB9A7478126_Params
@@ -200,13 +193,31 @@ namespace CG
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.Load Mini Game Level
+	 * Function TitleUI.TitleUI_C.Finished_071044F543A717F54FDA6B941362F78E
 	 */
-	struct UTitleUI_C_Load_Mini_Game_Level_Params
+	struct UTitleUI_C_Finished_071044F543A717F54FDA6B941362F78E_Params
 	{
-	public:
-		class FName                                                LevelName;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function TitleUI.TitleUI_C.AddNewGameButtonUI
+	 */
+	struct UTitleUI_C_AddNewGameButtonUI_Params
+	{
+	};
+
+	/**
+	 * Function TitleUI.TitleUI_C.BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature
+	 */
+	struct UTitleUI_C_BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature_Params
+	{
+	};
+
+	/**
+	 * Function TitleUI.TitleUI_C.BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
+	 */
+	struct UTitleUI_C_BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature_Params
+	{
 	};
 
 	/**
@@ -252,16 +263,16 @@ namespace CG
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature
+	 * Function TitleUI.TitleUI_C.BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 	 */
-	struct UTitleUI_C_BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature_Params
+	struct UTitleUI_C_BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature_Params
 	{
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
+	 * Function TitleUI.TitleUI_C.Construct
 	 */
-	struct UTitleUI_C_BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature_Params
+	struct UTitleUI_C_Construct_Params
 	{
 	};
 
@@ -294,6 +305,16 @@ namespace CG
 	};
 
 	/**
+	 * Function TitleUI.TitleUI_C.PreConstruct
+	 */
+	struct UTitleUI_C_PreConstruct_Params
+	{
+	public:
+		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function TitleUI.TitleUI_C.LoadWorldToArea
 	 */
 	struct UTitleUI_C_LoadWorldToArea_Params
@@ -308,30 +329,6 @@ namespace CG
 	 */
 	struct UTitleUI_C_Continue_New_Game_Params
 	{
-	};
-
-	/**
-	 * Function TitleUI.TitleUI_C.BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UTitleUI_C_BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function TitleUI.TitleUI_C.Construct
-	 */
-	struct UTitleUI_C_Construct_Params
-	{
-	};
-
-	/**
-	 * Function TitleUI.TitleUI_C.PreConstruct
-	 */
-	struct UTitleUI_C_PreConstruct_Params
-	{
-	public:
-		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -645,13 +642,6 @@ namespace CG
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.AddNewGameButtonUI
-	 */
-	struct UTitleUI_C_AddNewGameButtonUI_Params
-	{
-	};
-
-	/**
 	 * Function TitleUI.TitleUI_C.BndEvt__BackButton_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UTitleUI_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature_Params
@@ -680,6 +670,16 @@ namespace CG
 	};
 
 	/**
+	 * Function TitleUI.TitleUI_C.Load Mini Game Level
+	 */
+	struct UTitleUI_C_Load_Mini_Game_Level_Params
+	{
+	public:
+		class FName                                                LevelName;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function TitleUI.TitleUI_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_79_OnClicked__DelegateSignature
 	 */
 	struct UTitleUI_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_79_OnClicked__DelegateSignature_Params
@@ -701,9 +701,9 @@ namespace CG
 	};
 
 	/**
-	 * Function TitleUI.TitleUI_C.ExitGamePopUp
+	 * Function TitleUI.TitleUI_C.ExitGamePopup
 	 */
-	struct UTitleUI_C_ExitGamePopUp_Params
+	struct UTitleUI_C_ExitGamePopup_Params
 	{
 	};
 
@@ -795,6 +795,20 @@ namespace CG
 	 * Function TitleUI.TitleUI_C.HideMouseWhenNotUsingKeyboard
 	 */
 	struct UTitleUI_C_HideMouseWhenNotUsingKeyboard_Params
+	{
+	};
+
+	/**
+	 * Function TitleUI.TitleUI_C.CaptureFocusWithThumbstick
+	 */
+	struct UTitleUI_C_CaptureFocusWithThumbstick_Params
+	{
+	};
+
+	/**
+	 * Function TitleUI.TitleUI_C.Destruct
+	 */
+	struct UTitleUI_C_Destruct_Params
 	{
 	};
 

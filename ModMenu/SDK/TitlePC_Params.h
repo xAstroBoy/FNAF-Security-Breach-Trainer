@@ -96,6 +96,16 @@ namespace CG
 	};
 
 	/**
+	 * Function TitlePC.TitlePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3
+	 */
+	struct ATitlePC_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3_Params
+	{
+	public:
+		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function TitlePC.TitlePC_C.ExecuteUbergraph_TitlePC
 	 */
 	struct ATitlePC_C_ExecuteUbergraph_TitlePC_Params

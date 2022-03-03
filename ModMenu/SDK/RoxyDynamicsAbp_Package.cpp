@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_AnimDynamics_46F86D8240F8ACA574A93F988992C3B7
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_LayeredBoneBlend_91E243E7438F47A4B8A901A4C6D5E07B
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_AnimDynamics_83B2BB6D45375CA4D8665DA7ACD3036D
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_ApplyAdditive_515794A74F0D78795A2788BF98F384B5
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_LayeredBoneBlend_17C9FB8B473A79F3D6FC9DBDCCF37489
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_AnimDynamics_5F50E9F74DAED1131D3ADBBBD611D3CE
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_Constraint_AE7B32954333B383741E3FB4E2AED097
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_AnimDynamics_8FD4335A4E3C45DD49C4E18C21742C22
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RoxyDynamicsABP_AnimGraphNode_AnimDynamics_CCE1177F431B26BEAAA6E6AA7E162207
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -209,7 +209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoxyDynamicsAbp.RoxyDynamicsABP_C.ExecuteUbergraph_RoxyDynamicsABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

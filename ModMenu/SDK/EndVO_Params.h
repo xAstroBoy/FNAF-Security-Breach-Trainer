@@ -29,13 +29,27 @@ namespace CG
 	};
 
 	/**
+	 * Function EndVO.EndVO_C.StayVONoPartyPass
+	 */
+	struct AEndVO_C_StayVONoPartyPass_Params
+	{
+	};
+
+	/**
 	 * Function EndVO.EndVO_C.ExecuteUbergraph_EndVO
 	 */
 	struct AEndVO_C_ExecuteUbergraph_EndVO_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
+	};
+
+	/**
+	 * Function EndVO.EndVO_C.OnStayVoFinished__DelegateSignature
+	 */
+	struct AEndVO_C_OnStayVoFinished__DelegateSignature_Params
+	{
 	};
 
 }

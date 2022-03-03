@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FazwatchCollectible.FazwatchCollectible_C
-	 * Size -> 0x0000 (FullSize[0x02C9] - InheritedSize[0x02C9])
+	 * Size -> 0x0000 (FullSize[0x02D9] - InheritedSize[0x02D9])
 	 */
 	class AFazwatchCollectible_C : public APresentCollectible_C
 	{

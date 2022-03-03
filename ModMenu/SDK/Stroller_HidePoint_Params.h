@@ -25,14 +25,10 @@ namespace CG
 	};
 
 	/**
-	 * Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerInteract
+	 * Function Stroller_HidePoint.Stroller_HidePoint_C.ReceiveBeginPlay
 	 */
-	struct AStroller_HidePoint_C_OnPlayerInteract_Params
+	struct AStroller_HidePoint_C_ReceiveBeginPlay_Params
 	{
-	public:
-		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -43,12 +39,22 @@ namespace CG
 	};
 
 	/**
+	 * Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerHide
+	 */
+	struct AStroller_HidePoint_C_OnPlayerHide_Params
+	{
+	public:
+		class ACharacter*                                          PlayerCharacter;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function Stroller_HidePoint.Stroller_HidePoint_C.ExecuteUbergraph_Stroller_HidePoint
 	 */
 	struct AStroller_HidePoint_C_ExecuteUbergraph_Stroller_HidePoint_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

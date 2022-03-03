@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F48410
+	 * 		Offset -> 0x01F490F0
 	 * 		Name   -> Function MediaAssets.MediaSource.Validate
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F479C0
+	 * 		Offset -> 0x01F486A0
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -59,7 +59,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F478F0
+	 * 		Offset -> 0x01F485D0
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionInt64
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47820
+	 * 		Offset -> 0x01F48500
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47750
+	 * 		Offset -> 0x01F48430
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F460B0
+	 * 		Offset -> 0x01F46D90
 	 * 		Name   -> Function MediaAssets.MediaSource.GetUrl
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -184,7 +184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47620
+	 * 		Offset -> 0x01F48300
 	 * 		Name   -> Function MediaAssets.FileMediaSource.SetFilePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -221,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44FC0
+	 * 		Offset -> 0x01F45CA0
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateWebcamCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44E70
+	 * 		Offset -> 0x01F45B50
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateVideoCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -275,7 +275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44D20
+	 * 		Offset -> 0x01F45A00
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateAudioCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -316,7 +316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199C8B0
+	 * 		Offset -> 0x0199D590
 	 * 		Name   -> Function MediaAssets.MediaComponent.GetMediaTexture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -338,7 +338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45680
+	 * 		Offset -> 0x01F46360
 	 * 		Name   -> Function MediaAssets.MediaComponent.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -374,7 +374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F483E0
+	 * 		Offset -> 0x01F490C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsSeeking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -396,7 +396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F483B0
+	 * 		Offset -> 0x01F49090
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsScrubbing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -418,7 +418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F482E0
+	 * 		Offset -> 0x01F48FC0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -445,7 +445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F48200
+	 * 		Offset -> 0x01F48EE0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -472,7 +472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F480F0
+	 * 		Offset -> 0x01F48DD0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetViewField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -501,7 +501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47FF0
+	 * 		Offset -> 0x01F48CD0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -530,7 +530,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47EF0
+	 * 		Offset -> 0x01F48BD0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetTrackFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -559,7 +559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47E70
+	 * 		Offset -> 0x01F48B50
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetTimeDelay
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -582,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47CC0
+	 * 		Offset -> 0x01F489A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -607,7 +607,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47C30
+	 * 		Offset -> 0x01F48910
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetNativeVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -632,7 +632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47AB0
+	 * 		Offset -> 0x01F48790
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetMediaOptions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -655,7 +655,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F476C0
+	 * 		Offset -> 0x01F483A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -680,7 +680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F473C0
+	 * 		Offset -> 0x01F480A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetDesiredPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -703,7 +703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47330
+	 * 		Offset -> 0x01F48010
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetBlockOnTime
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -726,7 +726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47270
+	 * 		Offset -> 0x01F47F50
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SelectTrack
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -753,7 +753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F471D0
+	 * 		Offset -> 0x01F47EB0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Seek
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -778,7 +778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F471A0
+	 * 		Offset -> 0x01F47E80
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Rewind
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -800,7 +800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F470B0
+	 * 		Offset -> 0x01F47D90
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Reopen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -822,7 +822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46F60
+	 * 		Offset -> 0x01F47C40
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Previous
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -844,7 +844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46F40
+	 * 		Offset -> 0x01F47C20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.PlayAndSeek
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -864,7 +864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46F10
+	 * 		Offset -> 0x01F47BF0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46EE0
+	 * 		Offset -> 0x01F47BC0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Pause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -908,7 +908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46E30
+	 * 		Offset -> 0x01F47B10
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -933,7 +933,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46D30
+	 * 		Offset -> 0x01F47A10
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSourceWithOptions
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -960,7 +960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46B50
+	 * 		Offset -> 0x01F47830
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSourceLatent
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -993,7 +993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46AC0
+	 * 		Offset -> 0x01F477A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1018,7 +1018,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46A00
+	 * 		Offset -> 0x01F476E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenPlaylistIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1045,7 +1045,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46960
+	 * 		Offset -> 0x01F47640
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenPlaylist
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1070,7 +1070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F468B0
+	 * 		Offset -> 0x01F47590
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1095,7 +1095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46860
+	 * 		Offset -> 0x01F47540
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Next
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1117,7 +1117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46830
+	 * 		Offset -> 0x01F47510
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsReady
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1139,7 +1139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46800
+	 * 		Offset -> 0x01F474E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPreparing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1161,7 +1161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F467D0
+	 * 		Offset -> 0x01F474B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1183,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F467A0
+	 * 		Offset -> 0x01F47480
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1205,7 +1205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46770
+	 * 		Offset -> 0x01F47450
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1227,7 +1227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46740
+	 * 		Offset -> 0x01F47420
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsConnecting
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1249,7 +1249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46710
+	 * 		Offset -> 0x01F473F0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsClosed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1271,7 +1271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F466E0
+	 * 		Offset -> 0x01F473C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsBuffering
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1293,7 +1293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F465F0
+	 * 		Offset -> 0x01F472D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.HasError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1315,7 +1315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46580
+	 * 		Offset -> 0x01F47260
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1337,7 +1337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46480
+	 * 		Offset -> 0x01F47160
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1364,7 +1364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F463B0
+	 * 		Offset -> 0x01F47090
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1391,7 +1391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F462F0
+	 * 		Offset -> 0x01F46FD0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1418,7 +1418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46220
+	 * 		Offset -> 0x01F46F00
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackDimensions
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1445,7 +1445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46160
+	 * 		Offset -> 0x01F46E40
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1472,7 +1472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46130
+	 * 		Offset -> 0x01F46E10
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVerticalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1494,7 +1494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46070
+	 * 		Offset -> 0x01F46D50
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1516,7 +1516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45F60
+	 * 		Offset -> 0x01F46C40
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackLanguage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1543,7 +1543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45EA0
+	 * 		Offset -> 0x01F46B80
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1570,7 +1570,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45D80
+	 * 		Offset -> 0x01F46A60
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45D40
+	 * 		Offset -> 0x01F46A20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTimeDelay
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1619,7 +1619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45D00
+	 * 		Offset -> 0x01F469E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1641,7 +1641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45C00
+	 * 		Offset -> 0x01F468E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetSupportedRates
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1668,7 +1668,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45AF0
+	 * 		Offset -> 0x01F467D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetSelectedTrack
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1693,7 +1693,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45AC0
+	 * 		Offset -> 0x01F467A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1715,7 +1715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45960
+	 * 		Offset -> 0x01F46640
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlaylistIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1737,7 +1737,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45940
+	 * 		Offset -> 0x01F46620
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlaylist
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1759,7 +1759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45900
+	 * 		Offset -> 0x01F465E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1781,7 +1781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45870
+	 * 		Offset -> 0x01F46550
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetNumTracks
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1806,7 +1806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F457B0
+	 * 		Offset -> 0x01F46490
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetNumTrackFormats
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1833,7 +1833,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F455E0
+	 * 		Offset -> 0x01F462C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetMediaName
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1855,7 +1855,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F455A0
+	 * 		Offset -> 0x01F46280
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1877,7 +1877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45560
+	 * 		Offset -> 0x01F46240
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1899,7 +1899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45530
+	 * 		Offset -> 0x01F46210
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1921,7 +1921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45490
+	 * 		Offset -> 0x01F46170
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetDuration
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1943,7 +1943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45450
+	 * 		Offset -> 0x01F46130
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetDesiredPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1965,7 +1965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45350
+	 * 		Offset -> 0x01F46030
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1992,7 +1992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45290
+	 * 		Offset -> 0x01F45F70
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2019,7 +2019,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F451D0
+	 * 		Offset -> 0x01F45EB0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackChannels
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2046,7 +2046,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44D00
+	 * 		Offset -> 0x01F459E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Close
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2066,7 +2066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44C50
+	 * 		Offset -> 0x01F45930
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPlayUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2091,7 +2091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44BC0
+	 * 		Offset -> 0x01F458A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPlaySource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2116,7 +2116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44B90
+	 * 		Offset -> 0x01F45870
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2152,7 +2152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F470E0
+	 * 		Offset -> 0x01F47DC0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Replace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2179,7 +2179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47020
+	 * 		Offset -> 0x01F47D00
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.RemoveAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2204,7 +2204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46F90
+	 * 		Offset -> 0x01F47C70
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Remove
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2229,7 +2229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46890
+	 * 		Offset -> 0x01F47570
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Num
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2251,7 +2251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F46620
+	 * 		Offset -> 0x01F47300
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Insert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2276,7 +2276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45A20
+	 * 		Offset -> 0x01F46700
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetRandom
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2303,7 +2303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45980
+	 * 		Offset -> 0x01F46660
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetPrevious
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2330,7 +2330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45710
+	 * 		Offset -> 0x01F463F0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetNext
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2357,7 +2357,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45110
+	 * 		Offset -> 0x01F45DF0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Get
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2382,7 +2382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44890
+	 * 		Offset -> 0x01F45570
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.AddUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2407,7 +2407,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F447E0
+	 * 		Offset -> 0x01F454C0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.AddFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2432,7 +2432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44750
+	 * 		Offset -> 0x01F45430
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Add
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2471,7 +2471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47D50
+	 * 		Offset -> 0x01F48A30
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2496,7 +2496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47B30
+	 * 		Offset -> 0x01F48810
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2519,7 +2519,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47560
+	 * 		Offset -> 0x01F48240
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnvelopeFollowingsettings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2544,7 +2544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F474D0
+	 * 		Offset -> 0x01F481B0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnableSpectralAnalysis
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2567,7 +2567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47440
+	 * 		Offset -> 0x01F48120
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnableEnvelopeFollowing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2590,7 +2590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45B80
+	 * 		Offset -> 0x01F46860
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetSpectralData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2612,7 +2612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F456B0
+	 * 		Offset -> 0x01F46390
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2634,7 +2634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F454D0
+	 * 		Offset -> 0x01F461B0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetEnvelopeValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2656,7 +2656,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F44940
+	 * 		Offset -> 0x01F45620
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2697,7 +2697,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F47BB0
+	 * 		Offset -> 0x01F48890
 	 * 		Name   -> Function MediaAssets.MediaTexture.SetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2720,7 +2720,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F465C0
+	 * 		Offset -> 0x01F472A0
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2742,7 +2742,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F456E0
+	 * 		Offset -> 0x01F463C0
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2764,7 +2764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F45500
+	 * 		Offset -> 0x01F461E0
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2786,7 +2786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F451A0
+	 * 		Offset -> 0x01F45E80
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

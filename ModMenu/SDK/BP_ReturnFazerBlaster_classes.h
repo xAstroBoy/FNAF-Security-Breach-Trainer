@@ -21,7 +21,7 @@ namespace CG
 	class ABP_ReturnFazerBlaster_C : public AActivatableBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_A1SR[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QD9F[0x7];                                   // 0x0269(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x0278(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UInventoryConditionalComponent*                      InventoryConditional;                                    // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -31,7 +31,7 @@ namespace CG
 		unsigned char                                              Button[0x28];                                            // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Elevator[0x28];                                          // 0x02E8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		ActivatableState_EActivatableState                         State;                                                   // 0x0310(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_2HC8[0x7];                                   // 0x0311(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3TC3[0x7];                                   // 0x0311(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Door[0x28];                                              // 0x0311(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:

@@ -12,7 +12,31 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Get Anim Item Type
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		GregoryAnimItemEnum_EGregoryAnimItemEnum           AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AEQ_Flashlight_C::Get_Anim_Item_Type(GregoryAnimItemEnum_EGregoryAnimItemEnum* AnimType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Get Anim Item Type");
+		
+		AEQ_Flashlight_C_Get_Anim_Item_Type_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (AnimType != nullptr)
+			*AnimType = params.AnimType;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PutAway
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomFlicker01Timeline__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -50,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomFlicker01Timeline__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -69,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_0__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -88,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_0__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -107,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_1__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -126,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_1__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -145,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_2__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -164,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_2__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -183,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_3__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -202,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_3__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -221,7 +245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_4__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -240,7 +264,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_4__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -259,7 +283,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_5__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -278,7 +302,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_5__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -297,7 +321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_6__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -316,7 +340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_6__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -335,7 +359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Toggle State
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -354,7 +378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -373,7 +397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomPowerFlicker
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -392,7 +416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PowerDownFlicker
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -411,7 +435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.StartRandomPowerFlickerTimer
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -430,7 +454,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -452,7 +476,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ForceOff
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -471,7 +495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Set State
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -493,7 +517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PrimaryAction
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -512,7 +536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ExecuteUbergraph_EQ_Flashlight
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -534,7 +558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.AttemptActivateDeadFlashlight__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

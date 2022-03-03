@@ -36,7 +36,7 @@ namespace CG
 		void OnTriggered();
 		void VannyDisplaySeq();
 		void OnDisplayStopped();
-		void ExecuteUbergraph_JumbotronTrigger(int EntryPoint);
+		void ExecuteUbergraph_JumbotronTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

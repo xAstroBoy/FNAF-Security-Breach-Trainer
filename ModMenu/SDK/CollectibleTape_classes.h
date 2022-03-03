@@ -16,16 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass CollectibleTape.CollectibleTape_C
-	 * Size -> 0x0018 (FullSize[0x029A] - InheritedSize[0x0282])
+	 * Size -> 0x0012 (FullSize[0x02AA] - InheritedSize[0x0298])
 	 */
 	class ACollectibleTape_C : public ACollectible_C
 	{
 	public:
-		unsigned char                                              UnknownData_73NL[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0288(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UStaticMeshComponent*                                StaticMesh;                                              // 0x0290(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		bool                                                       HasBeenCollected_;                                       // 0x0298(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       progressSoundPlaying;                                    // 0x0299(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0298(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UStaticMeshComponent*                                StaticMesh;                                              // 0x02A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		bool                                                       HasBeenCollected_;                                       // 0x02A8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       progressSoundPlaying;                                    // 0x02A9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);

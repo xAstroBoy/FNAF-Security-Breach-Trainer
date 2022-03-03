@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_FazerButton_Reset.BP_FazerButton_Reset_C
-	 * Size -> 0x0042 (FullSize[0x0330] - InheritedSize[0x02EE])
+	 * Size -> 0x0041 (FullSize[0x0330] - InheritedSize[0x02EF])
 	 */
 	class ABP_FazerButton_Reset_C : public ABasicButton_C
 	{
 	public:
-		unsigned char                                              UnknownData_YKH5[0x2];                                   // 0x02EE(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TXJ1[0x1];                                   // 0x02EF(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x02F8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UMaterialInstanceDynamic*                            MATFazerButton_EmissiveColor;                            // 0x0300(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

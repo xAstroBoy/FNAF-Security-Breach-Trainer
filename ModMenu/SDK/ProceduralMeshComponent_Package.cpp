@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891990
+	 * 		Offset -> 0x008919D0
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.SliceProceduralMesh
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -49,7 +49,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891550
+	 * 		Offset -> 0x00891590
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromStaticMesh
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008912A0
+	 * 		Offset -> 0x008912E0
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromProceduralMesh
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00890FE0
+	 * 		Offset -> 0x00891020
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GenerateBoxMesh
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00890600
+	 * 		Offset -> 0x00890640
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshWelded
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -209,7 +209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008904A0
+	 * 		Offset -> 0x008904E0
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshTriangles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -240,7 +240,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00890210
+	 * 		Offset -> 0x00890250
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshSplit
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -280,7 +280,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008900E0
+	 * 		Offset -> 0x00890120
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CopyProceduralMeshFromStaticMeshComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -309,7 +309,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FF40
+	 * 		Offset -> 0x0088FF80
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.ConvertQuadToTriangles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -342,7 +342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FC40
+	 * 		Offset -> 0x0088FC80
 	 * 		Name   -> Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CalculateTangentsForMesh
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891E80
+	 * 		Offset -> 0x00891EC0
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -429,7 +429,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891BC0
+	 * 		Offset -> 0x00891C00
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -462,7 +462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008918D0
+	 * 		Offset -> 0x00891910
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -487,7 +487,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891840
+	 * 		Offset -> 0x00891880
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -512,7 +512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00891270
+	 * 		Offset -> 0x008912B0
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -534,7 +534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00890B70
+	 * 		Offset -> 0x00890BB0
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -577,7 +577,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00890820
+	 * 		Offset -> 0x00890860
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -614,7 +614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FEC0
+	 * 		Offset -> 0x0088FF00
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -637,7 +637,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FEA0
+	 * 		Offset -> 0x0088FEE0
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FE80
+	 * 		Offset -> 0x0088FEC0
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -677,7 +677,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0088FB50
+	 * 		Offset -> 0x0088FB90
 	 * 		Name   -> Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

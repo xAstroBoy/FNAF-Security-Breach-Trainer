@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_Cinematic_Medscan_Abp.Freddy_Cinematic_Medscan_Abp_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_Cinematic_Medscan_Abp.Freddy_Cinematic_Medscan_Abp_C.ExecuteUbergraph_Freddy_Cinematic_Medscan_Abp
 	 * 		Flags  -> (Final)
 	 * Parameters:

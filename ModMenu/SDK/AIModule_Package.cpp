@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029452D0
+	 * 		Offset -> 0x02945F80
 	 * 		Name   -> Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -79,7 +79,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945FA0
+	 * 		Offset -> 0x02946C50
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -106,7 +106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945D10
+	 * 		Offset -> 0x029469C0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945C50
+	 * 		Offset -> 0x02946900
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945BA0
+	 * 		Offset -> 0x02946850
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -193,7 +193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945890
+	 * 		Offset -> 0x02946540
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SendAIMessage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944C60
+	 * 		Offset -> 0x02945910
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -249,7 +249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944AA0
+	 * 		Offset -> 0x02945750
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944A10
+	 * 		Offset -> 0x029456C0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -299,7 +299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944980
+	 * 		Offset -> 0x02945630
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944270
+	 * 		Offset -> 0x02944F20
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -349,7 +349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029441F0
+	 * 		Offset -> 0x02944EA0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetBlackboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -374,7 +374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944050
+	 * 		Offset -> 0x02944D00
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetAIController
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -399,7 +399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02943E70
+	 * 		Offset -> 0x02944B20
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -448,7 +448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946150
+	 * 		Offset -> 0x02946E00
 	 * 		Name   -> Function AIModule.AIController.UseBlackboard
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -477,7 +477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945F20
+	 * 		Offset -> 0x02946BD0
 	 * 		Name   -> Function AIModule.AIController.UnclaimTaskResource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -500,7 +500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945A50
+	 * 		Offset -> 0x02946700
 	 * 		Name   -> Function AIModule.AIController.SetPathFollowingComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029459C0
+	 * 		Offset -> 0x02946670
 	 * 		Name   -> Function AIModule.AIController.SetMoveBlockDetection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -546,7 +546,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029457F0
+	 * 		Offset -> 0x029464A0
 	 * 		Name   -> Function AIModule.AIController.RunBehaviorTree
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -571,7 +571,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AIController.OnUsingBlackBoard
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -595,7 +595,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945200
+	 * 		Offset -> 0x02945EB0
 	 * 		Name   -> Function AIModule.AIController.OnGameplayTaskResourcesClaimed
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -620,7 +620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944F90
+	 * 		Offset -> 0x02945C40
 	 * 		Name   -> Function AIModule.AIController.MoveToLocation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -659,7 +659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944D70
+	 * 		Offset -> 0x02945A20
 	 * 		Name   -> Function AIModule.AIController.MoveToActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944BE0
+	 * 		Offset -> 0x02945890
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -719,7 +719,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944B50
+	 * 		Offset -> 0x02945800
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocalPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -742,7 +742,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944B30
+	 * 		Offset -> 0x029457E0
 	 * 		Name   -> Function AIModule.AIController.K2_ClearFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -762,7 +762,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944950
+	 * 		Offset -> 0x02945600
 	 * 		Name   -> Function AIModule.AIController.HasPartialPath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -784,7 +784,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944660
+	 * 		Offset -> 0x02945310
 	 * 		Name   -> Function AIModule.AIController.GetPathFollowingComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944630
+	 * 		Offset -> 0x029452E0
 	 * 		Name   -> Function AIModule.AIController.GetMoveStatus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -828,7 +828,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944500
+	 * 		Offset -> 0x029451B0
 	 * 		Name   -> Function AIModule.AIController.GetImmediateMoveDestination
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -850,7 +850,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029444D0
+	 * 		Offset -> 0x02945180
 	 * 		Name   -> Function AIModule.AIController.GetFocusActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -872,7 +872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944420
+	 * 		Offset -> 0x029450D0
 	 * 		Name   -> Function AIModule.AIController.GetFocalPointOnActor
 	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -897,7 +897,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029443E0
+	 * 		Offset -> 0x02945090
 	 * 		Name   -> Function AIModule.AIController.GetFocalPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -919,7 +919,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029440D0
+	 * 		Offset -> 0x02944D80
 	 * 		Name   -> Function AIModule.AIController.GetAIPerceptionComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -941,7 +941,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02943DF0
+	 * 		Offset -> 0x02944AA0
 	 * 		Name   -> Function AIModule.AIController.ClaimTaskResource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1034,7 +1034,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945AD0
+	 * 		Offset -> 0x02946780
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.SetSenseEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1059,7 +1059,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029457D0
+	 * 		Offset -> 0x02946480
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1079,7 +1079,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945390
+	 * 		Offset -> 0x02946040
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.OnOwnerEndPlay
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1104,7 +1104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944770
+	 * 		Offset -> 0x02945420
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1129,7 +1129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944680
+	 * 		Offset -> 0x02945330
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1156,7 +1156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944540
+	 * 		Offset -> 0x029451F0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1183,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029442F0
+	 * 		Offset -> 0x02944FA0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1210,7 +1210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029440F0
+	 * 		Offset -> 0x02944DA0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetActorsPerception
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1239,7 +1239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944030
+	 * 		Offset -> 0x02944CE0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.ForgetAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1287,7 +1287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029460D0
+	 * 		Offset -> 0x02946D80
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1310,7 +1310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029460B0
+	 * 		Offset -> 0x02946D60
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1330,7 +1330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945680
+	 * 		Offset -> 0x02946330
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1350,7 +1350,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945510
+	 * 		Offset -> 0x029461C0
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1401,7 +1401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945720
+	 * 		Offset -> 0x029463D0
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportPerceptionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1426,7 +1426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029456A0
+	 * 		Offset -> 0x02946350
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportEvent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1449,7 +1449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945590
+	 * 		Offset -> 0x02946240
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1478,7 +1478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945450
+	 * 		Offset -> 0x02946100
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -1503,7 +1503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944820
+	 * 		Offset -> 0x029454D0
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1600,7 +1600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnUpdate
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -1624,7 +1624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUpdated
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1648,7 +1648,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUnregistered
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1672,7 +1672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerRegistered
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1696,7 +1696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.K2_OnNewPawn
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1718,7 +1718,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A030
+	 * 		Offset -> 0x0294ACE0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerComponents
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1743,7 +1743,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02949F80
+	 * 		Offset -> 0x0294AC30
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1782,7 +1782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A180
+	 * 		Offset -> 0x0294AE30
 	 * 		Name   -> Function AIModule.AISense_Damage.ReportDamageEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1829,7 +1829,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A350
+	 * 		Offset -> 0x0294B000
 	 * 		Name   -> Function AIModule.AISense_Hearing.ReportNoiseEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1876,7 +1876,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A610
+	 * 		Offset -> 0x0294B2C0
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1903,7 +1903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A510
+	 * 		Offset -> 0x0294B1C0
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2168,7 +2168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019884F0
+	 * 		Offset -> 0x019891D0
 	 * 		Name   -> Function AIModule.AISystem.AILoggingVerbose
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -2188,7 +2188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F29A10
+	 * 		Offset -> 0x01F2A6F0
 	 * 		Name   -> Function AIModule.AISystem.AIIgnorePlayers
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -2250,7 +2250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02949BA0
+	 * 		Offset -> 0x0294A850
 	 * 		Name   -> Function AIModule.AITask_MoveTo.AIMoveTo
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2307,7 +2307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A710
+	 * 		Offset -> 0x0294B3C0
 	 * 		Name   -> Function AIModule.AITask_RunEQS.RunEQS
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2362,7 +2362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F150
+	 * 		Offset -> 0x0294FE00
 	 * 		Name   -> Function AIModule.BrainComponent.StopLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2385,7 +2385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BAD030
+	 * 		Offset -> 0x00BB0010
 	 * 		Name   -> Function AIModule.BrainComponent.StartLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -2405,7 +2405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E870
+	 * 		Offset -> 0x0294F520
 	 * 		Name   -> Function AIModule.BrainComponent.RestartLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -2425,7 +2425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E7A0
+	 * 		Offset -> 0x0294F450
 	 * 		Name   -> Function AIModule.BrainComponent.IsRunning
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2447,7 +2447,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E770
+	 * 		Offset -> 0x0294F420
 	 * 		Name   -> Function AIModule.BrainComponent.IsPaused
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2483,7 +2483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A7D0
+	 * 		Offset -> 0x0294B480
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2508,7 +2508,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A0E0
+	 * 		Offset -> 0x0294AD90
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2533,7 +2533,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02949E70
+	 * 		Offset -> 0x0294AB20
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2602,7 +2602,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294DE60
+	 * 		Offset -> 0x0294EB10
 	 * 		Name   -> Function AIModule.BlackboardAssetProvider.GetBlackboardAsset
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2638,7 +2638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F060
+	 * 		Offset -> 0x0294FD10
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsVector
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2663,7 +2663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EF30
+	 * 		Offset -> 0x0294FBE0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2688,7 +2688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EE40
+	 * 		Offset -> 0x0294FAF0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsRotator
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2713,7 +2713,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294ED70
+	 * 		Offset -> 0x0294FA20
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsObject
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2738,7 +2738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294ECA0
+	 * 		Offset -> 0x0294F950
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsName
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2763,7 +2763,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EBD0
+	 * 		Offset -> 0x0294F880
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsInt
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2788,7 +2788,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EB00
+	 * 		Offset -> 0x0294F7B0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2813,7 +2813,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EA30
+	 * 		Offset -> 0x0294F6E0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsEnum
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2838,7 +2838,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E960
+	 * 		Offset -> 0x0294F610
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsClass
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2863,7 +2863,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E890
+	 * 		Offset -> 0x0294F540
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2888,7 +2888,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E7D0
+	 * 		Offset -> 0x0294F480
 	 * 		Name   -> Function AIModule.BlackboardComponent.IsVectorValueSet
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2913,7 +2913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E660
+	 * 		Offset -> 0x0294F310
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsVector
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2938,7 +2938,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E580
+	 * 		Offset -> 0x0294F230
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2963,7 +2963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E4D0
+	 * 		Offset -> 0x0294F180
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsRotator
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2988,7 +2988,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E430
+	 * 		Offset -> 0x0294F0E0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsObject
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3013,7 +3013,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E390
+	 * 		Offset -> 0x0294F040
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsName
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3038,7 +3038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E2F0
+	 * 		Offset -> 0x0294EFA0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsInt
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3063,7 +3063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E250
+	 * 		Offset -> 0x0294EF00
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3088,7 +3088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E1B0
+	 * 		Offset -> 0x0294EE60
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsEnum
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3113,7 +3113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E110
+	 * 		Offset -> 0x0294EDC0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsClass
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3138,7 +3138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E070
+	 * 		Offset -> 0x0294ED20
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3163,7 +3163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294DF80
+	 * 		Offset -> 0x0294EC30
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetRotationFromEntry
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3192,7 +3192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294DE90
+	 * 		Offset -> 0x0294EB40
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetLocationFromEntry
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3221,7 +3221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294DDD0
+	 * 		Offset -> 0x0294EA80
 	 * 		Name   -> Function AIModule.BlackboardComponent.ClearValue
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3566,7 +3566,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3592,7 +3592,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3616,7 +3616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3640,7 +3640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3662,7 +3662,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3686,7 +3686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3708,7 +3708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3732,7 +3732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3754,7 +3754,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3780,7 +3780,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3804,7 +3804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3830,7 +3830,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -3854,7 +3854,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E740
+	 * 		Offset -> 0x0294F3F0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3876,7 +3876,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294E710
+	 * 		Offset -> 0x0294F3C0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4122,7 +4122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02729940
+	 * 		Offset -> 0x0272A5F0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4145,7 +4145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x027604B0
+	 * 		Offset -> 0x02761160
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4170,7 +4170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029535D0
+	 * 		Offset -> 0x02954280
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4197,7 +4197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953450
+	 * 		Offset -> 0x02954100
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4224,7 +4224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953310
+	 * 		Offset -> 0x02953FC0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4251,7 +4251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029531D0
+	 * 		Offset -> 0x02953E80
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4278,7 +4278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953090
+	 * 		Offset -> 0x02953D40
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4305,7 +4305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952F50
+	 * 		Offset -> 0x02953C00
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4332,7 +4332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952E10
+	 * 		Offset -> 0x02953AC0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4359,7 +4359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952CD0
+	 * 		Offset -> 0x02953980
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4386,7 +4386,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952B90
+	 * 		Offset -> 0x02953840
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4413,7 +4413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952A50
+	 * 		Offset -> 0x02953700
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4440,7 +4440,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952940
+	 * 		Offset -> 0x029535F0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4465,7 +4465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029528C0
+	 * 		Offset -> 0x02953570
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnerComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4490,7 +4490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029527B0
+	 * 		Offset -> 0x02953460
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4517,7 +4517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952670
+	 * 		Offset -> 0x02953320
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4544,7 +4544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952560
+	 * 		Offset -> 0x02953210
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4571,7 +4571,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952460
+	 * 		Offset -> 0x02953110
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4598,7 +4598,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952360
+	 * 		Offset -> 0x02953010
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4625,7 +4625,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952260
+	 * 		Offset -> 0x02952F10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4652,7 +4652,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952160
+	 * 		Offset -> 0x02952E10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4679,7 +4679,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952060
+	 * 		Offset -> 0x02952D10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4706,7 +4706,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951F60
+	 * 		Offset -> 0x02952C10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4733,7 +4733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951E60
+	 * 		Offset -> 0x02952B10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4760,7 +4760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951D60
+	 * 		Offset -> 0x02952A10
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4787,7 +4787,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951BC0
+	 * 		Offset -> 0x02952870
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4812,7 +4812,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951BC0
+	 * 		Offset -> 0x02952870
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4879,7 +4879,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4905,7 +4905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4929,7 +4929,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4953,7 +4953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStart
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4975,7 +4975,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4999,7 +4999,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivation
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5021,7 +5021,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivationAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5045,7 +5045,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivation
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5067,7 +5067,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029529C0
+	 * 		Offset -> 0x02953670
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.IsServiceActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5159,7 +5159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953790
+	 * 		Offset -> 0x02954440
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5184,7 +5184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953710
+	 * 		Offset -> 0x029543C0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5207,7 +5207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5233,7 +5233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5257,7 +5257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5281,7 +5281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecute
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5303,7 +5303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5327,7 +5327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbort
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5349,7 +5349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952A20
+	 * 		Offset -> 0x029536D0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5371,7 +5371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029529F0
+	 * 		Offset -> 0x029536A0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskAborting
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5393,7 +5393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951CD0
+	 * 		Offset -> 0x02952980
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishExecute
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5416,7 +5416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02951CB0
+	 * 		Offset -> 0x02952960
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishAbort
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -5688,7 +5688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DAE0
+	 * 		Offset -> 0x0295E790
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnNavDataRegistered
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -5711,7 +5711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D950
+	 * 		Offset -> 0x0295E600
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnActorBump
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -5740,7 +5740,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D560
+	 * 		Offset -> 0x0295E210
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathDestination
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5762,7 +5762,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D530
+	 * 		Offset -> 0x0295E1E0
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathActionType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5798,7 +5798,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02956C60
+	 * 		Offset -> 0x02957910
 	 * 		Name   -> Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5891,7 +5891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
 	 * Parameters:
@@ -5919,7 +5919,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -5947,7 +5947,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -5975,7 +5975,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6087,7 +6087,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02956C30
+	 * 		Offset -> 0x029578E0
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6109,7 +6109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6131,7 +6131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02956BA0
+	 * 		Offset -> 0x02957850
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
 	 * Parameters:
@@ -6154,7 +6154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02956B20
+	 * 		Offset -> 0x029577D0
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -6303,7 +6303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A770
+	 * 		Offset -> 0x0295B420
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6328,7 +6328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A570
+	 * 		Offset -> 0x0295B220
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6350,7 +6350,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A4F0
+	 * 		Offset -> 0x0295B1A0
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6372,7 +6372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A430
+	 * 		Offset -> 0x0295B0E0
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -6399,7 +6399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A370
+	 * 		Offset -> 0x0295B020
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -6426,7 +6426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A2E0
+	 * 		Offset -> 0x0295AF90
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -6451,7 +6451,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -6573,7 +6573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295A5F0
+	 * 		Offset -> 0x0295B2A0
 	 * 		Name   -> Function AIModule.EnvQueryManager.RunEQSQuery
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6886,7 +6886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DF30
+	 * 		Offset -> 0x0295EBE0
 	 * 		Name   -> Function AIModule.NavLinkProxy.SetSmartLinkEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6909,7 +6909,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DC50
+	 * 		Offset -> 0x0295E900
 	 * 		Name   -> Function AIModule.NavLinkProxy.ResumePathFollowing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6932,7 +6932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
@@ -6956,7 +6956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D610
+	 * 		Offset -> 0x0295E2C0
 	 * 		Name   -> Function AIModule.NavLinkProxy.IsSmartLinkEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6978,7 +6978,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D5E0
+	 * 		Offset -> 0x0295E290
 	 * 		Name   -> Function AIModule.NavLinkProxy.HasMovingAgents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7014,7 +7014,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DCD0
+	 * 		Offset -> 0x0295E980
 	 * 		Name   -> Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7041,7 +7041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DB60
+	 * 		Offset -> 0x0295E810
 	 * 		Name   -> Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7068,7 +7068,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D3A0
+	 * 		Offset -> 0x0295E050
 	 * 		Name   -> Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7101,7 +7101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D120
+	 * 		Offset -> 0x0295DDD0
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7134,7 +7134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295CF70
+	 * 		Offset -> 0x0295DC20
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7167,7 +7167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295CD70
+	 * 		Offset -> 0x0295DA20
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7204,7 +7204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295CB50
+	 * 		Offset -> 0x0295D800
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7269,7 +7269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BB1C70
+	 * 		Offset -> 0x00BAF7F0
 	 * 		Name   -> Function AIModule.PawnAction.GetActionPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -7291,7 +7291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB000
+	 * 		Offset -> 0x01DEBCE0
 	 * 		Name   -> Function AIModule.PawnAction.Finish
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7314,7 +7314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D2E0
+	 * 		Offset -> 0x0295DF90
 	 * 		Name   -> Function AIModule.PawnAction.CreateActionInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7355,7 +7355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7379,7 +7379,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionStart
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7401,7 +7401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionResume
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7423,7 +7423,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionPause
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7445,7 +7445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionFinished
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7539,7 +7539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D850
+	 * 		Offset -> 0x0295E500
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PushAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7568,7 +7568,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D760
+	 * 		Offset -> 0x0295E410
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PerformAction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7597,7 +7597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D6D0
+	 * 		Offset -> 0x0295E380
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_ForceAbortAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7622,7 +7622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D640
+	 * 		Offset -> 0x0295E2F0
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_AbortAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7661,7 +7661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DEA0
+	 * 		Offset -> 0x0295EB50
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7684,7 +7684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DE20
+	 * 		Offset -> 0x0295EAD0
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingInterval
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7707,7 +7707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DDA0
+	 * 		Offset -> 0x0295EA50
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7730,7 +7730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -7752,7 +7752,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -7778,7 +7778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D5C0
+	 * 		Offset -> 0x0295E270
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7800,7 +7800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D5A0
+	 * 		Offset -> 0x0295E250
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

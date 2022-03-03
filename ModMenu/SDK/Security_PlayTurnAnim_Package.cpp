@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Security_PlayTurnAnim_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Security_PlayTurnAnim.Security_PlayTurnAnim_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -37,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Security_PlayTurnAnim.Security_PlayTurnAnim_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -63,13 +62,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Security_PlayTurnAnim.Security_PlayTurnAnim_C.ExecuteUbergraph_Security_PlayTurnAnim
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurity_PlayTurnAnim_C::ExecuteUbergraph_Security_PlayTurnAnim(int EntryPoint)
+	void USecurity_PlayTurnAnim_C::ExecuteUbergraph_Security_PlayTurnAnim(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

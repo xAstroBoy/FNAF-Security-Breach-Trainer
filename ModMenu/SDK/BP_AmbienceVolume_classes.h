@@ -26,15 +26,15 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Global_ambiance[0x28];                                   // 0x0240(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                Location;                                                // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        Priority;                                                // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    Priority;                                                // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                music;                                                   // 0x0274(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                AmbienceState;                                           // 0x027C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Clear_Ambience_Priority(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex);
-		void Change_Ambience(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void Clear_Ambience_Priority(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
+		void Change_Ambience(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_BP_AmbienceVolume(int EntryPoint);
+		void ExecuteUbergraph_BP_AmbienceVolume(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

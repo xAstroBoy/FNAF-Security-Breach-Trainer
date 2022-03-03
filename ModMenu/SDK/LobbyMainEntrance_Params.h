@@ -15,6 +15,13 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function LobbyMainEntrance.LobbyMainEntrance_C.Close Gate
+	 */
+	struct ALobbyMainEntrance_C_Close_Gate_Params
+	{
+	};
+
+	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
 	 */
 	struct ALobbyMainEntrance_C_BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature_Params
@@ -32,13 +39,6 @@ namespace CG
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.ReceiveBeginPlay
 	 */
 	struct ALobbyMainEntrance_C_ReceiveBeginPlay_Params
-	{
-	};
-
-	/**
-	 * Function LobbyMainEntrance.LobbyMainEntrance_C.Close Gate
-	 */
-	struct ALobbyMainEntrance_C_Close_Gate_Params
 	{
 	};
 
@@ -76,7 +76,7 @@ namespace CG
 	struct ALobbyMainEntrance_C_ExecuteUbergraph_LobbyMainEntrance_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

@@ -23,7 +23,7 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0278(0x0030)
-		unsigned char                                              UnknownData_HAGS[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OD5S[0x8];                                   // 0x02A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_4;                            // 0x02B0(0x0440)
 		struct FAnimNode_LookAt                                    AnimGraphNode_LookAt_2;                                  // 0x06F0(0x01B0)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics_3;                            // 0x08A0(0x0440)
@@ -34,7 +34,7 @@ namespace CG
 		struct FAnimNode_LinkedInputPose                           AnimGraphNode_LinkedInputPose;                           // 0x1730(0x0078)
 		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x17A8(0x0020)
 		bool                                                       AnimDynamics_Ears;                                       // 0x17C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_WORK[0x3];                                   // 0x17C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GMAN[0x3];                                   // 0x17C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      EarDynamicAlpha;                                         // 0x17CC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      EaringDynamicAlpha;                                      // 0x17D0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 

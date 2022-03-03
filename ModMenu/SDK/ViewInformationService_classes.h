@@ -21,7 +21,7 @@ namespace CG
 	class UViewInformationService_C : public USightDetectionService_C
 	{
 	public:
-		unsigned char                                              UnknownData_MD5X[0x7];                                   // 0x00A1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WEDT[0x7];                                   // 0x00A1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		TArray<class AActor*>                                      VisibleInformationProviders;                             // 0x00B0(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
 		struct FBlackboardKeySelector                              ClosestInformationProviderKey;                           // 0x00C0(0x0028) Edit, BlueprintVisible

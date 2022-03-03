@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_6
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_5
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_4
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_3
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_2
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_1
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.Finished_C98679EE4E81A198759AEAAD7400C128
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.UpdateMeter
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.ShotFired
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -186,7 +186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.Recharge
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -205,7 +205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.PlayRechargePip
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -224,7 +224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.PlayFullyChargedPip
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -243,7 +243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.ExecuteUbergraph_FazblasterChargeUI
 	 * 		Flags  -> (Final)
 	 * Parameters:
@@ -265,7 +265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.OnRechargeDone__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B127C0
+	 * 		Offset -> 0x00B12800
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12740
+	 * 		Offset -> 0x00B12780
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12680
+	 * 		Offset -> 0x00B126C0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -83,7 +83,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12600
+	 * 		Offset -> 0x00B12640
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -106,7 +106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B124A0
+	 * 		Offset -> 0x00B124E0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12410
+	 * 		Offset -> 0x00B12450
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12390
+	 * 		Offset -> 0x00B123D0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12300
+	 * 		Offset -> 0x00B12340
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -198,7 +198,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12280
+	 * 		Offset -> 0x00B122C0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -221,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B121F0
+	 * 		Offset -> 0x00B12230
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -244,7 +244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12160
+	 * 		Offset -> 0x00B121A0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -267,7 +267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11F40
+	 * 		Offset -> 0x00B11F80
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -290,7 +290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11EB0
+	 * 		Offset -> 0x00B11EF0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -313,7 +313,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11E30
+	 * 		Offset -> 0x00B11E70
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -336,7 +336,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11DA0
+	 * 		Offset -> 0x00B11DE0
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -359,7 +359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11BD0
+	 * 		Offset -> 0x00B11C10
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11B40
+	 * 		Offset -> 0x00B11B80
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -412,7 +412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11B10
+	 * 		Offset -> 0x00B11B50
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -434,7 +434,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11A50
+	 * 		Offset -> 0x00B11A90
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -456,7 +456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11A20
+	 * 		Offset -> 0x00B11A60
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -478,7 +478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B119F0
+	 * 		Offset -> 0x00B11A30
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -500,7 +500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B119C0
+	 * 		Offset -> 0x00B11A00
 	 * 		Name   -> Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -536,7 +536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12530
+	 * 		Offset -> 0x00B12570
 	 * 		Name   -> Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -561,7 +561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B12090
+	 * 		Offset -> 0x00B120D0
 	 * 		Name   -> Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -586,7 +586,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11FC0
+	 * 		Offset -> 0x00B12000
 	 * 		Name   -> Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -639,7 +639,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11B70
+	 * 		Offset -> 0x00B11BB0
 	 * 		Name   -> Function PhysXVehicles.VehicleAnimInstance.GetVehicle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -675,7 +675,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11BA0
+	 * 		Offset -> 0x00B11BE0
 	 * 		Name   -> Function PhysXVehicles.VehicleWheel.IsInAir
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -697,7 +697,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11AE0
+	 * 		Offset -> 0x00B11B20
 	 * 		Name   -> Function PhysXVehicles.VehicleWheel.GetSuspensionOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -719,7 +719,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11AB0
+	 * 		Offset -> 0x00B11AF0
 	 * 		Name   -> Function PhysXVehicles.VehicleWheel.GetSteerAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -741,7 +741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B11A80
+	 * 		Offset -> 0x00B11AC0
 	 * 		Name   -> Function PhysXVehicles.VehicleWheel.GetRotationAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF40
+	 * 		Offset -> 0x00A5BF80
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF20
+	 * 		Offset -> 0x00A5BF60
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -54,7 +54,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -73,7 +73,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BE00
+	 * 		Offset -> 0x00A5BE40
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF00
+	 * 		Offset -> 0x00A5BF40
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData
 	 * 		Flags  -> (Final, Native, Private)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BEE0
+	 * 		Offset -> 0x00A5BF20
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms
 	 * 		Flags  -> (Final, Native, Private)
 	 */
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BCB0
+	 * 		Offset -> 0x00A5BCF0
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform
 	 * 		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5C010
+	 * 		Offset -> 0x00A5C050
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ServerSetLocalWorldData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable)
 	 * Parameters:
@@ -230,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF70
+	 * 		Offset -> 0x00A5BFB0
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ServerSetAlignmentTransforms
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable)
 	 * Parameters:
@@ -253,7 +253,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BEB0
+	 * 		Offset -> 0x00A5BEF0
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.IsChosenOne
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -275,7 +275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BD70
+	 * 		Offset -> 0x00A5BDB0
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ClientSetChosenOne
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, BlueprintCallable)
 	 * Parameters:
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BD50
+	 * 		Offset -> 0x00A5BD90
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ClientMarkReadyForSendingLocalData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -318,7 +318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BD20
+	 * 		Offset -> 0x00A5BD60
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.CanSendLocalDataToServer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

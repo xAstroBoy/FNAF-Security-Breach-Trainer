@@ -257,6 +257,37 @@ namespace CG
 	};
 
 	/**
+	 * Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_IsFullyDownEvent
+	 */
+	struct UGreg_FirstPerson_ABP_C_AnimNotify_IsFullyDownEvent_Params
+	{
+	};
+
+	/**
+	 * Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_FinishingItemUp
+	 */
+	struct UGreg_FirstPerson_ABP_C_AnimNotify_FinishingItemUp_Params
+	{
+	};
+
+	/**
+	 * Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_StartItemUp
+	 */
+	struct UGreg_FirstPerson_ABP_C_AnimNotify_StartItemUp_Params
+	{
+	};
+
+	/**
+	 * Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.Change Item
+	 */
+	struct UGreg_FirstPerson_ABP_C_Change_Item_Params
+	{
+	public:
+		class AEquippable_C*                                       NewEquipment;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ExecuteUbergraph_Greg_FirstPerson_ABP
 	 */
 	struct UGreg_FirstPerson_ABP_C_ExecuteUbergraph_Greg_FirstPerson_ABP_Params

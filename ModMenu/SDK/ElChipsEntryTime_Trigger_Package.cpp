@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ElChipsEntryTime_Trigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ElChipsEntryTime_Trigger.ElChipsEntryTime_Trigger_C.ReceiveActorBeginOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -35,13 +34,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ElChipsEntryTime_Trigger.ElChipsEntryTime_Trigger_C.ExecuteUbergraph_ElChipsEntryTime_Trigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AElChipsEntryTime_Trigger_C::ExecuteUbergraph_ElChipsEntryTime_Trigger(int EntryPoint)
+	void AElChipsEntryTime_Trigger_C::ExecuteUbergraph_ElChipsEntryTime_Trigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass InvisibleCollectible.InvisibleCollectible_C
-	 * Size -> 0x0000 (FullSize[0x0282] - InheritedSize[0x0282])
+	 * Size -> 0x0000 (FullSize[0x0298] - InheritedSize[0x0298])
 	 */
 	class AInvisibleCollectible_C : public ACollectible_C
 	{

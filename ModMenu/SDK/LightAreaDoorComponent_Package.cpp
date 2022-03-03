@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "LightAreaDoorComponent_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.On Area Change Finished
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.ExecuteUbergraph_LightAreaDoorComponent
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULightAreaDoorComponent_C::ExecuteUbergraph_LightAreaDoorComponent(int EntryPoint)
+	void ULightAreaDoorComponent_C::ExecuteUbergraph_LightAreaDoorComponent(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

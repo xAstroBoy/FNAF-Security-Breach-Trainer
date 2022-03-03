@@ -15,6 +15,33 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function BPI_Player.BPI_Player_C.VisualChangeItem
+	 */
+	struct UBPI_Player_C_VisualChangeItem_Params
+	{
+	};
+
+	/**
+	 * Function BPI_Player.BPI_Player_C.IsSwitchingItems
+	 */
+	struct UBPI_Player_C_IsSwitchingItems_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function BPI_Player.BPI_Player_C.IsInAir
+	 */
+	struct UBPI_Player_C_IsInAir_Params
+	{
+	public:
+		bool                                                       InAir;                                                   // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function BPI_Player.BPI_Player_C.PlayerEnteringExitingFreddy
 	 */
 	struct UBPI_Player_C_PlayerEnteringExitingFreddy_Params

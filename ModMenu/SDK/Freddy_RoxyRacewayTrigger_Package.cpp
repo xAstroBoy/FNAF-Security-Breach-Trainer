@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Freddy_RoxyRacewayTrigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_RoxyRacewayTrigger.Freddy_RoxyRacewayTrigger_C.ReceiveActorBeginOverlap
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -35,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_RoxyRacewayTrigger.Freddy_RoxyRacewayTrigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -54,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_RoxyRacewayTrigger.Freddy_RoxyRacewayTrigger_C.BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_0_OnTimeEnd__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -73,13 +72,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Freddy_RoxyRacewayTrigger.Freddy_RoxyRacewayTrigger_C.ExecuteUbergraph_Freddy_RoxyRacewayTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddy_RoxyRacewayTrigger_C::ExecuteUbergraph_Freddy_RoxyRacewayTrigger(int EntryPoint)
+	void AFreddy_RoxyRacewayTrigger_C::ExecuteUbergraph_Freddy_RoxyRacewayTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

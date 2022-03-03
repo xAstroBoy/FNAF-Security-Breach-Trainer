@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetGameType
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		FNAFDLSSLevel_EFNAFDLSSLevel                       DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::ApplyDLSSQuality(FNAFDLSSLevel_EFNAFDLSSLevel DLSSLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality");
+		
+		UFNAFGameInstance_C_ApplyDLSSQuality_Params params {};
+		params.DLSSLevel = DLSSLevel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetDefaultMappings
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -60,7 +82,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSS
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -82,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleSprint
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -104,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetProperControllerIcon
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -139,7 +161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.FindDeviceSpecicQualitySetting
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -166,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsMinSpecPC
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -190,7 +212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetDefaultVisualQualityLevels
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -219,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsRTXGPU
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -243,7 +265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsRayTracingSupported
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -269,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleInstructionCards
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -291,7 +313,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetMessageAndTime
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -313,7 +335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetMessageTimeReceived
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -339,7 +361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.InstructionCardViewed
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -365,7 +387,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetupNewGame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -384,7 +406,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.IsInGameplayTrailerMode
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -408,7 +430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.LoadCardsAndMessages
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -427,7 +449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.HasSaveGame
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -451,7 +473,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_347016F346FF261F1C1C92ADBA6D6462
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -470,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_347016F346FF261F1C1C92ADBA6D6462
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -489,7 +511,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2D43474D4FADD4C1301AEA8AD50DFC3D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -515,7 +537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2D43474D4FADD4C1301AEA8AD50DFC3D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -541,7 +563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2007C00C4878CD4D536B6E81A8F9EBF6
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -560,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2007C00C4878CD4D536B6E81A8F9EBF6
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -579,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_C4FD1B5F4537DF8B128F3D916037CA11
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -605,7 +627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_C4FD1B5F4537DF8B128F3D916037CA11
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -631,7 +653,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_E76021A145A37BC709C55BBACDEFFBF4
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -650,7 +672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_E76021A145A37BC709C55BBACDEFFBF4
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -669,7 +691,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_621EF3114DDD2DACD4AB62B9F98E6B49
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -695,7 +717,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_621EF3114DDD2DACD4AB62B9F98E6B49
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -721,7 +743,97 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2139E3F145F43A454CDBE3A76C9037C4
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UFNAFGameInstance_C::OnFailure_2139E3F145F43A454CDBE3A76C9037C4()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2139E3F145F43A454CDBE3A76C9037C4");
+		
+		UFNAFGameInstance_C_OnFailure_2139E3F145F43A454CDBE3A76C9037C4_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2139E3F145F43A454CDBE3A76C9037C4
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UFNAFGameInstance_C::OnSuccess_2139E3F145F43A454CDBE3A76C9037C4()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2139E3F145F43A454CDBE3A76C9037C4");
+		
+		UFNAFGameInstance_C_OnSuccess_2139E3F145F43A454CDBE3A76C9037C4_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_AC5026394EF21AF1261C85BD63C2D5E9
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::OnFailure_AC5026394EF21AF1261C85BD63C2D5E9(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_AC5026394EF21AF1261C85BD63C2D5E9");
+		
+		UFNAFGameInstance_C_OnFailure_AC5026394EF21AF1261C85BD63C2D5E9_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9");
+		
+		UFNAFGameInstance_C_OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.LoadMiniGameLevel
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -743,7 +855,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Start New Game
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -762,7 +874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load From Save
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -781,7 +893,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load Title
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -800,7 +912,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Retry Game
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -819,7 +931,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Quit To Title
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -838,7 +950,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ReceiveInit
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -857,7 +969,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Unpause Game
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -876,7 +988,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load To Area
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -898,7 +1010,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Set Trailer Mode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -920,7 +1032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Finish Load To Area
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -939,7 +1051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Start Survival Mode
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -958,7 +1070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load Level
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -980,7 +1092,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetLoadSavedGameOnNextWorldStart
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1002,7 +1114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckLoadSavedGameOnNextWorldLoad
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1021,15 +1133,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyQualitySettings
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel     QualityLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTraceLevel                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		FNAFDLSSLevel_EFNAFDLSSLevel                       DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		SWGPlatformUtil_ESWGPlatform                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::ApplyQualitySettings(FNAFVisualQualityLevel_EFNAFVisualQualityLevel QualityLevel, FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTraceLevel, SWGPlatformUtil_ESWGPlatform Platform)
+	void UFNAFGameInstance_C::ApplyQualitySettings(FNAFVisualQualityLevel_EFNAFVisualQualityLevel QualityLevel, FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTraceLevel, FNAFDLSSLevel_EFNAFDLSSLevel DLSSLevel, SWGPlatformUtil_ESWGPlatform Platform)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1038,6 +1151,7 @@ namespace CG
 		UFNAFGameInstance_C_ApplyQualitySettings_Params params {};
 		params.QualityLevel = QualityLevel;
 		params.RayTraceLevel = RayTraceLevel;
+		params.DLSSLevel = DLSSLevel;
 		params.Platform = Platform;
 		
 		auto flags = fn->FunctionFlags;
@@ -1047,7 +1161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.RunHardwareBenchmark
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1069,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForTrophyTimeAchievement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1088,7 +1202,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.EndGame
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1107,7 +1221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ChangeHourlyActivity
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1129,7 +1243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForHideAndSeekMasterAchievement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1148,7 +1262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetCurrentKeyMappings
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1170,7 +1284,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateSavedMappings
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1189,7 +1303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForLostAndFoundAchievement
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1208,7 +1322,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Check For ShatteredDreams Achievement
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		E_ShatteredBotTypes_E_ShatteredBotTypes            Shattered_Bot_Type                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::Check_For_ShatteredDreams_Achievement(E_ShatteredBotTypes_E_ShatteredBotTypes Shattered_Bot_Type)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Check For ShatteredDreams Achievement");
+		
+		UFNAFGameInstance_C_Check_For_ShatteredDreams_Achievement_Params params {};
+		params.Shattered_Bot_Type = Shattered_Bot_Type;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ExecuteUbergraph_FNAFGameInstance
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
@@ -1230,7 +1366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.TrailerModeChanged__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

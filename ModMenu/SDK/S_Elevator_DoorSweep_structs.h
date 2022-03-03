@@ -27,9 +27,9 @@ namespace CG
 		float                                                      BoxThickness_11_F10BA6634D6DF11797B91DB838B42C0A;        // 0x000C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      InnerDepth_12_50ED569C4256EEED0CA7D0AC45EABD81;          // 0x0010(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Flip_13_00E1873748B0D8C8D372B7A7B16C586E;                // 0x0014(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TI41[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3XLO[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             OffsetLocation_16_A8E7F3AA430EAB548575E9AF8F14FE43;      // 0x0018(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<E_Elevator_DoorSweep_Alignment_E_Elevator_DoorSweep_Alignment> Alignment_20_5D4A3F6044D22E93AA6B6790E8B0944F;           // 0x0024(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		E_Elevator_DoorSweep_Alignment_E_Elevator_DoorSweep_Alignment Alignment_20_5D4A3F6044D22E93AA6B6790E8B0944F;           // 0x0024(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	};
 

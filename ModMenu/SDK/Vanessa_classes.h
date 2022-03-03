@@ -21,7 +21,7 @@ namespace CG
 	class AVanessa_C : public AAISeeker_C
 	{
 	public:
-		unsigned char                                              UnknownData_PK0P[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_166L[0x7];                                   // 0x07F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x07F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UStaticMeshComponent*                                GodRay;                                                  // 0x0800(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USpotLightComponent*                                 Flashlight_Light;                                        // 0x0808(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -30,7 +30,7 @@ namespace CG
 		unsigned char                                              LostAndFoundSpawnLocation[0x28];                         // 0x0820(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       SendingToLostAndFound;                                   // 0x0848(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       PlayerLooking;                                           // 0x0849(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_5WOG[0x6];                                   // 0x084A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JA9P[0x6];                                   // 0x084A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<fnaf9_EFNAFAISpawnType>                             TypesToSpawn;                                            // 0x0850(0x0010) Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash
 		int32_t                                                    NumToSpawn;                                              // 0x0860(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 

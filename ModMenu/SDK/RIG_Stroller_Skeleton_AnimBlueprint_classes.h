@@ -35,12 +35,13 @@ namespace CG
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
+		void SetPeek(bool ShouldPeek);
 		void SetAnim(class UAnimSequence* Animation);
 		void SetEnterRotation(class APawn* PlayerPawn);
 		void AnimNotify_DoneSearching();
 		void StartSearch(class APawn* SearcherPawn);
 		void AnimNotify_SearchOver();
-		void ExecuteUbergraph_RIG_Stroller_Skeleton_AnimBlueprint(int EntryPoint);
+		void ExecuteUbergraph_RIG_Stroller_Skeleton_AnimBlueprint(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -28,7 +28,7 @@ namespace CG
 		void OnRoomChanged(class ARoomAreaBase* Room);
 		void UpdateRoomSetup();
 		void OnPlayerEnteredRoom(class ARoomAreaBase* Room);
-		void ExecuteUbergraph_VannyController(int EntryPoint);
+		void ExecuteUbergraph_VannyController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.GetCanMove
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.Update Physics Material
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_4
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -77,7 +77,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_3
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -99,7 +99,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpActEvt_SpaceBar_K2Node_InputKeyEvent_2
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -121,7 +121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpActEvt_SpaceBar_K2Node_InputKeyEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpActEvt_Interact_K2Node_InputActionEvent_1
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -165,7 +165,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.GameEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -184,7 +184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.EndRace
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -203,7 +203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.StartRace
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -241,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.StartRaceCountdown
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -263,7 +263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.ReceivePossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -285,7 +285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.ReceiveUnpossessed
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.CanMove
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -329,7 +329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.AIMoveForward
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -351,7 +351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.AITurnRight
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -373,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.Force Break
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.Force Interact
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -411,7 +411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_33
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -433,7 +433,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_44
 	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
@@ -455,7 +455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -477,7 +477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VCartVehicleAddedOnAfter.VCartVehicleAddedOnAfter_C.ExecuteUbergraph_VCartVehicleAddedOnAfter
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

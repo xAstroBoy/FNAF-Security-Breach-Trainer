@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F693A0
+	 * 		Offset -> 0x01F6A080
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199C7E0
+	 * 		Offset -> 0x0199D4C0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -252,7 +252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69690
+	 * 		Offset -> 0x01F6A370
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -275,7 +275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69610
+	 * 		Offset -> 0x01F6A2F0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69350
+	 * 		Offset -> 0x01F6A030
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F692B0
+	 * 		Offset -> 0x01F69F90
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69370
+	 * 		Offset -> 0x01F6A050
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.IsCaptureInProgress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69300
+	 * 		Offset -> 0x01F69FE0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -414,7 +414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F692D0
+	 * 		Offset -> 0x01F69FB0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -436,7 +436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F68F00
+	 * 		Offset -> 0x01F69BE0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindImageCaptureProtocol
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -458,7 +458,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F68ED0
+	 * 		Offset -> 0x01F69BB0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindAudioCaptureProtocol
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -494,7 +494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F698A0
+	 * 		Offset -> 0x01F6A580
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69710
+	 * 		Offset -> 0x01F6A3F0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -537,7 +537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69440
+	 * 		Offset -> 0x01F6A120
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -562,7 +562,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -600,7 +600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -619,7 +619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69410
+	 * 		Offset -> 0x01F6A0F0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -641,7 +641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -660,7 +660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -686,7 +686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -705,7 +705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -724,7 +724,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -743,7 +743,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F693E0
+	 * 		Offset -> 0x01F6A0C0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
@@ -765,7 +765,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -784,7 +784,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69330
+	 * 		Offset -> 0x01F6A010
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F68F30
+	 * 		Offset -> 0x01F69C10
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -845,7 +845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F698C0
+	 * 		Offset -> 0x01F6A5A0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -874,7 +874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69230
+	 * 		Offset -> 0x01F69F10
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69020
+	 * 		Offset -> 0x01F69D00
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

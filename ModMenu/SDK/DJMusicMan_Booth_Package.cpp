@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__MissionStateCondition_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__MissionStateCondition_K2Node_ComponentBoundEvent_1_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__Mission Active Condition_K2Node_ComponentBoundEvent_2_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__Mission Active Condition_K2Node_ComponentBoundEvent_3_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__Mission Vanish Condition_K2Node_ComponentBoundEvent_4_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.BndEvt__Mission Vanish Condition_K2Node_ComponentBoundEvent_5_OnMissionStateConditionMetDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.Post Game State
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function DJMusicMan_Booth.DJMusicMan_Booth_C.ExecuteUbergraph_DJMusicMan_Booth
 	 * 		Flags  -> (Final)
 	 * Parameters:

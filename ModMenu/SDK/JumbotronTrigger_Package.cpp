@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "JumbotronTrigger_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.VannyDisplaySeq
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.OnDisplayStopped
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -70,13 +69,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.ExecuteUbergraph_JumbotronTrigger
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AJumbotronTrigger_C::ExecuteUbergraph_JumbotronTrigger(int EntryPoint)
+	void AJumbotronTrigger_C::ExecuteUbergraph_JumbotronTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

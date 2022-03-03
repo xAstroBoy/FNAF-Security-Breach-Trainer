@@ -16,14 +16,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BallCannonLimitedShotsPawn.BallCannonLimitedShotsPawn_C
-	 * Size -> 0x0014 (FullSize[0x02CC] - InheritedSize[0x02B8])
+	 * Size -> 0x0014 (FullSize[0x02D4] - InheritedSize[0x02C0])
 	 */
 	class ABallCannonLimitedShotsPawn_C : public ABallCannonPawn_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B8(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class USphereComponent*                                    MontySphere;                                             // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		float                                                      deltaTime;                                               // 0x02C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class USphereComponent*                                    MontySphere;                                             // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		float                                                      deltaTime;                                               // 0x02D0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void ReceiveBeginPlay();

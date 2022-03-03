@@ -15,6 +15,17 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Tick
+	 */
+	struct UEndGameCinematicPlayerUI_C_Tick_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.EndGameVideoCredits
 	 */
 	struct UEndGameCinematicPlayerUI_C_EndGameVideoCredits_Params
@@ -43,17 +54,6 @@ namespace CG
 	};
 
 	/**
-	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Tick
-	 */
-	struct UEndGameCinematicPlayerUI_C_Tick_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.SetText
 	 */
 	struct UEndGameCinematicPlayerUI_C_SetText_Params
@@ -65,6 +65,30 @@ namespace CG
 	 */
 	struct UEndGameCinematicPlayerUI_C_PlayFazerblastDialogue_Params
 	{
+	};
+
+	/**
+	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Hold Timer
+	 */
+	struct UEndGameCinematicPlayerUI_C_Start_Hold_Timer_Params
+	{
+	};
+
+	/**
+	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Stop Hold Timer
+	 */
+	struct UEndGameCinematicPlayerUI_C_Stop_Hold_Timer_Params
+	{
+	};
+
+	/**
+	 * Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.OnMediaOpened
+	 */
+	struct UEndGameCinematicPlayerUI_C_OnMediaOpened_Params
+	{
+	public:
+		class FString                                              OpenedUrl;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
 	};
 
 	/**

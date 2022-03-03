@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_EnterMontyGolfTrigger(int EntryPoint);
+		void ExecuteUbergraph_EnterMontyGolfTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

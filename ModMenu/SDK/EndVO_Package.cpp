@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "EndVO_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EndVO.EndVO_C.StayVO
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EndVO.EndVO_C.VannyVO
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,13 +50,32 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function EndVO.EndVO_C.StayVONoPartyPass
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void AEndVO_C::StayVONoPartyPass()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndVO.EndVO_C.StayVONoPartyPass");
+		
+		AEndVO_C_StayVONoPartyPass_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function EndVO.EndVO_C.ExecuteUbergraph_EndVO
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEndVO_C::ExecuteUbergraph_EndVO(int EntryPoint)
+	void AEndVO_C::ExecuteUbergraph_EndVO(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -65,6 +83,25 @@ namespace CG
 		
 		AEndVO_C_ExecuteUbergraph_EndVO_Params params {};
 		params.EntryPoint = EntryPoint;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function EndVO.EndVO_C.OnStayVoFinished__DelegateSignature
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 */
+	void AEndVO_C::OnStayVoFinished__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndVO.EndVO_C.OnStayVoFinished__DelegateSignature");
+		
+		AEndVO_C_OnStayVoFinished__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);

@@ -136,7 +136,7 @@ namespace CG
 		class UWI_RollingCredits_C*                                WI_RollingCredits;                                       // 0x05B0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       DebugMenu;                                               // 0x05B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       AllowContinueNewGame;                                    // 0x05B9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TGGG[0x6];                                   // 0x05BA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_L10I[0x6];                                   // 0x05BA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              SlotForNewGame;                                          // 0x05C0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		TArray<class UUserWidget*>                                 DifficultySelectors;                                     // 0x05D0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		TArray<class UTitleButton_C*>                              TimeSelectors;                                           // 0x05E0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
@@ -144,7 +144,7 @@ namespace CG
 		int32_t                                                    LastMenuIndex;                                           // 0x0600(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    SeedSelectionIndex;                                      // 0x0604(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ButtonHover;                                             // 0x0608(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_N7FP[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5KUL[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FCinematicCutscene                                  FNAF_INTRO_mp4;                                          // 0x0610(0x0040) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		class FScriptMulticastDelegate                             IntroPlaying;                                            // 0x0650(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		struct FButtonStyle                                        MenuButtonStyle;                                         // 0x0660(0x0278) Edit, BlueprintVisible
@@ -153,7 +153,7 @@ namespace CG
 		class UMediaTexture*                                       CinematicBackgroundVideo;                                // 0x0B48(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UMediaPlayer*                                        CinematicMedia;                                          // 0x0B50(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    GameHour;                                                // 0x0B58(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_WSW1[0x4];                                   // 0x0B5C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O3PY[0x4];                                   // 0x0B5C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTitle_SaveSlotButton_C*                             TitleSaveSlotSelected;                                   // 0x0B60(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              GlobalAmbience[0x28];                                    // 0x0B68(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       BackgroundVideoPlaying;                                  // 0x0B90(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
@@ -178,26 +178,26 @@ namespace CG
 		void SetClockRate(int32_t MinutesPerHour);
 		UMG_ESlateVisibility Get_RayTracingBox_Visibility_1();
 		void FadeToLoad(const class FScriptDelegate& Event);
-		void Finished_071044F543A717F54FDA6B941362F78E();
 		void Finished_633E73144EEFFCA673A1CEB9A7478126();
-		void Load_Mini_Game_Level(const class FName& LevelName);
+		void Finished_071044F543A717F54FDA6B941362F78E();
+		void AddNewGameButtonUI();
+		void BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature();
+		void BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature();
 		void BndEvt__NewGameNoButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature();
 		void BndEvt__NewGameYesButton_K2Node_ComponentBoundEvent_17_OnClicked__DelegateSignature();
 		void BndEvt__ContinueGameButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 		void BndEvt__Continue_YesButton_K2Node_ComponentBoundEvent_21_OnClicked__DelegateSignature();
 		void BndEvt__Continue_NoButton_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature();
 		void BndEvt__LoadGameButton_K2Node_ComponentBoundEvent_27_OnClicked__DelegateSignature();
-		void BndEvt__NewGameButton_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature();
-		void BndEvt__Character_Gallery_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature();
+		void BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+		void Construct();
 		void BndEvt__Backstage_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature();
 		void BndEvt__ArcadeGamesButton_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature();
 		void BndEvt__EnvironmentsButton_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature();
 		void BndEvt__BalloonBoyMinigame_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature();
+		void PreConstruct(bool IsDesignTime);
 		void LoadWorldToArea(const class FName& Area);
 		void Continue_New_Game();
-		void BndEvt__LaserTag_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
-		void Construct();
-		void PreConstruct(bool IsDesignTime);
 		void On_New_Game_Existing_Slot(const class FString& SaveSlot);
 		void BndEvt__NewSlotButton_K2Node_ComponentBoundEvent_24_OnClicked__DelegateSignature();
 		void BndEvt__Bowling_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
@@ -240,15 +240,15 @@ namespace CG
 		void LoadMiniGolfCourse(int32_t CourseIndex);
 		void BndEvt__MiniGolf_Course3_K2Node_ComponentBoundEvent_76_OnClicked__DelegateSignature();
 		void BndEvt__PlayButton_K2Node_ComponentBoundEvent_78_OnClicked__DelegateSignature();
-		void AddNewGameButtonUI();
 		void BndEvt__BackButton_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature();
 		void GamepadBackButtonPressed();
 		void BndEvt__ExtrasButton_K2Node_ComponentBoundEvent_81_OnClicked__DelegateSignature();
 		void AcceptTextVisibility();
+		void Load_Mini_Game_Level(const class FName& LevelName);
 		void BndEvt__ExitButton_K2Node_ComponentBoundEvent_79_OnClicked__DelegateSignature();
 		void BackgroundVideo();
 		void BndEvt__CreditsButton_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-		void ExitGamePopUp();
+		void ExitGamePopup();
 		void BndEvt__BurntrapBattle_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
 		void BndEvt__VannyBattle_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature();
 		void LoadSaveSlot();
@@ -262,6 +262,8 @@ namespace CG
 		void Setup_Delete_Slots();
 		void UpdateButtonsVisibility();
 		void HideMouseWhenNotUsingKeyboard();
+		void CaptureFocusWithThumbstick();
+		void Destruct();
 		void ExecuteUbergraph_TitleUI(int32_t EntryPoint);
 		void IntroPlaying__DelegateSignature();
 		static UClass* StaticClass();

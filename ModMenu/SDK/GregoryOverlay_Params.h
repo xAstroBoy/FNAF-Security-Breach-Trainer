@@ -66,6 +66,23 @@ namespace CG
 	};
 
 	/**
+	 * Function GregoryOverlay.GregoryOverlay_C.Hide
+	 */
+	struct UGregoryOverlay_C_Hide_Params
+	{
+	public:
+		bool                                                       HideProgressWheel;                                       // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function GregoryOverlay.GregoryOverlay_C.Show
+	 */
+	struct UGregoryOverlay_C_Show_Params
+	{
+	};
+
+	/**
 	 * Function GregoryOverlay.GregoryOverlay_C.ExecuteUbergraph_GregoryOverlay
 	 */
 	struct UGregoryOverlay_C_ExecuteUbergraph_GregoryOverlay_Params

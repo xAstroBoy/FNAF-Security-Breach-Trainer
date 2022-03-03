@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.TurnSSR_ON
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.Set Refelection
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy-Gregory
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

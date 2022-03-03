@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_StaircaseRoomTrigger(int EntryPoint);
+		void ExecuteUbergraph_StaircaseRoomTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

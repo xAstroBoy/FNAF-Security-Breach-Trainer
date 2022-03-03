@@ -21,14 +21,14 @@ namespace CG
 	class APRE_PartyDoor_Long_UnlockAfterMission_C : public APRE_PartyDoor_Long_C
 	{
 	public:
-		unsigned char                                              UnknownData_4P34[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JBM7[0x7];                                   // 0x0341(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0348(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMissionStateHandler_C*                              MissionStateHandler;                                     // 0x0350(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_0_OnMissionStateHit__DelegateSignature();
 		void BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature();
-		void ExecuteUbergraph_PRE_PartyDoor_Long_UnlockAfterMission(int EntryPoint);
+		void ExecuteUbergraph_PRE_PartyDoor_Long_UnlockAfterMission(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

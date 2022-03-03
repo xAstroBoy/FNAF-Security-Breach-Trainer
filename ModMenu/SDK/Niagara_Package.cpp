@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D2A0
+	 * 		Offset -> 0x00A2D2E0
 	 * 		Name   -> Function Niagara.NiagaraActor.SetDestroyOnSystemFinish
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CE30
+	 * 		Offset -> 0x00A2CE70
 	 * 		Name   -> Function Niagara.NiagaraActor.OnNiagaraSystemFinished
 	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
@@ -212,7 +212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E670
+	 * 		Offset -> 0x00A2E6B0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableVec4
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -237,7 +237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E5A0
+	 * 		Offset -> 0x00A2E5E0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableVec3
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -262,7 +262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E4E0
+	 * 		Offset -> 0x00A2E520
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableVec2
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E410
+	 * 		Offset -> 0x00A2E450
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableQuat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -312,7 +312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E350
+	 * 		Offset -> 0x00A2E390
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -337,7 +337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E290
+	 * 		Offset -> 0x00A2E2D0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -362,7 +362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E1C0
+	 * 		Offset -> 0x00A2E200
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableLinearColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -387,7 +387,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E100
+	 * 		Offset -> 0x00A2E140
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableInt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -412,7 +412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2E030
+	 * 		Offset -> 0x00A2E070
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableFloat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DF60
+	 * 		Offset -> 0x00A2DFA0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableBool
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -462,7 +462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DEA0
+	 * 		Offset -> 0x00A2DEE0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetVariableActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -487,7 +487,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DE20
+	 * 		Offset -> 0x00A2DE60
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetSeekDelta
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -510,7 +510,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DD90
+	 * 		Offset -> 0x00A2DDD0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetRenderingEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -533,7 +533,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DCC0
+	 * 		Offset -> 0x00A2DD00
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetPreviewLODDistance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -558,7 +558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DC30
+	 * 		Offset -> 0x00A2DC70
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DB40
+	 * 		Offset -> 0x00A2DB80
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableVec4
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -606,7 +606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2DA50
+	 * 		Offset -> 0x00A2DA90
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableVec3
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -631,7 +631,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D980
+	 * 		Offset -> 0x00A2D9C0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableVec2
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -656,7 +656,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D8A0
+	 * 		Offset -> 0x00A2D8E0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableQuat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -681,7 +681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D440
+	 * 		Offset -> 0x00A2D480
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -706,7 +706,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D7C0
+	 * 		Offset -> 0x00A2D800
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -731,7 +731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D6E0
+	 * 		Offset -> 0x00A2D720
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableInt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -756,7 +756,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D600
+	 * 		Offset -> 0x00A2D640
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableFloat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -781,7 +781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D520
+	 * 		Offset -> 0x00A2D560
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableBool
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D440
+	 * 		Offset -> 0x00A2D480
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetNiagaraVariableActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -831,7 +831,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D3C0
+	 * 		Offset -> 0x00A2D400
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetMaxSimTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -854,7 +854,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D330
+	 * 		Offset -> 0x00A2D370
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetForceSolo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -877,7 +877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D220
+	 * 		Offset -> 0x00A2D260
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetDesiredAge
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -900,7 +900,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D190
+	 * 		Offset -> 0x00A2D1D0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -923,7 +923,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D100
+	 * 		Offset -> 0x00A2D140
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetAutoDestroy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -946,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2D080
+	 * 		Offset -> 0x00A2D0C0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -969,7 +969,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CFF0
+	 * 		Offset -> 0x00A2D030
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetAllowScalability
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -992,7 +992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CF70
+	 * 		Offset -> 0x00A2CFB0
 	 * 		Name   -> Function Niagara.NiagaraComponent.SetAgeUpdateMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1015,7 +1015,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CEF0
+	 * 		Offset -> 0x00A2CF30
 	 * 		Name   -> Function Niagara.NiagaraComponent.SeekToDesiredAge
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1038,7 +1038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CED0
+	 * 		Offset -> 0x00A2CF10
 	 * 		Name   -> Function Niagara.NiagaraComponent.ResetSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1058,7 +1058,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CEB0
+	 * 		Offset -> 0x00A2CEF0
 	 * 		Name   -> Function Niagara.NiagaraComponent.ReinitializeSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1078,7 +1078,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CE00
+	 * 		Offset -> 0x00A2CE40
 	 * 		Name   -> Function Niagara.NiagaraComponent.IsPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1100,7 +1100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CDD0
+	 * 		Offset -> 0x00A2CE10
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetSeekDelta
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1122,7 +1122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CDB0
+	 * 		Offset -> 0x00A2CDF0
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1144,7 +1144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CD90
+	 * 		Offset -> 0x00A2CDD0
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetPreviewLODDistance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1166,7 +1166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CB10
+	 * 		Offset -> 0x00A2CB50
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1193,7 +1193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CC50
+	 * 		Offset -> 0x00A2CC90
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1220,7 +1220,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2CA20
+	 * 		Offset -> 0x00A2CA60
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1245,7 +1245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C9F0
+	 * 		Offset -> 0x00A2CA30
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetMaxSimTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1267,7 +1267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C9C0
+	 * 		Offset -> 0x00A2CA00
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetForceSolo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1289,7 +1289,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C990
+	 * 		Offset -> 0x00A2C9D0
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetDesiredAge
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1311,7 +1311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C8E0
+	 * 		Offset -> 0x00A2C920
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetDataInterface
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1336,7 +1336,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C8C0
+	 * 		Offset -> 0x00A2C900
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1358,7 +1358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C890
+	 * 		Offset -> 0x00A2C8D0
 	 * 		Name   -> Function Niagara.NiagaraComponent.GetAgeUpdateMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1380,7 +1380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C7D0
+	 * 		Offset -> 0x00A2C810
 	 * 		Name   -> Function Niagara.NiagaraComponent.AdvanceSimulationByTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1405,7 +1405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A2C700
+	 * 		Offset -> 0x00A2C740
 	 * 		Name   -> Function Niagara.NiagaraComponent.AdvanceSimulation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1598,7 +1598,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A33260
+	 * 		Offset -> 0x00A332A0
 	 * 		Name   -> Function Niagara.NiagaraParticleCallbackHandler.ReceiveParticleData
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1679,7 +1679,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A33140
+	 * 		Offset -> 0x00A33180
 	 * 		Name   -> Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetTextureSize
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1709,7 +1709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A33020
+	 * 		Offset -> 0x00A33060
 	 * 		Name   -> Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetRawTextureSize
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1739,7 +1739,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A32F10
+	 * 		Offset -> 0x00A32F50
 	 * 		Name   -> Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillTexture2D
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1768,7 +1768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A32DA0
+	 * 		Offset -> 0x00A32DE0
 	 * 		Name   -> Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillRawTexture2D
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2082,7 +2082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A36760
+	 * 		Offset -> 0x00A367A0
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.SpawnSystemAttached
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2125,7 +2125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A364B0
+	 * 		Offset -> 0x00A364F0
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.SpawnSystemAtLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2166,7 +2166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A363A0
+	 * 		Offset -> 0x00A363E0
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.SetVolumeTextureObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2193,7 +2193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35FE0
+	 * 		Offset -> 0x00A36020
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.SetTextureObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2220,7 +2220,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35A70
+	 * 		Offset -> 0x00A35AB0
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableStaticMeshComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2247,7 +2247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35960
+	 * 		Offset -> 0x00A359A0
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableStaticMesh
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2274,7 +2274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35850
+	 * 		Offset -> 0x00A35890
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableSkeletalMeshComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2301,7 +2301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A354C0
+	 * 		Offset -> 0x00A35500
 	 * 		Name   -> Function Niagara.NiagaraFunctionLibrary.GetNiagaraParameterCollection
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2384,7 +2384,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A362B0
+	 * 		Offset -> 0x00A362F0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2409,7 +2409,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A361C0
+	 * 		Offset -> 0x00A36200
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2434,7 +2434,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A360F0
+	 * 		Offset -> 0x00A36130
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2459,7 +2459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35F00
+	 * 		Offset -> 0x00A35F40
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2484,7 +2484,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35E20
+	 * 		Offset -> 0x00A35E60
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2509,7 +2509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35D40
+	 * 		Offset -> 0x00A35D80
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2534,7 +2534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35C60
+	 * 		Offset -> 0x00A35CA0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2559,7 +2559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35B80
+	 * 		Offset -> 0x00A35BC0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2584,7 +2584,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35790
+	 * 		Offset -> 0x00A357D0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2609,7 +2609,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A356E0
+	 * 		Offset -> 0x00A35720
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2634,7 +2634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35630
+	 * 		Offset -> 0x00A35670
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2659,7 +2659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35580
+	 * 		Offset -> 0x00A355C0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2684,7 +2684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35410
+	 * 		Offset -> 0x00A35450
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2709,7 +2709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35360
+	 * 		Offset -> 0x00A353A0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2734,7 +2734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A352B0
+	 * 		Offset -> 0x00A352F0
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2759,7 +2759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A35200
+	 * 		Offset -> 0x00A35240
 	 * 		Name   -> Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2826,7 +2826,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Niagara.NiagaraPreviewBase.SetSystem
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2848,7 +2848,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Niagara.NiagaraPreviewBase.SetLabelText
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -2886,7 +2886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A690
+	 * 		Offset -> 0x00A3A6D0
 	 * 		Name   -> Function Niagara.NiagaraPreviewAxis.Num
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -2908,7 +2908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A450
+	 * 		Offset -> 0x00A3A490
 	 * 		Name   -> Function Niagara.NiagaraPreviewAxis.ApplyToPreview
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -3051,7 +3051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A6C0
+	 * 		Offset -> 0x00A3A700
 	 * 		Name   -> Function Niagara.NiagaraPreviewGrid.SetPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3074,7 +3074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A5E0
+	 * 		Offset -> 0x00A3A620
 	 * 		Name   -> Function Niagara.NiagaraPreviewGrid.GetPreviews
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3099,7 +3099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A5C0
+	 * 		Offset -> 0x00A3A600
 	 * 		Name   -> Function Niagara.NiagaraPreviewGrid.DeactivatePreviews
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3119,7 +3119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A3A3C0
+	 * 		Offset -> 0x00A3A400
 	 * 		Name   -> Function Niagara.NiagaraPreviewGrid.ActivatePreviews
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3170,7 +3170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D10
+	 * 		Offset -> 0x00875D50
 	 * 		Name   -> Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete
 	 * 		Flags  -> (Final, Native, Public)
 	 */

@@ -21,10 +21,10 @@ namespace CG
 	class ALAF_Display1_C : public ASecurityScreenDisplayBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_G5Z9[0x3];                                   // 0x02AD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XU5U[0x3];                                   // 0x02AD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UMaterialInterface*                                  InitialMaterial;                                         // 0x02B8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		int                                                        ElementIndex;                                            // 0x02C0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    ElementIndex;                                            // 0x02C0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void StopEmitter();
@@ -32,7 +32,7 @@ namespace CG
 		void ToggleInRange(bool InRange);
 		void ReceiveBeginPlay();
 		void Stop_Video();
-		void ExecuteUbergraph_LAF_Display1(int EntryPoint);
+		void ExecuteUbergraph_LAF_Display1(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

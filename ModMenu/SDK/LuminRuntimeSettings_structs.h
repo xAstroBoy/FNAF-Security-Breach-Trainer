@@ -125,7 +125,7 @@ namespace CG
 	{
 	public:
 		LuminRuntimeSettings_ELuminComponentSubElementType         ElementType;                                             // 0x0000(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QAJY[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_R0ZC[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Value;                                                   // 0x0008(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
@@ -143,6 +143,17 @@ namespace CG
 	};
 
 	/**
+	 * ScriptStruct LuminRuntimeSettings.LocalizedIconInfos
+	 * Size -> 0x0010
+	 */
+	struct FLocalizedIconInfos
+	{
+	public:
+		TArray<struct FLocalizedIconInfo>                          IconData;                                                // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
+
+	};
+
+	/**
 	 * ScriptStruct LuminRuntimeSettings.LuminComponentElement
 	 * Size -> 0x0048
 	 */
@@ -153,19 +164,8 @@ namespace CG
 		class FString                                              VisibleName;                                             // 0x0010(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              ExecutableName;                                          // 0x0020(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		LuminRuntimeSettings_ELuminComponentType                   ComponentType;                                           // 0x0030(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LD49[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IANZ[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FLuminComponentSubElement>                   ExtraComponentSubElements;                               // 0x0038(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
-	};
-
-	/**
-	 * ScriptStruct LuminRuntimeSettings.LocalizedIconInfos
-	 * Size -> 0x0010
-	 */
-	struct FLocalizedIconInfos
-	{
-	public:
-		TArray<struct FLocalizedIconInfo>                          IconData;                                                // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
 

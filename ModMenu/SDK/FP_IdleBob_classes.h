@@ -18,7 +18,7 @@ namespace CG
 	 * BlueprintGeneratedClass FP_IdleBob.FP_IdleBob_C
 	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
 	 */
-	class UFP_IdleBob_C : public UCameraShake
+	class UFP_IdleBob_C : public FEngine_UCameraShake
 	{
 	public:
 		static UClass* StaticClass();

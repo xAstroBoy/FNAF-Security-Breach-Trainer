@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "TimeTrigger_Package.h"
 
 namespace CG
 {
@@ -13,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.Start Timer
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Current_Time_Hour                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Current_Time_Minute                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                TImer_End_Hour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Timer_End_Minute                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Current_Time_Hour                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Current_Time_Minute                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            TImer_End_Hour                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Timer_End_Minute                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FScriptDelegate                              Timer_End_Event                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	 */
-	void UTimeTrigger_C::Start_Timer(int Current_Time_Hour, int Current_Time_Minute, int TImer_End_Hour, int Timer_End_Minute, const class FScriptDelegate& Timer_End_Event)
+	void UTimeTrigger_C::Start_Timer(int32_t Current_Time_Hour, int32_t Current_Time_Minute, int32_t TImer_End_Hour, int32_t Timer_End_Minute, const class FScriptDelegate& Timer_End_Event)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -43,13 +42,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.Handle Minute Check
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                CurrentMinute                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            CurrentMinute                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTimeTrigger_C::Handle_Minute_Check(int CurrentMinute)
+	void UTimeTrigger_C::Handle_Minute_Check(int32_t CurrentMinute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -65,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -84,7 +83,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.On Timer Started
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -103,14 +102,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.On Game Clock TIme Has Changed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		int                                                Hour                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                Minute                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Hour                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            Minute                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTimeTrigger_C::On_Game_Clock_TIme_Has_Changed(int Hour, int Minute)
+	void UTimeTrigger_C::On_Game_Clock_TIme_Has_Changed(int32_t Hour, int32_t Minute)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -127,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.On Clock State Changed
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -149,13 +148,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.ExecuteUbergraph_TimeTrigger
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UTimeTrigger_C::ExecuteUbergraph_TimeTrigger(int EntryPoint)
+	void UTimeTrigger_C::ExecuteUbergraph_TimeTrigger(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -171,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function TimeTrigger.TimeTrigger_C.TimerInvoked__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

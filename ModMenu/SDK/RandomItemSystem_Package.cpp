@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC65D0
+	 * 		Offset -> 0x00BC7170
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.SetupItem
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC64F0
+	 * 		Offset -> 0x00BC7090
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.Randomize
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -66,7 +66,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC63D0
+	 * 		Offset -> 0x00BC6F70
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.PickRandomLocationFromGroup
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC6830
+	 * 		Offset -> 0x00BC73D0
 	 * 		Name   -> Function RandomItemSystem.RandomItemGroup.GetItemDisplayInformation
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */

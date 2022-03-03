@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_BP_WwiseStateTrigger(int EntryPoint);
+		void ExecuteUbergraph_BP_WwiseStateTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

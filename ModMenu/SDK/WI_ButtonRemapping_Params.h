@@ -199,6 +199,13 @@ namespace CG
 	};
 
 	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ReapplyPreviousMappings
+	 */
+	struct UWI_ButtonRemapping_C_ReapplyPreviousMappings_Params
+	{
+	};
+
+	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ExecuteUbergraph_WI_ButtonRemapping
 	 */
 	struct UWI_ButtonRemapping_C_ExecuteUbergraph_WI_ButtonRemapping_Params

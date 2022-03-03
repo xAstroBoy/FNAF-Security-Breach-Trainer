@@ -21,7 +21,7 @@ namespace CG
 	class ABP_PiratePoster_C : public ABP_DoorMaster_C
 	{
 	public:
-		unsigned char                                              UnknownData_HNT2[0x3];                                   // 0x03BD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9D5U[0x3];                                   // 0x03BD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UStaticMeshComponent*                                MOD_SingleHinge_MoviePoster;                             // 0x03C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UWorldStateHandlerComponent*                         BonnieWorldState;                                        // 0x03D0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -37,7 +37,7 @@ namespace CG
 		void BndEvt__ChicaWorldState_K2Node_ComponentBoundEvent_5_OnObjectStateChanged__DelegateSignature(class UWorldStateHandlerComponent* Handler, bool bState);
 		void BndEvt__FoxyWorldState_K2Node_ComponentBoundEvent_6_OnObjectStateChanged__DelegateSignature(class UWorldStateHandlerComponent* Handler, bool bState);
 		void BndEvt__BonnieWorldState_K2Node_ComponentBoundEvent_7_OnObjectStateChanged__DelegateSignature(class UWorldStateHandlerComponent* Handler, bool bState);
-		void ExecuteUbergraph_BP_PiratePoster(int EntryPoint);
+		void ExecuteUbergraph_BP_PiratePoster(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

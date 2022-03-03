@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.ResetProgress
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.Finished_5F0582474578FD27DE69FFBB7FD288BD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.Finished_F03FC89C402E55C17B8ECF868B8FD07B
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.SetHoldProgress
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.CancelHold
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -129,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.Begin Hold
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.CompleteHoldProgress
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -167,7 +167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Progressbar_TitleSkipUI.Progressbar_TitleSkipUI_C.ExecuteUbergraph_Progressbar_TitleSkipUI
 	 * 		Flags  -> (Final)
 	 * Parameters:

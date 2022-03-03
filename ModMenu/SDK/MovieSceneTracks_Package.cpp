@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
 	 * 		Flags  -> (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -61,7 +61,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFED10
+	 * 		Offset -> 0x01CFF9F0
 	 * 		Name   -> Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFEC90
+	 * 		Offset -> 0x01CFF970
 	 * 		Name   -> Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -246,7 +246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFEE50
+	 * 		Offset -> 0x01CFFB30
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -269,7 +269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFEDD0
+	 * 		Offset -> 0x01CFFAB0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.SetSound
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFECF0
+	 * 		Offset -> 0x01CFF9D0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -314,7 +314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFECD0
+	 * 		Offset -> 0x01CFF9B0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.GetSound
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -448,7 +448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFED10
+	 * 		Offset -> 0x01CFF9F0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -471,7 +471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01CFEC90
+	 * 		Offset -> 0x01CFF970
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -549,7 +549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D056E0
+	 * 		Offset -> 0x01D063C0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D05540
+	 * 		Offset -> 0x01D06220
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -846,7 +846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D057D0
+	 * 		Offset -> 0x01D064B0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -869,7 +869,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D05630
+	 * 		Offset -> 0x01D06310
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -892,7 +892,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D05600
+	 * 		Offset -> 0x01D062E0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -914,7 +914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01D05510
+	 * 		Offset -> 0x01D061F0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

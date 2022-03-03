@@ -26,7 +26,7 @@ namespace CG
 		class USphereComponent*                                    PlayerEntranceTrigger;                                   // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0248(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DTQ5[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XL1M[0x7];                                   // 0x0249(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              SlideLevelSequence[0x28];                                // 0x0249(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		struct FMovieSceneSequencePlaybackSettings                 SequenceOptions;                                         // 0x0278(0x0014) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
 

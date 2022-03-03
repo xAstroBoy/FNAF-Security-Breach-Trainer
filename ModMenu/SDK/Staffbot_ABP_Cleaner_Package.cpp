@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Staffbot_ABP_Cleaner_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -35,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -54,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.isStunnedEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -76,14 +75,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.WarningEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsWarning                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		int                                                WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Cleaner_C::WarningEvent(bool IsWarning, int WarningCount)
+	void UStaffbot_ABP_Cleaner_C::WarningEvent(bool IsWarning, int32_t WarningCount)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -100,20 +99,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.AlertEvent
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               isAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_ABP_Cleaner_C::AlertEvent(bool isAlerting)
+	void UStaffbot_ABP_Cleaner_C::AlertEvent(bool IsAlerting)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.AlertEvent");
 		
 		UStaffbot_ABP_Cleaner_C_AlertEvent_Params params {};
-		params.isAlerting = isAlerting;
+		params.IsAlerting = IsAlerting;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -122,13 +121,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.ExecuteUbergraph_Staffbot_ABP_Cleaner
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UStaffbot_ABP_Cleaner_C::ExecuteUbergraph_Staffbot_ABP_Cleaner(int EntryPoint)
+	void UStaffbot_ABP_Cleaner_C::ExecuteUbergraph_Staffbot_ABP_Cleaner(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

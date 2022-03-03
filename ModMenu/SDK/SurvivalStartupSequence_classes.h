@@ -37,7 +37,7 @@ namespace CG
 		unsigned char                                              SkipButton[0x28];                                        // 0x02F0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       is_skipped;                                              // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       WaitingForDoorLocked;                                    // 0x0319(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_6LSH[0x6];                                   // 0x031A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WOZS[0x6];                                   // 0x031A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FLobbyInstructionCardSetup>                  Textures;                                                // 0x0320(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		unsigned char                                              Screens[0x10];                                           // 0x0330(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		struct FTimerHandle                                        SpawnChicaTimer;                                         // 0x0340(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash

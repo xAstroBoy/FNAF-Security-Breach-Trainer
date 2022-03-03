@@ -29,7 +29,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void Update();
-		void ExecuteUbergraph_WestArcadeHolesManager(int EntryPoint);
+		void ExecuteUbergraph_WestArcadeHolesManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

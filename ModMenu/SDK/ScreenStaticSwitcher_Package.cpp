@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "ScreenStaticSwitcher_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ScreenStaticSwitcher.ScreenStaticSwitcher_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ScreenStaticSwitcher.ScreenStaticSwitcher_C.Update
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ScreenStaticSwitcher.ScreenStaticSwitcher_C.ExecuteUbergraph_ScreenStaticSwitcher
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AScreenStaticSwitcher_C::ExecuteUbergraph_ScreenStaticSwitcher(int EntryPoint)
+	void AScreenStaticSwitcher_C::ExecuteUbergraph_ScreenStaticSwitcher(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

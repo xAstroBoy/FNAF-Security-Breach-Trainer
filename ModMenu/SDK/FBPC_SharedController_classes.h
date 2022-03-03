@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FBPC_SharedController.FBPC_SharedController_C
-	 * Size -> 0x0038 (FullSize[0x05F8] - InheritedSize[0x05C0])
+	 * Size -> 0x0039 (FullSize[0x05F9] - InheritedSize[0x05C0])
 	 */
 	class AFBPC_SharedController_C : public AFNAFBasePlayerController
 	{
@@ -29,9 +29,10 @@ namespace CG
 		bool                                                       ForceStandaloneSubtitles;                                // 0x05E2(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Debug;                                                   // 0x05E3(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Debug_Subtitles;                                         // 0x05E4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZGCR[0x3];                                   // 0x05E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6LZH[0x3];                                   // 0x05E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              PauseUIClass;                                            // 0x05E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UUserWidget*                                         PauseWidget;                                             // 0x05F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       CanPause;                                                // 0x05F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void PrintDebugSubtitles(const class FString& inString, bool Force);

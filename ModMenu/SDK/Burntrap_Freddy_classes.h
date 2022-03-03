@@ -16,25 +16,27 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass Burntrap_Freddy.Burntrap_Freddy_C
-	 * Size -> 0x0069 (FullSize[0x0981] - InheritedSize[0x0918])
+	 * Size -> 0x006B (FullSize[0x098B] - InheritedSize[0x0920])
 	 */
 	class ABurntrap_Freddy_C : public AFreddy_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0918(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UBoxComponent*                                       PlayerCaptureTrigger;                                    // 0x0920(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		bool                                                       IsHacked;                                                // 0x0928(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_D0C4[0x3];                                   // 0x0929(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		float                                                      HackTimeMax;                                             // 0x092C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      HackTime;                                                // 0x0930(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      ChargeTimer;                                             // 0x0934(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      ChargeTimerMax;                                          // 0x0938(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       HasGregory;                                              // 0x093C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LSAA[0x3];                                   // 0x093D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              RechargeStations[0x10];                                  // 0x093D(0x0010) UNKNOWN PROPERTY: ArrayProperty
-		unsigned char                                              LineSkipper[0x28];                                       // 0x0950(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		class AOGM_Underground_C*                                  Manager;                                                 // 0x0978(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Is_In_Recharge_Station;                                  // 0x0980(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0920(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UBoxComponent*                                       PlayerCaptureTrigger;                                    // 0x0928(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		bool                                                       IsHacked;                                                // 0x0930(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_929O[0x3];                                   // 0x0931(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      HackTimeMax;                                             // 0x0934(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      HackTime;                                                // 0x0938(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      ChargeTimer;                                             // 0x093C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      ChargeTimerMax;                                          // 0x0940(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       HasGregory;                                              // 0x0944(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_KQJY[0x3];                                   // 0x0945(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              RechargeStations[0x10];                                  // 0x0945(0x0010) UNKNOWN PROPERTY: ArrayProperty
+		unsigned char                                              LineSkipper[0x28];                                       // 0x0958(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		class AOGM_Underground_C*                                  Manager;                                                 // 0x0980(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       Is_In_Recharge_Station;                                  // 0x0988(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       FreddyAttackBT;                                          // 0x0989(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       GoingToPowerStation;                                     // 0x098A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);

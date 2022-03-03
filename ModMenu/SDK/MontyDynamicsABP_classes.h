@@ -34,10 +34,10 @@ namespace CG
 		struct FAnimNode_Trail                                     AnimGraphNode_Trail;                                     // 0x06E0(0x0260)
 		struct FAnimNode_AnimDynamics                              AnimGraphNode_AnimDynamics;                              // 0x0940(0x0440)
 		bool                                                       AnimDynamics_Monty;                                      // 0x0D80(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NAOI[0x3];                                   // 0x0D81(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BGV0[0x3];                                   // 0x0D81(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      TailDynamicAlpha;                                        // 0x0D84(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Shattered;                                               // 0x0D88(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_FO9B[0x3];                                   // 0x0D89(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4HJG[0x3];                                   // 0x0D89(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      EaringDynamicAlpha;                                      // 0x0D8C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:

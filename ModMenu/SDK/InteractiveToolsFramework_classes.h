@@ -21,7 +21,7 @@ namespace CG
 	class UInputBehavior : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_5UEY[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_974M[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -34,7 +34,7 @@ namespace CG
 	class UAnyButtonInputBehavior : public UInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_3ELA[0x50];                                  // 0x0030(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YGQY[0x50];                                  // 0x0030(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -67,7 +67,7 @@ namespace CG
 	class UInteractiveGizmo : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_2E24[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YPM3[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UInputBehaviorSet*                                   InputBehaviors;                                          // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 
 	public:
@@ -81,13 +81,13 @@ namespace CG
 	class UAxisAngleGizmo : public UInteractiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_32UF[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_362C[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0038(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              AngleSource[0x10];                                       // 0x0058(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              HitTarget[0x10];                                         // 0x0068(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              StateTarget[0x10];                                       // 0x0078(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		bool                                                       bInInteraction;                                          // 0x0088(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0ME6[0x3];                                   // 0x0089(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_65KZ[0x3];                                   // 0x0089(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             RotationOrigin;                                          // 0x008C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             RotationAxis;                                            // 0x0098(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             RotationPlaneX;                                          // 0x00A4(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -96,7 +96,7 @@ namespace CG
 		struct FVector                                             InteractionCurPoint;                                     // 0x00C8(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      InteractionStartAngle;                                   // 0x00D4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      InteractionCurAngle;                                     // 0x00D8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0ZK5[0x14];                                  // 0x00DC(0x0014) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M8R9[0x14];                                  // 0x00DC(0x0014) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -119,14 +119,14 @@ namespace CG
 	class UAxisPositionGizmo : public UInteractiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_7XRA[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P7VL[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0038(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              ParameterSource[0x10];                                   // 0x0058(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              HitTarget[0x10];                                         // 0x0068(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              StateTarget[0x10];                                       // 0x0078(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		bool                                                       bEnableSignedAxis;                                       // 0x0088(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bInInteraction;                                          // 0x0089(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IWF1[0x2];                                   // 0x008A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3S0E[0x2];                                   // 0x008A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             InteractionOrigin;                                       // 0x008C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             InteractionAxis;                                         // 0x0098(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             InteractionStartPoint;                                   // 0x00A4(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -134,7 +134,7 @@ namespace CG
 		float                                                      InteractionStartParameter;                               // 0x00BC(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      InteractionCurParameter;                                 // 0x00C0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      ParameterSign;                                           // 0x00C4(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1QUL[0x10];                                  // 0x00C8(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RW2M[0x10];                                  // 0x00C8(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -147,7 +147,7 @@ namespace CG
 	class UGizmoConstantAxisSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_1N0T[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NURJ[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             Origin;                                                  // 0x0030(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             Direction;                                               // 0x003C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
@@ -162,7 +162,7 @@ namespace CG
 	class UGizmoConstantFrameAxisSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_XN56[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LGSO[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             Origin;                                                  // 0x0030(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             Direction;                                               // 0x003C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             TangentX;                                                // 0x0048(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -179,7 +179,7 @@ namespace CG
 	class UGizmoWorldAxisSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_452I[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DVLT[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             Origin;                                                  // 0x0030(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    AxisIndex;                                               // 0x003C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
@@ -194,11 +194,11 @@ namespace CG
 	class UGizmoComponentAxisSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_RAYL[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FJJ1[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USceneComponent*                                     Component;                                               // 0x0030(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    AxisIndex;                                               // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bLocalAxes;                                              // 0x003C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_G6PN[0x3];                                   // 0x003D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T05U[0x3];                                   // 0x003D(0x0003) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -211,10 +211,10 @@ namespace CG
 	class UInteractiveToolPropertySet : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_FBTT[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZV8X[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UObject*                                             CachedProperties;                                        // 0x0040(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bIsPropertySetEnabled;                                   // 0x0048(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_21SX[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QNL0[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -229,13 +229,13 @@ namespace CG
 	public:
 		float                                                      BrushSize;                                               // 0x0050(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSpecifyRadius;                                          // 0x0054(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QNYF[0x3];                                   // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_H139[0x3];                                   // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      BrushRadius;                                             // 0x0058(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BrushStrength;                                           // 0x005C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BrushFalloffAmount;                                      // 0x0060(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowStrength;                                           // 0x0064(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowFalloff;                                            // 0x0065(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ECS8[0x2];                                   // 0x0066(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_E9PC[0x2];                                   // 0x0066(0x0002) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -248,10 +248,10 @@ namespace CG
 	class UInteractiveTool : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_9V6H[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EMCO[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UInputBehaviorSet*                                   InputBehaviors;                                          // 0x0048(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UObject*>                                     ToolPropertyObjects;                                     // 0x0050(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_55YO[0x20];                                  // 0x0060(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IM2P[0x20];                                  // 0x0060(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -264,7 +264,7 @@ namespace CG
 	class USingleSelectionTool : public UInteractiveTool
 	{
 	public:
-		unsigned char                                              UnknownData_61KP[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EWPT[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -277,7 +277,7 @@ namespace CG
 	class UMeshSurfacePointTool : public USingleSelectionTool
 	{
 	public:
-		unsigned char                                              UnknownData_ZUTI[0x38];                                  // 0x0088(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WMSA[0x38];                                  // 0x0088(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -292,9 +292,9 @@ namespace CG
 	public:
 		class UBrushBaseProperties*                                BrushProperties;                                         // 0x00C0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bInBrushStroke;                                          // 0x00C8(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1NCI[0x3];                                   // 0x00C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q8VA[0x3];                                   // 0x00C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FBrushStampData                                     LastBrushStamp;                                          // 0x00CC(0x00A8) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_M0T7[0x14];                                  // 0x0174(0x0014) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_E7XS[0x14];                                  // 0x0174(0x0014) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              PropertyClass[0x28];                                     // 0x0174(0x0028) UNKNOWN PROPERTY: SoftClassProperty
 		class UBrushStampIndicator*                                BrushStampIndicator;                                     // 0x01B0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 
@@ -326,18 +326,18 @@ namespace CG
 		bool                                                       bDrawIndicatorLines;                                     // 0x0058(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDrawRadiusCircle;                                       // 0x0059(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDrawFalloffCircle;                                      // 0x005A(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MKGH[0x1];                                   // 0x005B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7SE9[0x1];                                   // 0x005B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    SampleStepCount;                                         // 0x005C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        LineColor;                                               // 0x0060(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      LineThickness;                                           // 0x0070(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDepthTested;                                            // 0x0074(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDrawSecondaryLines;                                     // 0x0075(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_89MX[0x2];                                   // 0x0076(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VCTL[0x2];                                   // 0x0076(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SecondaryLineThickness;                                  // 0x0078(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        SecondaryLineColor;                                      // 0x007C(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TOM8[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1F83[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UPrimitiveComponent*                                 AttachedComponent;                                       // 0x0090(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YPJZ[0x18];                                  // 0x0098(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_H0M7[0x18];                                  // 0x0098(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -350,9 +350,9 @@ namespace CG
 	class UClickDragInputBehavior : public UAnyButtonInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_VBV5[0xA0];                                  // 0x0080(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LA5J[0xA0];                                  // 0x0080(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bUpdateModifiersDuringDrag;                              // 0x0120(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_N4EW[0x1F];                                  // 0x0121(0x001F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LLM8[0x1F];                                  // 0x0121(0x001F) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -365,7 +365,7 @@ namespace CG
 	class ULocalClickDragInputBehavior : public UClickDragInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_0HQX[0x140];                                 // 0x0140(0x0140) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9141[0x140];                                 // 0x0140(0x0140) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -398,7 +398,7 @@ namespace CG
 	class UClickDragTool : public UInteractiveTool
 	{
 	public:
-		unsigned char                                              UnknownData_FZ3I[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HQ1Q[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -434,7 +434,7 @@ namespace CG
 		struct FLinearColor                                        Color;                                                   // 0x03F0(0x0010) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      HoverSizeMultiplier;                                     // 0x0400(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      PixelHitDistanceThreshold;                               // 0x0404(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_E2H5[0x8];                                   // 0x0408(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T1KO[0x8];                                   // 0x0408(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void UpdateWorldLocalState(bool bWorldIn);
@@ -453,7 +453,7 @@ namespace CG
 		float                                                      Gap;                                                     // 0x041C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Length;                                                  // 0x0420(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Thickness;                                               // 0x0424(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QFCN[0x8];                                   // 0x0428(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ORAH[0x8];                                   // 0x0428(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -467,13 +467,13 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Origin;                                                  // 0x0410(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VGEI[0x4];                                   // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KUQK[0x4];                                   // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FQuat                                               Rotation;                                                // 0x0420(0x0010) Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             Dimensions;                                              // 0x0430(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      LineThickness;                                           // 0x043C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRemoveHiddenLines;                                      // 0x0440(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bEnableAxisFlip;                                         // 0x0441(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S2Z1[0xE];                                   // 0x0442(0x000E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EMQP[0xE];                                   // 0x0442(0x000E) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -492,7 +492,7 @@ namespace CG
 		int32_t                                                    NumSides;                                                // 0x0424(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bViewAligned;                                            // 0x0428(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOnlyAllowFrontFacingHits;                               // 0x0429(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_US8U[0x6];                                   // 0x042A(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZXFU[0x6];                                   // 0x042A(0x0006) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -588,7 +588,7 @@ namespace CG
 		struct FVector                                             Direction;                                               // 0x0424(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Length;                                                  // 0x0430(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bImageScale;                                             // 0x0434(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_28Y3[0xB];                                   // 0x0435(0x000B) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4D9W[0xB];                                   // 0x0435(0x000B) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -609,7 +609,7 @@ namespace CG
 		float                                                      LengthY;                                                 // 0x0434(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Thickness;                                               // 0x0438(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              SegmentFlags;                                            // 0x043C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_C9XI[0x3];                                   // 0x043D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YD10[0x3];                                   // 0x043D(0x0003) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -622,7 +622,7 @@ namespace CG
 	class UGizmoLambdaHitTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_NQ5I[0x88];                                  // 0x0028(0x0088) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YEQY[0x88];                                  // 0x0028(0x0088) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -635,9 +635,9 @@ namespace CG
 	class UGizmoComponentHitTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_QX5M[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LSBR[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UPrimitiveComponent*                                 Component;                                               // 0x0030(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_P4BG[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VU7U[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -675,9 +675,9 @@ namespace CG
 	public:
 		bool                                                       bAutoInvalidateOnHover;                                  // 0x0028(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAutoInvalidateOnCapture;                                // 0x0029(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TAKH[0xE];                                   // 0x002A(0x000E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X6YS[0xE];                                   // 0x002A(0x000E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UInputBehaviorSet*                                   ActiveInputBehaviors;                                    // 0x0038(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_BGHC[0x70];                                  // 0x0040(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_R2BE[0x70];                                  // 0x0040(0x0070) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -690,7 +690,7 @@ namespace CG
 	class UInteractionMechanic : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_ACTY[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_R7XI[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -703,11 +703,11 @@ namespace CG
 	class UInteractiveGizmoManager : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_LSE4[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VWRA[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FActiveGizmo>                                ActiveGizmos;                                            // 0x0030(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_7XNJ[0x18];                                  // 0x0040(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BB4I[0x18];                                  // 0x0040(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FString, class UInteractiveGizmoBuilder*>       GizmoBuilders;                                           // 0x0058(0x0050) Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_KMFG[0x10];                                  // 0x00A8(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_U0HW[0x10];                                  // 0x00A8(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -730,12 +730,12 @@ namespace CG
 	class UInteractiveToolManager : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_AALH[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2K6Y[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UInteractiveTool*                                    ActiveLeftTool;                                          // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UInteractiveTool*                                    ActiveRightTool;                                         // 0x0038(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5K5I[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SIZJ[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FString, class UInteractiveToolBuilder*>        ToolBuilders;                                            // 0x0090(0x0050) Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_E94F[0x58];                                  // 0x00E0(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3K85[0x58];                                  // 0x00E0(0x0058) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -758,7 +758,7 @@ namespace CG
 	class UInteractiveToolsContext : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_X1CN[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q1XI[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UInputRouter*                                        InputRouter;                                             // 0x0058(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UInteractiveToolManager*                             ToolManager;                                             // 0x0060(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UInteractiveGizmoManager*                            GizmoManager;                                            // 0x0068(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -790,7 +790,7 @@ namespace CG
 	class UIntervalGizmoBuilder : public UInteractiveGizmoBuilder
 	{
 	public:
-		unsigned char                                              UnknownData_8O6J[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M472[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -804,14 +804,14 @@ namespace CG
 	{
 	public:
 		class UGizmoTransformChangeStateTarget*                    StateTarget;                                             // 0x0038(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1SL9[0x10];                                  // 0x0040(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6I9K[0x10];                                  // 0x0040(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTransformProxy*                                     TransformProxy;                                          // 0x0050(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UPrimitiveComponent*>                         ActiveComponents;                                        // 0x0058(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UInteractiveGizmo*>                           ActiveGizmos;                                            // 0x0068(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_MFQ3[0x18];                                  // 0x0078(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NQ7T[0x18];                                  // 0x0078(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UGizmoComponentAxisSource*                           AxisYSource;                                             // 0x0090(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UGizmoComponentAxisSource*                           AxisZSource;                                             // 0x0098(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_H91X[0x90];                                  // 0x00A0(0x0090) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4VRF[0x90];                                  // 0x00A0(0x0090) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -824,7 +824,7 @@ namespace CG
 	class UGizmoBaseFloatParameterSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_3XSW[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_N1RC[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -852,7 +852,7 @@ namespace CG
 	class UKeyAsModifierInputBehavior : public UInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_V8YT[0xE0];                                  // 0x0030(0x00E0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SJ8Q[0xE0];                                  // 0x0030(0x00E0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -865,7 +865,7 @@ namespace CG
 	class UMeshSurfacePointToolBuilder : public UInteractiveToolBuilder
 	{
 	public:
-		unsigned char                                              UnknownData_VDGD[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UTGN[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -878,7 +878,7 @@ namespace CG
 	class UMouseHoverBehavior : public UInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_BZSE[0x68];                                  // 0x0030(0x0068) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VCZF[0x68];                                  // 0x0030(0x0068) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -891,7 +891,7 @@ namespace CG
 	class UMultiClickSequenceInputBehavior : public UAnyButtonInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_WSWV[0xB0];                                  // 0x0080(0x00B0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BT04[0xB0];                                  // 0x0080(0x00B0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -904,7 +904,7 @@ namespace CG
 	class UMultiSelectionTool : public UInteractiveTool
 	{
 	public:
-		unsigned char                                              UnknownData_GH1E[0x10];                                  // 0x0080(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OH2S[0x10];                                  // 0x0080(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -919,7 +919,7 @@ namespace CG
 	public:
 		float                                                      Value;                                                   // 0x0048(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FGizmoFloatParameterChange                          LastChange;                                              // 0x004C(0x0008) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MF3B[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A99C[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -932,7 +932,7 @@ namespace CG
 	class UGizmoBaseVec2ParameterSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_ZNYN[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RB1D[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -959,14 +959,14 @@ namespace CG
 	class UGizmoAxisTranslationParameterSource : public UGizmoBaseFloatParameterSource
 	{
 	public:
-		unsigned char                                              UnknownData_A6HC[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_H6KD[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0048(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              TransformSource[0x10];                                   // 0x00A0(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		float                                                      Parameter;                                               // 0x00B0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FGizmoFloatParameterChange                          LastChange;                                              // 0x00B4(0x0008) NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             CurTranslationAxis;                                      // 0x00BC(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurTranslationOrigin;                                    // 0x00C8(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LTTQ[0xC];                                   // 0x00D4(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JBQ0[0xC];                                   // 0x00D4(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          InitialTransform;                                        // 0x00E0(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -980,7 +980,7 @@ namespace CG
 	class UGizmoPlaneTranslationParameterSource : public UGizmoBaseVec2ParameterSource
 	{
 	public:
-		unsigned char                                              UnknownData_XQB0[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IP28[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0048(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              TransformSource[0x10];                                   // 0x00A0(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		struct FVector2D                                           Parameter;                                               // 0x00B0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -989,7 +989,7 @@ namespace CG
 		struct FVector                                             CurTranslationNormal;                                    // 0x00D4(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurTranslationAxisX;                                     // 0x00E0(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurTranslationAxisY;                                     // 0x00EC(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PUN1[0x8];                                   // 0x00F8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9O5Q[0x8];                                   // 0x00F8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          InitialTransform;                                        // 0x0100(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -1009,7 +1009,7 @@ namespace CG
 		struct FGizmoFloatParameterChange                          LastChange;                                              // 0x006C(0x0008) NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             CurRotationAxis;                                         // 0x0074(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurRotationOrigin;                                       // 0x0080(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZMMR[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LJFS[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          InitialTransform;                                        // 0x0090(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -1032,7 +1032,7 @@ namespace CG
 		struct FVector                                             CurScaleNormal;                                          // 0x0090(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurScaleAxisX;                                           // 0x009C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurScaleAxisY;                                           // 0x00A8(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YB4T[0xC];                                   // 0x00B4(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YG3J[0xC];                                   // 0x00B4(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          InitialTransform;                                        // 0x00C0(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -1066,7 +1066,7 @@ namespace CG
 	class UGizmoPlaneScaleParameterSource : public UGizmoBaseVec2ParameterSource
 	{
 	public:
-		unsigned char                                              UnknownData_7I95[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AWQ5[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0048(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              TransformSource[0x10];                                   // 0x00A0(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		float                                                      ScaleMultiplier;                                         // 0x00B0(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -1076,7 +1076,7 @@ namespace CG
 		struct FVector                                             CurScaleNormal;                                          // 0x00D8(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurScaleAxisX;                                           // 0x00E4(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             CurScaleAxisY;                                           // 0x00F0(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9VDU[0x4];                                   // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AQDY[0x4];                                   // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          InitialTransform;                                        // 0x0100(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -1100,7 +1100,7 @@ namespace CG
 	class UPlanePositionGizmo : public UInteractiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_7EKO[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S74K[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              AxisSource[0x10];                                        // 0x0038(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              ParameterSource[0x10];                                   // 0x0058(0x0010) UNKNOWN PROPERTY: InterfaceProperty
 		unsigned char                                              HitTarget[0x10];                                         // 0x0068(0x0010) UNKNOWN PROPERTY: InterfaceProperty
@@ -1118,7 +1118,7 @@ namespace CG
 		struct FVector2D                                           InteractionStartParameter;                               // 0x00D4(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           InteractionCurParameter;                                 // 0x00DC(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           ParameterSigns;                                          // 0x00E4(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QMKD[0x14];                                  // 0x00EC(0x0014) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KOL4[0x14];                                  // 0x00EC(0x0014) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1131,7 +1131,7 @@ namespace CG
 	class USelectionSet : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_DW69[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RYBP[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1160,9 +1160,9 @@ namespace CG
 	class USingleClickInputBehavior : public UAnyButtonInputBehavior
 	{
 	public:
-		unsigned char                                              UnknownData_2CRV[0x40];                                  // 0x0080(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6RT6[0x40];                                  // 0x0080(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       HitTestOnRelease;                                        // 0x00C0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8LT1[0x6F];                                  // 0x00C1(0x006F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6VOU[0x6F];                                  // 0x00C1(0x006F) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1185,7 +1185,7 @@ namespace CG
 	class USingleClickTool : public UInteractiveTool
 	{
 	public:
-		unsigned char                                              UnknownData_MMY9[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DU4D[0x8];                                   // 0x0080(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1198,7 +1198,7 @@ namespace CG
 	class UGizmoNilStateTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_9L1Y[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GVSO[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1211,7 +1211,7 @@ namespace CG
 	class UGizmoLambdaStateTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_C1KY[0x88];                                  // 0x0028(0x0088) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6GDI[0x88];                                  // 0x0028(0x0088) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1224,7 +1224,7 @@ namespace CG
 	class UGizmoObjectModifyStateTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_OJWX[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TVQR[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1237,9 +1237,9 @@ namespace CG
 	class UGizmoTransformChangeStateTarget : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_C94Y[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XE9E[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              TransactionManager[0x10];                                // 0x0028(0x0010) UNKNOWN PROPERTY: InterfaceProperty
-		unsigned char                                              UnknownData_SV4U[0x80];                                  // 0x0060(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MJ1E[0x80];                                  // 0x0060(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1280,7 +1280,7 @@ namespace CG
 	class UTransformGizmoBuilder : public UInteractiveGizmoBuilder
 	{
 	public:
-		unsigned char                                              UnknownData_57L3[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5WVK[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1293,18 +1293,18 @@ namespace CG
 	class UTransformGizmo : public UInteractiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_DWK2[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FIB9[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTransformProxy*                                     ActiveTarget;                                            // 0x0040(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSnapToWorldGrid;                                        // 0x0048(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseContextCoordinateSystem;                             // 0x0049(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0PWD[0x2];                                   // 0x004A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JU4D[0x2];                                   // 0x004A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		InteractiveToolsFramework_EToolContextCoordinateSystem     CurrentCoordinateSystem;                                 // 0x004C(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_L2B5[0x3];                                   // 0x004A(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-		unsigned char                                              UnknownData_SS8L[0x90];                                  // 0x0050(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6BIL[0x3];                                   // 0x004A(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_A7CV[0x90];                                  // 0x0050(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UPrimitiveComponent*>                         ActiveComponents;                                        // 0x00E0(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UPrimitiveComponent*>                         NonuniformScaleComponents;                               // 0x00F0(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UInteractiveGizmo*>                           ActiveGizmos;                                            // 0x0100(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_KIR9[0x10];                                  // 0x0110(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SWLA[0x10];                                  // 0x0110(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UGizmoConstantFrameAxisSource*                       CameraAxisSource;                                        // 0x0120(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UGizmoComponentAxisSource*                           AxisXSource;                                             // 0x0128(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UGizmoComponentAxisSource*                           AxisYSource;                                             // 0x0130(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
@@ -1314,7 +1314,7 @@ namespace CG
 		class UGizmoComponentAxisSource*                           UnitAxisZSource;                                         // 0x0150(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UGizmoTransformChangeStateTarget*                    StateTarget;                                             // 0x0158(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UGizmoScaledTransformSource*                         ScaledTransformSource;                                   // 0x0160(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_D44R[0x18];                                  // 0x0168(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6Q0F[0x18];                                  // 0x0168(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1327,10 +1327,10 @@ namespace CG
 	class UTransformProxy : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_7Q9Y[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5NCY[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bRotatePerObject;                                        // 0x0070(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSetPivotMode;                                           // 0x0071(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_M4P8[0x1E];                                  // 0x0072(0x001E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EUP5[0x1E];                                  // 0x0072(0x001E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          SharedTransform;                                         // 0x0090(0x0030) IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected
 		struct FTransform                                          InitialSharedTransform;                                  // 0x00C0(0x0030) IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected
 
@@ -1345,7 +1345,7 @@ namespace CG
 	class UGizmoBaseTransformSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_J1UM[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NFOA[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1360,7 +1360,7 @@ namespace CG
 	public:
 		class USceneComponent*                                     Component;                                               // 0x0048(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bModifyComponentOnTransform;                             // 0x0050(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_EX47[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XV54[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1374,7 +1374,7 @@ namespace CG
 	{
 	public:
 		unsigned char                                              ChildTransformSource[0x10];                              // 0x0048(0x0010) UNKNOWN PROPERTY: InterfaceProperty
-		unsigned char                                              UnknownData_USXZ[0x88];                                  // 0x0058(0x0088) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_L66C[0x88];                                  // 0x0058(0x0088) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

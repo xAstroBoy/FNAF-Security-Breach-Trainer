@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.HideCueObjectInterface.SetupWorldCue
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.HideCueObjectInterface.ResetWorldCue
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.IsPlayerInAttackRange
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -85,7 +85,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetHideLocationAndRotation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetHideCueActor
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetAIEjectLocationAndRotation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -174,7 +174,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetSecurityLevel
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -196,7 +196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorRequiredItem
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -218,7 +218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorLockPlayer
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -240,7 +240,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorLockAI
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -262,7 +262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorOpen
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -283,7 +283,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorLockedForPlayer
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorLockedForAI
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -325,7 +325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.HasDoorInitialized
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -346,7 +346,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.ForceDoorOpen
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -365,7 +365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function RoomSystem.DoorInterface.ForceDoorClose
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -398,7 +398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2420
+	 * 		Offset -> 0x00BC2FC0
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.SetPOIVisited
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2390
+	 * 		Offset -> 0x00BC2F30
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.IsValid
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -446,7 +446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2260
+	 * 		Offset -> 0x00BC2E00
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.HasPOIBeenVisited
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -471,7 +471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2150
+	 * 		Offset -> 0x00BC2CF0
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.GetPOIResultsFromIndices
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -498,7 +498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC20B0
+	 * 		Offset -> 0x00BC2C50
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.GetPOIInfoFromIndex
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC1FA0
+	 * 		Offset -> 0x00BC2B40
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.CreatePOIIndicesFromResults
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -564,7 +564,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC22F0
+	 * 		Offset -> 0x00BC2E90
 	 * 		Name   -> Function RoomSystem.POIResultBlueprintLibrary.HasPOIBeenVisited
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -603,7 +603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3B10
+	 * 		Offset -> 0x00BC46B0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.SetPOIVisited
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -626,7 +626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3A90
+	 * 		Offset -> 0x00BC4630
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ResetPOIHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -649,7 +649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC39F0
+	 * 		Offset -> 0x00BC4590
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.IsLocationInRoom
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -674,7 +674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC39C0
+	 * 		Offset -> 0x00BC4560
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetTotalRoomArea
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC38E0
+	 * 		Offset -> 0x00BC4480
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomPoints
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -721,7 +721,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC38B0
+	 * 		Offset -> 0x00BC4450
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoints
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -743,7 +743,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3810
+	 * 		Offset -> 0x00BC43B0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -768,7 +768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC36D0
+	 * 		Offset -> 0x00BC4270
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomAdjacency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -793,7 +793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3690
+	 * 		Offset -> 0x00BC4230
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRandomLocationInRoom
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -815,7 +815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3600
+	 * 		Offset -> 0x00BC41A0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointsOfInterestInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -837,7 +837,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3570
+	 * 		Offset -> 0x00BC4110
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointsOfInterest
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -859,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC34D0
+	 * 		Offset -> 0x00BC4070
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointOfInterestInfoByIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -884,7 +884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC34B0
+	 * 		Offset -> 0x00BC4050
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPlayerHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -906,7 +906,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BB1950
+	 * 		Offset -> 0x00BB4400
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetMapName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -928,7 +928,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3430
+	 * 		Offset -> 0x00BC3FD0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetDoors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -950,7 +950,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC33A0
+	 * 		Offset -> 0x00BC3F40
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetDetectors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -972,7 +972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3380
+	 * 		Offset -> 0x00BC3F20
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetCharacterDetectorRoot
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -994,7 +994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3350
+	 * 		Offset -> 0x00BC3EF0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllHideActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1016,7 +1016,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC32F0
+	 * 		Offset -> 0x00BC3E90
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAIHideActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1038,7 +1038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3320
+	 * 		Offset -> 0x00BC3EC0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAdjacentRooms
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1060,7 +1060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3320
+	 * 		Offset -> 0x00BC3EC0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAdjacentRoomInfos
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1082,7 +1082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3210
+	 * 		Offset -> 0x00BC3DB0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAIHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1104,7 +1104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3230
+	 * 		Offset -> 0x00BC3DD0
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAdjacentInfoFromDoor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1129,7 +1129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3190
+	 * 		Offset -> 0x00BC3D30
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ClearPOIVisited
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1152,7 +1152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC30C0
+	 * 		Offset -> 0x00BC3C60
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.AdjustPOIHeat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1191,7 +1191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5590
+	 * 		Offset -> 0x00BC6130
 	 * 		Name   -> Function RoomSystem.RoomSystem.StartRoomSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1211,7 +1211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5430
+	 * 		Offset -> 0x00BC5FD0
 	 * 		Name   -> Function RoomSystem.RoomSystem.RemovePOIsFromArray
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1241,7 +1241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC53B0
+	 * 		Offset -> 0x00BC5F50
 	 * 		Name   -> Function RoomSystem.RoomSystem.PlayerExitedRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1264,7 +1264,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5330
+	 * 		Offset -> 0x00BC5ED0
 	 * 		Name   -> Function RoomSystem.RoomSystem.PlayerEnteredRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1287,7 +1287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC52A0
+	 * 		Offset -> 0x00BC5E40
 	 * 		Name   -> Function RoomSystem.RoomSystem.IsPlayerInRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1312,7 +1312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5140
+	 * 		Offset -> 0x00BC5CE0
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetWeightedRandomPOIFromArray
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -1342,7 +1342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC50A0
+	 * 		Offset -> 0x00BC5C40
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetRoomAtLocation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1367,7 +1367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4C60
+	 * 		Offset -> 0x00BC5800
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPOIsInRange
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, Const)
 	 * Parameters:
@@ -1396,7 +1396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4AD0
+	 * 		Offset -> 0x00BC5670
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPOIsInNavigableRange
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -1427,7 +1427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5000
+	 * 		Offset -> 0x00BC5BA0
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerVisitAgeForRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1452,7 +1452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4F60
+	 * 		Offset -> 0x00BC5B00
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerTimeInRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1477,7 +1477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4E20
+	 * 		Offset -> 0x00BC59C0
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerRoomInfo
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1507,7 +1507,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4DA0
+	 * 		Offset -> 0x00BC5940
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerCurrentRooms
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1529,7 +1529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4970
+	 * 		Offset -> 0x00BC5510
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetHighestHeatPOIFromArray
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -1559,7 +1559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4820
+	 * 		Offset -> 0x00BC53C0
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetClosestPointOfInterest
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, Const)
 	 * Parameters:
@@ -1589,7 +1589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC46D0
+	 * 		Offset -> 0x00BC5270
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetAllRoomDistancesFromRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1614,7 +1614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC45D0
+	 * 		Offset -> 0x00BC5170
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetAllRoomDistancesFromPlayerRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1636,7 +1636,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC44F0
+	 * 		Offset -> 0x00BC5090
 	 * 		Name   -> Function RoomSystem.RoomSystem.AdjustClosestPointOfInterestHeat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:

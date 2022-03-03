@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAB70
+	 * 		Offset -> 0x00ADABB0
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAAF0
+	 * 		Offset -> 0x00ADAB30
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAAC0
+	 * 		Offset -> 0x00ADAB00
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.LoadSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAA90
+	 * 		Offset -> 0x00ADAAD0
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequencePlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAA60
+	 * 		Offset -> 0x00ADAAA0
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADA8F0
+	 * 		Offset -> 0x00ADA930
 	 * 		Name   -> Function TemplateSequence.TemplateSequencePlayer.CreateTemplateSequencePlayer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

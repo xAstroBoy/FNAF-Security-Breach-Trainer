@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFE00
+	 * 		Offset -> 0x007BFE40
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSets.GetVariantSetByName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFD70
+	 * 		Offset -> 0x007BFDB0
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSets.GetVariantSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFA10
+	 * 		Offset -> 0x007BFA50
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSets.GetNumVariantSets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007C0200
+	 * 		Offset -> 0x007C0240
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007C0140
+	 * 		Offset -> 0x007C0180
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007C00A0
+	 * 		Offset -> 0x007C00E0
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF940
+	 * 		Offset -> 0x007BF980
 	 * 		Name   -> Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFEF0
+	 * 		Offset -> 0x007BFF30
 	 * 		Name   -> Function VariantManagerContent.PropertyValue.HasRecordedData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFAF0
+	 * 		Offset -> 0x007BFB30
 	 * 		Name   -> Function VariantManagerContent.PropertyValue.GetPropertyTooltip
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -272,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF900
+	 * 		Offset -> 0x007BF940
 	 * 		Name   -> Function VariantManagerContent.PropertyValue.GetFullDisplayString
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFF50
+	 * 		Offset -> 0x007BFF90
 	 * 		Name   -> Function VariantManagerContent.SwitchActor.SelectOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -415,7 +415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFB90
+	 * 		Offset -> 0x007BFBD0
 	 * 		Name   -> Function VariantManagerContent.SwitchActor.GetSelectedOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFA70
+	 * 		Offset -> 0x007BFAB0
 	 * 		Name   -> Function VariantManagerContent.SwitchActor.GetOptions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -473,7 +473,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007C0120
+	 * 		Offset -> 0x007C0160
 	 * 		Name   -> Function VariantManagerContent.Variant.SwitchOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -493,7 +493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFFD0
+	 * 		Offset -> 0x007C0010
 	 * 		Name   -> Function VariantManagerContent.Variant.SetDisplayText
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -516,7 +516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFF20
+	 * 		Offset -> 0x007BFF60
 	 * 		Name   -> Function VariantManagerContent.Variant.IsActive
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -538,7 +538,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFBC0
+	 * 		Offset -> 0x007BFC00
 	 * 		Name   -> Function VariantManagerContent.Variant.GetThumbnail
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -560,7 +560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF9E0
+	 * 		Offset -> 0x007BFA20
 	 * 		Name   -> Function VariantManagerContent.Variant.GetNumActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -582,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF860
+	 * 		Offset -> 0x007BF8A0
 	 * 		Name   -> Function VariantManagerContent.Variant.GetDisplayText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -604,7 +604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF7D0
+	 * 		Offset -> 0x007BF810
 	 * 		Name   -> Function VariantManagerContent.Variant.GetActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFFD0
+	 * 		Offset -> 0x007C0010
 	 * 		Name   -> Function VariantManagerContent.VariantSet.SetDisplayText
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -680,7 +680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFC80
+	 * 		Offset -> 0x007BFCC0
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetVariantByName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -705,7 +705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFBF0
+	 * 		Offset -> 0x007BFC30
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetVariant
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -730,7 +730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFA40
+	 * 		Offset -> 0x007BFA80
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetNumVariants
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -752,7 +752,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BF860
+	 * 		Offset -> 0x007BF8A0
 	 * 		Name   -> Function VariantManagerContent.VariantSet.GetDisplayText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

@@ -15,16 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay
+	 * Function PlayerSlidePawn.PlayerSlidePawn_C.BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature
 	 */
-	struct APlayerSlidePawn_C_ReceiveBeginPlay_Params
+	struct APlayerSlidePawn_C_BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature_Params
 	{
 	};
 
 	/**
-	 * Function PlayerSlidePawn.PlayerSlidePawn_C.BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature
+	 * Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay
 	 */
-	struct APlayerSlidePawn_C_BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature_Params
+	struct APlayerSlidePawn_C_ReceiveBeginPlay_Params
 	{
 	};
 

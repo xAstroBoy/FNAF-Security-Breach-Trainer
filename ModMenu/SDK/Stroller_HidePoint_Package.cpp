@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "Stroller_HidePoint_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.GetSkeletalMesh
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -37,22 +36,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerInteract
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		class APlayerController*                           PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.ReceiveBeginPlay
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
-	void AStroller_HidePoint_C::OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController)
+	void AStroller_HidePoint_C::ReceiveBeginPlay()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerInteract");
+			fn = UObject::FindObject<UFunction>("Function Stroller_HidePoint.Stroller_HidePoint_C.ReceiveBeginPlay");
 		
-		AStroller_HidePoint_C_OnPlayerInteract_Params params {};
-		params.PlayerPawn = PlayerPawn;
-		params.PlayerController = PlayerController;
+		AStroller_HidePoint_C_ReceiveBeginPlay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -61,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerLeave
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -80,13 +74,35 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerHide
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class ACharacter*                                  PlayerCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AStroller_HidePoint_C::OnPlayerHide(class ACharacter* PlayerCharacter)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Stroller_HidePoint.Stroller_HidePoint_C.OnPlayerHide");
+		
+		AStroller_HidePoint_C_OnPlayerHide_Params params {};
+		params.PlayerCharacter = PlayerCharacter;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Stroller_HidePoint.Stroller_HidePoint_C.ExecuteUbergraph_Stroller_HidePoint
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AStroller_HidePoint_C::ExecuteUbergraph_Stroller_HidePoint(int EntryPoint)
+	void AStroller_HidePoint_C::ExecuteUbergraph_Stroller_HidePoint(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

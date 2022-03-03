@@ -12,26 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void APlayerSlidePawn_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay");
-		
-		APlayerSlidePawn_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.BndEvt__SplineFollowMovement_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -50,7 +31,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void APlayerSlidePawn_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerSlidePawn.PlayerSlidePawn_C.ReceiveBeginPlay");
+		
+		APlayerSlidePawn_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.ExecuteUbergraph_PlayerSlidePawn
 	 * 		Flags  -> (Final)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlayerSlidePawn.PlayerSlidePawn_C.OnFinishedFollowingSpline__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

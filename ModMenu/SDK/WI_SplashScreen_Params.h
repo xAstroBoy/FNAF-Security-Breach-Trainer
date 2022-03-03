@@ -78,6 +78,20 @@ namespace CG
 	};
 
 	/**
+	 * Function WI_SplashScreen.WI_SplashScreen_C.HideCursor
+	 */
+	struct UWI_SplashScreen_C_HideCursor_Params
+	{
+	};
+
+	/**
+	 * Function WI_SplashScreen.WI_SplashScreen_C.ShowCursorIfNeeded
+	 */
+	struct UWI_SplashScreen_C_ShowCursorIfNeeded_Params
+	{
+	};
+
+	/**
 	 * Function WI_SplashScreen.WI_SplashScreen_C.ExecuteUbergraph_WI_SplashScreen
 	 */
 	struct UWI_SplashScreen_C_ExecuteUbergraph_WI_SplashScreen_Params

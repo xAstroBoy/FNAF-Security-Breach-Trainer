@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CutSceneActor_Staffbot.CutSceneActor_Staffbot_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function CutSceneActor_Staffbot.CutSceneActor_Staffbot_C.ExecuteUbergraph_CutSceneActor_Staffbot
 	 * 		Flags  -> (Final)
 	 * Parameters:

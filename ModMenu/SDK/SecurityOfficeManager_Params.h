@@ -370,6 +370,13 @@ namespace CG
 	};
 
 	/**
+	 * Function SecurityOfficeManager.SecurityOfficeManager_C.ForceStart
+	 */
+	struct ASecurityOfficeManager_C_ForceStart_Params
+	{
+	};
+
+	/**
 	 * Function SecurityOfficeManager.SecurityOfficeManager_C.ExecuteUbergraph_SecurityOfficeManager
 	 */
 	struct ASecurityOfficeManager_C_ExecuteUbergraph_SecurityOfficeManager_Params

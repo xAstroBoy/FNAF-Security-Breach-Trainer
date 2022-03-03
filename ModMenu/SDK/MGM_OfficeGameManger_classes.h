@@ -21,7 +21,7 @@ namespace CG
 	class AMGM_OfficeGameManger_C : public ABP_MiniGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_SK8Z[0x4];                                   // 0x027C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6CTW[0x4];                                   // 0x027C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0280(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UBoxComponent*                                       GameBounds;                                              // 0x0288(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Screens[0x10];                                           // 0x0290(0x0010) UNKNOWN PROPERTY: ArrayProperty

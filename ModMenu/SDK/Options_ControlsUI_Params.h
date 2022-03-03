@@ -52,23 +52,9 @@ namespace CG
 	};
 
 	/**
-	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature
-	 */
-	struct UOptions_ControlsUI_C_BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature_Params
-	{
-	};
-
-	/**
 	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__HapticSens_Slidebar_K2Node_ComponentBoundEvent_6_SliderValueChanged__DelegateSignature
 	 */
 	struct UOptions_ControlsUI_C_BndEvt__HapticSens_Slidebar_K2Node_ComponentBoundEvent_6_SliderValueChanged__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature
-	 */
-	struct UOptions_ControlsUI_C_BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature_Params
 	{
 	};
 
@@ -100,6 +86,20 @@ namespace CG
 	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__GamepadHorizontalSens_Slidebar_K2Node_ComponentBoundEvent_1_SliderValueChanged__DelegateSignature
 	 */
 	struct UOptions_ControlsUI_C_BndEvt__GamepadHorizontalSens_Slidebar_K2Node_ComponentBoundEvent_1_SliderValueChanged__DelegateSignature_Params
+	{
+	};
+
+	/**
+	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature
+	 */
+	struct UOptions_ControlsUI_C_BndEvt__Invert_Y_ComboBox_K2Node_ComponentBoundEvent_5_ArrowKeyPressed__DelegateSignature_Params
+	{
+	};
+
+	/**
+	 * Function Options_ControlsUI.Options_ControlsUI_C.BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature
+	 */
+	struct UOptions_ControlsUI_C_BndEvt__MouseSens_Slidebar_K2Node_ComponentBoundEvent_4_SliderValueChanged__DelegateSignature_Params
 	{
 	};
 
@@ -142,6 +142,13 @@ namespace CG
 	 * Function Options_ControlsUI.Options_ControlsUI_C.Updateicons
 	 */
 	struct UOptions_ControlsUI_C_Updateicons_Params
+	{
+	};
+
+	/**
+	 * Function Options_ControlsUI.Options_ControlsUI_C.ReapplySavedMappings
+	 */
+	struct UOptions_ControlsUI_C_ReapplySavedMappings_Params
 	{
 	};
 

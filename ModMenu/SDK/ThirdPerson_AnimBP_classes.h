@@ -37,7 +37,7 @@ namespace CG
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0620(0x0030)
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0650(0x00B0)
 		bool                                                       IsInAir_;                                                // 0x0700(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_L76B[0x3];                                   // 0x0701(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W3AK[0x3];                                   // 0x0701(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Speed;                                                   // 0x0704(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:

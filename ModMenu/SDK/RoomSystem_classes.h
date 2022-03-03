@@ -104,7 +104,7 @@ namespace CG
 		TArray<class AActor*>                                      AICharactersInRoom;                                      // 0x02C8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FVector>                                     PointsOfInterest;                                        // 0x02D8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bPlayerIsInRoom;                                         // 0x02E8(0x0001) Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_Q9EY[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YXWF[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
 
 	public:
 		void SetPOIVisited(int32_t Index);
@@ -146,7 +146,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnPlayerExitedRoom;                                      // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomLoaded;                                            // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomUnloaded;                                          // 0x0060(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UC08[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PCD7[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
 
 	public:
 		void StartRoomSystem();

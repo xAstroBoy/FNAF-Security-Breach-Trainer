@@ -15,6 +15,57 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInstructionOverride
+	 */
+	struct ASecurityOffice_Daycare_C_GetInstructionOverride_Params
+	{
+	public:
+		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
+
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractibleType
+	 */
+	struct ASecurityOffice_Daycare_C_GetInteractibleType_Params
+	{
+	public:
+		InteractibleType_EInteractibleType                         Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		InteractiblePressType_EInteractiblePressType               PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.UpdateUIOnTick
+	 */
+	struct ASecurityOffice_Daycare_C_UpdateUIOnTick_Params
+	{
+	public:
+		bool                                                       Output;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.InteractIgnoresTrace
+	 */
+	struct ASecurityOffice_Daycare_C_InteractIgnoresTrace_Params
+	{
+	public:
+		bool                                                       IgnoreTrace;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.GetInteractViewAngles
+	 */
+	struct ASecurityOffice_Daycare_C_GetInteractViewAngles_Params
+	{
+	public:
+		fnaf9_ECameraAngleFlags                                    AnglesToCheck;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.IsInPhase
 	 */
 	struct ASecurityOffice_Daycare_C_IsInPhase_Params
@@ -395,6 +446,31 @@ namespace CG
 	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.DaycareEndCleanup
 	 */
 	struct ASecurityOffice_Daycare_C_DaycareEndCleanup_Params
+	{
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteract
+	 */
+	struct ASecurityOffice_Daycare_C_OnPlayerInteract_Params
+	{
+	public:
+		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.OnPlayerInteractCancel
+	 */
+	struct ASecurityOffice_Daycare_C_OnPlayerInteractCancel_Params
+	{
+	};
+
+	/**
+	 * Function SecurityOffice_Daycare.SecurityOffice_Daycare_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature
+	 */
+	struct ASecurityOffice_Daycare_C_BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature_Params
 	{
 	};
 

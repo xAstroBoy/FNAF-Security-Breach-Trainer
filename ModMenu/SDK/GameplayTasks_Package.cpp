@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857940
+	 * 		Offset -> 0x028585F0
 	 * 		Name   -> Function GameplayTasks.GameplayTask.ReadyForActivation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028575F0
+	 * 		Offset -> 0x028582A0
 	 * 		Name   -> Function GameplayTasks.GameplayTask.EndTask
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -85,7 +85,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857450
+	 * 		Offset -> 0x02858100
 	 * 		Name   -> Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857300
+	 * 		Offset -> 0x02857FB0
 	 * 		Name   -> Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857960
+	 * 		Offset -> 0x02858610
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857610
+	 * 		Offset -> 0x028582C0
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857220
+	 * 		Offset -> 0x02857ED0
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -270,7 +270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857B10
+	 * 		Offset -> 0x028587C0
 	 * 		Name   -> Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -297,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -358,7 +358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857920
+	 * 		Offset -> 0x028585D0
 	 * 		Name   -> Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -378,7 +378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028576E0
+	 * 		Offset -> 0x02858390
 	 * 		Name   -> Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

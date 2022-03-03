@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "PlaySequenceTrigger_EndChoice_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,26 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.PlaySequence
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 */
+	void APlaySequenceTrigger_EndChoice_C::PlaySequence()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.PlaySequence");
+		
+		APlaySequenceTrigger_EndChoice_C_PlaySequence_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.FireEscapeConditionCheck
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -37,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.OnFailure_A1CEA053484729074DE2FC8418AB6D01
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -56,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.OnSuccess_A1CEA053484729074DE2FC8418AB6D01
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -75,15 +93,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.OnFailure_7F2250294461044CDA36CD9C7D00F0D9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_EndChoice_C::OnFailure_7F2250294461044CDA36CD9C7D00F0D9(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void APlaySequenceTrigger_EndChoice_C::OnFailure_7F2250294461044CDA36CD9C7D00F0D9(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -101,15 +119,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.OnSuccess_7F2250294461044CDA36CD9C7D00F0D9
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int                                                WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_EndChoice_C::OnSuccess_7F2250294461044CDA36CD9C7D00F0D9(const class FName& WrittenAchievementName, float WrittenProgress, int WrittenUserTag)
+	void APlaySequenceTrigger_EndChoice_C::OnSuccess_7F2250294461044CDA36CD9C7D00F0D9(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -127,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.OnTriggered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -146,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Sequence Stop Event
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -165,7 +183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.Staying
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -184,7 +202,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.Leaving
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -203,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.Vanny
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -222,7 +240,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Vanny Intro Stop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -241,7 +259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Teleport Finished
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -260,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.HandleIAmNotMeAchievementCheck
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -279,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -298,13 +316,51 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Stay VO Finished
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void APlaySequenceTrigger_EndChoice_C::On_Stay_VO_Finished()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.On Stay VO Finished");
+		
+		APlaySequenceTrigger_EndChoice_C_On_Stay_VO_Finished_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ResetTrigger
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void APlaySequenceTrigger_EndChoice_C::ResetTrigger()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ResetTrigger");
+		
+		APlaySequenceTrigger_EndChoice_C_ResetTrigger_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function PlaySequenceTrigger_EndChoice.PlaySequenceTrigger_EndChoice_C.ExecuteUbergraph_PlaySequenceTrigger_EndChoice
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_EndChoice_C::ExecuteUbergraph_PlaySequenceTrigger_EndChoice(int EntryPoint)
+	void APlaySequenceTrigger_EndChoice_C::ExecuteUbergraph_PlaySequenceTrigger_EndChoice(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

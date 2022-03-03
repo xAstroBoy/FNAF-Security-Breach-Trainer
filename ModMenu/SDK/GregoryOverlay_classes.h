@@ -53,6 +53,8 @@ namespace CG
 		void DestroyThisHUD(class AActor* DestroyedActor);
 		void ToggleReticle(bool HoldingFazerBlaster);
 		void ShowHeldItemWidget();
+		void Hide(bool HideProgressWheel);
+		void Show();
 		void ExecuteUbergraph_GregoryOverlay(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

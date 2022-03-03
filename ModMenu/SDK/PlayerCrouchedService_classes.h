@@ -29,7 +29,7 @@ namespace CG
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void Update_Crouched(class AActor* ControlledPawn);
-		void ExecuteUbergraph_PlayerCrouchedService(int EntryPoint);
+		void ExecuteUbergraph_PlayerCrouchedService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

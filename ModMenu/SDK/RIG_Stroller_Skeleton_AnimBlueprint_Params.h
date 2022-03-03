@@ -25,6 +25,16 @@ namespace CG
 	};
 
 	/**
+	 * Function RIG_Stroller_Skeleton_AnimBlueprint.RIG_Stroller_Skeleton_AnimBlueprint_C.SetPeek
+	 */
+	struct URIG_Stroller_Skeleton_AnimBlueprint_C_SetPeek_Params
+	{
+	public:
+		bool                                                       ShouldPeek;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function RIG_Stroller_Skeleton_AnimBlueprint.RIG_Stroller_Skeleton_AnimBlueprint_C.SetAnim
 	 */
 	struct URIG_Stroller_Skeleton_AnimBlueprint_C_SetAnim_Params
@@ -74,7 +84,7 @@ namespace CG
 	struct URIG_Stroller_Skeleton_AnimBlueprint_C_ExecuteUbergraph_RIG_Stroller_Skeleton_AnimBlueprint_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

@@ -35,6 +35,26 @@ namespace CG
 	};
 
 	/**
+	 * Function Freddy.Freddy_C.IsSwitchingItems
+	 */
+	struct AFreddy_C_IsSwitchingItems_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function Freddy.Freddy_C.IsInAir
+	 */
+	struct AFreddy_C_IsInAir_Params
+	{
+	public:
+		bool                                                       InAir;                                                   // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
 	 * Function Freddy.Freddy_C.PlayerEnteringExitingFreddy
 	 */
 	struct AFreddy_C_PlayerEnteringExitingFreddy_Params
@@ -124,6 +144,28 @@ namespace CG
 	public:
 		InteractibleType_EInteractibleType                         Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		InteractiblePressType_EInteractiblePressType               PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function Freddy.Freddy_C.Enable Switch Item
+	 */
+	struct AFreddy_C_Enable_Switch_Item_Params
+	{
+	public:
+		class AMainGamePC_C*                                       Controller;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		bool                                                       enable;                                                  // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+	};
+
+	/**
+	 * Function Freddy.Freddy_C.CheckForBlockingVolumes
+	 */
+	struct AFreddy_C_CheckForBlockingVolumes_Params
+	{
+	public:
+		class AActor*                                              PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		bool                                                       IsBlocked;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	};
 
@@ -367,6 +409,13 @@ namespace CG
 	 * Function Freddy.Freddy_C.Unstun
 	 */
 	struct AFreddy_C_Unstun_Params
+	{
+	};
+
+	/**
+	 * Function Freddy.Freddy_C.VisualChangeItem
+	 */
+	struct AFreddy_C_VisualChangeItem_Params
 	{
 	};
 

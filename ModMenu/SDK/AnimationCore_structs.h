@@ -46,7 +46,7 @@ namespace CG
 	struct FCCDIKChainLink
 	{
 	public:
-		unsigned char                                              UnknownData_BL01[0x80];                                  // 0x0000(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_L8UP[0x80];                                  // 0x0000(0x0080) MISSED OFFSET (PADDING)
 
 	};
 
@@ -59,7 +59,7 @@ namespace CG
 	public:
 		struct FVector                                             Axis;                                                    // 0x0000(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bInLocalSpace;                                           // 0x000C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XJ5B[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LXRN[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -71,7 +71,7 @@ namespace CG
 	{
 	public:
 		AnimationCore_EConstraintType                              Type;                                                    // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6ILM[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WLU5[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (PADDING)
 
 	};
 
@@ -85,7 +85,7 @@ namespace CG
 		struct FConstraintDescriptor                               Constraint;                                              // 0x0000(0x0010) NativeAccessSpecifierPublic
 		float                                                      Weight;                                                  // 0x0010(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bMaintainOffset;                                         // 0x0014(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FNAR[0xB];                                   // 0x0015(0x000B) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YFLH[0xB];                                   // 0x0015(0x000B) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          Offset;                                                  // 0x0020(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FTransform                                          CurrentTransform;                                        // 0x0050(0x0030) Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
@@ -111,9 +111,9 @@ namespace CG
 	struct FConstraintDescriptionEx
 	{
 	public:
-		unsigned char                                              UnknownData_TOMR[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TBNU[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FFilterOptionPerAxis                                AxesFilterOption;                                        // 0x0008(0x0003) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4HGQ[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8FFE[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (PADDING)
 
 	};
 
@@ -127,7 +127,7 @@ namespace CG
 		struct FAxis                                               LookAt_Axis;                                             // 0x0010(0x0010) Edit, NoDestructor, NativeAccessSpecifierPublic
 		struct FAxis                                               LookUp_Axis;                                             // 0x0020(0x0010) Edit, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bUseLookUp;                                              // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WC5O[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KRLM[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             LookUpTarget;                                            // 0x0034(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	};
@@ -140,7 +140,7 @@ namespace CG
 	{
 	public:
 		AnimationCore_ETransformConstraintType                     TransformType;                                           // 0x0010(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NS5B[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M12C[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	};
 
@@ -169,12 +169,12 @@ namespace CG
 	{
 	public:
 		struct FConstraintDescription                              Operator;                                                // 0x0000(0x000D) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3E69[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q42R[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                SourceNode;                                              // 0x0010(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                TargetNode;                                              // 0x0018(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Weight;                                                  // 0x0020(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bMaintainOffset;                                         // 0x0024(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QP4T[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PRTT[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -186,10 +186,10 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Translation;                                             // 0x0000(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_81IP[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_19QP[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FQuat                                               Rotation;                                                // 0x0010(0x0010) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             Scale;                                                   // 0x0020(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_94QA[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2XX9[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          Parent;                                                  // 0x0030(0x0030) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	};
@@ -227,7 +227,7 @@ namespace CG
 	struct FFABRIKChainLink
 	{
 	public:
-		unsigned char                                              UnknownData_0BFY[0x38];                                  // 0x0000(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V0IX[0x38];                                  // 0x0000(0x0038) MISSED OFFSET (PADDING)
 
 	};
 
@@ -274,7 +274,7 @@ namespace CG
 	struct FNodeHierarchyWithUserData
 	{
 	public:
-		unsigned char                                              UnknownData_7R1T[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9MT8[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FNodeHierarchyData                                  Hierarchy;                                               // 0x0008(0x0070) Protected, NativeAccessSpecifierProtected
 
 	};
@@ -287,7 +287,7 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0PEP[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6717[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FQuat                                               Rotation;                                                // 0x0010(0x0010) Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	};

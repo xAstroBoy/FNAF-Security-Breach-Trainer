@@ -233,6 +233,13 @@ namespace CG
 	};
 
 	/**
+	 * Function Collectible.Collectible_C.PreOnCollected__DelegateSignature
+	 */
+	struct ACollectible_C_PreOnCollected__DelegateSignature_Params
+	{
+	};
+
+	/**
 	 * Function Collectible.Collectible_C.OnCollected__DelegateSignature
 	 */
 	struct ACollectible_C_OnCollected__DelegateSignature_Params

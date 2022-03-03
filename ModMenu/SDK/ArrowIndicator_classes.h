@@ -50,7 +50,7 @@ namespace CG
 	public:
 		void PreConstruct(bool IsDesignTime);
 		void Construct();
-		void ExecuteUbergraph_ArrowIndicator(int EntryPoint);
+		void ExecuteUbergraph_ArrowIndicator(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

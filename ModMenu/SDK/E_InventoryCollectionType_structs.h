@@ -25,7 +25,8 @@ namespace CG
 		E_InventoryCollectionType__NewEnumerator3 = 3,
 		E_InventoryCollectionType__NewEnumerator4 = 4,
 		E_InventoryCollectionType__NewEnumerator5 = 5,
-		E_InventoryCollectionType__E_MAX          = 6
+		E_InventoryCollectionType__NewEnumerator6 = 6,
+		E_InventoryCollectionType__E_MAX          = 7
 	};
 
 }

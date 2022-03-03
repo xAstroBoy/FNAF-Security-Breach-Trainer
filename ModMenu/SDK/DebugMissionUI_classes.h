@@ -37,7 +37,7 @@ namespace CG
 		unsigned char                                              MontyBossTeleportLocator[0x28];                          // 0x0298(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              ChicaBossTeleportLocator[0x28];                          // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       CompletingTasks;                                         // 0x02E8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JUAW[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RM3V[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        TasksUpdated;                                            // 0x02F0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
 		int32_t                                                    SelectedSkipPaths;                                       // 0x0300(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    SkipPathState;                                           // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

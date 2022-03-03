@@ -26,7 +26,7 @@ namespace CG
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x02A8(0x0078)
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0320(0x0048)
 		float                                                      PlayRate;                                                // 0x0368(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_J177[0x4];                                   // 0x036C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_D7FA[0x4];                                   // 0x036C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimSequenceBase*                                   AnimInput;                                               // 0x0370(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:

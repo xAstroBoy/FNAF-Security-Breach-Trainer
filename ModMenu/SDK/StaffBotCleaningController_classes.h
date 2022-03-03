@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void ExecuteUbergraph_StaffBotCleaningController(int EntryPoint);
+		void ExecuteUbergraph_StaffBotCleaningController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068D730
+	 * 		Offset -> 0x0068D750
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068D3E0
+	 * 		Offset -> 0x0068D400
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C230
+	 * 		Offset -> 0x0068C250
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -158,7 +158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C170
+	 * 		Offset -> 0x0068C190
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -199,7 +199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068E210
+	 * 		Offset -> 0x0068E230
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -246,7 +246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C2F0
+	 * 		Offset -> 0x0068C310
 	 * 		Name   -> Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068CAF0
+	 * 		Offset -> 0x0068CB10
 	 * 		Name   -> Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068CC20
+	 * 		Offset -> 0x0068CC40
 	 * 		Name   -> Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -373,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068CCE0
+	 * 		Offset -> 0x0068CD00
 	 * 		Name   -> Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -420,7 +420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068CEF0
+	 * 		Offset -> 0x0068CF10
 	 * 		Name   -> Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -463,7 +463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068DF90
+	 * 		Offset -> 0x0068DFB0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -488,7 +488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068DD50
+	 * 		Offset -> 0x0068DD70
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -513,7 +513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068DB10
+	 * 		Offset -> 0x0068DB30
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -538,7 +538,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068D8D0
+	 * 		Offset -> 0x0068D8F0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -563,7 +563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068D0A0
+	 * 		Offset -> 0x0068D0C0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -608,7 +608,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068D1D0
+	 * 		Offset -> 0x0068D1F0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C4A0
+	 * 		Offset -> 0x0068C4C0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -698,7 +698,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068CA70
+	 * 		Offset -> 0x0068CA90
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C7B0
+	 * 		Offset -> 0x0068C7D0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -748,7 +748,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C3B0
+	 * 		Offset -> 0x0068C3D0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C6A0
+	 * 		Offset -> 0x0068C6C0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -830,7 +830,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C590
+	 * 		Offset -> 0x0068C5B0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -871,7 +871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C950
+	 * 		Offset -> 0x0068C970
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -912,7 +912,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0068C830
+	 * 		Offset -> 0x0068C850
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -953,7 +953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691FB0
+	 * 		Offset -> 0x00691FD0
 	 * 		Name   -> Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -996,7 +996,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692F10
+	 * 		Offset -> 0x00692F30
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1039,7 +1039,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691E30
+	 * 		Offset -> 0x00691E50
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1080,7 +1080,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691EF0
+	 * 		Offset -> 0x00691F10
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1121,7 +1121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692100
+	 * 		Offset -> 0x00692120
 	 * 		Name   -> Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1176,7 +1176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691B90
+	 * 		Offset -> 0x00691BB0
 	 * 		Name   -> Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
 	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetClient)
 	 */
@@ -1252,35 +1252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UOnlinePIESettings.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UOnlinePIESettings::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlinePIESettings");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UOnlineSessionClient.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UOnlineSessionClient::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineSessionClient");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00692BD0
+	 * 		Offset -> 0x00692BF0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1305,7 +1277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692760
+	 * 		Offset -> 0x00692780
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1330,7 +1302,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006924E0
+	 * 		Offset -> 0x00692500
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1355,7 +1327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692380
+	 * 		Offset -> 0x006923A0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1378,7 +1350,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691D10
+	 * 		Offset -> 0x00691D30
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1401,7 +1373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691CD0
+	 * 		Offset -> 0x00691CF0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1421,7 +1393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691BD0
+	 * 		Offset -> 0x00691BF0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1444,7 +1416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691A90
+	 * 		Offset -> 0x00691AB0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1496,6 +1468,34 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
+	 * 		Name   -> PredefindFunction UOnlinePIESettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UOnlinePIESettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlinePIESettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00000000
+	 * 		Name   -> PredefindFunction UOnlineSessionClient.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UOnlineSessionClient::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineSessionClient");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00000000
 	 * 		Name   -> PredefindFunction UPartyBeaconState.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
@@ -1509,7 +1509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006921C0
+	 * 		Offset -> 0x006921E0
 	 * 		Name   -> Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1556,7 +1556,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692E50
+	 * 		Offset -> 0x00692E70
 	 * 		Name   -> Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006929E0
+	 * 		Offset -> 0x00692A00
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1622,7 +1622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692380
+	 * 		Offset -> 0x006923A0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1645,7 +1645,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691DA0
+	 * 		Offset -> 0x00691DC0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1668,7 +1668,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691CF0
+	 * 		Offset -> 0x00691D10
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1688,7 +1688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691C50
+	 * 		Offset -> 0x00691C70
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1711,7 +1711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691B10
+	 * 		Offset -> 0x00691B30
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1776,7 +1776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00692490
+	 * 		Offset -> 0x006924B0
 	 * 		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 */
@@ -1796,7 +1796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00691BB0
+	 * 		Offset -> 0x00691BD0
 	 * 		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1844,7 +1844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00693A70
+	 * 		Offset -> 0x00693A90
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1871,7 +1871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00693850
+	 * 		Offset -> 0x00693870
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1904,7 +1904,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006936B0
+	 * 		Offset -> 0x006936D0
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1935,7 +1935,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00693510
+	 * 		Offset -> 0x00693530
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1980,7 +1980,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00693A40
+	 * 		Offset -> 0x00693A60
 	 * 		Name   -> Function OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

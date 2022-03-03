@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C
-	 * Size -> 0x1501 (FullSize[0x1771] - InheritedSize[0x0270])
+	 * Size -> 0x1504 (FullSize[0x1774] - InheritedSize[0x0270])
 	 */
 	class UGreg_FirstPerson_ABP_C : public UAnimInstance
 	{
@@ -74,16 +74,19 @@ namespace CG
 		GregoryAnimItemEnum_EGregoryAnimItemEnum                   ItemEnum;                                                // 0x1748(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HasFazWatch;                                             // 0x1749(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       bFazwatchUP;                                             // 0x174A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_F6HO[0x1];                                   // 0x174B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ER37[0x1];                                   // 0x174B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpeedInput;                                              // 0x174C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       isMoving;                                                // 0x1750(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BZK3[0x7];                                   // 0x1751(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7252[0x7];                                   // 0x1751(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AGregory_C*                                          GregPawn;                                                // 0x1758(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       SwitchItem;                                              // 0x1760(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       isDown;                                                  // 0x1761(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_HHBZ[0x6];                                   // 0x1762(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OW49[0x6];                                   // 0x1762(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AEquippable_C*                                       NewEquip;                                                // 0x1768(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanPlayFazWatchAnim;                                     // 0x1770(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsPuttingAwayItem;                                       // 0x1771(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsPullingOutItem;                                        // 0x1772(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsFullyDown;                                             // 0x1773(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);
@@ -112,6 +115,10 @@ namespace CG
 		void PrimaryActionAnimEvent();
 		void FazWatchEvent(bool Reset);
 		void BlueprintBeginPlay();
+		void AnimNotify_IsFullyDownEvent();
+		void AnimNotify_FinishingItemUp();
+		void AnimNotify_StartItemUp();
+		void Change_Item(class AEquippable_C* NewEquipment);
 		void ExecuteUbergraph_Greg_FirstPerson_ABP(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

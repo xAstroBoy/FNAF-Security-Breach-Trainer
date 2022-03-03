@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Burntrap_PowerStationPlayerInteractible.Burntrap_PowerStationPlayerInteractible_C.OnPlayerInteract
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Burntrap_PowerStationPlayerInteractible.Burntrap_PowerStationPlayerInteractible_C.ExecuteUbergraph_Burntrap_PowerStationPlayerInteractible
 	 * 		Flags  -> (Final)
 	 * Parameters:

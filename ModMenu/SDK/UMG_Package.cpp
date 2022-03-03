@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB000
+	 * 		Offset -> 0x01DEBCE0
 	 * 		Name   -> Function UMG.Widget.SetVisibility
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -49,7 +49,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEADE0
+	 * 		Offset -> 0x01DEBAC0
 	 * 		Name   -> Function UMG.Widget.SetUserFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAD10
+	 * 		Offset -> 0x01DEB9F0
 	 * 		Name   -> Function UMG.Widget.SetToolTipText
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAC90
+	 * 		Offset -> 0x01DEB970
 	 * 		Name   -> Function UMG.Widget.SetToolTip
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAB80
+	 * 		Offset -> 0x01DEB860
 	 * 		Name   -> Function UMG.Widget.SetRenderTranslation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -141,7 +141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAB00
+	 * 		Offset -> 0x01DEB7E0
 	 * 		Name   -> Function UMG.Widget.SetRenderTransformPivot
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAA80
+	 * 		Offset -> 0x01DEB760
 	 * 		Name   -> Function UMG.Widget.SetRenderTransformAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -187,7 +187,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA9A0
+	 * 		Offset -> 0x01DEB680
 	 * 		Name   -> Function UMG.Widget.SetRenderTransform
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA920
+	 * 		Offset -> 0x01DEB600
 	 * 		Name   -> Function UMG.Widget.SetRenderShear
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -233,7 +233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA8A0
+	 * 		Offset -> 0x01DEB580
 	 * 		Name   -> Function UMG.Widget.SetRenderScale
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -256,7 +256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA820
+	 * 		Offset -> 0x01DEB500
 	 * 		Name   -> Function UMG.Widget.SetRenderOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -279,7 +279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA6D0
+	 * 		Offset -> 0x01DEB3B0
 	 * 		Name   -> Function UMG.Widget.SetNavigationRuleExplicit
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA5F0
+	 * 		Offset -> 0x01DEB2D0
 	 * 		Name   -> Function UMG.Widget.SetNavigationRuleCustomBoundary
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -329,7 +329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA510
+	 * 		Offset -> 0x01DEB1F0
 	 * 		Name   -> Function UMG.Widget.SetNavigationRuleCustom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -354,7 +354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA450
+	 * 		Offset -> 0x01DEB130
 	 * 		Name   -> Function UMG.Widget.SetNavigationRuleBase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -379,7 +379,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA340
+	 * 		Offset -> 0x01DEB020
 	 * 		Name   -> Function UMG.Widget.SetNavigationRule
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -406,7 +406,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA320
+	 * 		Offset -> 0x01DEB000
 	 * 		Name   -> Function UMG.Widget.SetKeyboardFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -426,7 +426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA290
+	 * 		Offset -> 0x01DEAF70
 	 * 		Name   -> Function UMG.Widget.SetIsEnabled
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -449,7 +449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA1F0
+	 * 		Offset -> 0x01DEAED0
 	 * 		Name   -> Function UMG.Widget.SetFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -469,7 +469,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA170
+	 * 		Offset -> 0x01DEAE50
 	 * 		Name   -> Function UMG.Widget.SetCursor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA0F0
+	 * 		Offset -> 0x01DEADD0
 	 * 		Name   -> Function UMG.Widget.SetClipping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA030
+	 * 		Offset -> 0x01DEAD10
 	 * 		Name   -> Function UMG.Widget.SetAllNavigationRules
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -540,7 +540,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA010
+	 * 		Offset -> 0x01DEACF0
 	 * 		Name   -> Function UMG.Widget.ResetCursor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -560,7 +560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9FF0
+	 * 		Offset -> 0x01DEACD0
 	 * 		Name   -> Function UMG.Widget.RemoveFromParent
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -580,7 +580,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.OnReply__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -601,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -627,7 +627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9FC0
+	 * 		Offset -> 0x01DEACA0
 	 * 		Name   -> Function UMG.Widget.IsVisible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -649,7 +649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988620
+	 * 		Offset -> 0x01989300
 	 * 		Name   -> Function UMG.Widget.IsHovered
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -671,7 +671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9FA0
+	 * 		Offset -> 0x01DEAC80
 	 * 		Name   -> Function UMG.Widget.InvalidateLayoutAndVolatility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -691,7 +691,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9F10
+	 * 		Offset -> 0x01DEABF0
 	 * 		Name   -> Function UMG.Widget.HasUserFocusedDescendants
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -716,7 +716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9E80
+	 * 		Offset -> 0x01DEAB60
 	 * 		Name   -> Function UMG.Widget.HasUserFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -741,7 +741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9DC0
+	 * 		Offset -> 0x01DEAAA0
 	 * 		Name   -> Function UMG.Widget.HasMouseCaptureByUser
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -768,7 +768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9D90
+	 * 		Offset -> 0x01DEAA70
 	 * 		Name   -> Function UMG.Widget.HasMouseCapture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -790,7 +790,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9D60
+	 * 		Offset -> 0x01DEAA40
 	 * 		Name   -> Function UMG.Widget.HasKeyboardFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -812,7 +812,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9D30
+	 * 		Offset -> 0x01DEAA10
 	 * 		Name   -> Function UMG.Widget.HasFocusedDescendants
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -834,7 +834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9D00
+	 * 		Offset -> 0x01DEA9E0
 	 * 		Name   -> Function UMG.Widget.HasAnyUserFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -856,7 +856,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetWidget__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -877,7 +877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9CD0
+	 * 		Offset -> 0x01DEA9B0
 	 * 		Name   -> Function UMG.Widget.GetVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -899,7 +899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9BB0
+	 * 		Offset -> 0x01DEA890
 	 * 		Name   -> Function UMG.Widget.GetTickSpaceGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -921,7 +921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetText__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -942,7 +942,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -963,7 +963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -984,7 +984,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1005,7 +1005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9B50
+	 * 		Offset -> 0x01DEA830
 	 * 		Name   -> Function UMG.Widget.GetRenderTransformAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1027,7 +1027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9B20
+	 * 		Offset -> 0x01DEA800
 	 * 		Name   -> Function UMG.Widget.GetRenderOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1049,7 +1049,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9AF0
+	 * 		Offset -> 0x01DEA7D0
 	 * 		Name   -> Function UMG.Widget.GetParent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1071,7 +1071,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9AB0
+	 * 		Offset -> 0x01DEA790
 	 * 		Name   -> Function UMG.Widget.GetPaintSpaceGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1093,7 +1093,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9A80
+	 * 		Offset -> 0x01DEA760
 	 * 		Name   -> Function UMG.Widget.GetOwningPlayer
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1115,7 +1115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9A50
+	 * 		Offset -> 0x01DEA730
 	 * 		Name   -> Function UMG.Widget.GetOwningLocalPlayer
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1137,7 +1137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1158,7 +1158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, HasDefaults)
 	 */
@@ -1179,7 +1179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9A20
+	 * 		Offset -> 0x01DEA700
 	 * 		Name   -> Function UMG.Widget.GetIsEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetInt32__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1222,7 +1222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE99F0
+	 * 		Offset -> 0x01DEA6D0
 	 * 		Name   -> Function UMG.Widget.GetGameInstance
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1244,7 +1244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetFloat__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1265,7 +1265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9980
+	 * 		Offset -> 0x01DEA660
 	 * 		Name   -> Function UMG.Widget.GetDesiredSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1287,7 +1287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9950
+	 * 		Offset -> 0x01DEA630
 	 * 		Name   -> Function UMG.Widget.GetClipping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1309,7 +1309,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1330,7 +1330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9910
+	 * 		Offset -> 0x01DEA5F0
 	 * 		Name   -> Function UMG.Widget.GetCachedGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1352,7 +1352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GetBool__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -1373,7 +1373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 * Parameters:
@@ -1397,7 +1397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 * Parameters:
@@ -1421,7 +1421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9880
+	 * 		Offset -> 0x01DEA560
 	 * 		Name   -> Function UMG.Widget.ForceVolatile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1444,7 +1444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9860
+	 * 		Offset -> 0x01DEA540
 	 * 		Name   -> Function UMG.Widget.ForceLayoutPrepass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1478,7 +1478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7AC0
+	 * 		Offset -> 0x01DD87A0
 	 * 		Name   -> Function UMG.PanelWidget.RemoveChildAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1503,7 +1503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7A30
+	 * 		Offset -> 0x01DD8710
 	 * 		Name   -> Function UMG.PanelWidget.RemoveChild
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1528,7 +1528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD79A0
+	 * 		Offset -> 0x01DD8680
 	 * 		Name   -> Function UMG.PanelWidget.HasChild
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1553,7 +1553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7970
+	 * 		Offset -> 0x01DD8650
 	 * 		Name   -> Function UMG.PanelWidget.HasAnyChildren
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1575,7 +1575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7530
+	 * 		Offset -> 0x01DD8210
 	 * 		Name   -> Function UMG.PanelWidget.GetChildrenCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD74A0
+	 * 		Offset -> 0x01DD8180
 	 * 		Name   -> Function UMG.PanelWidget.GetChildIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1622,7 +1622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7410
+	 * 		Offset -> 0x01DD80F0
 	 * 		Name   -> Function UMG.PanelWidget.GetChildAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1647,7 +1647,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7390
+	 * 		Offset -> 0x01DD8070
 	 * 		Name   -> Function UMG.PanelWidget.GetAllChildren
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1669,7 +1669,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7370
+	 * 		Offset -> 0x01DD8050
 	 * 		Name   -> Function UMG.PanelWidget.ClearChildren
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -1689,7 +1689,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7230
+	 * 		Offset -> 0x01DD7F10
 	 * 		Name   -> Function UMG.PanelWidget.AddChild
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1728,7 +1728,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE680
+	 * 		Offset -> 0x01DCF360
 	 * 		Name   -> Function UMG.ContentWidget.SetContent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1753,7 +1753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDEC0
+	 * 		Offset -> 0x01DCEBA0
 	 * 		Name   -> Function UMG.ContentWidget.GetContentSlot
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1775,7 +1775,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDE90
+	 * 		Offset -> 0x01DCEB70
 	 * 		Name   -> Function UMG.ContentWidget.GetContent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1825,7 +1825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9450
+	 * 		Offset -> 0x01DCA130
 	 * 		Name   -> Function UMG.AsyncTaskDownloadImage.DownloadImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1864,7 +1864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB1D0
+	 * 		Offset -> 0x01DCBEB0
 	 * 		Name   -> Function UMG.BackgroundBlur.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1887,7 +1887,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAB20
+	 * 		Offset -> 0x01DCB800
 	 * 		Name   -> Function UMG.BackgroundBlur.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1910,7 +1910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA790
+	 * 		Offset -> 0x01DCB470
 	 * 		Name   -> Function UMG.BackgroundBlur.SetLowQualityFallbackBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1933,7 +1933,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA3E0
+	 * 		Offset -> 0x01DCB0C0
 	 * 		Name   -> Function UMG.BackgroundBlur.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1956,7 +1956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9DE0
+	 * 		Offset -> 0x01DCAAC0
 	 * 		Name   -> Function UMG.BackgroundBlur.SetBlurStrength
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1979,7 +1979,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9D60
+	 * 		Offset -> 0x01DCAA40
 	 * 		Name   -> Function UMG.BackgroundBlur.SetBlurRadius
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2002,7 +2002,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9BC0
+	 * 		Offset -> 0x01DCA8A0
 	 * 		Name   -> Function UMG.BackgroundBlur.SetApplyAlphaToBlur
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2053,7 +2053,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB250
+	 * 		Offset -> 0x01DCBF30
 	 * 		Name   -> Function UMG.BackgroundBlurSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2076,7 +2076,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCABB0
+	 * 		Offset -> 0x01DCB890
 	 * 		Name   -> Function UMG.BackgroundBlurSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2099,7 +2099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA460
+	 * 		Offset -> 0x01DCB140
 	 * 		Name   -> Function UMG.BackgroundBlurSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2150,7 +2150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9800
+	 * 		Offset -> 0x01DCA4E0
 	 * 		Name   -> Function UMG.BoolBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2186,7 +2186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB2D0
+	 * 		Offset -> 0x01DCBFB0
 	 * 		Name   -> Function UMG.Border.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2209,7 +2209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAC40
+	 * 		Offset -> 0x01DCB920
 	 * 		Name   -> Function UMG.Border.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2232,7 +2232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA4E0
+	 * 		Offset -> 0x01DCB1C0
 	 * 		Name   -> Function UMG.Border.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2255,7 +2255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA360
+	 * 		Offset -> 0x01DCB040
 	 * 		Name   -> Function UMG.Border.SetDesiredSizeScale
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2278,7 +2278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA2E0
+	 * 		Offset -> 0x01DCAFC0
 	 * 		Name   -> Function UMG.Border.SetContentColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2301,7 +2301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA0E0
+	 * 		Offset -> 0x01DCADC0
 	 * 		Name   -> Function UMG.Border.SetBrushFromTexture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2324,7 +2324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA0E0
+	 * 		Offset -> 0x01DCADC0
 	 * 		Name   -> Function UMG.Border.SetBrushFromMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2347,7 +2347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA060
+	 * 		Offset -> 0x01DCAD40
 	 * 		Name   -> Function UMG.Border.SetBrushFromAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2370,7 +2370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9FE0
+	 * 		Offset -> 0x01DCACC0
 	 * 		Name   -> Function UMG.Border.SetBrushColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2393,7 +2393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9E60
+	 * 		Offset -> 0x01DCAB40
 	 * 		Name   -> Function UMG.Border.SetBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2416,7 +2416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9610
+	 * 		Offset -> 0x01DCA2F0
 	 * 		Name   -> Function UMG.Border.GetDynamicMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2452,7 +2452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB350
+	 * 		Offset -> 0x01DCC030
 	 * 		Name   -> Function UMG.BorderSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2475,7 +2475,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCACD0
+	 * 		Offset -> 0x01DCB9B0
 	 * 		Name   -> Function UMG.BorderSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2498,7 +2498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA560
+	 * 		Offset -> 0x01DCB240
 	 * 		Name   -> Function UMG.BorderSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2535,7 +2535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9830
+	 * 		Offset -> 0x01DCA510
 	 * 		Name   -> Function UMG.BrushBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2571,7 +2571,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB150
+	 * 		Offset -> 0x01DCBE30
 	 * 		Name   -> Function UMG.Button.SetTouchMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2594,7 +2594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB070
+	 * 		Offset -> 0x01DCBD50
 	 * 		Name   -> Function UMG.Button.SetStyle
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2617,7 +2617,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAEF0
+	 * 		Offset -> 0x01DCBBD0
 	 * 		Name   -> Function UMG.Button.SetPressMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2640,7 +2640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA260
+	 * 		Offset -> 0x01DCAF40
 	 * 		Name   -> Function UMG.Button.SetColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2663,7 +2663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA1E0
+	 * 		Offset -> 0x01DCAEC0
 	 * 		Name   -> Function UMG.Button.SetClickMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2686,7 +2686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9CE0
+	 * 		Offset -> 0x01DCA9C0
 	 * 		Name   -> Function UMG.Button.SetBackgroundColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2709,7 +2709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9A50
+	 * 		Offset -> 0x01DCA730
 	 * 		Name   -> Function UMG.Button.IsPressed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2745,7 +2745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB3D0
+	 * 		Offset -> 0x01DCC0B0
 	 * 		Name   -> Function UMG.ButtonSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2768,7 +2768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAD60
+	 * 		Offset -> 0x01DCBA40
 	 * 		Name   -> Function UMG.ButtonSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2791,7 +2791,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA5E0
+	 * 		Offset -> 0x01DCB2C0
 	 * 		Name   -> Function UMG.ButtonSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2828,7 +2828,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC93C0
+	 * 		Offset -> 0x01DCA0A0
 	 * 		Name   -> Function UMG.CanvasPanel.AddChildToCanvas
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2867,7 +2867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB450
+	 * 		Offset -> 0x01DCC130
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetZOrder
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2890,7 +2890,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAFF0
+	 * 		Offset -> 0x01DCBCD0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2913,7 +2913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAE70
+	 * 		Offset -> 0x01DCBB50
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2936,7 +2936,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAA90
+	 * 		Offset -> 0x01DCB770
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetOffsets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2959,7 +2959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA990
+	 * 		Offset -> 0x01DCB670
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetMinimum
 	 * 		Flags  -> (Final, Native, Public, HasDefaults)
 	 * Parameters:
@@ -2982,7 +2982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA910
+	 * 		Offset -> 0x01DCB5F0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetMaximum
 	 * 		Flags  -> (Final, Native, Public, HasDefaults)
 	 * Parameters:
@@ -3005,7 +3005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA6F0
+	 * 		Offset -> 0x01DCB3D0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetLayout
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3028,7 +3028,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9C50
+	 * 		Offset -> 0x01DCA930
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetAutoSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3051,7 +3051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9B30
+	 * 		Offset -> 0x01DCA810
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetAnchors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3074,7 +3074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9AB0
+	 * 		Offset -> 0x01DCA790
 	 * 		Name   -> Function UMG.CanvasPanelSlot.SetAlignment
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3097,7 +3097,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC99F0
+	 * 		Offset -> 0x01DCA6D0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetZOrder
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3119,7 +3119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9750
+	 * 		Offset -> 0x01DCA430
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3141,7 +3141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9710
+	 * 		Offset -> 0x01DCA3F0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3163,7 +3163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC96D0
+	 * 		Offset -> 0x01DCA3B0
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetOffsets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3185,7 +3185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9640
+	 * 		Offset -> 0x01DCA320
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetLayout
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3207,7 +3207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC95B0
+	 * 		Offset -> 0x01DCA290
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetAutoSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3229,7 +3229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9570
+	 * 		Offset -> 0x01DCA250
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetAnchors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3251,7 +3251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9530
+	 * 		Offset -> 0x01DCA210
 	 * 		Name   -> Function UMG.CanvasPanelSlot.GetAlignment
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3287,7 +3287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA660
+	 * 		Offset -> 0x01DCB340
 	 * 		Name   -> Function UMG.CheckBox.SetIsChecked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3310,7 +3310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA160
+	 * 		Offset -> 0x01DCAE40
 	 * 		Name   -> Function UMG.CheckBox.SetCheckedState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3333,7 +3333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9A80
+	 * 		Offset -> 0x01DCA760
 	 * 		Name   -> Function UMG.CheckBox.IsPressed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3355,7 +3355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9A20
+	 * 		Offset -> 0x01DCA700
 	 * 		Name   -> Function UMG.CheckBox.IsChecked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3377,7 +3377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC95E0
+	 * 		Offset -> 0x01DCA2C0
 	 * 		Name   -> Function UMG.CheckBox.GetCheckedState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3413,7 +3413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC99C0
+	 * 		Offset -> 0x01DCA6A0
 	 * 		Name   -> Function UMG.CheckedStateBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -3449,7 +3449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAF70
+	 * 		Offset -> 0x01DCBC50
 	 * 		Name   -> Function UMG.CircularThrobber.SetRadius
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3472,7 +3472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCADF0
+	 * 		Offset -> 0x01DCBAD0
 	 * 		Name   -> Function UMG.CircularThrobber.SetPeriod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3495,7 +3495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCAA10
+	 * 		Offset -> 0x01DCB6F0
 	 * 		Name   -> Function UMG.CircularThrobber.SetNumberOfPieces
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3532,7 +3532,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9790
+	 * 		Offset -> 0x01DCA470
 	 * 		Name   -> Function UMG.ColorBinding.GetSlateValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -3554,7 +3554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DC9690
+	 * 		Offset -> 0x01DCA370
 	 * 		Name   -> Function UMG.ColorBinding.GetLinearValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, Const)
 	 */
@@ -3604,7 +3604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF300
+	 * 		Offset -> 0x01DCFFE0
 	 * 		Name   -> Function UMG.ComboBoxString.SetSelectedOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3627,7 +3627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF280
+	 * 		Offset -> 0x01DCFF60
 	 * 		Name   -> Function UMG.ComboBoxString.SetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3650,7 +3650,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE370
+	 * 		Offset -> 0x01DCF050
 	 * 		Name   -> Function UMG.ComboBoxString.RemoveOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3675,7 +3675,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE2D0
+	 * 		Offset -> 0x01DCEFB0
 	 * 		Name   -> Function UMG.ComboBoxString.RefreshOptions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3695,7 +3695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.ComboBoxString.OnSelectionChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3719,7 +3719,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -3738,7 +3738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE2A0
+	 * 		Offset -> 0x01DCEF80
 	 * 		Name   -> Function UMG.ComboBoxString.IsOpen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3760,7 +3760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE080
+	 * 		Offset -> 0x01DCED60
 	 * 		Name   -> Function UMG.ComboBoxString.GetSelectedOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3782,7 +3782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE050
+	 * 		Offset -> 0x01DCED30
 	 * 		Name   -> Function UMG.ComboBoxString.GetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3804,7 +3804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE020
+	 * 		Offset -> 0x01DCED00
 	 * 		Name   -> Function UMG.ComboBoxString.GetOptionCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3826,7 +3826,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDF50
+	 * 		Offset -> 0x01DCEC30
 	 * 		Name   -> Function UMG.ComboBoxString.GetOptionAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3851,7 +3851,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDD50
+	 * 		Offset -> 0x01DCEA30
 	 * 		Name   -> Function UMG.ComboBoxString.FindOptionIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3876,7 +3876,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD9A0
+	 * 		Offset -> 0x01DCE680
 	 * 		Name   -> Function UMG.ComboBoxString.ClearSelection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3896,7 +3896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD980
+	 * 		Offset -> 0x01DCE660
 	 * 		Name   -> Function UMG.ComboBoxString.ClearOptions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3916,7 +3916,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD800
+	 * 		Offset -> 0x01DCE4E0
 	 * 		Name   -> Function UMG.ComboBoxString.AddOption
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3953,7 +3953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDC20
+	 * 		Offset -> 0x01DCE900
 	 * 		Name   -> Function UMG.DragDropOperation.Drop
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -3976,7 +3976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDAF0
+	 * 		Offset -> 0x01DCE7D0
 	 * 		Name   -> Function UMG.DragDropOperation.Dragged
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -3999,7 +3999,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD9C0
+	 * 		Offset -> 0x01DCE6A0
 	 * 		Name   -> Function UMG.DragDropOperation.DragCancelled
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -4036,7 +4036,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE710
+	 * 		Offset -> 0x01DCF3F0
 	 * 		Name   -> Function UMG.DynamicEntryBoxBase.SetEntrySpacing
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4059,7 +4059,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDF20
+	 * 		Offset -> 0x01DCEC00
 	 * 		Name   -> Function UMG.DynamicEntryBoxBase.GetNumEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4081,7 +4081,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDE00
+	 * 		Offset -> 0x01DCEAE0
 	 * 		Name   -> Function UMG.DynamicEntryBoxBase.GetAllEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4117,7 +4117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE420
+	 * 		Offset -> 0x01DCF100
 	 * 		Name   -> Function UMG.DynamicEntryBox.Reset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4140,7 +4140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE2F0
+	 * 		Offset -> 0x01DCEFD0
 	 * 		Name   -> Function UMG.DynamicEntryBox.RemoveEntry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4163,7 +4163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD8D0
+	 * 		Offset -> 0x01DCE5B0
 	 * 		Name   -> Function UMG.DynamicEntryBox.BP_CreateEntryOfClass
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -4188,7 +4188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD8A0
+	 * 		Offset -> 0x01DCE580
 	 * 		Name   -> Function UMG.DynamicEntryBox.BP_CreateEntry
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */
@@ -4224,7 +4224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF3E0
+	 * 		Offset -> 0x01DD00C0
 	 * 		Name   -> Function UMG.EditableText.SetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4247,7 +4247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEE20
+	 * 		Offset -> 0x01DCFB00
 	 * 		Name   -> Function UMG.EditableText.SetJustification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4270,7 +4270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCED00
+	 * 		Offset -> 0x01DCF9E0
 	 * 		Name   -> Function UMG.EditableText.SetIsReadOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4293,7 +4293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEBE0
+	 * 		Offset -> 0x01DCF8C0
 	 * 		Name   -> Function UMG.EditableText.SetIsPassword
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4316,7 +4316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE880
+	 * 		Offset -> 0x01DCF560
 	 * 		Name   -> Function UMG.EditableText.SetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4339,7 +4339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.EditableText.OnEditableTextCommittedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4363,7 +4363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.EditableText.OnEditableTextChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4385,7 +4385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE100
+	 * 		Offset -> 0x01DCEDE0
 	 * 		Name   -> Function UMG.EditableText.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4421,7 +4421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF4C0
+	 * 		Offset -> 0x01DD01A0
 	 * 		Name   -> Function UMG.EditableTextBox.SetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4444,7 +4444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEEA0
+	 * 		Offset -> 0x01DCFB80
 	 * 		Name   -> Function UMG.EditableTextBox.SetJustification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4467,7 +4467,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCED90
+	 * 		Offset -> 0x01DCFA70
 	 * 		Name   -> Function UMG.EditableTextBox.SetIsReadOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4490,7 +4490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEC70
+	 * 		Offset -> 0x01DCF950
 	 * 		Name   -> Function UMG.EditableTextBox.SetIsPassword
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4513,7 +4513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE960
+	 * 		Offset -> 0x01DCF640
 	 * 		Name   -> Function UMG.EditableTextBox.SetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4536,7 +4536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE7A0
+	 * 		Offset -> 0x01DCF480
 	 * 		Name   -> Function UMG.EditableTextBox.SetError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4559,7 +4559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.EditableTextBox.OnEditableTextBoxCommittedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4583,7 +4583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.EditableTextBox.OnEditableTextBoxChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4605,7 +4605,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE270
+	 * 		Offset -> 0x01DCEF50
 	 * 		Name   -> Function UMG.EditableTextBox.HasError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4627,7 +4627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE1A0
+	 * 		Offset -> 0x01DCEE80
 	 * 		Name   -> Function UMG.EditableTextBox.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4649,7 +4649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD960
+	 * 		Offset -> 0x01DCE640
 	 * 		Name   -> Function UMG.EditableTextBox.ClearError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4683,7 +4683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEB50
+	 * 		Offset -> 0x01DCF830
 	 * 		Name   -> Function UMG.ExpandableArea.SetIsExpanded_Animated
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4706,7 +4706,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEAC0
+	 * 		Offset -> 0x01DCF7A0
 	 * 		Name   -> Function UMG.ExpandableArea.SetIsExpanded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4729,7 +4729,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCDEF0
+	 * 		Offset -> 0x01DCEBD0
 	 * 		Name   -> Function UMG.ExpandableArea.GetIsExpanded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4765,7 +4765,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE240
+	 * 		Offset -> 0x01DCEF20
 	 * 		Name   -> Function UMG.FloatBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -4801,7 +4801,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF130
+	 * 		Offset -> 0x01DCFE10
 	 * 		Name   -> Function UMG.GridPanel.SetRowFill
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4826,7 +4826,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE530
+	 * 		Offset -> 0x01DCF210
 	 * 		Name   -> Function UMG.GridPanel.SetColumnFill
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4851,7 +4851,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCD700
+	 * 		Offset -> 0x01DCE3E0
 	 * 		Name   -> Function UMG.GridPanel.AddChildToGrid
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4894,7 +4894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF5A0
+	 * 		Offset -> 0x01DD0280
 	 * 		Name   -> Function UMG.GridSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4917,7 +4917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF200
+	 * 		Offset -> 0x01DCFEE0
 	 * 		Name   -> Function UMG.GridSlot.SetRowSpan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4940,7 +4940,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF0B0
+	 * 		Offset -> 0x01DCFD90
 	 * 		Name   -> Function UMG.GridSlot.SetRow
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4963,7 +4963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCF020
+	 * 		Offset -> 0x01DCFD00
 	 * 		Name   -> Function UMG.GridSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4986,7 +4986,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEFA0
+	 * 		Offset -> 0x01DCFC80
 	 * 		Name   -> Function UMG.GridSlot.SetNudge
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5009,7 +5009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEF20
+	 * 		Offset -> 0x01DCFC00
 	 * 		Name   -> Function UMG.GridSlot.SetLayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5032,7 +5032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCEA40
+	 * 		Offset -> 0x01DCF720
 	 * 		Name   -> Function UMG.GridSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5055,7 +5055,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE600
+	 * 		Offset -> 0x01DCF2E0
 	 * 		Name   -> Function UMG.GridSlot.SetColumnSpan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5078,7 +5078,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCE4B0
+	 * 		Offset -> 0x01DCF190
 	 * 		Name   -> Function UMG.GridSlot.SetColumn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5115,7 +5115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD19D0
+	 * 		Offset -> 0x01DD26B0
 	 * 		Name   -> Function UMG.HorizontalBox.AddChildToHorizontalBox
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5154,7 +5154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3DC0
+	 * 		Offset -> 0x01DD4AA0
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5177,7 +5177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3CB0
+	 * 		Offset -> 0x01DD4990
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5200,7 +5200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD38B0
+	 * 		Offset -> 0x01DD4590
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5223,7 +5223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD35F0
+	 * 		Offset -> 0x01DD42D0
 	 * 		Name   -> Function UMG.HorizontalBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5260,7 +5260,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3830
+	 * 		Offset -> 0x01DD4510
 	 * 		Name   -> Function UMG.Image.SetOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5283,7 +5283,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3480
+	 * 		Offset -> 0x01DD4160
 	 * 		Name   -> Function UMG.Image.SetColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5306,7 +5306,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3300
+	 * 		Offset -> 0x01DD3FE0
 	 * 		Name   -> Function UMG.Image.SetBrushTintColor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5329,7 +5329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3280
+	 * 		Offset -> 0x01DD3F60
 	 * 		Name   -> Function UMG.Image.SetBrushSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5352,7 +5352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3200
+	 * 		Offset -> 0x01DD3EE0
 	 * 		Name   -> Function UMG.Image.SetBrushResourceObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5375,7 +5375,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3130
+	 * 		Offset -> 0x01DD3E10
 	 * 		Name   -> Function UMG.Image.SetBrushFromTextureDynamic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5400,7 +5400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3060
+	 * 		Offset -> 0x01DD3D40
 	 * 		Name   -> Function UMG.Image.SetBrushFromTexture
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5425,7 +5425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2F10
+	 * 		Offset -> 0x01DD3BF0
 	 * 		Name   -> Function UMG.Image.SetBrushFromSoftTexture
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5448,7 +5448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2E00
+	 * 		Offset -> 0x01DD3AE0
 	 * 		Name   -> Function UMG.Image.SetBrushFromSoftMaterial
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -5468,7 +5468,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2D70
+	 * 		Offset -> 0x01DD3A50
 	 * 		Name   -> Function UMG.Image.SetBrushFromMaterial
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5491,7 +5491,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2C80
+	 * 		Offset -> 0x01DD3960
 	 * 		Name   -> Function UMG.Image.SetBrushFromAtlasInterface
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5514,7 +5514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2BF0
+	 * 		Offset -> 0x01DD38D0
 	 * 		Name   -> Function UMG.Image.SetBrushFromAsset
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5537,7 +5537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2A70
+	 * 		Offset -> 0x01DD3750
 	 * 		Name   -> Function UMG.Image.SetBrush
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5560,7 +5560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2160
+	 * 		Offset -> 0x01DD2E40
 	 * 		Name   -> Function UMG.Image.GetDynamicMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5596,7 +5596,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3D40
+	 * 		Offset -> 0x01DD4A20
 	 * 		Name   -> Function UMG.InputKeySelector.SetTextBlockVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5619,7 +5619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3B40
+	 * 		Offset -> 0x01DD4820
 	 * 		Name   -> Function UMG.InputKeySelector.SetSelectedKey
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5642,7 +5642,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3750
+	 * 		Offset -> 0x01DD4430
 	 * 		Name   -> Function UMG.InputKeySelector.SetNoKeySpecifiedText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5665,7 +5665,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3670
+	 * 		Offset -> 0x01DD4350
 	 * 		Name   -> Function UMG.InputKeySelector.SetKeySelectionText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5688,7 +5688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3500
+	 * 		Offset -> 0x01DD41E0
 	 * 		Name   -> Function UMG.InputKeySelector.SetEscapeKeys
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5711,7 +5711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD29E0
+	 * 		Offset -> 0x01DD36C0
 	 * 		Name   -> Function UMG.InputKeySelector.SetAllowModifierKeys
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5734,7 +5734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2950
+	 * 		Offset -> 0x01DD3630
 	 * 		Name   -> Function UMG.InputKeySelector.SetAllowGamepadKeys
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5757,7 +5757,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5779,7 +5779,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -5798,7 +5798,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2220
+	 * 		Offset -> 0x01DD2F00
 	 * 		Name   -> Function UMG.InputKeySelector.GetIsSelectingKey
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5834,7 +5834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD24C0
+	 * 		Offset -> 0x01DD31A0
 	 * 		Name   -> Function UMG.Int32Binding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -5870,7 +5870,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD33F0
+	 * 		Offset -> 0x01DD40D0
 	 * 		Name   -> Function UMG.InvalidationBox.SetCanCache
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5893,7 +5893,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D10
+	 * 		Offset -> 0x00875D50
 	 * 		Name   -> Function UMG.InvalidationBox.InvalidateCache
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5913,7 +5913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD20A0
+	 * 		Offset -> 0x01DD2D80
 	 * 		Name   -> Function UMG.InvalidationBox.GetCanCache
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5949,7 +5949,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserListEntry.BP_OnItemSelectionChanged
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5971,7 +5971,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserListEntry.BP_OnItemExpansionChanged
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5993,7 +5993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserListEntry.BP_OnEntryReleased
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -6026,7 +6026,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD25C0
+	 * 		Offset -> 0x01DD32A0
 	 * 		Name   -> Function UMG.UserListEntryLibrary.IsListItemSelected
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -6048,7 +6048,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2520
+	 * 		Offset -> 0x01DD3200
 	 * 		Name   -> Function UMG.UserListEntryLibrary.IsListItemExpanded
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -6070,7 +6070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2420
+	 * 		Offset -> 0x01DD3100
 	 * 		Name   -> Function UMG.UserListEntryLibrary.GetOwningListView
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -6106,7 +6106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserObjectListEntry.OnListItemObjectSet
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -6142,7 +6142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD22E0
+	 * 		Offset -> 0x01DD2FC0
 	 * 		Name   -> Function UMG.UserObjectListEntryLibrary.GetListItemObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -6178,7 +6178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3E40
+	 * 		Offset -> 0x01DD4B20
 	 * 		Name   -> Function UMG.ListViewBase.SetWheelScrollMultiplier
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6201,7 +6201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD39C0
+	 * 		Offset -> 0x01DD46A0
 	 * 		Name   -> Function UMG.ListViewBase.SetScrollOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6224,7 +6224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3A40
+	 * 		Offset -> 0x01DD4720
 	 * 		Name   -> Function UMG.ListViewBase.SetScrollbarVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6247,7 +6247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2930
+	 * 		Offset -> 0x01DD3610
 	 * 		Name   -> Function UMG.ListViewBase.ScrollToTop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6267,7 +6267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2910
+	 * 		Offset -> 0x01DD35F0
 	 * 		Name   -> Function UMG.ListViewBase.ScrollToBottom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6287,7 +6287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2870
+	 * 		Offset -> 0x01DD3550
 	 * 		Name   -> Function UMG.ListViewBase.RequestRefresh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6307,7 +6307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD27D0
+	 * 		Offset -> 0x01DD34B0
 	 * 		Name   -> Function UMG.ListViewBase.RegenerateAllEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6327,7 +6327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD20D0
+	 * 		Offset -> 0x01DD2DB0
 	 * 		Name   -> Function UMG.ListViewBase.GetDisplayedEntryWidgets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6363,7 +6363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3C30
+	 * 		Offset -> 0x01DD4910
 	 * 		Name   -> Function UMG.ListView.SetSelectionMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6386,7 +6386,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3AC0
+	 * 		Offset -> 0x01DD47A0
 	 * 		Name   -> Function UMG.ListView.SetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6409,7 +6409,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2890
+	 * 		Offset -> 0x01DD3570
 	 * 		Name   -> Function UMG.ListView.ScrollIndexIntoView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6432,7 +6432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD27F0
+	 * 		Offset -> 0x01DD34D0
 	 * 		Name   -> Function UMG.ListView.RemoveItem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6455,7 +6455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD26C0
+	 * 		Offset -> 0x01DD33A0
 	 * 		Name   -> Function UMG.ListView.NavigateToIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6478,7 +6478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2690
+	 * 		Offset -> 0x01DD3370
 	 * 		Name   -> Function UMG.ListView.IsRefreshPending
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6500,7 +6500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD23F0
+	 * 		Offset -> 0x01DD30D0
 	 * 		Name   -> Function UMG.ListView.GetNumItems
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6522,7 +6522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2380
+	 * 		Offset -> 0x01DD3060
 	 * 		Name   -> Function UMG.ListView.GetListItems
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6544,7 +6544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2250
+	 * 		Offset -> 0x01DD2F30
 	 * 		Name   -> Function UMG.ListView.GetItemAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -6569,7 +6569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2190
+	 * 		Offset -> 0x01DD2E70
 	 * 		Name   -> Function UMG.ListView.GetIndexForItem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -6594,7 +6594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1FD0
+	 * 		Offset -> 0x01DD2CB0
 	 * 		Name   -> Function UMG.ListView.ClearListItems
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6614,7 +6614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1F50
+	 * 		Offset -> 0x01DD2C30
 	 * 		Name   -> Function UMG.ListView.BP_SetSelectedItem
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -6637,7 +6637,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1EA0
+	 * 		Offset -> 0x01DD2B80
 	 * 		Name   -> Function UMG.ListView.BP_SetListItems
 	 * 		Flags  -> (Final, Native, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6660,7 +6660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1DD0
+	 * 		Offset -> 0x01DD2AB0
 	 * 		Name   -> Function UMG.ListView.BP_SetItemSelection
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -6685,7 +6685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1D50
+	 * 		Offset -> 0x01DD2A30
 	 * 		Name   -> Function UMG.ListView.BP_ScrollItemIntoView
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -6708,7 +6708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1CD0
+	 * 		Offset -> 0x01DD29B0
 	 * 		Name   -> Function UMG.ListView.BP_NavigateToItem
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -6731,7 +6731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1C40
+	 * 		Offset -> 0x01DD2920
 	 * 		Name   -> Function UMG.ListView.BP_IsItemVisible
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -6756,7 +6756,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1B80
+	 * 		Offset -> 0x01DD2860
 	 * 		Name   -> Function UMG.ListView.BP_GetSelectedItems
 	 * 		Flags  -> (Final, Native, Private, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -6783,7 +6783,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1B50
+	 * 		Offset -> 0x01DD2830
 	 * 		Name   -> Function UMG.ListView.BP_GetSelectedItem
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6805,7 +6805,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1B20
+	 * 		Offset -> 0x01DD2800
 	 * 		Name   -> Function UMG.ListView.BP_GetNumItemsSelected
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6827,7 +6827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1B00
+	 * 		Offset -> 0x01DD27E0
 	 * 		Name   -> Function UMG.ListView.BP_ClearSelection
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */
@@ -6847,7 +6847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1AE0
+	 * 		Offset -> 0x01DD27C0
 	 * 		Name   -> Function UMG.ListView.BP_CancelScrollIntoView
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */
@@ -6867,7 +6867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1A60
+	 * 		Offset -> 0x01DD2740
 	 * 		Name   -> Function UMG.ListView.AddItem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6918,7 +6918,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3EF0
+	 * 		Offset -> 0x01DD4BD0
 	 * 		Name   -> Function UMG.MenuAnchor.ToggleOpen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6941,7 +6941,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3EC0
+	 * 		Offset -> 0x01DD4BA0
 	 * 		Name   -> Function UMG.MenuAnchor.ShouldOpenDueToClick
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6963,7 +6963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD3940
+	 * 		Offset -> 0x01DD4620
 	 * 		Name   -> Function UMG.MenuAnchor.SetPlacement
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6986,7 +6986,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2740
+	 * 		Offset -> 0x01DD3420
 	 * 		Name   -> Function UMG.MenuAnchor.Open
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7009,7 +7009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2660
+	 * 		Offset -> 0x01DD3340
 	 * 		Name   -> Function UMG.MenuAnchor.IsOpen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7031,7 +7031,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD24F0
+	 * 		Offset -> 0x01DD31D0
 	 * 		Name   -> Function UMG.MenuAnchor.HasOpenSubMenus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7053,7 +7053,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD23B0
+	 * 		Offset -> 0x01DD3090
 	 * 		Name   -> Function UMG.MenuAnchor.GetMenuPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7075,7 +7075,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2010
+	 * 		Offset -> 0x01DD2CF0
 	 * 		Name   -> Function UMG.MenuAnchor.FitInWindow
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7098,7 +7098,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD1FF0
+	 * 		Offset -> 0x01DD2CD0
 	 * 		Name   -> Function UMG.MenuAnchor.Close
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -7132,7 +7132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7940
+	 * 		Offset -> 0x01DD8620
 	 * 		Name   -> Function UMG.MouseCursorBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -7238,7 +7238,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE06F0
+	 * 		Offset -> 0x01DE13D0
 	 * 		Name   -> Function UMG.TextLayoutWidget.SetJustification
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7275,7 +7275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8E30
+	 * 		Offset -> 0x01DD9B10
 	 * 		Name   -> Function UMG.MultiLineEditableText.SetWidgetStyle
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7298,7 +7298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8970
+	 * 		Offset -> 0x01DD9650
 	 * 		Name   -> Function UMG.MultiLineEditableText.SetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7321,7 +7321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8600
+	 * 		Offset -> 0x01DD92E0
 	 * 		Name   -> Function UMG.MultiLineEditableText.SetIsReadOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7344,7 +7344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8330
+	 * 		Offset -> 0x01DD9010
 	 * 		Name   -> Function UMG.MultiLineEditableText.SetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7367,7 +7367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextCommittedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -7391,7 +7391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -7413,7 +7413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7760
+	 * 		Offset -> 0x01DD8440
 	 * 		Name   -> Function UMG.MultiLineEditableText.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7435,7 +7435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7620
+	 * 		Offset -> 0x01DD8300
 	 * 		Name   -> Function UMG.MultiLineEditableText.GetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7471,7 +7471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8C00
+	 * 		Offset -> 0x01DD98E0
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.SetTextStyle
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7494,7 +7494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8A50
+	 * 		Offset -> 0x01DD9730
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.SetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7517,7 +7517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8690
+	 * 		Offset -> 0x01DD9370
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.SetIsReadOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7540,7 +7540,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8410
+	 * 		Offset -> 0x01DD90F0
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.SetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7563,7 +7563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD81D0
+	 * 		Offset -> 0x01DD8EB0
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.SetError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7586,7 +7586,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -7610,7 +7610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -7632,7 +7632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7800
+	 * 		Offset -> 0x01DD84E0
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7654,7 +7654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD76C0
+	 * 		Offset -> 0x01DD83A0
 	 * 		Name   -> Function UMG.MultiLineEditableTextBox.GetHintText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7732,7 +7732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD72C0
+	 * 		Offset -> 0x01DD7FA0
 	 * 		Name   -> Function UMG.Overlay.AddChildToOverlay
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7771,7 +7771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8DB0
+	 * 		Offset -> 0x01DD9A90
 	 * 		Name   -> Function UMG.OverlaySlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7794,7 +7794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD87A0
+	 * 		Offset -> 0x01DD9480
 	 * 		Name   -> Function UMG.OverlaySlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7817,7 +7817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD84F0
+	 * 		Offset -> 0x01DD91D0
 	 * 		Name   -> Function UMG.OverlaySlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7854,7 +7854,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8830
+	 * 		Offset -> 0x01DD9510
 	 * 		Name   -> Function UMG.ProgressBar.SetPercent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7877,7 +7877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8570
+	 * 		Offset -> 0x01DD9250
 	 * 		Name   -> Function UMG.ProgressBar.SetIsMarquee
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7900,7 +7900,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD82B0
+	 * 		Offset -> 0x01DD8F90
 	 * 		Name   -> Function UMG.ProgressBar.SetFillColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7937,7 +7937,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8D30
+	 * 		Offset -> 0x01DD9A10
 	 * 		Name   -> Function UMG.RetainerBox.SetTextureParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7960,7 +7960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD88B0
+	 * 		Offset -> 0x01DD9590
 	 * 		Name   -> Function UMG.RetainerBox.SetRenderingPhase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7985,7 +7985,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8150
+	 * 		Offset -> 0x01DD8E30
 	 * 		Name   -> Function UMG.RetainerBox.SetEffectMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8008,7 +8008,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7B50
+	 * 		Offset -> 0x01DD8830
 	 * 		Name   -> Function UMG.RetainerBox.RequestRender
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -8028,7 +8028,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD75F0
+	 * 		Offset -> 0x01DD82D0
 	 * 		Name   -> Function UMG.RetainerBox.GetEffectMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -8064,7 +8064,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8CB0
+	 * 		Offset -> 0x01DD9990
 	 * 		Name   -> Function UMG.RichTextBlock.SetTextStyleSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8087,7 +8087,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8B30
+	 * 		Offset -> 0x01DD9810
 	 * 		Name   -> Function UMG.RichTextBlock.SetText
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -8110,7 +8110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD8720
+	 * 		Offset -> 0x01DD9400
 	 * 		Name   -> Function UMG.RichTextBlock.SetMinDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8133,7 +8133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD80A0
+	 * 		Offset -> 0x01DD8D80
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultTextStyle
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -8156,7 +8156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7F20
+	 * 		Offset -> 0x01DD8C00
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultStrikeBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -8181,7 +8181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7EA0
+	 * 		Offset -> 0x01DD8B80
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultShadowOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -8204,7 +8204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7E20
+	 * 		Offset -> 0x01DD8B00
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -8227,7 +8227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7CF0
+	 * 		Offset -> 0x01DD89D0
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultFont
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8250,7 +8250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7C00
+	 * 		Offset -> 0x01DD88E0
 	 * 		Name   -> Function UMG.RichTextBlock.SetDefaultColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8273,7 +8273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7B70
+	 * 		Offset -> 0x01DD8850
 	 * 		Name   -> Function UMG.RichTextBlock.SetAutoWrapText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8296,7 +8296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD78A0
+	 * 		Offset -> 0x01DD8580
 	 * 		Name   -> Function UMG.RichTextBlock.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -8318,7 +8318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7560
+	 * 		Offset -> 0x01DD8240
 	 * 		Name   -> Function UMG.RichTextBlock.GetDecoratorByClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8343,7 +8343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD7350
+	 * 		Offset -> 0x01DD8030
 	 * 		Name   -> Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -8391,7 +8391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCDD0
+	 * 		Offset -> 0x01DDDAB0
 	 * 		Name   -> Function UMG.SafeZone.SetSidesToPad
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8448,7 +8448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD100
+	 * 		Offset -> 0x01DDDDE0
 	 * 		Name   -> Function UMG.ScaleBox.SetUserSpecifiedScale
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8471,7 +8471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD080
+	 * 		Offset -> 0x01DDDD60
 	 * 		Name   -> Function UMG.ScaleBox.SetStretchDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8494,7 +8494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD000
+	 * 		Offset -> 0x01DDDCE0
 	 * 		Name   -> Function UMG.ScaleBox.SetStretch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8517,7 +8517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC5E0
+	 * 		Offset -> 0x01DDD2C0
 	 * 		Name   -> Function UMG.ScaleBox.SetIgnoreInheritedScale
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8554,7 +8554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCB3D0
+	 * 		Offset -> 0x01DCC0B0
 	 * 		Name   -> Function UMG.ScaleBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8577,7 +8577,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC9F0
+	 * 		Offset -> 0x01DDD6D0
 	 * 		Name   -> Function UMG.ScaleBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8600,7 +8600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DCA5E0
+	 * 		Offset -> 0x01DCB2C0
 	 * 		Name   -> Function UMG.ScaleBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8637,7 +8637,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCF40
+	 * 		Offset -> 0x01DDDC20
 	 * 		Name   -> Function UMG.ScrollBar.SetState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8676,7 +8676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD280
+	 * 		Offset -> 0x01DDDF60
 	 * 		Name   -> Function UMG.ScrollBox.SetWheelScrollMultiplier
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8699,7 +8699,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCC20
+	 * 		Offset -> 0x01DDD900
 	 * 		Name   -> Function UMG.ScrollBox.SetScrollOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8722,7 +8722,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCBA0
+	 * 		Offset -> 0x01DDD880
 	 * 		Name   -> Function UMG.ScrollBox.SetScrollbarVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8745,7 +8745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCD40
+	 * 		Offset -> 0x01DDDA20
 	 * 		Name   -> Function UMG.ScrollBox.SetScrollbarThickness
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -8768,7 +8768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCCA0
+	 * 		Offset -> 0x01DDD980
 	 * 		Name   -> Function UMG.ScrollBox.SetScrollbarPadding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -8791,7 +8791,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC970
+	 * 		Offset -> 0x01DDD650
 	 * 		Name   -> Function UMG.ScrollBox.SetOrientation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8814,7 +8814,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC3E0
+	 * 		Offset -> 0x01DDD0C0
 	 * 		Name   -> Function UMG.ScrollBox.SetConsumeMouseWheel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8837,7 +8837,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC350
+	 * 		Offset -> 0x01DDD030
 	 * 		Name   -> Function UMG.ScrollBox.SetAnimateWheelScrolling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8860,7 +8860,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC2C0
+	 * 		Offset -> 0x01DDCFA0
 	 * 		Name   -> Function UMG.ScrollBox.SetAlwaysShowScrollbar
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8883,7 +8883,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC230
+	 * 		Offset -> 0x01DDCF10
 	 * 		Name   -> Function UMG.ScrollBox.SetAllowOverscroll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8906,7 +8906,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC0E0
+	 * 		Offset -> 0x01DDCDC0
 	 * 		Name   -> Function UMG.ScrollBox.ScrollWidgetIntoView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8935,7 +8935,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC0C0
+	 * 		Offset -> 0x01DDCDA0
 	 * 		Name   -> Function UMG.ScrollBox.ScrollToStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -8955,7 +8955,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC0A0
+	 * 		Offset -> 0x01DDCD80
 	 * 		Name   -> Function UMG.ScrollBox.ScrollToEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -8975,7 +8975,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB870
+	 * 		Offset -> 0x01DDC550
 	 * 		Name   -> Function UMG.ScrollBox.GetViewOffsetFraction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -8997,7 +8997,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB840
+	 * 		Offset -> 0x01DDC520
 	 * 		Name   -> Function UMG.ScrollBox.GetScrollOffsetOfEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -9019,7 +9019,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB810
+	 * 		Offset -> 0x01DDC4F0
 	 * 		Name   -> Function UMG.ScrollBox.GetScrollOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -9041,7 +9041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB300
+	 * 		Offset -> 0x01DDBFE0
 	 * 		Name   -> Function UMG.ScrollBox.EndInertialScrolling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9075,7 +9075,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD180
+	 * 		Offset -> 0x01DDDE60
 	 * 		Name   -> Function UMG.ScrollBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9098,7 +9098,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCA80
+	 * 		Offset -> 0x01DDD760
 	 * 		Name   -> Function UMG.ScrollBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9121,7 +9121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC4E0
+	 * 		Offset -> 0x01DDD1C0
 	 * 		Name   -> Function UMG.ScrollBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9158,7 +9158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD300
+	 * 		Offset -> 0x01DDDFE0
 	 * 		Name   -> Function UMG.SizeBox.SetWidthOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9181,7 +9181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC8F0
+	 * 		Offset -> 0x01DDD5D0
 	 * 		Name   -> Function UMG.SizeBox.SetMinDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9204,7 +9204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC870
+	 * 		Offset -> 0x01DDD550
 	 * 		Name   -> Function UMG.SizeBox.SetMinDesiredHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9227,7 +9227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC7F0
+	 * 		Offset -> 0x01DDD4D0
 	 * 		Name   -> Function UMG.SizeBox.SetMinAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9250,7 +9250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC770
+	 * 		Offset -> 0x01DDD450
 	 * 		Name   -> Function UMG.SizeBox.SetMaxDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9273,7 +9273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC6F0
+	 * 		Offset -> 0x01DDD3D0
 	 * 		Name   -> Function UMG.SizeBox.SetMaxDesiredHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9296,7 +9296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC670
+	 * 		Offset -> 0x01DDD350
 	 * 		Name   -> Function UMG.SizeBox.SetMaxAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9319,7 +9319,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC460
+	 * 		Offset -> 0x01DDD140
 	 * 		Name   -> Function UMG.SizeBox.SetHeightOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9342,7 +9342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB2E0
+	 * 		Offset -> 0x01DDBFC0
 	 * 		Name   -> Function UMG.SizeBox.ClearWidthOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9362,7 +9362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB2C0
+	 * 		Offset -> 0x01DDBFA0
 	 * 		Name   -> Function UMG.SizeBox.ClearMinDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9382,7 +9382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB2A0
+	 * 		Offset -> 0x01DDBF80
 	 * 		Name   -> Function UMG.SizeBox.ClearMinDesiredHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9402,7 +9402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB280
+	 * 		Offset -> 0x01DDBF60
 	 * 		Name   -> Function UMG.SizeBox.ClearMinAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9422,7 +9422,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB260
+	 * 		Offset -> 0x01DDBF40
 	 * 		Name   -> Function UMG.SizeBox.ClearMaxDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9442,7 +9442,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB240
+	 * 		Offset -> 0x01DDBF20
 	 * 		Name   -> Function UMG.SizeBox.ClearMaxDesiredHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9462,7 +9462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB220
+	 * 		Offset -> 0x01DDBF00
 	 * 		Name   -> Function UMG.SizeBox.ClearMaxAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9482,7 +9482,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB200
+	 * 		Offset -> 0x01DDBEE0
 	 * 		Name   -> Function UMG.SizeBox.ClearHeightOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -9516,7 +9516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD200
+	 * 		Offset -> 0x01DDDEE0
 	 * 		Name   -> Function UMG.SizeBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9539,7 +9539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDCB10
+	 * 		Offset -> 0x01DDD7F0
 	 * 		Name   -> Function UMG.SizeBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9562,7 +9562,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDC560
+	 * 		Offset -> 0x01DDD240
 	 * 		Name   -> Function UMG.SizeBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -9599,7 +9599,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD680
+	 * 		Offset -> 0x01DDE360
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.TransformVectorLocalToAbsolute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9626,7 +9626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD580
+	 * 		Offset -> 0x01DDE260
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.TransformVectorAbsoluteToLocal
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9653,7 +9653,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD480
+	 * 		Offset -> 0x01DDE160
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.TransformScalarLocalToAbsolute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9680,7 +9680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDD380
+	 * 		Offset -> 0x01DDE060
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.TransformScalarAbsoluteToLocal
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9707,7 +9707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDBED0
+	 * 		Offset -> 0x01DDCBB0
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.ScreenToWidgetLocal
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -9740,7 +9740,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDBD80
+	 * 		Offset -> 0x01DDCA60
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.ScreenToWidgetAbsolute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -9771,7 +9771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDBC80
+	 * 		Offset -> 0x01DDC960
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.ScreenToViewport
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -9800,7 +9800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDBAA0
+	 * 		Offset -> 0x01DDC780
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.LocalToViewport
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9834,7 +9834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB9A0
+	 * 		Offset -> 0x01DDC680
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.LocalToAbsolute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9861,7 +9861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB8A0
+	 * 		Offset -> 0x01DDC580
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.IsUnderLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9888,7 +9888,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB750
+	 * 		Offset -> 0x01DDC430
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.GetLocalTopLeft
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9913,7 +9913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB690
+	 * 		Offset -> 0x01DDC370
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.GetLocalSize
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9938,7 +9938,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB5D0
+	 * 		Offset -> 0x01DDC2B0
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.GetAbsoluteSize
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9963,7 +9963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB320
+	 * 		Offset -> 0x01DDC000
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.EqualEqual_SlateBrush
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -9990,7 +9990,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDB0B0
+	 * 		Offset -> 0x01DDBD90
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.AbsoluteToViewport
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -10022,7 +10022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDAFB0
+	 * 		Offset -> 0x01DDBC90
 	 * 		Name   -> Function UMG.SlateBlueprintLibrary.AbsoluteToLocal
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -10091,7 +10091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE1390
+	 * 		Offset -> 0x01DE2070
 	 * 		Name   -> Function UMG.Slider.SetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10114,7 +10114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE1000
+	 * 		Offset -> 0x01DE1CE0
 	 * 		Name   -> Function UMG.Slider.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10137,7 +10137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0F80
+	 * 		Offset -> 0x01DE1C60
 	 * 		Name   -> Function UMG.Slider.SetSliderHandleColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -10160,7 +10160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0F00
+	 * 		Offset -> 0x01DE1BE0
 	 * 		Name   -> Function UMG.Slider.SetSliderBarColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -10183,7 +10183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0B80
+	 * 		Offset -> 0x01DE1860
 	 * 		Name   -> Function UMG.Slider.SetMinValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10206,7 +10206,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0900
+	 * 		Offset -> 0x01DE15E0
 	 * 		Name   -> Function UMG.Slider.SetMaxValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10229,7 +10229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0770
+	 * 		Offset -> 0x01DE1450
 	 * 		Name   -> Function UMG.Slider.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10252,7 +10252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0590
+	 * 		Offset -> 0x01DE1270
 	 * 		Name   -> Function UMG.Slider.SetIndentHandle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10275,7 +10275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFDD0
+	 * 		Offset -> 0x01DE0AB0
 	 * 		Name   -> Function UMG.Slider.GetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10297,7 +10297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFBE0
+	 * 		Offset -> 0x01DE08C0
 	 * 		Name   -> Function UMG.Slider.GetNormalizedValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10333,7 +10333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0E80
+	 * 		Offset -> 0x01DE1B60
 	 * 		Name   -> Function UMG.Spacer.SetSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -10370,7 +10370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE1410
+	 * 		Offset -> 0x01DE20F0
 	 * 		Name   -> Function UMG.SpinBox.SetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10393,7 +10393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0C00
+	 * 		Offset -> 0x01DE18E0
 	 * 		Name   -> Function UMG.SpinBox.SetMinValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10416,7 +10416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0B00
+	 * 		Offset -> 0x01DE17E0
 	 * 		Name   -> Function UMG.SpinBox.SetMinSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10439,7 +10439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0A80
+	 * 		Offset -> 0x01DE1760
 	 * 		Name   -> Function UMG.SpinBox.SetMinFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10462,7 +10462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0980
+	 * 		Offset -> 0x01DE1660
 	 * 		Name   -> Function UMG.SpinBox.SetMaxValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10485,7 +10485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0880
+	 * 		Offset -> 0x01DE1560
 	 * 		Name   -> Function UMG.SpinBox.SetMaxSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10508,7 +10508,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0800
+	 * 		Offset -> 0x01DE14E0
 	 * 		Name   -> Function UMG.SpinBox.SetMaxFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10531,7 +10531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE04A0
+	 * 		Offset -> 0x01DE1180
 	 * 		Name   -> Function UMG.SpinBox.SetForegroundColor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10554,7 +10554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE01F0
+	 * 		Offset -> 0x01DE0ED0
 	 * 		Name   -> Function UMG.SpinBox.SetDelta
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10577,7 +10577,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFE30
+	 * 		Offset -> 0x01DE0B10
 	 * 		Name   -> Function UMG.SpinBox.SetAlwaysUsesDeltaSnap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -10600,7 +10600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.SpinBox.OnSpinBoxValueCommittedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -10624,7 +10624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.SpinBox.OnSpinBoxValueChangedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -10646,7 +10646,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.SpinBox.OnSpinBoxBeginSliderMovement__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -10665,7 +10665,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFE00
+	 * 		Offset -> 0x01DE0AE0
 	 * 		Name   -> Function UMG.SpinBox.GetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10687,7 +10687,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFBB0
+	 * 		Offset -> 0x01DE0890
 	 * 		Name   -> Function UMG.SpinBox.GetMinValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10709,7 +10709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFB80
+	 * 		Offset -> 0x01DE0860
 	 * 		Name   -> Function UMG.SpinBox.GetMinSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10731,7 +10731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFB50
+	 * 		Offset -> 0x01DE0830
 	 * 		Name   -> Function UMG.SpinBox.GetMinFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10753,7 +10753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFB20
+	 * 		Offset -> 0x01DE0800
 	 * 		Name   -> Function UMG.SpinBox.GetMaxValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10775,7 +10775,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFAF0
+	 * 		Offset -> 0x01DE07D0
 	 * 		Name   -> Function UMG.SpinBox.GetMaxSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10797,7 +10797,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFAC0
+	 * 		Offset -> 0x01DE07A0
 	 * 		Name   -> Function UMG.SpinBox.GetMaxFractionalDigits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10819,7 +10819,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFA30
+	 * 		Offset -> 0x01DE0710
 	 * 		Name   -> Function UMG.SpinBox.GetDelta
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10841,7 +10841,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFA00
+	 * 		Offset -> 0x01DE06E0
 	 * 		Name   -> Function UMG.SpinBox.GetAlwaysUsesDeltaSnap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -10863,7 +10863,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF9A0
+	 * 		Offset -> 0x01DE0680
 	 * 		Name   -> Function UMG.SpinBox.ClearMinValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -10883,7 +10883,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF980
+	 * 		Offset -> 0x01DE0660
 	 * 		Name   -> Function UMG.SpinBox.ClearMinSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -10903,7 +10903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF960
+	 * 		Offset -> 0x01DE0640
 	 * 		Name   -> Function UMG.SpinBox.ClearMaxValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -10923,7 +10923,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF940
+	 * 		Offset -> 0x01DE0620
 	 * 		Name   -> Function UMG.SpinBox.ClearMaxSliderValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -10957,7 +10957,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFD30
+	 * 		Offset -> 0x01DE0A10
 	 * 		Name   -> Function UMG.TextBinding.GetTextValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -10979,7 +10979,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFC10
+	 * 		Offset -> 0x01DE08F0
 	 * 		Name   -> Function UMG.TextBinding.GetStringValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -11015,7 +11015,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE12B0
+	 * 		Offset -> 0x01DE1F90
 	 * 		Name   -> Function UMG.TextBlock.SetText
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11038,7 +11038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE1080
+	 * 		Offset -> 0x01DE1D60
 	 * 		Name   -> Function UMG.TextBlock.SetStrikeBrush
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11061,7 +11061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0E00
+	 * 		Offset -> 0x01DE1AE0
 	 * 		Name   -> Function UMG.TextBlock.SetShadowOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -11084,7 +11084,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0D80
+	 * 		Offset -> 0x01DE1A60
 	 * 		Name   -> Function UMG.TextBlock.SetShadowColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -11107,7 +11107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0D00
+	 * 		Offset -> 0x01DE19E0
 	 * 		Name   -> Function UMG.TextBlock.SetOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11130,7 +11130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0A00
+	 * 		Offset -> 0x01DE16E0
 	 * 		Name   -> Function UMG.TextBlock.SetMinDesiredWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11153,7 +11153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0370
+	 * 		Offset -> 0x01DE1050
 	 * 		Name   -> Function UMG.TextBlock.SetFont
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11176,7 +11176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0100
+	 * 		Offset -> 0x01DE0DE0
 	 * 		Name   -> Function UMG.TextBlock.SetColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11199,7 +11199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0070
+	 * 		Offset -> 0x01DE0D50
 	 * 		Name   -> Function UMG.TextBlock.SetAutoWrapText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11222,7 +11222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFC90
+	 * 		Offset -> 0x01DE0970
 	 * 		Name   -> Function UMG.TextBlock.GetText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -11244,7 +11244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFA90
+	 * 		Offset -> 0x01DE0770
 	 * 		Name   -> Function UMG.TextBlock.GetDynamicOutlineMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -11266,7 +11266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFA60
+	 * 		Offset -> 0x01DE0740
 	 * 		Name   -> Function UMG.TextBlock.GetDynamicFontMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -11302,7 +11302,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0C80
+	 * 		Offset -> 0x01DE1960
 	 * 		Name   -> Function UMG.Throbber.SetNumberOfPieces
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11325,7 +11325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFFE0
+	 * 		Offset -> 0x01DE0CC0
 	 * 		Name   -> Function UMG.Throbber.SetAnimateVertically
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11348,7 +11348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFF50
+	 * 		Offset -> 0x01DE0C30
 	 * 		Name   -> Function UMG.Throbber.SetAnimateOpacity
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11371,7 +11371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDFEC0
+	 * 		Offset -> 0x01DE0BA0
 	 * 		Name   -> Function UMG.Throbber.SetAnimateHorizontally
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11408,7 +11408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE02F0
+	 * 		Offset -> 0x01DE0FD0
 	 * 		Name   -> Function UMG.TileView.SetEntryWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11431,7 +11431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0270
+	 * 		Offset -> 0x01DE0F50
 	 * 		Name   -> Function UMG.TileView.SetEntryHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11468,7 +11468,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE0620
+	 * 		Offset -> 0x01DE1300
 	 * 		Name   -> Function UMG.TreeView.SetItemExpansion
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11493,7 +11493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF9E0
+	 * 		Offset -> 0x01DE06C0
 	 * 		Name   -> Function UMG.TreeView.ExpandAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -11513,7 +11513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DDF9C0
+	 * 		Offset -> 0x01DE06A0
 	 * 		Name   -> Function UMG.TreeView.CollapseAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -11547,7 +11547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7440
+	 * 		Offset -> 0x01DE8120
 	 * 		Name   -> Function UMG.UMGSequencePlayer.SetUserTag
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11570,7 +11570,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5D40
+	 * 		Offset -> 0x01DE6A20
 	 * 		Name   -> Function UMG.UMGSequencePlayer.GetUserTag
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -11606,7 +11606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE73B0
+	 * 		Offset -> 0x01DE8090
 	 * 		Name   -> Function UMG.UniformGridPanel.SetSlotPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11629,7 +11629,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6F50
+	 * 		Offset -> 0x01DE7C30
 	 * 		Name   -> Function UMG.UniformGridPanel.SetMinDesiredSlotWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11652,7 +11652,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6ED0
+	 * 		Offset -> 0x01DE7BB0
 	 * 		Name   -> Function UMG.UniformGridPanel.SetMinDesiredSlotHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11675,7 +11675,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5660
+	 * 		Offset -> 0x01DE6340
 	 * 		Name   -> Function UMG.UniformGridPanel.AddChildToUniformGrid
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11718,7 +11718,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE74C0
+	 * 		Offset -> 0x01DE81A0
 	 * 		Name   -> Function UMG.UniformGridSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11741,7 +11741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7330
+	 * 		Offset -> 0x01DE8010
 	 * 		Name   -> Function UMG.UniformGridSlot.SetRow
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11764,7 +11764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6D40
+	 * 		Offset -> 0x01DE7A20
 	 * 		Name   -> Function UMG.UniformGridSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11787,7 +11787,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6B50
+	 * 		Offset -> 0x01DE7830
 	 * 		Name   -> Function UMG.UniformGridSlot.SetColumn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11824,7 +11824,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE79A0
+	 * 		Offset -> 0x01DE8680
 	 * 		Name   -> Function UMG.UserWidget.UnregisterInputComponent
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -11844,7 +11844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE78C0
+	 * 		Offset -> 0x01DE85A0
 	 * 		Name   -> Function UMG.UserWidget.UnbindFromAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11869,7 +11869,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE77E0
+	 * 		Offset -> 0x01DE84C0
 	 * 		Name   -> Function UMG.UserWidget.UnbindFromAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11894,7 +11894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7760
+	 * 		Offset -> 0x01DE8440
 	 * 		Name   -> Function UMG.UserWidget.UnbindAllFromAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11917,7 +11917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE76E0
+	 * 		Offset -> 0x01DE83C0
 	 * 		Name   -> Function UMG.UserWidget.UnbindAllFromAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -11940,7 +11940,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -11964,7 +11964,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7620
+	 * 		Offset -> 0x01DE8300
 	 * 		Name   -> Function UMG.UserWidget.StopListeningForInputAction
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -11989,7 +11989,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7600
+	 * 		Offset -> 0x01DE82E0
 	 * 		Name   -> Function UMG.UserWidget.StopListeningForAllInputActions
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -12009,7 +12009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE75E0
+	 * 		Offset -> 0x01DE82C0
 	 * 		Name   -> Function UMG.UserWidget.StopAnimationsAndLatentActions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -12029,7 +12029,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7560
+	 * 		Offset -> 0x01DE8240
 	 * 		Name   -> Function UMG.UserWidget.StopAnimation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12052,7 +12052,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7540
+	 * 		Offset -> 0x01DE8220
 	 * 		Name   -> Function UMG.UserWidget.StopAllAnimations
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -12072,7 +12072,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7270
+	 * 		Offset -> 0x01DE7F50
 	 * 		Name   -> Function UMG.UserWidget.SetPositionInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -12097,7 +12097,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE71A0
+	 * 		Offset -> 0x01DE7E80
 	 * 		Name   -> Function UMG.UserWidget.SetPlaybackSpeed
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12122,7 +12122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7110
+	 * 		Offset -> 0x01DE7DF0
 	 * 		Name   -> Function UMG.UserWidget.SetPadding
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12145,7 +12145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE7090
+	 * 		Offset -> 0x01DE7D70
 	 * 		Name   -> Function UMG.UserWidget.SetOwningPlayer
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12168,7 +12168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6FD0
+	 * 		Offset -> 0x01DE7CB0
 	 * 		Name   -> Function UMG.UserWidget.SetNumLoopsToPlay
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12193,7 +12193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6E50
+	 * 		Offset -> 0x01DE7B30
 	 * 		Name   -> Function UMG.UserWidget.SetInputActionPriority
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -12216,7 +12216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6DC0
+	 * 		Offset -> 0x01DE7AA0
 	 * 		Name   -> Function UMG.UserWidget.SetInputActionBlocking
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -12239,7 +12239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6C50
+	 * 		Offset -> 0x01DE7930
 	 * 		Name   -> Function UMG.UserWidget.SetForegroundColor
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12262,7 +12262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6BD0
+	 * 		Offset -> 0x01DE78B0
 	 * 		Name   -> Function UMG.UserWidget.SetDesiredSizeInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -12285,7 +12285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6AD0
+	 * 		Offset -> 0x01DE77B0
 	 * 		Name   -> Function UMG.UserWidget.SetColorAndOpacity
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -12308,7 +12308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6A40
+	 * 		Offset -> 0x01DE7720
 	 * 		Name   -> Function UMG.UserWidget.SetAnchorsInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12331,7 +12331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE69C0
+	 * 		Offset -> 0x01DE76A0
 	 * 		Name   -> Function UMG.UserWidget.SetAlignmentInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -12354,7 +12354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6940
+	 * 		Offset -> 0x01DE7620
 	 * 		Name   -> Function UMG.UserWidget.ReverseAnimation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12377,7 +12377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6920
+	 * 		Offset -> 0x01DE7600
 	 * 		Name   -> Function UMG.UserWidget.RemoveFromViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -12397,7 +12397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6900
+	 * 		Offset -> 0x01DE75E0
 	 * 		Name   -> Function UMG.UserWidget.RegisterInputComponent
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -12417,7 +12417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -12439,7 +12439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6880
+	 * 		Offset -> 0x01DE7560
 	 * 		Name   -> Function UMG.UserWidget.PlaySound
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12462,7 +12462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6690
+	 * 		Offset -> 0x01DE7370
 	 * 		Name   -> Function UMG.UserWidget.PlayAnimationTimeRange
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12499,7 +12499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6580
+	 * 		Offset -> 0x01DE7260
 	 * 		Name   -> Function UMG.UserWidget.PlayAnimationReverse
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12528,7 +12528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6470
+	 * 		Offset -> 0x01DE7150
 	 * 		Name   -> Function UMG.UserWidget.PlayAnimationForward
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12557,7 +12557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE62B0
+	 * 		Offset -> 0x01DE6F90
 	 * 		Name   -> Function UMG.UserWidget.PlayAnimation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12592,7 +12592,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6210
+	 * 		Offset -> 0x01DE6EF0
 	 * 		Name   -> Function UMG.UserWidget.PauseAnimation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -12617,7 +12617,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnTouchStarted
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12643,7 +12643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnTouchMoved
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12669,7 +12669,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnTouchGesture
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12695,7 +12695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnTouchForceChanged
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12721,7 +12721,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnTouchEnded
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12747,7 +12747,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnRemovedFromFocusPath
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -12769,7 +12769,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnPreviewMouseButtonDown
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12795,7 +12795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnPreviewKeyDown
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -12821,7 +12821,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnPaint
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -12845,7 +12845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseWheel
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12871,7 +12871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseMove
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12897,7 +12897,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseLeave
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12919,7 +12919,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseEnter
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12943,7 +12943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseCaptureLost
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -12962,7 +12962,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseButtonUp
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -12988,7 +12988,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseButtonDown
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -13014,7 +13014,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMouseButtonDoubleClick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -13040,7 +13040,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnMotionDetected
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13066,7 +13066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnKeyUp
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13092,7 +13092,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnKeyDown
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13118,7 +13118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnKeyChar
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13144,7 +13144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnInitialized
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -13163,7 +13163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnFocusReceived
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13189,7 +13189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnFocusLost
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13211,7 +13211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDrop
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13239,7 +13239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDragOver
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13267,7 +13267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDragLeave
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13291,7 +13291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDragEnter
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13317,7 +13317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDragDetected
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -13345,7 +13345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnDragCancelled
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -13369,7 +13369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE6180
+	 * 		Offset -> 0x01DE6E60
 	 * 		Name   -> Function UMG.UserWidget.OnAnimationStarted
 	 * 		Flags  -> (BlueprintCosmetic, Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -13392,7 +13392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE60F0
+	 * 		Offset -> 0x01DE6DD0
 	 * 		Name   -> Function UMG.UserWidget.OnAnimationFinished
 	 * 		Flags  -> (BlueprintCosmetic, Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -13415,7 +13415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnAnalogValueChanged
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13441,7 +13441,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.OnAddedToFocusPath
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -13463,7 +13463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5F70
+	 * 		Offset -> 0x01DE6C50
 	 * 		Name   -> Function UMG.UserWidget.ListenForInputAction
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -13492,7 +13492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5F40
+	 * 		Offset -> 0x01DE6C20
 	 * 		Name   -> Function UMG.UserWidget.IsPlayingAnimation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13514,7 +13514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5EB0
+	 * 		Offset -> 0x01DE6B90
 	 * 		Name   -> Function UMG.UserWidget.IsListeningForInputAction
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -13539,7 +13539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5CE0
+	 * 		Offset -> 0x01DE69C0
 	 * 		Name   -> Function UMG.UserWidget.IsInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13561,7 +13561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.IsInteractable
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent, Const)
 	 */
@@ -13582,7 +13582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5E80
+	 * 		Offset -> 0x01DE6B60
 	 * 		Name   -> Function UMG.UserWidget.IsAnyAnimationPlaying
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13604,7 +13604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5DF0
+	 * 		Offset -> 0x01DE6AD0
 	 * 		Name   -> Function UMG.UserWidget.IsAnimationPlayingForward
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13629,7 +13629,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5D60
+	 * 		Offset -> 0x01DE6A40
 	 * 		Name   -> Function UMG.UserWidget.IsAnimationPlaying
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -13654,7 +13654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5D10
+	 * 		Offset -> 0x01DE69F0
 	 * 		Name   -> Function UMG.UserWidget.GetOwningPlayerPawn
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13676,7 +13676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5CE0
+	 * 		Offset -> 0x01DE69C0
 	 * 		Name   -> Function UMG.UserWidget.GetIsVisible
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13698,7 +13698,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5C40
+	 * 		Offset -> 0x01DE6920
 	 * 		Name   -> Function UMG.UserWidget.GetAnimationCurrentTime
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -13723,7 +13723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5C00
+	 * 		Offset -> 0x01DE68E0
 	 * 		Name   -> Function UMG.UserWidget.GetAnchorsInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13745,7 +13745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5BC0
+	 * 		Offset -> 0x01DE68A0
 	 * 		Name   -> Function UMG.UserWidget.GetAlignmentInViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -13767,7 +13767,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -13786,7 +13786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function UMG.UserWidget.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -13805,7 +13805,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5BA0
+	 * 		Offset -> 0x01DE6880
 	 * 		Name   -> Function UMG.UserWidget.CancelLatentActions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -13825,7 +13825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5AC0
+	 * 		Offset -> 0x01DE67A0
 	 * 		Name   -> Function UMG.UserWidget.BindToAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13850,7 +13850,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE59E0
+	 * 		Offset -> 0x01DE66C0
 	 * 		Name   -> Function UMG.UserWidget.BindToAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13875,7 +13875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5870
+	 * 		Offset -> 0x01DE6550
 	 * 		Name   -> Function UMG.UserWidget.BindToAnimationEvent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13904,7 +13904,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE57F0
+	 * 		Offset -> 0x01DE64D0
 	 * 		Name   -> Function UMG.UserWidget.AddToViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13927,7 +13927,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE5760
+	 * 		Offset -> 0x01DE6440
 	 * 		Name   -> Function UMG.UserWidget.AddToPlayerScreen
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -13966,7 +13966,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9610
+	 * 		Offset -> 0x01DEA2F0
 	 * 		Name   -> Function UMG.VerticalBox.AddChildToVerticalBox
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14005,7 +14005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAE60
+	 * 		Offset -> 0x01DEBB40
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14028,7 +14028,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAC00
+	 * 		Offset -> 0x01DEB8E0
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14051,7 +14051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA790
+	 * 		Offset -> 0x01DEB470
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14074,7 +14074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEA210
+	 * 		Offset -> 0x01DEAEF0
 	 * 		Name   -> Function UMG.VerticalBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14111,7 +14111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB080
+	 * 		Offset -> 0x01DEBD60
 	 * 		Name   -> Function UMG.Viewport.Spawn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14136,7 +14136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAF70
+	 * 		Offset -> 0x01DEBC50
 	 * 		Name   -> Function UMG.Viewport.SetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -14159,7 +14159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEAEE0
+	 * 		Offset -> 0x01DEBBC0
 	 * 		Name   -> Function UMG.Viewport.SetViewLocation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -14182,7 +14182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9C60
+	 * 		Offset -> 0x01DEA940
 	 * 		Name   -> Function UMG.Viewport.GetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -14204,7 +14204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9CA0
+	 * 		Offset -> 0x01DEA980
 	 * 		Name   -> Function UMG.Viewport.GetViewportWorld
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -14226,7 +14226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9C20
+	 * 		Offset -> 0x01DEA900
 	 * 		Name   -> Function UMG.Viewport.GetViewLocation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -14262,7 +14262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9BF0
+	 * 		Offset -> 0x01DEA8D0
 	 * 		Name   -> Function UMG.VisibilityBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -14298,7 +14298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB2F0
+	 * 		Offset -> 0x01DEBFD0
 	 * 		Name   -> Function UMG.WidgetAnimation.UnbindFromAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14323,7 +14323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB210
+	 * 		Offset -> 0x01DEBEF0
 	 * 		Name   -> Function UMG.WidgetAnimation.UnbindFromAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14348,7 +14348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB190
+	 * 		Offset -> 0x01DEBE70
 	 * 		Name   -> Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14371,7 +14371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEB110
+	 * 		Offset -> 0x01DEBDF0
 	 * 		Name   -> Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14394,7 +14394,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9B80
+	 * 		Offset -> 0x01DEA860
 	 * 		Name   -> Function UMG.WidgetAnimation.GetStartTime
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -14416,7 +14416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE99C0
+	 * 		Offset -> 0x01DEA6A0
 	 * 		Name   -> Function UMG.WidgetAnimation.GetEndTime
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -14438,7 +14438,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE9780
+	 * 		Offset -> 0x01DEA460
 	 * 		Name   -> Function UMG.WidgetAnimation.BindToAnimationStarted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14463,7 +14463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DE96A0
+	 * 		Offset -> 0x01DEA380
 	 * 		Name   -> Function UMG.WidgetAnimation.BindToAnimationFinished
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -14516,7 +14516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED210
+	 * 		Offset -> 0x01DEDEF0
 	 * 		Name   -> Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -14557,7 +14557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED010
+	 * 		Offset -> 0x01DEDCF0
 	 * 		Name   -> Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -14610,7 +14610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF2F0
+	 * 		Offset -> 0x01DEFFD0
 	 * 		Name   -> Function UMG.WidgetBinding.GetValue
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -14660,7 +14660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0840
+	 * 		Offset -> 0x01DF1520
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.UnlockMouse
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -14687,7 +14687,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF07D0
+	 * 		Offset -> 0x01DF14B0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.Unhandled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -14709,7 +14709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0640
+	 * 		Offset -> 0x01DF1320
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetWindowTitleBarState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14740,7 +14740,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF05B0
+	 * 		Offset -> 0x01DF1290
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetWindowTitleBarOnCloseClickedDelegate
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14763,7 +14763,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0530
+	 * 		Offset -> 0x01DF1210
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetWindowTitleBarCloseButtonActive
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14786,7 +14786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECAD0
+	 * 		Offset -> 0x01DED7B0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetUserFocus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -14817,7 +14817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0410
+	 * 		Offset -> 0x01DF10F0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetMousePosition
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -14846,7 +14846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0320
+	 * 		Offset -> 0x01DF1000
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetInputMode_UIOnlyEx
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14873,7 +14873,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0220
+	 * 		Offset -> 0x01DF0F00
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetInputMode_UIOnly
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14900,7 +14900,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF01B0
+	 * 		Offset -> 0x01DF0E90
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetInputMode_GameOnly
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14923,7 +14923,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF0070
+	 * 		Offset -> 0x01DF0D50
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14952,7 +14952,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFF30
+	 * 		Offset -> 0x01DF0C10
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUI
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -14981,7 +14981,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFE00
+	 * 		Offset -> 0x01DF0AE0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetHardwareCursor
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15012,7 +15012,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFDE0
+	 * 		Offset -> 0x01DF0AC0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetFocusToGameViewport
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -15032,7 +15032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFC90
+	 * 		Offset -> 0x01DF0970
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetColorVisionDeficiencyType
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -15061,7 +15061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFAE0
+	 * 		Offset -> 0x01DF07C0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetBrushResourceToTexture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -15088,7 +15088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFAE0
+	 * 		Offset -> 0x01DF07C0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.SetBrushResourceToMaterial
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -15115,7 +15115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEFAC0
+	 * 		Offset -> 0x01DF07A0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.RestorePreviousWindowTitleBarState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -15135,7 +15135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF9D0
+	 * 		Offset -> 0x01DF06B0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.ReleaseMouseCapture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15162,7 +15162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECD70
+	 * 		Offset -> 0x01DEDA50
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.ReleaseJoystickCapture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15191,7 +15191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction UMG.WidgetBlueprintLibrary.OnGameWindowCloseButtonClickedDelegate__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -15210,7 +15210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF920
+	 * 		Offset -> 0x01DF0600
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.NoResourceBrush
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -15232,7 +15232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF790
+	 * 		Offset -> 0x01DF0470
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.MakeBrushFromTexture
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15261,7 +15261,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF600
+	 * 		Offset -> 0x01DF02E0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.MakeBrushFromMaterial
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15290,7 +15290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF4F0
+	 * 		Offset -> 0x01DF01D0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.MakeBrushFromAsset
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15315,7 +15315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF3C0
+	 * 		Offset -> 0x01DF00A0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.LockMouse
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15344,7 +15344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF390
+	 * 		Offset -> 0x01DF0070
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.IsDragDropping
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -15366,7 +15366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF320
+	 * 		Offset -> 0x01DF0000
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.Handled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -15388,7 +15388,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF180
+	 * 		Offset -> 0x01DEFE60
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetSafeZonePadding
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15421,7 +15421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEF000
+	 * 		Offset -> 0x01DEFCE0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetKeyEventFromAnalogInputEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15446,7 +15446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEEEB0
+	 * 		Offset -> 0x01DEFB90
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetInputEventFromPointerEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15471,7 +15471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEEDD0
+	 * 		Offset -> 0x01DEFAB0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetInputEventFromNavigationEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15496,7 +15496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEECB0
+	 * 		Offset -> 0x01DEF990
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetInputEventFromKeyEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15521,7 +15521,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEEBD0
+	 * 		Offset -> 0x01DEF8B0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetInputEventFromCharacterEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15546,7 +15546,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEEA50
+	 * 		Offset -> 0x01DEF730
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetDynamicMaterial
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15573,7 +15573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEEA20
+	 * 		Offset -> 0x01DEF700
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetDragDroppingContent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -15595,7 +15595,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE8A0
+	 * 		Offset -> 0x01DEF580
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetBrushResourceAsTexture2D
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15620,7 +15620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE720
+	 * 		Offset -> 0x01DEF400
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetBrushResourceAsMaterial
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15645,7 +15645,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE5A0
+	 * 		Offset -> 0x01DEF280
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetBrushResource
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15670,7 +15670,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE440
+	 * 		Offset -> 0x01DEF120
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetAllWidgetsWithInterface
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -15701,7 +15701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE2E0
+	 * 		Offset -> 0x01DEEFC0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.GetAllWidgetsOfClass
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -15732,7 +15732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEE1F0
+	 * 		Offset -> 0x01DEEED0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.EndDragDrop
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -15759,7 +15759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEDF90
+	 * 		Offset -> 0x01DEEC70
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DrawTextFormatted
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15796,7 +15796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEDE10
+	 * 		Offset -> 0x01DEEAF0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DrawText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15827,7 +15827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEDC40
+	 * 		Offset -> 0x01DEE920
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DrawLines
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15860,7 +15860,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEDA40
+	 * 		Offset -> 0x01DEE720
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DrawLine
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15895,7 +15895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED890
+	 * 		Offset -> 0x01DEE570
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DrawBox
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -15928,7 +15928,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED870
+	 * 		Offset -> 0x01DEE550
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DismissAllMenus
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -15948,7 +15948,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED620
+	 * 		Offset -> 0x01DEE300
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DetectDragIfPressed
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -15977,7 +15977,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DED450
+	 * 		Offset -> 0x01DEE130
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.DetectDrag
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -16008,7 +16008,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECF90
+	 * 		Offset -> 0x01DEDC70
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.CreateDragDropOperation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -16033,7 +16033,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECEA0
+	 * 		Offset -> 0x01DEDB80
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.Create
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -16062,7 +16062,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECD70
+	 * 		Offset -> 0x01DEDA50
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.ClearUserFocus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -16091,7 +16091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECC40
+	 * 		Offset -> 0x01DED920
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.CaptureMouse
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -16120,7 +16120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECAD0
+	 * 		Offset -> 0x01DED7B0
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.CaptureJoystick
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -16151,7 +16151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DECAB0
+	 * 		Offset -> 0x01DED790
 	 * 		Name   -> Function UMG.WidgetBlueprintLibrary.CancelDragDrop
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -16185,7 +16185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3D80
+	 * 		Offset -> 0x01DF4A60
 	 * 		Name   -> Function UMG.WidgetComponent.SetWindowVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16208,7 +16208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3CF0
+	 * 		Offset -> 0x01DF49D0
 	 * 		Name   -> Function UMG.WidgetComponent.SetWindowFocusable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16231,7 +16231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3C70
+	 * 		Offset -> 0x01DF4950
 	 * 		Name   -> Function UMG.WidgetComponent.SetWidgetSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16254,7 +16254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3BE0
+	 * 		Offset -> 0x01DF48C0
 	 * 		Name   -> Function UMG.WidgetComponent.SetWidget
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16277,7 +16277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3B50
+	 * 		Offset -> 0x01DF4830
 	 * 		Name   -> Function UMG.WidgetComponent.SetTwoSided
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16300,7 +16300,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3AD0
+	 * 		Offset -> 0x01DF47B0
 	 * 		Name   -> Function UMG.WidgetComponent.SetTintColorAndOpacity
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -16323,7 +16323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3A50
+	 * 		Offset -> 0x01DF4730
 	 * 		Name   -> Function UMG.WidgetComponent.SetTickWhenOffscreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16346,7 +16346,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF39D0
+	 * 		Offset -> 0x01DF46B0
 	 * 		Name   -> Function UMG.WidgetComponent.SetRedrawTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16369,7 +16369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3940
+	 * 		Offset -> 0x01DF4620
 	 * 		Name   -> Function UMG.WidgetComponent.SetPivot
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -16392,7 +16392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF38C0
+	 * 		Offset -> 0x01DF45A0
 	 * 		Name   -> Function UMG.WidgetComponent.SetOwnerPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16415,7 +16415,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3830
+	 * 		Offset -> 0x01DF4510
 	 * 		Name   -> Function UMG.WidgetComponent.SetManuallyRedraw
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16438,7 +16438,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF37B0
+	 * 		Offset -> 0x01DF4490
 	 * 		Name   -> Function UMG.WidgetComponent.SetGeometryMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16461,7 +16461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF36B0
+	 * 		Offset -> 0x01DF4390
 	 * 		Name   -> Function UMG.WidgetComponent.SetDrawSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -16484,7 +16484,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3630
+	 * 		Offset -> 0x01DF4310
 	 * 		Name   -> Function UMG.WidgetComponent.SetDrawAtDesiredSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16507,7 +16507,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF35B0
+	 * 		Offset -> 0x01DF4290
 	 * 		Name   -> Function UMG.WidgetComponent.SetCylinderArcAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16530,7 +16530,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3450
+	 * 		Offset -> 0x01DF4130
 	 * 		Name   -> Function UMG.WidgetComponent.SetBackgroundColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -16553,7 +16553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3270
+	 * 		Offset -> 0x01DF3F50
 	 * 		Name   -> Function UMG.WidgetComponent.RequestRedraw
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -16573,7 +16573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2AF0
+	 * 		Offset -> 0x01DF37D0
 	 * 		Name   -> Function UMG.WidgetComponent.GetWindowVisiblility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16595,7 +16595,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2AD0
+	 * 		Offset -> 0x01DF37B0
 	 * 		Name   -> Function UMG.WidgetComponent.GetWindowFocusable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16617,7 +16617,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2AB0
+	 * 		Offset -> 0x01DF3790
 	 * 		Name   -> Function UMG.WidgetComponent.GetWidgetSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16639,7 +16639,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF28B0
+	 * 		Offset -> 0x01DF3590
 	 * 		Name   -> Function UMG.WidgetComponent.GetUserWidgetObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16661,7 +16661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2890
+	 * 		Offset -> 0x01DF3570
 	 * 		Name   -> Function UMG.WidgetComponent.GetTwoSided
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16683,7 +16683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2870
+	 * 		Offset -> 0x01DF3550
 	 * 		Name   -> Function UMG.WidgetComponent.GetTickWhenOffscreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16705,7 +16705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2840
+	 * 		Offset -> 0x01DF3520
 	 * 		Name   -> Function UMG.WidgetComponent.GetRenderTarget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16727,7 +16727,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2820
+	 * 		Offset -> 0x01DF3500
 	 * 		Name   -> Function UMG.WidgetComponent.GetRedrawTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16749,7 +16749,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2740
+	 * 		Offset -> 0x01DF3420
 	 * 		Name   -> Function UMG.WidgetComponent.GetPivot
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16771,7 +16771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2710
+	 * 		Offset -> 0x01DF33F0
 	 * 		Name   -> Function UMG.WidgetComponent.GetOwnerPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16793,7 +16793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF24F0
+	 * 		Offset -> 0x01DF31D0
 	 * 		Name   -> Function UMG.WidgetComponent.GetMaterialInstance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16815,7 +16815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019ACA00
+	 * 		Offset -> 0x019AD6E0
 	 * 		Name   -> Function UMG.WidgetComponent.GetManuallyRedraw
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16837,7 +16837,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2420
+	 * 		Offset -> 0x01DF3100
 	 * 		Name   -> Function UMG.WidgetComponent.GetGeometryMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16859,7 +16859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF23E0
+	 * 		Offset -> 0x01DF30C0
 	 * 		Name   -> Function UMG.WidgetComponent.GetDrawSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16881,7 +16881,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF23C0
+	 * 		Offset -> 0x01DF30A0
 	 * 		Name   -> Function UMG.WidgetComponent.GetDrawAtDesiredSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16903,7 +16903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF23A0
+	 * 		Offset -> 0x01DF3080
 	 * 		Name   -> Function UMG.WidgetComponent.GetCylinderArcAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16925,7 +16925,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2360
+	 * 		Offset -> 0x01DF3040
 	 * 		Name   -> Function UMG.WidgetComponent.GetCurrentDrawSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -16961,7 +16961,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3730
+	 * 		Offset -> 0x01DF4410
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.SetFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -16984,7 +16984,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF34D0
+	 * 		Offset -> 0x01DF41B0
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.SetCustomHitResult
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -17007,7 +17007,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3310
+	 * 		Offset -> 0x01DF3FF0
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.SendKeyChar
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17034,7 +17034,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3290
+	 * 		Offset -> 0x01DF3F70
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.ScrollWheel
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17057,7 +17057,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3120
+	 * 		Offset -> 0x01DF3E00
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.ReleasePointerKey
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17080,7 +17080,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3020
+	 * 		Offset -> 0x01DF3D00
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.ReleaseKey
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17105,7 +17105,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2DE0
+	 * 		Offset -> 0x01DF3AC0
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.PressPointerKey
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17128,7 +17128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2CA0
+	 * 		Offset -> 0x01DF3980
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.PressKey
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17155,7 +17155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2BA0
+	 * 		Offset -> 0x01DF3880
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.PressAndReleaseKey
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17180,7 +17180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2B70
+	 * 		Offset -> 0x01DF3850
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.IsOverInteractableWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17202,7 +17202,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2B40
+	 * 		Offset -> 0x01DF3820
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17224,7 +17224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2B10
+	 * 		Offset -> 0x01DF37F0
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.IsOverFocusableWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17246,7 +17246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2470
+	 * 		Offset -> 0x01DF3150
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.GetLastHitResult
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17268,7 +17268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2440
+	 * 		Offset -> 0x01DF3120
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17290,7 +17290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2320
+	 * 		Offset -> 0x01DF3000
 	 * 		Name   -> Function UMG.WidgetInteractionComponent.Get2DHitLocation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -17326,7 +17326,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4400
+	 * 		Offset -> 0x01DF50E0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsWrapBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17351,7 +17351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4380
+	 * 		Offset -> 0x01DF5060
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsWidgetSwitcherSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17376,7 +17376,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4300
+	 * 		Offset -> 0x01DF4FE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsVerticalBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17401,7 +17401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4280
+	 * 		Offset -> 0x01DF4F60
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsUniformGridSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17426,7 +17426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4200
+	 * 		Offset -> 0x01DF4EE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsSizeBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17451,7 +17451,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4180
+	 * 		Offset -> 0x01DF4E60
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsScrollBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17476,7 +17476,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4100
+	 * 		Offset -> 0x01DF4DE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsScaleBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17501,7 +17501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4080
+	 * 		Offset -> 0x01DF4D60
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsSafeBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17526,7 +17526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF4000
+	 * 		Offset -> 0x01DF4CE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsOverlaySlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17551,7 +17551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3F80
+	 * 		Offset -> 0x01DF4C60
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsHorizontalBoxSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17576,7 +17576,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3F00
+	 * 		Offset -> 0x01DF4BE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsGridSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17601,7 +17601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3E80
+	 * 		Offset -> 0x01DF4B60
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsCanvasSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17626,7 +17626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3E00
+	 * 		Offset -> 0x01DF4AE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.SlotAsBorderSlot
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17651,7 +17651,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF3200
+	 * 		Offset -> 0x01DF3EE0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.RemoveAllWidgets
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -17674,7 +17674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2EC0
+	 * 		Offset -> 0x01DF3BA0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.ProjectWorldLocationToWidgetPosition
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17707,7 +17707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2A00
+	 * 		Offset -> 0x01DF36E0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetViewportWidgetGeometry
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -17732,7 +17732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2970
+	 * 		Offset -> 0x01DF3650
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetViewportSize
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17757,7 +17757,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF28E0
+	 * 		Offset -> 0x01DF35C0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetViewportScale
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17782,7 +17782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2770
+	 * 		Offset -> 0x01DF3450
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetPlayerScreenWidgetGeometry
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -17807,7 +17807,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF25F0
+	 * 		Offset -> 0x01DF32D0
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetMousePositionScaledByDPI
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -17839,7 +17839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2560
+	 * 		Offset -> 0x01DF3240
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetMousePositionOnViewport
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -17864,7 +17864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF2520
+	 * 		Offset -> 0x01DF3200
 	 * 		Name   -> Function UMG.WidgetLayoutLibrary.GetMousePositionOnPlatform
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 */
@@ -17914,7 +17914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5720
+	 * 		Offset -> 0x01DF6400
 	 * 		Name   -> Function UMG.WidgetSwitcher.SetActiveWidgetIndex
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17937,7 +17937,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DD2D70
+	 * 		Offset -> 0x01DD3A50
 	 * 		Name   -> Function UMG.WidgetSwitcher.SetActiveWidget
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -17960,7 +17960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5690
+	 * 		Offset -> 0x01DF6370
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetWidgetAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -17985,7 +17985,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5660
+	 * 		Offset -> 0x01DF6340
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetNumWidgets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -18007,7 +18007,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5630
+	 * 		Offset -> 0x01DF6310
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -18029,7 +18029,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5600
+	 * 		Offset -> 0x01DF62E0
 	 * 		Name   -> Function UMG.WidgetSwitcher.GetActiveWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -18065,7 +18065,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5D80
+	 * 		Offset -> 0x01DF6A60
 	 * 		Name   -> Function UMG.WidgetSwitcherSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18088,7 +18088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5B40
+	 * 		Offset -> 0x01DF6820
 	 * 		Name   -> Function UMG.WidgetSwitcherSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18111,7 +18111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF58C0
+	 * 		Offset -> 0x01DF65A0
 	 * 		Name   -> Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18162,7 +18162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5E00
+	 * 		Offset -> 0x01DF6AE0
 	 * 		Name   -> Function UMG.WindowTitleBarArea.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18185,7 +18185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5BD0
+	 * 		Offset -> 0x01DF68B0
 	 * 		Name   -> Function UMG.WindowTitleBarArea.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18208,7 +18208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5940
+	 * 		Offset -> 0x01DF6620
 	 * 		Name   -> Function UMG.WindowTitleBarArea.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18245,7 +18245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5E80
+	 * 		Offset -> 0x01DF6B60
 	 * 		Name   -> Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18268,7 +18268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5C60
+	 * 		Offset -> 0x01DF6940
 	 * 		Name   -> Function UMG.WindowTitleBarAreaSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18291,7 +18291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF59C0
+	 * 		Offset -> 0x01DF66A0
 	 * 		Name   -> Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18328,7 +18328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5AC0
+	 * 		Offset -> 0x01DF67A0
 	 * 		Name   -> Function UMG.WrapBox.SetInnerSlotPadding
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -18351,7 +18351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5570
+	 * 		Offset -> 0x01DF6250
 	 * 		Name   -> Function UMG.WrapBox.AddChildToWrapBox
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18390,7 +18390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5F00
+	 * 		Offset -> 0x01DF6BE0
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18413,7 +18413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5CF0
+	 * 		Offset -> 0x01DF69D0
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18436,7 +18436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5A40
+	 * 		Offset -> 0x01DF6720
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18459,7 +18459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF5840
+	 * 		Offset -> 0x01DF6520
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -18482,7 +18482,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DF57B0
+	 * 		Offset -> 0x01DF6490
 	 * 		Name   -> Function UMG.WrapBoxSlot.SetFillEmptySpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

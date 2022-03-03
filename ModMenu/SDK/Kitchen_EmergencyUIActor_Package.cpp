@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Kitchen_EmergencyUIActor.Kitchen_EmergencyUIActor_C.GetUIWidget
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Kitchen_EmergencyUIActor.Kitchen_EmergencyUIActor_C.PlayEmergencyText
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Kitchen_EmergencyUIActor.Kitchen_EmergencyUIActor_C.ExecuteUbergraph_Kitchen_EmergencyUIActor
 	 * 		Flags  -> (Final)
 	 * Parameters:

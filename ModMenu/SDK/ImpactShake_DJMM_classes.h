@@ -18,7 +18,7 @@ namespace CG
 	 * BlueprintGeneratedClass ImpactShake_DJMM.ImpactShake_DJMM_C
 	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
 	 */
-	class UImpactShake_DJMM_C : public UCameraShake
+	class UImpactShake_DJMM_C : public FEngine_UCameraShake
 	{
 	public:
 		static UClass* StaticClass();

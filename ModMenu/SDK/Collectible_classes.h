@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass Collectible.Collectible_C
-	 * Size -> 0x005A (FullSize[0x0282] - InheritedSize[0x0228])
+	 * Size -> 0x0070 (FullSize[0x0298] - InheritedSize[0x0228])
 	 */
 	class ACollectible_C : public AActor
 	{
@@ -28,13 +28,15 @@ namespace CG
 		class UPlayerInteractHoldComponent_C*                      PlayerInteractHoldComponent;                             // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0250(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanCollect;                                              // 0x0258(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_1TJ4[0x3];                                   // 0x0259(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_275K[0x3];                                   // 0x0259(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                ItemName;                                                // 0x025C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_QC77[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BACC[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnCollected;                                             // 0x0268(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class UAkAudioEvent*                                       BeginCollectEvent;                                       // 0x0278(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IgnoreLineTrace;                                         // 0x0280(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		fnaf9_ECameraAngleFlags                                    InteractAnglesToCheck;                                   // 0x0281(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_YI17[0x6];                                   // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             PreOnCollected;                                          // 0x0288(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
@@ -61,6 +63,7 @@ namespace CG
 		void OnPlayerInteractCancel();
 		void CheckForSugarHighAchievement();
 		void ExecuteUbergraph_Collectible(int32_t EntryPoint);
+		void PreOnCollected__DelegateSignature();
 		void OnCollected__DelegateSignature();
 		static UClass* StaticClass();
 	};

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_NextStep.StaffbotKitchen_NextStep_C.UpdateInstructionsText
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function StaffbotKitchen_NextStep.StaffbotKitchen_NextStep_C.ExecuteUbergraph_StaffbotKitchen_NextStep
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

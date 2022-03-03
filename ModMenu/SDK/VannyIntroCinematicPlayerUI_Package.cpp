@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "VannyIntroCinematicPlayerUI_Package.h"
 
 namespace CG
 {
@@ -13,83 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UVannyIntroCinematicPlayerUI_C::VannyIntroVideo()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo");
-		
-		UVannyIntroCinematicPlayerUI_C_VannyIntroVideo_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UVannyIntroCinematicPlayerUI_C::StopVideo()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo");
-		
-		UVannyIntroCinematicPlayerUI_C_StopVideo_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UVannyIntroCinematicPlayerUI_C::MakeTextVisibleAgain()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain");
-		
-		UVannyIntroCinematicPlayerUI_C_MakeTextVisibleAgain_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
-	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UVannyIntroCinematicPlayerUI_C::StartTextFadeAway()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway");
-		
-		UVannyIntroCinematicPlayerUI_C_StartTextFadeAway_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -113,7 +36,83 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::VannyIntroVideo()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo");
+		
+		UVannyIntroCinematicPlayerUI_C_VannyIntroVideo_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::StopVideo()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo");
+		
+		UVannyIntroCinematicPlayerUI_C_StopVideo_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::MakeTextVisibleAgain()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain");
+		
+		UVannyIntroCinematicPlayerUI_C_MakeTextVisibleAgain_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::StartTextFadeAway()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway");
+		
+		UVannyIntroCinematicPlayerUI_C_StartTextFadeAway_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.SetText
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -132,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayVanny00004
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -151,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayFreddy00175
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -170,13 +169,73 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Start Hold Timer
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::Start_Hold_Timer()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Start Hold Timer");
+		
+		UVannyIntroCinematicPlayerUI_C_Start_Hold_Timer_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Stop Hold Timer
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::Stop_Hold_Timer()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Stop Hold Timer");
+		
+		UVannyIntroCinematicPlayerUI_C_Stop_Hold_Timer_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnMediaOpened
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FString                                      OpenedUrl                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	 */
+	void UVannyIntroCinematicPlayerUI_C::OnMediaOpened(const class FString& OpenedUrl)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnMediaOpened");
+		
+		UVannyIntroCinematicPlayerUI_C_OnMediaOpened_Params params {};
+		params.OpenedUrl = OpenedUrl;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.ExecuteUbergraph_VannyIntroCinematicPlayerUI
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVannyIntroCinematicPlayerUI_C::ExecuteUbergraph_VannyIntroCinematicPlayerUI(int EntryPoint)
+	void UVannyIntroCinematicPlayerUI_C::ExecuteUbergraph_VannyIntroCinematicPlayerUI(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -192,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnStopFinished__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

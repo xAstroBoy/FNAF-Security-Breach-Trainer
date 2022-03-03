@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_BE0A21D34FD972770DDC5A8419869399
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_D321553E4DC1C4E5D21BB5B2216ED8B2
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_AC6DE28341E03DFCA5A7AA8D3B9F922D
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_AnimDynamics_E01DB40E4B84BD930E776DBB26E79AE2
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_LayeredBoneBlend_F3E889F74515D9702CD2B3AE89C893A0
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimNotify_ChooseRandomPose
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimNotify_DestroyActor
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_674E5E8F431332E8A0C36ABC5FF5FC0E
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -229,7 +229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.ExecuteUbergraph_MoonmanSequence_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

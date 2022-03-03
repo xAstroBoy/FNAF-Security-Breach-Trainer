@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
-		void ExecuteUbergraph_SyrupVatsEntryTime_Trigger(int EntryPoint);
+		void ExecuteUbergraph_SyrupVatsEntryTime_Trigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3D20
+	 * 		Offset -> 0x00AF3D60
 	 * 		Name   -> Function AudioCapture.AudioCapture.StopCapturingAudio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3D00
+	 * 		Offset -> 0x00AF3D40
 	 * 		Name   -> Function AudioCapture.AudioCapture.StartCapturingAudio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3CD0
+	 * 		Offset -> 0x00AF3D10
 	 * 		Name   -> Function AudioCapture.AudioCapture.IsCapturingAudio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3C30
+	 * 		Offset -> 0x00AF3C70
 	 * 		Name   -> Function AudioCapture.AudioCapture.GetAudioCaptureDeviceInfo
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3C00
+	 * 		Offset -> 0x00AF3C40
 	 * 		Name   -> Function AudioCapture.AudioCaptureFunctionLibrary.CreateAudioCapture
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

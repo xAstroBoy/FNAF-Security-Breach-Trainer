@@ -100,6 +100,13 @@ namespace CG
 	};
 
 	/**
+	 * Function MainGameStartupSequence.MainGameStartupSequence_C.End Loading Screen
+	 */
+	struct AMainGameStartupSequence_C_End_Loading_Screen_Params
+	{
+	};
+
+	/**
 	 * Function MainGameStartupSequence.MainGameStartupSequence_C.ExecuteUbergraph_MainGameStartupSequence
 	 */
 	struct AMainGameStartupSequence_C_ExecuteUbergraph_MainGameStartupSequence_Params

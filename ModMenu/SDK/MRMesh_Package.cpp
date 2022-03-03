@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988690
+	 * 		Offset -> 0x01989370
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.StopReconstruction
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988670
+	 * 		Offset -> 0x01989350
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.StartReconstruction
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988650
+	 * 		Offset -> 0x01989330
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.PauseReconstruction
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988620
+	 * 		Offset -> 0x01989300
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.IsReconstructionStarted
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -94,7 +94,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019885F0
+	 * 		Offset -> 0x019892D0
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.IsReconstructionPaused
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019884F0
+	 * 		Offset -> 0x019891D0
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.DisconnectMRMesh
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019883E0
+	 * 		Offset -> 0x019890C0
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.ConnectMRMesh
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -173,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -203,7 +203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988510
+	 * 		Offset -> 0x019891F0
 	 * 		Name   -> Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -226,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988470
+	 * 		Offset -> 0x01989150
 	 * 		Name   -> Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -263,7 +263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019885B0
+	 * 		Offset -> 0x01989290
 	 * 		Name   -> Function MRMesh.MRMeshComponent.IsConnected
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -285,7 +285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01988590
+	 * 		Offset -> 0x01989270
 	 * 		Name   -> Function MRMesh.MRMeshComponent.ForceNavMeshUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -305,7 +305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019883B0
+	 * 		Offset -> 0x01989090
 	 * 		Name   -> Function MRMesh.MRMeshComponent.Clear
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

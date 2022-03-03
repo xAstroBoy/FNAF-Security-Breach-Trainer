@@ -32,7 +32,7 @@ namespace CG
 		class USkeletalMeshComponent*                              ShatteredMonty;                                          // 0x0268(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0270(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       Is_Sparking;                                             // 0x0278(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_SOAJ[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J9GZ[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Beam1[0x28];                                             // 0x0279(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Beam2[0x28];                                             // 0x02A8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Beam3[0x28];                                             // 0x02D0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
@@ -42,10 +42,6 @@ namespace CG
 		void OnSuccess_B1B69CE74ABD96C5F5032986CB0300E2();
 		void OnFailure_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void OnSuccess_58B7ED6B4FD53D679070E8A8EA58ADE3(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
-		void OnFailure_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
-		void OnSuccess_BE8F1D784F4D64083536E28939128882(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
-		void OnFailure_784BAEFD4B25502D92084086769DB95B();
-		void OnSuccess_784BAEFD4B25502D92084086769DB95B();
 		void ReceiveBeginPlay();
 		void On_Monty_Claws_Collected();
 		void Set_State(bool Enabled);

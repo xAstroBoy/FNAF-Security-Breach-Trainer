@@ -39,7 +39,7 @@ namespace CG
 		class UBoxComponent*                                       LookOutWindowTrigger;                                    // 0x02A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UBoxComponent*                                       VanessaRemoveBox;                                        // 0x02A8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USetupSplineMovement_C*                              SetupSplineMovement;                                     // 0x02B0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_PHS1[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZTVI[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          GregorySpawnTransform;                                   // 0x02C0(0x0030) Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		class FName                                                MissionToComplete;                                       // 0x02F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                NextMissionToStart;                                      // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -53,21 +53,21 @@ namespace CG
 		unsigned char                                              BackDoorButton[0x28];                                    // 0x03C8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       CanLookOutWindow;                                        // 0x03F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       skip_all;                                                // 0x03F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_36QW[0x2];                                   // 0x03F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TOE1[0x2];                                   // 0x03F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                MissionToStart;                                          // 0x03F4(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanPlayDoorLockedSequence;                               // 0x03FC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_06TB[0x3];                                   // 0x03FD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1XPZ[0x3];                                   // 0x03FD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class APre_Speaker_C*                                      Speaker;                                                 // 0x0400(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<class AFirstPersonCharacter_C*>                     Characters;                                              // 0x0408(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
 		unsigned char                                              ExitDoor[0x28];                                          // 0x0418(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       play_wrong_door;                                         // 0x0440(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       DebugSkip;                                               // 0x0441(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       WrongDoorPlaying;                                        // 0x0442(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_P8H7[0x5];                                   // 0x0443(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YQIF[0x5];                                   // 0x0443(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              LineSkipper[0x28];                                       // 0x0443(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              MedScanSequence[0x28];                                   // 0x0470(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		struct FTemplateSequenceBindingOverrideData                NewVar_1;                                                // 0x0498(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
-		unsigned char                                              UnknownData_92LH[0x4];                                   // 0x04A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X0IE[0x4];                                   // 0x04A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AMainGamePC_C*                                       PlayerController;                                        // 0x04A8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              FreddyLocation[0x28];                                    // 0x04B0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		TArray<class FName>                                        MissionsWithoutFreddy;                                   // 0x04D8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
@@ -78,7 +78,7 @@ namespace CG
 		unsigned char                                              MaintanenceDoor[0x28];                                   // 0x0548(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              FreddyPowerProximityActor[0x28];                         // 0x0570(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       PausedMixState;                                          // 0x0598(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_TZB0[0x7];                                   // 0x0599(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_F6RY[0x7];                                   // 0x0599(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              PlanarReflection[0x28];                                  // 0x0599(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Freddy[0x28];                                            // 0x05C8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 

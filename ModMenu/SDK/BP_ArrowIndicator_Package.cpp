@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "BP_ArrowIndicator_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.FadeUPThenDown__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.FadeUPThenDown__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -51,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Timeline_0__FinishedFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -70,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Timeline_0__UpdateFunc
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -89,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -108,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ActivateUP
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -127,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ActivateDown
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -146,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Stop
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -165,13 +164,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ExecuteUbergraph_BP_ArrowIndicator
 	 * 		Flags  -> (Final)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_ArrowIndicator_C::ExecuteUbergraph_BP_ArrowIndicator(int EntryPoint)
+	void ABP_ArrowIndicator_C::ExecuteUbergraph_BP_ArrowIndicator(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

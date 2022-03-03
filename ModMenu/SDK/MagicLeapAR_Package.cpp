@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67660
+	 * 		Offset -> 0x00A676A0
 	 * 		Name   -> Function MagicLeapAR.LuminARSessionFunctionLibrary.StartLuminARSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67350
+	 * 		Offset -> 0x00A67390
 	 * 		Name   -> Function MagicLeapAR.LuminARFrameFunctionLibrary.LuminARLineTrace
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67300
+	 * 		Offset -> 0x00A67340
 	 * 		Name   -> Function MagicLeapAR.LuminARFrameFunctionLibrary.GetTrackingState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67010
+	 * 		Offset -> 0x00A67050
 	 * 		Name   -> Function MagicLeapAR.LuminARImageTrackingFunctionLibrary.AddLuminRuntimeCandidateImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -183,7 +183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67220
+	 * 		Offset -> 0x00A67260
 	 * 		Name   -> Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -219,7 +219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A67330
+	 * 		Offset -> 0x00A67370
 	 * 		Name   -> Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -241,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A672E0
+	 * 		Offset -> 0x00A67320
 	 * 		Name   -> Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

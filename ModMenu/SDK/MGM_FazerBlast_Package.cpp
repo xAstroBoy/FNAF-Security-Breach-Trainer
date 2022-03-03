@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.Set Capture Timer
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.PlayAreaLeave
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.Update Capture Time Queue
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnEnd
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.On Start
 	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
 	 */
@@ -119,7 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.UpdateMissionTask
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.TrySpawn
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -162,7 +162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.UpdateMusic
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -184,7 +184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.FindUsableSpawner
 	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -208,7 +208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.UserConstructionScript
 	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -227,7 +227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnFailure_7D8E43294D1FE2809E40FE959189C6ED
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -246,7 +246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnSuccess_7D8E43294D1FE2809E40FE959189C6ED
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -265,7 +265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnFailure_EE39226D48E410FC896D9D8565A580FF
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -291,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnSuccess_EE39226D48E410FC896D9D8565A580FF
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -317,7 +317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.LaserHit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -341,7 +341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.ForceKill
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -363,7 +363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.GameStart
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -382,7 +382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.GameEnd
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -401,7 +401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.GameExit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -420,7 +420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.PlayerHit
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -442,7 +442,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -461,7 +461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.PlayAreaEnd
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -480,7 +480,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -512,7 +512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.PlayAreaInit
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -531,7 +531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.DoorLock
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -557,7 +557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.SpawnEnemies
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -576,7 +576,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.ResetGame
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -595,7 +595,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.OnElevatorDoorsOpen
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -614,7 +614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.UpdateCaptureTime
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -633,7 +633,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.AddHelmetHUD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -652,7 +652,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.StartFlagCaptureTimer
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -671,7 +671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.CapturedTheFlag
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -690,7 +690,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.GameWon
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -709,7 +709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.LostTheFlag
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -728,7 +728,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.GameLost
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -747,7 +747,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.Remove HUD
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -766,7 +766,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.5SecondsRemainWarning
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -785,7 +785,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.SetDoorsToWinState
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -804,7 +804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function MGM_FazerBlast.MGM_FazerBlast_C.ExecuteUbergraph_MGM_FazerBlast
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -28,7 +28,7 @@ namespace CG
 		class FScriptMulticastDelegate                             PurchaseConfirmationFailure;                             // 0x00F0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             GetPurchaseHistorySuccess;                               // 0x0100(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             GetPurchaseHistoryFailure;                               // 0x0110(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SMM9[0x8];                                   // 0x0120(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QIFI[0x8];                                   // 0x0120(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		bool TryPurchaseItemAsync(const struct FPurchaseItemDetails& ItemDetails);
@@ -72,7 +72,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnHeadTrackingRecovered;                                 // 0x0150(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             OnHeadTrackingRecoveryFailed;                            // 0x0160(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             OnHeadTrackingNewSessionStarted;                         // 0x0170(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_A26A[0x50];                                  // 0x0180(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XRNY[0x50];                                  // 0x0180(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -111,30 +111,30 @@ namespace CG
 	class UMagicLeapMeshTrackerComponent : public USceneComponent
 	{
 	public:
-		unsigned char                                              UnknownData_R4SZ[0x8];                                   // 0x01F0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BD5O[0x8];                                   // 0x01F0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnMeshTrackerUpdated;                                    // 0x01F8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		bool                                                       ScanWorld;                                               // 0x0208(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		MagicLeap_EMagicLeapMeshType                               MeshType;                                                // 0x0209(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0B96[0x6];                                   // 0x020A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_K9Y1[0x6];                                   // 0x020A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBoxComponent*                                       BoundingVolume;                                          // 0x0210(0x0008) Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		MagicLeap_EMagicLeapMeshLOD                                LevelOfDetail;                                           // 0x0218(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_HUS7[0x3];                                   // 0x0219(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0RCW[0x3];                                   // 0x0219(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      PerimeterOfGapsToFill;                                   // 0x021C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Planarize;                                               // 0x0220(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VZCO[0x3];                                   // 0x0221(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J8VB[0x3];                                   // 0x0221(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      DisconnectedSectionArea;                                 // 0x0224(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       RequestNormals;                                          // 0x0228(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       RequestVertexConfidence;                                 // 0x0229(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		MagicLeap_EMagicLeapMeshVertexColorMode                    VertexColorMode;                                         // 0x022A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2NR2[0x5];                                   // 0x022B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_T42I[0x5];                                   // 0x022B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FColor>                                      BlockVertexColors;                                       // 0x0230(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        VertexColorFromConfidenceZero;                           // 0x0240(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        VertexColorFromConfidenceOne;                            // 0x0250(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       RemoveOverlappingTriangles;                              // 0x0260(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LOEG[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AZGJ[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMRMeshComponent*                                    MRMesh;                                                  // 0x0268(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    BricksPerFrame;                                          // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8LHL[0xC];                                   // 0x0274(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MCET[0xC];                                   // 0x0274(0x000C) MISSED OFFSET (PADDING)
 
 	public:
 		void SelectMeshBlocks(const struct FMagicLeapTrackingMeshInfo& NewMeshInfo, TArray<struct FMagicLeapMeshBlockRequest>* RequestedMesh);
@@ -157,7 +157,7 @@ namespace CG
 		bool                                                       bEnableZI;                                               // 0x0028(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseVulkanForZI;                                         // 0x0029(0x0001) ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseMLAudioForZI;                                        // 0x002A(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S75M[0x5];                                   // 0x002B(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TN5C[0x5];                                   // 0x002B(0x0005) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -181,7 +181,7 @@ namespace CG
 	class UMagicLeapRaycastComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_D5BU[0x68];                                  // 0x00B0(0x0068) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7NQA[0x68];                                  // 0x00B0(0x0068) MISSED OFFSET (PADDING)
 
 	public:
 		bool RequestRaycast(const struct FMagicLeapRaycastQueryParams& RequestParams, const class FScriptDelegate& ResultDelegate);

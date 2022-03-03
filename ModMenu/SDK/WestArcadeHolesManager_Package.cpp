@@ -4,7 +4,6 @@
  */
 
 #include "../pch.h"
-#include "WestArcadeHolesManager_Package.h"
 
 namespace CG
 {
@@ -13,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -32,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.Update
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.ExecuteUbergraph_WestArcadeHolesManager
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AWestArcadeHolesManager_C::ExecuteUbergraph_WestArcadeHolesManager(int EntryPoint)
+	void AWestArcadeHolesManager_C::ExecuteUbergraph_WestArcadeHolesManager(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

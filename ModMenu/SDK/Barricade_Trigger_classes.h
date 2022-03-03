@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_Barricade_Trigger(int EntryPoint);
+		void ExecuteUbergraph_Barricade_Trigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

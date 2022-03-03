@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function HackFreddy.HackFreddy_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function HackFreddy.HackFreddy_C.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -62,9 +62,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function HackFreddy.HackFreddy_C.SetFlameTrapsActivatableStateToOff
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UHackFreddy_C::SetFlameTrapsActivatableStateToOff()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function HackFreddy.HackFreddy_C.SetFlameTrapsActivatableStateToOff");
+		
+		UHackFreddy_C_SetFlameTrapsActivatableStateToOff_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function HackFreddy.HackFreddy_C.ExecuteUbergraph_HackFreddy
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

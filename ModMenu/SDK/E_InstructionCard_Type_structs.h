@@ -66,7 +66,8 @@ namespace CG
 		E_InstructionCard_Type__NewEnumerator44       = 44,
 		E_InstructionCard_Type__NewEnumerator45       = 45,
 		E_InstructionCard_Type__NewEnumerator46       = 46,
-		E_InstructionCard_Type__E_InstructionCard_MAX = 47
+		E_InstructionCard_Type__NewEnumerator47       = 47,
+		E_InstructionCard_Type__E_InstructionCard_MAX = 48
 	};
 
 }

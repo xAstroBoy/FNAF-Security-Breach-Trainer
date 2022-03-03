@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		FNAFQualityCommands_EFNAFQualityCommands                   QualityCommand_3_69958D8743DD31385F09D39B833D904A;       // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_86CG[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_03JA[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              PS4_13_B9B60FF847B8378E9569BB80554C703C;                 // 0x0008(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
 		class FString                                              PS5Low_37_D46E0FC54A7F04270DE94D975EC96551;              // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
 		class FString                                              PS5High_36_F19484704FDEE0669B1FE3A0593D9C1C;             // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash

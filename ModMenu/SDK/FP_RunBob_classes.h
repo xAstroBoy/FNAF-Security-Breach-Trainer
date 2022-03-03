@@ -18,7 +18,7 @@ namespace CG
 	 * BlueprintGeneratedClass FP_RunBob.FP_RunBob_C
 	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
 	 */
-	class UFP_RunBob_C : public UCameraShake
+	class UFP_RunBob_C : public FEngine_UCameraShake
 	{
 	public:
 		static UClass* StaticClass();

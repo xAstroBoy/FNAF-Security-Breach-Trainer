@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimGraph
 	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_D232091C479C4B482C932B8A8823732D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_D232091C479C4B482C932B8A8823732D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -80,7 +80,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_D232091C479C4B482C932B8A8823732D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -102,7 +102,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_D232091C479C4B482C932B8A8823732D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -124,7 +124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_D232091C479C4B482C932B8A8823732D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -146,7 +146,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_8D2B4437468C1DB561D00F804E4F270D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -212,7 +212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_8D2B4437468C1DB561D00F804E4F270D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -234,7 +234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_8D2B4437468C1DB561D00F804E4F270D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -256,7 +256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_1905C0E149E72E0A807FA2837C37C760
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -278,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_1905C0E149E72E0A807FA2837C37C760
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -300,7 +300,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_1905C0E149E72E0A807FA2837C37C760
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -322,7 +322,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_1905C0E149E72E0A807FA2837C37C760
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -344,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_1905C0E149E72E0A807FA2837C37C760
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -366,7 +366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_9BFBF4AA4EF8791FF9DE388807B07B4A
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -385,7 +385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_5AFCD48643B368CE6FA1D3AF4C68FED8
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -404,7 +404,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -426,7 +426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ChangeEquipped
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -448,7 +448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PutAway
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -467,7 +467,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PropSwap
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -489,7 +489,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.SetItemDown
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -508,7 +508,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PrimaryActionAnimEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -527,7 +527,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.FazWatchEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -549,7 +549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.BlueprintBeginPlay
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -568,7 +568,86 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_IsFullyDownEvent
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UGreg_FirstPerson_ABP_C::AnimNotify_IsFullyDownEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_IsFullyDownEvent");
+		
+		UGreg_FirstPerson_ABP_C_AnimNotify_IsFullyDownEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_FinishingItemUp
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UGreg_FirstPerson_ABP_C::AnimNotify_FinishingItemUp()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_FinishingItemUp");
+		
+		UGreg_FirstPerson_ABP_C_AnimNotify_FinishingItemUp_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_StartItemUp
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UGreg_FirstPerson_ABP_C::AnimNotify_StartItemUp()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_StartItemUp");
+		
+		UGreg_FirstPerson_ABP_C_AnimNotify_StartItemUp_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.Change Item
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class AEquippable_C*                               NewEquipment                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::Change_Item(class AEquippable_C* NewEquipment)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.Change Item");
+		
+		UGreg_FirstPerson_ABP_C_Change_Item_Params params {};
+		params.NewEquipment = NewEquipment;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ExecuteUbergraph_Greg_FirstPerson_ABP
 	 * 		Flags  -> (Final)
 	 * Parameters:

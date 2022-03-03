@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00695030
+	 * 		Offset -> 0x00695050
 	 * 		Name   -> Function SWGAIUtils.SWGAIUtilLibrary.ClearAllBlackboardValues
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E5B0
+	 * 		Offset -> 0x0076E5F0
 	 * 		Name   -> Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4FF0
+	 * 		Offset -> 0x007D5030
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.TickAtThisTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4FD0
+	 * 		Offset -> 0x007D5010
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4F50
+	 * 		Offset -> 0x007D4F90
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4ED0
+	 * 		Offset -> 0x007D4F10
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -199,7 +199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4C40
+	 * 		Offset -> 0x007D4C80
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4BB0
+	 * 		Offset -> 0x007D4BF0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetGeometryCache
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -247,7 +247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B90
+	 * 		Offset -> 0x007D4BD0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -267,7 +267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B70
+	 * 		Offset -> 0x007D4BB0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B50
+	 * 		Offset -> 0x007D4B90
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayFromStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B30
+	 * 		Offset -> 0x007D4B70
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -327,7 +327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B10
+	 * 		Offset -> 0x007D4B50
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Pause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -347,7 +347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4AE0
+	 * 		Offset -> 0x007D4B20
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlayingReversed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -369,7 +369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4AB0
+	 * 		Offset -> 0x007D4AF0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A80
+	 * 		Offset -> 0x007D4AC0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -413,7 +413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A50
+	 * 		Offset -> 0x007D4A90
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetStartTimeOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -435,7 +435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A20
+	 * 		Offset -> 0x007D4A60
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -457,7 +457,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D49F0
+	 * 		Offset -> 0x007D4A30
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -479,7 +479,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D49C0
+	 * 		Offset -> 0x007D4A00
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetNumberOfFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -501,7 +501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4990
+	 * 		Offset -> 0x007D49D0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4960
+	 * 		Offset -> 0x007D49A0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetAnimationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -573,7 +573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4710
+	 * 		Offset -> 0x007D4750
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -626,7 +626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4CD0
+	 * 		Offset -> 0x007D4D10
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -663,7 +663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4CD0
+	 * 		Offset -> 0x007D4D10
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:

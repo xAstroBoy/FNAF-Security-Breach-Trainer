@@ -21,7 +21,7 @@ namespace CG
 	struct FMagicLeapAudioDummyStruct
 	{
 	public:
-		unsigned char                                              UnknownData_CUD3[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7ELF[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	};
 

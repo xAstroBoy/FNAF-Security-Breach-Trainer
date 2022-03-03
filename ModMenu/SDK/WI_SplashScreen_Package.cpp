@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.Finished_8F3160A34A6083471FA244BA44DBA893
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.Finished_ED02E264450C0755E51C7E8C77320DD8
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.Finished_D294672C42B91612EF919AB67C47CBEF
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.ShowSteelWoolLogo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.SkipLogo
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -107,7 +107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.BndEvt__WI_Eula_K2Node_ComponentBoundEvent_1_TermsAccepted__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.PreviouslyAcceptedTerms
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.Load Level
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -183,9 +183,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.HideCursor
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UWI_SplashScreen_C::HideCursor()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_SplashScreen.WI_SplashScreen_C.HideCursor");
+		
+		UWI_SplashScreen_C_HideCursor_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
+	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.ShowCursorIfNeeded
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UWI_SplashScreen_C::ShowCursorIfNeeded()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_SplashScreen.WI_SplashScreen_C.ShowCursorIfNeeded");
+		
+		UWI_SplashScreen_C_ShowCursorIfNeeded_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.ExecuteUbergraph_WI_SplashScreen
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -205,7 +243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function WI_SplashScreen.WI_SplashScreen_C.NoMoreLogos__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008776A0
+	 * 		Offset -> 0x008776E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.WeldVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -67,7 +67,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877570
+	 * 		Offset -> 0x008775B0
 	 * 		Name   -> Function EditableMesh.EditableMesh.TryToRemoveVertex
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877440
+	 * 		Offset -> 0x00877480
 	 * 		Name   -> Function EditableMesh.EditableMesh.TryToRemovePolygonEdge
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -127,7 +127,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877320
+	 * 		Offset -> 0x00877360
 	 * 		Name   -> Function EditableMesh.EditableMesh.TriangulatePolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008771C0
+	 * 		Offset -> 0x00877200
 	 * 		Name   -> Function EditableMesh.EditableMesh.TessellatePolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -183,7 +183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877100
+	 * 		Offset -> 0x00877140
 	 * 		Name   -> Function EditableMesh.EditableMesh.StartModification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -208,7 +208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876FC0
+	 * 		Offset -> 0x00877000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876DF0
+	 * 		Offset -> 0x00876E30
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitPolygonalMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876C90
+	 * 		Offset -> 0x00876CD0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitEdge
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -297,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876B70
+	 * 		Offset -> 0x00876BB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVerticesCornerSharpness
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -322,7 +322,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876AA0
+	 * 		Offset -> 0x00876AE0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVerticesAttributes
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -345,7 +345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008769D0
+	 * 		Offset -> 0x00876A10
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVertexInstancesAttributes
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -368,7 +368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876950
+	 * 		Offset -> 0x00876990
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetTextureCoordinateCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008768D0
+	 * 		Offset -> 0x00876910
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetSubdivisionCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -414,7 +414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876740
+	 * 		Offset -> 0x00876780
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876640
+	 * 		Offset -> 0x00876680
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -462,7 +462,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876520
+	 * 		Offset -> 0x00876560
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesHardness
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -487,7 +487,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876400
+	 * 		Offset -> 0x00876440
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -512,7 +512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876330
+	 * 		Offset -> 0x00876370
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesAttributes
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -535,7 +535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008762B0
+	 * 		Offset -> 0x008762F0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowUndo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -558,7 +558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876220
+	 * 		Offset -> 0x00876260
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowSpatialDatabase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008761A0
+	 * 		Offset -> 0x008761E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowCompact
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -604,7 +604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008760A0
+	 * 		Offset -> 0x008760E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -631,7 +631,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875F50
+	 * 		Offset -> 0x00875F90
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -660,7 +660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875E30
+	 * 		Offset -> 0x00875E70
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -687,7 +687,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875E00
+	 * 		Offset -> 0x00875E40
 	 * 		Name   -> Function EditableMesh.EditableMesh.RevertInstance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -709,7 +709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D10
+	 * 		Offset -> 0x00875D50
 	 * 		Name   -> Function EditableMesh.EditableMesh.Revert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -729,7 +729,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875DE0
+	 * 		Offset -> 0x00875E20
 	 * 		Name   -> Function EditableMesh.EditableMesh.RebuildRenderMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -749,7 +749,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D30
+	 * 		Offset -> 0x00875D70
 	 * 		Name   -> Function EditableMesh.EditableMesh.QuadrangulateMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -774,7 +774,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D10
+	 * 		Offset -> 0x00875D50
 	 * 		Name   -> Function EditableMesh.EditableMesh.PropagateInstanceChanges
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -794,7 +794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875C60
+	 * 		Offset -> 0x00875CA0
 	 * 		Name   -> Function EditableMesh.EditableMesh.MoveVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -817,7 +817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875BE0
+	 * 		Offset -> 0x00875C20
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakeVertexID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -842,7 +842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875BE0
+	 * 		Offset -> 0x00875C20
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakePolygonID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -867,7 +867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875BE0
+	 * 		Offset -> 0x00875C20
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakePolygonGroupID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -892,7 +892,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875BE0
+	 * 		Offset -> 0x00875C20
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakeEdgeID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -917,7 +917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875B50
+	 * 		Offset -> 0x00875B90
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -942,7 +942,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875AC0
+	 * 		Offset -> 0x00875B00
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidPolygonGroup
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -967,7 +967,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875A30
+	 * 		Offset -> 0x00875A70
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidPolygon
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -992,7 +992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008759A0
+	 * 		Offset -> 0x008759E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidEdge
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1017,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875980
+	 * 		Offset -> 0x008759C0
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsUndoAllowed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1039,7 +1039,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875960
+	 * 		Offset -> 0x008759A0
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsSpatialDatabaseAllowed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1061,7 +1061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875930
+	 * 		Offset -> 0x00875970
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsPreviewingSubdivisions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1083,7 +1083,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008758A0
+	 * 		Offset -> 0x008758E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsOrphanedVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1108,7 +1108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875880
+	 * 		Offset -> 0x008758C0
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCompactAllowed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1130,7 +1130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875850
+	 * 		Offset -> 0x00875890
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCommittedAsInstance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1152,7 +1152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875820
+	 * 		Offset -> 0x00875860
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCommitted
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1174,7 +1174,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757F0
+	 * 		Offset -> 0x00875830
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsBeingModified
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1196,7 +1196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757D0
+	 * 		Offset -> 0x00875810
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidVertexID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1218,7 +1218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757B0
+	 * 		Offset -> 0x008757F0
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidPolygonID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1240,7 +1240,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875790
+	 * 		Offset -> 0x008757D0
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidPolygonGroupID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1262,7 +1262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875770
+	 * 		Offset -> 0x008757B0
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidEdgeID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1284,7 +1284,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875540
+	 * 		Offset -> 0x00875580
 	 * 		Name   -> Function EditableMesh.EditableMesh.InsetPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1320,7 +1320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008753E0
+	 * 		Offset -> 0x00875420
 	 * 		Name   -> Function EditableMesh.EditableMesh.InsertEdgeLoop
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1349,7 +1349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008753C0
+	 * 		Offset -> 0x00875400
 	 * 		Name   -> Function EditableMesh.EditableMesh.InitializeAdapters
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1369,7 +1369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875290
+	 * 		Offset -> 0x008752D0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexPairEdge
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1400,7 +1400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008751F0
+	 * 		Offset -> 0x00875230
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1425,7 +1425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008751C0
+	 * 		Offset -> 0x00875200
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1447,7 +1447,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008750D0
+	 * 		Offset -> 0x00875110
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1474,7 +1474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875040
+	 * 		Offset -> 0x00875080
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1499,7 +1499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874F70
+	 * 		Offset -> 0x00874FB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1526,7 +1526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874F40
+	 * 		Offset -> 0x00874F80
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1548,7 +1548,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874E50
+	 * 		Offset -> 0x00874E90
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1575,7 +1575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874D60
+	 * 		Offset -> 0x00874DA0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1602,7 +1602,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874CD0
+	 * 		Offset -> 0x00874D10
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1627,7 +1627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874C00
+	 * 		Offset -> 0x00874C40
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdge
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1654,7 +1654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874B10
+	 * 		Offset -> 0x00874B50
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexAdjacentVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1681,7 +1681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874AE0
+	 * 		Offset -> 0x00874B20
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetTextureCoordinateCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1703,7 +1703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874AA0
+	 * 		Offset -> 0x00874AE0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetSubdivisionLimitData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1725,7 +1725,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874A70
+	 * 		Offset -> 0x00874AB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetSubdivisionCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1747,7 +1747,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008749E0
+	 * 		Offset -> 0x00874A20
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1772,7 +1772,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874910
+	 * 		Offset -> 0x00874950
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1799,7 +1799,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874820
+	 * 		Offset -> 0x00874860
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1826,7 +1826,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874730
+	 * 		Offset -> 0x00874770
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1853,7 +1853,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874660
+	 * 		Offset -> 0x008746A0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1880,7 +1880,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874410
+	 * 		Offset -> 0x00874450
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1905,7 +1905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874590
+	 * 		Offset -> 0x008745D0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1932,7 +1932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008744A0
+	 * 		Offset -> 0x008744E0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1959,7 +1959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874410
+	 * 		Offset -> 0x00874450
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1984,7 +1984,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008742F0
+	 * 		Offset -> 0x00874330
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2015,7 +2015,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874220
+	 * 		Offset -> 0x00874260
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonInGroup
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2042,7 +2042,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008741F0
+	 * 		Offset -> 0x00874230
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonGroupCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2064,7 +2064,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874160
+	 * 		Offset -> 0x008741A0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonCountInGroup
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2089,7 +2089,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874130
+	 * 		Offset -> 0x00874170
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2111,7 +2111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874040
+	 * 		Offset -> 0x00874080
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2138,7 +2138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873FA0
+	 * 		Offset -> 0x00873FE0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetGroupForPolygon
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2163,7 +2163,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873F60
+	 * 		Offset -> 0x00873FA0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2185,7 +2185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873E30
+	 * 		Offset -> 0x00873E70
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2215,7 +2215,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873D60
+	 * 		Offset -> 0x00873DA0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2242,7 +2242,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873C90
+	 * 		Offset -> 0x00873CD0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2269,7 +2269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873BA0
+	 * 		Offset -> 0x00873BE0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeLoopElements
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2296,7 +2296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873B70
+	 * 		Offset -> 0x00873BB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2318,7 +2318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873A80
+	 * 		Offset -> 0x00873AC0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2345,7 +2345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008739F0
+	 * 		Offset -> 0x00873A30
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2370,7 +2370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873920
+	 * 		Offset -> 0x00873960
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2397,7 +2397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873870
+	 * 		Offset -> 0x008738B0
 	 * 		Name   -> Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2420,7 +2420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008737C0
+	 * 		Offset -> 0x00873800
 	 * 		Name   -> Function EditableMesh.EditableMesh.FlipPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2443,7 +2443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008736F0
+	 * 		Offset -> 0x00873730
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2470,7 +2470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008735E0
+	 * 		Offset -> 0x00873620
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2499,7 +2499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008733C0
+	 * 		Offset -> 0x00873400
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonLoop
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2535,7 +2535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873210
+	 * 		Offset -> 0x00873250
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtrudePolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2566,7 +2566,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873070
+	 * 		Offset -> 0x008730B0
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtendVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2597,7 +2597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872F10
+	 * 		Offset -> 0x00872F50
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtendEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2626,7 +2626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872E80
+	 * 		Offset -> 0x00872EC0
 	 * 		Name   -> Function EditableMesh.EditableMesh.EndModification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2649,7 +2649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872D80
+	 * 		Offset -> 0x00872DC0
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteVertexInstances
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2674,7 +2674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872BD0
+	 * 		Offset -> 0x00872C10
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2705,7 +2705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008729E0
+	 * 		Offset -> 0x00872A20
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeletePolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2736,7 +2736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872930
+	 * 		Offset -> 0x00872970
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeletePolygonGroups
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2759,7 +2759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872880
+	 * 		Offset -> 0x008728C0
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteOrphanVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2782,7 +2782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872780
+	 * 		Offset -> 0x008727C0
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2807,7 +2807,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008725D0
+	 * 		Offset -> 0x00872610
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2838,7 +2838,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872490
+	 * 		Offset -> 0x008724D0
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateVertices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2865,7 +2865,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872350
+	 * 		Offset -> 0x00872390
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateVertexInstances
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2892,7 +2892,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872180
+	 * 		Offset -> 0x008721C0
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreatePolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2922,7 +2922,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872040
+	 * 		Offset -> 0x00872080
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreatePolygonGroups
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2949,7 +2949,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871F50
+	 * 		Offset -> 0x00871F90
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2976,7 +2976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871E70
+	 * 		Offset -> 0x00871EB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateEmptyVertexRange
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3003,7 +3003,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871D30
+	 * 		Offset -> 0x00871D70
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3030,7 +3030,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871C10
+	 * 		Offset -> 0x00871C50
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3057,7 +3057,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871B70
+	 * 		Offset -> 0x00871BB0
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonPlane
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3082,7 +3082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871AD0
+	 * 		Offset -> 0x00871B10
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonNormal
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3107,7 +3107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871A30
+	 * 		Offset -> 0x00871A70
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonCenter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3132,7 +3132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008719E0
+	 * 		Offset -> 0x00871A20
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3154,7 +3154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871990
+	 * 		Offset -> 0x008719D0
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputeBoundingBox
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3176,7 +3176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871900
+	 * 		Offset -> 0x00871940
 	 * 		Name   -> Function EditableMesh.EditableMesh.CommitInstance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3201,7 +3201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008718E0
+	 * 		Offset -> 0x00871920
 	 * 		Name   -> Function EditableMesh.EditableMesh.Commit
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3221,7 +3221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008717C0
+	 * 		Offset -> 0x00871800
 	 * 		Name   -> Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3244,7 +3244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008715E0
+	 * 		Offset -> 0x00871620
 	 * 		Name   -> Function EditableMesh.EditableMesh.BevelPolygons
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3278,7 +3278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008714E0
+	 * 		Offset -> 0x00871520
 	 * 		Name   -> Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3303,7 +3303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008714B0
+	 * 		Offset -> 0x008714F0
 	 * 		Name   -> Function EditableMesh.EditableMesh.AnyChangesToUndo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3339,7 +3339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0087AAA0
+	 * 		Offset -> 0x0087AAE0
 	 * 		Name   -> Function EditableMesh.EditableMeshFactory.MakeEditableMesh
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

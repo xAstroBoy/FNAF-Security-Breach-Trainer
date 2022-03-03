@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnNotifyEnd_346277884B529EC47D005089EEA3225A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnNotifyBegin_346277884B529EC47D005089EEA3225A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnInterrupted_346277884B529EC47D005089EEA3225A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnBlendOut_346277884B529EC47D005089EEA3225A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnCompleted_346277884B529EC47D005089EEA3225A
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnNotifyEnd_6A1833664A5861686F7AB89310EA782D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnNotifyBegin_6A1833664A5861686F7AB89310EA782D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnInterrupted_6A1833664A5861686F7AB89310EA782D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnBlendOut_6A1833664A5861686F7AB89310EA782D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.OnCompleted_6A1833664A5861686F7AB89310EA782D
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -256,7 +256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function ShatteredMonty_PlayMontage.ShatteredMonty_PlayMontage_C.ExecuteUbergraph_ShatteredMonty_PlayMontage
 	 * 		Flags  -> (Final)
 	 * Parameters:

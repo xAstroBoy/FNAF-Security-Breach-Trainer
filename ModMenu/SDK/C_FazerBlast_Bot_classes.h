@@ -16,12 +16,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass C_FazerBlast_Bot.C_FazerBlast_Bot_C
-	 * Size -> 0x0177 (FullSize[0x07C9] - InheritedSize[0x0652])
+	 * Size -> 0x0171 (FullSize[0x07C9] - InheritedSize[0x0658])
 	 */
 	class AC_FazerBlast_Bot_C : public AStaffBotBase_C
 	{
 	public:
-		unsigned char                                              UnknownData_HGP1[0x6];                                   // 0x0652(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0658(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UPointLightComponent*                                ExplosionLight;                                          // 0x0660(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UNiagaraComponent*                                   Electricity1;                                            // 0x0668(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -45,11 +44,11 @@ namespace CG
 		int32_t                                                    ScoreValue;                                              // 0x06F4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsDeacitve;                                              // 0x06F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Should_Destroy;                                          // 0x06F9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_PJIF[0x6];                                   // 0x06FA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G478[0x6];                                   // 0x06FA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FString, float>                                 ScorePerBox;                                             // 0x0700(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       OnHit_Deactivate;                                        // 0x0750(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       OnHit_Flee;                                              // 0x0751(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_74FO[0x6];                                   // 0x0752(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8A5X[0x6];                                   // 0x0752(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UWI_EnemyFeedback_C*                                 EnemyFeedbackWi;                                         // 0x0758(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UWI_Health_Fazerblast_C*                             PlayerHealthWi;                                          // 0x0760(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TMap<class FName, class UAkAudioEvent*>                    VOLines;                                                 // 0x0768(0x0050) Edit, BlueprintVisible, DisableEditOnInstance

@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		Offset -> 0x00EE72B0
 	 * 		Name   -> Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:

@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B93B0
+	 * 		Offset -> 0x028BA060
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsValid
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -244,7 +244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BA1A80
+	 * 		Offset -> 0x00BA20F0
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsStringPulled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -266,7 +266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9380
+	 * 		Offset -> 0x028BA030
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsPartial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -288,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8C90
+	 * 		Offset -> 0x028B9940
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetPathLength
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -310,7 +310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8A40
+	 * 		Offset -> 0x028B96F0
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetPathCost
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8940
+	 * 		Offset -> 0x028B95F0
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetDebugString
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -354,7 +354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8520
+	 * 		Offset -> 0x028B91D0
 	 * 		Name   -> Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -377,7 +377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8440
+	 * 		Offset -> 0x028B90F0
 	 * 		Name   -> Function NavigationSystem.NavigationPath.EnableDebugDrawing
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -444,7 +444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA200
+	 * 		Offset -> 0x028BAEB0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -467,7 +467,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA140
+	 * 		Offset -> 0x028BADF0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x027604B0
+	 * 		Offset -> 0x02761160
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -517,7 +517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA0C0
+	 * 		Offset -> 0x028BAD70
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -540,7 +540,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA040
+	 * 		Offset -> 0x028BACF0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -563,7 +563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA020
+	 * 		Offset -> 0x028BACD0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -583,7 +583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9F20
+	 * 		Offset -> 0x028BABD0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -610,7 +610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9D50
+	 * 		Offset -> 0x028BAA00
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -643,7 +643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9CD0
+	 * 		Offset -> 0x028BA980
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -666,7 +666,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9AC0
+	 * 		Offset -> 0x028BA770
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.NavigationRaycast
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -703,7 +703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B99C0
+	 * 		Offset -> 0x028BA670
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -732,7 +732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B97E0
+	 * 		Offset -> 0x028BA490
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -769,7 +769,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B95E0
+	 * 		Offset -> 0x028BA290
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B93E0
+	 * 		Offset -> 0x028BA090
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -843,7 +843,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B93E0
+	 * 		Offset -> 0x028BA090
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -880,7 +880,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9300
+	 * 		Offset -> 0x028B9FB0
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -905,7 +905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9280
+	 * 		Offset -> 0x028B9F30
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -930,7 +930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B90B0
+	 * 		Offset -> 0x028B9D60
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -963,7 +963,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8EE0
+	 * 		Offset -> 0x028B9B90
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavigableRadius
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -996,7 +996,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8CC0
+	 * 		Offset -> 0x028B9970
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetPathLength
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1033,7 +1033,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8A70
+	 * 		Offset -> 0x028B9720
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetPathCost
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1070,7 +1070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B89C0
+	 * 		Offset -> 0x028B9670
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetNavigationSystem
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1095,7 +1095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B8790
+	 * 		Offset -> 0x028B9440
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1128,7 +1128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B85A0
+	 * 		Offset -> 0x028B9250
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1219,7 +1219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BC190
+	 * 		Offset -> 0x028BCE40
 	 * 		Name   -> Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1354,7 +1354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BC110
+	 * 		Offset -> 0x028BCDC0
 	 * 		Name   -> Function NavigationSystem.NavModifierComponent.SetAreaClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1391,7 +1391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BC090
+	 * 		Offset -> 0x028BCD40
 	 * 		Name   -> Function NavigationSystem.NavModifierVolume.SetAreaClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1484,7 +1484,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BBF00
+	 * 		Offset -> 0x028BCBB0
 	 * 		Name   -> Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:

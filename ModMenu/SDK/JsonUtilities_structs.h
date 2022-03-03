@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		class FString                                              JsonString;                                              // 0x0000(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9TQK[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SA7V[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
 
 	};
 

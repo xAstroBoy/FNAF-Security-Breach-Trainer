@@ -53,7 +53,7 @@ namespace CG
 		class FName                                                BoneName;                                                // 0x0008(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             AdditionalOffset;                                        // 0x0010(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDisableSteering;                                        // 0x001C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WKG5[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SM4L[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
 
 	};
 
@@ -93,7 +93,7 @@ namespace CG
 	public:
 		class UPhysicalMaterial*                                   PhysicalMaterial;                                        // 0x0000(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FrictionScale;                                           // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0ZTR[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QAZ0[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -110,7 +110,7 @@ namespace CG
 		float                                                      DampingRateFullThrottle;                                 // 0x0090(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      DampingRateZeroThrottleClutchEngaged;                    // 0x0094(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      DampingRateZeroThrottleClutchDisengaged;                 // 0x0098(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WWJE[0x4];                                   // 0x009C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7ZMZ[0x4];                                   // 0x009C(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -122,7 +122,7 @@ namespace CG
 	{
 	public:
 		PhysXVehicles_EVehicleDifferential4W                       DifferentialType;                                        // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QIYA[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OBJO[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      FrontRearSplit;                                          // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FrontLeftRightSplit;                                     // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      RearLeftRightSplit;                                      // 0x000C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -153,7 +153,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bUseGearAutoBox;                                         // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZJF1[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HYE8[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      GearSwitchTime;                                          // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      GearAutoBoxLatency;                                      // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FinalRatio;                                              // 0x000C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -161,7 +161,7 @@ namespace CG
 		float                                                      ReverseGearRatio;                                        // 0x0020(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      NeutralGearUpRatio;                                      // 0x0024(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      ClutchStrength;                                          // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8HP0[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UUFK[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	};
 
@@ -172,7 +172,7 @@ namespace CG
 	struct FAnimNode_WheelHandler : public FAnimNode_SkeletalControlBase
 	{
 	public:
-		unsigned char                                              UnknownData_28HB[0x18];                                  // 0x00C8(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XPGM[0x18];                                  // 0x00C8(0x0018) MISSED OFFSET (PADDING)
 
 	};
 
@@ -183,7 +183,7 @@ namespace CG
 	struct FVehicleAnimInstanceProxy : public FAnimInstanceProxy
 	{
 	public:
-		unsigned char                                              UnknownData_IQ5Z[0x10];                                  // 0x06E0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4W8W[0x10];                                  // 0x06E0(0x0010) MISSED OFFSET (PADDING)
 
 	};
 

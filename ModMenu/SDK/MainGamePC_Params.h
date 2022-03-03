@@ -187,6 +187,16 @@ namespace CG
 	};
 
 	/**
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_18
+	 */
+	struct AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_18_Params
+	{
+	public:
+		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_17
 	 */
 	struct AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_17_Params
@@ -197,9 +207,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_16
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_16
 	 */
-	struct AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_16_Params
+	struct AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_16_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -207,9 +217,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_15
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_15
 	 */
-	struct AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_15_Params
+	struct AMainGamePC_C_InpActEvt_Switch__Item_1_K2Node_InputActionEvent_15_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -217,9 +227,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_14
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_14
 	 */
-	struct AMainGamePC_C_InpActEvt_Switch__Item_1_K2Node_InputActionEvent_14_Params
+	struct AMainGamePC_C_InpActEvt_Switch__Item_2_K2Node_InputActionEvent_14_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -227,9 +237,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_13
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_13
 	 */
-	struct AMainGamePC_C_InpActEvt_Switch__Item_2_K2Node_InputActionEvent_13_Params
+	struct AMainGamePC_C_InpActEvt_Switch__Item_3_K2Node_InputActionEvent_13_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -237,9 +247,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_12
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_12
 	 */
-	struct AMainGamePC_C_InpActEvt_Switch__Item_3_K2Node_InputActionEvent_12_Params
+	struct AMainGamePC_C_InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_12_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -247,9 +257,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_11
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_11
 	 */
-	struct AMainGamePC_C_InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_11_Params
+	struct AMainGamePC_C_InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_11_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -257,19 +267,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_10
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_10
 	 */
-	struct AMainGamePC_C_InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_10_Params
-	{
-	public:
-		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_9
-	 */
-	struct AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_9_Params
+	struct AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_10_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -287,9 +287,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_8
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_9
 	 */
-	struct AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_8_Params
+	struct AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_9_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -307,9 +307,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_7
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_8
 	 */
-	struct AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_7_Params
+	struct AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_8_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -317,9 +317,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_6
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_7
 	 */
-	struct AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_6_Params
+	struct AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_7_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -347,9 +347,19 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_5
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_6
 	 */
-	struct AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_5_Params
+	struct AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_6_Params
+	{
+	public:
+		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_5
+	 */
+	struct AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_5_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -367,9 +377,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_3
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_3
 	 */
-	struct AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_3_Params
+	struct AMainGamePC_C_InpActEvt_Throw_Object_K2Node_InputActionEvent_3_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -377,9 +387,9 @@ namespace CG
 	};
 
 	/**
-	 * Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_2
+	 * Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2
 	 */
-	struct AMainGamePC_C_InpActEvt_Throw_Object_K2Node_InputActionEvent_2_Params
+	struct AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_2_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -771,6 +781,16 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
+	 * Function MainGamePC.MainGamePC_C.OnSettingsSaved__DelegateSignature
+	 */
+	struct AMainGamePC_C_OnSettingsSaved__DelegateSignature_Params
+	{
+	public:
+		class USaveGameSettings_C*                                 Settings;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	};
 

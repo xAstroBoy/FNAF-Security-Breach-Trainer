@@ -45,18 +45,18 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x02D0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      DoorMover_Close_0EC2106742FDAD9DF61B6884353E67E2;        // 0x02D8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      DoorMover_Open_0EC2106742FDAD9DF61B6884353E67E2;         // 0x02DC(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TEnumAsByte<Engine_ETimelineDirection>                     DoorMover__Direction_0EC2106742FDAD9DF61B6884353E67E2;   // 0x02E0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_VK1L[0x7];                                   // 0x02E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		Engine_ETimelineDirection                                  DoorMover__Direction_0EC2106742FDAD9DF61B6884353E67E2;   // 0x02E0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_SKO7[0x7];                                   // 0x02E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTimelineComponent*                                  DoorMover;                                               // 0x02E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Long_Door_;                                              // 0x02F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Can_Activate;                                            // 0x02F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_XHEL[0x6];                                   // 0x02F2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4W5B[0x6];                                   // 0x02F2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMaterialInstanceDynamic*                            DoorMat;                                                 // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       RandomDesign_;                                           // 0x0300(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_WVRW[0x3];                                   // 0x0301(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int                                                        Design_DisabledByRandom_;                                // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_6ODR[0x3];                                   // 0x0301(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    Design_DisabledByRandom_;                                // 0x0304(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Currentz;                                                // 0x0308(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_WICK[0x4];                                   // 0x030C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UHML[0x4];                                   // 0x030C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class APawn*>                                       PawnsInDoorway;                                          // 0x0310(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
 		class UAkAudioEvent*                                       Open_Door;                                               // 0x0320(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       Close_Door;                                              // 0x0328(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -66,7 +66,7 @@ namespace CG
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, TEnumAsByte<ActivatableState_EActivatableState>* CurrentState);
+		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
 		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
 		bool HasDoorInitialized();
 		bool IsDoorLockedForPlayer();
@@ -81,8 +81,8 @@ namespace CG
 		void ForceDoorOpen();
 		void ForceDoorClose();
 		void ActivateObject(class AActor* Activator);
-		void BndEvt__Door_Collision_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex);
-		void BndEvt__Door_Collision_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+		void BndEvt__Door_Collision_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
+		void BndEvt__Door_Collision_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void SetDeactivated();
 		void DeactivateObject(class AActor* Deactivator);
 		void SetActivated();
@@ -93,12 +93,12 @@ namespace CG
 		void SetDoorLockPlayer(bool Lock);
 		void SetDoorLockAI(bool Lock);
 		void SetDoorRequiredItem(const class FName& ItemName);
-		void SetSecurityLevel(int NewSecurityLevel);
+		void SetSecurityLevel(int32_t NewSecurityLevel);
 		void BndEvt__Door_K2Node_ComponentBoundEvent_0_OnOpenCloseDoor__DelegateSignature(bool bIsPlayer);
 		void BndEvt__Door_K2Node_ComponentBoundEvent_1_OnOpenCloseDoor__DelegateSignature(bool bIsPlayer);
 		void PlayOpenSoundCinematic();
 		void PlayOpenedSoundCinematic();
-		void ExecuteUbergraph_PRE_PartyDoor_Long(int EntryPoint);
+		void ExecuteUbergraph_PRE_PartyDoor_Long(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

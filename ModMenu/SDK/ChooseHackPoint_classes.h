@@ -24,7 +24,7 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FBlackboardKeySelector                              BBLocation;                                              // 0x00B0(0x0028) Edit, BlueprintVisible
 		float                                                      curr_dist;                                               // 0x00D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_GBWD[0x4];                                   // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LE18[0x4];                                   // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ABurntrapHackPointBP_C*                              curr_actor;                                              // 0x00E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<class ABurntrapHackPointBP_C*>                      remaining_actors;                                        // 0x00E8(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
 		struct FBlackboardKeySelector                              BBObject;                                                // 0x00F8(0x0028) Edit, BlueprintVisible

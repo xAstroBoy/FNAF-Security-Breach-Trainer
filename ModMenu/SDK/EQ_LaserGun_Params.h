@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function EQ_LaserGun.EQ_LaserGun_C.Get Anim Item Type
+	 */
+	struct AEQ_LaserGun_C_Get_Anim_Item_Type_Params
+	{
+	public:
+		GregoryAnimItemEnum_EGregoryAnimItemEnum                   AnimType;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	};
+
+	/**
 	 * Function EQ_LaserGun.EQ_LaserGun_C.SetBlasterUseFOV
 	 */
 	struct AEQ_LaserGun_C_SetBlasterUseFOV_Params

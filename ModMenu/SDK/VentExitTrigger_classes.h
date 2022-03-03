@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void OnTriggered();
-		void ExecuteUbergraph_VentExitTrigger(int EntryPoint);
+		void ExecuteUbergraph_VentExitTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 
