@@ -18,7 +18,7 @@ namespace CG
 	 * BlueprintGeneratedClass FP_JumpscareShake.FP_JumpscareShake_C
 	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
 	 */
-	class UFP_JumpscareShake_C : public FEngine_UCameraShake
+	class UFP_JumpscareShake_C : public UCameraShake
 	{
 	public:
 		static UClass* StaticClass();

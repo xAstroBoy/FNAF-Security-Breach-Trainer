@@ -18,7 +18,7 @@ namespace CG
 	 * BlueprintGeneratedClass ImpactShake_Breakdown.ImpactShake_Breakdown_C
 	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
 	 */
-	class UImpactShake_Breakdown_C : public FEngine_UCameraShake
+	class UImpactShake_Breakdown_C : public UCameraShake
 	{
 	public:
 		static UClass* StaticClass();

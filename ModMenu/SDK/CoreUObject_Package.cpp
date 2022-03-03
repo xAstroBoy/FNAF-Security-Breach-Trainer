@@ -10,7 +10,7 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs Static Variables
 	// --------------------------------------------------
-	class TUObjectArray*                                        UObject::GObjects;                                       // 0x0000(0x0008) PREDEFINED PROPERTY
+	class TUObjectArray* UObject::GObjects;                                       // 0x0000(0x0008) PREDEFINED PROPERTY
 
 	// --------------------------------------------------
 	// # Structs Functions
@@ -18,7 +18,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FVector::FVector()
@@ -31,7 +31,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              x
@@ -48,7 +48,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -61,7 +61,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -74,7 +74,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -87,7 +87,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -100,7 +100,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -113,7 +113,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -126,7 +126,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -142,7 +142,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -158,7 +158,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -174,7 +174,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const float                                        other
@@ -190,7 +190,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     b
@@ -203,7 +203,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	float FVector::MagnitudeSqr() const
@@ -214,7 +214,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	float FVector::Magnitude() const
@@ -225,7 +225,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FVector FVector::Unit() const
@@ -237,7 +237,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FVector2D::FVector2D()
@@ -249,7 +249,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              x
@@ -264,7 +264,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -277,7 +277,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -290,7 +290,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -303,7 +303,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -316,7 +316,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -329,7 +329,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -342,7 +342,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -357,7 +357,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -372,7 +372,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -387,7 +387,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const float                                        other
@@ -402,7 +402,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FRotator::FRotator()
@@ -415,7 +415,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              pitch
@@ -432,7 +432,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -445,7 +445,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -458,7 +458,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -471,7 +471,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -484,7 +484,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -497,7 +497,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -510,7 +510,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -523,7 +523,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -539,7 +539,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -555,7 +555,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const float                                        other
@@ -571,7 +571,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	float FRotator::Size() const
@@ -582,7 +582,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FRotator FRotator::Clamp() const
@@ -607,7 +607,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	FLinearColor::FLinearColor()
@@ -621,7 +621,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              r
@@ -640,7 +640,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	TUObjectArray& UObject::GetGlobalObjects()
@@ -651,7 +651,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	std::string UObject::GetName() const
@@ -668,7 +668,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	std::string UObject::GetFullName() const
@@ -692,7 +692,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const std::string&                                 name
@@ -705,7 +705,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		UClass*                                            cmp
@@ -717,7 +717,7 @@ namespace CG
 			if (super == cmp)
 				return true;
 		}
-		
+
 		return false;
 	}
 
@@ -734,10 +734,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function CoreUObject.Object.ExecuteUbergraph");
-		
-		UObject_ExecuteUbergraph_Params params {};
+
+		UObject_ExecuteUbergraph_Params params{};
 		params.EntryPoint = EntryPoint;
-		
+
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -746,7 +746,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFunction*                                   function
@@ -872,13 +872,13 @@ namespace CG
 	/**
 	 * Function:
 	 * 		Offset -> 0x00000000
-	 * 		Name   -> 
+	 * 		Name   ->
 	 * 		Flags  -> ()
 	 */
 	UObject* UClass::CreateDefaultObject()
 	{
-		// return nullptr;
-		return GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
+		return nullptr;
+		//return GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
 	}
 
 	/**
@@ -1554,5 +1554,4 @@ namespace CG
 	}
 
 }
-
 
