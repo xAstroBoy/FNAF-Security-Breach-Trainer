@@ -14,6 +14,11 @@ To toggle the trainer, press f3
 
 Feel free to use the generated SDK and add more features/goodies to this trainer or for your own purpose!
 
+Until DX12 Support is supported, to use this trainer, make sure to run the game with this parameter
+
+-dx11 
+
+Then use any DLL Injector to load the trainer in the game, it will show up immediately.
 
 TODO : 
 
