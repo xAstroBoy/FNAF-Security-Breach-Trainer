@@ -6,7 +6,7 @@
  */
 
 #ifdef _MSC_VER
-	#pragma pack(push, 0x01)
+#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -21,13 +21,13 @@ namespace CG
 	class UObject
 	{
 	public:
-		static class TUObjectArray*                                GObjects;                                                // 0x0000(0x0008) PREDEFINED PROPERTY
-		void*                                                      VfTable;                                                 // 0x0000(0x0008) PREDEFINED PROPERTY
+		static class TUObjectArray* GObjects;                                                // 0x0000(0x0008) PREDEFINED PROPERTY
+		void* VfTable;                                                 // 0x0000(0x0008) PREDEFINED PROPERTY
 		int32_t                                                    Flags;                                                   // 0x0008(0x0004) PREDEFINED PROPERTY
 		int32_t                                                    InternalIndex;                                           // 0x000C(0x0004) PREDEFINED PROPERTY
-		class UClass*                                              Class;                                                   // 0x0010(0x0008) PREDEFINED PROPERTY
+		class UClass* Class;                                                   // 0x0010(0x0008) PREDEFINED PROPERTY
 		FName                                                      Name;                                                    // 0x0018(0x0008) PREDEFINED PROPERTY
-		class UObject*                                             Outer;                                                   // 0x0020(0x0008) PREDEFINED PROPERTY
+		class UObject* Outer;                                                   // 0x0020(0x0008) PREDEFINED PROPERTY
 
 	public:
 		static TUObjectArray& GetGlobalObjects();
@@ -39,10 +39,10 @@ namespace CG
 			for (int32_t i = 0; i < UObject::GetGlobalObjects().Count(); ++i)
 			{
 				auto object = UObject::GetGlobalObjects().GetByIndex(i);
-			
+
 				if (!object)
 					continue;
-			
+
 				if (object->GetFullName() == name)
 					return static_cast<T*>(object);
 			}
@@ -56,10 +56,10 @@ namespace CG
 			for (int32_t i = 0; i < UObject::GetGlobalObjects().Count(); ++i)
 			{
 				auto object = UObject::GetGlobalObjects().GetByIndex(i);
-			
+
 				if (!object)
 					continue;
-			
+
 				if (object->IsA(v))
 					return static_cast<T*>(object);
 			}
@@ -73,10 +73,10 @@ namespace CG
 			for (int32_t i = 0; i < UObject::GetGlobalObjects().Count(); ++i)
 			{
 				auto object = UObject::GetGlobalObjects().GetByIndex(i);
-			
+
 				if (!object)
 					continue;
-			
+
 				if (object->GetFullName() == name)
 					ret.push_back(static_cast<T*>(object));
 			}
@@ -91,10 +91,10 @@ namespace CG
 			for (int i = 0; i < UObject::GetGlobalObjects().Count(); ++i)
 			{
 				auto object = UObject::GetGlobalObjects().GetByIndex(i);
-			
+
 				if (!object)
 					continue;
-			
+
 				if (object->IsA(v))
 					ret.push_back(static_cast<T*>(object));
 			}
@@ -157,7 +157,7 @@ namespace CG
 	class UField : public UObject
 	{
 	public:
-		class UField*                                              Next;                                                    // 0x0028(0x0008) PREDEFINED PROPERTY
+		class UField* Next;                                                    // 0x0028(0x0008) PREDEFINED PROPERTY
 
 	public:
 		static UClass* StaticClass();
@@ -170,19 +170,19 @@ namespace CG
 	class UStruct : public UField, public FStructBaseChain
 	{
 	public:
-		class UStruct*                                             SuperField;                                              // 0x0040(0x0008) PREDEFINED PROPERTY
-		class UField*                                              Children;                                                // 0x0048(0x0008) PREDEFINED PROPERTY
-		class FField*                                              ChildProperties;                                         // 0x0050(0x0008) PREDEFINED PROPERTY
+		class UStruct* SuperField;                                              // 0x0040(0x0008) PREDEFINED PROPERTY
+		class UField* Children;                                                // 0x0048(0x0008) PREDEFINED PROPERTY
+		class FField* ChildProperties;                                         // 0x0050(0x0008) PREDEFINED PROPERTY
 		int32_t                                                    PropertySize;                                            // 0x0058(0x0004) PREDEFINED PROPERTY
 		int32_t                                                    MinAlignment;                                            // 0x005C(0x0004) PREDEFINED PROPERTY
-		TArray<uint8_t_t_t>                                        Script;                                                  // 0x0060(0x0010) PREDEFINED PROPERTY
-		class FProperty*                                           PropertyLink;                                            // 0x0070(0x0008) PREDEFINED PROPERTY
-		class FProperty*                                           RefLink;                                                 // 0x0078(0x0008) PREDEFINED PROPERTY
-		class FProperty*                                           DestructorLink;                                          // 0x0080(0x0008) PREDEFINED PROPERTY
-		class FProperty*                                           PostConstructLink;                                       // 0x0088(0x0008) PREDEFINED PROPERTY
+		TArray<uint8_t>                                        Script;                                                  // 0x0060(0x0010) PREDEFINED PROPERTY
+		class FProperty* PropertyLink;                                            // 0x0070(0x0008) PREDEFINED PROPERTY
+		class FProperty* RefLink;                                                 // 0x0078(0x0008) PREDEFINED PROPERTY
+		class FProperty* DestructorLink;                                          // 0x0080(0x0008) PREDEFINED PROPERTY
+		class FProperty* PostConstructLink;                                       // 0x0088(0x0008) PREDEFINED PROPERTY
 		TArray<UObject*>                                           ScriptAndPropertyObjectReferences;                       // 0x0090(0x0010) PREDEFINED PROPERTY
-		class FUnresolvedScriptPropertiesArray*                    UnresolvedScriptProperties;                              // 0x00A0(0x0008) PREDEFINED PROPERTY
-		class FUnversionedStructSchema*                            UnversionedSchema;                                       // 0x00A8(0x0008) PREDEFINED PROPERTY
+		class FUnresolvedScriptPropertiesArray* UnresolvedScriptProperties;                              // 0x00A0(0x0008) PREDEFINED PROPERTY
+		class FUnversionedStructSchema* UnversionedSchema;                                       // 0x00A8(0x0008) PREDEFINED PROPERTY
 
 	public:
 		static UClass* StaticClass();
@@ -242,18 +242,18 @@ namespace CG
 	{
 	public:
 		int32_t                                                    FunctionFlags;                                           // 0x00B0(0x0004) PREDEFINED PROPERTY
-		uint8_t_t                                                  NumParms;                                                // 0x00B4(0x0001) PREDEFINED PROPERTY
-		uint16_t_t                                                 ParmsSize;                                               // 0x00B5(0x0002) PREDEFINED PROPERTY
+		uint8_t                                                  NumParms;                                                // 0x00B4(0x0001) PREDEFINED PROPERTY
+		uint16_t                                                 ParmsSize;                                               // 0x00B5(0x0002) PREDEFINED PROPERTY
 		unsigned char                                              pad_GMSWK7JGQL[0x01];                                    // 0x00B7(0x0001) PREDEFINED PROPERTY
-		uint16_t_t                                                 ReturnValueOffset;                                       // 0x00B8(0x0002) PREDEFINED PROPERTY
-		uint16_t_t                                                 RPCId;                                                   // 0x00BA(0x0002) PREDEFINED PROPERTY
-		uint16_t_t                                                 RPCResponseId;                                           // 0x00BC(0x0002) PREDEFINED PROPERTY
+		uint16_t                                                 ReturnValueOffset;                                       // 0x00B8(0x0002) PREDEFINED PROPERTY
+		uint16_t                                                 RPCId;                                                   // 0x00BA(0x0002) PREDEFINED PROPERTY
+		uint16_t                                                 RPCResponseId;                                           // 0x00BC(0x0002) PREDEFINED PROPERTY
 		unsigned char                                              pad_F61H7WMA9K[0x02];                                    // 0x00BE(0x0002) PREDEFINED PROPERTY
-		class UProperty*                                           FirstPropertyToInit;                                     // 0x00C0(0x0008) PREDEFINED PROPERTY
-		class UFunction*                                           EventGraphFunction;                                      // 0x00C8(0x0008) PREDEFINED PROPERTY
+		class UProperty* FirstPropertyToInit;                                     // 0x00C0(0x0008) PREDEFINED PROPERTY
+		class UFunction* EventGraphFunction;                                      // 0x00C8(0x0008) PREDEFINED PROPERTY
 		int32_t                                                    EventGraphCallOffset;                                    // 0x00D0(0x0004) PREDEFINED PROPERTY
 		unsigned char                                              pad_EO2UE4KDFI[0x04];                                    // 0x00D4(0x0004) PREDEFINED PROPERTY
-		void*                                                      Func;                                                    // 0x00D8(0x0008) PREDEFINED PROPERTY
+		void* Func;                                                    // 0x00D8(0x0008) PREDEFINED PROPERTY
 
 	public:
 		static UClass* StaticClass();
@@ -791,5 +791,5 @@ namespace CG
 }
 
 #ifdef _MSC_VER
-	#pragma pack(pop)
+#pragma pack(pop)
 #endif
