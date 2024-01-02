@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,8 +26,8 @@ namespace CG
 		class UPointLightComponent*                                PointLight;                                              // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:
-		Engine_ECollisionEnabled GetCollisionMode();
-		void Set_Collision_Mode(Engine_ECollisionEnabled NewType);
+		ECollisionEnabled GetCollisionMode();
+		void SetCollisionMode(ECollisionEnabled NewType);
 		void ExecuteUbergraph_DbgPlayerPawn(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function WI_RollingCredits.WI_RollingCredits_C.ResetCredits
 	 */
 	struct UWI_RollingCredits_C_ResetCredits_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_RollingCredits.WI_RollingCredits_C.Tick
@@ -29,7 +28,6 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -39,7 +37,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

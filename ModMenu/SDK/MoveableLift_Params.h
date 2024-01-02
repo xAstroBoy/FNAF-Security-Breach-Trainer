@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,18 +21,17 @@ namespace CG
 	{
 	public:
 		bool                                                       Start;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_UW7I[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FTransform                                          ReturnValue;                                             // 0x0010(0x0030)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function MoveableLift.MoveableLift_C.Set Moving
 	 */
-	struct AMoveableLift_C_Set_Moving_Params
+	struct AMoveableLift_C_SetMoving_Params
 	{
 	public:
 		bool                                                       MovingUp;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -42,15 +41,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MoveableLift.MoveableLift_C.Stop Moving
 	 */
-	struct AMoveableLift_C_Stop_Moving_Params
-	{
-	};
+	struct AMoveableLift_C_StopMoving_Params
+	{	};
 
 	/**
 	 * Function MoveableLift.MoveableLift_C.ExecuteUbergraph_MoveableLift
@@ -59,15 +56,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MoveableLift.MoveableLift_C.LiftAlert__DelegateSignature
 	 */
 	struct AMoveableLift_C_LiftAlert__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoveableLift.MoveableLift_C.OnDirectionChanged__DelegateSignature
@@ -77,7 +72,6 @@ namespace CG
 	public:
 		class AMoveableLift_C*                                     Lift;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Up;                                                      // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -87,7 +81,6 @@ namespace CG
 	{
 	public:
 		class AMoveableLift_C*                                     Lift;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -98,7 +91,6 @@ namespace CG
 	public:
 		class AMoveableLift_C*                                     Lift;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Top;                                                     // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 }

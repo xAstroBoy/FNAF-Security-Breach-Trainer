@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * WidgetBlueprintGeneratedClass Backstage_VannyUI_ForScreen.Backstage_VannyUI_ForScreen_C
-	 * Size -> 0x0010 (FullSize[0x0240] - InheritedSize[0x0230])
+	 * Size -> 0x0010 (FullSize[0x0270] - InheritedSize[0x0260])
 	 */
 	class UBackstage_VannyUI_ForScreen_C : public UUserWidget
 	{
 	public:
-		class UTextBlock*                                          TextBlock_70;                                            // 0x0230(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class AOGM_BackStage_C*                                    BackstageOGM;                                            // 0x0238(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UTextBlock*                                          TextBlock_70;                                            // 0x0260(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class AOGM_BackStage_C*                                    BackstageOGM;                                            // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		class FText Get_TimeAsText();

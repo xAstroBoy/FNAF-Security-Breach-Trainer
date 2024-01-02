@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UStaffbot_ABP_Cleaner_C::BlueprintBeginPlay()
 	{
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.isStunnedEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsStunned                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -75,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.WarningEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsWarning                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		int32_t                                            WarningCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -99,20 +99,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.AlertEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               IsAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               isAlerting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UStaffbot_ABP_Cleaner_C::AlertEvent(bool IsAlerting)
+	void UStaffbot_ABP_Cleaner_C::AlertEvent(bool isAlerting)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.AlertEvent");
 		
 		UStaffbot_ABP_Cleaner_C_AlertEvent_Params params {};
-		params.IsAlerting = IsAlerting;
+		params.isAlerting = isAlerting;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -121,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Staffbot_ABP_Cleaner.Staffbot_ABP_Cleaner_C.ExecuteUbergraph_Staffbot_ABP_Cleaner
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -143,8 +143,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UStaffbot_ABP_Cleaner_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UStaffbot_ABP_Cleaner_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UStaffbot_ABP_Cleaner_C::StaticClass()

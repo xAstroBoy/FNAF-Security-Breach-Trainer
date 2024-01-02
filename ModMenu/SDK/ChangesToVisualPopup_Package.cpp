@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.PreConstruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsDesignTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::Construct()
 	{
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,9 +77,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 	{
@@ -96,9 +96,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.BndEvt__BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::BndEvt__BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 	{
@@ -115,9 +115,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.UserBackedOut
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::UserBackedOut()
 	{
@@ -134,9 +134,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.ExecuteUbergraph_ChangesToVisualPopup
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -156,9 +156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.ExitWithoutSaving__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::ExitWithoutSaving__DelegateSignature()
 	{
@@ -175,9 +175,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChangesToVisualPopup.ChangesToVisualPopup_C.ApplyAndRestart__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UChangesToVisualPopup_C::ApplyAndRestart__DelegateSignature()
 	{
@@ -194,8 +194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChangesToVisualPopup_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChangesToVisualPopup_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChangesToVisualPopup_C::StaticClass()

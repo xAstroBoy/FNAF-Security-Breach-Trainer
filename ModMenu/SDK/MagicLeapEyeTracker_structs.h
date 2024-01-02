@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,25 +17,25 @@ namespace CG
 	/**
 	 * Enum MagicLeapEyeTracker.EMagicLeapEyeTrackingCalibrationStatus
 	 */
-	enum class MagicLeapEyeTracker_EMagicLeapEyeTrackingCalibrationStatus : uint8_t
+	enum class EMagicLeapEyeTrackingCalibrationStatus : uint8_t
 	{
-		EMagicLeapEyeTrackingCalibrationStatus__None                                       = 0,
-		EMagicLeapEyeTrackingCalibrationStatus__Bad                                        = 1,
-		EMagicLeapEyeTrackingCalibrationStatus__Good                                       = 2,
-		EMagicLeapEyeTrackingCalibrationStatus__EMagicLeapEyeTrackingCalibrationStatus_MAX = 3
+		None = 0,
+		Bad  = 1,
+		Good = 2,
+		MAX  = 3
 	};
 
 	/**
 	 * Enum MagicLeapEyeTracker.EMagicLeapEyeTrackingStatus
 	 */
-	enum class MagicLeapEyeTracker_EMagicLeapEyeTrackingStatus : uint8_t
+	enum class EMagicLeapEyeTrackingStatus : uint8_t
 	{
-		EMagicLeapEyeTrackingStatus__NotConnected                    = 0,
-		EMagicLeapEyeTrackingStatus__Disabled                        = 1,
-		EMagicLeapEyeTrackingStatus__UserNotPresent                  = 2,
-		EMagicLeapEyeTrackingStatus__UserPresent                     = 3,
-		EMagicLeapEyeTrackingStatus__UserPresentAndWatchingWindow    = 4,
-		EMagicLeapEyeTrackingStatus__EMagicLeapEyeTrackingStatus_MAX = 5
+		NotConnected                 = 0,
+		Disabled                     = 1,
+		UserNotPresent               = 2,
+		UserPresent                  = 3,
+		UserPresentAndWatchingWindow = 4,
+		MAX                          = 5
 	};
 
 	// --------------------------------------------------
@@ -50,7 +50,6 @@ namespace CG
 	public:
 		bool                                                       LeftEyeBlinked;                                          // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       RightEyeBlinked;                                         // 0x0001(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

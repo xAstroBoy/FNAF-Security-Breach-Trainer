@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,19 +23,19 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		TMap<Areas_EAreas, struct FRoomArray>                      AreaRooms;                                               // 0x0238(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
+		TMap<EAreas, struct FRoomArray>                            AreaRooms;                                               // 0x0238(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		unsigned char                                              RoomsToArea[0x50];                                       // 0x0288(0x0050) UNKNOWN PROPERTY: MapProperty
-		Areas_EAreas                                               PlayerCurrentArea;                                       // 0x02D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_NF0L[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EAreas                                                     PlayerCurrentArea;                                       // 0x02D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_TSHM[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnPlayerEnteredArea;                                     // 0x02E0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
-		Areas_EAreas                                               PlayerNewArea;                                           // 0x02F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EAreas                                                     PlayerNewArea;                                           // 0x02F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void UserConstructionScript();
 		void ReceiveBeginPlay();
-		void On_Player_Entered_Room(class ARoomAreaBase* Room);
+		void OnPlayerEnteredRoom(class ARoomAreaBase* Room);
 		void ExecuteUbergraph_AreaManager(int32_t EntryPoint);
-		void OnPlayerEnteredArea__DelegateSignature(Areas_EAreas NewArea);
+		void OnPlayerEnteredArea__DelegateSignature(EAreas NewArea);
 		static UClass* StaticClass();
 	};
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -51,43 +48,37 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.UserConstructionScript
 	 */
 	struct APRE_Door_Garage_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.Timeline_0__FinishedFunc
 	 */
 	struct APRE_Door_Garage_C_Timeline_0__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.Timeline_0__UpdateFunc
 	 */
 	struct APRE_Door_Garage_C_Timeline_0__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.ForceDoorClose
 	 */
 	struct APRE_Door_Garage_C_ForceDoorClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.ForceDoorOpen
 	 */
 	struct APRE_Door_Garage_C_ForceDoorOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.SetDoorLockAI
@@ -96,7 +87,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -106,7 +96,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -116,7 +105,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -126,7 +114,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -140,8 +127,8 @@ namespace CG
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bFromSweep;                                              // 0x001C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_J97U[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FHitResult                                          SweepResult;                                             // 0x0020(0x0088)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
@@ -154,8 +141,13 @@ namespace CG
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function PRE_Door_Garage.PRE_Door_Garage_C.ReceiveBeginPlay
+	 */
+	struct APRE_Door_Garage_C_ReceiveBeginPlay_Params
+	{	};
 
 	/**
 	 * Function PRE_Door_Garage.PRE_Door_Garage_C.ExecuteUbergraph_PRE_Door_Garage
@@ -164,7 +156,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_27PV[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

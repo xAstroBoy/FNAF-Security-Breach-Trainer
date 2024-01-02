@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetSeekMode
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Seek                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetHearingEnable
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -58,9 +58,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetHearingEnable
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -80,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.ForceChasePlayer
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               EnableChase                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -102,14 +102,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetRangeOfDistance
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Distance                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		AIPlayerRange_EAIPlayerRange                       Range                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EAIPlayerRange                                     Range                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::GetRangeOfDistance(float Distance, AIPlayerRange_EAIPlayerRange* Range)
+	void UAISeekerInterface_C::GetRangeOfDistance(float Distance, EAIPlayerRange* Range)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -128,9 +128,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.IsCheckingHideLocation
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               StillChecking                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -152,9 +152,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetIsTrackingPlayer
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               TrackingPlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -174,11 +174,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetVisitedPOIs
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIIndex>                           VisitedPOIs                                                (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<struct FPOIIndex>                           VisitedPOIs                                                (Parm, OutParm)
 	 */
 	void UAISeekerInterface_C::GetVisitedPOIs(TArray<struct FPOIIndex>* VisitedPOIs)
 	{
@@ -198,13 +198,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetAIData
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		struct FAIDataParams                               AI_Data                                                    (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		struct FAIDataParams                               AIData                                                     (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::GetAIData(struct FAIDataParams* AI_Data)
+	void UAISeekerInterface_C::GetAIData(struct FAIDataParams* AIData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -216,15 +216,15 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (AI_Data != nullptr)
-			*AI_Data = params.AI_Data;
+		if (AIData != nullptr)
+			*AIData = params.AIData;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.IsInChaseMode
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InChaseMode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -246,9 +246,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.RestartAI
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAISeekerInterface_C::RestartAI()
 	{
@@ -265,9 +265,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetAlertState
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            AlertState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -287,9 +287,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.IsRunningEnterRoom
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               EnteringRoom                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -311,13 +311,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetRoomSeekMode
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		RoomSeekMode_ERoomSeekMode                         SeekMode                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ERoomSeekMode                                      SeekMode                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAISeekerInterface_C::GetRoomSeekMode(RoomSeekMode_ERoomSeekMode* SeekMode)
+	void UAISeekerInterface_C::GetRoomSeekMode(ERoomSeekMode* SeekMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -335,11 +335,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetRecentRooms
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FRoomVisitInfo>                      RecentRooms                                                (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<struct FRoomVisitInfo>                      RecentRooms                                                (Parm, OutParm)
 	 */
 	void UAISeekerInterface_C::GetRecentRooms(TArray<struct FRoomVisitInfo>* RecentRooms)
 	{
@@ -359,9 +359,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.OnEnterNewRoom
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -381,9 +381,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.IsSearchingPOI
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsSearching                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -405,9 +405,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.FindBestPOI
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PointIndex                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -434,9 +434,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SearchPointOfInterest
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PointIndex                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -458,9 +458,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SetChaseMode
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Chase                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               UseOverrideSpeed                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -484,9 +484,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetShouldCheckHidingLocations
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               ShouldCheckHidingLocations                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -508,11 +508,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetRecentlySearchedActors
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              RecentlySearched                                           (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class AActor*>                              RecentlySearched                                           (Parm, OutParm)
 	 */
 	void UAISeekerInterface_C::GetRecentlySearchedActors(TArray<class AActor*>* RecentlySearched)
 	{
@@ -532,9 +532,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetIsRunningSearchAnim
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsRunningSearch                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -556,9 +556,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.SearchLocation
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SearchActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     SearchLocation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -580,9 +580,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AISeekerInterface.AISeekerInterface_C.GetCurrentRoom
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               CurrentRoom                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -604,8 +604,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISeekerInterface_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISeekerInterface_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISeekerInterface_C::StaticClass()

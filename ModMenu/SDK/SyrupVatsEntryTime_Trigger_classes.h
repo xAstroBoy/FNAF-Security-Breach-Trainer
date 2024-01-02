@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		class UTimeCheckComponent_C*                               TimeCheckComponent;                                      // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void ReceiveActorBeginOverlap(class AActor* OtherActor);
+		void OnTriggered();
 		void ExecuteUbergraph_SyrupVatsEntryTime_Trigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

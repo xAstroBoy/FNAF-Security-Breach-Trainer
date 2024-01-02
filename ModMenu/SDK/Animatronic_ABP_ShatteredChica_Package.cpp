@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.footstep
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_ShatteredChica_C::footstep()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_ShatteredChica_C::BlueprintBeginPlay()
 	{
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.AnimNotify_R_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_ShatteredChica_C::AnimNotify_R_Foot_Down()
 	{
@@ -91,9 +91,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.AnimNotify_L_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_ShatteredChica_C::AnimNotify_L_Foot_Down()
 	{
@@ -110,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_ShatteredChica.Animatronic_ABP_ShatteredChica_C.ExecuteUbergraph_Animatronic_ABP_ShatteredChica
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -132,8 +132,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimatronic_ABP_ShatteredChica_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimatronic_ABP_ShatteredChica_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimatronic_ABP_ShatteredChica_C::StaticClass()

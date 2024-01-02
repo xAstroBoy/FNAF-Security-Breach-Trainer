@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USteamAuthComponentModuleInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USteamAuthComponentModuleInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USteamAuthComponentModuleInterface::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USteamNetConnection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USteamNetConnection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USteamNetConnection::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USteamNetDriver.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USteamNetDriver.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USteamNetDriver::StaticClass()

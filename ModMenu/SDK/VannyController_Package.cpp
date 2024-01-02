@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyController.VannyController_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AVannyController_C::ReceiveBeginPlay()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyController.VannyController_C.OnRoomChanged
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyController.VannyController_C.UpdateRoomSetup
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AVannyController_C::UpdateRoomSetup()
 	{
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyController.VannyController_C.OnPlayerEnteredRoom
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -94,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyController.VannyController_C.ExecuteUbergraph_VannyController
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -116,8 +116,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AVannyController_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AVannyController_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AVannyController_C::StaticClass()

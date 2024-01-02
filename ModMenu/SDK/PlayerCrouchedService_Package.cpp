@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerCrouchedService.PlayerCrouchedService_C.ReceiveTickAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerCrouchedService.PlayerCrouchedService_C.ReceiveActivationAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,9 +62,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerCrouchedService.PlayerCrouchedService_C.ReceiveSearchStartAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,19 +86,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerCrouchedService.PlayerCrouchedService_C.Update Crouched
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerCrouchedService_C::Update_Crouched(class AActor* ControlledPawn)
+	void UPlayerCrouchedService_C::UpdateCrouched(class AActor* ControlledPawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerCrouchedService.PlayerCrouchedService_C.Update Crouched");
 		
-		UPlayerCrouchedService_C_Update_Crouched_Params params {};
+		UPlayerCrouchedService_C_UpdateCrouched_Params params {};
 		params.ControlledPawn = ControlledPawn;
 		
 		auto flags = fn->FunctionFlags;
@@ -108,9 +108,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerCrouchedService.PlayerCrouchedService_C.ExecuteUbergraph_PlayerCrouchedService
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -130,8 +130,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlayerCrouchedService_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlayerCrouchedService_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlayerCrouchedService_C::StaticClass()

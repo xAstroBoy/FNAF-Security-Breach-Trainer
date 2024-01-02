@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,8 +20,7 @@ namespace CG
 	struct UEQGSpawnPoints_C_DoItemGeneration_Params
 	{
 	public:
-		TArray<struct FVector>                                     ContextLocations;                                        // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
+		TArray<struct FVector>                                     ContextLocations;                                        // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	};
 
 }

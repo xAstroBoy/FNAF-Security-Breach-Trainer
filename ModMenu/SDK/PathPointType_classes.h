@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,7 +23,7 @@ namespace CG
 	public:
 		struct FBlackboardKeySelector                              PatrolPathKey;                                           // 0x00A0(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              PatrolPointIndexKey;                                     // 0x00C8(0x0028) Edit, BlueprintVisible
-		PatrolPointType_EPatrolPointType                           PointType;                                               // 0x00F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EPatrolPointType                                           PointType;                                               // 0x00F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		bool PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn);

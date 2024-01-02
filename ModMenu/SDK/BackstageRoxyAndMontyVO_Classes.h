@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -28,13 +28,13 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class AAkAmbientSound*                                     RoxyVOSource;                                            // 0x0250(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class AAkAmbientSound*                                     MontyVOSource;                                           // 0x0258(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               RandomRoxyVO;                                            // 0x0260(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class UAkAudioEvent*>                               RandomRoxyVO;                                            // 0x0260(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
+		void ReceiveActorEndOverlap(class AActor* OtherActor);
+		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
-		void ReceiveTick(float DeltaSeconds);
-		void ReceiveActorEndOverlap(class AActor* OtherActor);
 		void ExecuteUbergraph_BackstageRoxyAndMontyVO(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

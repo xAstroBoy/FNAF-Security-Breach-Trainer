@@ -1,31 +1,32 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
 	// --------------------------------------------------
-	// # Structs Static Variables
+	// # Structs Static Fields
 	// --------------------------------------------------
 	FNamePool*                                                  FName::GNames = nullptr;                                 // 0x0000(0x0000)
 
 	// --------------------------------------------------
-	// # Global Functions
+	// # Global functions
 	// --------------------------------------------------
 	/**
 	 * Initialize SDK
 	 */
-	bool InitSdk(const std::string& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset)
+	bool InitSdk(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset)
 	{
-		auto mBaseAddress = reinterpret_cast<uintptr_t>(GetModuleHandleA(moduleName.c_str()));
+		auto mBaseAddress = reinterpret_cast<uintptr_t>(GetModuleHandleW(moduleName.c_str()));
 		if (!mBaseAddress)
 			return false;
 		
 		UObject::GObjects = reinterpret_cast<CG::TUObjectArray*>(mBaseAddress + gObjectsOffset);
 		FName::GNames = reinterpret_cast<CG::FNamePool*>(mBaseAddress + gNamesOffset);
+		UWorld::GWorld = reinterpret_cast<CG::UWorld**>(mBaseAddress + gWorldOffset);
 		
 		return true;
 	}
@@ -35,7 +36,7 @@ namespace CG
 	 */
 	bool InitSdk()
 	{
-		return InitSdk("fnaf9-Win64-Shipping.exe", 0x42DDCB0, 0x42C5300);
+		return InitSdk(L"fnaf9-Win64-Shipping.exe", 0x4DC1D60, 0x4D85A00, 0x4F06DB0);
 	}
 
 	// --------------------------------------------------
@@ -43,7 +44,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.FString
 	 * 		Flags  -> ()
 	 */
@@ -54,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.FString
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -69,7 +70,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.wc_str
 	 * 		Flags  -> ()
 	 */
@@ -80,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.c_str
 	 * 		Flags  -> ()
 	 */
@@ -91,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.IsValid
 	 * 		Flags  -> ()
 	 */
@@ -102,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.ToString
 	 * 		Flags  -> ()
 	 */
@@ -116,7 +117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FString.ToStringW
 	 * 		Flags  -> ()
 	 */
@@ -128,7 +129,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FUObjectItem.IsUnreachable
 	 * 		Flags  -> ()
 	 */
@@ -139,7 +140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FUObjectItem.IsPendingKill
 	 * 		Flags  -> ()
 	 */
@@ -150,7 +151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.Count
 	 * 		Flags  -> ()
 	 */
@@ -161,7 +162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.Max
 	 * 		Flags  -> ()
 	 */
@@ -172,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.IsValidIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -185,7 +186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.GetObjectPtr
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -205,7 +206,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.GetByIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -220,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.GetItemByIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -235,7 +236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.operator[]
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -248,7 +249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.TUObjectArray.operator[]
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -261,7 +262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetLength
 	 * 		Flags  -> ()
 	 */
@@ -272,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.IsWide
 	 * 		Flags  -> ()
 	 */
@@ -283,18 +284,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetId
 	 * 		Flags  -> ()
 	 */
 	int32_t FNameEntry::GetId() const
 	{
-		return *reinterpret_cast<const uint16_t*>(&Header);
+		throw std::exception("This game doesn't use 'FNAME_POOL_WITH_CASE_PRESERVING_NAME' so 'ComparisonId' not stored in 'FNameEntry'");
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetAnsiName
 	 * 		Flags  -> ()
 	 */
@@ -307,7 +308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetWideName
 	 * 		Flags  -> ()
 	 */
@@ -319,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetName
 	 * 		Flags  -> ()
 	 */
@@ -330,7 +331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.NumBlocks
 	 * 		Flags  -> ()
 	 */
@@ -341,7 +342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.GetById
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -358,7 +359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.IsValidIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -373,7 +374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.IsValidIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -383,18 +384,19 @@ namespace CG
 	 */
 	bool FNameEntryAllocator::IsValidIndex(int32_t key, uint32_t block, uint16_t offset) const
 	{
-		return (key >= 0 && block < static_cast<uint32_t>(NumBlocks()) && offset * Stride < 0x20000);
+		return (key >= 0 && block < static_cast<uint32_t>(NumBlocks()) && offset * Stride < MaxOffset);
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.GetNext
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		uintptr_t&                                         nextFNameAddress
+	 * 		uint32_t*                                          comparisonId
 	 */
-	FNameEntry* FNamePool::GetNext(uintptr_t& nextFNameAddress) const
+	FNameEntry* FNamePool::GetNext(uintptr_t& nextFNameAddress, uint32_t* comparisonId) const
 	{
 		static int lastBlock = 0;
 		if (!nextFNameAddress)
@@ -411,7 +413,7 @@ namespace CG
 		// Get entry information
 		const uintptr_t entryOffset = nextFNameAddress;
 		const int toAdd = 0x00 + 0x02; // HeaderOffset + HeaderSize
-		const uint16_t nameHeader = static_cast<uint16_t>(entryOffset);
+		const uint16_t nameHeader = *reinterpret_cast<uint16_t*>(entryOffset);
 		int nameLength = nameHeader >> 6;
 		bool isWide = (nameHeader & 1) != 0;
 		if (isWide)
@@ -437,12 +439,16 @@ namespace CG
 		
 		// Get name
 		FNameEntry* ret = Allocator.GetById(nextFNameComparisonId);
+		
+		if (comparisonId)
+			*comparisonId = nextFNameComparisonId;
+		
 		return ret;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.Count
 	 * 		Flags  -> ()
 	 */
@@ -453,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.IsValidIndex
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -466,7 +472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.GetById
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -479,7 +485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.operator[]
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -492,18 +498,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.FName
 	 * 		Flags  -> ()
 	 */
 	FName::FName()
 	{
-
+		ComparisonIndex = 0;
+		Number = 0;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.FName
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -512,11 +519,12 @@ namespace CG
 	FName::FName(int32_t i)
 	{
 		ComparisonIndex = i;
+		Number = 0;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.FName
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -524,6 +532,7 @@ namespace CG
 	 */
 	FName::FName(const char* nameToFind)
 	{
+		Number = 0;
 		static std::unordered_set<int> cache;
 		for (auto i : cache)
 		{
@@ -539,14 +548,15 @@ namespace CG
 		
 		#ifdef FNAME_POOL
 		uintptr_t lastFNameAddress = NULL;
-		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress))
+		uint32_t curComparisonId = 0;
+		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
 		{
 			if (name->GetAnsiName() == nameToFind)
 			{
-				cache.insert(name->GetId());
-				ComparisonIndex = name->GetId();
+				cache.insert(curComparisonId);
+				ComparisonIndex = curComparisonId;
 				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
-				DisplayIndex = name->GetId();
+				DisplayIndex = curComparisonId;
 				#endif
 				return;
 			}
@@ -566,7 +576,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.FName
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -574,6 +584,7 @@ namespace CG
 	 */
 	FName::FName(const wchar_t* nameToFind)
 	{
+		Number = 0;
 		static std::unordered_set<int> cache;
 		for (auto i : cache)
 		{
@@ -589,14 +600,15 @@ namespace CG
 		
 		#ifdef FNAME_POOL
 		uintptr_t lastFNameAddress = NULL;
-		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress))
+		uint32_t curComparisonId = 0;
+		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
 		{
 			if (name->GetWideName() == nameToFind)
 			{
-				cache.insert(name->GetId());
-				ComparisonIndex = name->GetId();
+				cache.insert(curComparisonId);
+				ComparisonIndex = curComparisonId;
 				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
-				DisplayIndex = name->GetId();
+				DisplayIndex = curComparisonId;
 				#endif
 				return;
 			}
@@ -616,7 +628,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.GetGlobalNames
 	 * 		Flags  -> ()
 	 */
@@ -627,7 +639,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.GetNameA
 	 * 		Flags  -> ()
 	 */
@@ -638,7 +650,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.GetNameW
 	 * 		Flags  -> ()
 	 */
@@ -649,7 +661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FName.GetName
 	 * 		Flags  -> ()
 	 */
@@ -660,7 +672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FScriptInterface.GetObjectPtr
 	 * 		Flags  -> ()
 	 */
@@ -671,7 +683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FScriptInterface.GetObjectRef
 	 * 		Flags  -> ()
 	 */
@@ -682,7 +694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FScriptInterface.GetInterface
 	 * 		Flags  -> ()
 	 */
@@ -693,7 +705,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction BasicTypes.FText.Get
+	 * 		Flags  -> ()
+	 */
+	wchar_t* FText::Get() const
+	{
+		return Data != nullptr ? Data->Name : nullptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction BasicTypes.FText.ToString
+	 * 		Flags  -> ()
+	 */
+	std::string FText::ToString() const
+	{
+		wchar_t* name = Get();
+		if (!name)
+		    return "NOT FOUND";
+		
+		size_t length = std::wcslen(name);
+		std::string str(length, '\0');
+		std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(name, name + length, '?', &str[0]);
+		
+		return str;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction BasicTypes.FText.ToWString
+	 * 		Flags  -> ()
+	 */
+	std::wstring FText::ToWString() const
+	{
+		wchar_t* name = Get();
+		if (!name)
+		    return L"NOT FOUND";
+		
+		std::wstring str(name);
+		return str;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FWeakObjectPtr.SerialNumbersMatch
 	 * 		Flags  -> ()
 	 * Parameters:
@@ -706,7 +764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FWeakObjectPtr.IsValid
 	 * 		Flags  -> ()
 	 */
@@ -727,7 +785,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction BasicTypes.FWeakObjectPtr.Get
 	 * 		Flags  -> ()
 	 */

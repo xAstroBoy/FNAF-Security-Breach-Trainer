@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,29 +18,26 @@ namespace CG
 	 * Function PhotoPassCollectible.PhotoPassCollectible_C.ReceiveBeginPlay
 	 */
 	struct APhotoPassCollectible_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Collected
 	 */
-	struct APhotoPassCollectible_C_On_Item_Collected_Params
+	struct APhotoPassCollectible_C_OnItemCollected_Params
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0050)  (BlueprintVisible, BlueprintReadOnly, Parm)
-
+		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0058)  (BlueprintVisible, BlueprintReadOnly, Parm)
 	};
 
 	/**
 	 * Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Removed
 	 */
-	struct APhotoPassCollectible_C_On_Item_Removed_Params
+	struct APhotoPassCollectible_C_OnItemRemoved_Params
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0050)  (BlueprintVisible, BlueprintReadOnly, Parm)
-
+		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0058)  (BlueprintVisible, BlueprintReadOnly, Parm)
 	};
 
 	/**
@@ -50,7 +47,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_YQJQ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

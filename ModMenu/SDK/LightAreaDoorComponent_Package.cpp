@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULightAreaDoorComponent_C::ReceiveBeginPlay()
 	{
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.On Area Change Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ULightAreaDoorComponent_C::On_Area_Change_Finished()
+	void ULightAreaDoorComponent_C::OnAreaChangeFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LightAreaDoorComponent.LightAreaDoorComponent_C.On Area Change Finished");
 		
-		ULightAreaDoorComponent_C_On_Area_Change_Finished_Params params {};
+		ULightAreaDoorComponent_C_OnAreaChangeFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaDoorComponent.LightAreaDoorComponent_C.ExecuteUbergraph_LightAreaDoorComponent
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -72,8 +72,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULightAreaDoorComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULightAreaDoorComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULightAreaDoorComponent_C::StaticClass()

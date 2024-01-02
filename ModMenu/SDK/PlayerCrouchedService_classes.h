@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -28,7 +28,7 @@ namespace CG
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void Update_Crouched(class AActor* ControlledPawn);
+		void UpdateCrouched(class AActor* ControlledPawn);
 		void ExecuteUbergraph_PlayerCrouchedService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

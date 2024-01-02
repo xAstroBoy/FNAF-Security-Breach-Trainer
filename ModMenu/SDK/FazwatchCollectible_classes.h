@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FazwatchCollectible.FazwatchCollectible_C
-	 * Size -> 0x0000 (FullSize[0x02D9] - InheritedSize[0x02D9])
+	 * Size -> 0x0000 (FullSize[0x0309] - InheritedSize[0x0309])
 	 */
 	class AFazwatchCollectible_C : public APresentCollectible_C
 	{

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function AudioCapture.AudioCapture.StopCapturingAudio
 	 */
 	struct UAudioCapture_StopCapturingAudio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AudioCapture.AudioCapture.StartCapturingAudio
 	 */
 	struct UAudioCapture_StartCapturingAudio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AudioCapture.AudioCapture.IsCapturingAudio
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -46,7 +43,6 @@ namespace CG
 	public:
 		struct FAudioCaptureDeviceInfo                             OutInfo;                                                 // 0x0000(0x0010)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -56,7 +52,6 @@ namespace CG
 	{
 	public:
 		class UAudioCapture*                                       ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

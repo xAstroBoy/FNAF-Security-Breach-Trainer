@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * Enum AssetTags.ECollectionScriptingShareType
 	 */
-	enum class AssetTags_ECollectionScriptingShareType : uint8_t
+	enum class ECollectionScriptingShareType : uint8_t
 	{
-		ECollectionScriptingShareType__Local                             = 0,
-		ECollectionScriptingShareType__Private                           = 1,
-		ECollectionScriptingShareType__Shared                            = 2,
-		ECollectionScriptingShareType__ECollectionScriptingShareType_MAX = 3
+		Local   = 0,
+		Private = 1,
+		Shared  = 2,
+		MAX     = 3
 	};
 
 }

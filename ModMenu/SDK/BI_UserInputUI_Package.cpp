@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.Reset
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::Reset()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputDpadDirection
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputCycle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -75,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputZoom
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -97,9 +97,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputOpen
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputOpen()
 	{
@@ -116,9 +116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputOptionAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -138,9 +138,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputLookAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -160,9 +160,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputMoveAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -182,9 +182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputTertiary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputTertiary()
 	{
@@ -201,9 +201,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputSecondary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputSecondary()
 	{
@@ -220,9 +220,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputPrimary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputPrimary()
 	{
@@ -239,9 +239,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputAccept
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputAccept()
 	{
@@ -258,9 +258,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputBack
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputBack()
 	{
@@ -277,9 +277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputClose
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputClose()
 	{
@@ -296,9 +296,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InputPrevious
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InputPrevious()
 	{
@@ -315,9 +315,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BI_UserInputUI.BI_UserInputUI_C.InuputNext
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBI_UserInputUI_C::InuputNext()
 	{
@@ -334,8 +334,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBI_UserInputUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBI_UserInputUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBI_UserInputUI_C::StaticClass()

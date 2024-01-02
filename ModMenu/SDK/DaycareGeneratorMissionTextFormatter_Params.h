@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,8 +23,8 @@ namespace CG
 		class FText                                                TaskTitleText;                                           // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0018(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		int32_t                                                    StateIndex;                                              // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_EPZC[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FText                                                FormattedTaskTitleText;                                  // 0x0040(0x0018)  (Parm, OutParm)
-
 	};
 
 }

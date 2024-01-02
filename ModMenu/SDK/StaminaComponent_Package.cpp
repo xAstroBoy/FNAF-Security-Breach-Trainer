@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.GetStaminaRefillRate
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UStaminaComponent_C::GetStaminaRefillRate()
 	{
@@ -33,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.GetMaxStamina
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UStaminaComponent_C::GetMaxStamina()
 	{
@@ -54,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.GetStaminaPercentage
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              StaminaPercentage                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -78,9 +78,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.CanUseStamina
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	bool UStaminaComponent_C::CanUseStamina()
 	{
@@ -99,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UStaminaComponent_C::ReceiveBeginPlay()
 	{
@@ -118,9 +118,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -140,17 +140,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.Start Using Stamina
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UStaminaComponent_C::Start_Using_Stamina()
+	void UStaminaComponent_C::StartUsingStamina()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StaminaComponent.StaminaComponent_C.Start Using Stamina");
 		
-		UStaminaComponent_C_Start_Using_Stamina_Params params {};
+		UStaminaComponent_C_StartUsingStamina_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -159,17 +159,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.Stop Using Stamina
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UStaminaComponent_C::Stop_Using_Stamina()
+	void UStaminaComponent_C::StopUsingStamina()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StaminaComponent.StaminaComponent_C.Stop Using Stamina");
 		
-		UStaminaComponent_C_Stop_Using_Stamina_Params params {};
+		UStaminaComponent_C_StopUsingStamina_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -178,9 +178,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.ExecuteUbergraph_StaminaComponent
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -200,9 +200,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.OnStaminaReplenished__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UStaminaComponent_C::OnStaminaReplenished__DelegateSignature()
 	{
@@ -219,9 +219,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaminaComponent.StaminaComponent_C.OnStaminaDepleted__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UStaminaComponent_C::OnStaminaDepleted__DelegateSignature()
 	{
@@ -238,8 +238,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UStaminaComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UStaminaComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UStaminaComponent_C::StaticClass()

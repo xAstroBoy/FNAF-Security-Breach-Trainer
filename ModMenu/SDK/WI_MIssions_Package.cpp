@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,35 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.OnPreviewKeyDown
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	 * 		struct FKeyEvent                                   InKeyEvent                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+	 */
+	struct FEventReply UWI_MIssions_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.OnPreviewKeyDown");
+		
+		UWI_MIssions_C_OnPreviewKeyDown_Params params {};
+		params.MyGeometry = MyGeometry;
+		params.InKeyEvent = InKeyEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.MoveMenu
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   InVec                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.CreateMenu
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::CreateMenu()
 	{
@@ -53,47 +79,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InuputNext
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_MIssions_C::InuputNext()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.InuputNext");
-		
-		UWI_MIssions_C_InuputNext_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputPrevious
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_MIssions_C::InputPrevious()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.InputPrevious");
-		
-		UWI_MIssions_C_InputPrevious_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputBack
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputBack()
 	{
@@ -110,9 +98,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputPrimary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputPrimary()
 	{
@@ -129,9 +117,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputSecondary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputSecondary()
 	{
@@ -148,9 +136,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputTertiary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputTertiary()
 	{
@@ -167,9 +155,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputLookAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -189,9 +177,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputOpen
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputOpen()
 	{
@@ -208,9 +196,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputZoom
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -230,9 +218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputCycle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -252,9 +240,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputDpadDirection
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -274,9 +262,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.Reset
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::Reset()
 	{
@@ -293,9 +281,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::Construct()
 	{
@@ -312,9 +300,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.BindAllEvents
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::BindAllEvents()
 	{
@@ -331,9 +319,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.GetNewMissions
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MissionName                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FFNAFMissionState                           MissionState                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -357,9 +345,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.UpdateMissions
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::UpdateMissions()
 	{
@@ -376,9 +364,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -400,9 +388,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputOptionAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -422,9 +410,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputMoveAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -444,9 +432,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputClose
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputClose()
 	{
@@ -463,9 +451,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputAccept
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_MIssions_C::InputAccept()
 	{
@@ -482,9 +470,104 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.UpdateLastMissionFocus
+	 * 		Flags  -> ()
+	 */
+	void UWI_MIssions_C::UpdateLastMissionFocus()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.UpdateLastMissionFocus");
+		
+		UWI_MIssions_C_UpdateLastMissionFocus_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.CursorVisibility
+	 * 		Flags  -> ()
+	 */
+	void UWI_MIssions_C::CursorVisibility()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.CursorVisibility");
+		
+		UWI_MIssions_C_CursorVisibility_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InputPrevious
+	 * 		Flags  -> ()
+	 */
+	void UWI_MIssions_C::InputPrevious()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.InputPrevious");
+		
+		UWI_MIssions_C_InputPrevious_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.InuputNext
+	 * 		Flags  -> ()
+	 */
+	void UWI_MIssions_C::InuputNext()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.InuputNext");
+		
+		UWI_MIssions_C_InuputNext_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.PlaySelectAudio
+	 * 		Flags  -> ()
+	 */
+	void UWI_MIssions_C::PlaySelectAudio()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_MIssions.WI_MIssions_C.PlaySelectAudio");
+		
+		UWI_MIssions_C_PlaySelectAudio_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_MIssions.WI_MIssions_C.ExecuteUbergraph_WI_MIssions
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -504,8 +587,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UWI_MIssions_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UWI_MIssions_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UWI_MIssions_C::StaticClass()

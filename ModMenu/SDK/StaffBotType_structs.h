@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum StaffBotType.StaffBotType
 	 */
-	enum class StaffBotType_EStaffBotType : uint8_t
+	enum class EStaffBotType : uint8_t
 	{
-		StaffBotType__NewEnumerator0   = 0,
-		StaffBotType__NewEnumerator1   = 1,
-		StaffBotType__StaffBotType_MAX = 2
+		StaffBotTypeNewEnumerator0   = 0,
+		StaffBotTypeNewEnumerator1   = 1,
+		StaffBotTypeStaffBotType_MAX = 2
 	};
 
 }

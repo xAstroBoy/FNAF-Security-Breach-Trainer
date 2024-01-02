@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_4X3H[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -31,7 +31,7 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_S0AA[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -41,7 +41,6 @@ namespace CG
 	{
 	public:
 		float                                                      StaminaPercentage;                                       // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -51,15 +50,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.ReceiveBeginPlay
 	 */
 	struct UStaminaComponent_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.ReceiveTick
@@ -68,22 +65,19 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.Start Using Stamina
 	 */
-	struct UStaminaComponent_C_Start_Using_Stamina_Params
-	{
-	};
+	struct UStaminaComponent_C_StartUsingStamina_Params
+	{	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.Stop Using Stamina
 	 */
-	struct UStaminaComponent_C_Stop_Using_Stamina_Params
-	{
-	};
+	struct UStaminaComponent_C_StopUsingStamina_Params
+	{	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.ExecuteUbergraph_StaminaComponent
@@ -92,22 +86,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.OnStaminaReplenished__DelegateSignature
 	 */
 	struct UStaminaComponent_C_OnStaminaReplenished__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaminaComponent.StaminaComponent_C.OnStaminaDepleted__DelegateSignature
 	 */
 	struct UStaminaComponent_C_OnStaminaDepleted__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

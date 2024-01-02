@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function TapeSaveGameObject.TapeSaveGameObject_C.IncrementTapesPlayed
 	 */
 	struct UTapeSaveGameObject_C_IncrementTapesPlayed_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TapeSaveGameObject.TapeSaveGameObject_C.GetNoOfTapesDone
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NoOfTapesPlayed;                                         // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -37,16 +35,14 @@ namespace CG
 	struct UTapeSaveGameObject_C_GetInventoryTapes_Params
 	{
 	public:
-		TArray<class FName>                                        InInventoryTapes;                                        // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<class FName>                                        InInventoryTapes;                                        // 0x0000(0x0010)  (Parm, OutParm)
 	};
 
 	/**
 	 * Function TapeSaveGameObject.TapeSaveGameObject_C.ClearAll
 	 */
 	struct UTapeSaveGameObject_C_ClearAll_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TapeSaveGameObject.TapeSaveGameObject_C.GetTapesDonePlaying
@@ -54,8 +50,7 @@ namespace CG
 	struct UTapeSaveGameObject_C_GetTapesDonePlaying_Params
 	{
 	public:
-		TArray<class FName>                                        TapesDonePlaying;                                        // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<class FName>                                        TapesDonePlaying;                                        // 0x0000(0x0010)  (Parm, OutParm)
 	};
 
 	/**
@@ -65,7 +60,6 @@ namespace CG
 	{
 	public:
 		class FName                                                TapeDonePlaying;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -76,7 +70,7 @@ namespace CG
 	public:
 		class FName                                                InventoryItemName;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       HasBeenCollected;                                        // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_OTJ1[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -86,8 +80,7 @@ namespace CG
 	{
 	public:
 		class FName                                                InventoryItemName;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		bool                                                       HasBeenCollected_;                                       // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       HasBeenCollected;                                        // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 }

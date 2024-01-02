@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,163 +17,163 @@ namespace CG
 	/**
 	 * Enum MagicLeapController.EMagicLeapTouchpadGestureDirection
 	 */
-	enum class MagicLeapController_EMagicLeapTouchpadGestureDirection : uint8_t
+	enum class EMagicLeapTouchpadGestureDirection : uint8_t
 	{
-		EMagicLeapTouchpadGestureDirection__None                                   = 0,
-		EMagicLeapTouchpadGestureDirection__Up                                     = 1,
-		EMagicLeapTouchpadGestureDirection__Down                                   = 2,
-		EMagicLeapTouchpadGestureDirection__Left                                   = 3,
-		EMagicLeapTouchpadGestureDirection__Right                                  = 4,
-		EMagicLeapTouchpadGestureDirection__In                                     = 5,
-		EMagicLeapTouchpadGestureDirection__Out                                    = 6,
-		EMagicLeapTouchpadGestureDirection__Clockwise                              = 7,
-		EMagicLeapTouchpadGestureDirection__CounterClockwise                       = 8,
-		EMagicLeapTouchpadGestureDirection__EMagicLeapTouchpadGestureDirection_MAX = 9
+		None             = 0,
+		Up               = 1,
+		Down             = 2,
+		Left             = 3,
+		Right            = 4,
+		In               = 5,
+		Out              = 6,
+		Clockwise        = 7,
+		CounterClockwise = 8,
+		MAX              = 9
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapTouchpadGestureType
 	 */
-	enum class MagicLeapController_EMagicLeapTouchpadGestureType : uint8_t
+	enum class EMagicLeapTouchpadGestureType : uint8_t
 	{
-		EMagicLeapTouchpadGestureType__None                              = 0,
-		EMagicLeapTouchpadGestureType__Tap                               = 1,
-		EMagicLeapTouchpadGestureType__ForceTapDown                      = 2,
-		EMagicLeapTouchpadGestureType__ForceTapUp                        = 3,
-		EMagicLeapTouchpadGestureType__ForceDwell                        = 4,
-		EMagicLeapTouchpadGestureType__SecondForceDown                   = 5,
-		EMagicLeapTouchpadGestureType__LongHold                          = 6,
-		EMagicLeapTouchpadGestureType__RadialScroll                      = 7,
-		EMagicLeapTouchpadGestureType__Swipe                             = 8,
-		EMagicLeapTouchpadGestureType__Scroll                            = 9,
-		EMagicLeapTouchpadGestureType__Pinch                             = 10,
-		EMagicLeapTouchpadGestureType__EMagicLeapTouchpadGestureType_MAX = 11
+		None            = 0,
+		Tap             = 1,
+		ForceTapDown    = 2,
+		ForceTapUp      = 3,
+		ForceDwell      = 4,
+		SecondForceDown = 5,
+		LongHold        = 6,
+		RadialScroll    = 7,
+		Swipe           = 8,
+		Scroll          = 9,
+		Pinch           = 10,
+		MAX             = 11
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerTrackingMode
 	 */
-	enum class MagicLeapController_EMagicLeapControllerTrackingMode : uint8_t
+	enum class EMagicLeapControllerTrackingMode : uint8_t
 	{
-		EMagicLeapControllerTrackingMode__InputService                         = 0,
-		EMagicLeapControllerTrackingMode__CoordinateFrameUID                   = 1,
-		EMagicLeapControllerTrackingMode__EMagicLeapControllerTrackingMode_MAX = 2
+		InputService       = 0,
+		CoordinateFrameUID = 1,
+		MAX                = 2
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerHapticIntensity
 	 */
-	enum class MagicLeapController_EMagicLeapControllerHapticIntensity : uint8_t
+	enum class EMagicLeapControllerHapticIntensity : uint8_t
 	{
-		EMagicLeapControllerHapticIntensity__Low                                     = 0,
-		EMagicLeapControllerHapticIntensity__Medium                                  = 1,
-		EMagicLeapControllerHapticIntensity__High                                    = 2,
-		EMagicLeapControllerHapticIntensity__EMagicLeapControllerHapticIntensity_MAX = 3
+		Low    = 0,
+		Medium = 1,
+		High   = 2,
+		MAX    = 3
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerHapticPattern
 	 */
-	enum class MagicLeapController_EMagicLeapControllerHapticPattern : uint8_t
+	enum class EMagicLeapControllerHapticPattern : uint8_t
 	{
-		EMagicLeapControllerHapticPattern__None                                  = 0,
-		EMagicLeapControllerHapticPattern__Click                                 = 1,
-		EMagicLeapControllerHapticPattern__Bump                                  = 2,
-		EMagicLeapControllerHapticPattern__DoubleClick                           = 3,
-		EMagicLeapControllerHapticPattern__Buzz                                  = 4,
-		EMagicLeapControllerHapticPattern__Tick                                  = 5,
-		EMagicLeapControllerHapticPattern__ForceDown                             = 6,
-		EMagicLeapControllerHapticPattern__ForceUp                               = 7,
-		EMagicLeapControllerHapticPattern__ForceDwell                            = 8,
-		EMagicLeapControllerHapticPattern__SecondForceDown                       = 9,
-		EMagicLeapControllerHapticPattern__EMagicLeapControllerHapticPattern_MAX = 10
+		None            = 0,
+		Click           = 1,
+		Bump            = 2,
+		DoubleClick     = 3,
+		Buzz            = 4,
+		Tick            = 5,
+		ForceDown       = 6,
+		ForceUp         = 7,
+		ForceDwell      = 8,
+		SecondForceDown = 9,
+		MAX             = 10
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerLEDSpeed
 	 */
-	enum class MagicLeapController_EMagicLeapControllerLEDSpeed : uint8_t
+	enum class EMagicLeapControllerLEDSpeed : uint8_t
 	{
-		EMagicLeapControllerLEDSpeed__Slow                             = 0,
-		EMagicLeapControllerLEDSpeed__Medium                           = 1,
-		EMagicLeapControllerLEDSpeed__Fast                             = 2,
-		EMagicLeapControllerLEDSpeed__EMagicLeapControllerLEDSpeed_MAX = 3
+		Slow   = 0,
+		Medium = 1,
+		Fast   = 2,
+		MAX    = 3
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerLEDColor
 	 */
-	enum class MagicLeapController_EMagicLeapControllerLEDColor : uint8_t
+	enum class EMagicLeapControllerLEDColor : uint8_t
 	{
-		EMagicLeapControllerLEDColor__BrightMissionRed                 = 0,
-		EMagicLeapControllerLEDColor__PastelMissionRed                 = 1,
-		EMagicLeapControllerLEDColor__BrightFloridaOrange              = 2,
-		EMagicLeapControllerLEDColor__PastelFloridaOrange              = 3,
-		EMagicLeapControllerLEDColor__BrightLunaYellow                 = 4,
-		EMagicLeapControllerLEDColor__PastelLunaYellow                 = 5,
-		EMagicLeapControllerLEDColor__BrightNebulaPink                 = 6,
-		EMagicLeapControllerLEDColor__PastelNebulaPink                 = 7,
-		EMagicLeapControllerLEDColor__BrightCosmicPurple               = 8,
-		EMagicLeapControllerLEDColor__PastelCosmicPurple               = 9,
-		EMagicLeapControllerLEDColor__BrightMysticBlue                 = 10,
-		EMagicLeapControllerLEDColor__PastelMysticBlue                 = 11,
-		EMagicLeapControllerLEDColor__BrightCelestialBlue              = 12,
-		EMagicLeapControllerLEDColor__PastelCelestialBlue              = 13,
-		EMagicLeapControllerLEDColor__BrightShaggleGreen               = 14,
-		EMagicLeapControllerLEDColor__PastelShaggleGreen               = 15,
-		EMagicLeapControllerLEDColor__EMagicLeapControllerLEDColor_MAX = 16
+		BrightMissionRed    = 0,
+		PastelMissionRed    = 1,
+		BrightFloridaOrange = 2,
+		PastelFloridaOrange = 3,
+		BrightLunaYellow    = 4,
+		PastelLunaYellow    = 5,
+		BrightNebulaPink    = 6,
+		PastelNebulaPink    = 7,
+		BrightCosmicPurple  = 8,
+		PastelCosmicPurple  = 9,
+		BrightMysticBlue    = 10,
+		PastelMysticBlue    = 11,
+		BrightCelestialBlue = 12,
+		PastelCelestialBlue = 13,
+		BrightShaggleGreen  = 14,
+		PastelShaggleGreen  = 15,
+		MAX                 = 16
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerLEDEffect
 	 */
-	enum class MagicLeapController_EMagicLeapControllerLEDEffect : uint8_t
+	enum class EMagicLeapControllerLEDEffect : uint8_t
 	{
-		EMagicLeapControllerLEDEffect__RotateCW                          = 0,
-		EMagicLeapControllerLEDEffect__RotateCCW                         = 1,
-		EMagicLeapControllerLEDEffect__Pulse                             = 2,
-		EMagicLeapControllerLEDEffect__PaintCW                           = 3,
-		EMagicLeapControllerLEDEffect__PaintCCW                          = 4,
-		EMagicLeapControllerLEDEffect__Blink                             = 5,
-		EMagicLeapControllerLEDEffect__EMagicLeapControllerLEDEffect_MAX = 6
+		RotateCW  = 0,
+		RotateCCW = 1,
+		Pulse     = 2,
+		PaintCW   = 3,
+		PaintCCW  = 4,
+		Blink     = 5,
+		MAX       = 6
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerLEDPattern
 	 */
-	enum class MagicLeapController_EMagicLeapControllerLEDPattern : uint8_t
+	enum class EMagicLeapControllerLEDPattern : uint8_t
 	{
-		EMagicLeapControllerLEDPattern__None                               = 0,
-		EMagicLeapControllerLEDPattern__Clock01                            = 1,
-		EMagicLeapControllerLEDPattern__Clock02                            = 2,
-		EMagicLeapControllerLEDPattern__Clock03                            = 3,
-		EMagicLeapControllerLEDPattern__Clock04                            = 4,
-		EMagicLeapControllerLEDPattern__Clock05                            = 5,
-		EMagicLeapControllerLEDPattern__Clock06                            = 6,
-		EMagicLeapControllerLEDPattern__Clock07                            = 7,
-		EMagicLeapControllerLEDPattern__Clock08                            = 8,
-		EMagicLeapControllerLEDPattern__Clock09                            = 9,
-		EMagicLeapControllerLEDPattern__Clock10                            = 10,
-		EMagicLeapControllerLEDPattern__Clock11                            = 11,
-		EMagicLeapControllerLEDPattern__Clock12                            = 12,
-		EMagicLeapControllerLEDPattern__Clock01_07                         = 13,
-		EMagicLeapControllerLEDPattern__Clock02_08                         = 14,
-		EMagicLeapControllerLEDPattern__Clock03_09                         = 15,
-		EMagicLeapControllerLEDPattern__Clock0401                          = 16,
-		EMagicLeapControllerLEDPattern__Clock0501                          = 17,
-		EMagicLeapControllerLEDPattern__Clock0601                          = 18,
-		EMagicLeapControllerLEDPattern__EMagicLeapControllerLEDPattern_MAX = 19
+		None       = 0,
+		Clock01    = 1,
+		Clock02    = 2,
+		Clock03    = 3,
+		Clock04    = 4,
+		Clock05    = 5,
+		Clock06    = 6,
+		Clock07    = 7,
+		Clock08    = 8,
+		Clock09    = 9,
+		Clock10    = 10,
+		Clock11    = 11,
+		Clock12    = 12,
+		Clock01_07 = 13,
+		Clock02_08 = 14,
+		Clock03_09 = 15,
+		Clock0401  = 16,
+		Clock0501  = 17,
+		Clock0601  = 18,
+		MAX        = 19
 	};
 
 	/**
 	 * Enum MagicLeapController.EMagicLeapControllerType
 	 */
-	enum class MagicLeapController_EMagicLeapControllerType : uint8_t
+	enum class EMagicLeapControllerType : uint8_t
 	{
-		EMagicLeapControllerType__None                         = 0,
-		EMagicLeapControllerType__Device                       = 1,
-		EMagicLeapControllerType__MobileApp                    = 2,
-		EMagicLeapControllerType__EMagicLeapControllerType_MAX = 3
+		None      = 0,
+		Device    = 1,
+		MobileApp = 2,
+		MAX       = 3
 	};
 
 	// --------------------------------------------------
@@ -186,19 +186,18 @@ namespace CG
 	struct FMagicLeapTouchpadGesture
 	{
 	public:
-		InputCore_EControllerHand                                  Hand;                                                    // 0x0000(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FE2P[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EControllerHand                                            Hand;                                                    // 0x0000(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_Q2DS[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                MotionSource;                                            // 0x0004(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeapController_EMagicLeapTouchpadGestureType          Type;                                                    // 0x000C(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeapController_EMagicLeapTouchpadGestureDirection     Direction;                                               // 0x000D(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VUA1[0x2];                                   // 0x000E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EMagicLeapTouchpadGestureType                              Type;                                                    // 0x000C(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EMagicLeapTouchpadGestureDirection                         Direction;                                               // 0x000D(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_LE98[0x2];                                   // 0x000E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             PositionAndForce;                                        // 0x0010(0x000C) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Speed;                                                   // 0x001C(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Distance;                                                // 0x0020(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FingerGap;                                               // 0x0024(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Radius;                                                  // 0x0028(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Angle;                                                   // 0x002C(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

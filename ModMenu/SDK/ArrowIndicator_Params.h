@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function ArrowIndicator.ArrowIndicator_C.Construct
 	 */
 	struct UArrowIndicator_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ArrowIndicator.ArrowIndicator_C.ExecuteUbergraph_ArrowIndicator
@@ -38,7 +36,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

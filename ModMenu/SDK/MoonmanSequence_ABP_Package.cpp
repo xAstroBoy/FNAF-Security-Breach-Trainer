@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimGraph
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_BE0A21D34FD972770DDC5A8419869399
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_BE0A21D34FD972770DDC5A8419869399()
 	{
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_D321553E4DC1C4E5D21BB5B2216ED8B2
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_D321553E4DC1C4E5D21BB5B2216ED8B2()
 	{
@@ -74,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_AC6DE28341E03DFCA5A7AA8D3B9F922D
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_AC6DE28341E03DFCA5A7AA8D3B9F922D()
 	{
@@ -93,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_AnimDynamics_E01DB40E4B84BD930E776DBB26E79AE2
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_AnimDynamics_E01DB40E4B84BD930E776DBB26E79AE2()
 	{
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_LayeredBoneBlend_F3E889F74515D9702CD2B3AE89C893A0
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_LayeredBoneBlend_F3E889F74515D9702CD2B3AE89C893A0()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -153,9 +153,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimNotify_ChooseRandomPose
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::AnimNotify_ChooseRandomPose()
 	{
@@ -172,9 +172,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.AnimNotify_DestroyActor
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::AnimNotify_DestroyActor()
 	{
@@ -191,9 +191,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_674E5E8F431332E8A0C36ABC5FF5FC0E
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MoonmanSequence_ABP_AnimGraphNode_ModifyBone_674E5E8F431332E8A0C36ABC5FF5FC0E()
 	{
@@ -210,9 +210,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UMoonmanSequence_ABP_C::BlueprintBeginPlay()
 	{
@@ -229,9 +229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MoonmanSequence_ABP.MoonmanSequence_ABP_C.ExecuteUbergraph_MoonmanSequence_ABP
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -251,8 +251,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMoonmanSequence_ABP_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMoonmanSequence_ABP_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMoonmanSequence_ABP_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,15 +12,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SpawnAISceneComponent.SpawnAISceneComponent_C.Spawn
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EFNAFAISpawnType                             AIType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFAISpawnType                                   AIType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ForceShattered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class APawn*                                       Pawn                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USpawnAISceneComponent_C::Spawn(fnaf9_EFNAFAISpawnType AIType, bool ForceShattered, class APawn** Pawn)
+	void USpawnAISceneComponent_C::Spawn(EFNAFAISpawnType AIType, bool ForceShattered, class APawn** Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USpawnAISceneComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USpawnAISceneComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USpawnAISceneComponent_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APRE_PartyDoor_FreddyBlock_C::Partway_Door_Mover__FinishedFunc()
+	void APRE_PartyDoor_FreddyBlock_C::PartwayDoorMover__FinishedFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__FinishedFunc");
 		
-		APRE_PartyDoor_FreddyBlock_C_Partway_Door_Mover__FinishedFunc_Params params {};
+		APRE_PartyDoor_FreddyBlock_C_PartwayDoorMover__FinishedFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APRE_PartyDoor_FreddyBlock_C::Partway_Door_Mover__UpdateFunc()
+	void APRE_PartyDoor_FreddyBlock_C::PartwayDoorMover__UpdateFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__UpdateFunc");
 		
-		APRE_PartyDoor_FreddyBlock_C_Partway_Door_Mover__UpdateFunc_Params params {};
+		APRE_PartyDoor_FreddyBlock_C_PartwayDoorMover__UpdateFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Opening
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APRE_PartyDoor_FreddyBlock_C::On_Door_Opening()
+	void APRE_PartyDoor_FreddyBlock_C::OnDoorOpening()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Opening");
 		
-		APRE_PartyDoor_FreddyBlock_C_On_Door_Opening_Params params {};
+		APRE_PartyDoor_FreddyBlock_C_OnDoorOpening_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,17 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Closing
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APRE_PartyDoor_FreddyBlock_C::On_Door_Closing()
+	void APRE_PartyDoor_FreddyBlock_C::OnDoorClosing()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Closing");
 		
-		APRE_PartyDoor_FreddyBlock_C_On_Door_Closing_Params params {};
+		APRE_PartyDoor_FreddyBlock_C_OnDoorClosing_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.ExecuteUbergraph_PRE_PartyDoor_FreddyBlock
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -110,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APRE_PartyDoor_FreddyBlock_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APRE_PartyDoor_FreddyBlock_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APRE_PartyDoor_FreddyBlock_C::StaticClass()

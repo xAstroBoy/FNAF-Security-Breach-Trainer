@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.StopReconstruction
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UMeshReconstructorBase::StopReconstruction()
 	{
@@ -25,16 +25,15 @@ namespace CG
 		UMeshReconstructorBase_StopReconstruction_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989350
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.StartReconstruction
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UMeshReconstructorBase::StartReconstruction()
 	{
@@ -45,16 +44,15 @@ namespace CG
 		UMeshReconstructorBase_StartReconstruction_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.PauseReconstruction
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UMeshReconstructorBase::PauseReconstruction()
 	{
@@ -65,16 +63,15 @@ namespace CG
 		UMeshReconstructorBase_PauseReconstruction_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989300
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.IsReconstructionStarted
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UMeshReconstructorBase::IsReconstructionStarted()
 	{
@@ -85,7 +82,6 @@ namespace CG
 		UMeshReconstructorBase_IsReconstructionStarted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -94,9 +90,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019892D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.IsReconstructionPaused
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UMeshReconstructorBase::IsReconstructionPaused()
 	{
@@ -107,7 +103,6 @@ namespace CG
 		UMeshReconstructorBase_IsReconstructionPaused_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -116,9 +111,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019891D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.DisconnectMRMesh
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UMeshReconstructorBase::DisconnectMRMesh()
 	{
@@ -129,16 +124,15 @@ namespace CG
 		UMeshReconstructorBase_DisconnectMRMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019890C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MeshReconstructorBase.ConnectMRMesh
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UMRMeshComponent*                            Mesh                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -152,15 +146,14 @@ namespace CG
 		params.Mesh = Mesh;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMeshReconstructorBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMeshReconstructorBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMeshReconstructorBase::StaticClass()
@@ -173,15 +166,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             Vertices                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int32_t>                                    Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             Normals                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<float>                                      Confidence                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             Vertices                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             Normals                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      Confidence                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UMockDataMeshTrackerComponent::OnMockDataMeshTrackerUpdated__DelegateSignature(int32_t Index, TArray<struct FVector> Vertices, TArray<int32_t> Triangles, TArray<struct FVector> Normals, TArray<float> Confidence)
 	{
@@ -203,9 +196,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019891F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UMRMeshComponent*                            InMRMeshPtr                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -219,16 +212,15 @@ namespace CG
 		params.InMRMeshPtr = InMRMeshPtr;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989150
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UMRMeshComponent*                            InMRMeshPtr                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -242,15 +234,14 @@ namespace CG
 		params.InMRMeshPtr = InMRMeshPtr;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMockDataMeshTrackerComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMockDataMeshTrackerComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMockDataMeshTrackerComponent::StaticClass()
@@ -263,9 +254,97 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989290
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.SetWireframeMaterial
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UMaterialInterface*                          InMaterial                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UMRMeshComponent::SetWireframeMaterial(class UMaterialInterface* InMaterial)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.SetWireframeMaterial");
+		
+		UMRMeshComponent_SetWireframeMaterial_Params params {};
+		params.InMaterial = InMaterial;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.SetWireframeColor
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FLinearColor                                InColor                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UMRMeshComponent::SetWireframeColor(const struct FLinearColor& InColor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.SetWireframeColor");
+		
+		UMRMeshComponent_SetWireframeColor_Params params {};
+		params.InColor = InColor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.SetUseWireframe
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bUseWireframe                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UMRMeshComponent::SetUseWireframe(bool bUseWireframe)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.SetUseWireframe");
+		
+		UMRMeshComponent_SetUseWireframe_Params params {};
+		params.bUseWireframe = bUseWireframe;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.SetEnableMeshOcclusion
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bEnable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UMRMeshComponent::SetEnableMeshOcclusion(bool bEnable)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.SetEnableMeshOcclusion");
+		
+		UMRMeshComponent_SetEnableMeshOcclusion_Params params {};
+		params.bEnable = bEnable;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MRMeshComponent.IsConnected
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UMRMeshComponent::IsConnected()
 	{
@@ -276,7 +355,6 @@ namespace CG
 		UMRMeshComponent_IsConnected_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -285,9 +363,72 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989270
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.GetWireframeColor
+	 * 		Flags  -> ()
+	 */
+	struct FLinearColor UMRMeshComponent::GetWireframeColor()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.GetWireframeColor");
+		
+		UMRMeshComponent_GetWireframeColor_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.GetUseWireframe
+	 * 		Flags  -> ()
+	 */
+	bool UMRMeshComponent::GetUseWireframe()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.GetUseWireframe");
+		
+		UMRMeshComponent_GetUseWireframe_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MRMesh.MRMeshComponent.GetEnableMeshOcclusion
+	 * 		Flags  -> ()
+	 */
+	bool UMRMeshComponent::GetEnableMeshOcclusion()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.GetEnableMeshOcclusion");
+		
+		UMRMeshComponent_GetEnableMeshOcclusion_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MRMeshComponent.ForceNavMeshUpdate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UMRMeshComponent::ForceNavMeshUpdate()
 	{
@@ -298,16 +439,15 @@ namespace CG
 		UMRMeshComponent_ForceNavMeshUpdate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01989090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MRMesh.MRMeshComponent.Clear
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UMRMeshComponent::Clear()
 	{
@@ -318,15 +458,14 @@ namespace CG
 		UMRMeshComponent_Clear_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMRMeshComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMRMeshComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMRMeshComponent::StaticClass()

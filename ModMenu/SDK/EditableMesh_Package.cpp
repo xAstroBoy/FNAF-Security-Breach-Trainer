@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableMeshAdapter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableMeshAdapter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableMeshAdapter::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableGeometryCollectionAdapter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableGeometryCollectionAdapter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableGeometryCollectionAdapter::StaticClass()
@@ -40,11 +40,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008776E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.WeldVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   OutNewVertexID                                             (Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::WeldVertices(TArray<struct FVertexID> VertexIDs, struct FVertexID* OutNewVertexID)
@@ -57,7 +57,6 @@ namespace CG
 		params.VertexIDs = VertexIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -67,9 +66,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008775B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.TryToRemoveVertex
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOutWasVertexRemoved                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -85,7 +84,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -97,9 +95,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.TryToRemovePolygonEdge
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOutWasEdgeRemoved                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -115,7 +113,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -127,12 +124,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877360
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.TriangulatePolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewTrianglePolygons                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewTrianglePolygons                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::TriangulatePolygons(TArray<struct FPolygonID> PolygonIDs, TArray<struct FPolygonID>* OutNewTrianglePolygons)
 	{
@@ -144,7 +141,6 @@ namespace CG
 		params.PolygonIDs = PolygonIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -154,15 +150,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877200
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.TessellatePolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EditableMesh_ETriangleTessellationMode             TriangleTessellationMode                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		ETriangleTessellationMode                          TriangleTessellationMode                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UEditableMesh::TessellatePolygons(TArray<struct FPolygonID> PolygonIDs, EditableMesh_ETriangleTessellationMode TriangleTessellationMode, TArray<struct FPolygonID>* OutNewPolygonIDs)
+	void UEditableMesh::TessellatePolygons(TArray<struct FPolygonID> PolygonIDs, ETriangleTessellationMode TriangleTessellationMode, TArray<struct FPolygonID>* OutNewPolygonIDs)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -173,7 +169,6 @@ namespace CG
 		params.TriangleTessellationMode = TriangleTessellationMode;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -183,14 +178,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877140
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.StartModification
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		EditableMesh_EMeshModificationType                 MeshModificationType                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EditableMesh_EMeshTopologyChange                   MeshTopologyChange                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMeshModificationType                              MeshModificationType                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMeshTopologyChange                                MeshTopologyChange                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEditableMesh::StartModification(EditableMesh_EMeshModificationType MeshModificationType, EditableMesh_EMeshTopologyChange MeshTopologyChange)
+	void UEditableMesh::StartModification(EMeshModificationType MeshModificationType, EMeshTopologyChange MeshTopologyChange)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -201,19 +196,18 @@ namespace CG
 		params.MeshTopologyChange = MeshTopologyChange;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00877000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonToSplit>                     PolygonsToSplit                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonToSplit>                     PolygonsToSplit                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SplitPolygons(TArray<struct FPolygonToSplit> PolygonsToSplit, TArray<struct FEdgeID>* OutNewEdgeIDs)
 	{
@@ -225,7 +219,6 @@ namespace CG
 		params.PolygonsToSplit = PolygonsToSplit;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -235,14 +228,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876E30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitPolygonalMesh
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPlane                                      InPlane                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          PolygonIDs1                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          PolygonIDs2                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             BoundaryIDs                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs1                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs2                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             BoundaryIDs                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SplitPolygonalMesh(const struct FPlane& InPlane, TArray<struct FPolygonID>* PolygonIDs1, TArray<struct FPolygonID>* PolygonIDs2, TArray<struct FEdgeID>* BoundaryIDs)
 	{
@@ -254,7 +247,6 @@ namespace CG
 		params.InPlane = InPlane;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -268,13 +260,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876CD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SplitEdge
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<float>                                      Splits                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      Splits                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SplitEdge(const struct FEdgeID& EdgeID, TArray<float> Splits, TArray<struct FVertexID>* OutNewVertexIDs)
 	{
@@ -287,7 +279,6 @@ namespace CG
 		params.Splits = Splits;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -297,12 +288,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876BB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVerticesCornerSharpness
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<float>                                      VerticesNewCornerSharpness                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      VerticesNewCornerSharpness                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetVerticesCornerSharpness(TArray<struct FVertexID> VertexIDs, TArray<float> VerticesNewCornerSharpness)
 	{
@@ -315,18 +306,17 @@ namespace CG
 		params.VerticesNewCornerSharpness = VerticesNewCornerSharpness;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876AE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVerticesAttributes
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAttributesForVertex>                AttributesForVertices                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAttributesForVertex>                AttributesForVertices                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetVerticesAttributes(TArray<struct FAttributesForVertex> AttributesForVertices)
 	{
@@ -338,18 +328,17 @@ namespace CG
 		params.AttributesForVertices = AttributesForVertices;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876A10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetVertexInstancesAttributes
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAttributesForVertexInstance>        AttributesForVertexInstances                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAttributesForVertexInstance>        AttributesForVertexInstances                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetVertexInstancesAttributes(TArray<struct FAttributesForVertexInstance> AttributesForVertexInstances)
 	{
@@ -361,16 +350,15 @@ namespace CG
 		params.AttributesForVertexInstances = AttributesForVertexInstances;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876990
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetTextureCoordinateCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NumTexCoords                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -384,16 +372,15 @@ namespace CG
 		params.NumTexCoords = NumTexCoords;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetSubdivisionCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NewSubdivisionCount                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -407,18 +394,17 @@ namespace CG
 		params.NewSubdivisionCount = NewSubdivisionCount;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876780
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexAttributesForPolygon>         VertexAttributesForPolygons                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexAttributesForPolygon>         VertexAttributesForPolygons                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetPolygonsVertexAttributes(TArray<struct FVertexAttributesForPolygon> VertexAttributesForPolygons)
 	{
@@ -430,18 +416,17 @@ namespace CG
 		params.VertexAttributesForPolygons = VertexAttributesForPolygons;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxDotProductForSoftEdge                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetEdgesHardnessAutomatically(TArray<struct FEdgeID> EdgeIDs, float MaxDotProductForSoftEdge)
@@ -455,19 +440,18 @@ namespace CG
 		params.MaxDotProductForSoftEdge = MaxDotProductForSoftEdge;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesHardness
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<bool>                                       EdgesNewIsHard                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<bool>                                       EdgesNewIsHard                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetEdgesHardness(TArray<struct FEdgeID> EdgeIDs, TArray<bool> EdgesNewIsHard)
 	{
@@ -480,19 +464,18 @@ namespace CG
 		params.EdgesNewIsHard = EdgesNewIsHard;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876440
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<float>                                      EdgesNewCreaseSharpness                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      EdgesNewCreaseSharpness                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetEdgesCreaseSharpness(TArray<struct FEdgeID> EdgeIDs, TArray<float> EdgesNewCreaseSharpness)
 	{
@@ -505,18 +488,17 @@ namespace CG
 		params.EdgesNewCreaseSharpness = EdgesNewCreaseSharpness;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetEdgesAttributes
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAttributesForEdge>                  AttributesForEdges                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAttributesForEdge>                  AttributesForEdges                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SetEdgesAttributes(TArray<struct FAttributesForEdge> AttributesForEdges)
 	{
@@ -528,16 +510,15 @@ namespace CG
 		params.AttributesForEdges = AttributesForEdges;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008762F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowUndo
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bInAllowUndo                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -551,16 +532,15 @@ namespace CG
 		params.bInAllowUndo = bInAllowUndo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00876260
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowSpatialDatabase
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bInAllowSpatialDatabase                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -574,16 +554,15 @@ namespace CG
 		params.bInAllowSpatialDatabase = bInAllowSpatialDatabase;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008761E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SetAllowCompact
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bInAllowCompact                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -597,19 +576,18 @@ namespace CG
 		params.bInAllowCompact = bInAllowCompact;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008760E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPlane                                      InPlane                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(const struct FPlane& InPlane, TArray<struct FPolygonID>* OutPolygons)
 	{
@@ -621,7 +599,6 @@ namespace CG
 		params.InPlane = InPlane;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -631,13 +608,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     LineSegmentStart                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     LineSegmentEnd                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(const struct FVector& LineSegmentStart, const struct FVector& LineSegmentEnd, TArray<struct FPolygonID>* OutPolygons)
 	{
@@ -650,7 +627,6 @@ namespace CG
 		params.LineSegmentEnd = LineSegmentEnd;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -660,12 +636,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875E70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPlane>                              Planes                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPlane>                              Planes                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutPolygons                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(TArray<struct FPlane> Planes, TArray<struct FPolygonID>* OutPolygons)
 	{
@@ -677,7 +653,6 @@ namespace CG
 		params.Planes = Planes;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -687,9 +662,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875E40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.RevertInstance
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class UEditableMesh* UEditableMesh::RevertInstance()
 	{
@@ -700,7 +675,6 @@ namespace CG
 		UEditableMesh_RevertInstance_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -709,9 +683,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.Revert
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UEditableMesh::Revert()
 	{
@@ -722,16 +696,15 @@ namespace CG
 		UEditableMesh_Revert_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875E20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.RebuildRenderMesh
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UEditableMesh::RebuildRenderMesh()
 	{
@@ -742,18 +715,17 @@ namespace CG
 		UEditableMesh_RebuildRenderMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.QuadrangulateMesh
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::QuadrangulateMesh(TArray<struct FPolygonID>* OutNewPolygonIDs)
 	{
@@ -764,7 +736,6 @@ namespace CG
 		UEditableMesh_QuadrangulateMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -774,9 +745,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875D50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.PropagateInstanceChanges
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UEditableMesh::PropagateInstanceChanges()
 	{
@@ -787,18 +758,17 @@ namespace CG
 		UEditableMesh_PropagateInstanceChanges_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875CA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.MoveVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexToMove>                       VerticesToMove                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexToMove>                       VerticesToMove                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::MoveVertices(TArray<struct FVertexToMove> VerticesToMove)
 	{
@@ -810,20 +780,19 @@ namespace CG
 		params.VerticesToMove = VerticesToMove;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875C20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakeVertexID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            VertexIndex                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVertexID UEditableMesh::STATIC_MakeVertexID(int32_t VertexIndex)
+	struct FVertexID UEditableMesh::MakeVertexID(int32_t VertexIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -833,7 +802,6 @@ namespace CG
 		params.VertexIndex = VertexIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -842,13 +810,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875C20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakePolygonID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PolygonIndex                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FPolygonID UEditableMesh::STATIC_MakePolygonID(int32_t PolygonIndex)
+	struct FPolygonID UEditableMesh::MakePolygonID(int32_t PolygonIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -858,7 +826,6 @@ namespace CG
 		params.PolygonIndex = PolygonIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -867,13 +834,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875C20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakePolygonGroupID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PolygonGroupIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FPolygonGroupID UEditableMesh::STATIC_MakePolygonGroupID(int32_t PolygonGroupIndex)
+	struct FPolygonGroupID UEditableMesh::MakePolygonGroupID(int32_t PolygonGroupIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -883,7 +850,6 @@ namespace CG
 		params.PolygonGroupIndex = PolygonGroupIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -892,13 +858,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875C20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.MakeEdgeID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EdgeIndex                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FEdgeID UEditableMesh::STATIC_MakeEdgeID(int32_t EdgeIndex)
+	struct FEdgeID UEditableMesh::MakeEdgeID(int32_t EdgeIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -908,7 +874,6 @@ namespace CG
 		params.EdgeIndex = EdgeIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -917,9 +882,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875B90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -933,7 +898,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -942,9 +906,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875B00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidPolygonGroup
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonGroupID                             PolygonGroupID                                             (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -958,7 +922,6 @@ namespace CG
 		params.PolygonGroupID = PolygonGroupID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -967,9 +930,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875A70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidPolygon
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -983,7 +946,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -992,9 +954,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008759E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsValidEdge
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1008,7 +970,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1017,9 +978,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008759C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsUndoAllowed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsUndoAllowed()
 	{
@@ -1030,7 +991,6 @@ namespace CG
 		UEditableMesh_IsUndoAllowed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1039,9 +999,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008759A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsSpatialDatabaseAllowed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsSpatialDatabaseAllowed()
 	{
@@ -1052,7 +1012,6 @@ namespace CG
 		UEditableMesh_IsSpatialDatabaseAllowed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1061,9 +1020,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875970
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsPreviewingSubdivisions
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsPreviewingSubdivisions()
 	{
@@ -1074,7 +1033,6 @@ namespace CG
 		UEditableMesh_IsPreviewingSubdivisions_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1083,9 +1041,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008758E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsOrphanedVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1099,7 +1057,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1108,9 +1065,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008758C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCompactAllowed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsCompactAllowed()
 	{
@@ -1121,7 +1078,6 @@ namespace CG
 		UEditableMesh_IsCompactAllowed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1130,9 +1086,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875890
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCommittedAsInstance
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsCommittedAsInstance()
 	{
@@ -1143,7 +1099,6 @@ namespace CG
 		UEditableMesh_IsCommittedAsInstance_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1152,9 +1107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875860
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsCommitted
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsCommitted()
 	{
@@ -1165,7 +1120,6 @@ namespace CG
 		UEditableMesh_IsCommitted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1174,9 +1128,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875830
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.IsBeingModified
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::IsBeingModified()
 	{
@@ -1187,7 +1141,6 @@ namespace CG
 		UEditableMesh_IsBeingModified_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1196,11 +1149,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875810
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidVertexID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	struct FVertexID UEditableMesh::STATIC_InvalidVertexID()
+	struct FVertexID UEditableMesh::InvalidVertexID()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1209,7 +1162,6 @@ namespace CG
 		UEditableMesh_InvalidVertexID_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1218,11 +1170,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidPolygonID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	struct FPolygonID UEditableMesh::STATIC_InvalidPolygonID()
+	struct FPolygonID UEditableMesh::InvalidPolygonID()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1231,7 +1183,6 @@ namespace CG
 		UEditableMesh_InvalidPolygonID_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1240,11 +1191,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidPolygonGroupID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	struct FPolygonGroupID UEditableMesh::STATIC_InvalidPolygonGroupID()
+	struct FPolygonGroupID UEditableMesh::InvalidPolygonGroupID()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1253,7 +1204,6 @@ namespace CG
 		UEditableMesh_InvalidPolygonGroupID_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1262,11 +1212,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008757B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InvalidEdgeID
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	struct FEdgeID UEditableMesh::STATIC_InvalidEdgeID()
+	struct FEdgeID UEditableMesh::InvalidEdgeID()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1275,7 +1225,6 @@ namespace CG
 		UEditableMesh_InvalidEdgeID_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1284,18 +1233,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875580
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InsetPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              InsetFixedDistance                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              InsetProgressTowardCenter                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EditableMesh_EInsetPolygonsMode                    Mode                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewCenterPolygonIDs                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewSidePolygonIDs                                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EInsetPolygonsMode                                 Mode                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewCenterPolygonIDs                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewSidePolygonIDs                                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UEditableMesh::InsetPolygons(TArray<struct FPolygonID> PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EditableMesh_EInsetPolygonsMode Mode, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs)
+	void UEditableMesh::InsetPolygons(TArray<struct FPolygonID> PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EInsetPolygonsMode Mode, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1308,7 +1257,6 @@ namespace CG
 		params.Mode = Mode;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1320,13 +1268,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875420
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InsertEdgeLoop
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<float>                                      Splits                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      Splits                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::InsertEdgeLoop(const struct FEdgeID& EdgeID, TArray<float> Splits, TArray<struct FEdgeID>* OutNewEdgeIDs)
 	{
@@ -1339,7 +1287,6 @@ namespace CG
 		params.Splits = Splits;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1349,9 +1296,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875400
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.InitializeAdapters
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UEditableMesh::InitializeAdapters()
 	{
@@ -1362,16 +1309,15 @@ namespace CG
 		UEditableMesh_InitializeAdapters_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008752D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexPairEdge
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   NextVertexID                                               (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1388,7 +1334,6 @@ namespace CG
 		params.NextVertexID = NextVertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1400,9 +1345,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1416,7 +1361,6 @@ namespace CG
 		params.VertexInstanceID = VertexInstanceID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1425,9 +1369,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875200
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetVertexInstanceCount()
 	{
@@ -1438,7 +1382,6 @@ namespace CG
 		UEditableMesh_GetVertexInstanceCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1447,12 +1390,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID, TArray<struct FPolygonID>* OutConnectedPolygonIDs)
 	{
@@ -1464,7 +1407,6 @@ namespace CG
 		params.VertexInstanceID = VertexInstanceID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1474,9 +1416,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00875080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1490,7 +1432,6 @@ namespace CG
 		params.VertexInstanceID = VertexInstanceID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1499,9 +1440,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874FB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexInstanceID                           VertexInstanceID                                           (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ConnectedPolygonNumber                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1517,7 +1458,6 @@ namespace CG
 		params.ConnectedPolygonNumber = ConnectedPolygonNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1526,9 +1466,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874F80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetVertexCount()
 	{
@@ -1539,7 +1479,6 @@ namespace CG
 		UEditableMesh_GetVertexCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1548,12 +1487,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetVertexConnectedPolygons(const struct FVertexID& VertexID, TArray<struct FPolygonID>* OutConnectedPolygonIDs)
 	{
@@ -1565,7 +1504,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1575,12 +1513,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874DA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutConnectedEdgeIDs                                        (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutConnectedEdgeIDs                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetVertexConnectedEdges(const struct FVertexID& VertexID, TArray<struct FEdgeID>* OutConnectedEdgeIDs)
 	{
@@ -1592,7 +1530,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1602,9 +1539,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1618,7 +1555,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1627,9 +1563,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874C40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexConnectedEdge
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ConnectedEdgeNumber                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1645,7 +1581,6 @@ namespace CG
 		params.ConnectedEdgeNumber = ConnectedEdgeNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1654,12 +1589,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874B50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetVertexAdjacentVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutAdjacentVertexIDs                                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutAdjacentVertexIDs                                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetVertexAdjacentVertices(const struct FVertexID& VertexID, TArray<struct FVertexID>* OutAdjacentVertexIDs)
 	{
@@ -1671,7 +1606,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1681,9 +1615,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874B20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetTextureCoordinateCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetTextureCoordinateCount()
 	{
@@ -1694,7 +1628,6 @@ namespace CG
 		UEditableMesh_GetTextureCoordinateCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1703,9 +1636,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874AE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetSubdivisionLimitData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FSubdivisionLimitData UEditableMesh::GetSubdivisionLimitData()
 	{
@@ -1716,7 +1649,6 @@ namespace CG
 		UEditableMesh_GetSubdivisionLimitData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1725,9 +1657,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874AB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetSubdivisionCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetSubdivisionCount()
 	{
@@ -1738,7 +1670,6 @@ namespace CG
 		UEditableMesh_GetSubdivisionCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1747,9 +1678,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1763,7 +1694,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1772,9 +1702,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874950
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PolygonTriangleNumber                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1790,7 +1720,6 @@ namespace CG
 		params.PolygonTriangleNumber = PolygonTriangleNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1799,12 +1728,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874860
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutPolygonPerimeterVertexIDs                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutPolygonPerimeterVertexIDs                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetPolygonPerimeterVertices(const struct FPolygonID& PolygonID, TArray<struct FVertexID>* OutPolygonPerimeterVertexIDs)
 	{
@@ -1816,7 +1745,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1826,12 +1754,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874770
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexInstanceID>                   OutPolygonPerimeterVertexInstanceIDs                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexInstanceID>                   OutPolygonPerimeterVertexInstanceIDs                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetPolygonPerimeterVertexInstances(const struct FPolygonID& PolygonID, TArray<struct FVertexInstanceID>* OutPolygonPerimeterVertexInstanceIDs)
 	{
@@ -1843,7 +1771,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1853,9 +1780,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008746A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PolygonVertexNumber                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1871,7 +1798,6 @@ namespace CG
 		params.PolygonVertexNumber = PolygonVertexNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1880,9 +1806,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1896,7 +1822,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1905,9 +1830,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008745D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PolygonVertexNumber                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1923,7 +1848,6 @@ namespace CG
 		params.PolygonVertexNumber = PolygonVertexNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1932,12 +1856,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008744E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutPolygonPerimeterEdgeIDs                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutPolygonPerimeterEdgeIDs                                 (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetPolygonPerimeterEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutPolygonPerimeterEdgeIDs)
 	{
@@ -1949,7 +1873,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1959,9 +1882,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1975,7 +1898,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1984,9 +1906,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PerimeterEdgeNumber                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2003,7 +1925,6 @@ namespace CG
 		params.PerimeterEdgeNumber = PerimeterEdgeNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2015,9 +1936,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874260
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonInGroup
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonGroupID                             PolygonGroupID                                             (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PolygonNumber                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2033,7 +1954,6 @@ namespace CG
 		params.PolygonNumber = PolygonNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2042,9 +1962,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonGroupCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetPolygonGroupCount()
 	{
@@ -2055,7 +1975,6 @@ namespace CG
 		UEditableMesh_GetPolygonGroupCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2064,9 +1983,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008741A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonCountInGroup
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonGroupID                             PolygonGroupID                                             (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2080,7 +1999,6 @@ namespace CG
 		params.PolygonGroupID = PolygonGroupID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2089,9 +2007,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874170
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetPolygonCount()
 	{
@@ -2102,7 +2020,6 @@ namespace CG
 		UEditableMesh_GetPolygonCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2111,12 +2028,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00874080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutAdjacentPolygons                                        (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutAdjacentPolygons                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetPolygonAdjacentPolygons(const struct FPolygonID& PolygonID, TArray<struct FPolygonID>* OutAdjacentPolygons)
 	{
@@ -2128,7 +2045,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2138,9 +2054,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873FE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetGroupForPolygon
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2154,7 +2070,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2163,9 +2078,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873FA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FPolygonGroupID UEditableMesh::GetFirstValidPolygonGroup()
 	{
@@ -2176,7 +2091,6 @@ namespace CG
 		UEditableMesh_GetFirstValidPolygonGroup_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2185,9 +2099,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873E70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   OutEdgeVertexID0                                           (Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2203,7 +2117,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2215,9 +2128,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873DA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            EdgeVertexNumber                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2233,7 +2146,6 @@ namespace CG
 		params.EdgeVertexNumber = EdgeVertexNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2242,9 +2154,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873CD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID0                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   VertexID1                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2260,7 +2172,6 @@ namespace CG
 		params.VertexID1 = VertexID1;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2269,12 +2180,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873BE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeLoopElements
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             EdgeLoopIDs                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeLoopIDs                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetEdgeLoopElements(const struct FEdgeID& EdgeID, TArray<struct FEdgeID>* EdgeLoopIDs)
 	{
@@ -2286,7 +2197,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2296,9 +2206,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873BB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UEditableMesh::GetEdgeCount()
 	{
@@ -2309,7 +2219,6 @@ namespace CG
 		UEditableMesh_GetEdgeCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2318,12 +2227,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873AC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutConnectedPolygonIDs                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID, TArray<struct FPolygonID>* OutConnectedPolygonIDs)
 	{
@@ -2335,7 +2244,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2345,9 +2253,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873A30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2361,7 +2269,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2370,9 +2277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873960
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ConnectedPolygonNumber                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2388,7 +2295,6 @@ namespace CG
 		params.ConnectedPolygonNumber = ConnectedPolygonNumber;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2397,11 +2303,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008738B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::GeneratePolygonTangentsAndNormals(TArray<struct FPolygonID> PolygonIDs)
 	{
@@ -2413,18 +2319,17 @@ namespace CG
 		params.PolygonIDs = PolygonIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.FlipPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::FlipPolygons(TArray<struct FPolygonID> PolygonIDs)
 	{
@@ -2436,16 +2341,15 @@ namespace CG
 		params.PolygonIDs = PolygonIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873730
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2461,7 +2365,6 @@ namespace CG
 		params.VertexID = VertexID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2470,9 +2373,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873620
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVertexID                                   EdgeVertexID0                                              (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2490,7 +2393,6 @@ namespace CG
 		params.EdgeVertexID1 = EdgeVertexID1;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2499,15 +2401,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873400
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.FindPolygonLoop
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutEdgeLoopEdgeIDs                                         (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutFlippedEdgeIDs                                          (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutReversedEdgeIDPathToTake                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutPolygonIDsToSplit                                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutEdgeLoopEdgeIDs                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutFlippedEdgeIDs                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutReversedEdgeIDPathToTake                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutPolygonIDsToSplit                                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::FindPolygonLoop(const struct FEdgeID& EdgeID, TArray<struct FEdgeID>* OutEdgeLoopEdgeIDs, TArray<struct FEdgeID>* OutFlippedEdgeIDs, TArray<struct FEdgeID>* OutReversedEdgeIDPathToTake, TArray<struct FPolygonID>* OutPolygonIDsToSplit)
 	{
@@ -2519,7 +2421,6 @@ namespace CG
 		params.EdgeID = EdgeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2535,14 +2436,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00873250
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtrudePolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          Polygons                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          Polygons                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              ExtrudeDistance                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bKeepNeighborsTogether                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewExtrudedFrontPolygons                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewExtrudedFrontPolygons                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::ExtrudePolygons(TArray<struct FPolygonID> Polygons, float ExtrudeDistance, bool bKeepNeighborsTogether, TArray<struct FPolygonID>* OutNewExtrudedFrontPolygons)
 	{
@@ -2556,7 +2457,6 @@ namespace CG
 		params.bKeepNeighborsTogether = bKeepNeighborsTogether;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2566,14 +2466,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008730B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtendVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           VertexIDs                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOnlyExtendClosestEdge                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     ReferencePosition                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutNewExtendedVertexIDs                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutNewExtendedVertexIDs                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::ExtendVertices(TArray<struct FVertexID> VertexIDs, bool bOnlyExtendClosestEdge, const struct FVector& ReferencePosition, TArray<struct FVertexID>* OutNewExtendedVertexIDs)
 	{
@@ -2587,7 +2487,6 @@ namespace CG
 		params.ReferencePosition = ReferencePosition;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2597,13 +2496,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872F50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ExtendEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeIDs                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bWeldNeighbors                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewExtendedEdgeIDs                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewExtendedEdgeIDs                                      (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::ExtendEdges(TArray<struct FEdgeID> EdgeIDs, bool bWeldNeighbors, TArray<struct FEdgeID>* OutNewExtendedEdgeIDs)
 	{
@@ -2616,7 +2515,6 @@ namespace CG
 		params.bWeldNeighbors = bWeldNeighbors;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2626,9 +2524,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872EC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.EndModification
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bFromUndo                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2642,18 +2540,17 @@ namespace CG
 		params.bFromUndo = bFromUndo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872DC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteVertexInstances
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexInstanceID>                   VertexInstanceIDsToDelete                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexInstanceID>                   VertexInstanceIDsToDelete                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedVertices                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::DeleteVertexInstances(TArray<struct FVertexInstanceID> VertexInstanceIDsToDelete, bool bDeleteOrphanedVertices)
@@ -2667,16 +2564,15 @@ namespace CG
 		params.bDeleteOrphanedVertices = bDeleteOrphanedVertices;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVertexID                                   VertexID                                                   (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedEdges                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2698,18 +2594,17 @@ namespace CG
 		params.bDeleteEmptyPolygonGroups = bDeleteEmptyPolygonGroups;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeletePolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDsToDelete                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDsToDelete                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedEdges                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedVertices                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedVertexInstances                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2729,18 +2624,17 @@ namespace CG
 		params.bDeleteEmptyPolygonGroups = bDeleteEmptyPolygonGroups;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872970
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeletePolygonGroups
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonGroupID>                     PolygonGroupIDs                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonGroupID>                     PolygonGroupIDs                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::DeletePolygonGroups(TArray<struct FPolygonGroupID> PolygonGroupIDs)
 	{
@@ -2752,18 +2646,17 @@ namespace CG
 		params.PolygonGroupIDs = PolygonGroupIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008728C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteOrphanVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexID>                           VertexIDsToDelete                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           VertexIDsToDelete                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::DeleteOrphanVertices(TArray<struct FVertexID> VertexIDsToDelete)
 	{
@@ -2775,18 +2668,17 @@ namespace CG
 		params.VertexIDsToDelete = VertexIDsToDelete;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008727C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeID>                             EdgeIDsToDelete                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             EdgeIDsToDelete                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedVertices                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::DeleteEdges(TArray<struct FEdgeID> EdgeIDsToDelete, bool bDeleteOrphanedVertices)
@@ -2800,16 +2692,15 @@ namespace CG
 		params.bDeleteOrphanedVertices = bDeleteOrphanedVertices;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872610
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEdgeID                                     EdgeID                                                     (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedEdges                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2831,19 +2722,18 @@ namespace CG
 		params.bDeleteEmptyPolygonGroups = bDeleteEmptyPolygonGroups;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008724D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateVertices
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexToCreate>                     VerticesToCreate                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexToCreate>                     VerticesToCreate                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreateVertices(TArray<struct FVertexToCreate> VerticesToCreate, TArray<struct FVertexID>* OutNewVertexIDs)
 	{
@@ -2855,7 +2745,6 @@ namespace CG
 		params.VerticesToCreate = VerticesToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2865,12 +2754,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872390
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateVertexInstances
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVertexInstanceToCreate>             VertexInstancesToCreate                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexInstanceID>                   OutNewVertexInstanceIDs                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexInstanceToCreate>             VertexInstancesToCreate                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexInstanceID>                   OutNewVertexInstanceIDs                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreateVertexInstances(TArray<struct FVertexInstanceToCreate> VertexInstancesToCreate, TArray<struct FVertexInstanceID>* OutNewVertexInstanceIDs)
 	{
@@ -2882,7 +2771,6 @@ namespace CG
 		params.VertexInstancesToCreate = VertexInstancesToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2892,13 +2780,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008721C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreatePolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonToCreate>                    PolygonsToCreate                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonToCreate>                    PolygonsToCreate                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewPolygonIDs                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreatePolygons(TArray<struct FPolygonToCreate> PolygonsToCreate, TArray<struct FPolygonID>* OutNewPolygonIDs, TArray<struct FEdgeID>* OutNewEdgeIDs)
 	{
@@ -2910,7 +2798,6 @@ namespace CG
 		params.PolygonsToCreate = PolygonsToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2922,12 +2809,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00872080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreatePolygonGroups
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonGroupToCreate>               PolygonGroupsToCreate                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonGroupID>                     OutNewPolygonGroupIDs                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonGroupToCreate>               PolygonGroupsToCreate                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonGroupID>                     OutNewPolygonGroupIDs                                      (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreatePolygonGroups(TArray<struct FPolygonGroupToCreate> PolygonGroupsToCreate, TArray<struct FPolygonGroupID>* OutNewPolygonGroupIDs)
 	{
@@ -2939,7 +2826,6 @@ namespace CG
 		params.PolygonGroupsToCreate = PolygonGroupsToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2949,12 +2835,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreateMissingPolygonPerimeterEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutNewEdgeIDs)
 	{
@@ -2966,7 +2852,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2976,12 +2861,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871EB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateEmptyVertexRange
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NumVerticesToCreate                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVertexID>                           OutNewVertexIDs                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreateEmptyVertexRange(int32_t NumVerticesToCreate, TArray<struct FVertexID>* OutNewVertexIDs)
 	{
@@ -2993,7 +2878,6 @@ namespace CG
 		params.NumVerticesToCreate = NumVerticesToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3003,12 +2887,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871D70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CreateEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FEdgeToCreate>                       EdgesToCreate                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeToCreate>                       EdgesToCreate                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutNewEdgeIDs                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::CreateEdges(TArray<struct FEdgeToCreate> EdgesToCreate, TArray<struct FEdgeID>* OutNewEdgeIDs)
 	{
@@ -3020,7 +2904,6 @@ namespace CG
 		params.EdgesToCreate = EdgesToCreate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3030,12 +2913,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871C50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FEdgeID>                             OutSharedEdgeIDs                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FEdgeID>                             OutSharedEdgeIDs                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::ComputePolygonsSharedEdges(TArray<struct FPolygonID> PolygonIDs, TArray<struct FEdgeID>* OutSharedEdgeIDs)
 	{
@@ -3047,7 +2930,6 @@ namespace CG
 		params.PolygonIDs = PolygonIDs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3057,9 +2939,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871BB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonPlane
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3073,7 +2955,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3082,9 +2963,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871B10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonNormal
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3098,7 +2979,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3107,9 +2987,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871A70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputePolygonCenter
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPolygonID                                  PolygonID                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3123,7 +3003,6 @@ namespace CG
 		params.PolygonID = PolygonID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3132,9 +3011,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FBoxSphereBounds UEditableMesh::ComputeBoundingBoxAndSphere()
 	{
@@ -3145,7 +3024,6 @@ namespace CG
 		UEditableMesh_ComputeBoundingBoxAndSphere_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3154,9 +3032,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008719D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ComputeBoundingBox
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FBox UEditableMesh::ComputeBoundingBox()
 	{
@@ -3167,7 +3045,6 @@ namespace CG
 		UEditableMesh_ComputeBoundingBox_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3176,9 +3053,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.CommitInstance
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         ComponentToInstanceTo                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3192,7 +3069,6 @@ namespace CG
 		params.ComponentToInstanceTo = ComponentToInstanceTo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3201,9 +3077,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871920
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.Commit
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UEditableMesh::Commit()
 	{
@@ -3214,18 +3090,17 @@ namespace CG
 		UEditableMesh_Commit_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FChangeVertexInstancesForPolygon>    VertexInstancesForPolygons                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FChangeVertexInstancesForPolygon>    VertexInstancesForPolygons                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::ChangePolygonsVertexInstances(TArray<struct FChangeVertexInstancesForPolygon> VertexInstancesForPolygons)
 	{
@@ -3237,22 +3112,21 @@ namespace CG
 		params.VertexInstancesForPolygons = VertexInstancesForPolygons;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871620
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.BevelPolygons
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          PolygonIDs                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              BevelFixedDistance                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              BevelProgressTowardCenter                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewCenterPolygonIDs                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPolygonID>                          OutNewSidePolygonIDs                                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewCenterPolygonIDs                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonID>                          OutNewSidePolygonIDs                                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::BevelPolygons(TArray<struct FPolygonID> PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs)
 	{
@@ -3266,7 +3140,6 @@ namespace CG
 		params.BevelProgressTowardCenter = BevelProgressTowardCenter;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3278,11 +3151,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00871520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPolygonGroupForPolygon>             PolygonGroupForPolygons                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPolygonGroupForPolygon>             PolygonGroupForPolygons                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDeleteOrphanedPolygonGroups                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UEditableMesh::AssignPolygonsToPolygonGroups(TArray<struct FPolygonGroupForPolygon> PolygonGroupForPolygons, bool bDeleteOrphanedPolygonGroups)
@@ -3296,16 +3169,15 @@ namespace CG
 		params.bDeleteOrphanedPolygonGroups = bDeleteOrphanedPolygonGroups;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x008714F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMesh.AnyChangesToUndo
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UEditableMesh::AnyChangesToUndo()
 	{
@@ -3316,7 +3188,6 @@ namespace CG
 		UEditableMesh_AnyChangesToUndo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3325,8 +3196,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableMesh.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableMesh.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableMesh::StaticClass()
@@ -3339,14 +3210,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0087AAE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EditableMesh.EditableMeshFactory.MakeEditableMesh
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         PrimitiveComponent                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            LODIndex                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UEditableMesh* UEditableMeshFactory::STATIC_MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex)
+	class UEditableMesh* UEditableMeshFactory::MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3357,7 +3228,6 @@ namespace CG
 		params.LODIndex = LODIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3366,8 +3236,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableMeshFactory.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableMeshFactory.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableMeshFactory::StaticClass()
@@ -3380,8 +3250,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableStaticMeshAdapter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableStaticMeshAdapter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableStaticMeshAdapter::StaticClass()

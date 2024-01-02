@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNiagaraDataInterfaceChaosDestruction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNiagaraDataInterfaceChaosDestruction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNiagaraDataInterfaceChaosDestruction::StaticClass()
@@ -21,6 +21,20 @@ namespace CG
 		static UClass* ptr = nullptr;
 		if (!ptr)
 			ptr = UObject::FindClass("Class ChaosNiagara.NiagaraDataInterfaceChaosDestruction");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNiagaraDataInterfacePhysicsField.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UNiagaraDataInterfacePhysicsField::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class ChaosNiagara.NiagaraDataInterfacePhysicsField");
 		return ptr;
 	}
 

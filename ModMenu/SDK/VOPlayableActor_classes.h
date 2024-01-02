@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,8 @@ namespace CG
 	class UVOPlayableActor_C : public UInterface
 	{
 	public:
-		void PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag);
+		void ForcePlayVoiceLine(class UAkAudioEvent* AKEvent);
+		void PlayVoiceType(EAIVoiceOverType VoiceTag);
 		static UClass* StaticClass();
 	};
 

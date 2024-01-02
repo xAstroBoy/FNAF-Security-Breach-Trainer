@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum ActivatableState.ActivatableState
 	 */
-	enum class ActivatableState_EActivatableState : uint8_t
+	enum class EActivatableState : uint8_t
 	{
-		ActivatableState__NewEnumerator1       = 0,
-		ActivatableState__NewEnumerator0       = 1,
-		ActivatableState__NewEnumerator2       = 2,
-		ActivatableState__NewEnumerator3       = 3,
-		ActivatableState__ActivatableState_MAX = 4
+		ActivatableStateNewEnumerator1       = 0,
+		ActivatableStateNewEnumerator0       = 1,
+		ActivatableStateNewEnumerator2       = 2,
+		ActivatableStateNewEnumerator3       = 3,
+		ActivatableStateActivatableState_MAX = 4
 	};
 
 }

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.GetInteractibleType
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InteractibleType_EInteractibleType                 Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		InteractiblePressType_EInteractiblePressType       PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractibleType                                  Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractiblePressType                             PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_C::GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType)
+	void APlaySequenceTrigger_C::GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -39,14 +39,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.CanPlayerInteract
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanInteract                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_EConditionFailReason                         CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_C::CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason)
+	void APlaySequenceTrigger_C::CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -66,9 +66,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.UpdateUIOnTick
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Output                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -90,9 +90,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.GetInstructionOverride
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -114,9 +114,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.InteractIgnoresTrace
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IgnoreTrace                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -138,9 +138,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.GetHUDInstruction
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -162,13 +162,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.GetInteractViewAngles
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_ECameraAngleFlags                            AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECameraAngleFlags                                  AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_C::GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck)
+	void APlaySequenceTrigger_C::GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -186,9 +186,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.GetInteractViewLocation
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Valid                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     WorldLocation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -213,11 +213,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.PlaySequence
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APlaySequenceTrigger_C::PlaySequence()
+	void APlaySequenceTrigger_C::PlaySequence(bool* success)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -228,13 +230,16 @@ namespace CG
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
+		
+		if (success != nullptr)
+			*success = params.success;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.DisableControls
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::DisableControls()
 	{
@@ -251,9 +256,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.EnableControls
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::EnableControls()
 	{
@@ -270,9 +275,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.HideHUD
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::HideHUD()
 	{
@@ -289,9 +294,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.ShowHUD
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::ShowHUD()
 	{
@@ -308,17 +313,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_56BB6C5E4037A8483E9B1BAA3EE8682C
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_186E16724F80E6CCC3E85EBC8C2480E6
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::OnFailure_56BB6C5E4037A8483E9B1BAA3EE8682C()
+	void APlaySequenceTrigger_C::OnFailure_186E16724F80E6CCC3E85EBC8C2480E6()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_56BB6C5E4037A8483E9B1BAA3EE8682C");
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_186E16724F80E6CCC3E85EBC8C2480E6");
 		
-		APlaySequenceTrigger_C_OnFailure_56BB6C5E4037A8483E9B1BAA3EE8682C_Params params {};
+		APlaySequenceTrigger_C_OnFailure_186E16724F80E6CCC3E85EBC8C2480E6_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -327,17 +332,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_56BB6C5E4037A8483E9B1BAA3EE8682C
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_186E16724F80E6CCC3E85EBC8C2480E6
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::OnSuccess_56BB6C5E4037A8483E9B1BAA3EE8682C()
+	void APlaySequenceTrigger_C::OnSuccess_186E16724F80E6CCC3E85EBC8C2480E6()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_56BB6C5E4037A8483E9B1BAA3EE8682C");
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_186E16724F80E6CCC3E85EBC8C2480E6");
 		
-		APlaySequenceTrigger_C_OnSuccess_56BB6C5E4037A8483E9B1BAA3EE8682C_Params params {};
+		APlaySequenceTrigger_C_OnSuccess_186E16724F80E6CCC3E85EBC8C2480E6_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -346,21 +351,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_12EE6E58404520D80FA17EAF05D17267
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_41459E60402E1327B5B42AB4CEC2E163
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_C::OnFailure_12EE6E58404520D80FA17EAF05D17267(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	void APlaySequenceTrigger_C::OnFailure_41459E60402E1327B5B42AB4CEC2E163(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_12EE6E58404520D80FA17EAF05D17267");
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnFailure_41459E60402E1327B5B42AB4CEC2E163");
 		
-		APlaySequenceTrigger_C_OnFailure_12EE6E58404520D80FA17EAF05D17267_Params params {};
+		APlaySequenceTrigger_C_OnFailure_41459E60402E1327B5B42AB4CEC2E163_Params params {};
 		params.WrittenAchievementName = WrittenAchievementName;
 		params.WrittenProgress = WrittenProgress;
 		params.WrittenUserTag = WrittenUserTag;
@@ -372,21 +377,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_12EE6E58404520D80FA17EAF05D17267
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_41459E60402E1327B5B42AB4CEC2E163
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APlaySequenceTrigger_C::OnSuccess_12EE6E58404520D80FA17EAF05D17267(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	void APlaySequenceTrigger_C::OnSuccess_41459E60402E1327B5B42AB4CEC2E163(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_12EE6E58404520D80FA17EAF05D17267");
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSuccess_41459E60402E1327B5B42AB4CEC2E163");
 		
-		APlaySequenceTrigger_C_OnSuccess_12EE6E58404520D80FA17EAF05D17267_Params params {};
+		APlaySequenceTrigger_C_OnSuccess_41459E60402E1327B5B42AB4CEC2E163_Params params {};
 		params.WrittenAchievementName = WrittenAchievementName;
 		params.WrittenProgress = WrittenProgress;
 		params.WrittenUserTag = WrittenUserTag;
@@ -398,9 +403,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnPlayerHoverEnter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -420,9 +425,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnPlayerHoverExit
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -442,9 +447,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnTriggered
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::OnTriggered()
 	{
@@ -461,17 +466,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.Take Over Camera
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::Take_Over_Camera()
+	void APlaySequenceTrigger_C::TakeOverCamera()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.Take Over Camera");
 		
-		APlaySequenceTrigger_C_Take_Over_Camera_Params params {};
+		APlaySequenceTrigger_C_TakeOverCamera_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -480,17 +485,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::On_Sequence_Stop_Event()
+	void APlaySequenceTrigger_C::OnSequenceStopEvent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop Event");
 		
-		APlaySequenceTrigger_C_On_Sequence_Stop_Event_Params params {};
+		APlaySequenceTrigger_C_OnSequenceStopEvent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -499,17 +504,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Finished Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::On_Sequence_Finished_Event()
+	void APlaySequenceTrigger_C::OnSequenceFinishedEvent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Finished Event");
 		
-		APlaySequenceTrigger_C_On_Sequence_Finished_Event_Params params {};
+		APlaySequenceTrigger_C_OnSequenceFinishedEvent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -518,9 +523,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::ReceiveBeginPlay()
 	{
@@ -537,17 +542,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Starting
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::On_Sequence_Starting()
+	void APlaySequenceTrigger_C::OnSequenceStarting()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Starting");
 		
-		APlaySequenceTrigger_C_On_Sequence_Starting_Params params {};
+		APlaySequenceTrigger_C_OnSequenceStarting_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -556,9 +561,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnCheckpointLoad
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -578,9 +583,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature()
 	{
@@ -597,9 +602,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnPlayerInteract
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APlayerController*                           PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -621,9 +626,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnPlayerInteractCancel
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::OnPlayerInteractCancel()
 	{
@@ -640,9 +645,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnSkip
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APlaySequenceTrigger_C::OnSkip()
 	{
@@ -659,9 +664,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.ExecuteUbergraph_PlaySequenceTrigger
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -681,17 +686,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnEventTriggered__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void APlaySequenceTrigger_C::On_Sequence_Stop__DelegateSignature()
+	void APlaySequenceTrigger_C::OnEventTriggered__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.OnEventTriggered__DelegateSignature");
 		
-		APlaySequenceTrigger_C_On_Sequence_Stop__DelegateSignature_Params params {};
+		APlaySequenceTrigger_C_OnEventTriggered__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -700,8 +705,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APlaySequenceTrigger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void APlaySequenceTrigger_C::OnSequenceStop__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlaySequenceTrigger.PlaySequenceTrigger_C.On Sequence Stop__DelegateSignature");
+		
+		APlaySequenceTrigger_C_OnSequenceStop__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APlaySequenceTrigger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APlaySequenceTrigger_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function DebugTaskUI.DebugTaskUI_C.CompleteTask
 	 */
 	struct UDebugTaskUI_C_CompleteTask_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugTaskUI.DebugTaskUI_C.AwardTaskItems
 	 */
 	struct UDebugTaskUI_C_AwardTaskItems_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugTaskUI.DebugTaskUI_C.PreConstruct
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -45,17 +42,15 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function DebugTaskUI.DebugTaskUI_C.Set Checked
 	 */
-	struct UDebugTaskUI_C_Set_Checked_Params
+	struct UDebugTaskUI_C_SetChecked_Params
 	{
 	public:
 		bool                                                       IsChecked;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -65,7 +60,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -76,7 +70,6 @@ namespace CG
 	public:
 		class UDebugTaskUI_C*                                      Task;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       IsChecked;                                               // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 }

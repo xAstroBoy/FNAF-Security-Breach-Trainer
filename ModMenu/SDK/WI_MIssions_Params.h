@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,63 +15,54 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function WI_MIssions.WI_MIssions_C.OnPreviewKeyDown
+	 */
+	struct UWI_MIssions_C_OnPreviewKeyDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm)
+		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm)
+	};
+
+	/**
 	 * Function WI_MIssions.WI_MIssions_C.MoveMenu
 	 */
 	struct UWI_MIssions_C_MoveMenu_Params
 	{
 	public:
 		struct FVector2D                                           InVec;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.CreateMenu
 	 */
 	struct UWI_MIssions_C_CreateMenu_Params
-	{
-	};
-
-	/**
-	 * Function WI_MIssions.WI_MIssions_C.InuputNext
-	 */
-	struct UWI_MIssions_C_InuputNext_Params
-	{
-	};
-
-	/**
-	 * Function WI_MIssions.WI_MIssions_C.InputPrevious
-	 */
-	struct UWI_MIssions_C_InputPrevious_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputBack
 	 */
 	struct UWI_MIssions_C_InputBack_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputPrimary
 	 */
 	struct UWI_MIssions_C_InputPrimary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputSecondary
 	 */
 	struct UWI_MIssions_C_InputSecondary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputTertiary
 	 */
 	struct UWI_MIssions_C_InputTertiary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputLookAxis
@@ -80,15 +71,13 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputOpen
 	 */
 	struct UWI_MIssions_C_InputOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputZoom
@@ -97,7 +86,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -107,7 +95,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Increment;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -117,29 +104,25 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Direction;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.Reset
 	 */
 	struct UWI_MIssions_C_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.Construct
 	 */
 	struct UWI_MIssions_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.BindAllEvents
 	 */
 	struct UWI_MIssions_C_BindAllEvents_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.GetNewMissions
@@ -150,15 +133,13 @@ namespace CG
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0008(0x0020)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0028(0x0048)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
 	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.UpdateMissions
 	 */
 	struct UWI_MIssions_C_UpdateMissions_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.Tick
@@ -168,7 +149,6 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -178,7 +158,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -188,22 +167,49 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputClose
 	 */
 	struct UWI_MIssions_C_InputClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.InputAccept
 	 */
 	struct UWI_MIssions_C_InputAccept_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function WI_MIssions.WI_MIssions_C.UpdateLastMissionFocus
+	 */
+	struct UWI_MIssions_C_UpdateLastMissionFocus_Params
+	{	};
+
+	/**
+	 * Function WI_MIssions.WI_MIssions_C.CursorVisibility
+	 */
+	struct UWI_MIssions_C_CursorVisibility_Params
+	{	};
+
+	/**
+	 * Function WI_MIssions.WI_MIssions_C.InputPrevious
+	 */
+	struct UWI_MIssions_C_InputPrevious_Params
+	{	};
+
+	/**
+	 * Function WI_MIssions.WI_MIssions_C.InuputNext
+	 */
+	struct UWI_MIssions_C_InuputNext_Params
+	{	};
+
+	/**
+	 * Function WI_MIssions.WI_MIssions_C.PlaySelectAudio
+	 */
+	struct UWI_MIssions_C_PlaySelectAudio_Params
+	{	};
 
 	/**
 	 * Function WI_MIssions.WI_MIssions_C.ExecuteUbergraph_WI_MIssions
@@ -212,7 +218,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_OFC7[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

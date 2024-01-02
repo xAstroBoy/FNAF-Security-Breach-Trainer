@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.ToggleLockState
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               DetermineIfSawPathBlocked                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -56,9 +56,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.BndEvt__AIDetector_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.BndEvt__AIDetector_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -116,9 +116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.ReceiveActorBeginOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -138,9 +138,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.ExecuteUbergraph_PathBlockedByDoor_PrizeCounter
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -160,9 +160,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.EndAlertDispatcher__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APathBlockedByDoor_PrizeCounter_C::EndAlertDispatcher__DelegateSignature()
 	{
@@ -179,9 +179,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PathBlockedByDoor_PrizeCounter.PathBlockedByDoor_PrizeCounter_C.AlertDispatcher__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APathBlockedByDoor_PrizeCounter_C::AlertDispatcher__DelegateSignature()
 	{
@@ -198,8 +198,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APathBlockedByDoor_PrizeCounter_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APathBlockedByDoor_PrizeCounter_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APathBlockedByDoor_PrizeCounter_C::StaticClass()

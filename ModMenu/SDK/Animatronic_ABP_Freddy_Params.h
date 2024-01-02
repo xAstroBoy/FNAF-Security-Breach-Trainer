@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.TurnFunciton
 	 */
 	struct UAnimatronic_ABP_Freddy_C_TurnFunciton_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.footstep
 	 */
 	struct UAnimatronic_ABP_Freddy_C_footstep_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.BlueprintUpdateAnimation
@@ -35,22 +33,19 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.BlueprintBeginPlay
 	 */
 	struct UAnimatronic_ABP_Freddy_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.OnAnimInstanceSwap
 	 */
 	struct UAnimatronic_ABP_Freddy_C_OnAnimInstanceSwap_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.SetHeadAimTarget
@@ -59,7 +54,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             AimLocation;                                             // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -69,92 +63,79 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_R_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Freddy_C_AnimNotify_R_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_L_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Freddy_C_AnimNotify_L_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Open Chest
 	 */
-	struct UAnimatronic_ABP_Freddy_C_Open_Chest_Params
-	{
-	};
+	struct UAnimatronic_ABP_Freddy_C_OpenChest_Params
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Close Chest
 	 */
-	struct UAnimatronic_ABP_Freddy_C_Close_Chest_Params
-	{
-	};
+	struct UAnimatronic_ABP_Freddy_C_CloseChest_Params
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Force Open
 	 */
-	struct UAnimatronic_ABP_Freddy_C_Force_Open_Params
-	{
-	};
+	struct UAnimatronic_ABP_Freddy_C_ForceOpen_Params
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.Force Close
 	 */
-	struct UAnimatronic_ABP_Freddy_C_Force_Close_Params
-	{
-	};
+	struct UAnimatronic_ABP_Freddy_C_ForceClose_Params
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.CanJumpscareEvent
 	 */
 	struct UAnimatronic_ABP_Freddy_C_CanJumpscareEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chest_open
 	 */
 	struct UAnimatronic_ABP_Freddy_C_AnimNotify_chest_open_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chest_close
 	 */
 	struct UAnimatronic_ABP_Freddy_C_AnimNotify_chest_close_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.AnimNotify_chestexit
 	 */
 	struct UAnimatronic_ABP_Freddy_C_AnimNotify_chestexit_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.PlayWaveAnim
 	 */
 	struct UAnimatronic_ABP_Freddy_C_PlayWaveAnim_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.StopwaveEvent
 	 */
 	struct UAnimatronic_ABP_Freddy_C_StopwaveEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Freddy.Animatronic_ABP_Freddy_C.ExecuteUbergraph_Animatronic_ABP_Freddy
@@ -163,7 +144,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_THJV[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

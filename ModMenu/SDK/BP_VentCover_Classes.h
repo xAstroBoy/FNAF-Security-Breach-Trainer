@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_VentCover.BP_VentCover_C
-	 * Size -> 0x0034 (FullSize[0x025C] - InheritedSize[0x0228])
+	 * Size -> 0x003C (FullSize[0x0264] - InheritedSize[0x0228])
 	 */
 	class ABP_VentCover_C : public AActor
 	{
@@ -31,6 +31,7 @@ namespace CG
 		bool                                                       first_open;                                              // 0x0259(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       Front;                                                   // 0x025A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Back;                                                    // 0x025B(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		class FName                                                ActivatableStorageName;                                  // 0x025C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void CheckSide(bool* IsValid);

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum RoomVisitStatus.RoomVisitStatus
 	 */
-	enum class RoomVisitStatus_ERoomVisitStatus : uint8_t
+	enum class ERoomVisitStatus : uint8_t
 	{
-		RoomVisitStatus__NewEnumerator0      = 0,
-		RoomVisitStatus__NewEnumerator1      = 1,
-		RoomVisitStatus__NewEnumerator2      = 2,
-		RoomVisitStatus__NewEnumerator3      = 3,
-		RoomVisitStatus__RoomVisitStatus_MAX = 4
+		RoomVisitStatusNewEnumerator0      = 0,
+		RoomVisitStatusNewEnumerator1      = 1,
+		RoomVisitStatusNewEnumerator2      = 2,
+		RoomVisitStatusNewEnumerator3      = 3,
+		RoomVisitStatusRoomVisitStatus_MAX = 4
 	};
 
 }

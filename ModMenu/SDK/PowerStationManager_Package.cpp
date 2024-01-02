@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.GetPowerStationEvent
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	void APowerStationManager_C::GetPowerStationEvent()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.IsPlayerInPowerStation
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	bool APowerStationManager_C::IsPlayerInPowerStation()
 	{
@@ -52,9 +52,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.GetPowerStationID
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PowerStationID                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -78,9 +78,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.GetPowerStationByID
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -104,17 +104,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.Finish Power Station Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APowerStationManager_C::Finish_Power_Station_Event()
+	void APowerStationManager_C::FinishPowerStationEvent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PowerStationManager.PowerStationManager_C.Finish Power Station Event");
 		
-		APowerStationManager_C_Finish_Power_Station_Event_Params params {};
+		APowerStationManager_C_FinishPowerStationEvent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -123,19 +123,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.Power Station Entered
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APowerStationManager_C::Power_Station_Entered(class APowerStation_Actor_C* PowerStation)
+	void APowerStationManager_C::PowerStationEntered(class APowerStation_Actor_C* PowerStation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PowerStationManager.PowerStationManager_C.Power Station Entered");
 		
-		APowerStationManager_C_Power_Station_Entered_Params params {};
+		APowerStationManager_C_PowerStationEntered_Params params {};
 		params.PowerStation = PowerStation;
 		
 		auto flags = fn->FunctionFlags;
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.ExecuteUbergraph_PowerStationManager
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -167,9 +167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PowerStationManager.PowerStationManager_C.OnPowerStationEntered__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APowerStation_Actor_C*                       PowerStation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PowerStationID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -191,8 +191,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APowerStationManager_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APowerStationManager_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APowerStationManager_C::StaticClass()

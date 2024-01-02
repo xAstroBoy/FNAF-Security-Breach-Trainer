@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,14 +22,6 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.StopIntroVideo
-	 */
-	struct UNewGameCinematicPlayerUI_C_StopIntroVideo_Params
-	{
 	};
 
 	/**
@@ -38,30 +30,32 @@ namespace CG
 	struct UNewGameCinematicPlayerUI_C_NewGameIntroVideo_Params
 	{
 	public:
-		struct FCinematicCutscene                                  CinematicCutscene;                                       // 0x0000(0x0040)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
+		struct FCinematicCutscene                                  CinimaticCutsceen;                                       // 0x0000(0x0040)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.StopIntroVideo
+	 */
+	struct UNewGameCinematicPlayerUI_C_StopIntroVideo_Params
+	{	};
 
 	/**
 	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.MakeTextVisibleAgain
 	 */
 	struct UNewGameCinematicPlayerUI_C_MakeTextVisibleAgain_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.StartTextFadeAway
 	 */
 	struct UNewGameCinematicPlayerUI_C_StartTextFadeAway_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.SetText
 	 */
 	struct UNewGameCinematicPlayerUI_C_SetText_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.OnMediaOpened
@@ -70,7 +64,15 @@ namespace CG
 	{
 	public:
 		class FString                                              OpenedUrl;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function newGameCinematicPlayerUI.NewGameCinematicPlayerUI_C.PrepNewGameIntroVideo
+	 */
+	struct UNewGameCinematicPlayerUI_C_PrepNewGameIntroVideo_Params
+	{
+	public:
+		struct FCinematicCutscene                                  CinematicCutscene;                                       // 0x0000(0x0040)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	};
 
 	/**
@@ -80,7 +82,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

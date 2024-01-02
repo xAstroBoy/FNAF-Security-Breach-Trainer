@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UBasicOverlays : public UOverlays
 	{
 	public:
-		TArray<struct FOverlayItem>                                Overlays;                                                // 0x0028(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FOverlayItem>                                Overlays;                                                // 0x0028(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();

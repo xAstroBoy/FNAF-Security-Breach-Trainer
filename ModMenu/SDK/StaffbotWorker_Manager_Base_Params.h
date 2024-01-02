@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,24 +20,21 @@ namespace CG
 	struct AStaffbotWorker_Manager_Base_C_ModelSwap_Func_Params
 	{
 	public:
-		class AStaffBotWorker_SplineFollower_C*                    Staffbot;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class AStaffBotWorker_SplineFollower_C*                    StaffBot;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AStaffbotTaskPlacement_C*                            TaskPoint;                                               // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.UserConstructionScript
 	 */
 	struct AStaffbotWorker_Manager_Base_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ReceiveBeginPlay
 	 */
 	struct AStaffbotWorker_Manager_Base_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ReceiveTick
@@ -46,22 +43,19 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.HasJumpscared
 	 */
 	struct AStaffbotWorker_Manager_Base_C_HasJumpscared_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.Reset Jumpscare
 	 */
-	struct AStaffbotWorker_Manager_Base_C_Reset_Jumpscare_Params
-	{
-	};
+	struct AStaffbotWorker_Manager_Base_C_ResetJumpscare_Params
+	{	};
 
 	/**
 	 * Function StaffbotWorker_Manager_Base.StaffbotWorker_Manager_Base_C.ExecuteUbergraph_StaffbotWorker_Manager_Base
@@ -70,7 +64,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

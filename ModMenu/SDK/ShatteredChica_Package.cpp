@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,72 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.IsMeshVisible
+	 * 		Flags  -> ()
+	 */
+	bool AShatteredChica_C::IsMeshVisible()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.IsMeshVisible");
+		
+		AShatteredChica_C_IsMeshVisible_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.GetManagedAIType
+	 * 		Flags  -> ()
+	 */
+	EFNAFAISpawnType AShatteredChica_C::GetManagedAIType()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.GetManagedAIType");
+		
+		AShatteredChica_C_GetManagedAIType_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.IsShatteredVersion
+	 * 		Flags  -> ()
+	 */
+	bool AShatteredChica_C::IsShatteredVersion()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.IsShatteredVersion");
+		
+		AShatteredChica_C_IsShatteredVersion_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.SetCanHeadRotate
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               BoolValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -34,9 +97,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AShatteredChica_C::ReceiveBeginPlay()
 	{
@@ -53,9 +116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -75,22 +138,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Break Through Wall
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		struct FVector                                     Start_Position                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		struct FVector                                     End_Position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		struct FVector                                     StartPosition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		struct FVector                                     EndPosition                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredChica_C::Break_Through_Wall(const struct FVector& Start_Position, const struct FVector& End_Position)
+	void AShatteredChica_C::BreakThroughWall(const struct FVector& StartPosition, const struct FVector& EndPosition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Break Through Wall");
 		
-		AShatteredChica_C_Break_Through_Wall_Params params {};
-		params.Start_Position = Start_Position;
-		params.End_Position = End_Position;
+		AShatteredChica_C_BreakThroughWall_Params params {};
+		params.StartPosition = StartPosition;
+		params.EndPosition = EndPosition;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -99,9 +162,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.BndEvt__InterpMoveComponent_K2Node_ComponentBoundEvent_0_OnInterpFinished__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AShatteredChica_C::BndEvt__InterpMoveComponent_K2Node_ComponentBoundEvent_0_OnInterpFinished__DelegateSignature()
 	{
@@ -118,55 +181,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Spin Head
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AShatteredChica_C::Spin_Head()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Spin Head");
-		
-		AShatteredChica_C_Spin_Head_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Start Head Spin Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AShatteredChica_C::Start_Head_Spin_Timer()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Start Head Spin Timer");
-		
-		AShatteredChica_C_Start_Head_Spin_Timer_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.On Head Spin Time
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AShatteredChica_C::On_Head_Spin_Time()
+	void AShatteredChica_C::OnHeadSpinTime()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.On Head Spin Time");
 		
-		AShatteredChica_C_On_Head_Spin_Time_Params params {};
+		AShatteredChica_C_OnHeadSpinTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -175,17 +200,98 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Stop Head Spin Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Stun
+	 * 		Flags  -> ()
 	 */
-	void AShatteredChica_C::Stop_Head_Spin_Timer()
+	void AShatteredChica_C::Stun()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Stun");
+		
+		AShatteredChica_C_Stun_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Unstun
+	 * 		Flags  -> ()
+	 */
+	void AShatteredChica_C::Unstun()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Unstun");
+		
+		AShatteredChica_C_Unstun_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.OnBreakThroughWall
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector                                     StartPosition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		struct FVector                                     EndPosition                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AShatteredChica_C::OnBreakThroughWall(const struct FVector& StartPosition, const struct FVector& EndPosition)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.OnBreakThroughWall");
+		
+		AShatteredChica_C_OnBreakThroughWall_Params params {};
+		params.StartPosition = StartPosition;
+		params.EndPosition = EndPosition;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Start Head Spin Timer
+	 * 		Flags  -> ()
+	 */
+	void AShatteredChica_C::StartHeadSpinTimer()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Start Head Spin Timer");
+		
+		AShatteredChica_C_StartHeadSpinTimer_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Stop Head Spin Timer
+	 * 		Flags  -> ()
+	 */
+	void AShatteredChica_C::StopHeadSpinTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Stop Head Spin Timer");
 		
-		AShatteredChica_C_Stop_Head_Spin_Timer_Params params {};
+		AShatteredChica_C_StopHeadSpinTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -194,17 +300,36 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Stop Head Spin
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Spin Head
+	 * 		Flags  -> ()
 	 */
-	void AShatteredChica_C::Stop_Head_Spin()
+	void AShatteredChica_C::SpinHead()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Spin Head");
+		
+		AShatteredChica_C_SpinHead_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.Stop Head Spin
+	 * 		Flags  -> ()
+	 */
+	void AShatteredChica_C::StopHeadSpin()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ShatteredChica.ShatteredChica_C.Stop Head Spin");
 		
-		AShatteredChica_C_Stop_Head_Spin_Params params {};
+		AShatteredChica_C_StopHeadSpin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -213,9 +338,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChica.ShatteredChica_C.ExecuteUbergraph_ShatteredChica
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -235,8 +360,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AShatteredChica_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AShatteredChica_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AShatteredChica_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_87005B5146310D84D0BBA7A88DF76D17
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_Gregory_Stamina_C::Finished_87005B5146310D84D0BBA7A88DF76D17()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_910C77124225AE12E5D9A1AE2A438FA4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_Gregory_Stamina_C::Finished_910C77124225AE12E5D9A1AE2A438FA4()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_9E22A3BA404DFC4AEBDD15A4C95B41C4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_Gregory_Stamina_C::Finished_9E22A3BA404DFC4AEBDD15A4C95B41C4()
 	{
@@ -69,36 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UWI_Gregory_Stamina_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct");
-		
-		UWI_Gregory_Stamina_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Depleted
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UWI_Gregory_Stamina_C::On_Stamina_Depleted()
+	void UWI_Gregory_Stamina_C::OnStaminaDepleted()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Depleted");
 		
-		UWI_Gregory_Stamina_C_On_Stamina_Depleted_Params params {};
+		UWI_Gregory_Stamina_C_OnStaminaDepleted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -107,17 +88,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Replenished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UWI_Gregory_Stamina_C::On_Stamina_Replenished()
+	void UWI_Gregory_Stamina_C::OnStaminaReplenished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Replenished");
 		
-		UWI_Gregory_Stamina_C_On_Stamina_Replenished_Params params {};
+		UWI_Gregory_Stamina_C_OnStaminaReplenished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,9 +107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -150,9 +131,50 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct
+	 * 		Flags  -> ()
+	 */
+	void UWI_Gregory_Stamina_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct");
+		
+		UWI_Gregory_Stamina_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.SetGregoryReferenceAndBindings
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AGregory_C*                                  Gregory                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UWI_Gregory_Stamina_C::SetGregoryReferenceAndBindings(class AGregory_C* Gregory)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.SetGregoryReferenceAndBindings");
+		
+		UWI_Gregory_Stamina_C_SetGregoryReferenceAndBindings_Params params {};
+		params.Gregory = Gregory;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.ExecuteUbergraph_WI_Gregory_Stamina
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -172,9 +194,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.PowerLevelDispatch__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -194,8 +216,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UWI_Gregory_Stamina_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UWI_Gregory_Stamina_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UWI_Gregory_Stamina_C::StaticClass()

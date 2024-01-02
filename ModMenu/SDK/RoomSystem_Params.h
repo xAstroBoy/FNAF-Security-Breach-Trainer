@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function RoomSystem.HideCueObjectInterface.SetupWorldCue
 	 */
 	struct UHideCueObjectInterface_SetupWorldCue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RoomSystem.HideCueObjectInterface.ResetWorldCue
 	 */
 	struct UHideCueObjectInterface_ResetWorldCue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RoomSystem.AIHideLocationInterface.IsPlayerInAttackRange
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -46,7 +43,6 @@ namespace CG
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            Rotation;                                                // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -56,7 +52,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -67,7 +62,6 @@ namespace CG
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            Rotation;                                                // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -77,7 +71,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -87,7 +80,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -97,7 +89,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -107,7 +98,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -117,7 +107,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -127,7 +116,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -137,7 +125,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -147,22 +134,19 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function RoomSystem.DoorInterface.ForceDoorOpen
 	 */
 	struct UDoorInterface_ForceDoorOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RoomSystem.DoorInterface.ForceDoorClose
 	 */
 	struct UDoorInterface_ForceDoorClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RoomSystem.POIBlueprintLibrary.SetPOIVisited
@@ -171,7 +155,6 @@ namespace CG
 	{
 	public:
 		struct FPOIIndex                                           Index;                                                   // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -182,7 +165,6 @@ namespace CG
 	public:
 		struct FPOIIndex                                           Index;                                                   // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -193,7 +175,6 @@ namespace CG
 	public:
 		struct FPOIIndex                                           Index;                                                   // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -202,9 +183,8 @@ namespace CG
 	struct UPOIBlueprintLibrary_GetPOIResultsFromIndices_Params
 	{
 	public:
-		TArray<struct FPOIIndex>                                   Indices;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIResult>                                  Results;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FPOIIndex>                                   Indices;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		TArray<struct FPOIResult>                                  Results;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -215,7 +195,6 @@ namespace CG
 	public:
 		struct FPOIIndex                                           Index;                                                   // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FPointOfInterestRuntimeInfo                         ReturnValue;                                             // 0x0010(0x0014)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -224,9 +203,8 @@ namespace CG
 	struct UPOIBlueprintLibrary_CreatePOIIndicesFromResults_Params
 	{
 	public:
-		TArray<struct FPOIResult>                                  Results;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIIndex>                                   Indices;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FPOIResult>                                  Results;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		TArray<struct FPOIIndex>                                   Indices;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -237,7 +215,6 @@ namespace CG
 	public:
 		struct FPointOfInterestRuntimeInfo                         Info;                                                    // 0x0000(0x0014)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0014(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -247,7 +224,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -257,7 +233,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -268,7 +243,6 @@ namespace CG
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -278,7 +252,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -288,8 +261,8 @@ namespace CG
 	{
 	public:
 		float                                                      PointDelta;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FVector>                                     ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_SGYX[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<struct FVector>                                     ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -299,7 +272,6 @@ namespace CG
 	{
 	public:
 		TMap<int32_t, struct FVector>                              ReturnValue;                                             // 0x0000(0x0050)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -310,7 +282,6 @@ namespace CG
 	public:
 		int32_t                                                    EntryIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             ReturnValue;                                             // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -320,8 +291,7 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -331,7 +301,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -340,8 +309,7 @@ namespace CG
 	struct ARoomAreaBase_GetPointsOfInterestInfo_Params
 	{
 	public:
-		TArray<struct FPointOfInterestRuntimeInfo>                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FPointOfInterestRuntimeInfo>                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -350,8 +318,7 @@ namespace CG
 	struct ARoomAreaBase_GetPointsOfInterest_Params
 	{
 	public:
-		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -362,7 +329,6 @@ namespace CG
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FPointOfInterestRuntimeInfo                         ReturnValue;                                             // 0x0004(0x0014)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -372,7 +338,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -382,7 +347,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -391,8 +355,7 @@ namespace CG
 	struct ARoomAreaBase_GetDoors_Params
 	{
 	public:
-		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -401,8 +364,7 @@ namespace CG
 	struct ARoomAreaBase_GetDetectors_Params
 	{
 	public:
-		TArray<class UBoxComponent*>                               ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UBoxComponent*>                               ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -412,7 +374,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -421,8 +382,7 @@ namespace CG
 	struct ARoomAreaBase_GetAllHideActors_Params
 	{
 	public:
-		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -431,8 +391,7 @@ namespace CG
 	struct ARoomAreaBase_GetAllAIHideActors_Params
 	{
 	public:
-		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -441,8 +400,7 @@ namespace CG
 	struct ARoomAreaBase_GetAllAdjacentRooms_Params
 	{
 	public:
-		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -451,8 +409,7 @@ namespace CG
 	struct ARoomAreaBase_GetAllAdjacentRoomInfos_Params
 	{
 	public:
-		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FRoomAdjacencyInfo>                          ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -462,7 +419,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -473,7 +429,6 @@ namespace CG
 	public:
 		class AActor*                                              Door;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRoomAdjacencyInfo                                  ReturnValue;                                             // 0x0008(0x0060)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -483,7 +438,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -494,15 +448,13 @@ namespace CG
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Amount;                                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function RoomSystem.RoomSystem.StartRoomSystem
 	 */
 	struct URoomSystem_StartRoomSystem_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RoomSystem.RoomSystem.RemovePOIsFromArray
@@ -510,10 +462,9 @@ namespace CG
 	struct URoomSystem_RemovePOIsFromArray_Params
 	{
 	public:
-		TArray<struct FPOIIndex>                                   POIsToRemove;                                            // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIResult>                                  ReturnValue;                                             // 0x0020(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FPOIIndex>                                   POIsToRemove;                                            // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		TArray<struct FPOIResult>                                  ReturnValue;                                             // 0x0020(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -523,7 +474,6 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       RoomExited;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -533,7 +483,6 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       RoomEntered;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -544,7 +493,6 @@ namespace CG
 	public:
 		class AActor*                                              Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -553,10 +501,10 @@ namespace CG
 	struct URoomSystem_GetWeightedRandomPOIFromArray_Params
 	{
 	public:
-		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       bOutValid;                                               // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_0QEW[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FPOIResult                                          OutResult;                                               // 0x0018(0x0028)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -566,8 +514,8 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_A7GI[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class ARoomAreaBase*                                       ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -578,8 +526,7 @@ namespace CG
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Radius;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIResult>                                  OutPointIndices;                                         // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FPOIResult>                                  OutPointIndices;                                         // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -590,9 +537,9 @@ namespace CG
 	public:
 		class APawn*                                               NavigationPawn;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Radius;                                                  // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FPOIResult>                                  OutPOIs;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_TTUE[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<struct FPOIResult>                                  OutPOIs;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 		struct FLatentActionInfo                                   LatentActionInfo;                                        // 0x0020(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -603,7 +550,6 @@ namespace CG
 	public:
 		class AActor*                                              Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -614,7 +560,6 @@ namespace CG
 	public:
 		class AActor*                                              Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -626,7 +571,6 @@ namespace CG
 		class AActor*                                              Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FPlayerRoomInfo                                     RoomInfo;                                                // 0x0008(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       Found;                                                   // 0x0014(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -635,8 +579,7 @@ namespace CG
 	struct URoomSystem_GetPlayerCurrentRooms_Params
 	{
 	public:
-		TArray<class ARoomAreaBase*>                               ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ARoomAreaBase*>                               ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -645,10 +588,10 @@ namespace CG
 	struct URoomSystem_GetHighestHeatPOIFromArray_Params
 	{
 	public:
-		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FPOIResult>                                  POIArray;                                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       bValid;                                                  // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_QFJ2[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FPOIResult                                          OutResult;                                               // 0x0018(0x0028)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -659,8 +602,8 @@ namespace CG
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutValid;                                               // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_QIVN[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FPOIResult                                          OutResult;                                               // 0x0010(0x0028)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -671,7 +614,6 @@ namespace CG
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		TMap<class ARoomAreaBase*, int32_t>                        ReturnValue;                                             // 0x0008(0x0050)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -681,7 +623,6 @@ namespace CG
 	{
 	public:
 		TMap<class ARoomAreaBase*, int32_t>                        ReturnValue;                                             // 0x0000(0x0050)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -692,7 +633,6 @@ namespace CG
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Amount;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

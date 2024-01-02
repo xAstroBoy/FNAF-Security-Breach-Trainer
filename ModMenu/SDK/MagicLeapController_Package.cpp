@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A700A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.SetMotionSourceForHand
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_SetMotionSourceForHand(InputCore_EControllerHand Hand, const class FName& MotionSource)
+	bool UMagicLeapControllerFunctionLibrary::SetMotionSourceForHand(EControllerHand Hand, const class FName& MotionSource)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -30,7 +30,6 @@ namespace CG
 		params.MotionSource = MotionSource;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -39,13 +38,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F7B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.SetControllerTrackingMode
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		MagicLeapController_EMagicLeapControllerTrackingMode TrackingMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerTrackingMode                   TrackingMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_SetControllerTrackingMode(MagicLeapController_EMagicLeapControllerTrackingMode TrackingMode)
+	bool UMagicLeapControllerFunctionLibrary::SetControllerTrackingMode(EMagicLeapControllerTrackingMode TrackingMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -55,7 +54,6 @@ namespace CG
 		params.TrackingMode = TrackingMode;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -64,16 +62,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FF60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayLEDPattern
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDColor   LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDPattern                     LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDColor                       LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DurationInSec                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayLEDPattern(const class FName& MotionSource, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
+	bool UMagicLeapControllerFunctionLibrary::PlayLEDPattern(const class FName& MotionSource, EMagicLeapControllerLEDPattern LEDPattern, EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -86,7 +84,6 @@ namespace CG
 		params.DurationInSec = DurationInSec;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -95,18 +92,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FDB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayLEDEffect
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDEffect  LEDEffect                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDSpeed   LEDSpeed                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDColor   LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDEffect                      LEDEffect                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDSpeed                       LEDSpeed                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDPattern                     LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDColor                       LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DurationInSec                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayLEDEffect(const class FName& MotionSource, MagicLeapController_EMagicLeapControllerLEDEffect LEDEffect, MagicLeapController_EMagicLeapControllerLEDSpeed LEDSpeed, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
+	bool UMagicLeapControllerFunctionLibrary::PlayLEDEffect(const class FName& MotionSource, EMagicLeapControllerLEDEffect LEDEffect, EMagicLeapControllerLEDSpeed LEDSpeed, EMagicLeapControllerLEDPattern LEDPattern, EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -121,7 +118,6 @@ namespace CG
 		params.DurationInSec = DurationInSec;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -130,15 +126,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FCC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayHapticPattern
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerHapticPattern HapticPattern                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerHapticIntensity Intensity                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerHapticPattern                  HapticPattern                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerHapticIntensity                Intensity                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayHapticPattern(const class FName& MotionSource, MagicLeapController_EMagicLeapControllerHapticPattern HapticPattern, MagicLeapController_EMagicLeapControllerHapticIntensity Intensity)
+	bool UMagicLeapControllerFunctionLibrary::PlayHapticPattern(const class FName& MotionSource, EMagicLeapControllerHapticPattern HapticPattern, EMagicLeapControllerHapticIntensity Intensity)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -150,7 +146,6 @@ namespace CG
 		params.Intensity = Intensity;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -159,18 +154,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6FB10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerLEDEffect
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDEffect  LEDEffect                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDSpeed   LEDSpeed                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDColor   LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDEffect                      LEDEffect                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDSpeed                       LEDSpeed                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDPattern                     LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDColor                       LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DurationInSec                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayControllerLEDEffect(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerLEDEffect LEDEffect, MagicLeapController_EMagicLeapControllerLEDSpeed LEDSpeed, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
+	bool UMagicLeapControllerFunctionLibrary::PlayControllerLEDEffect(EControllerHand Hand, EMagicLeapControllerLEDEffect LEDEffect, EMagicLeapControllerLEDSpeed LEDSpeed, EMagicLeapControllerLEDPattern LEDPattern, EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -185,7 +180,6 @@ namespace CG
 		params.DurationInSec = DurationInSec;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -194,16 +188,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F9D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerLED
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerLEDColor   LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDPattern                     LEDPattern                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerLEDColor                       LEDColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DurationInSec                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayControllerLED(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerLEDPattern LEDPattern, MagicLeapController_EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
+	bool UMagicLeapControllerFunctionLibrary::PlayControllerLED(EControllerHand Hand, EMagicLeapControllerLEDPattern LEDPattern, EMagicLeapControllerLEDColor LEDColor, float DurationInSec)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -216,7 +210,6 @@ namespace CG
 		params.DurationInSec = DurationInSec;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -225,15 +218,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F8D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.PlayControllerHapticFeedback
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerHapticPattern HapticPattern                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		MagicLeapController_EMagicLeapControllerHapticIntensity Intensity                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerHapticPattern                  HapticPattern                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapControllerHapticIntensity                Intensity                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_PlayControllerHapticFeedback(InputCore_EControllerHand Hand, MagicLeapController_EMagicLeapControllerHapticPattern HapticPattern, MagicLeapController_EMagicLeapControllerHapticIntensity Intensity)
+	bool UMagicLeapControllerFunctionLibrary::PlayControllerHapticFeedback(EControllerHand Hand, EMagicLeapControllerHapticPattern HapticPattern, EMagicLeapControllerHapticIntensity Intensity)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -245,7 +238,6 @@ namespace CG
 		params.Intensity = Intensity;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -254,11 +246,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A630D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.MaxSupportedMagicLeapControllers
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	int32_t UMagicLeapControllerFunctionLibrary::STATIC_MaxSupportedMagicLeapControllers()
+	int32_t UMagicLeapControllerFunctionLibrary::MaxSupportedMagicLeapControllers()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -267,7 +259,6 @@ namespace CG
 		UMagicLeapControllerFunctionLibrary_MaxSupportedMagicLeapControllers_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -276,13 +267,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F6B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.IsMLControllerConnected
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_IsMLControllerConnected(const class FName& MotionSource)
+	bool UMagicLeapControllerFunctionLibrary::IsMLControllerConnected(const class FName& MotionSource)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -292,7 +283,6 @@ namespace CG
 		params.MotionSource = MotionSource;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -301,11 +291,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F8B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.InvertControllerMapping
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UMagicLeapControllerFunctionLibrary::STATIC_InvertControllerMapping()
+	void UMagicLeapControllerFunctionLibrary::InvertControllerMapping()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -314,20 +304,19 @@ namespace CG
 		UMagicLeapControllerFunctionLibrary_InvertControllerMapping_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F830
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetMotionSourceForHand
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FName UMagicLeapControllerFunctionLibrary::STATIC_GetMotionSourceForHand(InputCore_EControllerHand Hand)
+	class FName UMagicLeapControllerFunctionLibrary::GetMotionSourceForHand(EControllerHand Hand)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -337,7 +326,6 @@ namespace CG
 		params.Hand = Hand;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -346,13 +334,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F7B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetMLControllerType
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	MagicLeapController_EMagicLeapControllerType UMagicLeapControllerFunctionLibrary::STATIC_GetMLControllerType(InputCore_EControllerHand Hand)
+	EMagicLeapControllerType UMagicLeapControllerFunctionLibrary::GetMLControllerType(EControllerHand Hand)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -362,7 +350,6 @@ namespace CG
 		params.Hand = Hand;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -371,13 +358,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F730
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetHandForMotionSource
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	InputCore_EControllerHand UMagicLeapControllerFunctionLibrary::STATIC_GetHandForMotionSource(const class FName& MotionSource)
+	EControllerHand UMagicLeapControllerFunctionLibrary::GetHandForMotionSource(const class FName& MotionSource)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -387,7 +374,6 @@ namespace CG
 		params.MotionSource = MotionSource;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -396,13 +382,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F6B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerType
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MotionSource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	MagicLeapController_EMagicLeapControllerType UMagicLeapControllerFunctionLibrary::STATIC_GetControllerType(const class FName& MotionSource)
+	EMagicLeapControllerType UMagicLeapControllerFunctionLibrary::GetControllerType(const class FName& MotionSource)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -412,7 +398,6 @@ namespace CG
 		params.MotionSource = MotionSource;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -421,11 +406,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerTrackingMode
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	MagicLeapController_EMagicLeapControllerTrackingMode UMagicLeapControllerFunctionLibrary::STATIC_GetControllerTrackingMode()
+	EMagicLeapControllerTrackingMode UMagicLeapControllerFunctionLibrary::GetControllerTrackingMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -434,7 +419,6 @@ namespace CG
 		UMagicLeapControllerFunctionLibrary_GetControllerTrackingMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -443,14 +427,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6F5B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapController.MagicLeapControllerFunctionLibrary.GetControllerMapping
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            ControllerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		InputCore_EControllerHand                          Hand                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EControllerHand                                    Hand                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapControllerFunctionLibrary::STATIC_GetControllerMapping(int32_t ControllerIndex, InputCore_EControllerHand* Hand)
+	bool UMagicLeapControllerFunctionLibrary::GetControllerMapping(int32_t ControllerIndex, EControllerHand* Hand)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -460,7 +444,6 @@ namespace CG
 		params.ControllerIndex = ControllerIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -472,8 +455,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapControllerFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapControllerFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapControllerFunctionLibrary::StaticClass()
@@ -486,8 +469,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapTouchpadGesturesComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapTouchpadGesturesComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapTouchpadGesturesComponent::StaticClass()

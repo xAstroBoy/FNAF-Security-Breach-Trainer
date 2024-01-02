@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,88 +17,91 @@ namespace CG
 	/**
 	 * Enum LuminRuntimeSettings.ELuminPrivilege
 	 */
-	enum class LuminRuntimeSettings_ELuminPrivilege : uint8_t
+	enum class ELuminPrivilege : uint8_t
 	{
-		ELuminPrivilege__Invalid                        = 0,
-		ELuminPrivilege__BatteryInfo                    = 1,
-		ELuminPrivilege__CameraCapture                  = 2,
-		ELuminPrivilege__ComputerVision                 = 3,
-		ELuminPrivilege__WorldReconstruction            = 4,
-		ELuminPrivilege__InAppPurchase                  = 5,
-		ELuminPrivilege__AudioCaptureMic                = 6,
-		ELuminPrivilege__DrmCertificates                = 7,
-		ELuminPrivilege__Occlusion                      = 8,
-		ELuminPrivilege__LowLatencyLightwear            = 9,
-		ELuminPrivilege__Internet                       = 10,
-		ELuminPrivilege__IdentityRead                   = 11,
-		ELuminPrivilege__BackgroundDownload             = 12,
-		ELuminPrivilege__BackgroundUpload               = 13,
-		ELuminPrivilege__MediaDrm                       = 14,
-		ELuminPrivilege__Media                          = 15,
-		ELuminPrivilege__MediaMetadata                  = 16,
-		ELuminPrivilege__PowerInfo                      = 17,
-		ELuminPrivilege__LocalAreaNetwork               = 18,
-		ELuminPrivilege__VoiceInput                     = 19,
-		ELuminPrivilege__Documents                      = 20,
-		ELuminPrivilege__ConnectBackgroundMusicService  = 21,
-		ELuminPrivilege__RegisterBackgroundMusicService = 22,
-		ELuminPrivilege__PcfRead                        = 23,
-		ELuminPrivilege__PwFoundObjRead                 = 24,
-		ELuminPrivilege__NormalNotificationsUsage       = 25,
-		ELuminPrivilege__MusicService                   = 26,
-		ELuminPrivilege__ControllerPose                 = 27,
-		ELuminPrivilege__GesturesSubscribe              = 28,
-		ELuminPrivilege__GesturesConfig                 = 29,
-		ELuminPrivilege__AddressBookRead                = 30,
-		ELuminPrivilege__AddressBookWrite               = 31,
-		ELuminPrivilege__AddressBookBasicAccess         = 32,
-		ELuminPrivilege__CoarseLocation                 = 33,
-		ELuminPrivilege__FineLocation                   = 34,
-		ELuminPrivilege__HandMesh                       = 35,
-		ELuminPrivilege__WifiStatusRead                 = 36,
-		ELuminPrivilege__SocialConnectionsInvitesAccess = 37,
-		ELuminPrivilege__ELuminPrivilege_MAX            = 38
+		Invalid                        = 0,
+		BatteryInfo                    = 1,
+		CameraCapture                  = 2,
+		ComputerVision                 = 3,
+		WorldReconstruction            = 4,
+		InAppPurchase                  = 5,
+		AudioCaptureMic                = 6,
+		DrmCertificates                = 7,
+		Occlusion                      = 8,
+		LowLatencyLightwear            = 9,
+		Internet                       = 10,
+		IdentityRead                   = 11,
+		BackgroundDownload             = 12,
+		BackgroundUpload               = 13,
+		MediaDrm                       = 14,
+		Media                          = 15,
+		MediaMetadata                  = 16,
+		PowerInfo                      = 17,
+		LocalAreaNetwork               = 18,
+		VoiceInput                     = 19,
+		Documents                      = 20,
+		ConnectBackgroundMusicService  = 21,
+		RegisterBackgroundMusicService = 22,
+		PcfRead                        = 23,
+		PwFoundObjRead                 = 24,
+		NormalNotificationsUsage       = 25,
+		MusicService                   = 26,
+		ControllerPose                 = 27,
+		GesturesSubscribe              = 28,
+		GesturesConfig                 = 29,
+		AddressBookRead                = 30,
+		AddressBookWrite               = 31,
+		AddressBookBasicAccess         = 32,
+		CoarseLocation                 = 33,
+		FineLocation                   = 34,
+		HandMesh                       = 35,
+		WifiStatusRead                 = 36,
+		SocialConnectionsInvitesAccess = 37,
+		SocialConnectionsSelectAccess  = 38,
+		SecureBrowserWindow            = 39,
+		BluetoothAdapterExternalApp    = 40,
+		BluetoothAdapterUser           = 41,
+		BluetoothGattWrite             = 42,
+		MAX                            = 43
 	};
 
 	/**
 	 * Enum LuminRuntimeSettings.ELuminFrameTimingHint
 	 */
-	enum class LuminRuntimeSettings_ELuminFrameTimingHint : uint8_t
+	enum class ELuminFrameTimingHint : uint8_t
 	{
-		ELuminFrameTimingHint__Unspecified               = 0,
-		ELuminFrameTimingHint__Maximum                   = 1,
-		ELuminFrameTimingHint__FPS                       = 2,
-		ELuminFrameTimingHint__FPS01                     = 3,
-		ELuminFrameTimingHint__ELuminFrameTimingHint_MAX = 4
+		Unspecified = 0,
+		Maximum     = 1,
+		FPS         = 2,
+		FPS01       = 3,
+		MAX         = 4
 	};
 
 	/**
 	 * Enum LuminRuntimeSettings.ELuminComponentType
 	 */
-	enum class LuminRuntimeSettings_ELuminComponentType : uint8_t
+	enum class ELuminComponentType : uint8_t
 	{
-		ELuminComponentType__Universe                = 0,
-		ELuminComponentType__Fullscreen              = 1,
-		ELuminComponentType__SearchProvider          = 2,
-		ELuminComponentType__MusicService            = 3,
-		ELuminComponentType__Screens                 = 4,
-		ELuminComponentType__ScreensImmersive        = 5,
-		ELuminComponentType__Console                 = 6,
-		ELuminComponentType__SystemUI                = 7,
-		ELuminComponentType__ELuminComponentType_MAX = 8
+		Universe       = 0,
+		Fullscreen     = 1,
+		SearchProvider = 2,
+		MusicService   = 3,
+		Console        = 4,
+		SystemUI       = 5,
+		MAX            = 6
 	};
 
 	/**
 	 * Enum LuminRuntimeSettings.ELuminComponentSubElementType
 	 */
-	enum class LuminRuntimeSettings_ELuminComponentSubElementType : uint8_t
+	enum class ELuminComponentSubElementType : uint8_t
 	{
-		ELuminComponentSubElementType__FileExtension                     = 0,
-		ELuminComponentSubElementType__MimeType                          = 1,
-		ELuminComponentSubElementType__Mode                              = 2,
-		ELuminComponentSubElementType__MusicAttribute                    = 3,
-		ELuminComponentSubElementType__Schema                            = 4,
-		ELuminComponentSubElementType__ELuminComponentSubElementType_MAX = 5
+		FileExtension  = 0,
+		MimeType       = 1,
+		Mode           = 2,
+		MusicAttribute = 3,
+		Schema         = 4,
+		MAX            = 5
 	};
 
 	// --------------------------------------------------
@@ -114,32 +117,6 @@ namespace CG
 		class FString                                              LanguageCode;                                            // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FDirectoryPath                                      IconModelPath;                                           // 0x0010(0x0010) Edit, Config, GlobalConfig, NativeAccessSpecifierPublic
 		struct FDirectoryPath                                      IconPortalPath;                                          // 0x0020(0x0010) Edit, Config, GlobalConfig, NativeAccessSpecifierPublic
-
-	};
-
-	/**
-	 * ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
-	 * Size -> 0x0018
-	 */
-	struct FLuminComponentSubElement
-	{
-	public:
-		LuminRuntimeSettings_ELuminComponentSubElementType         ElementType;                                             // 0x0000(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_R0ZC[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class FString                                              Value;                                                   // 0x0008(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
-	};
-
-	/**
-	 * ScriptStruct LuminRuntimeSettings.LocalizedAppName
-	 * Size -> 0x0020
-	 */
-	struct FLocalizedAppName
-	{
-	public:
-		class FString                                              LanguageCode;                                            // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		class FString                                              AppName;                                                 // 0x0010(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -149,8 +126,19 @@ namespace CG
 	struct FLocalizedIconInfos
 	{
 	public:
-		TArray<struct FLocalizedIconInfo>                          IconData;                                                // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FLocalizedIconInfo>                          IconData;                                                // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic
+	};
 
+	/**
+	 * ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
+	 * Size -> 0x0018
+	 */
+	struct FLuminComponentSubElement
+	{
+	public:
+		ELuminComponentSubElementType                              ElementType;                                             // 0x0000(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_O23H[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FString                                              Value;                                                   // 0x0008(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -163,10 +151,20 @@ namespace CG
 		class FString                                              Name;                                                    // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              VisibleName;                                             // 0x0010(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              ExecutableName;                                          // 0x0020(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		LuminRuntimeSettings_ELuminComponentType                   ComponentType;                                           // 0x0030(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IANZ[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FLuminComponentSubElement>                   ExtraComponentSubElements;                               // 0x0038(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		ELuminComponentType                                        ComponentType;                                           // 0x0030(0x0001) Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_Q2LE[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FLuminComponentSubElement>                   ExtraComponentSubElements;                               // 0x0038(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic
+	};
 
+	/**
+	 * ScriptStruct LuminRuntimeSettings.LocalizedAppName
+	 * Size -> 0x0020
+	 */
+	struct FLocalizedAppName
+	{
+	public:
+		class FString                                              LanguageCode;                                            // 0x0000(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		class FString                                              AppName;                                                 // 0x0010(0x0010) Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 }

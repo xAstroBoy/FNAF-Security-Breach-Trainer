@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class ATurnstileEntry_C : public ADoorManager_C
 	{
 	public:
-		unsigned char                                              UnknownData_P6JK[0x7];                                   // 0x02B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XJKU[0x7];                                   // 0x02B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UUpdateMissionComponent*                             NoReEntryUpdate;                                         // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UMissionStateCondition*                              MissionStateCondition;                                   // 0x02D0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -32,13 +32,13 @@ namespace CG
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void OnCheckpointSave(class UFNAFSaveData* SaveDataObject);
 		void OnStoreGameData(class UFNAFSaveData* SaveDataObject);
 		void PostGameLoad();
@@ -48,10 +48,10 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void ReceiveBeginPlay();
-		void Open_Turnstiles();
+		void OpenTurnstiles();
 		void OnGameDataLoaded(class UFNAFSaveData* SaveDataObject);
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
-		void Close_Turnstiles();
+		void CloseTurnstiles();
 		void BndEvt__PlayerTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void ExecuteUbergraph_TurnstileEntry(int32_t EntryPoint);
 		static UClass* StaticClass();

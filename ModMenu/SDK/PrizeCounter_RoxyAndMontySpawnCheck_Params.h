@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function PrizeCounter_RoxyAndMontySpawnCheck.PrizeCounter_RoxyAndMontySpawnCheck_C.OnTriggered
 	 */
 	struct APrizeCounter_RoxyAndMontySpawnCheck_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PrizeCounter_RoxyAndMontySpawnCheck.PrizeCounter_RoxyAndMontySpawnCheck_C.ExecuteUbergraph_PrizeCounter_RoxyAndMontySpawnCheck
@@ -38,7 +36,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_12YO[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

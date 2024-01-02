@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass SplinePathwayMotionComponent.SplinePathwayMotionComponent_C
-	 * Size -> 0x0030 (FullSize[0x0110] - InheritedSize[0x00E0])
+	 * Size -> 0x0030 (FullSize[0x0120] - InheritedSize[0x00F0])
 	 */
 	class USplinePathwayMotionComponent_C : public USplineFollowMovementComponent
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00E0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		unsigned char                                              SplinePathway[0x28];                                     // 0x00E8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		unsigned char                                              SplinePathway[0x28];                                     // 0x00F8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
 		void ReceiveBeginPlay();

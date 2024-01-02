@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84A30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	bool UMagicLeapPlanesComponent::RequestPlanesAsync()
 	{
@@ -25,7 +25,6 @@ namespace CG
 		UMagicLeapPlanesComponent_RequestPlanesAsync_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,8 +33,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapPlanesComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapPlanesComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapPlanesComponent::StaticClass()
@@ -48,15 +47,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A848B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.ReorderPlaneFlags
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  InPriority                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  InFlagsToReorder                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  OutReorderedFlags                                          (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  InPriority                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  InFlagsToReorder                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  OutReorderedFlags                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapPlanesFunctionLibrary::STATIC_ReorderPlaneFlags(TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags> InPriority, TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags> InFlagsToReorder, TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>* OutReorderedFlags)
+	void UMagicLeapPlanesFunctionLibrary::ReorderPlaneFlags(TArray<EMagicLeapPlaneQueryFlags> InPriority, TArray<EMagicLeapPlaneQueryFlags> InFlagsToReorder, TArray<EMagicLeapPlaneQueryFlags>* OutReorderedFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -67,7 +66,6 @@ namespace CG
 		params.InFlagsToReorder = InFlagsToReorder;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -77,13 +75,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.RemovePersistentQuery
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGuid                                       Handle                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_RemovePersistentQuery(const struct FGuid& Handle)
+	bool UMagicLeapPlanesFunctionLibrary::RemovePersistentQuery(const struct FGuid& Handle)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -93,7 +91,6 @@ namespace CG
 		params.Handle = Handle;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -102,15 +99,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A846A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.RemoveFlagsNotInQuery
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  InQueryFlags                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  InResultFlags                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  OutFlags                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  InQueryFlags                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  InResultFlags                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<EMagicLeapPlaneQueryFlags>                  OutFlags                                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapPlanesFunctionLibrary::STATIC_RemoveFlagsNotInQuery(TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags> InQueryFlags, TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags> InResultFlags, TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>* OutFlags)
+	void UMagicLeapPlanesFunctionLibrary::RemoveFlagsNotInQuery(TArray<EMagicLeapPlaneQueryFlags> InQueryFlags, TArray<EMagicLeapPlaneQueryFlags> InResultFlags, TArray<EMagicLeapPlaneQueryFlags>* OutFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -121,7 +118,6 @@ namespace CG
 		params.InResultFlags = InResultFlags;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -131,14 +127,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.PlanesQueryBeginAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapPlanesQuery                       Query                                                      (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              ResultDelegate                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_PlanesQueryBeginAsync(const struct FMagicLeapPlanesQuery& Query, const class FScriptDelegate& ResultDelegate)
+	bool UMagicLeapPlanesFunctionLibrary::PlanesQueryBeginAsync(const struct FMagicLeapPlanesQuery& Query, const class FScriptDelegate& ResultDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -149,7 +145,6 @@ namespace CG
 		params.ResultDelegate = ResultDelegate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -158,15 +153,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84390
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.PlanesPersistentQueryBeginAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapPlanesQuery                       Query                                                      (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		struct FGuid                                       Handle                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              ResultDelegate                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_PlanesPersistentQueryBeginAsync(const struct FMagicLeapPlanesQuery& Query, const struct FGuid& Handle, const class FScriptDelegate& ResultDelegate)
+	bool UMagicLeapPlanesFunctionLibrary::PlanesPersistentQueryBeginAsync(const struct FMagicLeapPlanesQuery& Query, const struct FGuid& Handle, const class FScriptDelegate& ResultDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -178,7 +173,6 @@ namespace CG
 		params.ResultDelegate = ResultDelegate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -187,11 +181,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84360
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.IsTrackerValid
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_IsTrackerValid()
+	bool UMagicLeapPlanesFunctionLibrary::IsTrackerValid()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -200,7 +194,6 @@ namespace CG
 		UMagicLeapPlanesFunctionLibrary_IsTrackerValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -209,14 +202,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84220
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.GetContentScale
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ContentActor                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FMagicLeapPlaneResult                       PlaneResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UMagicLeapPlanesFunctionLibrary::STATIC_GetContentScale(class AActor* ContentActor, const struct FMagicLeapPlaneResult& PlaneResult)
+	struct FTransform UMagicLeapPlanesFunctionLibrary::GetContentScale(class AActor* ContentActor, const struct FMagicLeapPlaneResult& PlaneResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -227,7 +220,6 @@ namespace CG
 		params.PlaneResult = PlaneResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -236,11 +228,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A841F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.DestroyTracker
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_DestroyTracker()
+	bool UMagicLeapPlanesFunctionLibrary::DestroyTracker()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -249,7 +241,6 @@ namespace CG
 		UMagicLeapPlanesFunctionLibrary_DestroyTracker_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -258,11 +249,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A841C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.CreateTracker
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapPlanesFunctionLibrary::STATIC_CreateTracker()
+	bool UMagicLeapPlanesFunctionLibrary::CreateTracker()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -271,7 +262,6 @@ namespace CG
 		UMagicLeapPlanesFunctionLibrary_CreateTracker_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -280,13 +270,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A84140
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapPlanes.MagicLeapPlanesFunctionLibrary.AddPersistentQuery
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		MagicLeapPlanes_EMagicLeapPlaneQueryType           PersistentQueryType                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EMagicLeapPlaneQueryType                           PersistentQueryType                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FGuid UMagicLeapPlanesFunctionLibrary::STATIC_AddPersistentQuery(MagicLeapPlanes_EMagicLeapPlaneQueryType PersistentQueryType)
+	struct FGuid UMagicLeapPlanesFunctionLibrary::AddPersistentQuery(EMagicLeapPlaneQueryType PersistentQueryType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -296,7 +286,6 @@ namespace CG
 		params.PersistentQueryType = PersistentQueryType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -305,8 +294,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapPlanesFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapPlanesFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapPlanesFunctionLibrary::StaticClass()

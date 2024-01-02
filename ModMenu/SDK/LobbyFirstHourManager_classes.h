@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void On_12_30();
+		void On1230();
 		void ExecuteUbergraph_LobbyFirstHourManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

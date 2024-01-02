@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,9 +22,10 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x04C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		TArray<class UMaterialInterface*>                          DBG_MaterialMapping;                                     // 0x04C8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class UMaterialInterface*>                          DBG_MaterialMapping;                                     // 0x04C8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
+		void DLCRabbitDisplayAlertText(bool Display);
 		void ReceiveBeginPlay();
 		void OnDebugVis(bool enable);
 		void ExecuteUbergraph_DebuggableAICharacter(int32_t EntryPoint);

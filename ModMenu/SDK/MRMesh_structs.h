@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * Enum MRMesh.EMeshTrackerVertexColorMode
 	 */
-	enum class MRMesh_EMeshTrackerVertexColorMode : uint8_t
+	enum class EMeshTrackerVertexColorMode : uint8_t
 	{
-		EMeshTrackerVertexColorMode__None                            = 0,
-		EMeshTrackerVertexColorMode__Confidence                      = 1,
-		EMeshTrackerVertexColorMode__Block                           = 2,
-		EMeshTrackerVertexColorMode__EMeshTrackerVertexColorMode_MAX = 3
+		None       = 0,
+		Confidence = 1,
+		Block      = 2,
+		MAX        = 3
 	};
 
 	// --------------------------------------------------
@@ -35,8 +35,7 @@ namespace CG
 	struct FMRMeshConfiguration
 	{
 	public:
-		unsigned char                                              UnknownData_20UU[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_CNJK[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 }

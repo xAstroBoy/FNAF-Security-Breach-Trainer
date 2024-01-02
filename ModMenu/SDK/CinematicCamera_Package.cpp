@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACameraRig_Crane.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACameraRig_Crane.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACameraRig_Crane::StaticClass()
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA660
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class USplineComponent* ACameraRig_Rail::GetRailSplineComponent()
 	{
@@ -39,7 +39,6 @@ namespace CG
 		ACameraRig_Rail_GetRailSplineComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -48,8 +47,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACameraRig_Rail.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACameraRig_Rail.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACameraRig_Rail::StaticClass()
@@ -62,9 +61,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraActor.GetCineCameraComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 	{
@@ -75,7 +74,6 @@ namespace CG
 		ACineCameraActor_GetCineCameraComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -84,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACineCameraActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACineCameraActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACineCameraActor::StaticClass()
@@ -98,9 +96,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA7F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetLensPresetByName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      InPresetName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -114,16 +112,15 @@ namespace CG
 		params.InPresetName = InPresetName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      InPresetName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -137,18 +134,17 @@ namespace CG
 		params.InPresetName = InPresetName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA6B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              InFocalLength                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              InFocalLength                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UCineCameraComponent::SetCurrentFocalLength(float InFocalLength)
 	{
@@ -160,16 +156,15 @@ namespace CG
 		params.InFocalLength = InFocalLength;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UCineCameraComponent::GetVerticalFieldOfView()
 	{
@@ -180,7 +175,6 @@ namespace CG
 		UCineCameraComponent_GetVerticalFieldOfView_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -189,11 +183,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA580
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<struct FNamedLensPreset> UCineCameraComponent::STATIC_GetLensPresetsCopy()
+	TArray<struct FNamedLensPreset> UCineCameraComponent::GetLensPresetsCopy()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -202,7 +196,6 @@ namespace CG
 		UCineCameraComponent_GetLensPresetsCopy_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -211,9 +204,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetLensPresetName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UCineCameraComponent::GetLensPresetName()
 	{
@@ -224,7 +217,6 @@ namespace CG
 		UCineCameraComponent_GetLensPresetName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -233,9 +225,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA4D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UCineCameraComponent::GetHorizontalFieldOfView()
 	{
@@ -246,7 +238,6 @@ namespace CG
 		UCineCameraComponent_GetHorizontalFieldOfView_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -255,9 +246,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA450
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetFilmbackPresetsCopy
+	 * 		Flags  -> ()
+	 */
+	TArray<struct FNamedFilmbackPreset> UCineCameraComponent::GetFilmbackPresetsCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetFilmbackPresetsCopy");
+		
+		UCineCameraComponent_GetFilmbackPresetsCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UCineCameraComponent::GetFilmbackPresetName()
 	{
@@ -268,7 +280,6 @@ namespace CG
 		UCineCameraComponent_GetFilmbackPresetName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -277,9 +288,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA390
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UCineCameraComponent::GetDefaultFilmbackPresetName()
 	{
@@ -290,7 +301,6 @@ namespace CG
 		UCineCameraComponent_GetDefaultFilmbackPresetName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -299,8 +309,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCineCameraComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCineCameraComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCineCameraComponent::StaticClass()

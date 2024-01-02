@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,44 +30,69 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function TitlePC.TitlePC_C.InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_3
+	 * Function TitlePC.TitlePC_C.InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_4
 	 */
-	struct ATitlePC_C_InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_3_Params
+	struct ATitlePC_C_InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_4_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function TitlePC.TitlePC_C.InpActEvt_Escape_K2Node_InputKeyEvent_2
+	 * Function TitlePC.TitlePC_C.InpActEvt_Escape_K2Node_InputKeyEvent_3
 	 */
-	struct ATitlePC_C_InpActEvt_Escape_K2Node_InputKeyEvent_2_Params
+	struct ATitlePC_C_InpActEvt_Escape_K2Node_InputKeyEvent_3_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function TitlePC.TitlePC_C.InpActEvt_AnyKey_K2Node_InputKeyEvent_1
+	 * Function TitlePC.TitlePC_C.InpActEvt_AnyKey_K2Node_InputKeyEvent_2
 	 */
-	struct ATitlePC_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_1_Params
+	struct ATitlePC_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_2_Params
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function TitlePC.TitlePC_C.InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1
+	 */
+	struct ATitlePC_C_InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1_Params
+	{
+	public:
+		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function TitlePC.TitlePC_C.OnToggleLocalizationQA
 	 */
 	struct ATitlePC_C_OnToggleLocalizationQA_Params
+	{	};
+
+	/**
+	 * Function TitlePC.TitlePC_C.ReceiveBeginPlay
+	 */
+	struct ATitlePC_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function TitlePC.TitlePC_C.OnDebugSequenceEntered
+	 */
+	struct ATitlePC_C_OnDebugSequenceEntered_Params
+	{	};
+
+	/**
+	 * Function TitlePC.TitlePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3
+	 */
+	struct ATitlePC_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3_Params
 	{
+	public:
+		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -78,31 +102,6 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function TitlePC.TitlePC_C.ReceiveBeginPlay
-	 */
-	struct ATitlePC_C_ReceiveBeginPlay_Params
-	{
-	};
-
-	/**
-	 * Function TitlePC.TitlePC_C.OnDebugSequenceEntered
-	 */
-	struct ATitlePC_C_OnDebugSequenceEntered_Params
-	{
-	};
-
-	/**
-	 * Function TitlePC.TitlePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3
-	 */
-	struct ATitlePC_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_3_Params
-	{
-	public:
-		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -112,7 +111,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,12 +12,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SplinePathFork.SplinePathFork_C.GetPossibleForks
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SplineFollowerActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TArray<class ASplinePathway_C*>                    PossibleSplines                                            (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class ASplinePathway_C*>                    PossibleSplines                                            (Parm, OutParm)
 	 */
 	void ASplinePathFork_C::GetPossibleForks(class AActor* SplineFollowerActor, TArray<class ASplinePathway_C*>* PossibleSplines)
 	{
@@ -38,19 +38,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SplinePathFork.SplinePathFork_C.On Spline Follower Overlapped
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASplineFollowerBase_C*                       SplineFollower                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASplinePathFork_C::On_Spline_Follower_Overlapped(class ASplineFollowerBase_C* SplineFollower)
+	void ASplinePathFork_C::OnSplineFollowerOverlapped(class ASplineFollowerBase_C* SplineFollower)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SplinePathFork.SplinePathFork_C.On Spline Follower Overlapped");
 		
-		ASplinePathFork_C_On_Spline_Follower_Overlapped_Params params {};
+		ASplinePathFork_C_OnSplineFollowerOverlapped_Params params {};
 		params.SplineFollower = SplineFollower;
 		
 		auto flags = fn->FunctionFlags;
@@ -60,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SplinePathFork.SplinePathFork_C.ReceiveActorBeginOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -82,9 +82,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SplinePathFork.SplinePathFork_C.ReceiveActorEndOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -104,9 +104,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SplinePathFork.SplinePathFork_C.ExecuteUbergraph_SplinePathFork
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -126,8 +126,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ASplinePathFork_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ASplinePathFork_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ASplinePathFork_C::StaticClass()

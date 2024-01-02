@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	{
 	public:
 		bool                                                       Valid;                                                   // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_2IVX[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             WorldLocation;                                           // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,8 +31,7 @@ namespace CG
 	struct AButtonBase_C_GetInteractViewAngles_Params
 	{
 	public:
-		fnaf9_ECameraAngleFlags                                    AnglesToCheck;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ECameraAngleFlags                                          AnglesToCheck;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -42,7 +41,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
-
 	};
 
 	/**
@@ -52,7 +50,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IgnoreTrace;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -62,7 +59,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
-
 	};
 
 	/**
@@ -72,7 +68,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Output;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -82,8 +77,7 @@ namespace CG
 	{
 	public:
 		bool                                                       CanInteract;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		fnaf9_EConditionFailReason                                 CantReason;                                              // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EConditionFailReason                                       CantReason;                                              // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -92,24 +86,21 @@ namespace CG
 	struct AButtonBase_C_GetInteractibleType_Params
 	{
 	public:
-		InteractibleType_EInteractibleType                         Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		InteractiblePressType_EInteractiblePressType               PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EInteractibleType                                          Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		EInteractiblePressType                                     PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.HandleOneShotState
 	 */
 	struct AButtonBase_C_HandleOneShotState_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.OnPlayerInteractCancel
 	 */
 	struct AButtonBase_C_OnPlayerInteractCancel_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.OnPlayerHoverEnter
@@ -118,7 +109,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -128,7 +118,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -139,22 +128,13 @@ namespace CG
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function ButtonBase.ButtonBase_C.BndEvt__GameTypeCheck_K2Node_ComponentBoundEvent_0_OnGameTypeAllowEvent__DelegateSignature
-	 */
-	struct AButtonBase_C_BndEvt__GameTypeCheck_K2Node_ComponentBoundEvent_0_OnGameTypeAllowEvent__DelegateSignature_Params
-	{
 	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.SetActivated
 	 */
 	struct AButtonBase_C_SetActivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.ExecuteUbergraph_ButtonBase
@@ -163,15 +143,14 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_3T4E[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function ButtonBase.ButtonBase_C.On Player Interact__DelegateSignature
 	 */
-	struct AButtonBase_C_On_Player_Interact__DelegateSignature_Params
-	{
-	};
+	struct AButtonBase_C_OnPlayerInteract__DelegateSignature_Params
+	{	};
 
 }
 

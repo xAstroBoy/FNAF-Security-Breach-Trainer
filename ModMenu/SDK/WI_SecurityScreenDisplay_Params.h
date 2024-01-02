@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function WI_SecurityScreenDisplay.WI_SecurityScreenDisplay_C.UpdateWidget
 	 */
 	struct UWI_SecurityScreenDisplay_C_UpdateWidget_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_SecurityScreenDisplay.WI_SecurityScreenDisplay_C.PreConstruct
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -38,7 +36,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

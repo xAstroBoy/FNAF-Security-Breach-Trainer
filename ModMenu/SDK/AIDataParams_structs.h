@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,6 @@ namespace CG
 		float                                                      HearingThreshold_22_20BE29BA4C48236382B0C6A5D6F51C6B;    // 0x001C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MinSearchTime_25_1173344A41800F351DEBA38E884628CB;       // 0x0020(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MaxSearchTime_27_86E0BB584CF9A5E1E4330F95D2CBDA3B;       // 0x0024(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-
 	};
 
 }

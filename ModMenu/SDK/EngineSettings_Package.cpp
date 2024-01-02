@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UConsoleSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UConsoleSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UConsoleSettings::StaticClass()
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x016DC7C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bSkipFirstPlayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -42,16 +42,15 @@ namespace CG
 		params.bSkipFirstPlayer = bSkipFirstPlayer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x016DC790
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UGameMapsSettings::GetSkipAssigningGamepadToPlayer1()
 	{
@@ -62,7 +61,6 @@ namespace CG
 		UGameMapsSettings_GetSkipAssigningGamepadToPlayer1_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -71,11 +69,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x016DC760
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EngineSettings.GameMapsSettings.GetGameMapsSettings
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	class UGameMapsSettings* UGameMapsSettings::STATIC_GetGameMapsSettings()
+	class UGameMapsSettings* UGameMapsSettings::GetGameMapsSettings()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,7 +82,6 @@ namespace CG
 		UGameMapsSettings_GetGameMapsSettings_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -93,8 +90,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameMapsSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameMapsSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameMapsSettings::StaticClass()
@@ -107,8 +104,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameNetworkManagerSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameNetworkManagerSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameNetworkManagerSettings::StaticClass()
@@ -121,8 +118,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameSessionSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameSessionSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameSessionSettings::StaticClass()
@@ -135,8 +132,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeneralEngineSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeneralEngineSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeneralEngineSettings::StaticClass()
@@ -149,8 +146,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeneralProjectSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeneralProjectSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeneralProjectSettings::StaticClass()
@@ -163,8 +160,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UHudSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UHudSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UHudSettings::StaticClass()

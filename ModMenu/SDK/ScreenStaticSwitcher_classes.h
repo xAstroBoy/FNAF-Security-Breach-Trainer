@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,10 +24,10 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Screens[0x10];                                           // 0x0238(0x0010) UNKNOWN PROPERTY: ArrayProperty
-		TArray<class AStaticMeshActor*>                            ArrayOfMeshes;                                           // 0x0248(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
-		TArray<class UMaterialInterface*>                          ArrayOfMats;                                             // 0x0258(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		bool                                                       useScreensaver_;                                         // 0x0268(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       OFF_;                                                    // 0x0269(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		TArray<class AStaticMeshActor*>                            ArrayOfMeshes;                                           // 0x0248(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
+		TArray<class UMaterialInterface*>                          ArrayOfMats;                                             // 0x0258(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
+		bool                                                       useScreensaver;                                          // 0x0268(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       OFF;                                                     // 0x0269(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void ReceiveBeginPlay();

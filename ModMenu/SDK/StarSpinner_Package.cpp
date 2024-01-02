@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StarSpinner.StarSpinner_C.Spin back and forth__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AStarSpinner_C::Spin_back_and_forth__FinishedFunc()
+	void AStarSpinner_C::Spinbackandforth__FinishedFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StarSpinner.StarSpinner_C.Spin back and forth__FinishedFunc");
 		
-		AStarSpinner_C_Spin_back_and_forth__FinishedFunc_Params params {};
+		AStarSpinner_C_Spinbackandforth__FinishedFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StarSpinner.StarSpinner_C.Spin back and forth__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AStarSpinner_C::Spin_back_and_forth__UpdateFunc()
+	void AStarSpinner_C::Spinbackandforth__UpdateFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function StarSpinner.StarSpinner_C.Spin back and forth__UpdateFunc");
 		
-		AStarSpinner_C_Spin_back_and_forth__UpdateFunc_Params params {};
+		AStarSpinner_C_Spinbackandforth__UpdateFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StarSpinner.StarSpinner_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AStarSpinner_C::ReceiveBeginPlay()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StarSpinner.StarSpinner_C.ExecuteUbergraph_StarSpinner
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -91,8 +91,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AStarSpinner_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AStarSpinner_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AStarSpinner_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.RoundToHundredths
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		float                                              Rounded_Value                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              RoundedValue                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBackstage_VannyUI_C::RoundToHundredths(float Value, float* Rounded_Value)
+	void UBackstage_VannyUI_C::RoundToHundredths(float Value, float* RoundedValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -32,15 +32,15 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (Rounded_Value != nullptr)
-			*Rounded_Value = params.Rounded_Value;
+		if (RoundedValue != nullptr)
+			*RoundedValue = params.RoundedValue;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.Get_TimeAsText
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class FText UBackstage_VannyUI_C::Get_TimeAsText()
 	{
@@ -59,9 +59,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.Get_VannyTimer
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UBackstage_VannyUI_C::Get_VannyTimer()
 	{
@@ -80,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.Finished_562BAB0D49372E0ADBB1BAB559C7136E
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBackstage_VannyUI_C::Finished_562BAB0D49372E0ADBB1BAB559C7136E()
 	{
@@ -99,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.MakeTimerNotVisible
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBackstage_VannyUI_C::MakeTimerNotVisible()
 	{
@@ -118,9 +118,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBackstage_VannyUI_C::Construct()
 	{
@@ -137,9 +137,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.MakeTimerVisible
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBackstage_VannyUI_C::MakeTimerVisible()
 	{
@@ -156,9 +156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.PreConstruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsDesignTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -178,9 +178,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.ShowEmergencyText
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UBackstage_VannyUI_C::ShowEmergencyText()
 	{
@@ -197,20 +197,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.AdjustPowerLevelRoom
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              New_Power                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              NewPower                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBackstage_VannyUI_C::AdjustPowerLevelRoom(float New_Power)
+	void UBackstage_VannyUI_C::AdjustPowerLevelRoom(float NewPower)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Backstage_VannyUI.Backstage_VannyUI_C.AdjustPowerLevelRoom");
 		
 		UBackstage_VannyUI_C_AdjustPowerLevelRoom_Params params {};
-		params.New_Power = New_Power;
+		params.NewPower = NewPower;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -219,9 +219,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Backstage_VannyUI.Backstage_VannyUI_C.ExecuteUbergraph_Backstage_VannyUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -241,8 +241,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBackstage_VannyUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBackstage_VannyUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBackstage_VannyUI_C::StaticClass()

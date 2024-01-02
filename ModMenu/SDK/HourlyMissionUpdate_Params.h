@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,16 +17,14 @@ namespace CG
 	/**
 	 * Function HourlyMissionUpdate.HourlyMissionUpdate_C.Give Hourly Mission
 	 */
-	struct AHourlyMissionUpdate_C_Give_Hourly_Mission_Params
-	{
-	};
+	struct AHourlyMissionUpdate_C_GiveHourlyMission_Params
+	{	};
 
 	/**
 	 * Function HourlyMissionUpdate.HourlyMissionUpdate_C.On Audio Finished
 	 */
-	struct AHourlyMissionUpdate_C_On_Audio_Finished_Params
-	{
-	};
+	struct AHourlyMissionUpdate_C_OnAudioFinished_Params
+	{	};
 
 	/**
 	 * Function HourlyMissionUpdate.HourlyMissionUpdate_C.ExecuteUbergraph_HourlyMissionUpdate
@@ -35,7 +33,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_72CE[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

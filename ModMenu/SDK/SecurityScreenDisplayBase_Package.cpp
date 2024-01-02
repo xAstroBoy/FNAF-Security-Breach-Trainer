@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,20 +12,20 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Bind Texture Target
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UTexture*                                    Texture_Target                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UTexture*                                    TextureTarget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::Bind_Texture_Target(class UTexture* Texture_Target)
+	void ASecurityScreenDisplayBase_C::BindTextureTarget(class UTexture* TextureTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Bind Texture Target");
 		
-		ASecurityScreenDisplayBase_C_Bind_Texture_Target_Params params {};
-		params.Texture_Target = Texture_Target;
+		ASecurityScreenDisplayBase_C_BindTextureTarget_Params params {};
+		params.TextureTarget = TextureTarget;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -34,36 +34,36 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Find Camera
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Is_Valid                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		class UTextureRenderTarget2D*                      Texture_Target                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               IsValid                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class UTextureRenderTarget2D*                      TextureTarget                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::Find_Camera(bool* Is_Valid, class UTextureRenderTarget2D** Texture_Target)
+	void ASecurityScreenDisplayBase_C::FindCamera(bool* IsValid, class UTextureRenderTarget2D** TextureTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Find Camera");
 		
-		ASecurityScreenDisplayBase_C_Find_Camera_Params params {};
+		ASecurityScreenDisplayBase_C_FindCamera_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (Is_Valid != nullptr)
-			*Is_Valid = params.Is_Valid;
-		if (Texture_Target != nullptr)
-			*Texture_Target = params.Texture_Target;
+		if (IsValid != nullptr)
+			*IsValid = params.IsValid;
+		if (TextureTarget != nullptr)
+			*TextureTarget = params.TextureTarget;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreenDisplayBase_C::ReceiveBeginPlay()
 	{
@@ -80,17 +80,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set To Static
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ASecurityScreenDisplayBase_C::Set_To_Static()
+	void ASecurityScreenDisplayBase_C::SetToStatic()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set To Static");
 		
-		ASecurityScreenDisplayBase_C_Set_To_Static_Params params {};
+		ASecurityScreenDisplayBase_C_SetToStatic_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -99,22 +99,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set to Texture
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Find_Camera                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		class UTexture*                                    Texture_Target                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               FindCamera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class UTexture*                                    TextureTarget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::Set_to_Texture(bool Find_Camera, class UTexture* Texture_Target)
+	void ASecurityScreenDisplayBase_C::SettoTexture(bool FindCamera, class UTexture* TextureTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set to Texture");
 		
-		ASecurityScreenDisplayBase_C_Set_to_Texture_Params params {};
-		params.Find_Camera = Find_Camera;
-		params.Texture_Target = Texture_Target;
+		ASecurityScreenDisplayBase_C_SettoTexture_Params params {};
+		params.FindCamera = FindCamera;
+		params.TextureTarget = TextureTarget;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -123,9 +123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.SetToWidget
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      Class                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.WidgetToggle
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -167,13 +167,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.SetToInstructionCard
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_InstructionCard_Type_E_InstructionCard_Type      Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type                             Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::SetToInstructionCard(E_InstructionCard_Type_E_InstructionCard_Type Type)
+	void ASecurityScreenDisplayBase_C::SetToInstructionCard(E_InstructionCard_Type Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -189,17 +189,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Begin Render
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ASecurityScreenDisplayBase_C::Begin_Render()
+	void ASecurityScreenDisplayBase_C::BeginRender()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Begin Render");
 		
-		ASecurityScreenDisplayBase_C_Begin_Render_Params params {};
+		ASecurityScreenDisplayBase_C_BeginRender_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -208,17 +208,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.End Render
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ASecurityScreenDisplayBase_C::End_Render()
+	void ASecurityScreenDisplayBase_C::EndRender()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.End Render");
 		
-		ASecurityScreenDisplayBase_C_End_Render_Params params {};
+		ASecurityScreenDisplayBase_C_EndRender_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -227,13 +227,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ReceiveEndPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EEndPlayReason                                     EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason)
+	void ASecurityScreenDisplayBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -249,15 +249,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.PlayVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FCinematicCutscene                          Video                                                      (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 * 		class UMediaPlayer*                                MediaPlayer                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int32_t                                            Element_Index                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            ElementIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreenDisplayBase_C::PlayVideo(const struct FCinematicCutscene& Video, class UMediaPlayer* MediaPlayer, int32_t Element_Index)
+	void ASecurityScreenDisplayBase_C::PlayVideo(const struct FCinematicCutscene& Video, class UMediaPlayer* MediaPlayer, int32_t ElementIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -266,7 +266,7 @@ namespace CG
 		ASecurityScreenDisplayBase_C_PlayVideo_Params params {};
 		params.Video = Video;
 		params.MediaPlayer = MediaPlayer;
-		params.Element_Index = Element_Index;
+		params.ElementIndex = ElementIndex;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -275,17 +275,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Stop Video
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ASecurityScreenDisplayBase_C::Stop_Video()
+	void ASecurityScreenDisplayBase_C::StopVideo()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Stop Video");
 		
-		ASecurityScreenDisplayBase_C_Stop_Video_Params params {};
+		ASecurityScreenDisplayBase_C_StopVideo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -294,9 +294,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ExecuteUbergraph_SecurityScreenDisplayBase
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -316,9 +316,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.OnScreenActive__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreenDisplayBase_C::OnScreenActive__DelegateSignature()
 	{
@@ -335,9 +335,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.OnStopVideo__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreenDisplayBase_C::OnStopVideo__DelegateSignature()
 	{
@@ -354,8 +354,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ASecurityScreenDisplayBase_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ASecurityScreenDisplayBase_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ASecurityScreenDisplayBase_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,40 +17,35 @@ namespace CG
 	/**
 	 * Function Equippable.Equippable_C.Get Anim Item Type
 	 */
-	struct AEquippable_C_Get_Anim_Item_Type_Params
+	struct AEquippable_C_GetAnimItemType_Params
 	{
 	public:
-		GregoryAnimItemEnum_EGregoryAnimItemEnum                   AnimType;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EGregoryAnimItemEnum                                       AnimType;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function Equippable.Equippable_C.PullOut
 	 */
 	struct AEquippable_C_PullOut_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Equippable.Equippable_C.PutAway
 	 */
 	struct AEquippable_C_PutAway_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Equippable.Equippable_C.PrimaryAction
 	 */
 	struct AEquippable_C_PrimaryAction_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Equippable.Equippable_C.SecondaryAction
 	 */
 	struct AEquippable_C_SecondaryAction_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Equippable.Equippable_C.ExecuteUbergraph_Equippable
@@ -59,7 +54,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

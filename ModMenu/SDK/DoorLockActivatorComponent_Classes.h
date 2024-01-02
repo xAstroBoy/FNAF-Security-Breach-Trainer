@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,13 +23,13 @@ namespace CG
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00B0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		unsigned char                                              Door[0x28];                                              // 0x00B8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		DoorLockActivatorAction_EDoorLockActivatorAction           Action;                                                  // 0x00E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		DoorLockType_EDoorLockType                                 DoorLockType;                                            // 0x00E1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EDoorLockActivatorAction                                   Action;                                                  // 0x00E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EDoorLockType                                              DoorLockType;                                            // 0x00E1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		bool DetermineNewDoorLockStatus(bool CurrentState);
 		void SetDoorLocks();
 		void OnActivatorDone(class AActor* Activator);

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,36 +21,36 @@ namespace CG
 	class UBlueprintGameplayTagLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_RemoveGameplayTag(struct FGameplayTagContainer* TagContainer, const struct FGameplayTag& Tag);
-		bool STATIC_NotEqual_TagTag(const struct FGameplayTag& A, const class FString& B);
-		bool STATIC_NotEqual_TagContainerTagContainer(const struct FGameplayTagContainer& A, const class FString& B);
-		bool STATIC_NotEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B);
-		bool STATIC_NotEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B);
-		bool STATIC_MatchesTag(const struct FGameplayTag& TagOne, const struct FGameplayTag& TagTwo, bool bExactMatch);
-		bool STATIC_MatchesAnyTags(const struct FGameplayTag& TagOne, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
-		struct FGameplayTagContainer STATIC_MakeLiteralGameplayTagContainer(const struct FGameplayTagContainer& Value);
-		struct FGameplayTag STATIC_MakeLiteralGameplayTag(const struct FGameplayTag& Value);
-		struct FGameplayTagQuery STATIC_MakeGameplayTagQuery(const struct FGameplayTagQuery& TagQuery);
-		struct FGameplayTagContainer STATIC_MakeGameplayTagContainerFromTag(const struct FGameplayTag& SingleTag);
-		struct FGameplayTagContainer STATIC_MakeGameplayTagContainerFromArray(TArray<struct FGameplayTag> GameplayTags);
-		bool STATIC_IsTagQueryEmpty(const struct FGameplayTagQuery& TagQuery);
-		bool STATIC_IsGameplayTagValid(const struct FGameplayTag& GameplayTag);
-		bool STATIC_HasTag(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag, bool bExactMatch);
-		bool STATIC_HasAnyTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
-		bool STATIC_HasAllTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
-		bool STATIC_HasAllMatchingGameplayTags(const struct FGameplayTagContainer& OtherContainer);
-		class FName STATIC_GetTagName(const struct FGameplayTag& GameplayTag);
-		int32_t STATIC_GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer);
-		class FString STATIC_GetDebugStringFromGameplayTagContainer(const struct FGameplayTagContainer& TagContainer);
-		class FString STATIC_GetDebugStringFromGameplayTag(const struct FGameplayTag& GameplayTag);
-		void STATIC_GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, class UClass* ActorClass, const struct FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>* OutActors);
-		bool STATIC_EqualEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B);
-		bool STATIC_EqualEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B);
-		bool STATIC_DoesTagAssetInterfaceHaveTag(const struct FGameplayTag& Tag);
-		bool STATIC_DoesContainerMatchTagQuery(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagQuery& TagQuery);
-		void STATIC_BreakGameplayTagContainer(const struct FGameplayTagContainer& GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags);
-		void STATIC_AppendGameplayTagContainers(struct FGameplayTagContainer* InOutTagContainer, const struct FGameplayTagContainer& InTagContainer);
-		void STATIC_AddGameplayTag(struct FGameplayTagContainer* TagContainer, const struct FGameplayTag& Tag);
+		bool RemoveGameplayTag(struct FGameplayTagContainer* TagContainer, const struct FGameplayTag& Tag);
+		bool NotEqual_TagTag(const struct FGameplayTag& A, const class FString& B);
+		bool NotEqual_TagContainerTagContainer(const struct FGameplayTagContainer& A, const class FString& B);
+		bool NotEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B);
+		bool NotEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B);
+		bool MatchesTag(const struct FGameplayTag& TagOne, const struct FGameplayTag& TagTwo, bool bExactMatch);
+		bool MatchesAnyTags(const struct FGameplayTag& TagOne, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
+		struct FGameplayTagContainer MakeLiteralGameplayTagContainer(const struct FGameplayTagContainer& Value);
+		struct FGameplayTag MakeLiteralGameplayTag(const struct FGameplayTag& Value);
+		struct FGameplayTagQuery MakeGameplayTagQuery(const struct FGameplayTagQuery& TagQuery);
+		struct FGameplayTagContainer MakeGameplayTagContainerFromTag(const struct FGameplayTag& SingleTag);
+		struct FGameplayTagContainer MakeGameplayTagContainerFromArray(TArray<struct FGameplayTag> GameplayTags);
+		bool IsTagQueryEmpty(const struct FGameplayTagQuery& TagQuery);
+		bool IsGameplayTagValid(const struct FGameplayTag& GameplayTag);
+		bool HasTag(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag, bool bExactMatch);
+		bool HasAnyTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
+		bool HasAllTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch);
+		bool HasAllMatchingGameplayTags(const struct FGameplayTagContainer& OtherContainer);
+		class FName GetTagName(const struct FGameplayTag& GameplayTag);
+		int32_t GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer);
+		class FString GetDebugStringFromGameplayTagContainer(const struct FGameplayTagContainer& TagContainer);
+		class FString GetDebugStringFromGameplayTag(const struct FGameplayTag& GameplayTag);
+		void GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, class UClass* ActorClass, const struct FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>* OutActors);
+		bool EqualEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B);
+		bool EqualEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B);
+		bool DoesTagAssetInterfaceHaveTag(const struct FGameplayTag& Tag);
+		bool DoesContainerMatchTagQuery(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagQuery& TagQuery);
+		void BreakGameplayTagContainer(const struct FGameplayTagContainer& GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags);
+		void AppendGameplayTagContainers(struct FGameplayTagContainer* InOutTagContainer, const struct FGameplayTagContainer& InTagContainer);
+		void AddGameplayTag(struct FGameplayTagContainer* TagContainer, const struct FGameplayTag& Tag);
 		static UClass* StaticClass();
 	};
 
@@ -76,7 +76,7 @@ namespace CG
 	{
 	public:
 		class FString                                              UserDescription;                                         // 0x0028(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TPAH[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5RSN[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UEditableGameplayTagQueryExpression*                 RootExpression;                                          // 0x0048(0x0008) Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FGameplayTagQuery                                   TagQueryExportText_Helper;                               // 0x0050(0x0048) NativeAccessSpecifierPrivate
 
@@ -140,7 +140,7 @@ namespace CG
 	class UEditableGameplayTagQueryExpression_AnyExprMatch : public UEditableGameplayTagQueryExpression
 	{
 	public:
-		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -153,7 +153,7 @@ namespace CG
 	class UEditableGameplayTagQueryExpression_AllExprMatch : public UEditableGameplayTagQueryExpression
 	{
 	public:
-		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -166,7 +166,7 @@ namespace CG
 	class UEditableGameplayTagQueryExpression_NoExprMatch : public UEditableGameplayTagQueryExpression
 	{
 	public:
-		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class UEditableGameplayTagQueryExpression*>         Expressions;                                             // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -174,16 +174,15 @@ namespace CG
 
 	/**
 	 * Class GameplayTags.GameplayTagsManager
-	 * Size -> 0x01E8 (FullSize[0x0210] - InheritedSize[0x0028])
+	 * Size -> 0x0218 (FullSize[0x0240] - InheritedSize[0x0028])
 	 */
 	class UGameplayTagsManager : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_XP7F[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FGameplayTagSource>                          TagSources;                                              // 0x00C0(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_PYIY[0xE0];                                  // 0x00D0(0x00E0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class UDataTable*>                                  GameplayTagTables;                                       // 0x01B0(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_M4P1[0x50];                                  // 0x01C0(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JNB8[0x138];                                 // 0x0028(0x0138) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TMap<class FName, struct FGameplayTagSource>               TagSources;                                              // 0x0160(0x0050) NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_N8CM[0x80];                                  // 0x01B0(0x0080) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class UDataTable*>                                  GameplayTagTables;                                       // 0x0230(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
 
 	public:
 		static UClass* StaticClass();
@@ -197,7 +196,7 @@ namespace CG
 	{
 	public:
 		class FString                                              ConfigFileName;                                          // 0x0028(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FGameplayTagTableRow>                        GameplayTagList;                                         // 0x0038(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FGameplayTagTableRow>                        GameplayTagList;                                         // 0x0038(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -211,7 +210,7 @@ namespace CG
 	{
 	public:
 		class FString                                              ConfigFileName;                                          // 0x0028(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FRestrictedGameplayTagTableRow>              RestrictedGameplayTagList;                               // 0x0038(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FRestrictedGameplayTagTableRow>              RestrictedGameplayTagList;                               // 0x0038(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -226,16 +225,17 @@ namespace CG
 	public:
 		bool                                                       ImportTagsFromConfig;                                    // 0x0048(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       WarnOnInvalidTags;                                       // 0x0049(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       FastReplication;                                         // 0x004A(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_O7ZT[0x5];                                   // 0x004B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       ClearInvalidTags;                                        // 0x004A(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       FastReplication;                                         // 0x004B(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_X8W3[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              InvalidTagCharacters;                                    // 0x0050(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FGameplayTagCategoryRemap>                   CategoryRemapping;                                       // 0x0060(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FSoftObjectPath>                             GameplayTagTableList;                                    // 0x0070(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FGameplayTagRedirect>                        GameplayTagRedirects;                                    // 0x0080(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<class FName>                                        CommonlyReplicatedTags;                                  // 0x0090(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FGameplayTagCategoryRemap>                   CategoryRemapping;                                       // 0x0060(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
+		TArray<struct FSoftObjectPath>                             GameplayTagTableList;                                    // 0x0070(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
+		TArray<struct FGameplayTagRedirect>                        GameplayTagRedirects;                                    // 0x0080(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
+		TArray<class FName>                                        CommonlyReplicatedTags;                                  // 0x0090(0x0010) Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic
 		int32_t                                                    NumBitsForContainerSize;                                 // 0x00A0(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    NetIndexFirstBitSegment;                                 // 0x00A4(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FRestrictedConfigInfo>                       RestrictedConfigFiles;                                   // 0x00A8(0x0010) Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FRestrictedConfigInfo>                       RestrictedConfigFiles;                                   // 0x00A8(0x0010) Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -243,12 +243,13 @@ namespace CG
 
 	/**
 	 * Class GameplayTags.GameplayTagsDeveloperSettings
-	 * Size -> 0x0010 (FullSize[0x0038] - InheritedSize[0x0028])
+	 * Size -> 0x0018 (FullSize[0x0050] - InheritedSize[0x0038])
 	 */
-	class UGameplayTagsDeveloperSettings : public UObject
+	class UGameplayTagsDeveloperSettings : public UDeveloperSettings
 	{
 	public:
-		class FString                                              DeveloperConfigName;                                     // 0x0028(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		class FString                                              DeveloperConfigName;                                     // 0x0038(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		class FName                                                FavoriteTagSource;                                       // 0x0048(0x0008) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();

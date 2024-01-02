@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,47 +17,44 @@ namespace CG
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Bind Texture Target
 	 */
-	struct ASecurityScreenDisplayBase_C_Bind_Texture_Target_Params
+	struct ASecurityScreenDisplayBase_C_BindTextureTarget_Params
 	{
 	public:
-		class UTexture*                                            Texture_Target;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UTexture*                                            TextureTarget;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Find Camera
 	 */
-	struct ASecurityScreenDisplayBase_C_Find_Camera_Params
+	struct ASecurityScreenDisplayBase_C_FindCamera_Params
 	{
 	public:
-		bool                                                       Is_Valid;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		class UTextureRenderTarget2D*                              Texture_Target;                                          // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		bool                                                       IsValid;                                                 // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_A6JW[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UTextureRenderTarget2D*                              TextureTarget;                                           // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ReceiveBeginPlay
 	 */
 	struct ASecurityScreenDisplayBase_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set To Static
 	 */
-	struct ASecurityScreenDisplayBase_C_Set_To_Static_Params
-	{
-	};
+	struct ASecurityScreenDisplayBase_C_SetToStatic_Params
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Set to Texture
 	 */
-	struct ASecurityScreenDisplayBase_C_Set_to_Texture_Params
+	struct ASecurityScreenDisplayBase_C_SettoTexture_Params
 	{
 	public:
-		bool                                                       Find_Camera;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		class UTexture*                                            Texture_Target;                                          // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		bool                                                       FindCamera;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_XI31[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UTexture*                                            TextureTarget;                                           // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -67,7 +64,6 @@ namespace CG
 	{
 	public:
 		class UClass*                                              Class;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -77,7 +73,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -86,23 +81,20 @@ namespace CG
 	struct ASecurityScreenDisplayBase_C_SetToInstructionCard_Params
 	{
 	public:
-		E_InstructionCard_Type_E_InstructionCard_Type              Type;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		E_InstructionCard_Type                                     Type;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Begin Render
 	 */
-	struct ASecurityScreenDisplayBase_C_Begin_Render_Params
-	{
-	};
+	struct ASecurityScreenDisplayBase_C_BeginRender_Params
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.End Render
 	 */
-	struct ASecurityScreenDisplayBase_C_End_Render_Params
-	{
-	};
+	struct ASecurityScreenDisplayBase_C_EndRender_Params
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ReceiveEndPlay
@@ -110,8 +102,7 @@ namespace CG
 	struct ASecurityScreenDisplayBase_C_ReceiveEndPlay_Params
 	{
 	public:
-		Engine_EEndPlayReason                                      EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EEndPlayReason                                             EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -122,16 +113,14 @@ namespace CG
 	public:
 		struct FCinematicCutscene                                  Video;                                                   // 0x0000(0x0040)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 		class UMediaPlayer*                                        MediaPlayer;                                             // 0x0040(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int32_t                                                    Element_Index;                                           // 0x0048(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		int32_t                                                    ElementIndex;                                            // 0x0048(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.Stop Video
 	 */
-	struct ASecurityScreenDisplayBase_C_Stop_Video_Params
-	{
-	};
+	struct ASecurityScreenDisplayBase_C_StopVideo_Params
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.ExecuteUbergraph_SecurityScreenDisplayBase
@@ -140,22 +129,20 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_4FQ7[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.OnScreenActive__DelegateSignature
 	 */
 	struct ASecurityScreenDisplayBase_C_OnScreenActive__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SecurityScreenDisplayBase.SecurityScreenDisplayBase_C.OnStopVideo__DelegateSignature
 	 */
 	struct ASecurityScreenDisplayBase_C_OnStopVideo__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

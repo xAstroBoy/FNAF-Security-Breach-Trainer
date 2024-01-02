@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,11 +15,76 @@ namespace CG
 	// # Classes
 	// --------------------------------------------------
 	/**
+	 * Class LiveLinkInterface.LiveLinkFrameInterpolationProcessor
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class ULiveLinkFrameInterpolationProcessor : public UObject
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class LiveLinkInterface.LiveLinkFrameTranslator
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class ULiveLinkFrameTranslator : public UObject
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class LiveLinkInterface.LiveLinkVirtualSubject
+	 * Size -> 0x0138 (FullSize[0x0160] - InheritedSize[0x0028])
+	 */
+	class ULiveLinkVirtualSubject : public UObject
+	{
+	public:
+		unsigned char                                              UnknownData_102T[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UClass*                                              Role;                                                    // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		TArray<struct FLiveLinkSubjectName>                        Subjects;                                                // 0x0038(0x0010) Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected
+		TArray<class ULiveLinkFrameTranslator*>                    FrameTranslators;                                        // 0x0048(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected
+		bool                                                       bRebroadcastSubject;                                     // 0x0058(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_LEIW[0x107];                                 // 0x0059(0x0107) MISSED OFFSET (PADDING)
+
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class LiveLinkInterface.LiveLinkFramePreProcessor
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class ULiveLinkFramePreProcessor : public UObject
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
 	 * Class LiveLinkInterface.LiveLinkSourceFactory
 	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 	 */
 	class ULiveLinkSourceFactory : public UObject
 	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class LiveLinkInterface.LiveLinkSourceSettings
+	 * Size -> 0x0078 (FullSize[0x00A0] - InheritedSize[0x0028])
+	 */
+	class ULiveLinkSourceSettings : public UObject
+	{
+	public:
+		ELiveLinkSourceMode                                        Mode;                                                    // 0x0028(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_MXMP[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FLiveLinkSourceBufferManagementSettings             BufferSettings;                                          // 0x0030(0x0058) Edit, NoDestructor, NativeAccessSpecifierPublic
+		class FString                                              ConnectionString;                                        // 0x0088(0x0010) Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		class UClass*                                              Factory;                                                 // 0x0098(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
+
 	public:
 		static UClass* StaticClass();
 	};
@@ -85,61 +150,14 @@ namespace CG
 	};
 
 	/**
-	 * Class LiveLinkInterface.LiveLinkSourceSettings
-	 * Size -> 0x0070 (FullSize[0x0098] - InheritedSize[0x0028])
-	 */
-	class ULiveLinkSourceSettings : public UObject
-	{
-	public:
-		LiveLinkInterface_ELiveLinkSourceMode                      Mode;                                                    // 0x0028(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NB5X[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FLiveLinkSourceBufferManagementSettings             BufferSettings;                                          // 0x0030(0x0050) Edit, NoDestructor, NativeAccessSpecifierPublic
-		class FString                                              ConnectionString;                                        // 0x0080(0x0010) Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		class UClass*                                              Factory;                                                 // 0x0090(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
-	public:
-		static UClass* StaticClass();
-	};
-
-	/**
 	 * Class LiveLinkInterface.LiveLinkCurveRemapSettings
-	 * Size -> 0x0050 (FullSize[0x00E8] - InheritedSize[0x0098])
+	 * Size -> 0x0050 (FullSize[0x00F0] - InheritedSize[0x00A0])
 	 */
 	class ULiveLinkCurveRemapSettings : public ULiveLinkSourceSettings
 	{
 	public:
-		struct FLiveLinkCurveConversionSettings                    CurveConversionSettings;                                 // 0x0098(0x0050) Edit, Config, NativeAccessSpecifierPublic
+		struct FLiveLinkCurveConversionSettings                    CurveConversionSettings;                                 // 0x00A0(0x0050) Edit, Config, NativeAccessSpecifierPublic
 
-	public:
-		static UClass* StaticClass();
-	};
-
-	/**
-	 * Class LiveLinkInterface.LiveLinkFrameInterpolationProcessor
-	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-	 */
-	class ULiveLinkFrameInterpolationProcessor : public UObject
-	{
-	public:
-		static UClass* StaticClass();
-	};
-
-	/**
-	 * Class LiveLinkInterface.LiveLinkFramePreProcessor
-	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-	 */
-	class ULiveLinkFramePreProcessor : public UObject
-	{
-	public:
-		static UClass* StaticClass();
-	};
-
-	/**
-	 * Class LiveLinkInterface.LiveLinkFrameTranslator
-	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-	 */
-	class ULiveLinkFrameTranslator : public UObject
-	{
 	public:
 		static UClass* StaticClass();
 	};
@@ -156,32 +174,18 @@ namespace CG
 
 	/**
 	 * Class LiveLinkInterface.LiveLinkSubjectSettings
-	 * Size -> 0x0030 (FullSize[0x0058] - InheritedSize[0x0028])
+	 * Size -> 0x0040 (FullSize[0x0068] - InheritedSize[0x0028])
 	 */
 	class ULiveLinkSubjectSettings : public UObject
 	{
 	public:
-		TArray<class ULiveLinkFramePreProcessor*>                  PreProcessors;                                           // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class ULiveLinkFramePreProcessor*>                  PreProcessors;                                           // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		class ULiveLinkFrameInterpolationProcessor*                InterpolationProcessor;                                  // 0x0038(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<class ULiveLinkFrameTranslator*>                    Translators;                                             // 0x0040(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class ULiveLinkFrameTranslator*>                    Translators;                                             // 0x0040(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		class UClass*                                              Role;                                                    // 0x0050(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
-	public:
-		static UClass* StaticClass();
-	};
-
-	/**
-	 * Class LiveLinkInterface.LiveLinkVirtualSubject
-	 * Size -> 0x00B0 (FullSize[0x00D8] - InheritedSize[0x0028])
-	 */
-	class ULiveLinkVirtualSubject : public UObject
-	{
-	public:
-		unsigned char                                              UnknownData_E1GP[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UClass*                                              Role;                                                    // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		TArray<struct FLiveLinkSubjectName>                        Subjects;                                                // 0x0038(0x0010) Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		TArray<class ULiveLinkFrameTranslator*>                    FrameTranslators;                                        // 0x0048(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_QC4J[0x80];                                  // 0x0058(0x0080) MISSED OFFSET (PADDING)
+		struct FFrameRate                                          FrameRate;                                               // 0x0058(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bRebroadcastSubject;                                     // 0x0060(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_XMF8[0x7];                                   // 0x0061(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

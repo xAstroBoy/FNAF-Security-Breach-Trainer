@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,20 +12,46 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.CheckIfInUse
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnPreviewKeyDown
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		struct FKey                                        KeyToCheck                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	 * 		struct FKeyEvent                                   InKeyEvent                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 	 */
-	void UWI_ButtonRemapping_C::CheckIfInUse(const struct FKey& KeyToCheck)
+	struct FEventReply UWI_ButtonRemapping_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.CheckIfInUse");
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnPreviewKeyDown");
 		
-		UWI_ButtonRemapping_C_CheckIfInUse_Params params {};
-		params.KeyToCheck = KeyToCheck;
+		UWI_ButtonRemapping_C_OnPreviewKeyDown_Params params {};
+		params.MyGeometry = MyGeometry;
+		params.InKeyEvent = InKeyEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.RemoveAxisMapping
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        KeyName                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UWI_ButtonRemapping_C::RemoveAxisMapping(const class FName& KeyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.RemoveAxisMapping");
+		
+		UWI_ButtonRemapping_C_RemoveAxisMapping_Params params {};
+		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -34,9 +60,62 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindAxis
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 * 		class FName                                        KeyName                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UWI_ButtonRemapping_C::RebindAxis(const struct FKey& Key, const class FName& KeyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindAxis");
+		
+		UWI_ButtonRemapping_C_RebindAxis_Params params {};
+		params.Key = Key;
+		params.KeyName = KeyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.CheckIfInUse
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FInputChord                                 InputChord                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 * 		bool                                               KeyInUse                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class FName                                        ActionNameInUse                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UWI_ButtonRemapping_C::CheckIfInUse(const struct FInputChord& InputChord, bool* KeyInUse, class FName* ActionNameInUse)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.CheckIfInUse");
+		
+		UWI_ButtonRemapping_C_CheckIfInUse_Params params {};
+		params.InputChord = InputChord;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (KeyInUse != nullptr)
+			*KeyInUse = params.KeyInUse;
+		if (ActionNameInUse != nullptr)
+			*ActionNameInUse = params.ActionNameInUse;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusReceived
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
@@ -60,9 +139,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.SetOptionsControlsUI
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UOptions_ControlsUI_C*                       ControlsUI                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -82,17 +161,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.Brush Style
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UWI_ButtonRemapping_C::Brush_Style()
+	void UWI_ButtonRemapping_C::BrushStyle()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.Brush Style");
 		
-		UWI_ButtonRemapping_C_Brush_Style_Params params {};
+		UWI_ButtonRemapping_C_BrushStyle_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -101,9 +180,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIcon
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Gamepad                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Key1                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -127,9 +206,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.Get_Key
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class URichTextBlock*                              RichText_Key                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -151,31 +230,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		struct FInputChord                                 SelectedKey                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	 */
-	void UWI_ButtonRemapping_C::BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature(const struct FInputChord& SelectedKey)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature");
-		
-		UWI_ButtonRemapping_C_BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature_Params params {};
-		params.SelectedKey = SelectedKey;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.PreConstruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsDesignTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -195,31 +252,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsUsingGamepad                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UWI_ButtonRemapping_C::UpdateIconsFromSaved_BasedOnController(bool bIsUsingGamepad)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController");
-		
-		UWI_ButtonRemapping_C_UpdateIconsFromSaved_BasedOnController_Params params {};
-		params.bIsUsingGamepad = bIsUsingGamepad;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -241,9 +276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_K2Node_ComponentBoundEvent_0_OnIsSelectingKeyChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::BndEvt__InputKeySelector_K2Node_ComponentBoundEvent_0_OnIsSelectingKeyChanged__DelegateSignature()
 	{
@@ -260,9 +295,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ResetToDefaultKeys
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::ResetToDefaultKeys()
 	{
@@ -279,9 +314,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FInputChord                                 SelectedKey                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
@@ -301,9 +336,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_3_OnIsSelectingKeyChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_3_OnIsSelectingKeyChanged__DelegateSignature()
 	{
@@ -320,20 +355,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	 * 		struct FInputChord                                 SelectedKey                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void UWI_ButtonRemapping_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
+	void UWI_ButtonRemapping_C::BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature(const struct FInputChord& SelectedKey)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost");
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature");
 		
-		UWI_ButtonRemapping_C_OnFocusLost_Params params {};
-		params.InFocusEvent = InFocusEvent;
+		UWI_ButtonRemapping_C_BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature_Params params {};
+		params.SelectedKey = SelectedKey;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -342,9 +377,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.Revert_ChangesNotSaved
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::Revert_ChangesNotSaved()
 	{
@@ -361,9 +396,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.SaveMappingsToInstance
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::SaveMappingsToInstance()
 	{
@@ -380,9 +415,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ToggleIsRemapping
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               CurrentlyRemappingButton                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UWI_ButtonRemapping_C::ToggleIsRemapping(bool CurrentlyRemappingButton)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.ToggleIsRemapping");
+		
+		UWI_ButtonRemapping_C_ToggleIsRemapping_Params params {};
+		params.CurrentlyRemappingButton = CurrentlyRemappingButton;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ForceHideImage
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               HideKey1                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -402,9 +459,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateFnafInstanceMappings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::UpdateFnafInstanceMappings()
 	{
@@ -421,9 +478,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.RemoveSpecificBindings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        KeyToRemove                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
@@ -443,9 +500,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ReapplyPreviousMappings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::ReapplyPreviousMappings()
 	{
@@ -462,9 +519,173 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingConfirmed
+	 * 		Flags  -> ()
+	 */
+	void UWI_ButtonRemapping_C::RebindingConfirmed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingConfirmed");
+		
+		UWI_ButtonRemapping_C_RebindingConfirmed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bIsUsingGamepad                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UWI_ButtonRemapping_C::UpdateIconsFromSaved_BasedOnController(bool bIsUsingGamepad)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController");
+		
+		UWI_ButtonRemapping_C_UpdateIconsFromSaved_BasedOnController_Params params {};
+		params.bIsUsingGamepad = bIsUsingGamepad;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnRemovedFromFocusPath
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	 */
+	void UWI_ButtonRemapping_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnRemovedFromFocusPath");
+		
+		UWI_ButtonRemapping_C_OnRemovedFromFocusPath_Params params {};
+		params.InFocusEvent = InFocusEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnAddedToFocusPath
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	 */
+	void UWI_ButtonRemapping_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnAddedToFocusPath");
+		
+		UWI_ButtonRemapping_C_OnAddedToFocusPath_Params params {};
+		params.InFocusEvent = InFocusEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	 */
+	void UWI_ButtonRemapping_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost");
+		
+		UWI_ButtonRemapping_C_OnFocusLost_Params params {};
+		params.InFocusEvent = InFocusEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BoundUpdateTrigger_ControllerType
+	 * 		Flags  -> ()
+	 */
+	void UWI_ButtonRemapping_C::BoundUpdateTrigger_ControllerType()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.BoundUpdateTrigger_ControllerType");
+		
+		UWI_ButtonRemapping_C_BoundUpdateTrigger_ControllerType_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UWI_ButtonRemapping_C::BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature");
+		
+		UWI_ButtonRemapping_C_BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingCanceled
+	 * 		Flags  -> ()
+	 */
+	void UWI_ButtonRemapping_C::RebindingCanceled()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingCanceled");
+		
+		UWI_ButtonRemapping_C_RebindingCanceled_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.ExecuteUbergraph_WI_ButtonRemapping
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -484,9 +705,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnHovered__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::OnHovered__DelegateSignature()
 	{
@@ -503,9 +724,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnClicked__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_ButtonRemapping_C::OnClicked__DelegateSignature()
 	{
@@ -522,8 +743,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UWI_ButtonRemapping_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UWI_ButtonRemapping_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UWI_ButtonRemapping_C::StaticClass()

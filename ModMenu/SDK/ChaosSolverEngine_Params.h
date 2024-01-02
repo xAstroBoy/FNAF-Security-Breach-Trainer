@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,6 @@ namespace CG
 	public:
 		struct FChaosPhysicsCollisionInfo                          PhysicsCollision;                                        // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 		struct FHitResult                                          ReturnValue;                                             // 0x0070(0x0088)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -32,15 +31,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bActive;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
 	 */
 	struct AChaosSolverActor_SetAsCurrentWorldSolver_Params
-	{
-	};
+	{	};
 
 }
 

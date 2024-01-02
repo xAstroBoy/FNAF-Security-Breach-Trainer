@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.Change Area By Location
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULightAreaChanger_C::Change_Area_By_Location(const struct FVector& Location)
+	void ULightAreaChanger_C::ChangeAreaByLocation(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LightAreaChanger.LightAreaChanger_C.Change Area By Location");
 		
-		ULightAreaChanger_C_Change_Area_By_Location_Params params {};
+		ULightAreaChanger_C_ChangeAreaByLocation_Params params {};
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,17 +34,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.Change Area By Player
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ULightAreaChanger_C::Change_Area_By_Player()
+	void ULightAreaChanger_C::ChangeAreaByPlayer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LightAreaChanger.LightAreaChanger_C.Change Area By Player");
 		
-		ULightAreaChanger_C_Change_Area_By_Player_Params params {};
+		ULightAreaChanger_C_ChangeAreaByPlayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -53,17 +53,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.On Area Change Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ULightAreaChanger_C::On_Area_Change_Finished()
+	void ULightAreaChanger_C::OnAreaChangeFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LightAreaChanger.LightAreaChanger_C.On Area Change Finished");
 		
-		ULightAreaChanger_C_On_Area_Change_Finished_Params params {};
+		ULightAreaChanger_C_OnAreaChangeFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.ExecuteUbergraph_LightAreaChanger
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -94,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.OnFadeInFinished__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULightAreaChanger_C::OnFadeInFinished__DelegateSignature()
 	{
@@ -113,9 +113,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LightAreaChanger.LightAreaChanger_C.OnAreaChangeFinished__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULightAreaChanger_C::OnAreaChangeFinished__DelegateSignature()
 	{
@@ -132,8 +132,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULightAreaChanger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULightAreaChanger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULightAreaChanger_C::StaticClass()

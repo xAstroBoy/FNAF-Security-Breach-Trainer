@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum FNAFDLSSLevel.FNAFDLSSLevel
 	 */
-	enum class FNAFDLSSLevel_EFNAFDLSSLevel : uint8_t
+	enum class EFNAFDLSSLevel : uint8_t
 	{
-		FNAFDLSSLevel__NewEnumerator0    = 0,
-		FNAFDLSSLevel__NewEnumerator1    = 1,
-		FNAFDLSSLevel__NewEnumerator2    = 2,
-		FNAFDLSSLevel__NewEnumerator3    = 3,
-		FNAFDLSSLevel__FNAFDLSSLevel_MAX = 4
+		FNAFDLSSLevelNewEnumerator0    = 0,
+		FNAFDLSSLevelNewEnumerator1    = 1,
+		FNAFDLSSLevelNewEnumerator2    = 2,
+		FNAFDLSSLevelNewEnumerator3    = 3,
+		FNAFDLSSLevelFNAFDLSSLevel_MAX = 4
 	};
 
 }

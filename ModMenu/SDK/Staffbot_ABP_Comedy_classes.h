@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C
-	 * Size -> 0x0008 (FullSize[0x2ED8] - InheritedSize[0x2ED0])
+	 * Size -> 0x000E (FullSize[0x53D8] - InheritedSize[0x53CA])
 	 */
 	class UStaffbot_ABP_Comedy_C : public UStaffbot_ABP_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x2ED0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		unsigned char                                              UnknownData_0N5M[0x6];                                   // 0x53CA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x53D0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void BlueprintBeginPlay();

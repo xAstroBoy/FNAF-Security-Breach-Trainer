@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,26 +17,23 @@ namespace CG
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.Change Area By Location
 	 */
-	struct ULightAreaChanger_C_Change_Area_By_Location_Params
+	struct ULightAreaChanger_C_ChangeAreaByLocation_Params
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.Change Area By Player
 	 */
-	struct ULightAreaChanger_C_Change_Area_By_Player_Params
-	{
-	};
+	struct ULightAreaChanger_C_ChangeAreaByPlayer_Params
+	{	};
 
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.On Area Change Finished
 	 */
-	struct ULightAreaChanger_C_On_Area_Change_Finished_Params
-	{
-	};
+	struct ULightAreaChanger_C_OnAreaChangeFinished_Params
+	{	};
 
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.ExecuteUbergraph_LightAreaChanger
@@ -45,22 +42,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.OnFadeInFinished__DelegateSignature
 	 */
 	struct ULightAreaChanger_C_OnFadeInFinished__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LightAreaChanger.LightAreaChanger_C.OnAreaChangeFinished__DelegateSignature
 	 */
 	struct ULightAreaChanger_C_OnAreaChangeFinished__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

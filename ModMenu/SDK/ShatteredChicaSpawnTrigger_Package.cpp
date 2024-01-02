@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,28 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void AShatteredChicaSpawnTrigger_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay");
+		
+		AShatteredChicaSpawnTrigger_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveActorBeginOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,38 +53,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void AShatteredChicaSpawnTrigger_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay");
-		
-		AShatteredChicaSpawnTrigger_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.Event Post Spawn Logic
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AShatteredChicaSpawnTrigger_C::Event_Post_Spawn_Logic(class APawn* Pawn)
+	void AShatteredChicaSpawnTrigger_C::EventPostSpawnLogic(class APawn* Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.Event Post Spawn Logic");
 		
-		AShatteredChicaSpawnTrigger_C_Event_Post_Spawn_Logic_Params params {};
+		AShatteredChicaSpawnTrigger_C_EventPostSpawnLogic_Params params {};
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
@@ -75,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.OnTriggered
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AShatteredChicaSpawnTrigger_C::OnTriggered()
 	{
@@ -94,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ExecuteUbergraph_ShatteredChicaSpawnTrigger
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -116,8 +116,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AShatteredChicaSpawnTrigger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AShatteredChicaSpawnTrigger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AShatteredChicaSpawnTrigger_C::StaticClass()

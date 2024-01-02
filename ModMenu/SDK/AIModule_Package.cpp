@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryNode::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest::StaticClass()
@@ -40,14 +40,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945F80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAIRequestID                                RequestID                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EPathFollowingResult                      MovementResult                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EPathFollowingResult                               MovementResult                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, AIModule_EPathFollowingResult MovementResult)
+	void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -58,15 +58,14 @@ namespace CG
 		params.MovementResult = MovementResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIAsyncTaskBlueprintProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIAsyncTaskBlueprintProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIAsyncTaskBlueprintProxy::StaticClass()
@@ -79,15 +78,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946C50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAnimInstance*                               AnimInstance                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bUnlockMovement                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               UnlockAILogic                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIBlueprintHelperLibrary::STATIC_UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic)
+	void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -99,16 +98,15 @@ namespace CG
 		params.UnlockAILogic = UnlockAILogic;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029469C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      PawnClass                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -118,7 +116,7 @@ namespace CG
 	 * 		bool                                               bNoCollisionFail                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class APawn* UAIBlueprintHelperLibrary::STATIC_SpawnAIFromClass(class UObject* WorldContextObject, class UClass* PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail, class AActor* Owner)
+	class APawn* UAIBlueprintHelperLibrary::SpawnAIFromClass(class UObject* WorldContextObject, class UClass* PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail, class AActor* Owner)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -134,7 +132,6 @@ namespace CG
 		params.Owner = Owner;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -143,14 +140,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToLocation
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Goal                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIBlueprintHelperLibrary::STATIC_SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
+	void UAIBlueprintHelperLibrary::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -161,21 +158,20 @@ namespace CG
 		params.Goal = Goal;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToActor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Goal                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIBlueprintHelperLibrary::STATIC_SimpleMoveToActor(class AController* Controller, class AActor* Goal)
+	void UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController* Controller, class AActor* Goal)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -186,23 +182,22 @@ namespace CG
 		params.Goal = Goal;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SendAIMessage
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Message                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     MessageSource                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIBlueprintHelperLibrary::STATIC_SendAIMessage(class APawn* Target, const class FName& Message, class UObject* MessageSource, bool bSuccess)
+	void UAIBlueprintHelperLibrary::SendAIMessage(class APawn* Target, const class FName& Message, class UObject* MessageSource, bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -215,22 +210,21 @@ namespace CG
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAnimInstance*                               AnimInstance                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bLockMovement                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               LockAILogic                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIBlueprintHelperLibrary::STATIC_LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic)
+	void UAIBlueprintHelperLibrary::LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -242,20 +236,19 @@ namespace CG
 		params.LockAILogic = LockAILogic;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FRotator                                    Rotation                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UAIBlueprintHelperLibrary::STATIC_IsValidAIRotation(const struct FRotator& Rotation)
+	bool UAIBlueprintHelperLibrary::IsValidAIRotation(const struct FRotator& Rotation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -265,7 +258,6 @@ namespace CG
 		params.Rotation = Rotation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -274,13 +266,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029456C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAIBlueprintHelperLibrary::STATIC_IsValidAILocation(const struct FVector& Location)
+	bool UAIBlueprintHelperLibrary::IsValidAILocation(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -290,7 +282,6 @@ namespace CG
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -299,13 +290,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945630
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     DirectionVector                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAIBlueprintHelperLibrary::STATIC_IsValidAIDirection(const struct FVector& DirectionVector)
+	bool UAIBlueprintHelperLibrary::IsValidAIDirection(const struct FVector& DirectionVector)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -315,7 +306,6 @@ namespace CG
 		params.DirectionVector = DirectionVector;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -324,13 +314,85 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944F20
-	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetNextNavLinkIndex
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AController*                                 Controller                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	int32_t UAIBlueprintHelperLibrary::GetNextNavLinkIndex(class AController* Controller)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetNextNavLinkIndex");
+		
+		UAIBlueprintHelperLibrary_GetNextNavLinkIndex_Params params {};
+		params.Controller = Controller;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPathPoints
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UNavigationPath* UAIBlueprintHelperLibrary::STATIC_GetCurrentPath(class AController* Controller)
+	TArray<struct FVector> UAIBlueprintHelperLibrary::GetCurrentPathPoints(class AController* Controller)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetCurrentPathPoints");
+		
+		UAIBlueprintHelperLibrary_GetCurrentPathPoints_Params params {};
+		params.Controller = Controller;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPathIndex
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AController*                                 Controller                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	int32_t UAIBlueprintHelperLibrary::GetCurrentPathIndex(class AController* Controller)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetCurrentPathIndex");
+		
+		UAIBlueprintHelperLibrary_GetCurrentPathIndex_Params params {};
+		params.Controller = Controller;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UNavigationPath* UAIBlueprintHelperLibrary::GetCurrentPath(class AController* Controller)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -340,7 +402,6 @@ namespace CG
 		params.Controller = Controller;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -349,13 +410,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944EA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetBlackboard
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UBlackboardComponent* UAIBlueprintHelperLibrary::STATIC_GetBlackboard(class AActor* Target)
+	class UBlackboardComponent* UAIBlueprintHelperLibrary::GetBlackboard(class AActor* Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -365,7 +426,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -374,13 +434,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944D00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetAIController
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ControlledActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AAIController* UAIBlueprintHelperLibrary::STATIC_GetAIController(class AActor* ControlledActor)
+	class AAIController* UAIBlueprintHelperLibrary::GetAIController(class AActor* ControlledActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -390,7 +450,6 @@ namespace CG
 		params.ControlledActor = ControlledActor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -399,9 +458,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944B20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -410,7 +469,7 @@ namespace CG
 	 * 		float                                              AcceptanceRadius                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopOnOverlap                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::STATIC_CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap)
+	class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -425,7 +484,6 @@ namespace CG
 		params.bStopOnOverlap = bStopOnOverlap;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -434,8 +492,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIBlueprintHelperLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIBlueprintHelperLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIBlueprintHelperLibrary::StaticClass()
@@ -448,9 +506,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946E00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.UseBlackboard
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBlackboardData*                             BlackboardAsset                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UBlackboardComponent*                        BlackboardComponent                                        (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -465,7 +523,6 @@ namespace CG
 		params.BlackboardAsset = BlackboardAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -477,9 +534,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946BD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.UnclaimTaskResource
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      ResourceClass                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -493,16 +550,15 @@ namespace CG
 		params.ResourceClass = ResourceClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.SetPathFollowingComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPathFollowingComponent*                     NewPFComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -516,16 +572,15 @@ namespace CG
 		params.NewPFComponent = NewPFComponent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.SetMoveBlockDetection
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bEnable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -539,16 +594,15 @@ namespace CG
 		params.bEnable = bEnable;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029464A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.RunBehaviorTree
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBehaviorTree*                               BTAsset                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -562,7 +616,6 @@ namespace CG
 		params.BTAsset = BTAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -571,9 +624,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.OnUsingBlackBoard
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBlackboardComponent*                        BlackboardComp                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UBlackboardData*                             BlackboardAsset                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -595,9 +648,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945EB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.OnGameplayTaskResourcesClaimed
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGameplayResourceSet                        NewlyClaimed                                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FGameplayResourceSet                        FreshlyReleased                                            (Parm, NoDestructor, NativeAccessSpecifierPublic)
@@ -613,16 +666,15 @@ namespace CG
 		params.FreshlyReleased = FreshlyReleased;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945C40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.MoveToLocation
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Dest                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              AcceptanceRadius                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -633,7 +685,7 @@ namespace CG
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAllowPartialPath                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	AIModule_EPathFollowingRequestResult AAIController::MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
+	EPathFollowingRequestResult AAIController::MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -650,7 +702,6 @@ namespace CG
 		params.bAllowPartialPath = bAllowPartialPath;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -659,9 +710,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.MoveToActor
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Goal                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              AcceptanceRadius                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -671,7 +722,7 @@ namespace CG
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAllowPartialPath                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	AIModule_EPathFollowingRequestResult AAIController::MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
+	EPathFollowingRequestResult AAIController::MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -687,7 +738,6 @@ namespace CG
 		params.bAllowPartialPath = bAllowPartialPath;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -696,9 +746,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945890
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocus
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      NewFocus                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -712,16 +762,15 @@ namespace CG
 		params.NewFocus = NewFocus;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocalPoint
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     FP                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -735,16 +784,15 @@ namespace CG
 		params.FP = FP;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029457E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.K2_ClearFocus
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AAIController::K2_ClearFocus()
 	{
@@ -755,16 +803,15 @@ namespace CG
 		AAIController_K2_ClearFocus_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.HasPartialPath
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool AAIController::HasPartialPath()
 	{
@@ -775,7 +822,6 @@ namespace CG
 		AAIController_HasPartialPath_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -784,9 +830,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945310
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetPathFollowingComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UPathFollowingComponent* AAIController::GetPathFollowingComponent()
 	{
@@ -797,7 +843,6 @@ namespace CG
 		AAIController_GetPathFollowingComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -806,11 +851,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029452E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetMoveStatus
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AIModule_EPathFollowingStatus AAIController::GetMoveStatus()
+	EPathFollowingStatus AAIController::GetMoveStatus()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -819,7 +864,6 @@ namespace CG
 		AAIController_GetMoveStatus_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -828,9 +872,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029451B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetImmediateMoveDestination
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector AAIController::GetImmediateMoveDestination()
 	{
@@ -841,7 +885,6 @@ namespace CG
 		AAIController_GetImmediateMoveDestination_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -850,9 +893,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945180
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetFocusActor
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class AActor* AAIController::GetFocusActor()
 	{
@@ -863,7 +906,6 @@ namespace CG
 		AAIController_GetFocusActor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -872,9 +914,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029450D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetFocalPointOnActor
-	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -888,7 +930,6 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -897,9 +938,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetFocalPoint
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector AAIController::GetFocalPoint()
 	{
@@ -910,7 +951,6 @@ namespace CG
 		AAIController_GetFocalPoint_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -919,9 +959,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944D80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.GetAIPerceptionComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 	{
@@ -932,7 +972,6 @@ namespace CG
 		AAIController_GetAIPerceptionComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -941,9 +980,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944AA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIController.ClaimTaskResource
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      ResourceClass                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -957,15 +996,14 @@ namespace CG
 		params.ResourceClass = ResourceClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAIController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAIController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAIController::StaticClass()
@@ -978,8 +1016,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIDataProvider.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIDataProvider.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIDataProvider::StaticClass()
@@ -992,8 +1030,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIDataProvider_QueryParams.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIDataProvider_QueryParams.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIDataProvider_QueryParams::StaticClass()
@@ -1006,8 +1044,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIDataProvider_Random.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIDataProvider_Random.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIDataProvider_Random::StaticClass()
@@ -1020,8 +1058,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIHotSpotManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIHotSpotManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIHotSpotManager::StaticClass()
@@ -1034,9 +1072,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946780
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.SetSenseEnabled
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bEnable                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1052,16 +1090,15 @@ namespace CG
 		params.bEnable = bEnable;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAIPerceptionComponent::RequestStimuliListenerUpdate()
 	{
@@ -1072,21 +1109,20 @@ namespace CG
 		UAIPerceptionComponent_RequestStimuliListenerUpdate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946040
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.OnOwnerEndPlay
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EEndPlayReason                                     EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, Engine_EEndPlayReason EndPlayReason)
+	void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1097,18 +1133,43 @@ namespace CG
 		params.EndPlayReason = EndPlayReason;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945420
-	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedHostileActorsBySense
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UClass*                                      SenseToUse                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 */
+	void UAIPerceptionComponent::GetPerceivedHostileActorsBySense(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedHostileActorsBySense");
+		
+		UAIPerceptionComponent_GetPerceivedHostileActorsBySense_Params params {};
+		params.SenseToUse = SenseToUse;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutActors != nullptr)
+			*OutActors = params.OutActors;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAIPerceptionComponent::GetPerceivedHostileActors(TArray<class AActor*>* OutActors)
 	{
@@ -1119,7 +1180,6 @@ namespace CG
 		UAIPerceptionComponent_GetPerceivedHostileActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1129,12 +1189,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02945330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseToUse                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAIPerceptionComponent::GetPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 	{
@@ -1146,7 +1206,6 @@ namespace CG
 		params.SenseToUse = SenseToUse;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1156,12 +1215,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029451F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseToUse                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAIPerceptionComponent::GetKnownPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 	{
@@ -1173,7 +1232,6 @@ namespace CG
 		params.SenseToUse = SenseToUse;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1183,12 +1241,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944FA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseToUse                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAIPerceptionComponent::GetCurrentlyPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 	{
@@ -1200,7 +1258,6 @@ namespace CG
 		params.SenseToUse = SenseToUse;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1210,9 +1267,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944DA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetActorsPerception
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FActorPerceptionBlueprintInfo               Info                                                       (Parm, OutParm, NativeAccessSpecifierPublic)
@@ -1227,7 +1284,6 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1239,9 +1295,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02944CE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.ForgetAll
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAIPerceptionComponent::ForgetAll()
 	{
@@ -1252,15 +1308,14 @@ namespace CG
 		UAIPerceptionComponent_ForgetAll_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIPerceptionComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIPerceptionComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIPerceptionComponent::StaticClass()
@@ -1273,8 +1328,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIPerceptionListenerInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIPerceptionListenerInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIPerceptionListenerInterface::StaticClass()
@@ -1287,9 +1342,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946D80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1303,16 +1358,15 @@ namespace CG
 		params.SenseClass = SenseClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem()
 	{
@@ -1323,16 +1377,15 @@ namespace CG
 		UAIPerceptionStimuliSourceComponent_UnregisterFromPerceptionSystem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem()
 	{
@@ -1343,16 +1396,15 @@ namespace CG
 		UAIPerceptionStimuliSourceComponent_RegisterWithPerceptionSystem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029461C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      SenseClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1366,15 +1418,14 @@ namespace CG
 		params.SenseClass = SenseClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIPerceptionStimuliSourceComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIPerceptionStimuliSourceComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIPerceptionStimuliSourceComponent::StaticClass()
@@ -1387,8 +1438,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISubsystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISubsystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISubsystem::StaticClass()
@@ -1401,14 +1452,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029463D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportPerceptionEvent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAISenseEvent*                               PerceptionEvent                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIPerceptionSystem::STATIC_ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent)
+	void UAIPerceptionSystem::ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1419,16 +1470,15 @@ namespace CG
 		params.PerceptionEvent = PerceptionEvent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946350
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportEvent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAISenseEvent*                               PerceptionEvent                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1442,22 +1492,21 @@ namespace CG
 		params.PerceptionEvent = PerceptionEvent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946240
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Sense                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAIPerceptionSystem::STATIC_RegisterPerceptionStimuliSource(class UObject* WorldContextObject, class UClass* Sense, class AActor* Target)
+	bool UAIPerceptionSystem::RegisterPerceptionStimuliSource(class UObject* WorldContextObject, class UClass* Sense, class AActor* Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1469,7 +1518,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1478,14 +1526,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02946100
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay
-	 * 		Flags  -> (Final, Native, Protected)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		Engine_EEndPlayReason                              EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EEndPlayReason                                     EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, Engine_EEndPlayReason EndPlayReason)
+	void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1496,21 +1544,20 @@ namespace CG
 		params.EndPlayReason = EndPlayReason;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029454D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAIStimulus                                 Stimulus                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class UClass* UAIPerceptionSystem::STATIC_GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus)
+	class UClass* UAIPerceptionSystem::GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1521,7 +1568,6 @@ namespace CG
 		params.Stimulus = Stimulus;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1530,8 +1576,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIPerceptionSystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIPerceptionSystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIPerceptionSystem::StaticClass()
@@ -1544,8 +1590,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIResourceInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIResourceInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIResourceInterface::StaticClass()
@@ -1558,8 +1604,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIResource_Movement.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIResource_Movement.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIResource_Movement::StaticClass()
@@ -1572,8 +1618,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIResource_Logic.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIResource_Logic.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIResource_Logic::StaticClass()
@@ -1586,8 +1632,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense::StaticClass()
@@ -1600,11 +1646,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnUpdate
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UAISenseEvent*>                       EventsToProcess                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UAISenseEvent*>                       EventsToProcess                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	float UAISense_Blueprint::OnUpdate(TArray<class UAISenseEvent*> EventsToProcess)
 	{
@@ -1624,9 +1670,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUpdated
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ActorListener                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAIPerceptionComponent*                      PerceptionComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1648,9 +1694,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUnregistered
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ActorListener                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAIPerceptionComponent*                      PerceptionComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1672,9 +1718,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerRegistered
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      ActorListener                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAIPerceptionComponent*                      PerceptionComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1696,9 +1742,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.K2_OnNewPawn
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       NewPawn                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1718,11 +1764,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294ACE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerComponents
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UAIPerceptionComponent*>              ListenerComponents                                         (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UAIPerceptionComponent*>              ListenerComponents                                         (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
 	void UAISense_Blueprint::GetAllListenerComponents(TArray<class UAIPerceptionComponent*>* ListenerComponents)
 	{
@@ -1733,7 +1779,6 @@ namespace CG
 		UAISense_Blueprint_GetAllListenerComponents_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1743,11 +1788,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294AC30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              ListenerActors                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              ListenerActors                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAISense_Blueprint::GetAllListenerActors(TArray<class AActor*>* ListenerActors)
 	{
@@ -1758,7 +1803,6 @@ namespace CG
 		UAISense_Blueprint_GetAllListenerActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1768,8 +1812,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Blueprint.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Blueprint.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Blueprint::StaticClass()
@@ -1782,9 +1826,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294AE30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Damage.ReportDamageEvent
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      DamagedActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1792,8 +1836,9 @@ namespace CG
 	 * 		float                                              DamageAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     EventLocation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     HitLocation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAISense_Damage::STATIC_ReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation)
+	void UAISense_Damage::ReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation, const class FName& Tag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1806,17 +1851,17 @@ namespace CG
 		params.DamageAmount = DamageAmount;
 		params.EventLocation = EventLocation;
 		params.HitLocation = HitLocation;
+		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Damage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Damage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Damage::StaticClass()
@@ -1829,9 +1874,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294B000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Hearing.ReportNoiseEvent
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NoiseLocation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1840,7 +1885,7 @@ namespace CG
 	 * 		float                                              MaxRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAISense_Hearing::STATIC_ReportNoiseEvent(class UObject* WorldContextObject, const struct FVector& NoiseLocation, float Loudness, class AActor* Instigator, float MaxRange, const class FName& Tag)
+	void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const struct FVector& NoiseLocation, float Loudness, class AActor* Instigator, float MaxRange, const class FName& Tag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1855,15 +1900,14 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Hearing.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Hearing.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Hearing::StaticClass()
@@ -1876,15 +1920,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294B2C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Requestor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      PredictedActor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PredictionTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAISense_Prediction::STATIC_RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
+	void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1896,22 +1940,21 @@ namespace CG
 		params.PredictionTime = PredictionTime;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294B1C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               Requestor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      PredictedActor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PredictionTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAISense_Prediction::STATIC_RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
+	void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1923,15 +1966,14 @@ namespace CG
 		params.PredictionTime = PredictionTime;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Prediction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Prediction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Prediction::StaticClass()
@@ -1944,8 +1986,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Sight.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Sight.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Sight::StaticClass()
@@ -1958,8 +2000,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Team.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Team.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Team::StaticClass()
@@ -1972,8 +2014,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISense_Touch.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISense_Touch.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISense_Touch::StaticClass()
@@ -1986,8 +2028,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseBlueprintListener.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseBlueprintListener.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseBlueprintListener::StaticClass()
@@ -2000,8 +2042,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig::StaticClass()
@@ -2014,8 +2056,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Blueprint.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Blueprint.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Blueprint::StaticClass()
@@ -2028,8 +2070,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Damage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Damage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Damage::StaticClass()
@@ -2042,8 +2084,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Hearing.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Hearing.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Hearing::StaticClass()
@@ -2056,8 +2098,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Prediction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Prediction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Prediction::StaticClass()
@@ -2070,8 +2112,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Sight.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Sight.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Sight::StaticClass()
@@ -2084,8 +2126,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Team.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Team.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Team::StaticClass()
@@ -2098,8 +2140,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseConfig_Touch.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseConfig_Touch.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseConfig_Touch::StaticClass()
@@ -2112,8 +2154,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseEvent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseEvent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseEvent::StaticClass()
@@ -2126,8 +2168,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseEvent_Damage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseEvent_Damage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseEvent_Damage::StaticClass()
@@ -2140,8 +2182,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISenseEvent_Hearing.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISenseEvent_Hearing.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISenseEvent_Hearing::StaticClass()
@@ -2154,8 +2196,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISightTargetInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISightTargetInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISightTargetInterface::StaticClass()
@@ -2168,9 +2210,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019891D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISystem.AILoggingVerbose
-	 * 		Flags  -> (Exec, Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UAISystem::AILoggingVerbose()
 	{
@@ -2181,16 +2223,15 @@ namespace CG
 		UAISystem_AILoggingVerbose_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2A6F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AISystem.AIIgnorePlayers
-	 * 		Flags  -> (Exec, Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UAISystem::AIIgnorePlayers()
 	{
@@ -2201,15 +2242,14 @@ namespace CG
 		UAISystem_AIIgnorePlayers_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAISystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAISystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAISystem::StaticClass()
@@ -2222,8 +2262,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAITask.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAITask.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAITask::StaticClass()
@@ -2236,8 +2276,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAITask_LockLogic.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAITask_LockLogic.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAITask_LockLogic::StaticClass()
@@ -2250,22 +2290,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294A850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AITask_MoveTo.AIMoveTo
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     GoalLocation                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      GoalActor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              AcceptanceRadius                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EAIOptionFlag                             StopOnOverlap                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EAIOptionFlag                             AcceptPartialPath                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAIOptionFlag                                      StopOnOverlap                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAIOptionFlag                                      AcceptPartialPath                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bUsePathfinding                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bLockAILogic                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bUseContinuosGoalTracking                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EAIOptionFlag                             ProjectGoalOnNavigation                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAIOptionFlag                                      ProjectGoalOnNavigation                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAITask_MoveTo* UAITask_MoveTo::STATIC_AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, AIModule_EAIOptionFlag StopOnOverlap, AIModule_EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking, AIModule_EAIOptionFlag ProjectGoalOnNavigation)
+	class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking, EAIOptionFlag ProjectGoalOnNavigation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2284,7 +2324,6 @@ namespace CG
 		params.ProjectGoalOnNavigation = ProjectGoalOnNavigation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2293,8 +2332,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAITask_MoveTo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAITask_MoveTo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAITask_MoveTo::StaticClass()
@@ -2307,14 +2346,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294B3C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.AITask_RunEQS.RunEQS
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UEnvQuery*                                   QueryTemplate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAITask_RunEQS* UAITask_RunEQS::STATIC_RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate)
+	class UAITask_RunEQS* UAITask_RunEQS::RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2325,7 +2364,6 @@ namespace CG
 		params.QueryTemplate = QueryTemplate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2334,8 +2372,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAITask_RunEQS.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAITask_RunEQS.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAITask_RunEQS::StaticClass()
@@ -2348,8 +2386,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBehaviorTree.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBehaviorTree.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBehaviorTree::StaticClass()
@@ -2362,9 +2400,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294FE00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BrainComponent.StopLogic
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      reason                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2378,16 +2416,15 @@ namespace CG
 		params.reason = reason;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BB0010
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BrainComponent.StartLogic
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UBrainComponent::StartLogic()
 	{
@@ -2398,16 +2435,15 @@ namespace CG
 		UBrainComponent_StartLogic_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BrainComponent.RestartLogic
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UBrainComponent::RestartLogic()
 	{
@@ -2418,16 +2454,15 @@ namespace CG
 		UBrainComponent_RestartLogic_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BrainComponent.IsRunning
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBrainComponent::IsRunning()
 	{
@@ -2438,7 +2473,6 @@ namespace CG
 		UBrainComponent_IsRunning_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2447,9 +2481,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F420
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BrainComponent.IsPaused
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBrainComponent::IsPaused()
 	{
@@ -2460,7 +2494,6 @@ namespace CG
 		UBrainComponent_IsPaused_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2469,8 +2502,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBrainComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBrainComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBrainComponent::StaticClass()
@@ -2483,9 +2516,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294B480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGameplayTag                                InjectTag                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UBehaviorTree*                               BehaviorAsset                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2501,16 +2534,15 @@ namespace CG
 		params.BehaviorAsset = BehaviorAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294AD90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGameplayTag                                CooldownTag                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2524,7 +2556,6 @@ namespace CG
 		params.CooldownTag = CooldownTag;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2533,9 +2564,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294AB20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGameplayTag                                CooldownTag                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              CooldownDuration                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2553,15 +2584,14 @@ namespace CG
 		params.bAddToExistingDuration = bAddToExistingDuration;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBehaviorTreeComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBehaviorTreeComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBehaviorTreeComponent::StaticClass()
@@ -2574,8 +2604,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBehaviorTreeManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBehaviorTreeManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBehaviorTreeManager::StaticClass()
@@ -2588,8 +2618,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBehaviorTreeTypes.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBehaviorTreeTypes.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBehaviorTreeTypes::StaticClass()
@@ -2602,9 +2632,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EB10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardAssetProvider.GetBlackboardAsset
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UBlackboardData* UBlackboardAssetProvider::GetBlackboardAsset()
 	{
@@ -2615,7 +2645,6 @@ namespace CG
 		UBlackboardAssetProvider_GetBlackboardAsset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2624,8 +2653,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardAssetProvider.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardAssetProvider.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardAssetProvider::StaticClass()
@@ -2638,9 +2667,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294FD10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsVector
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     VectorValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2656,16 +2685,15 @@ namespace CG
 		params.VectorValue = VectorValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294FBE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsString
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      StringValue                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2681,16 +2709,15 @@ namespace CG
 		params.StringValue = StringValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294FAF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsRotator
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    VectorValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -2706,16 +2733,15 @@ namespace CG
 		params.VectorValue = VectorValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294FA20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsObject
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     ObjectValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2731,16 +2757,15 @@ namespace CG
 		params.ObjectValue = ObjectValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F950
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsName
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        NameValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2756,16 +2781,15 @@ namespace CG
 		params.NameValue = NameValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F880
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsInt
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            IntValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2781,16 +2805,15 @@ namespace CG
 		params.IntValue = IntValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F7B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsFloat
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              FloatValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2806,16 +2829,15 @@ namespace CG
 		params.FloatValue = FloatValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F6E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsEnum
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      EnumValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2831,16 +2853,15 @@ namespace CG
 		params.EnumValue = EnumValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F610
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsClass
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      ClassValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2856,16 +2877,15 @@ namespace CG
 		params.ClassValue = ClassValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsBool
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               BoolValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2881,16 +2901,15 @@ namespace CG
 		params.BoolValue = BoolValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.IsVectorValueSet
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2904,7 +2923,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2913,9 +2931,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F310
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsVector
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2929,7 +2947,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2938,9 +2955,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsString
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2954,7 +2971,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2963,9 +2979,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F180
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsRotator
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2979,7 +2995,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2988,9 +3003,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F0E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsObject
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3004,7 +3019,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3013,9 +3027,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F040
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsName
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3029,7 +3043,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3038,9 +3051,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EFA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsInt
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3054,7 +3067,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3063,9 +3075,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EF00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsFloat
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3079,7 +3091,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3088,9 +3099,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EE60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsEnum
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3104,7 +3115,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3113,9 +3123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EDC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsClass
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3129,7 +3139,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3138,9 +3147,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294ED20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsBool
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3154,7 +3163,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3163,9 +3171,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EC30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetRotationFromEntry
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    ResultRotation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -3180,7 +3188,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3192,9 +3199,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EB40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetLocationFromEntry
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     ResultLocation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3209,7 +3216,6 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3221,9 +3227,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294EA80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BlackboardComponent.ClearValue
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        KeyName                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3237,15 +3243,14 @@ namespace CG
 		params.KeyName = KeyName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardComponent::StaticClass()
@@ -3258,8 +3263,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardData::StaticClass()
@@ -3272,8 +3277,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType::StaticClass()
@@ -3286,8 +3291,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Bool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Bool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Bool::StaticClass()
@@ -3300,8 +3305,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Class.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Class.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Class::StaticClass()
@@ -3314,8 +3319,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Enum.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Enum.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Enum::StaticClass()
@@ -3328,8 +3333,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Float.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Float.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Float::StaticClass()
@@ -3342,8 +3347,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Int.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Int.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Int::StaticClass()
@@ -3356,8 +3361,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Name.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Name.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Name::StaticClass()
@@ -3370,8 +3375,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_NativeEnum.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_NativeEnum.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_NativeEnum::StaticClass()
@@ -3384,8 +3389,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Object.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Object.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Object::StaticClass()
@@ -3398,8 +3403,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Rotator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Rotator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Rotator::StaticClass()
@@ -3412,8 +3417,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_String.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_String.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_String::StaticClass()
@@ -3426,8 +3431,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBlackboardKeyType_Vector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBlackboardKeyType_Vector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBlackboardKeyType_Vector::StaticClass()
@@ -3440,8 +3445,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTNode::StaticClass()
@@ -3454,8 +3459,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTAuxiliaryNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTAuxiliaryNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTAuxiliaryNode::StaticClass()
@@ -3468,8 +3473,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTCompositeNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTCompositeNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTCompositeNode::StaticClass()
@@ -3482,8 +3487,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTComposite_Selector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTComposite_Selector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTComposite_Selector::StaticClass()
@@ -3496,8 +3501,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTComposite_Sequence.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTComposite_Sequence.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTComposite_Sequence::StaticClass()
@@ -3510,8 +3515,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTComposite_SimpleParallel.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTComposite_SimpleParallel.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTComposite_SimpleParallel::StaticClass()
@@ -3524,8 +3529,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator::StaticClass()
@@ -3538,8 +3543,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_BlackboardBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_BlackboardBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_BlackboardBase::StaticClass()
@@ -3552,8 +3557,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_Blackboard.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_Blackboard.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_Blackboard::StaticClass()
@@ -3566,9 +3571,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3592,9 +3597,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTick
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3616,9 +3621,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3640,9 +3645,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3662,9 +3667,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3686,9 +3691,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3708,9 +3713,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3732,9 +3737,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3754,15 +3759,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EBTNodeResult                             NodeResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EBTNodeResult                                      NodeResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, AIModule_EBTNodeResult NodeResult)
+	void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult NodeResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3780,14 +3785,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EBTNodeResult                             NodeResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EBTNodeResult                                      NodeResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor, AIModule_EBTNodeResult NodeResult)
+	void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor, EBTNodeResult NodeResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3804,9 +3809,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3830,9 +3835,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3854,9 +3859,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F3F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive()
 	{
@@ -3867,7 +3872,6 @@ namespace CG
 		UBTDecorator_BlueprintBase_IsDecoratorObserverActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3876,9 +3880,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0294F3C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBTDecorator_BlueprintBase::IsDecoratorExecutionActive()
 	{
@@ -3889,7 +3893,6 @@ namespace CG
 		UBTDecorator_BlueprintBase_IsDecoratorExecutionActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3898,8 +3901,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_BlueprintBase::StaticClass()
@@ -3912,8 +3915,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_CheckGameplayTagsOnActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_CheckGameplayTagsOnActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_CheckGameplayTagsOnActor::StaticClass()
@@ -3926,8 +3929,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_CompareBBEntries.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_CompareBBEntries.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_CompareBBEntries::StaticClass()
@@ -3940,8 +3943,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_ConditionalLoop.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_ConditionalLoop.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_ConditionalLoop::StaticClass()
@@ -3954,8 +3957,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_ConeCheck.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_ConeCheck.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_ConeCheck::StaticClass()
@@ -3968,8 +3971,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_Cooldown.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_Cooldown.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_Cooldown::StaticClass()
@@ -3982,8 +3985,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_DoesPathExist.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_DoesPathExist.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_DoesPathExist::StaticClass()
@@ -3996,8 +3999,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_ForceSuccess.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_ForceSuccess.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_ForceSuccess::StaticClass()
@@ -4010,8 +4013,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_IsAtLocation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_IsAtLocation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_IsAtLocation::StaticClass()
@@ -4024,8 +4027,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_IsBBEntryOfClass.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_IsBBEntryOfClass.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_IsBBEntryOfClass::StaticClass()
@@ -4038,8 +4041,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_KeepInCone.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_KeepInCone.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_KeepInCone::StaticClass()
@@ -4052,8 +4055,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_Loop.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_Loop.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_Loop::StaticClass()
@@ -4066,8 +4069,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_ReachedMoveGoal.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_ReachedMoveGoal.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_ReachedMoveGoal::StaticClass()
@@ -4080,8 +4083,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_SetTagCooldown.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_SetTagCooldown.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_SetTagCooldown::StaticClass()
@@ -4094,8 +4097,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_TagCooldown.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_TagCooldown.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_TagCooldown::StaticClass()
@@ -4108,8 +4111,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTDecorator_TimeLimit.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTDecorator_TimeLimit.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTDecorator_TimeLimit::StaticClass()
@@ -4122,13 +4125,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0272A5F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_StopUsingExternalEvent(class UBTNode* NodeOwner)
+	void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4138,21 +4141,20 @@ namespace CG
 		params.NodeOwner = NodeOwner;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02761160
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      OwningActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
+	void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4163,22 +4165,21 @@ namespace CG
 		params.OwningActor = OwningActor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02954280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4190,22 +4191,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02954100
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Value                                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4217,22 +4217,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4244,22 +4243,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953E80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4271,22 +4269,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953D40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FName& Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FName& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4298,22 +4295,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953C00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32_t Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32_t Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4325,22 +4321,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953AC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4352,22 +4347,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, unsigned char Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, unsigned char Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4379,22 +4373,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953840
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4406,22 +4399,21 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
+	void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4433,20 +4425,19 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029535F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UBlackboardComponent* UBTFunctionLibrary::STATIC_GetOwnersBlackboard(class UBTNode* NodeOwner)
+	class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNode* NodeOwner)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4456,7 +4447,6 @@ namespace CG
 		params.NodeOwner = NodeOwner;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4465,13 +4455,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953570
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnerComponent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UBehaviorTreeComponent* UBTFunctionLibrary::STATIC_GetOwnerComponent(class UBTNode* NodeOwner)
+	class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNode* NodeOwner)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4481,7 +4471,6 @@ namespace CG
 		params.NodeOwner = NodeOwner;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4490,14 +4479,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UBTFunctionLibrary::STATIC_GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4508,7 +4497,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4517,14 +4505,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953320
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FString UBTFunctionLibrary::STATIC_GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	class FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4535,7 +4523,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4544,14 +4531,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953210
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FRotator UBTFunctionLibrary::STATIC_GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4562,7 +4549,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4571,14 +4557,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class UObject* UBTFunctionLibrary::STATIC_GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4589,7 +4575,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4598,14 +4583,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953010
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FName UBTFunctionLibrary::STATIC_GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	class FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4616,7 +4601,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4625,14 +4609,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952F10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	int32_t UBTFunctionLibrary::STATIC_GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	int32_t UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4643,7 +4627,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4652,14 +4635,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952E10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	float UBTFunctionLibrary::STATIC_GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4670,7 +4653,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4679,14 +4661,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	unsigned char UBTFunctionLibrary::STATIC_GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	unsigned char UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4697,7 +4679,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4706,14 +4687,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class UClass* UBTFunctionLibrary::STATIC_GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4724,7 +4705,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4733,14 +4713,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952B10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	bool UBTFunctionLibrary::STATIC_GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4751,7 +4731,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4760,14 +4739,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952A10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class AActor* UBTFunctionLibrary::STATIC_GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4778,7 +4757,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4787,14 +4765,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952870
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4805,21 +4783,20 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952870
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValue
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBTNode*                                     NodeOwner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBlackboardKeySelector                      Key                                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	void UBTFunctionLibrary::STATIC_ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+	void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -4830,15 +4807,14 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTFunctionLibrary::StaticClass()
@@ -4851,8 +4827,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTService.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTService.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTService::StaticClass()
@@ -4865,8 +4841,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTService_BlackboardBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTService_BlackboardBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTService_BlackboardBase::StaticClass()
@@ -4879,9 +4855,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTickAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4905,9 +4881,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTick
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4929,9 +4905,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4953,9 +4929,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStart
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4975,9 +4951,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4999,9 +4975,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivation
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5021,9 +4997,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivationAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5045,9 +5021,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivation
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5067,9 +5043,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02953670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.IsServiceActive
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBTService_BlueprintBase::IsServiceActive()
 	{
@@ -5080,7 +5056,6 @@ namespace CG
 		UBTService_BlueprintBase_IsServiceActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5089,8 +5064,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTService_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTService_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTService_BlueprintBase::StaticClass()
@@ -5103,8 +5078,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTService_DefaultFocus.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTService_DefaultFocus.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTService_DefaultFocus::StaticClass()
@@ -5117,8 +5092,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTService_RunEQS.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTService_RunEQS.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTService_RunEQS::StaticClass()
@@ -5131,8 +5106,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTaskNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTaskNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTaskNode::StaticClass()
@@ -5145,8 +5120,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_BlackboardBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_BlackboardBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_BlackboardBase::StaticClass()
@@ -5159,9 +5134,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02954440
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MessageName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            RequestID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5177,16 +5152,15 @@ namespace CG
 		params.RequestID = RequestID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029543C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MessageName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5200,16 +5174,15 @@ namespace CG
 		params.MessageName = MessageName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5233,9 +5206,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTick
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5257,9 +5230,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5281,9 +5254,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecute
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5303,9 +5276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5327,9 +5300,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbort
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5349,9 +5322,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029536D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBTTask_BlueprintBase::IsTaskExecuting()
 	{
@@ -5362,7 +5335,6 @@ namespace CG
 		UBTTask_BlueprintBase_IsTaskExecuting_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5371,9 +5343,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029536A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskAborting
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UBTTask_BlueprintBase::IsTaskAborting()
 	{
@@ -5384,7 +5356,6 @@ namespace CG
 		UBTTask_BlueprintBase_IsTaskAborting_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5393,9 +5364,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishExecute
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5409,16 +5380,15 @@ namespace CG
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02952960
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishAbort
-	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UBTTask_BlueprintBase::FinishAbort()
 	{
@@ -5429,15 +5399,14 @@ namespace CG
 		UBTTask_BlueprintBase_FinishAbort_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_BlueprintBase::StaticClass()
@@ -5450,8 +5419,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_FinishWithResult.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_FinishWithResult.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_FinishWithResult::StaticClass()
@@ -5464,8 +5433,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_GameplayTaskBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_GameplayTaskBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_GameplayTaskBase::StaticClass()
@@ -5478,8 +5447,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_MakeNoise.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_MakeNoise.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_MakeNoise::StaticClass()
@@ -5492,8 +5461,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_MoveTo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_MoveTo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_MoveTo::StaticClass()
@@ -5506,8 +5475,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_MoveDirectlyToward.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_MoveDirectlyToward.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_MoveDirectlyToward::StaticClass()
@@ -5520,8 +5489,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_PawnActionBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_PawnActionBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_PawnActionBase::StaticClass()
@@ -5534,8 +5503,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_PlayAnimation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_PlayAnimation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_PlayAnimation::StaticClass()
@@ -5548,8 +5517,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_PlaySound.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_PlaySound.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_PlaySound::StaticClass()
@@ -5562,8 +5531,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_PushPawnAction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_PushPawnAction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_PushPawnAction::StaticClass()
@@ -5576,8 +5545,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_RotateToFaceBBEntry.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_RotateToFaceBBEntry.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_RotateToFaceBBEntry::StaticClass()
@@ -5590,8 +5559,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_RunBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_RunBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_RunBehavior::StaticClass()
@@ -5604,8 +5573,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_RunBehaviorDynamic.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_RunBehaviorDynamic.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_RunBehaviorDynamic::StaticClass()
@@ -5618,8 +5587,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_RunEQSQuery.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_RunEQSQuery.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_RunEQSQuery::StaticClass()
@@ -5632,8 +5601,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_SetTagCooldown.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_SetTagCooldown.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_SetTagCooldown::StaticClass()
@@ -5646,8 +5615,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_Wait.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_Wait.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_Wait::StaticClass()
@@ -5660,8 +5629,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBTTask_WaitBlackboardTime.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBTTask_WaitBlackboardTime.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBTTask_WaitBlackboardTime::StaticClass()
@@ -5674,8 +5643,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCrowdAgentInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCrowdAgentInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCrowdAgentInterface::StaticClass()
@@ -5688,9 +5657,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E790
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnNavDataRegistered
-	 * 		Flags  -> (Final, Native, Protected)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5704,16 +5673,15 @@ namespace CG
 		params.NavData = NavData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnActorBump
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SelfActor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5733,16 +5701,15 @@ namespace CG
 		params.Hit = Hit;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E210
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathDestination
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UPathFollowingComponent::GetPathDestination()
 	{
@@ -5753,7 +5720,6 @@ namespace CG
 		UPathFollowingComponent_GetPathDestination_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5762,11 +5728,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E1E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathActionType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AIModule_EPathFollowingAction UPathFollowingComponent::GetPathActionType()
+	EPathFollowingAction UPathFollowingComponent::GetPathActionType()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5775,7 +5741,6 @@ namespace CG
 		UPathFollowingComponent_GetPathActionType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5784,8 +5749,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPathFollowingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPathFollowingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPathFollowingComponent::StaticClass()
@@ -5798,9 +5763,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02957910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bSuspend                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5814,15 +5779,14 @@ namespace CG
 		params.bSuspend = bSuspend;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCrowdFollowingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCrowdFollowingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCrowdFollowingComponent::StaticClass()
@@ -5835,8 +5799,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCrowdManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCrowdManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCrowdManager::StaticClass()
@@ -5849,8 +5813,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ADetourCrowdAIController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ADetourCrowdAIController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ADetourCrowdAIController::StaticClass()
@@ -5863,8 +5827,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQuery.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQuery.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQuery::StaticClass()
@@ -5877,8 +5841,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryContext.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryContext.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryContext::StaticClass()
@@ -5891,9 +5855,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     QuerierObject                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      QuerierActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5919,9 +5883,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     QuerierObject                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      QuerierActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5947,13 +5911,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     QuerierObject                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      QuerierActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             ResultingLocationSet                                       (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             ResultingLocationSet                                       (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet)
 	{
@@ -5975,13 +5939,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     QuerierObject                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      QuerierActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              ResultingActorsSet                                         (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              ResultingActorsSet                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet)
 	{
@@ -6003,8 +5967,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryContext_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryContext_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryContext_BlueprintBase::StaticClass()
@@ -6017,8 +5981,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryContext_Item.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryContext_Item.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryContext_Item::StaticClass()
@@ -6031,8 +5995,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryContext_Querier.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryContext_Querier.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryContext_Querier::StaticClass()
@@ -6045,8 +6009,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryDebugHelpers.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryDebugHelpers.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryDebugHelpers::StaticClass()
@@ -6059,8 +6023,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator::StaticClass()
@@ -6073,8 +6037,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_ActorsOfClass.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_ActorsOfClass.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_ActorsOfClass::StaticClass()
@@ -6087,9 +6051,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029578E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier()
 	{
@@ -6100,7 +6064,6 @@ namespace CG
 		UEnvQueryGenerator_BlueprintBase_GetQuerier_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6109,11 +6072,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVector>                             ContextLocations                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             ContextLocations                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(TArray<struct FVector> ContextLocations)
 	{
@@ -6131,9 +6094,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02957850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     GeneratedVector                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6147,16 +6110,15 @@ namespace CG
 		params.GeneratedVector = GeneratedVector;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029577D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      GeneratedActor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6170,15 +6132,14 @@ namespace CG
 		params.GeneratedActor = GeneratedActor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_BlueprintBase::StaticClass()
@@ -6191,8 +6152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_Composite.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_Composite.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_Composite::StaticClass()
@@ -6205,8 +6166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_ProjectedPoints.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_ProjectedPoints.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_ProjectedPoints::StaticClass()
@@ -6219,8 +6180,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_Cone.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_Cone.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_Cone::StaticClass()
@@ -6233,8 +6194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_CurrentLocation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_CurrentLocation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_CurrentLocation::StaticClass()
@@ -6247,8 +6208,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_Donut.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_Donut.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_Donut::StaticClass()
@@ -6261,8 +6222,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_OnCircle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_OnCircle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_OnCircle::StaticClass()
@@ -6275,8 +6236,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_SimpleGrid.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_SimpleGrid.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_SimpleGrid::StaticClass()
@@ -6289,8 +6250,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryGenerator_PathingGrid.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryGenerator_PathingGrid.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryGenerator_PathingGrid::StaticClass()
@@ -6303,9 +6264,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B420
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ParamName                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6321,16 +6282,15 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B220
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations()
 	{
@@ -6341,7 +6301,6 @@ namespace CG
 		UEnvQueryInstanceBlueprintWrapper_GetResultsAsLocations_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6350,9 +6309,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B1A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class AActor*> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors()
 	{
@@ -6363,7 +6322,6 @@ namespace CG
 		UEnvQueryInstanceBlueprintWrapper_GetResultsAsActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6372,11 +6330,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B0E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVector>                             ResultLocations                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             ResultLocations                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(TArray<struct FVector>* ResultLocations)
 	{
@@ -6387,7 +6345,6 @@ namespace CG
 		UEnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6399,11 +6356,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B020
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              ResultActors                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              ResultActors                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(TArray<class AActor*>* ResultActors)
 	{
@@ -6414,7 +6371,6 @@ namespace CG
 		UEnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6426,9 +6382,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295AF90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            ItemIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6442,7 +6398,6 @@ namespace CG
 		params.ItemIndex = ItemIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6451,14 +6406,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UEnvQueryInstanceBlueprintWrapper*           QueryInstance                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EEnvQueryStatus                           QueryStatus                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EEnvQueryStatus                                    QueryStatus                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, AIModule_EEnvQueryStatus QueryStatus)
+	void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6475,8 +6430,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryInstanceBlueprintWrapper.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryInstanceBlueprintWrapper.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryInstanceBlueprintWrapper::StaticClass()
@@ -6489,8 +6444,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType::StaticClass()
@@ -6503,8 +6458,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType_VectorBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType_VectorBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType_VectorBase::StaticClass()
@@ -6517,8 +6472,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType_ActorBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType_ActorBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType_ActorBase::StaticClass()
@@ -6531,8 +6486,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType_Actor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType_Actor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType_Actor::StaticClass()
@@ -6545,8 +6500,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType_Direction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType_Direction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType_Direction::StaticClass()
@@ -6559,8 +6514,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryItemType_Point.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryItemType_Point.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryItemType_Point::StaticClass()
@@ -6573,17 +6528,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295B2A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.EnvQueryManager.RunEQSQuery
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UEnvQuery*                                   QueryTemplate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Querier                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EEnvQueryRunMode                          RunMode                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EEnvQueryRunMode                                   RunMode                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      WrapperClass                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::STATIC_RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, AIModule_EEnvQueryRunMode RunMode, class UClass* WrapperClass)
+	class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, EEnvQueryRunMode RunMode, class UClass* WrapperClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6597,7 +6552,6 @@ namespace CG
 		params.WrapperClass = WrapperClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6606,8 +6560,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryManager::StaticClass()
@@ -6620,8 +6574,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryOption.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryOption.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryOption::StaticClass()
@@ -6634,8 +6588,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Distance.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Distance.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Distance::StaticClass()
@@ -6648,8 +6602,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Dot.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Dot.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Dot::StaticClass()
@@ -6662,8 +6616,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_GameplayTags.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_GameplayTags.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_GameplayTags::StaticClass()
@@ -6676,8 +6630,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Overlap.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Overlap.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Overlap::StaticClass()
@@ -6690,8 +6644,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Pathfinding.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Pathfinding.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Pathfinding::StaticClass()
@@ -6704,8 +6658,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_PathfindingBatch.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_PathfindingBatch.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_PathfindingBatch::StaticClass()
@@ -6718,8 +6672,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Project.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Project.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Project::StaticClass()
@@ -6732,8 +6686,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Random.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Random.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Random::StaticClass()
@@ -6746,8 +6700,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Trace.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Trace.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Trace::StaticClass()
@@ -6760,8 +6714,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTest_Volume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTest_Volume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTest_Volume::StaticClass()
@@ -6774,8 +6728,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEnvQueryTypes.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEnvQueryTypes.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEnvQueryTypes::StaticClass()
@@ -6788,8 +6742,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEQSQueryResultSourceInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEQSQueryResultSourceInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEQSQueryResultSourceInterface::StaticClass()
@@ -6802,8 +6756,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEQSRenderingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEQSRenderingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEQSRenderingComponent::StaticClass()
@@ -6816,8 +6770,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AEQSTestingPawn.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AEQSTestingPawn.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AEQSTestingPawn::StaticClass()
@@ -6830,8 +6784,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGenericTeamAgentInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGenericTeamAgentInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGenericTeamAgentInterface::StaticClass()
@@ -6844,8 +6798,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AGridPathAIController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AGridPathAIController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AGridPathAIController::StaticClass()
@@ -6858,8 +6812,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGridPathFollowingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGridPathFollowingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGridPathFollowingComponent::StaticClass()
@@ -6872,8 +6826,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavFilter_AIControllerDefault.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavFilter_AIControllerDefault.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavFilter_AIControllerDefault::StaticClass()
@@ -6886,9 +6840,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295EBE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLinkProxy.SetSmartLinkEnabled
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bEnabled                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6902,16 +6856,15 @@ namespace CG
 		params.bEnabled = bEnabled;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLinkProxy.ResumePathFollowing
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Agent                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6925,16 +6878,15 @@ namespace CG
 		params.Agent = Agent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Agent                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Destination                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6956,9 +6908,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E2C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLinkProxy.IsSmartLinkEnabled
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool ANavLinkProxy::IsSmartLinkEnabled()
 	{
@@ -6969,7 +6921,6 @@ namespace CG
 		ANavLinkProxy_IsSmartLinkEnabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6978,9 +6929,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E290
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLinkProxy.HasMovingAgents
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool ANavLinkProxy::HasMovingAgents()
 	{
@@ -6991,7 +6942,6 @@ namespace CG
 		ANavLinkProxy_HasMovingAgents_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7000,8 +6950,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavLinkProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavLinkProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavLinkProxy::StaticClass()
@@ -7014,14 +6964,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              CellSize                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavLocalGridManager::STATIC_SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
+	bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7032,7 +6982,6 @@ namespace CG
 		params.CellSize = CellSize;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7041,15 +6990,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E810
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            GridId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildGrids                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UNavLocalGridManager::STATIC_RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32_t GridId, bool bRebuildGrids)
+	void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32_t GridId, bool bRebuildGrids)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7061,23 +7010,22 @@ namespace CG
 		params.bRebuildGrids = bRebuildGrids;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Start                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     End                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             PathPoints                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             PathPoints                                                 (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	bool UNavLocalGridManager::STATIC_FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
+	bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7089,7 +7037,6 @@ namespace CG
 		params.End = End;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7101,17 +7048,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DDD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             Locations                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             Locations                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Radius2D                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Height                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildGrids                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UNavLocalGridManager::STATIC_AddLocalNavigationGridForPoints(class UObject* WorldContextObject, TArray<struct FVector> Locations, int32_t Radius2D, float Height, bool bRebuildGrids)
+	int32_t UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldContextObject, TArray<struct FVector> Locations, int32_t Radius2D, float Height, bool bRebuildGrids)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7125,7 +7072,6 @@ namespace CG
 		params.bRebuildGrids = bRebuildGrids;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7134,9 +7080,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DC20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7144,7 +7090,7 @@ namespace CG
 	 * 		float                                              Height                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildGrids                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UNavLocalGridManager::STATIC_AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, int32_t Radius2D, float Height, bool bRebuildGrids)
+	int32_t UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, int32_t Radius2D, float Height, bool bRebuildGrids)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7158,7 +7104,6 @@ namespace CG
 		params.bRebuildGrids = bRebuildGrids;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7167,9 +7112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DA20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7179,7 +7124,7 @@ namespace CG
 	 * 		float                                              Height                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildGrids                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UNavLocalGridManager::STATIC_AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, int32_t Radius2D, float Height, bool bRebuildGrids)
+	int32_t UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, int32_t Radius2D, float Height, bool bRebuildGrids)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7195,7 +7140,6 @@ namespace CG
 		params.bRebuildGrids = bRebuildGrids;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7204,9 +7148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295D800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7216,7 +7160,7 @@ namespace CG
 	 * 		float                                              Height                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildGrids                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UNavLocalGridManager::STATIC_AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, int32_t Radius2D, float Height, bool bRebuildGrids)
+	int32_t UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, int32_t Radius2D, float Height, bool bRebuildGrids)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7232,7 +7176,6 @@ namespace CG
 		params.bRebuildGrids = bRebuildGrids;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7241,8 +7184,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLocalGridManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLocalGridManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLocalGridManager::StaticClass()
@@ -7255,8 +7198,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPathFollowingManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPathFollowingManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPathFollowingManager::StaticClass()
@@ -7269,11 +7212,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BAF7F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction.GetActionPriority
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	AIModule_EAIRequestPriority UPawnAction::GetActionPriority()
+	EAIRequestPriority UPawnAction::GetActionPriority()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7282,7 +7225,6 @@ namespace CG
 		UPawnAction_GetActionPriority_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7291,13 +7233,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DEBCE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction.Finish
-	 * 		Flags  -> (Native, Protected, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AIModule_EPawnActionResult                         WithResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EPawnActionResult                                  WithResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPawnAction::Finish(AIModule_EPawnActionResult WithResult)
+	void UPawnAction::Finish(EPawnActionResult WithResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7307,21 +7249,20 @@ namespace CG
 		params.WithResult = WithResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295DF90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction.CreateActionInstance
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      ActionClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UPawnAction* UPawnAction::STATIC_CreateActionInstance(class UObject* WorldContextObject, class UClass* ActionClass)
+	class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContextObject, class UClass* ActionClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7332,7 +7273,6 @@ namespace CG
 		params.ActionClass = ActionClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7341,8 +7281,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction::StaticClass()
@@ -7355,9 +7295,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7379,9 +7319,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionStart
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7401,9 +7341,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionResume
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7423,9 +7363,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionPause
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7445,14 +7385,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionFinished
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       ControlledPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EPawnActionResult                         WithResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EPawnActionResult                                  WithResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, AIModule_EPawnActionResult WithResult)
+	void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7469,8 +7409,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction_BlueprintBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction_BlueprintBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction_BlueprintBase::StaticClass()
@@ -7483,8 +7423,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction_Move.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction_Move.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction_Move::StaticClass()
@@ -7497,8 +7437,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction_Repeat.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction_Repeat.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction_Repeat::StaticClass()
@@ -7511,8 +7451,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction_Sequence.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction_Sequence.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction_Sequence::StaticClass()
@@ -7525,8 +7465,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnAction_Wait.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnAction_Wait.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnAction_Wait::StaticClass()
@@ -7539,15 +7479,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PushAction
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPawnAction*                                 NewAction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EAIRequestPriority                        Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAIRequestPriority                                 Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Instigator                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, AIModule_EAIRequestPriority Priority, class UObject* Instigator)
+	bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, EAIRequestPriority Priority, class UObject* Instigator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7559,7 +7499,6 @@ namespace CG
 		params.Instigator = Instigator;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7568,15 +7507,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E410
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PerformAction
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UPawnAction*                                 Action                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AIModule_EAIRequestPriority                        Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAIRequestPriority                                 Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPawnActionsComponent::STATIC_K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, AIModule_EAIRequestPriority Priority)
+	bool UPawnActionsComponent::K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, EAIRequestPriority Priority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7588,7 +7527,6 @@ namespace CG
 		params.Priority = Priority;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7597,13 +7535,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E380
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_ForceAbortAction
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPawnAction*                                 ActionToAbort                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	AIModule_EPawnActionAbortState UPawnActionsComponent::K2_ForceAbortAction(class UPawnAction* ActionToAbort)
+	EPawnActionAbortState UPawnActionsComponent::K2_ForceAbortAction(class UPawnAction* ActionToAbort)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7613,7 +7551,6 @@ namespace CG
 		params.ActionToAbort = ActionToAbort;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7622,13 +7559,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E2F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_AbortAction
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPawnAction*                                 ActionToAbort                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	AIModule_EPawnActionAbortState UPawnActionsComponent::K2_AbortAction(class UPawnAction* ActionToAbort)
+	EPawnActionAbortState UPawnActionsComponent::K2_AbortAction(class UPawnAction* ActionToAbort)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -7638,7 +7575,6 @@ namespace CG
 		params.ActionToAbort = ActionToAbort;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7647,8 +7583,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnActionsComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnActionsComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnActionsComponent::StaticClass()
@@ -7661,9 +7597,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295EB50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
-	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bEnabled                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7677,16 +7613,15 @@ namespace CG
 		params.bEnabled = bEnabled;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295EAD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingInterval
-	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewSensingInterval                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7700,16 +7635,15 @@ namespace CG
 		params.NewSensingInterval = NewSensingInterval;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295EA50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
-	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewPeripheralVisionAngle                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7723,16 +7657,15 @@ namespace CG
 		params.NewPeripheralVisionAngle = NewPeripheralVisionAngle;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7752,9 +7685,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Instigator                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7778,9 +7711,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E270
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPawnSensingComponent::GetPeripheralVisionCosine()
 	{
@@ -7791,7 +7724,6 @@ namespace CG
 		UPawnSensingComponent_GetPeripheralVisionCosine_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7800,9 +7732,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0295E250
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPawnSensingComponent::GetPeripheralVisionAngle()
 	{
@@ -7813,7 +7745,6 @@ namespace CG
 		UPawnSensingComponent_GetPeripheralVisionAngle_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7822,8 +7753,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPawnSensingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPawnSensingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPawnSensingComponent::StaticClass()
@@ -7836,8 +7767,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UVisualLoggerExtension.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UVisualLoggerExtension.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UVisualLoggerExtension::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * UserDefinedEnum MinimapIconTypes.MinimapIconTypes
 	 */
-	enum class MinimapIconTypes_EMinimapIconTypes : uint8_t
+	enum class EMinimapIconTypes : uint8_t
 	{
-		MinimapIconTypes__NewEnumerator0       = 0,
-		MinimapIconTypes__NewEnumerator1       = 1,
-		MinimapIconTypes__NewEnumerator2       = 2,
-		MinimapIconTypes__MinimapIconTypes_MAX = 3
+		MinimapIconTypesNewEnumerator0       = 0,
+		MinimapIconTypesNewEnumerator1       = 1,
+		MinimapIconTypesNewEnumerator2       = 2,
+		MinimapIconTypesMinimapIconTypes_MAX = 3
 	};
 
 }

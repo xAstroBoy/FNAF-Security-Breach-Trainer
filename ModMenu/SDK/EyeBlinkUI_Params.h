@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,7 +23,6 @@ namespace CG
 		class UImage*                                              eyelid;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      Amount;                                                  // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      Alpha;                                                   // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -34,43 +33,37 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.Eyes Open 2
 	 */
-	struct UEyeBlinkUI_C_Eyes_Open_2_Params
-	{
-	};
+	struct UEyeBlinkUI_C_EyesOpen2_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.Eyes Shut 1
 	 */
-	struct UEyeBlinkUI_C_Eyes_Shut_1_Params
-	{
-	};
+	struct UEyeBlinkUI_C_EyesShut1_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.Blink
 	 */
 	struct UEyeBlinkUI_C_Blink_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.Eyes Open 1
 	 */
-	struct UEyeBlinkUI_C_Eyes_Open_1_Params
-	{
-	};
+	struct UEyeBlinkUI_C_EyesOpen1_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.Eyes Shut 2
 	 */
-	struct UEyeBlinkUI_C_Eyes_Shut_2_Params
-	{
-	};
+	struct UEyeBlinkUI_C_EyesShut2_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.ExecuteUbergraph_EyeBlinkUI
@@ -79,36 +72,31 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.On Eyes Shut 2__DelegateSignature
 	 */
-	struct UEyeBlinkUI_C_On_Eyes_Shut_2__DelegateSignature_Params
-	{
-	};
+	struct UEyeBlinkUI_C_OnEyesShut2__DelegateSignature_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.On Eyes Open 1__DelegateSignature
 	 */
-	struct UEyeBlinkUI_C_On_Eyes_Open_1__DelegateSignature_Params
-	{
-	};
+	struct UEyeBlinkUI_C_OnEyesOpen1__DelegateSignature_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.On Eyes Shut 1__DelegateSignature
 	 */
-	struct UEyeBlinkUI_C_On_Eyes_Shut_1__DelegateSignature_Params
-	{
-	};
+	struct UEyeBlinkUI_C_OnEyesShut1__DelegateSignature_Params
+	{	};
 
 	/**
 	 * Function EyeBlinkUI.EyeBlinkUI_C.On Eyes Open 2__DelegateSignature
 	 */
-	struct UEyeBlinkUI_C_On_Eyes_Open_2__DelegateSignature_Params
-	{
-	};
+	struct UEyeBlinkUI_C_OnEyesOpen2__DelegateSignature_Params
+	{	};
 
 }
 

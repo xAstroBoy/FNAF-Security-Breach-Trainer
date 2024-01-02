@@ -1,12 +1,12 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x01)
+	#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -16,9 +16,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FP_NormalShake.FP_NormalShake_C
-	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
+	 * Size -> 0x0000 (FullSize[0x01B0] - InheritedSize[0x01B0])
 	 */
-	class UFP_NormalShake_C : public UCameraShake
+	class UFP_NormalShake_C : public UMatineeCameraShake
 	{
 	public:
 		static UClass* StaticClass();
@@ -27,5 +27,5 @@ namespace CG
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif

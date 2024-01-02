@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function hoseblacksmall.hoseblacksmall_C.UserConstructionScript
-	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void Ahoseblacksmall_C::UserConstructionScript()
 	{
@@ -31,8 +31,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction Ahoseblacksmall_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction Ahoseblacksmall_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* Ahoseblacksmall_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,9 +21,9 @@ namespace CG
 	class UBFL_Post_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_PostEvent_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, TArray<struct FTransform>* Positions, AkAudio_EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, TArray<struct FTransform>* Return_Positions, AkAudio_EAkMultiPositionType* Return_MultiPositionType);
-		void STATIC_PostEventWithSubtitles_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, TArray<struct FTransform>* Positions, AkAudio_EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority, TArray<struct FTransform>* Return_Positions, AkAudio_EAkMultiPositionType* Return_MultiPositionType);
-		void STATIC_PostEventWithSubtitles_EnsureConstants(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority);
+		void PostEvent_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, TArray<struct FTransform>* Positions, EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, TArray<struct FTransform>* Return_Positions, EAkMultiPositionType* Return_MultiPositionType);
+		void PostEventWithSubtitles_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, TArray<struct FTransform>* Positions, EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority, TArray<struct FTransform>* Return_Positions, EAkMultiPositionType* Return_MultiPositionType);
+		void PostEventWithSubtitles_EnsureConstants(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority);
 		static UClass* StaticClass();
 	};
 

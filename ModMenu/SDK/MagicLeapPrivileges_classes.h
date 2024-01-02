@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,9 +21,9 @@ namespace CG
 	class UMagicLeapPrivilegesFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_RequestPrivilegeAsync(MagicLeapPrivileges_EMagicLeapPrivilege Privilege, const class FScriptDelegate& ResultDelegate);
-		bool STATIC_RequestPrivilege(MagicLeapPrivileges_EMagicLeapPrivilege Privilege);
-		bool STATIC_CheckPrivilege(MagicLeapPrivileges_EMagicLeapPrivilege Privilege);
+		bool RequestPrivilegeAsync(EMagicLeapPrivilege Privilege, const class FScriptDelegate& ResultDelegate);
+		bool RequestPrivilege(EMagicLeapPrivilege Privilege);
+		bool CheckPrivilege(EMagicLeapPrivilege Privilege);
 		static UClass* StaticClass();
 	};
 

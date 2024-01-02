@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,23 +15,19 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function DebugUI.DebugUI_C.UpdateChecksVisibility
+	 */
+	struct UDebugUI_C_UpdateChecksVisibility_Params
+	{	};
+
+	/**
 	 * Function DebugUI.DebugUI_C.DebugApplyDLSSQuality
 	 */
 	struct UDebugUI_C_DebugApplyDLSSQuality_Params
 	{
 	public:
-		FNAFVisualQualityLevel_EFNAFVisualQualityLevel             Quality;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get Cloaking Enabled Checked State
-	 */
-	struct UDebugUI_C_Get_Cloaking_Enabled_Checked_State_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EFNAFVisualQualityLevel                                    Quality;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_CT4Q[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -41,8 +37,8 @@ namespace CG
 	{
 	public:
 		float                                                      InputPin;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_3Q2A[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FText                                                ReturnValue;                                             // 0x0008(0x0018)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
@@ -53,47 +49,6 @@ namespace CG
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 		float                                                      ReturnValue;                                             // 0x0018(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_LightingScenarioDisplay_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_LightingScenarioDisplay_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_FrameRateDisplay_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_FrameRateDisplay_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_CameraFOV_Text_1
-	 */
-	struct UDebugUI_C_Get_CameraFOV_Text_1_Params
-	{
-	public:
-		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_UnlimitedStamina_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_UnlimitedStamina_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -105,87 +60,6 @@ namespace CG
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		struct FFocusEvent                                         InFocusEvent;                                            // 0x0038(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 		struct FEventReply                                         ReturnValue;                                             // 0x0040(0x00B8)  (Parm, OutParm, ReturnParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ShowLevelStreamers_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ShowLevelStreamers_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ShowLoadedLevels_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ShowLoadedLevels_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ShowCoordinates_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ShowCoordinates_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_RoxyEyes_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_RoxyEyes_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ChicaBeak_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ChicaBeak_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_MontyClaws_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_MontyClaws_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_UnlimitedFazwatchPower_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_UnlimitedFazwatchPower_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_SetFreddyPower_Text_1
-	 */
-	struct UDebugUI_C_Get_SetFreddyPower_Text_1_Params
-	{
-	public:
-		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
@@ -195,127 +69,7 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_PowerLevelInput_Text_1
-	 */
-	struct UDebugUI_C_Get_PowerLevelInput_Text_1_Params
-	{
-	public:
-		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_SecurityLevel_Text_1
-	 */
-	struct UDebugUI_C_Get_SecurityLevel_Text_1_Params
-	{
-	public:
-		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_AIDebugVis_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_AIDebugVis_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_AISpawnEnable_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_AISpawnEnable_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_MontyShattered_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_MontyShattered_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_RoxyShattered_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_RoxyShattered_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ChicaShattered_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ChicaShattered_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.GetClockTime
-	 */
-	struct UDebugUI_C_GetClockTime_Params
-	{
-	public:
-		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_ClockRunning_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_ClockRunning_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.GetCheckedState_1
-	 */
-	struct UDebugUI_C_GetCheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_FlyingCollision_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_FlyingCollision_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.Get_FlyingMode_CheckedState_1
-	 */
-	struct UDebugUI_C_Get_FlyingMode_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_C6KD[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -325,36 +79,13 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.Construct
 	 */
 	struct UDebugUI_C_Construct_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature_Params
-	{
-	public:
-		class FString                                              SelectedItem;                                            // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-		SlateCore_ESelectInfo                                      SelectionType;                                           // 0x0010(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__PostProcessing_K2Node_ComponentBoundEvent_2_OnCheckBoxComponentStateChanged__DelegateSignature
@@ -363,7 +94,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -373,17 +103,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -393,7 +112,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -403,7 +121,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -413,7 +130,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -423,7 +139,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -433,117 +148,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -553,429 +157,456 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.FocusButton
 	 */
 	struct UDebugUI_C_FocusButton_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.OnInitialized
-	 */
-	struct UDebugUI_C_OnInitialized_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature_Params
-	{
-	public:
-		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.UpdateQualityLevelText
 	 */
 	struct UDebugUI_C_UpdateQualityLevelText_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UDebugUI_C_BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__CloseDebugButton_K2Node_ComponentBoundEvent_63_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__CloseDebugButton_K2Node_ComponentBoundEvent_63_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__ClearTapesData_K2Node_ComponentBoundEvent_64_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__ClearTapesData_K2Node_ComponentBoundEvent_64_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__DLSSQualityOffButton_K2Node_ComponentBoundEvent_65_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__DLSSQualityOffButton_K2Node_ComponentBoundEvent_65_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__DLSSQualityLowButton_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__DLSSQualityLowButton_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__DLSSQualityMediumButton_K2Node_ComponentBoundEvent_67_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__DLSSQualityMediumButton_K2Node_ComponentBoundEvent_67_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__DLSSQualityHighButton_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__DLSSQualityHighButton_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.BndEvt__DLSSQualityUltraButton_K2Node_ComponentBoundEvent_69_OnButtonClickedEvent__DelegateSignature
 	 */
 	struct UDebugUI_C_BndEvt__DLSSQualityUltraButton_K2Node_ComponentBoundEvent_69_OnButtonClickedEvent__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.Tick
+	 */
+	struct UDebugUI_C_Tick_Params
 	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
-	 * Function DebugUI.DebugUI_C.BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature
 	 */
-	struct UDebugUI_C_BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct UDebugUI_C_BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature_Params
+	{	};
 
-	};
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature
+	 */
+	struct UDebugUI_C_BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature_Params
+	{	};
 
 	/**
 	 * Function DebugUI.DebugUI_C.ExecuteUbergraph_DebugUI
@@ -984,7 +615,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_54BK[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

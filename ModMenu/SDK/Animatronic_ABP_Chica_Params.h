@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.footstep
 	 */
 	struct UAnimatronic_ABP_Chica_C_footstep_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.BlueprintUpdateAnimation
@@ -28,29 +27,25 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.BlueprintBeginPlay
 	 */
 	struct UAnimatronic_ABP_Chica_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.AnimNotify_R_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Chica_C_AnimNotify_R_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.AnimNotify_L_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Chica_C_AnimNotify_L_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Chica.Animatronic_ABP_Chica_C.ExecuteUbergraph_Animatronic_ABP_Chica
@@ -59,7 +54,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

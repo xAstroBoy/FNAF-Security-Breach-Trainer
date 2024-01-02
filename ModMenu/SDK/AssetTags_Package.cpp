@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2C90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetPtr
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     AssetPtr                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,7 +28,6 @@ namespace CG
 		params.AssetPtr = AssetPtr;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -37,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2B50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetData
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  AssetData                                                  (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -53,7 +52,6 @@ namespace CG
 		params.AssetData = AssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -62,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2A70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAsset
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        AssetPathName                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -78,7 +76,6 @@ namespace CG
 		params.AssetPathName = AssetPathName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -87,9 +84,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF29F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollections
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	TArray<class FName> UAssetTagsSubsystem::GetCollections()
 	{
@@ -100,7 +97,6 @@ namespace CG
 		UAssetTagsSubsystem_GetCollections_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -109,9 +105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF2860
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetAssetsInCollection
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -125,7 +121,6 @@ namespace CG
 		params.Name = Name;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -134,9 +129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF27D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.CollectionExists
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -150,7 +145,6 @@ namespace CG
 		params.Name = Name;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -159,8 +153,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAssetTagsSubsystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAssetTagsSubsystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAssetTagsSubsystem::StaticClass()

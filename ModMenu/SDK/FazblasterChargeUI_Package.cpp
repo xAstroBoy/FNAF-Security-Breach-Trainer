@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_6
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_6()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_5
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_5()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_4
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_4()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_3
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_3()
 	{
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_2
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_2()
 	{
@@ -107,9 +107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.SequenceEvent__ENTRYPOINTFazblasterChargeUI_1
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::SequenceEvent__ENTRYPOINTFazblasterChargeUI_1()
 	{
@@ -126,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.Finished_C98679EE4E81A198759AEAAD7400C128
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::Finished_C98679EE4E81A198759AEAAD7400C128()
 	{
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.UpdateMeter
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::UpdateMeter()
 	{
@@ -164,9 +164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.ShotFired
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              RechargeTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -186,9 +186,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.Recharge
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::Recharge()
 	{
@@ -205,9 +205,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.PlayRechargePip
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::PlayRechargePip()
 	{
@@ -224,9 +224,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.PlayFullyChargedPip
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::PlayFullyChargedPip()
 	{
@@ -243,9 +243,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.ExecuteUbergraph_FazblasterChargeUI
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -265,9 +265,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazblasterChargeUI.FazblasterChargeUI_C.OnRechargeDone__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazblasterChargeUI_C::OnRechargeDone__DelegateSignature()
 	{
@@ -284,8 +284,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFazblasterChargeUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFazblasterChargeUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFazblasterChargeUI_C::StaticClass()

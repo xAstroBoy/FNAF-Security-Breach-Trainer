@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,7 +24,6 @@ namespace CG
 		int32_t                                                    NumInfluences;                                           // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   BoneIndices[0xC];                                        // 0x0004(0x0018) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BoneWeights[0xC];                                        // 0x001C(0x0030) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -37,7 +36,6 @@ namespace CG
 		int32_t                                                    BoneIndex;                                               // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Radius;                                                  // 0x0004(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             LocalPosition;                                           // 0x0008(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -48,7 +46,30 @@ namespace CG
 	{
 	public:
 		int32_t                                                    SphereIndices[0x2];                                      // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+	};
 
+	/**
+	 * ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_ConvexFace
+	 * Size -> 0x0020
+	 */
+	struct FClothCollisionPrim_ConvexFace
+	{
+	public:
+		struct FPlane                                              Plane;                                                   // 0x0000(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<int32_t>                                            Indices;                                                 // 0x0010(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+	};
+
+	/**
+	 * ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Convex
+	 * Size -> 0x0028
+	 */
+	struct FClothCollisionPrim_Convex
+	{
+	public:
+		TArray<struct FClothCollisionPrim_ConvexFace>              Faces;                                                   // 0x0000(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FVector>                                     SurfacePoints;                                           // 0x0010(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		int32_t                                                    BoneIndex;                                               // 0x0020(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_FXC1[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -59,25 +80,10 @@ namespace CG
 	{
 	public:
 		struct FVector                                             LocalPosition;                                           // 0x0000(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_957Q[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_57ZC[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FQuat                                               LocalRotation;                                           // 0x0010(0x0010) IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             HalfExtents;                                             // 0x0020(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    BoneIndex;                                               // 0x002C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
-	};
-
-	/**
-	 * ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Convex
-	 * Size -> 0x0028
-	 */
-	struct FClothCollisionPrim_Convex
-	{
-	public:
-		TArray<struct FPlane>                                      Planes;                                                  // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FVector>                                     SurfacePoints;                                           // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    BoneIndex;                                               // 0x0020(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NFXN[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
-
 	};
 
 	/**
@@ -87,11 +93,10 @@ namespace CG
 	struct FClothCollisionData
 	{
 	public:
-		TArray<struct FClothCollisionPrim_Sphere>                  Spheres;                                                 // 0x0000(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FClothCollisionPrim_SphereConnection>        SphereConnections;                                       // 0x0010(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FClothCollisionPrim_Convex>                  Convexes;                                                // 0x0020(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FClothCollisionPrim_Box>                     Boxes;                                                   // 0x0030(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FClothCollisionPrim_Sphere>                  Spheres;                                                 // 0x0000(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FClothCollisionPrim_SphereConnection>        SphereConnections;                                       // 0x0010(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FClothCollisionPrim_Convex>                  Convexes;                                                // 0x0020(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FClothCollisionPrim_Box>                     Boxes;                                                   // 0x0030(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 }

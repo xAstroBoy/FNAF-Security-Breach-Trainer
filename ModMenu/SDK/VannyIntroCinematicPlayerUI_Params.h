@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,71 +22,61 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_VannyIntroVideo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_StopVideo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_MakeTextVisibleAgain_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_StartTextFadeAway_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.SetText
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_SetText_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayVanny00004
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_PlayVanny00004_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayFreddy00175
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_PlayFreddy00175_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Start Hold Timer
 	 */
-	struct UVannyIntroCinematicPlayerUI_C_Start_Hold_Timer_Params
-	{
-	};
+	struct UVannyIntroCinematicPlayerUI_C_StartHoldTimer_Params
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Stop Hold Timer
 	 */
-	struct UVannyIntroCinematicPlayerUI_C_Stop_Hold_Timer_Params
-	{
-	};
+	struct UVannyIntroCinematicPlayerUI_C_StopHoldTimer_Params
+	{	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnMediaOpened
@@ -95,7 +85,6 @@ namespace CG
 	{
 	public:
 		class FString                                              OpenedUrl;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -105,15 +94,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnStopFinished__DelegateSignature
 	 */
 	struct UVannyIntroCinematicPlayerUI_C_OnStopFinished__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

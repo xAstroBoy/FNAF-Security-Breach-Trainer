@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass TurnTowards.TurnTowards_C
-	 * Size -> 0x0036 (FullSize[0x00DE] - InheritedSize[0x00A8])
+	 * Size -> 0x0037 (FullSize[0x00DF] - InheritedSize[0x00A8])
 	 */
 	class UTurnTowards_C : public UBTTask_BlueprintBase
 	{
@@ -26,6 +26,7 @@ namespace CG
 		float                                                      InterpSpeed;                                             // 0x00D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       first_finish;                                            // 0x00DC(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       first_start;                                             // 0x00DD(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       Inverse;                                                 // 0x00DE(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);

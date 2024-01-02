@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,21 +29,21 @@ namespace CG
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void SetActivated();
 		void ActivateObject(class AActor* Activator);
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void DeactivateObject(class AActor* Deactivator);
-		void Set_On_State(bool On);
+		void SetOnState(bool On);
 		void SetDeactivated();
 		void OnPlayerInteractCancel();
 		void ReceiveBeginPlay();

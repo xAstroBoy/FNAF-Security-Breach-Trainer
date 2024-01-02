@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,33 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.GetMoveSpeedInput
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              MoveSpeed                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::GetMoveSpeedInput(float* MoveSpeed)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.GetMoveSpeedInput");
+		
+		ULittle_DJ_Music_Man_ABP_C_GetMoveSpeedInput_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (MoveSpeed != nullptr)
+			*MoveSpeed = params.MoveSpeed;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.AnimGraph
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CalcVelocity
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -58,53 +82,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB");
-		
-		ULittle_DJ_Music_Man_ABP_C_OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB");
-		
-		ULittle_DJ_Music_Man_ABP_C_OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnInterrupted_FA7D18A447815604F75E399A0E97F4BB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -124,9 +104,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnBlendOut_FA7D18A447815604F75E399A0E97F4BB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -146,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnCompleted_FA7D18A447815604F75E399A0E97F4BB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -168,9 +148,217 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.HeadAimEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::HeadAimEvent(bool OnOff)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.HeadAimEvent");
+		
+		ULittle_DJ_Music_Man_ABP_C_HeadAimEvent_Params params {};
+		params.OnOff = OnOff;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.TurnEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              TurnDegrees                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::TurnEvent(float TurnDegrees)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.TurnEvent");
+		
+		ULittle_DJ_Music_Man_ABP_C_TurnEvent_Params params {};
+		params.TurnDegrees = TurnDegrees;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Searching
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EHideObjectType                                    HideType                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::Searching(EHideObjectType HideType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Searching");
+		
+		ULittle_DJ_Music_Man_ABP_C_Searching_Params params {};
+		params.HideType = HideType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SearchingDone
+	 * 		Flags  -> ()
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::SearchingDone()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SearchingDone");
+		
+		ULittle_DJ_Music_Man_ABP_C_SearchingDone_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Open
+	 * 		Flags  -> ()
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::Open()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Open");
+		
+		ULittle_DJ_Music_Man_ABP_C_Open_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OpenDone
+	 * 		Flags  -> ()
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::OpenDone()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OpenDone");
+		
+		ULittle_DJ_Music_Man_ABP_C_OpenDone_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SetHeadAimTarget
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector                                     AimLocation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::SetHeadAimTarget(const struct FVector& AimLocation)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SetHeadAimTarget");
+		
+		ULittle_DJ_Music_Man_ABP_C_SetHeadAimTarget_Params params {};
+		params.AimLocation = AimLocation;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.StartScan
+	 * 		Flags  -> ()
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::StartScan()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.StartScan");
+		
+		ULittle_DJ_Music_Man_ABP_C_StartScan_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanRunEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               CanRun                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::CanRunEvent(bool CanRun)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanRunEvent");
+		
+		ULittle_DJ_Music_Man_ABP_C_CanRunEvent_Params params {};
+		params.CanRun = CanRun;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Stun Event
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsStunned                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ULittle_DJ_Music_Man_ABP_C::StunEvent(bool IsStunned)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Stun Event");
+		
+		ULittle_DJ_Music_Man_ABP_C_StunEvent_Params params {};
+		params.IsStunned = IsStunned;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanRummageEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::CanRummageEvent()
 	{
@@ -187,9 +375,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.IsFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::IsFirstPersonEvent()
 	{
@@ -206,9 +394,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.IsNotFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::IsNotFirstPersonEvent()
 	{
@@ -225,9 +413,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.RummagingDoneEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::RummagingDoneEvent()
 	{
@@ -244,9 +432,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnAnimInstanceSwap
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::OnAnimInstanceSwap()
 	{
@@ -263,9 +451,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Breakthrough
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::Breakthrough()
 	{
@@ -282,9 +470,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.ForceScanStates
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OverrideScan                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               CanScan                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -310,9 +498,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.JumpEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanJump                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -332,9 +520,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.LandEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::LandEvent()
 	{
@@ -351,9 +539,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.StopScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::StopScan()
 	{
@@ -370,9 +558,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.PoundDoorEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               PoundDoor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -392,9 +580,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanWaveEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanWave                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -414,9 +602,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.IsSickEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -436,9 +624,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanLieDownEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -458,9 +646,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanLeapEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -480,9 +668,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.EnterFreddyOverrideEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -502,9 +690,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.ForceAnimOverride
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -524,9 +712,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.FreddyCorrupted
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -546,9 +734,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.RoxyCrying
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -568,20 +756,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.VoAnimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UAkAudioEvent*                               AK_Event                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UAkAudioEvent*                               AKEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::VoAnimEvent(class UAkAudioEvent* AK_Event)
+	void ULittle_DJ_Music_Man_ABP_C::VoAnimEvent(class UAkAudioEvent* AKEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.VoAnimEvent");
 		
 		ULittle_DJ_Music_Man_ABP_C_VoAnimEvent_Params params {};
-		params.AK_Event = AK_Event;
+		params.AKEvent = AKEvent;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -590,9 +778,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanHackEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -612,9 +800,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanDieEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -634,9 +822,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.EndoSpawnInBowlingEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::EndoSpawnInBowlingEvent()
 	{
@@ -653,9 +841,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.EndoBowlingCrawlEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::EndoBowlingCrawlEvent()
 	{
@@ -672,9 +860,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.LeapLoopEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -694,9 +882,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.UpdateLeapInfo
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     ActorLocation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Destination                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -720,9 +908,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.FreddyEndIdle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -742,9 +930,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CutSceneSpineBlender
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class ULevelSequencePlayer*                        Sequence                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -766,9 +954,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CutsceneGrateEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ULevelSequencePlayer*                        SequencePlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -788,19 +976,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Spotlight Aim Actor
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      AimActor                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::Spotlight_Aim_Actor(class AActor* AimActor)
+	void ULittle_DJ_Music_Man_ABP_C::SpotlightAimActor(class AActor* AimActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Spotlight Aim Actor");
 		
-		ULittle_DJ_Music_Man_ABP_C_Spotlight_Aim_Actor_Params params {};
+		ULittle_DJ_Music_Man_ABP_C_SpotlightAimActor_Params params {};
 		params.AimActor = AimActor;
 		
 		auto flags = fn->FunctionFlags;
@@ -810,20 +998,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SetHeadAimTarget
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.IsHangingEvent
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		struct FVector                                     AimLocation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               IsHanging                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::SetHeadAimTarget(const struct FVector& AimLocation)
+	void ULittle_DJ_Music_Man_ABP_C::IsHangingEvent(bool IsHanging)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SetHeadAimTarget");
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.IsHangingEvent");
 		
-		ULittle_DJ_Music_Man_ABP_C_SetHeadAimTarget_Params params {};
-		params.AimLocation = AimLocation;
+		ULittle_DJ_Music_Man_ABP_C_IsHangingEvent_Params params {};
+		params.IsHanging = IsHanging;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -832,20 +1020,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Stun Event
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OverlappingDoor
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Is_Stunned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               Overlapping                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class AActor*                                      Instigator                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::Stun_Event(bool Is_Stunned)
+	void ULittle_DJ_Music_Man_ABP_C::OverlappingDoor(bool Overlapping, class AActor* Instigator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Stun Event");
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OverlappingDoor");
 		
-		ULittle_DJ_Music_Man_ABP_C_Stun_Event_Params params {};
-		params.Is_Stunned = Is_Stunned;
+		ULittle_DJ_Music_Man_ABP_C_OverlappingDoor_Params params {};
+		params.Overlapping = Overlapping;
+		params.Instigator = Instigator;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -854,58 +1044,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OpenDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::OpenDone()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OpenDone");
-		
-		ULittle_DJ_Music_Man_ABP_C_OpenDone_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Open
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::Open()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Open");
-		
-		ULittle_DJ_Music_Man_ABP_C_Open_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanRunEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               CanRun                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::CanRunEvent(bool CanRun)
+	void ULittle_DJ_Music_Man_ABP_C::OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB(const class FName& NotifyName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanRunEvent");
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB");
 		
-		ULittle_DJ_Music_Man_ABP_C_CanRunEvent_Params params {};
-		params.CanRun = CanRun;
+		ULittle_DJ_Music_Man_ABP_C_OnNotifyBegin_FA7D18A447815604F75E399A0E97F4BB_Params params {};
+		params.NotifyName = NotifyName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -914,39 +1066,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SearchingDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::SearchingDone()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SearchingDone");
-		
-		ULittle_DJ_Music_Man_ABP_C_SearchingDone_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Searching
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EHideObjectType                              Hide_Type                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ULittle_DJ_Music_Man_ABP_C::Searching(fnaf9_EHideObjectType Hide_Type)
+	void ULittle_DJ_Music_Man_ABP_C::OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB(const class FName& NotifyName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.Searching");
+			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB");
 		
-		ULittle_DJ_Music_Man_ABP_C_Searching_Params params {};
-		params.Hide_Type = Hide_Type;
+		ULittle_DJ_Music_Man_ABP_C_OnNotifyEnd_FA7D18A447815604F75E399A0E97F4BB_Params params {};
+		params.NotifyName = NotifyName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -955,72 +1088,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.TurnEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              TurnDegrees                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::TurnEvent(float TurnDegrees)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.TurnEvent");
-		
-		ULittle_DJ_Music_Man_ABP_C_TurnEvent_Params params {};
-		params.TurnDegrees = TurnDegrees;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.StartScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::StartScan()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.StartScan");
-		
-		ULittle_DJ_Music_Man_ABP_C_StartScan_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.HeadAimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void ULittle_DJ_Music_Man_ABP_C::HeadAimEvent(bool OnOff)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.HeadAimEvent");
-		
-		ULittle_DJ_Music_Man_ABP_C_HeadAimEvent_Params params {};
-		params.OnOff = OnOff;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Little_DJ_Music_Man_ABP_AnimGraphNode_LayeredBoneBlend_D230A39643124712D0B1288DDE3C507C
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Little_DJ_Music_Man_ABP_AnimGraphNode_LayeredBoneBlend_D230A39643124712D0B1288DDE3C507C()
 	{
@@ -1037,9 +1107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1059,9 +1129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::BlueprintBeginPlay()
 	{
@@ -1078,9 +1148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.CanJumpscareEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULittle_DJ_Music_Man_ABP_C::CanJumpscareEvent()
 	{
@@ -1097,9 +1167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SkipSpawnInEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               SkipSpawnIn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1119,9 +1189,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.SpawnOutEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bSpawnOut                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1141,9 +1211,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Little_DJ_Music_Man_ABP.Little_DJ_Music_Man_ABP_C.ExecuteUbergraph_Little_DJ_Music_Man_ABP
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1163,8 +1233,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULittle_DJ_Music_Man_ABP_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULittle_DJ_Music_Man_ABP_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULittle_DJ_Music_Man_ABP_C::StaticClass()

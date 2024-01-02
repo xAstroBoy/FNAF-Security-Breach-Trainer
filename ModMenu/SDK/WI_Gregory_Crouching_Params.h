@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,43 +21,38 @@ namespace CG
 	{
 	public:
 		bool                                                       IsCrouched;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_G7M7[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.SetCorrectCrouchingImage
 	 */
 	struct UWI_Gregory_Crouching_C_SetCorrectCrouchingImage_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.HideCrouchingImage
 	 */
 	struct UWI_Gregory_Crouching_C_HideCrouchingImage_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.ShowCrouchingImage
 	 */
 	struct UWI_Gregory_Crouching_C_ShowCrouchingImage_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnFailure_1EEBCFB84FF35A61CCA67DBBFADBC509
 	 */
 	struct UWI_Gregory_Crouching_C_OnFailure_1EEBCFB84FF35A61CCA67DBBFADBC509_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnSuccess_1EEBCFB84FF35A61CCA67DBBFADBC509
 	 */
 	struct UWI_Gregory_Crouching_C_OnSuccess_1EEBCFB84FF35A61CCA67DBBFADBC509_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.OnFailure_939A65B5496246CF92D6CDB315E2B149
@@ -68,7 +63,6 @@ namespace CG
 		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -80,15 +74,13 @@ namespace CG
 		class FName                                                WrittenAchievementName;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      WrittenProgress;                                         // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    WrittenUserTag;                                          // 0x000C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Construct
 	 */
 	struct UWI_Gregory_Crouching_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Crouch
@@ -97,7 +89,6 @@ namespace CG
 	{
 	public:
 		bool                                                       BeginCrouch;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -107,15 +98,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    AlertStatus;                                             // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.HideOnUnpossess
 	 */
 	struct UWI_Gregory_Crouching_C_HideOnUnpossess_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Tick
@@ -125,8 +114,13 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.Award Dodge and Weave
+	 */
+	struct UWI_Gregory_Crouching_C_AwardDodgeandWeave_Params
+	{	};
 
 	/**
 	 * Function WI_Gregory_Crouching.WI_Gregory_Crouching_C.ExecuteUbergraph_WI_Gregory_Crouching
@@ -135,7 +129,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

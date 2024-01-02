@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.Get Anim Item Type
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		GregoryAnimItemEnum_EGregoryAnimItemEnum           AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EGregoryAnimItemEnum                               AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_LaserGun_C::Get_Anim_Item_Type(GregoryAnimItemEnum_EGregoryAnimItemEnum* AnimType)
+	void AEQ_LaserGun_C::GetAnimItemType(EGregoryAnimItemEnum* AnimType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function EQ_LaserGun.EQ_LaserGun_C.Get Anim Item Type");
 		
-		AEQ_LaserGun_C_Get_Anim_Item_Type_Params params {};
+		AEQ_LaserGun_C_GetAnimItemType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.SetBlasterUseFOV
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               UseFOV                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -58,13 +58,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.ShouldFireGun
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Fire_                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               Fire                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AEQ_LaserGun_C::ShouldFireGun(bool* Fire_)
+	void AEQ_LaserGun_C::ShouldFireGun(bool* Fire)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -76,15 +76,15 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (Fire_ != nullptr)
-			*Fire_ = params.Fire_;
+		if (Fire != nullptr)
+			*Fire = params.Fire;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.FireGun
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::FireGun()
 	{
@@ -101,9 +101,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.UserConstructionScript
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::UserConstructionScript()
 	{
@@ -120,9 +120,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.PullUpGun__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::PullUpGun__FinishedFunc()
 	{
@@ -139,9 +139,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.PullUpGun__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::PullUpGun__UpdateFunc()
 	{
@@ -158,9 +158,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.MoveGun__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::MoveGun__FinishedFunc()
 	{
@@ -177,9 +177,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.MoveGun__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::MoveGun__UpdateFunc()
 	{
@@ -196,9 +196,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::ReceiveBeginPlay()
 	{
@@ -215,9 +215,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.PrimaryAction
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::PrimaryAction()
 	{
@@ -234,9 +234,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.SecondaryAction
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::SecondaryAction()
 	{
@@ -253,9 +253,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.PullOut
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::PullOut()
 	{
@@ -272,9 +272,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.PutAway
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::PutAway()
 	{
@@ -291,9 +291,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.Recharge
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::Recharge()
 	{
@@ -310,9 +310,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.OnRechargeUIDone
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::OnRechargeUIDone()
 	{
@@ -329,9 +329,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_0_OnMissionStateHit__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_0_OnMissionStateHit__DelegateSignature()
 	{
@@ -348,9 +348,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_LaserGun_C::BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature()
 	{
@@ -367,9 +367,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.SetToOriginalMaterial
+	 * 		Flags  -> ()
+	 */
+	void AEQ_LaserGun_C::SetToOriginalMaterial()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_LaserGun.EQ_LaserGun_C.SetToOriginalMaterial");
+		
+		AEQ_LaserGun_C_SetToOriginalMaterial_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_LaserGun.EQ_LaserGun_C.ExecuteUbergraph_EQ_LaserGun
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -389,8 +408,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AEQ_LaserGun_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AEQ_LaserGun_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AEQ_LaserGun_C::StaticClass()

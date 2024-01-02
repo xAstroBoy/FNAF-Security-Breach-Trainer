@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,8 +20,7 @@ namespace CG
 	struct UWidget_SetVisibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InToolTipText;                                           // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -61,7 +57,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Translation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -71,7 +66,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Pivot;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -81,7 +75,6 @@ namespace CG
 	{
 	public:
 		float                                                      Angle;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -91,7 +84,6 @@ namespace CG
 	{
 	public:
 		struct FWidgetTransform                                    InTransform;                                             // 0x0000(0x001C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -101,7 +93,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Shear;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -111,7 +102,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Scale;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -121,7 +111,6 @@ namespace CG
 	{
 	public:
 		float                                                      InOpacity;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -130,9 +119,9 @@ namespace CG
 	struct UWidget_SetNavigationRuleExplicit_Params
 	{
 	public:
-		SlateCore_EUINavigation                                    Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigation                                              Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_T6W7[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UWidget*                                             InWidget;                                                // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -141,9 +130,9 @@ namespace CG
 	struct UWidget_SetNavigationRuleCustomBoundary_Params
 	{
 	public:
-		SlateCore_EUINavigation                                    Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigation                                              Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_51X6[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FScriptDelegate                                      InCustomDelegate;                                        // 0x0004(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -152,9 +141,9 @@ namespace CG
 	struct UWidget_SetNavigationRuleCustom_Params
 	{
 	public:
-		SlateCore_EUINavigation                                    Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigation                                              Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_9SF6[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FScriptDelegate                                      InCustomDelegate;                                        // 0x0004(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -163,9 +152,8 @@ namespace CG
 	struct UWidget_SetNavigationRuleBase_Params
 	{
 	public:
-		SlateCore_EUINavigation                                    Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		SlateCore_EUINavigationRule                                Rule;                                                    // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EUINavigation                                              Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigationRule                                          Rule;                                                    // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -174,18 +162,17 @@ namespace CG
 	struct UWidget_SetNavigationRule_Params
 	{
 	public:
-		SlateCore_EUINavigation                                    Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		SlateCore_EUINavigationRule                                Rule;                                                    // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigation                                              Direction;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigationRule                                          Rule;                                                    // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_ZHVW[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                WidgetToFocus;                                           // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Widget.SetKeyboardFocus
 	 */
 	struct UWidget_SetKeyboardFocus_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.Widget.SetIsEnabled
@@ -194,15 +181,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bInIsEnabled;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Widget.SetFocus
 	 */
 	struct UWidget_SetFocus_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.Widget.SetCursor
@@ -210,8 +195,7 @@ namespace CG
 	struct UWidget_SetCursor_Params
 	{
 	public:
-		CoreUObject_EMouseCursor                                   InCursor;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMouseCursor                                               InCursor;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -220,8 +204,7 @@ namespace CG
 	struct UWidget_SetClipping_Params
 	{
 	public:
-		SlateCore_EWidgetClipping                                  InClipping;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWidgetClipping                                            InClipping;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -230,24 +213,22 @@ namespace CG
 	struct UWidget_SetAllNavigationRules_Params
 	{
 	public:
-		SlateCore_EUINavigationRule                                Rule;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUINavigationRule                                          Rule;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_AE2Z[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                WidgetToFocus;                                           // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Widget.ResetCursor
 	 */
 	struct UWidget_ResetCursor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.Widget.RemoveFromParent
 	 */
 	struct UWidget_RemoveFromParent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * DelegateFunction UMG.Widget.OnReply__DelegateSignature
@@ -256,7 +237,6 @@ namespace CG
 	{
 	public:
 		struct FEventReply                                         ReturnValue;                                             // 0x0000(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -268,7 +248,6 @@ namespace CG
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -278,7 +257,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -288,15 +266,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Widget.InvalidateLayoutAndVolatility
 	 */
 	struct UWidget_InvalidateLayoutAndVolatility_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.Widget.HasUserFocusedDescendants
@@ -306,7 +282,6 @@ namespace CG
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -317,7 +292,6 @@ namespace CG
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -329,7 +303,6 @@ namespace CG
 		int32_t                                                    UserIndex;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    PointerIndex;                                            // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -339,7 +312,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -349,7 +321,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -359,7 +330,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -369,7 +339,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -379,7 +348,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -388,8 +356,7 @@ namespace CG
 	struct UWidget_GetVisibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -399,7 +366,6 @@ namespace CG
 	{
 	public:
 		struct FGeometry                                           ReturnValue;                                             // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -409,7 +375,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -418,8 +383,7 @@ namespace CG
 	struct UWidget_GetSlateVisibility__DelegateSignature_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -429,7 +393,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         ReturnValue;                                             // 0x0000(0x0028)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -439,7 +402,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0000(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -449,7 +411,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -459,7 +420,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -469,7 +429,6 @@ namespace CG
 	{
 	public:
 		class UPanelWidget*                                        ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -479,7 +438,6 @@ namespace CG
 	{
 	public:
 		struct FGeometry                                           ReturnValue;                                             // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -489,7 +447,6 @@ namespace CG
 	{
 	public:
 		class APlayerController*                                   ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -499,7 +456,6 @@ namespace CG
 	{
 	public:
 		class ULocalPlayer*                                        ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -508,8 +464,7 @@ namespace CG
 	struct UWidget_GetMouseCursor__DelegateSignature_Params
 	{
 	public:
-		CoreUObject_EMouseCursor                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMouseCursor                                               ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -519,7 +474,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -529,7 +483,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -539,7 +492,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -549,7 +501,6 @@ namespace CG
 	{
 	public:
 		class UGameInstance*                                       ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -559,7 +510,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -569,7 +519,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -578,8 +527,7 @@ namespace CG
 	struct UWidget_GetClipping_Params
 	{
 	public:
-		SlateCore_EWidgetClipping                                  ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWidgetClipping                                            ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -588,8 +536,7 @@ namespace CG
 	struct UWidget_GetCheckBoxState__DelegateSignature_Params
 	{
 	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ECheckBoxState                                             ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -599,7 +546,6 @@ namespace CG
 	{
 	public:
 		struct FGeometry                                           ReturnValue;                                             // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -609,7 +555,24 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.Widget.GetAccessibleText
+	 */
+	struct UWidget_GetAccessibleText_Params
+	{
+	public:
+		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.Widget.GetAccessibleSummaryText
+	 */
+	struct UWidget_GetAccessibleSummaryText_Params
+	{
+	public:
+		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -620,7 +583,6 @@ namespace CG
 	public:
 		class FString                                              Item;                                                    // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidget*                                             ReturnValue;                                             // 0x0010(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -631,7 +593,6 @@ namespace CG
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidget*                                             ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -641,15 +602,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bForce;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Widget.ForceLayoutPrepass
 	 */
 	struct UWidget_ForceLayoutPrepass_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.PanelWidget.RemoveChildAt
@@ -659,7 +618,6 @@ namespace CG
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -670,7 +628,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -681,7 +638,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -691,7 +647,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -701,7 +656,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -712,7 +666,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -722,8 +675,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_6Y7Z[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UWidget*                                             ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -732,16 +685,14 @@ namespace CG
 	struct UPanelWidget_GetAllChildren_Params
 	{
 	public:
-		TArray<class UWidget*>                                     ReturnValue;                                             // 0x0000(0x0010)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UWidget*>                                     ReturnValue;                                             // 0x0000(0x0010)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function UMG.PanelWidget.ClearChildren
 	 */
 	struct UPanelWidget_ClearChildren_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.PanelWidget.AddChild
@@ -751,7 +702,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UPanelSlot*                                          ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -762,7 +712,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UPanelSlot*                                          ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -772,7 +721,6 @@ namespace CG
 	{
 	public:
 		class UPanelSlot*                                          ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -782,7 +730,887 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.UserWidget.UnregisterInputComponent
+	 */
+	struct UUserWidget_UnregisterInputComponent_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.UnbindFromAnimationStarted
+	 */
+	struct UUserWidget_UnbindFromAnimationStarted_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.UnbindFromAnimationFinished
+	 */
+	struct UUserWidget_UnbindFromAnimationFinished_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.UnbindAllFromAnimationStarted
+	 */
+	struct UUserWidget_UnbindAllFromAnimationStarted_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.UnbindAllFromAnimationFinished
+	 */
+	struct UUserWidget_UnbindAllFromAnimationFinished_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.Tick
+	 */
+	struct UUserWidget_Tick_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.StopListeningForInputAction
+	 */
+	struct UUserWidget_StopListeningForInputAction_Params
+	{
+	public:
+		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EInputEvent                                                EventType;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.StopListeningForAllInputActions
+	 */
+	struct UUserWidget_StopListeningForAllInputActions_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.StopAnimationsAndLatentActions
+	 */
+	struct UUserWidget_StopAnimationsAndLatentActions_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.StopAnimation
+	 */
+	struct UUserWidget_StopAnimation_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.StopAllAnimations
+	 */
+	struct UUserWidget_StopAllAnimations_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.SetPositionInViewport
+	 */
+	struct UUserWidget_SetPositionInViewport_Params
+	{
+	public:
+		struct FVector2D                                           Position;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bRemoveDPIScale;                                         // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetPlaybackSpeed
+	 */
+	struct UUserWidget_SetPlaybackSpeed_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetPadding
+	 */
+	struct UUserWidget_SetPadding_Params
+	{
+	public:
+		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetOwningPlayer
+	 */
+	struct UUserWidget_SetOwningPlayer_Params
+	{
+	public:
+		class APlayerController*                                   LocalPlayerController;                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetNumLoopsToPlay
+	 */
+	struct UUserWidget_SetNumLoopsToPlay_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    NumLoopsToPlay;                                          // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetInputActionPriority
+	 */
+	struct UUserWidget_SetInputActionPriority_Params
+	{
+	public:
+		int32_t                                                    NewPriority;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetInputActionBlocking
+	 */
+	struct UUserWidget_SetInputActionBlocking_Params
+	{
+	public:
+		bool                                                       bShouldBlock;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetForegroundColor
+	 */
+	struct UUserWidget_SetForegroundColor_Params
+	{
+	public:
+		struct FSlateColor                                         InForegroundColor;                                       // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetDesiredSizeInViewport
+	 */
+	struct UUserWidget_SetDesiredSizeInViewport_Params
+	{
+	public:
+		struct FVector2D                                           Size;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetColorAndOpacity
+	 */
+	struct UUserWidget_SetColorAndOpacity_Params
+	{
+	public:
+		struct FLinearColor                                        InColorAndOpacity;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetAnimationCurrentTime
+	 */
+	struct UUserWidget_SetAnimationCurrentTime_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      InTime;                                                  // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetAnchorsInViewport
+	 */
+	struct UUserWidget_SetAnchorsInViewport_Params
+	{
+	public:
+		struct FAnchors                                            Anchors;                                                 // 0x0000(0x0010)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.SetAlignmentInViewport
+	 */
+	struct UUserWidget_SetAlignmentInViewport_Params
+	{
+	public:
+		struct FVector2D                                           Alignment;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.ReverseAnimation
+	 */
+	struct UUserWidget_ReverseAnimation_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.RemoveFromViewport
+	 */
+	struct UUserWidget_RemoveFromViewport_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.RegisterInputComponent
+	 */
+	struct UUserWidget_RegisterInputComponent_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.PreConstruct
+	 */
+	struct UUserWidget_PreConstruct_Params
+	{
+	public:
+		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PlaySound
+	 */
+	struct UUserWidget_PlaySound_Params
+	{
+	public:
+		class USoundBase*                                          SoundToPlay;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PlayAnimationTimeRange
+	 */
+	struct UUserWidget_PlayAnimationTimeRange_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      StartAtTime;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      EndAtTime;                                               // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    NumLoopsToPlay;                                          // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUMGSequencePlayMode                                       PlayMode;                                                // 0x0014(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_180U[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		float                                                      PlaybackSpeed;                                           // 0x0018(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bRestoreState;                                           // 0x001C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_IPRH[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PlayAnimationReverse
+	 */
+	struct UUserWidget_PlayAnimationReverse_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bRestoreState;                                           // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_5JJK[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PlayAnimationForward
+	 */
+	struct UUserWidget_PlayAnimationForward_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bRestoreState;                                           // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_0RUI[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PlayAnimation
+	 */
+	struct UUserWidget_PlayAnimation_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      StartAtTime;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    NumLoopsToPlay;                                          // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUMGSequencePlayMode                                       PlayMode;                                                // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_JD62[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		float                                                      PlaybackSpeed;                                           // 0x0014(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bRestoreState;                                           // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_KIL0[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.PauseAnimation
+	 */
+	struct UUserWidget_PauseAnimation_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnTouchStarted
+	 */
+	struct UUserWidget_OnTouchStarted_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnTouchMoved
+	 */
+	struct UUserWidget_OnTouchMoved_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnTouchGesture
+	 */
+	struct UUserWidget_OnTouchGesture_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       GestureEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnTouchForceChanged
+	 */
+	struct UUserWidget_OnTouchForceChanged_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnTouchEnded
+	 */
+	struct UUserWidget_OnTouchEnded_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnRemovedFromFocusPath
+	 */
+	struct UUserWidget_OnRemovedFromFocusPath_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnPreviewMouseButtonDown
+	 */
+	struct UUserWidget_OnPreviewMouseButtonDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnPreviewKeyDown
+	 */
+	struct UUserWidget_OnPreviewKeyDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnPaint
+	 */
+	struct UUserWidget_OnPaint_Params
+	{
+	public:
+		struct FPaintContext                                       Context;                                                 // 0x0000(0x0030)  (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseWheel
+	 */
+	struct UUserWidget_OnMouseWheel_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseMove
+	 */
+	struct UUserWidget_OnMouseMove_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseLeave
+	 */
+	struct UUserWidget_OnMouseLeave_Params
+	{
+	public:
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseEnter
+	 */
+	struct UUserWidget_OnMouseEnter_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseCaptureLost
+	 */
+	struct UUserWidget_OnMouseCaptureLost_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseButtonUp
+	 */
+	struct UUserWidget_OnMouseButtonUp_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseButtonDown
+	 */
+	struct UUserWidget_OnMouseButtonDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMouseButtonDoubleClick
+	 */
+	struct UUserWidget_OnMouseButtonDoubleClick_Params
+	{
+	public:
+		struct FGeometry                                           InMyGeometry;                                            // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       InMouseEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnMotionDetected
+	 */
+	struct UUserWidget_OnMotionDetected_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FMotionEvent                                        InMotionEvent;                                           // 0x0038(0x0048)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0080(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnKeyUp
+	 */
+	struct UUserWidget_OnKeyUp_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnKeyDown
+	 */
+	struct UUserWidget_OnKeyDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnKeyChar
+	 */
+	struct UUserWidget_OnKeyChar_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FCharacterEvent                                     InCharacterEvent;                                        // 0x0038(0x0020)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0058(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnInitialized
+	 */
+	struct UUserWidget_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.OnFocusReceived
+	 */
+	struct UUserWidget_OnFocusReceived_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0038(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0040(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnFocusLost
+	 */
+	struct UUserWidget_OnFocusLost_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDrop
+	 */
+	struct UUserWidget_OnDrop_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x00B0(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDragOver
+	 */
+	struct UUserWidget_OnDragOver_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x00B0(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDragLeave
+	 */
+	struct UUserWidget_OnDragLeave_Params
+	{
+	public:
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (Parm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x0070(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDragEnter
+	 */
+	struct UUserWidget_OnDragEnter_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDragDetected
+	 */
+	struct UUserWidget_OnDragDetected_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnDragCancelled
+	 */
+	struct UUserWidget_OnDragCancelled_Params
+	{
+	public:
+		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		class UDragDropOperation*                                  Operation;                                               // 0x0070(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnAnimationStarted
+	 */
+	struct UUserWidget_OnAnimationStarted_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnAnimationFinished
+	 */
+	struct UUserWidget_OnAnimationFinished_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnAnalogValueChanged
+	 */
+	struct UUserWidget_OnAnalogValueChanged_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FAnalogInputEvent                                   InAnalogInputEvent;                                      // 0x0038(0x0040)  (Parm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x0078(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.OnAddedToFocusPath
+	 */
+	struct UUserWidget_OnAddedToFocusPath_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.ListenForInputAction
+	 */
+	struct UUserWidget_ListenForInputAction_Params
+	{
+	public:
+		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EInputEvent                                                EventType;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bConsume;                                                // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_K6FI[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FScriptDelegate                                      Callback;                                                // 0x000C(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsPlayingAnimation
+	 */
+	struct UUserWidget_IsPlayingAnimation_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsListeningForInputAction
+	 */
+	struct UUserWidget_IsListeningForInputAction_Params
+	{
+	public:
+		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsInViewport
+	 */
+	struct UUserWidget_IsInViewport_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsInteractable
+	 */
+	struct UUserWidget_IsInteractable_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsAnyAnimationPlaying
+	 */
+	struct UUserWidget_IsAnyAnimationPlaying_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsAnimationPlayingForward
+	 */
+	struct UUserWidget_IsAnimationPlayingForward_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.IsAnimationPlaying
+	 */
+	struct UUserWidget_IsAnimationPlaying_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetOwningPlayerPawn
+	 */
+	struct UUserWidget_GetOwningPlayerPawn_Params
+	{
+	public:
+		class APawn*                                               ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetOwningPlayerCameraManager
+	 */
+	struct UUserWidget_GetOwningPlayerCameraManager_Params
+	{
+	public:
+		class APlayerCameraManager*                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetIsVisible
+	 */
+	struct UUserWidget_GetIsVisible_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetAnimationCurrentTime
+	 */
+	struct UUserWidget_GetAnimationCurrentTime_Params
+	{
+	public:
+		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetAnchorsInViewport
+	 */
+	struct UUserWidget_GetAnchorsInViewport_Params
+	{
+	public:
+		struct FAnchors                                            ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.GetAlignmentInViewport
+	 */
+	struct UUserWidget_GetAlignmentInViewport_Params
+	{
+	public:
+		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.FlushAnimations
+	 */
+	struct UUserWidget_FlushAnimations_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.Destruct
+	 */
+	struct UUserWidget_Destruct_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.Construct
+	 */
+	struct UUserWidget_Construct_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.CancelLatentActions
+	 */
+	struct UUserWidget_CancelLatentActions_Params
+	{	};
+
+	/**
+	 * Function UMG.UserWidget.BindToAnimationStarted
+	 */
+	struct UUserWidget_BindToAnimationStarted_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.BindToAnimationFinished
+	 */
+	struct UUserWidget_BindToAnimationFinished_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.BindToAnimationEvent
+	 */
+	struct UUserWidget_BindToAnimationEvent_Params
+	{
+	public:
+		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+		EWidgetAnimationEvent                                      AnimationEvent;                                          // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_9PZD[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                UserTag;                                                 // 0x001C(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.AddToViewport
+	 */
+	struct UUserWidget_AddToViewport_Params
+	{
+	public:
+		int32_t                                                    ZOrder;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.UserWidget.AddToPlayerScreen
+	 */
+	struct UUserWidget_AddToPlayerScreen_Params
+	{
+	public:
+		int32_t                                                    ZOrder;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -793,7 +1621,6 @@ namespace CG
 	public:
 		class FString                                              URL;                                                     // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UAsyncTaskDownloadImage*                             ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -802,8 +1629,7 @@ namespace CG
 	struct UBackgroundBlur_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -813,7 +1639,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -823,7 +1648,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         InBrush;                                                 // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -832,8 +1656,7 @@ namespace CG
 	struct UBackgroundBlur_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -843,7 +1666,6 @@ namespace CG
 	{
 	public:
 		float                                                      InStrength;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -853,7 +1675,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InBlurRadius;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -863,7 +1684,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInApplyAlphaToBlur;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -872,8 +1692,7 @@ namespace CG
 	struct UBackgroundBlurSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -883,7 +1702,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -892,8 +1710,7 @@ namespace CG
 	struct UBackgroundBlurSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -903,7 +1720,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -912,8 +1728,7 @@ namespace CG
 	struct UBorder_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -923,7 +1738,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -932,8 +1746,7 @@ namespace CG
 	struct UBorder_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -943,7 +1756,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InScale;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -953,7 +1765,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InContentColorAndOpacity;                                // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -963,7 +1774,6 @@ namespace CG
 	{
 	public:
 		class UTexture2D*                                          Texture;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -973,7 +1783,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInterface*                                  Material;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -983,7 +1792,6 @@ namespace CG
 	{
 	public:
 		class USlateBrushAsset*                                    Asset;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -993,7 +1801,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InBrushColor;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1003,7 +1810,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         InBrush;                                                 // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1013,7 +1819,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1022,8 +1827,7 @@ namespace CG
 	struct UBorderSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1033,7 +1837,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1042,8 +1845,7 @@ namespace CG
 	struct UBorderSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1053,7 +1855,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0000(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1062,8 +1863,7 @@ namespace CG
 	struct UButton_SetTouchMethod_Params
 	{
 	public:
-		SlateCore_EButtonTouchMethod                               InTouchMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EButtonTouchMethod                                         InTouchMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1073,7 +1873,6 @@ namespace CG
 	{
 	public:
 		struct FButtonStyle                                        InStyle;                                                 // 0x0000(0x0278)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1082,8 +1881,7 @@ namespace CG
 	struct UButton_SetPressMethod_Params
 	{
 	public:
-		SlateCore_EButtonPressMethod                               InPressMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EButtonPressMethod                                         InPressMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1093,7 +1891,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InColorAndOpacity;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1102,8 +1899,7 @@ namespace CG
 	struct UButton_SetClickMethod_Params
 	{
 	public:
-		SlateCore_EButtonClickMethod                               InClickMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EButtonClickMethod                                         InClickMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1113,7 +1909,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InBackgroundColor;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1123,7 +1918,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1132,8 +1926,7 @@ namespace CG
 	struct UButtonSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1143,7 +1936,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1152,8 +1944,7 @@ namespace CG
 	struct UButtonSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1164,7 +1955,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UCanvasPanelSlot*                                    ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1174,7 +1964,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InZOrder;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1184,7 +1973,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InSize;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1194,7 +1982,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InPosition;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1204,7 +1991,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InOffset;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1214,7 +2000,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InMinimumAnchors;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1224,7 +2009,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InMaximumAnchors;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1234,7 +2018,6 @@ namespace CG
 	{
 	public:
 		struct FAnchorData                                         InLayoutData;                                            // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1244,7 +2027,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InbAutoSize;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1254,7 +2036,6 @@ namespace CG
 	{
 	public:
 		struct FAnchors                                            InAnchors;                                               // 0x0000(0x0010)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1264,7 +2045,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InAlignment;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1274,7 +2054,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1284,7 +2063,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1294,7 +2072,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1304,7 +2081,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1314,7 +2090,6 @@ namespace CG
 	{
 	public:
 		struct FAnchorData                                         ReturnValue;                                             // 0x0000(0x0028)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1324,7 +2099,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1334,7 +2108,6 @@ namespace CG
 	{
 	public:
 		struct FAnchors                                            ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1344,7 +2117,24 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.CheckBox.SetTouchMethod
+	 */
+	struct UCheckBox_SetTouchMethod_Params
+	{
+	public:
+		EButtonTouchMethod                                         InTouchMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.CheckBox.SetPressMethod
+	 */
+	struct UCheckBox_SetPressMethod_Params
+	{
+	public:
+		EButtonPressMethod                                         InPressMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1354,7 +2144,15 @@ namespace CG
 	{
 	public:
 		bool                                                       InIsChecked;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.CheckBox.SetClickMethod
+	 */
+	struct UCheckBox_SetClickMethod_Params
+	{
+	public:
+		EButtonClickMethod                                         InClickMethod;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1363,8 +2161,7 @@ namespace CG
 	struct UCheckBox_SetCheckedState_Params
 	{
 	public:
-		SlateCore_ECheckBoxState                                   InCheckedState;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ECheckBoxState                                             InCheckedState;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1374,7 +2171,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1384,7 +2180,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1393,8 +2188,7 @@ namespace CG
 	struct UCheckBox_GetCheckedState_Params
 	{
 	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ECheckBoxState                                             ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1403,8 +2197,7 @@ namespace CG
 	struct UCheckedStateBinding_GetValue_Params
 	{
 	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ECheckBoxState                                             ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1414,7 +2207,6 @@ namespace CG
 	{
 	public:
 		float                                                      InRadius;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1424,7 +2216,6 @@ namespace CG
 	{
 	public:
 		float                                                      InPeriod;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1434,7 +2225,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InNumberOfPieces;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1444,7 +2234,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         ReturnValue;                                             // 0x0000(0x0028)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1454,7 +2243,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1464,7 +2252,6 @@ namespace CG
 	{
 	public:
 		class FString                                              Option;                                                  // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1474,7 +2261,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1485,15 +2271,13 @@ namespace CG
 	public:
 		class FString                                              Option;                                                  // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ComboBoxString.RefreshOptions
 	 */
 	struct UComboBoxString_RefreshOptions_Params
-	{
-	};
+	{	};
 
 	/**
 	 * DelegateFunction UMG.ComboBoxString.OnSelectionChangedEvent__DelegateSignature
@@ -1502,16 +2286,14 @@ namespace CG
 	{
 	public:
 		class FString                                              SelectedItem;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		SlateCore_ESelectInfo                                      SelectionType;                                           // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESelectInfo                                                SelectionType;                                           // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature
 	 */
 	struct UComboBoxString_OnOpeningEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ComboBoxString.IsOpen
@@ -1520,7 +2302,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1530,7 +2311,6 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1540,7 +2320,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1550,7 +2329,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1560,8 +2338,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_D84V[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1572,22 +2350,19 @@ namespace CG
 	public:
 		class FString                                              Option;                                                  // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    ReturnValue;                                             // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ComboBoxString.ClearSelection
 	 */
 	struct UComboBoxString_ClearSelection_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ComboBoxString.ClearOptions
 	 */
 	struct UComboBoxString_ClearOptions_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ComboBoxString.AddOption
@@ -1596,7 +2371,6 @@ namespace CG
 	{
 	public:
 		class FString                                              Option;                                                  // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1606,7 +2380,6 @@ namespace CG
 	{
 	public:
 		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1616,7 +2389,6 @@ namespace CG
 	{
 	public:
 		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1626,7 +2398,15 @@ namespace CG
 	{
 	public:
 		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.DynamicEntryBoxBase.SetRadialSettings
+	 */
+	struct UDynamicEntryBoxBase_SetRadialSettings_Params
+	{
+	public:
+		struct FRadialBoxSettings                                  InSettings;                                              // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1636,7 +2416,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InEntrySpacing;                                          // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1646,7 +2425,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1655,8 +2433,7 @@ namespace CG
 	struct UDynamicEntryBoxBase_GetAllEntries_Params
 	{
 	public:
-		TArray<class UUserWidget*>                                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UUserWidget*>                                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1666,7 +2443,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bDeleteWidgets;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1676,7 +2452,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         EntryWidget;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1687,7 +2462,6 @@ namespace CG
 	public:
 		class UClass*                                              EntryClass;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UUserWidget*                                         ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1697,7 +2471,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1707,7 +2480,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1716,8 +2488,7 @@ namespace CG
 	struct UEditableText_SetJustification_Params
 	{
 	public:
-		Slate_ETextJustify                                         InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextJustify                                               InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1727,7 +2498,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InbIsReadyOnly;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1737,7 +2507,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InbIsPassword;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1747,7 +2516,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InHintText;                                              // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1757,8 +2525,7 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1768,7 +2535,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1778,7 +2544,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1788,7 +2553,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1797,8 +2561,7 @@ namespace CG
 	struct UEditableTextBox_SetJustification_Params
 	{
 	public:
-		Slate_ETextJustify                                         InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextJustify                                               InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1808,7 +2571,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bReadOnly;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1818,7 +2580,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsPassword;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1828,7 +2589,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1838,7 +2598,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InError;                                                 // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1848,8 +2607,7 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1859,7 +2617,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1869,7 +2626,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1879,15 +2635,13 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.EditableTextBox.ClearError
 	 */
 	struct UEditableTextBox_ClearError_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ExpandableArea.SetIsExpanded_Animated
@@ -1896,7 +2650,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsExpanded;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1906,7 +2659,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsExpanded;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1916,7 +2668,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1926,7 +2677,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1937,7 +2687,6 @@ namespace CG
 	public:
 		int32_t                                                    ColumnIndex;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Coefficient;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1948,7 +2697,6 @@ namespace CG
 	public:
 		int32_t                                                    ColumnIndex;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Coefficient;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1961,7 +2709,6 @@ namespace CG
 		int32_t                                                    InRow;                                                   // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    InColumn;                                                // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UGridSlot*                                           ReturnValue;                                             // 0x0010(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1970,8 +2717,7 @@ namespace CG
 	struct UGridSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1981,7 +2727,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InRowSpan;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1991,7 +2736,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InRow;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2001,7 +2745,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2011,7 +2754,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InNudge;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2021,7 +2763,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InLayer;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2030,8 +2771,7 @@ namespace CG
 	struct UGridSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2041,7 +2781,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InColumnSpan;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2051,7 +2790,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InColumn;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2062,7 +2800,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UHorizontalBoxSlot*                                  ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2071,8 +2808,7 @@ namespace CG
 	struct UHorizontalBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2082,7 +2818,6 @@ namespace CG
 	{
 	public:
 		struct FSlateChildSize                                     InSize;                                                  // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2092,7 +2827,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2101,8 +2835,7 @@ namespace CG
 	struct UHorizontalBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2112,7 +2845,6 @@ namespace CG
 	{
 	public:
 		float                                                      InOpacity;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2122,7 +2854,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InColorAndOpacity;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2132,7 +2863,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         TintColor;                                               // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2142,7 +2872,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           DesiredSize;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2152,7 +2881,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             ResourceObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2163,7 +2891,6 @@ namespace CG
 	public:
 		class UTexture2DDynamic*                                   Texture;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bMatchSize;                                              // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2174,7 +2901,6 @@ namespace CG
 	public:
 		class UTexture2D*                                          Texture;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bMatchSize;                                              // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2183,16 +2909,15 @@ namespace CG
 	struct UImage_SetBrushFromSoftTexture_Params
 	{
 	public:
+		unsigned char                                              UnknownData_SB9M[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		bool                                                       bMatchSize;                                              // 0x0028(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.Image.SetBrushFromSoftMaterial
 	 */
 	struct UImage_SetBrushFromSoftMaterial_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.Image.SetBrushFromMaterial
@@ -2201,7 +2926,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInterface*                                  Material;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2210,8 +2934,8 @@ namespace CG
 	struct UImage_SetBrushFromAtlasInterface_Params
 	{
 	public:
+		unsigned char                                              UnknownData_DYHH[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		bool                                                       bMatchSize;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2221,7 +2945,6 @@ namespace CG
 	{
 	public:
 		class USlateBrushAsset*                                    Asset;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2231,7 +2954,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         InBrush;                                                 // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2241,7 +2963,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2250,8 +2971,7 @@ namespace CG
 	struct UInputKeySelector_SetTextBlockVisibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       InVisibility;                                            // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           InVisibility;                                            // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2261,7 +2981,6 @@ namespace CG
 	{
 	public:
 		struct FInputChord                                         InSelectedKey;                                           // 0x0000(0x0020)  (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2271,7 +2990,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InNoKeySpecifiedText;                                    // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2281,7 +2999,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InKeySelectionText;                                      // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2290,8 +3007,7 @@ namespace CG
 	struct UInputKeySelector_SetEscapeKeys_Params
 	{
 	public:
-		TArray<struct FKey>                                        InKeys;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FKey>                                        InKeys;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2301,7 +3017,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInAllowModifierKeys;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2311,7 +3026,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInAllowGamepadKeys;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2321,15 +3035,13 @@ namespace CG
 	{
 	public:
 		struct FInputChord                                         SelectedKey;                                             // 0x0000(0x0020)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature
 	 */
 	struct UInputKeySelector_OnIsSelectingKeyChanged__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.InputKeySelector.GetIsSelectingKey
@@ -2338,7 +3050,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2348,7 +3059,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2358,15 +3068,13 @@ namespace CG
 	{
 	public:
 		bool                                                       CanCache;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.InvalidationBox.InvalidateCache
 	 */
 	struct UInvalidationBox_InvalidateCache_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.InvalidationBox.GetCanCache
@@ -2375,7 +3083,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2385,7 +3092,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsSelected;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2395,15 +3101,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsExpanded;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.UserListEntry.BP_OnEntryReleased
 	 */
 	struct UUserListEntry_BP_OnEntryReleased_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.UserListEntryLibrary.IsListItemSelected
@@ -2411,8 +3115,8 @@ namespace CG
 	struct UUserListEntryLibrary_IsListItemSelected_Params
 	{
 	public:
+		unsigned char                                              UnknownData_NS9F[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2421,8 +3125,8 @@ namespace CG
 	struct UUserListEntryLibrary_IsListItemExpanded_Params
 	{
 	public:
+		unsigned char                                              UnknownData_OLCZ[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2431,8 +3135,8 @@ namespace CG
 	struct UUserListEntryLibrary_GetOwningListView_Params
 	{
 	public:
+		unsigned char                                              UnknownData_4M8F[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UListViewBase*                                       ReturnValue;                                             // 0x0010(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2442,7 +3146,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2451,8 +3154,8 @@ namespace CG
 	struct UUserObjectListEntryLibrary_GetListItemObject_Params
 	{
 	public:
+		unsigned char                                              UnknownData_0CCP[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UObject*                                             ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2462,7 +3165,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewWheelScrollMultiplier;                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2472,7 +3174,6 @@ namespace CG
 	{
 	public:
 		float                                                      InScrollOffset;                                          // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2481,37 +3182,32 @@ namespace CG
 	struct UListViewBase_SetScrollbarVisibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function UMG.ListViewBase.ScrollToTop
 	 */
 	struct UListViewBase_ScrollToTop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListViewBase.ScrollToBottom
 	 */
 	struct UListViewBase_ScrollToBottom_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListViewBase.RequestRefresh
 	 */
 	struct UListViewBase_RequestRefresh_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListViewBase.RegenerateAllEntries
 	 */
 	struct UListViewBase_RegenerateAllEntries_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListViewBase.GetDisplayedEntryWidgets
@@ -2519,8 +3215,7 @@ namespace CG
 	struct UListViewBase_GetDisplayedEntryWidgets_Params
 	{
 	public:
-		TArray<class UUserWidget*>                                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UUserWidget*>                                 ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2529,8 +3224,7 @@ namespace CG
 	struct UListView_SetSelectionMode_Params
 	{
 	public:
-		Slate_ESelectionMode                                       SelectionMode;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESelectionMode                                             SelectionMode;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2540,7 +3234,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2550,7 +3243,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2560,7 +3252,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2570,7 +3261,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2580,7 +3270,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2590,7 +3279,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2599,8 +3287,7 @@ namespace CG
 	struct UListView_GetListItems_Params
 	{
 	public:
-		TArray<class UObject*>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UObject*>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2610,8 +3297,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YCNI[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UObject*                                             ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2622,15 +3309,13 @@ namespace CG
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ListView.ClearListItems
 	 */
 	struct UListView_ClearListItems_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListView.BP_SetSelectedItem
@@ -2639,7 +3324,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2648,8 +3332,7 @@ namespace CG
 	struct UListView_BP_SetListItems_Params
 	{
 	public:
-		TArray<class UObject*>                                     InListItems;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UObject*>                                     InListItems;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2660,7 +3343,6 @@ namespace CG
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bSelected;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2670,7 +3352,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2680,7 +3361,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2691,7 +3371,6 @@ namespace CG
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2700,9 +3379,8 @@ namespace CG
 	struct UListView_BP_GetSelectedItems_Params
 	{
 	public:
-		TArray<class UObject*>                                     Items;                                                   // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class UObject*>                                     Items;                                                   // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2712,7 +3390,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2722,22 +3399,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ListView.BP_ClearSelection
 	 */
 	struct UListView_BP_ClearSelection_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListView.BP_CancelScrollIntoView
 	 */
 	struct UListView_BP_CancelScrollIntoView_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ListView.AddItem
@@ -2746,7 +3420,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2756,7 +3429,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bFocusOnOpen;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2766,7 +3438,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2775,8 +3446,7 @@ namespace CG
 	struct UMenuAnchor_SetPlacement_Params
 	{
 	public:
-		SlateCore_EMenuPlacement                                   InPlacement;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMenuPlacement                                             InPlacement;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2786,7 +3456,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bFocusMenu;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2796,7 +3465,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2806,7 +3474,15 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * DelegateFunction UMG.MenuAnchor.GetUserWidget__DelegateSignature
+	 */
+	struct UMenuAnchor_GetUserWidget__DelegateSignature_Params
+	{
+	public:
+		class UUserWidget*                                         ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2816,7 +3492,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2826,15 +3501,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bFit;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.MenuAnchor.Close
 	 */
 	struct UMenuAnchor_Close_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.MouseCursorBinding.GetValue
@@ -2842,8 +3515,7 @@ namespace CG
 	struct UMouseCursorBinding_GetValue_Params
 	{
 	public:
-		CoreUObject_EMouseCursor                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMouseCursor                                               ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2852,8 +3524,7 @@ namespace CG
 	struct UTextLayoutWidget_SetJustification_Params
 	{
 	public:
-		Slate_ETextJustify                                         InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextJustify                                               InJustification;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2862,8 +3533,7 @@ namespace CG
 	struct UMultiLineEditableText_SetWidgetStyle_Params
 	{
 	public:
-		struct FTextBlockStyle                                     InWidgetStyle;                                           // 0x0000(0x0268)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
+		struct FTextBlockStyle                                     InWidgetStyle;                                           // 0x0000(0x0270)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2873,7 +3543,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2883,7 +3552,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bReadOnly;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2893,7 +3561,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InHintText;                                              // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2903,8 +3570,7 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2914,7 +3580,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2924,7 +3589,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2934,7 +3598,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2943,8 +3606,7 @@ namespace CG
 	struct UMultiLineEditableTextBox_SetTextStyle_Params
 	{
 	public:
-		struct FTextBlockStyle                                     InTextStyle;                                             // 0x0000(0x0268)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
+		struct FTextBlockStyle                                     InTextStyle;                                             // 0x0000(0x0270)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2954,7 +3616,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2964,7 +3625,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bReadOnly;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2974,7 +3634,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InHintText;                                              // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2984,7 +3643,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InError;                                                 // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2994,8 +3652,7 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3005,7 +3662,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Text;                                                    // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3015,7 +3671,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3025,7 +3680,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3036,7 +3690,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UOverlaySlot*                                        ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3045,8 +3698,7 @@ namespace CG
 	struct UOverlaySlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3056,7 +3708,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3065,8 +3716,7 @@ namespace CG
 	struct UOverlaySlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3076,7 +3726,6 @@ namespace CG
 	{
 	public:
 		float                                                      InPercent;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3086,7 +3735,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InbIsMarquee;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3096,7 +3744,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InColor;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3106,7 +3753,15 @@ namespace CG
 	{
 	public:
 		class FName                                                TextureParameter;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.RetainerBox.SetRetainRendering
+	 */
+	struct URetainerBox_SetRetainRendering_Params
+	{
+	public:
+		bool                                                       bInRetainRendering;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3117,7 +3772,6 @@ namespace CG
 	public:
 		int32_t                                                    RenderPhase;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    TotalPhases;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3127,15 +3781,13 @@ namespace CG
 	{
 	public:
 		class UMaterialInterface*                                  EffectMaterial;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.RetainerBox.RequestRender
 	 */
 	struct URetainerBox_RequestRender_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.RetainerBox.GetEffectMaterial
@@ -3144,7 +3796,15 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.RichTextBlock.SetTextTransformPolicy
+	 */
+	struct URichTextBlock_SetTextTransformPolicy_Params
+	{
+	public:
+		ETextTransformPolicy                                       InTransformPolicy;                                       // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3154,7 +3814,6 @@ namespace CG
 	{
 	public:
 		class UDataTable*                                          NewTextStyleSet;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3164,7 +3823,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3174,7 +3832,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredWidth;                                       // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3183,8 +3840,7 @@ namespace CG
 	struct URichTextBlock_SetDefaultTextStyle_Params
 	{
 	public:
-		struct FTextBlockStyle                                     InDefaultTextStyle;                                      // 0x0000(0x0268)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
+		struct FTextBlockStyle                                     InDefaultTextStyle;                                      // 0x0000(0x0270)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3194,7 +3850,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         InStrikeBrush;                                           // 0x0000(0x0088)  (Parm, OutParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3204,7 +3859,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InShadowOffset;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3214,7 +3868,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InShadowColorAndOpacity;                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3223,8 +3876,7 @@ namespace CG
 	struct URichTextBlock_SetDefaultFont_Params
 	{
 	public:
-		struct FSlateFontInfo                                      InFontInfo;                                              // 0x0000(0x0050)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		struct FSlateFontInfo                                      InFontInfo;                                              // 0x0000(0x0058)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3234,7 +3886,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         InColorAndOpacity;                                       // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3244,7 +3895,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InAutoTextWrap;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3254,7 +3904,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3265,15 +3914,13 @@ namespace CG
 	public:
 		class UClass*                                              DecoratorClass;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class URichTextBlockDecorator*                             ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides
 	 */
 	struct URichTextBlock_ClearAllDefaultStyleOverrides_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SafeZone.SetSidesToPad
@@ -3285,7 +3932,6 @@ namespace CG
 		bool                                                       InPadRight;                                              // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       InPadTop;                                                // 0x0002(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       InPadBottom;                                             // 0x0003(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3295,7 +3941,6 @@ namespace CG
 	{
 	public:
 		float                                                      InUserSpecifiedScale;                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3304,8 +3949,7 @@ namespace CG
 	struct UScaleBox_SetStretchDirection_Params
 	{
 	public:
-		Slate_EStretchDirection                                    InStretchDirection;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EStretchDirection                                          InStretchDirection;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3314,8 +3958,7 @@ namespace CG
 	struct UScaleBox_SetStretch_Params
 	{
 	public:
-		Slate_EStretch                                             InStretch;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EStretch                                                   InStretch;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3325,7 +3968,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInIgnoreInheritedScale;                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3334,8 +3976,7 @@ namespace CG
 	struct UScaleBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3345,7 +3986,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3354,8 +3994,7 @@ namespace CG
 	struct UScaleBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3366,7 +4005,6 @@ namespace CG
 	public:
 		float                                                      InOffsetFraction;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      InThumbSizeFraction;                                     // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3376,7 +4014,15 @@ namespace CG
 	{
 	public:
 		float                                                      NewWheelScrollMultiplier;                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.ScrollBox.SetScrollWhenFocusChanges
+	 */
+	struct UScrollBox_SetScrollWhenFocusChanges_Params
+	{
+	public:
+		EScrollWhenFocusChanges                                    NewScrollWhenFocusChanges;                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3386,7 +4032,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewScrollOffset;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3395,8 +4040,7 @@ namespace CG
 	struct UScrollBox_SetScrollbarVisibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       NewScrollBarVisibility;                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           NewScrollBarVisibility;                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3406,7 +4050,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           NewScrollbarThickness;                                   // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3416,7 +4059,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             NewScrollbarPadding;                                     // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3425,8 +4067,7 @@ namespace CG
 	struct UScrollBox_SetOrientation_Params
 	{
 	public:
-		SlateCore_EOrientation                                     NewOrientation;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EOrientation                                               NewOrientation;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3435,8 +4076,7 @@ namespace CG
 	struct UScrollBox_SetConsumeMouseWheel_Params
 	{
 	public:
-		SlateCore_EConsumeMouseWheel                               NewConsumeMouseWheel;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EConsumeMouseWheel                                         NewConsumeMouseWheel;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3446,7 +4086,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bShouldAnimateWheelScrolling;                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3456,7 +4095,6 @@ namespace CG
 	{
 	public:
 		bool                                                       NewAlwaysShowScrollbar;                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3466,7 +4104,6 @@ namespace CG
 	{
 	public:
 		bool                                                       NewAllowOverscroll;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3477,24 +4114,22 @@ namespace CG
 	public:
 		class UWidget*                                             WidgetToFind;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       AnimateScroll;                                           // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Slate_EDescendantScrollDestination                         ScrollDestination;                                       // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EDescendantScrollDestination                               ScrollDestination;                                       // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2W4Y[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      Padding;                                                 // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ScrollBox.ScrollToStart
 	 */
 	struct UScrollBox_ScrollToStart_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ScrollBox.ScrollToEnd
 	 */
 	struct UScrollBox_ScrollToEnd_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ScrollBox.GetViewOffsetFraction
@@ -3503,7 +4138,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3513,7 +4147,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3523,15 +4156,13 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.ScrollBox.EndInertialScrolling
 	 */
 	struct UScrollBox_EndInertialScrolling_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.ScrollBoxSlot.SetVerticalAlignment
@@ -3539,8 +4170,7 @@ namespace CG
 	struct UScrollBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3550,7 +4180,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3559,8 +4188,7 @@ namespace CG
 	struct UScrollBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3570,7 +4198,6 @@ namespace CG
 	{
 	public:
 		float                                                      InWidthOverride;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3580,7 +4207,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredWidth;                                       // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3590,7 +4216,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredHeight;                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3600,7 +4225,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinAspectRatio;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3610,7 +4234,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMaxDesiredWidth;                                       // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3620,7 +4243,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMaxDesiredHeight;                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3630,7 +4252,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMaxAspectRatio;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3640,64 +4261,55 @@ namespace CG
 	{
 	public:
 		float                                                      InHeightOverride;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.SizeBox.ClearWidthOverride
 	 */
 	struct USizeBox_ClearWidthOverride_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMinDesiredWidth
 	 */
 	struct USizeBox_ClearMinDesiredWidth_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMinDesiredHeight
 	 */
 	struct USizeBox_ClearMinDesiredHeight_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMinAspectRatio
 	 */
 	struct USizeBox_ClearMinAspectRatio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMaxDesiredWidth
 	 */
 	struct USizeBox_ClearMaxDesiredWidth_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMaxDesiredHeight
 	 */
 	struct USizeBox_ClearMaxDesiredHeight_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearMaxAspectRatio
 	 */
 	struct USizeBox_ClearMaxAspectRatio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBox.ClearHeightOverride
 	 */
 	struct USizeBox_ClearHeightOverride_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SizeBoxSlot.SetVerticalAlignment
@@ -3705,8 +4317,7 @@ namespace CG
 	struct USizeBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3716,7 +4327,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3725,8 +4335,7 @@ namespace CG
 	struct USizeBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3738,7 +4347,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           LocalVector;                                             // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0040(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3750,7 +4358,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           AbsoluteVector;                                          // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0040(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3762,7 +4369,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		float                                                      LocalScalar;                                             // 0x0038(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x003C(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3774,7 +4380,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		float                                                      AbsoluteScalar;                                          // 0x0038(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x003C(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3788,7 +4393,6 @@ namespace CG
 		struct FVector2D                                           ScreenPosition;                                          // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           LocalCoordinate;                                         // 0x0048(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bIncludeWindowPosition;                                  // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3801,7 +4405,6 @@ namespace CG
 		struct FVector2D                                           ScreenPosition;                                          // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           AbsoluteCoordinate;                                      // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bIncludeWindowPosition;                                  // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3813,7 +4416,6 @@ namespace CG
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ScreenPosition;                                          // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ViewportPosition;                                        // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3827,7 +4429,6 @@ namespace CG
 		struct FVector2D                                           LocalCoordinate;                                         // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           PixelPosition;                                           // 0x0048(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ViewportPosition;                                        // 0x0050(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3839,7 +4440,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           LocalCoordinate;                                         // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0040(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3851,7 +4451,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           AbsoluteCoordinate;                                      // 0x0038(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0040(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3862,7 +4461,6 @@ namespace CG
 	public:
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0038(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3873,7 +4471,6 @@ namespace CG
 	public:
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0038(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3884,7 +4481,6 @@ namespace CG
 	public:
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0038(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3896,7 +4492,6 @@ namespace CG
 		struct FSlateBrush                                         A;                                                       // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FSlateBrush                                         B;                                                       // 0x0088(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0110(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3909,7 +4504,6 @@ namespace CG
 		struct FVector2D                                           AbsoluteDesktopCoordinate;                               // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           PixelPosition;                                           // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ViewportPosition;                                        // 0x0018(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3921,7 +4515,6 @@ namespace CG
 		struct FGeometry                                           Geometry;                                                // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector2D                                           AbsoluteCoordinate;                                      // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0040(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3931,7 +4524,6 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3941,7 +4533,6 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3951,7 +4542,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InValue;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3961,7 +4551,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InValue;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3971,7 +4560,6 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3981,7 +4569,6 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3991,7 +4578,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InValue;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4001,7 +4587,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InValue;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4011,7 +4596,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4021,7 +4605,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4031,7 +4614,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InSize;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4041,7 +4623,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4051,7 +4632,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4061,7 +4641,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4071,7 +4650,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4081,7 +4659,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4091,7 +4668,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4101,7 +4677,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4111,7 +4686,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         InForegroundColor;                                       // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4121,7 +4695,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4131,7 +4704,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bNewValue;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4141,8 +4713,7 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		SlateCore_ETextCommit                                      CommitMethod;                                            // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ETextCommit                                                CommitMethod;                                            // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4152,15 +4723,13 @@ namespace CG
 	{
 	public:
 		float                                                      InValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * DelegateFunction UMG.SpinBox.OnSpinBoxBeginSliderMovement__DelegateSignature
 	 */
 	struct USpinBox_OnSpinBoxBeginSliderMovement__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SpinBox.GetValue
@@ -4169,7 +4738,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4179,7 +4747,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4189,7 +4756,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4199,7 +4765,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4209,7 +4774,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4219,7 +4783,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4229,7 +4792,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4239,7 +4801,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4249,36 +4810,31 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.SpinBox.ClearMinValue
 	 */
 	struct USpinBox_ClearMinValue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SpinBox.ClearMinSliderValue
 	 */
 	struct USpinBox_ClearMinSliderValue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SpinBox.ClearMaxValue
 	 */
 	struct USpinBox_ClearMaxValue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.SpinBox.ClearMaxSliderValue
 	 */
 	struct USpinBox_ClearMaxSliderValue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.TextBinding.GetTextValue
@@ -4287,7 +4843,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4297,7 +4852,15 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.TextBlock.SetTextTransformPolicy
+	 */
+	struct UTextBlock_SetTextTransformPolicy_Params
+	{
+	public:
+		ETextTransformPolicy                                       InTransformPolicy;                                       // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4307,7 +4870,6 @@ namespace CG
 	{
 	public:
 		class FText                                                InText;                                                  // 0x0000(0x0018)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4317,7 +4879,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         InStrikeBrush;                                           // 0x0000(0x0088)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4327,7 +4888,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InShadowOffset;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4337,7 +4897,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        InShadowColorAndOpacity;                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4347,7 +4906,6 @@ namespace CG
 	{
 	public:
 		float                                                      InOpacity;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4357,7 +4915,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredWidth;                                       // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4366,8 +4923,7 @@ namespace CG
 	struct UTextBlock_SetFont_Params
 	{
 	public:
-		struct FSlateFontInfo                                      InFontInfo;                                              // 0x0000(0x0050)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		struct FSlateFontInfo                                      InFontInfo;                                              // 0x0000(0x0058)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4377,7 +4933,6 @@ namespace CG
 	{
 	public:
 		struct FSlateColor                                         InColorAndOpacity;                                       // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4387,7 +4942,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InAutoTextWrap;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4397,7 +4951,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4407,7 +4960,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4417,7 +4969,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4427,7 +4978,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InNumberOfPieces;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4437,7 +4987,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInAnimateVertically;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4447,7 +4996,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInAnimateOpacity;                                       // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4457,7 +5005,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInAnimateHorizontally;                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4467,7 +5014,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewWidth;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4477,7 +5023,24 @@ namespace CG
 	{
 	public:
 		float                                                      NewHeight;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.TileView.GetEntryWidth
+	 */
+	struct UTileView_GetEntryWidth_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function UMG.TileView.GetEntryHeight
+	 */
+	struct UTileView_GetEntryHeight_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4488,22 +5051,19 @@ namespace CG
 	public:
 		class UObject*                                             Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bExpandItem;                                             // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.TreeView.ExpandAll
 	 */
 	struct UTreeView_ExpandAll_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.TreeView.CollapseAll
 	 */
 	struct UTreeView_CollapseAll_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.UMGSequencePlayer.SetUserTag
@@ -4512,7 +5072,6 @@ namespace CG
 	{
 	public:
 		class FName                                                InUserTag;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4522,7 +5081,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4532,7 +5090,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InSlotPadding;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4542,7 +5099,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredSlotWidth;                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4552,7 +5108,6 @@ namespace CG
 	{
 	public:
 		float                                                      InMinDesiredSlotHeight;                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4565,7 +5120,6 @@ namespace CG
 		int32_t                                                    InRow;                                                   // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    InColumn;                                                // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UUniformGridSlot*                                    ReturnValue;                                             // 0x0010(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4574,8 +5128,7 @@ namespace CG
 	struct UUniformGridSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4585,7 +5138,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InRow;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4594,8 +5146,7 @@ namespace CG
 	struct UUniformGridSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4605,943 +5156,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InColumn;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.UnregisterInputComponent
-	 */
-	struct UUserWidget_UnregisterInputComponent_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.UnbindFromAnimationStarted
-	 */
-	struct UUserWidget_UnbindFromAnimationStarted_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.UnbindFromAnimationFinished
-	 */
-	struct UUserWidget_UnbindFromAnimationFinished_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.UnbindAllFromAnimationStarted
-	 */
-	struct UUserWidget_UnbindAllFromAnimationStarted_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.UnbindAllFromAnimationFinished
-	 */
-	struct UUserWidget_UnbindAllFromAnimationFinished_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.Tick
-	 */
-	struct UUserWidget_Tick_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.StopListeningForInputAction
-	 */
-	struct UUserWidget_StopListeningForInputAction_Params
-	{
-	public:
-		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EInputEvent                                         EventType;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.StopListeningForAllInputActions
-	 */
-	struct UUserWidget_StopListeningForAllInputActions_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.StopAnimationsAndLatentActions
-	 */
-	struct UUserWidget_StopAnimationsAndLatentActions_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.StopAnimation
-	 */
-	struct UUserWidget_StopAnimation_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.StopAllAnimations
-	 */
-	struct UUserWidget_StopAllAnimations_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetPositionInViewport
-	 */
-	struct UUserWidget_SetPositionInViewport_Params
-	{
-	public:
-		struct FVector2D                                           Position;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bRemoveDPIScale;                                         // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetPlaybackSpeed
-	 */
-	struct UUserWidget_SetPlaybackSpeed_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetPadding
-	 */
-	struct UUserWidget_SetPadding_Params
-	{
-	public:
-		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetOwningPlayer
-	 */
-	struct UUserWidget_SetOwningPlayer_Params
-	{
-	public:
-		class APlayerController*                                   LocalPlayerController;                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetNumLoopsToPlay
-	 */
-	struct UUserWidget_SetNumLoopsToPlay_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    NumLoopsToPlay;                                          // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetInputActionPriority
-	 */
-	struct UUserWidget_SetInputActionPriority_Params
-	{
-	public:
-		int32_t                                                    NewPriority;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetInputActionBlocking
-	 */
-	struct UUserWidget_SetInputActionBlocking_Params
-	{
-	public:
-		bool                                                       bShouldBlock;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetForegroundColor
-	 */
-	struct UUserWidget_SetForegroundColor_Params
-	{
-	public:
-		struct FSlateColor                                         InForegroundColor;                                       // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetDesiredSizeInViewport
-	 */
-	struct UUserWidget_SetDesiredSizeInViewport_Params
-	{
-	public:
-		struct FVector2D                                           Size;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetColorAndOpacity
-	 */
-	struct UUserWidget_SetColorAndOpacity_Params
-	{
-	public:
-		struct FLinearColor                                        InColorAndOpacity;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetAnchorsInViewport
-	 */
-	struct UUserWidget_SetAnchorsInViewport_Params
-	{
-	public:
-		struct FAnchors                                            Anchors;                                                 // 0x0000(0x0010)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.SetAlignmentInViewport
-	 */
-	struct UUserWidget_SetAlignmentInViewport_Params
-	{
-	public:
-		struct FVector2D                                           Alignment;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.ReverseAnimation
-	 */
-	struct UUserWidget_ReverseAnimation_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.RemoveFromViewport
-	 */
-	struct UUserWidget_RemoveFromViewport_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.RegisterInputComponent
-	 */
-	struct UUserWidget_RegisterInputComponent_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.PreConstruct
-	 */
-	struct UUserWidget_PreConstruct_Params
-	{
-	public:
-		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PlaySound
-	 */
-	struct UUserWidget_PlaySound_Params
-	{
-	public:
-		class USoundBase*                                          SoundToPlay;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PlayAnimationTimeRange
-	 */
-	struct UUserWidget_PlayAnimationTimeRange_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      StartAtTime;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      EndAtTime;                                               // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    NumLoopsToPlay;                                          // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		UMG_EUMGSequencePlayMode                                   PlayMode;                                                // 0x0014(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      PlaybackSpeed;                                           // 0x0018(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bRestoreState;                                           // 0x001C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PlayAnimationReverse
-	 */
-	struct UUserWidget_PlayAnimationReverse_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bRestoreState;                                           // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PlayAnimationForward
-	 */
-	struct UUserWidget_PlayAnimationForward_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      PlaybackSpeed;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bRestoreState;                                           // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PlayAnimation
-	 */
-	struct UUserWidget_PlayAnimation_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      StartAtTime;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    NumLoopsToPlay;                                          // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		UMG_EUMGSequencePlayMode                                   PlayMode;                                                // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      PlaybackSpeed;                                           // 0x0014(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bRestoreState;                                           // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class UUMGSequencePlayer*                                  ReturnValue;                                             // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.PauseAnimation
-	 */
-	struct UUserWidget_PauseAnimation_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnTouchStarted
-	 */
-	struct UUserWidget_OnTouchStarted_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnTouchMoved
-	 */
-	struct UUserWidget_OnTouchMoved_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnTouchGesture
-	 */
-	struct UUserWidget_OnTouchGesture_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       GestureEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnTouchForceChanged
-	 */
-	struct UUserWidget_OnTouchForceChanged_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnTouchEnded
-	 */
-	struct UUserWidget_OnTouchEnded_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       InTouchEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnRemovedFromFocusPath
-	 */
-	struct UUserWidget_OnRemovedFromFocusPath_Params
-	{
-	public:
-		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnPreviewMouseButtonDown
-	 */
-	struct UUserWidget_OnPreviewMouseButtonDown_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnPreviewKeyDown
-	 */
-	struct UUserWidget_OnPreviewKeyDown_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnPaint
-	 */
-	struct UUserWidget_OnPaint_Params
-	{
-	public:
-		struct FPaintContext                                       Context;                                                 // 0x0000(0x0030)  (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseWheel
-	 */
-	struct UUserWidget_OnMouseWheel_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseMove
-	 */
-	struct UUserWidget_OnMouseMove_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseLeave
-	 */
-	struct UUserWidget_OnMouseLeave_Params
-	{
-	public:
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseEnter
-	 */
-	struct UUserWidget_OnMouseEnter_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseCaptureLost
-	 */
-	struct UUserWidget_OnMouseCaptureLost_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseButtonUp
-	 */
-	struct UUserWidget_OnMouseButtonUp_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseButtonDown
-	 */
-	struct UUserWidget_OnMouseButtonDown_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMouseButtonDoubleClick
-	 */
-	struct UUserWidget_OnMouseButtonDoubleClick_Params
-	{
-	public:
-		struct FGeometry                                           InMyGeometry;                                            // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       InMouseEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnMotionDetected
-	 */
-	struct UUserWidget_OnMotionDetected_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FMotionEvent                                        InMotionEvent;                                           // 0x0038(0x0048)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0080(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnKeyUp
-	 */
-	struct UUserWidget_OnKeyUp_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnKeyDown
-	 */
-	struct UUserWidget_OnKeyDown_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnKeyChar
-	 */
-	struct UUserWidget_OnKeyChar_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FCharacterEvent                                     InCharacterEvent;                                        // 0x0038(0x0020)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0058(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnInitialized
-	 */
-	struct UUserWidget_OnInitialized_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnFocusReceived
-	 */
-	struct UUserWidget_OnFocusReceived_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FFocusEvent                                         InFocusEvent;                                            // 0x0038(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0040(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnFocusLost
-	 */
-	struct UUserWidget_OnFocusLost_Params
-	{
-	public:
-		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDrop
-	 */
-	struct UUserWidget_OnDrop_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x00B0(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDragOver
-	 */
-	struct UUserWidget_OnDragOver_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x00B0(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDragLeave
-	 */
-	struct UUserWidget_OnDragLeave_Params
-	{
-	public:
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (Parm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x0070(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDragEnter
-	 */
-	struct UUserWidget_OnDragEnter_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (Parm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDragDetected
-	 */
-	struct UUserWidget_OnDragDetected_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x00A8(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnDragCancelled
-	 */
-	struct UUserWidget_OnDragCancelled_Params
-	{
-	public:
-		struct FPointerEvent                                       PointerEvent;                                            // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		class UDragDropOperation*                                  Operation;                                               // 0x0070(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnAnimationStarted
-	 */
-	struct UUserWidget_OnAnimationStarted_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnAnimationFinished
-	 */
-	struct UUserWidget_OnAnimationFinished_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnAnalogValueChanged
-	 */
-	struct UUserWidget_OnAnalogValueChanged_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FAnalogInputEvent                                   InAnalogInputEvent;                                      // 0x0038(0x0040)  (Parm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x0078(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.OnAddedToFocusPath
-	 */
-	struct UUserWidget_OnAddedToFocusPath_Params
-	{
-	public:
-		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.ListenForInputAction
-	 */
-	struct UUserWidget_ListenForInputAction_Params
-	{
-	public:
-		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EInputEvent                                         EventType;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       bConsume;                                                // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Callback;                                                // 0x000C(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsPlayingAnimation
-	 */
-	struct UUserWidget_IsPlayingAnimation_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsListeningForInputAction
-	 */
-	struct UUserWidget_IsListeningForInputAction_Params
-	{
-	public:
-		class FName                                                ActionName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsInViewport
-	 */
-	struct UUserWidget_IsInViewport_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsInteractable
-	 */
-	struct UUserWidget_IsInteractable_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsAnyAnimationPlaying
-	 */
-	struct UUserWidget_IsAnyAnimationPlaying_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsAnimationPlayingForward
-	 */
-	struct UUserWidget_IsAnimationPlayingForward_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.IsAnimationPlaying
-	 */
-	struct UUserWidget_IsAnimationPlaying_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.GetOwningPlayerPawn
-	 */
-	struct UUserWidget_GetOwningPlayerPawn_Params
-	{
-	public:
-		class APawn*                                               ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.GetIsVisible
-	 */
-	struct UUserWidget_GetIsVisible_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.GetAnimationCurrentTime
-	 */
-	struct UUserWidget_GetAnimationCurrentTime_Params
-	{
-	public:
-		class UWidgetAnimation*                                    InAnimation;                                             // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.GetAnchorsInViewport
-	 */
-	struct UUserWidget_GetAnchorsInViewport_Params
-	{
-	public:
-		struct FAnchors                                            ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.GetAlignmentInViewport
-	 */
-	struct UUserWidget_GetAlignmentInViewport_Params
-	{
-	public:
-		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.Destruct
-	 */
-	struct UUserWidget_Destruct_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.Construct
-	 */
-	struct UUserWidget_Construct_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.CancelLatentActions
-	 */
-	struct UUserWidget_CancelLatentActions_Params
-	{
-	};
-
-	/**
-	 * Function UMG.UserWidget.BindToAnimationStarted
-	 */
-	struct UUserWidget_BindToAnimationStarted_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.BindToAnimationFinished
-	 */
-	struct UUserWidget_BindToAnimationFinished_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.BindToAnimationEvent
-	 */
-	struct UUserWidget_BindToAnimationEvent_Params
-	{
-	public:
-		class UWidgetAnimation*                                    Animation;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-		UMG_EWidgetAnimationEvent                                  AnimationEvent;                                          // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		class FName                                                UserTag;                                                 // 0x001C(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.AddToViewport
-	 */
-	struct UUserWidget_AddToViewport_Params
-	{
-	public:
-		int32_t                                                    ZOrder;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function UMG.UserWidget.AddToPlayerScreen
-	 */
-	struct UUserWidget_AddToPlayerScreen_Params
-	{
-	public:
-		int32_t                                                    ZOrder;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5552,7 +5166,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UVerticalBoxSlot*                                    ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5561,8 +5174,7 @@ namespace CG
 	struct UVerticalBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5572,7 +5184,6 @@ namespace CG
 	{
 	public:
 		struct FSlateChildSize                                     InSize;                                                  // 0x0000(0x0008)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5582,7 +5193,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5591,8 +5201,7 @@ namespace CG
 	struct UVerticalBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5603,7 +5212,6 @@ namespace CG
 	public:
 		class UClass*                                              ActorClass;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class AActor*                                              ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5613,7 +5221,6 @@ namespace CG
 	{
 	public:
 		struct FRotator                                            Rotation;                                                // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5623,7 +5230,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5633,7 +5239,6 @@ namespace CG
 	{
 	public:
 		struct FRotator                                            ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5643,7 +5248,6 @@ namespace CG
 	{
 	public:
 		class UWorld*                                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5653,7 +5257,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5662,8 +5265,7 @@ namespace CG
 	struct UVisibilityBinding_GetValue_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5674,7 +5276,6 @@ namespace CG
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5685,7 +5286,6 @@ namespace CG
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5695,7 +5295,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5705,7 +5304,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5715,7 +5313,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5725,7 +5322,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5736,7 +5332,6 @@ namespace CG
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5747,7 +5342,6 @@ namespace CG
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5762,10 +5356,11 @@ namespace CG
 		float                                                      StartAtTime;                                             // 0x0018(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      EndAtTime;                                               // 0x001C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    NumLoopsToPlay;                                          // 0x0020(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		UMG_EUMGSequencePlayMode                                   PlayMode;                                                // 0x0024(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUMGSequencePlayMode                                       PlayMode;                                                // 0x0024(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_LP2F[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      PlaybackSpeed;                                           // 0x0028(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_NGJS[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UWidgetAnimationPlayCallbackProxy*                   ReturnValue;                                             // 0x0030(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5779,10 +5374,10 @@ namespace CG
 		class UWidgetAnimation*                                    InAnimation;                                             // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      StartAtTime;                                             // 0x0018(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    NumLoopsToPlay;                                          // 0x001C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		UMG_EUMGSequencePlayMode                                   PlayMode;                                                // 0x0020(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUMGSequencePlayMode                                       PlayMode;                                                // 0x0020(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_Z4UR[0x3];                                   // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      PlaybackSpeed;                                           // 0x0024(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidgetAnimationPlayCallbackProxy*                   ReturnValue;                                             // 0x0028(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5792,7 +5387,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5803,7 +5397,6 @@ namespace CG
 	public:
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00B8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5813,7 +5406,6 @@ namespace CG
 	{
 	public:
 		struct FEventReply                                         ReturnValue;                                             // 0x0000(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5823,11 +5415,10 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             TitleBarContent;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EWindowTitleBarMode                                 Mode;                                                    // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EWindowTitleBarMode                                        Mode;                                                    // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bTitleBarDragEnabled;                                    // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bWindowButtonsVisible;                                   // 0x000A(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bTitleBarVisible;                                        // 0x000B(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5837,7 +5428,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5847,7 +5437,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bActive;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5859,8 +5448,8 @@ namespace CG
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UWidget*                                             FocusWidget;                                             // 0x00B8(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bInAllUsers;                                             // 0x00C0(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_UO78[0x7];                                   // 0x00C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FEventReply                                         ReturnValue;                                             // 0x00C8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5872,7 +5461,6 @@ namespace CG
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FVector2D                                           NewMousePosition;                                        // 0x00B8(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00C0(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5883,8 +5471,7 @@ namespace CG
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidget*                                             InWidgetToFocus;                                         // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EMouseLockMode                                      InMouseLockMode;                                         // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMouseLockMode                                             InMouseLockMode;                                         // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5896,7 +5483,6 @@ namespace CG
 		class APlayerController*                                   Target;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidget*                                             InWidgetToFocus;                                         // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bLockMouseToViewport;                                    // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5906,7 +5492,6 @@ namespace CG
 	{
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5917,9 +5502,8 @@ namespace CG
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidget*                                             InWidgetToFocus;                                         // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EMouseLockMode                                      InMouseLockMode;                                         // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EMouseLockMode                                             InMouseLockMode;                                         // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bHideCursorDuringCapture;                                // 0x0011(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5932,7 +5516,6 @@ namespace CG
 		class UWidget*                                             InWidgetToFocus;                                         // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bLockMouseToViewport;                                    // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bHideCursorDuringCapture;                                // 0x0011(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5942,19 +5525,18 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		CoreUObject_EMouseCursor                                   CursorShape;                                             // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EMouseCursor                                               CursorShape;                                             // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_L6B5[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                CursorName;                                              // 0x000C(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           HotSpot;                                                 // 0x0014(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x001C(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.SetFocusToGameViewport
 	 */
 	struct UWidgetBlueprintLibrary_SetFocusToGameViewport_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.SetColorVisionDeficiencyType
@@ -5962,11 +5544,11 @@ namespace CG
 	struct UWidgetBlueprintLibrary_SetColorVisionDeficiencyType_Params
 	{
 	public:
-		SlateCore_EColorVisionDeficiency                           Type;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EColorVisionDeficiency                                     Type;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_E38H[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      Severity;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       CorrectDeficiency;                                       // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ShowCorrectionWithDeficiency;                            // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5977,7 +5559,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UTexture2D*                                          Texture;                                                 // 0x0088(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5988,15 +5569,13 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UMaterialInterface*                                  Material;                                                // 0x0088(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.RestorePreviousWindowTitleBarState
 	 */
 	struct UWidgetBlueprintLibrary_RestorePreviousWindowTitleBarState_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.ReleaseMouseCapture
@@ -6006,7 +5585,6 @@ namespace CG
 	public:
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00B8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6017,16 +5595,15 @@ namespace CG
 	public:
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       bInAllJoysticks;                                         // 0x00B8(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_MMCB[0x7];                                   // 0x00B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FEventReply                                         ReturnValue;                                             // 0x00C0(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * DelegateFunction UMG.WidgetBlueprintLibrary.OnGameWindowCloseButtonClickedDelegate__DelegateSignature
 	 */
 	struct UWidgetBlueprintLibrary_OnGameWindowCloseButtonClickedDelegate__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.NoResourceBrush
@@ -6035,7 +5612,6 @@ namespace CG
 	{
 	public:
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0000(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6048,7 +5624,6 @@ namespace CG
 		int32_t                                                    Width;                                                   // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Height;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0010(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6061,7 +5636,6 @@ namespace CG
 		int32_t                                                    Width;                                                   // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Height;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0010(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6072,7 +5646,6 @@ namespace CG
 	public:
 		class USlateBrushAsset*                                    BrushAsset;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FSlateBrush                                         ReturnValue;                                             // 0x0008(0x0088)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6084,7 +5657,6 @@ namespace CG
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UWidget*                                             CapturingWidget;                                         // 0x00B8(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00C0(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6094,7 +5666,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6104,7 +5675,6 @@ namespace CG
 	{
 	public:
 		struct FEventReply                                         ReturnValue;                                             // 0x0000(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6114,10 +5684,11 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_8VP0[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector4                                            SafePadding;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           SafePaddingScale;                                        // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_7R27[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector4                                            SpillOverPadding;                                        // 0x0030(0x0010)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6128,7 +5699,6 @@ namespace CG
 	public:
 		struct FAnalogInputEvent                                   Event;                                                   // 0x0000(0x0040)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FKeyEvent                                           ReturnValue;                                             // 0x0040(0x0038)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6139,7 +5709,6 @@ namespace CG
 	public:
 		struct FPointerEvent                                       Event;                                                   // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FInputEvent                                         ReturnValue;                                             // 0x0070(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6150,7 +5719,6 @@ namespace CG
 	public:
 		struct FNavigationEvent                                    Event;                                                   // 0x0000(0x0020)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FInputEvent                                         ReturnValue;                                             // 0x0020(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6161,7 +5729,6 @@ namespace CG
 	public:
 		struct FKeyEvent                                           Event;                                                   // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FInputEvent                                         ReturnValue;                                             // 0x0038(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6172,7 +5739,6 @@ namespace CG
 	public:
 		struct FCharacterEvent                                     Event;                                                   // 0x0000(0x0020)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FInputEvent                                         ReturnValue;                                             // 0x0020(0x0018)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6183,7 +5749,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0088(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6193,7 +5758,6 @@ namespace CG
 	{
 	public:
 		class UDragDropOperation*                                  ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6204,7 +5768,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UTexture2D*                                          ReturnValue;                                             // 0x0088(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6215,7 +5778,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UMaterialInterface*                                  ReturnValue;                                             // 0x0088(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6226,7 +5788,6 @@ namespace CG
 	public:
 		struct FSlateBrush                                         Brush;                                                   // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UObject*                                             ReturnValue;                                             // 0x0088(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6236,10 +5797,9 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class UUserWidget*>                                 FoundWidgets;                                            // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class UUserWidget*>                                 FoundWidgets;                                            // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 		class UClass*                                              Interface;                                               // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       TopLevelOnly;                                            // 0x0020(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6249,10 +5809,9 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class UUserWidget*>                                 FoundWidgets;                                            // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class UUserWidget*>                                 FoundWidgets;                                            // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 		class UClass*                                              WidgetClass;                                             // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       TopLevelOnly;                                            // 0x0020(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6263,7 +5822,6 @@ namespace CG
 	public:
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00B8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6279,7 +5837,6 @@ namespace CG
 		int32_t                                                    FontSize;                                                // 0x0058(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FName                                                FontTypeFace;                                            // 0x005C(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        Tint;                                                    // 0x0064(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6292,7 +5849,6 @@ namespace CG
 		class FString                                              inString;                                                // 0x0030(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           Position;                                                // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        Tint;                                                    // 0x0048(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6302,11 +5858,11 @@ namespace CG
 	{
 	public:
 		struct FPaintContext                                       Context;                                                 // 0x0000(0x0030)  (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-		TArray<struct FVector2D>                                   Points;                                                  // 0x0030(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FVector2D>                                   Points;                                                  // 0x0030(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        Tint;                                                    // 0x0040(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bAntiAlias;                                              // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_U37G[0x3];                                   // 0x0051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      Thickness;                                               // 0x0054(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6320,8 +5876,8 @@ namespace CG
 		struct FVector2D                                           PositionB;                                               // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        Tint;                                                    // 0x0040(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bAntiAlias;                                              // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_E54H[0x3];                                   // 0x0051(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      Thickness;                                               // 0x0054(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6335,15 +5891,13 @@ namespace CG
 		struct FVector2D                                           Size;                                                    // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class USlateBrushAsset*                                    Brush;                                                   // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        Tint;                                                    // 0x0048(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.DismissAllMenus
 	 */
 	struct UWidgetBlueprintLibrary_DismissAllMenus_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.DetectDragIfPressed
@@ -6355,7 +5909,6 @@ namespace CG
 		class UWidget*                                             WidgetDetectingDrag;                                     // 0x0070(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FKey                                                DragKey;                                                 // 0x0078(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x0090(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6368,7 +5921,6 @@ namespace CG
 		class UWidget*                                             WidgetDetectingDrag;                                     // 0x00B8(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FKey                                                DragKey;                                                 // 0x00C0(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00D8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6379,7 +5931,6 @@ namespace CG
 	public:
 		class UClass*                                              OperationClass;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UDragDropOperation*                                  ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6392,7 +5943,6 @@ namespace CG
 		class UClass*                                              WidgetType;                                              // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class APlayerController*                                   OwningPlayer;                                            // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UUserWidget*                                         ReturnValue;                                             // 0x0018(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6403,8 +5953,8 @@ namespace CG
 	public:
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       bInAllUsers;                                             // 0x00B8(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YIZY[0x7];                                   // 0x00B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FEventReply                                         ReturnValue;                                             // 0x00C0(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6416,7 +5966,6 @@ namespace CG
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UWidget*                                             CapturingWidget;                                         // 0x00B8(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FEventReply                                         ReturnValue;                                             // 0x00C0(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6428,16 +5977,15 @@ namespace CG
 		struct FEventReply                                         Reply;                                                   // 0x0000(0x00B8)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UWidget*                                             CapturingWidget;                                         // 0x00B8(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bInAllJoysticks;                                         // 0x00C0(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_EN36[0x7];                                   // 0x00C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FEventReply                                         ReturnValue;                                             // 0x00C8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function UMG.WidgetBlueprintLibrary.CancelDragDrop
 	 */
 	struct UWidgetBlueprintLibrary_CancelDragDrop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UMG.WidgetComponent.SetWindowVisibility
@@ -6445,8 +5993,7 @@ namespace CG
 	struct UWidgetComponent_SetWindowVisibility_Params
 	{
 	public:
-		UMG_EWindowVisibility                                      InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWindowVisibility                                          InVisibility;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6456,7 +6003,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInWindowFocusable;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6465,8 +6011,7 @@ namespace CG
 	struct UWidgetComponent_SetWidgetSpace_Params
 	{
 	public:
-		UMG_EWidgetSpace                                           NewSpace;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWidgetSpace                                               NewSpace;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6476,7 +6021,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6486,7 +6030,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bWantTwoSided;                                           // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6496,7 +6039,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        NewTintColorAndOpacity;                                  // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6506,7 +6048,15 @@ namespace CG
 	{
 	public:
 		bool                                                       bWantTickWhenOffscreen;                                  // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.WidgetComponent.SetTickMode
+	 */
+	struct UWidgetComponent_SetTickMode_Params
+	{
+	public:
+		ETickMode                                                  InTickMode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6516,7 +6066,6 @@ namespace CG
 	{
 	public:
 		float                                                      InRedrawTime;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6526,7 +6075,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InPivot;                                                 // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6536,7 +6084,6 @@ namespace CG
 	{
 	public:
 		class ULocalPlayer*                                        LocalPlayer;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6546,7 +6093,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bUseManualRedraw;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6555,8 +6101,7 @@ namespace CG
 	struct UWidgetComponent_SetGeometryMode_Params
 	{
 	public:
-		UMG_EWidgetGeometryMode                                    InGeometryMode;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWidgetGeometryMode                                        InGeometryMode;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6566,7 +6111,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Size;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6576,7 +6120,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInDrawAtDesiredSize;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6586,7 +6129,6 @@ namespace CG
 	{
 	public:
 		float                                                      InCylinderArcAngle;                                      // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6596,14 +6138,27 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        NewBackgroundColor;                                      // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function UMG.WidgetComponent.RequestRenderUpdate
+	 */
+	struct UWidgetComponent_RequestRenderUpdate_Params
+	{	};
 
 	/**
 	 * Function UMG.WidgetComponent.RequestRedraw
 	 */
 	struct UWidgetComponent_RequestRedraw_Params
+	{	};
+
+	/**
+	 * Function UMG.WidgetComponent.IsWidgetVisible
+	 */
+	struct UWidgetComponent_IsWidgetVisible_Params
 	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6612,8 +6167,7 @@ namespace CG
 	struct UWidgetComponent_GetWindowVisiblility_Params
 	{
 	public:
-		UMG_EWindowVisibility                                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWindowVisibility                                          ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6623,7 +6177,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6632,8 +6185,16 @@ namespace CG
 	struct UWidgetComponent_GetWidgetSpace_Params
 	{
 	public:
-		UMG_EWidgetSpace                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EWidgetSpace                                               ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function UMG.WidgetComponent.GetWidget
+	 */
+	struct UWidgetComponent_GetWidget_Params
+	{
+	public:
+		class UUserWidget*                                         ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6643,7 +6204,6 @@ namespace CG
 	{
 	public:
 		class UUserWidget*                                         ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6653,7 +6213,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6663,7 +6222,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6673,7 +6231,6 @@ namespace CG
 	{
 	public:
 		class UTextureRenderTarget2D*                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6683,7 +6240,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6693,7 +6249,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6703,7 +6258,6 @@ namespace CG
 	{
 	public:
 		class ULocalPlayer*                                        ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6713,7 +6267,6 @@ namespace CG
 	{
 	public:
 		class UMaterialInstanceDynamic*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6723,7 +6276,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6732,8 +6284,7 @@ namespace CG
 	struct UWidgetComponent_GetGeometryMode_Params
 	{
 	public:
-		UMG_EWidgetGeometryMode                                    ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EWidgetGeometryMode                                        ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6743,7 +6294,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6753,7 +6303,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6763,7 +6312,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6773,7 +6321,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6783,7 +6330,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             FocusWidget;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6793,7 +6339,6 @@ namespace CG
 	{
 	public:
 		struct FHitResult                                          HitResult;                                               // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6805,7 +6350,6 @@ namespace CG
 		class FString                                              Characters;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bRepeat;                                                 // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0011(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6815,7 +6359,6 @@ namespace CG
 	{
 	public:
 		float                                                      ScrollDelta;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6825,7 +6368,6 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6836,7 +6378,6 @@ namespace CG
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6846,7 +6387,6 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6858,7 +6398,6 @@ namespace CG
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bRepeat;                                                 // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0019(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6869,7 +6408,6 @@ namespace CG
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6879,7 +6417,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6889,7 +6426,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6899,7 +6435,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6909,7 +6444,6 @@ namespace CG
 	{
 	public:
 		struct FHitResult                                          ReturnValue;                                             // 0x0000(0x0088)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6919,7 +6453,6 @@ namespace CG
 	{
 	public:
 		class UWidgetComponent*                                    ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6929,7 +6462,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6940,7 +6472,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWrapBoxSlot*                                        ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6951,7 +6482,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWidgetSwitcherSlot*                                 ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6962,7 +6492,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UVerticalBoxSlot*                                    ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6973,7 +6502,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UUniformGridSlot*                                    ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6984,7 +6512,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class USizeBoxSlot*                                        ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6995,7 +6522,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UScrollBoxSlot*                                      ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7006,7 +6532,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UScaleBoxSlot*                                       ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7017,7 +6542,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class USafeZoneSlot*                                       ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7028,7 +6552,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UOverlaySlot*                                        ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7039,7 +6562,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UHorizontalBoxSlot*                                  ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7050,7 +6572,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UGridSlot*                                           ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7061,7 +6582,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UCanvasPanelSlot*                                    ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7072,7 +6592,6 @@ namespace CG
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UBorderSlot*                                         ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7082,7 +6601,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7096,7 +6614,6 @@ namespace CG
 		struct FVector2D                                           ScreenPosition;                                          // 0x0014(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bPlayerViewportRelative;                                 // 0x001C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x001D(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7107,7 +6624,6 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FGeometry                                           ReturnValue;                                             // 0x0008(0x0038)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7118,7 +6634,6 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7129,7 +6644,6 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7140,7 +6654,6 @@ namespace CG
 	public:
 		class APlayerController*                                   PlayerController;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FGeometry                                           ReturnValue;                                             // 0x0008(0x0038)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7153,7 +6666,6 @@ namespace CG
 		float                                                      LocationX;                                               // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      LocationY;                                               // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7164,7 +6676,6 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                                           ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7174,7 +6685,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7184,7 +6694,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7194,7 +6703,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             Widget;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7204,8 +6712,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_3BLB[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UWidget*                                             ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7215,7 +6723,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7225,7 +6732,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7235,7 +6741,6 @@ namespace CG
 	{
 	public:
 		class UWidget*                                             ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7244,8 +6749,7 @@ namespace CG
 	struct UWidgetSwitcherSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7255,7 +6759,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7264,8 +6767,7 @@ namespace CG
 	struct UWidgetSwitcherSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7274,8 +6776,7 @@ namespace CG
 	struct UWindowTitleBarArea_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7285,7 +6786,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7294,8 +6794,7 @@ namespace CG
 	struct UWindowTitleBarArea_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7304,8 +6803,7 @@ namespace CG
 	struct UWindowTitleBarAreaSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7315,7 +6813,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7324,8 +6821,7 @@ namespace CG
 	struct UWindowTitleBarAreaSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7335,7 +6831,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           InPadding;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7346,7 +6841,6 @@ namespace CG
 	public:
 		class UWidget*                                             Content;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UWrapBoxSlot*                                        ReturnValue;                                             // 0x0008(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7355,8 +6849,7 @@ namespace CG
 	struct UWrapBoxSlot_SetVerticalAlignment_Params
 	{
 	public:
-		SlateCore_EVerticalAlignment                               InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EVerticalAlignment                                         InVerticalAlignment;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7366,7 +6859,6 @@ namespace CG
 	{
 	public:
 		struct FMargin                                             InPadding;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7375,8 +6867,7 @@ namespace CG
 	struct UWrapBoxSlot_SetHorizontalAlignment_Params
 	{
 	public:
-		SlateCore_EHorizontalAlignment                             InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHorizontalAlignment                                       InHorizontalAlignment;                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -7386,7 +6877,6 @@ namespace CG
 	{
 	public:
 		float                                                      InFillSpanWhenLessThan;                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -7396,7 +6886,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InbFillEmptySpace;                                       // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

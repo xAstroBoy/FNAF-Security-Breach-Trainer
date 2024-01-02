@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.GetCurrentLift
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ABackstageOfficeLift_C*                      CurrentLift                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -36,17 +36,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.Setup Handler
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABackstageLiftHandler_C::Setup_Handler()
+	void ABackstageLiftHandler_C::SetupHandler()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageLiftHandler.BackstageLiftHandler_C.Setup Handler");
 		
-		ABackstageLiftHandler_C_Setup_Handler_Params params {};
+		ABackstageLiftHandler_C_SetupHandler_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -55,19 +55,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.On Lift Stopped
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoveableLift_C*                             Lift                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABackstageLiftHandler_C::On_Lift_Stopped(class AMoveableLift_C* Lift)
+	void ABackstageLiftHandler_C::OnLiftStopped(class AMoveableLift_C* Lift)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageLiftHandler.BackstageLiftHandler_C.On Lift Stopped");
 		
-		ABackstageLiftHandler_C_On_Lift_Stopped_Params params {};
+		ABackstageLiftHandler_C_OnLiftStopped_Params params {};
 		params.Lift = Lift;
 		
 		auto flags = fn->FunctionFlags;
@@ -77,9 +77,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABackstageLiftHandler_C::ReceiveBeginPlay()
 	{
@@ -96,19 +96,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.Debind things
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABackstageLiftHandler_C::Debind_things(E_EndMiniGameType_E_EndMiniGameType EndType)
+	void ABackstageLiftHandler_C::Debindthings(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageLiftHandler.BackstageLiftHandler_C.Debind things");
 		
-		ABackstageLiftHandler_C_Debind_things_Params params {};
+		ABackstageLiftHandler_C_Debindthings_Params params {};
 		params.EndType = EndType;
 		
 		auto flags = fn->FunctionFlags;
@@ -118,9 +118,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageLiftHandler.BackstageLiftHandler_C.ExecuteUbergraph_BackstageLiftHandler
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -140,8 +140,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABackstageLiftHandler_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABackstageLiftHandler_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABackstageLiftHandler_C::StaticClass()

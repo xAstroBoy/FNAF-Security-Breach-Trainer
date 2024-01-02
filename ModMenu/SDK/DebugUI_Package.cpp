@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,32 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.DebugApplyDLSSQuality
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel     Quality                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.UpdateChecksVisibility
+	 * 		Flags  -> ()
 	 */
-	void UDebugUI_C::DebugApplyDLSSQuality(FNAFVisualQualityLevel_EFNAFVisualQualityLevel Quality)
+	void UDebugUI_C::UpdateChecksVisibility()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.UpdateChecksVisibility");
+		
+		UDebugUI_C_UpdateChecksVisibility_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.DebugApplyDLSSQuality
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFNAFVisualQualityLevel                            Quality                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UDebugUI_C::DebugApplyDLSSQuality(EFNAFVisualQualityLevel Quality)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -34,30 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get Cloaking Enabled Checked State
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_Cloaking_Enabled_Checked_State()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get Cloaking Enabled Checked State");
-		
-		UDebugUI_C_Get_Cloaking_Enabled_Checked_State_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.TimeFloatToText
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -79,9 +77,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.TimeTextToFloat
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        InText                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
@@ -103,93 +101,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_LightingScenarioDisplay_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_LightingScenarioDisplay_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_LightingScenarioDisplay_CheckedState_1");
-		
-		UDebugUI_C_Get_LightingScenarioDisplay_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_FrameRateDisplay_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_FrameRateDisplay_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_FrameRateDisplay_CheckedState_1");
-		
-		UDebugUI_C_Get_FrameRateDisplay_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_CameraFOV_Text_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	class FText UDebugUI_C::Get_CameraFOV_Text_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_CameraFOV_Text_1");
-		
-		UDebugUI_C_Get_CameraFOV_Text_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_UnlimitedStamina_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_UnlimitedStamina_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_UnlimitedStamina_CheckedState_1");
-		
-		UDebugUI_C_Get_UnlimitedStamina_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.OnFocusReceived
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
@@ -213,177 +127,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ShowLevelStreamers_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ShowLevelStreamers_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ShowLevelStreamers_CheckedState_1");
-		
-		UDebugUI_C_Get_ShowLevelStreamers_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ShowLoadedLevels_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ShowLoadedLevels_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ShowLoadedLevels_CheckedState_1");
-		
-		UDebugUI_C_Get_ShowLoadedLevels_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ShowCoordinates_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ShowCoordinates_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ShowCoordinates_CheckedState_1");
-		
-		UDebugUI_C_Get_ShowCoordinates_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_RoxyEyes_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_RoxyEyes_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_RoxyEyes_CheckedState_1");
-		
-		UDebugUI_C_Get_RoxyEyes_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ChicaBeak_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ChicaBeak_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ChicaBeak_CheckedState_1");
-		
-		UDebugUI_C_Get_ChicaBeak_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_MontyClaws_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_MontyClaws_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_MontyClaws_CheckedState_1");
-		
-		UDebugUI_C_Get_MontyClaws_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_UnlimitedFazwatchPower_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_UnlimitedFazwatchPower_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_UnlimitedFazwatchPower_CheckedState_1");
-		
-		UDebugUI_C_Get_UnlimitedFazwatchPower_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_SetFreddyPower_Text_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	class FText UDebugUI_C::Get_SetFreddyPower_Text_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_SetFreddyPower_Text_1");
-		
-		UDebugUI_C_Get_SetFreddyPower_Text_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.Get_FlyingSpeed_Value_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UDebugUI_C::Get_FlyingSpeed_Value_1()
 	{
@@ -402,261 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_PowerLevelInput_Text_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	class FText UDebugUI_C::Get_PowerLevelInput_Text_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_PowerLevelInput_Text_1");
-		
-		UDebugUI_C_Get_PowerLevelInput_Text_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_SecurityLevel_Text_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	class FText UDebugUI_C::Get_SecurityLevel_Text_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_SecurityLevel_Text_1");
-		
-		UDebugUI_C_Get_SecurityLevel_Text_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_AIDebugVis_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_AIDebugVis_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_AIDebugVis_CheckedState_1");
-		
-		UDebugUI_C_Get_AIDebugVis_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_AISpawnEnable_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_AISpawnEnable_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_AISpawnEnable_CheckedState_1");
-		
-		UDebugUI_C_Get_AISpawnEnable_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_MontyShattered_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_MontyShattered_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_MontyShattered_CheckedState_1");
-		
-		UDebugUI_C_Get_MontyShattered_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_RoxyShattered_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_RoxyShattered_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_RoxyShattered_CheckedState_1");
-		
-		UDebugUI_C_Get_RoxyShattered_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ChicaShattered_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ChicaShattered_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ChicaShattered_CheckedState_1");
-		
-		UDebugUI_C_Get_ChicaShattered_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.GetClockTime
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	class FText UDebugUI_C::GetClockTime()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.GetClockTime");
-		
-		UDebugUI_C_GetClockTime_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_ClockRunning_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_ClockRunning_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_ClockRunning_CheckedState_1");
-		
-		UDebugUI_C_Get_ClockRunning_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.GetCheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::GetCheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.GetCheckedState_1");
-		
-		UDebugUI_C_GetCheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_FlyingCollision_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_FlyingCollision_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_FlyingCollision_CheckedState_1");
-		
-		UDebugUI_C_Get_FlyingCollision_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.Get_FlyingMode_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDebugUI_C::Get_FlyingMode_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Get_FlyingMode_CheckedState_1");
-		
-		UDebugUI_C_Get_FlyingMode_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.PreConstruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsDesignTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -676,9 +170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::Construct()
 	{
@@ -695,55 +189,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__FlyingMode_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		class FString                                      SelectedItem                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	 * 		SlateCore_ESelectInfo                              SelectionType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, SlateCore_ESelectInfo SelectionType)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__FlyingCollisionType_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature_Params params {};
-		params.SelectedItem = SelectedItem;
-		params.SelectionType = SelectionType;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PostProcessing_K2Node_ComponentBoundEvent_2_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -763,9 +211,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__AntiAliasing_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -785,31 +233,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ShowCollision_K2Node_ComponentBoundEvent_4_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__LightmapDensity_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -829,9 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PointLights_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -851,9 +277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__SpotLights_K2Node_ComponentBoundEvent_7_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -873,9 +299,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PrecomputedVisibility_K2Node_ComponentBoundEvent_8_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -895,9 +321,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ShowTranslucency_K2Node_ComponentBoundEvent_9_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -917,259 +343,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__CheckBox_110_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ClockTime_K2Node_ComponentBoundEvent_12_OnEditableTextBoxCommittedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		params.CommitMethod = CommitMethod;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ChicaShattered_K2Node_ComponentBoundEvent_13_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__RoxyShattered_K2Node_ComponentBoundEvent_14_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__MontyShattered_K2Node_ComponentBoundEvent_15_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ShowCoordinates_K2Node_ComponentBoundEvent_16_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ClearAIButton_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__AISpawnEnable_K2Node_ComponentBoundEvent_18_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__AIDebugVis_K2Node_ComponentBoundEvent_19_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__SecurityLevel_K2Node_ComponentBoundEvent_20_OnEditableTextBoxCommittedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		params.CommitMethod = CommitMethod;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__PowerLevelInput_K2Node_ComponentBoundEvent_22_OnEditableTextBoxCommittedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		params.CommitMethod = CommitMethod;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__FlyingSpeed_K2Node_ComponentBoundEvent_21_OnSpinBoxValueCommittedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              InValue                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ETextCommit                                        CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugUI_C::BndEvt__FlyingSpeed_K2Node_ComponentBoundEvent_21_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, SlateCore_ETextCommit CommitMethod)
+	void UDebugUI_C::BndEvt__FlyingSpeed_K2Node_ComponentBoundEvent_21_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1186,279 +367,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__SetFreddyPower_K2Node_ComponentBoundEvent_23_OnEditableTextBoxCommittedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		params.CommitMethod = CommitMethod;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__MainButton_K2Node_ComponentBoundEvent_24_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__InventoryButton_K2Node_ComponentBoundEvent_25_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__TrailerMode_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__UnlitMode_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__UnlockEverythingButton_K2Node_ComponentBoundEvent_28_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__LockEverythingButton_K2Node_ComponentBoundEvent_29_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ShowLoadedLevels_K2Node_ComponentBoundEvent_30_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__MissionButton_K2Node_ComponentBoundEvent_31_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__UnlimitedFazwatchPower_K2Node_ComponentBoundEvent_32_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__Freddy_K2Node_ComponentBoundEvent_33_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ClockRunning_1_K2Node_ComponentBoundEvent_34_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__ShowLevelStreamers_K2Node_ComponentBoundEvent_38_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.FocusButton
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::FocusButton()
 	{
@@ -1475,554 +386,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__UnlimitedStamina_K2Node_ComponentBoundEvent_37_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 */
-	void UDebugUI_C::BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__CameraFOV_K2Node_ComponentBoundEvent_39_OnEditableTextBoxChangedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__TeleportButton_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__SurvivalLocations_K2Node_ComponentBoundEvent_41_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VannyMeterVis_K2Node_ComponentBoundEvent_42_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VannyDecButton_K2Node_ComponentBoundEvent_43_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VannyIncButton_K2Node_ComponentBoundEvent_44_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__FrameRateDisplay_K2Node_ComponentBoundEvent_45_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__LightingScenarioDisplay_K2Node_ComponentBoundEvent_46_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 * 		SlateCore_ETextCommit                              CommitMethod                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UDebugUI_C::BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, SlateCore_ETextCommit CommitMethod)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__TextBox_FazerBlastTime_K2Node_ComponentBoundEvent_49_OnEditableTextBoxCommittedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		params.CommitMethod = CommitMethod;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UDebugUI_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.OnInitialized");
-		
-		UDebugUI_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		class FText                                        Text                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	 */
-	void UDebugUI_C::BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__InventorySearchText_K2Node_ComponentBoundEvent_11_OnEditableTextBoxChangedEvent__DelegateSignature_Params params {};
-		params.Text = Text;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__EnableAllInput_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDebugUI_C::BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__CloakingEnabled_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__HardwareBenchmark_K2Node_ComponentBoundEvent_47_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__MoreDebug_K2Node_ComponentBoundEvent_48_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VisualQualityLowButton_K2Node_ComponentBoundEvent_51_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VisualQualityMediumButton_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VisualQualityHighButton_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VisualQualityUltraButton_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__RayTraceQualityOffButton_K2Node_ComponentBoundEvent_55_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__RayTraceQualityLowButton_K2Node_ComponentBoundEvent_56_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__RayTraceQualityMediumButton_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__RayTraceQualityHighButton_K2Node_ComponentBoundEvent_58_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__PS5Performance_K2Node_ComponentBoundEvent_50_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__PS5VisualQualityButton_K2Node_ComponentBoundEvent_59_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__PS5Performance_1_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.UpdateQualityLevelText
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::UpdateQualityLevelText()
 	{
@@ -2039,47 +405,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__VisualQualityLowButton_1_K2Node_ComponentBoundEvent_61_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UDebugUI_C::BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature");
-		
-		UDebugUI_C_BndEvt__InstructionCardButton_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__CloseDebugButton_K2Node_ComponentBoundEvent_63_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__CloseDebugButton_K2Node_ComponentBoundEvent_63_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2096,9 +424,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__ClearTapesData_K2Node_ComponentBoundEvent_64_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__ClearTapesData_K2Node_ComponentBoundEvent_64_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2115,9 +443,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DLSSQualityOffButton_K2Node_ComponentBoundEvent_65_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__DLSSQualityOffButton_K2Node_ComponentBoundEvent_65_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2134,9 +462,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DLSSQualityLowButton_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__DLSSQualityLowButton_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2153,9 +481,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DLSSQualityMediumButton_K2Node_ComponentBoundEvent_67_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__DLSSQualityMediumButton_K2Node_ComponentBoundEvent_67_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2172,9 +500,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DLSSQualityHighButton_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__DLSSQualityHighButton_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2191,9 +519,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DLSSQualityUltraButton_K2Node_ComponentBoundEvent_69_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDebugUI_C::BndEvt__DLSSQualityUltraButton_K2Node_ComponentBoundEvent_69_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -2210,20 +538,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.Tick
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDebugUI_C::BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDebugUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.Tick");
 		
-		UDebugUI_C_BndEvt__HasUsedHidingSpot_K2Node_ComponentBoundEvent_70_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDebugUI_C_Tick_Params params {};
+		params.MyGeometry = MyGeometry;
+		params.InDeltaTime = InDeltaTime;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -2232,9 +562,1225 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Main_Button_K2Node_ComponentBoundEvent_88_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Inventory_Button_K2Node_ComponentBoundEvent_89_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Character_Button_K2Node_ComponentBoundEvent_90_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Mission_Button_K2Node_ComponentBoundEvent_91_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Instruction_Button_K2Node_ComponentBoundEvent_92_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Other_Button_K2Node_ComponentBoundEvent_93_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Chowda_Button_K2Node_ComponentBoundEvent_94_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_CheckBoxUI_447_K2Node_ComponentBoundEvent_95_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_UnlockEverything_Button_K2Node_ComponentBoundEvent_96_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_LockEverything_Button_K2Node_ComponentBoundEvent_97_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FlyingCollision_DropDown_K2Node_ComponentBoundEvent_98_OnSelectionChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_UnlitMode_CheckBox_K2Node_ComponentBoundEvent_99_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FrameRate_CheckBox_K2Node_ComponentBoundEvent_100_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_GameClockRunning_CheckBox_K2Node_ComponentBoundEvent_101_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_LightingScenario_CheckBox_K2Node_ComponentBoundEvent_102_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_HidingSpot_CheckBox_K2Node_ComponentBoundEvent_103_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShowCollision_CheckBox_K2Node_ComponentBoundEvent_104_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShowLevelStreamers_CheckBox_1_K2Node_ComponentBoundEvent_105_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShowLevelStreamers_CheckBox_K2Node_ComponentBoundEvent_106_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShowLoadedLevels_CheckBox_K2Node_ComponentBoundEvent_107_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShowCoordinates_CheckBox_K2Node_ComponentBoundEvent_108_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_EnableCloaking_CheckBox_K2Node_ComponentBoundEvent_109_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_UnlimitedStam_CheckBox_K2Node_ComponentBoundEvent_110_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_UnlimitedFlashlightPower_CheckBox_K2Node_ComponentBoundEvent_111_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShatteredRoxy_CheckBox_K2Node_ComponentBoundEvent_112_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShatteredMonty_CheckBox_K2Node_ComponentBoundEvent_113_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ShatteredChica_CheckBox_K2Node_ComponentBoundEvent_114_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_AIDebugVis_CheckBox_K2Node_ComponentBoundEvent_115_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_EnableSpawnAI_CheckBox_K2Node_ComponentBoundEvent_116_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ClearAI_Button_K2Node_ComponentBoundEvent_117_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_UnlockAllCameras_CheckBox_K2Node_ComponentBoundEvent_118_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_VisQuality_DropDown_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_HardWareBench_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_RayTraceQuality_DropDown_K2Node_ComponentBoundEvent_4_OnSelectionChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_DLSS_DropDown_K2Node_ComponentBoundEvent_10_OnSelectionChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PS4_Quality_Button_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PS5_Performance_Button_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PS5_Visual_Button_K2Node_ComponentBoundEvent_15_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_CloseDebugMenu_Button_K2Node_ComponentBoundEvent_16_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_TrailerMode_Checkbox_K2Node_ComponentBoundEvent_17_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PostProcessing_Checkbox_K2Node_ComponentBoundEvent_18_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_AntiAlias_Checkbox_K2Node_ComponentBoundEvent_19_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_LightMap_Checkbox_K2Node_ComponentBoundEvent_24_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PointLights_Checkbox_K2Node_ComponentBoundEvent_25_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_SpotLights_Checkbox_K2Node_ComponentBoundEvent_27_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_PrecomputedVis_Checkbox_K2Node_ComponentBoundEvent_28_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_TranslucencyTele_Checkbox_K2Node_ComponentBoundEvent_29_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_VannyMeter_Checkbox_K2Node_ComponentBoundEvent_30_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_VannyMetter_Minus_Button_K2Node_ComponentBoundEvent_31_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_VannyMetter_Plus_Button_K2Node_ComponentBoundEvent_32_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_TeleportButton_New_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_Coordinates_TextEntry_1_K2Node_ComponentBoundEvent_35_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FlashlightPower_TextEntry_K2Node_ComponentBoundEvent_36_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FreddyPower_TextEntry_K2Node_ComponentBoundEvent_37_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_SecurityLevel_TextEntry_K2Node_ComponentBoundEvent_38_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FOV_TextEntry_K2Node_ComponentBoundEvent_40_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_FazerBlastTime_TextEntry_1_K2Node_ComponentBoundEvent_46_Text_1_Changed__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_EquipMaintenanceTool_Button_K2Node_ComponentBoundEvent_11_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_ConsoleCommand_TextEntry_K2Node_ComponentBoundEvent_12_Text_1_Commited__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_XboxOne_Quality_Button_K2Node_ComponentBoundEvent_20_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_XSS_Performance_Button_K2Node_ComponentBoundEvent_22_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_XSS_Visual_Button_K2Node_ComponentBoundEvent_23_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_XSX_Performance_Button_K2Node_ComponentBoundEvent_26_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugUI_C::BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugUI.DebugUI_C.BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature");
+		
+		UDebugUI_C_BndEvt__DebugUI_XSX_Visual_Button_K2Node_ComponentBoundEvent_33_OnClicked__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugUI.DebugUI_C.ExecuteUbergraph_DebugUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -2254,8 +1800,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDebugUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDebugUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDebugUI_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneMediaPlayerPropertySection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneMediaPlayerPropertySection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneMediaPlayerPropertySection::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneMediaPlayerPropertyTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneMediaPlayerPropertyTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneMediaPlayerPropertyTrack::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneMediaSection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneMediaSection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneMediaSection::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneMediaTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneMediaTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneMediaTrack::StaticClass()

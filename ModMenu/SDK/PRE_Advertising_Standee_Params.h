@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,29 +18,25 @@ namespace CG
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.StopEmitter
 	 */
 	struct APRE_Advertising_Standee_C_StopEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayEmitter
 	 */
 	struct APRE_Advertising_Standee_C_PlayEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ReceiveBeginPlay
 	 */
 	struct APRE_Advertising_Standee_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.Update
 	 */
 	struct APRE_Advertising_Standee_C_Update_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ToggleInRange
@@ -49,29 +45,25 @@ namespace CG
 	{
 	public:
 		bool                                                       InRange;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayAudioEmitter
 	 */
 	struct APRE_Advertising_Standee_C_PlayAudioEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayStaticEmitter
 	 */
 	struct APRE_Advertising_Standee_C_PlayStaticEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.AdvertisingStandee
 	 */
 	struct APRE_Advertising_Standee_C_AdvertisingStandee_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ExecuteUbergraph_PRE_Advertising_Standee
@@ -79,8 +71,7 @@ namespace CG
 	struct APRE_Advertising_Standee_C_ExecuteUbergraph_PRE_Advertising_Standee_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

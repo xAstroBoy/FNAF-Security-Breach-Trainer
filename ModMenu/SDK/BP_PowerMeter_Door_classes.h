@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,7 @@ namespace CG
 		float                                                      PowerLevel;                                              // 0x0240(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IncreasePower;                                           // 0x0244(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       DrainPower;                                              // 0x0245(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QHCB[0x2];                                   // 0x0246(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UYCU[0x2];                                   // 0x0246(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      DrainRate;                                               // 0x0248(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      NewPowerLevel;                                           // 0x024C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      NextPipLevel;                                            // 0x0250(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -36,7 +36,7 @@ namespace CG
 	public:
 		void SetDoorPowerForAudio(float Power, bool Initialize);
 		void RoundToHundreths(float Value, float* RoundedValue);
-		void Adjust_Power_To_Input_Amount(float DesiredPowerLevel, bool FastAdjustment);
+		void AdjustPowerToInputAmount(float DesiredPowerLevel, bool FastAdjustment);
 		void SetDoorPower(float Power);
 		void ReceiveTick(float DeltaSeconds);
 		void ReceiveBeginPlay();

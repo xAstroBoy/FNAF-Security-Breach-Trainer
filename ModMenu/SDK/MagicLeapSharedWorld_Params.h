@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,22 +21,19 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne
 	 */
 	struct AMagicLeapSharedWorldGameMode_SelectChosenOne_Params
-	{
-	};
+	{	};
 
 	/**
 	 * DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature
 	 */
 	struct AMagicLeapSharedWorldGameMode_MagicLeapOnNewLocalDataFromClients__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData
@@ -45,29 +42,25 @@ namespace CG
 	{
 	public:
 		struct FMagicLeapSharedWorldSharedData                     NewSharedWorldData;                                      // 0x0000(0x0010)  (Parm, OutParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData
 	 */
 	struct AMagicLeapSharedWorldGameState_OnReplicate_SharedWorldData_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms
 	 */
 	struct AMagicLeapSharedWorldGameState_OnReplicate_AlignmentTransforms_Params
-	{
-	};
+	{	};
 
 	/**
 	 * DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature
 	 */
 	struct AMagicLeapSharedWorldGameState_MagicLeapSharedWorldEvent__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform
@@ -76,7 +69,6 @@ namespace CG
 	{
 	public:
 		struct FTransform                                          ReturnValue;                                             // 0x0000(0x0030)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -86,7 +78,6 @@ namespace CG
 	{
 	public:
 		struct FMagicLeapSharedWorldLocalData                      LocalWorldReplicationData;                               // 0x0000(0x0010)  (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -96,7 +87,6 @@ namespace CG
 	{
 	public:
 		struct FMagicLeapSharedWorldAlignmentTransforms            InAlignmentTransforms;                                   // 0x0000(0x0010)  (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -106,7 +96,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -116,15 +105,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bChosenOne;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ClientMarkReadyForSendingLocalData
 	 */
 	struct AMagicLeapSharedWorldPlayerController_ClientMarkReadyForSendingLocalData_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.CanSendLocalDataToServer
@@ -133,7 +120,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

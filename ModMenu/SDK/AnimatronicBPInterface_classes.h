@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,10 @@ namespace CG
 	class UAnimatronicBPInterface_C : public UInterface
 	{
 	public:
-		void Spotlight_Aim_Actor(class AActor* AimActor);
+		void GetMoveSpeedInput(float* MoveSpeed);
+		void OverlappingDoor(bool Overlapping, class AActor* Instigator);
+		void IsHangingEvent(bool IsHanging);
+		void SpotlightAimActor(class AActor* AimActor);
 		void CutsceneGrateEvent(class ULevelSequencePlayer* SequencePlayer);
 		void CutSceneSpineBlender(bool Off, class ULevelSequencePlayer* Sequence);
 		void FreddyEndIdle(bool Off);
@@ -31,7 +34,7 @@ namespace CG
 		void EndoSpawnInBowlingEvent();
 		void CanDieEvent(bool Off);
 		void CanHackEvent(bool Off);
-		void VoAnimEvent(class UAkAudioEvent* AK_Event);
+		void VoAnimEvent(class UAkAudioEvent* AKEvent);
 		void RoxyCrying(bool Off);
 		void FreddyCorrupted(bool Off);
 		void ForceAnimOverride(bool enable);
@@ -51,14 +54,14 @@ namespace CG
 		void IsNotFirstPersonEvent();
 		void IsFirstPersonEvent();
 		void CanRummageEvent();
-		void Stun_Event(bool Is_Stunned);
+		void StunEvent(bool IsStunned);
 		void CanRunEvent(bool CanRun);
 		void StartScan();
 		void SetHeadAimTarget(const struct FVector& AimLocation);
 		void OpenDone();
 		void Open();
 		void SearchingDone();
-		void Searching(fnaf9_EHideObjectType Hide_Type);
+		void Searching(EHideObjectType HideType);
 		void TurnEvent(float TurnDegrees);
 		void HeadAimEvent(bool OnOff);
 		void CanJumpscareEvent();

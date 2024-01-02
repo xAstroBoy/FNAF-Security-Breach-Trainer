@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function Endo.Endo_C.DeterminedBeingWatched
 	 */
 	struct AEndo_C_DeterminedBeingWatched_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Endo.Endo_C.ReceiveBeginPlay
 	 */
 	struct AEndo_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Endo.Endo_C.ReceiveTick
@@ -35,22 +33,19 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Endo.Endo_C.Wake Endo
 	 */
-	struct AEndo_C_Wake_Endo_Params
-	{
-	};
+	struct AEndo_C_WakeEndo_Params
+	{	};
 
 	/**
 	 * Function Endo.Endo_C.EndoSleep
 	 */
 	struct AEndo_C_EndoSleep_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Endo.Endo_C.ExecuteUbergraph_Endo
@@ -59,7 +54,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

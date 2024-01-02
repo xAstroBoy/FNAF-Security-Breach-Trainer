@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UPacketHandlerProfileConfig : public UObject
 	{
 	public:
-		TArray<class FString>                                      Components;                                              // 0x0028(0x0010) ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<class FString>                                      Components;                                              // 0x0028(0x0010) ZeroConstructor, Config, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();

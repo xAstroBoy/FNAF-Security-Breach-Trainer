@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.On Skip
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::On_Skip()
+	void AOGM_BackStage_C::OnSkip()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.On Skip");
 		
-		AOGM_BackStage_C_On_Skip_Params params {};
+		AOGM_BackStage_C_OnSkip_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,19 +31,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Get Vanny Timer Max
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              VannyTimerMax                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_BackStage_C::Get_Vanny_Timer_Max(float* VannyTimerMax)
+	void AOGM_BackStage_C::GetVannyTimerMax(float* VannyTimerMax)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Get Vanny Timer Max");
 		
-		AOGM_BackStage_C_Get_Vanny_Timer_Max_Params params {};
+		AOGM_BackStage_C_GetVannyTimerMax_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.GetPercentRemainingUntilVannyKillSequence
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Percent                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -79,13 +79,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.PlayerCanStartGame
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_ECantStartMinigameReason                     reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECantStartMinigameReason                           reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	bool AOGM_BackStage_C::PlayerCanStartGame(fnaf9_ECantStartMinigameReason* reason)
+	bool AOGM_BackStage_C::PlayerCanStartGame(ECantStartMinigameReason* reason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -105,13 +105,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.OnEnd
-	 * 		Flags  -> (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_BackStage_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
+	void AOGM_BackStage_C::OnEnd(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -127,9 +127,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.OnPlayerExitVent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::OnPlayerExitVent()
 	{
@@ -146,17 +146,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.On Freddy Reach
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::On_Freddy_Reach()
+	void AOGM_BackStage_C::OnFreddyReach()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.On Freddy Reach");
 		
-		AOGM_BackStage_C_On_Freddy_Reach_Params params {};
+		AOGM_BackStage_C_OnFreddyReach_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -165,9 +165,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.ShuffleScreens
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::ShuffleScreens()
 	{
@@ -184,17 +184,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.On Start
-	 * 		Flags  -> (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::On_Start()
+	void AOGM_BackStage_C::OnStart()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.On Start");
 		
-		AOGM_BackStage_C_On_Start_Params params {};
+		AOGM_BackStage_C_OnStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -203,9 +203,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::ReceiveBeginPlay()
 	{
@@ -222,9 +222,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.OnBadgeHolderOpened
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::OnBadgeHolderOpened()
 	{
@@ -241,17 +241,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.After Intro Overscreen Sequence
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::After_Intro_Overscreen_Sequence()
+	void AOGM_BackStage_C::AfterIntroOverscreenSequence()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.After Intro Overscreen Sequence");
 		
-		AOGM_BackStage_C_After_Intro_Overscreen_Sequence_Params params {};
+		AOGM_BackStage_C_AfterIntroOverscreenSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -260,17 +260,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Freddy Reaches Vent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::Freddy_Reaches_Vent()
+	void AOGM_BackStage_C::FreddyReachesVent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Freddy Reaches Vent");
 		
-		AOGM_BackStage_C_Freddy_Reaches_Vent_Params params {};
+		AOGM_BackStage_C_FreddyReachesVent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -279,17 +279,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Gregory Exit Vent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::Gregory_Exit_Vent()
+	void AOGM_BackStage_C::GregoryExitVent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Gregory Exit Vent");
 		
-		AOGM_BackStage_C_Gregory_Exit_Vent_Params params {};
+		AOGM_BackStage_C_GregoryExitVent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -298,19 +298,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Drain Power Door
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AmountToDrain                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_BackStage_C::Drain_Power_Door(float AmountToDrain)
+	void AOGM_BackStage_C::DrainPowerDoor(float AmountToDrain)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Drain Power Door");
 		
-		AOGM_BackStage_C_Drain_Power_Door_Params params {};
+		AOGM_BackStage_C_DrainPowerDoor_Params params {};
 		params.AmountToDrain = AmountToDrain;
 		
 		auto flags = fn->FunctionFlags;
@@ -320,9 +320,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.OnBadgeHolderInteract
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::OnBadgeHolderInteract()
 	{
@@ -339,9 +339,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -361,9 +361,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.SpawnRoxyAndMonty
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::SpawnRoxyAndMonty()
 	{
@@ -380,17 +380,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Freddy Remove Vent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::Freddy_Remove_Vent()
+	void AOGM_BackStage_C::FreddyRemoveVent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Freddy Remove Vent");
 		
-		AOGM_BackStage_C_Freddy_Remove_Vent_Params params {};
+		AOGM_BackStage_C_FreddyRemoveVent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -399,17 +399,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Load and Play Video
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_BackStage_C::Load_and_Play_Video()
+	void AOGM_BackStage_C::LoadandPlayVideo()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Load and Play Video");
 		
-		AOGM_BackStage_C_Load_and_Play_Video_Params params {};
+		AOGM_BackStage_C_LoadandPlayVideo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -418,19 +418,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Play Video
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      OpenedUrl                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 */
-	void AOGM_BackStage_C::Play_Video(const class FString& OpenedUrl)
+	void AOGM_BackStage_C::PlayVideo(const class FString& OpenedUrl)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Play Video");
 		
-		AOGM_BackStage_C_Play_Video_Params params {};
+		AOGM_BackStage_C_PlayVideo_Params params {};
 		params.OpenedUrl = OpenedUrl;
 		
 		auto flags = fn->FunctionFlags;
@@ -440,9 +440,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.StreamLevels
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AOGM_BackStage_C::StreamLevels()
 	{
@@ -459,20 +459,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.Drain Power Room
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              Amount_to_Drain                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              AmounttoDrain                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AOGM_BackStage_C::Drain_Power_Room(float Amount_to_Drain)
+	void AOGM_BackStage_C::DrainPowerRoom(float AmounttoDrain)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_BackStage.OGM_BackStage_C.Drain Power Room");
 		
-		AOGM_BackStage_C_Drain_Power_Room_Params params {};
-		params.Amount_to_Drain = Amount_to_Drain;
+		AOGM_BackStage_C_DrainPowerRoom_Params params {};
+		params.AmounttoDrain = AmounttoDrain;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -481,9 +481,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_BackStage.OGM_BackStage_C.ExecuteUbergraph_OGM_BackStage
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -503,8 +503,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AOGM_BackStage_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AOGM_BackStage_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AOGM_BackStage_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavigationData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavigationData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavigationData::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAbstractNavData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAbstractNavData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAbstractNavData::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCrowdManagerBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCrowdManagerBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCrowdManagerBase::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavArea.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavArea.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavArea::StaticClass()
@@ -68,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavArea_Default.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavArea_Default.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavArea_Default::StaticClass()
@@ -82,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavArea_LowHeight.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavArea_LowHeight.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavArea_LowHeight::StaticClass()
@@ -96,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavArea_Null.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavArea_Null.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavArea_Null::StaticClass()
@@ -110,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavArea_Obstacle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavArea_Obstacle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavArea_Obstacle::StaticClass()
@@ -124,8 +124,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavAreaMeta.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavAreaMeta.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavAreaMeta::StaticClass()
@@ -138,8 +138,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavAreaMeta_SwitchByAgent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavAreaMeta_SwitchByAgent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavAreaMeta_SwitchByAgent::StaticClass()
@@ -152,8 +152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavCollision.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavCollision.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavCollision::StaticClass()
@@ -166,8 +166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavigationGraph.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavigationGraph.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavigationGraph::StaticClass()
@@ -180,8 +180,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavigationGraphNode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavigationGraphNode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavigationGraphNode::StaticClass()
@@ -194,8 +194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationGraphNodeComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationGraphNodeComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationGraphNodeComponent::StaticClass()
@@ -208,8 +208,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationInvokerComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationInvokerComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationInvokerComponent::StaticClass()
@@ -222,9 +222,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA060
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsValid
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UNavigationPath::IsValid()
 	{
@@ -235,7 +235,6 @@ namespace CG
 		UNavigationPath_IsValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -244,9 +243,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BA20F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsStringPulled
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UNavigationPath::IsStringPulled()
 	{
@@ -257,7 +256,6 @@ namespace CG
 		UNavigationPath_IsStringPulled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -266,9 +264,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA030
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.IsPartial
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UNavigationPath::IsPartial()
 	{
@@ -279,7 +277,6 @@ namespace CG
 		UNavigationPath_IsPartial_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -288,9 +285,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetPathLength
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UNavigationPath::GetPathLength()
 	{
@@ -301,7 +298,6 @@ namespace CG
 		UNavigationPath_GetPathLength_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -310,9 +306,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B96F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetPathCost
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UNavigationPath::GetPathCost()
 	{
@@ -323,7 +319,6 @@ namespace CG
 		UNavigationPath_GetPathCost_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -332,9 +327,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B95F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.GetDebugString
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UNavigationPath::GetDebugString()
 	{
@@ -345,7 +340,6 @@ namespace CG
 		UNavigationPath_GetDebugString_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -354,13 +348,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B91D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Engine_ENavigationOptionFlag                       DoRecalculation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ENavigationOptionFlag                              DoRecalculation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UNavigationPath::EnableRecalculationOnInvalidation(Engine_ENavigationOptionFlag DoRecalculation)
+	void UNavigationPath::EnableRecalculationOnInvalidation(ENavigationOptionFlag DoRecalculation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -370,16 +364,15 @@ namespace CG
 		params.DoRecalculation = DoRecalculation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B90F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationPath.EnableDebugDrawing
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bShouldDrawDebugData                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                PathColor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -395,15 +388,14 @@ namespace CG
 		params.PathColor = PathColor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationPath.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationPath.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationPath::StaticClass()
@@ -416,8 +408,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationPathGenerator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationPathGenerator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationPathGenerator::StaticClass()
@@ -430,8 +422,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationQueryFilter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationQueryFilter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationQueryFilter::StaticClass()
@@ -444,9 +436,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BAEB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Invoker                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -460,21 +452,20 @@ namespace CG
 		params.Invoker = Invoker;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BADF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Goal                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UNavigationSystemV1::STATIC_SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
+	void UNavigationSystemV1::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -485,21 +476,20 @@ namespace CG
 		params.Goal = Goal;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02761160
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Goal                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UNavigationSystemV1::STATIC_SimpleMoveToActor(class AController* Controller, class AActor* Goal)
+	void UNavigationSystemV1::SimpleMoveToActor(class AController* Controller, class AActor* Goal)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -510,16 +500,15 @@ namespace CG
 		params.Goal = Goal;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BAD70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            MaxNumberOfJobs                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -533,20 +522,19 @@ namespace CG
 		params.MaxNumberOfJobs = MaxNumberOfJobs;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BACF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Engine_ENavDataGatheringModeConfig                 NewMode                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ENavDataGatheringModeConfig                        NewMode                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UNavigationSystemV1::SetGeometryGatheringMode(Engine_ENavDataGatheringModeConfig NewMode)
+	void UNavigationSystemV1::SetGeometryGatheringMode(ENavDataGatheringModeConfig NewMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -556,16 +544,15 @@ namespace CG
 		params.NewMode = NewMode;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BACD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount()
 	{
@@ -576,16 +563,15 @@ namespace CG
 		UNavigationSystemV1_ResetMaxSimultaneousTileGenerationJobsCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BABD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Invoker                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              TileGenerationRadius                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -603,16 +589,15 @@ namespace CG
 		params.TileRemovalRadius = TileRemovalRadius;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BAA00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Point                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -620,7 +605,7 @@ namespace CG
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     QueryExtent                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UNavigationSystemV1::STATIC_ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
+	struct FVector UNavigationSystemV1::ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -634,7 +619,6 @@ namespace CG
 		params.QueryExtent = QueryExtent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -643,9 +627,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ANavMeshBoundsVolume*                        NavVolume                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -659,16 +643,15 @@ namespace CG
 		params.NavVolume = NavVolume;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA770
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.NavigationRaycast
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     RayStart                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -677,7 +660,7 @@ namespace CG
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AController*                                 Querier                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_NavigationRaycast(class UObject* WorldContextObject, const struct FVector& RayStart, const struct FVector& RayEnd, struct FVector* HitLocation, class UClass* FilterClass, class AController* Querier)
+	bool UNavigationSystemV1::NavigationRaycast(class UObject* WorldContextObject, const struct FVector& RayStart, const struct FVector& RayEnd, struct FVector* HitLocation, class UClass* FilterClass, class AController* Querier)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -691,7 +674,6 @@ namespace CG
 		params.Querier = Querier;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -703,9 +685,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     Object                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      OldArea                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -723,7 +705,6 @@ namespace CG
 		params.NewArea = NewArea;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -732,9 +713,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA490
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Point                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -743,7 +724,7 @@ namespace CG
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     QueryExtent                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_K2_ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, struct FVector* ProjectedLocation, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
+	bool UNavigationSystemV1::K2_ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, struct FVector* ProjectedLocation, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -757,7 +738,6 @@ namespace CG
 		params.QueryExtent = QueryExtent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -769,9 +749,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA290
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Origin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -780,7 +760,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_K2_GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
+	bool UNavigationSystemV1::K2_GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -794,7 +774,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -806,9 +785,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Origin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -817,7 +796,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_K2_GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
+	bool UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -831,7 +810,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -843,9 +821,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BA090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Origin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -854,7 +832,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_K2_GetRandomLocationInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
+	bool UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -868,7 +846,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -880,13 +857,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9FB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_IsNavigationBeingBuiltOrLocked(class UObject* WorldContextObject)
+	bool UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -896,7 +873,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -905,13 +881,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9F30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UNavigationSystemV1::STATIC_IsNavigationBeingBuilt(class UObject* WorldContextObject)
+	bool UNavigationSystemV1::IsNavigationBeingBuilt(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -921,7 +897,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -930,9 +905,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Origin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -940,7 +915,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UNavigationSystemV1::STATIC_GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
+	struct FVector UNavigationSystemV1::GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -954,7 +929,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -963,9 +937,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9B90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavigableRadius
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Origin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -973,7 +947,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UNavigationSystemV1::STATIC_GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
+	struct FVector UNavigationSystemV1::GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -987,7 +961,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -996,9 +969,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9970
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetPathLength
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     PathStart                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1007,7 +980,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	Engine_ENavigationQueryResult UNavigationSystemV1::STATIC_GetPathLength(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathLength, class ANavigationData* NavData, class UClass* FilterClass)
+	ENavigationQueryResult UNavigationSystemV1::GetPathLength(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathLength, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1021,7 +994,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1033,9 +1005,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9720
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetPathCost
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     PathStart                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1044,7 +1016,7 @@ namespace CG
 	 * 		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	Engine_ENavigationQueryResult UNavigationSystemV1::STATIC_GetPathCost(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathCost, class ANavigationData* NavData, class UClass* FilterClass)
+	ENavigationQueryResult UNavigationSystemV1::GetPathCost(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathCost, class ANavigationData* NavData, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1058,7 +1030,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1070,13 +1041,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.GetNavigationSystem
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UNavigationSystemV1* UNavigationSystemV1::STATIC_GetNavigationSystem(class UObject* WorldContextObject)
+	class UNavigationSystemV1* UNavigationSystemV1::GetNavigationSystem(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1086,7 +1057,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1095,9 +1065,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9440
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     PathStart                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1105,7 +1075,7 @@ namespace CG
 	 * 		class AActor*                                      PathfindingContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UNavigationPath* UNavigationSystemV1::STATIC_FindPathToLocationSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class AActor* PathfindingContext, class UClass* FilterClass)
+	class UNavigationPath* UNavigationSystemV1::FindPathToLocationSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class AActor* PathfindingContext, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1119,7 +1089,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1128,9 +1097,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028B9250
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     PathStart                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1139,7 +1108,7 @@ namespace CG
 	 * 		class AActor*                                      PathfindingContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UNavigationPath* UNavigationSystemV1::STATIC_FindPathToActorSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, class AActor* GoalActor, float TetherDistance, class AActor* PathfindingContext, class UClass* FilterClass)
+	class UNavigationPath* UNavigationSystemV1::FindPathToActorSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, class AActor* GoalActor, float TetherDistance, class AActor* PathfindingContext, class UClass* FilterClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1154,7 +1123,6 @@ namespace CG
 		params.FilterClass = FilterClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1163,8 +1131,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationSystemV1.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationSystemV1.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationSystemV1::StaticClass()
@@ -1177,8 +1145,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavigationSystemModuleConfig.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavigationSystemModuleConfig.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavigationSystemModuleConfig::StaticClass()
@@ -1191,8 +1159,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavigationTestingActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavigationTestingActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavigationTestingActor::StaticClass()
@@ -1205,8 +1173,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkComponent::StaticClass()
@@ -1219,9 +1187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BCE40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bRelevant                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1235,15 +1203,14 @@ namespace CG
 		params.bRelevant = bRelevant;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavRelevantComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavRelevantComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavRelevantComponent::StaticClass()
@@ -1256,8 +1223,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkCustomComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkCustomComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkCustomComponent::StaticClass()
@@ -1270,8 +1237,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkCustomInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkCustomInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkCustomInterface::StaticClass()
@@ -1284,8 +1251,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkHostInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkHostInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkHostInterface::StaticClass()
@@ -1298,8 +1265,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkRenderingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkRenderingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkRenderingComponent::StaticClass()
@@ -1312,8 +1279,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavLinkTrivial.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavLinkTrivial.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavLinkTrivial::StaticClass()
@@ -1326,8 +1293,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavMeshBoundsVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavMeshBoundsVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavMeshBoundsVolume::StaticClass()
@@ -1340,8 +1307,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavMeshRenderingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavMeshRenderingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavMeshRenderingComponent::StaticClass()
@@ -1354,9 +1321,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BCDC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavModifierComponent.SetAreaClass
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      NewAreaClass                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1370,15 +1337,14 @@ namespace CG
 		params.NewAreaClass = NewAreaClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavModifierComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavModifierComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavModifierComponent::StaticClass()
@@ -1391,9 +1357,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BCD40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.NavModifierVolume.SetAreaClass
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      NewAreaClass                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1407,15 +1373,14 @@ namespace CG
 		params.NewAreaClass = NewAreaClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavModifierVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavModifierVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavModifierVolume::StaticClass()
@@ -1428,8 +1393,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavNodeInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavNodeInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavNodeInterface::StaticClass()
@@ -1442,8 +1407,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ANavSystemConfigOverride.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ANavSystemConfigOverride.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ANavSystemConfigOverride::StaticClass()
@@ -1456,8 +1421,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNavTestRenderingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNavTestRenderingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNavTestRenderingComponent::StaticClass()
@@ -1470,8 +1435,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URecastFilter_UseDefaultArea.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URecastFilter_UseDefaultArea.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URecastFilter_UseDefaultArea::StaticClass()
@@ -1484,9 +1449,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028BCBB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FBox                                        Bounds                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      OldArea                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1506,7 +1471,6 @@ namespace CG
 		params.ReplaceLinks = ReplaceLinks;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1515,8 +1479,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ARecastNavMesh.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ARecastNavMesh.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ARecastNavMesh::StaticClass()
@@ -1529,8 +1493,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URecastNavMeshDataChunk.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URecastNavMeshDataChunk.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URecastNavMeshDataChunk::StaticClass()

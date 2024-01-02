@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,69 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BPI_PauseUI.BPI_PauseUI_C.GoToLastItemCollected
+	 * 		Flags  -> ()
+	 */
+	void UBPI_PauseUI_C::GoToLastItemCollected()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPI_PauseUI.BPI_PauseUI_C.GoToLastItemCollected");
+		
+		UBPI_PauseUI_C_GoToLastItemCollected_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BPI_PauseUI.BPI_PauseUI_C.UpdateLastItem
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFNAFInventoryTableStruct                   ItemInfo                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+	 */
+	void UBPI_PauseUI_C::UpdateLastItem(const struct FFNAFInventoryTableStruct& ItemInfo)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPI_PauseUI.BPI_PauseUI_C.UpdateLastItem");
+		
+		UBPI_PauseUI_C_UpdateLastItem_Params params {};
+		params.ItemInfo = ItemInfo;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BPI_PauseUI.BPI_PauseUI_C.OpenInventoryMenu
+	 * 		Flags  -> ()
+	 */
+	void UBPI_PauseUI_C::OpenInventoryMenu()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPI_PauseUI.BPI_PauseUI_C.OpenInventoryMenu");
+		
+		UBPI_PauseUI_C_OpenInventoryMenu_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BPI_PauseUI.BPI_PauseUI_C.GetFocusButton
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UButton*                                     Button                                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -36,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBPI_PauseUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBPI_PauseUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBPI_PauseUI_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,14 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass Freddy_Grate_Sequence.SequenceDirector_C
-	 * Size -> 0x0008 (FullSize[0x0038] - InheritedSize[0x0030])
+	 * Size -> 0x0008 (FullSize[0x0040] - InheritedSize[0x0038])
 	 */
 	class USequenceDirector_C : public ULevelSequenceDirector
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0030(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0038(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
+		void SequenceEvent__ENTRYPOINTSequenceDirector_6(class AOGM_BackStage_C* OGM_BackStage);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_5(class AFreddyGuideSick_C* FreddyGuideSick2);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_4(class ACinematic_Actor_Freddy_C* FreddyGuideSick);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_3(class AStaticMeshActor* MOD_Grate_Cover_Dented);
@@ -34,6 +35,7 @@ namespace CG
 		void MOD_Grate_Cover_Dented_Event_1(class AStaticMeshActor* MOD_Grate_Cover_Dented);
 		void FreddyGuideSick_Event_1(class ACinematic_Actor_Freddy_C* FreddyGuideSick);
 		void FreddyGuideSick2_Event_1(class AFreddyGuideSick_C* FreddyGuideSick2);
+		void OGM_BackStage_Event_1(class AOGM_BackStage_C* OGM_BackStage);
 		void ExecuteUbergraph_SequenceDirector(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

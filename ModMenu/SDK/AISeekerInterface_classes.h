@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,16 +25,16 @@ namespace CG
 		void GetHearingEnable(bool* Enabled);
 		void SetHearingEnable(bool enable);
 		void ForceChasePlayer(bool EnableChase);
-		void GetRangeOfDistance(float Distance, AIPlayerRange_EAIPlayerRange* Range);
+		void GetRangeOfDistance(float Distance, EAIPlayerRange* Range);
 		void IsCheckingHideLocation(bool* StillChecking);
 		void SetIsTrackingPlayer(bool TrackingPlayer);
 		void GetVisitedPOIs(TArray<struct FPOIIndex>* VisitedPOIs);
-		void GetAIData(struct FAIDataParams* AI_Data);
+		void GetAIData(struct FAIDataParams* AIData);
 		void IsInChaseMode(bool* InChaseMode);
 		void RestartAI();
 		void SetAlertState(int32_t AlertState);
 		void IsRunningEnterRoom(bool* EnteringRoom);
-		void GetRoomSeekMode(RoomSeekMode_ERoomSeekMode* SeekMode);
+		void GetRoomSeekMode(ERoomSeekMode* SeekMode);
 		void GetRecentRooms(TArray<struct FRoomVisitInfo>* RecentRooms);
 		void OnEnterNewRoom(class ARoomAreaBase* Room);
 		void IsSearchingPOI(bool* IsSearching);

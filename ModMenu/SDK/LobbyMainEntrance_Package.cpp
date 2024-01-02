@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.Close Gate
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ALobbyMainEntrance_C::Close_Gate()
+	void ALobbyMainEntrance_C::CloseGate()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LobbyMainEntrance.LobbyMainEntrance_C.Close Gate");
 		
-		ALobbyMainEntrance_C_Close_Gate_Params params {};
+		ALobbyMainEntrance_C_CloseGate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALobbyMainEntrance_C::BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__PlanAEscape_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALobbyMainEntrance_C::BndEvt__PlanAEscape_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALobbyMainEntrance_C::ReceiveBeginPlay()
 	{
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__GetOutFinished_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALobbyMainEntrance_C::BndEvt__GetOutFinished_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature()
 	{
@@ -107,17 +107,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.Set Open
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ALobbyMainEntrance_C::Set_Open()
+	void ALobbyMainEntrance_C::SetOpen()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LobbyMainEntrance.LobbyMainEntrance_C.Set Open");
 		
-		ALobbyMainEntrance_C_Set_Open_Params params {};
+		ALobbyMainEntrance_C_SetOpen_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,17 +126,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.Set Closed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ALobbyMainEntrance_C::Set_Closed()
+	void ALobbyMainEntrance_C::SetClosed()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LobbyMainEntrance.LobbyMainEntrance_C.Set Closed");
 		
-		ALobbyMainEntrance_C_Set_Closed_Params params {};
+		ALobbyMainEntrance_C_SetClosed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_5_OnTimeStart__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALobbyMainEntrance_C::BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_5_OnTimeStart__DelegateSignature()
 	{
@@ -164,9 +164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LobbyMainEntrance.LobbyMainEntrance_C.ExecuteUbergraph_LobbyMainEntrance
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -186,8 +186,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ALobbyMainEntrance_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ALobbyMainEntrance_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ALobbyMainEntrance_C::StaticClass()

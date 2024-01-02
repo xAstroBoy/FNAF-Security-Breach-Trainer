@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 	public:
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
-		void Setup_Proximity(int32_t FreddyPower);
+		void SetupProximity(int32_t FreddyPower);
 		void ExecuteUbergraph_FreddyPowerProximityActor(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

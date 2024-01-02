@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.FadeUPThenDown__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::FadeUPThenDown__FinishedFunc()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.FadeUPThenDown__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::FadeUPThenDown__UpdateFunc()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Timeline_0__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::Timeline_0__FinishedFunc()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Timeline_0__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::Timeline_0__UpdateFunc()
 	{
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::ReceiveBeginPlay()
 	{
@@ -107,9 +107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ActivateUP
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::ActivateUP()
 	{
@@ -126,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ActivateDown
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::ActivateDown()
 	{
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.Stop
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_ArrowIndicator_C::Stop()
 	{
@@ -164,9 +164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_ArrowIndicator.BP_ArrowIndicator_C.ExecuteUbergraph_BP_ArrowIndicator
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -186,8 +186,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABP_ArrowIndicator_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABP_ArrowIndicator_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABP_ArrowIndicator_C::StaticClass()

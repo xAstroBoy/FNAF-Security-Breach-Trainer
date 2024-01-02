@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,9 +20,8 @@ namespace CG
 	struct UMagicLeapEyeTrackerFunctionLibrary_GetEyeBlinkState_Params
 	{
 	public:
-		struct FMagicLeapEyeBlinkState                             BlinkState;                                              // 0x0000(0x0002)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FMagicLeapEyeBlinkState                             BlinkState;                                              // 0x0000(0x0002)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0002(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -31,8 +30,7 @@ namespace CG
 	struct UMagicLeapEyeTrackerFunctionLibrary_GetCalibrationStatus_Params
 	{
 	public:
-		MagicLeapEyeTracker_EMagicLeapEyeTrackingCalibrationStatus ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMagicLeapEyeTrackingCalibrationStatus                     ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 }

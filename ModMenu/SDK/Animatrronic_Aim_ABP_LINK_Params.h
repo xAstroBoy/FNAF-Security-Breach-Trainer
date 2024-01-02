@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,29 +22,25 @@ namespace CG
 	public:
 		struct FPoseLink                                           InPose;                                                  // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 		struct FPoseLink                                           AnimGraph;                                               // 0x0010(0x0010)  (Parm, OutParm, NoDestructor)
-
 	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_ApplyAdditive_2834E0AC418F667477954EB5BD39E046
 	 */
 	struct UAnimatrronic_Aim_ABP_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_ApplyAdditive_2834E0AC418F667477954EB5BD39E046_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_RotationOffsetBlendSpace_2006674F4053D037FA770789483272ED
 	 */
 	struct UAnimatrronic_Aim_ABP_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_RotationOffsetBlendSpace_2006674F4053D037FA770789483272ED_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_RotationOffsetBlendSpace_44E21F9F4F87B07FD730F495C7BC12D4
 	 */
 	struct UAnimatrronic_Aim_ABP_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatrronic_Aim_ABP_LINK_AnimGraphNode_RotationOffsetBlendSpace_44E21F9F4F87B07FD730F495C7BC12D4_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.BlueprintUpdateAnimation
@@ -53,15 +49,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.BlueprintBeginPlay
 	 */
 	struct UAnimatrronic_Aim_ABP_LINK_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatrronic_Aim_ABP_LINK.Animatrronic_Aim_ABP_LINK_C.ExecuteUbergraph_Animatrronic_Aim_ABP_LINK
@@ -70,7 +64,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

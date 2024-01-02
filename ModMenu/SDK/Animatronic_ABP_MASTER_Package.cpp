@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,30 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsMeshVisible
+	 * 		Flags  -> ()
+	 */
+	bool UAnimatronic_ABP_MASTER_C::IsMeshVisible()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsMeshVisible");
+		
+		UAnimatronic_ABP_MASTER_C_IsMeshVisible_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanReceiveAlert
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	bool UAnimatronic_ABP_MASTER_C::CanReceiveAlert()
 	{
@@ -33,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsShatteredVersion
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	bool UAnimatronic_ABP_MASTER_C::IsShatteredVersion()
 	{
@@ -54,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetCurrentPathName
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FName UAnimatronic_ABP_MASTER_C::GetCurrentPathName()
 	{
@@ -75,11 +96,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetManagedAIType
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	fnaf9_EFNAFAISpawnType UAnimatronic_ABP_MASTER_C::GetManagedAIType()
+	EFNAFAISpawnType UAnimatronic_ABP_MASTER_C::GetManagedAIType()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -96,9 +117,59 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetMoveSpeedInput
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              MoveSpeed                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::GetMoveSpeedInput(float* MoveSpeed)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GetMoveSpeedInput");
+		
+		UAnimatronic_ABP_MASTER_C_GetMoveSpeedInput_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (MoveSpeed != nullptr)
+			*MoveSpeed = params.MoveSpeed;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Roxy_Dynamics
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FPoseLink                                   InPose                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	 * 		struct FPoseLink                                   Roxy_Dynamics                                              (Parm, OutParm, NoDestructor)
+	 */
+	void UAnimatronic_ABP_MASTER_C::Roxy_Dynamics(const struct FPoseLink& InPose, struct FPoseLink* Roxy_Dynamics)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Roxy_Dynamics");
+		
+		UAnimatronic_ABP_MASTER_C_Roxy_Dynamics_Params params {};
+		params.InPose = InPose;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Roxy_Dynamics != nullptr)
+			*Roxy_Dynamics = params.Roxy_Dynamics;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimGraph
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -120,9 +191,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CalculateAndApplyHeadAim
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CalculateAndApplyHeadAim()
 	{
@@ -139,9 +210,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanWhileMovingFunction
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::ScanWhileMovingFunction()
 	{
@@ -158,9 +229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CameraShake_MontyLand
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CameraShake_MontyLand()
 	{
@@ -177,9 +248,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CameraShake
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CameraShake()
 	{
@@ -196,9 +267,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Dynamic Alpha Blend Func
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AlphaVariable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              InterpSpeed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -206,13 +277,13 @@ namespace CG
 	 * 		class FName                                        CurveName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Output_Get                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::Dynamic_Alpha_Blend_Func(float AlphaVariable, float InterpSpeed, float DefaultValue, const class FName& CurveName, float* Output_Get)
+	void UAnimatronic_ABP_MASTER_C::DynamicAlphaBlendFunc(float AlphaVariable, float InterpSpeed, float DefaultValue, const class FName& CurveName, float* Output_Get)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Dynamic Alpha Blend Func");
 		
-		UAnimatronic_ABP_MASTER_C_Dynamic_Alpha_Blend_Func_Params params {};
+		UAnimatronic_ABP_MASTER_C_DynamicAlphaBlendFunc_Params params {};
 		params.AlphaVariable = AlphaVariable;
 		params.InterpSpeed = InterpSpeed;
 		params.DefaultValue = DefaultValue;
@@ -228,20 +299,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ApplyControlRotation
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class APawn*                                       AI_Pawn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class APawn*                                       AIPawn                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::ApplyControlRotation(class APawn* AI_Pawn)
+	void UAnimatronic_ABP_MASTER_C::ApplyControlRotation(class APawn* AIPawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ApplyControlRotation");
 		
 		UAnimatronic_ABP_MASTER_C_ApplyControlRotation_Params params {};
-		params.AI_Pawn = AI_Pawn;
+		params.AIPawn = AIPawn;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -250,9 +321,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlendJiggleAlphaToTarget
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::BlendJiggleAlphaToTarget()
 	{
@@ -269,9 +340,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlinkFunction
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::BlinkFunction()
 	{
@@ -288,17 +359,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Procedural Scan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UAnimatronic_ABP_MASTER_C::Procedural_Scan()
+	void UAnimatronic_ABP_MASTER_C::ProceduralScan()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Procedural Scan");
 		
-		UAnimatronic_ABP_MASTER_C_Procedural_Scan_Params params {};
+		UAnimatronic_ABP_MASTER_C_ProceduralScan_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -307,9 +378,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.PerformScanTrace
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsRight                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -331,9 +402,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EnableAnimDynamics
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               AnimDynamics_Ears                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               AnimDynamics_Roxy                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -359,9 +430,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AppyPhysicalAnimationToBone
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        InBoneName                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        ProfileName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -383,9 +454,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SetInitialHeadAimFunction
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::SetInitialHeadAimFunction()
 	{
@@ -402,17 +473,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Setup Physical Animation
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UAnimatronic_ABP_MASTER_C::Setup_Physical_Animation()
+	void UAnimatronic_ABP_MASTER_C::SetupPhysicalAnimation()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Setup Physical Animation");
 		
-		UAnimatronic_ABP_MASTER_C_Setup_Physical_Animation_Params params {};
+		UAnimatronic_ABP_MASTER_C_SetupPhysicalAnimation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -421,19 +492,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Perform Foot IK
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               LocalIsRightFoot                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::Perform_Foot_IK(bool LocalIsRightFoot)
+	void UAnimatronic_ABP_MASTER_C::PerformFootIK(bool LocalIsRightFoot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Perform Foot IK");
 		
-		UAnimatronic_ABP_MASTER_C_Perform_Foot_IK_Params params {};
+		UAnimatronic_ABP_MASTER_C_PerformFootIK_Params params {};
 		params.LocalIsRightFoot = LocalIsRightFoot;
 		
 		auto flags = fn->FunctionFlags;
@@ -443,20 +514,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OverlappingDoor
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               Overlapping                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class AActor*                                      Instigator                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::OverlappingDoor(bool Overlapping, class AActor* Instigator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OverlappingDoor");
 		
-		UAnimatronic_ABP_MASTER_C_OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_OverlappingDoor_Params params {};
+		params.Overlapping = Overlapping;
+		params.Instigator = Instigator;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -465,20 +538,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsHangingEvent
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               IsHanging                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::IsHangingEvent(bool IsHanging)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsHangingEvent");
 		
-		UAnimatronic_ABP_MASTER_C_OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_IsHangingEvent_Params params {};
+		params.IsHanging = IsHanging;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -487,20 +560,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Spotlight Aim Actor
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      AimActor                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::SpotlightAimActor(class AActor* AimActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Spotlight Aim Actor");
 		
-		UAnimatronic_ABP_MASTER_C_OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_SpotlightAimActor_Params params {};
+		params.AimActor = AimActor;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -509,20 +582,58 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoBowlingCrawlEvent
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EndoBowlingCrawlEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoBowlingCrawlEvent");
+		
+		UAnimatronic_ABP_MASTER_C_EndoBowlingCrawlEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoSpawnInBowlingEvent
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EndoSpawnInBowlingEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoSpawnInBowlingEvent");
+		
+		UAnimatronic_ABP_MASTER_C_EndoSpawnInBowlingEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanDieEvent
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::CanDieEvent(bool Off)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanDieEvent");
 		
-		UAnimatronic_ABP_MASTER_C_OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_CanDieEvent_Params params {};
+		params.Off = Off;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -531,20 +642,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_3C038C4C41E515C7EAF663BC143B1F84
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanHackEvent
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnCompleted_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::CanHackEvent(bool Off)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_3C038C4C41E515C7EAF663BC143B1F84");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanHackEvent");
 		
-		UAnimatronic_ABP_MASTER_C_OnCompleted_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_CanHackEvent_Params params {};
+		params.Off = Off;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -553,20 +664,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyCorrupted
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::FreddyCorrupted(bool Off)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyCorrupted");
 		
-		UAnimatronic_ABP_MASTER_C_OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_FreddyCorrupted_Params params {};
+		params.Off = Off;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -575,20 +686,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceAnimOverride
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
+	void UAnimatronic_ABP_MASTER_C::ForceAnimOverride(bool enable)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceAnimOverride");
 		
-		UAnimatronic_ABP_MASTER_C_OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
-		params.NotifyName = NotifyName;
+		UAnimatronic_ABP_MASTER_C_ForceAnimOverride_Params params {};
+		params.enable = enable;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -597,258 +708,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9");
-		
-		UAnimatronic_ABP_MASTER_C_OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9");
-		
-		UAnimatronic_ABP_MASTER_C_OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9");
-		
-		UAnimatronic_ABP_MASTER_C_OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588");
-		
-		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567");
-		
-		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendPositionalAlert
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FVector                                     Location                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::SendPositionalAlert(const struct FVector& Location)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendPositionalAlert");
-		
-		UAnimatronic_ABP_MASTER_C_SendPositionalAlert_Params params {};
-		params.Location = Location;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendVanessaAlert
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class APawn*                                       VanessaPawn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::SendVanessaAlert(class APawn* VanessaPawn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendVanessaAlert");
-		
-		UAnimatronic_ABP_MASTER_C_SendVanessaAlert_Params params {};
-		params.VanessaPawn = VanessaPawn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartMoveTo
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::StartMoveTo(const struct FVector& Location)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartMoveTo");
-		
-		UAnimatronic_ABP_MASTER_C_StartMoveTo_Params params {};
-		params.Location = Location;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TeleportAI
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UAnimatronic_ABP_MASTER_C::TeleportAI(const struct FVector& Location)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TeleportAI");
-		
-		UAnimatronic_ABP_MASTER_C_TeleportAI_Params params {};
-		params.Location = Location;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SearchingDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::SearchingDone()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SearchingDone");
-		
-		UAnimatronic_ABP_MASTER_C_SearchingDone_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::IsFirstPersonEvent()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsFirstPersonEvent");
-		
-		UAnimatronic_ABP_MASTER_C_IsFirstPersonEvent_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsNotFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::IsNotFirstPersonEvent()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsNotFirstPersonEvent");
-		
-		UAnimatronic_ABP_MASTER_C_IsNotFirstPersonEvent_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceScanStates
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OverrideScan                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               CanScan                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -874,20 +736,77 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceAnimOverride
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsNotFirstPersonEvent
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::IsNotFirstPersonEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsNotFirstPersonEvent");
+		
+		UAnimatronic_ABP_MASTER_C_IsNotFirstPersonEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsFirstPersonEvent
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::IsFirstPersonEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsFirstPersonEvent");
+		
+		UAnimatronic_ABP_MASTER_C_IsFirstPersonEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SearchingDone
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::SearchingDone()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SearchingDone");
+		
+		UAnimatronic_ABP_MASTER_C_SearchingDone_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TeleportAI
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::ForceAnimOverride(bool enable)
+	void UAnimatronic_ABP_MASTER_C::TeleportAI(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceAnimOverride");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TeleportAI");
 		
-		UAnimatronic_ABP_MASTER_C_ForceAnimOverride_Params params {};
-		params.enable = enable;
+		UAnimatronic_ABP_MASTER_C_TeleportAI_Params params {};
+		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -896,20 +815,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyCorrupted
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartMoveTo
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::FreddyCorrupted(bool Off)
+	void UAnimatronic_ABP_MASTER_C::StartMoveTo(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyCorrupted");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartMoveTo");
 		
-		UAnimatronic_ABP_MASTER_C_FreddyCorrupted_Params params {};
-		params.Off = Off;
+		UAnimatronic_ABP_MASTER_C_StartMoveTo_Params params {};
+		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -918,20 +837,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanHackEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendVanessaAlert
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class APawn*                                       VanessaPawn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::CanHackEvent(bool Off)
+	void UAnimatronic_ABP_MASTER_C::SendVanessaAlert(class APawn* VanessaPawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanHackEvent");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendVanessaAlert");
 		
-		UAnimatronic_ABP_MASTER_C_CanHackEvent_Params params {};
-		params.Off = Off;
+		UAnimatronic_ABP_MASTER_C_SendVanessaAlert_Params params {};
+		params.VanessaPawn = VanessaPawn;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -940,20 +859,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanDieEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendPositionalAlert
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FVector                                     Location                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::CanDieEvent(bool Off)
+	void UAnimatronic_ABP_MASTER_C::SendPositionalAlert(const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanDieEvent");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SendPositionalAlert");
 		
-		UAnimatronic_ABP_MASTER_C_CanDieEvent_Params params {};
-		params.Off = Off;
+		UAnimatronic_ABP_MASTER_C_SendPositionalAlert_Params params {};
+		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -962,17 +881,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoSpawnInBowlingEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceJumpscarePlayer
+	 * 		Flags  -> ()
 	 */
-	void UAnimatronic_ABP_MASTER_C::EndoSpawnInBowlingEvent()
+	void UAnimatronic_ABP_MASTER_C::ForceJumpscarePlayer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoSpawnInBowlingEvent");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceJumpscarePlayer");
 		
-		UAnimatronic_ABP_MASTER_C_EndoSpawnInBowlingEvent_Params params {};
+		UAnimatronic_ABP_MASTER_C_ForceJumpscarePlayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -981,39 +900,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoBowlingCrawlEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::EndoBowlingCrawlEvent()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndoBowlingCrawlEvent");
-		
-		UAnimatronic_ABP_MASTER_C_EndoBowlingCrawlEvent_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Spotlight Aim Actor
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class AActor*                                      AimActor                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::Spotlight_Aim_Actor(class AActor* AimActor)
+	void UAnimatronic_ABP_MASTER_C::OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Spotlight Aim Actor");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9");
 		
-		UAnimatronic_ABP_MASTER_C_Spotlight_Aim_Actor_Params params {};
-		params.AimActor = AimActor;
+		UAnimatronic_ABP_MASTER_C_OnCompleted_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
+		params.NotifyName = NotifyName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1022,17 +922,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8()
+	void UAnimatronic_ABP_MASTER_C::OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8");
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9");
 		
-		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8_Params params {};
+		UAnimatronic_ABP_MASTER_C_OnBlendOut_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
+		params.NotifyName = NotifyName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1041,9 +944,204 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9");
+		
+		UAnimatronic_ABP_MASTER_C_OnInterrupted_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9");
+		
+		UAnimatronic_ABP_MASTER_C_OnNotifyBegin_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9");
+		
+		UAnimatronic_ABP_MASTER_C_OnNotifyEnd_0FBFA56A4810C9B21318009D4D15B9A9_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_3C038C4C41E515C7EAF663BC143B1F84
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnCompleted_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnCompleted_3C038C4C41E515C7EAF663BC143B1F84");
+		
+		UAnimatronic_ABP_MASTER_C_OnCompleted_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84");
+		
+		UAnimatronic_ABP_MASTER_C_OnBlendOut_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84");
+		
+		UAnimatronic_ABP_MASTER_C_OnInterrupted_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84");
+		
+		UAnimatronic_ABP_MASTER_C_OnNotifyBegin_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UAnimatronic_ABP_MASTER_C::OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84");
+		
+		UAnimatronic_ABP_MASTER_C_OnNotifyEnd_3C038C4C41E515C7EAF663BC143B1F84_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_RotationOffsetBlendSpace_7BDAAFA741396C2B6DD3D6A9DA6DE588_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ModifyBone_3B824F8E48009B840B4521ABEADE8F4F
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ModifyBone_3B824F8E48009B840B4521ABEADE8F4F()
 	{
@@ -1060,9 +1158,237 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_40124A0E42CA80CA07A1FF90DBA8AEB8_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_F0413BC34D49680CD5084581C867C985
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_F0413BC34D49680CD5084581C867C985()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_F0413BC34D49680CD5084581C867C985");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_F0413BC34D49680CD5084581C867C985_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_CE0873164C0484567DBB5FB700C8482A
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_CE0873164C0484567DBB5FB700C8482A()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_CE0873164C0484567DBB5FB700C8482A");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_CE0873164C0484567DBB5FB700C8482A_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ApplyAdditive_C0C945A54B6BF22E2AD1529F65561B02
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ApplyAdditive_C0C945A54B6BF22E2AD1529F65561B02()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ApplyAdditive_C0C945A54B6BF22E2AD1529F65561B02");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_ApplyAdditive_C0C945A54B6BF22E2AD1529F65561B02_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_22EE638841B7E6C0E7FDA68B9E8CB2EB
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_22EE638841B7E6C0E7FDA68B9E8CB2EB()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_22EE638841B7E6C0E7FDA68B9E8CB2EB");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_LayeredBoneBlend_22EE638841B7E6C0E7FDA68B9E8CB2EB_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_ABC04883476C501782211DA298CADA38
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_ABC04883476C501782211DA298CADA38()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_ABC04883476C501782211DA298CADA38");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_ABC04883476C501782211DA298CADA38_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_84A9111B4DDE0B4CB1CB90B0DF921700
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_84A9111B4DDE0B4CB1CB90B0DF921700()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_84A9111B4DDE0B4CB1CB90B0DF921700");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_84A9111B4DDE0B4CB1CB90B0DF921700_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_96A6401843DC76286490D18B811537C8
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_96A6401843DC76286490D18B811537C8()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_96A6401843DC76286490D18B811537C8");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_96A6401843DC76286490D18B811537C8_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_Constraint_72F426BB4219CC9BB1EB8795BA26E086
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_Constraint_72F426BB4219CC9BB1EB8795BA26E086()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_Constraint_72F426BB4219CC9BB1EB8795BA26E086");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_Constraint_72F426BB4219CC9BB1EB8795BA26E086_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_2F0D592D48997EE91A18F085212688C4
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_2F0D592D48997EE91A18F085212688C4()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_2F0D592D48997EE91A18F085212688C4");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_AnimDynamics_2F0D592D48997EE91A18F085212688C4_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_SequencePlayer_B88409B24EABCF80FB77DAB1AC1D6567_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6
+	 * 		Flags  -> ()
+	 */
+	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6");
+		
+		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1082,9 +1408,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_IsSpottedEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_IsSpottedEvent()
 	{
@@ -1101,9 +1427,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SpottedTimerOverEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::SpottedTimerOverEvent()
 	{
@@ -1120,9 +1446,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StartScanEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_StartScanEvent()
 	{
@@ -1139,9 +1465,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_FinishedScanEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_FinishedScanEvent()
 	{
@@ -1158,9 +1484,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_TurnCompleteEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_TurnCompleteEvent()
 	{
@@ -1177,9 +1503,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsSpottedEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::IsSpottedEvent()
 	{
@@ -1196,9 +1522,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::BlueprintBeginPlay()
 	{
@@ -1215,9 +1541,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_L_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_L_Foot_Down()
 	{
@@ -1234,9 +1560,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_R_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_R_Foot_Down()
 	{
@@ -1253,9 +1579,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_SearchEnd
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_SearchEnd()
 	{
@@ -1272,9 +1598,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StartingSearchLoop
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_StartingSearchLoop()
 	{
@@ -1291,9 +1617,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OpenDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::OpenDone()
 	{
@@ -1310,20 +1636,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Searching
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EHideObjectType                              Hide_Type                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EHideObjectType                                    HideType                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::Searching(fnaf9_EHideObjectType Hide_Type)
+	void UAnimatronic_ABP_MASTER_C::Searching(EHideObjectType HideType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Searching");
 		
 		UAnimatronic_ABP_MASTER_C_Searching_Params params {};
-		params.Hide_Type = Hide_Type;
+		params.HideType = HideType;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1332,9 +1658,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.TurnEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              TurnDegrees                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1354,9 +1680,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.HeadAimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1376,9 +1702,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Open
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::Open()
 	{
@@ -1395,9 +1721,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StartScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::StartScan()
 	{
@@ -1414,9 +1740,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanJumpscareEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CanJumpscareEvent()
 	{
@@ -1433,9 +1759,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.SetHeadAimTarget
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     AimLocation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1455,9 +1781,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanRunEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanRun                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1477,20 +1803,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Stun Event
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Is_Stunned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsStunned                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UAnimatronic_ABP_MASTER_C::Stun_Event(bool Is_Stunned)
+	void UAnimatronic_ABP_MASTER_C::StunEvent(bool IsStunned)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Stun Event");
 		
-		UAnimatronic_ABP_MASTER_C_Stun_Event_Params params {};
-		params.Is_Stunned = Is_Stunned;
+		UAnimatronic_ABP_MASTER_C_StunEvent_Params params {};
+		params.IsStunned = IsStunned;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1499,9 +1825,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanRummageEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CanRummageEvent()
 	{
@@ -1518,9 +1844,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.RummagingDoneEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::RummagingDoneEvent()
 	{
@@ -1537,9 +1863,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_AnimDoneRummaging
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_AnimDoneRummaging()
 	{
@@ -1556,9 +1882,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanBlinkEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanBlink                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1578,9 +1904,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_BlinkNotify
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_BlinkNotify()
 	{
@@ -1597,9 +1923,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.OnAnimInstanceSwap
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::OnAnimInstanceSwap()
 	{
@@ -1616,9 +1942,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.Breakthrough
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::Breakthrough()
 	{
@@ -1635,9 +1961,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_BreakthroughEnd
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_BreakthroughEnd()
 	{
@@ -1654,9 +1980,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanTimerEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::ScanTimerEvent()
 	{
@@ -1673,9 +1999,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ScanWhileMoving
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::ScanWhileMoving()
 	{
@@ -1692,9 +2018,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StopScanEventLocal
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::StopScanEventLocal()
 	{
@@ -1711,9 +2037,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ForceTrackToPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::ForceTrackToPlayer()
 	{
@@ -1730,9 +2056,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EndTrackToPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::EndTrackToPlayer()
 	{
@@ -1749,9 +2075,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.JumpEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanJump                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1771,9 +2097,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_TurnOffScanningEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_TurnOffScanningEvent()
 	{
@@ -1790,9 +2116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.StopScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::StopScan()
 	{
@@ -1809,9 +2135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_HidingSpotEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_HidingSpotEvent()
 	{
@@ -1828,9 +2154,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_SearchKillEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_SearchKillEvent()
 	{
@@ -1847,9 +2173,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnterSearchStateEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_EnterSearchStateEvent()
 	{
@@ -1866,9 +2192,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.PoundDoorEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               PoundDoor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1888,9 +2214,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanWaveEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanWave                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1910,9 +2236,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.IsSickEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1932,9 +2258,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanLieDownEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1954,9 +2280,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CanLeapEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1976,9 +2302,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EnterFreddyOverrideEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1998,9 +2324,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.LandEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::LandEvent()
 	{
@@ -2017,9 +2343,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.RoxyCrying
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -2039,20 +2365,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.VoAnimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UAkAudioEvent*                               AK_Event                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UAkAudioEvent*                               AKEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UAnimatronic_ABP_MASTER_C::VoAnimEvent(class UAkAudioEvent* AK_Event)
+	void UAnimatronic_ABP_MASTER_C::VoAnimEvent(class UAkAudioEvent* AKEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.VoAnimEvent");
 		
 		UAnimatronic_ABP_MASTER_C_VoAnimEvent_Params params {};
-		params.AK_Event = AK_Event;
+		params.AKEvent = AKEvent;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -2061,9 +2387,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnteredLeapEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_EnteredLeapEvent()
 	{
@@ -2080,9 +2406,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_StunOverEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_StunOverEvent()
 	{
@@ -2099,9 +2425,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_EnableBlendSpace
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_EnableBlendSpace()
 	{
@@ -2118,9 +2444,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.AnimNotify_DisableBlendSpace
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::AnimNotify_DisableBlendSpace()
 	{
@@ -2137,9 +2463,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.LeapLoopEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -2159,9 +2485,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.UpdateLeapInfo
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     ActorLocation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Destination                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2185,28 +2511,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void UAnimatronic_ABP_MASTER_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6");
-		
-		UAnimatronic_ABP_MASTER_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Animatronic_ABP_MASTER_AnimGraphNode_TransitionResult_7EA97177407CA354409B3B84AA5501F6_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.FreddyEndIdle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -2226,9 +2533,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutSceneSpineBlender
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class ULevelSequencePlayer*                        Sequence                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2250,9 +2557,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.UpdateAlpha
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::UpdateAlpha()
 	{
@@ -2269,9 +2576,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutsceneGrateEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ULevelSequencePlayer*                        SequencePlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -2291,9 +2598,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.GrateSequenceStop
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::GrateSequenceStop()
 	{
@@ -2310,9 +2617,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.CutsceneSpineStop
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UAnimatronic_ABP_MASTER_C::CutsceneSpineStop()
 	{
@@ -2329,9 +2636,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Animatronic_ABP_MASTER.Animatronic_ABP_MASTER_C.ExecuteUbergraph_Animatronic_ABP_MASTER
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -2351,8 +2658,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimatronic_ABP_MASTER_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimatronic_ABP_MASTER_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimatronic_ABP_MASTER_C::StaticClass()

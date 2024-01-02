@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,23 +15,12 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_9
-	 */
-	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_9_Params
-	{
-	public:
-		class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C*       PlanarReflection2;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
 	 * Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_8
 	 */
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_8_Params
 	{
 	public:
-		class ASequencerVO_C*                                      SequencerVO;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ABP_PlanarReflectionsShowOnlyFreddyGregory_C*        PlanarReflection2;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -41,7 +30,6 @@ namespace CG
 	{
 	public:
 		class ASequencerVO_C*                                      SequencerVO;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -51,7 +39,6 @@ namespace CG
 	{
 	public:
 		class ASequencerVO_C*                                      SequencerVO;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -60,8 +47,7 @@ namespace CG
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_5_Params
 	{
 	public:
-		class ACineCameraActor*                                    CineCameraActor;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ASequencerVO_C*                                      SequencerVO;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -71,7 +57,6 @@ namespace CG
 	{
 	public:
 		class ACineCameraActor*                                    CineCameraActor;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -80,8 +65,7 @@ namespace CG
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3_Params
 	{
 	public:
-		class AFreddyEnterExitPawn_C*                              FreddyEnterExitPawn;                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ACineCameraActor*                                    CineCameraActor;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -90,8 +74,7 @@ namespace CG
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2_Params
 	{
 	public:
-		class ACinematic_Actor_Freddy_C*                           Cinematic_Actor_Freddy;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class AFreddyEnterExitPawn_C*                              FreddyEnterExitPawn;                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -100,18 +83,7 @@ namespace CG
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1_Params
 	{
 	public:
-		class ACinematic_TargetActor_C*                            Cinematic_TargetActor;                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function MedScan_Sequence.SequenceDirector_C.Cinematic_TargetActor_Event_1
-	 */
-	struct USequenceDirector_C_Cinematic_TargetActor_Event_1_Params
-	{
-	public:
-		class ACinematic_TargetActor_C*                            Cinematic_TargetActor;                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ACinematic_Actor_Freddy_C*                           Cinematic_Actor_Freddy;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -121,7 +93,6 @@ namespace CG
 	{
 	public:
 		class ACinematic_Actor_Freddy_C*                           Cinematic_Actor_Freddy;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -131,7 +102,6 @@ namespace CG
 	{
 	public:
 		class AFreddyEnterExitPawn_C*                              FreddyEnterExitPawn;                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -141,7 +111,6 @@ namespace CG
 	{
 	public:
 		class ACineCameraActor*                                    CineCameraActor;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -151,7 +120,6 @@ namespace CG
 	{
 	public:
 		class ACineCameraActor*                                    CineCameraActor;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -164,7 +132,6 @@ namespace CG
 		class UAkAudioEvent*                                       VO;                                                      // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AActor*                                              Actor;                                                   // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Freddy;                                                  // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -177,7 +144,6 @@ namespace CG
 		class UAkAudioEvent*                                       VO;                                                      // 0x0008(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AActor*                                              Actor;                                                   // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Freddy;                                                  // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -186,8 +152,7 @@ namespace CG
 	struct USequenceDirector_C_PlanarReflection2_Event_1_Params
 	{
 	public:
-		class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C*       PlanarReflection2;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ABP_PlanarReflectionsShowOnlyFreddyGregory_C*        PlanarReflection2;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -200,8 +165,8 @@ namespace CG
 		class UAkAudioEvent*                                       VO;                                                      // 0x0008(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AActor*                                              Actor;                                                   // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Freddy;                                                  // 0x0018(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_QIZH[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      MaxRadiusPercent;                                        // 0x001C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -211,7 +176,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_XMGA[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

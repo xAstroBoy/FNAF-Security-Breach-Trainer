@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,9 +20,9 @@ namespace CG
 	struct AItemModelTumbler_C_RotateItem_Params
 	{
 	public:
-		struct FRotator                                            Rotation_Delta;                                          // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		bool                                                       Local_Space;                                             // 0x000C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		struct FRotator                                            RotationDelta;                                           // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       LocalSpace;                                              // 0x000C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_CQ1K[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -31,16 +31,14 @@ namespace CG
 	struct AItemModelTumbler_C_SetIsVisible_Params
 	{
 	public:
-		bool                                                       Is_Visible;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       IsVisible;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.FocusView
 	 */
 	struct AItemModelTumbler_C_FocusView_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.SetMesh
@@ -48,8 +46,7 @@ namespace CG
 	struct AItemModelTumbler_C_SetMesh_Params
 	{
 	public:
-		class UStaticMesh*                                         New_Model;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UStaticMesh*                                         NewModel;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -59,7 +56,6 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -69,64 +65,55 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InuputNext
 	 */
 	struct AItemModelTumbler_C_InuputNext_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputPrevious
 	 */
 	struct AItemModelTumbler_C_InputPrevious_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputClose
 	 */
 	struct AItemModelTumbler_C_InputClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputBack
 	 */
 	struct AItemModelTumbler_C_InputBack_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputAccept
 	 */
 	struct AItemModelTumbler_C_InputAccept_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputPrimary
 	 */
 	struct AItemModelTumbler_C_InputPrimary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputSecondary
 	 */
 	struct AItemModelTumbler_C_InputSecondary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputTertiary
 	 */
 	struct AItemModelTumbler_C_InputTertiary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputMoveAxis
@@ -135,7 +122,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -145,7 +131,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -155,15 +140,13 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputOpen
 	 */
 	struct AItemModelTumbler_C_InputOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InputZoom
@@ -172,7 +155,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -182,7 +164,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Increment;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -192,22 +173,19 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Direction;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.Reset
 	 */
 	struct AItemModelTumbler_C_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.ReceiveBeginPlay
 	 */
 	struct AItemModelTumbler_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ItemModelTumbler.ItemModelTumbler_C.InpAxisEvt_TurnRate_K2Node_InputAxisEvent_14
@@ -216,7 +194,6 @@ namespace CG
 	{
 	public:
 		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -226,7 +203,6 @@ namespace CG
 	{
 	public:
 		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -236,7 +212,6 @@ namespace CG
 	{
 	public:
 		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -246,7 +221,6 @@ namespace CG
 	{
 	public:
 		float                                                      AxisValue;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -256,7 +230,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_0873[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

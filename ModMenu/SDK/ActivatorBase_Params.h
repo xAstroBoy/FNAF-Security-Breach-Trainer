@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanDeactivate;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -32,8 +31,7 @@ namespace CG
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       CanActivate;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		fnaf9_EConditionFailReason                                 CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EConditionFailReason                                       CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -43,8 +41,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		ActivatableState_EActivatableState                         CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EActivatableState                                          CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -54,7 +51,7 @@ namespace CG
 	{
 	public:
 		bool                                                       Activated;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_DT25[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -62,6 +59,8 @@ namespace CG
 	 */
 	struct AActivatorBase_C_RemoveActivatable_Params
 	{
+	public:
+		unsigned char                                              UnknownData_F3BV[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -69,6 +68,8 @@ namespace CG
 	 */
 	struct AActivatorBase_C_AddActivatable_Params
 	{
+	public:
+		unsigned char                                              UnknownData_GL9T[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -78,7 +79,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -88,7 +88,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -98,15 +97,13 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.PostSaveGame
 	 */
 	struct AActivatorBase_C_PostSaveGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.OnActivatorDone
@@ -115,15 +112,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.ReceiveBeginPlay
 	 */
 	struct AActivatorBase_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.ActivateObject
@@ -132,43 +127,37 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.On All Active
 	 */
-	struct AActivatorBase_C_On_All_Active_Params
-	{
-	};
+	struct AActivatorBase_C_OnAllActive_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.Activate Objects
 	 */
-	struct AActivatorBase_C_Activate_Objects_Params
-	{
-	};
+	struct AActivatorBase_C_ActivateObjects_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.On Activate Can't Use
 	 */
-	struct AActivatorBase_C_On_Activate_Cant_Use_Params
-	{
-	};
+	struct AActivatorBase_C_OnActivateCantUse_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.SetActivated
 	 */
 	struct AActivatorBase_C_SetActivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.SetDeactivated
 	 */
 	struct AActivatorBase_C_SetDeactivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.DeactivateObject
@@ -177,29 +166,25 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Deactivator;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.Deactivate Objects
 	 */
-	struct AActivatorBase_C_Deactivate_Objects_Params
-	{
-	};
+	struct AActivatorBase_C_DeactivateObjects_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.On All Deactivated
 	 */
-	struct AActivatorBase_C_On_All_Deactivated_Params
-	{
-	};
+	struct AActivatorBase_C_OnAllDeactivated_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.PostGameLoad
 	 */
 	struct AActivatorBase_C_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.OnCheckpointLoad
@@ -208,8 +193,19 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function ActivatorBase.ActivatorBase_C.Deactivate Children Only
+	 */
+	struct AActivatorBase_C_DeactivateChildrenOnly_Params
+	{	};
+
+	/**
+	 * Function ActivatorBase.ActivatorBase_C.Activate Children Only
+	 */
+	struct AActivatorBase_C_ActivateChildrenOnly_Params
+	{	};
 
 	/**
 	 * Function ActivatorBase.ActivatorBase_C.ExecuteUbergraph_ActivatorBase
@@ -218,7 +214,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

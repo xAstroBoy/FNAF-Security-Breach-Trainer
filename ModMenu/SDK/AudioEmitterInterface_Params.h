@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,22 +21,19 @@ namespace CG
 	{
 	public:
 		bool                                                       InRange;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AudioEmitterInterface.AudioEmitterInterface_C.PlayEmitter
 	 */
 	struct UAudioEmitterInterface_C_PlayEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AudioEmitterInterface.AudioEmitterInterface_C.StopEmitter
 	 */
 	struct UAudioEmitterInterface_C_StopEmitter_Params
-	{
-	};
+	{	};
 
 }
 

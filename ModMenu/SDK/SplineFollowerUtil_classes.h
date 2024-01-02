@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class USplineFollowerUtil_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		float STATIC_SplineDirectionToMult(SplineFollowDirection_ESplineFollowDirection Direction, class UObject* __WorldContext);
+		float SplineDirectionToMult(ESplineFollowDirection Direction, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnPermissionsGrantedDynamicDelegate;                     // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NG72[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_00HC[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -35,8 +35,8 @@ namespace CG
 	class UAndroidPermissionFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_CheckPermission(const class FString& permission);
-		class UAndroidPermissionCallbackProxy* STATIC_AcquirePermissions(TArray<class FString> Permissions);
+		bool CheckPermission(const class FString& permission);
+		class UAndroidPermissionCallbackProxy* AcquirePermissions(TArray<class FString> Permissions);
 		static UClass* StaticClass();
 	};
 

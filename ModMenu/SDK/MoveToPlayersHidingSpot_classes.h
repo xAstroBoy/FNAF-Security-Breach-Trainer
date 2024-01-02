@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,7 +29,7 @@ namespace CG
 
 	public:
 		void FindClosestHideLocation(class UObject* HideActor, class APawn* Pawn, bool* FoundLocation, struct FVector* Location);
-		void OnMoveFinished_0E1FC4584AE08718647C04A951D545C1(AIModule_EPathFollowingResult Result, class AAIController* AIController);
+		void OnMoveFinished_0E1FC4584AE08718647C04A951D545C1(EPathFollowingResult Result, class AAIController* AIController);
 		void OnRequestFailed_0E1FC4584AE08718647C04A951D545C1();
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);

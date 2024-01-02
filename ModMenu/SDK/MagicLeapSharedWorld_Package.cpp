@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	bool AMagicLeapSharedWorldGameMode::SendSharedWorldDataToClients()
 	{
@@ -25,7 +25,6 @@ namespace CG
 		AMagicLeapSharedWorldGameMode_SendSharedWorldDataToClients_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne
-	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldGameMode::SelectChosenOne()
 	{
@@ -47,16 +46,15 @@ namespace CG
 		AMagicLeapSharedWorldGameMode_SelectChosenOne_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldGameMode::MagicLeapOnNewLocalDataFromClients__DelegateSignature()
 	{
@@ -73,9 +71,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BE40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData
-	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapSharedWorldSharedData             NewSharedWorldData                                         (Parm, OutParm, NativeAccessSpecifierPublic)
 	 */
@@ -88,7 +86,6 @@ namespace CG
 		AMagicLeapSharedWorldGameMode_DetermineSharedWorldData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -98,8 +95,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AMagicLeapSharedWorldGameMode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AMagicLeapSharedWorldGameMode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AMagicLeapSharedWorldGameMode::StaticClass()
@@ -112,9 +109,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData
-	 * 		Flags  -> (Final, Native, Private)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldGameState::OnReplicate_SharedWorldData()
 	{
@@ -125,16 +122,15 @@ namespace CG
 		AMagicLeapSharedWorldGameState_OnReplicate_SharedWorldData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BF20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms
-	 * 		Flags  -> (Final, Native, Private)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldGameState::OnReplicate_AlignmentTransforms()
 	{
@@ -145,16 +141,15 @@ namespace CG
 		AMagicLeapSharedWorldGameState_OnReplicate_AlignmentTransforms_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldGameState::MagicLeapSharedWorldEvent__DelegateSignature()
 	{
@@ -171,9 +166,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BCF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform
-	 * 		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform AMagicLeapSharedWorldGameState::CalculateXRCameraRootTransform()
 	{
@@ -184,7 +179,6 @@ namespace CG
 		AMagicLeapSharedWorldGameState_CalculateXRCameraRootTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -193,8 +187,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AMagicLeapSharedWorldGameState.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AMagicLeapSharedWorldGameState.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AMagicLeapSharedWorldGameState::StaticClass()
@@ -207,9 +201,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5C050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ServerSetLocalWorldData
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapSharedWorldLocalData              LocalWorldReplicationData                                  (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -223,16 +217,15 @@ namespace CG
 		params.LocalWorldReplicationData = LocalWorldReplicationData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BFB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ServerSetAlignmentTransforms
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapSharedWorldAlignmentTransforms    InAlignmentTransforms                                      (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -246,16 +239,15 @@ namespace CG
 		params.InAlignmentTransforms = InAlignmentTransforms;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BEF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.IsChosenOne
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool AMagicLeapSharedWorldPlayerController::IsChosenOne()
 	{
@@ -266,7 +258,6 @@ namespace CG
 		AMagicLeapSharedWorldPlayerController_IsChosenOne_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -275,9 +266,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BDB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ClientSetChosenOne
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bChosenOne                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -291,16 +282,15 @@ namespace CG
 		params.bChosenOne = bChosenOne;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BD90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.ClientMarkReadyForSendingLocalData
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
+	 * 		Flags  -> ()
 	 */
 	void AMagicLeapSharedWorldPlayerController::ClientMarkReadyForSendingLocalData()
 	{
@@ -311,16 +301,15 @@ namespace CG
 		AMagicLeapSharedWorldPlayerController_ClientMarkReadyForSendingLocalData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A5BD60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController.CanSendLocalDataToServer
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool AMagicLeapSharedWorldPlayerController::CanSendLocalDataToServer()
 	{
@@ -331,7 +320,6 @@ namespace CG
 		AMagicLeapSharedWorldPlayerController_CanSendLocalDataToServer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -340,8 +328,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AMagicLeapSharedWorldPlayerController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AMagicLeapSharedWorldPlayerController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AMagicLeapSharedWorldPlayerController::StaticClass()

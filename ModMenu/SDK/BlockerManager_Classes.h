@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 		bool                                                       KeepHiddenOnState;                                       // 0x0261(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void Hide_Actors(bool Unhide);
+		void HideActors(bool Unhide);
 		void DestroyRemainingActors();
 		void ReceiveTick(float DeltaSeconds);
 		void DestroyManagedActors();

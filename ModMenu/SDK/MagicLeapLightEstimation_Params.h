@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -32,7 +31,6 @@ namespace CG
 	public:
 		struct FMagicLeapLightEstimationColorTemperatureState      ColorTemperatureState;                                   // 0x0000(0x0020)  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -43,15 +41,13 @@ namespace CG
 	public:
 		struct FMagicLeapLightEstimationAmbientGlobalState         GlobalAmbientState;                                      // 0x0000(0x0018)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.DestroyTracker
 	 */
 	struct UMagicLeapLightEstimationFunctionLibrary_DestroyTracker_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.CreateTracker
@@ -60,7 +56,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

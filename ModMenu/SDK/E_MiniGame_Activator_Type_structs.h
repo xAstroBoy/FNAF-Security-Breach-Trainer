@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,17 +17,17 @@ namespace CG
 	/**
 	 * UserDefinedEnum E_MiniGame_Activator_Type.E_MiniGame_Activator_Type
 	 */
-	enum class E_MiniGame_Activator_Type_E_MiniGame_Activator_Type : uint8_t
+	enum class E_MiniGame_Activator_Type : uint8_t
 	{
-		E_MiniGame_Activator_Type__NewEnumerator0           = 0,
-		E_MiniGame_Activator_Type__NewEnumerator1           = 1,
-		E_MiniGame_Activator_Type__NewEnumerator2           = 2,
-		E_MiniGame_Activator_Type__NewEnumerator3           = 3,
-		E_MiniGame_Activator_Type__NewEnumerator4           = 4,
-		E_MiniGame_Activator_Type__NewEnumerator5           = 5,
-		E_MiniGame_Activator_Type__NewEnumerator6           = 6,
-		E_MiniGame_Activator_Type__NewEnumerator7           = 7,
-		E_MiniGame_Activator_Type__E_MiniGame_Activator_MAX = 8
+		NewEnumerator0           = 0,
+		NewEnumerator1           = 1,
+		NewEnumerator2           = 2,
+		NewEnumerator3           = 3,
+		NewEnumerator4           = 4,
+		NewEnumerator5           = 5,
+		NewEnumerator6           = 6,
+		NewEnumerator7           = 7,
+		E_MiniGame_Activator_MAX = 8
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,1144 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function fnaf9.AIDLC_RabbitComponent.UpdateDLC_RabbitValues
+	 */
+	struct UAIDLC_RabbitComponent_UpdateDLC_RabbitValues_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.UnregisterAnimation
+	 */
+	struct UAIDLC_RabbitSystem_UnregisterAnimation_Params
+	{
+	public:
+		class AActor*                                              InterfaceImplementor;                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.UnpauseTimers
+	 */
+	struct UAIDLC_RabbitSystem_UnpauseTimers_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.StopPsuedoAlert
+	 */
+	struct UAIDLC_RabbitSystem_StopPsuedoAlert_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.StartPsuedoAlert
+	 */
+	struct UAIDLC_RabbitSystem_StartPsuedoAlert_Params
+	{
+	public:
+		struct FVector                                             TrackLocation;                                           // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetupQueryData
+	 */
+	struct UAIDLC_RabbitSystem_SetupQueryData_Params
+	{
+	public:
+		class UEnvQuery*                                           InFindSpawnPointEQSA;                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class UEnvQuery*                                           InFindSpawnPointEQSB;                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class UEnvQuery*                                           InFindSpawnPointEQSA_Close;                              // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class UEnvQuery*                                           InFindSpawnPointEQSB_Close;                              // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class UDataTable*                                          InDLC_RabbitDataTable;                                   // 0x0020(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetTypesToAlert
+	 */
+	struct UAIDLC_RabbitSystem_SetTypesToAlert_Params
+	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        TypesToAlertIn;                                          // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetTrailSpeed
+	 */
+	struct UAIDLC_RabbitSystem_SetTrailSpeed_Params
+	{
+	public:
+		float                                                      NewTrailSpeed;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetStareTime
+	 */
+	struct UAIDLC_RabbitSystem_SetStareTime_Params
+	{
+	public:
+		float                                                      NewStareTime;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnTime
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnTime_Params
+	{
+	public:
+		float                                                      NewSpawnTime;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnRadius_Params
+	{
+	public:
+		float                                                      NewSpawnRadius;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnInViewChance
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnInViewChance_Params
+	{
+	public:
+		float                                                      NewSpawnInViewChance;                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnCloseMaxDistance
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnCloseMaxDistance_Params
+	{
+	public:
+		float                                                      NewSpawnCloseMaxDistance;                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnCloseChance
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnCloseChance_Params
+	{
+	public:
+		float                                                      NewSpawnCloseChance;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSpawnCloseAlertDelay
+	 */
+	struct UAIDLC_RabbitSystem_SetSpawnCloseAlertDelay_Params
+	{
+	public:
+		float                                                      NewSpawnCloseAlertDelay;                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSoftJumpscareTime
+	 */
+	struct UAIDLC_RabbitSystem_SetSoftJumpscareTime_Params
+	{
+	public:
+		float                                                      NewSoftJumpscareTime;                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetSoftJumpscareChance
+	 */
+	struct UAIDLC_RabbitSystem_SetSoftJumpscareChance_Params
+	{
+	public:
+		float                                                      NewSoftJumpscareChance;                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetPauseTime
+	 */
+	struct UAIDLC_RabbitSystem_SetPauseTime_Params
+	{
+	public:
+		float                                                      NewPauseTime;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetPauseRate
+	 */
+	struct UAIDLC_RabbitSystem_SetPauseRate_Params
+	{
+	public:
+		float                                                      NewPauseRate;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetOuterRange
+	 */
+	struct UAIDLC_RabbitSystem_SetOuterRange_Params
+	{
+	public:
+		float                                                      NewOuterRange;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetNumberToAlert
+	 */
+	struct UAIDLC_RabbitSystem_SetNumberToAlert_Params
+	{
+	public:
+		int32_t                                                    NumberToAlertIn;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetMoveLength
+	 */
+	struct UAIDLC_RabbitSystem_SetMoveLength_Params
+	{
+	public:
+		float                                                      NewMoveLength;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetInnerRange
+	 */
+	struct UAIDLC_RabbitSystem_SetInnerRange_Params
+	{
+	public:
+		float                                                      NewInnerRange;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetInhibitorRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetInhibitorRadius_Params
+	{
+	public:
+		float                                                      NewInhibitorRadius;                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetHasBeenAgitatedByWalkieTalkie
+	 */
+	struct UAIDLC_RabbitSystem_SetHasBeenAgitatedByWalkieTalkie_Params
+	{
+	public:
+		bool                                                       NewHasBeenAgitated;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetDLC_RabbitData
+	 */
+	struct UAIDLC_RabbitSystem_SetDLC_RabbitData_Params
+	{
+	public:
+		struct FDLC_RabbitSaveData                                 Data;                                                    // 0x0000(0x005C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetDespawnTime
+	 */
+	struct UAIDLC_RabbitSystem_SetDespawnTime_Params
+	{
+	public:
+		float                                                      NewDespawnTime;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetCooldownPhaseTwo
+	 */
+	struct UAIDLC_RabbitSystem_SetCooldownPhaseTwo_Params
+	{
+	public:
+		float                                                      NewCooldownPhaseTwo;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetCooldownPhaseOne
+	 */
+	struct UAIDLC_RabbitSystem_SetCooldownPhaseOne_Params
+	{
+	public:
+		float                                                      NewCooldownPhaseOne;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARTrailSpeed
+	 */
+	struct UAIDLC_RabbitSystem_SetARTrailSpeed_Params
+	{
+	public:
+		float                                                      NewTrailSpeed;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARStareTime
+	 */
+	struct UAIDLC_RabbitSystem_SetARStareTime_Params
+	{
+	public:
+		float                                                      NewARStareTime;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnTime
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnTime_Params
+	{
+	public:
+		float                                                      NewARSpawnTime;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnRadius_Params
+	{
+	public:
+		float                                                      NewARSpawnRadius;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnInViewChance
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnInViewChance_Params
+	{
+	public:
+		float                                                      NewARSpawnInViewChance;                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnCloseMaxDistance
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnCloseMaxDistance_Params
+	{
+	public:
+		float                                                      NewARSpawnCloseMaxDistance;                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnCloseChance
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnCloseChance_Params
+	{
+	public:
+		float                                                      NewARSpawnCloseChance;                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSpawnCloseAlertDelay
+	 */
+	struct UAIDLC_RabbitSystem_SetARSpawnCloseAlertDelay_Params
+	{
+	public:
+		float                                                      NewARSpawnCloseAlertDelay;                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSoftJumpscareTime
+	 */
+	struct UAIDLC_RabbitSystem_SetARSoftJumpscareTime_Params
+	{
+	public:
+		float                                                      NewARSoftJumpscareTime;                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARSoftJumpscareChance
+	 */
+	struct UAIDLC_RabbitSystem_SetARSoftJumpscareChance_Params
+	{
+	public:
+		float                                                      NewARSoftJumpscareChance;                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARPauseTime
+	 */
+	struct UAIDLC_RabbitSystem_SetARPauseTime_Params
+	{
+	public:
+		float                                                      NewARPauseTime;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARPauseRate
+	 */
+	struct UAIDLC_RabbitSystem_SetARPauseRate_Params
+	{
+	public:
+		float                                                      NewARPauseRate;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetAROuterRange
+	 */
+	struct UAIDLC_RabbitSystem_SetAROuterRange_Params
+	{
+	public:
+		float                                                      NewAROuterRange;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARMoveLength
+	 */
+	struct UAIDLC_RabbitSystem_SetARMoveLength_Params
+	{
+	public:
+		float                                                      NewARMoveLength;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARInnerRange
+	 */
+	struct UAIDLC_RabbitSystem_SetARInnerRange_Params
+	{
+	public:
+		float                                                      NewARInnerRange;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARInhibitorRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetARInhibitorRadius_Params
+	{
+	public:
+		float                                                      NewARInhibitorRadius;                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARHasBeenAgitatedByWalkieTalkie
+	 */
+	struct UAIDLC_RabbitSystem_SetARHasBeenAgitatedByWalkieTalkie_Params
+	{
+	public:
+		bool                                                       NewARHasBeenAgitated;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARDLC_RabbitData
+	 */
+	struct UAIDLC_RabbitSystem_SetARDLC_RabbitData_Params
+	{
+	public:
+		struct FDLC_RabbitSaveData                                 Data;                                                    // 0x0000(0x005C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARDespawnTime
+	 */
+	struct UAIDLC_RabbitSystem_SetARDespawnTime_Params
+	{
+	public:
+		float                                                      NewARDespawnTime;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARCooldownPhaseTwo
+	 */
+	struct UAIDLC_RabbitSystem_SetARCooldownPhaseTwo_Params
+	{
+	public:
+		float                                                      NewARCooldownPhaseTwo;                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARCooldownPhaseOne
+	 */
+	struct UAIDLC_RabbitSystem_SetARCooldownPhaseOne_Params
+	{
+	public:
+		float                                                      NewARCooldownPhaseOne;                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARAnimatronicSpawnDistance
+	 */
+	struct UAIDLC_RabbitSystem_SetARAnimatronicSpawnDistance_Params
+	{
+	public:
+		float                                                      NewARAnimatronicSpawnDistance;                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARAnimatronicDespawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetARAnimatronicDespawnRadius_Params
+	{
+	public:
+		float                                                      NewARAnimatronicDespawnRadius;                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetARAlertPhaseLength
+	 */
+	struct UAIDLC_RabbitSystem_SetARAlertPhaseLength_Params
+	{
+	public:
+		float                                                      NewARAlertPhaseLength;                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetAnimatronicSpawnDistance
+	 */
+	struct UAIDLC_RabbitSystem_SetAnimatronicSpawnDistance_Params
+	{
+	public:
+		float                                                      NewAnimatronicSpawnDistance;                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetAnimatronicDespawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_SetAnimatronicDespawnRadius_Params
+	{
+	public:
+		float                                                      NewAnimatronicDespawnRadius;                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.SetAlertPhaseLength
+	 */
+	struct UAIDLC_RabbitSystem_SetAlertPhaseLength_Params
+	{
+	public:
+		float                                                      NewAlertPhaseLength;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.RespawnRabbitAI
+	 */
+	struct UAIDLC_RabbitSystem_RespawnRabbitAI_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.RespawnAlertAI
+	 */
+	struct UAIDLC_RabbitSystem_RespawnAlertAI_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.ResetARDLC_RabbitValues
+	 */
+	struct UAIDLC_RabbitSystem_ResetARDLC_RabbitValues_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.RegisterDLC_RabbitActor
+	 */
+	struct UAIDLC_RabbitSystem_RegisterDLC_RabbitActor_Params
+	{
+	public:
+		class AActor*                                              DLC_RabbitIn;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.RegisterAnimation
+	 */
+	struct UAIDLC_RabbitSystem_RegisterAnimation_Params
+	{
+	public:
+		struct FDLC_RabbitEnemySequenceDataStruct                  DataIn;                                                  // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.PauseTimers
+	 */
+	struct UAIDLC_RabbitSystem_PauseTimers_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.OnSwitch
+	 */
+	struct UAIDLC_RabbitSystem_OnSwitch_Params
+	{
+	public:
+		bool                                                       NormalWorld;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.OnSoftJumpscareFinished
+	 */
+	struct UAIDLC_RabbitSystem_OnSoftJumpscareFinished_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.OnNormalWorldEntry
+	 */
+	struct UAIDLC_RabbitSystem_OnNormalWorldEntry_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.OnARWorldEntry
+	 */
+	struct UAIDLC_RabbitSystem_OnARWorldEntry_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetUseAlertDelay
+	 */
+	struct UAIDLC_RabbitSystem_GetUseAlertDelay_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetTypesToAlert
+	 */
+	struct UAIDLC_RabbitSystem_GetTypesToAlert_Params
+	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetTrailSpeed
+	 */
+	struct UAIDLC_RabbitSystem_GetTrailSpeed_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetStareTime
+	 */
+	struct UAIDLC_RabbitSystem_GetStareTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnTime
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnInViewChance
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnInViewChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnCloseMaxDistance
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnCloseMaxDistance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnCloseChance
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnCloseChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSpawnCloseAlertDelay
+	 */
+	struct UAIDLC_RabbitSystem_GetSpawnCloseAlertDelay_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSoftJumpscareTime
+	 */
+	struct UAIDLC_RabbitSystem_GetSoftJumpscareTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetSoftJumpscareChance
+	 */
+	struct UAIDLC_RabbitSystem_GetSoftJumpscareChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetShouldSpawnBehind
+	 */
+	struct UAIDLC_RabbitSystem_GetShouldSpawnBehind_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetRemainingSpawnTimePercent
+	 */
+	struct UAIDLC_RabbitSystem_GetRemainingSpawnTimePercent_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetRemainingSpawnTime
+	 */
+	struct UAIDLC_RabbitSystem_GetRemainingSpawnTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetRemainingAlertTimePercent
+	 */
+	struct UAIDLC_RabbitSystem_GetRemainingAlertTimePercent_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetRemainingAlertTime
+	 */
+	struct UAIDLC_RabbitSystem_GetRemainingAlertTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetProximityPercent
+	 */
+	struct UAIDLC_RabbitSystem_GetProximityPercent_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetPauseTime
+	 */
+	struct UAIDLC_RabbitSystem_GetPauseTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetPauseRate
+	 */
+	struct UAIDLC_RabbitSystem_GetPauseRate_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetOuterRange
+	 */
+	struct UAIDLC_RabbitSystem_GetOuterRange_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetNumberToAlert
+	 */
+	struct UAIDLC_RabbitSystem_GetNumberToAlert_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetMoveLength
+	 */
+	struct UAIDLC_RabbitSystem_GetMoveLength_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetIsAlerted
+	 */
+	struct UAIDLC_RabbitSystem_GetIsAlerted_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetInnerRange
+	 */
+	struct UAIDLC_RabbitSystem_GetInnerRange_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetInhibitorRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetInhibitorRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetHasBeenAgitatedByWalkieTalkie
+	 */
+	struct UAIDLC_RabbitSystem_GetHasBeenAgitatedByWalkieTalkie_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetDLC_RabbitData
+	 */
+	struct UAIDLC_RabbitSystem_GetDLC_RabbitData_Params
+	{
+	public:
+		struct FDLC_RabbitSaveData                                 ReturnValue;                                             // 0x0000(0x005C)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetDespawnTime
+	 */
+	struct UAIDLC_RabbitSystem_GetDespawnTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetCooldownPhaseTwo
+	 */
+	struct UAIDLC_RabbitSystem_GetCooldownPhaseTwo_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetCooldownPhaseOne
+	 */
+	struct UAIDLC_RabbitSystem_GetCooldownPhaseOne_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARTrailSpeed
+	 */
+	struct UAIDLC_RabbitSystem_GetARTrailSpeed_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARStareTime
+	 */
+	struct UAIDLC_RabbitSystem_GetARStareTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnTime
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnInViewChance
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnInViewChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnCloseMaxDistance
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnCloseMaxDistance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnCloseChance
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnCloseChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSpawnCloseAlertDelay
+	 */
+	struct UAIDLC_RabbitSystem_GetARSpawnCloseAlertDelay_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSoftJumpscareTime
+	 */
+	struct UAIDLC_RabbitSystem_GetARSoftJumpscareTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARSoftJumpscareChance
+	 */
+	struct UAIDLC_RabbitSystem_GetARSoftJumpscareChance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARPauseTime
+	 */
+	struct UAIDLC_RabbitSystem_GetARPauseTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARPauseRate
+	 */
+	struct UAIDLC_RabbitSystem_GetARPauseRate_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetAROuterRange
+	 */
+	struct UAIDLC_RabbitSystem_GetAROuterRange_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARMoveLength
+	 */
+	struct UAIDLC_RabbitSystem_GetARMoveLength_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARInnerRange
+	 */
+	struct UAIDLC_RabbitSystem_GetARInnerRange_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARInhibitorRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetARInhibitorRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARHasBeenAgitatedByWalkieTalkie
+	 */
+	struct UAIDLC_RabbitSystem_GetARHasBeenAgitatedByWalkieTalkie_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARDLC_RabbitData
+	 */
+	struct UAIDLC_RabbitSystem_GetARDLC_RabbitData_Params
+	{
+	public:
+		struct FDLC_RabbitSaveData                                 ReturnValue;                                             // 0x0000(0x005C)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARDespawnTime
+	 */
+	struct UAIDLC_RabbitSystem_GetARDespawnTime_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARCooldownPhaseTwo
+	 */
+	struct UAIDLC_RabbitSystem_GetARCooldownPhaseTwo_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARCooldownPhaseOne
+	 */
+	struct UAIDLC_RabbitSystem_GetARCooldownPhaseOne_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARAnimatronicSpawnDistance
+	 */
+	struct UAIDLC_RabbitSystem_GetARAnimatronicSpawnDistance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARAnimatronicDespawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetARAnimatronicDespawnRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetARAlertPhaseLength
+	 */
+	struct UAIDLC_RabbitSystem_GetARAlertPhaseLength_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetAnimatronicSpawnDistance
+	 */
+	struct UAIDLC_RabbitSystem_GetAnimatronicSpawnDistance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetAnimatronicDespawnRadius
+	 */
+	struct UAIDLC_RabbitSystem_GetAnimatronicDespawnRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetAlertPhaseLength
+	 */
+	struct UAIDLC_RabbitSystem_GetAlertPhaseLength_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.GetAlertedActors
+	 */
+	struct UAIDLC_RabbitSystem_GetAlertedActors_Params
+	{
+	public:
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.DoesDLC_RabbitExist
+	 */
+	struct UAIDLC_RabbitSystem_DoesDLC_RabbitExist_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.ConstructAlertedActorList
+	 */
+	struct UAIDLC_RabbitSystem_ConstructAlertedActorList_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.BanishRabbit
+	 */
+	struct UAIDLC_RabbitSystem_BanishRabbit_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.AlertFinished
+	 */
+	struct UAIDLC_RabbitSystem_AlertFinished_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIDLC_RabbitSystem.Alert
+	 */
+	struct UAIDLC_RabbitSystem_Alert_Params
+	{	};
+
+	/**
 	 * Function fnaf9.AIHiderInterface.ExitHideMode
 	 */
 	struct UAIHiderInterface_ExitHideMode_Params
 	{
 	public:
 		class AActor*                                              HideActor;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -31,15 +1162,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              HideActor;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.UnregisterSeekerPath
 	 */
 	struct UAIManagementSystem_UnregisterSeekerPath_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.UnRegisterAI
@@ -48,29 +1177,49 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.UnpauseManager
 	 */
 	struct UAIManagementSystem_UnpauseManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.StoreEndoStates
 	 */
 	struct UAIManagementSystem_StoreEndoStates_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.StoreAnimatronicSpawnWithSubType
+	 */
+	struct UAIManagementSystem_StoreAnimatronicSpawnWithSubType_Params
 	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_HS4O[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             AISubType;                                               // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.StoreAnimatronicSpawn
+	 */
+	struct UAIManagementSystem_StoreAnimatronicSpawn_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_C1IQ[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bIsShattered;                                            // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.StartManager
 	 */
 	struct UAIManagementSystem_StartManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.SpawnVannyOrVanessa
@@ -80,8 +1229,47 @@ namespace CG
 	public:
 		bool                                                       bSpawnVanny;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutSpawned;                                             // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_07UW[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FLatentActionInfo                                   LatentActionInfo;                                        // 0x0008(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnSpecificAIOnPathWithSubType
+	 */
+	struct UAIManagementSystem_SpawnSpecificAIOnPathWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             AISubType;                                               // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_8XT4[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_VEL1[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class APawn*                                               ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnSpecificAIOnPath
+	 */
+	struct UAIManagementSystem_SpawnSpecificAIOnPath_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bForceShattered;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_NQF7[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_1IRD[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class APawn*                                               ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnSpecificAIAtSpawnPointWithSubType
+	 */
+	struct UAIManagementSystem_SpawnSpecificAIAtSpawnPointWithSubType_Params
+	{
+	public:
+		class AFNAFAISpawnPoint*                                   SpawnPoint;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -91,9 +1279,22 @@ namespace CG
 	{
 	public:
 		class AFNAFAISpawnPoint*                                   SpawnPoint;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ForceShattered;                                          // 0x0009(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAIWithTransformAndPathWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAIWithTransformAndPathWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_D0GZ[0xE];                                   // 0x0002(0x000E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		class FName                                                PathName;                                                // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class APawn*                                               ReturnValue;                                             // 0x0048(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -102,12 +1303,47 @@ namespace CG
 	struct UAIManagementSystem_SpawnAIWithTransformAndPath_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bForceShattered;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_8UEX[0xE];                                   // 0x0002(0x000E) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		class FName                                                PathName;                                                // 0x0040(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class APawn*                                               ReturnValue;                                             // 0x0048(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAITypeWithTransformWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAITypeWithTransformWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_7LO3[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0040(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ESpawnActorCollisionHandlingMethod                         CollisionOverrideMethod;                                 // 0x0041(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_5SKM[0x6];                                   // 0x0042(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class AActor*                                              Owner;                                                   // 0x0048(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class APawn*                                               ReturnValue;                                             // 0x0050(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAITypeWithTransformSafeWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAITypeWithTransformSafeWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_3RVJ[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0040(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       success;                                                 // 0x0041(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ESpawnActorCollisionHandlingMethod                         CollisionOverrideMethod;                                 // 0x0042(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_W1YC[0x5];                                   // 0x0043(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class AActor*                                              Owner;                                                   // 0x0048(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bForceRespawn;                                           // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_SY4P[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class APawn*                                               ReturnValue;                                             // 0x0058(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -116,15 +1352,17 @@ namespace CG
 	struct UAIManagementSystem_SpawnAITypeWithTransformSafe_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_I5M5[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ForceShattered;                                          // 0x0040(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       success;                                                 // 0x0041(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_ESpawnActorCollisionHandlingMethod                  CollisionOverrideMethod;                                 // 0x0042(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ESpawnActorCollisionHandlingMethod                         CollisionOverrideMethod;                                 // 0x0042(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_V7WI[0x5];                                   // 0x0043(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AActor*                                              Owner;                                                   // 0x0048(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bForceRespawn;                                           // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_WF80[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               ReturnValue;                                             // 0x0058(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -133,13 +1371,28 @@ namespace CG
 	struct UAIManagementSystem_SpawnAITypeWithTransform_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_XTG3[0xF];                                   // 0x0001(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FTransform                                          SpawnTransform;                                          // 0x0010(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		bool                                                       ForceShattered;                                          // 0x0040(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_ESpawnActorCollisionHandlingMethod                  CollisionOverrideMethod;                                 // 0x0041(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ESpawnActorCollisionHandlingMethod                         CollisionOverrideMethod;                                 // 0x0041(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_HRR4[0x6];                                   // 0x0042(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AActor*                                              Owner;                                                   // 0x0048(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class APawn*                                               ReturnValue;                                             // 0x0050(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAITypeAtLocationWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAITypeAtLocationWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_7M6P[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		struct FVector                                             SpawnLocation;                                           // 0x0004(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_SHZA[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class APawn*                                               ReturnValue;                                             // 0x0018(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -148,11 +1401,26 @@ namespace CG
 	struct UAIManagementSystem_SpawnAITypeAtLocation_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_MEOK[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             SpawnLocation;                                           // 0x0004(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ForceShattered;                                          // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_5ART[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               ReturnValue;                                             // 0x0018(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAIOnPathWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAIOnPathWithSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_89MK[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_V7U3[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class APawn*                                               ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -161,11 +1429,11 @@ namespace CG
 	struct UAIManagementSystem_SpawnAIOnPathNearLocation_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_1IP0[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             Location;                                                // 0x0004(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FName                                                PathName;                                                // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class APawn*                                               ReturnValue;                                             // 0x0018(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -174,25 +1442,34 @@ namespace CG
 	struct UAIManagementSystem_SpawnAIOnPath_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bForceShattered;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2ZE1[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_1AIU[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.SpawnAINearPlayer
 	 */
 	struct UAIManagementSystem_SpawnAINearPlayer_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.SpawnAIFar
 	 */
 	struct UAIManagementSystem_SpawnAIFar_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.SpawnAIAtSpawnPointWithSubType
+	 */
+	struct UAIManagementSystem_SpawnAIAtSpawnPointWithSubType_Params
 	{
+	public:
+		class AFNAFAISpawnPoint*                                   SpawnPoint;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -203,7 +1480,6 @@ namespace CG
 	public:
 		class AFNAFAISpawnPoint*                                   SpawnPoint;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bForceShattered;                                         // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -213,7 +1489,6 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -223,7 +1498,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -233,7 +1507,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -243,7 +1516,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -253,7 +1525,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -262,16 +1533,14 @@ namespace CG
 	struct UAIManagementSystem_SetExpectedAI_Params
 	{
 	public:
-		TArray<struct FAnimatronicExpectedData>                    AITypes;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FAnimatronicExpectedData>                    AITypes;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.SetAllAIExpected
 	 */
 	struct UAIManagementSystem_SetAllAIExpected_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.SetAITeleportEnabled
@@ -280,7 +1549,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -289,9 +1557,8 @@ namespace CG
 	struct UAIManagementSystem_SendVanessaAlert_Params
 	{
 	public:
-		TArray<fnaf9_EFNAFAISpawnType>                             TypesToAlert;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<EFNAFAISpawnType>                                   TypesToAlert;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 		int32_t                                                    NumberToAlert;                                           // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -301,38 +1568,34 @@ namespace CG
 	{
 	public:
 		struct FVector                                             AlertLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<fnaf9_EFNAFAISpawnType>                             TypesToAlert;                                            // 0x0010(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2JR9[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<struct FAnimatronicTypeData>                        TypesToAlert;                                            // 0x0010(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 		int32_t                                                    NumberToAlert;                                           // 0x0020(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RespawnEndos
 	 */
 	struct UAIManagementSystem_RespawnEndos_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RespawnAnimatronics
 	 */
 	struct UAIManagementSystem_RespawnAnimatronics_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RespawnAllAI
 	 */
 	struct UAIManagementSystem_RespawnAllAI_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.Reset
 	 */
 	struct UAIManagementSystem_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RemoveExpectedAI
@@ -340,8 +1603,7 @@ namespace CG
 	struct UAIManagementSystem_RemoveExpectedAI_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -350,23 +1612,20 @@ namespace CG
 	struct UAIManagementSystem_RemoveCharacterByType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RemoveAllCharacters
 	 */
 	struct UAIManagementSystem_RemoveAllCharacters_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RegisterSeekerPath
 	 */
 	struct UAIManagementSystem_RegisterSeekerPath_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.RegisterAI
@@ -375,7 +1634,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -386,7 +1644,6 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class ARoomAreaBase*                                       Room;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -397,7 +1654,6 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class ARoomAreaBase*                                       Room;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -408,15 +1664,13 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class ARoomAreaBase*                                       Room;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.PauseManager
 	 */
 	struct UAIManagementSystem_PauseManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.OnWorldStateChanged
@@ -424,17 +1678,15 @@ namespace CG
 	struct UAIManagementSystem_OnWorldStateChanged_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EFNAFGameState                                       OldState;                                                // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameState                                             NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFGameState                                             OldState;                                                // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.OnVannyPathsCollected
 	 */
 	struct UAIManagementSystem_OnVannyPathsCollected_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.OnPawnEndPlay
@@ -443,15 +1695,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              DestroyedPawn;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		Engine_EEndPlayReason                                      EndPlayReason;                                           // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function fnaf9.AIManagementSystem.OnAlertDistancesCollected
-	 */
-	struct UAIManagementSystem_OnAlertDistancesCollected_Params
-	{
+		EEndPlayReason                                             EndPlayReason;                                           // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -461,7 +1705,24 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.OnAIEnvQueryInfoLoaded
+	 */
+	struct UAIManagementSystem_OnAIEnvQueryInfoLoaded_Params
+	{
+	public:
+		TArray<struct FAssetData>                                  AssetDataList;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AIManagementSystem.OnAICharacterInfoLoaded
+	 */
+	struct UAIManagementSystem_OnAICharacterInfoLoaded_Params
+	{
+	public:
+		TArray<struct FAssetData>                                  AssetDataList;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -471,7 +1732,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -481,7 +1741,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -491,7 +1750,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -502,7 +1760,6 @@ namespace CG
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -513,7 +1770,6 @@ namespace CG
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -523,7 +1779,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -533,7 +1788,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -543,7 +1797,6 @@ namespace CG
 	{
 	public:
 		TMap<class APawn*, int32_t>                                ReturnValue;                                             // 0x0000(0x0050)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -554,7 +1807,6 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class ARoomAreaBase*                                       ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -565,7 +1817,6 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class ARoomAreaBase*                                       ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -574,9 +1825,21 @@ namespace CG
 	struct UAIManagementSystem_GetPawnForType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_GA13[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.GetPawnClassForTypeAndSubType
+	 */
+	struct UAIManagementSystem_GetPawnClassForTypeAndSubType_Params
+	{
+	public:
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             forceAISubType;                                          // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_CPB4[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UClass*                                              ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -585,10 +1848,10 @@ namespace CG
 	struct UAIManagementSystem_GetPawnClassForType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bForceShattered;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_3W0J[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UClass*                                              ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -597,9 +1860,19 @@ namespace CG
 	struct UAIManagementSystem_GetPathForAI_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_92ML[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                PathName;                                                // 0x0004(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_LQAD[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.GetPathByNameForAI
+	 */
+	struct UAIManagementSystem_GetPathByNameForAI_Params
+	{
+	public:
+		class FName                                                PathName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -608,8 +1881,7 @@ namespace CG
 	struct UAIManagementSystem_GetExistingPawnTypes_Params
 	{
 	public:
-		TArray<fnaf9_EFNAFAISpawnType>                             ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<EFNAFAISpawnType>                                   ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -618,9 +1890,10 @@ namespace CG
 	struct UAIManagementSystem_GetExistingPawn_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       RequireShattered;                                        // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YXIN[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -631,7 +1904,6 @@ namespace CG
 	public:
 		float                                                      OutCurrentValuePercent;                                  // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutSoftMaxPercent;                                       // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -643,7 +1915,6 @@ namespace CG
 		float                                                      CurrentValue;                                            // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Max;                                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      SoftMax;                                                 // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -653,7 +1924,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -662,8 +1932,7 @@ namespace CG
 	struct UAIManagementSystem_GetCachedDistances_Params
 	{
 	public:
-		TArray<struct FAIDistanceResult>                           ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FAIDistanceResult>                           ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -674,8 +1943,8 @@ namespace CG
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutResultValid;                                         // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_JV0Z[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FAIDistanceResult                                   OutResult;                                               // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -684,9 +1953,9 @@ namespace CG
 	struct UAIManagementSystem_GetAllSpawnPointsFor_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class AFNAFAISpawnPoint*>                           ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_R3AU[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class AFNAFAISpawnPoint*>                           ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -695,8 +1964,7 @@ namespace CG
 	struct UAIManagementSystem_GetAllSpawnPoints_Params
 	{
 	public:
-		TArray<class AFNAFAISpawnPoint*>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AFNAFAISpawnPoint*>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -705,8 +1973,7 @@ namespace CG
 	struct UAIManagementSystem_GetAllRegisteredAI_Params
 	{
 	public:
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -715,8 +1982,7 @@ namespace CG
 	struct UAIManagementSystem_GetAllAnimatronicPawns_Params
 	{
 	public:
-		TArray<class APawn*>                                       OutAnimatronicPawns;                                     // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       OutAnimatronicPawns;                                     // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -726,8 +1992,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    numRooms;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_GOLS[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -736,8 +2002,7 @@ namespace CG
 	struct UAIManagementSystem_GetAllAI_Params
 	{
 	public:
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -746,8 +2011,7 @@ namespace CG
 	struct UAIManagementSystem_GetAIPawnsWithSightToPlayer_Params
 	{
 	public:
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -757,8 +2021,7 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -768,8 +2031,7 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -779,8 +2041,8 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_71Z3[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AFNAFAISpawnPoint*                                   ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -790,12 +2052,12 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EFNAFAISpawnType                                     SpawnType;                                               // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           SpawnType;                                               // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_9NP8[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class APawn*                                               PawnForNavProperties;                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class AFNAFAISpawnPoint*>                           OutSpawnPointsResult;                                    // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<float>                                              OutDistances;                                            // 0x0020(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class AFNAFAISpawnPoint*>                           OutSpawnPointsResult;                                    // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+		TArray<float>                                              OutDistances;                                            // 0x0020(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 		struct FLatentActionInfo                                   LatentInfo;                                              // 0x0030(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -804,10 +2066,11 @@ namespace CG
 	struct UAIManagementSystem_FindRandomPatrolPointOutOfView_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           AIType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_OFTV[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_NGZQ[0x17];                                  // 0x0001(0x0017) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             OutLocation;                                             // 0x0018(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0024(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -817,7 +2080,6 @@ namespace CG
 	{
 	public:
 		class AFNAFAISpawnPoint*                                   ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -827,7 +2089,6 @@ namespace CG
 	{
 	public:
 		class AFNAFAISpawnPoint*                                   ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -838,10 +2099,12 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutResultValid;                                         // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_AE15[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_YJ1E[0x17];                                  // 0x0009(0x0017) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             OutLocation;                                             // 0x0020(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_JK3Q[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FLatentActionInfo                                   LatentActionInfo;                                        // 0x0030(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 		int32_t                                                    OutPointIndex;                                           // 0x0048(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -852,10 +2115,11 @@ namespace CG
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       OutResultValid;                                          // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_D27H[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_6D4K[0x17];                                  // 0x0009(0x0017) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		int32_t                                                    OutPointIndex;                                           // 0x0020(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             OutLocation;                                             // 0x0024(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLatentActionInfo                                   LatentInfo;                                              // 0x0030(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -865,15 +2129,22 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AIManagementSystem.DoNotDespawnAIDuringMoonmanPhase
+	 */
+	struct UAIManagementSystem_DoNotDespawnAIDuringMoonmanPhase_Params
+	{
+	public:
+		bool                                                       bDoNotDestroy;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.DestroyAllAINotVisible
 	 */
 	struct UAIManagementSystem_DestroyAllAINotVisible_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.DestroyAllAIInRoomsAtleast
@@ -882,22 +2153,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    RoomDist;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.DestroyAllAI
 	 */
 	struct UAIManagementSystem_DestroyAllAI_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.ClearExpectedAI
 	 */
 	struct UAIManagementSystem_ClearExpectedAI_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.AIManagementSystem.CalculateAllAIDistances
@@ -905,11 +2173,11 @@ namespace CG
 	struct UAIManagementSystem_CalculateAllAIDistances_Params
 	{
 	public:
-		TArray<struct FAIDistanceResult>                           DistanceResults;                                         // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FAIDistanceResult>                           DistanceResults;                                         // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 		bool                                                       bOutClosestIsValid;                                      // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_8R0V[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		int32_t                                                    ClosestIndex;                                            // 0x0014(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLatentActionInfo                                   LatentInfo;                                              // 0x0018(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -920,7 +2188,6 @@ namespace CG
 	public:
 		float                                                      Strength;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             WorldLocation;                                           // 0x0004(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -930,7 +2197,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -940,7 +2206,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -950,7 +2215,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -960,7 +2224,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -970,7 +2233,6 @@ namespace CG
 	{
 	public:
 		float                                                      Amount;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -980,7 +2242,6 @@ namespace CG
 	{
 	public:
 		struct FAnimatronicExpectedData                            AIType;                                                  // 0x0000(0x000C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -991,7 +2252,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    PointType;                                               // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1002,7 +2262,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             Location;                                                // 0x0004(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1013,7 +2272,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    PointToDisconnectIndex;                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1023,7 +2281,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1034,7 +2291,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    ReturnValue;                                             // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1044,8 +2300,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<int32_t>                                            ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_TW8J[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<int32_t>                                            ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1056,7 +2312,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             ReturnValue;                                             // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1067,7 +2322,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                                        ReturnValue;                                             // 0x0004(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1077,7 +2331,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1086,8 +2339,7 @@ namespace CG
 	struct UPathPointProvider_GetAvailablePointTypes_Params
 	{
 	public:
-		TArray<class FText>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FText>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1098,7 +2350,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    PointToConnectIndex;                                     // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1109,8 +2360,13 @@ namespace CG
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    ReturnValue;                                             // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.AISpawnSystem.OnRollChange
+	 */
+	struct AAISpawnSystem_OnRollChange_Params
+	{	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.SetTriggerActive
@@ -1119,15 +2375,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bActive;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.SaveActivated
 	 */
 	struct APlayerTrigger_SaveActivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.OnWorldObjectStateChanged
@@ -1137,22 +2391,19 @@ namespace CG
 	public:
 		class FName                                                ObjectName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ObjectState;                                             // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.OnTriggerStay
 	 */
 	struct APlayerTrigger_OnTriggerStay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.OnTriggered
 	 */
 	struct APlayerTrigger_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.IsTriggerStateSet
@@ -1161,7 +2412,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1171,15 +2421,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.ForceTrigger
 	 */
 	struct APlayerTrigger_ForceTrigger_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PlayerTrigger.CanTrigger
@@ -1188,7 +2436,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1198,7 +2445,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               SpawnedPawn;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1208,7 +2454,41 @@ namespace CG
 	{
 	public:
 		class APawn*                                               SpawnedPawn;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AudioUtil.RemoveWwiseListener
+	 */
+	struct UAudioUtil_RemoveWwiseListener_Params
+	{
+	public:
+		class AActor*                                              Actor;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AudioUtil.IsAudioForActorPlaying
+	 */
+	struct UAudioUtil_IsAudioForActorPlaying_Params
+	{
+	public:
+		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class AActor*                                              Actor;                                                   // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AudioUtil.GetWwiseListeners
+	 */
+	struct UAudioUtil_GetWwiseListeners_Params
+	{	};
+
+	/**
+	 * Function fnaf9.AudioUtil.AddWwiseListener
+	 */
+	struct UAudioUtil_AddWwiseListener_Params
+	{
+	public:
+		class AActor*                                              Actor;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1219,11 +2499,11 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             Location;                                                // 0x0008(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ECameraAngleFlags                                    CameraAngles;                                            // 0x0014(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ECameraAngleFlags                                          CameraAngles;                                            // 0x0014(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_AHY1[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      OutHorizontalAngle;                                      // 0x0018(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutVerticalAngle;                                        // 0x001C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1236,7 +2516,6 @@ namespace CG
 		struct FVector                                             Location;                                                // 0x0008(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutHorizontalAngle;                                      // 0x0014(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutVerticalAngle;                                        // 0x0018(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1245,16 +2524,65 @@ namespace CG
 	struct UCameraTrigger_GetAlertType_Params
 	{
 	public:
-		fnaf9_EAlertType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EAlertType                                                 ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.ChowdaDebugSubsystem.SpawnDLCRabbit
+	 */
+	struct UChowdaDebugSubsystem_SpawnDLCRabbit_Params
+	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        TypesToAlertIn;                                          // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ChowdaDebugSubsystem.GoToThisArea
+	 */
+	struct UChowdaDebugSubsystem_GoToThisArea_Params
+	{
+	public:
+		EMapArea                                                   MapArea;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ChowdaPawnInterface_DLC.ForceEject
+	 */
+	struct UChowdaPawnInterface_DLC_ForceEject_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ChowdaUtils.ResetInputsToDefaults
+	 */
+	struct UChowdaUtils_ResetInputsToDefaults_Params
+	{
+	public:
+		class UInputSettings*                                      ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ChowdaUtils.IsPlayInEditor
+	 */
+	struct UChowdaUtils_IsPlayInEditor_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ChowdaUtils.DoInputMappingsMatch
+	 */
+	struct UChowdaUtils_DoInputMappingsMatch_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.ConditionalCheckComponent.OnConditionUpdated
 	 */
 	struct UConditionalCheckComponent_OnConditionUpdated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.ConditionCheckInterface.UnbindConditionUpdatedDelegate
@@ -1263,7 +2591,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      OnConditionResultUpdated;                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1273,7 +2600,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1283,7 +2609,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      OnConditionResultUpdated;                                // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1294,7 +2619,6 @@ namespace CG
 	public:
 		struct FConditionResultDelegates                           DelegateHandle;                                          // 0x0000(0x0010)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0010(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1305,7 +2629,8 @@ namespace CG
 	public:
 		class AActor*                                              ActorToCheck;                                            // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutConditionsMet;                                       // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_RSIH[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_OA1V[0x17];                                  // 0x0009(0x0017) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -1316,7 +2641,6 @@ namespace CG
 	public:
 		class AActor*                                              ActorToCheck;                                            // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1327,7 +2651,6 @@ namespace CG
 	public:
 		class AActor*                                              ActorToCheck;                                            // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1336,8 +2659,8 @@ namespace CG
 	struct UConditionFunctionLibrary_CallConditionUpdate_Params
 	{
 	public:
+		unsigned char                                              UnknownData_CUI0[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FConditionResultDelegates                           DelegateHandle;                                          // 0x0010(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1348,8 +2671,62 @@ namespace CG
 	public:
 		struct FConditionResultDelegates                           DelegateHandle;                                          // 0x0000(0x0010)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      Delegate;                                                // 0x0010(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.CounterpartProviderInterface.GetCounterPart
+	 */
+	struct UCounterpartProviderInterface_GetCounterPart_Params
+	{
+	public:
+		class AActor*                                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.DataTableUtils.GetAnimatronicVODataTable
+	 */
+	struct UDataTableUtils_GetAnimatronicVODataTable_Params
+	{
+	public:
+		class FName                                                RowName;                                                 // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class UDataTable*                                          ReturnValue;                                             // 0x0008(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitAlertUI.ShowSoftJumpscare
+	 */
+	struct UDLC_RabbitAlertUI_ShowSoftJumpscare_Params
+	{	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitAlertUI.ShowRabbitFlicker
+	 */
+	struct UDLC_RabbitAlertUI_ShowRabbitFlicker_Params
+	{	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitAlertUI.ShowAlert
+	 */
+	struct UDLC_RabbitAlertUI_ShowAlert_Params
+	{	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitAlertUI.HideSoftJumpscare
+	 */
+	struct UDLC_RabbitAlertUI_HideSoftJumpscare_Params
+	{	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitAlertUI.HideAlert
+	 */
+	struct UDLC_RabbitAlertUI_HideAlert_Params
+	{	};
+
+	/**
+	 * Function fnaf9.DLC_RabbitEnemySequence.RequestStop
+	 */
+	struct UDLC_RabbitEnemySequence_RequestStop_Params
+	{	};
 
 	/**
 	 * Function fnaf9.DoorComponent.SetSecurityLevel
@@ -1358,7 +2735,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1368,7 +2744,6 @@ namespace CG
 	{
 	public:
 		class UPrimitiveComponent*                                 InPlayerBlocker;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1378,7 +2753,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bLocked;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1388,7 +2762,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bLocked;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1398,7 +2771,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1408,7 +2780,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1418,7 +2789,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1428,7 +2798,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1438,7 +2807,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1448,7 +2816,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1459,8 +2826,7 @@ namespace CG
 	public:
 		class AFNAFBasePlayerCharacter*                            BasePlayerCharacter;                                     // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bConditionsMet;                                          // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EConditionFailReason                                 FailReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EConditionFailReason                                       FailReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1470,7 +2836,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1479,8 +2844,7 @@ namespace CG
 	struct UDoorComponent_GetPawnsInDoor_Params
 	{
 	public:
-		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class APawn*>                                       ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1490,7 +2854,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1500,7 +2863,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1510,8 +2872,7 @@ namespace CG
 	{
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EDoorSide                                            ReturnValue;                                             // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EDoorSide                                                  ReturnValue;                                             // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1521,8 +2882,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Actor;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EDoorSide                                            ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EDoorSide                                                  ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1532,22 +2892,19 @@ namespace CG
 	{
 	public:
 		struct FDoorEntryRequirements                              ReturnValue;                                             // 0x0000(0x0038)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.DoorComponent.ForceOpen
 	 */
 	struct UDoorComponent_ForceOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.DoorComponent.ForceClose
 	 */
 	struct UDoorComponent_ForceClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.DoorComponent.CopyConditions
@@ -1556,7 +2913,6 @@ namespace CG
 	{
 	public:
 		class UDoorComponent*                                      OtherDoorComponent;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1567,8 +2923,7 @@ namespace CG
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bOutConditionsMet;                                       // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EConditionFailReason                                 OutFailReason;                                           // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EConditionFailReason                                       OutFailReason;                                           // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1578,17 +2933,16 @@ namespace CG
 	{
 	public:
 		bool                                                       bCanEnterDoor;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EConditionFailReason                                 CantEnterReason;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EConditionFailReason                                       CantEnterReason;                                         // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_R8HA[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UDoorComponent*                                      DoorComponent;                                           // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.DoorInteractor.OnEndOverlapDoor
 	 */
 	struct UDoorInteractor_OnEndOverlapDoor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.DoorInteractor.DoorEntryNotAllowed
@@ -1598,22 +2952,46 @@ namespace CG
 	public:
 		class UDoorComponent*                                      DoorComponent;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.DownloadableContentHandler.HasMountedDLCPack
+	 */
+	struct UDownloadableContentHandler_HasMountedDLCPack_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.DownloadableContentHandler.HasDLC
+	 */
+	struct UDownloadableContentHandler_HasDLC_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.DownloadableContentHandler.GetDLCPurchases
+	 */
+	struct UDownloadableContentHandler_GetDLCPurchases_Params
+	{
+	public:
+		TArray<class FString>                                      ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.ToggleFullAIDisplay
 	 */
 	struct Afnaf9GameModeBase_ToggleFullAIDisplay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.StartRepairGame
 	 */
 	struct Afnaf9GameModeBase_StartRepairGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.SetAIDisplay
@@ -1622,7 +3000,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1632,7 +3009,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1642,7 +3018,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bVisible;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1652,7 +3027,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bVisible;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1662,7 +3036,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1672,7 +3045,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1682,15 +3054,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.OnForceSpawnVanny
 	 */
 	struct Afnaf9GameModeBase_OnForceSpawnVanny_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.OnAIPawnsVis
@@ -1699,7 +3069,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1709,22 +3078,19 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.ForceSpawnVanny
 	 */
 	struct Afnaf9GameModeBase_ForceSpawnVanny_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.FinishRepairGame
 	 */
 	struct Afnaf9GameModeBase_FinishRepairGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.fnaf9GameModeBase.AIPawnsVis
@@ -1733,7 +3099,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1742,8 +3107,7 @@ namespace CG
 	struct UFNAFAchievementUtils_GetAllAchievements_Params
 	{
 	public:
-		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1752,16 +3116,36 @@ namespace CG
 	struct AFNAFAISpawnPoint_GetAIType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFAISpawnType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.AnimatronicTypeDataBlueprintFunctionLibrary.GetFNAFAISpawnTypeArrayFromAnimatronicTypeDataArray
+	 */
+	struct UAnimatronicTypeDataBlueprintFunctionLibrary_GetFNAFAISpawnTypeArrayFromAnimatronicTypeDataArray_Params
+	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        SpawnTypes;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		TArray<EFNAFAISpawnType>                                   ReturnValue;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.AnimatronicTypeDataBlueprintFunctionLibrary.GetAnimatronicTypeDataArrayFromFNAFAISpawnTypeArray
+	 */
+	struct UAnimatronicTypeDataBlueprintFunctionLibrary_GetAnimatronicTypeDataArrayFromFNAFAISpawnTypeArray_Params
+	{
+	public:
+		TArray<EFNAFAISpawnType>                                   SpawnTypes;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		EFNAFAISubType                                             SpawnSubType;                                            // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_QD24[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<struct FAnimatronicTypeData>                        ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFBaseCharacter.OnFellOutOfWorld
 	 */
 	struct AFNAFBaseCharacter_OnFellOutOfWorld_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerCharacter.TeleportPlayerWithCameraLocation
@@ -1771,7 +3155,6 @@ namespace CG
 	public:
 		struct FVector                                             CameraWorldLocation;                                     // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Yaw;                                                     // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1782,15 +3165,13 @@ namespace CG
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Yaw;                                                     // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerCharacter.OnKillZLevelsLoaded
 	 */
 	struct AFNAFBasePlayerCharacter_OnKillZLevelsLoaded_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerCharacter.GetPlayerPawnType
@@ -1798,8 +3179,7 @@ namespace CG
 	struct AFNAFBasePlayerCharacter_GetPlayerPawnType_Params
 	{
 	public:
-		fnaf9_EPlayerPawnType                                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EPlayerPawnType                                            ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1810,57 +3190,55 @@ namespace CG
 	public:
 		struct FVector                                             LastSavedLocation;                                       // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            LastSavedRotation;                                       // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnUsingGamepadChanged
 	 */
 	struct AFNAFBasePlayerController_OnUsingGamepadChanged_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFBasePlayerController.OnUnlockEverything
+	 */
+	struct AFNAFBasePlayerController_OnUnlockEverything_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnTriggerVannyScare
 	 */
 	struct AFNAFBasePlayerController_OnTriggerVannyScare_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnToggleLocalizationQA
 	 */
 	struct AFNAFBasePlayerController_OnToggleLocalizationQA_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnToggleFlightMode
 	 */
 	struct AFNAFBasePlayerController_OnToggleFlightMode_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnToggleDevUI
 	 */
 	struct AFNAFBasePlayerController_OnToggleDevUI_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnToggleCinemaMode
 	 */
 	struct AFNAFBasePlayerController_OnToggleCinemaMode_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.OnDebugSequenceEntered
 	 */
 	struct AFNAFBasePlayerController_OnDebugSequenceEntered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.IsUsingGamepad
@@ -1869,15 +3247,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.GiveVIPAchievement
 	 */
 	struct AFNAFBasePlayerController_GiveVIPAchievement_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFBasePlayerController.GetCurrentKeysDown
@@ -1885,8 +3261,7 @@ namespace CG
 	struct AFNAFBasePlayerController_GetCurrentKeysDown_Params
 	{
 	public:
-		TArray<struct FKey>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FKey>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -1897,7 +3272,6 @@ namespace CG
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1906,16 +3280,14 @@ namespace CG
 	struct UFNAFCheatManager_UpgradeFreddy_Params
 	{
 	public:
-		fnaf9_EFreddyUpgradeType                                   Type;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFreddyUpgradeType                                         Type;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFCheatManager.ToggleDebugCloaking
 	 */
 	struct UFNAFCheatManager_ToggleDebugCloaking_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFCheatManager.SetDebugCloaking
@@ -1924,7 +3296,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Value;                                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1934,7 +3305,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1945,15 +3315,22 @@ namespace CG
 	public:
 		int32_t                                                    VisualQualityLevel;                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    RayTraceQualityLevel;                                    // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveData.SetHourOfCheckpoint
+	 */
+	struct UFNAFSaveData_SetHourOfCheckpoint_Params
+	{
+	public:
+		int32_t                                                    InHour;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFEventObject.TriggerEvent
 	 */
 	struct UFNAFEventObject_TriggerEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventObject.IsEventFinished
@@ -1962,7 +3339,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -1972,15 +3348,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.UnpauseEventSystem
 	 */
 	struct UFNAFEventSystem_UnpauseEventSystem_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.StoreEventTriggered
@@ -1989,22 +3363,19 @@ namespace CG
 	{
 	public:
 		class FName                                                EventTag;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.StopEventTimer
 	 */
 	struct UFNAFEventSystem_StopEventTimer_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.StartEventTimer
 	 */
 	struct UFNAFEventSystem_StartEventTimer_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.SetEventTimeSeconds
@@ -2014,7 +3385,6 @@ namespace CG
 	public:
 		float                                                      MinTimeBetweenEvents;                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      MaxTimeBetweenEvents;                                    // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2024,7 +3394,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewWeight;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2034,22 +3403,19 @@ namespace CG
 	{
 	public:
 		class UAudioComponent*                                     EventSoundCue;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.PauseEventSystem
 	 */
 	struct UFNAFEventSystem_PauseEventSystem_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.OnAudioFinished
 	 */
 	struct UFNAFEventSystem_OnAudioFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFEventSystem.HasEventBeenTriggered
@@ -2059,7 +3425,6 @@ namespace CG
 	public:
 		class FName                                                EventTag;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2068,8 +3433,7 @@ namespace CG
 	struct UFNAFGameInstanceBase_StartGamePlay_Params
 	{
 	public:
-		fnaf9_EFNAFGameType                                        GameType;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameType                                              GameType;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2079,7 +3443,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Level;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2089,7 +3452,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bFinished;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2099,42 +3461,123 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Level;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.SetPresenceForLocalPlayers
+	 */
+	struct UFNAFGameInstanceBase_SetPresenceForLocalPlayers_Params
+	{
+	public:
+		class FString                                              StatusStr;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FString                                              PresenceData;                                            // 0x0010(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.SetIsOnLoadingScreen
+	 */
+	struct UFNAFGameInstanceBase_SetIsOnLoadingScreen_Params
+	{
+	public:
+		bool                                                       bOnLoadingScreen;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.SetIsFromTitleForChowda
+	 */
+	struct UFNAFGameInstanceBase_SetIsFromTitleForChowda_Params
+	{
+	public:
+		bool                                                       In_FromTitle;                                            // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.SetAllPlayersFocusToViewport
+	 */
+	struct UFNAFGameInstanceBase_SetAllPlayersFocusToViewport_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.ProcessActivityIntent
 	 */
 	struct UFNAFGameInstanceBase_ProcessActivityIntent_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.OnPlayerLoginChanged
+	 */
+	struct UFNAFGameInstanceBase_OnPlayerLoginChanged_Params
 	{
+	public:
+		bool                                                       bLoggedIn;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YB2I[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		int32_t                                                    UserId;                                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.OnPlayerControllerPairingChanged
+	 */
+	struct UFNAFGameInstanceBase_OnPlayerControllerPairingChanged_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.OnLoadingScreenStart
+	 */
+	struct UFNAFGameInstanceBase_OnLoadingScreenStart_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.OnLoadingScreenEnd
+	 */
+	struct UFNAFGameInstanceBase_OnLoadingScreenEnd_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.OnGameActivityLoadComplete
 	 */
 	struct UFNAFGameInstanceBase_OnGameActivityLoadComplete_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.OnControllerConnectionChanged
+	 */
+	struct UFNAFGameInstanceBase_OnControllerConnectionChanged_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.OnApplicationReactivated
 	 */
 	struct UFNAFGameInstanceBase_OnApplicationReactivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.OnApplicationDeactivated
 	 */
 	struct UFNAFGameInstanceBase_OnApplicationDeactivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.LogGameClockDelegates
 	 */
 	struct UFNAFGameInstanceBase_LogGameClockDelegates_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.LoadGameTips
+	 */
+	struct UFNAFGameInstanceBase_LoadGameTips_Params
 	{
+	public:
+		EFNAFGameType                                              GameType;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.IsOnLoadingScreen
+	 */
+	struct UFNAFGameInstanceBase_IsOnLoadingScreen_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2144,7 +3587,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2154,7 +3596,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2164,7 +3605,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2174,7 +3614,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2184,7 +3623,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2194,7 +3632,24 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.GetPlayerName
+	 */
+	struct UFNAFGameInstanceBase_GetPlayerName_Params
+	{
+	public:
+		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.GetPlayerControllerID
+	 */
+	struct UFNAFGameInstanceBase_GetPlayerControllerID_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2204,7 +3659,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2214,7 +3668,17 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.GetGameTipTextByIndexDLC
+	 */
+	struct UFNAFGameInstanceBase_GetGameTipTextByIndexDLC_Params
+	{
+	public:
+		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_G9FS[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FText                                                ReturnValue;                                             // 0x0008(0x0018)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2224,8 +3688,8 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_98QD[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FText                                                ReturnValue;                                             // 0x0008(0x0018)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2234,8 +3698,7 @@ namespace CG
 	struct UFNAFGameInstanceBase_GetCurrentGameType_Params
 	{
 	public:
-		fnaf9_EFNAFGameType                                        ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameType                                              ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2245,7 +3708,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2255,21 +3717,57 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.EndLoadingScreenDLC
+	 */
+	struct UFNAFGameInstanceBase_EndLoadingScreenDLC_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.EndLoadingScreen
 	 */
 	struct UFNAFGameInstanceBase_EndLoadingScreen_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.CheckForPlayerLoginChanged
+	 */
+	struct UFNAFGameInstanceBase_CheckForPlayerLoginChanged_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.ChangeLocalPlayerController
+	 */
+	struct UFNAFGameInstanceBase_ChangeLocalPlayerController_Params
 	{
+	public:
+		int32_t                                                    UserId;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.BeginLoadingScreenDLC
+	 */
+	struct UFNAFGameInstanceBase_BeginLoadingScreenDLC_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFGameInstanceBase.BeginLoadingScreen
 	 */
 	struct UFNAFGameInstanceBase_BeginLoadingScreen_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFGameInstanceBase.AsyncChowdaScan
+	 */
+	struct UFNAFGameInstanceBase_AsyncChowdaScan_Params
 	{
+	public:
+		bool                                                       bUseless;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       bOutFinished;                                            // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_7Y4X[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		struct FLatentActionInfo                                   LatentActionInfo;                                        // 0x0008(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2278,8 +3776,7 @@ namespace CG
 	struct UFNAFInputDeviceSystem_GetCurrentInputDevice_Params
 	{
 	public:
-		fnaf9_ESWGInputDeviceType                                  ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESWGInputDeviceType                                        ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2289,7 +3786,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2299,14 +3795,30 @@ namespace CG
 	{
 	public:
 		bool                                                       bOutFlashUsed;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.SetupNewGame
 	 */
 	struct UFNAFInventorySystem_SetupNewGame_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.SetupGameMode
+	 */
+	struct UFNAFInventorySystem_SetupGameMode_Params
 	{
+	public:
+		EFNAFGameType                                              GameType;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.SetupDataTable
+	 */
+	struct UFNAFInventorySystem_SetupDataTable_Params
+	{
+	public:
+		class UDataTable*                                          InDataTable;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2316,7 +3828,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2326,7 +3837,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InPowerLevel;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2336,7 +3846,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InPowerLevel;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2346,7 +3855,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewPartyLevel;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2356,7 +3864,6 @@ namespace CG
 	{
 	public:
 		class FName                                                Message;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2366,7 +3873,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewMax;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2376,7 +3882,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewMax;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2386,7 +3891,6 @@ namespace CG
 	{
 	public:
 		class FName                                                Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2396,29 +3900,51 @@ namespace CG
 	{
 	public:
 		int32_t                                                    StationID;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.SetCautionBotSoulsCollectedNumber
+	 */
+	struct UFNAFInventorySystem_SetCautionBotSoulsCollectedNumber_Params
+	{
+	public:
+		int32_t                                                    inNumber;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    ReturnValue;                                             // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.ResetOnExitToMenu
+	 */
+	struct UFNAFInventorySystem_ResetOnExitToMenu_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.ResetFreddyPower
 	 */
 	struct UFNAFInventorySystem_ResetFreddyPower_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.ResetForChapterSelect
+	 */
+	struct UFNAFInventorySystem_ResetForChapterSelect_Params
 	{
+	public:
+		TArray<class FName>                                        CollectedItems;                                          // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		int32_t                                                    chapterSelected;                                         // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.ResetFlashlightPower
 	 */
 	struct UFNAFInventorySystem_ResetFlashlightPower_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.ResetFlashes
 	 */
 	struct UFNAFInventorySystem_ResetFlashes_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.RemoveMessage
@@ -2427,7 +3953,6 @@ namespace CG
 	{
 	public:
 		class FName                                                Message;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2437,14 +3962,22 @@ namespace CG
 	{
 	public:
 		class FName                                                Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.RemoveEverything
 	 */
 	struct UFNAFInventorySystem_RemoveEverything_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.RemoveCautionBotSouls
+	 */
+	struct UFNAFInventorySystem_RemoveCautionBotSouls_Params
 	{
+	public:
+		int32_t                                                    NumberOfSouls;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    ReturnValue;                                             // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2455,7 +3988,6 @@ namespace CG
 	public:
 		class FName                                                Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2466,7 +3998,6 @@ namespace CG
 	public:
 		class FName                                                Message;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2477,7 +4008,6 @@ namespace CG
 	public:
 		class FName                                                Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2488,7 +4018,6 @@ namespace CG
 	public:
 		int32_t                                                    InSecurityLevel;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2499,7 +4028,6 @@ namespace CG
 	public:
 		class FName                                                ItemOrMessage;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2510,7 +4038,6 @@ namespace CG
 	public:
 		class FName                                                SearchMessage;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2521,7 +4048,6 @@ namespace CG
 	public:
 		class FName                                                ItemOrMessage;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2532,7 +4058,6 @@ namespace CG
 	public:
 		class FName                                                searchItem;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2543,7 +4068,6 @@ namespace CG
 	public:
 		int32_t                                                    PowerRequired;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2554,7 +4078,6 @@ namespace CG
 	public:
 		int32_t                                                    PowerRequired;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2564,15 +4087,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.GetTapesListenedTo
 	 */
 	struct UFNAFInventorySystem_GetTapesListenedTo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.GetStaminaUpgradeMultiplier
@@ -2581,7 +4102,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2591,7 +4111,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2603,7 +4122,6 @@ namespace CG
 		class FName                                                MessageName;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMessageTableStruct                             OutMessageInfo;                                          // 0x0008(0x0068)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutFound;                                                // 0x0070(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2613,7 +4131,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2623,9 +4140,8 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		struct FFNAFInventoryTableStruct                           OutItemInfo;                                             // 0x0008(0x0050)  (Parm, OutParm, NativeAccessSpecifierPublic)
-		bool                                                       OutFound;                                                // 0x0058(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		struct FFNAFInventoryTableStruct                           OutItemInfo;                                             // 0x0008(0x0058)  (Parm, OutParm, NativeAccessSpecifierPublic)
+		bool                                                       OutFound;                                                // 0x0060(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2635,7 +4151,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2645,7 +4160,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2655,7 +4169,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2665,7 +4178,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2675,7 +4187,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2684,9 +4195,35 @@ namespace CG
 	struct UFNAFInventorySystem_GetCollectedPartyPasses_Params
 	{
 	public:
-		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.GetChapterProgression
+	 */
+	struct UFNAFInventorySystem_GetChapterProgression_Params
+	{
+	public:
+		int32_t                                                    Chapter;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_27HE[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      ReturnValue;                                             // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.GetCautionBotSoulsCollectedNumber
+	 */
+	struct UFNAFInventorySystem_GetCautionBotSoulsCollectedNumber_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.GetCandyCadetStoriesDone
+	 */
+	struct UFNAFInventorySystem_GetCandyCadetStoriesDone_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.GetAllSurvivalItemsOfType
@@ -2694,17 +4231,34 @@ namespace CG
 	struct UFNAFInventorySystem_GetAllSurvivalItemsOfType_Params
 	{
 	public:
-		fnaf9_EInventoryItemSurvivalCategory                       SurvivalCategory;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class FName>                                        ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EInventoryItemSurvivalCategory                             SurvivalCategory;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_DES9[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class FName>                                        ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFInventorySystem.GetAllItems
+	 */
+	struct UFNAFInventorySystem_GetAllItems_Params
+	{
+	public:
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.GetAllCurrentInventoryItems
+	 */
+	struct UFNAFInventorySystem_GetAllCurrentInventoryItems_Params
+	{
+	public:
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.ClearFlashlightStationID
 	 */
 	struct UFNAFInventorySystem_ClearFlashlightStationID_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.CanUseFlashBeacon
@@ -2713,7 +4267,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2724,7 +4277,6 @@ namespace CG
 	public:
 		class FName                                                Message;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bNotify;                                                 // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2735,7 +4287,15 @@ namespace CG
 	public:
 		class FName                                                Item;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bNotify;                                                 // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFInventorySystem.AwardCautionBotSoul
+	 */
+	struct UFNAFInventorySystem_AwardCautionBotSoul_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2746,7 +4306,6 @@ namespace CG
 	public:
 		int32_t                                                    ChangeAmount;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2757,7 +4316,6 @@ namespace CG
 	public:
 		int32_t                                                    ChangeAmount;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2767,14 +4325,21 @@ namespace CG
 	{
 	public:
 		class FName                                                InTapeListenedTo;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFInventorySystem.AddEverything
 	 */
 	struct UFNAFInventorySystem_AddEverything_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFInventorySystem.AddCandyCadetStoryDone
+	 */
+	struct UFNAFInventorySystem_AddCandyCadetStoryDone_Params
 	{
+	public:
+		class FName                                                InStory;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2784,7 +4349,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2794,7 +4358,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     SceneComponent;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2804,7 +4367,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     SceneComponent;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2814,7 +4376,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2824,7 +4385,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2834,7 +4394,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     StreamingSource;                                         // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2843,8 +4402,7 @@ namespace CG
 	struct UFNAFLevelManager_RemoveLevelArray_Params
 	{
 	public:
-		TArray<class ULevelStreaming*>                             Levels;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ULevelStreaming*>                             Levels;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2854,15 +4412,13 @@ namespace CG
 	{
 	public:
 		class ULevelStreaming*                                     LevelToUnload;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFLevelManager.RemoveAllLevels
 	 */
 	struct UFNAFLevelManager_RemoveAllLevels_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFLevelManager.RegisterStreamingSource
@@ -2871,7 +4427,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     SceneComponent;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2881,7 +4436,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     SceneComponent;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2891,7 +4445,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2900,8 +4453,7 @@ namespace CG
 	struct UFNAFLevelManager_GetStreamingSources_Params
 	{
 	public:
-		TArray<class USceneComponent*>                             ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class USceneComponent*>                             ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2911,8 +4463,7 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     SceneComponent;                                          // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class FName>                                        ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2922,7 +4473,6 @@ namespace CG
 	{
 	public:
 		class ULevelStreaming*                                     LevelToLoad;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2932,7 +4482,6 @@ namespace CG
 	{
 	public:
 		class USceneComponent*                                     StreamingSource;                                         // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2941,8 +4490,7 @@ namespace CG
 	struct UFNAFLevelManager_AddLevelArrayToLoad_Params
 	{
 	public:
-		TArray<class ULevelStreaming*>                             LevelsToLoad;                                            // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ULevelStreaming*>                             LevelsToLoad;                                            // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -2952,7 +4500,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2962,7 +4509,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2972,7 +4518,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               VanessaPawn;                                             // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2982,7 +4527,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -2992,7 +4536,15 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFManagedAI.IsMeshVisible
+	 */
+	struct UFNAFManagedAI_IsMeshVisible_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3001,8 +4553,7 @@ namespace CG
 	struct UFNAFManagedAI_GetManagedAIType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFAISpawnType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3012,22 +4563,25 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFManagedAI.ForceTrackToPlayer
 	 */
 	struct UFNAFManagedAI_ForceTrackToPlayer_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFManagedAI.ForceJumpscarePlayer
+	 */
+	struct UFNAFManagedAI_ForceJumpscarePlayer_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFManagedAI.EndTrackToPlayer
 	 */
 	struct UFNAFManagedAI_EndTrackToPlayer_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFManagedAI.CanReceiveAlert
@@ -3036,15 +4590,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFMissionSystem.SetupNewGame
 	 */
 	struct UFNAFMissionSystem_SetupNewGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFMissionSystem.SetMissionInfoState
@@ -3054,7 +4606,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    InfoState;                                               // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3064,7 +4615,6 @@ namespace CG
 	{
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3074,7 +4624,6 @@ namespace CG
 	{
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3085,7 +4634,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3096,7 +4644,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3106,7 +4653,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3117,7 +4663,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3128,7 +4673,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3137,8 +4681,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetTrackedMissions_Params
 	{
 	public:
-		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3148,7 +4691,6 @@ namespace CG
 	{
 	public:
 		class UDataTable*                                          ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3160,7 +4702,6 @@ namespace CG
 		class FName                                                TaskName;                                                // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMissionTaskInfo                                OutMissionTaskInfo;                                      // 0x0008(0x00D8)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutValidTask;                                            // 0x00E0(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3171,9 +4712,9 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    TaskIndex;                                               // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YF86[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FFNAFMissionTaskInfo                                OutMissionTaskInfo;                                      // 0x0010(0x00D8)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutValidTask;                                            // 0x00E8(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3183,7 +4724,6 @@ namespace CG
 	{
 	public:
 		class UDataTable*                                          ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3195,7 +4735,6 @@ namespace CG
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMissionState                                   OutMissionState;                                         // 0x0008(0x0020)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutValidMission;                                         // 0x0028(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3207,7 +4746,6 @@ namespace CG
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMissionInfo                                    OutMissionInfo;                                          // 0x0008(0x0048)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutValidMission;                                         // 0x0050(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3219,7 +4757,6 @@ namespace CG
 		class FName                                                TaskName;                                                // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMissionInfo                                    OutMissionInfo;                                          // 0x0008(0x0048)  (Parm, OutParm, NativeAccessSpecifierPublic)
 		bool                                                       OutValidMission;                                         // 0x0050(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3231,7 +4768,6 @@ namespace CG
 		class FName                                                MessageName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FName                                                OutMissionName;                                          // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    OutMissionStateIndex;                                    // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3242,8 +4778,8 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    MissionStateIndex;                                       // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_LL4P[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3252,8 +4788,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetCompletedMissions_Params
 	{
 	public:
-		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3262,8 +4797,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetAreaMarkerCounts_Params
 	{
 	public:
-		TMap<fnaf9_ELevelArea, int32_t>                            MapOfCounts;                                             // 0x0000(0x0050)  (Parm, OutParm, NativeAccessSpecifierPublic)
-
+		TMap<ELevelArea, int32_t>                                  MapOfCounts;                                             // 0x0000(0x0050)  (Parm, OutParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3272,8 +4806,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetAllMissionNames_Params
 	{
 	public:
-		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3282,8 +4815,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetAllMissionMarkers_Params
 	{
 	public:
-		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3292,8 +4824,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetAllCurrentMarkers_Params
 	{
 	public:
-		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AMissionMarker*>                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3302,8 +4833,7 @@ namespace CG
 	struct UFNAFMissionSystem_GetActiveMissions_Params
 	{
 	public:
-		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FFNAFMissionState>                           ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3314,7 +4844,6 @@ namespace CG
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    TaskIndex;                                               // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3324,7 +4853,6 @@ namespace CG
 	{
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3334,8 +4862,7 @@ namespace CG
 	{
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EMissionStatus                                       Status;                                                  // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMissionStatus                                             Status;                                                  // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3345,7 +4872,6 @@ namespace CG
 	{
 	public:
 		class FName                                                MissionName;                                             // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3354,33 +4880,95 @@ namespace CG
 	struct UFNAFPawnTypeProviderInterface_GetPlayerPawnType_Params
 	{
 	public:
-		fnaf9_EPlayerPawnType                                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EPlayerPawnType                                            ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * Function fnaf9.FNAFSaveData.SetHourOfCheckpoint
+	 * Function fnaf9.FNAFPS5ControllerUtils.TurnOffAdaptiveTrigger
 	 */
-	struct UFNAFSaveData_SetHourOfCheckpoint_Params
+	struct UFNAFPS5ControllerUtils_TurnOffAdaptiveTrigger_Params
 	{
 	public:
-		int32_t                                                    InHour;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    ControllerId;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFPS5Trigger                                            Trigger;                                                 // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFPS5ControllerUtils.SetupTriggerVibration
+	 */
+	struct UFNAFPS5ControllerUtils_SetupTriggerVibration_Params
+	{
+	public:
+		int32_t                                                    ControllerId;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFPS5Trigger                                            Trigger;                                                 // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Position;                                                // 0x0005(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Frequency;                                               // 0x0006(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Amplitude;                                               // 0x0007(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFPS5ControllerUtils.SetupTriggerFeedback
+	 */
+	struct UFNAFPS5ControllerUtils_SetupTriggerFeedback_Params
+	{
+	public:
+		int32_t                                                    ControllerId;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFPS5Trigger                                            Trigger;                                                 // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Position;                                                // 0x0005(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Strength;                                                // 0x0006(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFPS5ControllerUtils.SetupAdaptiveTrigger
+	 */
+	struct UFNAFPS5ControllerUtils_SetupAdaptiveTrigger_Params
+	{
+	public:
+		int32_t                                                    ControllerId;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFPS5Trigger                                            Trigger;                                                 // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              StartPosition;                                           // 0x0005(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              EndPosition;                                             // 0x0006(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              Strength;                                                // 0x0007(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.ToggleDLCCallToAction
+	 */
+	struct UFNAFSaveGameSystem_ToggleDLCCallToAction_Params
+	{
+	public:
+		bool                                                       visible;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.ShowAutoSaveIcon
+	 */
+	struct UFNAFSaveGameSystem_ShowAutoSaveIcon_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetUserIndex
+	 */
+	struct UFNAFSaveGameSystem_SetUserIndex_Params
+	{
+	public:
+		int32_t                                                    NewUserIndex;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetUseAutosaveMapArea
+	 */
+	struct UFNAFSaveGameSystem_SetUseAutosaveMapArea_Params
+	{
+	public:
+		bool                                                       UseMapArea;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SetupPIE
 	 */
 	struct UFNAFSaveGameSystem_SetupPIE_Params
-	{
-	};
-
-	/**
-	 * Function fnaf9.FNAFSaveGameSystem.SetupNewSurvivalGame
-	 */
-	struct UFNAFSaveGameSystem_SetupNewSurvivalGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SetupNewGameOnSlot
@@ -3389,14 +4977,30 @@ namespace CG
 	{
 	public:
 		class FString                                              originalSlotName;                                        // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SetupNewGame
 	 */
 	struct UFNAFSaveGameSystem_SetupNewGame_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetupNewChowdaGame
+	 */
+	struct UFNAFSaveGameSystem_SetupNewChowdaGame_Params
 	{
+	public:
+		int32_t                                                    ProfileIndexIn;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetLoadIntoChapter
+	 */
+	struct UFNAFSaveGameSystem_SetLoadIntoChapter_Params
+	{
+	public:
+		bool                                                       Load;                                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3406,36 +5010,51 @@ namespace CG
 	{
 	public:
 		bool                                                       IsSavingAllowed;                                         // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetInChapterReplay
+	 */
+	struct UFNAFSaveGameSystem_SetInChapterReplay_Params
+	{
+	public:
+		bool                                                       inReplay;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_EH1Z[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		int32_t                                                    Chapter;                                                 // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.SetChowdaProfileIndex
+	 */
+	struct UFNAFSaveGameSystem_SetChowdaProfileIndex_Params
+	{
+	public:
+		int32_t                                                    profileIndex;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SaveCurrentGame
 	 */
 	struct UFNAFSaveGameSystem_SaveCurrentGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SaveCheckpoint
 	 */
 	struct UFNAFSaveGameSystem_SaveCheckpoint_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.SaveArcade
 	 */
 	struct UFNAFSaveGameSystem_SaveArcade_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.Reset_SaveSlots
 	 */
 	struct UFNAFSaveGameSystem_Reset_SaveSlots_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.Rename_SaveSlot
@@ -3445,8 +5064,13 @@ namespace CG
 	public:
 		class FString                                              originalSlotName;                                        // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                              renamedSlotName;                                         // 0x0010(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.RemoveAutoSaveIcon
+	 */
+	struct UFNAFSaveGameSystem_RemoveAutoSaveIcon_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.PreviousSaveIsAuto
@@ -3455,15 +5079,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.LoadWorldTransitSave
 	 */
 	struct UFNAFSaveGameSystem_LoadWorldTransitSave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.LoadSaveSlotData
@@ -3473,22 +5095,45 @@ namespace CG
 	public:
 		class FString                                              SlotName;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UFNAFSaveData*                                       ReturnValue;                                             // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.LoadMasterSave
+	 */
+	struct UFNAFSaveGameSystem_LoadMasterSave_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.LoadChowdaAutoSaveData
+	 */
+	struct UFNAFSaveGameSystem_LoadChowdaAutoSaveData_Params
+	{
+	public:
+		int32_t                                                    ProfileIndexIn;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_G1MT[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UFNAFSaveData*                                       ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.LoadChowdaAutoSave
+	 */
+	struct UFNAFSaveGameSystem_LoadChowdaAutoSave_Params
+	{
+	public:
+		int32_t                                                    ProfileIndexIn;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.LoadCheckpoint
 	 */
 	struct UFNAFSaveGameSystem_LoadCheckpoint_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.LoadAutoSave
 	 */
 	struct UFNAFSaveGameSystem_LoadAutoSave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.LoadActivitySave
@@ -3497,7 +5142,6 @@ namespace CG
 	{
 	public:
 		class FString                                              InActivityId;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3507,7 +5151,15 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.IsInChapterReplay
+	 */
+	struct UFNAFSaveGameSystem_IsInChapterReplay_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3517,7 +5169,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3527,7 +5178,16 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.HasChowdaSaveGame
+	 */
+	struct UFNAFSaveGameSystem_HasChowdaSaveGame_Params
+	{
+	public:
+		int32_t                                                    ProfileIndexIn;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3537,7 +5197,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3548,7 +5207,69 @@ namespace CG
 	public:
 		class FString                                              InActivityId;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetUserIndex
+	 */
+	struct UFNAFSaveGameSystem_GetUserIndex_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetUseAutosaveMapArea
+	 */
+	struct UFNAFSaveGameSystem_GetUseAutosaveMapArea_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetMapAreaToLoad
+	 */
+	struct UFNAFSaveGameSystem_GetMapAreaToLoad_Params
+	{
+	public:
+		EMapArea                                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetLoadIntoChapter
+	 */
+	struct UFNAFSaveGameSystem_GetLoadIntoChapter_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetLastSavedMapArea
+	 */
+	struct UFNAFSaveGameSystem_GetLastSavedMapArea_Params
+	{
+	public:
+		EMapArea                                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetLastSavedChapter
+	 */
+	struct UFNAFSaveGameSystem_GetLastSavedChapter_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetLastLoadedChowdaSlotName
+	 */
+	struct UFNAFSaveGameSystem_GetLastLoadedChowdaSlotName_Params
+	{
+	public:
+		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3558,7 +5279,24 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetCurrentChapter
+	 */
+	struct UFNAFSaveGameSystem_GetCurrentChapter_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.GetChowdaProfileIndex
+	 */
+	struct UFNAFSaveGameSystem_GetChowdaProfileIndex_Params
+	{
+	public:
+		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3568,14 +5306,30 @@ namespace CG
 	{
 	public:
 		TMap<class FString, class FString>                         SaveSlots_Map;                                           // 0x0000(0x0050)  (Parm, OutParm, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.Get_ChowdaSaveSlotNameData
+	 */
+	struct UFNAFSaveGameSystem_Get_ChowdaSaveSlotNameData_Params
+	{
+	public:
+		TMap<class FString, class FString>                         SaveSlots_Map;                                           // 0x0000(0x0050)  (Parm, OutParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.FinalizeCheckpoint
 	 */
 	struct UFNAFSaveGameSystem_FinalizeCheckpoint_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.DLCCallToActionVisibility
+	 */
+	struct UFNAFSaveGameSystem_DLCCallToActionVisibility_Params
 	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3585,7 +5339,6 @@ namespace CG
 	{
 	public:
 		class FString                                              SlotName;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3595,29 +5348,52 @@ namespace CG
 	{
 	public:
 		int32_t                                                    saveSlotNumber;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.DeleteChowdaSaveGameByName
+	 */
+	struct UFNAFSaveGameSystem_DeleteChowdaSaveGameByName_Params
+	{
+	public:
+		class FString                                              SlotName;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.CreateWorldTransitSave
 	 */
 	struct UFNAFSaveGameSystem_CreateWorldTransitSave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.CreatePotentialCheckpoint
 	 */
 	struct UFNAFSaveGameSystem_CreatePotentialCheckpoint_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.ClearChowdaAutoSaves
+	 */
+	struct UFNAFSaveGameSystem_ClearChowdaAutoSaves_Params
+	{	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.ChowdaAutoSave
+	 */
+	struct UFNAFSaveGameSystem_ChowdaAutoSave_Params
 	{
+	public:
+		int32_t                                                    Chapter;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EMapArea                                                   MapAreaToSave;                                           // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_C97N[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                SaveID;                                                  // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.AutoSave
 	 */
 	struct UFNAFSaveGameSystem_AutoSave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.AsyncSaveGame
@@ -3628,17 +5404,16 @@ namespace CG
 		class FString                                              originalSlotName;                                        // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       isANewSlot;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       isCurrentSlot;                                           // 0x0011(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_OLWR[0x6];                                   // 0x0012(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              Renamed_SaveSlot;                                        // 0x0018(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                              internal_SlotName;                                       // 0x0028(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.AsyncLoadGameLastLoaded
 	 */
 	struct UFNAFSaveGameSystem_AsyncLoadGameLastLoaded_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSaveGameSystem.AsyncLoadGame
@@ -3648,9 +5423,15 @@ namespace CG
 	public:
 		class FString                                              originalSlotName;                                        // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       isContinueSelected;                                      // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2G6S[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              internal_SlotName;                                       // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.FNAFSaveGameSystem.AsyncLoadChowdaLastLoaded
+	 */
+	struct UFNAFSaveGameSystem_AsyncLoadChowdaLastLoaded_Params
+	{	};
 
 	/**
 	 * Function fnaf9.FNAFSightSystem.SetSightSystemDisplay
@@ -3659,15 +5440,28 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.ForcedGCSubsystem.GetForceGCInProgrcess
+	 */
+	struct UForcedGCSubsystem_GetForceGCInProgrcess_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ForcedGCSubsystem.ForceGC
+	 */
+	struct UForcedGCSubsystem_ForceGC_Params
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.StartNextHour
 	 */
 	struct UGameClockSystem_StartNextHour_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.SetGameTimeEvent
@@ -3678,7 +5472,6 @@ namespace CG
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 		int32_t                                                    Hour;                                                    // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Minute;                                                  // 0x0014(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3688,7 +5481,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3700,7 +5492,6 @@ namespace CG
 		int32_t                                                    Hour;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Minute;                                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bPlayDelegates;                                          // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3710,7 +5501,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Minute;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3720,7 +5510,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Hour;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3730,7 +5519,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bRunClock;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3740,7 +5528,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    MinutesPerHour;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3750,7 +5537,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    TotalRealHours;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3761,36 +5547,31 @@ namespace CG
 	public:
 		int32_t                                                    Hour;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Minute;                                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.OnNormalModeTriggered
 	 */
 	struct UGameClockSystem_OnNormalModeTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.OnMoonmanLiteTriggered
 	 */
 	struct UGameClockSystem_OnMoonmanLiteTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.OnMoonmanIntermediateTriggered
 	 */
 	struct UGameClockSystem_OnMoonmanIntermediateTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.OnMoonmanDangerTriggered
 	 */
 	struct UGameClockSystem_OnMoonmanDangerTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameClockSystem.IsClockRunning
@@ -3799,7 +5580,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3809,7 +5589,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3820,22 +5599,19 @@ namespace CG
 	public:
 		int32_t                                                    Hour;                                                    // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Minute;                                                  // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.GameTypeCheckComponent.OnNotAllowedGameType
 	 */
 	struct UGameTypeCheckComponent_OnNotAllowedGameType_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameTypeCheckComponent.OnAllowedGameType
 	 */
 	struct UGameTypeCheckComponent_OnAllowedGameType_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.GameTypeCheckComponent.IsAllowed
@@ -3844,8 +5620,39 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.GlitchInteractibleInterface.SetupGlitchInteractible
+	 */
+	struct UGlitchInteractibleInterface_SetupGlitchInteractible_Params
+	{
+	public:
+		class AGlitchRandomItem*                                   GlitchRandomItem;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class AActor*                                              GlitchManager;                                           // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      GlitchRadius;                                            // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.GlitchManagerInterface.SetupGlitchActivators
+	 */
+	struct UGlitchManagerInterface_SetupGlitchActivators_Params
+	{
+	public:
+		TArray<class AActor*>                                      GlitchActivators;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.GlitchRandomItem.GlitchFixed
+	 */
+	struct AGlitchRandomItem_GlitchFixed_Params
+	{	};
+
+	/**
+	 * Function fnaf9.GlitchRandomItem.GetActors
+	 */
+	struct AGlitchRandomItem_GetActors_Params
+	{	};
 
 	/**
 	 * Function fnaf9.HideObjectInterface.StartSearch
@@ -3854,7 +5661,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               SearcherPawn;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3864,15 +5670,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              SearcherActor;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.HideObjectInterface.OnPlayerLeave
 	 */
 	struct UHideObjectInterface_OnPlayerLeave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.HideObjectInterface.OnPlayerHide
@@ -3881,7 +5685,6 @@ namespace CG
 	{
 	public:
 		class ACharacter*                                          PlayerCharacter;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3891,7 +5694,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3902,7 +5704,6 @@ namespace CG
 	public:
 		struct FVector                                             Location;                                                // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            Rotation;                                                // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3911,8 +5712,7 @@ namespace CG
 	struct UHideObjectInterface_GetHideType_Params
 	{
 	public:
-		fnaf9_EHideObjectType                                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EHideObjectType                                            ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3922,7 +5722,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3932,14 +5731,42 @@ namespace CG
 	{
 	public:
 		class ACharacter*                                          ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.HideObjectInterface.EndSearch
 	 */
 	struct UHideObjectInterface_EndSearch_Params
+	{	};
+
+	/**
+	 * Function fnaf9.HUDProviderInterface.ShowHUD
+	 */
+	struct UHUDProviderInterface_ShowHUD_Params
+	{	};
+
+	/**
+	 * Function fnaf9.HUDProviderInterface.ShowCinimaticSkip
+	 */
+	struct UHUDProviderInterface_ShowCinimaticSkip_Params
+	{	};
+
+	/**
+	 * Function fnaf9.HUDProviderInterface.HideHUD
+	 */
+	struct UHUDProviderInterface_HideHUD_Params
 	{
+	public:
+		bool                                                       bHideProgressWheel;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.HUDProviderInterface.BeginCinimaticSkipFade
+	 */
+	struct UHUDProviderInterface_BeginCinimaticSkipFade_Params
+	{
+	public:
+		float                                                      DelayDuration;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3950,7 +5777,6 @@ namespace CG
 	public:
 		struct FInstructionCardRow                                 MyStructRef;                                             // 0x0000(0x0060)  (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		class UTexture2D*                                          ReturnValue;                                             // 0x0060(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3962,7 +5788,6 @@ namespace CG
 		class FName                                                NewRequiredInventoryItem;                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    NewRequiredSecurityLevel;                                // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       NewRequiresPartyPass;                                    // 0x000C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3973,7 +5798,6 @@ namespace CG
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMessageTableStruct                             MessageTableStruct;                                      // 0x0008(0x0068)  (Parm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -3983,8 +5807,7 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		struct FFNAFInventoryTableStruct                           InventoryTableStruct;                                    // 0x0008(0x0050)  (Parm, NativeAccessSpecifierPublic)
-
+		struct FFNAFInventoryTableStruct                           InventoryTableStruct;                                    // 0x0008(0x0058)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -3994,8 +5817,7 @@ namespace CG
 	{
 	public:
 		bool                                                       OutConditionsMet;                                        // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EConditionFailReason                                 OutFailReason;                                           // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EConditionFailReason                                       OutFailReason;                                           // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4005,7 +5827,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4015,8 +5836,7 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0050)  (Parm, NativeAccessSpecifierPublic)
-
+		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0058)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4026,7 +5846,115 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.JsonHandler.GenerateJsonStringFromStruct
+	 */
+	struct UJsonHandler_GenerateJsonStringFromStruct_Params
+	{
+	public:
+		class UStruct*                                             Struct;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class FString                                              OutJsonString;                                           // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.UnLoadCurrentScenario
+	 */
+	struct ULevelLoaderComponent_UnLoadCurrentScenario_Params
+	{	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.SetNextLightScenario
+	 */
+	struct ULevelLoaderComponent_SetNextLightScenario_Params
+	{
+	public:
+		int32_t                                                    Scenario;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    ReturnValue;                                             // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.SetLevelsToUnLoad
+	 */
+	struct ULevelLoaderComponent_SetLevelsToUnLoad_Params
+	{
+	public:
+		TArray<class FName>                                        UnloadedLevels;                                          // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		TArray<class FName>                                        ReturnValue;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.SetLevelsToLoad
+	 */
+	struct ULevelLoaderComponent_SetLevelsToLoad_Params
+	{
+	public:
+		TArray<class FName>                                        LoadedLevels;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		TArray<class FName>                                        ReturnValue;                                             // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.LoadTheNextScenario
+	 */
+	struct ULevelLoaderComponent_LoadTheNextScenario_Params
+	{	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.LoadTheNextArea
+	 */
+	struct ULevelLoaderComponent_LoadTheNextArea_Params
+	{	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.GetLevelsToLoad
+	 */
+	struct ULevelLoaderComponent_GetLevelsToLoad_Params
+	{
+	public:
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoaderComponent.DebugSkipToNextArea
+	 */
+	struct ULevelLoaderComponent_DebugSkipToNextArea_Params
+	{	};
+
+	/**
+	 * Function fnaf9.LevelLoadSubsystem.LoadTheNextArea
+	 */
+	struct ULevelLoadSubsystem_LoadTheNextArea_Params
+	{
+	public:
+		EMapArea                                                   MapArea;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoadSubsystem.IsTickable
+	 */
+	struct ULevelLoadSubsystem_IsTickable_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoadSubsystem.GetVisibleLevels
+	 */
+	struct ULevelLoadSubsystem_GetVisibleLevels_Params
+	{
+	public:
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelLoadSubsystem.GetCurrentMapArea
+	 */
+	struct ULevelLoadSubsystem_GetCurrentMapArea_Params
+	{
+	public:
+		EMapArea                                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4036,15 +5964,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.LevelStreamViewpoint.OnLevelManagerUpdated
 	 */
 	struct ULevelStreamViewpoint_OnLevelManagerUpdated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LevelStreamViewpoint.GetStreamingLevelNames
@@ -4052,8 +5978,7 @@ namespace CG
 	struct ULevelStreamViewpoint_GetStreamingLevelNames_Params
 	{
 	public:
-		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4063,22 +5988,37 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.LevelStreamViewpoint.AllLevelsLoaded
+	 */
+	struct ULevelStreamViewpoint_AllLevelsLoaded_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LevelStreamViewpointProvider.GetLevelStreamViewpoint
+	 */
+	struct ULevelStreamViewpointProvider_GetLevelStreamViewpoint_Params
+	{
+	public:
+		class ULevelStreamViewpoint*                               ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.LightingMaterialManager.OnLevelVisible
 	 */
 	struct ALightingMaterialManager_OnLevelVisible_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightingMaterialManager.OnBeginLightScenarioChange
 	 */
 	struct ALightingMaterialManager_OnBeginLightScenarioChange_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightingMaterialManager.OnActivateSpecialLightingScenerio
@@ -4087,8 +6027,13 @@ namespace CG
 	{
 	public:
 		class FString                                              Key;                                                     // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.LightScenarioManager.UnloadArea
+	 */
+	struct ULightScenarioManager_UnloadArea_Params
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.UnbindOnEndScenarioChange
@@ -4097,7 +6042,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4107,7 +6051,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4117,51 +6060,50 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Area;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ELightingScenario                                    Scenario;                                                // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ELightingScenario                                          Scenario;                                                // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnUnloadFinished
 	 */
 	struct ULightScenarioManager_OnUnloadFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnTick
 	 */
 	struct ULightScenarioManager_OnTick_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function fnaf9.LightScenarioManager.OnPropagate
+	 */
+	struct ULightScenarioManager_OnPropagate_Params
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnLoadFinished
 	 */
 	struct ULightScenarioManager_OnLoadFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnFadeoutFinished
 	 */
 	struct ULightScenarioManager_OnFadeoutFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnChangeAreaUnloadFinished
 	 */
 	struct ULightScenarioManager_OnChangeAreaUnloadFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.OnChangeAreaLoadFinished
 	 */
 	struct ULightScenarioManager_OnChangeAreaLoadFinished_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.IsChangingScenario
@@ -4170,7 +6112,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4180,9 +6121,8 @@ namespace CG
 	{
 	public:
 		class FName                                                MapName;                                                 // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ELightScenarioArea                                   OutArea;                                                 // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ELightingScenario                                    OutScenario;                                             // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ELightScenarioArea                                         OutArea;                                                 // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ELightingScenario                                          OutScenario;                                             // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4192,9 +6132,9 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Area;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ELightingScenario                                    Scenario;                                                // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ELightingScenario                                          Scenario;                                                // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_FRA0[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                ReturnValue;                                             // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4203,8 +6143,7 @@ namespace CG
 	struct ULightScenarioManager_GetCurrentLightingScenario_Params
 	{
 	public:
-		fnaf9_ELightingScenario                                    ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ELightingScenario                                          ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4214,15 +6153,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.EndLoadSequence
 	 */
 	struct ULightScenarioManager_EndLoadSequence_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.ChangeScenario
@@ -4230,9 +6167,8 @@ namespace CG
 	struct ULightScenarioManager_ChangeScenario_Params
 	{
 	public:
-		fnaf9_ELightingScenario                                    NewScenario;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ELightingScenario                                          NewScenario;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bUseFade;                                                // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4242,7 +6178,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Area;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4252,7 +6187,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4262,14 +6196,58 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      Delegate;                                                // 0x0000(0x0010)  (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.LightScenarioManager.BeginLoadSequence
 	 */
 	struct ULightScenarioManager_BeginLoadSequence_Params
+	{	};
+
+	/**
+	 * Function fnaf9.LoadingScreenComponent.SetPlayerCollider
+	 */
+	struct ULoadingScreenComponent_SetPlayerCollider_Params
 	{
+	public:
+		class UPrimitiveComponent*                                 InPlayerCollider;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LoadingScreenComponent.SetLevelStreamViewpoints
+	 */
+	struct ULoadingScreenComponent_SetLevelStreamViewpoints_Params
+	{
+	public:
+		class ULevelStreamViewpoint*                               Front;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class ULevelStreamViewpoint*                               Back;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LoadingScreenComponent.OnPlayerExit
+	 */
+	struct ULoadingScreenComponent_OnPlayerExit_Params
+	{
+	public:
+		class AActor*                                              InPlayer;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.LoadingScreenComponent.OnPlayerEnter
+	 */
+	struct ULoadingScreenComponent_OnPlayerEnter_Params
+	{
+	public:
+		class AActor*                                              InPlayer;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.Localization.GetLocalizationCultureFromSteam
+	 */
+	struct ULocalization_GetLocalizationCultureFromSteam_Params
+	{
+	public:
+		ELocalizationCulture                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4278,8 +6256,7 @@ namespace CG
 	struct ULocalization_GetLocalizationCulture_Params
 	{
 	public:
-		fnaf9_ELocalizationCulture                                 ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ELocalizationCulture                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4288,8 +6265,7 @@ namespace CG
 	struct ULocalization_ChangeLocalizationCulture_Params
 	{
 	public:
-		fnaf9_ELocalizationCulture                                 Culture;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ELocalizationCulture                                       Culture;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4298,11 +6274,12 @@ namespace CG
 	struct UMissionDisplayQueueLibrary_PushMissionUpdate_Params
 	{
 	public:
-		fnaf9_EMissionUpdateType                                   UpdateType;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EMissionUpdateType                                         UpdateType;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_9R35[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FName                                                MissionName;                                             // 0x0004(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_QM2W[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0010(0x0048)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0058(0x0020)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4311,8 +6288,7 @@ namespace CG
 	struct UMissionDisplayQueueLibrary_HasMissionUpdateInQueue_Params
 	{
 	public:
-		fnaf9_EMissionInQueue                                      MissionInQueue;                                          // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMissionInQueue                                            MissionInQueue;                                          // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4322,15 +6298,13 @@ namespace CG
 	{
 	public:
 		struct FMissionDisplayUpdateInfo                           ReturnValue;                                             // 0x0000(0x0078)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.MissionDisplayQueueLibrary.ClearMissionUpdateQueue
 	 */
 	struct UMissionDisplayQueueLibrary_ClearMissionUpdateQueue_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.MissionMarker.GetStateIndex
@@ -4339,7 +6313,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4349,7 +6322,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4361,7 +6333,6 @@ namespace CG
 		class FName                                                InMissionName;                                           // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFNAFMissionState                                   MissionState;                                            // 0x0008(0x0020)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0028(0x0048)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4371,7 +6342,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4381,29 +6351,25 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  InSpawnPoint;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.UnpauseMoonmanManager
 	 */
 	struct UMoonmanManagementSystem_UnpauseMoonmanManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.StartMoonmanLiteManager
 	 */
 	struct UMoonmanManagementSystem_StartMoonmanLiteManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.StartMoonmanDangerManager
 	 */
 	struct UMoonmanManagementSystem_StartMoonmanDangerManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.RegisterSpawn
@@ -4412,15 +6378,13 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  InSpawnPoint;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.PauseMoonmanManager
 	 */
 	struct UMoonmanManagementSystem_PauseMoonmanManager_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.MoonmanManagementSystem.OnWorldStateChanged
@@ -4428,9 +6392,8 @@ namespace CG
 	struct UMoonmanManagementSystem_OnWorldStateChanged_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EFNAFGameState                                       PrevState;                                               // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameState                                             NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFGameState                                             PrevState;                                               // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4439,9 +6402,9 @@ namespace CG
 	struct UMoonmanManagementSystem_GetAllMMSpawnPointsFor_Params
 	{
 	public:
-		fnaf9_EMMAnimCategory                                      MMAnimation;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class AMoonmanSpawnPoint*>                          ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMMAnimCategory                                            MMAnimation;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_BGZF[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class AMoonmanSpawnPoint*>                          ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4450,8 +6413,7 @@ namespace CG
 	struct UMoonmanManagementSystem_GetAllMMSpawnPoints_Params
 	{
 	public:
-		TArray<class AMoonmanSpawnPoint*>                          ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AMoonmanSpawnPoint*>                          ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4461,7 +6423,6 @@ namespace CG
 	{
 	public:
 		float                                                      tempProbability;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4471,7 +6432,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4480,8 +6440,7 @@ namespace CG
 	struct AMoonmanSpawnPoint_SetMMAnimCategory_Params
 	{
 	public:
-		fnaf9_EMMAnimCategory                                      In;                                                      // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMMAnimCategory                                            In;                                                      // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4491,7 +6450,6 @@ namespace CG
 	{
 	public:
 		bool                                                       isTriggered;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4501,7 +6459,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4511,7 +6468,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsSpawned;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4521,7 +6477,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4531,7 +6486,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsSkeletonDetected;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4541,7 +6495,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4551,7 +6504,6 @@ namespace CG
 	{
 	public:
 		bool                                                       HasSpawnedOnce;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4561,7 +6513,6 @@ namespace CG
 	{
 	public:
 		bool                                                       HasLookedOnce;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4571,7 +6522,6 @@ namespace CG
 	{
 	public:
 		bool                                                       canSpawn;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4581,7 +6531,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4591,7 +6540,6 @@ namespace CG
 	{
 	public:
 		bool                                                       In;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4601,7 +6549,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4611,7 +6558,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4621,7 +6567,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4630,8 +6575,7 @@ namespace CG
 	struct AMoonmanSpawnPoint_GetMMAnimSeq_Array_Params
 	{
 	public:
-		TArray<class UAnimSequence*>                               ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UAnimSequence*>                               ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4640,8 +6584,7 @@ namespace CG
 	struct AMoonmanSpawnPoint_GetMMAnimCategory_Params
 	{
 	public:
-		fnaf9_EMMAnimCategory                                      ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMMAnimCategory                                            ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4651,7 +6594,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4661,7 +6603,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4671,7 +6612,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4681,7 +6621,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4691,7 +6630,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4701,7 +6639,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4711,7 +6648,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4721,7 +6657,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4731,7 +6666,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4741,7 +6675,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4751,7 +6684,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4761,7 +6693,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4772,15 +6703,103 @@ namespace CG
 	public:
 		class AMoonmanSpawnPoint*                                  passed_HitActor;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       passed_bVisible;                                         // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.OptionsMenu.VolumeSliders
+	 */
+	struct UOptionsMenu_VolumeSliders_Params
+	{
+	public:
+		float                                                      MasterVolume;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      MusicVolume;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      VoiceVolume;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      JumpscareVolume;                                         // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      SFXVolume;                                               // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.UpdateSubtitles
+	 */
+	struct UOptionsMenu_UpdateSubtitles_Params
+	{
+	public:
+		int32_t                                                    SubtitlesValue;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       SubtitlesOn;                                             // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       SubtitlesSmall;                                          // 0x0005(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       SubtitlesLarge;                                          // 0x0006(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0007(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.RestoreVideoSettings
+	 */
+	struct UOptionsMenu_RestoreVideoSettings_Params
+	{
+	public:
+		EWindowMode                                                DefaultScreenMode;                                       // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_1TE3[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		int32_t                                                    DefaultRes;                                              // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    DefaultColorblind;                                       // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    VisualQuality;                                           // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.RestoreAudioSettings
+	 */
+	struct UOptionsMenu_RestoreAudioSettings_Params
+	{
+	public:
+		float                                                      MasterVolume;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      MusicVolume;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      VoiceVolume;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      JumpscareVolume;                                         // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      SFXVolume;                                               // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    UISubtitlesValue;                                        // 0x0014(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       UISubtitlesOn;                                           // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       UISubtitlesSmall;                                        // 0x0019(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       UISubtitlesLarge;                                        // 0x001A(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.ResolutionSelection
+	 */
+	struct UOptionsMenu_ResolutionSelection_Params
+	{
+	public:
+		int32_t                                                    UIValue;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.PSVideoSettings
+	 */
+	struct UOptionsMenu_PSVideoSettings_Params
+	{	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.ColorBlindSelection
+	 */
+	struct UOptionsMenu_ColorBlindSelection_Params
+	{
+	public:
+		int32_t                                                    UIColorValue;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      Severity;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.OptionsMenu.ApplyVideoSettings
+	 */
+	struct UOptionsMenu_ApplyVideoSettings_Params
+	{
+	public:
+		int32_t                                                    UIResValue;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.PatrollerInterface.SetPatrolPath
 	 */
 	struct UPatrollerInterface_SetPatrolPath_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PatrollerInterface.SetCurrentPatrolPointIndex
@@ -4789,15 +6808,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PatrolPointIndex;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.PatrollerInterface.GetPatrolPath
 	 */
 	struct UPatrollerInterface_GetPatrolPath_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.PatrollerInterface.GetCurrentPatrolPointIndex
@@ -4806,22 +6823,30 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.RaytracingUtils.SetSkeletalMeshRenderInRaytracing
+	 */
+	struct URaytracingUtils_SetSkeletalMeshRenderInRaytracing_Params
+	{
+	public:
+		bool                                                       bRenderInRaytracing;                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_NSKH[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class USkeletalMeshComponent*                              MeshComponent;                                           // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.SaveHandlerInterface.PostSaveGame
 	 */
 	struct USaveHandlerInterface_PostSaveGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SaveHandlerInterface.PostGameLoad
 	 */
 	struct USaveHandlerInterface_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SaveHandlerInterface.OnStoreGameData
@@ -4830,7 +6855,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4840,7 +6864,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4850,7 +6873,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4860,22 +6882,127 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.UpdateScaledTimeDataRows
+	 */
+	struct UScaledTimeSystem_UpdateScaledTimeDataRows_Params
+	{
+	public:
+		TMap<class FName, struct FScaledTimeDetails>               Rows;                                                    // 0x0000(0x0050)  (Parm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.UnpauseCurrentTimer
+	 */
+	struct UScaledTimeSystem_UnpauseCurrentTimer_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.StopCurrentTimer
+	 */
+	struct UScaledTimeSystem_StopCurrentTimer_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.StartTimerSeconds
+	 */
+	struct UScaledTimeSystem_StartTimerSeconds_Params
+	{
+	public:
+		float                                                      Seconds;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.StartTimerFromRowName
+	 */
+	struct UScaledTimeSystem_StartTimerFromRowName_Params
+	{
+	public:
+		class FName                                                TimerRowName;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.StartTimerFromNightNumber
+	 */
+	struct UScaledTimeSystem_StartTimerFromNightNumber_Params
+	{
+	public:
+		int32_t                                                    NightNumber;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.SetupNewGame
+	 */
+	struct UScaledTimeSystem_SetupNewGame_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.RestartCurrentTimer
+	 */
+	struct UScaledTimeSystem_RestartCurrentTimer_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.PauseCurrentTimer
+	 */
+	struct UScaledTimeSystem_PauseCurrentTimer_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.OnAntiVirusMoonmanTriggered
+	 */
+	struct UScaledTimeSystem_OnAntiVirusMoonmanTriggered_Params
+	{	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.IsTimerActive
+	 */
+	struct UScaledTimeSystem_IsTimerActive_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.GetTimeLeftSeconds
+	 */
+	struct UScaledTimeSystem_GetTimeLeftSeconds_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.GetScaledTimeDataRows
+	 */
+	struct UScaledTimeSystem_GetScaledTimeDataRows_Params
+	{
+	public:
+		TMap<class FName, struct FScaledTimeDetails>               ReturnValue;                                             // 0x0000(0x0050)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.ScaledTimeSystem.GetIsTimerPaused
+	 */
+	struct UScaledTimeSystem_GetIsTimerPaused_Params
+	{	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.StopOfficeMode
 	 */
 	struct ASecurityCamera_StopOfficeMode_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.StartOfficeMode
 	 */
 	struct ASecurityCamera_StartOfficeMode_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.SetPlayerDetectorEnabled
@@ -4884,7 +7011,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4894,7 +7020,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4905,15 +7030,13 @@ namespace CG
 	public:
 		class AActor*                                              UpdatedActor;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bVisible;                                                // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.OnOfficeModeStarted
 	 */
 	struct ASecurityCamera_OnOfficeModeStarted_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.OnEnemyDetectorSightChanged
@@ -4923,7 +7046,6 @@ namespace CG
 	public:
 		class AActor*                                              UpdatedActor;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bVisible;                                                // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4934,7 +7056,6 @@ namespace CG
 	public:
 		bool                                                       OnlyShowCurrentMission;                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4944,7 +7065,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4953,8 +7073,7 @@ namespace CG
 	struct ASecurityCamera_GetVisibleEnemies_Params
 	{
 	public:
-		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -4964,7 +7083,6 @@ namespace CG
 	{
 	public:
 		class USceneCaptureComponent2D*                            ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -4974,15 +7092,13 @@ namespace CG
 	{
 	public:
 		class UTextureRenderTarget2D*                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.SecurityCamera.CaptureView
 	 */
 	struct ASecurityCamera_CaptureView_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SecurityCameraSystem.PlayerSpotted
@@ -4991,7 +7107,6 @@ namespace CG
 	{
 	public:
 		class ASecurityCamera*                                     SecurityCamera;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5000,8 +7115,42 @@ namespace CG
 	struct USecurityCameraSystem_GetAllSecurityCameras_Params
 	{
 	public:
-		TArray<class ASecurityCamera*>                             ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class ASecurityCamera*>                             ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.SecurityNodeComponent.DrawDebugGraph
+	 */
+	struct USecurityNodeComponent_DrawDebugGraph_Params
+	{	};
+
+	/**
+	 * Function fnaf9.SecurityPuzzleJsonHandler.WriteAllPuzzleDataToFile
+	 */
+	struct USecurityPuzzleJsonHandler_WriteAllPuzzleDataToFile_Params
+	{
+	public:
+		TArray<struct FSecurityNodePuzzle>                         Puzzles;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.SecurityPuzzleJsonHandler.ReadSecurityNodePuzzleData
+	 */
+	struct USecurityPuzzleJsonHandler_ReadSecurityNodePuzzleData_Params
+	{
+	public:
+		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.SecurityPuzzleJsonHandler.GenerateStructsArrayFromJsonStringSecurityNodePuzzle
+	 */
+	struct USecurityPuzzleJsonHandler_GenerateStructsArrayFromJsonStringSecurityNodePuzzle_Params
+	{
+	public:
+		class FString                                              JsonString;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FSecurityNodePuzzle>                         Puzzles;                                                 // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5010,8 +7159,7 @@ namespace CG
 	struct USeekerPatrolPath_GetSpawnType_Params
 	{
 	public:
-		fnaf9_EFNAFAISpawnType                                     ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFAISpawnType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5021,7 +7169,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5030,8 +7177,7 @@ namespace CG
 	struct USightComponent_SetSightType_Params
 	{
 	public:
-		fnaf9_ESightType                                           InSightType;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESightType                                                 InSightType;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5043,7 +7189,6 @@ namespace CG
 		float                                                      Angle;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      MinDistance;                                             // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      MaxDistance;                                             // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5053,7 +7198,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5063,7 +7207,6 @@ namespace CG
 	{
 	public:
 		float                                                      Angle;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5072,8 +7215,7 @@ namespace CG
 	struct USightComponent_SetIncludeTags_Params
 	{
 	public:
-		TArray<class FName>                                        InIgnoreTags;                                            // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        InIgnoreTags;                                            // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5086,7 +7228,6 @@ namespace CG
 		float                                                      InMaxYaw;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      InMinPitch;                                              // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      InMaxPitch;                                              // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5096,7 +7237,6 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5106,7 +7246,6 @@ namespace CG
 	{
 	public:
 		float                                                      Ratio;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5115,8 +7254,7 @@ namespace CG
 	struct USightComponent_OnVisualQueryResults_Params
 	{
 	public:
-		TArray<TWeakObjectPtr<class UVisualSourceComponent>>       DetectedSources;                                         // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<TWeakObjectPtr<class UVisualSourceComponent>>       DetectedSources;                                         // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5126,7 +7264,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              DestroyedActor;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5135,8 +7272,7 @@ namespace CG
 	struct USightComponent_OnMoonManQueryResults_Params
 	{
 	public:
-		TArray<TWeakObjectPtr<class AMoonmanSpawnPoint>>           MoonManSpawnPoints;                                      // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<TWeakObjectPtr<class AMoonmanSpawnPoint>>           MoonManSpawnPoints;                                      // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5145,8 +7281,7 @@ namespace CG
 	struct USightComponent_IsUsingConeSight_Params
 	{
 	public:
-		fnaf9_ESightType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESightType                                                 ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5156,7 +7291,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5167,7 +7301,6 @@ namespace CG
 	public:
 		class AActor*                                              Actor;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5176,8 +7309,7 @@ namespace CG
 	struct USightComponent_GetVisibleActors_Params
 	{
 	public:
-		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class AActor*>                                      ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5187,7 +7319,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5197,7 +7328,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5207,7 +7337,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5217,7 +7346,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5227,7 +7355,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5237,7 +7364,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5246,8 +7372,7 @@ namespace CG
 	struct USightComponent_GetIncludeTags_Params
 	{
 	public:
-		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5260,7 +7385,6 @@ namespace CG
 		float                                                      OutMaxYaw;                                               // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutMinPitch;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      OutMaxPitch;                                             // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5270,7 +7394,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5280,22 +7403,19 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.SplineFollowMovementComponent.StopFollowingSpline
 	 */
 	struct USplineFollowMovementComponent_StopFollowingSpline_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SplineFollowMovementComponent.StartFollowingSpline
 	 */
 	struct USplineFollowMovementComponent_StartFollowingSpline_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SplineFollowMovementComponent.SetSplineToFollow
@@ -5304,7 +7424,6 @@ namespace CG
 	{
 	public:
 		class USplineComponent*                                    Spline;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5314,7 +7433,16 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.SplineFollowMovementComponent.SetDirectionAndSplineToFollow
+	 */
+	struct USplineFollowMovementComponent_SetDirectionAndSplineToFollow_Params
+	{
+	public:
+		class USplineComponent*                                    Spline;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       Direction;                                               // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5324,7 +7452,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5334,7 +7461,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5344,9 +7470,9 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Pos_WS;                                                  // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_H3EH[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class USplineComponent*                                    Spline;                                                  // 0x0010(0x0008)  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x0018(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5356,7 +7482,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnabled;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5366,7 +7491,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5376,7 +7500,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5387,7 +7510,6 @@ namespace CG
 	public:
 		class AActor*                                              OverlappedActor;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5399,8 +7521,8 @@ namespace CG
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             WorldLocation;                                           // 0x0008(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bEnableVolumesAfterLoad;                                 // 0x0014(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2Y8O[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FLatentActionInfo                                   LatentInfo;                                              // 0x0018(0x0018)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5411,8 +7533,8 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             WorldLocation;                                           // 0x0008(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class ALevelStreamingVolume*>                       ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_STVL[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class ALevelStreamingVolume*>                       ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5422,8 +7544,7 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class ALevelStreamingVolume*>                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ALevelStreamingVolume*>                       ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5434,8 +7555,8 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             WorldLocation;                                           // 0x0008(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class ULevelStreaming*>                             ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		unsigned char                                              UnknownData_ASD6[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<class ULevelStreaming*>                             ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5445,8 +7566,7 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class ULevelStreaming*>                             ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ULevelStreaming*>                             ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5456,8 +7576,7 @@ namespace CG
 	{
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class ULevel*>                                      ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ULevel*>                                      ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5468,7 +7587,6 @@ namespace CG
 	public:
 		class UObject*                                             WorldContextObject;                                      // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bEnable;                                                 // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5478,15 +7596,13 @@ namespace CG
 	{
 	public:
 		struct FVector                                             WorldLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.StreamingLoadComponent.OnLevelLoaded
 	 */
 	struct UStreamingLoadComponent_OnLevelLoaded_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.StreamingLoadComponent.IsStreamingLevels
@@ -5495,7 +7611,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5505,15 +7620,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.SurvivalItemPackage.OnSetup
 	 */
 	struct ASurvivalItemPackage_OnSetup_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SurvivalItemPackage.HasCollected
@@ -5522,15 +7635,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.SurvivalItemPackage.Collect
 	 */
 	struct ASurvivalItemPackage_Collect_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.SurvivalItemRandomizer.RandomizeSurvivalItems
@@ -5539,7 +7650,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bSpawnAllLocations;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5550,55 +7660,6 @@ namespace CG
 	public:
 		class ASurvivalItemPackage*                                Package;                                                 // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetYellowScore
-	 */
-	struct ASurvivalItemRandomizer_GetYellowScore_Params
-	{
-	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetRedScore
-	 */
-	struct ASurvivalItemRandomizer_GetRedScore_Params
-	{
-	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetPurpleScore
-	 */
-	struct ASurvivalItemRandomizer_GetPurpleScore_Params
-	{
-	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetPinkScore
-	 */
-	struct ASurvivalItemRandomizer_GetPinkScore_Params
-	{
-	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5607,40 +7668,294 @@ namespace CG
 	struct ASurvivalItemRandomizer_GetPackagesSortedByDistance_Params
 	{
 	public:
-		TArray<class ASurvivalItemPackage*>                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class ASurvivalItemPackage*>                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetGreenScore
+	 * Function fnaf9.SurvivalItemRandomizer.GetGlitchMaterial
 	 */
-	struct ASurvivalItemRandomizer_GetGreenScore_Params
+	struct ASurvivalItemRandomizer_GetGlitchMaterial_Params
 	{
 	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		class UMaterialInterface*                                  ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * Function fnaf9.SurvivalItemRandomizer.GetGoldScore
+	 * Function fnaf9.TeleportationInterface.SpringArmEnabled
 	 */
-	struct ASurvivalItemRandomizer_GetGoldScore_Params
+	struct UTeleportationInterface_SpringArmEnabled_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.SpringArmDisabled
+	 */
+	struct UTeleportationInterface_SpringArmDisabled_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.SpawnBlackRabbit
+	 */
+	struct UTeleportationInterface_SpawnBlackRabbit_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.SetMaskIconOverlayActive
+	 */
+	struct UTeleportationInterface_SetMaskIconOverlayActive_Params
 	{
 	public:
-		int32_t                                                    OutCount;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutPointsPerPackage;                                     // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    OutScore;                                                // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		bool                                                       Active;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.PlayerFinishedTeleporting
+	 */
+	struct UTeleportationInterface_PlayerFinishedTeleporting_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.PlayerCannotTeleport
+	 */
+	struct UTeleportationInterface_PlayerCannotTeleport_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.MaskIconRemoveMask
+	 */
+	struct UTeleportationInterface_MaskIconRemoveMask_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.MaskIconNearBlocker
+	 */
+	struct UTeleportationInterface_MaskIconNearBlocker_Params
+	{
+	public:
+		bool                                                       NearBlocker;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.MaskIconDefault
+	 */
+	struct UTeleportationInterface_MaskIconDefault_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.MaskIconCantTeleport
+	 */
+	struct UTeleportationInterface_MaskIconCantTeleport_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.IsPlayerMoving
+	 */
+	struct UTeleportationInterface_IsPlayerMoving_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.EnablePlayerInput
+	 */
+	struct UTeleportationInterface_EnablePlayerInput_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.DisablePlayerInput
+	 */
+	struct UTeleportationInterface_DisablePlayerInput_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.DeactivateGlitchUI
+	 */
+	struct UTeleportationInterface_DeactivateGlitchUI_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.CanAITeleport
+	 */
+	struct UTeleportationInterface_CanAITeleport_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.AICapsuleHalfHeight
+	 */
+	struct UTeleportationInterface_AICapsuleHalfHeight_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.ActivateTeleportFX
+	 */
+	struct UTeleportationInterface_ActivateTeleportFX_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationInterface.ActivateGlitchUI
+	 */
+	struct UTeleportationInterface_ActivateGlitchUI_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.TeleportAI
+	 */
+	struct UTeleportationSubsystem_TeleportAI_Params
+	{
+	public:
+		class APawn*                                               AIPawn;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      CapsuleHeight;                                           // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.SetPlayerSaveInNormal
+	 */
+	struct UTeleportationSubsystem_SetPlayerSaveInNormal_Params
+	{
+	public:
+		bool                                                       PlayerSaveInNormal;                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.SetPlayerInNormalForChapterReplay
+	 */
+	struct UTeleportationSubsystem_SetPlayerInNormalForChapterReplay_Params
+	{
+	public:
+		bool                                                       PlayerInNormal;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.SetPlayerInNormal
+	 */
+	struct UTeleportationSubsystem_SetPlayerInNormal_Params
+	{
+	public:
+		bool                                                       PlayerInNormal;                                          // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.IsPlayerInNormal
+	 */
+	struct UTeleportationSubsystem_IsPlayerInNormal_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.GetTeleportationDistance
+	 */
+	struct UTeleportationSubsystem_GetTeleportationDistance_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.GetPlayerSaveInNormal
+	 */
+	struct UTeleportationSubsystem_GetPlayerSaveInNormal_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.GetCurrentAIPawn
+	 */
+	struct UTeleportationSubsystem_GetCurrentAIPawn_Params
+	{
+	public:
+		class APawn*                                               ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.ForceTeleport
+	 */
+	struct UTeleportationSubsystem_ForceTeleport_Params
+	{	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.CheckIfPlayerCanTeleport
+	 */
+	struct UTeleportationSubsystem_CheckIfPlayerCanTeleport_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TeleportationSubsystem.CanTeleport
+	 */
+	struct UTeleportationSubsystem_CanTeleport_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.SetUseSnapshot
+	 */
+	struct UTemporarySnapshotSystem_SetUseSnapshot_Params
+	{
+	public:
+		bool                                                       UseSnapshot;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.SetInitializeOnPost
+	 */
+	struct UTemporarySnapshotSystem_SetInitializeOnPost_Params
+	{
+	public:
+		bool                                                       Initialize;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.SetAlternativeTranform
+	 */
+	struct UTemporarySnapshotSystem_SetAlternativeTranform_Params
+	{
+	public:
+		struct FTransform                                          AltTranform;                                             // 0x0000(0x0030)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.GetUseSnapshot
+	 */
+	struct UTemporarySnapshotSystem_GetUseSnapshot_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.GetTemporaryGameStateSnapshot
+	 */
+	struct UTemporarySnapshotSystem_GetTemporaryGameStateSnapshot_Params
+	{
+	public:
+		struct FDLCSaveSnapshotData                                ReturnValue;                                             // 0x0000(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.TemporarySnapshotSystem.CreateTemporaryGameStateSnapshot
+	 */
+	struct UTemporarySnapshotSystem_CreateTemporaryGameStateSnapshot_Params
+	{	};
 
 	/**
 	 * Function fnaf9.UpdateMissionComponent.UpdateMission
 	 */
 	struct UUpdateMissionComponent_UpdateMission_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.UpdateMissionComponent.IsMissionFinished
@@ -5649,7 +7964,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5659,7 +7973,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5669,7 +7982,92 @@ namespace CG
 	{
 	public:
 		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.UVEmitterInterface.GetUVLight
+	 */
+	struct UUVEmitterInterface_GetUVLight_Params
+	{
+	public:
+		struct FVector                                             InTargetLocation;                                        // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       InOverridePrecision;                                     // 0x000C(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_YIG7[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		float                                                      InPrecisionOverrideValue;                                // 0x0010(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		struct FVector                                             OutLocation;                                             // 0x0014(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      OutStrength;                                             // 0x0020(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.Setup
+	 */
+	struct UUVLightReactionComponent_Setup_Params
+	{
+	public:
+		class UMaterialInstanceDynamic*                            InMaterial;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class USceneComponent*>                             InLocatorComponents;                                     // 0x0008(0x0010)  (Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.RemoveActor
+	 */
+	struct UUVLightReactionComponent_RemoveActor_Params
+	{
+	public:
+		class AActor*                                              ActorToRemove;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.GetRadius
+	 */
+	struct UUVLightReactionComponent_GetRadius_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.GetEmitterInRange
+	 */
+	struct UUVLightReactionComponent_GetEmitterInRange_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.CalculateUV
+	 */
+	struct UUVLightReactionComponent_CalculateUV_Params
+	{	};
+
+	/**
+	 * Function fnaf9.UVLightReactionComponent.AddActor
+	 */
+	struct UUVLightReactionComponent_AddActor_Params
+	{
+	public:
+		class AActor*                                              ActorToAdd;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionFromOverlap.OnOwnerEndOverlap
+	 */
+	struct UUVLightReactionFromOverlap_OnOwnerEndOverlap_Params
+	{
+	public:
+		class AActor*                                              OverlappedActor;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.UVLightReactionFromOverlap.OnOwnerBeginOverlap
+	 */
+	struct UUVLightReactionFromOverlap_OnOwnerBeginOverlap_Params
+	{
+	public:
+		class AActor*                                              OverlappedActor;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5678,8 +8076,7 @@ namespace CG
 	struct UVisualSourceComponent_SetVisualOffsetLocations_Params
 	{
 	public:
-		TArray<struct FVector>                                     InVisualOffsets;                                         // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FVector>                                     InVisualOffsets;                                         // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5690,7 +8087,6 @@ namespace CG
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             visualOffset;                                            // 0x0004(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5700,7 +8096,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5710,7 +8105,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PointIndex;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5719,8 +8113,7 @@ namespace CG
 	struct UVisualSourceComponent_GetVisualOffsets_Params
 	{
 	public:
-		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5729,8 +8122,7 @@ namespace CG
 	struct UVisualSourceComponent_GetVisualLocations_Params
 	{
 	public:
-		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FVector>                                     ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5740,7 +8132,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5750,7 +8141,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5760,9 +8150,9 @@ namespace CG
 	{
 	public:
 		struct FVector                                             VSLocation;                                              // 0x0000(0x000C)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_6S0H[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AActor*                                              passed_HitActor;                                         // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       passed_bVisible;                                         // 0x0018(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5772,7 +8162,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5783,15 +8172,13 @@ namespace CG
 	public:
 		class FName                                                ObjectName;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ObjectState;                                             // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.WorldStateHandlerComponent.OnObjectStateChangedEvent
 	 */
 	struct UWorldStateHandlerComponent_OnObjectStateChangedEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateHandlerComponent.HasValidSaveName
@@ -5800,7 +8187,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5810,7 +8196,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5820,9 +8205,9 @@ namespace CG
 	{
 	public:
 		class FString                                              MinigameName;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_EFNAFGameState                                       GameState;                                               // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EFNAFGameState                                             GameState;                                               // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_IUKF[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AActor*                                              MinigameActor;                                           // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5831,16 +8216,14 @@ namespace CG
 	struct UWorldStateSystem_SetWorldState_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameState                                             NewState;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.SetupNewGame
 	 */
 	struct UWorldStateSystem_SetupNewGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.SetSurvivalMaxDeaths
@@ -5849,7 +8232,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    MaxDeaths;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5858,8 +8240,16 @@ namespace CG
 	struct UWorldStateSystem_SetSurvivalDifficulty_Params
 	{
 	public:
-		fnaf9_ESurvivalDifficulty                                  Difficulty;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		ESurvivalDifficulty                                        Difficulty;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.SetRuinAIState
+	 */
+	struct UWorldStateSystem_SetRuinAIState_Params
+	{
+	public:
+		struct FFNAFRuinAISaveData                                 InRuinAIState;                                           // 0x0000(0x0078)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5869,7 +8259,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Seed;                                                    // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5879,7 +8268,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bAvailable;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5889,7 +8277,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InPowerStationID;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5899,14 +8286,41 @@ namespace CG
 	{
 	public:
 		bool                                                       bInFreddy;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.SetPlayerHasUsedHidingSpot
 	 */
 	struct UWorldStateSystem_SetPlayerHasUsedHidingSpot_Params
+	{	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.SetMazercisePanel
+	 */
+	struct UWorldStateSystem_SetMazercisePanel_Params
 	{
+	public:
+		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_7OUE[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FString                                              Location;                                                // 0x0008(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.SetInstructionCardShown
+	 */
+	struct UWorldStateSystem_SetInstructionCardShown_Params
+	{
+	public:
+		bool                                                       Shown;                                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.SetGoalPathName
+	 */
+	struct UWorldStateSystem_SetGoalPathName_Params
+	{
+	public:
+		class FName                                                inGoalPathName;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5916,7 +8330,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsSick;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5926,7 +8339,15 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PatrolPointIndex;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.SetDeactivatedCautionBot_Map
+	 */
+	struct UWorldStateSystem_SetDeactivatedCautionBot_Map_Params
+	{
+	public:
+		TMap<int32_t, bool>                                        In_DeactivatedCautionBots_Map;                           // 0x0000(0x0050)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5936,7 +8357,6 @@ namespace CG
 	{
 	public:
 		class FString                                              InActivityId;                                            // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5946,7 +8366,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bCanShowInstructionCards;                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5956,7 +8375,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bCanEnterExit;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5966,7 +8384,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bCanCall;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5976,7 +8393,6 @@ namespace CG
 	{
 	public:
 		struct FArcadeSaveData                                     InArcadeState;                                           // 0x0000(0x0030)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -5986,7 +8402,36 @@ namespace CG
 	{
 	public:
 		struct FFNAFAISaveData                                     InAIState;                                               // 0x0000(0x0068)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.ResetForChapterSelect
+	 */
+	struct UWorldStateSystem_ResetForChapterSelect_Params
+	{
+	public:
+		TArray<class FName>                                        chapterActivatables;                                     // 0x0000(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		TArray<class FName>                                        activatablesToKeepOnReplay;                              // 0x0010(0x0010)  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+		int32_t                                                    chapterSelected;                                         // 0x0020(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.RemoveDeactivatedCautionBot
+	 */
+	struct UWorldStateSystem_RemoveDeactivatedCautionBot_Params
+	{
+	public:
+		int32_t                                                    CautionBotID;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       isDeactivated;                                           // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.RemoveBonnieBowlMMMJumpscareSaveID
+	 */
+	struct UWorldStateSystem_RemoveBonnieBowlMMMJumpscareSaveID_Params
+	{
+	public:
+		class FName                                                inSaveID;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -5996,7 +8441,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ActivatableName;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6006,7 +8450,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6016,7 +8459,15 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.IsInstructionCardShown
+	 */
+	struct UWorldStateSystem_IsInstructionCardShown_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6026,7 +8477,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6037,7 +8487,6 @@ namespace CG
 	public:
 		class FName                                                ActivatableName;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6047,7 +8496,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6056,8 +8504,7 @@ namespace CG
 	struct UWorldStateSystem_GetWorldState_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EFNAFGameState                                             ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6067,7 +8514,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6076,8 +8522,7 @@ namespace CG
 	struct UWorldStateSystem_GetSurvivalDifficulty_Params
 	{
 	public:
-		fnaf9_ESurvivalDifficulty                                  ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ESurvivalDifficulty                                        ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6088,7 +8533,6 @@ namespace CG
 	public:
 		struct FVector                                             OutWorldLocation;                                        // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            OutWorldRotation;                                        // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6098,9 +8542,18 @@ namespace CG
 	{
 	public:
 		bool                                                       OutFreddyInWorld;                                        // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_U5X4[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             OutWorldLocation;                                        // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            OutWorldRotation;                                        // 0x0010(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.GetRuinAIState
+	 */
+	struct UWorldStateSystem_GetRuinAIState_Params
+	{
+	public:
+		struct FFNAFRuinAISaveData                                 ReturnValue;                                             // 0x0000(0x0078)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6110,7 +8563,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6120,8 +8572,19 @@ namespace CG
 	{
 	public:
 		bool                                                       OutPlayerInPowerStation;                                 // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_XMME[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		int32_t                                                    OutPowerStationID;                                       // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.GetMazercisePanel
+	 */
+	struct UWorldStateSystem_GetMazercisePanel_Params
+	{
+	public:
+		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_GLAQ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FString                                              ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6131,7 +8594,15 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.GetGoalPathName
+	 */
+	struct UWorldStateSystem_GetGoalPathName_Params
+	{
+	public:
+		class FName                                                ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6141,7 +8612,6 @@ namespace CG
 	{
 	public:
 		class AFNAFBasePlayerCharacter*                            ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6151,7 +8621,15 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.GetDeactivatedCautionBots_Map
+	 */
+	struct UWorldStateSystem_GetDeactivatedCautionBots_Map_Params
+	{
+	public:
+		TMap<int32_t, bool>                                        ReturnValue;                                             // 0x0000(0x0050)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6161,7 +8639,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6171,7 +8648,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6181,7 +8657,6 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6191,7 +8666,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6201,8 +8675,13 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.GetBonnieBowlMMMJumspscareData
+	 */
+	struct UWorldStateSystem_GetBonnieBowlMMMJumspscareData_Params
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.GetArcadeState
@@ -6211,7 +8690,15 @@ namespace CG
 	{
 	public:
 		struct FArcadeSaveData                                     ReturnValue;                                             // 0x0000(0x0030)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.GetAllCurrentActivables
+	 */
+	struct UWorldStateSystem_GetAllCurrentActivables_Params
+	{
+	public:
+		TArray<class FName>                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6221,15 +8708,13 @@ namespace CG
 	{
 	public:
 		struct FFNAFAISaveData                                     ReturnValue;                                             // 0x0000(0x0068)  (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.EndMinigame
 	 */
 	struct UWorldStateSystem_EndMinigame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.DebugSetPlayerHasUsedHidingSpot
@@ -6238,15 +8723,13 @@ namespace CG
 	{
 	public:
 		bool                                                       HasHid;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.ClearPlayerInPowerStation
 	 */
 	struct UWorldStateSystem_ClearPlayerInPowerStation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.CanStartMinigame
@@ -6255,8 +8738,7 @@ namespace CG
 	{
 	public:
 		bool                                                       CanStart;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		fnaf9_ECantStartMinigameReason                             reason;                                                  // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		ECantStartMinigameReason                                   reason;                                                  // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6266,7 +8748,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6276,7 +8757,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -6286,15 +8766,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.AddSpotted
 	 */
 	struct UWorldStateSystem_AddSpotted_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function fnaf9.WorldStateSystem.AddDeath
@@ -6303,7 +8781,25 @@ namespace CG
 	{
 	public:
 		int32_t                                                    OutRemainingLives;                                       // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.WorldStateSystem.AddDeactivatedCautionBot
+	 */
+	struct UWorldStateSystem_AddDeactivatedCautionBot_Params
+	{
+	public:
+		int32_t                                                    CautionBotID;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       isDeactivated;                                           // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function fnaf9.WorldStateSystem.AddBonnieBowlMMMJumpscareSaveID
+	 */
+	struct UWorldStateSystem_AddBonnieBowlMMMJumpscareSaveID_Params
+	{
+	public:
+		class FName                                                inSaveID;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -6313,7 +8809,21 @@ namespace CG
 	{
 	public:
 		class FName                                                ActivatableName;                                         // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function fnaf9.XboxUtilities.XboxQuit
+	 */
+	struct UXboxUtilities_XboxQuit_Params
+	{	};
+
+	/**
+	 * Function fnaf9.XSXUtilities.GetXSXConsoleType
+	 */
+	struct UXSXUtilities_GetXSXConsoleType_Params
+	{
+	public:
+		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 }

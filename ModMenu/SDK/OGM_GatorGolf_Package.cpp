@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_GatorGolf.OGM_GatorGolf_C.On Start
-	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_GatorGolf_C::On_Start()
+	void AOGM_GatorGolf_C::OnStart()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_GatorGolf.OGM_GatorGolf_C.On Start");
 		
-		AOGM_GatorGolf_C_On_Start_Params params {};
+		AOGM_GatorGolf_C_OnStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_GatorGolf.OGM_GatorGolf_C.Spawn Monty
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AOGM_GatorGolf_C::Spawn_Monty()
+	void AOGM_GatorGolf_C::SpawnMonty()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function OGM_GatorGolf.OGM_GatorGolf_C.Spawn Monty");
 		
-		AOGM_GatorGolf_C_Spawn_Monty_Params params {};
+		AOGM_GatorGolf_C_SpawnMonty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,9 +50,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function OGM_GatorGolf.OGM_GatorGolf_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void AOGM_GatorGolf_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function OGM_GatorGolf.OGM_GatorGolf_C.ReceiveBeginPlay");
+		
+		AOGM_GatorGolf_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function OGM_GatorGolf.OGM_GatorGolf_C.OnCollectSecurityBadge
+	 * 		Flags  -> ()
+	 */
+	void AOGM_GatorGolf_C::OnCollectSecurityBadge()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function OGM_GatorGolf.OGM_GatorGolf_C.OnCollectSecurityBadge");
+		
+		AOGM_GatorGolf_C_OnCollectSecurityBadge_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OGM_GatorGolf.OGM_GatorGolf_C.ExecuteUbergraph_OGM_GatorGolf
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -72,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AOGM_GatorGolf_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AOGM_GatorGolf_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AOGM_GatorGolf_C::StaticClass()

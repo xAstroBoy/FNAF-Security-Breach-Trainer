@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.OnTriggerPointHit
 	 */
 	struct ALMMSplinePathwayManager_C_OnTriggerPointHit_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.Event_OnSplineEndReached
 	 */
 	struct ALMMSplinePathwayManager_C_Event_OnSplineEndReached_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LMMSplinePathwayManager.LMMSplinePathwayManager_C.ExecuteUbergraph_LMMSplinePathwayManager
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

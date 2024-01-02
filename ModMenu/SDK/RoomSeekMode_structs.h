@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum RoomSeekMode.RoomSeekMode
 	 */
-	enum class RoomSeekMode_ERoomSeekMode : uint8_t
+	enum class ERoomSeekMode : uint8_t
 	{
-		RoomSeekMode__NewEnumerator0   = 0,
-		RoomSeekMode__NewEnumerator1   = 1,
-		RoomSeekMode__RoomSeekMode_MAX = 2
+		RoomSeekModeNewEnumerator0   = 0,
+		RoomSeekModeNewEnumerator1   = 1,
+		RoomSeekModeRoomSeekMode_MAX = 2
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,17 @@ namespace CG
 	public:
 		struct FVector                                             PlayerLocation;                                          // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       HasValidInfo;                                            // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_B3HS[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
 
+	/**
+	 * Function Vanessa.Vanessa_C.GetAlertInfoComplex
+	 */
+	struct AVanessa_C_GetAlertInfoComplex_Params
+	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        TypesToAlert;                                            // 0x0000(0x0010)  (Parm, OutParm)
+		int32_t                                                    NumberOfAlerts;                                          // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -31,9 +41,8 @@ namespace CG
 	struct AVanessa_C_GetAlertInfo_Params
 	{
 	public:
-		TArray<fnaf9_EFNAFAISpawnType>                             TypesToAlert;                                            // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
+		TArray<EFNAFAISpawnType>                                   TypesToAlert;                                            // 0x0000(0x0010)  (Parm, OutParm)
 		int32_t                                                    NumberOfAlerts;                                          // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -43,7 +52,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Finished;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -52,8 +60,7 @@ namespace CG
 	struct AVanessa_C_GetAlertType_Params
 	{
 	public:
-		fnaf9_EAlertType                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EAlertType                                                 ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -63,7 +70,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ShouldCheckHidingLocations;                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -72,8 +78,7 @@ namespace CG
 	struct AVanessa_C_GetRoomSeekMode_Params
 	{
 	public:
-		RoomSeekMode_ERoomSeekMode                                 SeekMode;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ERoomSeekMode                                              SeekMode;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -83,7 +88,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -93,7 +97,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -103,7 +106,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -113,7 +115,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -123,45 +124,40 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.On Leave AI
 	 */
-	struct AVanessa_C_On_Leave_AI_Params
+	struct AVanessa_C_OnLeaveAI_Params
 	{
 	public:
 		class AAISeeker_C*                                         ActorLeaving;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.On Encounter AI
 	 */
-	struct AVanessa_C_On_Encounter_AI_Params
+	struct AVanessa_C_OnEncounterAI_Params
 	{
 	public:
 		class AAISeeker_C*                                         ActorEncountered;                                        // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.On Jumpscare
 	 */
-	struct AVanessa_C_On_Jumpscare_Params
+	struct AVanessa_C_OnJumpscare_Params
 	{
 	public:
 		class AGregory_C*                                          Gregory;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.On Non Lethal Complete
 	 */
-	struct AVanessa_C_On_Non_Lethal_Complete_Params
-	{
-	};
+	struct AVanessa_C_OnNonLethalComplete_Params
+	{	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.OnCaptureOverlap
@@ -170,35 +166,31 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		class UBoxComponent*                                       CurrentCaptureTrigger;                                   // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UPrimitiveComponent*                                 CurrentCaptureTrigger;                                   // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.PlayerTeleportedToLostAndFound
 	 */
 	struct AVanessa_C_PlayerTeleportedToLostAndFound_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.Start Alert
 	 */
-	struct AVanessa_C_Start_Alert_Params
+	struct AVanessa_C_StartAlert_Params
 	{
 	public:
 		class FName                                                Alert;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.Stop Alert
 	 */
-	struct AVanessa_C_Stop_Alert_Params
+	struct AVanessa_C_StopAlert_Params
 	{
 	public:
 		class FName                                                Alert;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -208,31 +200,43 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function Vanessa.Vanessa_C.Stop Warning
-	 */
-	struct AVanessa_C_Stop_Warning_Params
-	{
-	};
-
-	/**
-	 * Function Vanessa.Vanessa_C.Start Warning
-	 */
-	struct AVanessa_C_Start_Warning_Params
-	{
-	public:
-		int32_t                                                    WarningCount;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Vanessa.Vanessa_C.Blocked By AI Time Up
 	 */
-	struct AVanessa_C_Blocked_By_AI_Time_Up_Params
+	struct AVanessa_C_BlockedByAITimeUp_Params
+	{	};
+
+	/**
+	 * Function Vanessa.Vanessa_C.ReceiveBeginPlay
+	 */
+	struct AVanessa_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function Vanessa.Vanessa_C.SetAlertInfoComplex
+	 */
+	struct AVanessa_C_SetAlertInfoComplex_Params
 	{
+	public:
+		TArray<struct FAnimatronicTypeData>                        TypesToAlert;                                            // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+		int32_t                                                    NumberOfAlerts;                                          // 0x0010(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function Vanessa.Vanessa_C.Stop Warning
+	 */
+	struct AVanessa_C_StopWarning_Params
+	{	};
+
+	/**
+	 * Function Vanessa.Vanessa_C.Start Warning
+	 */
+	struct AVanessa_C_StartWarning_Params
+	{
+	public:
+		int32_t                                                    WarningCount;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -241,8 +245,7 @@ namespace CG
 	struct AVanessa_C_PlayVoiceType_Params
 	{
 	public:
-		AIVoiceOverType_EAIVoiceOverType                           VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EAIVoiceOverType                                           VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -251,9 +254,8 @@ namespace CG
 	struct AVanessa_C_SetAlertInfo_Params
 	{
 	public:
-		TArray<fnaf9_EFNAFAISpawnType>                             TypesToAlert;                                            // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+		TArray<EFNAFAISpawnType>                                   TypesToAlert;                                            // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 		int32_t                                                    NumberOfAlerts;                                          // 0x0010(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -263,7 +265,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanDeactivate;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,8 +30,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		ActivatableState_EActivatableState                         CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EActivatableState                                          CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -43,8 +41,7 @@ namespace CG
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       CanActivate;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		fnaf9_EConditionFailReason                                 CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EConditionFailReason                                       CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -54,8 +51,7 @@ namespace CG
 	{
 	public:
 		class AOGM_BackStage_C*                                    BackstageOGM;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		float                                                      Drain_Amount;                                            // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		float                                                      DrainAmount;                                             // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -68,7 +64,6 @@ namespace CG
 		int32_t                                                    DoorIndex;                                               // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FVector                                             ReturnValue;                                             // 0x0008(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    SelectedDoorIndex;                                       // 0x0014(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -82,7 +77,7 @@ namespace CG
 		struct FVector                                             ReturnValue;                                             // 0x0008(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    PointIndex;                                              // 0x0014(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       ReachedOffice;                                           // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_NR4X[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -92,7 +87,6 @@ namespace CG
 	{
 	public:
 		float                                                      Amount;                                                  // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -102,7 +96,9 @@ namespace CG
 	{
 	public:
 		bool                                                       Locked;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       Close;                                                   // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       Applytoplayer;                                           // 0x0002(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_4L9B[0x1];                                   // 0x0003(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -112,15 +108,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.SetActivated
 	 */
 	struct ABackstageOffice_SideDoorManagement_C_SetActivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.DeactivateObject
@@ -129,22 +123,19 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Deactivator;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.SetDeactivated
 	 */
 	struct ABackstageOffice_SideDoorManagement_C_SetDeactivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.Startup
 	 */
 	struct ABackstageOffice_SideDoorManagement_C_Startup_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.ActivateObject
@@ -153,25 +144,22 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.Shock Doors
 	 */
-	struct ABackstageOffice_SideDoorManagement_C_Shock_Doors_Params
+	struct ABackstageOffice_SideDoorManagement_C_ShockDoors_Params
 	{
 	public:
-		TArray<class AActor*>                                      Actors_To_Stun;                                          // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
+		TArray<class AActor*>                                      ActorsToStun;                                            // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.On Character Moved In
 	 */
-	struct ABackstageOffice_SideDoorManagement_C_On_Character_Moved_In_Params
-	{
-	};
+	struct ABackstageOffice_SideDoorManagement_C_OnCharacterMovedIn_Params
+	{	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.ReceiveTick
@@ -180,15 +168,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.Outer Doors Unlocked
 	 */
-	struct ABackstageOffice_SideDoorManagement_C_Outer_Doors_Unlocked_Params
-	{
-	};
+	struct ABackstageOffice_SideDoorManagement_C_OuterDoorsUnlocked_Params
+	{	};
 
 	/**
 	 * Function BackstageOffice_SideDoorManagement.BackstageOffice_SideDoorManagement_C.ExecuteUbergraph_BackstageOffice_SideDoorManagement
@@ -197,7 +183,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_1ZP2[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -207,7 +193,6 @@ namespace CG
 	{
 	public:
 		bool                                                       NewParam;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -217,7 +202,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    DoorLevel;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -227,7 +211,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Electrified;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 }

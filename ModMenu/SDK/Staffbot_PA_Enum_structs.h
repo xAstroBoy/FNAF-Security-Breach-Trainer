@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * UserDefinedEnum Staffbot_PA_Enum.Staffbot_PA_Enum
 	 */
-	enum class Staffbot_PA_Enum_EStaffbot_PA_Enum : uint8_t
+	enum class EStaffbot_PA_Enum : uint8_t
 	{
-		Staffbot_PA_Enum__NewEnumerator0  = 0,
-		Staffbot_PA_Enum__NewEnumerator1  = 1,
-		Staffbot_PA_Enum__NewEnumerator4  = 2,
-		Staffbot_PA_Enum__NewEnumerator5  = 3,
-		Staffbot_PA_Enum__NewEnumerator7  = 4,
-		Staffbot_PA_Enum__Staffbot_PA_MAX = 5
+		Staffbot_PA_EnumNewEnumerator0  = 0,
+		Staffbot_PA_EnumNewEnumerator1  = 1,
+		Staffbot_PA_EnumNewEnumerator4  = 2,
+		Staffbot_PA_EnumNewEnumerator5  = 3,
+		Staffbot_PA_EnumNewEnumerator7  = 4,
+		Staffbot_PA_EnumStaffbot_PA_MAX = 5
 	};
 
 }

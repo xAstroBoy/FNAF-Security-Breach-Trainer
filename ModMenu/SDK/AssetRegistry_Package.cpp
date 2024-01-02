@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAssetRegistryImpl.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAssetRegistryImpl.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAssetRegistryImpl::StaticClass()
@@ -26,13 +26,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA2250
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSoftObjectPath UAssetRegistryHelpers::STATIC_ToSoftObjectPath(const struct FAssetData& InAssetData)
+	struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -42,7 +42,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -51,14 +50,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1F20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.SetFilterTagsAndValues
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARFilter                                   InFilter                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FTagAndValue>                        InTagsAndValues                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FTagAndValue>                        InTagsAndValues                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FARFilter UAssetRegistryHelpers::STATIC_SetFilterTagsAndValues(const struct FARFilter& InFilter, TArray<struct FTagAndValue> InTagsAndValues)
+	struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARFilter& InFilter, TArray<struct FTagAndValue> InTagsAndValues)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -69,7 +68,6 @@ namespace CG
 		params.InTagsAndValues = InTagsAndValues;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -78,13 +76,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1410
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsValid
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAssetRegistryHelpers::STATIC_IsValid(const struct FAssetData& InAssetData)
+	bool UAssetRegistryHelpers::IsValid(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -94,7 +92,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -103,13 +100,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1320
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsUAsset
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAssetRegistryHelpers::STATIC_IsUAsset(const struct FAssetData& InAssetData)
+	bool UAssetRegistryHelpers::IsUAsset(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -119,7 +116,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -128,13 +124,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsRedirector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAssetRegistryHelpers::STATIC_IsRedirector(const struct FAssetData& InAssetData)
+	bool UAssetRegistryHelpers::IsRedirector(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -144,7 +140,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -153,13 +148,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsAssetLoaded
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAssetRegistryHelpers::STATIC_IsAssetLoaded(const struct FAssetData& InAssetData)
+	bool UAssetRegistryHelpers::IsAssetLoaded(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -169,7 +164,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -178,15 +172,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetTagValue
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        InTagName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      OutTagValue                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAssetRegistryHelpers::STATIC_GetTagValue(const struct FAssetData& InAssetData, const class FName& InTagName, class FString* OutTagValue)
+	bool UAssetRegistryHelpers::GetTagValue(const struct FAssetData& InAssetData, const class FName& InTagName, class FString* OutTagValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -197,7 +191,6 @@ namespace CG
 		params.InTagName = InTagName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -209,13 +202,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0BD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetFullName
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UAssetRegistryHelpers::STATIC_GetFullName(const struct FAssetData& InAssetData)
+	class FString UAssetRegistryHelpers::GetFullName(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -225,7 +218,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -234,13 +226,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0A90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetExportTextName
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UAssetRegistryHelpers::STATIC_GetExportTextName(const struct FAssetData& InAssetData)
+	class FString UAssetRegistryHelpers::GetExportTextName(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -250,7 +242,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -259,13 +250,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA09A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetClass
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UClass* UAssetRegistryHelpers::STATIC_GetClass(const struct FAssetData& InAssetData)
+	class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -275,7 +266,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -284,11 +274,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetAssetRegistry
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	void UAssetRegistryHelpers::STATIC_GetAssetRegistry()
+	void UAssetRegistryHelpers::GetAssetRegistry()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -297,20 +287,19 @@ namespace CG
 		UAssetRegistryHelpers_GetAssetRegistry_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E9FF10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetAsset
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAssetData                                  InAssetData                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UObject* UAssetRegistryHelpers::STATIC_GetAsset(const struct FAssetData& InAssetData)
+	class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -320,7 +309,6 @@ namespace CG
 		params.InAssetData = InAssetData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -329,14 +317,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E9FBD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.CreateAssetData
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     InAsset                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAllowBlueprintClass                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FAssetData UAssetRegistryHelpers::STATIC_CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass)
+	struct FAssetData UAssetRegistryHelpers::CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -347,7 +335,6 @@ namespace CG
 		params.bAllowBlueprintClass = bAllowBlueprintClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -356,8 +343,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAssetRegistryHelpers.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAssetRegistryHelpers.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAssetRegistryHelpers::StaticClass()
@@ -370,11 +357,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA2390
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AssetRegistry.AssetRegistry.WaitForCompletion
+	 * 		Flags  -> ()
+	 */
+	void UAssetRegistry::WaitForCompletion()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.WaitForCompletion");
+		
+		UAssetRegistry_WaitForCompletion_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.UseFilterToExcludeAssets
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAssetData>                          AssetDataList                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          AssetDataList                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FARFilter                                   Filter                                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::UseFilterToExcludeAssets(TArray<struct FAssetData>* AssetDataList, const struct FARFilter& Filter)
@@ -387,7 +393,6 @@ namespace CG
 		params.Filter = Filter;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -397,9 +402,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.SearchAllAssets
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bSynchronousSearch                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -413,18 +418,17 @@ namespace CG
 		params.bSynchronousSearch = bSynchronousSearch;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1D70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanPathsSynchronous
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              InPaths                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              InPaths                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bForceRescan                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::ScanPathsSynchronous(TArray<class FString> InPaths, bool bForceRescan)
@@ -438,18 +442,17 @@ namespace CG
 		params.bForceRescan = bForceRescan;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1CA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              InFilePaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              InFilePaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::ScanModifiedAssetFiles(TArray<class FString> InFilePaths)
 	{
@@ -461,18 +464,17 @@ namespace CG
 		params.InFilePaths = InFilePaths;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1B80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanFilesSynchronous
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              InFilePaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              InFilePaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bForceRescan                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::ScanFilesSynchronous(TArray<class FString> InFilePaths, bool bForceRescan)
@@ -486,18 +488,17 @@ namespace CG
 		params.bForceRescan = bForceRescan;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1840
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.RunAssetsThroughFilter
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAssetData>                          AssetDataList                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          AssetDataList                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FARFilter                                   Filter                                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::RunAssetsThroughFilter(TArray<struct FAssetData>* AssetDataList, const struct FARFilter& Filter)
@@ -510,7 +511,6 @@ namespace CG
 		params.Filter = Filter;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -520,9 +520,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA17A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.PrioritizeSearchPath
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      PathToPrioritize                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -536,20 +536,19 @@ namespace CG
 		params.PathToPrioritize = PathToPrioritize;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1650
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.K2_GetReferencers
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        PackageName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAssetRegistryDependencyOptions             ReferenceOptions                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		TArray<class FName>                                OutReferencers                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FName>                                OutReferencers                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::K2_GetReferencers(const class FName& PackageName, const struct FAssetRegistryDependencyOptions& ReferenceOptions, TArray<class FName>* OutReferencers)
 	{
@@ -562,7 +561,6 @@ namespace CG
 		params.ReferenceOptions = ReferenceOptions;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -574,13 +572,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.K2_GetDependencies
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        PackageName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAssetRegistryDependencyOptions             DependencyOptions                                          (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		TArray<class FName>                                OutDependencies                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FName>                                OutDependencies                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::K2_GetDependencies(const class FName& PackageName, const struct FAssetRegistryDependencyOptions& DependencyOptions, TArray<class FName>* OutDependencies)
 	{
@@ -593,7 +591,6 @@ namespace CG
 		params.DependencyOptions = DependencyOptions;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -605,9 +602,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1200
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.IsLoadingAssets
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UAssetRegistry::IsLoadingAssets()
 	{
@@ -618,7 +615,6 @@ namespace CG
 		UAssetRegistry_IsLoadingAssets_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -627,9 +623,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA1040
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.HasAssets
-	 * 		Flags  -> (Native, Public, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        PackagePath                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRecursive                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -645,7 +641,6 @@ namespace CG
 		params.bRecursive = bRecursive;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -654,12 +649,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetSubPaths
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      InBasePath                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class FString>                              OutPathList                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              OutPathList                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bInRecurse                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::GetSubPaths(const class FString& InBasePath, TArray<class FString>* OutPathList, bool bInRecurse)
@@ -673,7 +668,6 @@ namespace CG
 		params.bInRecurse = bInRecurse;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -683,12 +677,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA07C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByPath
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        PackagePath                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRecursive                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bIncludeOnlyOnDiskAssets                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -704,7 +698,6 @@ namespace CG
 		params.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -716,12 +709,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0630
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByPackageName
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        PackageName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bIncludeOnlyOnDiskAssets                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::GetAssetsByPackageName(const class FName& PackageName, TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets)
@@ -735,7 +728,6 @@ namespace CG
 		params.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -747,12 +739,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA04A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByClass
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ClassName                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bSearchSubClasses                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::GetAssetsByClass(const class FName& ClassName, TArray<struct FAssetData>* OutAssetData, bool bSearchSubClasses)
@@ -766,7 +758,6 @@ namespace CG
 		params.bSearchSubClasses = bSearchSubClasses;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -778,12 +769,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0160
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssets
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARFilter                                   Filter                                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData)
 	{
@@ -795,7 +786,6 @@ namespace CG
 		params.Filter = Filter;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -807,9 +797,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01EA0000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetByObjectPath
-	 * 		Flags  -> (Native, Public, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ObjectPath                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bIncludeOnlyOnDiskAssets                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -825,7 +815,6 @@ namespace CG
 		params.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -834,11 +823,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E9FE40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAllCachedPaths
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              OutPathList                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              OutPathList                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAssetRegistry::GetAllCachedPaths(TArray<class FString>* OutPathList)
 	{
@@ -849,7 +838,6 @@ namespace CG
 		UAssetRegistry_GetAllCachedPaths_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -859,11 +847,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01E9FCF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAllAssets
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAssetData>                          OutAssetData                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bIncludeOnlyOnDiskAssets                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	bool UAssetRegistry::GetAllAssets(TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets)
@@ -876,7 +864,6 @@ namespace CG
 		params.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -888,8 +875,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAssetRegistry.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAssetRegistry.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAssetRegistry::StaticClass()

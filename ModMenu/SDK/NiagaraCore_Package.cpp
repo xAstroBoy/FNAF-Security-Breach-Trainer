@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNiagaraMergeable.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNiagaraMergeable.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNiagaraMergeable::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNiagaraDataInterfaceBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNiagaraDataInterfaceBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNiagaraDataInterfaceBase::StaticClass()

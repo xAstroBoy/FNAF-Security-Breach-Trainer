@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0098(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		TArray<class UAkAudioEvent*>                               RoxyVO;                                                  // 0x00A0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class UAkAudioEvent*>                               RoxyVO;                                                  // 0x00A0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);

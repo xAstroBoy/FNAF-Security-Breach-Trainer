@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothConfigCommon.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothConfigCommon.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothConfigCommon::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothSharedConfigCommon.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothSharedConfigCommon.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothSharedConfigCommon::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothingAssetCustomData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothingAssetCustomData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothingAssetCustomData::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothingAssetCommon.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothingAssetCommon.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothingAssetCommon::StaticClass()
@@ -68,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothLODDataCommon_Legacy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothLODDataCommon_Legacy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothLODDataCommon_Legacy::StaticClass()

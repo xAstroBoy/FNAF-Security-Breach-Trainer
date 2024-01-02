@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,22 +18,19 @@ namespace CG
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.ResetPower
 	 */
 	struct ABackstageOffice_Door_C_ResetPower_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.UserConstructionScript
 	 */
 	struct ABackstageOffice_Door_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.ReceiveBeginPlay
 	 */
 	struct ABackstageOffice_Door_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.ReceiveActorBeginOverlap
@@ -42,7 +39,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -52,32 +48,28 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.Drain Power
 	 */
-	struct ABackstageOffice_Door_C_Drain_Power_Params
+	struct ABackstageOffice_Door_C_DrainPower_Params
 	{
 	public:
 		float                                                      Amount;                                                  // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.ShockDoor
 	 */
 	struct ABackstageOffice_Door_C_ShockDoor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.Flicker Lights
 	 */
-	struct ABackstageOffice_Door_C_Flicker_Lights_Params
-	{
-	};
+	struct ABackstageOffice_Door_C_FlickerLights_Params
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.ExecuteUbergraph_BackstageOffice_Door
@@ -86,22 +78,20 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_YBXK[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.OnActorOverlap__DelegateSignature
 	 */
 	struct ABackstageOffice_Door_C_OnActorOverlap__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BackstageOffice_Door.BackstageOffice_Door_C.OnDoorDrained__DelegateSignature
 	 */
 	struct ABackstageOffice_Door_C_OnDoorDrained__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

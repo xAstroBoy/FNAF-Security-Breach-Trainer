@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,50 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.DisplayComicbookSubtitle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FText                                        Subtitle                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+	 */
+	void UEndGameCinematicPlayerUI_C::DisplayComicbookSubtitle(const class FText& Subtitle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.DisplayComicbookSubtitle");
+		
+		UEndGameCinematicPlayerUI_C_DisplayComicbookSubtitle_Params params {};
+		params.Subtitle = Subtitle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.SetupComicbookSubtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::SetupComicbookSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.SetupComicbookSubtitles");
+		
+		UEndGameCinematicPlayerUI_C_SetupComicbookSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,9 +77,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.EndGameVideoCredits
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::EndGameVideoCredits()
 	{
@@ -55,9 +96,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.StopVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::StopVideo()
 	{
@@ -74,9 +115,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.MakeTextVisibleAgain
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::MakeTextVisibleAgain()
 	{
@@ -93,9 +134,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.StartTextFadeAway
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::StartTextFadeAway()
 	{
@@ -112,9 +153,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.SetText
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::SetText()
 	{
@@ -131,9 +172,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.PlayFazerblastDialogue
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UEndGameCinematicPlayerUI_C::PlayFazerblastDialogue()
 	{
@@ -150,17 +191,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UEndGameCinematicPlayerUI_C::Start_Hold_Timer()
+	void UEndGameCinematicPlayerUI_C::StartHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Hold Timer");
 		
-		UEndGameCinematicPlayerUI_C_Start_Hold_Timer_Params params {};
+		UEndGameCinematicPlayerUI_C_StartHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -169,17 +210,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Stop Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UEndGameCinematicPlayerUI_C::Stop_Hold_Timer()
+	void UEndGameCinematicPlayerUI_C::StopHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Stop Hold Timer");
 		
-		UEndGameCinematicPlayerUI_C_Stop_Hold_Timer_Params params {};
+		UEndGameCinematicPlayerUI_C_StopHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -188,9 +229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.OnMediaOpened
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      OpenedUrl                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 */
@@ -210,9 +251,123 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Loading Dock Subtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::StartLoadingDockSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Loading Dock Subtitles");
+		
+		UEndGameCinematicPlayerUI_C_StartLoadingDockSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Fire Escape Subtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::StartFireEscapeSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Fire Escape Subtitles");
+		
+		UEndGameCinematicPlayerUI_C_StartFireEscapeSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Gregory Escapes Subtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::StartGregoryEscapesSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Gregory Escapes Subtitles");
+		
+		UEndGameCinematicPlayerUI_C_StartGregoryEscapesSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Vanny Destroyed Subtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::StartVannyDestroyedSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Vanny Destroyed Subtitles");
+		
+		UEndGameCinematicPlayerUI_C_StartVannyDestroyedSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Vanny Redeemed Subtitles
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::StartVannyRedeemedSubtitles()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Start Vanny Redeemed Subtitles");
+		
+		UEndGameCinematicPlayerUI_C_StartVannyRedeemedSubtitles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Construct
+	 * 		Flags  -> ()
+	 */
+	void UEndGameCinematicPlayerUI_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.Construct");
+		
+		UEndGameCinematicPlayerUI_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EndGameCinematicPlayerUI.EndGameCinematicPlayerUI_C.ExecuteUbergraph_EndGameCinematicPlayerUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -232,8 +387,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEndGameCinematicPlayerUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEndGameCinematicPlayerUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEndGameCinematicPlayerUI_C::StaticClass()

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.IncrementTapesPlayed
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UTapeSaveGameObject_C::IncrementTapesPlayed()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.GetNoOfTapesDone
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NoOfTapesPlayed                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -55,11 +55,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.GetInventoryTapes
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FName>                                InInventoryTapes                                           (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class FName>                                InInventoryTapes                                           (Parm, OutParm)
 	 */
 	void UTapeSaveGameObject_C::GetInventoryTapes(TArray<class FName>* InInventoryTapes)
 	{
@@ -79,9 +79,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.ClearAll
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UTapeSaveGameObject_C::ClearAll()
 	{
@@ -98,11 +98,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.GetTapesDonePlaying
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FName>                                TapesDonePlaying                                           (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class FName>                                TapesDonePlaying                                           (Parm, OutParm)
 	 */
 	void UTapeSaveGameObject_C::GetTapesDonePlaying(TArray<class FName>* TapesDonePlaying)
 	{
@@ -122,9 +122,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.AddTapeDonePlaying
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        TapeDonePlaying                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -144,9 +144,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.SetCollectedTapesData
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        InventoryItemName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               HasBeenCollected                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -168,14 +168,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TapeSaveGameObject.TapeSaveGameObject_C.GetCollectedTapesData
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        InventoryItemName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               HasBeenCollected_                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               HasBeenCollected                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UTapeSaveGameObject_C::GetCollectedTapesData(const class FName& InventoryItemName, bool* HasBeenCollected_)
+	void UTapeSaveGameObject_C::GetCollectedTapesData(const class FName& InventoryItemName, bool* HasBeenCollected)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -188,14 +188,14 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (HasBeenCollected_ != nullptr)
-			*HasBeenCollected_ = params.HasBeenCollected_;
+		if (HasBeenCollected != nullptr)
+			*HasBeenCollected = params.HasBeenCollected;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTapeSaveGameObject_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTapeSaveGameObject_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTapeSaveGameObject_C::StaticClass()

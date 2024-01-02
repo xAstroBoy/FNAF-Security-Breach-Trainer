@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,29 +21,25 @@ namespace CG
 	{
 	public:
 		struct FHitResult                                          Hit;                                                     // 0x0000(0x0088)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
 	 * Function LaserGun_Interactable.LaserGun_Interactable_C.GameExit
 	 */
 	struct ULaserGun_Interactable_C_GameExit_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LaserGun_Interactable.LaserGun_Interactable_C.GameEnd
 	 */
 	struct ULaserGun_Interactable_C_GameEnd_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LaserGun_Interactable.LaserGun_Interactable_C.GameStart
 	 */
 	struct ULaserGun_Interactable_C_GameStart_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LaserGun_Interactable.LaserGun_Interactable_C.ForceKill
@@ -51,8 +47,7 @@ namespace CG
 	struct ULaserGun_Interactable_C_ForceKill_Params
 	{
 	public:
-		bool                                                       Animate_;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       Animate;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -63,7 +58,6 @@ namespace CG
 	public:
 		class AEQ_LaserGun_C*                                      Gun;                                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FHitResult                                          HitResult;                                               // 0x0008(0x0088)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 }

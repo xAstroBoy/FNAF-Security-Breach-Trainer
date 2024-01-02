@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,15 +30,13 @@ namespace CG
 	{
 	public:
 		class FString                                              String;                                                  // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.UpdateDisplay
 	 */
 	struct UWI_Subtitles_C_UpdateDisplay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.ExtractSubtitleVariable
@@ -52,7 +49,6 @@ namespace CG
 		class FString                                              CharEnd;                                                 // 0x0020(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 		class FString                                              Variable;                                                // 0x0030(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 		class FString                                              String;                                                  // 0x0040(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -68,22 +64,20 @@ namespace CG
 		float                                                      MaxRadiusPercent;                                        // 0x002C(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       SanitizeKey;                                             // 0x0030(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       HighPriority;                                            // 0x0031(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_P4SA[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.TickDistance
 	 */
 	struct UWI_Subtitles_C_TickDistance_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.TickLines
 	 */
 	struct UWI_Subtitles_C_TickLines_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.ToggleActive
@@ -92,7 +86,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -102,7 +95,6 @@ namespace CG
 	{
 	public:
 		struct FS_SubtitleState                                    ReturnValue;                                             // 0x0000(0x0050)  (Parm, OutParm, ReturnParm, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -112,32 +104,13 @@ namespace CG
 	{
 	public:
 		struct FS_SubtitleState                                    State;                                                   // 0x0000(0x0050)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.Reset Lines
 	 */
-	struct UWI_Subtitles_C_Reset_Lines_Params
-	{
-	};
-
-	/**
-	 * Function WI_Subtitles.WI_Subtitles_C.PreConstruct
-	 */
-	struct UWI_Subtitles_C_PreConstruct_Params
-	{
-	public:
-		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function WI_Subtitles.WI_Subtitles_C.Construct
-	 */
-	struct UWI_Subtitles_C_Construct_Params
-	{
-	};
+	struct UWI_Subtitles_C_ResetLines_Params
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.Tick
@@ -147,8 +120,13 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function WI_Subtitles.WI_Subtitles_C.Construct
+	 */
+	struct UWI_Subtitles_C_Construct_Params
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.EndVoiceOverDisplay
@@ -157,7 +135,6 @@ namespace CG
 	{
 	public:
 		class FString                                              reason;                                                  // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -167,15 +144,28 @@ namespace CG
 	{
 	public:
 		float                                                      Duration;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function WI_Subtitles.WI_Subtitles_C.PreConstruct
+	 */
+	struct UWI_Subtitles_C_PreConstruct_Params
+	{
+	public:
+		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.EndTimer
 	 */
 	struct UWI_Subtitles_C_EndTimer_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function WI_Subtitles.WI_Subtitles_C.SkipSubtitles
+	 */
+	struct UWI_Subtitles_C_SkipSubtitles_Params
+	{	};
 
 	/**
 	 * Function WI_Subtitles.WI_Subtitles_C.ExecuteUbergraph_WI_Subtitles
@@ -184,7 +174,22 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_BFHJ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
 
+	/**
+	 * Function WI_Subtitles.WI_Subtitles_C.SubtitleBegin__DelegateSignature
+	 */
+	struct UWI_Subtitles_C_SubtitleBegin__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function WI_Subtitles.WI_Subtitles_C.SubtitleEnd__DelegateSignature
+	 */
+	struct UWI_Subtitles_C_SubtitleEnd__DelegateSignature_Params
+	{
+	public:
+		class UWI_Subtitles_C*                                     SubtitleWidget;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

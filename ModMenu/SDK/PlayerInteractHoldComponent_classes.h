@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass PlayerInteractHoldComponent.PlayerInteractHoldComponent_C
-	 * Size -> 0x0030 (FullSize[0x00E0] - InheritedSize[0x00B0])
+	 * Size -> 0x0027 (FullSize[0x00D7] - InheritedSize[0x00B0])
 	 */
 	class UPlayerInteractHoldComponent_C : public UActorComponent
 	{
@@ -27,15 +27,15 @@ namespace CG
 		class FScriptMulticastDelegate                             OnHoldCompleted;                                         // 0x00C0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		float                                                      Percentage;                                              // 0x00D0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HitSuccess;                                              // 0x00D4(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_87TO[0x3];                                   // 0x00D5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UWI_Gregory_Interact_C*                              InteractWidget;                                          // 0x00D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       OriginalTickValue;                                       // 0x00D5(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       IsCancellingFromPause;                                   // 0x00D6(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
+		void OverrideHoldToCollectTime(float HoldToCollectTime);
 		bool IsHolding();
-		void GetPlayerHUD(class UPlayerHUD_C** PlayerHUD);
-		void Stop_Hold_Timer();
+		void StartHoldTimer();
+		void StopHoldTimer();
 		void ReceiveTick(float DeltaSeconds);
-		void Start_Hold_Timer();
 		void ExecuteUbergraph_PlayerInteractHoldComponent(int32_t EntryPoint);
 		void OnHoldCompleted__DelegateSignature();
 		static UClass* StaticClass();

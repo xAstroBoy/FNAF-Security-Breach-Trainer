@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.GetItemDisplayName
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class FText UDebugInventoryItem_C::GetItemDisplayName()
 	{
@@ -33,11 +33,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.Get_HaveItemCheckbox_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	SlateCore_ECheckBoxState UDebugInventoryItem_C::Get_HaveItemCheckbox_CheckedState_1()
+	ECheckBoxState UDebugInventoryItem_C::Get_HaveItemCheckbox_CheckedState_1()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -54,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.Setup
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        InventoryItemName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -76,9 +76,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.BndEvt__HaveItemCheckbox_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -98,9 +98,66 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.Construct
+	 * 		Flags  -> ()
+	 */
+	void UDebugInventoryItem_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugInventoryItem.DebugInventoryItem_C.Construct");
+		
+		UDebugInventoryItem_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDebugInventoryItem_C::BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugInventoryItem.DebugInventoryItem_C.BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature");
+		
+		UDebugInventoryItem_C_BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.UpdateVisual
+	 * 		Flags  -> ()
+	 */
+	void UDebugInventoryItem_C::UpdateVisual()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DebugInventoryItem.DebugInventoryItem_C.UpdateVisual");
+		
+		UDebugInventoryItem_C_UpdateVisual_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DebugInventoryItem.DebugInventoryItem_C.ExecuteUbergraph_DebugInventoryItem
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -120,8 +177,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDebugInventoryItem_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDebugInventoryItem_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDebugInventoryItem_C::StaticClass()

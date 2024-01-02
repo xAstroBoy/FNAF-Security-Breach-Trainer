@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -33,13 +33,13 @@ namespace CG
 		float                                                      RotationSpeed;                                           // 0x0268(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      FOVStart;                                                // 0x026C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      FOVMin;                                                  // 0x0270(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Player_Dragging;                                         // 0x0274(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       PlayerDragging;                                          // 0x0274(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		void RotateItem(const struct FRotator& Rotation_Delta, bool Local_Space);
-		void SetIsVisible(bool Is_Visible);
+		void RotateItem(const struct FRotator& RotationDelta, bool LocalSpace);
+		void SetIsVisible(bool IsVisible);
 		void FocusView();
-		void SetMesh(class UStaticMesh* New_Model);
+		void SetMesh(class UStaticMesh* NewModel);
 		void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2(const struct FKey& Key);
 		void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_1(const struct FKey& Key);
 		void InuputNext();

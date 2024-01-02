@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -33,7 +33,7 @@ namespace CG
 		void ReceiveBeginPlay();
 		void ChangeColor(int32_t ChangeColor);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void Set_Can_Use(bool CanUse);
+		void SetCanUse(bool CanUse);
 		void ActivateObject(class AActor* Activator);
 		void SetActivated();
 		void ExecuteUbergraph_BasicButton(int32_t EntryPoint);

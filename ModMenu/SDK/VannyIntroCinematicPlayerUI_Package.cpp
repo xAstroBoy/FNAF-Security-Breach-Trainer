@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.VannyIntroVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::VannyIntroVideo()
 	{
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StopVideo
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::StopVideo()
 	{
@@ -74,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.MakeTextVisibleAgain
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::MakeTextVisibleAgain()
 	{
@@ -93,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.StartTextFadeAway
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::StartTextFadeAway()
 	{
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.SetText
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::SetText()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayVanny00004
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::PlayVanny00004()
 	{
@@ -150,9 +150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.PlayFreddy00175
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::PlayFreddy00175()
 	{
@@ -169,17 +169,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Start Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UVannyIntroCinematicPlayerUI_C::Start_Hold_Timer()
+	void UVannyIntroCinematicPlayerUI_C::StartHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Start Hold Timer");
 		
-		UVannyIntroCinematicPlayerUI_C_Start_Hold_Timer_Params params {};
+		UVannyIntroCinematicPlayerUI_C_StartHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -188,17 +188,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Stop Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UVannyIntroCinematicPlayerUI_C::Stop_Hold_Timer()
+	void UVannyIntroCinematicPlayerUI_C::StopHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.Stop Hold Timer");
 		
-		UVannyIntroCinematicPlayerUI_C_Stop_Hold_Timer_Params params {};
+		UVannyIntroCinematicPlayerUI_C_StopHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnMediaOpened
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      OpenedUrl                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 */
@@ -229,9 +229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.ExecuteUbergraph_VannyIntroCinematicPlayerUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -251,9 +251,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function VannyIntroCinematicPlayerUI.VannyIntroCinematicPlayerUI_C.OnStopFinished__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UVannyIntroCinematicPlayerUI_C::OnStopFinished__DelegateSignature()
 	{
@@ -270,8 +270,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UVannyIntroCinematicPlayerUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UVannyIntroCinematicPlayerUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UVannyIntroCinematicPlayerUI_C::StaticClass()

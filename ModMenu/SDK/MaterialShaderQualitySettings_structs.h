@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Enums
 	// --------------------------------------------------
 	/**
-	 * Enum MaterialShaderQualitySettings.EMobileCSMQuality
+	 * Enum MaterialShaderQualitySettings.EMobileShadowQuality
 	 */
-	enum class MaterialShaderQualitySettings_EMobileCSMQuality : uint8_t
+	enum class EMobileShadowQuality : uint8_t
 	{
-		EMobileCSMQuality__NoFiltering           = 0,
-		EMobileCSMQuality__PCF_1x1               = 1,
-		EMobileCSMQuality__PCF_2x2               = 2,
-		EMobileCSMQuality__PCF_3x3               = 3,
-		EMobileCSMQuality__EMobileCSMQuality_MAX = 4
+		NoFiltering = 0,
+		PCF_1x1     = 1,
+		PCF_2x2     = 2,
+		PCF_3x3     = 3,
+		MAX         = 4
 	};
 
 	// --------------------------------------------------
@@ -44,8 +44,7 @@ namespace CG
 		bool                                                       bForceLQReflections;                                     // 0x0005(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bForceDisablePreintegratedGF;                            // 0x0006(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDisableMaterialNormalCalculation;                       // 0x0007(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MaterialShaderQualitySettings_EMobileCSMQuality            MobileCSMQuality;                                        // 0x0008(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		EMobileShadowQuality                                       MobileShadowQuality;                                     // 0x0008(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 }

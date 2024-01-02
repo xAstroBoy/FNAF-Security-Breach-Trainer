@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCache.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCache.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCache::StaticClass()
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E5F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent()
 	{
@@ -39,7 +39,6 @@ namespace CG
 		AGeometryCacheActor_GetGeometryCacheComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -48,8 +47,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AGeometryCacheActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AGeometryCacheActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AGeometryCacheActor::StaticClass()
@@ -62,8 +61,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheCodecBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheCodecBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheCodecBase::StaticClass()
@@ -76,8 +75,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheCodecRaw.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheCodecRaw.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheCodecRaw::StaticClass()
@@ -90,8 +89,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheCodecV1.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheCodecV1.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheCodecV1::StaticClass()
@@ -104,9 +103,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D5030
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.TickAtThisTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Time                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bInIsRunning                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -126,16 +125,15 @@ namespace CG
 		params.bInIsLooping = bInIsLooping;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D5010
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Stop
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::Stop()
 	{
@@ -146,16 +144,15 @@ namespace CG
 		UGeometryCacheComponent_Stop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewStartTimeOffset                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -169,16 +166,15 @@ namespace CG
 		params.NewStartTimeOffset = NewStartTimeOffset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4F10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewPlaybackSpeed                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -192,16 +188,37 @@ namespace CG
 		params.NewPlaybackSpeed = NewPlaybackSpeed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4C80
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetMotionVectorScale
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              NewMotionVectorScale                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UGeometryCacheComponent::SetMotionVectorScale(float NewMotionVectorScale)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetMotionVectorScale");
+		
+		UGeometryCacheComponent_SetMotionVectorScale_Params params {};
+		params.NewMotionVectorScale = NewMotionVectorScale;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetLooping
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewLooping                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -215,16 +232,15 @@ namespace CG
 		params.bNewLooping = bNewLooping;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4BF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetGeometryCache
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UGeometryCache*                              NewGeomCache                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -238,7 +254,6 @@ namespace CG
 		params.NewGeomCache = NewGeomCache;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -247,9 +262,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4BD0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetExtrapolateFrames
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bNewExtrapolating                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UGeometryCacheComponent::SetExtrapolateFrames(bool bNewExtrapolating)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetExtrapolateFrames");
+		
+		UGeometryCacheComponent_SetExtrapolateFrames_Params params {};
+		params.bNewExtrapolating = bNewExtrapolating;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::PlayReversedFromEnd()
 	{
@@ -260,16 +297,15 @@ namespace CG
 		UGeometryCacheComponent_PlayReversedFromEnd_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4BB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::PlayReversed()
 	{
@@ -280,16 +316,15 @@ namespace CG
 		UGeometryCacheComponent_PlayReversed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayFromStart
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::PlayFromStart()
 	{
@@ -300,16 +335,15 @@ namespace CG
 		UGeometryCacheComponent_PlayFromStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Play
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::Play()
 	{
@@ -320,16 +354,15 @@ namespace CG
 		UGeometryCacheComponent_Play_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Pause
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGeometryCacheComponent::Pause()
 	{
@@ -340,16 +373,15 @@ namespace CG
 		UGeometryCacheComponent_Pause_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4B20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlayingReversed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UGeometryCacheComponent::IsPlayingReversed()
 	{
@@ -360,7 +392,6 @@ namespace CG
 		UGeometryCacheComponent_IsPlayingReversed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -369,9 +400,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4AF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlaying
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UGeometryCacheComponent::IsPlaying()
 	{
@@ -382,7 +413,6 @@ namespace CG
 		UGeometryCacheComponent_IsPlaying_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -391,9 +421,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4AC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsLooping
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UGeometryCacheComponent::IsLooping()
 	{
@@ -404,7 +434,6 @@ namespace CG
 		UGeometryCacheComponent_IsLooping_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -413,9 +442,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A90
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsExtrapolatingFrames
+	 * 		Flags  -> ()
+	 */
+	bool UGeometryCacheComponent::IsExtrapolatingFrames()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.IsExtrapolatingFrames");
+		
+		UGeometryCacheComponent_IsExtrapolatingFrames_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetStartTimeOffset
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGeometryCacheComponent::GetStartTimeOffset()
 	{
@@ -426,7 +476,6 @@ namespace CG
 		UGeometryCacheComponent_GetStartTimeOffset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -435,9 +484,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGeometryCacheComponent::GetPlaybackSpeed()
 	{
@@ -448,7 +497,6 @@ namespace CG
 		UGeometryCacheComponent_GetPlaybackSpeed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -457,9 +505,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackDirection
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGeometryCacheComponent::GetPlaybackDirection()
 	{
@@ -470,7 +518,6 @@ namespace CG
 		UGeometryCacheComponent_GetPlaybackDirection_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -479,9 +526,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4A00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetNumberOfFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UGeometryCacheComponent::GetNumberOfFrames()
 	{
@@ -492,7 +539,6 @@ namespace CG
 		UGeometryCacheComponent_GetNumberOfFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -501,9 +547,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D49D0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetMotionVectorScale
+	 * 		Flags  -> ()
+	 */
+	float UGeometryCacheComponent::GetMotionVectorScale()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.GetMotionVectorScale");
+		
+		UGeometryCacheComponent_GetMotionVectorScale_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetDuration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGeometryCacheComponent::GetDuration()
 	{
@@ -514,7 +581,6 @@ namespace CG
 		UGeometryCacheComponent_GetDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -523,9 +589,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D49A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetAnimationTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGeometryCacheComponent::GetAnimationTime()
 	{
@@ -536,7 +602,6 @@ namespace CG
 		UGeometryCacheComponent_GetAnimationTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -545,8 +610,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheComponent::StaticClass()
@@ -559,8 +624,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheTrack::StaticClass()
@@ -573,9 +638,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
-	 * 		Flags  -> (Final, Native, Public, HasOutParms)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometryCacheMeshData                      MeshData                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              SampleTime                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -591,15 +656,14 @@ namespace CG
 		params.SampleTime = SampleTime;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheTrack_FlipbookAnimation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheTrack_FlipbookAnimation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheTrack_FlipbookAnimation::StaticClass()
@@ -612,8 +676,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheTrackStreamable.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheTrackStreamable.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheTrackStreamable::StaticClass()
@@ -626,9 +690,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
-	 * 		Flags  -> (Final, Native, Public, HasOutParms)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometryCacheMeshData                      NewMeshData                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -642,15 +706,14 @@ namespace CG
 		params.NewMeshData = NewMeshData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheTrack_TransformAnimation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheTrack_TransformAnimation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheTrack_TransformAnimation::StaticClass()
@@ -663,9 +726,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007D4D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
-	 * 		Flags  -> (Final, Native, Public, HasOutParms)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometryCacheMeshData                      NewMeshData                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -679,15 +742,14 @@ namespace CG
 		params.NewMeshData = NewMeshData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGeometryCacheTrack_TransformGroupAnimation.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGeometryCacheTrack_TransformGroupAnimation.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGeometryCacheTrack_TransformGroupAnimation::StaticClass()

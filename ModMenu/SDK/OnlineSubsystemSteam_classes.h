@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,13 +26,13 @@ namespace CG
 
 	/**
 	 * Class OnlineSubsystemSteam.SteamNetConnection
-	 * Size -> 0x0008 (FullSize[0x1AD8] - InheritedSize[0x1AD0])
+	 * Size -> 0x0008 (FullSize[0x1C50] - InheritedSize[0x1C48])
 	 */
 	class USteamNetConnection : public UIpConnection
 	{
 	public:
-		bool                                                       bIsPassthrough;                                          // 0x1AD0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OZNS[0x7];                                   // 0x1AD1(0x0007) MISSED OFFSET (PADDING)
+		bool                                                       bIsPassthrough;                                          // 0x1C48(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_SWWY[0x7];                                   // 0x1C49(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -40,12 +40,12 @@ namespace CG
 
 	/**
 	 * Class OnlineSubsystemSteam.SteamNetDriver
-	 * Size -> 0x0008 (FullSize[0x07C0] - InheritedSize[0x07B8])
+	 * Size -> 0x0008 (FullSize[0x07D8] - InheritedSize[0x07D0])
 	 */
 	class USteamNetDriver : public UIpNetDriver
 	{
 	public:
-		unsigned char                                              UnknownData_XUBW[0x8];                                   // 0x07B8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XZF6[0x8];                                   // 0x07D0(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

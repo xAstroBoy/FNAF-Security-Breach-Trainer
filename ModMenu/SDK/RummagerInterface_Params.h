@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function RummagerInterface.RummagerInterface_C.StopRummage
 	 */
 	struct URummagerInterface_C_StopRummage_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RummagerInterface.RummagerInterface_C.StartRummage
 	 */
 	struct URummagerInterface_C_StartRummage_Params
-	{
-	};
+	{	};
 
 }
 

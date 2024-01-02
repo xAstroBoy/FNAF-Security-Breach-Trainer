@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum MasterDoorSide.MasterDoorSide
 	 */
-	enum class MasterDoorSide_EMasterDoorSide : uint8_t
+	enum class EMasterDoorSide : uint8_t
 	{
-		MasterDoorSide__NewEnumerator0     = 0,
-		MasterDoorSide__NewEnumerator1     = 1,
-		MasterDoorSide__NewEnumerator2     = 2,
-		MasterDoorSide__NewEnumerator3     = 3,
-		MasterDoorSide__MasterDoorSide_MAX = 4
+		MasterDoorSideNewEnumerator0     = 0,
+		MasterDoorSideNewEnumerator1     = 1,
+		MasterDoorSideNewEnumerator2     = 2,
+		MasterDoorSideNewEnumerator3     = 3,
+		MasterDoorSideMasterDoorSide_MAX = 4
 	};
 
 }

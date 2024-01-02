@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function DoorLockButton.DoorLockButton_C.SetDoor
 	 */
 	struct ADoorLockButton_C_SetDoor_Params
-	{
-	};
+	{	};
 
 }
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
@@ -30,8 +29,7 @@ namespace CG
 	struct UDebugInventoryItem_C_Get_HaveItemCheckbox_CheckedState_1_Params
 	{
 	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ECheckBoxState                                             ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		class FName                                                InventoryItemName;                                       // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -51,8 +48,25 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
+
+	/**
+	 * Function DebugInventoryItem.DebugInventoryItem_C.Construct
+	 */
+	struct UDebugInventoryItem_C_Construct_Params
+	{	};
+
+	/**
+	 * Function DebugInventoryItem.DebugInventoryItem_C.BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature
+	 */
+	struct UDebugInventoryItem_C_BndEvt__DebugInventoryItem_CheckBoxUI_K2Node_ComponentBoundEvent_1_CheckedStateChanged__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function DebugInventoryItem.DebugInventoryItem_C.UpdateVisual
+	 */
+	struct UDebugInventoryItem_C_UpdateVisual_Params
+	{	};
 
 	/**
 	 * Function DebugInventoryItem.DebugInventoryItem_C.ExecuteUbergraph_DebugInventoryItem
@@ -61,7 +75,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,24 +25,24 @@ namespace CG
 		class UInventoryConditionalComponent*                      InventoryConditional;                                    // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0240(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_YLYF[0x7];                                   // 0x0241(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              ObjectsToActivate[0x10];                                 // 0x0241(0x0010) UNKNOWN PROPERTY: ArrayProperty
+		unsigned char                                              UnknownData_S5BZ[0x7];                                   // 0x0241(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              ObjectsToActivate[0x10];                                 // 0x0248(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		bool                                                       IsActivatingObjects;                                     // 0x0258(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		ActivatableState_EActivatableState                         CurrentActivatableState;                                 // 0x0259(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EActivatableState                                          CurrentActivatableState;                                 // 0x0259(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanBeDeactivated;                                        // 0x025A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_A25O[0x1];                                   // 0x025B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZCE0[0x1];                                   // 0x025B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                ActivatorSaveID;                                         // 0x025C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_P47O[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              RuntimeActivatables[0x10];                               // 0x0264(0x0010) UNKNOWN PROPERTY: ArrayProperty
+		unsigned char                                              UnknownData_HBVL[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              RuntimeActivatables[0x10];                               // 0x0268(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		bool                                                       CanBeActivated;                                          // 0x0278(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_LO1B[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AVVT[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAudioEvent*                                       ActivateSound;                                           // 0x0280(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       CantActivateSound;                                       // 0x0288(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
 		void GetSavedState(bool* Activated);
 		void RemoveActivatable();
 		void AddActivatable();
@@ -53,16 +53,18 @@ namespace CG
 		void OnActivatorDone(class AActor* Activator);
 		void ReceiveBeginPlay();
 		void ActivateObject(class AActor* Activator);
-		void On_All_Active();
-		void Activate_Objects();
-		void On_Activate_Cant_Use();
+		void OnAllActive();
+		void ActivateObjects();
+		void OnActivateCantUse();
 		void SetActivated();
 		void SetDeactivated();
 		void DeactivateObject(class AActor* Deactivator);
-		void Deactivate_Objects();
-		void On_All_Deactivated();
+		void DeactivateObjects();
+		void OnAllDeactivated();
 		void PostGameLoad();
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
+		void DeactivateChildrenOnly();
+		void ActivateChildrenOnly();
 		void ExecuteUbergraph_ActivatorBase(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

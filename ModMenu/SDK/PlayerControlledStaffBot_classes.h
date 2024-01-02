@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -33,7 +33,7 @@ namespace CG
 		void InpActEvt_Interact_K2Node_InputActionEvent_2(const struct FKey& Key);
 		void InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key);
 		void ReceivePossessed(class AController* NewController);
-		void Release_Player_Control();
+		void ReleasePlayerControl();
 		void ReceiveBeginPlay();
 		void ExecuteUbergraph_PlayerControlledStaffBot(int32_t EntryPoint);
 		static UClass* StaticClass();

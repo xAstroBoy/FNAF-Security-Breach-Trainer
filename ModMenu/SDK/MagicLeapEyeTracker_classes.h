@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	class UMagicLeapEyeTrackerFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_GetEyeBlinkState(struct FMagicLeapEyeBlinkState* BlinkState);
-		MagicLeapEyeTracker_EMagicLeapEyeTrackingCalibrationStatus STATIC_GetCalibrationStatus();
+		bool GetEyeBlinkState(struct FMagicLeapEyeBlinkState* BlinkState);
+		EMagicLeapEyeTrackingCalibrationStatus GetCalibrationStatus();
 		static UClass* StaticClass();
 	};
 

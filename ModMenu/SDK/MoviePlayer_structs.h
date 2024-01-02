@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,7 +17,7 @@ namespace CG
 	/**
 	 * Enum MoviePlayer.EMoviePlaybackType
 	 */
-	enum class MoviePlayer_EMoviePlaybackType : uint8_t
+	enum class EMoviePlaybackType : uint8_t
 	{
 		MT_Normal      = 0,
 		MT_Looped      = 1,

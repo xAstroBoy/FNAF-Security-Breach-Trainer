@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,8 +22,8 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0278(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		TArray<class FName>                                        WorldStaesToActivate;                                    // 0x0280(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class FName>                                        WorldStatesToDeactivate;                                 // 0x0290(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
+		TArray<class FName>                                        WorldStaesToActivate;                                    // 0x0280(0x0010) Edit, BlueprintVisible
+		TArray<class FName>                                        WorldStatesToDeactivate;                                 // 0x0290(0x0010) Edit, BlueprintVisible
 
 	public:
 		void OnTriggered();

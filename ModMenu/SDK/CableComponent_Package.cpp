@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACableActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACableActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACableActor::StaticClass()
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF86B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndToComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        SocketName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -44,16 +44,15 @@ namespace CG
 		params.SocketName = SocketName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF85B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndTo
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ComponentProperty                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -71,18 +70,17 @@ namespace CG
 		params.SocketName = SocketName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF8500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CableComponent.CableComponent.GetCableParticleLocations
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FVector>                             Locations                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             Locations                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
 	{
@@ -93,7 +91,6 @@ namespace CG
 		UCableComponent_GetCableParticleLocations_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -103,9 +100,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF84D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class USceneComponent* UCableComponent::GetAttachedComponent()
 	{
@@ -116,7 +113,6 @@ namespace CG
 		UCableComponent_GetAttachedComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -125,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF84A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedActor
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class AActor* UCableComponent::GetAttachedActor()
 	{
@@ -138,7 +134,6 @@ namespace CG
 		UCableComponent_GetAttachedActor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -147,8 +142,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCableComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCableComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCableComponent::StaticClass()

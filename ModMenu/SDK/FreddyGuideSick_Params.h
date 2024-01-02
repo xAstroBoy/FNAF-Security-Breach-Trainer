@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,14 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_VTKT[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function FreddyGuideSick.FreddyGuideSick_C.GetPatrolPath
 	 */
 	struct AFreddyGuideSick_C_GetPatrolPath_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyGuideSick.FreddyGuideSick_C.OnCheckpointLoad
@@ -38,7 +37,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -48,7 +46,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -58,52 +55,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.PostGameLoad
-	 */
-	struct AFreddyGuideSick_C_PostGameLoad_Params
-	{
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.PostSaveGame
-	 */
-	struct AFreddyGuideSick_C_PostSaveGame_Params
-	{
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.ReceiveBeginPlay
-	 */
-	struct AFreddyGuideSick_C_ReceiveBeginPlay_Params
-	{
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.Try Entering
-	 */
-	struct AFreddyGuideSick_C_Try_Entering_Params
-	{
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.SetPatrolPath
-	 */
-	struct AFreddyGuideSick_C_SetPatrolPath_Params
-	{
-	};
-
-	/**
-	 * Function FreddyGuideSick.FreddyGuideSick_C.SetCurrentPatrolPointIndex
-	 */
-	struct AFreddyGuideSick_C_SetCurrentPatrolPointIndex_Params
-	{
-	public:
-		int32_t                                                    PatrolPointIndex;                                        // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -113,8 +64,52 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.PostGameLoad
+	 */
+	struct AFreddyGuideSick_C_PostGameLoad_Params
+	{	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.PostSaveGame
+	 */
+	struct AFreddyGuideSick_C_PostSaveGame_Params
+	{	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.ReceiveBeginPlay
+	 */
+	struct AFreddyGuideSick_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.Try Entering
+	 */
+	struct AFreddyGuideSick_C_TryEntering_Params
+	{	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.SetPatrolPath
+	 */
+	struct AFreddyGuideSick_C_SetPatrolPath_Params
+	{	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.SetCurrentPatrolPointIndex
+	 */
+	struct AFreddyGuideSick_C_SetCurrentPatrolPointIndex_Params
+	{
+	public:
+		int32_t                                                    PatrolPointIndex;                                        // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function FreddyGuideSick.FreddyGuideSick_C.OnAttemptInteractFreddyGuideSick
+	 */
+	struct AFreddyGuideSick_C_OnAttemptInteractFreddyGuideSick_Params
+	{	};
 
 	/**
 	 * Function FreddyGuideSick.FreddyGuideSick_C.ExecuteUbergraph_FreddyGuideSick
@@ -123,7 +118,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_2ZTU[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

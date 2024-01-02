@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanDeactivate;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,8 +30,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		ActivatableState_EActivatableState                         CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EActivatableState                                          CurrentState;                                            // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -43,8 +41,7 @@ namespace CG
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       CanActivate;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		fnaf9_EConditionFailReason                                 CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EConditionFailReason                                       CantReason;                                              // 0x0009(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -54,7 +51,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -64,7 +60,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -74,7 +69,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -84,64 +78,55 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ClearPlayerBlockers
 	 */
 	struct APRE_PartyDoor_Long_C_ClearPlayerBlockers_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.SetupPlayerBlockers
 	 */
 	struct APRE_PartyDoor_Long_C_SetupPlayerBlockers_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.UserConstructionScript
 	 */
 	struct APRE_PartyDoor_Long_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.DoorMover__FinishedFunc
 	 */
 	struct APRE_PartyDoor_Long_C_DoorMover__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.DoorMover__UpdateFunc
 	 */
 	struct APRE_PartyDoor_Long_C_DoorMover__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.DoorMover__CloseImpact__EventFunc
 	 */
 	struct APRE_PartyDoor_Long_C_DoorMover__CloseImpact__EventFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ForceDoorOpen
 	 */
 	struct APRE_PartyDoor_Long_C_ForceDoorOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ForceDoorClose
 	 */
 	struct APRE_PartyDoor_Long_C_ForceDoorClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ActivateObject
@@ -150,7 +135,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -163,7 +147,6 @@ namespace CG
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -177,16 +160,15 @@ namespace CG
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bFromSweep;                                              // 0x001C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_03U5[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FHitResult                                          SweepResult;                                             // 0x0020(0x0088)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.SetDeactivated
 	 */
 	struct APRE_PartyDoor_Long_C_SetDeactivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.DeactivateObject
@@ -195,15 +177,13 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Deactivator;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.SetActivated
 	 */
 	struct APRE_PartyDoor_Long_C_SetActivated_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.OnActivatorDone
@@ -212,29 +192,25 @@ namespace CG
 	{
 	public:
 		class AActor*                                              Activator;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.On Door Opening
 	 */
-	struct APRE_PartyDoor_Long_C_On_Door_Opening_Params
-	{
-	};
+	struct APRE_PartyDoor_Long_C_OnDoorOpening_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.On Door Closing
 	 */
-	struct APRE_PartyDoor_Long_C_On_Door_Closing_Params
-	{
-	};
+	struct APRE_PartyDoor_Long_C_OnDoorClosing_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ReceiveBeginPlay
 	 */
 	struct APRE_PartyDoor_Long_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.SetDoorLockPlayer
@@ -243,7 +219,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -253,7 +228,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -263,7 +237,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -273,7 +246,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -283,7 +255,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsPlayer;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -293,22 +264,19 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsPlayer;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.PlayOpenSoundCinematic
 	 */
 	struct APRE_PartyDoor_Long_C_PlayOpenSoundCinematic_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.PlayOpenedSoundCinematic
 	 */
 	struct APRE_PartyDoor_Long_C_PlayOpenedSoundCinematic_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_Long.PRE_PartyDoor_Long_C.ExecuteUbergraph_PRE_PartyDoor_Long
@@ -317,7 +285,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

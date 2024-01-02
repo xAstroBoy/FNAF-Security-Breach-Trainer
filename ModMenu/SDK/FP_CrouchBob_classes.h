@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,9 +16,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass FP_CrouchBob.FP_CrouchBob_C
-	 * Size -> 0x0000 (FullSize[0x0160] - InheritedSize[0x0160])
+	 * Size -> 0x0000 (FullSize[0x01B0] - InheritedSize[0x01B0])
 	 */
-	class UFP_CrouchBob_C : public UCameraShake
+	class UFP_CrouchBob_C : public UMatineeCameraShake
 	{
 	public:
 		static UClass* StaticClass();

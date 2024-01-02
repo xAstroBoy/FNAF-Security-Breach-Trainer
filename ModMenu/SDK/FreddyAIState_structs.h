@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * UserDefinedEnum FreddyAIState.FreddyAIState
 	 */
-	enum class FreddyAIState_EFreddyAIState : uint8_t
+	enum class EFreddyAIState : uint8_t
 	{
-		FreddyAIState__NewEnumerator0    = 0,
-		FreddyAIState__NewEnumerator1    = 1,
-		FreddyAIState__NewEnumerator2    = 2,
-		FreddyAIState__NewEnumerator3    = 3,
-		FreddyAIState__NewEnumerator4    = 4,
-		FreddyAIState__FreddyAIState_MAX = 5
+		FreddyAIStateNewEnumerator0    = 0,
+		FreddyAIStateNewEnumerator1    = 1,
+		FreddyAIStateNewEnumerator2    = 2,
+		FreddyAIStateNewEnumerator3    = 3,
+		FreddyAIStateNewEnumerator4    = 4,
+		FreddyAIStateFreddyAIState_MAX = 5
 	};
 
 }

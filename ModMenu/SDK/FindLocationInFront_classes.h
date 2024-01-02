@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		float                                                      Radius;                                                  // 0x00B4(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FBlackboardKeySelector                              BBTarget;                                                // 0x00B8(0x0028) Edit, BlueprintVisible
 		bool                                                       FoundLocation;                                           // 0x00E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       In_Front_;                                               // 0x00E1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       InFront;                                                 // 0x00E1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);

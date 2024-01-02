@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.OnTriggered
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AJumbotronTrigger_C::OnTriggered()
 	{
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.VannyDisplaySeq
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
 	 */
-	void AJumbotronTrigger_C::VannyDisplaySeq()
+	void AJumbotronTrigger_C::ReceiveBeginPlay()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function JumbotronTrigger.JumbotronTrigger_C.VannyDisplaySeq");
+			fn = UObject::FindObject<UFunction>("Function JumbotronTrigger.JumbotronTrigger_C.ReceiveBeginPlay");
 		
-		AJumbotronTrigger_C_VannyDisplaySeq_Params params {};
+		AJumbotronTrigger_C_ReceiveBeginPlay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,28 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.OnDisplayStopped
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AJumbotronTrigger_C::OnDisplayStopped()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function JumbotronTrigger.JumbotronTrigger_C.OnDisplayStopped");
-		
-		AJumbotronTrigger_C_OnDisplayStopped_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function JumbotronTrigger.JumbotronTrigger_C.ExecuteUbergraph_JumbotronTrigger
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -91,8 +72,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AJumbotronTrigger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AJumbotronTrigger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AJumbotronTrigger_C::StaticClass()

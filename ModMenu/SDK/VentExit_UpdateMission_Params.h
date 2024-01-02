@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,9 +17,8 @@ namespace CG
 	/**
 	 * Function VentExit_UpdateMission.VentExit_UpdateMission_C.On Vent Exited
 	 */
-	struct AVentExit_UpdateMission_C_On_Vent_Exited_Params
-	{
-	};
+	struct AVentExit_UpdateMission_C_OnVentExited_Params
+	{	};
 
 	/**
 	 * Function VentExit_UpdateMission.VentExit_UpdateMission_C.ExecuteUbergraph_VentExit_UpdateMission
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

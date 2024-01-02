@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,31 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.Completed_E29D545D43AE097D262AD79915112665
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            PlayingID                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ALMMSplineFollower_C::Completed_E29D545D43AE097D262AD79915112665(int32_t PlayingID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LMMSplineFollower.LMMSplineFollower_C.Completed_E29D545D43AE097D262AD79915112665");
+		
+		ALMMSplineFollower_C_Completed_E29D545D43AE097D262AD79915112665_Params params {};
+		params.PlayingID = PlayingID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALMMSplineFollower_C::ReceiveBeginPlay()
 	{
@@ -31,20 +53,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.FollowSpline
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class ASplinePathway_C*                            Spline_Pathway                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ASplinePathway_C*                            SplinePathway                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ALMMSplineFollower_C::FollowSpline(class ASplinePathway_C* Spline_Pathway)
+	void ALMMSplineFollower_C::FollowSpline(class ASplinePathway_C* SplinePathway)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function LMMSplineFollower.LMMSplineFollower_C.FollowSpline");
 		
 		ALMMSplineFollower_C_FollowSpline_Params params {};
-		params.Spline_Pathway = Spline_Pathway;
+		params.SplinePathway = SplinePathway;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -53,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.BndEvt__SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALMMSplineFollower_C::BndEvt__SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_0_OnFinishedFollowingSplineDelegate__DelegateSignature()
 	{
@@ -72,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -104,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.PauseFollowingSpline
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALMMSplineFollower_C::PauseFollowingSpline()
 	{
@@ -123,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.ResumeFollowingSpline
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALMMSplineFollower_C::ResumeFollowingSpline()
 	{
@@ -142,9 +164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -164,9 +186,69 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.RandomFootstepsWhenOffCamera
+	 * 		Flags  -> ()
+	 */
+	void ALMMSplineFollower_C::RandomFootstepsWhenOffCamera()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LMMSplineFollower.LMMSplineFollower_C.RandomFootstepsWhenOffCamera");
+		
+		ALMMSplineFollower_C_RandomFootstepsWhenOffCamera_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.JumpscareEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      Gregory                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ALMMSplineFollower_C::JumpscareEvent(class AActor* Gregory)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LMMSplineFollower.LMMSplineFollower_C.JumpscareEvent");
+		
+		ALMMSplineFollower_C_JumpscareEvent_Params params {};
+		params.Gregory = Gregory;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.BndEvt__LMMSplineFollower_SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_1_OnFinishedFollowingSplineDelegate__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void ALMMSplineFollower_C::BndEvt__LMMSplineFollower_SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_1_OnFinishedFollowingSplineDelegate__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LMMSplineFollower.LMMSplineFollower_C.BndEvt__LMMSplineFollower_SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_1_OnFinishedFollowingSplineDelegate__DelegateSignature");
+		
+		ALMMSplineFollower_C_BndEvt__LMMSplineFollower_SplinePathwayMotionComponent_K2Node_ComponentBoundEvent_1_OnFinishedFollowingSplineDelegate__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.ExecuteUbergraph_LMMSplineFollower
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -186,9 +268,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LMMSplineFollower.LMMSplineFollower_C.OnSplineEndReached__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ALMMSplineFollower_C::OnSplineEndReached__DelegateSignature()
 	{
@@ -205,8 +287,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ALMMSplineFollower_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ALMMSplineFollower_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ALMMSplineFollower_C::StaticClass()

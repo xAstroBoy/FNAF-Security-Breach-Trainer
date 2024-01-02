@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Animatronic_ABP_Monty.Animatronic_ABP_Monty_C
-	 * Size -> 0x000F (FullSize[0x8E18] - InheritedSize[0x8E09])
+	 * Size -> 0x0008 (FullSize[0xA390] - InheritedSize[0xA388])
 	 */
 	class UAnimatronic_ABP_Monty_C : public UAnimatronic_ABP_MASTER_C
 	{
 	public:
-		unsigned char                                              UnknownData_UJ7B[0x7];                                   // 0x8E09(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x8E10(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0xA388(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void footstep();
@@ -41,7 +40,7 @@ namespace CG
 		void AnimNotify_R_Foot_Down();
 		void AnimNotify_L_Foot_Down();
 		void AnimNotify_MontyLand();
-		void SetJiggle(float JiggleScaleTarget, float Shoulderpad_DynamicAlpha, float TailDynamicAlpha);
+		void SetJiggle(float JiggleScaleTarget, float ShoulderpadDynamicAlpha, float TailDynamicAlpha);
 		void JumpEvent(bool CanJump);
 		void LandEvent();
 		void ExecuteUbergraph_Animatronic_ABP_Monty(int32_t EntryPoint);

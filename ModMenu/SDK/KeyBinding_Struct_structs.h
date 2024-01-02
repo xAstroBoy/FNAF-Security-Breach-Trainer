@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,6 @@ namespace CG
 		struct FKey                                                PC_Key2_6_5EC2CC9140E3A1629DEFF1A12A1D85E5;              // 0x0018(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FKey                                                Gamepad_Key1_7_FC2FC6604514AAB6D44552BB69B04271;         // 0x0030(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FKey                                                Gamepad_Key2_8_D13A707C46E362F2C18F3A961B0A02AD;         // 0x0048(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash
-
 	};
 
 }

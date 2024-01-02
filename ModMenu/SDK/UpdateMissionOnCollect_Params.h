@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,11 @@ namespace CG
 	/**
 	 * Function UpdateMissionOnCollect.UpdateMissionOnCollect_C.On Item Collected
 	 */
-	struct UUpdateMissionOnCollect_C_On_Item_Collected_Params
+	struct UUpdateMissionOnCollect_C_OnItemCollected_Params
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0050)  (BlueprintVisible, BlueprintReadOnly, Parm)
-
+		struct FFNAFInventoryTableStruct                           InventoryItemInfo;                                       // 0x0008(0x0058)  (BlueprintVisible, BlueprintReadOnly, Parm)
 	};
 
 	/**
@@ -33,15 +32,13 @@ namespace CG
 	public:
 		class FName                                                MessageName;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FFNAFMessageTableStruct                             MessageInfo;                                             // 0x0008(0x0068)  (BlueprintVisible, BlueprintReadOnly, Parm)
-
 	};
 
 	/**
 	 * Function UpdateMissionOnCollect.UpdateMissionOnCollect_C.ReceiveBeginPlay
 	 */
 	struct UUpdateMissionOnCollect_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UpdateMissionOnCollect.UpdateMissionOnCollect_C.ExecuteUbergraph_UpdateMissionOnCollect
@@ -50,7 +47,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

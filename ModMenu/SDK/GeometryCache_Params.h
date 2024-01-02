@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		class UGeometryCacheComponent*                             ReturnValue;                                             // 0x0000(0x0008)  (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -34,15 +33,13 @@ namespace CG
 		bool                                                       bInIsRunning;                                            // 0x0004(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bInBackwards;                                            // 0x0005(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       bInIsLooping;                                            // 0x0006(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.Stop
 	 */
 	struct UGeometryCacheComponent_Stop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewStartTimeOffset;                                      // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -61,7 +57,15 @@ namespace CG
 	{
 	public:
 		float                                                      NewPlaybackSpeed;                                        // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCache.GeometryCacheComponent.SetMotionVectorScale
+	 */
+	struct UGeometryCacheComponent_SetMotionVectorScale_Params
+	{
+	public:
+		float                                                      NewMotionVectorScale;                                    // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -71,7 +75,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bNewLooping;                                             // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -82,43 +85,46 @@ namespace CG
 	public:
 		class UGeometryCache*                                      NewGeomCache;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCache.GeometryCacheComponent.SetExtrapolateFrames
+	 */
+	struct UGeometryCacheComponent_SetExtrapolateFrames_Params
+	{
+	public:
+		bool                                                       bNewExtrapolating;                                       // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd
 	 */
 	struct UGeometryCacheComponent_PlayReversedFromEnd_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.PlayReversed
 	 */
 	struct UGeometryCacheComponent_PlayReversed_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.PlayFromStart
 	 */
 	struct UGeometryCacheComponent_PlayFromStart_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.Play
 	 */
 	struct UGeometryCacheComponent_Play_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.Pause
 	 */
 	struct UGeometryCacheComponent_Pause_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GeometryCache.GeometryCacheComponent.IsPlayingReversed
@@ -127,7 +133,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -137,7 +142,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -147,7 +151,15 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCache.GeometryCacheComponent.IsExtrapolatingFrames
+	 */
+	struct UGeometryCacheComponent_IsExtrapolatingFrames_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -157,7 +169,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -167,7 +178,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -177,7 +187,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -187,7 +196,15 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCache.GeometryCacheComponent.GetMotionVectorScale
+	 */
+	struct UGeometryCacheComponent_GetMotionVectorScale_Params
+	{
+	public:
+		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -197,7 +214,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -207,7 +223,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -216,9 +231,8 @@ namespace CG
 	struct UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params
 	{
 	public:
-		struct FGeometryCacheMeshData                              MeshData;                                                // 0x0000(0x00A8)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		float                                                      SampleTime;                                              // 0x00A8(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		struct FGeometryCacheMeshData                              MeshData;                                                // 0x0000(0x00B0)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		float                                                      SampleTime;                                              // 0x00B0(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -227,8 +241,7 @@ namespace CG
 	struct UGeometryCacheTrack_TransformAnimation_SetMesh_Params
 	{
 	public:
-		struct FGeometryCacheMeshData                              NewMeshData;                                             // 0x0000(0x00A8)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
+		struct FGeometryCacheMeshData                              NewMeshData;                                             // 0x0000(0x00B0)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -237,8 +250,7 @@ namespace CG
 	struct UGeometryCacheTrack_TransformGroupAnimation_SetMesh_Params
 	{
 	public:
-		struct FGeometryCacheMeshData                              NewMeshData;                                             // 0x0000(0x00A8)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
+		struct FGeometryCacheMeshData                              NewMeshData;                                             // 0x0000(0x00B0)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 }

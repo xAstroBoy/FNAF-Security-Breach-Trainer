@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.DestroyAllAISeeker
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::DestroyAllAISeeker()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerRequestSkip
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::PlayerRequestSkip()
 	{
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.On Skip
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABP_MiniGameManger_C::On_Skip()
+	void ABP_MiniGameManger_C::OnSkip()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_MiniGameManger.BP_MiniGameManger_C.On Skip");
 		
-		ABP_MiniGameManger_C_On_Skip_Params params {};
+		ABP_MiniGameManger_C_OnSkip_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.AwardItemToPlayer
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::AwardItemToPlayer()
 	{
@@ -88,13 +88,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.GetIsGameActive
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Active_                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               Active                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABP_MiniGameManger_C::GetIsGameActive(bool* Active_)
+	void ABP_MiniGameManger_C::GetIsGameActive(bool* Active)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -106,20 +106,20 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (Active_ != nullptr)
-			*Active_ = params.Active_;
+		if (Active != nullptr)
+			*Active = params.Active;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerCanEndGame
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               CanEnd                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABP_MiniGameManger_C::PlayerCanEndGame(E_EndMiniGameType_E_EndMiniGameType EndType, bool* CanEnd)
+	void ABP_MiniGameManger_C::PlayerCanEndGame(E_EndMiniGameType EndType, bool* CanEnd)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -138,13 +138,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerCanStartGame
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_ECantStartMinigameReason                     reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECantStartMinigameReason                           reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	bool ABP_MiniGameManger_C::PlayerCanStartGame(fnaf9_ECantStartMinigameReason* reason)
+	bool ABP_MiniGameManger_C::PlayerCanStartGame(ECantStartMinigameReason* reason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -164,13 +164,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerRequestEnd
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::PlayerRequestEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
+	void ABP_MiniGameManger_C::PlayerRequestEnd(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -186,15 +186,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.PlayerRequestStart
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               ForceStart                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Started                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_ECantStartMinigameReason                     reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECantStartMinigameReason                           reason                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::PlayerRequestStart(bool ForceStart, bool* Started, fnaf9_ECantStartMinigameReason* reason)
+	void ABP_MiniGameManger_C::PlayerRequestStart(bool ForceStart, bool* Started, ECantStartMinigameReason* reason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -215,13 +215,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.OnEnd
-	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::OnEnd(E_EndMiniGameType_E_EndMiniGameType EndType)
+	void ABP_MiniGameManger_C::OnEnd(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -237,17 +237,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.On Start
-	 * 		Flags  -> (Protected, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABP_MiniGameManger_C::On_Start()
+	void ABP_MiniGameManger_C::OnStart()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_MiniGameManger.BP_MiniGameManger_C.On Start");
 		
-		ABP_MiniGameManger_C_On_Start_Params params {};
+		ABP_MiniGameManger_C_OnStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -256,17 +256,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.Handle Misc
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABP_MiniGameManger_C::Handle_Misc()
+	void ABP_MiniGameManger_C::HandleMisc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_MiniGameManger.BP_MiniGameManger_C.Handle Misc");
 		
-		ABP_MiniGameManger_C_Handle_Misc_Params params {};
+		ABP_MiniGameManger_C_HandleMisc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -275,9 +275,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.HandlePlayer
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::HandlePlayer()
 	{
@@ -294,9 +294,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.HandleComponents
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::HandleComponents()
 	{
@@ -313,9 +313,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.HandleAI
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::HandleAI()
 	{
@@ -332,9 +332,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -354,9 +354,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::ReceiveBeginPlay()
 	{
@@ -373,20 +373,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.QuitToMainMenu
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                End_Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::QuitToMainMenu(E_EndMiniGameType_E_EndMiniGameType End_Type)
+	void ABP_MiniGameManger_C::QuitToMainMenu(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_MiniGameManger.BP_MiniGameManger_C.QuitToMainMenu");
 		
 		ABP_MiniGameManger_C_QuitToMainMenu_Params params {};
-		params.End_Type = End_Type;
+		params.EndType = EndType;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -395,28 +395,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.GregoryKilled
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void ABP_MiniGameManger_C::GregoryKilled()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BP_MiniGameManger.BP_MiniGameManger_C.GregoryKilled");
-		
-		ABP_MiniGameManger_C_GregoryKilled_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.ExecuteUbergraph_BP_MiniGameManger
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -436,13 +417,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.OnGameEnd__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_EndMiniGameType_E_EndMiniGameType                EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_EndMiniGameType                                  EndType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_MiniGameManger_C::OnGameEnd__DelegateSignature(E_EndMiniGameType_E_EndMiniGameType EndType)
+	void ABP_MiniGameManger_C::OnGameEnd__DelegateSignature(E_EndMiniGameType EndType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -458,9 +439,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_MiniGameManger.BP_MiniGameManger_C.OnGameStart__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABP_MiniGameManger_C::OnGameStart__DelegateSignature()
 	{
@@ -477,8 +458,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABP_MiniGameManger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABP_MiniGameManger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABP_MiniGameManger_C::StaticClass()

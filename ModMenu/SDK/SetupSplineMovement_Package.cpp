@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SetupSplineMovement.SetupSplineMovement_C.Setup Spline Movement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USetupSplineMovement_C::Setup_Spline_Movement(class APawn* Pawn)
+	void USetupSplineMovement_C::SetupSplineMovement(class APawn* Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SetupSplineMovement.SetupSplineMovement_C.Setup Spline Movement");
 		
-		USetupSplineMovement_C_Setup_Spline_Movement_Params params {};
+		USetupSplineMovement_C_SetupSplineMovement_Params params {};
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SetupSplineMovement.SetupSplineMovement_C.ExecuteUbergraph_SetupSplineMovement
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -56,8 +56,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USetupSplineMovement_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USetupSplineMovement_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USetupSplineMovement_C::StaticClass()

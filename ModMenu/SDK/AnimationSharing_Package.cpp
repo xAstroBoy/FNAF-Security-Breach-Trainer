@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7170
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
-	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              Actors                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              Actors                                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UAnimSharingStateInstance::GetInstancedActors(TArray<class AActor*>* Actors)
 	{
@@ -27,7 +27,6 @@ namespace CG
 		UAnimSharingStateInstance_GetInstancedActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -37,8 +36,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimSharingStateInstance.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimSharingStateInstance.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimSharingStateInstance::StaticClass()
@@ -51,8 +50,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimSharingTransitionInstance.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimSharingTransitionInstance.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimSharingTransitionInstance::StaticClass()
@@ -65,8 +64,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimSharingAdditiveInstance.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimSharingAdditiveInstance.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimSharingAdditiveInstance::StaticClass()
@@ -79,8 +78,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimSharingInstance.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimSharingInstance.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimSharingInstance::StaticClass()
@@ -93,9 +92,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A73D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class USkeleton*                                   SharingSkeleton                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -111,20 +110,19 @@ namespace CG
 		params.SharingSkeleton = SharingSkeleton;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A70C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAnimationSharingManager* UAnimationSharingManager::STATIC_GetAnimationSharingManager(class UObject* WorldContextObject)
+	class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -134,7 +132,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -143,14 +140,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAnimationSharingSetup*                      Setup                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAnimationSharingManager::STATIC_CreateAnimationSharingManager(class UObject* WorldContextObject, class UAnimationSharingSetup* Setup)
+	bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* WorldContextObject, class UAnimationSharingSetup* Setup)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -161,7 +158,6 @@ namespace CG
 		params.Setup = Setup;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -170,11 +166,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A6FD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UAnimationSharingManager::STATIC_AnimationSharingEnabled()
+	bool UAnimationSharingManager::AnimationSharingEnabled()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -183,7 +179,6 @@ namespace CG
 		UAnimationSharingManager_AnimationSharingEnabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -192,8 +187,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimationSharingManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimationSharingManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimationSharingManager::StaticClass()
@@ -206,8 +201,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimationSharingSetup.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimationSharingSetup.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimationSharingSetup::StaticClass()
@@ -220,9 +215,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7220
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
-	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            OutState                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -242,7 +237,6 @@ namespace CG
 		params.OnDemandState = OnDemandState;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -254,9 +248,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007A7140
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
-	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
 	{
@@ -267,7 +261,6 @@ namespace CG
 		UAnimationSharingStateProcessor_GetAnimationStateEnum_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -276,8 +269,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimationSharingStateProcessor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimationSharingStateProcessor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimationSharingStateProcessor::StaticClass()

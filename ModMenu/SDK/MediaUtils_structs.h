@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * Enum MediaUtils.EMediaPlayerOptionBooleanOverride
 	 */
-	enum class MediaUtils_EMediaPlayerOptionBooleanOverride : uint8_t
+	enum class EMediaPlayerOptionBooleanOverride : uint8_t
 	{
-		EMediaPlayerOptionBooleanOverride__UseMediaPlayerSetting                 = 0,
-		EMediaPlayerOptionBooleanOverride__Enabled                               = 1,
-		EMediaPlayerOptionBooleanOverride__Disabled                              = 2,
-		EMediaPlayerOptionBooleanOverride__EMediaPlayerOptionBooleanOverride_MAX = 3
+		UseMediaPlayerSetting = 0,
+		Enabled               = 1,
+		Disabled              = 2,
+		MAX                   = 3
 	};
 
 	// --------------------------------------------------
@@ -42,7 +42,6 @@ namespace CG
 		int32_t                                                    Subtitle;                                                // 0x0010(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Text;                                                    // 0x0014(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Video;                                                   // 0x0018(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -53,12 +52,11 @@ namespace CG
 	{
 	public:
 		struct FMediaPlayerTrackOptions                            Tracks;                                                  // 0x0000(0x001C) BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AYTE[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_866T[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTimespan                                           SeekTime;                                                // 0x0020(0x0008) BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MediaUtils_EMediaPlayerOptionBooleanOverride               PlayOnOpen;                                              // 0x0028(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MediaUtils_EMediaPlayerOptionBooleanOverride               Loop;                                                    // 0x0029(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_00XC[0x6];                                   // 0x002A(0x0006) MISSED OFFSET (PADDING)
-
+		EMediaPlayerOptionBooleanOverride                          PlayOnOpen;                                              // 0x0028(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EMediaPlayerOptionBooleanOverride                          Loop;                                                    // 0x0029(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_SH5D[0x6];                                   // 0x002A(0x0006) MISSED OFFSET (PADDING)
 	};
 
 }

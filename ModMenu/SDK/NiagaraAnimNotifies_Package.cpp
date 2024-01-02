@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x007BFC00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 */
 	class UFXSystemComponent* UAnimNotify_PlayNiagaraEffect::GetSpawnedEffect()
 	{
@@ -25,7 +25,6 @@ namespace CG
 		UAnimNotify_PlayNiagaraEffect_GetSpawnedEffect_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,8 +33,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimNotify_PlayNiagaraEffect.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimNotify_PlayNiagaraEffect.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimNotify_PlayNiagaraEffect::StaticClass()
@@ -48,8 +47,32 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnimNotifyState_TimedNiagaraEffect.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect.GetSpawnedEffect
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UMeshComponent*                              MeshComp                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UFXSystemComponent* UAnimNotifyState_TimedNiagaraEffect::GetSpawnedEffect(class UMeshComponent* MeshComp)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect.GetSpawnedEffect");
+		
+		UAnimNotifyState_TimedNiagaraEffect_GetSpawnedEffect_Params params {};
+		params.MeshComp = MeshComp;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimNotifyState_TimedNiagaraEffect.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnimNotifyState_TimedNiagaraEffect::StaticClass()
@@ -57,6 +80,44 @@ namespace CG
 		static UClass* ptr = nullptr;
 		if (!ptr)
 			ptr = UObject::FindClass("Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced.GetNotifyProgress
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UMeshComponent*                              MeshComp                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	float UAnimNotifyState_TimedNiagaraEffectAdvanced::GetNotifyProgress(class UMeshComponent* MeshComp)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced.GetNotifyProgress");
+		
+		UAnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress_Params params {};
+		params.MeshComp = MeshComp;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimNotifyState_TimedNiagaraEffectAdvanced.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAnimNotifyState_TimedNiagaraEffectAdvanced::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced");
 		return ptr;
 	}
 

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,59 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.Player Pressed Left on First Column Selected
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EUINavigation                                      Navigation                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UInventoryItemButton_C*                      NewParam                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	class UWidget* UCollectionGrid_C::PlayerPressedLeftonFirstColumnSelected(EUINavigation Navigation, class UInventoryItemButton_C* NewParam)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CollectionGrid.CollectionGrid_C.Player Pressed Left on First Column Selected");
+		
+		UCollectionGrid_C_PlayerPressedLeftonFirstColumnSelected_Params params {};
+		params.Navigation = Navigation;
+		params.NewParam = NewParam;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.Focus Equipment Button
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EUINavigation                                      Navigation                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	class UWidget* UCollectionGrid_C::FocusEquipmentButton(EUINavigation Navigation)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CollectionGrid.CollectionGrid_C.Focus Equipment Button");
+		
+		UCollectionGrid_C_FocusEquipmentButton_Params params {};
+		params.Navigation = Navigation;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.IsFirstChildSelected
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               FirstChildSelected                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -36,9 +86,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.SelectFirstItemInGrid
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UCollectionGrid_C::SelectFirstItemInGrid()
 	{
@@ -55,9 +105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.ClearSelected
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UCollectionGrid_C::ClearSelected()
 	{
@@ -74,14 +124,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.PopulateInventoryGrid
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_InventoryCollectionType_E_InventoryCollectionType EInventoryCollectionType                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		fnaf9_EInventoryItemCategory                       EInventoryItemCategory                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InventoryCollectionType                          EInventoryCollectionType                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInventoryItemCategory                             EInventoryItemCategory                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCollectionGrid_C::PopulateInventoryGrid(E_InventoryCollectionType_E_InventoryCollectionType EInventoryCollectionType, fnaf9_EInventoryItemCategory EInventoryItemCategory)
+	void UCollectionGrid_C::PopulateInventoryGrid(E_InventoryCollectionType EInventoryCollectionType, EInventoryItemCategory EInventoryItemCategory)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -98,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -122,9 +172,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CollectionGrid.CollectionGrid_C.ExecuteUbergraph_CollectionGrid
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -144,8 +194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCollectionGrid_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCollectionGrid_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCollectionGrid_C::StaticClass()

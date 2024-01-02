@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,22 +18,19 @@ namespace CG
 	 * Function Backstage_IntroScreenComms.Backstage_IntroScreenComms_C.ShowFreddyVideo
 	 */
 	struct ABackstage_IntroScreenComms_C_ShowFreddyVideo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Backstage_IntroScreenComms.Backstage_IntroScreenComms_C.ShowVannyVideo
 	 */
 	struct ABackstage_IntroScreenComms_C_ShowVannyVideo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Backstage_IntroScreenComms.Backstage_IntroScreenComms_C.StopShowingVideo
 	 */
 	struct ABackstage_IntroScreenComms_C_StopShowingVideo_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Backstage_IntroScreenComms.Backstage_IntroScreenComms_C.SetScreenSprite
@@ -41,8 +38,7 @@ namespace CG
 	struct ABackstage_IntroScreenComms_C_SetScreenSprite_Params
 	{
 	public:
-		class UMaterialInstance*                                   New_Material;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UMaterialInstance*                                   NewMaterial;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -52,7 +48,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

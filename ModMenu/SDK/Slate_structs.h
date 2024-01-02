@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,223 +17,233 @@ namespace CG
 	/**
 	 * Enum Slate.EVirtualKeyboardDismissAction
 	 */
-	enum class Slate_EVirtualKeyboardDismissAction : uint8_t
+	enum class EVirtualKeyboardDismissAction : uint8_t
 	{
-		EVirtualKeyboardDismissAction__TextChangeOnDismiss               = 0,
-		EVirtualKeyboardDismissAction__TextCommitOnAccept                = 1,
-		EVirtualKeyboardDismissAction__TextCommitOnDismiss               = 2,
-		EVirtualKeyboardDismissAction__EVirtualKeyboardDismissAction_MAX = 3
+		TextChangeOnDismiss = 0,
+		TextCommitOnAccept  = 1,
+		TextCommitOnDismiss = 2,
+		MAX                 = 3
 	};
 
 	/**
 	 * Enum Slate.EVirtualKeyboardTrigger
 	 */
-	enum class Slate_EVirtualKeyboardTrigger : uint8_t
+	enum class EVirtualKeyboardTrigger : uint8_t
 	{
-		EVirtualKeyboardTrigger__OnFocusByPointer            = 0,
-		EVirtualKeyboardTrigger__OnAllFocusEvents            = 1,
-		EVirtualKeyboardTrigger__EVirtualKeyboardTrigger_MAX = 2
+		OnFocusByPointer = 0,
+		OnAllFocusEvents = 1,
+		MAX              = 2
 	};
 
 	/**
 	 * Enum Slate.ETableViewMode
 	 */
-	enum class Slate_ETableViewMode : uint8_t
+	enum class ETableViewMode : uint8_t
 	{
-		ETableViewMode__List               = 0,
-		ETableViewMode__Tile               = 1,
-		ETableViewMode__Tree               = 2,
-		ETableViewMode__ETableViewMode_MAX = 3
+		List = 0,
+		Tile = 1,
+		Tree = 2,
+		MAX  = 3
 	};
 
 	/**
 	 * Enum Slate.ESelectionMode
 	 */
-	enum class Slate_ESelectionMode : uint8_t
+	enum class ESelectionMode : uint8_t
 	{
-		ESelectionMode__None               = 0,
-		ESelectionMode__Single             = 1,
-		ESelectionMode__SingleToggle       = 2,
-		ESelectionMode__Multi              = 3,
-		ESelectionMode__ESelectionMode_MAX = 4
+		None         = 0,
+		Single       = 1,
+		SingleToggle = 2,
+		Multi        = 3,
+		MAX          = 4
 	};
 
 	/**
 	 * Enum Slate.EMultiBlockType
 	 */
-	enum class Slate_EMultiBlockType : uint8_t
+	enum class EMultiBlockType : uint8_t
 	{
-		EMultiBlockType__None                = 0,
-		EMultiBlockType__ButtonRow           = 1,
-		EMultiBlockType__EditableText        = 2,
-		EMultiBlockType__Heading             = 3,
-		EMultiBlockType__MenuEntry           = 4,
-		EMultiBlockType__MenuSeparator       = 5,
-		EMultiBlockType__ToolBarButton       = 6,
-		EMultiBlockType__ToolBarComboButton  = 7,
-		EMultiBlockType__ToolBarSeparator    = 8,
-		EMultiBlockType__Widget              = 9,
-		EMultiBlockType__EMultiBlockType_MAX = 10
+		None               = 0,
+		ButtonRow          = 1,
+		EditableText       = 2,
+		Heading            = 3,
+		MenuEntry          = 4,
+		Separator          = 5,
+		ToolBarButton      = 6,
+		ToolBarComboButton = 7,
+		Widget             = 8,
+		MAX                = 9
 	};
 
 	/**
 	 * Enum Slate.EMultiBoxType
 	 */
-	enum class Slate_EMultiBoxType : uint8_t
+	enum class EMultiBoxType : uint8_t
 	{
-		EMultiBoxType__MenuBar           = 0,
-		EMultiBoxType__ToolBar           = 1,
-		EMultiBoxType__VerticalToolBar   = 2,
-		EMultiBoxType__UniformToolBar    = 3,
-		EMultiBoxType__Menu              = 4,
-		EMultiBoxType__ButtonRow         = 5,
-		EMultiBoxType__ToolMenuBar       = 6,
-		EMultiBoxType__EMultiBoxType_MAX = 7
+		MenuBar         = 0,
+		ToolBar         = 1,
+		VerticalToolBar = 2,
+		UniformToolBar  = 3,
+		Menu            = 4,
+		ButtonRow       = 5,
+		MAX             = 6
 	};
 
 	/**
 	 * Enum Slate.EProgressBarFillType
 	 */
-	enum class Slate_EProgressBarFillType : uint8_t
+	enum class EProgressBarFillType : uint8_t
 	{
-		EProgressBarFillType__LeftToRight              = 0,
-		EProgressBarFillType__RightToLeft              = 1,
-		EProgressBarFillType__FillFromCenter           = 2,
-		EProgressBarFillType__TopToBottom              = 3,
-		EProgressBarFillType__BottomToTop              = 4,
-		EProgressBarFillType__EProgressBarFillType_MAX = 5
+		LeftToRight    = 0,
+		RightToLeft    = 1,
+		FillFromCenter = 2,
+		TopToBottom    = 3,
+		BottomToTop    = 4,
+		MAX            = 5
 	};
 
 	/**
 	 * Enum Slate.EStretch
 	 */
-	enum class Slate_EStretch : uint8_t
+	enum class EStretch : uint8_t
 	{
-		EStretch__None            = 0,
-		EStretch__Fill            = 1,
-		EStretch__ScaleToFit      = 2,
-		EStretch__ScaleToFitX     = 3,
-		EStretch__ScaleToFitY     = 4,
-		EStretch__ScaleToFill     = 5,
-		EStretch__ScaleBySafeZone = 6,
-		EStretch__UserSpecified   = 7,
-		EStretch__EStretch_MAX    = 8
+		None            = 0,
+		Fill            = 1,
+		ScaleToFit      = 2,
+		ScaleToFitX     = 3,
+		ScaleToFitY     = 4,
+		ScaleToFill     = 5,
+		ScaleBySafeZone = 6,
+		UserSpecified   = 7,
+		MAX             = 8
 	};
 
 	/**
 	 * Enum Slate.EStretchDirection
 	 */
-	enum class Slate_EStretchDirection : uint8_t
+	enum class EStretchDirection : uint8_t
 	{
-		EStretchDirection__Both                  = 0,
-		EStretchDirection__DownOnly              = 1,
-		EStretchDirection__UpOnly                = 2,
-		EStretchDirection__EStretchDirection_MAX = 3
+		Both     = 0,
+		DownOnly = 1,
+		UpOnly   = 2,
+		MAX      = 3
 	};
 
 	/**
 	 * Enum Slate.EScrollWhenFocusChanges
 	 */
-	enum class Slate_EScrollWhenFocusChanges : uint8_t
+	enum class EScrollWhenFocusChanges : uint8_t
 	{
-		EScrollWhenFocusChanges__NoScroll                    = 0,
-		EScrollWhenFocusChanges__InstantScroll               = 1,
-		EScrollWhenFocusChanges__AnimatedScroll              = 2,
-		EScrollWhenFocusChanges__EScrollWhenFocusChanges_MAX = 3
+		NoScroll       = 0,
+		InstantScroll  = 1,
+		AnimatedScroll = 2,
+		MAX            = 3
 	};
 
 	/**
 	 * Enum Slate.EDescendantScrollDestination
 	 */
-	enum class Slate_EDescendantScrollDestination : uint8_t
+	enum class EDescendantScrollDestination : uint8_t
 	{
-		EDescendantScrollDestination__IntoView                         = 0,
-		EDescendantScrollDestination__TopOrLeft                        = 1,
-		EDescendantScrollDestination__Center                           = 2,
-		EDescendantScrollDestination__EDescendantScrollDestination_MAX = 3
+		IntoView      = 0,
+		TopOrLeft     = 1,
+		Center        = 2,
+		BottomOrRight = 3,
+		MAX           = 4
 	};
 
 	/**
 	 * Enum Slate.EListItemAlignment
 	 */
-	enum class Slate_EListItemAlignment : uint8_t
+	enum class EListItemAlignment : uint8_t
 	{
-		EListItemAlignment__EvenlyDistributed      = 0,
-		EListItemAlignment__EvenlySize             = 1,
-		EListItemAlignment__EvenlyWide             = 2,
-		EListItemAlignment__LeftAligned            = 3,
-		EListItemAlignment__RightAligned           = 4,
-		EListItemAlignment__CenterAligned          = 5,
-		EListItemAlignment__Fill                   = 6,
-		EListItemAlignment__EListItemAlignment_MAX = 7
+		EvenlyDistributed = 0,
+		EvenlySize        = 1,
+		EvenlyWide        = 2,
+		LeftAligned       = 3,
+		RightAligned      = 4,
+		CenterAligned     = 5,
+		Fill              = 6,
+		MAX               = 7
 	};
 
 	/**
 	 * Enum Slate.ETextFlowDirection
 	 */
-	enum class Slate_ETextFlowDirection : uint8_t
+	enum class ETextFlowDirection : uint8_t
 	{
-		ETextFlowDirection__Auto                   = 0,
-		ETextFlowDirection__LeftToRight            = 1,
-		ETextFlowDirection__RightToLeft            = 2,
-		ETextFlowDirection__ETextFlowDirection_MAX = 3
+		Auto        = 0,
+		LeftToRight = 1,
+		RightToLeft = 2,
+		MAX         = 3
 	};
 
 	/**
 	 * Enum Slate.ETextWrappingPolicy
 	 */
-	enum class Slate_ETextWrappingPolicy : uint8_t
+	enum class ETextWrappingPolicy : uint8_t
 	{
-		ETextWrappingPolicy__DefaultWrapping           = 0,
-		ETextWrappingPolicy__AllowPerCharacterWrapping = 1,
-		ETextWrappingPolicy__ETextWrappingPolicy_MAX   = 2
+		DefaultWrapping           = 0,
+		AllowPerCharacterWrapping = 1,
+		MAX                       = 2
+	};
+
+	/**
+	 * Enum Slate.ETextTransformPolicy
+	 */
+	enum class ETextTransformPolicy : uint8_t
+	{
+		None    = 0,
+		ToLower = 1,
+		ToUpper = 2,
+		MAX     = 3
 	};
 
 	/**
 	 * Enum Slate.ETextJustify
 	 */
-	enum class Slate_ETextJustify : uint8_t
+	enum class ETextJustify : uint8_t
 	{
-		ETextJustify__Left             = 0,
-		ETextJustify__Center           = 1,
-		ETextJustify__Right            = 2,
-		ETextJustify__ETextJustify_MAX = 3
+		Left   = 0,
+		Center = 1,
+		Right  = 2,
+		MAX    = 3
 	};
 
 	/**
 	 * Enum Slate.ECustomizedToolMenuVisibility
 	 */
-	enum class Slate_ECustomizedToolMenuVisibility : uint8_t
+	enum class ECustomizedToolMenuVisibility : uint8_t
 	{
-		ECustomizedToolMenuVisibility__None                              = 0,
-		ECustomizedToolMenuVisibility__Visible                           = 1,
-		ECustomizedToolMenuVisibility__Hidden                            = 2,
-		ECustomizedToolMenuVisibility__ECustomizedToolMenuVisibility_MAX = 3
+		None    = 0,
+		Visible = 1,
+		Hidden  = 2,
+		MAX     = 3
 	};
 
 	/**
 	 * Enum Slate.EMultipleKeyBindingIndex
 	 */
-	enum class Slate_EMultipleKeyBindingIndex : uint8_t
+	enum class EMultipleKeyBindingIndex : uint8_t
 	{
-		EMultipleKeyBindingIndex__Primary                      = 0,
-		EMultipleKeyBindingIndex__Secondary                    = 1,
-		EMultipleKeyBindingIndex__NumChords                    = 2,
-		EMultipleKeyBindingIndex__EMultipleKeyBindingIndex_MAX = 3
+		Primary   = 0,
+		Secondary = 1,
+		NumChords = 2,
+		MAX       = 3
 	};
 
 	/**
 	 * Enum Slate.EUserInterfaceActionType
 	 */
-	enum class Slate_EUserInterfaceActionType : uint8_t
+	enum class EUserInterfaceActionType : uint8_t
 	{
-		EUserInterfaceActionType__None                         = 0,
-		EUserInterfaceActionType__Button                       = 1,
-		EUserInterfaceActionType__ToggleButton                 = 2,
-		EUserInterfaceActionType__RadioButton                  = 3,
-		EUserInterfaceActionType__Check                        = 4,
-		EUserInterfaceActionType__CollapsedButton              = 5,
-		EUserInterfaceActionType__EUserInterfaceActionType_MAX = 6
+		None            = 0,
+		Button          = 1,
+		ToggleButton    = 2,
+		RadioButton     = 3,
+		Check           = 4,
+		CollapsedButton = 5,
+		MAX             = 6
 	};
 
 	// --------------------------------------------------
@@ -247,7 +257,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnableAutocorrect;                                      // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -258,12 +267,11 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018) Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              bShift : 1;                                              // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              bCtrl : 1;                                               // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              bAlt : 1;                                                // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              bCmd : 1;                                                // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_76YJ[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
-
+		bool                                                       bShift : 1;                                              // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bCtrl : 1;                                               // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bAlt : 1;                                                // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bCmd : 1;                                                // 0x0018(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_ZFU8[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -275,7 +283,6 @@ namespace CG
 	public:
 		struct FVector2D                                           Minimum;                                                 // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           Maximum;                                                 // 0x0008(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -285,9 +292,8 @@ namespace CG
 	struct FCustomizedToolMenuEntry
 	{
 	public:
-		Slate_ECustomizedToolMenuVisibility                        Visibility;                                              // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UK1C[0x3];                                   // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-
+		ECustomizedToolMenuVisibility                              Visibility;                                              // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_T614[0x3];                                   // 0x0001(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	};
 
 	/**
@@ -297,9 +303,8 @@ namespace CG
 	struct FCustomizedToolMenuSection
 	{
 	public:
-		Slate_ECustomizedToolMenuVisibility                        Visibility;                                              // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_HQ06[0x3];                                   // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-
+		ECustomizedToolMenuVisibility                              Visibility;                                              // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_BEUX[0x3];                                   // 0x0001(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	};
 
 	/**
@@ -309,8 +314,7 @@ namespace CG
 	struct FCustomizedToolMenuNameArray
 	{
 	public:
-		TArray<class FName>                                        Names;                                                   // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<class FName>                                        Names;                                                   // 0x0000(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -324,9 +328,8 @@ namespace CG
 		TMap<class FName, struct FCustomizedToolMenuEntry>         Entries;                                                 // 0x0008(0x0050) NativeAccessSpecifierPublic
 		TMap<class FName, struct FCustomizedToolMenuSection>       Sections;                                                // 0x0058(0x0050) NativeAccessSpecifierPublic
 		TMap<class FName, struct FCustomizedToolMenuNameArray>     EntryOrder;                                              // 0x00A8(0x0050) NativeAccessSpecifierPublic
-		TArray<class FName>                                        SectionOrder;                                            // 0x00F8(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3GEF[0xE0];                                  // 0x0108(0x00E0) MISSED OFFSET (PADDING)
-
+		TArray<class FName>                                        SectionOrder;                                            // 0x00F8(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_OHV1[0xE0];                                  // 0x0108(0x00E0) MISSED OFFSET (PADDING)
 	};
 
 }

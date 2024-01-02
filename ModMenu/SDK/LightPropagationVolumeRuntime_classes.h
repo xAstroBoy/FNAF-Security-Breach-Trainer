@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,10 +21,10 @@ namespace CG
 	class ULightPropagationVolumeBlendable : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_L3C8[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0EUZ[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FLightPropagationVolumeSettings                     Settings;                                                // 0x0030(0x0040) Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic
 		float                                                      BlendWeight;                                             // 0x0070(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9Q33[0x4];                                   // 0x0074(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8P8Y[0x4];                                   // 0x0074(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

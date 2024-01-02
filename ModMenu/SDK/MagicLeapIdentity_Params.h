@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,9 +20,9 @@ namespace CG
 	struct UMagicLeapIdentity_RequestIdentityAttributeValueDelegate__DelegateSignature_Params
 	{
 	public:
-		MagicLeapIdentity_EMagicLeapIdentityError                  ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FMagicLeapIdentityAttribute>                 AttributeValue;                                          // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMagicLeapIdentityError                                    ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_FSRJ[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<struct FMagicLeapIdentityAttribute>                 AttributeValue;                                          // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -31,10 +31,9 @@ namespace CG
 	struct UMagicLeapIdentity_RequestAttributeValueAsync_Params
 	{
 	public:
-		TArray<MagicLeapIdentity_EMagicLeapIdentityKey>            RequestedAttributeList;                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<EMagicLeapIdentityKey>                              RequestedAttributeList;                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 		class FScriptDelegate                                      ResultDelegate;                                          // 0x0010(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-		MagicLeapIdentity_EMagicLeapIdentityError                  ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMagicLeapIdentityError                                    ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -43,10 +42,9 @@ namespace CG
 	struct UMagicLeapIdentity_RequestAttributeValue_Params
 	{
 	public:
-		TArray<MagicLeapIdentity_EMagicLeapIdentityKey>            RequestedAttributeList;                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FMagicLeapIdentityAttribute>                 RequestedAttributeValues;                                // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		MagicLeapIdentity_EMagicLeapIdentityError                  ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<EMagicLeapIdentityKey>                              RequestedAttributeList;                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		TArray<struct FMagicLeapIdentityAttribute>                 RequestedAttributeValues;                                // 0x0010(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+		EMagicLeapIdentityError                                    ReturnValue;                                             // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -55,9 +53,9 @@ namespace CG
 	struct UMagicLeapIdentity_ModifyIdentityAttributeValueDelegate__DelegateSignature_Params
 	{
 	public:
-		MagicLeapIdentity_EMagicLeapIdentityError                  ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<MagicLeapIdentity_EMagicLeapIdentityKey>            AttributesUpdatedSuccessfully;                           // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMagicLeapIdentityError                                    ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_2IHR[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<EMagicLeapIdentityKey>                              AttributesUpdatedSuccessfully;                           // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -67,7 +65,6 @@ namespace CG
 	{
 	public:
 		class FScriptDelegate                                      ResultDelegate;                                          // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -76,9 +73,8 @@ namespace CG
 	struct UMagicLeapIdentity_GetAllAvailableAttributes_Params
 	{
 	public:
-		TArray<MagicLeapIdentity_EMagicLeapIdentityKey>            AvailableAttributes;                                     // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		MagicLeapIdentity_EMagicLeapIdentityError                  ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<EMagicLeapIdentityKey>                              AvailableAttributes;                                     // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+		EMagicLeapIdentityError                                    ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -87,9 +83,9 @@ namespace CG
 	struct UMagicLeapIdentity_AvailableIdentityAttributesDelegate__DelegateSignature_Params
 	{
 	public:
-		MagicLeapIdentity_EMagicLeapIdentityError                  ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<MagicLeapIdentity_EMagicLeapIdentityKey>            AvailableAttributes;                                     // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMagicLeapIdentityError                                    ResultCode;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_3JSA[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		TArray<EMagicLeapIdentityKey>                              AvailableAttributes;                                     // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bWorldIn;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bHoveringIn;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		struct FTransform                                          NewTransform;                                            // 0x0000(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		struct FTransform                                          ReturnValue;                                             // 0x0000(0x0030)  (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -61,7 +57,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -72,7 +67,6 @@ namespace CG
 	public:
 		struct FVector                                             TangentXOut;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             TangentYOut;                                             // 0x000C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -82,7 +76,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -92,7 +85,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             ReturnValue;                                             // 0x0000(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -102,22 +94,19 @@ namespace CG
 	{
 	public:
 		bool                                                       bHovering;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoStateTarget.EndUpdate
 	 */
 	struct UGizmoStateTarget_EndUpdate_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
 	 */
 	struct UGizmoStateTarget_BeginUpdate_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
@@ -126,7 +115,6 @@ namespace CG
 	{
 	public:
 		float                                                      NewValue;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -136,22 +124,19 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
 	 */
 	struct UGizmoFloatParameterSource_EndModify_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
 	 */
 	struct UGizmoFloatParameterSource_BeginModify_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
@@ -160,7 +145,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           NewValue;                                                // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -170,22 +154,19 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
 	 */
 	struct UGizmoVec2ParameterSource_EndModify_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
 	 */
 	struct UGizmoVec2ParameterSource_BeginModify_Params
-	{
-	};
+	{	};
 
 }
 

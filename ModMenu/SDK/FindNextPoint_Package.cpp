@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FindNextPoint.FindNextPoint_C.Find Next Point
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class APawn*                                       Controlled_Pawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            CurrentPathIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PreviousPathIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FinishAtEnd                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -24,14 +24,14 @@ namespace CG
 	 * 		struct FVector                                     NextPointLocation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FoundPoint                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFindNextPoint_C::Find_Next_Point(class APawn* Controlled_Pawn, int32_t CurrentPathIndex, int32_t PreviousPathIndex, bool FinishAtEnd, int32_t* NextPathPointIndex, struct FVector* NextPointLocation, bool* FoundPoint)
+	void UFindNextPoint_C::FindNextPoint(class APawn* ControlledPawn, int32_t CurrentPathIndex, int32_t PreviousPathIndex, bool FinishAtEnd, int32_t* NextPathPointIndex, struct FVector* NextPointLocation, bool* FoundPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FindNextPoint.FindNextPoint_C.Find Next Point");
 		
-		UFindNextPoint_C_Find_Next_Point_Params params {};
-		params.Controlled_Pawn = Controlled_Pawn;
+		UFindNextPoint_C_FindNextPoint_Params params {};
+		params.ControlledPawn = ControlledPawn;
 		params.CurrentPathIndex = CurrentPathIndex;
 		params.PreviousPathIndex = PreviousPathIndex;
 		params.FinishAtEnd = FinishAtEnd;
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FindNextPoint.FindNextPoint_C.ReceiveExecuteAI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AAIController*                               OwnerController                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       ControlledPawn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FindNextPoint.FindNextPoint_C.ExecuteUbergraph_FindNextPoint
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -96,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFindNextPoint_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFindNextPoint_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFindNextPoint_C::StaticClass()

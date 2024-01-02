@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,8 @@ namespace CG
 		class FScriptMulticastDelegate                             OnAlert;                                                 // 0x0238(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void Send_Alert(const class FName& Alert, const struct FVector& Location, TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert);
+		void SendAlert(const class FName& Alert, const struct FVector& Location, TArray<EFNAFAISpawnType> TypesToAlert, int32_t NumberToAlert);
+		void SendAlertComplex(const class FName& Alert, const struct FVector& Location, TArray<struct FAnimatronicTypeData> TypesToAlert, int32_t NumberToAlert);
 		void ExecuteUbergraph_AlertSystem(int32_t EntryPoint);
 		void OnAlert__DelegateSignature(const class FName& Alert, const struct FVector& Location);
 		static UClass* StaticClass();

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A955D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.SetSequencePath
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,16 +28,81 @@ namespace CG
 		params.Path = Path;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A95500
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ImgMedia.ImgMediaSource.SetMipLevelDistance
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Distance                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UImgMediaSource::SetMipLevelDistance(float Distance)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.SetMipLevelDistance");
+		
+		UImgMediaSource_SetMipLevelDistance_Params params {};
+		params.Distance = Distance;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ImgMedia.ImgMediaSource.RemoveTargetObject
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UImgMediaSource::RemoveTargetObject(class AActor* InActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.RemoveTargetObject");
+		
+		UImgMediaSource_RemoveTargetObject_Params params {};
+		params.InActor = InActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ImgMedia.ImgMediaSource.RemoveGlobalCamera
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UImgMediaSource::RemoveGlobalCamera(class AActor* InActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.RemoveGlobalCamera");
+		
+		UImgMediaSource_RemoveGlobalCamera_Params params {};
+		params.InActor = InActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetSequencePath
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UImgMediaSource::GetSequencePath()
 	{
@@ -48,7 +113,6 @@ namespace CG
 		UImgMediaSource_GetSequencePath_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -57,11 +121,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A95430
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetProxies
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              OutProxies                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              OutProxies                                                 (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UImgMediaSource::GetProxies(TArray<class FString>* OutProxies)
 	{
@@ -72,7 +136,6 @@ namespace CG
 		UImgMediaSource_GetProxies_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -82,8 +145,54 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImgMediaSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ImgMedia.ImgMediaSource.AddTargetObject
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UImgMediaSource::AddTargetObject(class AActor* InActor, float Width)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.AddTargetObject");
+		
+		UImgMediaSource_AddTargetObject_Params params {};
+		params.InActor = InActor;
+		params.Width = Width;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function ImgMedia.ImgMediaSource.AddGlobalCamera
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UImgMediaSource::AddGlobalCamera(class AActor* InActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.AddGlobalCamera");
+		
+		UImgMediaSource_AddGlobalCamera_Params params {};
+		params.InActor = InActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImgMediaSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImgMediaSource::StaticClass()

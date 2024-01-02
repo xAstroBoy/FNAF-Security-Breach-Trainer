@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,6 @@ namespace CG
 	{
 	public:
 		unsigned char                                              Rooms_3_EE8DE3A9433678FF972811A09BB6A4E2[0x10];          // 0x0000(0x0010) UNKNOWN PROPERTY: ArrayProperty
-
 	};
 
 }

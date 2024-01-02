@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void On_Alert(const class FName& Alert, const struct FVector& Location);
+		void OnAlert(const class FName& Alert, const struct FVector& Location);
 		void BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_0_MoonManTimeHit__DelegateSignature();
 		void ExecuteUbergraph_RRStaffBotManager(int32_t EntryPoint);
 		static UClass* StaticClass();

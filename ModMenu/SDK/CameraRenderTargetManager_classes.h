@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    CurRenderPoolIndex;                                      // 0x0238(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    RenderTargetPoolSize;                                    // 0x023C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TArray<class UCameraRenderTargetObject_C*>                 Pool;                                                    // 0x0240(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class UCameraRenderTargetObject_C*>                 Pool;                                                    // 0x0240(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void GetPooledRenderTarget(class ACamera_C* Camera, class UCameraRenderTargetObject_C** RenderTarget);

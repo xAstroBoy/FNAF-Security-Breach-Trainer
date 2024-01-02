@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 
 	public:
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void On_Overlap(class AActor* OverlappedActor, class AActor* OtherActor);
+		void OnOverlap(class AActor* OverlappedActor, class AActor* OtherActor);
 		void ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ExecuteUbergraph_SplineForkDetectService(int32_t EntryPoint);
 		static UClass* StaticClass();

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,20 +15,12 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay
+	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorEndOverlap
 	 */
-	struct ABackstageRoxyAndMontyVO_C_ReceiveBeginPlay_Params
-	{
-	};
-
-	/**
-	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap
-	 */
-	struct ABackstageRoxyAndMontyVO_C_ReceiveActorBeginOverlap_Params
+	struct ABackstageRoxyAndMontyVO_C_ReceiveActorEndOverlap_Params
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -38,17 +30,21 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorEndOverlap
+	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay
 	 */
-	struct ABackstageRoxyAndMontyVO_C_ReceiveActorEndOverlap_Params
+	struct ABackstageRoxyAndMontyVO_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap
+	 */
+	struct ABackstageRoxyAndMontyVO_C_ReceiveActorBeginOverlap_Params
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -58,7 +54,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_415L[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

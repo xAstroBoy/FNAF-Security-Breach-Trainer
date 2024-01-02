@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Staffbot_ABP_Security.Staffbot_ABP_Security_C.BlueprintBeginPlay
 	 */
 	struct UStaffbot_ABP_Security_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Staffbot_ABP_Security.Staffbot_ABP_Security_C.AimHead_Event
@@ -38,15 +36,13 @@ namespace CG
 	{
 	public:
 		bool                                                       AimHead;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Staffbot_ABP_Security.Staffbot_ABP_Security_C.CanJumpscareEvent
 	 */
 	struct UStaffbot_ABP_Security_C_CanJumpscareEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Staffbot_ABP_Security.Staffbot_ABP_Security_C.JumpscareEvent
@@ -55,7 +51,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanJumpscare;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -65,7 +60,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

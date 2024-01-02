@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -28,13 +28,13 @@ namespace CG
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		void DeactivateObject(class AActor* Deactivator);
 		void SetDeactivated();
 		void ActivateObject(class AActor* Activator);
 		void ReceiveBeginPlay();
-		void ReceiveEndPlay(Engine_EEndPlayReason EndPlayReason);
+		void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 		void SetActivated();
 		void OnActivatorDone(class AActor* Activator);
 		void ExecuteUbergraph_TriggerMissionOnActivated(int32_t EntryPoint);

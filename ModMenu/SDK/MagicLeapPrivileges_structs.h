@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,47 +17,48 @@ namespace CG
 	/**
 	 * Enum MagicLeapPrivileges.EMagicLeapPrivilege
 	 */
-	enum class MagicLeapPrivileges_EMagicLeapPrivilege : uint8_t
+	enum class EMagicLeapPrivilege : uint8_t
 	{
-		EMagicLeapPrivilege__Invalid                        = 0,
-		EMagicLeapPrivilege__BatteryInfo                    = 1,
-		EMagicLeapPrivilege__CameraCapture                  = 2,
-		EMagicLeapPrivilege__ComputerVision                 = 3,
-		EMagicLeapPrivilege__WorldReconstruction            = 4,
-		EMagicLeapPrivilege__InAppPurchase                  = 5,
-		EMagicLeapPrivilege__AudioCaptureMic                = 6,
-		EMagicLeapPrivilege__DrmCertificates                = 7,
-		EMagicLeapPrivilege__Occlusion                      = 8,
-		EMagicLeapPrivilege__LowLatencyLightwear            = 9,
-		EMagicLeapPrivilege__Internet                       = 10,
-		EMagicLeapPrivilege__IdentityRead                   = 11,
-		EMagicLeapPrivilege__BackgroundDownload             = 12,
-		EMagicLeapPrivilege__BackgroundUpload               = 13,
-		EMagicLeapPrivilege__MediaDrm                       = 14,
-		EMagicLeapPrivilege__Media                          = 15,
-		EMagicLeapPrivilege__MediaMetadata                  = 16,
-		EMagicLeapPrivilege__PowerInfo                      = 17,
-		EMagicLeapPrivilege__LocalAreaNetwork               = 18,
-		EMagicLeapPrivilege__VoiceInput                     = 19,
-		EMagicLeapPrivilege__Documents                      = 20,
-		EMagicLeapPrivilege__ConnectBackgroundMusicService  = 21,
-		EMagicLeapPrivilege__RegisterBackgroundMusicService = 22,
-		EMagicLeapPrivilege__PcfRead                        = 23,
-		EMagicLeapPrivilege__PwFoundObjRead                 = 24,
-		EMagicLeapPrivilege__NormalNotificationsUsage       = 25,
-		EMagicLeapPrivilege__MusicService                   = 26,
-		EMagicLeapPrivilege__ControllerPose                 = 27,
-		EMagicLeapPrivilege__GesturesSubscribe              = 28,
-		EMagicLeapPrivilege__GesturesConfig                 = 29,
-		EMagicLeapPrivilege__AddressBookRead                = 30,
-		EMagicLeapPrivilege__AddressBookWrite               = 31,
-		EMagicLeapPrivilege__AddressBookBasicAccess         = 32,
-		EMagicLeapPrivilege__CoarseLocation                 = 33,
-		EMagicLeapPrivilege__FineLocation                   = 34,
-		EMagicLeapPrivilege__HandMesh                       = 35,
-		EMagicLeapPrivilege__WifiStatusRead                 = 36,
-		EMagicLeapPrivilege__SocialConnectionsInvitesAccess = 37,
-		EMagicLeapPrivilege__EMagicLeapPrivilege_MAX        = 38
+		Invalid                        = 0,
+		BatteryInfo                    = 1,
+		CameraCapture                  = 2,
+		ComputerVision                 = 3,
+		WorldReconstruction            = 4,
+		InAppPurchase                  = 5,
+		AudioCaptureMic                = 6,
+		DrmCertificates                = 7,
+		Occlusion                      = 8,
+		LowLatencyLightwear            = 9,
+		Internet                       = 10,
+		IdentityRead                   = 11,
+		BackgroundDownload             = 12,
+		BackgroundUpload               = 13,
+		MediaDrm                       = 14,
+		Media                          = 15,
+		MediaMetadata                  = 16,
+		PowerInfo                      = 17,
+		LocalAreaNetwork               = 18,
+		VoiceInput                     = 19,
+		Documents                      = 20,
+		ConnectBackgroundMusicService  = 21,
+		RegisterBackgroundMusicService = 22,
+		PcfRead                        = 23,
+		PwFoundObjRead                 = 24,
+		NormalNotificationsUsage       = 25,
+		MusicService                   = 26,
+		ControllerPose                 = 27,
+		GesturesSubscribe              = 28,
+		GesturesConfig                 = 29,
+		AddressBookRead                = 30,
+		AddressBookWrite               = 31,
+		AddressBookBasicAccess         = 32,
+		CoarseLocation                 = 33,
+		FineLocation                   = 34,
+		HandMesh                       = 35,
+		WifiStatusRead                 = 36,
+		SocialConnectionsInvitesAccess = 37,
+		SecureBrowserWindow            = 38,
+		MAX                            = 39
 	};
 
 }

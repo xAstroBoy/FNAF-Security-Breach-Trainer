@@ -1,10 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
-#include "PRE_Mod_ArcadeCabinet_Case_10_Package.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -13,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Mod_ArcadeCabinet_Case_10.PRE_Mod_ArcadeCabinet_Case_9_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -35,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Mod_ArcadeCabinet_Case_10.PRE_Mod_ArcadeCabinet_Case_9_C.PlayEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Mod_ArcadeCabinet_Case_9_C::PlayEmitter()
 	{
@@ -54,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Mod_ArcadeCabinet_Case_10.PRE_Mod_ArcadeCabinet_Case_9_C.StopEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Mod_ArcadeCabinet_Case_9_C::StopEmitter()
 	{
@@ -73,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Mod_ArcadeCabinet_Case_10.PRE_Mod_ArcadeCabinet_Case_9_C.ToggleInRange
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InRange                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -95,13 +94,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Mod_ArcadeCabinet_Case_10.PRE_Mod_ArcadeCabinet_Case_9_C.ExecuteUbergraph_PRE_Mod_ArcadeCabinet_Case_10
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Mod_ArcadeCabinet_Case_9_C::ExecuteUbergraph_PRE_Mod_ArcadeCabinet_Case_10(int EntryPoint)
+	void APRE_Mod_ArcadeCabinet_Case_9_C::ExecuteUbergraph_PRE_Mod_ArcadeCabinet_Case_10(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -117,8 +116,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APRE_Mod_ArcadeCabinet_Case_9_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APRE_Mod_ArcadeCabinet_Case_9_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APRE_Mod_ArcadeCabinet_Case_9_C::StaticClass()

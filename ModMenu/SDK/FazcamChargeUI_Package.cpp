@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.SequenceEvent__ENTRYPOINTFazcamChargeUI_1
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazcamChargeUI_C::SequenceEvent__ENTRYPOINTFazcamChargeUI_1()
 	{
@@ -31,9 +31,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.GetFillMeterDelayOffset
+	 * 		Flags  -> ()
+	 */
+	float UFazcamChargeUI_C::GetFillMeterDelayOffset()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FazcamChargeUI.FazcamChargeUI_C.GetFillMeterDelayOffset");
+		
+		UFazcamChargeUI_C_GetFillMeterDelayOffset_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.Finished_EEC50D0B406493E297CED0B1A9538C1B
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazcamChargeUI_C::Finished_EEC50D0B406493E297CED0B1A9538C1B()
 	{
@@ -50,9 +71,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.Recharge
+	 * 		Flags  -> ()
+	 */
+	void UFazcamChargeUI_C::Recharge()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FazcamChargeUI.FazcamChargeUI_C.Recharge");
+		
+		UFazcamChargeUI_C_Recharge_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.CameraFlashed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              RechargeTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -72,28 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.Recharge
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UFazcamChargeUI_C::Recharge()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FazcamChargeUI.FazcamChargeUI_C.Recharge");
-		
-		UFazcamChargeUI_C_Recharge_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.PlayRechargeSFX
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazcamChargeUI_C::PlayRechargeSFX()
 	{
@@ -110,9 +131,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.CustomEvent
+	 * 		Flags  -> ()
+	 */
+	void UFazcamChargeUI_C::CustomEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FazcamChargeUI.FazcamChargeUI_C.CustomEvent");
+		
+		UFazcamChargeUI_C_CustomEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.ExecuteUbergraph_FazcamChargeUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -132,9 +172,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FazcamChargeUI.FazcamChargeUI_C.RechargeDone__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFazcamChargeUI_C::RechargeDone__DelegateSignature()
 	{
@@ -151,8 +191,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFazcamChargeUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFazcamChargeUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFazcamChargeUI_C::StaticClass()

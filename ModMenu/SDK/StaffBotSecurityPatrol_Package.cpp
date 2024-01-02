@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.GetPossibleSplinePaths
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class ASplinePathway_C*>                    PossiblePaths                                              (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class ASplinePathway_C*>                    PossiblePaths                                              (Parm, OutParm)
 	 */
 	void AStaffBotSecurityPatrol_C::GetPossibleSplinePaths(TArray<class ASplinePathway_C*>* PossiblePaths)
 	{
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.GetSplineFollowerContext
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FSplineFollowerContext                      SplineFollowerContext                                      (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	 */
@@ -60,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.DoorEntryNotAllowed
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDoorComponent*                              DoorComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -84,9 +84,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.ForcePlayVoiceLine
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UAkAudioEvent*                               AKEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AStaffBotSecurityPatrol_C::ForcePlayVoiceLine(class UAkAudioEvent* AKEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.ForcePlayVoiceLine");
+		
+		AStaffBotSecurityPatrol_C_ForcePlayVoiceLine_Params params {};
+		params.AKEvent = AKEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.SetSplineFollowerContext
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FSplineFollowerContext                      SplineFollowerContext                                      (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	 */
@@ -106,9 +128,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AStaffBotSecurityPatrol_C::ReceiveBeginPlay()
 	{
@@ -125,9 +147,91 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.PlayVoiceType
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EAIVoiceOverType                                   VoiceTag                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AStaffBotSecurityPatrol_C::PlayVoiceType(EAIVoiceOverType VoiceTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.PlayVoiceType");
+		
+		AStaffBotSecurityPatrol_C_PlayVoiceType_Params params {};
+		params.VoiceTag = VoiceTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               bFromSweep                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FHitResult                                  SweepResult                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	 */
+	void AStaffBotSecurityPatrol_C::BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+		
+		AStaffBotSecurityPatrol_C_BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params params {};
+		params.OverlappedComponent = OverlappedComponent;
+		params.OtherActor = OtherActor;
+		params.OtherComp = OtherComp;
+		params.OtherBodyIndex = OtherBodyIndex;
+		params.bFromSweep = bFromSweep;
+		params.SweepResult = SweepResult;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UPrimitiveComponent*                         OtherComp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            OtherBodyIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AStaffBotSecurityPatrol_C::BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+		
+		AStaffBotSecurityPatrol_C_BndEvt__StaffBotSecurityPatrol_AutoAlertRadius_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature_Params params {};
+		params.OverlappedComponent = OverlappedComponent;
+		params.OtherActor = OtherActor;
+		params.OtherComp = OtherComp;
+		params.OtherBodyIndex = OtherBodyIndex;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function StaffBotSecurityPatrol.StaffBotSecurityPatrol_C.ExecuteUbergraph_StaffBotSecurityPatrol
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -147,8 +251,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AStaffBotSecurityPatrol_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AStaffBotSecurityPatrol_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AStaffBotSecurityPatrol_C::StaticClass()

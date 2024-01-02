@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * UserDefinedEnum E_ShatteredBotTypes.E_ShatteredBotTypes
 	 */
-	enum class E_ShatteredBotTypes_E_ShatteredBotTypes : uint8_t
+	enum class E_ShatteredBotTypes : uint8_t
 	{
-		E_ShatteredBotTypes__NewEnumerator0 = 0,
-		E_ShatteredBotTypes__NewEnumerator1 = 1,
-		E_ShatteredBotTypes__NewEnumerator2 = 2,
-		E_ShatteredBotTypes__E_MAX          = 3
+		NewEnumerator0 = 0,
+		NewEnumerator1 = 1,
+		NewEnumerator2 = 2,
+		E_MAX          = 3
 	};
 
 }

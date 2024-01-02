@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function LightAreaDoorComponent.LightAreaDoorComponent_C.ReceiveBeginPlay
 	 */
 	struct ULightAreaDoorComponent_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LightAreaDoorComponent.LightAreaDoorComponent_C.On Area Change Finished
 	 */
-	struct ULightAreaDoorComponent_C_On_Area_Change_Finished_Params
-	{
-	};
+	struct ULightAreaDoorComponent_C_OnAreaChangeFinished_Params
+	{	};
 
 	/**
 	 * Function LightAreaDoorComponent.LightAreaDoorComponent_C.ExecuteUbergraph_LightAreaDoorComponent
@@ -35,7 +33,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_5PEB[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

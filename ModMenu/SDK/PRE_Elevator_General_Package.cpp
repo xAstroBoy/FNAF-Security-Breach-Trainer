@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.HasDoorInitialized
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool APRE_Elevator_General_C::HasDoorInitialized()
 	{
@@ -33,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.IsDoorLockedForAI
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool APRE_Elevator_General_C::IsDoorLockedForAI()
 	{
@@ -54,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.IsDoorLockedForPlayer
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool APRE_Elevator_General_C::IsDoorLockedForPlayer()
 	{
@@ -75,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.IsDoorOpen
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool APRE_Elevator_General_C::IsDoorOpen()
 	{
@@ -96,9 +96,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.TeleportFreddy
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::TeleportFreddy()
 	{
@@ -115,9 +115,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.UpdateCanUseState
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::UpdateCanUseState()
 	{
@@ -134,14 +134,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.CloseOrOpenDoors
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Open                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::CloseOrOpenDoors(E_Elevator_Side_E_Elevator_Side Side, bool Open)
+	void APRE_Elevator_General_C::CloseOrOpenDoors(E_Elevator_Side Side, bool Open)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -158,18 +158,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.PrintDebugVariable
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Description                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 * 		class FString                                      Variable                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               ShowSide                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               ShowRemote                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::PrintDebugVariable(const class FString& Description, const class FString& Variable, E_Elevator_Side_E_Elevator_Side Side, bool Remote, bool ShowSide, bool ShowRemote)
+	void APRE_Elevator_General_C::PrintDebugVariable(const class FString& Description, const class FString& Variable, E_Elevator_Side Side, bool Remote, bool ShowSide, bool ShowRemote)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -190,15 +190,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetTarget_StreamViewpoint
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class AA_Elevator_StreamViewpoint_C*               StreamViewpoint                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::GetTarget_StreamViewpoint(E_Elevator_Side_E_Elevator_Side Side, bool Remote, class AA_Elevator_StreamViewpoint_C** StreamViewpoint)
+	void APRE_Elevator_General_C::GetTarget_StreamViewpoint(E_Elevator_Side Side, bool Remote, class AA_Elevator_StreamViewpoint_C** StreamViewpoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -218,15 +218,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetTarget_Levels
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FS_Elevator_Levels                          Levels                                                     (Parm, OutParm, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::GetTarget_Levels(E_Elevator_Side_E_Elevator_Side Side, bool Remote, struct FS_Elevator_Levels* Levels)
+	void APRE_Elevator_General_C::GetTarget_Levels(E_Elevator_Side Side, bool Remote, struct FS_Elevator_Levels* Levels)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -246,12 +246,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetTarget_ArrowIndicators
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TArray<class ABP_ArrowIndicator_C*>                ArrowIndicators                                            (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class ABP_ArrowIndicator_C*>                ArrowIndicators                                            (Parm, OutParm)
 	 */
 	void APRE_Elevator_General_C::GetTarget_ArrowIndicators(bool Remote, TArray<class ABP_ArrowIndicator_C*>* ArrowIndicators)
 	{
@@ -272,15 +272,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetTarget_Doors
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TArray<class APRE_ElevatorDoor_Master_C*>          Doors                                                      (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class APRE_ElevatorDoor_Master_C*>          Doors                                                      (Parm, OutParm)
 	 */
-	void APRE_Elevator_General_C::GetTarget_Doors(E_Elevator_Side_E_Elevator_Side Side, bool Remote, TArray<class APRE_ElevatorDoor_Master_C*>* Doors)
+	void APRE_Elevator_General_C::GetTarget_Doors(E_Elevator_Side Side, bool Remote, TArray<class APRE_ElevatorDoor_Master_C*>* Doors)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -300,12 +300,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetTarget_Buttons
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TArray<class AButtonBase_C*>                       Buttons                                                    (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class AButtonBase_C*>                       Buttons                                                    (Parm, OutParm)
 	 */
 	void APRE_Elevator_General_C::GetTarget_Buttons(bool Remote, TArray<class AButtonBase_C*>* Buttons)
 	{
@@ -326,15 +326,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.PrintDebug
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      inString                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ShowSide                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::PrintDebug(const class FString& inString, E_Elevator_Side_E_Elevator_Side Side, bool ShowSide)
+	void APRE_Elevator_General_C::PrintDebug(const class FString& inString, E_Elevator_Side Side, bool ShowSide)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -352,15 +352,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetStreamViewpoint
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::SetStreamViewpoint(E_Elevator_Side_E_Elevator_Side Side, bool Remote, bool bEnable)
+	void APRE_Elevator_General_C::SetStreamViewpoint(E_Elevator_Side Side, bool Remote, bool bEnable)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -378,11 +378,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetArrowIndicators
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class ABP_ArrowIndicator_C*>                Array                                                      (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class ABP_ArrowIndicator_C*>                Array                                                      (Parm, OutParm)
 	 */
 	void APRE_Elevator_General_C::GetArrowIndicators(TArray<class ABP_ArrowIndicator_C*>* Array)
 	{
@@ -402,9 +402,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetDoors
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FS_Elevator_Doors                           Doors                                                      (Parm, OutParm, HasGetValueTypeHash)
 	 */
@@ -426,11 +426,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.GetButtons
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AButtonBase_C*>                       Array                                                      (Parm, OutParm, HasGetValueTypeHash)
+	 * 		TArray<class AButtonBase_C*>                       Array                                                      (Parm, OutParm)
 	 */
 	void APRE_Elevator_General_C::GetButtons(TArray<class AButtonBase_C*>* Array)
 	{
@@ -450,14 +450,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetArrowIndicators
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		E_Elevator_ArrowIndicator_Type_E_Elevator_ArrowIndicator_Type Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_ArrowIndicator_Type                     Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::SetArrowIndicators(bool Remote, E_Elevator_ArrowIndicator_Type_E_Elevator_ArrowIndicator_Type Type)
+	void APRE_Elevator_General_C::SetArrowIndicators(bool Remote, E_Elevator_ArrowIndicator_Type Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -474,9 +474,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.TeleportPlayer
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::TeleportPlayer()
 	{
@@ -493,9 +493,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ToggleLockButtons
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -517,16 +517,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ToggleLockDoors
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Force                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::ToggleLockDoors(E_Elevator_Side_E_Elevator_Side Side, bool Remote, bool Lock, bool Force)
+	void APRE_Elevator_General_C::ToggleLockDoors(E_Elevator_Side Side, bool Remote, bool Lock, bool Force)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -545,9 +545,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ToggleLockDoor
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     Door                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -571,9 +571,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.TickShake
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::TickShake()
 	{
@@ -590,9 +590,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.Setup
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::Setup()
 	{
@@ -609,9 +609,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.UpdateVariables
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::UpdateVariables()
 	{
@@ -628,17 +628,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorClose
+	 * 		Flags  -> ()
 	 */
-	void APRE_Elevator_General_C::ReceiveBeginPlay()
+	void APRE_Elevator_General_C::ForceDoorClose()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveBeginPlay");
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorClose");
 		
-		APRE_Elevator_General_C_ReceiveBeginPlay_Params params {};
+		APRE_Elevator_General_C_ForceDoorClose_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -647,20 +647,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetSecurityLevel
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		int32_t                                            NewSecurityLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorOpen
+	 * 		Flags  -> ()
 	 */
-	void APRE_Elevator_General_C::SetSecurityLevel(int32_t NewSecurityLevel)
+	void APRE_Elevator_General_C::ForceDoorOpen()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.SetSecurityLevel");
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorOpen");
 		
-		APRE_Elevator_General_C_SetSecurityLevel_Params params {};
-		params.NewSecurityLevel = NewSecurityLevel;
+		APRE_Elevator_General_C_ForceDoorOpen_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -669,31 +666,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorRequiredItem
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        ItemName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void APRE_Elevator_General_C::SetDoorRequiredItem(const class FName& ItemName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorRequiredItem");
-		
-		APRE_Elevator_General_C_SetDoorRequiredItem_Params params {};
-		params.ItemName = ItemName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorLockAI
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -713,17 +688,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorOpen
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorRequiredItem
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        ItemName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::ForceDoorOpen()
+	void APRE_Elevator_General_C::SetDoorRequiredItem(const class FName& ItemName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorOpen");
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorRequiredItem");
 		
-		APRE_Elevator_General_C_ForceDoorOpen_Params params {};
+		APRE_Elevator_General_C_SetDoorRequiredItem_Params params {};
+		params.ItemName = ItemName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -732,9 +710,91 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetSecurityLevel
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            NewSecurityLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void APRE_Elevator_General_C::SetSecurityLevel(int32_t NewSecurityLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.SetSecurityLevel");
+		
+		APRE_Elevator_General_C_SetSecurityLevel_Params params {};
+		params.NewSecurityLevel = NewSecurityLevel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveBeginPlay");
+		
+		APRE_Elevator_General_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveTick
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void APRE_Elevator_General_C::ReceiveTick(float DeltaSeconds)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveTick");
+		
+		APRE_Elevator_General_C_ReceiveTick_Params params {};
+		params.DeltaSeconds = DeltaSeconds;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegin
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::ElevatorSequenceBegin()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegin");
+		
+		APRE_Elevator_General_C_ElevatorSequenceBegin_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.WakeupOverlapBegin
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -764,15 +824,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetLocked
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::SetLocked(E_Elevator_Side_E_Elevator_Side Side, bool Remote, bool Lock)
+	void APRE_Elevator_General_C::SetLocked(E_Elevator_Side Side, bool Remote, bool Lock)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -790,9 +850,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetLockedAll
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Remote                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -814,28 +874,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorClose
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void APRE_Elevator_General_C::ForceDoorClose()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ForceDoorClose");
-		
-		APRE_Elevator_General_C_ForceDoorClose_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ToggleMovement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bEnabled                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -855,9 +896,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.WakeupOverlapEnd
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -883,14 +924,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnEntered
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::OnPawnEntered(E_Elevator_Side_E_Elevator_Side Side, class APawn* Pawn)
+	void APRE_Elevator_General_C::OnPawnEntered(E_Elevator_Side Side, class APawn* Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -907,9 +948,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnButtonInteract
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::OnButtonInteract()
 	{
@@ -926,14 +967,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnExited
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_Side_E_Elevator_Side                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_Side                                    Side                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::OnPawnExited(E_Elevator_Side_E_Elevator_Side Side, class APawn* Pawn)
+	void APRE_Elevator_General_C::OnPawnExited(E_Elevator_Side Side, class APawn* Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -950,17 +991,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceEnd
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               CanUse                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void APRE_Elevator_General_C::ElevatorSequenceEnd()
+	void APRE_Elevator_General_C::ElevatorSequenceEnd(bool CanUse)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceEnd");
 		
 		APRE_Elevator_General_C_ElevatorSequenceEnd_Params params {};
+		params.CanUse = CanUse;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -969,9 +1013,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SwapLevels
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::SwapLevels()
 	{
@@ -988,13 +1032,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnMovementReachedTargetValue
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_Elevator_MovementMode_E_Elevator_MovementMode    Selection                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_Elevator_MovementMode                            Selection                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::OnMovementReachedTargetValue(E_Elevator_MovementMode_E_Elevator_MovementMode Selection)
+	void APRE_Elevator_General_C::OnMovementReachedTargetValue(E_Elevator_MovementMode Selection)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1010,9 +1054,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnLevelsSwapped
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::OnLevelsSwapped()
 	{
@@ -1029,9 +1073,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OverlapWake
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1061,9 +1105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OverlapSleep
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1089,57 +1133,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegin
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void APRE_Elevator_General_C::ElevatorSequenceBegin()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegin");
-		
-		APRE_Elevator_General_C_ElevatorSequenceBegin_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void APRE_Elevator_General_C::ReceiveTick(float DeltaSeconds)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ReceiveTick");
-		
-		APRE_Elevator_General_C_ReceiveTick_Params params {};
-		params.DeltaSeconds = DeltaSeconds;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnEnteredDoorA
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDoorComponent*                              DoorComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bPassedDoorCheck                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_EConditionFailReason                         FailReason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               FailReason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::OnPawnEnteredDoorA(class UDoorComponent* DoorComponent, class APawn* Pawn, bool bPassedDoorCheck, fnaf9_EConditionFailReason FailReason)
+	void APRE_Elevator_General_C::OnPawnEnteredDoorA(class UDoorComponent* DoorComponent, class APawn* Pawn, bool bPassedDoorCheck, EConditionFailReason FailReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1158,9 +1161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnExitedDoorA
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDoorComponent*                              DoorComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1182,9 +1185,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.BndEvt__InsideOverlap_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1214,9 +1217,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.BndEvt__InsideOverlap_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1242,9 +1245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnExitedDoorB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDoorComponent*                              DoorComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1266,16 +1269,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnPawnEnteredDoorB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDoorComponent*                              DoorComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APawn*                                       Pawn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bPassedDoorCheck                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_EConditionFailReason                         FailReason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               FailReason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Elevator_General_C::OnPawnEnteredDoorB(class UDoorComponent* DoorComponent, class APawn* Pawn, bool bPassedDoorCheck, fnaf9_EConditionFailReason FailReason)
+	void APRE_Elevator_General_C::OnPawnEnteredDoorB(class UDoorComponent* DoorComponent, class APawn* Pawn, bool bPassedDoorCheck, EConditionFailReason FailReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1294,9 +1297,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SetDoorLockPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Lock                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1316,9 +1319,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnLevelsLoaded_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::OnLevelsLoaded_Event_1()
 	{
@@ -1335,9 +1338,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.PlayMusic
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::PlayMusic()
 	{
@@ -1354,9 +1357,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.StopMusic
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::StopMusic()
 	{
@@ -1373,17 +1376,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.On Fail To Teleport Freddy
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void APRE_Elevator_General_C::On_Fail_To_Teleport_Freddy()
+	void APRE_Elevator_General_C::OnFailToTeleportFreddy()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.On Fail To Teleport Freddy");
 		
-		APRE_Elevator_General_C_On_Fail_To_Teleport_Freddy_Params params {};
+		APRE_Elevator_General_C_OnFailToTeleportFreddy_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1392,9 +1395,71 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.BndEvt__Elevator_Audio_K2Node_ComponentBoundEvent_2_PlayAudioEvent__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TArray<struct FElevatorAudioData>                  AudiotoPlay                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	 */
+	void APRE_Elevator_General_C::BndEvt__Elevator_Audio_K2Node_ComponentBoundEvent_2_PlayAudioEvent__DelegateSignature(TArray<struct FElevatorAudioData>* AudiotoPlay)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.BndEvt__Elevator_Audio_K2Node_ComponentBoundEvent_2_PlayAudioEvent__DelegateSignature");
+		
+		APRE_Elevator_General_C_BndEvt__Elevator_Audio_K2Node_ComponentBoundEvent_2_PlayAudioEvent__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (AudiotoPlay != nullptr)
+			*AudiotoPlay = params.AudiotoPlay;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.StopPlayingElevatorAudio
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::StopPlayingElevatorAudio()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.StopPlayingElevatorAudio");
+		
+		APRE_Elevator_General_C_StopPlayingElevatorAudio_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.CustomEvent
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::CustomEvent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.CustomEvent");
+		
+		APRE_Elevator_General_C_CustomEvent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ExecuteUbergraph_PRE_Elevator_General
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1414,9 +1479,66 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.SwappingLevels__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::SwappingLevels__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.SwappingLevels__DelegateSignature");
+		
+		APRE_Elevator_General_C_SwappingLevels__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.RemoveSubtitles__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::RemoveSubtitles__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.RemoveSubtitles__DelegateSignature");
+		
+		APRE_Elevator_General_C_RemoveSubtitles__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegun__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void APRE_Elevator_General_C::ElevatorSequenceBegun__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PRE_Elevator_General.PRE_Elevator_General_C.ElevatorSequenceBegun__DelegateSignature");
+		
+		APRE_Elevator_General_C_ElevatorSequenceBegun__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnButtonPressed__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Elevator_General_C::OnButtonPressed__DelegateSignature()
 	{
@@ -1433,9 +1555,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnWakeupOverlapEntered__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1465,9 +1587,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Elevator_General.PRE_Elevator_General_C.OnWakeupOverlapLeave__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1493,8 +1615,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APRE_Elevator_General_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APRE_Elevator_General_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APRE_Elevator_General_C::StaticClass()

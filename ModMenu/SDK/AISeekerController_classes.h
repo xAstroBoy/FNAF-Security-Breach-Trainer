@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -30,9 +30,9 @@ namespace CG
 		class FName                                                BBInvestigateSound;                                      // 0x0360(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBAlert;                                                 // 0x0368(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       PlayerWasSpotted;                                        // 0x0370(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_C4MD[0x3];                                   // 0x0371(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5N2G[0x3];                                   // 0x0371(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                BBLastKnownDirection;                                    // 0x0374(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_YTRO[0x4];                                   // 0x037C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LOV0[0x4];                                   // 0x037C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBlackboardData*                                     StartingBlackboard;                                      // 0x0380(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UBehaviorTree*                                       StartingBehaviorTree;                                    // 0x0388(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBRunBehaviour;                                          // 0x0390(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -49,7 +49,7 @@ namespace CG
 		void GetHearingStimulus(class AActor* Actor, struct FAIStimulus* Output);
 		void HandleNoiseMaker(const struct FAIStimulus& Stimulus, class AActor* NoisyActor);
 		void HandleHearing(const struct FAIStimulus& AIStimulus, class AActor* ActorProducingSound);
-		void HandleSight(class AActor* UpdatedActor, bool Visible);
+		void HandleSight(class AActor* UpdatedActor, bool visible);
 		void OnCheckpointSave(class UFNAFSaveData* SaveDataObject);
 		void OnGameDataLoaded(class UFNAFSaveData* SaveDataObject);
 		void OnStoreGameData(class UFNAFSaveData* SaveDataObject);
@@ -59,11 +59,11 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void BndEvt__AIPerception_K2Node_ComponentBoundEvent_0_PerceptionUpdatedDelegate__DelegateSignature(TArray<class AActor*> UpdatedActors);
 		void OnRoomChanged(class ARoomAreaBase* Room);
-		void On_Camera_Alert(class ASecurityCamera* SecurityCamera);
-		void Jump_Scare();
+		void OnCameraAlert(class ASecurityCamera* SecurityCamera);
+		void JumpScare();
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
-		void On_Sound_Heard(const struct FVector& SoundLocation);
-		void Reset_AI();
+		void OnSoundHeard(const struct FVector& SoundLocation);
+		void ResetAI();
 		void HandleOnDestroyed(class AActor* DestroyedActor);
 		void ExecuteUbergraph_AISeekerController(int32_t EntryPoint);
 		static UClass* StaticClass();

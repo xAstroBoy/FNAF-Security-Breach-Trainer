@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function StaffBotWorkerPath.StaffBotWorkerPath_C.UserConstructionScript
 	 */
 	struct AStaffBotWorkerPath_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 }
 

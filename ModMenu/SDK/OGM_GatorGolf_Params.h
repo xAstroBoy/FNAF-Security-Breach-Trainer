@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,16 +17,26 @@ namespace CG
 	/**
 	 * Function OGM_GatorGolf.OGM_GatorGolf_C.On Start
 	 */
-	struct AOGM_GatorGolf_C_On_Start_Params
-	{
-	};
+	struct AOGM_GatorGolf_C_OnStart_Params
+	{	};
 
 	/**
 	 * Function OGM_GatorGolf.OGM_GatorGolf_C.Spawn Monty
 	 */
-	struct AOGM_GatorGolf_C_Spawn_Monty_Params
-	{
-	};
+	struct AOGM_GatorGolf_C_SpawnMonty_Params
+	{	};
+
+	/**
+	 * Function OGM_GatorGolf.OGM_GatorGolf_C.ReceiveBeginPlay
+	 */
+	struct AOGM_GatorGolf_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function OGM_GatorGolf.OGM_GatorGolf_C.OnCollectSecurityBadge
+	 */
+	struct AOGM_GatorGolf_C_OnCollectSecurityBadge_Params
+	{	};
 
 	/**
 	 * Function OGM_GatorGolf.OGM_GatorGolf_C.ExecuteUbergraph_OGM_GatorGolf
@@ -35,7 +45,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_0SHB[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

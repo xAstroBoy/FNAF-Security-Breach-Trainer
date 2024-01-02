@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * UserDefinedEnum PatrolPointType.PatrolPointType
 	 */
-	enum class PatrolPointType_EPatrolPointType : uint8_t
+	enum class EPatrolPointType : uint8_t
 	{
-		PatrolPointType__NewEnumerator0      = 0,
-		PatrolPointType__NewEnumerator1      = 1,
-		PatrolPointType__NewEnumerator2      = 2,
-		PatrolPointType__NewEnumerator3      = 3,
-		PatrolPointType__NewEnumerator4      = 4,
-		PatrolPointType__PatrolPointType_MAX = 5
+		PatrolPointTypeNewEnumerator0      = 0,
+		PatrolPointTypeNewEnumerator1      = 1,
+		PatrolPointTypeNewEnumerator2      = 2,
+		PatrolPointTypeNewEnumerator3      = 3,
+		PatrolPointTypeNewEnumerator4      = 4,
+		PatrolPointTypePatrolPointType_MAX = 5
 	};
 
 }

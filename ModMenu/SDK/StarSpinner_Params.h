@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,23 +17,20 @@ namespace CG
 	/**
 	 * Function StarSpinner.StarSpinner_C.Spin back and forth__FinishedFunc
 	 */
-	struct AStarSpinner_C_Spin_back_and_forth__FinishedFunc_Params
-	{
-	};
+	struct AStarSpinner_C_Spinbackandforth__FinishedFunc_Params
+	{	};
 
 	/**
 	 * Function StarSpinner.StarSpinner_C.Spin back and forth__UpdateFunc
 	 */
-	struct AStarSpinner_C_Spin_back_and_forth__UpdateFunc_Params
-	{
-	};
+	struct AStarSpinner_C_Spinbackandforth__UpdateFunc_Params
+	{	};
 
 	/**
 	 * Function StarSpinner.StarSpinner_C.ReceiveBeginPlay
 	 */
 	struct AStarSpinner_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StarSpinner.StarSpinner_C.ExecuteUbergraph_StarSpinner
@@ -42,7 +39,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

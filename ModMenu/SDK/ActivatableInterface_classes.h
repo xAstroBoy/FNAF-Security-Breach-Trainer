@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,8 +26,8 @@ namespace CG
 		void DeactivateObject(class AActor* Deactivator);
 		void SetActivated();
 		void OnActivatorDone(class AActor* Activator);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
 		void ActivateObject(class AActor* Activator);
 		static UClass* StaticClass();
 	};

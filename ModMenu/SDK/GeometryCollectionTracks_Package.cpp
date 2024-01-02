@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneGeometryCollectionSection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneGeometryCollectionSection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneGeometryCollectionSection::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneGeometryCollectionTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneGeometryCollectionTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneGeometryCollectionTrack::StaticClass()

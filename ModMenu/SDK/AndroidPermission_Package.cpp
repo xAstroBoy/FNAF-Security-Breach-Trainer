@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAndroidPermissionCallbackProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAndroidPermissionCallbackProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAndroidPermissionCallbackProxy::StaticClass()
@@ -26,13 +26,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A857B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AndroidPermission.AndroidPermissionFunctionLibrary.CheckPermission
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      permission                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAndroidPermissionFunctionLibrary::STATIC_CheckPermission(const class FString& permission)
+	bool UAndroidPermissionFunctionLibrary::CheckPermission(const class FString& permission)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -42,7 +42,6 @@ namespace CG
 		params.permission = permission;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -51,13 +50,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AEC2D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AndroidPermission.AndroidPermissionFunctionLibrary.AcquirePermissions
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              Permissions                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              Permissions                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::STATIC_AcquirePermissions(TArray<class FString> Permissions)
+	class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::AcquirePermissions(TArray<class FString> Permissions)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -67,7 +66,6 @@ namespace CG
 		params.Permissions = Permissions;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -76,8 +74,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAndroidPermissionFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAndroidPermissionFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAndroidPermissionFunctionLibrary::StaticClass()

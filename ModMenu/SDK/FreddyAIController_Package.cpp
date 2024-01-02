@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.SetIsNearRechargeStation
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               isFreddyNearStation                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -34,13 +34,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.SetAIState
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		FreddyAIState_EFreddyAIState                       State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFreddyAIState                                     State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyAIController_C::SetAIState(FreddyAIState_EFreddyAIState State)
+	void AFreddyAIController_C::SetAIState(EFreddyAIState State)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -56,17 +56,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.Setup Freddy Power Loss Timer
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AFreddyAIController_C::Setup_Freddy_Power_Loss_Timer()
+	void AFreddyAIController_C::SetupFreddyPowerLossTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.Setup Freddy Power Loss Timer");
 		
-		AFreddyAIController_C_Setup_Freddy_Power_Loss_Timer_Params params {};
+		AFreddyAIController_C_SetupFreddyPowerLossTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -75,20 +75,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.On World State Changed
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EFNAFGameState                               NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		fnaf9_EFNAFGameState                               PreviousState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFGameState                                     NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFGameState                                     PreviousState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFreddyAIController_C::On_World_State_Changed(fnaf9_EFNAFGameState NewState, fnaf9_EFNAFGameState PreviousState)
+	void AFreddyAIController_C::OnWorldStateChanged(EFNAFGameState NewState, EFNAFGameState PreviousState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.On World State Changed");
 		
-		AFreddyAIController_C_On_World_State_Changed_Params params {};
+		AFreddyAIController_C_OnWorldStateChanged_Params params {};
 		params.NewState = NewState;
 		params.PreviousState = PreviousState;
 		
@@ -99,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.GetGregoryPawn
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AGregory_C*                                  GregoryPawn                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -123,9 +123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OnNotifyEnd_30B75CD34307316BF7A1EF9DC900582F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -145,9 +145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OnNotifyBegin_30B75CD34307316BF7A1EF9DC900582F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -167,9 +167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OnInterrupted_30B75CD34307316BF7A1EF9DC900582F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -189,9 +189,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OnBlendOut_30B75CD34307316BF7A1EF9DC900582F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -211,9 +211,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OnCompleted_30B75CD34307316BF7A1EF9DC900582F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -233,189 +233,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 * Parameters:
-	 * 		class APawn*                                       UnpossessedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void AFreddyAIController_C::ReceiveUnPossess(class APawn* UnpossessedPawn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess");
-		
-		AFreddyAIController_C_ReceiveUnPossess_Params params {};
-		params.UnpossessedPawn = UnpossessedPawn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.SnapToPowerStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::SnapToPowerStation()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.SnapToPowerStation");
-		
-		AFreddyAIController_C_SnapToPowerStation_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::GoTo_PowerStation()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation");
-		
-		AFreddyAIController_C_GoTo_PowerStation_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::On_Tick_Freddy_Power()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power");
-		
-		AFreddyAIController_C_On_Tick_Freddy_Power_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.Call Freddy
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class AGregory_C*                                  GregoryPawn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void AFreddyAIController_C::Call_Freddy(class AGregory_C* GregoryPawn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.Call Freddy");
-		
-		AFreddyAIController_C_Call_Freddy_Params params {};
-		params.GregoryPawn = GregoryPawn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void AFreddyAIController_C::ReceiveTick(float DeltaSeconds)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveTick");
-		
-		AFreddyAIController_C_ReceiveTick_Params params {};
-		params.DeltaSeconds = DeltaSeconds;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay");
-		
-		AFreddyAIController_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::FreddyReachedPowerStation()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation");
-		
-		AFreddyAIController_C_FreddyReachedPowerStation_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.FreddyNearStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFreddyAIController_C::FreddyNearStation()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.FreddyNearStation");
-		
-		AFreddyAIController_C_FreddyNearStation_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceivePossess
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PossessedPawn                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -435,9 +255,189 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class APawn*                                       UnpossessedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AFreddyAIController_C::ReceiveUnPossess(class APawn* UnpossessedPawn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess");
+		
+		AFreddyAIController_C_ReceiveUnPossess_Params params {};
+		params.UnpossessedPawn = UnpossessedPawn;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.SnapToPowerStation
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::SnapToPowerStation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.SnapToPowerStation");
+		
+		AFreddyAIController_C_SnapToPowerStation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::GoTo_PowerStation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation");
+		
+		AFreddyAIController_C_GoTo_PowerStation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::OnTickFreddyPower()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power");
+		
+		AFreddyAIController_C_OnTickFreddyPower_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.Call Freddy
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AGregory_C*                                  GregoryPawn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AFreddyAIController_C::CallFreddy(class AGregory_C* GregoryPawn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.Call Freddy");
+		
+		AFreddyAIController_C_CallFreddy_Params params {};
+		params.GregoryPawn = GregoryPawn;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveTick
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AFreddyAIController_C::ReceiveTick(float DeltaSeconds)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveTick");
+		
+		AFreddyAIController_C_ReceiveTick_Params params {};
+		params.DeltaSeconds = DeltaSeconds;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay");
+		
+		AFreddyAIController_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::FreddyReachedPowerStation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation");
+		
+		AFreddyAIController_C_FreddyReachedPowerStation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.FreddyNearStation
+	 * 		Flags  -> ()
+	 */
+	void AFreddyAIController_C::FreddyNearStation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FreddyAIController.FreddyAIController_C.FreddyNearStation");
+		
+		AFreddyAIController_C_FreddyNearStation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OrientFreddyNearStationEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFreddyAIController_C::OrientFreddyNearStationEvent()
 	{
@@ -454,9 +454,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.OrientFreddyInsideStationEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InsideStation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -476,9 +476,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.MoveIntoPowerStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFreddyAIController_C::MoveIntoPowerStation()
 	{
@@ -495,9 +495,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.FreddyLeaveRechargeStation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFreddyAIController_C::FreddyLeaveRechargeStation()
 	{
@@ -514,9 +514,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.AttemptDestroy
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFreddyAIController_C::AttemptDestroy()
 	{
@@ -533,9 +533,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FreddyAIController.FreddyAIController_C.ExecuteUbergraph_FreddyAIController
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -555,8 +555,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AFreddyAIController_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AFreddyAIController_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AFreddyAIController_C::StaticClass()

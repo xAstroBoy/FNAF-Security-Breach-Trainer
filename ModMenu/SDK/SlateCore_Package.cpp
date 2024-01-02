@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFontBulkData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFontBulkData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFontBulkData::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFontFaceInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFontFaceInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFontFaceInterface::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFontProviderInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFontProviderInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFontProviderInterface::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USlateTypes.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USlateTypes.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USlateTypes::StaticClass()
@@ -68,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USlateWidgetStyleAsset.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USlateWidgetStyleAsset.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USlateWidgetStyleAsset::StaticClass()
@@ -82,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USlateWidgetStyleContainerBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USlateWidgetStyleContainerBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USlateWidgetStyleContainerBase::StaticClass()
@@ -96,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USlateWidgetStyleContainerInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USlateWidgetStyleContainerInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USlateWidgetStyleContainerInterface::StaticClass()

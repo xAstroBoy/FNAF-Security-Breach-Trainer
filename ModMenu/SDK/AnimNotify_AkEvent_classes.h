@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,17 +16,16 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass AnimNotify_AkEvent.AnimNotify_AkEvent_C
-	 * Size -> 0x0031 (FullSize[0x0069] - InheritedSize[0x0038])
+	 * Size -> 0x0030 (FullSize[0x0068] - InheritedSize[0x0038])
 	 */
 	class UAnimNotify_AkEvent_C : public UAnimNotify
 	{
 	public:
-		class FString                                              Attach_Name;                                             // 0x0038(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
+		class FString                                              AttachName;                                              // 0x0038(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       Event;                                                   // 0x0048(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Follow;                                                  // 0x0050(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ITHP[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KJ93[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              EventName;                                               // 0x0058(0x0010) Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash
-		bool                                                       PlayRegardlessOfAudibleRange;                            // 0x0068(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);

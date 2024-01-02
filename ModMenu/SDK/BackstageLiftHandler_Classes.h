@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,15 +24,15 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Lifts[0x10];                                             // 0x0238(0x0010) UNKNOWN PROPERTY: ArrayProperty
-		TArray<class ABackstageOfficeLift_C*>                      BustedLifts;                                             // 0x0248(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class ABackstageOfficeLift_C*>                      BustedLifts;                                             // 0x0248(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		int32_t                                                    CurrentLiftIndex;                                        // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void GetCurrentLift(class ABackstageOfficeLift_C** CurrentLift);
-		void Setup_Handler();
-		void On_Lift_Stopped(class AMoveableLift_C* Lift);
+		void SetupHandler();
+		void OnLiftStopped(class AMoveableLift_C* Lift);
 		void ReceiveBeginPlay();
-		void Debind_things(E_EndMiniGameType_E_EndMiniGameType EndType);
+		void Debindthings(E_EndMiniGameType EndType);
 		void ExecuteUbergraph_BackstageLiftHandler(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

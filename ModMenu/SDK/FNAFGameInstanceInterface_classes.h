@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,18 @@ namespace CG
 	class UFNAFGameInstanceInterface_C : public UInterface
 	{
 	public:
-		void GetGameType(fnaf9_EFNAFGameType* GameType);
+		void HideLoadingScreenDLC();
+		void DisplayLoadingScreenDLC();
+		void SetSkipSystemUsed(bool isUsed);
+		void GetIfSkipSystemUsed(bool* outUsed);
+		void SetTempHapticFeedback(float Value);
+		void SetHapticFeedback(float Value);
+		float GetTempHapticFeedbackIntensityMultiplier();
+		float GetHapticFeedbackIntensityMultiplier();
+		void CheckForTrophyTimeAchievement();
+		void GetSpawnAllSurvivalPackages(bool* SpawnAll);
+		void GetShowSurvivalPackages(bool* Show);
+		void GetGameType(EFNAFGameType* GameType);
 		void ChangeHourlyActivity(int32_t HourIndex);
 		static UClass* StaticClass();
 	};

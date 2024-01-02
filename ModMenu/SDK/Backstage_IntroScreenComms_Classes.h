@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,7 +29,7 @@ namespace CG
 		void ShowFreddyVideo();
 		void ShowVannyVideo();
 		void StopShowingVideo();
-		void SetScreenSprite(class UMaterialInstance* New_Material);
+		void SetScreenSprite(class UMaterialInstance* NewMaterial);
 		void ExecuteUbergraph_Backstage_IntroScreenComms(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

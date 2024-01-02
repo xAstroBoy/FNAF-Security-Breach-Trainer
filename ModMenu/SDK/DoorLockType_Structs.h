@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum DoorLockType.DoorLockType
 	 */
-	enum class DoorLockType_EDoorLockType : uint8_t
+	enum class EDoorLockType : uint8_t
 	{
-		DoorLockType__NewEnumerator0   = 0,
-		DoorLockType__NewEnumerator1   = 1,
-		DoorLockType__NewEnumerator2   = 2,
-		DoorLockType__NewEnumerator3   = 3,
-		DoorLockType__DoorLockType_MAX = 4
+		DoorLockTypeNewEnumerator0   = 0,
+		DoorLockTypeNewEnumerator1   = 1,
+		DoorLockTypeNewEnumerator2   = 2,
+		DoorLockTypeNewEnumerator3   = 3,
+		DoorLockTypeDoorLockType_MAX = 4
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,6 +21,19 @@ namespace CG
 	class UBPI_Player_C : public UInterface
 	{
 	public:
+		void IsPlayerCurrentlyMoving(bool* IsPlayerMoving);
+		void UpdateIcons();
+		void GetFlashlightActor(class AActor** FlashlightActor);
+		void IsPlayerUsingFazwatch(bool* IsUsingFazwatch);
+		void LethalJumpscareBPI(class USceneComponent* AttachmentComponent, class UAkAudioEvent* JumpscareAudio, bool CanEscape, float CamShakeScale, class AActor* ActorPerfomingScare);
+		void NonLethalJumpscareBPI(float CamShakeScale, class USceneComponent* AttachmentComponent, class AActor* ActorPerformingScare);
+		void LastItemCollected(struct FFNAFInventoryTableStruct* ItemInfo);
+		void ForcePlayerCrouch(bool Crouch, bool AllowCrouchToggle);
+		void IsPlayerFlashlightActive(bool* IsActive);
+		void ForceFlashlightState(bool On, bool AllowPlayerToggle);
+		void RaiseArms();
+		void LowerArms();
+		void DisableJumpLandAudio(bool Disable);
 		void VisualChangeItem();
 		bool IsSwitchingItems();
 		void IsInAir(bool* InAir);

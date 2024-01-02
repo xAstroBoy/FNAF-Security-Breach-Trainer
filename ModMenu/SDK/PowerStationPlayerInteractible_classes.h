@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass PowerStationPlayerInteractible.PowerStationPlayerInteractible_C
-	 * Size -> 0x006D (FullSize[0x0295] - InheritedSize[0x0228])
+	 * Size -> 0x0078 (FullSize[0x02A0] - InheritedSize[0x0228])
 	 */
 	class APowerStationPlayerInteractible_C : public AActor
 	{
@@ -32,28 +32,30 @@ namespace CG
 		class UBoxComponent*                                       PlayerInteract;                                          // 0x0268(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0270(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       PlayerIsIn;                                              // 0x0278(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_PMEI[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QP4G[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AFreddy_C*                                           Freddy;                                                  // 0x0280(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0288(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_FOFQ[0x3];                                   // 0x0289(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_F1O8[0x3];                                   // 0x0289(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                RoxysWeakness;                                           // 0x028C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Update_UI_On_Tick;                                       // 0x0294(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       UpdateUIOnTick;                                          // 0x0294(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_E7AQ[0x3];                                   // 0x0295(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UArrowComponent*                                     PowerStationFreddyLocation;                              // 0x0298(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void OnPlayerInteractCancel();
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
-		void Setup_From_Load();
-		void On_Power_Station_Event_Finished();
+		void SetupFromLoad();
+		void OnPowerStationEventFinished();
 		void StartHour5VO();
 		void StartHour6VO();
 		void ExecuteUbergraph_PowerStationPlayerInteractible(int32_t EntryPoint);

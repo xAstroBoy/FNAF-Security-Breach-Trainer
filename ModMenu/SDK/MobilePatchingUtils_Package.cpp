@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFE60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.Mount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PakOrder                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      MountPoint                                                 (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -30,7 +30,6 @@ namespace CG
 		params.MountPoint = MountPoint;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -39,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFCF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetInstalledContentSize
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobileInstalledContent::GetInstalledContentSize()
 	{
@@ -52,7 +51,6 @@ namespace CG
 		UMobileInstalledContent_GetInstalledContentSize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -61,9 +59,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFAF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetDiskFreeSpace
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobileInstalledContent::GetDiskFreeSpace()
 	{
@@ -74,7 +72,6 @@ namespace CG
 		UMobileInstalledContent_GetDiskFreeSpace_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -83,8 +80,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMobileInstalledContent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMobileInstalledContent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMobileInstalledContent::StaticClass()
@@ -97,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00B00120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.StartInstall
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              OnSucceeded                                                (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnFailed                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
@@ -115,16 +112,15 @@ namespace CG
 		params.OnFailed = OnFailed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFE30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobilePendingContent::GetTotalDownloadedSize()
 	{
@@ -135,7 +131,6 @@ namespace CG
 		UMobilePendingContent_GetTotalDownloadedSize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -144,9 +139,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFD20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetRequiredDiskSpace
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobilePendingContent::GetRequiredDiskSpace()
 	{
@@ -157,7 +152,6 @@ namespace CG
 		UMobilePendingContent_GetRequiredDiskSpace_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -166,9 +160,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFC20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetInstallProgress
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobilePendingContent::GetInstallProgress()
 	{
@@ -179,7 +173,6 @@ namespace CG
 		UMobilePendingContent_GetInstallProgress_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -188,9 +181,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFB80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadStatusText
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class FText UMobilePendingContent::GetDownloadStatusText()
 	{
@@ -201,7 +194,6 @@ namespace CG
 		UMobilePendingContent_GetDownloadStatusText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -210,9 +202,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFB50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSpeed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobilePendingContent::GetDownloadSpeed()
 	{
@@ -223,7 +215,6 @@ namespace CG
 		UMobilePendingContent_GetDownloadSpeed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -232,9 +223,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFB20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSize
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float UMobilePendingContent::GetDownloadSize()
 	{
@@ -245,7 +236,6 @@ namespace CG
 		UMobilePendingContent_GetDownloadSize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -254,8 +244,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMobilePendingContent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMobilePendingContent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMobilePendingContent::StaticClass()
@@ -268,9 +258,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFF40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      RemoteManifestURL                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      CloudURL                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -278,7 +268,7 @@ namespace CG
 	 * 		class FScriptDelegate                              OnSucceeded                                                (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnFailed                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UMobilePatchingLibrary::STATIC_RequestContent(const class FString& RemoteManifestURL, const class FString& CloudURL, const class FString& InstallDirectory, const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed)
+	void UMobilePatchingLibrary::RequestContent(const class FString& RemoteManifestURL, const class FString& CloudURL, const class FString& InstallDirectory, const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -292,18 +282,17 @@ namespace CG
 		params.OnFailed = OnFailed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A637A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UMobilePatchingLibrary::STATIC_HasActiveWiFiConnection()
+	bool UMobilePatchingLibrary::HasActiveWiFiConnection()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -312,7 +301,6 @@ namespace CG
 		UMobilePatchingLibrary_HasActiveWiFiConnection_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -321,11 +309,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFD50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetSupportedPlatformNames
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	TArray<class FString> UMobilePatchingLibrary::STATIC_GetSupportedPlatformNames()
+	TArray<class FString> UMobilePatchingLibrary::GetSupportedPlatformNames()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -334,7 +322,6 @@ namespace CG
 		UMobilePatchingLibrary_GetSupportedPlatformNames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -343,13 +330,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFC50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      InstallDirectory                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledContent(const class FString& InstallDirectory)
+	class UMobileInstalledContent* UMobilePatchingLibrary::GetInstalledContent(const class FString& InstallDirectory)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -359,7 +346,6 @@ namespace CG
 		params.InstallDirectory = InstallDirectory;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -368,11 +354,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFFA70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetActiveDeviceProfileName
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	class FString UMobilePatchingLibrary::STATIC_GetActiveDeviceProfileName()
+	class FString UMobilePatchingLibrary::GetActiveDeviceProfileName()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -381,7 +367,6 @@ namespace CG
 		UMobilePatchingLibrary_GetActiveDeviceProfileName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -390,8 +375,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMobilePatchingLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMobilePatchingLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMobilePatchingLibrary::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,31 +18,28 @@ namespace CG
 	 * Function BP_NoiseMakingTower_KiddieRide_Bike.BP_NoiseMakingTower_KiddieRide_Bike_C.Timeline_0__FinishedFunc
 	 */
 	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_Timeline_0__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_NoiseMakingTower_KiddieRide_Bike.BP_NoiseMakingTower_KiddieRide_Bike_C.Timeline_0__UpdateFunc
 	 */
 	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_Timeline_0__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_NoiseMakingTower_KiddieRide_Bike.BP_NoiseMakingTower_KiddieRide_Bike_C.Timeline_0__SoundTriggger__EventFunc
 	 */
 	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_Timeline_0__SoundTriggger__EventFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_NoiseMakingTower_KiddieRide_Bike.BP_NoiseMakingTower_KiddieRide_Bike_C.On Triggered
 	 */
-	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_On_Triggered_Params
+	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_OnTriggered_Params
 	{
 	public:
-		class AActor*                                              Other_Actor;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		bool                                                       PlayAudio;                                               // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -51,8 +48,8 @@ namespace CG
 	struct ABP_NoiseMakingTower_KiddieRide_Bike_C_ExecuteUbergraph_BP_NoiseMakingTower_KiddieRide_Bike_Params
 	{
 	public:
-		int                                                        EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_6HZD[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function TurnWorldStatesActiveTrigger.TurnWorldStatesActiveTrigger_C.OnTriggered
 	 */
 	struct ATurnWorldStatesActiveTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnWorldStatesActiveTrigger.TurnWorldStatesActiveTrigger_C.ExecuteUbergraph_TurnWorldStatesActiveTrigger
@@ -28,7 +27,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_YXBR[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

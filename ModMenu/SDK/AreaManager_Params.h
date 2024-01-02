@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,24 +18,21 @@ namespace CG
 	 * Function AreaManager.AreaManager_C.UserConstructionScript
 	 */
 	struct AAreaManager_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AreaManager.AreaManager_C.ReceiveBeginPlay
 	 */
 	struct AAreaManager_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AreaManager.AreaManager_C.On Player Entered Room
 	 */
-	struct AAreaManager_C_On_Player_Entered_Room_Params
+	struct AAreaManager_C_OnPlayerEnteredRoom_Params
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -45,7 +42,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_EGS8[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -54,8 +51,7 @@ namespace CG
 	struct AAreaManager_C_OnPlayerEnteredArea__DelegateSignature_Params
 	{
 	public:
-		Areas_EAreas                                               NewArea;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EAreas                                                     NewArea;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

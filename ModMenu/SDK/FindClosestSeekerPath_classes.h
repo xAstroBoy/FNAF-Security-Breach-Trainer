@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,7 @@ namespace CG
 		struct FBlackboardKeySelector                              PatrolLocation;                                          // 0x0100(0x0028) Edit, BlueprintVisible
 
 	public:
-		void Find_Best_Next_Point(int32_t PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int32_t* BestNextPointIndex, struct FVector* BestNextPointLocation);
+		void FindBestNextPoint(int32_t PointIndex, class APatrolPath_C* InputPin, const struct FVector& PointLocation, const struct FVector& PawnPosition, int32_t* BestNextPointIndex, struct FVector* BestNextPointLocation);
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 		void ExecuteUbergraph_FindClosestSeekerPath(int32_t EntryPoint);
 		static UClass* StaticClass();

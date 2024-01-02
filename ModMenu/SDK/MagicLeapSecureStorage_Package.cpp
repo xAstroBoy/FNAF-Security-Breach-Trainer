@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureVector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureVector(const class FString& Key, const struct FVector& DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureVector(const class FString& Key, const struct FVector& DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -30,7 +30,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -39,14 +38,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  DataToStore                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureTransform(const class FString& Key, const struct FTransform& DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureTransform(const class FString& Key, const struct FTransform& DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -57,7 +56,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -66,14 +64,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A86710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureString
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DataToStore                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureString(const class FString& Key, const class FString& DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureString(const class FString& Key, const class FString& DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,7 +82,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -93,14 +90,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A86630
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureSaveGame
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class USaveGame*                                   ObjectToStore                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureSaveGame(const class FString& Key, class USaveGame* ObjectToStore)
+	bool UMagicLeapSecureStorage::PutSecureSaveGame(const class FString& Key, class USaveGame* ObjectToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -111,7 +108,6 @@ namespace CG
 		params.ObjectToStore = ObjectToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -120,14 +116,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureRotator
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureRotator(const class FString& Key, const struct FRotator& DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureRotator(const class FString& Key, const struct FRotator& DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -138,7 +134,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -147,14 +142,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A86480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureInt64
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int64_t                                            DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureInt64(const class FString& Key, int64_t DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureInt64(const class FString& Key, int64_t DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -165,7 +160,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -174,14 +168,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A86560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureInt
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureInt(const class FString& Key, int32_t DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureInt(const class FString& Key, int32_t DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -192,7 +186,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -201,14 +194,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A863A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureFloat
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureFloat(const class FString& Key, float DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureFloat(const class FString& Key, float DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -219,7 +212,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -228,14 +220,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A862C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureByte
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureByte(const class FString& Key, unsigned char DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureByte(const class FString& Key, unsigned char DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -246,7 +238,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -255,14 +246,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A861E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureBool
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               DataToStore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureBool(const class FString& Key, bool DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureBool(const class FString& Key, bool DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -273,7 +264,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -282,14 +272,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A860F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureArray
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int32_t>                                    DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    DataToStore                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_PutSecureArray(const class FString& Key, TArray<int32_t> DataToStore)
+	bool UMagicLeapSecureStorage::PutSecureArray(const class FString& Key, TArray<int32_t> DataToStore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -300,7 +290,6 @@ namespace CG
 		params.DataToStore = DataToStore;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -309,14 +298,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureVector
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureVector(const class FString& Key, struct FVector* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureVector(const class FString& Key, struct FVector* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -326,7 +315,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -338,14 +326,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  DataToRetrieve                                             (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureTransform(const class FString& Key, struct FTransform* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureTransform(const class FString& Key, struct FTransform* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -355,7 +343,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -367,14 +354,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85EC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureString(const class FString& Key, class FString* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureString(const class FString& Key, class FString* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -384,7 +371,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -396,14 +382,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85DD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureSaveGame
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class USaveGame*                                   ObjectToRetrieve                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureSaveGame(const class FString& Key, class USaveGame** ObjectToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureSaveGame(const class FString& Key, class USaveGame** ObjectToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -413,7 +399,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -425,14 +410,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureRotator
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureRotator(const class FString& Key, struct FRotator* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureRotator(const class FString& Key, struct FRotator* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -442,7 +427,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -454,14 +438,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85B20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureInt64
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int64_t                                            DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureInt64(const class FString& Key, int64_t* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureInt64(const class FString& Key, int64_t* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -471,7 +455,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -483,14 +466,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureInt
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureInt(const class FString& Key, int32_t* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureInt(const class FString& Key, int32_t* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -500,7 +483,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -512,14 +494,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85A30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureFloat
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureFloat(const class FString& Key, float* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureFloat(const class FString& Key, float* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -529,7 +511,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -541,14 +522,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureByte
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureByte(const class FString& Key, unsigned char* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureByte(const class FString& Key, unsigned char* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -558,7 +539,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -570,14 +550,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureBool
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureBool(const class FString& Key, bool* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureBool(const class FString& Key, bool* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -587,7 +567,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -599,14 +578,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A85850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureArray
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<int32_t>                                    DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<int32_t>                                    DataToRetrieve                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_GetSecureArray(const class FString& Key, TArray<int32_t>* DataToRetrieve)
+	bool UMagicLeapSecureStorage::GetSecureArray(const class FString& Key, TArray<int32_t>* DataToRetrieve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -616,7 +595,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -628,13 +606,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A857B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapSecureStorage.MagicLeapSecureStorage.DeleteSecureData
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Key                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapSecureStorage::STATIC_DeleteSecureData(const class FString& Key)
+	bool UMagicLeapSecureStorage::DeleteSecureData(const class FString& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -644,7 +622,6 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -653,8 +630,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapSecureStorage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapSecureStorage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapSecureStorage::StaticClass()

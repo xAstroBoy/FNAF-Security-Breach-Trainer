@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		unsigned char                                              Doors[0x10];                                             // 0x0300(0x0010) UNKNOWN PROPERTY: ArrayProperty
 
 	public:
-		void SwitchCamera(int32_t Cam_Index);
+		void SwitchCamera(int32_t CamIndex);
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
 		void OnDoorOverlapped();

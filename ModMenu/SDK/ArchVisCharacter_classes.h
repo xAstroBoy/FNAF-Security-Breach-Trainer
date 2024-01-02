@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class ArchVisCharacter.ArchVisCharacter
-	 * Size -> 0x0060 (FullSize[0x0520] - InheritedSize[0x04C0])
+	 * Size -> 0x0068 (FullSize[0x0520] - InheritedSize[0x04B8])
 	 */
 	class AArchVisCharacter : public ACharacter
 	{
@@ -36,20 +36,20 @@ namespace CG
 
 	/**
 	 * Class ArchVisCharacter.ArchVisCharMovementComponent
-	 * Size -> 0x0050 (FullSize[0x0660] - InheritedSize[0x0610])
+	 * Size -> 0x0050 (FullSize[0x0B40] - InheritedSize[0x0AF0])
 	 */
 	class UArchVisCharMovementComponent : public UCharacterMovementComponent
 	{
 	public:
-		struct FRotator                                            RotationalAcceleration;                                  // 0x0610(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		struct FRotator                                            RotationalDeceleration;                                  // 0x061C(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		struct FRotator                                            MaxRotationalVelocity;                                   // 0x0628(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		float                                                      MinPitch;                                                // 0x0634(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      MaxPitch;                                                // 0x0638(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      WalkingFriction;                                         // 0x063C(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      WalkingSpeed;                                            // 0x0640(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      WalkingAcceleration;                                     // 0x0644(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YFBM[0x18];                                  // 0x0648(0x0018) MISSED OFFSET (PADDING)
+		struct FRotator                                            RotationalAcceleration;                                  // 0x0AF0(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
+		struct FRotator                                            RotationalDeceleration;                                  // 0x0AFC(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
+		struct FRotator                                            MaxRotationalVelocity;                                   // 0x0B08(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
+		float                                                      MinPitch;                                                // 0x0B14(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      MaxPitch;                                                // 0x0B18(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      WalkingFriction;                                         // 0x0B1C(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      WalkingSpeed;                                            // 0x0B20(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      WalkingAcceleration;                                     // 0x0B24(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_SD0T[0x18];                                  // 0x0B28(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

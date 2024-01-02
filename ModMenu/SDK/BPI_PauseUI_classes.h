@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,6 +21,9 @@ namespace CG
 	class UBPI_PauseUI_C : public UInterface
 	{
 	public:
+		void GoToLastItemCollected();
+		void UpdateLastItem(const struct FFNAFInventoryTableStruct& ItemInfo);
+		void OpenInventoryMenu();
 		void GetFocusButton(class UButton** Button);
 		static UClass* StaticClass();
 	};

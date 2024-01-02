@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,14 +16,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass Freddy_GrabGreg_Sequence.SequenceDirector_C
-	 * Size -> 0x0008 (FullSize[0x0038] - InheritedSize[0x0030])
+	 * Size -> 0x0008 (FullSize[0x0040] - InheritedSize[0x0038])
 	 */
 	class USequenceDirector_C : public ULevelSequenceDirector
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0030(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0038(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
+		void SequenceEvent__ENTRYPOINTSequenceDirector_8(class ACinematic_TargetActor_C* Cinematic_TargetActor3);
+		void SequenceEvent__ENTRYPOINTSequenceDirector_7(class ACinematic_TargetActor_C* Cinematic_TargetActor3);
+		void SequenceEvent__ENTRYPOINTSequenceDirector_6(class ACineCameraActor* CineCameraActor2);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_5(class AFreddyGuideSick_C* FreddyGuideSick2);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_4(class ACinematic_Actor_Freddy_C* FreddyGuideSick);
 		void SequenceEvent__ENTRYPOINTSequenceDirector_3(class ACinematic_TargetActor_C* Cinematic_TargetActor3);
@@ -36,6 +39,8 @@ namespace CG
 		void Cinematic_TargetActor_Event_1(class ACinematic_TargetActor_C* Cinematic_TargetActor);
 		void BlendOut(class ACineCameraActor* CineCameraActor);
 		void FreddyGuideSick2_Event_1(class AFreddyGuideSick_C* FreddyGuideSick2);
+		void CineCameraActor2_Event_1(class ACineCameraActor* CineCameraActor2);
+		void Cinematic_TargetActor3_Event_2(class ACinematic_TargetActor_C* Cinematic_TargetActor3);
 		void ExecuteUbergraph_SequenceDirector(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

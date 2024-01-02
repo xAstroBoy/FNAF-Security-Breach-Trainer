@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,6 +15,25 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function BackstageOfficeDoorButton.BackstageOfficeDoorButton_C.UpdateUIOnTick
+	 */
+	struct ABackstageOfficeDoorButton_C_UpdateUIOnTick_Params
+	{
+	public:
+		bool                                                       Output;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
+	 * Function BackstageOfficeDoorButton.BackstageOfficeDoorButton_C.CanPlayerInteract
+	 */
+	struct ABackstageOfficeDoorButton_C_CanPlayerInteract_Params
+	{
+	public:
+		bool                                                       CanInteract;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		EConditionFailReason                                       CantReason;                                              // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function BackstageOfficeDoorButton.BackstageOfficeDoorButton_C.Setup
 	 */
 	struct ABackstageOfficeDoorButton_C_Setup_Params
@@ -22,7 +41,6 @@ namespace CG
 	public:
 		class AOGM_BackStage_C*                                    BackstageOGM;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      DrainAmount;                                             // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -33,7 +51,6 @@ namespace CG
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -43,7 +60,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

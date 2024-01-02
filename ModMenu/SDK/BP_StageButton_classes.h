@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -32,24 +32,24 @@ namespace CG
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0268(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      Down__Up_PanelMovement_8202549145C5D33481ED5BAEF47C902D; // 0x0270(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Down__Up_PodiumMovement_8202549145C5D33481ED5BAEF47C902D; // 0x0274(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		Engine_ETimelineDirection                                  Down__Up__Direction_8202549145C5D33481ED5BAEF47C902D;    // 0x0278(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_Y8RH[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UTimelineComponent*                                  Down__Up;                                                // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		ETimelineDirection                                         Down__Up__Direction_8202549145C5D33481ED5BAEF47C902D;    // 0x0278(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_0J5P[0x7];                                   // 0x0279(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UTimelineComponent*                                  DownUp;                                                  // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Up__Down_PanelMovement_9DB41A8843B1A0A434605EA13A61845E; // 0x0288(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      Up__Down_PodiumMovement_9DB41A8843B1A0A434605EA13A61845E; // 0x028C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		Engine_ETimelineDirection                                  Up__Down__Direction_9DB41A8843B1A0A434605EA13A61845E;    // 0x0290(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_V91M[0x7];                                   // 0x0291(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UTimelineComponent*                                  Up__Down;                                                // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		ETimelineDirection                                         Up__Down__Direction_9DB41A8843B1A0A434605EA13A61845E;    // 0x0290(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_BKDQ[0x7];                                   // 0x0291(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UTimelineComponent*                                  UpDown;                                                  // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       OverridePosition;                                        // 0x02A0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       Up_;                                                     // 0x02A1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       Up;                                                      // 0x02A1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void GetButton(class ABasicButton_C** AsBasic_Button);
+		void GetButton(class ABasicButton_C** AsBasicButton);
 		void UserConstructionScript();
-		void Up__Down__FinishedFunc();
-		void Up__Down__UpdateFunc();
-		void Down__Up__FinishedFunc();
-		void Down__Up__UpdateFunc();
+		void UpDown__FinishedFunc();
+		void UpDown__UpdateFunc();
+		void DownUp__FinishedFunc();
+		void DownUp__UpdateFunc();
 		void PostSaveGame();
 		void OnStoreGameData(class UFNAFSaveData* SaveDataObject);
 		void OnGameDataLoaded(class UFNAFSaveData* SaveDataObject);

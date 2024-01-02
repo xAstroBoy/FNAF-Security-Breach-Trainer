@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,22 +22,19 @@ namespace CG
 	public:
 		class ACamera_C*                                           Camera;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UCameraRenderTargetObject_C*                         RenderTarget;                                            // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function CameraRenderTargetManager.CameraRenderTargetManager_C.CreateRenderTargetPool
 	 */
 	struct ACameraRenderTargetManager_C_CreateRenderTargetPool_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function CameraRenderTargetManager.CameraRenderTargetManager_C.ReceiveBeginPlay
 	 */
 	struct ACameraRenderTargetManager_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function CameraRenderTargetManager.CameraRenderTargetManager_C.ExecuteUbergraph_CameraRenderTargetManager
@@ -46,7 +43,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

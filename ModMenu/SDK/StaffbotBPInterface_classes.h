@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,13 +24,13 @@ namespace CG
 		void CanPerformEvent(bool Off);
 		void SecurityTurnEvent(float Time);
 		void FazerblastDestroy_Event();
-		void AlertEvent(bool IsAlerting);
+		void AlertEvent(bool isAlerting);
 		void PlayerSpendsPartyPass_Event();
 		void PlayerHasPartyPass_Event(bool HasPartyPass);
 		void isStunnedEvent(bool IsStunned);
 		void R_IK_Arm_Target_Event(const struct FVector& Target);
 		void L_IK_Arm_Target_Event(const struct FVector& Target);
-		void R_IK_Arm_Event(bool Is_ON);
+		void R_IK_Arm_Event(bool IsOn);
 		void L_IK_Arm_Event(bool IsON);
 		void AimAtPlayerEvent(bool AimAtPlayer);
 		void TaskEvent(bool DoTask, class AStaffbotTaskPlacement_C* TargetTask);

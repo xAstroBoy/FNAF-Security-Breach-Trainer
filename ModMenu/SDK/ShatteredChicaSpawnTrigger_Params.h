@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,38 +15,34 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay
+	 */
+	struct AShatteredChicaSpawnTrigger_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
 	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveActorBeginOverlap
 	 */
 	struct AShatteredChicaSpawnTrigger_C_ReceiveActorBeginOverlap_Params
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ReceiveBeginPlay
-	 */
-	struct AShatteredChicaSpawnTrigger_C_ReceiveBeginPlay_Params
-	{
 	};
 
 	/**
 	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.Event Post Spawn Logic
 	 */
-	struct AShatteredChicaSpawnTrigger_C_Event_Post_Spawn_Logic_Params
+	struct AShatteredChicaSpawnTrigger_C_EventPostSpawnLogic_Params
 	{
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.OnTriggered
 	 */
 	struct AShatteredChicaSpawnTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function ShatteredChicaSpawnTrigger.ShatteredChicaSpawnTrigger_C.ExecuteUbergraph_ShatteredChicaSpawnTrigger
@@ -55,7 +51,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

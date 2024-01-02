@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,26 +16,27 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Freddy_Cinematic_Medscan_Abp.Freddy_Cinematic_Medscan_Abp_C
-	 * Size -> 0x05A4 (FullSize[0x0814] - InheritedSize[0x0270])
+	 * Size -> 0x06FC (FullSize[0x09B4] - InheritedSize[0x02B8])
 	 */
 	class UFreddy_Cinematic_Medscan_Abp_C : public UAnimInstance
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0278(0x0030)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot_3;                                    // 0x02A8(0x0048)
-		struct FAnimNode_LinkedInputPose                           AnimGraphNode_LinkedInputPose;                           // 0x02F0(0x0078)
-		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose;                            // 0x0368(0x00B8)
-		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_2;                           // 0x0420(0x0028)
-		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph;                           // 0x0448(0x00A0)
-		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x04E8(0x0078)
-		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x0560(0x0078)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot_2;                                    // 0x05D8(0x0048)
-		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend_2;                        // 0x0620(0x00C0)
-		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose;                             // 0x06E0(0x0028)
-		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x0708(0x00C0)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x07C8(0x0048)
-		float                                                      FreddyChestOpenPlayRate;                                 // 0x0810(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_0LF3[0x8];                                   // 0x02B8(0x0008) Fix Super Size
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x02C8(0x0030)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot_3;                                    // 0x02F8(0x0048)
+		struct FAnimNode_LinkedInputPose                           AnimGraphNode_LinkedInputPose;                           // 0x0340(0x0118)
+		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose;                            // 0x0458(0x0158)
+		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose_2;                           // 0x05B0(0x0028)
+		struct FAnimNode_LinkedAnimGraph                           AnimGraphNode_LinkedAnimGraph;                           // 0x05D8(0x00A0)
+		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x0678(0x0080)
+		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x06F8(0x0080)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot_2;                                    // 0x0778(0x0048)
+		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend_2;                        // 0x07C0(0x00C0)
+		struct FAnimNode_UseCachedPose                             AnimGraphNode_UseCachedPose;                             // 0x0880(0x0028)
+		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x08A8(0x00C0)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0968(0x0048)
+		float                                                      FreddyChestOpenPlayRate;                                 // 0x09B0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);

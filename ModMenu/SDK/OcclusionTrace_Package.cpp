@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,18 +12,54 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.GetOcclusion
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.GetOcclusionHelper
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SourceActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Angle                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              MaxAttenuation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              OffsetDistance                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		float                                              y_offset                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              yoffset                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               SingleTraceOnlyIn                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               UseLocation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AOcclusionTrace_C::GetOcclusionHelper(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float yoffset, bool SingleTraceOnlyIn, bool UseLocation, const struct FVector& Location)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function OcclusionTrace.OcclusionTrace_C.GetOcclusionHelper");
+		
+		AOcclusionTrace_C_GetOcclusionHelper_Params params {};
+		params.SourceActor = SourceActor;
+		params.Angle = Angle;
+		params.MaxAttenuation = MaxAttenuation;
+		params.OffsetDistance = OffsetDistance;
+		params.yoffset = yoffset;
+		params.SingleTraceOnlyIn = SingleTraceOnlyIn;
+		params.UseLocation = UseLocation;
+		params.Location = Location;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.GetOcclusion
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      SourceActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              Angle                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              MaxAttenuation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              OffsetDistance                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              yoffset                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               SingleTraceOnly                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AOcclusionTrace_C::GetOcclusion(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float y_offset, bool SingleTraceOnly)
+	void AOcclusionTrace_C::GetOcclusion(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float yoffset, bool SingleTraceOnly)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -34,7 +70,7 @@ namespace CG
 		params.Angle = Angle;
 		params.MaxAttenuation = MaxAttenuation;
 		params.OffsetDistance = OffsetDistance;
-		params.y_offset = y_offset;
+		params.yoffset = yoffset;
 		params.SingleTraceOnly = SingleTraceOnly;
 		
 		auto flags = fn->FunctionFlags;
@@ -44,19 +80,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.GetOcclusionForLocation
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SourceActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Angle                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              MaxAttenuation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              OffsetDistance                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		float                                              y_offset                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              yoffset                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               SingleTraceOnly                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AOcclusionTrace_C::GetOcclusionForLocation(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float y_offset, const struct FVector& Location, bool SingleTraceOnly)
+	void AOcclusionTrace_C::GetOcclusionForLocation(class AActor* SourceActor, float Angle, float MaxAttenuation, float OffsetDistance, float yoffset, const struct FVector& Location, bool SingleTraceOnly)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -67,7 +103,7 @@ namespace CG
 		params.Angle = Angle;
 		params.MaxAttenuation = MaxAttenuation;
 		params.OffsetDistance = OffsetDistance;
-		params.y_offset = y_offset;
+		params.yoffset = yoffset;
 		params.Location = Location;
 		params.SingleTraceOnly = SingleTraceOnly;
 		
@@ -78,9 +114,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function OcclusionTrace.OcclusionTrace_C.ExecuteUbergraph_OcclusionTrace
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -100,8 +136,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AOcclusionTrace_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AOcclusionTrace_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AOcclusionTrace_C::StaticClass()

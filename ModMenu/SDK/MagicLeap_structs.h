@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,124 +17,124 @@ namespace CG
 	/**
 	 * Enum MagicLeap.PurchaseType
 	 */
-	enum class MagicLeap_EPurchaseType : uint8_t
+	enum class EPurchaseType : uint8_t
 	{
-		PurchaseType__Consumable       = 0,
-		PurchaseType__Nonconsumable    = 1,
-		PurchaseType__Undefined        = 2,
-		PurchaseType__PurchaseType_MAX = 3
+		PurchaseTypeConsumable       = 0,
+		PurchaseTypeNonconsumable    = 1,
+		PurchaseTypeUndefined        = 2,
+		PurchaseTypePurchaseType_MAX = 3
 	};
 
 	/**
 	 * Enum MagicLeap.EFocusLostReason
 	 */
-	enum class MagicLeap_EFocusLostReason : uint8_t
+	enum class EFocusLostReason : uint8_t
 	{
-		EFocusLostReason__EFocusLostReason_Invalid = 0,
-		EFocusLostReason__EFocusLostReason_System  = 1,
-		EFocusLostReason__EFocusLostReason_MAX     = 2
+		Invalid = 0,
+		System  = 1,
+		MAX     = 2
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapMeshLOD
 	 */
-	enum class MagicLeap_EMagicLeapMeshLOD : uint8_t
+	enum class EMagicLeapMeshLOD : uint8_t
 	{
-		EMagicLeapMeshLOD__Minimum               = 0,
-		EMagicLeapMeshLOD__Medium                = 1,
-		EMagicLeapMeshLOD__Maximum               = 2,
-		EMagicLeapMeshLOD__EMagicLeapMeshLOD_MAX = 3
+		Minimum = 0,
+		Medium  = 1,
+		Maximum = 2,
+		MAX     = 3
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapMeshState
 	 */
-	enum class MagicLeap_EMagicLeapMeshState : uint8_t
+	enum class EMagicLeapMeshState : uint8_t
 	{
-		EMagicLeapMeshState__New                     = 0,
-		EMagicLeapMeshState__Updated                 = 1,
-		EMagicLeapMeshState__Deleted                 = 2,
-		EMagicLeapMeshState__Unchanged               = 3,
-		EMagicLeapMeshState__EMagicLeapMeshState_MAX = 4
+		New       = 0,
+		Updated   = 1,
+		Deleted   = 2,
+		Unchanged = 3,
+		MAX       = 4
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapMeshVertexColorMode
 	 */
-	enum class MagicLeap_EMagicLeapMeshVertexColorMode : uint8_t
+	enum class EMagicLeapMeshVertexColorMode : uint8_t
 	{
-		EMagicLeapMeshVertexColorMode__None                              = 0,
-		EMagicLeapMeshVertexColorMode__Confidence                        = 1,
-		EMagicLeapMeshVertexColorMode__Block                             = 2,
-		EMagicLeapMeshVertexColorMode__LOD                               = 3,
-		EMagicLeapMeshVertexColorMode__EMagicLeapMeshVertexColorMode_MAX = 4
+		None       = 0,
+		Confidence = 1,
+		Block      = 2,
+		LOD        = 3,
+		MAX        = 4
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapMeshType
 	 */
-	enum class MagicLeap_EMagicLeapMeshType : uint8_t
+	enum class EMagicLeapMeshType : uint8_t
 	{
-		EMagicLeapMeshType__Triangles              = 0,
-		EMagicLeapMeshType__PointCloud             = 1,
-		EMagicLeapMeshType__EMagicLeapMeshType_MAX = 2
+		Triangles  = 0,
+		PointCloud = 1,
+		MAX        = 2
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapRaycastResultState
 	 */
-	enum class MagicLeap_EMagicLeapRaycastResultState : uint8_t
+	enum class EMagicLeapRaycastResultState : uint8_t
 	{
-		EMagicLeapRaycastResultState__RequestFailed                    = 0,
-		EMagicLeapRaycastResultState__NoCollision                      = 1,
-		EMagicLeapRaycastResultState__HitUnobserved                    = 2,
-		EMagicLeapRaycastResultState__HitObserved                      = 3,
-		EMagicLeapRaycastResultState__EMagicLeapRaycastResultState_MAX = 4
+		RequestFailed = 0,
+		NoCollision   = 1,
+		HitUnobserved = 2,
+		HitObserved   = 3,
+		MAX           = 4
 	};
 
 	/**
 	 * Enum MagicLeap.CloudStatus
 	 */
-	enum class MagicLeap_ECloudStatus : uint8_t
+	enum class ECloudStatus : uint8_t
 	{
-		CloudStatus__CloudStatus_NotDone = 0,
-		CloudStatus__CloudStatus_Done    = 1,
-		CloudStatus__CloudStatus_MAX     = 2
+		CloudStatusCloudStatus_NotDone = 0,
+		CloudStatusCloudStatus_Done    = 1,
+		CloudStatusCloudStatus_MAX     = 2
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapHeadTrackingMapEvent
 	 */
-	enum class MagicLeap_EMagicLeapHeadTrackingMapEvent : uint8_t
+	enum class EMagicLeapHeadTrackingMapEvent : uint8_t
 	{
-		EMagicLeapHeadTrackingMapEvent__Lost                               = 0,
-		EMagicLeapHeadTrackingMapEvent__Recovered                          = 1,
-		EMagicLeapHeadTrackingMapEvent__RecoveryFailed                     = 2,
-		EMagicLeapHeadTrackingMapEvent__NewSession                         = 3,
-		EMagicLeapHeadTrackingMapEvent__EMagicLeapHeadTrackingMapEvent_MAX = 4
+		Lost           = 0,
+		Recovered      = 1,
+		RecoveryFailed = 2,
+		NewSession     = 3,
+		MAX            = 4
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapHeadTrackingMode
 	 */
-	enum class MagicLeap_EMagicLeapHeadTrackingMode : uint8_t
+	enum class EMagicLeapHeadTrackingMode : uint8_t
 	{
-		EMagicLeapHeadTrackingMode__PositionAndOrientation         = 0,
-		EMagicLeapHeadTrackingMode__Unavailable                    = 1,
-		EMagicLeapHeadTrackingMode__Unknown                        = 2,
-		EMagicLeapHeadTrackingMode__EMagicLeapHeadTrackingMode_MAX = 3
+		PositionAndOrientation = 0,
+		Unavailable            = 1,
+		Unknown                = 2,
+		MAX                    = 3
 	};
 
 	/**
 	 * Enum MagicLeap.EMagicLeapHeadTrackingError
 	 */
-	enum class MagicLeap_EMagicLeapHeadTrackingError : uint8_t
+	enum class EMagicLeapHeadTrackingError : uint8_t
 	{
-		EMagicLeapHeadTrackingError__None                            = 0,
-		EMagicLeapHeadTrackingError__NotEnoughFeatures               = 1,
-		EMagicLeapHeadTrackingError__LowLight                        = 2,
-		EMagicLeapHeadTrackingError__Unknown                         = 3,
-		EMagicLeapHeadTrackingError__EMagicLeapHeadTrackingError_MAX = 4
+		None              = 0,
+		NotEnoughFeatures = 1,
+		LowLight          = 2,
+		Unknown           = 3,
+		MAX               = 4
 	};
 
 	// --------------------------------------------------
@@ -147,12 +147,11 @@ namespace CG
 	struct FPurchaseItemDetails
 	{
 	public:
-		unsigned char                                              UnknownData_74QT[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W0P8[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Price;                                                   // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Name;                                                    // 0x0020(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeap_EPurchaseType                                    Type;                                                    // 0x0030(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9F3D[0xF];                                   // 0x0031(0x000F) MISSED OFFSET (PADDING)
-
+		EPurchaseType                                              Type;                                                    // 0x0030(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_XGT3[0xF];                                   // 0x0031(0x000F) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -162,12 +161,11 @@ namespace CG
 	struct FPurchaseConfirmation
 	{
 	public:
-		unsigned char                                              UnknownData_U0ZA[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NDEA[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              PackageName;                                             // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q4WZ[0x28];                                  // 0x0020(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		MagicLeap_EPurchaseType                                    Type;                                                    // 0x0048(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0YQY[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_A8YR[0x28];                                  // 0x0020(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EPurchaseType                                              Type;                                                    // 0x0048(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_2AYT[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -178,9 +176,8 @@ namespace CG
 	{
 	public:
 		struct FGuid                                               BlockID;                                                 // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeap_EMagicLeapMeshLOD                                LevelOfDetail;                                           // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PKFC[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
-
+		EMagicLeapMeshLOD                                          LevelOfDetail;                                           // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_67AR[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -194,11 +191,10 @@ namespace CG
 		struct FVector                                             BlockPosition;                                           // 0x0010(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FRotator                                            BlockOrientation;                                        // 0x001C(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             BlockDimensions;                                         // 0x0028(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JF9V[0x4];                                   // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_V27Z[0x4];                                   // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTimespan                                           Timestamp;                                               // 0x0038(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeap_EMagicLeapMeshState                              BlockState;                                              // 0x0040(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UW0I[0x7];                                   // 0x0041(0x0007) MISSED OFFSET (PADDING)
-
+		EMagicLeapMeshState                                        BlockState;                                              // 0x0040(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_MGFY[0x7];                                   // 0x0041(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -209,8 +205,7 @@ namespace CG
 	{
 	public:
 		struct FTimespan                                           Timestamp;                                               // 0x0000(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FMagicLeapMeshBlockInfo>                     BlockData;                                               // 0x0008(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FMagicLeapMeshBlockInfo>                     BlockData;                                               // 0x0008(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -220,13 +215,12 @@ namespace CG
 	struct FMagicLeapRaycastHitResult
 	{
 	public:
-		MagicLeap_EMagicLeapRaycastResultState                     HitState;                                                // 0x0000(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1MWL[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EMagicLeapRaycastResultState                               HitState;                                                // 0x0000(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_2BWS[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             HitPoint;                                                // 0x0004(0x000C) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             Normal;                                                  // 0x0010(0x000C) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Confidence;                                              // 0x001C(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    UserData;                                                // 0x0020(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -243,9 +237,8 @@ namespace CG
 		int32_t                                                    Height;                                                  // 0x0028(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      HorizontalFovDegrees;                                    // 0x002C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       CollideWithUnobserved;                                   // 0x0030(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GR4Q[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7DUH[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    UserData;                                                // 0x0034(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -262,7 +255,6 @@ namespace CG
 		float                                                      FrameDurationGPUTimeMs;                                  // 0x0010(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FrameInternalDurationCPUTimeMs;                          // 0x0014(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FrameInternalDurationGPUTimeMs;                          // 0x0018(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -272,11 +264,22 @@ namespace CG
 	struct FMagicLeapHeadTrackingState
 	{
 	public:
-		MagicLeap_EMagicLeapHeadTrackingMode                       Mode;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		MagicLeap_EMagicLeapHeadTrackingError                      Error;                                                   // 0x0001(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X4WZ[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EMagicLeapHeadTrackingMode                                 Mode;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EMagicLeapHeadTrackingError                                Error;                                                   // 0x0001(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_N0UM[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Confidence;                                              // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+	};
 
+	/**
+	 * ScriptStruct MagicLeap.MagicLeapResult
+	 * Size -> 0x0018
+	 */
+	struct FMagicLeapResult
+	{
+	public:
+		bool                                                       bSuccess;                                                // 0x0000(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_6693[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FString                                              AdditionalInfo;                                          // 0x0008(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 }

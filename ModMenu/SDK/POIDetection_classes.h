@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,11 +27,11 @@ namespace CG
 		struct FBlackboardKeySelector                              PointOfInterestIndexKey;                                 // 0x00A8(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              PointOfInterestRoomKey;                                  // 0x00D0(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              PointOfInterestLocationKey;                              // 0x00F8(0x0028) Edit, BlueprintVisible
-		TArray<struct FPOIResult>                                  POIs;                                                    // 0x0120(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<struct FPOIResult>                                  POIs;                                                    // 0x0120(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void Clear_Values();
+		void ClearValues();
 		void ExecuteUbergraph_POIDetection(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,20 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.ReceiveActorBeginOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.OnTriggered
+	 * 		Flags  -> ()
 	 */
-	void ASyrupVatsEntryTime_Trigger_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
+	void ASyrupVatsEntryTime_Trigger_C::OnTriggered()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.ReceiveActorBeginOverlap");
+			fn = UObject::FindObject<UFunction>("Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.OnTriggered");
 		
-		ASyrupVatsEntryTime_Trigger_C_ReceiveActorBeginOverlap_Params params {};
-		params.OtherActor = OtherActor;
+		ASyrupVatsEntryTime_Trigger_C_OnTriggered_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -34,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.ExecuteUbergraph_SyrupVatsEntryTime_Trigger
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -56,8 +53,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ASyrupVatsEntryTime_Trigger_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ASyrupVatsEntryTime_Trigger_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ASyrupVatsEntryTime_Trigger_C::StaticClass()

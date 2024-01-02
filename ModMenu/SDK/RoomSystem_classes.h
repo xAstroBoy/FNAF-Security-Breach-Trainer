@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -67,12 +67,12 @@ namespace CG
 	class UPOIBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_SetPOIVisited(const struct FPOIIndex& Index);
-		bool STATIC_IsValid(const struct FPOIIndex& Index);
-		bool STATIC_HasPOIBeenVisited(const struct FPOIIndex& Index);
-		void STATIC_GetPOIResultsFromIndices(TArray<struct FPOIIndex> Indices, TArray<struct FPOIResult>* Results);
-		struct FPointOfInterestRuntimeInfo STATIC_GetPOIInfoFromIndex(const struct FPOIIndex& Index);
-		void STATIC_CreatePOIIndicesFromResults(TArray<struct FPOIResult> Results, TArray<struct FPOIIndex>* Indices);
+		void SetPOIVisited(const struct FPOIIndex& Index);
+		bool IsValid(const struct FPOIIndex& Index);
+		bool HasPOIBeenVisited(const struct FPOIIndex& Index);
+		void GetPOIResultsFromIndices(TArray<struct FPOIIndex> Indices, TArray<struct FPOIResult>* Results);
+		struct FPointOfInterestRuntimeInfo GetPOIInfoFromIndex(const struct FPOIIndex& Index);
+		void CreatePOIIndicesFromResults(TArray<struct FPOIResult> Results, TArray<struct FPOIIndex>* Indices);
 		static UClass* StaticClass();
 	};
 
@@ -83,7 +83,7 @@ namespace CG
 	class UPOIResultBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_HasPOIBeenVisited(const struct FPointOfInterestRuntimeInfo& Info);
+		bool HasPOIBeenVisited(const struct FPointOfInterestRuntimeInfo& Info);
 		static UClass* StaticClass();
 	};
 
@@ -96,15 +96,15 @@ namespace CG
 	public:
 		class FName                                                MapName;                                                 // 0x0228(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class USceneComponent*                                     CharacterDetectorsRoot;                                  // 0x0230(0x0008) Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TArray<class UBoxComponent*>                               CharacterDetectors;                                      // 0x0238(0x0010) Edit, ExportObject, ZeroConstructor, Transient, EditConst, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		TArray<class UBoxComponent*>                               CharacterDetectors;                                      // 0x0238(0x0010) Edit, ExportObject, ZeroConstructor, Transient, EditConst, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		TMap<int32_t, struct FVector>                              RoomEntryPoints;                                         // 0x0248(0x0050) Edit, EditConst, NativeAccessSpecifierPrivate
-		TArray<struct FRoomAdjacencyInfo>                          AdjacentRooms;                                           // 0x0298(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TArray<class AActor*>                                      HideActors;                                              // 0x02A8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TArray<class AActor*>                                      AIHideActors;                                            // 0x02B8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TArray<class AActor*>                                      AICharactersInRoom;                                      // 0x02C8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		TArray<struct FVector>                                     PointsOfInterest;                                        // 0x02D8(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		TArray<struct FRoomAdjacencyInfo>                          AdjacentRooms;                                           // 0x0298(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate
+		TArray<class AActor*>                                      HideActors;                                              // 0x02A8(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate
+		TArray<class AActor*>                                      AIHideActors;                                            // 0x02B8(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate
+		TArray<class AActor*>                                      AICharactersInRoom;                                      // 0x02C8(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate
+		TArray<struct FVector>                                     PointsOfInterest;                                        // 0x02D8(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate
 		bool                                                       bPlayerIsInRoom;                                         // 0x02E8(0x0001) Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_YXWF[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0J7Y[0x1F];                                  // 0x02E9(0x001F) MISSED OFFSET (PADDING)
 
 	public:
 		void SetPOIVisited(int32_t Index);
@@ -146,7 +146,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnPlayerExitedRoom;                                      // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomLoaded;                                            // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRoomUnloaded;                                          // 0x0060(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PCD7[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2GQW[0x90];                                  // 0x0070(0x0090) MISSED OFFSET (PADDING)
 
 	public:
 		void StartRoomSystem();
@@ -197,7 +197,7 @@ namespace CG
 	class URoomVisibilityData : public UObject
 	{
 	public:
-		TArray<struct FRoomVisibilityPoint>                        RoomVisibilityPoints;                                    // 0x0028(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FRoomVisibilityPoint>                        RoomVisibilityPoints;                                    // 0x0028(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();

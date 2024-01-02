@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -68,12 +68,12 @@ namespace CG
 
 	/**
 	 * Class Slate.EditableTextBoxWidgetStyle
-	 * Size -> 0x07F0 (FullSize[0x0820] - InheritedSize[0x0030])
+	 * Size -> 0x07F8 (FullSize[0x0828] - InheritedSize[0x0030])
 	 */
 	class UEditableTextBoxWidgetStyle : public USlateWidgetStyleContainerBase
 	{
 	public:
-		struct FEditableTextBoxStyle                               EditableTextBoxStyle;                                    // 0x0030(0x07F0) Edit, NativeAccessSpecifierPublic
+		struct FEditableTextBoxStyle                               EditableTextBoxStyle;                                    // 0x0030(0x07F8) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -81,12 +81,12 @@ namespace CG
 
 	/**
 	 * Class Slate.EditableTextWidgetStyle
-	 * Size -> 0x0218 (FullSize[0x0248] - InheritedSize[0x0030])
+	 * Size -> 0x0220 (FullSize[0x0250] - InheritedSize[0x0030])
 	 */
 	class UEditableTextWidgetStyle : public USlateWidgetStyleContainerBase
 	{
 	public:
-		struct FEditableTextStyle                                  EditableTextStyle;                                       // 0x0030(0x0218) Edit, NativeAccessSpecifierPublic
+		struct FEditableTextStyle                                  EditableTextStyle;                                       // 0x0030(0x0220) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -139,7 +139,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bExplicitCanvasChildZOrder;                              // 0x0028(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BHIJ[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1SJC[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -160,12 +160,12 @@ namespace CG
 
 	/**
 	 * Class Slate.TextBlockWidgetStyle
-	 * Size -> 0x0268 (FullSize[0x0298] - InheritedSize[0x0030])
+	 * Size -> 0x0270 (FullSize[0x02A0] - InheritedSize[0x0030])
 	 */
 	class UTextBlockWidgetStyle : public USlateWidgetStyleContainerBase
 	{
 	public:
-		struct FTextBlockStyle                                     TextBlockStyle;                                          // 0x0030(0x0268) Edit, NativeAccessSpecifierPublic
+		struct FTextBlockStyle                                     TextBlockStyle;                                          // 0x0030(0x0270) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();

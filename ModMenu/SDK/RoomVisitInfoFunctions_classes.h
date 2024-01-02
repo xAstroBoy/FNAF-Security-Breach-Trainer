@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	class URoomVisitInfoFunctions_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_FindPreviousVisitInfo(TArray<struct FRoomVisitInfo>* NewParam, class UObject* __WorldContext, bool* Found, int32_t* ItemIndex, struct FRoomVisitInfo* Item);
-		void STATIC_FindRoomVisitInfo(TArray<struct FRoomVisitInfo>* RoomVisitInfoArray, class ARoomAreaBase* Room, class UObject* __WorldContext, bool* Found, int32_t* FoundIndex, struct FRoomVisitInfo* Item);
+		void FindPreviousVisitInfo(TArray<struct FRoomVisitInfo>* NewParam, class UObject* __WorldContext, bool* Found, int32_t* ItemIndex, struct FRoomVisitInfo* Item);
+		void FindRoomVisitInfo(TArray<struct FRoomVisitInfo>* RoomVisitInfoArray, class ARoomAreaBase* Room, class UObject* __WorldContext, bool* Found, int32_t* FoundIndex, struct FRoomVisitInfo* Item);
 		static UClass* StaticClass();
 	};
 

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,110 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.NewGameSlot_Visibility
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.QuickSort
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FString>                              Keys                                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<class FString>                              ArrayToSort                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	 * 		int32_t                                            Low                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            High                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void USaveGameUI_C::QuickSort(TArray<class FString>* ArrayToSort, int32_t Low, int32_t High)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.QuickSort");
+		
+		USaveGameUI_C_QuickSort_Params params {};
+		params.Low = Low;
+		params.High = High;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ArrayToSort != nullptr)
+			*ArrayToSort = params.ArrayToSort;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.Partition
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TArray<class FString>                              Array                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	 * 		int32_t                                            Low                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            High                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            PartitionPoint                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void USaveGameUI_C::Partition(TArray<class FString>* Array, int32_t Low, int32_t High, int32_t* PartitionPoint)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.Partition");
+		
+		USaveGameUI_C_Partition_Params params {};
+		params.Low = Low;
+		params.High = High;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Array != nullptr)
+			*Array = params.Array;
+		if (PartitionPoint != nullptr)
+			*PartitionPoint = params.PartitionPoint;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.DisableHiddenButton
+	 * 		Flags  -> ()
+	 */
+	void USaveGameUI_C::DisableHiddenButton()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.DisableHiddenButton");
+		
+		USaveGameUI_C_DisableHiddenButton_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.Get_BackButtonBorder_Visibility
+	 * 		Flags  -> ()
+	 */
+	ESlateVisibility USaveGameUI_C::Get_BackButtonBorder_Visibility()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.Get_BackButtonBorder_Visibility");
+		
+		USaveGameUI_C_Get_BackButtonBorder_Visibility_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.NewGameSlot_Visibility
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TArray<class FString>                              Keys                                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
 	void USaveGameUI_C::NewGameSlot_Visibility(TArray<class FString>* Keys)
 	{
@@ -36,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.SetupButtonStyle
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::SetupButtonStyle()
 	{
@@ -55,9 +154,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.PreConstruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsDesignTime                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -77,9 +176,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.OnFocusLost
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FFocusEvent                                 InFocusEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 */
@@ -99,9 +198,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__RetryButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__RetryButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -118,9 +217,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__QuitButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__QuitButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -137,9 +236,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__NewSlotButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__NewSlotButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -156,28 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__CurrentSlotButton_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void USaveGameUI_C::BndEvt__CurrentSlotButton_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.BndEvt__CurrentSlotButton_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature");
-		
-		USaveGameUI_C_BndEvt__CurrentSlotButton_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__ExistingSlotsButton_K2Node_ComponentBoundEvent_16_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__ExistingSlotsButton_K2Node_ComponentBoundEvent_16_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -194,9 +274,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__ExistingSlotsBackButton_K2Node_ComponentBoundEvent_18_OnButtonClickedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__ExistingSlotsBackButton_K2Node_ComponentBoundEvent_18_OnButtonClickedEvent__DelegateSignature()
 	{
@@ -213,9 +293,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__SaveGameBackButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__SaveGameBackButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature()
 	{
@@ -232,9 +312,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
 	{
@@ -251,9 +331,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::Construct()
 	{
@@ -270,9 +350,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BeginSave
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BeginSave()
 	{
@@ -289,9 +369,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.EndSave
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::EndSave()
 	{
@@ -308,9 +388,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__YesButton_2_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__YesButton_2_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
 	{
@@ -327,9 +407,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__NoButton_2_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BndEvt__NoButton_2_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature()
 	{
@@ -346,17 +426,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.ShowConfirmationOverwriteMenu
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UTitle_SaveSlotButton_C*                     TitleSaveSlot                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USaveGameUI_C::ShowConfirmationOverwriteMenu()
+	void USaveGameUI_C::ShowConfirmationOverwriteMenu(class UTitle_SaveSlotButton_C* TitleSaveSlot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.ShowConfirmationOverwriteMenu");
 		
 		USaveGameUI_C_ShowConfirmationOverwriteMenu_Params params {};
+		params.TitleSaveSlot = TitleSaveSlot;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -365,9 +448,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BackButton
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::BackButton()
 	{
@@ -384,9 +467,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.BndEvt__SaveGameUI_HiddenButton_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void USaveGameUI_C::BndEvt__SaveGameUI_HiddenButton_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SaveGameUI.SaveGameUI_C.BndEvt__SaveGameUI_HiddenButton_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature");
+		
+		USaveGameUI_C_BndEvt__SaveGameUI_HiddenButton_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.ExecuteUbergraph_SaveGameUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -406,9 +508,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SaveGameUI.SaveGameUI_C.OnSaveGame__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USaveGameUI_C::OnSaveGame__DelegateSignature()
 	{
@@ -425,8 +527,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USaveGameUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USaveGameUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USaveGameUI_C::StaticClass()

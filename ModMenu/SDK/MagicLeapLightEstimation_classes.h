@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,7 +23,7 @@ namespace CG
 	public:
 		bool                                                       UseGlobalAmbience;                                       // 0x00B0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseColorTemp;                                            // 0x00B1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_U7LB[0xE];                                   // 0x00B2(0x000E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FYKV[0xE];                                   // 0x00B2(0x000E) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -36,11 +36,11 @@ namespace CG
 	class UMagicLeapLightEstimationFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_IsTrackerValid();
-		bool STATIC_GetColorTemperatureState(struct FMagicLeapLightEstimationColorTemperatureState* ColorTemperatureState);
-		bool STATIC_GetAmbientGlobalState(struct FMagicLeapLightEstimationAmbientGlobalState* GlobalAmbientState);
-		void STATIC_DestroyTracker();
-		bool STATIC_CreateTracker();
+		bool IsTrackerValid();
+		bool GetColorTemperatureState(struct FMagicLeapLightEstimationColorTemperatureState* ColorTemperatureState);
+		bool GetAmbientGlobalState(struct FMagicLeapLightEstimationAmbientGlobalState* GlobalAmbientState);
+		void DestroyTracker();
+		bool CreateTracker();
 		static UClass* StaticClass();
 	};
 

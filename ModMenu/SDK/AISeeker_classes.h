@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass AISeeker.AISeeker_C
-	 * Size -> 0x0319 (FullSize[0x07F1] - InheritedSize[0x04D8])
+	 * Size -> 0x0341 (FullSize[0x0819] - InheritedSize[0x04D8])
 	 */
 	class AAISeeker_C : public ADebuggableAICharacter_C
 	{
@@ -33,83 +33,83 @@ namespace CG
 		class UWidgetComponent*                                    DBG_Widget;                                              // 0x0520(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class ARoomAreaBase*                                       CurrentRoom;                                             // 0x0528(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       RunningSearchAnim;                                       // 0x0530(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QEZX[0x7];                                   // 0x0531(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class AActor*>                                      RecentlySearchedHideActors;                              // 0x0538(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
-		TArray<struct FPOIIndex>                                   PointsInvestigated;                                      // 0x0548(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_3DK9[0x7];                                   // 0x0531(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class AActor*>                                      RecentlySearchedHideActors;                              // 0x0538(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
+		TArray<struct FPOIIndex>                                   PointsInvestigated;                                      // 0x0548(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		class FScriptMulticastDelegate                             FinishedPOI;                                             // 0x0558(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		bool                                                       SearchingPOI;                                            // 0x0568(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QAW9[0x7];                                   // 0x0569(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FRoomVisitInfo>                              VisitedRooms;                                            // 0x0570(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
+		unsigned char                                              UnknownData_MNCZ[0x7];                                   // 0x0569(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FRoomVisitInfo>                              VisitedRooms;                                            // 0x0570(0x0010) Edit, BlueprintVisible
 		class AActor*                                              SearchActor;                                             // 0x0580(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    AlertStatus;                                             // 0x0588(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       HeadTracksPlayer;                                        // 0x058C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       ScanRoomOnEntry;                                         // 0x058D(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       InChaseMode;                                             // 0x058E(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_8P5N[0x1];                                   // 0x058F(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QXNN[0x1];                                   // 0x058F(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             StartLocation;                                           // 0x0590(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       TrackingToPlayer;                                        // 0x059C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_J6I1[0x3];                                   // 0x059D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XJXV[0x3];                                   // 0x059D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                AITypeName;                                              // 0x05A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FAIDataParams                                       AIData;                                                  // 0x05A8(0x0028) Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		fnaf9_EAlertType                                           AlertTypeToSend;                                         // 0x05D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		EAlertType                                                 AlertTypeToSend;                                         // 0x05D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       AIDataSetup;                                             // 0x05D1(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_AFWM[0x6];                                   // 0x05D2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class AAISeeker_C*>                                 ActorsInTheWay;                                          // 0x05D8(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_KHWM[0x6];                                   // 0x05D2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class AAISeeker_C*>                                 ActorsInTheWay;                                          // 0x05D8(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		class FName                                                BBAIBlocked;                                             // 0x05E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        AIBlockedTimer;                                          // 0x05F0(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		fnaf9_EFNAFAISpawnType                                     ManagedAIType;                                           // 0x05F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_9QAN[0x7];                                   // 0x05F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EFNAFAISpawnType                                           ManagedAIType;                                           // 0x05F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_J2AG[0x7];                                   // 0x05F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSplineFollowerContext                              SplineFollowingContext;                                  // 0x0600(0x0018) Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash
 		class AActor*                                              HeadAimTarget;                                           // 0x0618(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FVector                                             HeadAimLocation;                                         // 0x0620(0x000C) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBWanderToPoint;                                         // 0x062C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBInvestigationLocation;                                 // 0x0634(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_ALB3[0x4];                                   // 0x063C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PGJC[0x4];                                   // 0x063C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AGregory_C*                                          CurrentJumpscareTarget;                                  // 0x0640(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      WalkingAcceleration;                                     // 0x0648(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      ChasingAcceleration;                                     // 0x064C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       VOAudio;                                                 // 0x0650(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       audio_playing;                                           // 0x0658(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_WE4T[0x7];                                   // 0x0659(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MMVV[0x7];                                   // 0x0659(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAudioEvent*                                       JumpscareAudio;                                          // 0x0660(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Stunned;                                                 // 0x0668(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_8NE6[0x3];                                   // 0x0669(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		float                                                      deltaTime;                                               // 0x066C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_QXTN[0x3];                                   // 0x0669(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      DeltaTime;                                               // 0x066C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAnimMontage*                                        jumpscareMontage;                                        // 0x0670(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class APatrolPath_C*                                       PatrolPath;                                              // 0x0678(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBPathIndex;                                             // 0x0680(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      VisitTimeFalloff;                                        // 0x0688(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBAlerted;                                               // 0x068C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBAlertActor;                                            // 0x0694(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_UPYS[0x4];                                   // 0x069C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              ambient_sound[0x28];                                     // 0x069C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_CEJN[0x4];                                   // 0x069C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              ambientsound[0x28];                                      // 0x06A0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                BBPlayer;                                                // 0x06C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       TrackingPlayer;                                          // 0x06D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_DHB4[0x3];                                   // 0x06D1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UCWI[0x3];                                   // 0x06D1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      JumpscareCamShake;                                       // 0x06D4(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              TensionControl[0x28];                                    // 0x06D8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                CurrentSeekerPathName;                                   // 0x0700(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BBPatrolPath;                                            // 0x0708(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ForceJumpscare;                                          // 0x0710(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_D788[0x3];                                   // 0x0711(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W0PC[0x3];                                   // 0x0711(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                BBAlertLocation;                                         // 0x0714(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       JumpscareLocationTrace;                                  // 0x071C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       JumpscareCapsuleTrace;                                   // 0x071D(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NBVW[0x2];                                   // 0x071E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              OcclusionTrace[0x28];                                    // 0x071E(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_JKX6[0x2];                                   // 0x071E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              OcclusionTrace[0x28];                                    // 0x0720(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                ForceChaseKey;                                           // 0x0748(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsShatteredType;                                         // 0x0750(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       CanReceiveAlerts;                                        // 0x0751(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       HearingEnabled;                                          // 0x0752(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       seeking;                                                 // 0x0753(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_4TCY[0x4];                                   // 0x0754(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class UAkAudioEvent*>                               VOAudio_SpottedPlayer;                                   // 0x0758(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               VOAudio_InPursuit;                                       // 0x0768(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               VOAudio_SearchingNormal;                                 // 0x0778(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               VOAudio_LostPlayer;                                      // 0x0788(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               VOAudio_HeardSomething;                                  // 0x0798(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               VOAudio_BlockedByAI;                                     // 0x07A8(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UAkAudioEvent*>                               StunVO;                                                  // 0x07B8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_RH2R[0x4];                                   // 0x0754(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class UAkAudioEvent*>                               VOAudio_SpottedPlayer;                                   // 0x0758(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               VOAudio_InPursuit;                                       // 0x0768(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               VOAudio_SearchingNormal;                                 // 0x0778(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               VOAudio_LostPlayer;                                      // 0x0788(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               VOAudio_HeardSomething;                                  // 0x0798(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               VOAudio_BlockedByAI;                                     // 0x07A8(0x0010) Edit, BlueprintVisible
+		TArray<class UAkAudioEvent*>                               StunVO;                                                  // 0x07B8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		class FName                                                BBChicaVoiceHeard;                                       // 0x07C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        JumpscareRetryTimer;                                     // 0x07D0(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		float                                                      MinStunTime;                                             // 0x07D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -117,8 +117,21 @@ namespace CG
 		class FName                                                BBActorToCheck;                                          // 0x07E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAkAudioEvent*                                       StunLoopEvent;                                           // 0x07E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanBeStunnedVar;                                         // 0x07F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_I7VW[0x3];                                   // 0x07F1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      LastTimePlayedVO;                                        // 0x07F4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       OverrideStunTime;                                        // 0x07F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_WOF7[0x3];                                   // 0x07F9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      OverridenStunTime;                                       // 0x07FC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       AIShouldTeleport;                                        // 0x0800(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_PLZF[0x7];                                   // 0x0801(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class APawn*                                               AIPawn;                                                  // 0x0808(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class AController*                                         AIController;                                            // 0x0810(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              testindex;                                               // 0x0818(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		bool IsPlayerMoving();
+		float AICapsuleHalfHeight();
+		bool CanAITeleport();
 		int32_t GetCurrentPatrolPointIndex();
 		void GetPatrolPath();
 		void GetSightComponent(class USightComponent** Sight);
@@ -128,19 +141,20 @@ namespace CG
 		void GetHeadAimTargetLocation(struct FVector* HeadAimLocation);
 		void GetPossibleSplinePaths(TArray<class ASplinePathway_C*>* PossiblePaths);
 		void GetSplineFollowerContext(struct FSplineFollowerContext* SplineFollowerContext);
+		bool IsMeshVisible();
 		bool CanReceiveAlert();
 		bool IsShatteredVersion();
 		class FName GetCurrentPathName();
-		fnaf9_EFNAFAISpawnType GetManagedAIType();
-		fnaf9_EAlertType GetAlertType();
+		EFNAFAISpawnType GetManagedAIType();
+		EAlertType GetAlertType();
 		void GetHearingEnable(bool* Enabled);
-		void GetRangeOfDistance(float Distance, AIPlayerRange_EAIPlayerRange* Range);
+		void GetRangeOfDistance(float Distance, EAIPlayerRange* Range);
 		void IsCheckingHideLocation(bool* StillChecking);
 		void GetVisitedPOIs(TArray<struct FPOIIndex>* VisitedPOIs);
-		void GetAIData(struct FAIDataParams* AI_Data);
+		void GetAIData(struct FAIDataParams* AIData);
 		void IsInChaseMode(bool* InChaseMode);
 		void IsRunningEnterRoom(bool* EnteringRoom);
-		void GetRoomSeekMode(RoomSeekMode_ERoomSeekMode* SeekMode);
+		void GetRoomSeekMode(ERoomSeekMode* SeekMode);
 		void GetRecentRooms(TArray<struct FRoomVisitInfo>* RecentRooms);
 		void IsSearchingPOI(bool* IsSearching);
 		void FindBestPOI(class ARoomAreaBase* Room, int32_t* PointIndex, bool* Valid);
@@ -148,6 +162,7 @@ namespace CG
 		void GetRecentlySearchedActors(TArray<class AActor*>* RecentlySearched);
 		void GetIsRunningSearchAnim(bool* IsRunningSearch);
 		void GetCurrentRoom(class ARoomAreaBase** CurrentRoom);
+		void StunForDuration(float StunDuration);
 		void UpdateVisitedPOIs();
 		void UpdateRotationSpeed();
 		void SetupAIData();
@@ -155,13 +170,29 @@ namespace CG
 		void StartNewRoomScan();
 		void UpdateHeadTracking();
 		void SetNewVisit(class ARoomAreaBase* Room);
-		void Update_Room_Visit_Ages(float deltaTime);
+		void UpdateRoomVisitAges(float DeltaTime);
 		void FindCurrentRoom();
-		void ForceKill(bool Animate_);
+		void ActivateGlitchUI();
+		void ActivateTeleportFX();
+		void DeactivateGlitchUI();
+		void DisablePlayerInput();
+		void EnablePlayerInput();
+		void MaskIconCantTeleport();
+		void MaskIconDefault();
+		void MaskIconNearBlocker(bool NearBlocker);
+		void MaskIconRemoveMask();
+		void PlayerCannotTeleport();
+		void PlayerFinishedTeleporting();
+		void SetMaskIconOverlayActive(bool Active);
+		void SpawnBlackRabbit();
+		void SpringArmDisabled();
+		void SpringArmEnabled();
+		void ForceKill(bool Animate);
 		void GameStart();
 		void GameEnd();
 		void GameExit();
 		void PlayerHit(const struct FHitResult& Hit);
+		void ForceJumpscarePlayer();
 		void TeleportAI(const struct FVector& Location);
 		void SearchLocation(class AActor* SearchActor, const struct FVector& SearchLocation);
 		void OnSearchDone();
@@ -177,20 +208,19 @@ namespace CG
 		void ReceiveTick(float DeltaSeconds);
 		void Jumpscare(class AActor* ActorToJumpscare);
 		void SetAlertState(int32_t AlertState);
-		void Handle_Sight(class AActor* Updated_Actor, bool Visible);
-		void BndEvt__FarSight_K2Node_ComponentBoundEvent_0_OnSightChanged__DelegateSignature(class AActor* UpdatedActor, bool bVisible);
+		void HandleSight(class AActor* UpdatedActor, bool visible);
 		void BndEvt__NearSight_K2Node_ComponentBoundEvent_2_OnSightChanged__DelegateSignature(class AActor* UpdatedActor, bool bVisible);
 		void OnScanFinished();
-		void On_Jumpscare(class AGregory_C* Gregory);
+		void OnJumpscare(class AGregory_C* Gregory);
 		void RestartAI();
 		void ForceTrackToPlayer();
 		void EndTrackToPlayer();
-		void PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag);
-		void Chase_Mode_VO();
-		void On_Encounter_AI(class AAISeeker_C* ActorEncountered);
+		void PlayVoiceType(EAIVoiceOverType VoiceTag);
+		void ChaseModeVO();
+		void OnEncounterAI(class AAISeeker_C* ActorEncountered);
 		void BndEvt__PlayerCaptureTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
-		void On_Leave_AI(class AAISeeker_C* ActorLeaving);
-		void On_Blocked_Timer_Up();
+		void OnLeaveAI(class AAISeeker_C* ActorLeaving);
+		void OnBlockedTimerUp();
 		void SetSplineFollowerContext(const struct FSplineFollowerContext& SplineFollowerContext);
 		void StopRummage();
 		void StartRummage();
@@ -198,7 +228,7 @@ namespace CG
 		void SetHeadAimTarget(class AActor* TargetActor, const struct FVector& TargetLocation, bool OffsetByViewHeight);
 		void Stun();
 		void StartMoveTo(const struct FVector& Location);
-		void OnCaptureOverlap(class AActor* OtherActor, class UBoxComponent* CurrentCaptureTrigger);
+		void OnCaptureOverlap(class AActor* OtherActor, class UPrimitiveComponent* CurrentCaptureTrigger);
 		void SetPatrolPath();
 		void SetCurrentPatrolPointIndex(int32_t PatrolPointIndex);
 		void SendVanessaAlert(class APawn* VanessaPawn);
@@ -210,7 +240,8 @@ namespace CG
 		void SetSeekMode(bool Seek);
 		void LaserHit(class AEQ_LaserGun_C* Gun, const struct FHitResult& HitResult);
 		void OnListenStarted();
-		void Jumpscare_Recheck();
+		void JumpscareRecheck();
+		void ForcePlayVoiceLine(class UAkAudioEvent* AKEvent);
 		void ExecuteUbergraph_AISeeker(int32_t EntryPoint);
 		void FinishedPOI__DelegateSignature();
 		static UClass* StaticClass();

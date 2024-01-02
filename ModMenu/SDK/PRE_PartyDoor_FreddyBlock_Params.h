@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,30 +17,26 @@ namespace CG
 	/**
 	 * Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__FinishedFunc
 	 */
-	struct APRE_PartyDoor_FreddyBlock_C_Partway_Door_Mover__FinishedFunc_Params
-	{
-	};
+	struct APRE_PartyDoor_FreddyBlock_C_PartwayDoorMover__FinishedFunc_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.Partway Door Mover__UpdateFunc
 	 */
-	struct APRE_PartyDoor_FreddyBlock_C_Partway_Door_Mover__UpdateFunc_Params
-	{
-	};
+	struct APRE_PartyDoor_FreddyBlock_C_PartwayDoorMover__UpdateFunc_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Opening
 	 */
-	struct APRE_PartyDoor_FreddyBlock_C_On_Door_Opening_Params
-	{
-	};
+	struct APRE_PartyDoor_FreddyBlock_C_OnDoorOpening_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.On Door Closing
 	 */
-	struct APRE_PartyDoor_FreddyBlock_C_On_Door_Closing_Params
-	{
-	};
+	struct APRE_PartyDoor_FreddyBlock_C_OnDoorClosing_Params
+	{	};
 
 	/**
 	 * Function PRE_PartyDoor_FreddyBlock.PRE_PartyDoor_FreddyBlock_C.ExecuteUbergraph_PRE_PartyDoor_FreddyBlock
@@ -49,7 +45,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

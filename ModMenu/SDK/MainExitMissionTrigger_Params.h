@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,22 +21,19 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function MainExitMissionTrigger.MainExitMissionTrigger_C.ReceiveBeginPlay
 	 */
 	struct AMainExitMissionTrigger_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MainExitMissionTrigger.MainExitMissionTrigger_C.OnTriggered
 	 */
 	struct AMainExitMissionTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MainExitMissionTrigger.MainExitMissionTrigger_C.ExecuteUbergraph_MainExitMissionTrigger
@@ -45,7 +42,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

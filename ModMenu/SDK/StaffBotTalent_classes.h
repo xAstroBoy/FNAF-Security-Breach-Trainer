@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,11 +16,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass StaffBotTalent.StaffBotTalent_C
-	 * Size -> 0x0000 (FullSize[0x0658] - InheritedSize[0x0658])
+	 * Size -> 0x000A (FullSize[0x06A8] - InheritedSize[0x069E])
 	 */
 	class AStaffBotTalent_C : public AStaffBotBase_C
 	{
 	public:
+		unsigned char                                              UnknownData_U6P7[0x2];                                   // 0x069E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x06A0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+
+	public:
+		void ChangeToComedyOrMagicStaffBotType(EStaffbotRig StaffBotType);
+		void ExecuteUbergraph_StaffBotTalent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

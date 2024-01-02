@@ -1,10 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
-#include "PRE_Advertising_Standee_Package.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -13,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.StopEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::StopEmitter()
 	{
@@ -32,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::PlayEmitter()
 	{
@@ -51,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::ReceiveBeginPlay()
 	{
@@ -70,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.Update
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::Update()
 	{
@@ -89,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ToggleInRange
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InRange                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -111,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayAudioEmitter
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::PlayAudioEmitter()
 	{
@@ -130,9 +129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.PlayStaticEmitter
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::PlayStaticEmitter()
 	{
@@ -149,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.AdvertisingStandee
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_Advertising_Standee_C::AdvertisingStandee()
 	{
@@ -168,13 +167,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_Advertising_Standee.PRE_Advertising_Standee_C.ExecuteUbergraph_PRE_Advertising_Standee
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_Advertising_Standee_C::ExecuteUbergraph_PRE_Advertising_Standee(int EntryPoint)
+	void APRE_Advertising_Standee_C::ExecuteUbergraph_PRE_Advertising_Standee(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -190,8 +189,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APRE_Advertising_Standee_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APRE_Advertising_Standee_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APRE_Advertising_Standee_C::StaticClass()

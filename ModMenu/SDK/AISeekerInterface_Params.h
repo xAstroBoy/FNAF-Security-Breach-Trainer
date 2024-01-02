@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Seek;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		bool                                                       EnableChase;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -61,8 +57,7 @@ namespace CG
 	{
 	public:
 		float                                                      Distance;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		AIPlayerRange_EAIPlayerRange                               Range;                                                   // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EAIPlayerRange                                             Range;                                                   // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -72,7 +67,6 @@ namespace CG
 	{
 	public:
 		bool                                                       StillChecking;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -82,7 +76,6 @@ namespace CG
 	{
 	public:
 		bool                                                       TrackingPlayer;                                          // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -91,8 +84,7 @@ namespace CG
 	struct UAISeekerInterface_C_GetVisitedPOIs_Params
 	{
 	public:
-		TArray<struct FPOIIndex>                                   VisitedPOIs;                                             // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<struct FPOIIndex>                                   VisitedPOIs;                                             // 0x0000(0x0010)  (Parm, OutParm)
 	};
 
 	/**
@@ -101,8 +93,7 @@ namespace CG
 	struct UAISeekerInterface_C_GetAIData_Params
 	{
 	public:
-		struct FAIDataParams                                       AI_Data;                                                 // 0x0000(0x0028)  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		struct FAIDataParams                                       AIData;                                                  // 0x0000(0x0028)  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -112,15 +103,13 @@ namespace CG
 	{
 	public:
 		bool                                                       InChaseMode;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AISeekerInterface.AISeekerInterface_C.RestartAI
 	 */
 	struct UAISeekerInterface_C_RestartAI_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AISeekerInterface.AISeekerInterface_C.SetAlertState
@@ -129,7 +118,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    AlertState;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -139,7 +127,6 @@ namespace CG
 	{
 	public:
 		bool                                                       EnteringRoom;                                            // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -148,8 +135,7 @@ namespace CG
 	struct UAISeekerInterface_C_GetRoomSeekMode_Params
 	{
 	public:
-		RoomSeekMode_ERoomSeekMode                                 SeekMode;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ERoomSeekMode                                              SeekMode;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -158,8 +144,7 @@ namespace CG
 	struct UAISeekerInterface_C_GetRecentRooms_Params
 	{
 	public:
-		TArray<struct FRoomVisitInfo>                              RecentRooms;                                             // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<struct FRoomVisitInfo>                              RecentRooms;                                             // 0x0000(0x0010)  (Parm, OutParm)
 	};
 
 	/**
@@ -169,7 +154,6 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -179,7 +163,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsSearching;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -191,7 +174,6 @@ namespace CG
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    PointIndex;                                              // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Valid;                                                   // 0x000C(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -202,7 +184,6 @@ namespace CG
 	public:
 		class ARoomAreaBase*                                       Room;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    PointIndex;                                              // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -213,8 +194,8 @@ namespace CG
 	public:
 		bool                                                       Chase;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       UseOverrideSpeed;                                        // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_5MRH[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		float                                                      OverrideSpeed;                                           // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -224,7 +205,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ShouldCheckHidingLocations;                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -233,8 +213,7 @@ namespace CG
 	struct UAISeekerInterface_C_GetRecentlySearchedActors_Params
 	{
 	public:
-		TArray<class AActor*>                                      RecentlySearched;                                        // 0x0000(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<class AActor*>                                      RecentlySearched;                                        // 0x0000(0x0010)  (Parm, OutParm)
 	};
 
 	/**
@@ -244,7 +223,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsRunningSearch;                                         // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -255,7 +233,6 @@ namespace CG
 	public:
 		class AActor*                                              SearchActor;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FVector                                             SearchLocation;                                          // 0x0008(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -265,7 +242,6 @@ namespace CG
 	{
 	public:
 		class ARoomAreaBase*                                       CurrentRoom;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

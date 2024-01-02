@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimGraph
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,229 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_D232091C479C4B482C932B8A8823732D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnNotifyEnd_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_D232091C479C4B482C932B8A8823732D");
-		
-		UGreg_FirstPerson_ABP_C_OnNotifyEnd_D232091C479C4B482C932B8A8823732D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_D232091C479C4B482C932B8A8823732D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnNotifyBegin_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_D232091C479C4B482C932B8A8823732D");
-		
-		UGreg_FirstPerson_ABP_C_OnNotifyBegin_D232091C479C4B482C932B8A8823732D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_D232091C479C4B482C932B8A8823732D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnInterrupted_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_D232091C479C4B482C932B8A8823732D");
-		
-		UGreg_FirstPerson_ABP_C_OnInterrupted_D232091C479C4B482C932B8A8823732D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_D232091C479C4B482C932B8A8823732D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnBlendOut_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_D232091C479C4B482C932B8A8823732D");
-		
-		UGreg_FirstPerson_ABP_C_OnBlendOut_D232091C479C4B482C932B8A8823732D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_D232091C479C4B482C932B8A8823732D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnCompleted_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_D232091C479C4B482C932B8A8823732D");
-		
-		UGreg_FirstPerson_ABP_C_OnCompleted_D232091C479C4B482C932B8A8823732D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D");
-		
-		UGreg_FirstPerson_ABP_C_OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D");
-		
-		UGreg_FirstPerson_ABP_C_OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_8D2B4437468C1DB561D00F804E4F270D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnInterrupted_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_8D2B4437468C1DB561D00F804E4F270D");
-		
-		UGreg_FirstPerson_ABP_C_OnInterrupted_8D2B4437468C1DB561D00F804E4F270D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_8D2B4437468C1DB561D00F804E4F270D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnBlendOut_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_8D2B4437468C1DB561D00F804E4F270D");
-		
-		UGreg_FirstPerson_ABP_C_OnBlendOut_8D2B4437468C1DB561D00F804E4F270D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_8D2B4437468C1DB561D00F804E4F270D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UGreg_FirstPerson_ABP_C::OnCompleted_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_8D2B4437468C1DB561D00F804E4F270D");
-		
-		UGreg_FirstPerson_ABP_C_OnCompleted_8D2B4437468C1DB561D00F804E4F270D_Params params {};
-		params.NotifyName = NotifyName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_1905C0E149E72E0A807FA2837C37C760
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -278,9 +58,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_1905C0E149E72E0A807FA2837C37C760
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -300,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_1905C0E149E72E0A807FA2837C37C760
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -322,9 +102,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_1905C0E149E72E0A807FA2837C37C760
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -344,9 +124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_1905C0E149E72E0A807FA2837C37C760
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -366,9 +146,267 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_8D2B4437468C1DB561D00F804E4F270D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnCompleted_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_8D2B4437468C1DB561D00F804E4F270D");
+		
+		UGreg_FirstPerson_ABP_C_OnCompleted_8D2B4437468C1DB561D00F804E4F270D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_8D2B4437468C1DB561D00F804E4F270D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnBlendOut_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_8D2B4437468C1DB561D00F804E4F270D");
+		
+		UGreg_FirstPerson_ABP_C_OnBlendOut_8D2B4437468C1DB561D00F804E4F270D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_8D2B4437468C1DB561D00F804E4F270D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnInterrupted_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_8D2B4437468C1DB561D00F804E4F270D");
+		
+		UGreg_FirstPerson_ABP_C_OnInterrupted_8D2B4437468C1DB561D00F804E4F270D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D");
+		
+		UGreg_FirstPerson_ABP_C_OnNotifyBegin_8D2B4437468C1DB561D00F804E4F270D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D");
+		
+		UGreg_FirstPerson_ABP_C_OnNotifyEnd_8D2B4437468C1DB561D00F804E4F270D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_D232091C479C4B482C932B8A8823732D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnCompleted_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnCompleted_D232091C479C4B482C932B8A8823732D");
+		
+		UGreg_FirstPerson_ABP_C_OnCompleted_D232091C479C4B482C932B8A8823732D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_D232091C479C4B482C932B8A8823732D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnBlendOut_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnBlendOut_D232091C479C4B482C932B8A8823732D");
+		
+		UGreg_FirstPerson_ABP_C_OnBlendOut_D232091C479C4B482C932B8A8823732D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_D232091C479C4B482C932B8A8823732D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnInterrupted_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnInterrupted_D232091C479C4B482C932B8A8823732D");
+		
+		UGreg_FirstPerson_ABP_C_OnInterrupted_D232091C479C4B482C932B8A8823732D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_D232091C479C4B482C932B8A8823732D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnNotifyBegin_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyBegin_D232091C479C4B482C932B8A8823732D");
+		
+		UGreg_FirstPerson_ABP_C_OnNotifyBegin_D232091C479C4B482C932B8A8823732D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_D232091C479C4B482C932B8A8823732D
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        NotifyName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGreg_FirstPerson_ABP_C::OnNotifyEnd_D232091C479C4B482C932B8A8823732D(const class FName& NotifyName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.OnNotifyEnd_D232091C479C4B482C932B8A8823732D");
+		
+		UGreg_FirstPerson_ABP_C_OnNotifyEnd_D232091C479C4B482C932B8A8823732D_Params params {};
+		params.NotifyName = NotifyName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_E92FEE9547B3B852C95240BFFEE8C92A
+	 * 		Flags  -> ()
+	 */
+	void UGreg_FirstPerson_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_E92FEE9547B3B852C95240BFFEE8C92A()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_E92FEE9547B3B852C95240BFFEE8C92A");
+		
+		UGreg_FirstPerson_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_E92FEE9547B3B852C95240BFFEE8C92A_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_12C4D10D45645D38BABB3A97876B83D1
+	 * 		Flags  -> ()
+	 */
+	void UGreg_FirstPerson_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_12C4D10D45645D38BABB3A97876B83D1()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_12C4D10D45645D38BABB3A97876B83D1");
+		
+		UGreg_FirstPerson_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_12C4D10D45645D38BABB3A97876B83D1_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_9BFBF4AA4EF8791FF9DE388807B07B4A
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_9BFBF4AA4EF8791FF9DE388807B07B4A()
 	{
@@ -385,9 +423,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_5AFCD48643B368CE6FA1D3AF4C68FED8
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Greg_FirstPerson_ABP_AnimGraphNode_TransitionResult_5AFCD48643B368CE6FA1D3AF4C68FED8()
 	{
@@ -404,9 +442,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -426,9 +464,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ChangeEquipped
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AEquippable_C*                               NewEquip                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -448,9 +486,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PutAway
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::PutAway()
 	{
@@ -467,9 +505,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PropSwap
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Flashlight                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -489,9 +527,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.SetItemDown
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::SetItemDown()
 	{
@@ -508,9 +546,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.PrimaryActionAnimEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::PrimaryActionAnimEvent()
 	{
@@ -527,9 +565,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.FazWatchEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Reset                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -549,9 +587,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::BlueprintBeginPlay()
 	{
@@ -568,9 +606,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_IsFullyDownEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::AnimNotify_IsFullyDownEvent()
 	{
@@ -587,9 +625,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_FinishingItemUp
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::AnimNotify_FinishingItemUp()
 	{
@@ -606,9 +644,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.AnimNotify_StartItemUp
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGreg_FirstPerson_ABP_C::AnimNotify_StartItemUp()
 	{
@@ -625,19 +663,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.Change Item
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AEquippable_C*                               NewEquipment                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGreg_FirstPerson_ABP_C::Change_Item(class AEquippable_C* NewEquipment)
+	void UGreg_FirstPerson_ABP_C::ChangeItem(class AEquippable_C* NewEquipment)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.Change Item");
 		
-		UGreg_FirstPerson_ABP_C_Change_Item_Params params {};
+		UGreg_FirstPerson_ABP_C_ChangeItem_Params params {};
 		params.NewEquipment = NewEquipment;
 		
 		auto flags = fn->FunctionFlags;
@@ -647,9 +685,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Greg_FirstPerson_ABP.Greg_FirstPerson_ABP_C.ExecuteUbergraph_Greg_FirstPerson_ABP
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -669,8 +707,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGreg_FirstPerson_ABP_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGreg_FirstPerson_ABP_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGreg_FirstPerson_ABP_C::StaticClass()

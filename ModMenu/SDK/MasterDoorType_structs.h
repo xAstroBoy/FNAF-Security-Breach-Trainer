@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,20 +17,20 @@ namespace CG
 	/**
 	 * UserDefinedEnum MasterDoorType.MasterDoorType
 	 */
-	enum class MasterDoorType_EMasterDoorType : uint8_t
+	enum class EMasterDoorType : uint8_t
 	{
-		MasterDoorType__NewEnumerator0     = 0,
-		MasterDoorType__NewEnumerator1     = 1,
-		MasterDoorType__NewEnumerator2     = 2,
-		MasterDoorType__NewEnumerator3     = 3,
-		MasterDoorType__NewEnumerator4     = 4,
-		MasterDoorType__NewEnumerator5     = 5,
-		MasterDoorType__NewEnumerator6     = 6,
-		MasterDoorType__NewEnumerator7     = 7,
-		MasterDoorType__NewEnumerator8     = 8,
-		MasterDoorType__NewEnumerator9     = 9,
-		MasterDoorType__NewEnumerator10    = 10,
-		MasterDoorType__MasterDoorType_MAX = 11
+		MasterDoorTypeNewEnumerator0     = 0,
+		MasterDoorTypeNewEnumerator1     = 1,
+		MasterDoorTypeNewEnumerator2     = 2,
+		MasterDoorTypeNewEnumerator3     = 3,
+		MasterDoorTypeNewEnumerator4     = 4,
+		MasterDoorTypeNewEnumerator5     = 5,
+		MasterDoorTypeNewEnumerator6     = 6,
+		MasterDoorTypeNewEnumerator7     = 7,
+		MasterDoorTypeNewEnumerator8     = 8,
+		MasterDoorTypeNewEnumerator9     = 9,
+		MasterDoorTypeNewEnumerator10    = 10,
+		MasterDoorTypeMasterDoorType_MAX = 11
 	};
 
 }

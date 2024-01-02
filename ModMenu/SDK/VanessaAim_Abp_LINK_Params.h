@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,15 +22,13 @@ namespace CG
 	public:
 		struct FPoseLink                                           InPose;                                                  // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 		struct FPoseLink                                           AnimGraph;                                               // 0x0010(0x0010)  (Parm, OutParm, NoDestructor)
-
 	};
 
 	/**
-	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_6B820C2A43EFDD79A6D22199F7C0187F
+	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_0C4376F14ABA76C1E15160847A9377CF
 	 */
-	struct UVanessaAim_Abp_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_6B820C2A43EFDD79A6D22199F7C0187F_Params
-	{
-	};
+	struct UVanessaAim_Abp_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_0C4376F14ABA76C1E15160847A9377CF_Params
+	{	};
 
 	/**
 	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.BlueprintUpdateAnimation
@@ -39,15 +37,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_0C4376F14ABA76C1E15160847A9377CF
+	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_6B820C2A43EFDD79A6D22199F7C0187F
 	 */
-	struct UVanessaAim_Abp_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_0C4376F14ABA76C1E15160847A9377CF_Params
-	{
-	};
+	struct UVanessaAim_Abp_LINK_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VanessaAim_Abp_LINK_AnimGraphNode_RotationOffsetBlendSpace_6B820C2A43EFDD79A6D22199F7C0187F_Params
+	{	};
 
 	/**
 	 * Function VanessaAim_Abp_LINK.VanessaAim_Abp_LINK_C.ExecuteUbergraph_VanessaAim_Abp_LINK
@@ -56,7 +52,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

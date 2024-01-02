@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -11,6 +11,21 @@
 
 namespace CG
 {
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * ScriptStruct FieldSystemEngine.FieldObjectCommands
+	 * Size -> 0x0030
+	 */
+	struct FFieldObjectCommands
+	{
+	public:
+		TArray<class FName>                                        TargetNames;                                             // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<class UFieldNodeBase*>                              RootNodes;                                               // 0x0010(0x0010) Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
+		TArray<class UFieldSystemMetaData*>                        MetaDatas;                                               // 0x0020(0x0010) Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
+	};
+
 }
 
 #ifdef _MSC_VER

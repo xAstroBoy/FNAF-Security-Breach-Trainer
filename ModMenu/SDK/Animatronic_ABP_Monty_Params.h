@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.footstep
 	 */
 	struct UAnimatronic_ABP_Monty_C_footstep_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.OnNotifyEnd_4374FFD04F83864AB8D8DC944BB33B0D
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -38,7 +36,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -48,7 +45,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -58,7 +54,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -68,7 +63,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -78,7 +72,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -88,7 +81,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -98,7 +90,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -108,7 +99,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -118,7 +108,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -128,36 +117,31 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.BlueprintBeginPlay
 	 */
 	struct UAnimatronic_ABP_Monty_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_R_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Monty_C_AnimNotify_R_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_L_Foot_Down
 	 */
 	struct UAnimatronic_ABP_Monty_C_AnimNotify_L_Foot_Down_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.AnimNotify_MontyLand
 	 */
 	struct UAnimatronic_ABP_Monty_C_AnimNotify_MontyLand_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.SetJiggle
@@ -166,9 +150,8 @@ namespace CG
 	{
 	public:
 		float                                                      JiggleScaleTarget;                                       // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		float                                                      Shoulderpad_DynamicAlpha;                                // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		float                                                      ShoulderpadDynamicAlpha;                                 // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      TailDynamicAlpha;                                        // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -178,15 +161,13 @@ namespace CG
 	{
 	public:
 		bool                                                       CanJump;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.LandEvent
 	 */
 	struct UAnimatronic_ABP_Monty_C_LandEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Animatronic_ABP_Monty.Animatronic_ABP_Monty_C.ExecuteUbergraph_Animatronic_ABP_Monty
@@ -195,7 +176,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_MKLI[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

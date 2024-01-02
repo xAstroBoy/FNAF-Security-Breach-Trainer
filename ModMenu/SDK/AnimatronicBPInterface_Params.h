@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,41 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.GetMoveSpeedInput
+	 */
+	struct UAnimatronicBPInterface_C_GetMoveSpeedInput_Params
+	{
+	public:
+		float                                                      MoveSpeed;                                               // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.OverlappingDoor
+	 */
+	struct UAnimatronicBPInterface_C_OverlappingDoor_Params
+	{
+	public:
+		bool                                                       Overlapping;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_9YM8[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class AActor*                                              Instigator;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.IsHangingEvent
+	 */
+	struct UAnimatronicBPInterface_C_IsHangingEvent_Params
+	{
+	public:
+		bool                                                       IsHanging;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.Spotlight Aim Actor
 	 */
-	struct UAnimatronicBPInterface_C_Spotlight_Aim_Actor_Params
+	struct UAnimatronicBPInterface_C_SpotlightAimActor_Params
 	{
 	public:
 		class AActor*                                              AimActor;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,7 +59,6 @@ namespace CG
 	{
 	public:
 		class ULevelSequencePlayer*                                SequencePlayer;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -41,8 +68,8 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_7A7D[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class ULevelSequencePlayer*                                Sequence;                                                // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -52,7 +79,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -64,7 +90,6 @@ namespace CG
 		struct FVector                                             ActorLocation;                                           // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FVector                                             Destination;                                             // 0x000C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      Distance;                                                // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -74,22 +99,19 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.EndoBowlingCrawlEvent
 	 */
 	struct UAnimatronicBPInterface_C_EndoBowlingCrawlEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.EndoSpawnInBowlingEvent
 	 */
 	struct UAnimatronicBPInterface_C_EndoSpawnInBowlingEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.CanDieEvent
@@ -98,7 +120,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -108,7 +129,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -117,8 +137,7 @@ namespace CG
 	struct UAnimatronicBPInterface_C_VoAnimEvent_Params
 	{
 	public:
-		class UAkAudioEvent*                                       AK_Event;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UAkAudioEvent*                                       AKEvent;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -128,7 +147,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -138,7 +156,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -148,7 +165,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -158,7 +174,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -168,7 +183,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -178,7 +192,6 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -188,7 +201,6 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -198,7 +210,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanWave;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -208,22 +219,19 @@ namespace CG
 	{
 	public:
 		bool                                                       PoundDoor;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.StopScan
 	 */
 	struct UAnimatronicBPInterface_C_StopScan_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.LandEvent
 	 */
 	struct UAnimatronicBPInterface_C_LandEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.JumpEvent
@@ -232,7 +240,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanJump;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -245,59 +252,51 @@ namespace CG
 		bool                                                       CanScan;                                                 // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       CanScanL;                                                // 0x0002(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       CanScanR;                                                // 0x0003(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.Breakthrough
 	 */
 	struct UAnimatronicBPInterface_C_Breakthrough_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.OnAnimInstanceSwap
 	 */
 	struct UAnimatronicBPInterface_C_OnAnimInstanceSwap_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.RummagingDoneEvent
 	 */
 	struct UAnimatronicBPInterface_C_RummagingDoneEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.IsNotFirstPersonEvent
 	 */
 	struct UAnimatronicBPInterface_C_IsNotFirstPersonEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.IsFirstPersonEvent
 	 */
 	struct UAnimatronicBPInterface_C_IsFirstPersonEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.CanRummageEvent
 	 */
 	struct UAnimatronicBPInterface_C_CanRummageEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.Stun Event
 	 */
-	struct UAnimatronicBPInterface_C_Stun_Event_Params
+	struct UAnimatronicBPInterface_C_StunEvent_Params
 	{
 	public:
-		bool                                                       Is_Stunned;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       IsStunned;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -307,15 +306,13 @@ namespace CG
 	{
 	public:
 		bool                                                       CanRun;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.StartScan
 	 */
 	struct UAnimatronicBPInterface_C_StartScan_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.SetHeadAimTarget
@@ -324,29 +321,25 @@ namespace CG
 	{
 	public:
 		struct FVector                                             AimLocation;                                             // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.OpenDone
 	 */
 	struct UAnimatronicBPInterface_C_OpenDone_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.Open
 	 */
 	struct UAnimatronicBPInterface_C_Open_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.SearchingDone
 	 */
 	struct UAnimatronicBPInterface_C_SearchingDone_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.Searching
@@ -354,8 +347,7 @@ namespace CG
 	struct UAnimatronicBPInterface_C_Searching_Params
 	{
 	public:
-		fnaf9_EHideObjectType                                      Hide_Type;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EHideObjectType                                            HideType;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -365,7 +357,6 @@ namespace CG
 	{
 	public:
 		float                                                      TurnDegrees;                                             // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -375,15 +366,13 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function AnimatronicBPInterface.AnimatronicBPInterface_C.CanJumpscareEvent
 	 */
 	struct UAnimatronicBPInterface_C_CanJumpscareEvent_Params
-	{
-	};
+	{	};
 
 }
 

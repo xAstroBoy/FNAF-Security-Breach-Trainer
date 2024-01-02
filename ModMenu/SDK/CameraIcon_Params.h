@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,64 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function CameraIcon.CameraIcon_C.SetCameraDirection
+	 */
+	struct UCameraIcon_C_SetCameraDirection_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.ChowdaMode
+	 */
+	struct UCameraIcon_C_ChowdaMode_Params
+	{
+	public:
+		bool                                                       ChowdaMode;                                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_20TM[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.End Alert
+	 */
+	struct UCameraIcon_C_EndAlert_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.AdjustButton
+	 */
+	struct UCameraIcon_C_AdjustButton_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.BndEvt__HackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+	 */
+	struct UCameraIcon_C_BndEvt__HackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.DistractionStyle
+	 */
+	struct UCameraIcon_C_DistractionStyle_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.BndEvt__CameraButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+	 */
+	struct UCameraIcon_C_BndEvt__CameraButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function CameraIcon.CameraIcon_C.AlertEvent
+	 */
+	struct UCameraIcon_C_AlertEvent_Params
+	{	};
+
+	/**
 	 * Function CameraIcon.CameraIcon_C.PreConstruct
 	 */
 	struct UCameraIcon_C_PreConstruct_Params
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,42 +82,6 @@ namespace CG
 	{
 	public:
 		class ASecurityCamera*                                     Camera;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function CameraIcon.CameraIcon_C.BndEvt__CameraButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UCameraIcon_C_BndEvt__CameraButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params
-	{
-	};
-
-	/**
-	 * Function CameraIcon.CameraIcon_C.End Alert
-	 */
-	struct UCameraIcon_C_End_Alert_Params
-	{
-	};
-
-	/**
-	 * Function CameraIcon.CameraIcon_C.AlertEvent
-	 */
-	struct UCameraIcon_C_AlertEvent_Params
-	{
-	};
-
-	/**
-	 * Function CameraIcon.CameraIcon_C.AdjustButton
-	 */
-	struct UCameraIcon_C_AdjustButton_Params
-	{
-	};
-
-	/**
-	 * Function CameraIcon.CameraIcon_C.BndEvt__HackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
-	 */
-	struct UCameraIcon_C_BndEvt__HackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature_Params
-	{
 	};
 
 	/**
@@ -76,7 +91,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_RRH2[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -86,7 +101,6 @@ namespace CG
 	{
 	public:
 		class UCameraIcon_C*                                       Sender;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosDebugDrawComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosDebugDrawComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosDebugDrawComponent::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosEventListenerComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosEventListenerComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosEventListenerComponent::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosGameplayEventDispatcher.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosGameplayEventDispatcher.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosGameplayEventDispatcher::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosNotifyHandlerInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosNotifyHandlerInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosNotifyHandlerInterface::StaticClass()
@@ -68,13 +68,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029622E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverEngineBlueprintLibrary.ConvertPhysicsCollisionToHitResult
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FChaosPhysicsCollisionInfo                  PhysicsCollision                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	struct FHitResult UChaosSolverEngineBlueprintLibrary::STATIC_ConvertPhysicsCollisionToHitResult(const struct FChaosPhysicsCollisionInfo& PhysicsCollision)
+	struct FHitResult UChaosSolverEngineBlueprintLibrary::ConvertPhysicsCollisionToHitResult(const struct FChaosPhysicsCollisionInfo& PhysicsCollision)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,7 +84,6 @@ namespace CG
 		params.PhysicsCollision = PhysicsCollision;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -93,8 +92,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosSolverEngineBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosSolverEngineBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosSolverEngineBlueprintLibrary::StaticClass()
@@ -107,8 +106,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosSolver.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosSolver.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosSolver::StaticClass()
@@ -121,9 +120,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029623F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bActive                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -137,16 +136,15 @@ namespace CG
 		params.bActive = bActive;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029623D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AChaosSolverActor::SetAsCurrentWorldSolver()
 	{
@@ -157,15 +155,14 @@ namespace CG
 		AChaosSolverActor_SetAsCurrentWorldSolver_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AChaosSolverActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AChaosSolverActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AChaosSolverActor::StaticClass()
@@ -178,8 +175,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UChaosSolverSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UChaosSolverSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UChaosSolverSettings::StaticClass()

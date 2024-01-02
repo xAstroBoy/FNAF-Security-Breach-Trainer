@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AreaManager.AreaManager_C.UserConstructionScript
-	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AAreaManager_C::UserConstructionScript()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AreaManager.AreaManager_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AAreaManager_C::ReceiveBeginPlay()
 	{
@@ -50,19 +50,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AreaManager.AreaManager_C.On Player Entered Room
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAreaManager_C::On_Player_Entered_Room(class ARoomAreaBase* Room)
+	void AAreaManager_C::OnPlayerEnteredRoom(class ARoomAreaBase* Room)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function AreaManager.AreaManager_C.On Player Entered Room");
 		
-		AAreaManager_C_On_Player_Entered_Room_Params params {};
+		AAreaManager_C_OnPlayerEnteredRoom_Params params {};
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AreaManager.AreaManager_C.ExecuteUbergraph_AreaManager
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -94,13 +94,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AreaManager.AreaManager_C.OnPlayerEnteredArea__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Areas_EAreas                                       NewArea                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EAreas                                             NewArea                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AAreaManager_C::OnPlayerEnteredArea__DelegateSignature(Areas_EAreas NewArea)
+	void AAreaManager_C::OnPlayerEnteredArea__DelegateSignature(EAreas NewArea)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -116,8 +116,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAreaManager_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAreaManager_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAreaManager_C::StaticClass()

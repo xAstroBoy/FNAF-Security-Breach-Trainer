@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -33,7 +33,7 @@ namespace CG
 		void PlayEmitter();
 		void StopEmitter();
 		void ToggleInRange(bool InRange);
-		void ExecuteUbergraph_PRE_Mod_ArcadeCabinet_Case_10(int EntryPoint);
+		void ExecuteUbergraph_PRE_Mod_ArcadeCabinet_Case_10(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

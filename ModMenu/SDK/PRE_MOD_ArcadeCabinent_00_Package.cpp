@@ -1,10 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
-#include "PRE_MOD_ArcadeCabinent_00_Package.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -13,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.ScreenSwitcherFunction
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::ScreenSwitcherFunction()
 	{
@@ -32,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.UserConstructionScript
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::UserConstructionScript()
 	{
@@ -51,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.Flicer__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::Flicer__FinishedFunc()
 	{
@@ -70,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.Flicer__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::Flicer__UpdateFunc()
 	{
@@ -89,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::ReceiveBeginPlay()
 	{
@@ -108,9 +107,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.Update
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::Update()
 	{
@@ -127,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -149,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.PlayEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::PlayEmitter()
 	{
@@ -168,9 +167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.StopEmitter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APRE_MOD_ArcadeCabinent_00_C::StopEmitter()
 	{
@@ -187,9 +186,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.ToggleInRange
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InRange                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -209,13 +208,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE6700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PRE_MOD_ArcadeCabinent_00.PRE_MOD_ArcadeCabinent_00_C.ExecuteUbergraph_PRE_MOD_ArcadeCabinent_00
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		int                                                EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void APRE_MOD_ArcadeCabinent_00_C::ExecuteUbergraph_PRE_MOD_ArcadeCabinent_00(int EntryPoint)
+	void APRE_MOD_ArcadeCabinent_00_C::ExecuteUbergraph_PRE_MOD_ArcadeCabinent_00(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -231,8 +230,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APRE_MOD_ArcadeCabinent_00_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APRE_MOD_ArcadeCabinent_00_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APRE_MOD_ArcadeCabinent_00_C::StaticClass()

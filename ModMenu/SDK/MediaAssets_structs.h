@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,78 +17,100 @@ namespace CG
 	/**
 	 * Enum MediaAssets.EMediaWebcamCaptureDeviceFilter
 	 */
-	enum class MediaAssets_EMediaWebcamCaptureDeviceFilter : uint8_t
+	enum class EMediaWebcamCaptureDeviceFilter : uint8_t
 	{
-		EMediaWebcamCaptureDeviceFilter__None                                = 0,
-		EMediaWebcamCaptureDeviceFilter__DepthSensor                         = 1,
-		EMediaWebcamCaptureDeviceFilter__Front                               = 2,
-		EMediaWebcamCaptureDeviceFilter__Rear                                = 3,
-		EMediaWebcamCaptureDeviceFilter__Unknown                             = 4,
-		EMediaWebcamCaptureDeviceFilter__EMediaWebcamCaptureDeviceFilter_MAX = 5
+		None        = 0,
+		DepthSensor = 1,
+		Front       = 2,
+		Rear        = 3,
+		Unknown     = 4,
+		MAX         = 5
 	};
 
 	/**
 	 * Enum MediaAssets.EMediaVideoCaptureDeviceFilter
 	 */
-	enum class MediaAssets_EMediaVideoCaptureDeviceFilter : uint8_t
+	enum class EMediaVideoCaptureDeviceFilter : uint8_t
 	{
-		EMediaVideoCaptureDeviceFilter__None                               = 0,
-		EMediaVideoCaptureDeviceFilter__Card                               = 1,
-		EMediaVideoCaptureDeviceFilter__Software                           = 2,
-		EMediaVideoCaptureDeviceFilter__Unknown                            = 3,
-		EMediaVideoCaptureDeviceFilter__Webcam                             = 4,
-		EMediaVideoCaptureDeviceFilter__EMediaVideoCaptureDeviceFilter_MAX = 5
+		None     = 0,
+		Card     = 1,
+		Software = 2,
+		Unknown  = 3,
+		Webcam   = 4,
+		MAX      = 5
 	};
 
 	/**
 	 * Enum MediaAssets.EMediaAudioCaptureDeviceFilter
 	 */
-	enum class MediaAssets_EMediaAudioCaptureDeviceFilter : uint8_t
+	enum class EMediaAudioCaptureDeviceFilter : uint8_t
 	{
-		EMediaAudioCaptureDeviceFilter__None                               = 0,
-		EMediaAudioCaptureDeviceFilter__Card                               = 1,
-		EMediaAudioCaptureDeviceFilter__Microphone                         = 2,
-		EMediaAudioCaptureDeviceFilter__Software                           = 3,
-		EMediaAudioCaptureDeviceFilter__Unknown                            = 4,
-		EMediaAudioCaptureDeviceFilter__EMediaAudioCaptureDeviceFilter_MAX = 5
+		None       = 0,
+		Card       = 1,
+		Microphone = 2,
+		Software   = 3,
+		Unknown    = 4,
+		MAX        = 5
 	};
 
 	/**
 	 * Enum MediaAssets.EMediaPlayerTrack
 	 */
-	enum class MediaAssets_EMediaPlayerTrack : uint8_t
+	enum class EMediaPlayerTrack : uint8_t
 	{
-		EMediaPlayerTrack__Audio                 = 0,
-		EMediaPlayerTrack__Caption               = 1,
-		EMediaPlayerTrack__Metadata              = 2,
-		EMediaPlayerTrack__Script                = 3,
-		EMediaPlayerTrack__Subtitle              = 4,
-		EMediaPlayerTrack__Text                  = 5,
-		EMediaPlayerTrack__Video                 = 6,
-		EMediaPlayerTrack__EMediaPlayerTrack_MAX = 7
+		Audio    = 0,
+		Caption  = 1,
+		Metadata = 2,
+		Script   = 3,
+		Subtitle = 4,
+		Text     = 5,
+		Video    = 6,
+		MAX      = 7
 	};
 
 	/**
 	 * Enum MediaAssets.EMediaSoundComponentFFTSize
 	 */
-	enum class MediaAssets_EMediaSoundComponentFFTSize : uint8_t
+	enum class EMediaSoundComponentFFTSize : uint8_t
 	{
-		EMediaSoundComponentFFTSize__Min                             = 0,
-		EMediaSoundComponentFFTSize__Small                           = 1,
-		EMediaSoundComponentFFTSize__Medium                          = 2,
-		EMediaSoundComponentFFTSize__Large                           = 3,
-		EMediaSoundComponentFFTSize__EMediaSoundComponentFFTSize_MAX = 4
+		Min    = 0,
+		Small  = 1,
+		Medium = 2,
+		Large  = 3,
+		MAX    = 4
 	};
 
 	/**
 	 * Enum MediaAssets.EMediaSoundChannels
 	 */
-	enum class MediaAssets_EMediaSoundChannels : uint8_t
+	enum class EMediaSoundChannels : uint8_t
 	{
-		EMediaSoundChannels__Mono                    = 0,
-		EMediaSoundChannels__Stereo                  = 1,
-		EMediaSoundChannels__Surround                = 2,
-		EMediaSoundChannels__EMediaSoundChannels_MAX = 3
+		Mono     = 0,
+		Stereo   = 1,
+		Surround = 2,
+		MAX      = 3
+	};
+
+	/**
+	 * Enum MediaAssets.MediaTextureOrientation
+	 */
+	enum class EMediaTextureOrientation : uint8_t
+	{
+		MTORI_Original = 0,
+		MTORI_CW90     = 1,
+		MTORI_CW180    = 2,
+		MTORI_CW270    = 3,
+		MTORI_MAX      = 4
+	};
+
+	/**
+	 * Enum MediaAssets.MediaTextureOutputFormat
+	 */
+	enum class EMediaTextureOutputFormat : uint8_t
+	{
+		MTOF_Default     = 0,
+		MTOF_SRGB_LINOUT = 1,
+		MTOF_MAX         = 2
 	};
 
 	// --------------------------------------------------
@@ -103,7 +125,6 @@ namespace CG
 	public:
 		class FText                                                DisplayName;                                             // 0x0000(0x0018) BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic
 		class FString                                              URL;                                                     // 0x0018(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -115,7 +136,6 @@ namespace CG
 	public:
 		float                                                      FrequencyHz;                                             // 0x0000(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Magnitude;                                               // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

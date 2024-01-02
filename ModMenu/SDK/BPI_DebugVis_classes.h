@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,6 +21,7 @@ namespace CG
 	class UBPI_DebugVis_C : public UInterface
 	{
 	public:
+		void DLCRabbitDisplayAlertText(bool Display);
 		void OnDebugVis(bool enable);
 		static UClass* StaticClass();
 	};

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function WestArcadeDecalManager.WestArcadeDecalManager_C.ReceiveBeginPlay
 	 */
 	struct AWestArcadeDecalManager_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WestArcadeDecalManager.WestArcadeDecalManager_C.Update
 	 */
 	struct AWestArcadeDecalManager_C_Update_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WestArcadeDecalManager.WestArcadeDecalManager_C.ExecuteUbergraph_WestArcadeDecalManager
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

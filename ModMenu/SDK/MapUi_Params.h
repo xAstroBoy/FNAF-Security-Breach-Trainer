@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           LMapPosition;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,22 +30,19 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           LMapPosition;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.CheckForOverlapping
 	 */
 	struct UMapUI_C_CheckForOverlapping_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.SetupMapDisplay
 	 */
 	struct UMapUI_C_SetupMapDisplay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.GetFloorLevel
@@ -55,27 +51,25 @@ namespace CG
 	{
 	public:
 		class FName                                                Floor;                                                   // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.Recalculate Map
 	 */
-	struct UMapUI_C_Recalculate_Map_Params
-	{
-	};
+	struct UMapUI_C_RecalculateMap_Params
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.Recalculate Icons 
 	 */
-	struct UMapUI_C_Recalculate_Icons__Params
+	struct UMapUI_C_RecalculateIcons_Params
 	{
 	public:
-		struct FVector2D                                           Map_Position;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		TArray<class AActor*>                                      Objects;                                                 // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-		TArray<class UUserWidget*>                                 Icons_to_Use;                                            // 0x0018(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash)
-		MinimapIconTypes_EMinimapIconTypes                         Object_Type;                                             // 0x0028(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		struct FVector2D                                           MapPosition;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		TArray<class AActor*>                                      Objects;                                                 // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+		TArray<class UUserWidget*>                                 IconstoUse;                                              // 0x0018(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+		EMinimapIconTypes                                          ObjectType;                                              // 0x0028(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_UORF[0x3];                                   // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -85,7 +79,6 @@ namespace CG
 	{
 	public:
 		struct FLinearColor                                        ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -95,71 +88,61 @@ namespace CG
 	{
 	public:
 		bool                                                       OnlyShowCurrentMissionCam;                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.InuputNext
 	 */
 	struct UMapUI_C_InuputNext_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputPrevious
 	 */
 	struct UMapUI_C_InputPrevious_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputClose
 	 */
 	struct UMapUI_C_InputClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputBack
 	 */
 	struct UMapUI_C_InputBack_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputAccept
 	 */
 	struct UMapUI_C_InputAccept_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputPrimary
 	 */
 	struct UMapUI_C_InputPrimary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputSecondary
 	 */
 	struct UMapUI_C_InputSecondary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputTertiary
 	 */
 	struct UMapUI_C_InputTertiary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputOpen
 	 */
 	struct UMapUI_C_InputOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputZoom
@@ -168,7 +151,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -178,7 +160,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Direction;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -188,24 +169,21 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.Recalc
 	 */
 	struct UMapUI_C_Recalc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.Camera Clicked
 	 */
-	struct UMapUI_C_Camera_Clicked_Params
+	struct UMapUI_C_CameraClicked_Params
 	{
 	public:
 		class UCameraIcon_C*                                       Sender;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -215,17 +193,15 @@ namespace CG
 	{
 	public:
 		class ASecurityCamera*                                     SecurityCamera;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.On Camera Lost Sight
 	 */
-	struct UMapUI_C_On_Camera_Lost_Sight_Params
+	struct UMapUI_C_OnCameraLostSight_Params
 	{
 	public:
 		class ASecurityCamera*                                     SecurityCamera;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -235,29 +211,25 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Increment;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.NextFloor
 	 */
 	struct UMapUI_C_NextFloor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.PrevFloor
 	 */
 	struct UMapUI_C_PrevFloor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.Reset
 	 */
 	struct UMapUI_C_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.InputOptionAxis
@@ -266,7 +238,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -275,8 +246,7 @@ namespace CG
 	struct UMapUI_C_Zoom_Params
 	{
 	public:
-		struct FVector2D                                           zoom_amount;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		struct FVector2D                                           zoomamount;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -286,7 +256,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -296,15 +265,13 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MapUi.MapUI_C.Construct
 	 */
 	struct UMapUI_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MapUi.MapUI_C.ExecuteUbergraph_MapUI
@@ -313,7 +280,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_AW95[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -323,7 +290,6 @@ namespace CG
 	{
 	public:
 		class ASecurityCamera*                                     Camera;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

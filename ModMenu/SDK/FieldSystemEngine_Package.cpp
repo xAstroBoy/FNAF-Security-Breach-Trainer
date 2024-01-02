@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AFieldSystemActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AFieldSystemActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AFieldSystemActor::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldSystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldSystem::StaticClass()
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ResetFieldSystem
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UFieldSystemComponent::ResetFieldSystem()
 	{
@@ -53,16 +53,34 @@ namespace CG
 		UFieldSystemComponent_ResetFieldSystem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969EE0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.RemovePersistentFields
+	 * 		Flags  -> ()
+	 */
+	void UFieldSystemComponent::RemovePersistentFields()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.RemovePersistentFields");
+		
+		UFieldSystemComponent_RemovePersistentFields_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -84,16 +102,15 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969D30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -115,16 +132,15 @@ namespace CG
 		params.Iterations = Iterations;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -142,16 +158,15 @@ namespace CG
 		params.Radius = Radius;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969AA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -171,16 +186,15 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -198,23 +212,22 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969830
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldPhysicsType                  Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldPhysicsType                                  Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldSystemMetaData*                        MetaData                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldNodeBase*                              Field                                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFieldSystemComponent::ApplyPhysicsField(bool Enabled, FieldSystemCore_EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
+	void UFieldSystemComponent::ApplyPhysicsField(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -227,16 +240,15 @@ namespace CG
 		params.Field = Field;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02969710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Direction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -254,23 +266,50 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029695C0
-	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.AddPersistentField
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldPhysicsType                  Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldPhysicsType                                  Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldSystemMetaData*                        MetaData                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldNodeBase*                              Field                                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UFieldSystemComponent::AddFieldCommand(bool Enabled, FieldSystemCore_EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
+	void UFieldSystemComponent::AddPersistentField(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.AddPersistentField");
+		
+		UFieldSystemComponent_AddPersistentField_Params params {};
+		params.Enabled = Enabled;
+		params.Target = Target;
+		params.MetaData = MetaData;
+		params.Field = Field;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Enabled                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldPhysicsType                                  Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UFieldSystemMetaData*                        MetaData                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UFieldNodeBase*                              Field                                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UFieldSystemComponent::AddFieldCommand(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -283,15 +322,14 @@ namespace CG
 		params.Field = Field;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldSystemComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystemComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldSystemComponent::StaticClass()
@@ -304,8 +342,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldSystemMetaData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystemMetaData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldSystemMetaData::StaticClass()
@@ -318,9 +356,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A3E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Iterations                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -334,7 +372,6 @@ namespace CG
 		params.Iterations = Iterations;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -343,8 +380,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldSystemMetaDataIteration.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystemMetaDataIteration.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldSystemMetaDataIteration::StaticClass()
@@ -357,13 +394,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A470
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		FieldSystemCore_EFieldResolutionType               ResolutionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldResolutionType                               ResolutionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UFieldSystemMetaDataProcessingResolution* UFieldSystemMetaDataProcessingResolution::SetMetaDataaProcessingResolutionType(FieldSystemCore_EFieldResolutionType ResolutionType)
+	class UFieldSystemMetaDataProcessingResolution* UFieldSystemMetaDataProcessingResolution::SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -373,7 +410,6 @@ namespace CG
 		params.ResolutionType = ResolutionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -382,8 +418,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldSystemMetaDataProcessingResolution.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystemMetaDataProcessingResolution.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldSystemMetaDataProcessingResolution::StaticClass()
@@ -396,8 +432,46 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldNodeBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FieldSystemEngine.FieldSystemMetaDataFilter.SetMetaDataFilterType
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFieldFilterType                                   FilterType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UFieldSystemMetaDataFilter* UFieldSystemMetaDataFilter::SetMetaDataFilterType(EFieldFilterType FilterType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemMetaDataFilter.SetMetaDataFilterType");
+		
+		UFieldSystemMetaDataFilter_SetMetaDataFilterType_Params params {};
+		params.FilterType = FilterType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldSystemMetaDataFilter.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UFieldSystemMetaDataFilter::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class FieldSystemEngine.FieldSystemMetaDataFilter");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldNodeBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldNodeBase::StaticClass()
@@ -410,8 +484,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldNodeInt.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldNodeInt.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldNodeInt::StaticClass()
@@ -424,8 +498,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldNodeFloat.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldNodeFloat.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldNodeFloat::StaticClass()
@@ -438,8 +512,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFieldNodeVector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFieldNodeVector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFieldNodeVector::StaticClass()
@@ -452,9 +526,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A3E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.UniformInteger.SetUniformInteger
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -468,7 +542,6 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -477,8 +550,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UUniformInteger.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UUniformInteger.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UUniformInteger::StaticClass()
@@ -491,17 +564,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AC70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.RadialIntMask.SetRadialIntMask
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InteriorValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ExteriorValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_ESetMaskConditionType              SetMaskConditionIn                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ESetMaskConditionType                              SetMaskConditionIn                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class URadialIntMask* URadialIntMask::SetRadialIntMask(float Radius, const struct FVector& Position, int32_t InteriorValue, int32_t ExteriorValue, FieldSystemCore_ESetMaskConditionType SetMaskConditionIn)
+	class URadialIntMask* URadialIntMask::SetRadialIntMask(float Radius, const struct FVector& Position, int32_t InteriorValue, int32_t ExteriorValue, ESetMaskConditionType SetMaskConditionIn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -515,7 +588,6 @@ namespace CG
 		params.SetMaskConditionIn = SetMaskConditionIn;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -524,8 +596,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URadialIntMask.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URadialIntMask.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URadialIntMask::StaticClass()
@@ -538,9 +610,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AF10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.UniformScalar.SetUniformScalar
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -554,7 +626,6 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -563,8 +634,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UUniformScalar.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UUniformScalar.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UUniformScalar::StaticClass()
@@ -577,9 +648,59 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AA50
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FieldSystemEngine.WaveScalar.SetWaveScalar
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Wavelength                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Period                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EWaveFunctionType                                  Function                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldFalloffType                                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UWaveScalar* UWaveScalar::SetWaveScalar(float Magnitude, const struct FVector& Position, float Wavelength, float Period, float Time, EWaveFunctionType Function, EFieldFalloffType Falloff)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.WaveScalar.SetWaveScalar");
+		
+		UWaveScalar_SetWaveScalar_Params params {};
+		params.Magnitude = Magnitude;
+		params.Position = Position;
+		params.Wavelength = Wavelength;
+		params.Period = Period;
+		params.Time = Time;
+		params.Function = Function;
+		params.Falloff = Falloff;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UWaveScalar.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UWaveScalar::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class FieldSystemEngine.WaveScalar");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.RadialFalloff.SetRadialFalloff
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MinRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -587,9 +708,9 @@ namespace CG
 	 * 		float                                              Default                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldFalloffType                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldFalloffType                                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class URadialFalloff* URadialFalloff::SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, const struct FVector& Position, FieldSystemCore_EFieldFalloffType Falloff)
+	class URadialFalloff* URadialFalloff::SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, const struct FVector& Position, EFieldFalloffType Falloff)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -605,7 +726,6 @@ namespace CG
 		params.Falloff = Falloff;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -614,8 +734,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URadialFalloff.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URadialFalloff.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URadialFalloff::StaticClass()
@@ -628,9 +748,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A7D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MinRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -639,9 +759,9 @@ namespace CG
 	 * 		float                                              Distance                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Normal                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldFalloffType                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldFalloffType                                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UPlaneFalloff* UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, const struct FVector& Position, const struct FVector& Normal, FieldSystemCore_EFieldFalloffType Falloff)
+	class UPlaneFalloff* UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, const struct FVector& Position, const struct FVector& Normal, EFieldFalloffType Falloff)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -658,7 +778,6 @@ namespace CG
 		params.Falloff = Falloff;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -667,8 +786,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlaneFalloff.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlaneFalloff.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlaneFalloff::StaticClass()
@@ -681,18 +800,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A0B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.BoxFalloff.SetBoxFalloff
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MinRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Default                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  Transform                                                  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldFalloffType                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldFalloffType                                  Falloff                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UBoxFalloff* UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, const struct FTransform& Transform, FieldSystemCore_EFieldFalloffType Falloff)
+	class UBoxFalloff* UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, const struct FTransform& Transform, EFieldFalloffType Falloff)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -707,7 +826,6 @@ namespace CG
 		params.Falloff = Falloff;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -716,8 +834,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBoxFalloff.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBoxFalloff.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBoxFalloff::StaticClass()
@@ -730,9 +848,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.NoiseField.SetNoiseField
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              MinRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxRange                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -750,7 +868,6 @@ namespace CG
 		params.Transform = Transform;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -759,8 +876,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNoiseField.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNoiseField.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNoiseField::StaticClass()
@@ -773,9 +890,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AE30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.UniformVector.SetUniformVector
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Direction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -791,7 +908,6 @@ namespace CG
 		params.Direction = Direction;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -800,8 +916,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UUniformVector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UUniformVector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UUniformVector::StaticClass()
@@ -814,9 +930,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AE30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.RadialVector.SetRadialVector
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -832,7 +948,6 @@ namespace CG
 		params.Position = Position;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -841,8 +956,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URadialVector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URadialVector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URadialVector::StaticClass()
@@ -855,9 +970,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AF10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.RandomVector.SetRandomVector
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -871,7 +986,6 @@ namespace CG
 		params.Magnitude = Magnitude;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -880,8 +994,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URandomVector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URandomVector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URandomVector::StaticClass()
@@ -894,16 +1008,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.OperatorField.SetOperatorField
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Magnitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		class UFieldNodeBase*                              RightField                                                 (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldNodeBase*                              LeftField                                                  (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldOperationType                Operation                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UFieldNodeBase*                              RightField                                                 (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldOperationType                                Operation                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UOperatorField* UOperatorField::SetOperatorField(float Magnitude, class UFieldNodeBase* RightField, class UFieldNodeBase* LeftField, FieldSystemCore_EFieldOperationType Operation)
+	class UOperatorField* UOperatorField::SetOperatorField(float Magnitude, class UFieldNodeBase* LeftField, class UFieldNodeBase* RightField, EFieldOperationType Operation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -911,12 +1025,11 @@ namespace CG
 		
 		UOperatorField_SetOperatorField_Params params {};
 		params.Magnitude = Magnitude;
-		params.RightField = RightField;
 		params.LeftField = LeftField;
+		params.RightField = RightField;
 		params.Operation = Operation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -925,8 +1038,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UOperatorField.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UOperatorField.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UOperatorField::StaticClass()
@@ -939,9 +1052,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AFD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.ToIntegerField.SetToIntegerField
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFieldNodeFloat*                             FloatField                                                 (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -955,7 +1068,6 @@ namespace CG
 		params.FloatField = FloatField;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -964,8 +1076,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UToIntegerField.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UToIntegerField.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UToIntegerField::StaticClass()
@@ -978,9 +1090,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AFD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.ToFloatField.SetToFloatField
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFieldNodeInt*                               IntegerField                                               (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -994,7 +1106,6 @@ namespace CG
 		params.IntegerField = IntegerField;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1003,8 +1114,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UToFloatField.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UToFloatField.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UToFloatField::StaticClass()
@@ -1017,15 +1128,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296A2E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.CullingField.SetCullingField
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFieldNodeBase*                              Culling                                                    (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UFieldNodeBase*                              Field                                                      (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		FieldSystemCore_EFieldCullingOperationType         Operation                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EFieldCullingOperationType                         Operation                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UCullingField* UCullingField::SetCullingField(class UFieldNodeBase* Culling, class UFieldNodeBase* Field, FieldSystemCore_EFieldCullingOperationType Operation)
+	class UCullingField* UCullingField::SetCullingField(class UFieldNodeBase* Culling, class UFieldNodeBase* Field, EFieldCullingOperationType Operation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1037,7 +1148,6 @@ namespace CG
 		params.Operation = Operation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1046,8 +1156,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCullingField.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCullingField.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCullingField::StaticClass()
@@ -1060,9 +1170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0296AFA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FieldSystemEngine.ReturnResultsTerminal.SetReturnResultsTerminal
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UReturnResultsTerminal* UReturnResultsTerminal::SetReturnResultsTerminal()
 	{
@@ -1073,7 +1183,6 @@ namespace CG
 		UReturnResultsTerminal_SetReturnResultsTerminal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1082,8 +1191,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UReturnResultsTerminal.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UReturnResultsTerminal.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UReturnResultsTerminal::StaticClass()

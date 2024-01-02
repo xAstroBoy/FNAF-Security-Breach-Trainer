@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E6C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPortalComponent.PortalPlacementValid
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UAkPortalComponent::PortalPlacementValid()
 	{
@@ -25,7 +25,6 @@ namespace CG
 		UAkPortalComponent_PortalPlacementValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E6A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPortalComponent.OpenPortal
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkPortalComponent::OpenPortal()
 	{
@@ -47,16 +46,15 @@ namespace CG
 		UAkPortalComponent_OpenPortal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E570
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPortalComponent.GetPrimitiveParent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UPrimitiveComponent* UAkPortalComponent::GetPrimitiveParent()
 	{
@@ -67,7 +65,6 @@ namespace CG
 		UAkPortalComponent_GetPrimitiveParent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -76,11 +73,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPortalComponent.GetCurrentState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AkAudio_EAkAcousticPortalState UAkPortalComponent::GetCurrentState()
+	EAkAcousticPortalState UAkPortalComponent::GetCurrentState()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -89,7 +86,6 @@ namespace CG
 		UAkPortalComponent_GetCurrentState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -98,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E340
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPortalComponent.ClosePortal
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkPortalComponent::ClosePortal()
 	{
@@ -111,15 +107,14 @@ namespace CG
 		UAkPortalComponent_ClosePortal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPortalComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPortalComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPortalComponent::StaticClass()
@@ -132,9 +127,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.OpenPortal
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AAkAcousticPortal::OpenPortal()
 	{
@@ -145,18 +140,17 @@ namespace CG
 		AAkAcousticPortal_OpenPortal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.GetCurrentState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AkAudio_EAkAcousticPortalState AAkAcousticPortal::GetCurrentState()
+	EAkAcousticPortalState AAkAcousticPortal::GetCurrentState()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -165,7 +159,6 @@ namespace CG
 		AAkAcousticPortal_GetCurrentState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -174,9 +167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E320
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.ClosePortal
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AAkAcousticPortal::ClosePortal()
 	{
@@ -187,15 +180,14 @@ namespace CG
 		AAkAcousticPortal_ClosePortal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAkAcousticPortal.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAkAcousticPortal.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAkAcousticPortal::StaticClass()
@@ -208,8 +200,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAudioType.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAudioType.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAudioType::StaticClass()
@@ -222,8 +214,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAcousticTexture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAcousticTexture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAcousticTexture::StaticClass()
@@ -236,8 +228,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAcousticTextureSetComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAcousticTextureSetComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAcousticTextureSetComponent::StaticClass()
@@ -250,9 +242,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F7F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAmbientSound.StopAmbientSound
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AAkAmbientSound::StopAmbientSound()
 	{
@@ -263,16 +255,15 @@ namespace CG
 		AAkAmbientSound_StopAmbientSound_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F7D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAmbientSound.StartAmbientSound
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AAkAmbientSound::StartAmbientSound()
 	{
@@ -283,15 +274,14 @@ namespace CG
 		AAkAmbientSound_StartAmbientSound_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAkAmbientSound.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAkAmbientSound.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAkAmbientSound::StaticClass()
@@ -304,9 +294,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -320,15 +310,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAndroidInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAndroidInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAndroidInitializationSettings::StaticClass()
@@ -341,8 +330,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPlatformInfo::StaticClass()
@@ -355,8 +344,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAndroidPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAndroidPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAndroidPlatformInfo::StaticClass()
@@ -369,8 +358,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetData::StaticClass()
@@ -383,8 +372,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetDataWithMedia.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetDataWithMedia.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetDataWithMedia::StaticClass()
@@ -397,8 +386,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetPlatformData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetPlatformData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetPlatformData::StaticClass()
@@ -411,8 +400,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetBase::StaticClass()
@@ -425,8 +414,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAudioBank.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAudioBank.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAudioBank::StaticClass()
@@ -439,8 +428,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetDataSwitchContainerData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetDataSwitchContainerData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetDataSwitchContainerData::StaticClass()
@@ -453,8 +442,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAssetDataSwitchContainer.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAssetDataSwitchContainer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAssetDataSwitchContainer::StaticClass()
@@ -467,8 +456,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAudioEventData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAudioEventData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAudioEventData::StaticClass()
@@ -481,9 +470,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMinimumDuration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UAkAudioEvent::GetMinimumDuration()
 	{
@@ -494,7 +483,6 @@ namespace CG
 		UAkAudioEvent_GetMinimumDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -503,9 +491,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E510
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMaximumDuration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UAkAudioEvent::GetMaximumDuration()
 	{
@@ -516,7 +504,6 @@ namespace CG
 		UAkAudioEvent_GetMaximumDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -525,9 +512,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E4E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UAkAudioEvent::GetMaxAttenuationRadius()
 	{
@@ -538,7 +525,6 @@ namespace CG
 		UAkAudioEvent_GetMaxAttenuationRadius_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -547,9 +533,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E4B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetIsInfinite
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UAkAudioEvent::GetIsInfinite()
 	{
@@ -560,7 +546,6 @@ namespace CG
 		UAkAudioEvent_GetIsInfinite_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -569,8 +554,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAudioEvent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAudioEvent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAudioEvent::StaticClass()
@@ -583,9 +568,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007651D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.Stop
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkGameObject::Stop()
 	{
@@ -596,16 +581,15 @@ namespace CG
 		UAkGameObject_Stop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764700
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.SetRTPCValue
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkRtpc*                                     RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -625,21 +609,20 @@ namespace CG
 		params.RTPC = RTPC;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00762BF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -657,7 +640,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -667,13 +649,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00762A60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAssociatedAkEvent
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
 	int32_t UAkGameObject::PostAssociatedAkEvent(int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources)
 	{
@@ -687,7 +669,6 @@ namespace CG
 		params.ExternalSources = ExternalSources;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -696,16 +677,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007622E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAkEventAsync
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
 	void UAkGameObject::PostAkEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, int32_t* PlayingID, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
@@ -723,7 +704,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -733,14 +713,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007620C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAkEvent
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		class FString                                      in_EventName                                               (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	int32_t UAkGameObject::PostAkEvent(class UAkAudioEvent* AkEvent, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, const class FString& in_EventName)
@@ -757,7 +737,6 @@ namespace CG
 		params.in_EventName = in_EventName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -766,18 +745,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007616A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameObject.GetRTPCValue
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkRtpc*                                     RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_ERTPCValueType                             InputValueType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ERTPCValueType                                     InputValueType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_ERTPCValueType                             OutputValueType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ERTPCValueType                                     OutputValueType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      RTPC                                                       (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameObject::GetRTPCValue(class UAkRtpc* RTPCValue, AkAudio_ERTPCValueType InputValueType, float* Value, AkAudio_ERTPCValueType* OutputValueType, const class FString& RTPC, int32_t PlayingID)
+	void UAkGameObject::GetRTPCValue(class UAkRtpc* RTPCValue, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType, const class FString& RTPC, int32_t PlayingID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -790,7 +769,6 @@ namespace CG
 		params.PlayingID = PlayingID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -802,8 +780,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkGameObject.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkGameObject.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkGameObject::StaticClass()
@@ -816,9 +794,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F9F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.UseReverbVolumes
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               inUseReverbVolumes                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -832,16 +810,15 @@ namespace CG
 		params.inUseReverbVolumes = inUseReverbVolumes;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F810
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.UseEarlyReflections
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAuxBus*                                   AuxBus                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Order                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -865,16 +842,15 @@ namespace CG
 		params.AuxBusName = AuxBusName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F630
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetSwitch
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkSwitchValue*                              SwitchValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      SwitchGroup                                                (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -892,16 +868,15 @@ namespace CG
 		params.SwitchState = SwitchState;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F5A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bStopWhenOwnerDestroyed                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -915,16 +890,15 @@ namespace CG
 		params.bStopWhenOwnerDestroyed = bStopWhenOwnerDestroyed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetOutputBusVolume
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              BusVolume                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -938,18 +912,17 @@ namespace CG
 		params.BusVolume = BusVolume;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F470
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetListeners
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UAkComponent*>                        Listeners                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UAkComponent*>                        Listeners                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
 	void UAkComponent::SetListeners(TArray<class UAkComponent*> Listeners)
 	{
@@ -961,16 +934,15 @@ namespace CG
 		params.Listeners = Listeners;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F320
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetGameObjectRadius
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              in_outerRadius                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              in_innerRadius                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -986,16 +958,15 @@ namespace CG
 		params.in_innerRadius = in_innerRadius;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F2A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetEarlyReflectionsVolume
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              SendVolume                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1009,16 +980,15 @@ namespace CG
 		params.SendVolume = SendVolume;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F200
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      AuxBusName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1032,16 +1002,15 @@ namespace CG
 		params.AuxBusName = AuxBusName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F100
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.SetAttenuationScalingFactor
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1055,16 +1024,15 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075EEA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostTrigger
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkTrigger*                                  TriggerValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Trigger                                                    (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1080,19 +1048,18 @@ namespace CG
 		params.Trigger = Trigger;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075ECE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PlayingID                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
 	void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32_t* PlayingID, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
@@ -1106,7 +1073,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1116,11 +1082,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075EB80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
 	int32_t UAkComponent::PostAssociatedAkEventAndWaitForEnd(TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
@@ -1134,7 +1100,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1143,9 +1108,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075EAD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventByName
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      in_EventName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1159,7 +1124,6 @@ namespace CG
 		params.in_EventName = in_EventName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1168,13 +1132,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
 	void UAkComponent::PostAkEventAndWaitForEndAsync(class UAkAudioEvent* AkEvent, int32_t* PlayingID, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
@@ -1189,7 +1153,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1199,13 +1162,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E720
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      in_EventName                                               (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
 	int32_t UAkComponent::PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, const class FString& in_EventName, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
@@ -1221,7 +1184,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1230,9 +1192,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E3F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkComponent.GetAttenuationRadius
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UAkComponent::GetAttenuationRadius()
 	{
@@ -1243,7 +1205,6 @@ namespace CG
 		UAkComponent_GetAttenuationRadius_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1252,8 +1213,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkComponent::StaticClass()
@@ -1266,9 +1227,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075EE70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkAudioInputComponent.PostAssociatedAudioInputEvent
-	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	int32_t UAkAudioInputComponent::PostAssociatedAudioInputEvent()
 	{
@@ -1279,7 +1240,6 @@ namespace CG
 		UAkAudioInputComponent_PostAssociatedAudioInputEvent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1288,8 +1248,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAudioInputComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAudioInputComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAudioInputComponent::StaticClass()
@@ -1302,8 +1262,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkAuxBus.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkAuxBus.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkAuxBus::StaticClass()
@@ -1316,9 +1276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F3E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetIsChecked
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InIsChecked                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1332,20 +1292,19 @@ namespace CG
 		params.InIsChecked = InIsChecked;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F180
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetCheckedState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		SlateCore_ECheckBoxState                           InCheckedState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ECheckBoxState                                     InCheckedState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkCheckBox::SetCheckedState(SlateCore_ECheckBoxState InCheckedState)
+	void UAkCheckBox::SetCheckedState(ECheckBoxState InCheckedState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1355,16 +1314,15 @@ namespace CG
 		params.InCheckedState = InCheckedState;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075F060
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetAkItemId
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGuid                                       ItemId                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1378,16 +1336,15 @@ namespace CG
 		params.ItemId = ItemId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075EFC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetAkBoolProperty
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      ItemProperty                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1401,16 +1358,15 @@ namespace CG
 		params.ItemProperty = ItemProperty;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E5D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.IsPressed
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UAkCheckBox::IsPressed()
 	{
@@ -1421,7 +1377,6 @@ namespace CG
 		UAkCheckBox_IsPressed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1430,9 +1385,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E5A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.IsChecked
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UAkCheckBox::IsChecked()
 	{
@@ -1443,7 +1398,6 @@ namespace CG
 		UAkCheckBox_IsChecked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1452,11 +1406,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E420
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetCheckedState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	SlateCore_ECheckBoxState UAkCheckBox::GetCheckedState()
+	ECheckBoxState UAkCheckBox::GetCheckedState()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1465,7 +1419,6 @@ namespace CG
 		UAkCheckBox_GetCheckedState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1474,9 +1427,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E3A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetAkProperty
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkCheckBox::GetAkProperty()
 	{
@@ -1487,7 +1440,6 @@ namespace CG
 		UAkCheckBox_GetAkProperty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1496,9 +1448,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E360
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetAkItemId
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FGuid UAkCheckBox::GetAkItemId()
 	{
@@ -1509,7 +1461,6 @@ namespace CG
 		UAkCheckBox_GetAkItemId_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1518,8 +1469,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkCheckBox.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkCheckBox.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkCheckBox::StaticClass()
@@ -1532,8 +1483,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDrawPortalComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDrawPortalComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDrawPortalComponent::StaticClass()
@@ -1546,8 +1497,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDrawRoomComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDrawRoomComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDrawRoomComponent::StaticClass()
@@ -1560,8 +1511,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkFolder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkFolder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkFolder::StaticClass()
@@ -1574,14 +1525,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UseReverbVolumes
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               inUseReverbVolumes                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor)
+	void UAkGameplayStatics::UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1592,16 +1543,15 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UseEarlyReflections
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkAuxBus*                                   AuxBus                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1611,7 +1561,7 @@ namespace CG
 	 * 		bool                                               SpotReflectors                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      AuxBusName                                                 (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, const class FString& AuxBusName)
+	void UAkGameplayStatics::UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, const class FString& AuxBusName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1627,20 +1577,19 @@ namespace CG
 		params.AuxBusName = AuxBusName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765570
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBankByName
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      BankName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_UnloadBankByName(const class FString& BankName)
+	void UAkGameplayStatics::UnloadBankByName(const class FString& BankName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1650,21 +1599,20 @@ namespace CG
 		params.BankName = BankName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765490
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBankAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioBank*                                Bank                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              BankUnloadedCallback                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_UnloadBankAsync(class UAkAudioBank* Bank, const class FScriptDelegate& BankUnloadedCallback)
+	void UAkGameplayStatics::UnloadBankAsync(class UAkAudioBank* Bank, const class FScriptDelegate& BankUnloadedCallback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1675,23 +1623,22 @@ namespace CG
 		params.BankUnloadedCallback = BankUnloadedCallback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBank
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioBank*                                Bank                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      BankName                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_UnloadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
+	void UAkGameplayStatics::UnloadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1704,18 +1651,17 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765310
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopProfilerCapture
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UAkGameplayStatics::STATIC_StopProfilerCapture()
+	void UAkGameplayStatics::StopProfilerCapture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1724,18 +1670,17 @@ namespace CG
 		UAkGameplayStatics_StopProfilerCapture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007652F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopOutputCapture
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UAkGameplayStatics::STATIC_StopOutputCapture()
+	void UAkGameplayStatics::StopOutputCapture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1744,20 +1689,19 @@ namespace CG
 		UAkGameplayStatics_StopOutputCapture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopAllAmbientSounds
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_StopAllAmbientSounds(class UObject* WorldContextObject)
+	void UAkGameplayStatics::StopAllAmbientSounds(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1767,18 +1711,17 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765260
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopAll
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UAkGameplayStatics::STATIC_StopAll()
+	void UAkGameplayStatics::StopAll()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1787,20 +1730,19 @@ namespace CG
 		UAkGameplayStatics_StopAll_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007651F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopActor
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_StopActor(class AActor* Actor)
+	void UAkGameplayStatics::StopActor(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1810,20 +1752,19 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765140
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartProfilerCapture
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Filename                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_StartProfilerCapture(const class FString& Filename)
+	void UAkGameplayStatics::StartProfilerCapture(const class FString& Filename)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1833,20 +1774,19 @@ namespace CG
 		params.Filename = Filename;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007650B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartOutputCapture
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      Filename                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_StartOutputCapture(const class FString& Filename)
+	void UAkGameplayStatics::StartOutputCapture(const class FString& Filename)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1856,20 +1796,19 @@ namespace CG
 		params.Filename = Filename;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00765040
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartAllAmbientSounds
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_StartAllAmbientSounds(class UObject* WorldContextObject)
+	void UAkGameplayStatics::StartAllAmbientSounds(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1879,16 +1818,15 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764E20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1898,7 +1836,7 @@ namespace CG
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               AutoDestroy                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAkComponent* UAkGameplayStatics::STATIC_SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const class FString& EventName, bool AutoDestroy)
+	class UAkComponent* UAkGameplayStatics::SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const class FString& EventName, bool AutoDestroy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1914,7 +1852,6 @@ namespace CG
 		params.AutoDestroy = AutoDestroy;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1923,16 +1860,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitch
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkSwitchValue*                              SwitchValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        SwitchGroup                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        SwitchState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetSwitch(class UAkSwitchValue* SwitchValue, class AActor* Actor, const class FName& SwitchGroup, const class FName& SwitchState)
+	void UAkGameplayStatics::SetSwitch(class UAkSwitchValue* SwitchValue, class AActor* Actor, const class FName& SwitchGroup, const class FName& SwitchState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1945,22 +1882,21 @@ namespace CG
 		params.SwitchState = SwitchState;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764C00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetState
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkStateValue*                               StateValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        StateGroup                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        State                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetState(class UAkStateValue* StateValue, const class FName& StateGroup, const class FName& State)
+	void UAkGameplayStatics::SetState(class UAkStateValue* StateValue, const class FName& StateGroup, const class FName& State)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1972,22 +1908,21 @@ namespace CG
 		params.State = State;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764AC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSpeakerAngles
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<float>                                      SpeakerAngles                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      SpeakerAngles                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              HeightAngle                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DeviceShareset                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetSpeakerAngles(TArray<float> SpeakerAngles, float HeightAngle, const class FString& DeviceShareset)
+	void UAkGameplayStatics::SetSpeakerAngles(TArray<float> SpeakerAngles, float HeightAngle, const class FString& DeviceShareset)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1999,16 +1934,15 @@ namespace CG
 		params.DeviceShareset = DeviceShareset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764890
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValue
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkRtpc*                                     RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2016,7 +1950,7 @@ namespace CG
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        RTPC                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int32_t InterpolationTimeMs, class AActor* Actor, const class FName& RTPC)
+	void UAkGameplayStatics::SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int32_t InterpolationTimeMs, class AActor* Actor, const class FName& RTPC)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2030,21 +1964,20 @@ namespace CG
 		params.RTPC = RTPC;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764A10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetReflectionsOrder
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Order                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               RefreshPaths                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetReflectionsOrder(int32_t Order, bool RefreshPaths)
+	void UAkGameplayStatics::SetReflectionsOrder(int32_t Order, bool RefreshPaths)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2055,22 +1988,21 @@ namespace CG
 		params.RefreshPaths = RefreshPaths;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPortalToPortalObstruction
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkPortalComponent*                          PortalComponent0                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkPortalComponent*                          PortalComponent1                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ObstructionValue                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetPortalToPortalObstruction(class UAkPortalComponent* PortalComponent0, class UAkPortalComponent* PortalComponent1, float ObstructionValue)
+	void UAkGameplayStatics::SetPortalToPortalObstruction(class UAkPortalComponent* PortalComponent0, class UAkPortalComponent* PortalComponent1, float ObstructionValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2082,22 +2014,21 @@ namespace CG
 		params.ObstructionValue = ObstructionValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764510
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPortalObstructionAndOcclusion
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkPortalComponent*                          PortalComponent                                            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ObstructionValue                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              OcclusionValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetPortalObstructionAndOcclusion(class UAkPortalComponent* PortalComponent, float ObstructionValue, float OcclusionValue)
+	void UAkGameplayStatics::SetPortalObstructionAndOcclusion(class UAkPortalComponent* PortalComponent, float ObstructionValue, float OcclusionValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2109,20 +2040,19 @@ namespace CG
 		params.OcclusionValue = OcclusionValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007644A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPanningRule
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AkAudio_EPanningRule                               PanRule                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EPanningRule                                       PanRule                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetPanningRule(AkAudio_EPanningRule PanRule)
+	void UAkGameplayStatics::SetPanningRule(EPanningRule PanRule)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2132,21 +2062,20 @@ namespace CG
 		params.PanRule = PanRule;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007643E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOutputBusVolume
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              BusVolume                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetOutputBusVolume(float BusVolume, class AActor* Actor)
+	void UAkGameplayStatics::SetOutputBusVolume(float BusVolume, class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2157,20 +2086,19 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOcclusionScalingFactor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              ScalingFactor                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetOcclusionScalingFactor(float ScalingFactor)
+	void UAkGameplayStatics::SetOcclusionScalingFactor(float ScalingFactor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2180,21 +2108,20 @@ namespace CG
 		params.ScalingFactor = ScalingFactor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007642B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              RefreshInterval                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor)
+	void UAkGameplayStatics::SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2205,22 +2132,21 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00764160
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultiplePositions
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkComponent*                                GameObjectAkComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkMultiPositionType                       MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		EAkMultiPositionType                               MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetMultiplePositions(class UAkComponent* GameObjectAkComponent, TArray<struct FTransform> Positions, AkAudio_EAkMultiPositionType MultiPositionType)
+	void UAkGameplayStatics::SetMultiplePositions(class UAkComponent* GameObjectAkComponent, TArray<struct FTransform> Positions, EAkMultiPositionType MultiPositionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2232,23 +2158,22 @@ namespace CG
 		params.MultiPositionType = MultiPositionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultipleChannelMaskEmitterPositions
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkComponent*                                GameObjectAkComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkChannelMask>                      ChannelMasks                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkMultiPositionType                       MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkChannelMask>                      ChannelMasks                                               (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		EAkMultiPositionType                               MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetMultipleChannelMaskEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<struct FAkChannelMask> ChannelMasks, TArray<struct FTransform> Positions, AkAudio_EAkMultiPositionType MultiPositionType)
+	void UAkGameplayStatics::SetMultipleChannelMaskEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<struct FAkChannelMask> ChannelMasks, TArray<struct FTransform> Positions, EAkMultiPositionType MultiPositionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2261,23 +2186,22 @@ namespace CG
 		params.MultiPositionType = MultiPositionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763DD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultipleChannelEmitterPositions
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkComponent*                                GameObjectAkComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<AkAudio_EAkChannelConfiguration>            ChannelMasks                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkMultiPositionType                       MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<EAkChannelConfiguration>                    ChannelMasks                                               (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FTransform>                          Positions                                                  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	 * 		EAkMultiPositionType                               MultiPositionType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetMultipleChannelEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<AkAudio_EAkChannelConfiguration> ChannelMasks, TArray<struct FTransform> Positions, AkAudio_EAkMultiPositionType MultiPositionType)
+	void UAkGameplayStatics::SetMultipleChannelEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<EAkChannelConfiguration> ChannelMasks, TArray<struct FTransform> Positions, EAkMultiPositionType MultiPositionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2290,22 +2214,21 @@ namespace CG
 		params.MultiPositionType = MultiPositionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763CD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetGameObjectToPortalObstruction
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkComponent*                                GameObjectAkComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkPortalComponent*                          PortalComponent                                            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ObstructionValue                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetGameObjectToPortalObstruction(class UAkComponent* GameObjectAkComponent, class UAkPortalComponent* PortalComponent, float ObstructionValue)
+	void UAkGameplayStatics::SetGameObjectToPortalObstruction(class UAkComponent* GameObjectAkComponent, class UAkPortalComponent* PortalComponent, float ObstructionValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2317,21 +2240,20 @@ namespace CG
 		params.ObstructionValue = ObstructionValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763BE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetCurrentAudioCultureAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      AudioCulture                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Completed                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetCurrentAudioCultureAsync(const class FString& AudioCulture, const class FScriptDelegate& Completed)
+	void UAkGameplayStatics::SetCurrentAudioCultureAsync(const class FString& AudioCulture, const class FScriptDelegate& Completed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2342,22 +2264,21 @@ namespace CG
 		params.Completed = Completed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763AA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetCurrentAudioCulture
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      AudioCulture                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetCurrentAudioCulture(const class FString& AudioCulture, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
+	void UAkGameplayStatics::SetCurrentAudioCulture(const class FString& AudioCulture, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2369,21 +2290,20 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007639D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetBusConfig
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      BusName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkChannelConfiguration                    ChannelConfiguration                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAkChannelConfiguration                            ChannelConfiguration                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_SetBusConfig(const class FString& BusName, AkAudio_EAkChannelConfiguration ChannelConfiguration)
+	void UAkGameplayStatics::SetBusConfig(const class FString& BusName, EAkChannelConfiguration ChannelConfiguration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2394,23 +2314,22 @@ namespace CG
 		params.ChannelConfiguration = ChannelConfiguration;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007638A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ResetRTPCValue
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkRtpc*                                     RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InterpolationTimeMs                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        RTPC                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_ResetRTPCValue(class UAkRtpc* RTPCValue, int32_t InterpolationTimeMs, class AActor* Actor, const class FName& RTPC)
+	void UAkGameplayStatics::ResetRTPCValue(class UAkRtpc* RTPCValue, int32_t InterpolationTimeMs, class AActor* Actor, const class FName& RTPC)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2423,20 +2342,19 @@ namespace CG
 		params.RTPC = RTPC;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ReplaceMainOutput
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkOutputSettings                           MainOutputSettings                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_ReplaceMainOutput(const struct FAkOutputSettings& MainOutputSettings)
+	void UAkGameplayStatics::ReplaceMainOutput(const struct FAkOutputSettings& MainOutputSettings)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2446,22 +2364,21 @@ namespace CG
 		params.MainOutputSettings = MainOutputSettings;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostTrigger
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkTrigger*                                  TriggerValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Trigger                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, const class FName& Trigger)
+	void UAkGameplayStatics::PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, const class FName& Trigger)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2473,22 +2390,21 @@ namespace CG
 		params.Trigger = Trigger;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventByName
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_PostEventByName(const class FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed)
+	void UAkGameplayStatics::PostEventByName(const class FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2500,16 +2416,15 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763430
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAttached
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2517,7 +2432,7 @@ namespace CG
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkGameplayStatics::STATIC_PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, const class FName& AttachPointName, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
+	int32_t UAkGameplayStatics::PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, const class FName& AttachPointName, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2531,7 +2446,6 @@ namespace CG
 		params.EventName = EventName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2540,16 +2454,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007632D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    Orientation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_PostEventAtLocationByName(const class FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject)
+	void UAkGameplayStatics::PostEventAtLocationByName(const class FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2562,16 +2476,15 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00763130
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAtLocation
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2579,7 +2492,7 @@ namespace CG
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkGameplayStatics::STATIC_PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const class FString& EventName, class UObject* WorldContextObject)
+	int32_t UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const class FString& EventName, class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2593,7 +2506,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2602,19 +2514,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00762E60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEvent
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkGameplayStatics::STATIC_PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
+	int32_t UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2630,7 +2542,6 @@ namespace CG
 		params.EventName = EventName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2639,18 +2550,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00762820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEventAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t* PlayingID, bool bStopWhenAttachedToDestroyed, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
+	void UAkGameplayStatics::PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t* PlayingID, bool bStopWhenAttachedToDestroyed, TArray<struct FAkExternalSourceInfo> ExternalSources, const struct FLatentActionInfo& LatentInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2664,7 +2575,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2674,18 +2584,18 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00762590
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEvent
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		class FString                                      EventName                                                  (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkGameplayStatics::STATIC_PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, TArray<struct FAkExternalSourceInfo> ExternalSources, const class FString& EventName, const struct FLatentActionInfo& LatentInfo)
+	int32_t UAkGameplayStatics::PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, TArray<struct FAkExternalSourceInfo> ExternalSources, const class FString& EventName, const struct FLatentActionInfo& LatentInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2700,7 +2610,6 @@ namespace CG
 		params.LatentInfo = LatentInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2709,11 +2618,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007620A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadInitBank
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UAkGameplayStatics::STATIC_LoadInitBank()
+	void UAkGameplayStatics::LoadInitBank()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2722,21 +2631,20 @@ namespace CG
 		UAkGameplayStatics_LoadInitBank_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761FB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBanks
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UAkAudioBank*>                        SoundBanks                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UAkAudioBank*>                        SoundBanks                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               SynchronizeSoundBanks                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool SynchronizeSoundBanks)
+	void UAkGameplayStatics::LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool SynchronizeSoundBanks)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2747,20 +2655,19 @@ namespace CG
 		params.SynchronizeSoundBanks = SynchronizeSoundBanks;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761F20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBankByName
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      BankName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_LoadBankByName(const class FString& BankName)
+	void UAkGameplayStatics::LoadBankByName(const class FString& BankName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2770,21 +2677,20 @@ namespace CG
 		params.BankName = BankName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761E40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBankAsync
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioBank*                                Bank                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              BankLoadedCallback                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_LoadBankAsync(class UAkAudioBank* Bank, const class FScriptDelegate& BankLoadedCallback)
+	void UAkGameplayStatics::LoadBankAsync(class UAkAudioBank* Bank, const class FScriptDelegate& BankLoadedCallback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2795,23 +2701,22 @@ namespace CG
 		params.BankLoadedCallback = BankLoadedCallback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761CE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBank
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioBank*                                Bank                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      BankName                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_LoadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
+	void UAkGameplayStatics::LoadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2824,20 +2729,19 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761C60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.IsGame
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAkGameplayStatics::STATIC_IsGame(class UObject* WorldContextObject)
+	bool UAkGameplayStatics::IsGame(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2847,7 +2751,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2856,11 +2759,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.IsEditor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UAkGameplayStatics::STATIC_IsEditor()
+	bool UAkGameplayStatics::IsEditor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2869,7 +2772,6 @@ namespace CG
 		UAkGameplayStatics_IsEditor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2878,15 +2780,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761B00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetSpeakerAngles
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<float>                                      SpeakerAngles                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<float>                                      SpeakerAngles                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		float                                              HeightAngle                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DeviceShareset                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_GetSpeakerAngles(TArray<float>* SpeakerAngles, float* HeightAngle, const class FString& DeviceShareset)
+	void UAkGameplayStatics::GetSpeakerAngles(TArray<float>* SpeakerAngles, float* HeightAngle, const class FString& DeviceShareset)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2896,7 +2798,6 @@ namespace CG
 		params.DeviceShareset = DeviceShareset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2908,19 +2809,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007618E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetRTPCValue
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkRtpc*                                     RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_ERTPCValueType                             InputValueType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ERTPCValueType                                     InputValueType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_ERTPCValueType                             OutputValueType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ERTPCValueType                                     OutputValueType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        RTPC                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_GetRTPCValue(class UAkRtpc* RTPCValue, int32_t PlayingID, AkAudio_ERTPCValueType InputValueType, float* Value, AkAudio_ERTPCValueType* OutputValueType, class AActor* Actor, const class FName& RTPC)
+	void UAkGameplayStatics::GetRTPCValue(class UAkRtpc* RTPCValue, int32_t PlayingID, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType, class AActor* Actor, const class FName& RTPC)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2934,7 +2835,6 @@ namespace CG
 		params.RTPC = RTPC;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2946,11 +2846,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetOcclusionScalingFactor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	float UAkGameplayStatics::STATIC_GetOcclusionScalingFactor()
+	float UAkGameplayStatics::GetOcclusionScalingFactor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2959,7 +2859,6 @@ namespace CG
 		UAkGameplayStatics_GetOcclusionScalingFactor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2968,11 +2867,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007615F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetCurrentAudioCulture
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class FString UAkGameplayStatics::STATIC_GetCurrentAudioCulture()
+	class FString UAkGameplayStatics::GetCurrentAudioCulture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2981,7 +2880,6 @@ namespace CG
 		UAkGameplayStatics_GetCurrentAudioCulture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2990,11 +2888,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761510
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAvailableAudioCultures
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class FString> UAkGameplayStatics::STATIC_GetAvailableAudioCultures()
+	TArray<class FString> UAkGameplayStatics::GetAvailableAudioCultures()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3003,7 +2901,6 @@ namespace CG
 		UAkGameplayStatics_GetAvailableAudioCultures_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3012,14 +2909,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007612C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkMediaAssetUserData
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkMediaAsset*                               Instance                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Type                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UObject* UAkGameplayStatics::STATIC_GetAkMediaAssetUserData(class UAkMediaAsset* Instance, class UClass* Type)
+	class UObject* UAkGameplayStatics::GetAkMediaAssetUserData(class UAkMediaAsset* Instance, class UClass* Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3030,7 +2927,6 @@ namespace CG
 		params.Type = Type;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3039,17 +2935,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761380
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkComponent
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             AttachToComponent                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               ComponentCreated                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        AttachPointName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		Engine_EAttachLocation                             LocationType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAttachLocation                                    LocationType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UAkComponent* UAkGameplayStatics::STATIC_GetAkComponent(class USceneComponent* AttachToComponent, bool* ComponentCreated, const class FName& AttachPointName, const struct FVector& Location, Engine_EAttachLocation LocationType)
+	class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* AttachToComponent, bool* ComponentCreated, const class FName& AttachPointName, const struct FVector& Location, EAttachLocation LocationType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3062,7 +2958,6 @@ namespace CG
 		params.LocationType = LocationType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3074,14 +2969,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007612C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkAudioTypeUserData
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioType*                                Instance                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Type                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UObject* UAkGameplayStatics::STATIC_GetAkAudioTypeUserData(class UAkAudioType* Instance, class UClass* Type)
+	class UObject* UAkGameplayStatics::GetAkAudioTypeUserData(class UAkAudioType* Instance, class UClass* Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3092,7 +2987,6 @@ namespace CG
 		params.Type = Type;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3101,16 +2995,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00761190
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ExecuteActionOnPlayingID
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AkAudio_EAkActionOnEventType                       ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAkActionOnEventType                               ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TransitionDuration                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkCurveInterpolation                      FadeCurve                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAkCurveInterpolation                              FadeCurve                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_ExecuteActionOnPlayingID(AkAudio_EAkActionOnEventType ActionType, int32_t PlayingID, int32_t TransitionDuration, AkAudio_EAkCurveInterpolation FadeCurve)
+	void UAkGameplayStatics::ExecuteActionOnPlayingID(EAkActionOnEventType ActionType, int32_t PlayingID, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3123,25 +3017,24 @@ namespace CG
 		params.FadeCurve = FadeCurve;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00760FE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ExecuteActionOnEvent
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkActionOnEventType                       ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAkActionOnEventType                               ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TransitionDuration                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AkAudio_EAkCurveInterpolation                      FadeCurve                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAkCurveInterpolation                              FadeCurve                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PlayingID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, AkAudio_EAkActionOnEventType ActionType, class AActor* Actor, int32_t TransitionDuration, AkAudio_EAkCurveInterpolation FadeCurve, int32_t PlayingID)
+	void UAkGameplayStatics::ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, EAkActionOnEventType ActionType, class AActor* Actor, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve, int32_t PlayingID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3156,18 +3049,17 @@ namespace CG
 		params.PlayingID = PlayingID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00760FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ClearBanks
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UAkGameplayStatics::STATIC_ClearBanks()
+	void UAkGameplayStatics::ClearBanks()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3176,20 +3068,19 @@ namespace CG
 		UAkGameplayStatics_ClearBanks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00760F20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.CancelEventCallback
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_CancelEventCallback(const class FScriptDelegate& PostEventCallback)
+	void UAkGameplayStatics::CancelEventCallback(const class FScriptDelegate& PostEventCallback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3199,20 +3090,19 @@ namespace CG
 		params.PostEventCallback = PostEventCallback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00760E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      MarkerText                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkGameplayStatics::STATIC_AddOutputCaptureMarker(const class FString& MarkerText)
+	void UAkGameplayStatics::AddOutputCaptureMarker(const class FString& MarkerText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3222,15 +3112,14 @@ namespace CG
 		params.MarkerText = MarkerText;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkGameplayStatics.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkGameplayStatics.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkGameplayStatics::StaticClass()
@@ -3243,8 +3132,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkCallbackInfo::StaticClass()
@@ -3257,8 +3146,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkEventCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkEventCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkEventCallbackInfo::StaticClass()
@@ -3271,11 +3160,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	AkAudio_EAkMidiEventType UAkMIDIEventCallbackInfo::GetType()
+	EAkMidiEventType UAkMIDIEventCallbackInfo::GetType()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3284,7 +3173,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3293,9 +3181,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetProgramChange
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiProgramChange                        AsProgramChange                                            (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3308,7 +3196,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetProgramChange_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3320,9 +3207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A1D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetPitchBend
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiPitchBend                            AsPitchBend                                                (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3335,7 +3222,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetPitchBend_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3347,9 +3233,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteOn
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiNoteOnOff                            AsNoteOn                                                   (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3362,7 +3248,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetNoteOn_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3374,9 +3259,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A070
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteOff
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiNoteOnOff                            AsNoteOff                                                  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3389,7 +3274,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetNoteOff_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3401,9 +3285,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteAftertouch
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiNoteAftertouch                       AsNoteAftertouch                                           (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3416,7 +3300,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetNoteAftertouch_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3428,9 +3311,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769F10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetGeneric
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiGeneric                              AsGeneric                                                  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3443,7 +3326,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetGeneric_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3455,9 +3337,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769E60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetChannelAftertouch
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiChannelAftertouch                    AsChannelAftertouch                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3470,7 +3352,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetChannelAftertouch_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3482,9 +3363,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769E30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetChannel
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	unsigned char UAkMIDIEventCallbackInfo::GetChannel()
 	{
@@ -3495,7 +3376,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetChannel_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3504,9 +3384,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769D80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetCc
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkMidiCc                                   AsCc                                                       (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3519,7 +3399,6 @@ namespace CG
 		UAkMIDIEventCallbackInfo_GetCc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3531,8 +3410,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMIDIEventCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMIDIEventCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMIDIEventCallbackInfo::StaticClass()
@@ -3545,8 +3424,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMarkerCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMarkerCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMarkerCallbackInfo::StaticClass()
@@ -3559,8 +3438,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkDurationCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkDurationCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkDurationCallbackInfo::StaticClass()
@@ -3573,8 +3452,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMusicSyncCallbackInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMusicSyncCallbackInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMusicSyncCallbackInfo::StaticClass()
@@ -3587,9 +3466,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A3A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.UpdateGeometry
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkGeometryComponent::UpdateGeometry()
 	{
@@ -3600,16 +3479,15 @@ namespace CG
 		UAkGeometryComponent_UpdateGeometry_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A380
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.SendGeometry
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkGeometryComponent::SendGeometry()
 	{
@@ -3620,16 +3498,15 @@ namespace CG
 		UAkGeometryComponent_SendGeometry_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A360
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.RemoveGeometry
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkGeometryComponent::RemoveGeometry()
 	{
@@ -3640,16 +3517,15 @@ namespace CG
 		UAkGeometryComponent_RemoveGeometry_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00769D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.ConvertMesh
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkGeometryComponent::ConvertMesh()
 	{
@@ -3660,15 +3536,14 @@ namespace CG
 		UAkGeometryComponent_ConvertMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkGeometryComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkGeometryComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkGeometryComponent::StaticClass()
@@ -3681,8 +3556,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkGroupValue.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkGroupValue.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkGroupValue::StaticClass()
@@ -3695,9 +3570,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3711,15 +3586,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkHololensInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkHololensInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkHololensInitializationSettings::StaticClass()
@@ -3732,8 +3606,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkHololensPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkHololensPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkHololensPlatformInfo::StaticClass()
@@ -3746,8 +3620,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkInitBankAssetData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkInitBankAssetData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkInitBankAssetData::StaticClass()
@@ -3760,8 +3634,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkInitBank.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkInitBank.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkInitBank::StaticClass()
@@ -3774,8 +3648,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkIOSInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkIOSInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkIOSInitializationSettings::StaticClass()
@@ -3788,8 +3662,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkIOSPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkIOSPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkIOSPlatformInfo::StaticClass()
@@ -3802,13 +3676,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToText
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkBoolPropertyToControl                    INAkBoolPropertyToControl                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FText UAkItemBoolPropertiesConv::STATIC_Conv_FAkBoolPropertyToControlToText(const struct FAkBoolPropertyToControl& INAkBoolPropertyToControl)
+	class FText UAkItemBoolPropertiesConv::Conv_FAkBoolPropertyToControlToText(const struct FAkBoolPropertyToControl& INAkBoolPropertyToControl)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3818,7 +3692,6 @@ namespace CG
 		params.INAkBoolPropertyToControl = INAkBoolPropertyToControl;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3827,13 +3700,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkBoolPropertyToControl                    INAkBoolPropertyToControl                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkItemBoolPropertiesConv::STATIC_Conv_FAkBoolPropertyToControlToString(const struct FAkBoolPropertyToControl& INAkBoolPropertyToControl)
+	class FString UAkItemBoolPropertiesConv::Conv_FAkBoolPropertyToControlToString(const struct FAkBoolPropertyToControl& INAkBoolPropertyToControl)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3843,7 +3716,6 @@ namespace CG
 		params.INAkBoolPropertyToControl = INAkBoolPropertyToControl;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3852,8 +3724,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkItemBoolPropertiesConv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkItemBoolPropertiesConv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkItemBoolPropertiesConv::StaticClass()
@@ -3866,9 +3738,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EAB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.SetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      newText                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3882,16 +3754,15 @@ namespace CG
 		params.newText = newText;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E6A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.GetSelectedProperty
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkItemBoolProperties::GetSelectedProperty()
 	{
@@ -3902,7 +3773,6 @@ namespace CG
 		UAkItemBoolProperties_GetSelectedProperty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3911,9 +3781,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E620
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.GetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkItemBoolProperties::GetSearchText()
 	{
@@ -3924,7 +3794,6 @@ namespace CG
 		UAkItemBoolProperties_GetSearchText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3933,8 +3802,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkItemBoolProperties.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkItemBoolProperties.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkItemBoolProperties::StaticClass()
@@ -3947,13 +3816,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToText
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkPropertyToControl                        INAkPropertyToControl                                      (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FText UAkItemPropertiesConv::STATIC_Conv_FAkPropertyToControlToText(const struct FAkPropertyToControl& INAkPropertyToControl)
+	class FText UAkItemPropertiesConv::Conv_FAkPropertyToControlToText(const struct FAkPropertyToControl& INAkPropertyToControl)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3963,7 +3832,6 @@ namespace CG
 		params.INAkPropertyToControl = INAkPropertyToControl;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3972,13 +3840,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkPropertyToControl                        INAkPropertyToControl                                      (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkItemPropertiesConv::STATIC_Conv_FAkPropertyToControlToString(const struct FAkPropertyToControl& INAkPropertyToControl)
+	class FString UAkItemPropertiesConv::Conv_FAkPropertyToControlToString(const struct FAkPropertyToControl& INAkPropertyToControl)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3988,7 +3856,6 @@ namespace CG
 		params.INAkPropertyToControl = INAkPropertyToControl;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3997,8 +3864,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkItemPropertiesConv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkItemPropertiesConv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkItemPropertiesConv::StaticClass()
@@ -4011,9 +3878,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EAB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemProperties.SetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      newText                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4027,16 +3894,15 @@ namespace CG
 		params.newText = newText;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E720
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemProperties.GetSelectedProperty
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkItemProperties::GetSelectedProperty()
 	{
@@ -4047,7 +3913,6 @@ namespace CG
 		UAkItemProperties_GetSelectedProperty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4056,9 +3921,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E620
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkItemProperties.GetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkItemProperties::GetSearchText()
 	{
@@ -4069,7 +3934,6 @@ namespace CG
 		UAkItemProperties_GetSearchText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4078,8 +3942,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkItemProperties.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkItemProperties.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkItemProperties::StaticClass()
@@ -4092,9 +3956,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E2F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkLateReverbComponent.AssociateAkTextureSetComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAcousticTextureSetComponent*              textureSetComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4108,15 +3972,14 @@ namespace CG
 		params.textureSetComponent = textureSetComponent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkLateReverbComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkLateReverbComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkLateReverbComponent::StaticClass()
@@ -4129,9 +3992,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4145,15 +4008,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkLinuxInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkLinuxInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkLinuxInitializationSettings::StaticClass()
@@ -4166,8 +4028,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkLinuxPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkLinuxPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkLinuxPlatformInfo::StaticClass()
@@ -4180,9 +4042,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4196,15 +4058,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMacInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMacInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMacInitializationSettings::StaticClass()
@@ -4217,8 +4078,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMacPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMacPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMacPlatformInfo::StaticClass()
@@ -4231,8 +4092,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMediaAssetData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMediaAssetData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMediaAssetData::StaticClass()
@@ -4245,8 +4106,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMediaAsset.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMediaAsset.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMediaAsset::StaticClass()
@@ -4259,8 +4120,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkLocalizedMediaAsset.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkLocalizedMediaAsset.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkLocalizedMediaAsset::StaticClass()
@@ -4273,8 +4134,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkExternalMediaAsset.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkExternalMediaAsset.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkExternalMediaAsset::StaticClass()
@@ -4287,8 +4148,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPlatformInitialisationSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPlatformInitialisationSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPlatformInitialisationSettingsBase::StaticClass()
@@ -4301,9 +4162,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E7D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4317,15 +4178,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPS4InitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPS4InitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPS4InitializationSettings::StaticClass()
@@ -4338,8 +4198,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPS4PlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPS4PlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPS4PlatformInfo::StaticClass()
@@ -4352,8 +4212,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPS5InitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPS5InitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPS5InitializationSettings::StaticClass()
@@ -4366,8 +4226,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkDPXInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkDPXInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkDPXInitializationSettings::StaticClass()
@@ -4380,8 +4240,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkPS5PlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkPS5PlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkPS5PlatformInfo::StaticClass()
@@ -4394,8 +4254,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAkReverbVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAkReverbVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAkReverbVolume::StaticClass()
@@ -4408,9 +4268,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E5F0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AkAudio.AkRoomComponent.SetGeometryComponent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UAkAcousticTextureSetComponent*              textureSetComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UAkRoomComponent::SetGeometryComponent(class UAkAcousticTextureSetComponent* textureSetComponent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AkAudio.AkRoomComponent.SetGeometryComponent");
+		
+		UAkRoomComponent_SetGeometryComponent_Params params {};
+		params.textureSetComponent = textureSetComponent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkRoomComponent.GetPrimitiveParent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UPrimitiveComponent* UAkRoomComponent::GetPrimitiveParent()
 	{
@@ -4421,7 +4303,6 @@ namespace CG
 		UAkRoomComponent_GetPrimitiveParent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4430,8 +4311,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkRoomComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkRoomComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkRoomComponent::StaticClass()
@@ -4444,8 +4325,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkRtpc.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkRtpc.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkRtpc::StaticClass()
@@ -4458,8 +4339,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSettings::StaticClass()
@@ -4472,8 +4353,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSettingsPerUser.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSettingsPerUser.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSettingsPerUser::StaticClass()
@@ -4486,9 +4367,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076ECD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetValue
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4502,16 +4383,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EC50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetStepSize
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4525,16 +4405,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EBD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetSliderHandleColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4548,16 +4427,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EB50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetSliderBarColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4571,16 +4449,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076EA20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetLocked
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4594,16 +4471,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E990
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetIndentHandle
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InValue                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4617,16 +4493,15 @@ namespace CG
 		params.InValue = InValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E8F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetAkSliderItemProperty
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      ItemProperty                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4640,16 +4515,15 @@ namespace CG
 		params.ItemProperty = ItemProperty;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.SetAkSliderItemId
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGuid                                       ItemId                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4663,16 +4537,15 @@ namespace CG
 		params.ItemId = ItemId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E7A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.GetValue
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UAkSlider::GetValue()
 	{
@@ -4683,7 +4556,6 @@ namespace CG
 		UAkSlider_GetValue_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4692,9 +4564,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E5A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.GetAkSliderItemProperty
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkSlider::GetAkSliderItemProperty()
 	{
@@ -4705,7 +4577,6 @@ namespace CG
 		UAkSlider_GetAkSliderItemProperty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4714,9 +4585,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSlider.GetAkSliderItemId
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FGuid UAkSlider::GetAkSliderItemId()
 	{
@@ -4727,7 +4598,6 @@ namespace CG
 		UAkSlider_GetAkSliderItemId_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4736,8 +4606,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSlider.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSlider.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSlider::StaticClass()
@@ -4750,8 +4620,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAkSpatialAudioVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAkSpatialAudioVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAkSpatialAudioVolume::StaticClass()
@@ -4764,8 +4634,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAkSpotReflector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAkSpotReflector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AAkSpotReflector::StaticClass()
@@ -4778,8 +4648,64 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkStateValue.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkStadiaInitializationSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAkStadiaInitializationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AkAudio.AkStadiaInitializationSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkQuailInitializationSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAkQuailInitializationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AkAudio.AkQuailInitializationSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkStadiaPlatformInfo.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAkStadiaPlatformInfo::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AkAudio.AkStadiaPlatformInfo");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkQuailPlatformInfo.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAkQuailPlatformInfo::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AkAudio.AkQuailPlatformInfo");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkStateValue.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkStateValue::StaticClass()
@@ -4792,8 +4718,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSubmixInputComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSubmixInputComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSubmixInputComponent::StaticClass()
@@ -4806,9 +4732,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007749D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkSurfaceReflectorSetComponent::UpdateSurfaceReflectorSet()
 	{
@@ -4819,16 +4745,15 @@ namespace CG
 		UAkSurfaceReflectorSetComponent_UpdateSurfaceReflectorSet_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773920
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 	{
@@ -4839,16 +4764,15 @@ namespace CG
 		UAkSurfaceReflectorSetComponent_SendSurfaceReflectorSet_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAkSurfaceReflectorSetComponent::RemoveSurfaceReflectorSet()
 	{
@@ -4859,15 +4783,14 @@ namespace CG
 		UAkSurfaceReflectorSetComponent_RemoveSurfaceReflectorSet_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSurfaceReflectorSetComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSurfaceReflectorSetComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSurfaceReflectorSetComponent::StaticClass()
@@ -4880,9 +4803,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4896,15 +4819,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSwitchInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSwitchInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSwitchInitializationSettings::StaticClass()
@@ -4917,8 +4839,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSwitchPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSwitchPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSwitchPlatformInfo::StaticClass()
@@ -4931,8 +4853,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkSwitchValue.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkSwitchValue.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkSwitchValue::StaticClass()
@@ -4945,8 +4867,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkTrigger.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkTrigger.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkTrigger::StaticClass()
@@ -4959,8 +4881,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkTVOSInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkTVOSInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkTVOSInitializationSettings::StaticClass()
@@ -4973,8 +4895,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkTVOSPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkTVOSPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkTVOSPlatformInfo::StaticClass()
@@ -4987,14 +4909,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007748B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Unsubscribe
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiSubscriptionId                      SubscriptionId                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               UnsubscriptionDone                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiCalls::STATIC_Unsubscribe(const struct FAkWaapiSubscriptionId& SubscriptionId, bool* UnsubscriptionDone)
+	struct FAKWaapiJsonObject UAkWaapiCalls::Unsubscribe(const struct FAkWaapiSubscriptionId& SubscriptionId, bool* UnsubscriptionDone)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5004,7 +4926,6 @@ namespace CG
 		params.SubscriptionId = SubscriptionId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5016,9 +4937,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00774640
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.SubscribeToWaapi
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiUri                                 WaapiUri                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          WaapiOptions                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -5026,7 +4947,7 @@ namespace CG
 	 * 		struct FAkWaapiSubscriptionId                      SubscriptionId                                             (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               SubscriptionDone                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiCalls::STATIC_SubscribeToWaapi(const struct FAkWaapiUri& WaapiUri, const struct FAKWaapiJsonObject& WaapiOptions, const class FScriptDelegate& Callback, struct FAkWaapiSubscriptionId* SubscriptionId, bool* SubscriptionDone)
+	struct FAKWaapiJsonObject UAkWaapiCalls::SubscribeToWaapi(const struct FAkWaapiUri& WaapiUri, const struct FAKWaapiJsonObject& WaapiOptions, const class FScriptDelegate& Callback, struct FAkWaapiSubscriptionId* SubscriptionId, bool* SubscriptionDone)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5038,7 +4959,6 @@ namespace CG
 		params.Callback = Callback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5052,14 +4972,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00774570
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.SetSubscriptionID
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiSubscriptionId                      Subscription                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ID                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAkWaapiCalls::STATIC_SetSubscriptionID(const struct FAkWaapiSubscriptionId& Subscription, int32_t ID)
+	void UAkWaapiCalls::SetSubscriptionID(const struct FAkWaapiSubscriptionId& Subscription, int32_t ID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5070,20 +4990,19 @@ namespace CG
 		params.ID = ID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.RegisterWaapiProjectLoadedCallback
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UAkWaapiCalls::STATIC_RegisterWaapiProjectLoadedCallback(const class FScriptDelegate& Callback)
+	bool UAkWaapiCalls::RegisterWaapiProjectLoadedCallback(const class FScriptDelegate& Callback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5093,7 +5012,6 @@ namespace CG
 		params.Callback = Callback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5102,13 +5020,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007737A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.RegisterWaapiConnectionLostCallback
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UAkWaapiCalls::STATIC_RegisterWaapiConnectionLostCallback(const class FScriptDelegate& Callback)
+	bool UAkWaapiCalls::RegisterWaapiConnectionLostCallback(const class FScriptDelegate& Callback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5118,7 +5036,6 @@ namespace CG
 		params.Callback = Callback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5127,13 +5044,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.GetSubscriptionID
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiSubscriptionId                      Subscription                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkWaapiCalls::STATIC_GetSubscriptionID(const struct FAkWaapiSubscriptionId& Subscription)
+	int32_t UAkWaapiCalls::GetSubscriptionID(const struct FAkWaapiSubscriptionId& Subscription)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5143,7 +5060,6 @@ namespace CG
 		params.Subscription = Subscription;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5152,13 +5068,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772B70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToText
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiSubscriptionId                      INAkWaapiSubscriptionId                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class FText UAkWaapiCalls::STATIC_Conv_FAkWaapiSubscriptionIdToText(const struct FAkWaapiSubscriptionId& INAkWaapiSubscriptionId)
+	class FText UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToText(const struct FAkWaapiSubscriptionId& INAkWaapiSubscriptionId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5168,7 +5084,6 @@ namespace CG
 		params.INAkWaapiSubscriptionId = INAkWaapiSubscriptionId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5177,13 +5092,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772AA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiSubscriptionId                      INAkWaapiSubscriptionId                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkWaapiCalls::STATIC_Conv_FAkWaapiSubscriptionIdToString(const struct FAkWaapiSubscriptionId& INAkWaapiSubscriptionId)
+	class FString UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToString(const struct FAkWaapiSubscriptionId& INAkWaapiSubscriptionId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5193,7 +5108,6 @@ namespace CG
 		params.INAkWaapiSubscriptionId = INAkWaapiSubscriptionId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5202,15 +5116,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.CallWaapi
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiUri                                 WaapiUri                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          WaapiArgs                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          WaapiOptions                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiCalls::STATIC_CallWaapi(const struct FAkWaapiUri& WaapiUri, const struct FAKWaapiJsonObject& WaapiArgs, const struct FAKWaapiJsonObject& WaapiOptions)
+	struct FAKWaapiJsonObject UAkWaapiCalls::CallWaapi(const struct FAkWaapiUri& WaapiUri, const struct FAKWaapiJsonObject& WaapiArgs, const struct FAKWaapiJsonObject& WaapiOptions)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5222,7 +5136,6 @@ namespace CG
 		params.WaapiOptions = WaapiOptions;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5231,8 +5144,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWaapiCalls.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWaapiCalls.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWaapiCalls::StaticClass()
@@ -5245,13 +5158,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToText
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          INAkWaapiFieldNames                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FText USAkWaapiFieldNamesConv::STATIC_Conv_FAkWaapiFieldNamesToText(const struct FAkWaapiFieldNames& INAkWaapiFieldNames)
+	class FText USAkWaapiFieldNamesConv::Conv_FAkWaapiFieldNamesToText(const struct FAkWaapiFieldNames& INAkWaapiFieldNames)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5261,7 +5174,6 @@ namespace CG
 		params.INAkWaapiFieldNames = INAkWaapiFieldNames;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5270,13 +5182,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          INAkWaapiFieldNames                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FString USAkWaapiFieldNamesConv::STATIC_Conv_FAkWaapiFieldNamesToString(const struct FAkWaapiFieldNames& INAkWaapiFieldNames)
+	class FString USAkWaapiFieldNamesConv::Conv_FAkWaapiFieldNamesToString(const struct FAkWaapiFieldNames& INAkWaapiFieldNames)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5286,7 +5198,6 @@ namespace CG
 		params.INAkWaapiFieldNames = INAkWaapiFieldNames;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5295,8 +5206,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USAkWaapiFieldNamesConv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USAkWaapiFieldNamesConv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USAkWaapiFieldNamesConv::StaticClass()
@@ -5309,15 +5220,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007743A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetStringField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FString                                      FieldValue                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetStringField(const struct FAkWaapiFieldNames& FieldName, const class FString& FieldValue, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetStringField(const struct FAkWaapiFieldNames& FieldName, const class FString& FieldValue, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5329,7 +5240,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5338,15 +5248,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007740F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetObjectField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          FieldValue                                                 (Parm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetObjectField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& FieldValue, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetObjectField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& FieldValue, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5358,7 +5268,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5367,15 +5276,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773F30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetNumberField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              FieldValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetNumberField(const struct FAkWaapiFieldNames& FieldName, float FieldValue, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetNumberField(const struct FAkWaapiFieldNames& FieldName, float FieldValue, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5387,7 +5296,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5396,15 +5304,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetBoolField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               FieldValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetBoolField(const struct FAkWaapiFieldNames& FieldName, bool FieldValue, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetBoolField(const struct FAkWaapiFieldNames& FieldName, bool FieldValue, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5416,7 +5324,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5425,15 +5332,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773B60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetArrayStringFields
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TArray<class FString>                              FieldStringValues                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              FieldStringValues                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetArrayStringFields(const struct FAkWaapiFieldNames& FieldName, TArray<class FString> FieldStringValues, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetArrayStringFields(const struct FAkWaapiFieldNames& FieldName, TArray<class FString> FieldStringValues, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5445,7 +5352,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5454,15 +5360,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetArrayObjectFields
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAKWaapiJsonObject>                  FieldObjectValues                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAKWaapiJsonObject>                  FieldObjectValues                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_SetArrayObjectFields(const struct FAkWaapiFieldNames& FieldName, TArray<struct FAKWaapiJsonObject> FieldObjectValues, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::SetArrayObjectFields(const struct FAkWaapiFieldNames& FieldName, TArray<struct FAKWaapiJsonObject> FieldObjectValues, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5474,7 +5380,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5483,14 +5388,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773580
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetStringField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkWaapiJsonManager::STATIC_GetStringField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	class FString UAkWaapiJsonManager::GetStringField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5501,7 +5406,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5510,14 +5414,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773260
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetObjectField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FAKWaapiJsonObject UAkWaapiJsonManager::STATIC_GetObjectField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	struct FAKWaapiJsonObject UAkWaapiJsonManager::GetObjectField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5528,7 +5432,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5537,14 +5440,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetNumberField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	float UAkWaapiJsonManager::STATIC_GetNumberField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	float UAkWaapiJsonManager::GetNumberField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5555,7 +5458,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5564,14 +5466,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772FE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetIntegerField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAkWaapiJsonManager::STATIC_GetIntegerField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	int32_t UAkWaapiJsonManager::GetIntegerField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5582,7 +5484,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5591,14 +5492,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772EA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetBoolField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	bool UAkWaapiJsonManager::STATIC_GetBoolField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	bool UAkWaapiJsonManager::GetBoolField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5609,7 +5510,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5618,14 +5518,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772C60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetArrayField
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiFieldNames                          FieldName                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FAKWaapiJsonObject                          Target                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	TArray<struct FAKWaapiJsonObject> UAkWaapiJsonManager::STATIC_GetArrayField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
+	TArray<struct FAKWaapiJsonObject> UAkWaapiJsonManager::GetArrayField(const struct FAkWaapiFieldNames& FieldName, const struct FAKWaapiJsonObject& Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5636,7 +5536,6 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5645,13 +5544,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToText
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAKWaapiJsonObject                          INAKWaapiJsonObject                                        (Parm, NativeAccessSpecifierPublic)
 	 */
-	class FText UAkWaapiJsonManager::STATIC_Conv_FAKWaapiJsonObjectToText(const struct FAKWaapiJsonObject& INAKWaapiJsonObject)
+	class FText UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToText(const struct FAKWaapiJsonObject& INAKWaapiJsonObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5661,7 +5560,6 @@ namespace CG
 		params.INAKWaapiJsonObject = INAKWaapiJsonObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5670,13 +5568,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00772870
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToString
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAKWaapiJsonObject                          INAKWaapiJsonObject                                        (Parm, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkWaapiJsonManager::STATIC_Conv_FAKWaapiJsonObjectToString(const struct FAKWaapiJsonObject& INAKWaapiJsonObject)
+	class FString UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToString(const struct FAKWaapiJsonObject& INAKWaapiJsonObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5686,7 +5584,6 @@ namespace CG
 		params.INAKWaapiJsonObject = INAKWaapiJsonObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5695,8 +5592,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWaapiJsonManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWaapiJsonManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWaapiJsonManager::StaticClass()
@@ -5709,13 +5606,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToText
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiUri                                 INAkWaapiUri                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FText UAkWaapiUriConv::STATIC_Conv_FAkWaapiUriToText(const struct FAkWaapiUri& INAkWaapiUri)
+	class FText UAkWaapiUriConv::Conv_FAkWaapiUriToText(const struct FAkWaapiUri& INAkWaapiUri)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5725,7 +5622,6 @@ namespace CG
 		params.INAkWaapiUri = INAkWaapiUri;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5734,13 +5630,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076E370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToString
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAkWaapiUri                                 INAkWaapiUri                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class FString UAkWaapiUriConv::STATIC_Conv_FAkWaapiUriToString(const struct FAkWaapiUri& INAkWaapiUri)
+	class FString UAkWaapiUriConv::Conv_FAkWaapiUriToString(const struct FAkWaapiUri& INAkWaapiUri)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -5750,7 +5646,6 @@ namespace CG
 		params.INAkWaapiUri = INAkWaapiUri;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5759,8 +5654,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWaapiUriConv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWaapiUriConv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWaapiUriConv::StaticClass()
@@ -5773,9 +5668,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5789,15 +5684,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWindowsInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWindowsInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWindowsInitializationSettings::StaticClass()
@@ -5810,8 +5704,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWin32PlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWin32PlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWin32PlatformInfo::StaticClass()
@@ -5824,8 +5718,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWin64PlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWin64PlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWin64PlatformInfo::StaticClass()
@@ -5838,8 +5732,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWindowsPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWindowsPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWindowsPlatformInfo::StaticClass()
@@ -5852,9 +5746,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWinGDKInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5868,15 +5762,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWinGDKInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWinGDKInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWinGDKInitializationSettings::StaticClass()
@@ -5889,8 +5782,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWinAnvilInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWinAnvilInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWinAnvilInitializationSettings::StaticClass()
@@ -5903,8 +5796,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWinGDKPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWinGDKPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWinGDKPlatformInfo::StaticClass()
@@ -5917,8 +5810,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWinAnvilPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWinAnvilPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWinAnvilPlatformInfo::StaticClass()
@@ -5931,9 +5824,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00774300
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWwiseTree.SetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      newText                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5947,16 +5840,15 @@ namespace CG
 		params.newText = newText;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00773460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWwiseTree.GetSelectedItem
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FAkWwiseObjectDetails UAkWwiseTree::GetSelectedItem()
 	{
@@ -5967,7 +5859,6 @@ namespace CG
 		UAkWwiseTree_GetSelectedItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5976,9 +5867,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007733E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkWwiseTree.GetSearchText
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UAkWwiseTree::GetSearchText()
 	{
@@ -5989,7 +5880,6 @@ namespace CG
 		UAkWwiseTree_GetSearchText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5998,8 +5888,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWwiseTree.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWwiseTree.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWwiseTree::StaticClass()
@@ -6012,8 +5902,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkWwiseTreeSelector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkWwiseTreeSelector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkWwiseTreeSelector::StaticClass()
@@ -6026,9 +5916,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkXboxOneGDKInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6042,15 +5932,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOneGDKInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOneGDKInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOneGDKInitializationSettings::StaticClass()
@@ -6063,8 +5952,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOneAnvilInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOneAnvilInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOneAnvilInitializationSettings::StaticClass()
@@ -6077,8 +5966,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOneGDKPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOneGDKPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOneGDKPlatformInfo::StaticClass()
@@ -6091,8 +5980,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOneAnvilPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOneAnvilPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOneAnvilPlatformInfo::StaticClass()
@@ -6105,9 +5994,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6121,15 +6010,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOneInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOneInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOneInitializationSettings::StaticClass()
@@ -6142,8 +6030,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXboxOnePlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXboxOnePlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXboxOnePlatformInfo::StaticClass()
@@ -6156,9 +6044,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0075E600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.AkXSXInitializationSettings.MigrateMultiCoreRendering
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6172,15 +6060,14 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXSXInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXSXInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXSXInitializationSettings::StaticClass()
@@ -6193,8 +6080,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkMPXInitializationSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkMPXInitializationSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkMPXInitializationSettings::StaticClass()
@@ -6207,8 +6094,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAkXSXPlatformInfo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAkXSXPlatformInfo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAkXSXPlatformInfo::StaticClass()
@@ -6221,64 +6108,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInterpTrackAkAudioEvent.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UInterpTrackAkAudioEvent::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AkAudio.InterpTrackAkAudioEvent");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInterpTrackAkAudioRTPC.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UInterpTrackAkAudioRTPC::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AkAudio.InterpTrackAkAudioRTPC");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInterpTrackInstAkAudioEvent.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UInterpTrackInstAkAudioEvent::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AkAudio.InterpTrackInstAkAudioEvent");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInterpTrackInstAkAudioRTPC.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UInterpTrackInstAkAudioRTPC::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AkAudio.InterpTrackInstAkAudioRTPC");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAkAudioEventSection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAkAudioEventSection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAkAudioEventSection::StaticClass()
@@ -6291,8 +6122,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAkTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAkTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAkTrack::StaticClass()
@@ -6305,8 +6136,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAkAudioEventTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAkAudioEventTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAkAudioEventTrack::StaticClass()
@@ -6319,8 +6150,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAkAudioRTPCSection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAkAudioRTPCSection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAkAudioRTPCSection::StaticClass()
@@ -6333,8 +6164,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAkAudioRTPCTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAkAudioRTPCTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAkAudioRTPCTrack::StaticClass()
@@ -6347,19 +6178,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x007784B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.PostEventAsync.PostEventAsync
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CallbackMask                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FAkExternalSourceInfo>               ExternalSources                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UPostEventAsync* UPostEventAsync::STATIC_PostEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, bool bStopWhenAttachedToDestroyed)
+	class UPostEventAsync* UPostEventAsync::PostEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, TArray<struct FAkExternalSourceInfo> ExternalSources, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6375,7 +6206,6 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6384,9 +6214,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00778470
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.PostEventAsync.PollPostEventFuture
-	 * 		Flags  -> (Final, Native, Private)
+	 * 		Flags  -> ()
 	 */
 	void UPostEventAsync::PollPostEventFuture()
 	{
@@ -6397,15 +6227,14 @@ namespace CG
 		UPostEventAsync_PollPostEventFuture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPostEventAsync.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPostEventAsync.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPostEventAsync::StaticClass()
@@ -6418,16 +6247,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00778730
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
-	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    Orientation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class UPostEventAtLocationAsync* UPostEventAtLocationAsync::STATIC_PostEventAtLocationAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation)
+	class UPostEventAtLocationAsync* UPostEventAtLocationAsync::PostEventAtLocationAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -6440,7 +6269,6 @@ namespace CG
 		params.Orientation = Orientation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6449,9 +6277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00778490
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture
-	 * 		Flags  -> (Final, Native, Private)
+	 * 		Flags  -> ()
 	 */
 	void UPostEventAtLocationAsync::PollPostEventFuture()
 	{
@@ -6462,15 +6290,14 @@ namespace CG
 		UPostEventAtLocationAsync_PollPostEventFuture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPostEventAtLocationAsync.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPostEventAtLocationAsync.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPostEventAtLocationAsync::StaticClass()

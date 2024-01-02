@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x028585F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask.ReadyForActivation
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGameplayTask::ReadyForActivation()
 	{
@@ -25,16 +25,15 @@ namespace CG
 		UGameplayTask_ReadyForActivation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 */
 	void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 	{
@@ -51,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028582A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask.EndTask
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UGameplayTask::EndTask()
 	{
@@ -64,15 +63,14 @@ namespace CG
 		UGameplayTask_EndTask_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTask.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTask.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTask::StaticClass()
@@ -85,15 +83,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02858100
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UClass*>                              ResourceClasses                                            (Parm, ZeroConstructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UClass*>                              ResourceClasses                                            (Parm, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      Priority                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        TaskInstanceName                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResources(TArray<class UClass*> ResourceClasses, unsigned char Priority, const class FName& TaskInstanceName)
+	class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(TArray<class UClass*> ResourceClasses, unsigned char Priority, const class FName& TaskInstanceName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -105,7 +103,6 @@ namespace CG
 		params.TaskInstanceName = TaskInstanceName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -114,15 +111,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857FB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      ResourceClass                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      Priority                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        TaskInstanceName                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResource(class UClass* ResourceClass, unsigned char Priority, const class FName& TaskInstanceName)
+	class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(class UClass* ResourceClass, unsigned char Priority, const class FName& TaskInstanceName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -134,7 +131,6 @@ namespace CG
 		params.TaskInstanceName = TaskInstanceName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -143,8 +139,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTask_ClaimResource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTask_ClaimResource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTask_ClaimResource::StaticClass()
@@ -157,16 +153,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02858610
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     SpawnLocation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    SpawnRotation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bSpawnOnlyOnAuthority                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority)
+	class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -179,7 +175,6 @@ namespace CG
 		params.bSpawnOnlyOnAuthority = bSpawnOnlyOnAuthority;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -188,9 +183,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028582C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      SpawnedActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -206,16 +201,15 @@ namespace CG
 		params.SpawnedActor = SpawnedActor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02857ED0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      SpawnedActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -230,7 +224,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -242,8 +235,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTask_SpawnActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTask_SpawnActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTask_SpawnActor::StaticClass()
@@ -256,8 +249,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTask_TimeLimitedExecution.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTask_TimeLimitedExecution.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTask_TimeLimitedExecution::StaticClass()
@@ -270,14 +263,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028587C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      Priority                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(float Time, unsigned char Priority)
+	class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(float Time, unsigned char Priority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -288,7 +281,6 @@ namespace CG
 		params.Priority = Priority;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -297,9 +289,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature
-	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 * 		Flags  -> ()
 	 */
 	void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 	{
@@ -316,8 +308,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTask_WaitDelay.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTask_WaitDelay.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTask_WaitDelay::StaticClass()
@@ -330,8 +322,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTaskOwnerInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTaskOwnerInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTaskOwnerInterface::StaticClass()
@@ -344,8 +336,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTaskResource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTaskResource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTaskResource::StaticClass()
@@ -358,9 +350,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x028585D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGameplayTasksComponent::OnRep_SimulatedTasks()
 	{
@@ -371,23 +363,22 @@ namespace CG
 		UGameplayTasksComponent_OnRep_SimulatedTasks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x02858390
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UGameplayTask*                               Task                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		unsigned char                                      Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class UClass*>                              AdditionalRequiredResources                                (Parm, ZeroConstructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class UClass*>                              AdditionalClaimedResources                                 (Parm, ZeroConstructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UClass*>                              AdditionalRequiredResources                                (Parm, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
+	 * 		TArray<class UClass*>                              AdditionalClaimedResources                                 (Parm, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
 	 */
-	GameplayTasks_EGameplayTaskRunResult UGameplayTasksComponent::STATIC_K2_RunGameplayTask(class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources)
+	EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -400,7 +391,6 @@ namespace CG
 		params.AdditionalClaimedResources = AdditionalClaimedResources;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -409,8 +399,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGameplayTasksComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGameplayTasksComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGameplayTasksComponent::StaticClass()

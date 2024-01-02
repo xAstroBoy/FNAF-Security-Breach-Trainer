@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.ReceiveBeginPlay
 	 */
 	struct ATeleportSpawnTrigger_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.ReceiveActorBeginOverlap
@@ -38,7 +36,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -48,7 +45,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               SpawnedPawn;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -58,39 +54,34 @@ namespace CG
 	{
 	public:
 		class APawn*                                               SpawnedPawn;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.Event Post Spawn Logic
 	 */
-	struct ATeleportSpawnTrigger_C_Event_Post_Spawn_Logic_Params
+	struct ATeleportSpawnTrigger_C_EventPostSpawnLogic_Params
 	{
 	public:
 		class APawn*                                               Pawn;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.Enable Trigger
 	 */
-	struct ATeleportSpawnTrigger_C_Enable_Trigger_Params
-	{
-	};
+	struct ATeleportSpawnTrigger_C_EnableTrigger_Params
+	{	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.Disable Trigger
 	 */
-	struct ATeleportSpawnTrigger_C_Disable_Trigger_Params
-	{
-	};
+	struct ATeleportSpawnTrigger_C_DisableTrigger_Params
+	{	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.Reactivation Timer
 	 */
-	struct ATeleportSpawnTrigger_C_Reactivation_Timer_Params
-	{
-	};
+	struct ATeleportSpawnTrigger_C_ReactivationTimer_Params
+	{	};
 
 	/**
 	 * Function TeleportSpawnTrigger.TeleportSpawnTrigger_C.ExecuteUbergraph_TeleportSpawnTrigger
@@ -99,7 +90,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_NE6B[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

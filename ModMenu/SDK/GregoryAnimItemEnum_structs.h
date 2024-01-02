@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,16 @@ namespace CG
 	/**
 	 * UserDefinedEnum GregoryAnimItemEnum.GregoryAnimItemEnum
 	 */
-	enum class GregoryAnimItemEnum_EGregoryAnimItemEnum : uint8_t
+	enum class EGregoryAnimItemEnum : uint8_t
 	{
-		GregoryAnimItemEnum__NewEnumerator0          = 0,
-		GregoryAnimItemEnum__NewEnumerator1          = 1,
-		GregoryAnimItemEnum__NewEnumerator2          = 2,
-		GregoryAnimItemEnum__NewEnumerator3          = 3,
-		GregoryAnimItemEnum__NewEnumerator4          = 4,
-		GregoryAnimItemEnum__GregoryAnimItemEnum_MAX = 5
+		GregoryAnimItemEnumNewEnumerator0          = 0,
+		GregoryAnimItemEnumNewEnumerator1          = 1,
+		GregoryAnimItemEnumNewEnumerator2          = 2,
+		GregoryAnimItemEnumNewEnumerator3          = 3,
+		GregoryAnimItemEnumNewEnumerator4          = 4,
+		GregoryAnimItemEnumNewEnumerator5          = 5,
+		GregoryAnimItemEnumNewEnumerator6          = 6,
+		GregoryAnimItemEnumGregoryAnimItemEnum_MAX = 7
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,11 +22,11 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FBlackboardKeySelector                              Backstage_Door_Manager;                                  // 0x00B0(0x0028) Edit, BlueprintVisible
+		struct FBlackboardKeySelector                              BackstageDoorManager;                                    // 0x00B0(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              DoorLevel;                                               // 0x00D8(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              DoorIndex;                                               // 0x0100(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              TargetLocation;                                          // 0x0128(0x0028) Edit, BlueprintVisible
-		struct FBlackboardKeySelector                              Door_Managers;                                           // 0x0150(0x0028) Edit, BlueprintVisible
+		struct FBlackboardKeySelector                              DoorManagers;                                            // 0x0150(0x0028) Edit, BlueprintVisible
 
 	public:
 		void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);

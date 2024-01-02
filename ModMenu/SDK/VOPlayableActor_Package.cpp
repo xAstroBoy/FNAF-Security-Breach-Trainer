@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,35 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function VOPlayableActor.VOPlayableActor_C.PlayVoiceType
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function VOPlayableActor.VOPlayableActor_C.ForcePlayVoiceLine
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AIVoiceOverType_EAIVoiceOverType                   VoiceTag                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UAkAudioEvent*                               AKEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UVOPlayableActor_C::PlayVoiceType(AIVoiceOverType_EAIVoiceOverType VoiceTag)
+	void UVOPlayableActor_C::ForcePlayVoiceLine(class UAkAudioEvent* AKEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function VOPlayableActor.VOPlayableActor_C.ForcePlayVoiceLine");
+		
+		UVOPlayableActor_C_ForcePlayVoiceLine_Params params {};
+		params.AKEvent = AKEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function VOPlayableActor.VOPlayableActor_C.PlayVoiceType
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EAIVoiceOverType                                   VoiceTag                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UVOPlayableActor_C::PlayVoiceType(EAIVoiceOverType VoiceTag)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -34,8 +56,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UVOPlayableActor_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UVOPlayableActor_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UVOPlayableActor_C::StaticClass()

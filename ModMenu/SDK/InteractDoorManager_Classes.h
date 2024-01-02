@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,9 +27,9 @@ namespace CG
 
 	public:
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);

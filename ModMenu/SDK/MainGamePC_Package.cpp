@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,366 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.IsPlayerCurrentlyMoving
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsPlayerMoving                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::IsPlayerCurrentlyMoving(bool* IsPlayerMoving)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.IsPlayerCurrentlyMoving");
+		
+		AMainGamePC_C_IsPlayerCurrentlyMoving_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IsPlayerMoving != nullptr)
+			*IsPlayerMoving = params.IsPlayerMoving;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetFlashlightActor
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      FlashlightActor                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::GetFlashlightActor(class AActor** FlashlightActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetFlashlightActor");
+		
+		AMainGamePC_C_GetFlashlightActor_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (FlashlightActor != nullptr)
+			*FlashlightActor = params.FlashlightActor;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.PlayerEnteringExitingFreddy
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::PlayerEnteringExitingFreddy(bool* Value)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.PlayerEnteringExitingFreddy");
+		
+		AMainGamePC_C_PlayerEnteringExitingFreddy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Value != nullptr)
+			*Value = params.Value;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.IsInAir
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               InAir                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::IsInAir(bool* InAir)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.IsInAir");
+		
+		AMainGamePC_C_IsInAir_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (InAir != nullptr)
+			*InAir = params.InAir;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.IsSwitchingItems
+	 * 		Flags  -> ()
+	 */
+	bool AMainGamePC_C::IsSwitchingItems()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.IsSwitchingItems");
+		
+		AMainGamePC_C_IsSwitchingItems_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.IsPlayerFlashlightActive
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsActive                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::IsPlayerFlashlightActive(bool* IsActive)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.IsPlayerFlashlightActive");
+		
+		AMainGamePC_C_IsPlayerFlashlightActive_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IsActive != nullptr)
+			*IsActive = params.IsActive;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.LastItemCollected
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFNAFInventoryTableStruct                   ItemInfo                                                   (Parm, OutParm)
+	 */
+	void AMainGamePC_C::LastItemCollected(struct FFNAFInventoryTableStruct* ItemInfo)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.LastItemCollected");
+		
+		AMainGamePC_C_LastItemCollected_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ItemInfo != nullptr)
+			*ItemInfo = params.ItemInfo;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.IsPlayerUsingFazwatch
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsUsingFazwatch                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::IsPlayerUsingFazwatch(bool* IsUsingFazwatch)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.IsPlayerUsingFazwatch");
+		
+		AMainGamePC_C_IsPlayerUsingFazwatch_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IsUsingFazwatch != nullptr)
+			*IsUsingFazwatch = params.IsUsingFazwatch;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetCrouchToggle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               CrouchToggle                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GetCrouchToggle(bool* CrouchToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetCrouchToggle");
+		
+		AMainGamePC_C_GetCrouchToggle_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (CrouchToggle != nullptr)
+			*CrouchToggle = params.CrouchToggle;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetHelpiBlurbTime
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Time                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::GetHelpiBlurbTime(float* Time)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetHelpiBlurbTime");
+		
+		AMainGamePC_C_GetHelpiBlurbTime_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Time != nullptr)
+			*Time = params.Time;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetShowInstructionCards
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               ShowInstructionCards                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GetShowInstructionCards(bool* ShowInstructionCards)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetShowInstructionCards");
+		
+		AMainGamePC_C_GetShowInstructionCards_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ShowInstructionCards != nullptr)
+			*ShowInstructionCards = params.ShowInstructionCards;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetStealthToggle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               ShowStealthIcon                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GetStealthToggle(bool* ShowStealthIcon)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetStealthToggle");
+		
+		AMainGamePC_C_GetStealthToggle_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ShowStealthIcon != nullptr)
+			*ShowStealthIcon = params.ShowStealthIcon;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetSprintToggles
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               KeyboardSprintToggle                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               GamepadSprintToggle                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GetSprintToggles(bool* KeyboardSprintToggle, bool* GamepadSprintToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetSprintToggles");
+		
+		AMainGamePC_C_GetSprintToggles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (KeyboardSprintToggle != nullptr)
+			*KeyboardSprintToggle = params.KeyboardSprintToggle;
+		if (GamepadSprintToggle != nullptr)
+			*GamepadSprintToggle = params.GamepadSprintToggle;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetSaveGameSettings
+	 * 		Flags  -> ()
+	 */
+	class USaveGameSettings_C* AMainGamePC_C::GetSaveGameSettings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetSaveGameSettings");
+		
+		AMainGamePC_C_GetSaveGameSettings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetIsPlaySequenceRunning
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsSequenceRunning                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GetIsPlaySequenceRunning(bool* IsSequenceRunning)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GetIsPlaySequenceRunning");
+		
+		AMainGamePC_C_GetIsPlaySequenceRunning_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IsSequenceRunning != nullptr)
+			*IsSequenceRunning = params.IsSequenceRunning;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetListenerOverridePosition
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             AttachToComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Position                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,9 +399,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.EnableListenerOverride
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -68,9 +425,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetListenerPosition
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Position                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -92,9 +449,129 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetOverrideSaveLocationForNextSave
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FTransform                                  locationTransform                                          (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::SetOverrideSaveLocationForNextSave(const struct FTransform& locationTransform)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetOverrideSaveLocationForNextSave");
+		
+		AMainGamePC_C_SetOverrideSaveLocationForNextSave_Params params {};
+		params.locationTransform = locationTransform;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateControllerInvert
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::UpdateControllerInvert()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateControllerInvert");
+		
+		AMainGamePC_C_UpdateControllerInvert_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.GregoryCrouch
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Release                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::GregoryCrouch(bool Release)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.GregoryCrouch");
+		
+		AMainGamePC_C_GregoryCrouch_Params params {};
+		params.Release = Release;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateSensitivityValues
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::UpdateSensitivityValues()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateSensitivityValues");
+		
+		AMainGamePC_C_UpdateSensitivityValues_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.CallSettingsSavedListeners
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::CallSettingsSavedListeners()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.CallSettingsSavedListeners");
+		
+		AMainGamePC_C_CallSettingsSavedListeners_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.EndViewTethering
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::EndViewTethering()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.EndViewTethering");
+		
+		AMainGamePC_C_EndViewTethering_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SaveGameCallbackForSettings
-	 * 		Flags  -> (Private, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::SaveGameCallbackForSettings()
 	{
@@ -111,9 +588,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SaveGameSettings
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::SaveGameSettings()
 	{
@@ -130,9 +607,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateLastGameHourPlayed
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::UpdateLastGameHourPlayed()
 	{
@@ -149,9 +626,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ResetViewTetheringOffsets
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::ResetViewTetheringOffsets()
 	{
@@ -168,9 +645,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateControlRotation
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Pitch                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Yaw                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -192,21 +669,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetViewTethering
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set View Tethering Func
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FRotator                                    TetherRotation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               ModifyControlState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AMainGamePC_C::SetViewTethering(bool enable, const struct FRotator& TetherRotation, bool ModifyControlState)
+	void AMainGamePC_C::SetViewTetheringFunc(bool enable, const struct FRotator& TetherRotation, bool ModifyControlState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetViewTethering");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Set View Tethering Func");
 		
-		AMainGamePC_C_SetViewTethering_Params params {};
+		AMainGamePC_C_SetViewTetheringFunc_Params params {};
 		params.enable = enable;
 		params.TetherRotation = TetherRotation;
 		params.ModifyControlState = ModifyControlState;
@@ -218,9 +695,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.LoadPlayerSettings
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::LoadPlayerSettings()
 	{
@@ -237,28 +714,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.EnableAllInputs
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void AMainGamePC_C::EnableAllInputs()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.EnableAllInputs");
-		
-		AMainGamePC_C_EnableAllInputs_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.RestoreFreddyMovement
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               UseFreddyAI                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -278,9 +736,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ForceFreddyMovement
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APlayerAIController_C*                       OutPlayerAIController                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AFreddy_C*                                   OutFreddyPawn                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -305,9 +763,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.AfterUnpause
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::AfterUnpause()
 	{
@@ -324,9 +782,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.AfterPause
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::AfterPause()
 	{
@@ -343,9 +801,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GetLatestDistortionLevel
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	float AMainGamePC_C::GetLatestDistortionLevel()
 	{
@@ -364,9 +822,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetupDebugHUD
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::SetupDebugHUD()
 	{
@@ -383,9 +841,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetupPlayerHUD
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::SetupPlayerHUD()
 	{
@@ -402,17 +860,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Lower Watch
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGamePC_C::Lower_Watch()
+	void AMainGamePC_C::LowerWatch()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Lower Watch");
 		
-		AMainGamePC_C_Lower_Watch_Params params {};
+		AMainGamePC_C_LowerWatch_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -421,17 +879,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Raise Watch
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGamePC_C::Raise_Watch()
+	void AMainGamePC_C::RaiseWatch()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Raise Watch");
 		
-		AMainGamePC_C_Raise_Watch_Params params {};
+		AMainGamePC_C_RaiseWatch_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -440,19 +898,57 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_18
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.Timeline_0__FinishedFunc
+	 * 		Flags  -> ()
 	 */
-	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_18(const struct FKey& Key)
+	void AMainGamePC_C::Timeline_0__FinishedFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_18");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Timeline_0__FinishedFunc");
 		
-		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_18_Params params {};
+		AMainGamePC_C_Timeline_0__FinishedFunc_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.Timeline_0__UpdateFunc
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::Timeline_0__UpdateFunc()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Timeline_0__UpdateFunc");
+		
+		AMainGamePC_C_Timeline_0__UpdateFunc_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_24
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_24(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_24");
+		
+		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_24_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -462,19 +958,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_17
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_23
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_17(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Jump_K2Node_InputActionEvent_23(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_17");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Jump_K2Node_InputActionEvent_23");
 		
-		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_17_Params params {};
+		AMainGamePC_C_InpActEvt_Jump_K2Node_InputActionEvent_23_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -484,19 +980,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_16
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_22
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_SecondaryAction_K2Node_InputActionEvent_16(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_SecondaryAction_K2Node_InputActionEvent_22(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_16");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_SecondaryAction_K2Node_InputActionEvent_22");
 		
-		AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_16_Params params {};
+		AMainGamePC_C_InpActEvt_SecondaryAction_K2Node_InputActionEvent_22_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -506,19 +1002,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_15
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_21
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_1_K2Node_InputActionEvent_15(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_SwitchItem1_K2Node_InputActionEvent_21(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_15");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 1_K2Node_InputActionEvent_21");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_1_K2Node_InputActionEvent_15_Params params {};
+		AMainGamePC_C_InpActEvt_SwitchItem1_K2Node_InputActionEvent_21_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -528,19 +1024,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_14
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_20
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_2_K2Node_InputActionEvent_14(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_SwitchItem2_K2Node_InputActionEvent_20(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_14");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 2_K2Node_InputActionEvent_20");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_2_K2Node_InputActionEvent_14_Params params {};
+		AMainGamePC_C_InpActEvt_SwitchItem2_K2Node_InputActionEvent_20_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -550,19 +1046,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_13
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_19
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Switch__Item_3_K2Node_InputActionEvent_13(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_SwitchItem3_K2Node_InputActionEvent_19(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_13");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Switch: Item 3_K2Node_InputActionEvent_19");
 		
-		AMainGamePC_C_InpActEvt_Switch__Item_3_K2Node_InputActionEvent_13_Params params {};
+		AMainGamePC_C_InpActEvt_SwitchItem3_K2Node_InputActionEvent_19_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -572,19 +1068,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_12
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_18
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_12(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_ChangeUITabLeft_K2Node_InputActionEvent_18(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_12");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Left_K2Node_InputActionEvent_18");
 		
-		AMainGamePC_C_InpActEvt_Change_UI_Tab_Left_K2Node_InputActionEvent_12_Params params {};
+		AMainGamePC_C_InpActEvt_ChangeUITabLeft_K2Node_InputActionEvent_18_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -594,19 +1090,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_11
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_17
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_11(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_ChangeUITabRight_K2Node_InputActionEvent_17(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_11");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Change UI Tab Right_K2Node_InputActionEvent_17");
 		
-		AMainGamePC_C_InpActEvt_Change_UI_Tab_Right_K2Node_InputActionEvent_11_Params params {};
+		AMainGamePC_C_InpActEvt_ChangeUITabRight_K2Node_InputActionEvent_17_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -616,19 +1112,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_10
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_16
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Menu_K2Node_InputActionEvent_10(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Menu_K2Node_InputActionEvent_16(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_10");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Menu_K2Node_InputActionEvent_16");
 		
-		AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_10_Params params {};
+		AMainGamePC_C_InpActEvt_Menu_K2Node_InputActionEvent_16_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -638,19 +1134,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_5
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_7
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_5(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_7(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_5");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_7");
 		
-		AMainGamePC_C_InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_5_Params params {};
+		AMainGamePC_C_InpActEvt_Gamepad_FaceButton_Left_K2Node_InputKeyEvent_7_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -660,19 +1156,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_9
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_15
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Crouch_K2Node_InputActionEvent_9(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Crouch_K2Node_InputActionEvent_15(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_9");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_15");
 		
-		AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_9_Params params {};
+		AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_15_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -682,19 +1178,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_L_K2Node_InputKeyEvent_4
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_14
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_L_K2Node_InputKeyEvent_4(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Crouch_K2Node_InputActionEvent_14(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_L_K2Node_InputKeyEvent_4");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Crouch_K2Node_InputActionEvent_14");
 		
-		AMainGamePC_C_InpActEvt_L_K2Node_InputKeyEvent_4_Params params {};
+		AMainGamePC_C_InpActEvt_Crouch_K2Node_InputActionEvent_14_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -704,19 +1200,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_8
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_L_K2Node_InputKeyEvent_6
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_8(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_L_K2Node_InputKeyEvent_6(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_8");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_L_K2Node_InputKeyEvent_6");
 		
-		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_8_Params params {};
+		AMainGamePC_C_InpActEvt_L_K2Node_InputKeyEvent_6_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -726,19 +1222,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_7
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_13
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_7(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_13(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_7");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_13");
 		
-		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_7_Params params {};
+		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_13_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -748,19 +1244,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_3
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_12
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Touch1_K2Node_InputKeyEvent_3(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Skip_K2Node_InputActionEvent_12(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_3");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Skip_K2Node_InputActionEvent_12");
 		
-		AMainGamePC_C_InpActEvt_Touch1_K2Node_InputKeyEvent_3_Params params {};
+		AMainGamePC_C_InpActEvt_Skip_K2Node_InputActionEvent_12_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -770,19 +1266,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_2
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_5
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Touch1_K2Node_InputKeyEvent_2(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Touch1_K2Node_InputKeyEvent_5(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_2");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_5");
 		
-		AMainGamePC_C_InpActEvt_Touch1_K2Node_InputKeyEvent_2_Params params {};
+		AMainGamePC_C_InpActEvt_Touch1_K2Node_InputKeyEvent_5_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -792,19 +1288,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_6
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_4
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_CallFreddy_K2Node_InputActionEvent_6(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Touch1_K2Node_InputKeyEvent_4(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_6");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Touch1_K2Node_InputKeyEvent_4");
 		
-		AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_6_Params params {};
+		AMainGamePC_C_InpActEvt_Touch1_K2Node_InputKeyEvent_4_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -814,19 +1310,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_5
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_11
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_5(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_CallFreddy_K2Node_InputActionEvent_11(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_5");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_CallFreddy_K2Node_InputActionEvent_11");
 		
-		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_5_Params params {};
+		AMainGamePC_C_InpActEvt_CallFreddy_K2Node_InputActionEvent_11_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -836,19 +1332,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_4
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_10
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_4(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_10(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_4");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_10");
 		
-		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_4_Params params {};
+		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_10_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -858,19 +1354,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_3
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_9
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Throw_Object_K2Node_InputActionEvent_3(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_PrimaryAction_K2Node_InputActionEvent_9(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_3");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_9");
 		
-		AMainGamePC_C_InpActEvt_Throw_Object_K2Node_InputActionEvent_3_Params params {};
+		AMainGamePC_C_InpActEvt_PrimaryAction_K2Node_InputActionEvent_9_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -880,19 +1376,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_8
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_2(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_ThrowObject_K2Node_InputActionEvent_8(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_2");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Throw Object_K2Node_InputActionEvent_8");
 		
-		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_2_Params params {};
+		AMainGamePC_C_InpActEvt_ThrowObject_K2Node_InputActionEvent_8_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -902,19 +1398,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_7
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_7(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_7");
 		
-		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_1_Params params {};
+		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_7_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -924,19 +1420,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_G_K2Node_InputKeyEvent_1
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_6
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::InpActEvt_G_K2Node_InputKeyEvent_1(const struct FKey& Key)
+	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_6(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_G_K2Node_InputKeyEvent_1");
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_6");
 		
-		AMainGamePC_C_InpActEvt_G_K2Node_InputKeyEvent_1_Params params {};
+		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_6_Params params {};
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
@@ -946,9 +1442,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_G_K2Node_InputKeyEvent_3
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_G_K2Node_InputKeyEvent_3(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_G_K2Node_InputKeyEvent_3");
+		
+		AMainGamePC_C_InpActEvt_G_K2Node_InputKeyEvent_3_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnFailure_6EE19B10415A6B32590DEAA77ED60D09
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -972,9 +1490,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSuccess_6EE19B10415A6B32590DEAA77ED60D09
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -998,9 +1516,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnFailure_FBC690684B1BE226BF1F8C8CFDCC99F5
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnFailure_FBC690684B1BE226BF1F8C8CFDCC99F5()
 	{
@@ -1017,9 +1535,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSuccess_FBC690684B1BE226BF1F8C8CFDCC99F5
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnSuccess_FBC690684B1BE226BF1F8C8CFDCC99F5()
 	{
@@ -1036,9 +1554,456 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_2
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_2(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_2");
+		
+		AMainGamePC_C_InpActEvt_Gamepad_FaceButton_Right_K2Node_InputKeyEvent_2_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1");
+		
+		AMainGamePC_C_InpActEvt_Gamepad_FaceButton_Bottom_K2Node_InputKeyEvent_1_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_WalkieTalkieCallout_K2Node_InputActionEvent_5
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_WalkieTalkieCallout_K2Node_InputActionEvent_5(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_WalkieTalkieCallout_K2Node_InputActionEvent_5");
+		
+		AMainGamePC_C_InpActEvt_WalkieTalkieCallout_K2Node_InputActionEvent_5_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Teleport_K2Node_InputActionEvent_4
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Teleport_K2Node_InputActionEvent_4(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Teleport_K2Node_InputActionEvent_4");
+		
+		AMainGamePC_C_InpActEvt_Teleport_K2Node_InputActionEvent_4_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_ToggleFlashlight_K2Node_InputActionEvent_3
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_ToggleFlashlight_K2Node_InputActionEvent_3(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_ToggleFlashlight_K2Node_InputActionEvent_3");
+		
+		AMainGamePC_C_InpActEvt_ToggleFlashlight_K2Node_InputActionEvent_3_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_LookCenter_Accessibility_K2Node_InputActionEvent_2
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_LookCenter_Accessibility_K2Node_InputActionEvent_2(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_LookCenter_Accessibility_K2Node_InputActionEvent_2");
+		
+		AMainGamePC_C_InpActEvt_LookCenter_Accessibility_K2Node_InputActionEvent_2_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpActEvt_Interact_K2Node_InputActionEvent_1");
+		
+		AMainGamePC_C_InpActEvt_Interact_K2Node_InputActionEvent_1_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.VisualChangeItem
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::VisualChangeItem()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.VisualChangeItem");
+		
+		AMainGamePC_C_VisualChangeItem_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.Disable Jump Land Audio
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Disable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::DisableJumpLandAudio(bool Disable)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Disable Jump Land Audio");
+		
+		AMainGamePC_C_DisableJumpLandAudio_Params params {};
+		params.Disable = Disable;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.LowerArms
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::LowerArms()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.LowerArms");
+		
+		AMainGamePC_C_LowerArms_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.RaiseArms
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::RaiseArms()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.RaiseArms");
+		
+		AMainGamePC_C_RaiseArms_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.ForceFlashlightState
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               On                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               AllowPlayerToggle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::ForceFlashlightState(bool On, bool AllowPlayerToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.ForceFlashlightState");
+		
+		AMainGamePC_C_ForceFlashlightState_Params params {};
+		params.On = On;
+		params.AllowPlayerToggle = AllowPlayerToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.ForcePlayerCrouch
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Crouch                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               AllowCrouchToggle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::ForcePlayerCrouch(bool Crouch, bool AllowCrouchToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.ForcePlayerCrouch");
+		
+		AMainGamePC_C_ForcePlayerCrouch_Params params {};
+		params.Crouch = Crouch;
+		params.AllowCrouchToggle = AllowCrouchToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.NonLethalJumpscareBPI
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              CamShakeScale                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class USceneComponent*                             AttachmentComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      ActorPerformingScare                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::NonLethalJumpscareBPI(float CamShakeScale, class USceneComponent* AttachmentComponent, class AActor* ActorPerformingScare)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.NonLethalJumpscareBPI");
+		
+		AMainGamePC_C_NonLethalJumpscareBPI_Params params {};
+		params.CamShakeScale = CamShakeScale;
+		params.AttachmentComponent = AttachmentComponent;
+		params.ActorPerformingScare = ActorPerformingScare;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.LethalJumpscareBPI
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class USceneComponent*                             AttachmentComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UAkAudioEvent*                               JumpscareAudio                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               CanEscape                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		float                                              CamShakeScale                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      ActorPerfomingScare                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::LethalJumpscareBPI(class USceneComponent* AttachmentComponent, class UAkAudioEvent* JumpscareAudio, bool CanEscape, float CamShakeScale, class AActor* ActorPerfomingScare)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.LethalJumpscareBPI");
+		
+		AMainGamePC_C_LethalJumpscareBPI_Params params {};
+		params.AttachmentComponent = AttachmentComponent;
+		params.JumpscareAudio = JumpscareAudio;
+		params.CanEscape = CanEscape;
+		params.CamShakeScale = CamShakeScale;
+		params.ActorPerfomingScare = ActorPerfomingScare;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateIcons
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::UpdateIcons()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateIcons");
+		
+		AMainGamePC_C_UpdateIcons_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateSprintAndStealthToggles
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Keyboard_Sprint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               Gamepad_Sprint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CrouchIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CrouchToggle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::UpdateSprintAndStealthToggles(bool Keyboard_Sprint, bool Gamepad_Sprint, bool CrouchIcon, bool CrouchToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateSprintAndStealthToggles");
+		
+		AMainGamePC_C_UpdateSprintAndStealthToggles_Params params {};
+		params.Keyboard_Sprint = Keyboard_Sprint;
+		params.Gamepad_Sprint = Gamepad_Sprint;
+		params.CrouchIcon = CrouchIcon;
+		params.CrouchToggle = CrouchToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateSavedMappings
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::UpdateSavedMappings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateSavedMappings");
+		
+		AMainGamePC_C_UpdateSavedMappings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetMappingsFromSaved
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TMap<class FName, struct FKeyBinding_Struct>       SavedMappings                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+	 */
+	void AMainGamePC_C::SetMappingsFromSaved(TMap<class FName, struct FKeyBinding_Struct> SavedMappings)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetMappingsFromSaved");
+		
+		AMainGamePC_C_SetMappingsFromSaved_Params params {};
+		params.SavedMappings = SavedMappings;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateHelpiBlurbTime
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Time                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::UpdateHelpiBlurbTime(float Time)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateHelpiBlurbTime");
+		
+		AMainGamePC_C_UpdateHelpiBlurbTime_Params params {};
+		params.Time = Time;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnGameDataLoaded
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1058,9 +2023,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.PostGameLoad
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::PostGameLoad()
 	{
@@ -1077,28 +2042,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGamePC.MainGamePC_C.PostSaveGame
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void AMainGamePC_C::PostSaveGame()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.PostSaveGame");
-		
-		AMainGamePC_C_PostSaveGame_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_158
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1118,9 +2064,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_173
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1140,9 +2086,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPlayerKilled
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnPlayerKilled()
 	{
@@ -1159,9 +2105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::ReceiveBeginPlay()
 	{
@@ -1178,9 +2124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPlayerWin
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnPlayerWin()
 	{
@@ -1197,9 +2143,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_182
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1219,9 +2165,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_193
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1241,9 +2187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_TurnRate_K2Node_InputAxisEvent_39
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1263,9 +2209,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_54
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1285,9 +2231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnRetry
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnRetry()
 	{
@@ -1304,9 +2250,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.LowerWatch
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::LowerWatch()
 	{
@@ -1323,9 +2269,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleFlightMode
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnToggleFlightMode()
 	{
@@ -1342,9 +2288,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnEnter_SaveGameTrigger
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnEnter_SaveGameTrigger()
 	{
@@ -1361,9 +2307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleDevUI
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnToggleDevUI()
 	{
@@ -1380,17 +2326,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Enter Flying Mode
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGamePC_C::Enter_Flying_Mode()
+	void AMainGamePC_C::EnterFlyingMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Enter Flying Mode");
 		
-		AMainGamePC_C_Enter_Flying_Mode_Params params {};
+		AMainGamePC_C_EnterFlyingMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1399,19 +2345,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set Flying Collision
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Engine_ECollisionEnabled                           FlyingCollisionMode                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECollisionEnabled                                  FlyingCollisionMode                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::Set_Flying_Collision(Engine_ECollisionEnabled FlyingCollisionMode)
+	void AMainGamePC_C::SetFlyingCollision(ECollisionEnabled FlyingCollisionMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Set Flying Collision");
 		
-		AMainGamePC_C_Set_Flying_Collision_Params params {};
+		AMainGamePC_C_SetFlyingCollision_Params params {};
 		params.FlyingCollisionMode = FlyingCollisionMode;
 		
 		auto flags = fn->FunctionFlags;
@@ -1421,9 +2367,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSaveGameSelected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnSaveGameSelected()
 	{
@@ -1440,19 +2386,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Set Flying Speed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              FlyingSpeed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::Set_Flying_Speed(float FlyingSpeed)
+	void AMainGamePC_C::SetFlyingSpeed(float FlyingSpeed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Set Flying Speed");
 		
-		AMainGamePC_C_Set_Flying_Speed_Params params {};
+		AMainGamePC_C_SetFlyingSpeed_Params params {};
 		params.FlyingSpeed = FlyingSpeed;
 		
 		auto flags = fn->FunctionFlags;
@@ -1462,9 +2408,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnToggleCinemaMode
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnToggleCinemaMode()
 	{
@@ -1481,9 +2427,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceiveUnPossess
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       UnpossessedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1503,9 +2449,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ReceivePossess
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PossessedPawn                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1525,9 +2471,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnTriggerVannyScare
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnTriggerVannyScare()
 	{
@@ -1544,9 +2490,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnCheckpointSave
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1566,9 +2512,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnCheckpointLoad
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1588,19 +2534,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.On Possessed Pawn Destroyed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      DestroyedActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGamePC_C::On_Possessed_Pawn_Destroyed(class AActor* DestroyedActor)
+	void AMainGamePC_C::OnPossessedPawnDestroyed(class AActor* DestroyedActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.On Possessed Pawn Destroyed");
 		
-		AMainGamePC_C_On_Possessed_Pawn_Destroyed_Params params {};
+		AMainGamePC_C_OnPossessedPawnDestroyed_Params params {};
 		params.DestroyedActor = DestroyedActor;
 		
 		auto flags = fn->FunctionFlags;
@@ -1610,9 +2556,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_1
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1632,9 +2578,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_OptionsUp_K2Node_InputAxisEvent_3
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1654,9 +2600,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_OptionsLeft_K2Node_InputAxisEvent_6
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1676,9 +2622,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnStoreGameData
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1698,9 +2644,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Distortion
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Hour                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            Minute                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1722,17 +2668,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.Stop Distortion
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGamePC_C::Stop_Distortion()
+	void AMainGamePC_C::StopDistortion()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.Stop Distortion");
 		
-		AMainGamePC_C_Stop_Distortion_Params params {};
+		AMainGamePC_C_StopDistortion_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1741,9 +2687,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.DebugCloseUI
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::DebugCloseUI()
 	{
@@ -1760,9 +2706,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.GiveVIPAchievement
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::GiveVIPAchievement()
 	{
@@ -1779,9 +2725,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_ZoomSecurityCamera_K2Node_InputAxisEvent_1
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1801,9 +2747,363 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.HideHUD
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bHideProgressWheel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::HideHUD(bool bHideProgressWheel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.HideHUD");
+		
+		AMainGamePC_C_HideHUD_Params params {};
+		params.bHideProgressWheel = bHideProgressWheel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.ShowHUD
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::ShowHUD()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.ShowHUD");
+		
+		AMainGamePC_C_ShowHUD_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.EnableAllInputs
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::EnableAllInputs()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.EnableAllInputs");
+		
+		AMainGamePC_C_EnableAllInputs_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetEnabledInputFlags
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            InputFlags                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::SetEnabledInputFlags(int32_t InputFlags)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetEnabledInputFlags");
+		
+		AMainGamePC_C_SetEnabledInputFlags_Params params {};
+		params.InputFlags = InputFlags;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.AddSaveGameSettingsListener
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::AddSaveGameSettingsListener()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.AddSaveGameSettingsListener");
+		
+		AMainGamePC_C_AddSaveGameSettingsListener_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.RemoveSaveGameSettingsListener
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::RemoveSaveGameSettingsListener()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.RemoveSaveGameSettingsListener");
+		
+		AMainGamePC_C_RemoveSaveGameSettingsListener_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetViewTethering
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		struct FRotator                                    TetherRotation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               ModifyControlState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::SetViewTethering(bool enable, const struct FRotator& TetherRotation, bool ModifyControlState)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetViewTethering");
+		
+		AMainGamePC_C_SetViewTethering_Params params {};
+		params.enable = enable;
+		params.TetherRotation = TetherRotation;
+		params.ModifyControlState = ModifyControlState;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnUnlockEverything
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::OnUnlockEverything()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.OnUnlockEverything");
+		
+		AMainGamePC_C_OnUnlockEverything_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUp_Accessibility_K2Node_InputAxisEvent_2
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpAxisEvt_LookUp_Accessibility_K2Node_InputAxisEvent_2(float AxisValue)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpAxisEvt_LookUp_Accessibility_K2Node_InputAxisEvent_2");
+		
+		AMainGamePC_C_InpAxisEvt_LookUp_Accessibility_K2Node_InputAxisEvent_2_Params params {};
+		params.AxisValue = AxisValue;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookDown_Accessibility_K2Node_InputAxisEvent_4
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpAxisEvt_LookDown_Accessibility_K2Node_InputAxisEvent_4(float AxisValue)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpAxisEvt_LookDown_Accessibility_K2Node_InputAxisEvent_4");
+		
+		AMainGamePC_C_InpAxisEvt_LookDown_Accessibility_K2Node_InputAxisEvent_4_Params params {};
+		params.AxisValue = AxisValue;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookLeft_Accessibility_K2Node_InputAxisEvent_5
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpAxisEvt_LookLeft_Accessibility_K2Node_InputAxisEvent_5(float AxisValue)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpAxisEvt_LookLeft_Accessibility_K2Node_InputAxisEvent_5");
+		
+		AMainGamePC_C_InpAxisEvt_LookLeft_Accessibility_K2Node_InputAxisEvent_5_Params params {};
+		params.AxisValue = AxisValue;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.InpAxisEvt_LookRight_Accessibility_K2Node_InputAxisEvent_7
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              AxisValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::InpAxisEvt_LookRight_Accessibility_K2Node_InputAxisEvent_7(float AxisValue)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.InpAxisEvt_LookRight_Accessibility_K2Node_InputAxisEvent_7");
+		
+		AMainGamePC_C_InpAxisEvt_LookRight_Accessibility_K2Node_InputAxisEvent_7_Params params {};
+		params.AxisValue = AxisValue;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.UpdateSensitivitySettings
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::UpdateSensitivitySettings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.UpdateSensitivitySettings");
+		
+		AMainGamePC_C_UpdateSensitivitySettings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.SetIsPlaySequenceRunning
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsRunning                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGamePC_C::SetIsPlaySequenceRunning(bool IsRunning)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.SetIsPlaySequenceRunning");
+		
+		AMainGamePC_C_SetIsPlaySequenceRunning_Params params {};
+		params.IsRunning = IsRunning;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.ShowCinimaticSkip
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::ShowCinimaticSkip()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.ShowCinimaticSkip");
+		
+		AMainGamePC_C_ShowCinimaticSkip_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.BeginCinimaticSkipFade
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              DelayDuration                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGamePC_C::BeginCinimaticSkipFade(float DelayDuration)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.BeginCinimaticSkipFade");
+		
+		AMainGamePC_C_BeginCinimaticSkipFade_Params params {};
+		params.DelayDuration = DelayDuration;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGamePC.MainGamePC_C.PostSaveGame
+	 * 		Flags  -> ()
+	 */
+	void AMainGamePC_C::PostSaveGame()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGamePC.MainGamePC_C.PostSaveGame");
+		
+		AMainGamePC_C_PostSaveGame_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.ExecuteUbergraph_MainGamePC
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1823,9 +3123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSettingsSaved__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USaveGameSettings_C*                         Settings                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1845,9 +3145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnSkip__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGamePC_C::OnSkip__DelegateSignature()
 	{
@@ -1864,9 +3164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGamePC.MainGamePC_C.OnPossessedPawnChanged__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PossessedPawn                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1886,8 +3186,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AMainGamePC_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AMainGamePC_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AMainGamePC_C::StaticClass()

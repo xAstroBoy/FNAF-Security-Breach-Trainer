@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USpatializationPluginSourceSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USpatializationPluginSourceSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USpatializationPluginSourceSettingsBase::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USoundfieldEncodingSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USoundfieldEncodingSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USoundfieldEncodingSettingsBase::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAudioEndpointSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAudioEndpointSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAudioEndpointSettingsBase::StaticClass()
@@ -54,8 +54,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UOcclusionPluginSourceSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDummyEndpointSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UDummyEndpointSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AudioExtensions.DummyEndpointSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UOcclusionPluginSourceSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UOcclusionPluginSourceSettingsBase::StaticClass()
@@ -68,22 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USoundModulationPluginSourceSettingsBase.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* USoundModulationPluginSourceSettingsBase::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AudioExtensions.SoundModulationPluginSourceSettingsBase");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UReverbPluginSourceSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UReverbPluginSourceSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UReverbPluginSourceSettingsBase::StaticClass()
@@ -96,8 +96,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USoundfieldEndpointSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USoundModulatorBase.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* USoundModulatorBase::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AudioExtensions.SoundModulatorBase");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USoundfieldEndpointSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USoundfieldEndpointSettingsBase::StaticClass()
@@ -110,8 +124,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USoundfieldEffectSettingsBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USoundfieldEffectSettingsBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USoundfieldEffectSettingsBase::StaticClass()
@@ -124,8 +138,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USoundfieldEffectBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USoundfieldEffectBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USoundfieldEffectBase::StaticClass()

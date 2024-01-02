@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 
 	public:
 		void ReceiveBeginPlay();
-		void On_Settings_Updated(class USaveGameSettings_C* Settings);
+		void OnSaveGameSettingsSaved(class USaveGameSettings_C* Settings);
 		void ExecuteUbergraph_CameraSettingsComponent(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

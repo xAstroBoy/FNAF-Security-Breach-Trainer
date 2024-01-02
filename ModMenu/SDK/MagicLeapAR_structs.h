@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,26 +17,26 @@ namespace CG
 	/**
 	 * Enum MagicLeapAR.ELuminARLineTraceChannel
 	 */
-	enum class MagicLeapAR_ELuminARLineTraceChannel : uint8_t
+	enum class ELuminARLineTraceChannel : uint8_t
 	{
-		ELuminARLineTraceChannel__None                          = 0,
-		ELuminARLineTraceChannel__FeaturePoint                  = 1,
-		ELuminARLineTraceChannel__InfinitePlane                 = 2,
-		ELuminARLineTraceChannel__PlaneUsingExtent              = 3,
-		ELuminARLineTraceChannel__PlaneUsingBoundaryPolygon     = 4,
-		ELuminARLineTraceChannel__FeaturePointWithSurfaceNormal = 5,
-		ELuminARLineTraceChannel__ELuminARLineTraceChannel_MAX  = 6
+		None                          = 0,
+		FeaturePoint                  = 1,
+		InfinitePlane                 = 2,
+		PlaneUsingExtent              = 3,
+		PlaneUsingBoundaryPolygon     = 4,
+		FeaturePointWithSurfaceNormal = 5,
+		MAX                           = 6
 	};
 
 	/**
 	 * Enum MagicLeapAR.ELuminARTrackingState
 	 */
-	enum class MagicLeapAR_ELuminARTrackingState : uint8_t
+	enum class ELuminARTrackingState : uint8_t
 	{
-		ELuminARTrackingState__Tracking                  = 0,
-		ELuminARTrackingState__NotTracking               = 1,
-		ELuminARTrackingState__StoppedTracking           = 2,
-		ELuminARTrackingState__ELuminARTrackingState_MAX = 3
+		Tracking        = 0,
+		NotTracking     = 1,
+		StoppedTracking = 2,
+		MAX             = 3
 	};
 
 }

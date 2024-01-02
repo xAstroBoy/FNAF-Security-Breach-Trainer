@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C.BlueprintBeginPlay
 	 */
 	struct UStaffbot_ABP_Comedy_C_BlueprintBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Staffbot_ABP_Comedy.Staffbot_ABP_Comedy_C.ExecuteUbergraph_Staffbot_ABP_Comedy
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

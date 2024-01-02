@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,13 +24,13 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    MaxNumberOfActiveCameras;                                // 0x0238(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_K0WE[0x4];                                   // 0x023C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FCameraSSDStruct>                            Cameras;                                                 // 0x0240(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class ACamera_C*>                                   ActiveCameras;                                           // 0x0250(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_LD4T[0x4];                                   // 0x023C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FCameraSSDStruct>                            Cameras;                                                 // 0x0240(0x0010) Edit, BlueprintVisible
+		TArray<class ACamera_C*>                                   ActiveCameras;                                           // 0x0250(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		int32_t                                                    LastIndex;                                               // 0x0260(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_P4OL[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FEngineShowFlagsSetting>                     LowQualitySettings;                                      // 0x0268(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
-		TArray<struct FEngineShowFlagsSetting>                     HighQualitySettings;                                     // 0x0278(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_EH83[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FEngineShowFlagsSetting>                     LowQualitySettings;                                      // 0x0268(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
+		TArray<struct FEngineShowFlagsSetting>                     HighQualitySettings;                                     // 0x0278(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void IsInView(class AActor* ActorToCheck, float ViewAngle, bool* InView);

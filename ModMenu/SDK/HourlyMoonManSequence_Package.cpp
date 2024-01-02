@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.Get Gregory Pawn
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AGregory_C*                                  Gregory                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::Get_Gregory_Pawn(class AGregory_C** Gregory)
+	void AHourlyMoonManSequence_C::GetGregoryPawn(class AGregory_C** Gregory)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function HourlyMoonManSequence.HourlyMoonManSequence_C.Get Gregory Pawn");
 		
-		AHourlyMoonManSequence_C_Get_Gregory_Pawn_Params params {};
+		AHourlyMoonManSequence_C_GetGregoryPawn_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -36,20 +36,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnGameClockTick_Funcn
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              deltaTime                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              DeltaTime                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::OnGameClockTick_Funcn(float deltaTime)
+	void AHourlyMoonManSequence_C::OnGameClockTick_Funcn(float DeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnGameClockTick_Funcn");
 		
 		AHourlyMoonManSequence_C_OnGameClockTick_Funcn_Params params {};
-		params.deltaTime = deltaTime;
+		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -58,9 +58,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnCheckpointSave
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -80,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnGameDataLoaded
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -102,9 +102,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnStoreGameData
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -124,9 +124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.PostSaveGame
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::PostSaveGame()
 	{
@@ -143,14 +143,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnWorldStateChanged_Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EFNAFGameState                               NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		fnaf9_EFNAFGameState                               PreviousState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFGameState                                     NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFGameState                                     PreviousState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::OnWorldStateChanged_Event(fnaf9_EFNAFGameState NewState, fnaf9_EFNAFGameState PreviousState)
+	void AHourlyMoonManSequence_C::OnWorldStateChanged_Event(EFNAFGameState NewState, EFNAFGameState PreviousState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -167,9 +167,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnSourceDetected_Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UVisualSourceComponent*                      VisualSource                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      UpdatedActor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -193,9 +193,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::ReceiveBeginPlay()
 	{
@@ -212,9 +212,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.KillPlayer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::KillPlayer()
 	{
@@ -231,9 +231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnMMDetected_Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      UpdatedActor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bVisible                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -255,9 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.SpawnMMActor
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::SpawnMMActor()
 	{
@@ -274,9 +274,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -296,9 +296,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.DestroyMM
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::DestroyMM()
 	{
@@ -315,14 +315,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnMMSpawnPointDetected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoonmanSpawnPoint*                          MMSpawnPoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               Visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AHourlyMoonManSequence_C::OnMMSpawnPointDetected(class AMoonmanSpawnPoint* MMSpawnPoint, bool Visible)
+	void AHourlyMoonManSequence_C::OnMMSpawnPointDetected(class AMoonmanSpawnPoint* MMSpawnPoint, bool visible)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -330,7 +330,7 @@ namespace CG
 		
 		AHourlyMoonManSequence_C_OnMMSpawnPointDetected_Params params {};
 		params.MMSpawnPoint = MMSpawnPoint;
-		params.Visible = Visible;
+		params.visible = visible;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -339,15 +339,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnVisualSourceDetected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoonmanSpawnPoint*                          MMActor                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               Visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UVisualSourceComponent*                      VisualSource                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::OnVisualSourceDetected(class AMoonmanSpawnPoint* MMActor, bool Visible, class UVisualSourceComponent* VisualSource)
+	void AHourlyMoonManSequence_C::OnVisualSourceDetected(class AMoonmanSpawnPoint* MMActor, bool visible, class UVisualSourceComponent* VisualSource)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -355,7 +355,7 @@ namespace CG
 		
 		AHourlyMoonManSequence_C_OnVisualSourceDetected_Params params {};
 		params.MMActor = MMActor;
-		params.Visible = Visible;
+		params.visible = visible;
 		params.VisualSource = VisualSource;
 		
 		auto flags = fn->FunctionFlags;
@@ -365,9 +365,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.SetGregorySight
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::SetGregorySight()
 	{
@@ -384,9 +384,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.GetClosestMoonmanNew
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::GetClosestMoonmanNew()
 	{
@@ -403,9 +403,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnDeathSeq
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::OnDeathSeq()
 	{
@@ -422,9 +422,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ResetMMStates
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoonmanSpawnPoint*                          MMSpawnPoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -444,9 +444,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyeBlinkSetup
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::EyeBlinkSetup()
 	{
@@ -463,9 +463,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.SpawnPointRegistered
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoonmanSpawnPoint*                          InSpawnPoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -485,9 +485,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.SpawnPointUnregistered
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoonmanSpawnPoint*                          InSpawnPoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -507,20 +507,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnGameClockTick_Event
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              deltaTime                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              DeltaTime                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AHourlyMoonManSequence_C::OnGameClockTick_Event(float deltaTime)
+	void AHourlyMoonManSequence_C::OnGameClockTick_Event(float DeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnGameClockTick_Event");
 		
 		AHourlyMoonManSequence_C_OnGameClockTick_Event_Params params {};
-		params.deltaTime = deltaTime;
+		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -529,9 +529,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyesShut1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::EyesShut1()
 	{
@@ -548,9 +548,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyesOpen2
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::EyesOpen2()
 	{
@@ -567,9 +567,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.PostGameLoad
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::PostGameLoad()
 	{
@@ -586,9 +586,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnCheckpointLoad
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFNAFSaveData*                               SaveDataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -608,9 +608,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ForceDestroyAllSpawnedMoonman
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AHourlyMoonManSequence_C::ForceDestroyAllSpawnedMoonman()
 	{
@@ -627,17 +627,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.On Level Load Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AHourlyMoonManSequence_C::On_Level_Load_Finished()
+	void AHourlyMoonManSequence_C::OnLevelLoadFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function HourlyMoonManSequence.HourlyMoonManSequence_C.On Level Load Finished");
 		
-		AHourlyMoonManSequence_C_On_Level_Load_Finished_Params params {};
+		AHourlyMoonManSequence_C_OnLevelLoadFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -646,17 +646,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.End Moon Man Sequence
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AHourlyMoonManSequence_C::End_Moon_Man_Sequence()
+	void AHourlyMoonManSequence_C::EndMoonManSequence()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function HourlyMoonManSequence.HourlyMoonManSequence_C.End Moon Man Sequence");
 		
-		AHourlyMoonManSequence_C_End_Moon_Man_Sequence_Params params {};
+		AHourlyMoonManSequence_C_EndMoonManSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -665,9 +665,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function HourlyMoonManSequence.HourlyMoonManSequence_C.ExecuteUbergraph_HourlyMoonManSequence
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -687,8 +687,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AHourlyMoonManSequence_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AHourlyMoonManSequence_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AHourlyMoonManSequence_C::StaticClass()

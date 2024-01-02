@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.SetupAllRechargeStations
 	 */
 	struct AFlashlightRechargeStationManager_C_SetupAllRechargeStations_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.GetChargePercentage
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -38,15 +36,13 @@ namespace CG
 	{
 	public:
 		class AFlashlightRechargeStation_C*                        Output;                                                  // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.OnFlashlightCollected
 	 */
 	struct AFlashlightRechargeStationManager_C_OnFlashlightCollected_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.GetStationID
@@ -56,7 +52,6 @@ namespace CG
 	public:
 		class AFlashlightRechargeStation_C*                        Input;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    ReturnValue;                                             // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -66,7 +61,6 @@ namespace CG
 	{
 	public:
 		class AFlashlightRechargeStation_C*                        RechargeStation;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -76,7 +70,6 @@ namespace CG
 	{
 	public:
 		class AFlashlightRechargeStation_C*                        RechargeStation;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -86,7 +79,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -96,22 +88,19 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.PostGameLoad
 	 */
 	struct AFlashlightRechargeStationManager_C_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.PostSaveGame
 	 */
 	struct AFlashlightRechargeStationManager_C_PostSaveGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FlashlightRechargeStationManager.FlashlightRechargeStationManager_C.ReceiveTick
@@ -120,7 +109,6 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -130,7 +118,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -140,7 +127,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -150,7 +136,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

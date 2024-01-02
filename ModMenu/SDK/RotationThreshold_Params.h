@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function RotationThreshold.RotationThreshold_C.Start
 	 */
 	struct URotationThreshold_C_Start_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RotationThreshold.RotationThreshold_C.ReceiveTick
@@ -28,15 +27,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function RotationThreshold.RotationThreshold_C.Stop
 	 */
 	struct URotationThreshold_C_Stop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function RotationThreshold.RotationThreshold_C.ExecuteUbergraph_RotationThreshold
@@ -45,15 +42,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function RotationThreshold.RotationThreshold_C.OnRotationThresholdReached__DelegateSignature
 	 */
 	struct URotationThreshold_C_OnRotationThresholdReached__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2B020
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EyeTracker.EyeTrackerFunctionLibrary.SetEyeTrackedPlayer
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APlayerController*                           PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEyeTrackerFunctionLibrary::STATIC_SetEyeTrackedPlayer(class APlayerController* PlayerController)
+	void UEyeTrackerFunctionLibrary::SetEyeTrackedPlayer(class APlayerController* PlayerController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -28,18 +28,17 @@ namespace CG
 		params.PlayerController = PlayerController;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2AFF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EyeTracker.EyeTrackerFunctionLibrary.IsStereoGazeDataAvailable
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UEyeTrackerFunctionLibrary::STATIC_IsStereoGazeDataAvailable()
+	bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -48,7 +47,6 @@ namespace CG
 		UEyeTrackerFunctionLibrary_IsStereoGazeDataAvailable_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -57,11 +55,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2AFC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EyeTracker.EyeTrackerFunctionLibrary.IsEyeTrackerConnected
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UEyeTrackerFunctionLibrary::STATIC_IsEyeTrackerConnected()
+	bool UEyeTrackerFunctionLibrary::IsEyeTrackerConnected()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -70,7 +68,6 @@ namespace CG
 		UEyeTrackerFunctionLibrary_IsEyeTrackerConnected_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -79,13 +76,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2AF20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EyeTracker.EyeTrackerFunctionLibrary.GetStereoGazeData
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEyeTrackerStereoGazeData                   OutGazeData                                                (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UEyeTrackerFunctionLibrary::STATIC_GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData)
+	bool UEyeTrackerFunctionLibrary::GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -94,7 +91,6 @@ namespace CG
 		UEyeTrackerFunctionLibrary_GetStereoGazeData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -106,13 +102,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F2AE70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EyeTracker.EyeTrackerFunctionLibrary.GetGazeData
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FEyeTrackerGazeData                         OutGazeData                                                (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UEyeTrackerFunctionLibrary::STATIC_GetGazeData(struct FEyeTrackerGazeData* OutGazeData)
+	bool UEyeTrackerFunctionLibrary::GetGazeData(struct FEyeTrackerGazeData* OutGazeData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -121,7 +117,6 @@ namespace CG
 		UEyeTrackerFunctionLibrary_GetGazeData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -133,8 +128,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEyeTrackerFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEyeTrackerFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEyeTrackerFunctionLibrary::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * UserDefinedEnum FNAFVisualQualityLevel.FNAFVisualQualityLevel
 	 */
-	enum class FNAFVisualQualityLevel_EFNAFVisualQualityLevel : uint8_t
+	enum class EFNAFVisualQualityLevel : uint8_t
 	{
-		FNAFVisualQualityLevel__NewEnumerator5             = 0,
-		FNAFVisualQualityLevel__NewEnumerator1             = 1,
-		FNAFVisualQualityLevel__NewEnumerator2             = 2,
-		FNAFVisualQualityLevel__NewEnumerator3             = 3,
-		FNAFVisualQualityLevel__NewEnumerator4             = 4,
-		FNAFVisualQualityLevel__FNAFVisualQualityLevel_MAX = 5
+		FNAFVisualQualityLevelNewEnumerator5             = 0,
+		FNAFVisualQualityLevelNewEnumerator1             = 1,
+		FNAFVisualQualityLevelNewEnumerator2             = 2,
+		FNAFVisualQualityLevelNewEnumerator3             = 3,
+		FNAFVisualQualityLevelNewEnumerator4             = 4,
+		FNAFVisualQualityLevelFNAFVisualQualityLevel_MAX = 5
 	};
 
 }

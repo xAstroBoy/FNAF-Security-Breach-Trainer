@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DialogueFunctionLibrary.DialogueFunctionLibrary_C.GetStandardDialogContext
-	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FDialogueContext                            DialogueContext                                            (Parm, OutParm)
 	 */
-	void UDialogueFunctionLibrary_C::STATIC_GetStandardDialogContext(class UObject* __WorldContext, struct FDialogueContext* DialogueContext)
+	void UDialogueFunctionLibrary_C::GetStandardDialogContext(class UObject* __WorldContext, struct FDialogueContext* DialogueContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DialogueFunctionLibrary.DialogueFunctionLibrary_C.PlayStandardDialogAttached
-	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDialogueWave*                               Dialogue                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class USceneComponent*                             AttachToComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,7 +48,7 @@ namespace CG
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UDialogueFunctionLibrary_C::STATIC_PlayStandardDialogAttached(class UDialogueWave* Dialogue, class USceneComponent* AttachToComponent, const class FName& AttachPointName, const struct FVector& Location, class UObject* __WorldContext)
+	void UDialogueFunctionLibrary_C::PlayStandardDialogAttached(class UDialogueWave* Dialogue, class USceneComponent* AttachToComponent, const class FName& AttachPointName, const struct FVector& Location, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -68,14 +68,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DialogueFunctionLibrary.DialogueFunctionLibrary_C.PlayStandardDialog
-	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UDialogueWave*                               Dialogue                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	class UAudioComponent* UDialogueFunctionLibrary_C::STATIC_PlayStandardDialog(class UDialogueWave* Dialogue, class UObject* __WorldContext)
+	class UAudioComponent* UDialogueFunctionLibrary_C::PlayStandardDialog(class UDialogueWave* Dialogue, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -94,8 +94,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDialogueFunctionLibrary_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDialogueFunctionLibrary_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDialogueFunctionLibrary_C::StaticClass()

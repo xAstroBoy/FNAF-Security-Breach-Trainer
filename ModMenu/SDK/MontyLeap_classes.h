@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass MontyLeap.MontyLeap_C
-	 * Size -> 0x0000 (FullSize[0x0138] - InheritedSize[0x0138])
+	 * Size -> 0x0000 (FullSize[0x016C] - InheritedSize[0x016C])
 	 */
 	class UMontyLeap_C : public URoxyLeap_C
 	{

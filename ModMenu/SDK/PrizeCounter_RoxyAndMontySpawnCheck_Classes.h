@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,8 +26,8 @@ namespace CG
 		class USpawnAISceneComponent_C*                            MontySpawnComponent;                                     // 0x0280(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USpawnAISceneComponent_C*                            RoxySpawnComponent;                                      // 0x0288(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       WasTriggered;                                            // 0x0290(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_NW65[0x7];                                   // 0x0291(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              SeekerPatrolPathMonty[0x28];                             // 0x0291(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_ZFB4[0x7];                                   // 0x0291(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              SeekerPatrolPathMonty[0x28];                             // 0x0298(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              SeekerPatrolPathRoxy[0x28];                              // 0x02C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:

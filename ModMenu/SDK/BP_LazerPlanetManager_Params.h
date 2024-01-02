@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function BP_LazerPlanetManager.BP_LazerPlanetManager_C.ReceiveBeginPlay
 	 */
 	struct ABP_LazerPlanetManager_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_LazerPlanetManager.BP_LazerPlanetManager_C.SwitchColorForScenario
 	 */
 	struct ABP_LazerPlanetManager_C_SwitchColorForScenario_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_LazerPlanetManager.BP_LazerPlanetManager_C.ExecuteUbergraph_BP_LazerPlanetManager
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

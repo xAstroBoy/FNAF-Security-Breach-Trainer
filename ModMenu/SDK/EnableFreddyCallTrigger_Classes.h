@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,9 +25,9 @@ namespace CG
 		bool                                                       CanCallFreddy;                                           // 0x0278(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       ShouldUpdateEnterExitFreddy;                             // 0x0279(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       CanEnterExitFreddy;                                      // 0x027A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_MU4N[0x5];                                   // 0x027B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FTimeCheckValues_Struct>                     InvalidTimes;                                            // 0x0280(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<class UTimeCheckComponent_C*>                       InvalidTimesAsComponents;                                // 0x0290(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
+		unsigned char                                              UnknownData_5R2Q[0x5];                                   // 0x027B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FTimeCheckValues_Struct>                     InvalidTimes;                                            // 0x0280(0x0010) Edit, BlueprintVisible
+		TArray<class UTimeCheckComponent_C*>                       InvalidTimesAsComponents;                                // 0x0290(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		bool                                                       IsDuringInvalidTime;                                     // 0x02A0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:

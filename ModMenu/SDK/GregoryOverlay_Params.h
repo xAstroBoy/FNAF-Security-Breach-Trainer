@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,18 +15,39 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function GregoryOverlay.GregoryOverlay_C.LoadHud
+	 * Function GregoryOverlay.GregoryOverlay_C.RunIconToggle
 	 */
-	struct UGregoryOverlay_C_LoadHud_Params
+	struct UGregoryOverlay_C_RunIconToggle_Params
 	{
+	public:
+		bool                                                       On;                                                      // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_61T3[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function GregoryOverlay.GregoryOverlay_C.CrouchToggle
+	 */
+	struct UGregoryOverlay_C_CrouchToggle_Params
+	{
+	public:
+		bool                                                       InputPin;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_XAAB[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function GregoryOverlay.GregoryOverlay_C.GetCorrentPawnCrouchIcon
+	 */
+	struct UGregoryOverlay_C_GetCorrentPawnCrouchIcon_Params
+	{
+	public:
+		class UUserWidget*                                         CrouchingIcon;                                           // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function GregoryOverlay.GregoryOverlay_C.Construct
 	 */
 	struct UGregoryOverlay_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function GregoryOverlay.GregoryOverlay_C.ChangeBackgroundImage
@@ -34,8 +55,7 @@ namespace CG
 	struct UGregoryOverlay_C_ChangeBackgroundImage_Params
 	{
 	public:
-		class UImage*                                              New_Image;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UImage*                                              NewImage;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -45,7 +65,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              DestroyedActor;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -54,8 +73,7 @@ namespace CG
 	struct UGregoryOverlay_C_ToggleReticle_Params
 	{
 	public:
-		bool                                                       HoldingFazerBlaster;                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       ShowRedDot;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -63,6 +81,8 @@ namespace CG
 	 */
 	struct UGregoryOverlay_C_ShowHeldItemWidget_Params
 	{
+	public:
+		class AEquippable_C*                                       Target;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -72,15 +92,19 @@ namespace CG
 	{
 	public:
 		bool                                                       HideProgressWheel;                                       // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function GregoryOverlay.GregoryOverlay_C.Show
 	 */
 	struct UGregoryOverlay_C_Show_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function GregoryOverlay.GregoryOverlay_C.ShowFlashlightPowerLevel
+	 */
+	struct UGregoryOverlay_C_ShowFlashlightPowerLevel_Params
+	{	};
 
 	/**
 	 * Function GregoryOverlay.GregoryOverlay_C.ExecuteUbergraph_GregoryOverlay
@@ -89,7 +113,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

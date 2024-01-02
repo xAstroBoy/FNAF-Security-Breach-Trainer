@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.GetLiftAccessTransform
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Start                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.GetTargets
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABackstageOfficeLift_C::GetTargets()
 	{
@@ -55,17 +55,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Fall down__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABackstageOfficeLift_C::Fall_down__FinishedFunc()
+	void ABackstageOfficeLift_C::Falldown__FinishedFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Fall down__FinishedFunc");
 		
-		ABackstageOfficeLift_C_Fall_down__FinishedFunc_Params params {};
+		ABackstageOfficeLift_C_Falldown__FinishedFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -74,17 +74,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Fall down__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABackstageOfficeLift_C::Fall_down__UpdateFunc()
+	void ABackstageOfficeLift_C::Falldown__UpdateFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Fall down__UpdateFunc");
 		
-		ABackstageOfficeLift_C_Fall_down__UpdateFunc_Params params {};
+		ABackstageOfficeLift_C_Falldown__UpdateFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -93,17 +93,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Setup Lift Targets
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABackstageOfficeLift_C::Setup_Lift_Targets()
+	void ABackstageOfficeLift_C::SetupLiftTargets()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Setup Lift Targets");
 		
-		ABackstageOfficeLift_C_Setup_Lift_Targets_Params params {};
+		ABackstageOfficeLift_C_SetupLiftTargets_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -112,19 +112,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Target Hit
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBackstageLiftTarget_C*                      LiftTarget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABackstageOfficeLift_C::Target_Hit(class UBackstageLiftTarget_C* LiftTarget)
+	void ABackstageOfficeLift_C::TargetHit(class UBackstageLiftTarget_C* LiftTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Target Hit");
 		
-		ABackstageOfficeLift_C_Target_Hit_Params params {};
+		ABackstageOfficeLift_C_TargetHit_Params params {};
 		params.LiftTarget = LiftTarget;
 		
 		auto flags = fn->FunctionFlags;
@@ -134,19 +134,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Set Moving
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               MovingUp                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABackstageOfficeLift_C::Set_Moving(bool MovingUp)
+	void ABackstageOfficeLift_C::SetMoving(bool MovingUp)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Set Moving");
 		
-		ABackstageOfficeLift_C_Set_Moving_Params params {};
+		ABackstageOfficeLift_C_SetMoving_Params params {};
 		params.MovingUp = MovingUp;
 		
 		auto flags = fn->FunctionFlags;
@@ -156,9 +156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABackstageOfficeLift_C::ReceiveBeginPlay()
 	{
@@ -175,9 +175,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.MoveMontyOnLift
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoveableLift_C*                             Lift                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Up                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -199,9 +199,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.FallQuick
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ABackstageOfficeLift_C::FallQuick()
 	{
@@ -218,9 +218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.BndEvt__Target_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
-	 * 		Flags  -> (HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         HitComponent                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -248,20 +248,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.Teleport Freddy into office
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AMoveableLift_C*                             Lift                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Top                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABackstageOfficeLift_C::Teleport_Freddy_into_office(class AMoveableLift_C* Lift, bool Top)
+	void ABackstageOfficeLift_C::TeleportFreddyintooffice(class AMoveableLift_C* Lift, bool Top)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BackstageOfficeLift.BackstageOfficeLift_C.Teleport Freddy into office");
 		
-		ABackstageOfficeLift_C_Teleport_Freddy_into_office_Params params {};
+		ABackstageOfficeLift_C_TeleportFreddyintooffice_Params params {};
 		params.Lift = Lift;
 		params.Top = Top;
 		
@@ -272,9 +272,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageOfficeLift.BackstageOfficeLift_C.ExecuteUbergraph_BackstageOfficeLift
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -294,8 +294,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABackstageOfficeLift_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABackstageOfficeLift_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABackstageOfficeLift_C::StaticClass()

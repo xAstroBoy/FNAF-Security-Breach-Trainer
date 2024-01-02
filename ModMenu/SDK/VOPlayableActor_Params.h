@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function VOPlayableActor.VOPlayableActor_C.ForcePlayVoiceLine
+	 */
+	struct UVOPlayableActor_C_ForcePlayVoiceLine_Params
+	{
+	public:
+		class UAkAudioEvent*                                       AKEvent;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function VOPlayableActor.VOPlayableActor_C.PlayVoiceType
 	 */
 	struct UVOPlayableActor_C_PlayVoiceType_Params
 	{
 	public:
-		AIVoiceOverType_EAIVoiceOverType                           VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EAIVoiceOverType                                           VoiceTag;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

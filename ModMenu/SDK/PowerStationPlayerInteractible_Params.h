@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	{
 	public:
 		bool                                                       Valid;                                                   // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_COX8[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FVector                                             WorldLocation;                                           // 0x0004(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,8 +31,7 @@ namespace CG
 	struct APowerStationPlayerInteractible_C_GetInteractViewAngles_Params
 	{
 	public:
-		fnaf9_ECameraAngleFlags                                    AnglesToCheck;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ECameraAngleFlags                                          AnglesToCheck;                                           // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -42,7 +41,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
-
 	};
 
 	/**
@@ -52,7 +50,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IgnoreTrace;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -62,7 +59,6 @@ namespace CG
 	{
 	public:
 		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
-
 	};
 
 	/**
@@ -72,7 +68,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Output;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -81,9 +76,8 @@ namespace CG
 	struct APowerStationPlayerInteractible_C_GetInteractibleType_Params
 	{
 	public:
-		InteractibleType_EInteractibleType                         Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		InteractiblePressType_EInteractiblePressType               PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EInteractibleType                                          Type;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		EInteractiblePressType                                     PressType;                                               // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -93,16 +87,15 @@ namespace CG
 	{
 	public:
 		bool                                                       CanInteract;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		fnaf9_EConditionFailReason                                 CantReason;                                              // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EConditionFailReason                                       CantReason;                                              // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_BUCU[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.OnPlayerInteractCancel
 	 */
 	struct APowerStationPlayerInteractible_C_OnPlayerInteractCancel_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.OnPlayerHoverEnter
@@ -111,7 +104,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -121,7 +113,6 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -132,36 +123,31 @@ namespace CG
 	public:
 		class APawn*                                               PlayerPawn;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class APlayerController*                                   PlayerController;                                        // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.Setup From Load
 	 */
-	struct APowerStationPlayerInteractible_C_Setup_From_Load_Params
-	{
-	};
+	struct APowerStationPlayerInteractible_C_SetupFromLoad_Params
+	{	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.On Power Station Event Finished
 	 */
-	struct APowerStationPlayerInteractible_C_On_Power_Station_Event_Finished_Params
-	{
-	};
+	struct APowerStationPlayerInteractible_C_OnPowerStationEventFinished_Params
+	{	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.StartHour5VO
 	 */
 	struct APowerStationPlayerInteractible_C_StartHour5VO_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.StartHour6VO
 	 */
 	struct APowerStationPlayerInteractible_C_StartHour6VO_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStationPlayerInteractible.PowerStationPlayerInteractible_C.ExecuteUbergraph_PowerStationPlayerInteractible
@@ -170,7 +156,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_WTGY[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

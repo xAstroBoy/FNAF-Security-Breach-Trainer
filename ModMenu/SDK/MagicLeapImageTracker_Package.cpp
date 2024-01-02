@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A81B40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UTexture2D*                                  ImageTarget                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,7 +28,6 @@ namespace CG
 		params.ImageTarget = ImageTarget;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -37,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A81AA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	bool UMagicLeapImageTrackerComponent::RemoveTargetAsync()
 	{
@@ -50,7 +49,6 @@ namespace CG
 		UMagicLeapImageTrackerComponent_RemoveTargetAsync_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -59,8 +57,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapImageTrackerComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapImageTrackerComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapImageTrackerComponent::StaticClass()
@@ -73,13 +71,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A81AD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.SetMaxSimultaneousTargets
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            MaxSimultaneousTargets                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapImageTrackerFunctionLibrary::STATIC_SetMaxSimultaneousTargets(int32_t MaxSimultaneousTargets)
+	void UMagicLeapImageTrackerFunctionLibrary::SetMaxSimultaneousTargets(int32_t MaxSimultaneousTargets)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -89,18 +87,17 @@ namespace CG
 		params.MaxSimultaneousTargets = MaxSimultaneousTargets;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A81A70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.IsImageTrackingEnabled
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapImageTrackerFunctionLibrary::STATIC_IsImageTrackingEnabled()
+	bool UMagicLeapImageTrackerFunctionLibrary::IsImageTrackingEnabled()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -109,7 +106,6 @@ namespace CG
 		UMagicLeapImageTrackerFunctionLibrary_IsImageTrackingEnabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -118,11 +114,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A81A40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.GetMaxSimultaneousTargets
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	int32_t UMagicLeapImageTrackerFunctionLibrary::STATIC_GetMaxSimultaneousTargets()
+	int32_t UMagicLeapImageTrackerFunctionLibrary::GetMaxSimultaneousTargets()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -131,7 +127,6 @@ namespace CG
 		UMagicLeapImageTrackerFunctionLibrary_GetMaxSimultaneousTargets_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -140,13 +135,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A819C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary.EnableImageTracking
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bEnable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UMagicLeapImageTrackerFunctionLibrary::STATIC_EnableImageTracking(bool bEnable)
+	void UMagicLeapImageTrackerFunctionLibrary::EnableImageTracking(bool bEnable)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -156,15 +151,14 @@ namespace CG
 		params.bEnable = bEnable;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapImageTrackerFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapImageTrackerFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapImageTrackerFunctionLibrary::StaticClass()

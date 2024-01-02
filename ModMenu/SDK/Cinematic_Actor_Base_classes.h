@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,11 +23,11 @@ namespace CG
 	public:
 		class USkeletalMeshComponent*                              SkeletalMesh;                                            // 0x0228(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     Scene;                                                   // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		TArray<struct FSeekerHourlyUpdate>                         HourlyMaterials;                                         // 0x0238(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<struct FSeekerHourlyUpdate>                         HourlyMaterials;                                         // 0x0238(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		int32_t                                                    IndexToUse;                                              // 0x0248(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Set_Up_Materials();
+		void SetUpMaterials();
 		static UClass* StaticClass();
 	};
 

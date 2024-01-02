@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,7 @@ namespace CG
 	struct FFreddyVOTypeArray
 	{
 	public:
-		TArray<class UDialogueWave*>                               VOArray_3_A22825F343C4AE420D8657ADE9FE6E19;              // 0x0000(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-
+		TArray<class UDialogueWave*>                               VOArray_3_A22825F343C4AE420D8657ADE9FE6E19;              // 0x0000(0x0010) Edit, BlueprintVisible
 	};
 
 }

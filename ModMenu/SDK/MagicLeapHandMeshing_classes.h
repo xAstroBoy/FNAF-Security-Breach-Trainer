@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -34,10 +34,10 @@ namespace CG
 	class UMagicLeapHandMeshingFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-		bool STATIC_DestroyClient();
-		bool STATIC_CreateClient();
-		bool STATIC_ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		bool DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+		bool DestroyClient();
+		bool CreateClient();
+		bool ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
 		static UClass* StaticClass();
 	};
 

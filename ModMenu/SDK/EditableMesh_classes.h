@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -34,7 +34,7 @@ namespace CG
 		class UGeometryCollection*                                 GeometryCollection;                                      // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UGeometryCollection*                                 OriginalGeometryCollection;                              // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    GeometryCollectionLODIndex;                              // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_5P8B[0x9C];                                  // 0x003C(0x009C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FSZ1[0x9C];                                  // 0x003C(0x009C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -47,22 +47,22 @@ namespace CG
 	class UEditableMesh : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_A3ZV[0x390];                                 // 0x0028(0x0390) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class UEditableMeshAdapter*>                        Adapters;                                                // 0x03B8(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_DTOP[0x8];                                   // 0x03C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EFQK[0x390];                                 // 0x0028(0x0390) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class UEditableMeshAdapter*>                        Adapters;                                                // 0x03B8(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_I6CF[0x8];                                   // 0x03C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    TextureCoordinateCount;                                  // 0x03D0(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FCY8[0x148];                                 // 0x03D4(0x0148) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RLOD[0x148];                                 // 0x03D4(0x0148) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    PendingCompactCounter;                                   // 0x051C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    SubdivisionCount;                                        // 0x0520(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BSIW[0x1E4];                                 // 0x0524(0x01E4) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3919[0x1E4];                                 // 0x0524(0x01E4) MISSED OFFSET (PADDING)
 
 	public:
 		void WeldVertices(TArray<struct FVertexID> VertexIDs, struct FVertexID* OutNewVertexID);
 		void TryToRemoveVertex(const struct FVertexID& VertexID, bool* bOutWasVertexRemoved, struct FEdgeID* OutNewEdgeID);
 		void TryToRemovePolygonEdge(const struct FEdgeID& EdgeID, bool* bOutWasEdgeRemoved, struct FPolygonID* OutNewPolygonID);
 		void TriangulatePolygons(TArray<struct FPolygonID> PolygonIDs, TArray<struct FPolygonID>* OutNewTrianglePolygons);
-		void TessellatePolygons(TArray<struct FPolygonID> PolygonIDs, EditableMesh_ETriangleTessellationMode TriangleTessellationMode, TArray<struct FPolygonID>* OutNewPolygonIDs);
-		void StartModification(EditableMesh_EMeshModificationType MeshModificationType, EditableMesh_EMeshTopologyChange MeshTopologyChange);
+		void TessellatePolygons(TArray<struct FPolygonID> PolygonIDs, ETriangleTessellationMode TriangleTessellationMode, TArray<struct FPolygonID>* OutNewPolygonIDs);
+		void StartModification(EMeshModificationType MeshModificationType, EMeshTopologyChange MeshTopologyChange);
 		void SplitPolygons(TArray<struct FPolygonToSplit> PolygonsToSplit, TArray<struct FEdgeID>* OutNewEdgeIDs);
 		void SplitPolygonalMesh(const struct FPlane& InPlane, TArray<struct FPolygonID>* PolygonIDs1, TArray<struct FPolygonID>* PolygonIDs2, TArray<struct FEdgeID>* BoundaryIDs);
 		void SplitEdge(const struct FEdgeID& EdgeID, TArray<float> Splits, TArray<struct FVertexID>* OutNewVertexIDs);
@@ -88,10 +88,10 @@ namespace CG
 		void QuadrangulateMesh(TArray<struct FPolygonID>* OutNewPolygonIDs);
 		void PropagateInstanceChanges();
 		void MoveVertices(TArray<struct FVertexToMove> VerticesToMove);
-		struct FVertexID STATIC_MakeVertexID(int32_t VertexIndex);
-		struct FPolygonID STATIC_MakePolygonID(int32_t PolygonIndex);
-		struct FPolygonGroupID STATIC_MakePolygonGroupID(int32_t PolygonGroupIndex);
-		struct FEdgeID STATIC_MakeEdgeID(int32_t EdgeIndex);
+		struct FVertexID MakeVertexID(int32_t VertexIndex);
+		struct FPolygonID MakePolygonID(int32_t PolygonIndex);
+		struct FPolygonGroupID MakePolygonGroupID(int32_t PolygonGroupIndex);
+		struct FEdgeID MakeEdgeID(int32_t EdgeIndex);
 		bool IsValidVertex(const struct FVertexID& VertexID);
 		bool IsValidPolygonGroup(const struct FPolygonGroupID& PolygonGroupID);
 		bool IsValidPolygon(const struct FPolygonID& PolygonID);
@@ -104,11 +104,11 @@ namespace CG
 		bool IsCommittedAsInstance();
 		bool IsCommitted();
 		bool IsBeingModified();
-		struct FVertexID STATIC_InvalidVertexID();
-		struct FPolygonID STATIC_InvalidPolygonID();
-		struct FPolygonGroupID STATIC_InvalidPolygonGroupID();
-		struct FEdgeID STATIC_InvalidEdgeID();
-		void InsetPolygons(TArray<struct FPolygonID> PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EditableMesh_EInsetPolygonsMode Mode, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs);
+		struct FVertexID InvalidVertexID();
+		struct FPolygonID InvalidPolygonID();
+		struct FPolygonGroupID InvalidPolygonGroupID();
+		struct FEdgeID InvalidEdgeID();
+		void InsetPolygons(TArray<struct FPolygonID> PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EInsetPolygonsMode Mode, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs);
 		void InsertEdgeLoop(const struct FEdgeID& EdgeID, TArray<float> Splits, TArray<struct FEdgeID>* OutNewEdgeIDs);
 		void InitializeAdapters();
 		struct FEdgeID GetVertexPairEdge(const struct FVertexID& VertexID, const struct FVertexID& NextVertexID, bool* bOutEdgeWindingIsReversed);
@@ -196,7 +196,7 @@ namespace CG
 	class UEditableMeshFactory : public UObject
 	{
 	public:
-		class UEditableMesh* STATIC_MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex);
+		class UEditableMesh* MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex);
 		static UClass* StaticClass();
 	};
 
@@ -210,7 +210,7 @@ namespace CG
 		class UStaticMesh*                                         StaticMesh;                                              // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UStaticMesh*                                         OriginalStaticMesh;                                      // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    StaticMeshLODIndex;                                      // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_1NQ9[0xA4];                                  // 0x003C(0x00A4) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5P59[0xA4];                                  // 0x003C(0x00A4) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

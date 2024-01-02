@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,8 +20,7 @@ namespace CG
 	struct UFreddyOverlay_C_FazNotification_Visibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -30,16 +29,14 @@ namespace CG
 	struct UFreddyOverlay_C_Get_ExitText_Visibility_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.StopWidgetAnimations
 	 */
 	struct UFreddyOverlay_C_StopWidgetAnimations_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.PreConstruct
@@ -48,7 +45,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -58,29 +54,37 @@ namespace CG
 	{
 	public:
 		class AActor*                                              DestroyedActor;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.BndEvt__WI_PowerLevel_K2Node_ComponentBoundEvent_0_LowPowerAlert__DelegateSignature
 	 */
 	struct UFreddyOverlay_C_BndEvt__WI_PowerLevel_K2Node_ComponentBoundEvent_0_LowPowerAlert__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.ChangeBackgroundImage
 	 */
 	struct UFreddyOverlay_C_ChangeBackgroundImage_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.Construct
 	 */
 	struct UFreddyOverlay_C_Construct_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function FreddyOverlay.FreddyOverlay_C.FadeInButtonBackground
+	 */
+	struct UFreddyOverlay_C_FadeInButtonBackground_Params
+	{	};
+
+	/**
+	 * Function FreddyOverlay.FreddyOverlay_C.FadeOutButtonBackground
+	 */
+	struct UFreddyOverlay_C_FadeOutButtonBackground_Params
+	{	};
 
 	/**
 	 * Function FreddyOverlay.FreddyOverlay_C.ExecuteUbergraph_FreddyOverlay
@@ -89,7 +93,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

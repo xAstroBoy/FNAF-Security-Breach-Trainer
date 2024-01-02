@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,8 +22,8 @@ namespace CG
 	{
 	public:
 		class USplineComponent*                                    Spline;                                                  // 0x0228(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		TArray<struct FSplineConnection>                           ForwardSplines;                                          // 0x0230(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
-		TArray<struct FSplineConnection>                           BackwardSplines;                                         // 0x0240(0x0010) Edit, BlueprintVisible, HasGetValueTypeHash
+		TArray<struct FSplineConnection>                           ForwardSplines;                                          // 0x0230(0x0010) Edit, BlueprintVisible
+		TArray<struct FSplineConnection>                           BackwardSplines;                                         // 0x0240(0x0010) Edit, BlueprintVisible
 
 	public:
 		void FindDistanceClosestToLocation(const struct FVector& WorldLocation, float* Distance);

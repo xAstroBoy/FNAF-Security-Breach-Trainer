@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UCameraFunctions_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_Is_Visible_in_Camera(const struct FVector& Location, TArray<class AActor*> ActorsToIgnore, class UObject* __WorldContext);
+		bool IsVisibleinCamera(const struct FVector& Location, TArray<class AActor*> ActorsToIgnore, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

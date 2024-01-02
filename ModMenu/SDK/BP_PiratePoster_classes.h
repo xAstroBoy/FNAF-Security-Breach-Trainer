@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,19 +16,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PiratePoster.BP_PiratePoster_C
-	 * Size -> 0x0083 (FullSize[0x0440] - InheritedSize[0x03BD])
+	 * Size -> 0x0081 (FullSize[0x0470] - InheritedSize[0x03EF])
 	 */
 	class ABP_PiratePoster_C : public ABP_DoorMaster_C
 	{
 	public:
-		unsigned char                                              UnknownData_9D5U[0x3];                                   // 0x03BD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UStaticMeshComponent*                                MOD_SingleHinge_MoviePoster;                             // 0x03C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UWorldStateHandlerComponent*                         BonnieWorldState;                                        // 0x03D0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UWorldStateHandlerComponent*                         FoxyWorldState;                                          // 0x03D8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UWorldStateHandlerComponent*                         ChicaWorldState;                                         // 0x03E0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UWorldStateHandlerComponent*                         FreddyWorldState;                                        // 0x03E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		TMap<class FString, bool>                                  CharactersToGlow;                                        // 0x03F0(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
+		unsigned char                                              UnknownData_7FOX[0x1];                                   // 0x03EF(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UStaticMeshComponent*                                MOD_SingleHinge_MoviePoster;                             // 0x03F8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UWorldStateHandlerComponent*                         BonnieWorldState;                                        // 0x0400(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UWorldStateHandlerComponent*                         FoxyWorldState;                                          // 0x0408(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UWorldStateHandlerComponent*                         ChicaWorldState;                                         // 0x0410(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UWorldStateHandlerComponent*                         FreddyWorldState;                                        // 0x0418(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		TMap<class FString, bool>                                  CharactersToGlow;                                        // 0x0420(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void ReceiveBeginPlay();

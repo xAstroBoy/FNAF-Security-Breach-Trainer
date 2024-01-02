@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACinematic_Actor_Freddy_Medscan_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACinematic_Actor_Freddy_Medscan_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACinematic_Actor_Freddy_Medscan_C::StaticClass()

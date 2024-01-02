@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		void GetFreddyActionLocationAndRotation(struct FVector* Location, struct FRotator* Rotation);
-		void GetFreddyVO(FreddyVOType_EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog);
+		void GetFreddyVO(EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog);
 		static UClass* StaticClass();
 	};
 

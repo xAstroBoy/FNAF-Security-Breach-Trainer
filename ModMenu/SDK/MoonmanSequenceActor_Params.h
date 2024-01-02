@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -41,22 +39,28 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.PostSaveGame
 	 */
 	struct AMoonmanSequenceActor_C_PostSaveGame_Params
+	{	};
+
+	/**
+	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.DLCRabbitDisplayAlertText
+	 */
+	struct AMoonmanSequenceActor_C_DLCRabbitDisplayAlertText_Params
 	{
+	public:
+		bool                                                       Display;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.ReceiveBeginPlay
 	 */
 	struct AMoonmanSequenceActor_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.ReceiveTick
@@ -65,29 +69,25 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.EyeBlinkSetup
 	 */
 	struct AMoonmanSequenceActor_C_EyeBlinkSetup_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.OnDestroySelf
 	 */
 	struct AMoonmanSequenceActor_C_OnDestroySelf_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.OnDeathSequence
 	 */
 	struct AMoonmanSequenceActor_C_OnDeathSequence_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.OnDebugVis
@@ -96,15 +96,13 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.PostGameLoad
 	 */
 	struct AMoonmanSequenceActor_C_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.OnCheckpointLoad
@@ -113,15 +111,13 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.EyesShut1
 	 */
 	struct AMoonmanSequenceActor_C_EyesShut1_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MoonmanSequenceActor.MoonmanSequenceActor_C.ExecuteUbergraph_MoonmanSequenceActor
@@ -130,7 +126,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

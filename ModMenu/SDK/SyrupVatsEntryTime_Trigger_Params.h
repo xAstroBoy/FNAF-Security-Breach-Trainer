@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,14 +15,10 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.ReceiveActorBeginOverlap
+	 * Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.OnTriggered
 	 */
-	struct ASyrupVatsEntryTime_Trigger_C_ReceiveActorBeginOverlap_Params
-	{
-	public:
-		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct ASyrupVatsEntryTime_Trigger_C_OnTriggered_Params
+	{	};
 
 	/**
 	 * Function SyrupVatsEntryTime_Trigger.SyrupVatsEntryTime_Trigger_C.ExecuteUbergraph_SyrupVatsEntryTime_Trigger
@@ -31,7 +27,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_MFKZ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

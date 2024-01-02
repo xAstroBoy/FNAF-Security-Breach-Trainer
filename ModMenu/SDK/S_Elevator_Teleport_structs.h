@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -23,7 +23,6 @@ namespace CG
 	public:
 		struct FS_Elevator_Teleport_Location                       A_7_C073DD34469CB89235F773A6F1274593;                    // 0x0000(0x00A0) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FS_Elevator_Teleport_Location                       B_8_F48A13D84EE431FD8792DAA5E41A4F34;                    // 0x00A0(0x00A0) Edit, BlueprintVisible, HasGetValueTypeHash
-
 	};
 
 }

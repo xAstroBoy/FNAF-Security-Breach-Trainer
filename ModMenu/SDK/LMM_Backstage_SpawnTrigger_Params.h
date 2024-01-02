@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function LMM_Backstage_SpawnTrigger.LMM_Backstage_SpawnTrigger_C.OnTriggered
 	 */
 	struct ALMM_Backstage_SpawnTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LMM_Backstage_SpawnTrigger.LMM_Backstage_SpawnTrigger_C.ExecuteUbergraph_LMM_Backstage_SpawnTrigger
@@ -28,7 +27,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_ZEPW[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

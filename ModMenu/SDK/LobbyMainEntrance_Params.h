@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,58 +17,50 @@ namespace CG
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.Close Gate
 	 */
-	struct ALobbyMainEntrance_C_Close_Gate_Params
-	{
-	};
+	struct ALobbyMainEntrance_C_CloseGate_Params
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature
 	 */
 	struct ALobbyMainEntrance_C_BndEvt__MissionStateHandler_K2Node_ComponentBoundEvent_1_OnMissionStateAleadyHit__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__PlanAEscape_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature
 	 */
 	struct ALobbyMainEntrance_C_BndEvt__PlanAEscape_K2Node_ComponentBoundEvent_4_OnMissionStateHit__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.ReceiveBeginPlay
 	 */
 	struct ALobbyMainEntrance_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__GetOutFinished_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature
 	 */
 	struct ALobbyMainEntrance_C_BndEvt__GetOutFinished_K2Node_ComponentBoundEvent_0_OnMissionStateConditionMetDelegate__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.Set Open
 	 */
-	struct ALobbyMainEntrance_C_Set_Open_Params
-	{
-	};
+	struct ALobbyMainEntrance_C_SetOpen_Params
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.Set Closed
 	 */
-	struct ALobbyMainEntrance_C_Set_Closed_Params
-	{
-	};
+	struct ALobbyMainEntrance_C_SetClosed_Params
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_5_OnTimeStart__DelegateSignature
 	 */
 	struct ALobbyMainEntrance_C_BndEvt__TimeCheckComponent_K2Node_ComponentBoundEvent_5_OnTimeStart__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LobbyMainEntrance.LobbyMainEntrance_C.ExecuteUbergraph_LobbyMainEntrance
@@ -77,7 +69,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

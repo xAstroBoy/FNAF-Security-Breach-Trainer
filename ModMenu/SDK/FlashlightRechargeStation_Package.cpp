@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetInteractViewLocation
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Valid                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     WorldLocation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,13 +39,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetInteractViewAngles
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_ECameraAngleFlags                            AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECameraAngleFlags                                  AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStation_C::GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck)
+	void AFlashlightRechargeStation_C::GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -63,9 +63,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetHUDInstruction
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -87,9 +87,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.InteractIgnoresTrace
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IgnoreTrace                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -111,9 +111,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetInstructionOverride
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -135,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.UpdateUIOnTick
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Output                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -159,14 +159,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetInteractibleType
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InteractibleType_EInteractibleType                 Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		InteractiblePressType_EInteractiblePressType       PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractibleType                                  Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractiblePressType                             PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStation_C::GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType)
+	void AFlashlightRechargeStation_C::GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -186,14 +186,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.CanPlayerInteract
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanInteract                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_EConditionFailReason                         CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStation_C::CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason)
+	void AFlashlightRechargeStation_C::CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -213,9 +213,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.SetupWithFlashlight
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Charged                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -235,13 +235,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetRechargeUI
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UFlashlightRechargeUI_C*                     AsFlashlight_Recharge_UI                                   (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UFlashlightRechargeUI_C*                     AsFlashlightRechargeUI                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStation_C::GetRechargeUI(class UFlashlightRechargeUI_C** AsFlashlight_Recharge_UI)
+	void AFlashlightRechargeStation_C::GetRechargeUI(class UFlashlightRechargeUI_C** AsFlashlightRechargeUI)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -253,15 +253,15 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (AsFlashlight_Recharge_UI != nullptr)
-			*AsFlashlight_Recharge_UI = params.AsFlashlight_Recharge_UI;
+		if (AsFlashlightRechargeUI != nullptr)
+			*AsFlashlightRechargeUI = params.AsFlashlightRechargeUI;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.SetTimelineFinishState
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFlashlightRechargeStation_C::SetTimelineFinishState()
 	{
@@ -278,9 +278,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.UpdateRechargeDisplay
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Percentage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -300,9 +300,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.SetCollectibleState
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanCollect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Hidden                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -324,13 +324,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.GetFlashlightCollectible
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class AFlashlightCollectible_C*                    AsFlashlight_Collectible                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AFlashlightCollectible_C*                    AsFlashlightCollectible                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AFlashlightRechargeStation_C::GetFlashlightCollectible(class AFlashlightCollectible_C** AsFlashlight_Collectible)
+	void AFlashlightRechargeStation_C::GetFlashlightCollectible(class AFlashlightCollectible_C** AsFlashlightCollectible)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -342,15 +342,15 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (AsFlashlight_Collectible != nullptr)
-			*AsFlashlight_Collectible = params.AsFlashlight_Collectible;
+		if (AsFlashlightCollectible != nullptr)
+			*AsFlashlightCollectible = params.AsFlashlightCollectible;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.StationMovement__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFlashlightRechargeStation_C::StationMovement__FinishedFunc()
 	{
@@ -367,9 +367,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.StationMovement__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFlashlightRechargeStation_C::StationMovement__UpdateFunc()
 	{
@@ -386,17 +386,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.recharge display timeline__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AFlashlightRechargeStation_C::recharge_display_timeline__FinishedFunc()
+	void AFlashlightRechargeStation_C::rechargedisplaytimeline__FinishedFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.recharge display timeline__FinishedFunc");
 		
-		AFlashlightRechargeStation_C_recharge_display_timeline__FinishedFunc_Params params {};
+		AFlashlightRechargeStation_C_rechargedisplaytimeline__FinishedFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -405,17 +405,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.recharge display timeline__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AFlashlightRechargeStation_C::recharge_display_timeline__UpdateFunc()
+	void AFlashlightRechargeStation_C::rechargedisplaytimeline__UpdateFunc()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.recharge display timeline__UpdateFunc");
 		
-		AFlashlightRechargeStation_C_recharge_display_timeline__UpdateFunc_Params params {};
+		AFlashlightRechargeStation_C_rechargedisplaytimeline__UpdateFunc_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -424,9 +424,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.FlaslightStationOpenClose
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Open                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AFlashlightRechargeStation_C::FlaslightStationOpenClose(bool Open)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.FlaslightStationOpenClose");
+		
+		AFlashlightRechargeStation_C_FlaslightStationOpenClose_Params params {};
+		params.Open = Open;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteract
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APlayerController*                           PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -448,20 +470,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.FlaslightStationOpenClose
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Open                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void AFlashlightRechargeStation_C::FlaslightStationOpenClose(bool Open)
+	void AFlashlightRechargeStation_C::BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.FlaslightStationOpenClose");
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature");
 		
-		AFlashlightRechargeStation_C_FlaslightStationOpenClose_Params params {};
-		params.Open = Open;
+		AFlashlightRechargeStation_C_BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -470,9 +489,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverExit
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -492,17 +511,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteractCancel
+	 * 		Flags  -> ()
 	 */
-	void AFlashlightRechargeStation_C::BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature()
+	void AFlashlightRechargeStation_C::OnPlayerInteractCancel()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteractCancel");
 		
-		AFlashlightRechargeStation_C_BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_0_OnHoldCompleted__DelegateSignature_Params params {};
+		AFlashlightRechargeStation_C_OnPlayerInteractCancel_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -511,9 +530,126 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Reverse Movement
+	 * 		Flags  -> ()
+	 */
+	void AFlashlightRechargeStation_C::ReverseMovement()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Reverse Movement");
+		
+		AFlashlightRechargeStation_C_ReverseMovement_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void AFlashlightRechargeStation_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveBeginPlay");
+		
+		AFlashlightRechargeStation_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Set Time
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              NewTime                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AFlashlightRechargeStation_C::SetTime(float NewTime)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Set Time");
+		
+		AFlashlightRechargeStation_C_SetTime_Params params {};
+		params.NewTime = NewTime;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Recharge Finished
+	 * 		Flags  -> ()
+	 */
+	void AFlashlightRechargeStation_C::OnRechargeFinished()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Recharge Finished");
+		
+		AFlashlightRechargeStation_C_OnRechargeFinished_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Take Player's Flashlight
+	 * 		Flags  -> ()
+	 */
+	void AFlashlightRechargeStation_C::TakePlayersFlashlight()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Take Player's Flashlight");
+		
+		AFlashlightRechargeStation_C_TakePlayersFlashlight_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Flashlight Collected
+	 * 		Flags  -> ()
+	 */
+	void AFlashlightRechargeStation_C::OnFlashlightCollected()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Flashlight Collected");
+		
+		AFlashlightRechargeStation_C_OnFlashlightCollected_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerHoverEnter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -533,145 +669,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteractCancel
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::OnPlayerInteractCancel()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.OnPlayerInteractCancel");
-		
-		AFlashlightRechargeStation_C_OnPlayerInteractCancel_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Reverse Movement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::Reverse_Movement()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Reverse Movement");
-		
-		AFlashlightRechargeStation_C_Reverse_Movement_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveBeginPlay");
-		
-		AFlashlightRechargeStation_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Set Time
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              NewTime                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void AFlashlightRechargeStation_C::Set_Time(float NewTime)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Set Time");
-		
-		AFlashlightRechargeStation_C_Set_Time_Params params {};
-		params.NewTime = NewTime;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Recharge Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::On_Recharge_Finished()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Recharge Finished");
-		
-		AFlashlightRechargeStation_C_On_Recharge_Finished_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.Take Player's Flashlight
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::Take_Players_Flashlight()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.Take Player's Flashlight");
-		
-		AFlashlightRechargeStation_C_Take_Players_Flashlight_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Flashlight Collected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AFlashlightRechargeStation_C::On_Flashlight_Collected()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.On Flashlight Collected");
-		
-		AFlashlightRechargeStation_C_On_Flashlight_Collected_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReturnFlashlight
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AFlashlightRechargeStation_C::ReturnFlashlight()
 	{
@@ -688,9 +688,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveTick
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AFlashlightRechargeStation_C::ReceiveTick(float DeltaSeconds)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FlashlightRechargeStation.FlashlightRechargeStation_C.ReceiveTick");
+		
+		AFlashlightRechargeStation_C_ReceiveTick_Params params {};
+		params.DeltaSeconds = DeltaSeconds;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FlashlightRechargeStation.FlashlightRechargeStation_C.ExecuteUbergraph_FlashlightRechargeStation
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -710,8 +732,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AFlashlightRechargeStation_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AFlashlightRechargeStation_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AFlashlightRechargeStation_C::StaticClass()

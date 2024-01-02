@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		struct FPoseLink                                           AnimGraph;                                               // 0x0000(0x0010)  (Parm, OutParm, NoDestructor)
-
 	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BoingyBoxABP_AnimGraphNode_ModifyBone_F94B1B084B276CB9908A59B3D9DC8C24
 	 */
 	struct UBoingyBoxABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BoingyBoxABP_AnimGraphNode_ModifyBone_F94B1B084B276CB9908A59B3D9DC8C24_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.BlueprintUpdateAnimation
@@ -38,53 +36,46 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.Esplode
 	 */
 	struct UBoingyBoxABP_C_Esplode_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.Set Esploded
 	 */
-	struct UBoingyBoxABP_C_Set_Esploded_Params
+	struct UBoingyBoxABP_C_SetEsploded_Params
 	{
 	public:
 		bool                                                       Esploded;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.Start Crank
 	 */
-	struct UBoingyBoxABP_C_Start_Crank_Params
-	{
-	};
+	struct UBoingyBoxABP_C_StartCrank_Params
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.Stop Crank
 	 */
-	struct UBoingyBoxABP_C_Stop_Crank_Params
-	{
-	};
+	struct UBoingyBoxABP_C_StopCrank_Params
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.AnimNotify_ModelSwap
 	 */
 	struct UBoingyBoxABP_C_AnimNotify_ModelSwap_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.AnimNotify_EnableRigidBody
 	 */
 	struct UBoingyBoxABP_C_AnimNotify_EnableRigidBody_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BoingyBoxABP.BoingyBoxABP_C.ExecuteUbergraph_BoingyBoxABP
@@ -93,7 +84,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

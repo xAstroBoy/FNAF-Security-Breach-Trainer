@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,13 +21,13 @@ namespace CG
 	class ULocationServices : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_StopLocationServices();
-		bool STATIC_StartLocationServices();
-		bool STATIC_IsLocationAccuracyAvailable(LocationServicesBPLibrary_ELocationAccuracy Accuracy);
-		bool STATIC_InitLocationServices(LocationServicesBPLibrary_ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter);
-		class ULocationServicesImpl* STATIC_GetLocationServicesImpl();
-		struct FLocationServicesData STATIC_GetLastKnownLocation();
-		bool STATIC_AreLocationServicesEnabled();
+		bool StopLocationServices();
+		bool StartLocationServices();
+		bool IsLocationAccuracyAvailable(ELocationAccuracy Accuracy);
+		bool InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter);
+		class ULocationServicesImpl* GetLocationServicesImpl();
+		struct FLocationServicesData GetLastKnownLocation();
+		bool AreLocationServicesEnabled();
 		static UClass* StaticClass();
 	};
 

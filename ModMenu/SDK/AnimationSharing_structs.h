@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,23 +25,7 @@ namespace CG
 		class UClass*                                              AnimBlueprint;                                           // 0x0008(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FPerPlatformInt                                     NumRandomizedInstances;                                  // 0x0010(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
 		struct FPerPlatformBool                                    Enabled;                                                 // 0x0014(0x0001) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5L05[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (PADDING)
-
-	};
-
-	/**
-	 * ScriptStruct AnimationSharing.AnimationSharingScalability
-	 * Size -> 0x0010
-	 */
-	struct FAnimationSharingScalability
-	{
-	public:
-		struct FPerPlatformBool                                    UseBlendTransitions;                                     // 0x0000(0x0001) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Y4F9[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPerPlatformFloat                                   BlendSignificanceValue;                                  // 0x0004(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
-		struct FPerPlatformInt                                     MaximumNumberConcurrentBlends;                           // 0x0008(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
-		struct FPerPlatformFloat                                   TickSignificanceValue;                                   // 0x000C(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
-
+		unsigned char                                              UnknownData_7R4S[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -52,21 +36,20 @@ namespace CG
 	{
 	public:
 		unsigned char                                              State;                                                   // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PRL8[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FAnimationSetup>                             AnimationSetups;                                         // 0x0008(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_H3IY[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FAnimationSetup>                             AnimationSetups;                                         // 0x0008(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		bool                                                       bOnDemand;                                               // 0x0018(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAdditive;                                               // 0x0019(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NR24[0x2];                                   // 0x001A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9M50[0x2];                                   // 0x001A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      BlendTime;                                               // 0x001C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bReturnToPreviousState;                                  // 0x0020(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSetNextState;                                           // 0x0021(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              NextState;                                               // 0x0022(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_G5ZY[0x1];                                   // 0x0023(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GX73[0x1];                                   // 0x0023(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPerPlatformInt                                     MaximumNumberOfConcurrentInstances;                      // 0x0024(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
 		float                                                      WiggleTimePercentage;                                    // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRequiresCurves;                                         // 0x002C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GSMH[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_LWWB[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -81,8 +64,21 @@ namespace CG
 		class UClass*                                              BlendAnimBlueprint;                                      // 0x0010(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UClass*                                              AdditiveAnimBlueprint;                                   // 0x0018(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UClass*                                              StateProcessorClass;                                     // 0x0020(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FAnimationStateEntry>                        AnimationStates;                                         // 0x0028(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FAnimationStateEntry>                        AnimationStates;                                         // 0x0028(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
+	};
 
+	/**
+	 * ScriptStruct AnimationSharing.AnimationSharingScalability
+	 * Size -> 0x0010
+	 */
+	struct FAnimationSharingScalability
+	{
+	public:
+		struct FPerPlatformBool                                    UseBlendTransitions;                                     // 0x0000(0x0001) Edit, NoDestructor, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_KY77[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPerPlatformFloat                                   BlendSignificanceValue;                                  // 0x0004(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
+		struct FPerPlatformInt                                     MaximumNumberConcurrentBlends;                           // 0x0008(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
+		struct FPerPlatformFloat                                   TickSignificanceValue;                                   // 0x000C(0x0004) Edit, NoDestructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -92,8 +88,7 @@ namespace CG
 	struct FTickAnimationSharingFunction : public FTickFunction
 	{
 	public:
-		unsigned char                                              UnknownData_7KRG[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_PXR6[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

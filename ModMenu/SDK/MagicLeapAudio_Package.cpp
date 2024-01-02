@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6A7E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetOnAudioJackUnpluggedDelegate
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              ResultDelegate                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapAudioFunctionLibrary::STATIC_SetOnAudioJackUnpluggedDelegate(const class FScriptDelegate& ResultDelegate)
+	bool UMagicLeapAudioFunctionLibrary::SetOnAudioJackUnpluggedDelegate(const class FScriptDelegate& ResultDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -28,7 +28,6 @@ namespace CG
 		params.ResultDelegate = ResultDelegate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -37,13 +36,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6A730
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetOnAudioJackPluggedDelegate
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              ResultDelegate                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapAudioFunctionLibrary::STATIC_SetOnAudioJackPluggedDelegate(const class FScriptDelegate& ResultDelegate)
+	bool UMagicLeapAudioFunctionLibrary::SetOnAudioJackPluggedDelegate(const class FScriptDelegate& ResultDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -53,7 +52,6 @@ namespace CG
 		params.ResultDelegate = ResultDelegate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -62,13 +60,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A6A6B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetMicMute
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsMuted                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapAudioFunctionLibrary::STATIC_SetMicMute(bool IsMuted)
+	bool UMagicLeapAudioFunctionLibrary::SetMicMute(bool IsMuted)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -78,7 +76,6 @@ namespace CG
 		params.IsMuted = IsMuted;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -87,11 +84,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.IsMicMuted
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapAudioFunctionLibrary::STATIC_IsMicMuted()
+	bool UMagicLeapAudioFunctionLibrary::IsMicMuted()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -100,7 +97,6 @@ namespace CG
 		UMagicLeapAudioFunctionLibrary_IsMicMuted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -109,8 +105,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapAudioFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapAudioFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapAudioFunctionLibrary::StaticClass()

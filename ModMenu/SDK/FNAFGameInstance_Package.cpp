@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,278 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetGameType
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetCrouchToggle
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EFNAFGameType                                GameType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               CrouchToggle                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFNAFGameInstance_C::GetGameType(fnaf9_EFNAFGameType* GameType)
+	void UFNAFGameInstance_C::GetCrouchToggle(bool* CrouchToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetCrouchToggle");
+		
+		UFNAFGameInstance_C_GetCrouchToggle_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (CrouchToggle != nullptr)
+			*CrouchToggle = params.CrouchToggle;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetHelpiBlurbTime
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Time                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::GetHelpiBlurbTime(float* Time)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetHelpiBlurbTime");
+		
+		UFNAFGameInstance_C_GetHelpiBlurbTime_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Time != nullptr)
+			*Time = params.Time;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetShowInstructionCards
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               ShowInstructionCards                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetShowInstructionCards(bool* ShowInstructionCards)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetShowInstructionCards");
+		
+		UFNAFGameInstance_C_GetShowInstructionCards_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ShowInstructionCards != nullptr)
+			*ShowInstructionCards = params.ShowInstructionCards;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetStealthToggle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               ShowStealthIcon                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetStealthToggle(bool* ShowStealthIcon)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetStealthToggle");
+		
+		UFNAFGameInstance_C_GetStealthToggle_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ShowStealthIcon != nullptr)
+			*ShowStealthIcon = params.ShowStealthIcon;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetSprintToggles
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               KeyboardSprintToggle                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               GamepadSprintToggle                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetSprintToggles(bool* KeyboardSprintToggle, bool* GamepadSprintToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetSprintToggles");
+		
+		UFNAFGameInstance_C_GetSprintToggles_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (KeyboardSprintToggle != nullptr)
+			*KeyboardSprintToggle = params.KeyboardSprintToggle;
+		if (GamepadSprintToggle != nullptr)
+			*GamepadSprintToggle = params.GamepadSprintToggle;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateSprintAndStealthToggles
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Keyboard_Sprint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               Gamepad_Sprint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CrouchIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               CrouchToggle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::UpdateSprintAndStealthToggles(bool Keyboard_Sprint, bool Gamepad_Sprint, bool CrouchIcon, bool CrouchToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.UpdateSprintAndStealthToggles");
+		
+		UFNAFGameInstance_C_UpdateSprintAndStealthToggles_Params params {};
+		params.Keyboard_Sprint = Keyboard_Sprint;
+		params.Gamepad_Sprint = Gamepad_Sprint;
+		params.CrouchIcon = CrouchIcon;
+		params.CrouchToggle = CrouchToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIfSkipSystemUsed
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               outUsed                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetIfSkipSystemUsed(bool* outUsed)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetIfSkipSystemUsed");
+		
+		UFNAFGameInstance_C_GetIfSkipSystemUsed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (outUsed != nullptr)
+			*outUsed = params.outUsed;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetTempHapticFeedbackIntensityMultiplier
+	 * 		Flags  -> ()
+	 */
+	float UFNAFGameInstance_C::GetTempHapticFeedbackIntensityMultiplier()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetTempHapticFeedbackIntensityMultiplier");
+		
+		UFNAFGameInstance_C_GetTempHapticFeedbackIntensityMultiplier_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetHapticFeedbackIntensityMultiplier
+	 * 		Flags  -> ()
+	 */
+	float UFNAFGameInstance_C::GetHapticFeedbackIntensityMultiplier()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetHapticFeedbackIntensityMultiplier");
+		
+		UFNAFGameInstance_C_GetHapticFeedbackIntensityMultiplier_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetSpawnAllSurvivalPackages
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               SpawnAll                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetSpawnAllSurvivalPackages(bool* SpawnAll)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetSpawnAllSurvivalPackages");
+		
+		UFNAFGameInstance_C_GetSpawnAllSurvivalPackages_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (SpawnAll != nullptr)
+			*SpawnAll = params.SpawnAll;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetShowSurvivalPackages
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Show                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::GetShowSurvivalPackages(bool* Show)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.GetShowSurvivalPackages");
+		
+		UFNAFGameInstance_C_GetShowSurvivalPackages_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Show != nullptr)
+			*Show = params.Show;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetGameType
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFNAFGameType                                      GameType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::GetGameType(EFNAFGameType* GameType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -36,20 +301,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		FNAFDLSSLevel_EFNAFDLSSLevel                       DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyRuinGlobalVideoSettingsOverrides
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::ApplyDLSSQuality(FNAFDLSSLevel_EFNAFDLSSLevel DLSSLevel)
+	void UFNAFGameInstance_C::ApplyRuinGlobalVideoSettingsOverrides()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality");
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyRuinGlobalVideoSettingsOverrides");
 		
-		UFNAFGameInstance_C_ApplyDLSSQuality_Params params {};
-		params.DLSSLevel = DLSSLevel;
+		UFNAFGameInstance_C_ApplyRuinGlobalVideoSettingsOverrides_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -58,9 +320,122 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyRuinRTXOverrides
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::ApplyRuinRTXOverrides()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyRuinRTXOverrides");
+		
+		UFNAFGameInstance_C_ApplyRuinRTXOverrides_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.IsVolumetricFogAllowed
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FFNAFVisualQualitySettings                  FNAFVisualQualitySettings                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		EFNAFVisualQualityLevel                            VisualQuality                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGXboxPlatform                                   XboxSpecific                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGPlatform                                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::IsVolumetricFogAllowed(const struct FFNAFVisualQualitySettings& FNAFVisualQualitySettings, EFNAFVisualQualityLevel VisualQuality, ESWGXboxPlatform XboxSpecific, ESWGPlatform Platform)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.IsVolumetricFogAllowed");
+		
+		UFNAFGameInstance_C_IsVolumetricFogAllowed_Params params {};
+		params.FNAFVisualQualitySettings = FNAFVisualQualitySettings;
+		params.VisualQuality = VisualQuality;
+		params.XboxSpecific = XboxSpecific;
+		params.Platform = Platform;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleStealthIndicator
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               StealthIndicatorToggle                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::ToggleStealthIndicator(bool StealthIndicatorToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ToggleStealthIndicator");
+		
+		UFNAFGameInstance_C_ToggleStealthIndicator_Params params {};
+		params.StealthIndicatorToggle = StealthIndicatorToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleGamepadSprint
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               SprintToggle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::ToggleGamepadSprint(bool SprintToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ToggleGamepadSprint");
+		
+		UFNAFGameInstance_C_ToggleGamepadSprint_Params params {};
+		params.SprintToggle = SprintToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleKeyboardSprint
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               SprintToggle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::ToggleKeyboardSprint(bool SprintToggle)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ToggleKeyboardSprint");
+		
+		UFNAFGameInstance_C_ToggleKeyboardSprint_Params params {};
+		params.SprintToggle = SprintToggle;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetDefaultMappings
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		TMap<class FName, struct FKeyBinding_Struct>       Output_Get                                                 (Parm, OutParm)
 	 */
@@ -82,13 +457,35 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSS
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel     Quality                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFDLSSLevel                                     DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::ApplyDLSS(FNAFVisualQualityLevel_EFNAFVisualQualityLevel Quality)
+	void UFNAFGameInstance_C::ApplyDLSSQuality(EFNAFDLSSLevel DLSSLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSSQuality");
+		
+		UFNAFGameInstance_C_ApplyDLSSQuality_Params params {};
+		params.DLSSLevel = DLSSLevel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyDLSS
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFNAFVisualQualityLevel                            Quality                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::ApplyDLSS(EFNAFVisualQualityLevel Quality)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -104,31 +501,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleSprint
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               SprintToggle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UFNAFGameInstance_C::ToggleSprint(bool SprintToggle)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ToggleSprint");
-		
-		UFNAFGameInstance_C_ToggleSprint_Params params {};
-		params.SprintToggle = SprintToggle;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetProperControllerIcon
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ActionName                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FText                                        Keyboard_Key1                                              (Parm, OutParm)
@@ -161,9 +536,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.FindDeviceSpecicQualitySetting
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FFNAFDeviceSpecificQualityConfig            Settings                                                   (Parm, OutParm, HasGetValueTypeHash)
 	 * 		bool                                               Found                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -188,9 +563,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsMinSpecPC
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsMinSpec                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -212,15 +587,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetDefaultVisualQualityLevels
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		SWGPlatformUtil_ESWGPlatform                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel     Visual                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTrace                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGPlatform                                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFVisualQualityLevel                            Visual                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFRayTraceQualityLevel                          RayTrace                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::GetDefaultVisualQualityLevels(SWGPlatformUtil_ESWGPlatform Platform, FNAFVisualQualityLevel_EFNAFVisualQualityLevel* Visual, FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel* RayTrace)
+	void UFNAFGameInstance_C::GetDefaultVisualQualityLevels(ESWGPlatform Platform, EFNAFVisualQualityLevel* Visual, EFNAFRayTraceQualityLevel* RayTrace)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -241,9 +616,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsRTXGPU
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IsRTX                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -265,14 +640,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetIsRayTracingSupported
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		SWGPlatformUtil_ESWGPlatform                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGPlatform                                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Supported                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFNAFGameInstance_C::GetIsRayTracingSupported(SWGPlatformUtil_ESWGPlatform Platform, bool* Supported)
+	void UFNAFGameInstance_C::GetIsRayTracingSupported(ESWGPlatform Platform, bool* Supported)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -291,9 +666,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ToggleInstructionCards
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               ShowInstructions                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -313,9 +688,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetMessageAndTime
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MessageName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -335,9 +710,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.GetMessageTimeReceived
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        MessageName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FText                                        MsgTime                                                    (Parm, OutParm)
@@ -361,21 +736,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.InstructionCardViewed
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_InstructionCard_Type_E_InstructionCard_Type      Instruction_Enum                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type                             InstructionEnum                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ViewedAlready                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFNAFGameInstance_C::InstructionCardViewed(E_InstructionCard_Type_E_InstructionCard_Type Instruction_Enum, bool* ViewedAlready)
+	void UFNAFGameInstance_C::InstructionCardViewed(E_InstructionCard_Type InstructionEnum, bool* ViewedAlready)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.InstructionCardViewed");
 		
 		UFNAFGameInstance_C_InstructionCardViewed_Params params {};
-		params.Instruction_Enum = Instruction_Enum;
+		params.InstructionEnum = InstructionEnum;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -387,9 +762,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetupNewGame
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::SetupNewGame()
 	{
@@ -406,9 +781,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.IsInGameplayTrailerMode
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InGamePlayTrailerMode                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -430,9 +805,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.LoadCardsAndMessages
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::LoadCardsAndMessages()
 	{
@@ -449,9 +824,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.HasSaveGame
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Exists                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -473,9 +848,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_347016F346FF261F1C1C92ADBA6D6462
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnFailure_347016F346FF261F1C1C92ADBA6D6462()
 	{
@@ -492,9 +867,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_347016F346FF261F1C1C92ADBA6D6462
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnSuccess_347016F346FF261F1C1C92ADBA6D6462()
 	{
@@ -511,9 +886,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2D43474D4FADD4C1301AEA8AD50DFC3D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -537,9 +912,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2D43474D4FADD4C1301AEA8AD50DFC3D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -563,9 +938,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2007C00C4878CD4D536B6E81A8F9EBF6
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnFailure_2007C00C4878CD4D536B6E81A8F9EBF6()
 	{
@@ -582,9 +957,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2007C00C4878CD4D536B6E81A8F9EBF6
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnSuccess_2007C00C4878CD4D536B6E81A8F9EBF6()
 	{
@@ -601,9 +976,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_C4FD1B5F4537DF8B128F3D916037CA11
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -627,9 +1002,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_C4FD1B5F4537DF8B128F3D916037CA11
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -653,9 +1028,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_E76021A145A37BC709C55BBACDEFFBF4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnFailure_E76021A145A37BC709C55BBACDEFFBF4()
 	{
@@ -672,9 +1047,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_E76021A145A37BC709C55BBACDEFFBF4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnSuccess_E76021A145A37BC709C55BBACDEFFBF4()
 	{
@@ -691,9 +1066,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_621EF3114DDD2DACD4AB62B9F98E6B49
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -717,9 +1092,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_621EF3114DDD2DACD4AB62B9F98E6B49
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -743,9 +1118,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_2139E3F145F43A454CDBE3A76C9037C4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnFailure_2139E3F145F43A454CDBE3A76C9037C4()
 	{
@@ -762,9 +1137,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_2139E3F145F43A454CDBE3A76C9037C4
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::OnSuccess_2139E3F145F43A454CDBE3A76C9037C4()
 	{
@@ -781,9 +1156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnFailure_AC5026394EF21AF1261C85BD63C2D5E9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -807,9 +1182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSuccess_AC5026394EF21AF1261C85BD63C2D5E9
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -833,9 +1208,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateSensitivitySettings
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::UpdateSensitivitySettings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.UpdateSensitivitySettings");
+		
+		UFNAFGameInstance_C_UpdateSensitivitySettings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.LoadMiniGameLevel
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        LevelName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -855,17 +1249,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Start New Game
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Start_New_Game()
+	void UFNAFGameInstance_C::StartNewGame()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Start New Game");
 		
-		UFNAFGameInstance_C_Start_New_Game_Params params {};
+		UFNAFGameInstance_C_StartNewGame_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -874,17 +1268,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load From Save
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Load_From_Save()
+	void UFNAFGameInstance_C::LoadFromSave()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Load From Save");
 		
-		UFNAFGameInstance_C_Load_From_Save_Params params {};
+		UFNAFGameInstance_C_LoadFromSave_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -893,17 +1287,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load Title
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Load_Title()
+	void UFNAFGameInstance_C::LoadTitle()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Load Title");
 		
-		UFNAFGameInstance_C_Load_Title_Params params {};
+		UFNAFGameInstance_C_LoadTitle_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -912,17 +1306,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Retry Game
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Retry_Game()
+	void UFNAFGameInstance_C::RetryGame()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Retry Game");
 		
-		UFNAFGameInstance_C_Retry_Game_Params params {};
+		UFNAFGameInstance_C_RetryGame_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -931,17 +1325,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Quit To Title
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Quit_To_Title()
+	void UFNAFGameInstance_C::QuitToTitle()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Quit To Title");
 		
-		UFNAFGameInstance_C_Quit_To_Title_Params params {};
+		UFNAFGameInstance_C_QuitToTitle_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -950,9 +1344,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ReceiveInit
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::ReceiveInit()
 	{
@@ -969,17 +1363,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Unpause Game
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Unpause_Game()
+	void UFNAFGameInstance_C::UnpauseGame()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Unpause Game");
 		
-		UFNAFGameInstance_C_Unpause_Game_Params params {};
+		UFNAFGameInstance_C_UnpauseGame_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -988,19 +1382,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load To Area
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Area                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::Load_To_Area(const class FName& Area)
+	void UFNAFGameInstance_C::LoadToArea(const class FName& Area)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Load To Area");
 		
-		UFNAFGameInstance_C_Load_To_Area_Params params {};
+		UFNAFGameInstance_C_LoadToArea_Params params {};
 		params.Area = Area;
 		
 		auto flags = fn->FunctionFlags;
@@ -1010,19 +1404,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Set Trailer Mode
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InGamePlayTrailerMode                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UFNAFGameInstance_C::Set_Trailer_Mode(bool InGamePlayTrailerMode)
+	void UFNAFGameInstance_C::SetTrailerMode(bool InGamePlayTrailerMode)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Set Trailer Mode");
 		
-		UFNAFGameInstance_C_Set_Trailer_Mode_Params params {};
+		UFNAFGameInstance_C_SetTrailerMode_Params params {};
 		params.InGamePlayTrailerMode = InGamePlayTrailerMode;
 		
 		auto flags = fn->FunctionFlags;
@@ -1032,17 +1426,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Finish Load To Area
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UFNAFGameInstance_C::Finish_Load_To_Area()
+	void UFNAFGameInstance_C::FinishLoadToArea()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Finish Load To Area");
 		
-		UFNAFGameInstance_C_Finish_Load_To_Area_Params params {};
+		UFNAFGameInstance_C_FinishLoadToArea_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1051,38 +1445,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Start Survival Mode
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UFNAFGameInstance_C::Start_Survival_Mode()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Start Survival Mode");
-		
-		UFNAFGameInstance_C_Start_Survival_Mode_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Load Level
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        LevelName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::Load_Level(const class FName& LevelName)
+	void UFNAFGameInstance_C::LoadLevel(const class FName& LevelName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Load Level");
 		
-		UFNAFGameInstance_C_Load_Level_Params params {};
+		UFNAFGameInstance_C_LoadLevel_Params params {};
 		params.LevelName = LevelName;
 		
 		auto flags = fn->FunctionFlags;
@@ -1092,9 +1467,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetLoadSavedGameOnNextWorldStart
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               InLoadSavedGameOnNextWorldLoad                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1114,9 +1489,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckLoadSavedGameOnNextWorldLoad
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::CheckLoadSavedGameOnNextWorldLoad()
 	{
@@ -1133,37 +1508,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyQualitySettings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		FNAFVisualQualityLevel_EFNAFVisualQualityLevel     QualityLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTraceLevel                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		FNAFDLSSLevel_EFNAFDLSSLevel                       DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		SWGPlatformUtil_ESWGPlatform                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UFNAFGameInstance_C::ApplyQualitySettings(FNAFVisualQualityLevel_EFNAFVisualQualityLevel QualityLevel, FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel RayTraceLevel, FNAFDLSSLevel_EFNAFDLSSLevel DLSSLevel, SWGPlatformUtil_ESWGPlatform Platform)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyQualitySettings");
-		
-		UFNAFGameInstance_C_ApplyQualitySettings_Params params {};
-		params.QualityLevel = QualityLevel;
-		params.RayTraceLevel = RayTraceLevel;
-		params.DLSSLevel = DLSSLevel;
-		params.Platform = Platform;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.RunHardwareBenchmark
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Force                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1183,28 +1530,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForTrophyTimeAchievement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UFNAFGameInstance_C::CheckForTrophyTimeAchievement()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.CheckForTrophyTimeAchievement");
-		
-		UFNAFGameInstance_C_CheckForTrophyTimeAchievement_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.EndGame
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::EndGame()
 	{
@@ -1221,9 +1549,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ChangeHourlyActivity
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            HourIndex                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1243,9 +1571,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForHideAndSeekMasterAchievement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::CheckForHideAndSeekMasterAchievement()
 	{
@@ -1262,50 +1590,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetCurrentKeyMappings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		TMap<class FName, struct FKeyBinding_Struct>       CurrentMappings                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-	 */
-	void UFNAFGameInstance_C::SetCurrentKeyMappings(TMap<class FName, struct FKeyBinding_Struct> CurrentMappings)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetCurrentKeyMappings");
-		
-		UFNAFGameInstance_C_SetCurrentKeyMappings_Params params {};
-		params.CurrentMappings = CurrentMappings;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateSavedMappings
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UFNAFGameInstance_C::UpdateSavedMappings()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.UpdateSavedMappings");
-		
-		UFNAFGameInstance_C_UpdateSavedMappings_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForLostAndFoundAchievement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UFNAFGameInstance_C::CheckForLostAndFoundAchievement()
 	{
@@ -1322,20 +1609,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Check For ShatteredDreams Achievement
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_ShatteredBotTypes_E_ShatteredBotTypes            Shattered_Bot_Type                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_ShatteredBotTypes                                ShatteredBotType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UFNAFGameInstance_C::Check_For_ShatteredDreams_Achievement(E_ShatteredBotTypes_E_ShatteredBotTypes Shattered_Bot_Type)
+	void UFNAFGameInstance_C::CheckForShatteredDreamsAchievement(E_ShatteredBotTypes ShatteredBotType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Check For ShatteredDreams Achievement");
 		
-		UFNAFGameInstance_C_Check_For_ShatteredDreams_Achievement_Params params {};
-		params.Shattered_Bot_Type = Shattered_Bot_Type;
+		UFNAFGameInstance_C_CheckForShatteredDreamsAchievement_Params params {};
+		params.ShatteredBotType = ShatteredBotType;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1344,9 +1631,455 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetIsRetry
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsRetry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::SetIsRetry(bool IsRetry)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetIsRetry");
+		
+		UFNAFGameInstance_C_SetIsRetry_Params params {};
+		params.IsRetry = IsRetry;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckForTrophyTimeAchievement
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::CheckForTrophyTimeAchievement()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.CheckForTrophyTimeAchievement");
+		
+		UFNAFGameInstance_C_CheckForTrophyTimeAchievement_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetTempHapticFeedback
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::SetTempHapticFeedback(float Value)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetTempHapticFeedback");
+		
+		UFNAFGameInstance_C_SetTempHapticFeedback_Params params {};
+		params.Value = Value;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetHapticFeedback
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::SetHapticFeedback(float Value)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetHapticFeedback");
+		
+		UFNAFGameInstance_C_SetHapticFeedback_Params params {};
+		params.Value = Value;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.CheckLoadSavedGameOnNextWorldLoadForChowda
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::CheckLoadSavedGameOnNextWorldLoadForChowda()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.CheckLoadSavedGameOnNextWorldLoadForChowda");
+		
+		UFNAFGameInstance_C_CheckLoadSavedGameOnNextWorldLoadForChowda_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateSavedMappings
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::UpdateSavedMappings()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.UpdateSavedMappings");
+		
+		UFNAFGameInstance_C_UpdateSavedMappings_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetMappingsFromSaved
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TMap<class FName, struct FKeyBinding_Struct>       SavedMappings                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+	 */
+	void UFNAFGameInstance_C::SetMappingsFromSaved(TMap<class FName, struct FKeyBinding_Struct> SavedMappings)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetMappingsFromSaved");
+		
+		UFNAFGameInstance_C_SetMappingsFromSaved_Params params {};
+		params.SavedMappings = SavedMappings;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.UpdateHelpiBlurbTime
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Time                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::UpdateHelpiBlurbTime(float Time)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.UpdateHelpiBlurbTime");
+		
+		UFNAFGameInstance_C_UpdateHelpiBlurbTime_Params params {};
+		params.Time = Time;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.PlayEndCredits
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EChowdaEndings                                     ChowdaEndGameType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::PlayEndCredits(EChowdaEndings ChowdaEndGameType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.PlayEndCredits");
+		
+		UFNAFGameInstance_C_PlayEndCredits_Params params {};
+		params.ChowdaEndGameType = ChowdaEndGameType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ApplyQualitySettings
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFNAFVisualQualityLevel                            QualityLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFRayTraceQualityLevel                          RayTraceLevel                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EFNAFDLSSLevel                                     DLSSLevel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGPlatform                                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGXboxPlatform                                   XboxSpecificPlatform                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::ApplyQualitySettings(EFNAFVisualQualityLevel QualityLevel, EFNAFRayTraceQualityLevel RayTraceLevel, EFNAFDLSSLevel DLSSLevel, ESWGPlatform Platform, ESWGXboxPlatform XboxSpecificPlatform)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.ApplyQualitySettings");
+		
+		UFNAFGameInstance_C_ApplyQualitySettings_Params params {};
+		params.QualityLevel = QualityLevel;
+		params.RayTraceLevel = RayTraceLevel;
+		params.DLSSLevel = DLSSLevel;
+		params.Platform = Platform;
+		params.XboxSpecificPlatform = XboxSpecificPlatform;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenStart
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnLoadingScreenStart()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenStart");
+		
+		UFNAFGameInstance_C_OnLoadingScreenStart_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenEnd
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnLoadingScreenEnd()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenEnd");
+		
+		UFNAFGameInstance_C_OnLoadingScreenEnd_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnPlayerLoginChanged
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bLoggedIn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		int32_t                                            UserId                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::OnPlayerLoginChanged(bool bLoggedIn, int32_t UserId)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnPlayerLoginChanged");
+		
+		UFNAFGameInstance_C_OnPlayerLoginChanged_Params params {};
+		params.bLoggedIn = bLoggedIn;
+		params.UserId = UserId;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnPlayerControllerPairingChanged
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnPlayerControllerPairingChanged()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnPlayerControllerPairingChanged");
+		
+		UFNAFGameInstance_C_OnPlayerControllerPairingChanged_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnControllerConnectionChanged
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnControllerConnectionChanged()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnControllerConnectionChanged");
+		
+		UFNAFGameInstance_C_OnControllerConnectionChanged_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.Start Chowda Mode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               NewGame                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		int32_t                                            profileIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::StartChowdaMode(bool NewGame, int32_t profileIndex)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.Start Chowda Mode");
+		
+		UFNAFGameInstance_C_StartChowdaMode_Params params {};
+		params.NewGame = NewGame;
+		params.profileIndex = profileIndex;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.LoadChapter
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        Chapter                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            profileIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UFNAFGameInstance_C::LoadChapter(const class FName& Chapter, int32_t profileIndex)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.LoadChapter");
+		
+		UFNAFGameInstance_C_LoadChapter_Params params {};
+		params.Chapter = Chapter;
+		params.profileIndex = profileIndex;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.SetSkipSystemUsed
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               isUsed                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::SetSkipSystemUsed(bool isUsed)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.SetSkipSystemUsed");
+		
+		UFNAFGameInstance_C_SetSkipSystemUsed_Params params {};
+		params.isUsed = isUsed;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.DisplayLoadingScreenDLC
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::DisplayLoadingScreenDLC()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.DisplayLoadingScreenDLC");
+		
+		UFNAFGameInstance_C_DisplayLoadingScreenDLC_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.HideLoadingScreenDLC
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::HideLoadingScreenDLC()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.HideLoadingScreenDLC");
+		
+		UFNAFGameInstance_C_HideLoadingScreenDLC_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSaveGameComplete
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnSaveGameComplete()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnSaveGameComplete");
+		
+		UFNAFGameInstance_C_OnSaveGameComplete_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.ExecuteUbergraph_FNAFGameInstance
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1366,9 +2099,79 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnSettingsApplied__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFNAFVisualQualityLevel                            VisualQuality                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGPlatform                                       Platform                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ESWGXboxPlatform                                   SpecificXboxPlatform                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               IsRayTraceEnabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsDLSSEnabled                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsVolumetricFogEnabled                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UFNAFGameInstance_C::OnSettingsApplied__DelegateSignature(EFNAFVisualQualityLevel VisualQuality, ESWGPlatform Platform, ESWGXboxPlatform SpecificXboxPlatform, bool IsRayTraceEnabled, bool IsDLSSEnabled, bool IsVolumetricFogEnabled)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnSettingsApplied__DelegateSignature");
+		
+		UFNAFGameInstance_C_OnSettingsApplied__DelegateSignature_Params params {};
+		params.VisualQuality = VisualQuality;
+		params.Platform = Platform;
+		params.SpecificXboxPlatform = SpecificXboxPlatform;
+		params.IsRayTraceEnabled = IsRayTraceEnabled;
+		params.IsDLSSEnabled = IsDLSSEnabled;
+		params.IsVolumetricFogEnabled = IsVolumetricFogEnabled;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenRemoved__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnLoadingScreenRemoved__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenRemoved__DelegateSignature");
+		
+		UFNAFGameInstance_C_OnLoadingScreenRemoved__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenBegin__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UFNAFGameInstance_C::OnLoadingScreenBegin__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function FNAFGameInstance.FNAFGameInstance_C.OnLoadingScreenBegin__DelegateSignature");
+		
+		UFNAFGameInstance_C_OnLoadingScreenBegin__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function FNAFGameInstance.FNAFGameInstance_C.TrailerModeChanged__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               TrailerEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1388,8 +2191,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFNAFGameInstance_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFNAFGameInstance_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFNAFGameInstance_C::StaticClass()

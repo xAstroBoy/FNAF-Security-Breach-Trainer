@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,15 +17,15 @@ namespace CG
 	/**
 	 * UserDefinedEnum DbgPlayerPaths.DbgPlayerPaths
 	 */
-	enum class DbgPlayerPaths_EDbgPlayerPaths : uint8_t
+	enum class EDbgPlayerPaths : uint8_t
 	{
-		DbgPlayerPaths__NewEnumerator0     = 0,
-		DbgPlayerPaths__NewEnumerator1     = 1,
-		DbgPlayerPaths__NewEnumerator2     = 2,
-		DbgPlayerPaths__NewEnumerator3     = 3,
-		DbgPlayerPaths__NewEnumerator5     = 4,
-		DbgPlayerPaths__NewEnumerator4     = 5,
-		DbgPlayerPaths__DbgPlayerPaths_MAX = 6
+		DbgPlayerPathsNewEnumerator0     = 0,
+		DbgPlayerPathsNewEnumerator1     = 1,
+		DbgPlayerPathsNewEnumerator2     = 2,
+		DbgPlayerPathsNewEnumerator3     = 3,
+		DbgPlayerPathsNewEnumerator5     = 4,
+		DbgPlayerPathsNewEnumerator4     = 5,
+		DbgPlayerPathsDbgPlayerPaths_MAX = 6
 	};
 
 }

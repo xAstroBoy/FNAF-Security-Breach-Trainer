@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,9 +21,9 @@ namespace CG
 	class UDialogueFunctionLibrary_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_GetStandardDialogContext(class UObject* __WorldContext, struct FDialogueContext* DialogueContext);
-		void STATIC_PlayStandardDialogAttached(class UDialogueWave* Dialogue, class USceneComponent* AttachToComponent, const class FName& AttachPointName, const struct FVector& Location, class UObject* __WorldContext);
-		class UAudioComponent* STATIC_PlayStandardDialog(class UDialogueWave* Dialogue, class UObject* __WorldContext);
+		void GetStandardDialogContext(class UObject* __WorldContext, struct FDialogueContext* DialogueContext);
+		void PlayStandardDialogAttached(class UDialogueWave* Dialogue, class USceneComponent* AttachToComponent, const class FName& AttachPointName, const struct FVector& Location, class UObject* __WorldContext);
+		class UAudioComponent* PlayStandardDialog(class UDialogueWave* Dialogue, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

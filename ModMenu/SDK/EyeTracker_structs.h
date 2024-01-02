@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * Enum EyeTracker.EEyeTrackerStatus
 	 */
-	enum class EyeTracker_EEyeTrackerStatus : uint8_t
+	enum class EEyeTrackerStatus : uint8_t
 	{
-		EEyeTrackerStatus__NotConnected          = 0,
-		EEyeTrackerStatus__NotTracking           = 1,
-		EEyeTrackerStatus__Tracking              = 2,
-		EEyeTrackerStatus__EEyeTrackerStatus_MAX = 3
+		NotConnected = 0,
+		NotTracking  = 1,
+		Tracking     = 2,
+		MAX          = 3
 	};
 
 	// --------------------------------------------------
@@ -41,7 +41,6 @@ namespace CG
 		struct FVector                                             RightEyeDirection;                                       // 0x0024(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             FixationPoint;                                           // 0x0030(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      ConfidenceValue;                                         // 0x003C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -55,7 +54,6 @@ namespace CG
 		struct FVector                                             GazeDirection;                                           // 0x000C(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             FixationPoint;                                           // 0x0018(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      ConfidenceValue;                                         // 0x0024(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class USWGAIUtilLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_ClearAllBlackboardValues(class UBlackboardComponent* Blackboard);
+		void ClearAllBlackboardValues(class UBlackboardComponent* Blackboard);
 		static UClass* StaticClass();
 	};
 

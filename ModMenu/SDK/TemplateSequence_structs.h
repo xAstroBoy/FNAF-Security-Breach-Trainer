@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -11,6 +11,20 @@
 
 namespace CG
 {
+	// --------------------------------------------------
+	// # Enums
+	// --------------------------------------------------
+	/**
+	 * Enum TemplateSequence.ETemplateSectionPropertyScaleType
+	 */
+	enum class ETemplateSectionPropertyScaleType : uint8_t
+	{
+		FloatProperty                 = 0,
+		TransformPropertyLocationOnly = 1,
+		TransformPropertyRotationOnly = 2,
+		MAX                           = 3
+	};
+
 	// --------------------------------------------------
 	// # Structs
 	// --------------------------------------------------
@@ -23,33 +37,21 @@ namespace CG
 	public:
 		TWeakObjectPtr<class UObject>                              Object;                                                  // 0x0000(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOverridesDefault;                                       // 0x0008(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7F05[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_HB0B[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
-	 * ScriptStruct TemplateSequence.TemplateSequenceInstanceData
-	 * Size -> 0x0018 (FullSize[0x0020] - InheritedSize[0x0008])
+	 * ScriptStruct TemplateSequence.TemplateSectionPropertyScale
+	 * Size -> 0x00C8
 	 */
-	struct FTemplateSequenceInstanceData : public FMovieSceneSequenceInstanceData
+	struct FTemplateSectionPropertyScale
 	{
 	public:
-		struct FMovieSceneEvaluationOperand                        Operand;                                                 // 0x0008(0x0014) NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S717[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
-
-	};
-
-	/**
-	 * ScriptStruct TemplateSequence.TemplateSequenceSectionTemplate
-	 * Size -> 0x0028 (FullSize[0x0048] - InheritedSize[0x0020])
-	 */
-	struct FTemplateSequenceSectionTemplate : public FMovieSceneEvalTemplate
-	{
-	public:
-		struct FFrameNumber                                        SectionStartTime;                                        // 0x0020(0x0004) NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		struct FGuid                                               OuterBindingId;                                          // 0x0024(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		struct FMovieSceneEvaluationOperand                        InnerOperand;                                            // 0x0034(0x0014) NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-
+		struct FGuid                                               ObjectBinding;                                           // 0x0000(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		struct FMovieScenePropertyBinding                          PropertyBinding;                                         // 0x0010(0x0014) NoDestructor, NativeAccessSpecifierPublic
+		ETemplateSectionPropertyScaleType                          PropertyScaleType;                                       // 0x0024(0x0001) ELEMENT_SIZE_MISMATCH ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_FMA3[0x3];                                   // 0x0025(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		struct FMovieSceneFloatChannel                             FloatChannel;                                            // 0x0028(0x00A0) NativeAccessSpecifierPublic
 	};
 
 }

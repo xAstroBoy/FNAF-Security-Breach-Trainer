@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,23 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x019987E0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAROriginActor.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* AAROriginActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.AROriginActor");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARSessionConfig::ShouldResetTrackedObjects()
 	{
@@ -25,7 +39,6 @@ namespace CG
 		UARSessionConfig_ShouldResetTrackedObjects_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,9 +47,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019987B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldResetCameraTracking
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARSessionConfig::ShouldResetCameraTracking()
 	{
@@ -47,7 +60,6 @@ namespace CG
 		UARSessionConfig_ShouldResetCameraTracking_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -56,9 +68,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998780
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldRenderCameraOverlay
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARSessionConfig::ShouldRenderCameraOverlay()
 	{
@@ -69,7 +81,6 @@ namespace CG
 		UARSessionConfig_ShouldRenderCameraOverlay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -78,9 +89,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldEnableCameraTracking
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARSessionConfig::ShouldEnableCameraTracking()
 	{
@@ -91,7 +102,6 @@ namespace CG
 		UARSessionConfig_ShouldEnableCameraTracking_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -100,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998720
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldEnableAutoFocus
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARSessionConfig::ShouldEnableAutoFocus()
 	{
@@ -113,7 +123,6 @@ namespace CG
 		UARSessionConfig_ShouldEnableAutoFocus_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -122,11 +131,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998640
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetWorldMapData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<unsigned char>                              WorldMapData                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              WorldMapData                                               (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void UARSessionConfig::SetWorldMapData(TArray<unsigned char> WorldMapData)
 	{
@@ -138,20 +147,19 @@ namespace CG
 		params.WorldMapData = WorldMapData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019985C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARSessionTrackingFeature         InSessionTrackingFeature                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSessionTrackingFeature                          InSessionTrackingFeature                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARSessionConfig::SetSessionTrackingFeatureToEnable(AugmentedReality_EARSessionTrackingFeature InSessionTrackingFeature)
+	void UARSessionConfig::SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -161,16 +169,37 @@ namespace CG
 		params.InSessionTrackingFeature = InSessionTrackingFeature;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998530
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetSceneReconstructionMethod
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EARSceneReconstruction                             InSceneReconstructionMethod                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARSessionConfig::SetSceneReconstructionMethod(EARSceneReconstruction InSceneReconstructionMethod)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetSceneReconstructionMethod");
+		
+		UARSessionConfig_SetSceneReconstructionMethod_Params params {};
+		params.InSceneReconstructionMethod = InSceneReconstructionMethod;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetResetTrackedObjects
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -184,16 +213,15 @@ namespace CG
 		params.bNewValue = bNewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019984A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetResetCameraTracking
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -207,20 +235,19 @@ namespace CG
 		params.bNewValue = bNewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998420
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARFaceTrackingUpdate             InUpdate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARFaceTrackingUpdate                              InUpdate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARSessionConfig::SetFaceTrackingUpdate(AugmentedReality_EARFaceTrackingUpdate InUpdate)
+	void UARSessionConfig::SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -230,20 +257,19 @@ namespace CG
 		params.InUpdate = InUpdate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019983A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARFaceTrackingDirection          InDirection                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARFaceTrackingDirection                           InDirection                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARSessionConfig::SetFaceTrackingDirection(AugmentedReality_EARFaceTrackingDirection InDirection)
+	void UARSessionConfig::SetFaceTrackingDirection(EARFaceTrackingDirection InDirection)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -253,16 +279,15 @@ namespace CG
 		params.InDirection = InDirection;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998310
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetEnableAutoFocus
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -276,16 +301,15 @@ namespace CG
 		params.bNewValue = bNewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998270
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARVideoFormat                              NewFormat                                                  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -299,18 +323,17 @@ namespace CG
 		params.NewFormat = NewFormat;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019981C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetCandidateObjectList
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UARCandidateObject*>                  InCandidateObjects                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class UARCandidateObject*>                  InCandidateObjects                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UARSessionConfig::SetCandidateObjectList(TArray<class UARCandidateObject*> InCandidateObjects)
 	{
@@ -322,16 +345,15 @@ namespace CG
 		params.InCandidateObjects = InCandidateObjects;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019977B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetWorldMapData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<unsigned char> UARSessionConfig::GetWorldMapData()
 	{
@@ -342,7 +364,6 @@ namespace CG
 		UARSessionConfig_GetWorldMapData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -351,11 +372,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997780
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetWorldAlignment
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARWorldAlignment UARSessionConfig::GetWorldAlignment()
+	EARWorldAlignment UARSessionConfig::GetWorldAlignment()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -364,7 +385,6 @@ namespace CG
 		UARSessionConfig_GetWorldAlignment_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -373,11 +393,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0076A330
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetSessionType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARSessionType UARSessionConfig::GetSessionType()
+	EARSessionType UARSessionConfig::GetSessionType()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -386,7 +406,6 @@ namespace CG
 		UARSessionConfig_GetSessionType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -395,11 +414,32 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997380
-	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetSceneReconstructionMethod
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARPlaneDetectionMode UARSessionConfig::GetPlaneDetectionMode()
+	EARSceneReconstruction UARSessionConfig::GetSceneReconstructionMethod()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetSceneReconstructionMethod");
+		
+		UARSessionConfig_GetSceneReconstructionMethod_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode
+	 * 		Flags  -> ()
+	 */
+	EARPlaneDetectionMode UARSessionConfig::GetPlaneDetectionMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -408,7 +448,6 @@ namespace CG
 		UARSessionConfig_GetPlaneDetectionMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -417,9 +456,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019972C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTracked
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UARSessionConfig::GetMaxNumSimultaneousImagesTracked()
 	{
@@ -430,7 +469,6 @@ namespace CG
 		UARSessionConfig_GetMaxNumSimultaneousImagesTracked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -439,11 +477,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetLightEstimationMode
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARLightEstimationMode UARSessionConfig::GetLightEstimationMode()
+	EARLightEstimationMode UARSessionConfig::GetLightEstimationMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -452,7 +490,6 @@ namespace CG
 		UARSessionConfig_GetLightEstimationMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -461,11 +498,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996F60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFrameSyncMode
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARFrameSyncMode UARSessionConfig::GetFrameSyncMode()
+	EARFrameSyncMode UARSessionConfig::GetFrameSyncMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -474,7 +511,6 @@ namespace CG
 		UARSessionConfig_GetFrameSyncMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -483,11 +519,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996F30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARFaceTrackingUpdate UARSessionConfig::GetFaceTrackingUpdate()
+	EARFaceTrackingUpdate UARSessionConfig::GetFaceTrackingUpdate()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -496,7 +532,6 @@ namespace CG
 		UARSessionConfig_GetFaceTrackingUpdate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -505,11 +540,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996F00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARFaceTrackingDirection UARSessionConfig::GetFaceTrackingDirection()
+	EARFaceTrackingDirection UARSessionConfig::GetFaceTrackingDirection()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -518,7 +553,6 @@ namespace CG
 		UARSessionConfig_GetFaceTrackingDirection_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -527,11 +561,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996ED0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EAREnvironmentCaptureProbeType UARSessionConfig::GetEnvironmentCaptureProbeType()
+	EAREnvironmentCaptureProbeType UARSessionConfig::GetEnvironmentCaptureProbeType()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -540,7 +574,6 @@ namespace CG
 		UARSessionConfig_GetEnvironmentCaptureProbeType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -549,11 +582,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996EA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARSessionTrackingFeature UARSessionConfig::GetEnabledSessionTrackingFeature()
+	EARSessionTrackingFeature UARSessionConfig::GetEnabledSessionTrackingFeature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -562,7 +595,6 @@ namespace CG
 		UARSessionConfig_GetEnabledSessionTrackingFeature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -571,9 +603,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FARVideoFormat UARSessionConfig::GetDesiredVideoFormat()
 	{
@@ -584,7 +616,6 @@ namespace CG
 		UARSessionConfig_GetDesiredVideoFormat_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -593,9 +624,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996C60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetCandidateObjectList
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class UARCandidateObject*> UARSessionConfig::GetCandidateObjectList()
 	{
@@ -606,7 +637,6 @@ namespace CG
 		UARSessionConfig_GetCandidateObjectList_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -615,9 +645,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996BD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetCandidateImageList
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class UARCandidateImage*> UARSessionConfig::GetCandidateImageList()
 	{
@@ -628,7 +658,6 @@ namespace CG
 		UARSessionConfig_GetCandidateImageList_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -637,9 +666,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995E30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.AddCandidateObject
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARCandidateObject*                          CandidateObject                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -653,16 +682,15 @@ namespace CG
 		params.CandidateObject = CandidateObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995DB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.AddCandidateImage
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARCandidateImage*                           NewCandidateImage                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -676,15 +704,14 @@ namespace CG
 		params.NewCandidateImage = NewCandidateImage;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARSessionConfig.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARSessionConfig.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARSessionConfig::StaticClass()
@@ -697,8 +724,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARLightEstimate.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARLightEstimate.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARLightEstimate::StaticClass()
@@ -711,9 +738,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996B40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UARBasicLightEstimate::GetAmbientIntensityLumens()
 	{
@@ -724,7 +751,6 @@ namespace CG
 		UARBasicLightEstimate_GetAmbientIntensityLumens_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -733,9 +759,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996B10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UARBasicLightEstimate::GetAmbientColorTemperatureKelvin()
 	{
@@ -746,7 +772,6 @@ namespace CG
 		UARBasicLightEstimate_GetAmbientColorTemperatureKelvin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -755,9 +780,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996AD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FLinearColor UARBasicLightEstimate::GetAmbientColor()
 	{
@@ -768,7 +793,6 @@ namespace CG
 		UARBasicLightEstimate_GetAmbientColor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -777,8 +801,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARBasicLightEstimate.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARBasicLightEstimate.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARBasicLightEstimate::StaticClass()
@@ -791,9 +815,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetPhysicalWidth
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UARCandidateImage::GetPhysicalWidth()
 	{
@@ -804,7 +828,6 @@ namespace CG
 		UARCandidateImage_GetPhysicalWidth_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -813,9 +836,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D500
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetPhysicalHeight
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UARCandidateImage::GetPhysicalHeight()
 	{
@@ -826,7 +849,6 @@ namespace CG
 		UARCandidateImage_GetPhysicalHeight_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -835,11 +857,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D4C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetOrientation
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARCandidateImageOrientation UARCandidateImage::GetOrientation()
+	EARCandidateImageOrientation UARCandidateImage::GetOrientation()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -848,7 +870,6 @@ namespace CG
 		UARCandidateImage_GetOrientation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -857,9 +878,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D2E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetFriendlyName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UARCandidateImage::GetFriendlyName()
 	{
@@ -870,7 +891,6 @@ namespace CG
 		UARCandidateImage_GetFriendlyName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -879,9 +899,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D150
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetCandidateTexture
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UTexture2D* UARCandidateImage::GetCandidateTexture()
 	{
@@ -892,7 +912,6 @@ namespace CG
 		UARCandidateImage_GetCandidateTexture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -901,8 +920,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARCandidateImage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARCandidateImage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARCandidateImage::StaticClass()
@@ -915,13 +934,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019988A0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARActor.AddARComponent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UClass*                                      InComponentClass                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FGuid                                       NativeID                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UARComponent* AARActor::AddARComponent(class UClass* InComponentClass, const struct FGuid& NativeID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARActor.AddARComponent");
+		
+		AARActor_AddARComponent_Params params {};
+		params.InComponentClass = InComponentClass;
+		params.NativeID = NativeID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AARActor.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* AARActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARActor");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.UnpinComponent
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             ComponentToUnpin                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_UnpinComponent(class USceneComponent* ComponentToUnpin)
+	void UARBlueprintLibrary::UnpinComponent(class USceneComponent* ComponentToUnpin)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -931,18 +990,43 @@ namespace CG
 		params.ComponentToUnpin = ComponentToUnpin;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998880
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.StopARSession
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.ToggleARCapture
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bOnOff                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARCaptureType                                     CaptureType                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_StopARSession()
+	bool UARBlueprintLibrary::ToggleARCapture(bool bOnOff, EARCaptureType CaptureType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.ToggleARCapture");
+		
+		UARBlueprintLibrary_ToggleARCapture_Params params {};
+		params.bOnOff = bOnOff;
+		params.CaptureType = CaptureType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.StopARSession
+	 * 		Flags  -> ()
+	 */
+	void UARBlueprintLibrary::StopARSession()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -951,20 +1035,19 @@ namespace CG
 		UARBlueprintLibrary_StopARSession_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998810
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.StartARSession
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARSessionConfig*                            SessionConfig                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_StartARSession(class UARSessionConfig* SessionConfig)
+	void UARBlueprintLibrary::StartARSession(class UARSessionConfig* SessionConfig)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -974,20 +1057,91 @@ namespace CG
 		params.SessionConfig = SessionConfig;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019980F0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SetEnabledXRCamera
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bOnOff                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::SetEnabledXRCamera(bool bOnOff)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.SetEnabledXRCamera");
+		
+		UARBlueprintLibrary_SetEnabledXRCamera_Params params {};
+		params.bOnOff = bOnOff;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SetARWorldScale
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              InWorldScale                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::SetARWorldScale(float InWorldScale)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.SetARWorldScale");
+		
+		UARBlueprintLibrary_SetARWorldScale_Params params {};
+		params.InWorldScale = InWorldScale;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SetARWorldOriginLocationAndRotation
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector                                     OriginLocation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FRotator                                    OriginRotation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		bool                                               bIsTransformInWorldSpace                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bMaintainUpDirection                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::SetARWorldOriginLocationAndRotation(const struct FVector& OriginLocation, const struct FRotator& OriginRotation, bool bIsTransformInWorldSpace, bool bMaintainUpDirection)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.SetARWorldOriginLocationAndRotation");
+		
+		UARBlueprintLibrary_SetARWorldOriginLocationAndRotation_Params params {};
+		params.OriginLocation = OriginLocation;
+		params.OriginRotation = OriginRotation;
+		params.bIsTransformInWorldSpace = bIsTransformInWorldSpace;
+		params.bMaintainUpDirection = bMaintainUpDirection;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SetAlignmentTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FTransform                                  InAlignmentTransform                                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_SetAlignmentTransform(const struct FTransform& InAlignmentTransform)
+	void UARBlueprintLibrary::SetAlignmentTransform(const struct FTransform& InAlignmentTransform)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -997,20 +1151,69 @@ namespace CG
 		params.InAlignmentTransform = InAlignmentTransform;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01998080
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SaveARPinToLocalStore
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        InSaveName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UARPin*                                      InPin                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARBlueprintLibrary::SaveARPinToLocalStore(const class FName& InSaveName, class UARPin* InPin)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.SaveARPinToLocalStore");
+		
+		UARBlueprintLibrary_SaveARPinToLocalStore_Params params {};
+		params.InSaveName = InSaveName;
+		params.InPin = InPin;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.ResizeXRCamera
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FIntPoint                                   InSize                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	struct FIntPoint UARBlueprintLibrary::ResizeXRCamera(const struct FIntPoint& InSize)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.ResizeXRCamera");
+		
+		UARBlueprintLibrary_ResizeXRCamera_Params params {};
+		params.InSize = InSize;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.RemovePin
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARPin*                                      PinToRemove                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_RemovePin(class UARPin* PinToRemove)
+	void UARBlueprintLibrary::RemovePin(class UARPin* PinToRemove)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1020,22 +1223,62 @@ namespace CG
 		params.PinToRemove = PinToRemove;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997F00
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.RemoveARPinFromLocalStore
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        InSaveName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::RemoveARPinFromLocalStore(const class FName& InSaveName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.RemoveARPinFromLocalStore");
+		
+		UARBlueprintLibrary_RemoveARPinFromLocalStore_Params params {};
+		params.InSaveName = InSaveName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.RemoveAllARPinsFromLocalStore
+	 * 		Flags  -> ()
+	 */
+	void UARBlueprintLibrary::RemoveAllARPinsFromLocalStore()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.RemoveAllARPinsFromLocalStore");
+		
+		UARBlueprintLibrary_RemoveAllARPinsFromLocalStore_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PinComponentToTraceResult
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             ComponentToPin                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FName                                        DebugName                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARPin* UARBlueprintLibrary::STATIC_PinComponentToTraceResult(class USceneComponent* ComponentToPin, const struct FARTraceResult& TraceResult, const class FName& DebugName)
+	class UARPin* UARBlueprintLibrary::PinComponentToTraceResult(class USceneComponent* ComponentToPin, const struct FARTraceResult& TraceResult, const class FName& DebugName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1047,7 +1290,6 @@ namespace CG
 		params.DebugName = DebugName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1056,16 +1298,42 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997D60
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PinComponentToARPin
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class USceneComponent*                             ComponentToPin                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UARPin*                                      Pin                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARBlueprintLibrary::PinComponentToARPin(class USceneComponent* ComponentToPin, class UARPin* Pin)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.PinComponentToARPin");
+		
+		UARBlueprintLibrary_PinComponentToARPin_Params params {};
+		params.ComponentToPin = ComponentToPin;
+		params.Pin = Pin;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PinComponent
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USceneComponent*                             ComponentToPin                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  PinToWorldTransform                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UARTrackedGeometry*                          TrackedGeometry                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        DebugName                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARPin* UARBlueprintLibrary::STATIC_PinComponent(class USceneComponent* ComponentToPin, const struct FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, const class FName& DebugName)
+	class UARPin* UARBlueprintLibrary::PinComponent(class USceneComponent* ComponentToPin, const struct FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, const class FName& DebugName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1078,7 +1346,6 @@ namespace CG
 		params.DebugName = DebugName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1087,11 +1354,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997D40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PauseARSession
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UARBlueprintLibrary::STATIC_PauseARSession()
+	void UARBlueprintLibrary::PauseARSession()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1100,16 +1367,36 @@ namespace CG
 		UARBlueprintLibrary_PauseARSession_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997960
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.LoadARPinsFromLocalStore
+	 * 		Flags  -> ()
+	 */
+	TMap<class FName, class UARPin*> UARBlueprintLibrary::LoadARPinsFromLocalStore()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.LoadARPinsFromLocalStore");
+		
+		UARBlueprintLibrary_LoadARPinsFromLocalStore_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects3D
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Start                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     End                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1118,7 +1405,7 @@ namespace CG
 	 * 		bool                                               bTestPlaneExtents                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bTestPlaneBoundaryPolygon                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<struct FARTraceResult> UARBlueprintLibrary::STATIC_LineTraceTrackedObjects3D(const struct FVector& Start, const struct FVector& End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
+	TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects3D(const struct FVector& Start, const struct FVector& End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1133,7 +1420,6 @@ namespace CG
 		params.bTestPlaneBoundaryPolygon = bTestPlaneBoundaryPolygon;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1142,9 +1428,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997B70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   ScreenCoord                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bTestFeaturePoints                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1152,7 +1438,7 @@ namespace CG
 	 * 		bool                                               bTestPlaneExtents                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bTestPlaneBoundaryPolygon                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<struct FARTraceResult> UARBlueprintLibrary::STATIC_LineTraceTrackedObjects(const struct FVector2D& ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
+	TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects(const struct FVector2D& ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1166,7 +1452,6 @@ namespace CG
 		params.bTestPlaneBoundaryPolygon = bTestPlaneBoundaryPolygon;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1175,13 +1460,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019978E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsSessionTypeSupported
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARSessionType                    SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSessionType                                     SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UARBlueprintLibrary::STATIC_IsSessionTypeSupported(AugmentedReality_EARSessionType SessionType)
+	bool UARBlueprintLibrary::IsSessionTypeSupported(EARSessionType SessionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1191,7 +1476,6 @@ namespace CG
 		params.SessionType = SessionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1200,14 +1484,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsSessionTrackingFeatureSupported
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARSessionType                    SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		AugmentedReality_EARSessionTrackingFeature         SessionTrackingFeature                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSessionType                                     SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSessionTrackingFeature                          SessionTrackingFeature                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UARBlueprintLibrary::STATIC_IsSessionTrackingFeatureSupported(AugmentedReality_EARSessionType SessionType, AugmentedReality_EARSessionTrackingFeature SessionTrackingFeature)
+	bool UARBlueprintLibrary::IsSessionTrackingFeatureSupported(EARSessionType SessionType, EARSessionTrackingFeature SessionTrackingFeature)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1218,7 +1502,6 @@ namespace CG
 		params.SessionTrackingFeature = SessionTrackingFeature;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1227,11 +1510,37 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A637A0
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsARSupported
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsSceneReconstructionSupported
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EARSessionType                                     SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSceneReconstruction                             SceneReconstructionMethod                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UARBlueprintLibrary::STATIC_IsARSupported()
+	bool UARBlueprintLibrary::IsSceneReconstructionSupported(EARSessionType SessionType, EARSceneReconstruction SceneReconstructionMethod)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.IsSceneReconstructionSupported");
+		
+		UARBlueprintLibrary_IsSceneReconstructionSupported_Params params {};
+		params.SessionType = SessionType;
+		params.SceneReconstructionMethod = SceneReconstructionMethod;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsARSupported
+	 * 		Flags  -> ()
+	 */
+	bool UARBlueprintLibrary::IsARSupported()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1240,7 +1549,6 @@ namespace CG
 		UARBlueprintLibrary_IsARSupported_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1249,11 +1557,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019977F0
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetWorldMappingStatus
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreSupported
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARWorldMappingState UARBlueprintLibrary::STATIC_GetWorldMappingStatus()
+	bool UARBlueprintLibrary::IsARPinLocalStoreSupported()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreSupported");
+		
+		UARBlueprintLibrary_IsARPinLocalStoreSupported_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreReady
+	 * 		Flags  -> ()
+	 */
+	bool UARBlueprintLibrary::IsARPinLocalStoreReady()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreReady");
+		
+		UARBlueprintLibrary_IsARPinLocalStoreReady_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetWorldMappingStatus
+	 * 		Flags  -> ()
+	 */
+	EARWorldMappingState UARBlueprintLibrary::GetWorldMappingStatus()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1262,7 +1612,6 @@ namespace CG
 		UARBlueprintLibrary_GetWorldMappingStatus_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1271,11 +1620,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetTrackingQualityReason
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARTrackingQualityReason UARBlueprintLibrary::STATIC_GetTrackingQualityReason()
+	EARTrackingQualityReason UARBlueprintLibrary::GetTrackingQualityReason()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1284,7 +1633,6 @@ namespace CG
 		UARBlueprintLibrary_GetTrackingQualityReason_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1293,11 +1641,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetTrackingQuality
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARTrackingQuality UARBlueprintLibrary::STATIC_GetTrackingQuality()
+	EARTrackingQuality UARBlueprintLibrary::GetTrackingQuality()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1306,7 +1654,6 @@ namespace CG
 		UARBlueprintLibrary_GetTrackingQuality_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1315,13 +1662,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997460
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetSupportedVideoFormats
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARSessionType                    SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARSessionType                                     SessionType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<struct FARVideoFormat> UARBlueprintLibrary::STATIC_GetSupportedVideoFormats(AugmentedReality_EARSessionType SessionType)
+	TArray<struct FARVideoFormat> UARBlueprintLibrary::GetSupportedVideoFormats(EARSessionType SessionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1331,7 +1678,6 @@ namespace CG
 		params.SessionType = SessionType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1340,11 +1686,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997430
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetSessionConfig
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	class UARSessionConfig* UARBlueprintLibrary::STATIC_GetSessionConfig()
+	class UARSessionConfig* UARBlueprintLibrary::GetSessionConfig()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1353,7 +1699,6 @@ namespace CG
 		UARBlueprintLibrary_GetSessionConfig_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1362,11 +1707,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019973B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPointCloud
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	TArray<struct FVector> UARBlueprintLibrary::STATIC_GetPointCloud()
+	TArray<struct FVector> UARBlueprintLibrary::GetPointCloud()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1375,7 +1720,6 @@ namespace CG
 		UARBlueprintLibrary_GetPointCloud_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1384,11 +1728,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997320
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPersonSegmentationImage
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UARTextureCameraImage* UARBlueprintLibrary::STATIC_GetPersonSegmentationImage()
+	class UARTexture* UARBlueprintLibrary::GetPersonSegmentationImage()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1397,7 +1741,6 @@ namespace CG
 		UARBlueprintLibrary_GetPersonSegmentationImage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1406,11 +1749,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019972F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPersonSegmentationDepthImage
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UARTextureCameraImage* UARBlueprintLibrary::STATIC_GetPersonSegmentationDepthImage()
+	class UARTexture* UARBlueprintLibrary::GetPersonSegmentationDepthImage()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1419,7 +1762,6 @@ namespace CG
 		UARBlueprintLibrary_GetPersonSegmentationDepthImage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1428,11 +1770,65 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996CF0
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCurrentLightEstimate
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetObjectClassificationAtLocation
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector                                     InWorldLocation                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARObjectClassification                            OutClassification                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FVector                                     OutClassificationLocation                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              MaxLocationDiff                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARLightEstimate* UARBlueprintLibrary::STATIC_GetCurrentLightEstimate()
+	bool UARBlueprintLibrary::GetObjectClassificationAtLocation(const struct FVector& InWorldLocation, EARObjectClassification* OutClassification, struct FVector* OutClassificationLocation, float MaxLocationDiff)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetObjectClassificationAtLocation");
+		
+		UARBlueprintLibrary_GetObjectClassificationAtLocation_Params params {};
+		params.InWorldLocation = InWorldLocation;
+		params.MaxLocationDiff = MaxLocationDiff;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutClassification != nullptr)
+			*OutClassification = params.OutClassification;
+		if (OutClassificationLocation != nullptr)
+			*OutClassificationLocation = params.OutClassificationLocation;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetNumberOfTrackedFacesSupported
+	 * 		Flags  -> ()
+	 */
+	int32_t UARBlueprintLibrary::GetNumberOfTrackedFacesSupported()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetNumberOfTrackedFacesSupported");
+		
+		UARBlueprintLibrary_GetNumberOfTrackedFacesSupported_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCurrentLightEstimate
+	 * 		Flags  -> ()
+	 */
+	class UARLightEstimate* UARBlueprintLibrary::GetCurrentLightEstimate()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1441,7 +1837,6 @@ namespace CG
 		UARBlueprintLibrary_GetCurrentLightEstimate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1450,11 +1845,37 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996BA0
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraImage
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraIntrinsics
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARCameraIntrinsics                         OutCameraIntrinsics                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class UARTextureCameraImage* UARBlueprintLibrary::STATIC_GetCameraImage()
+	bool UARBlueprintLibrary::GetCameraIntrinsics(struct FARCameraIntrinsics* OutCameraIntrinsics)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetCameraIntrinsics");
+		
+		UARBlueprintLibrary_GetCameraIntrinsics_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutCameraIntrinsics != nullptr)
+			*OutCameraIntrinsics = params.OutCameraIntrinsics;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraImage
+	 * 		Flags  -> ()
+	 */
+	class UARTextureCameraImage* UARBlueprintLibrary::GetCameraImage()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1463,7 +1884,6 @@ namespace CG
 		UARBlueprintLibrary_GetCameraImage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1472,11 +1892,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996B70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraDepth
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UARTextureCameraDepth* UARBlueprintLibrary::STATIC_GetCameraDepth()
+	class UARTextureCameraDepth* UARBlueprintLibrary::GetCameraDepth()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1485,7 +1905,6 @@ namespace CG
 		UARBlueprintLibrary_GetCameraDepth_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1494,11 +1913,56 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996580
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetARSessionStatus
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetARWorldScale
+	 * 		Flags  -> ()
 	 */
-	struct FARSessionStatus UARBlueprintLibrary::STATIC_GetARSessionStatus()
+	float UARBlueprintLibrary::GetARWorldScale()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetARWorldScale");
+		
+		UARBlueprintLibrary_GetARWorldScale_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetARTexture
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EARTextureType                                     TextureType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UARTexture* UARBlueprintLibrary::GetARTexture(EARTextureType TextureType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetARTexture");
+		
+		UARBlueprintLibrary_GetARTexture_Params params {};
+		params.TextureType = TextureType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetARSessionStatus
+	 * 		Flags  -> ()
+	 */
+	struct FARSessionStatus UARBlueprintLibrary::GetARSessionStatus()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1507,7 +1971,6 @@ namespace CG
 		UARBlueprintLibrary_GetARSessionStatus_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1516,11 +1979,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996A50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPoses
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UARTrackedPose*> UARBlueprintLibrary::STATIC_GetAllTrackedPoses()
+	TArray<class UARTrackedPose*> UARBlueprintLibrary::GetAllTrackedPoses()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1529,7 +1992,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTrackedPoses_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1538,11 +2000,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019969D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPoints
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UARTrackedPoint*> UARBlueprintLibrary::STATIC_GetAllTrackedPoints()
+	TArray<class UARTrackedPoint*> UARBlueprintLibrary::GetAllTrackedPoints()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1551,7 +2013,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTrackedPoints_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1560,11 +2021,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996950
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPlanes
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UARPlaneGeometry*> UARBlueprintLibrary::STATIC_GetAllTrackedPlanes()
+	TArray<class UARPlaneGeometry*> UARBlueprintLibrary::GetAllTrackedPlanes()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1573,7 +2034,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTrackedPlanes_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1582,11 +2042,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019968D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedImages
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UARTrackedImage*> UARBlueprintLibrary::STATIC_GetAllTrackedImages()
+	TArray<class UARTrackedImage*> UARBlueprintLibrary::GetAllTrackedImages()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1595,7 +2055,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTrackedImages_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1604,11 +2063,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996850
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedEnvironmentCaptureProbes
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UAREnvironmentCaptureProbe*> UARBlueprintLibrary::STATIC_GetAllTrackedEnvironmentCaptureProbes()
+	TArray<class UAREnvironmentCaptureProbe*> UARBlueprintLibrary::GetAllTrackedEnvironmentCaptureProbes()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1617,7 +2076,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTrackedEnvironmentCaptureProbes_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1626,11 +2084,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTracked2DPoses
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<struct FARPose2D> UARBlueprintLibrary::STATIC_GetAllTracked2DPoses()
+	TArray<struct FARPose2D> UARBlueprintLibrary::GetAllTracked2DPoses()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1639,7 +2097,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllTracked2DPoses_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1648,11 +2105,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996690
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllPins
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	TArray<class UARPin*> UARBlueprintLibrary::STATIC_GetAllPins()
+	TArray<class UARPin*> UARBlueprintLibrary::GetAllPins()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1661,7 +2118,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllPins_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1670,11 +2126,35 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996610
-	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllGeometries
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllGeometriesByClass
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UClass*                                      GeometryClass                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<class UARTrackedGeometry*> UARBlueprintLibrary::STATIC_GetAllGeometries()
+	TArray<class UARTrackedGeometry*> UARBlueprintLibrary::GetAllGeometriesByClass(class UClass* GeometryClass)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetAllGeometriesByClass");
+		
+		UARBlueprintLibrary_GetAllGeometriesByClass_Params params {};
+		params.GeometryClass = GeometryClass;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllGeometries
+	 * 		Flags  -> ()
+	 */
+	TArray<class UARTrackedGeometry*> UARBlueprintLibrary::GetAllGeometries()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1683,7 +2163,6 @@ namespace CG
 		UARBlueprintLibrary_GetAllGeometries_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1692,9 +2171,54 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019963F0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAlignmentTransform
+	 * 		Flags  -> ()
+	 */
+	struct FTransform UARBlueprintLibrary::GetAlignmentTransform()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.GetAlignmentTransform");
+		
+		UARBlueprintLibrary_GetAlignmentTransform_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.FindTrackedPointsByName
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FString                                      PointName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	TArray<class UARTrackedPoint*> UARBlueprintLibrary::FindTrackedPointsByName(const class FString& PointName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.FindTrackedPointsByName");
+		
+		UARBlueprintLibrary_FindTrackedPointsByName_Params params {};
+		params.PointName = PointName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.DebugDrawTrackedGeometry
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARTrackedGeometry*                          TrackedGeometry                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1702,7 +2226,7 @@ namespace CG
 	 * 		float                                              OutlineThickness                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PersistForSeconds                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, const struct FLinearColor& Color, float OutlineThickness, float PersistForSeconds)
+	void UARBlueprintLibrary::DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, const struct FLinearColor& Color, float OutlineThickness, float PersistForSeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1716,16 +2240,15 @@ namespace CG
 		params.PersistForSeconds = PersistForSeconds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996260
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.DebugDrawPin
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARPin*                                      ARPin                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1733,7 +2256,7 @@ namespace CG
 	 * 		float                                              Scale                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PersistForSeconds                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UARBlueprintLibrary::STATIC_DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, const struct FLinearColor& Color, float Scale, float PersistForSeconds)
+	void UARBlueprintLibrary::DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, const struct FLinearColor& Color, float Scale, float PersistForSeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1747,23 +2270,106 @@ namespace CG
 		params.PersistForSeconds = PersistForSeconds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995F90
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.CalculateClosestIntersection
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TArray<struct FVector>                             StartPoints                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             EndPoints                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		struct FVector                                     ClosestIntersection                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::CalculateClosestIntersection(TArray<struct FVector> StartPoints, TArray<struct FVector> EndPoints, struct FVector* ClosestIntersection)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.CalculateClosestIntersection");
+		
+		UARBlueprintLibrary_CalculateClosestIntersection_Params params {};
+		params.StartPoints = StartPoints;
+		params.EndPoints = EndPoints;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (ClosestIntersection != nullptr)
+			*ClosestIntersection = params.ClosestIntersection;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.CalculateAlignmentTransform
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FTransform                                  TransformInFirstCoordinateSystem                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		struct FTransform                                  TransformInSecondCoordinateSystem                          (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		struct FTransform                                  AlignmentTransform                                         (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARBlueprintLibrary::CalculateAlignmentTransform(const struct FTransform& TransformInFirstCoordinateSystem, const struct FTransform& TransformInSecondCoordinateSystem, struct FTransform* AlignmentTransform)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.CalculateAlignmentTransform");
+		
+		UARBlueprintLibrary_CalculateAlignmentTransform_Params params {};
+		params.TransformInFirstCoordinateSystem = TransformInFirstCoordinateSystem;
+		params.TransformInSecondCoordinateSystem = TransformInSecondCoordinateSystem;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (AlignmentTransform != nullptr)
+			*AlignmentTransform = params.AlignmentTransform;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.AddTrackedPointWithName
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FTransform                                  WorldTransform                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		class FString                                      PointName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bDeletePointsWithSameName                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARBlueprintLibrary::AddTrackedPointWithName(const struct FTransform& WorldTransform, const class FString& PointName, bool bDeletePointsWithSameName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBlueprintLibrary.AddTrackedPointWithName");
+		
+		UARBlueprintLibrary_AddTrackedPointWithName_Params params {};
+		params.WorldTransform = WorldTransform;
+		params.PointName = PointName;
+		params.bDeletePointsWithSameName = bDeletePointsWithSameName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.AddRuntimeCandidateImage
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UARSessionConfig*                            SessionConfig                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UTexture2D*                                  CandidateTexture                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      FriendlyName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              PhysicalWidth                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARCandidateImage* UARBlueprintLibrary::STATIC_AddRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth)
+	class UARCandidateImage* UARBlueprintLibrary::AddRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1776,7 +2382,6 @@ namespace CG
 		params.PhysicalWidth = PhysicalWidth;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1785,14 +2390,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995EB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.AddManualEnvironmentCaptureProbe
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Extent                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UARBlueprintLibrary::STATIC_AddManualEnvironmentCaptureProbe(const struct FVector& Location, const struct FVector& Extent)
+	bool UARBlueprintLibrary::AddManualEnvironmentCaptureProbe(const struct FVector& Location, const struct FVector& Extent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1803,7 +2408,6 @@ namespace CG
 		params.Extent = Extent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1812,8 +2416,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARBlueprintLibrary::StaticClass()
@@ -1826,13 +2430,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997650
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetTrackedGeometry
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	class UARTrackedGeometry* UARTraceResultLibrary::STATIC_GetTrackedGeometry(const struct FARTraceResult& TraceResult)
+	class UARTrackedGeometry* UARTraceResultLibrary::GetTrackedGeometry(const struct FARTraceResult& TraceResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1842,7 +2446,6 @@ namespace CG
 		params.TraceResult = TraceResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1851,13 +2454,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetTraceChannel
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	AugmentedReality_EARLineTraceChannels UARTraceResultLibrary::STATIC_GetTraceChannel(const struct FARTraceResult& TraceResult)
+	EARLineTraceChannels UARTraceResultLibrary::GetTraceChannel(const struct FARTraceResult& TraceResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1867,7 +2470,6 @@ namespace CG
 		params.TraceResult = TraceResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1876,13 +2478,37 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x019971A0
-	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalTransform
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UARTraceResultLibrary::STATIC_GetLocalToWorldTransform(const struct FARTraceResult& TraceResult)
+	struct FTransform UARTraceResultLibrary::GetLocalTransform(const struct FARTraceResult& TraceResult)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTraceResultLibrary.GetLocalTransform");
+		
+		UARTraceResultLibrary_GetLocalTransform_Params params {};
+		params.TraceResult = TraceResult;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	struct FTransform UARTraceResultLibrary::GetLocalToWorldTransform(const struct FARTraceResult& TraceResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1892,7 +2518,6 @@ namespace CG
 		params.TraceResult = TraceResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1901,13 +2526,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997020
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalToTrackingTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UARTraceResultLibrary::STATIC_GetLocalToTrackingTransform(const struct FARTraceResult& TraceResult)
+	struct FTransform UARTraceResultLibrary::GetLocalToTrackingTransform(const struct FARTraceResult& TraceResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1917,7 +2542,6 @@ namespace CG
 		params.TraceResult = TraceResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1926,13 +2550,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996DA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetDistanceFromCamera
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FARTraceResult                              TraceResult                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	float UARTraceResultLibrary::STATIC_GetDistanceFromCamera(const struct FARTraceResult& TraceResult)
+	float UARTraceResultLibrary::GetDistanceFromCamera(const struct FARTraceResult& TraceResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1942,7 +2566,6 @@ namespace CG
 		params.TraceResult = TraceResult;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1951,8 +2574,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTraceResultLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTraceResultLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTraceResultLibrary::StaticClass()
@@ -1965,8 +2588,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARBaseAsyncTaskBlueprintProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARBaseAsyncTaskBlueprintProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARBaseAsyncTaskBlueprintProxy::StaticClass()
@@ -1979,13 +2602,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995D30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARSaveWorldAsyncTaskBlueprintProxy* UARSaveWorldAsyncTaskBlueprintProxy::STATIC_ARSaveWorld(class UObject* WorldContextObject)
+	class UARSaveWorldAsyncTaskBlueprintProxy* UARSaveWorldAsyncTaskBlueprintProxy::ARSaveWorld(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1995,7 +2618,6 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2004,8 +2626,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARSaveWorldAsyncTaskBlueprintProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARSaveWorldAsyncTaskBlueprintProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARSaveWorldAsyncTaskBlueprintProxy::StaticClass()
@@ -2018,15 +2640,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01995C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Extent                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTaskBlueprintProxy::STATIC_ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent)
+	class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2038,7 +2660,6 @@ namespace CG
 		params.Extent = Extent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2047,8 +2668,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARGetCandidateObjectAsyncTaskBlueprintProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARGetCandidateObjectAsyncTaskBlueprintProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARGetCandidateObjectAsyncTaskBlueprintProxy::StaticClass()
@@ -2061,34 +2682,98 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AAROriginActor.StaticClass
-	 * 		Flags  -> (Predefined, Static)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARComponent.UpdateVisualization
+	 * 		Flags  -> ()
 	 */
-	UClass* AAROriginActor::StaticClass()
+	void UARComponent::UpdateVisualization()
 	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class AugmentedReality.AROriginActor");
-		return ptr;
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARComponent.UpdateVisualization");
+		
+		UARComponent_UpdateVisualization_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996EA0
-	 * 		Name   -> Function AugmentedReality.ARPin.GetTrackingState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARComponent.SetNativeID
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FGuid                                       NativeID                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	AugmentedReality_EARTrackingState UARPin::GetTrackingState()
+	void UARComponent::SetNativeID(const struct FGuid& NativeID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetTrackingState");
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARComponent.SetNativeID");
 		
-		UARPin_GetTrackingState_Params params {};
+		UARComponent_SetNativeID_Params params {};
+		params.NativeID = NativeID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARComponent.ReceiveRemove
+	 * 		Flags  -> ()
+	 */
+	void UARComponent::ReceiveRemove()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARComponent.ReceiveRemove");
+		
+		UARComponent_ReceiveRemove_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARComponent.OnRep_Payload
+	 * 		Flags  -> ()
+	 */
+	void UARComponent::OnRep_Payload()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARComponent.OnRep_Payload");
+		
+		UARComponent_OnRep_Payload_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARComponent.GetMRMesh
+	 * 		Flags  -> ()
+	 */
+	class UMRMeshComponent* UARComponent::GetMRMesh()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARComponent.GetMRMesh");
+		
+		UARComponent_GetMRMesh_Params params {};
+		
+		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2097,9 +2782,1588 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997620
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.SetPlaneComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EPlaneComponentDebugMode                           NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARPlaneComponent::SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.SetPlaneComponentDebugMode");
+		
+		UARPlaneComponent_SetPlaneComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.SetObjectClassificationDebugColors
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		TMap<EARObjectClassification, struct FLinearColor> InColors                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPlaneComponent::SetObjectClassificationDebugColors(TMap<EARObjectClassification, struct FLinearColor> InColors)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.SetObjectClassificationDebugColors");
+		
+		UARPlaneComponent_SetObjectClassificationDebugColors_Params params {};
+		params.InColors = InColors;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPlaneUpdatePayload                       NewPayload                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPlaneComponent::ServerUpdatePayload(const struct FARPlaneUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.ServerUpdatePayload");
+		
+		UARPlaneComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPlaneUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPlaneComponent::ReceiveUpdate(const struct FARPlaneUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.ReceiveUpdate");
+		
+		UARPlaneComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPlaneUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPlaneComponent::ReceiveAdd(const struct FARPlaneUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.ReceiveAdd");
+		
+		UARPlaneComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPlaneComponent.GetObjectClassificationDebugColors
+	 * 		Flags  -> ()
+	 */
+	TMap<EARObjectClassification, struct FLinearColor> UARPlaneComponent::GetObjectClassificationDebugColors()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneComponent.GetObjectClassificationDebugColors");
+		
+		UARPlaneComponent_GetObjectClassificationDebugColors_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARPlaneComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARPlaneComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARPlaneComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPointComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPointUpdatePayload                       NewPayload                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARPointComponent::ServerUpdatePayload(const struct FARPointUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPointComponent.ServerUpdatePayload");
+		
+		UARPointComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPointComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPointUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARPointComponent::ReceiveUpdate(const struct FARPointUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPointComponent.ReceiveUpdate");
+		
+		UARPointComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPointComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPointUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARPointComponent::ReceiveAdd(const struct FARPointUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPointComponent.ReceiveAdd");
+		
+		UARPointComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARPointComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARPointComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARPointComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARFaceComponent.SetFaceComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EFaceComponentDebugMode                            NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARFaceComponent::SetFaceComponentDebugMode(EFaceComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceComponent.SetFaceComponentDebugMode");
+		
+		UARFaceComponent_SetFaceComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARFaceComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARFaceUpdatePayload                        NewPayload                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARFaceComponent::ServerUpdatePayload(const struct FARFaceUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceComponent.ServerUpdatePayload");
+		
+		UARFaceComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARFaceComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARFaceUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARFaceComponent::ReceiveUpdate(const struct FARFaceUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceComponent.ReceiveUpdate");
+		
+		UARFaceComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARFaceComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARFaceUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARFaceComponent::ReceiveAdd(const struct FARFaceUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceComponent.ReceiveAdd");
+		
+		UARFaceComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARFaceComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARFaceComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARFaceComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARImageComponent.SetImageComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EImageComponentDebugMode                           NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARImageComponent::SetImageComponentDebugMode(EImageComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARImageComponent.SetImageComponentDebugMode");
+		
+		UARImageComponent_SetImageComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARImageComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARImageUpdatePayload                       NewPayload                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARImageComponent::ServerUpdatePayload(const struct FARImageUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARImageComponent.ServerUpdatePayload");
+		
+		UARImageComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARImageComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARImageUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARImageComponent::ReceiveUpdate(const struct FARImageUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARImageComponent.ReceiveUpdate");
+		
+		UARImageComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARImageComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARImageUpdatePayload                       Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARImageComponent::ReceiveAdd(const struct FARImageUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARImageComponent.ReceiveAdd");
+		
+		UARImageComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARImageComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARImageComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARImageComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARQRCodeComponent.SetQRCodeComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EQRCodeComponentDebugMode                          NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARQRCodeComponent::SetQRCodeComponentDebugMode(EQRCodeComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARQRCodeComponent.SetQRCodeComponentDebugMode");
+		
+		UARQRCodeComponent_SetQRCodeComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARQRCodeComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARQRCodeUpdatePayload                      NewPayload                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARQRCodeComponent::ServerUpdatePayload(const struct FARQRCodeUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARQRCodeComponent.ServerUpdatePayload");
+		
+		UARQRCodeComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARQRCodeComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARQRCodeUpdatePayload                      Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARQRCodeComponent::ReceiveUpdate(const struct FARQRCodeUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARQRCodeComponent.ReceiveUpdate");
+		
+		UARQRCodeComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARQRCodeComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARQRCodeUpdatePayload                      Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARQRCodeComponent::ReceiveAdd(const struct FARQRCodeUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARQRCodeComponent.ReceiveAdd");
+		
+		UARQRCodeComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARQRCodeComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARQRCodeComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARQRCodeComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPoseComponent.SetPoseComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EPoseComponentDebugMode                            NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARPoseComponent::SetPoseComponentDebugMode(EPoseComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPoseComponent.SetPoseComponentDebugMode");
+		
+		UARPoseComponent_SetPoseComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPoseComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPoseUpdatePayload                        NewPayload                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPoseComponent::ServerUpdatePayload(const struct FARPoseUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPoseComponent.ServerUpdatePayload");
+		
+		UARPoseComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPoseComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPoseUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPoseComponent::ReceiveUpdate(const struct FARPoseUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPoseComponent.ReceiveUpdate");
+		
+		UARPoseComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPoseComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARPoseUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARPoseComponent::ReceiveAdd(const struct FARPoseUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPoseComponent.ReceiveAdd");
+		
+		UARPoseComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARPoseComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARPoseComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARPoseComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.AREnvironmentProbeComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FAREnvironmentProbeUpdatePayload            NewPayload                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UAREnvironmentProbeComponent::ServerUpdatePayload(const struct FAREnvironmentProbeUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.AREnvironmentProbeComponent.ServerUpdatePayload");
+		
+		UAREnvironmentProbeComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.AREnvironmentProbeComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FAREnvironmentProbeUpdatePayload            Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UAREnvironmentProbeComponent::ReceiveUpdate(const struct FAREnvironmentProbeUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.AREnvironmentProbeComponent.ReceiveUpdate");
+		
+		UAREnvironmentProbeComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.AREnvironmentProbeComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FAREnvironmentProbeUpdatePayload            Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UAREnvironmentProbeComponent::ReceiveAdd(const struct FAREnvironmentProbeUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.AREnvironmentProbeComponent.ReceiveAdd");
+		
+		UAREnvironmentProbeComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAREnvironmentProbeComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAREnvironmentProbeComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.AREnvironmentProbeComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARObjectComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARObjectUpdatePayload                      NewPayload                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARObjectComponent::ServerUpdatePayload(const struct FARObjectUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARObjectComponent.ServerUpdatePayload");
+		
+		UARObjectComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARObjectComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARObjectUpdatePayload                      Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARObjectComponent::ReceiveUpdate(const struct FARObjectUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARObjectComponent.ReceiveUpdate");
+		
+		UARObjectComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARObjectComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARObjectUpdatePayload                      Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARObjectComponent::ReceiveAdd(const struct FARObjectUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARObjectComponent.ReceiveAdd");
+		
+		UARObjectComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARObjectComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARObjectComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARObjectComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARMeshComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARMeshUpdatePayload                        NewPayload                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARMeshComponent::ServerUpdatePayload(const struct FARMeshUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARMeshComponent.ServerUpdatePayload");
+		
+		UARMeshComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARMeshComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARMeshUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARMeshComponent::ReceiveUpdate(const struct FARMeshUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARMeshComponent.ReceiveUpdate");
+		
+		UARMeshComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARMeshComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARMeshUpdatePayload                        Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARMeshComponent::ReceiveAdd(const struct FARMeshUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARMeshComponent.ReceiveAdd");
+		
+		UARMeshComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARMeshComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARMeshComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARMeshComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchorComponent.SetGeoAnchorComponentDebugMode
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EGeoAnchorComponentDebugMode                       NewDebugMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARGeoAnchorComponent::SetGeoAnchorComponentDebugMode(EGeoAnchorComponentDebugMode NewDebugMode)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchorComponent.SetGeoAnchorComponentDebugMode");
+		
+		UARGeoAnchorComponent_SetGeoAnchorComponentDebugMode_Params params {};
+		params.NewDebugMode = NewDebugMode;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchorComponent.ServerUpdatePayload
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARGeoAnchorUpdatePayload                   NewPayload                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARGeoAnchorComponent::ServerUpdatePayload(const struct FARGeoAnchorUpdatePayload& NewPayload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchorComponent.ServerUpdatePayload");
+		
+		UARGeoAnchorComponent_ServerUpdatePayload_Params params {};
+		params.NewPayload = NewPayload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchorComponent.ReceiveUpdate
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARGeoAnchorUpdatePayload                   Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARGeoAnchorComponent::ReceiveUpdate(const struct FARGeoAnchorUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchorComponent.ReceiveUpdate");
+		
+		UARGeoAnchorComponent_ReceiveUpdate_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchorComponent.ReceiveAdd
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FARGeoAnchorUpdatePayload                   Payload                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	 */
+	void UARGeoAnchorComponent::ReceiveAdd(const struct FARGeoAnchorUpdatePayload& Payload)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchorComponent.ReceiveAdd");
+		
+		UARGeoAnchorComponent_ReceiveAdd_Params params {};
+		params.Payload = Payload;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARGeoAnchorComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARGeoAnchorComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARGeoAnchorComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARDependencyHandler.StartARSessionLatent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UARSessionConfig*                            SessionConfig                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	 */
+	void UARDependencyHandler::StartARSessionLatent(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, const struct FLatentActionInfo& LatentInfo)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARDependencyHandler.StartARSessionLatent");
+		
+		UARDependencyHandler_StartARSessionLatent_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.SessionConfig = SessionConfig;
+		params.LatentInfo = LatentInfo;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARDependencyHandler.RequestARSessionPermission
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UARSessionConfig*                            SessionConfig                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		EARServicePermissionRequestResult                  OutPermissionResult                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARDependencyHandler::RequestARSessionPermission(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, const struct FLatentActionInfo& LatentInfo, EARServicePermissionRequestResult* OutPermissionResult)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARDependencyHandler.RequestARSessionPermission");
+		
+		UARDependencyHandler_RequestARSessionPermission_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.SessionConfig = SessionConfig;
+		params.LatentInfo = LatentInfo;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutPermissionResult != nullptr)
+			*OutPermissionResult = params.OutPermissionResult;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARDependencyHandler.InstallARService
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		EARServiceInstallRequestResult                     OutInstallResult                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARDependencyHandler::InstallARService(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, EARServiceInstallRequestResult* OutInstallResult)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARDependencyHandler.InstallARService");
+		
+		UARDependencyHandler_InstallARService_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.LatentInfo = LatentInfo;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutInstallResult != nullptr)
+			*OutInstallResult = params.OutInstallResult;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARDependencyHandler.GetARDependencyHandler
+	 * 		Flags  -> ()
+	 */
+	class UARDependencyHandler* UARDependencyHandler::GetARDependencyHandler()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARDependencyHandler.GetARDependencyHandler");
+		
+		UARDependencyHandler_GetARDependencyHandler_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARDependencyHandler.CheckARServiceAvailability
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FLatentActionInfo                           LatentInfo                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		EARServiceAvailability                             OutAvailability                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARDependencyHandler::CheckARServiceAvailability(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, EARServiceAvailability* OutAvailability)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARDependencyHandler.CheckARServiceAvailability");
+		
+		UARDependencyHandler_CheckARServiceAvailability_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.LatentInfo = LatentInfo;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutAvailability != nullptr)
+			*OutAvailability = params.OutAvailability;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARDependencyHandler.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARDependencyHandler::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARDependencyHandler");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingSupport
+	 * 		Flags  -> ()
+	 */
+	class UARGeoTrackingSupport* UARGeoTrackingSupport::GetGeoTrackingSupport()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingSupport");
+		
+		UARGeoTrackingSupport_GetGeoTrackingSupport_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingStateReason
+	 * 		Flags  -> ()
+	 */
+	EARGeoTrackingStateReason UARGeoTrackingSupport::GetGeoTrackingStateReason()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingStateReason");
+		
+		UARGeoTrackingSupport_GetGeoTrackingStateReason_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingState
+	 * 		Flags  -> ()
+	 */
+	EARGeoTrackingState UARGeoTrackingSupport::GetGeoTrackingState()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingState");
+		
+		UARGeoTrackingSupport_GetGeoTrackingState_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingAccuracy
+	 * 		Flags  -> ()
+	 */
+	EARGeoTrackingAccuracy UARGeoTrackingSupport::GetGeoTrackingAccuracy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingAccuracy");
+		
+		UARGeoTrackingSupport_GetGeoTrackingAccuracy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocationWithAltitude
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Longitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Latitude                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              AltitudeMeters                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      OptionalAnchorName                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARGeoTrackingSupport::AddGeoAnchorAtLocationWithAltitude(float Longitude, float Latitude, float AltitudeMeters, const class FString& OptionalAnchorName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocationWithAltitude");
+		
+		UARGeoTrackingSupport_AddGeoAnchorAtLocationWithAltitude_Params params {};
+		params.Longitude = Longitude;
+		params.Latitude = Latitude;
+		params.AltitudeMeters = AltitudeMeters;
+		params.OptionalAnchorName = OptionalAnchorName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocation
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Longitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Latitude                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      OptionalAnchorName                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARGeoTrackingSupport::AddGeoAnchorAtLocation(float Longitude, float Latitude, const class FString& OptionalAnchorName)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocation");
+		
+		UARGeoTrackingSupport_AddGeoAnchorAtLocation_Params params {};
+		params.Longitude = Longitude;
+		params.Latitude = Latitude;
+		params.OptionalAnchorName = OptionalAnchorName;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARGeoTrackingSupport.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARGeoTrackingSupport::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARGeoTrackingSupport");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> DelegateFunction AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.GeoTrackingAvailabilityDelegate__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bIsAvailable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      Error                                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::GeoTrackingAvailabilityDelegate__DelegateSignature(bool bIsAvailable, const class FString& Error)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("DelegateFunction AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.GeoTrackingAvailabilityDelegate__DelegateSignature");
+		
+		UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_GeoTrackingAvailabilityDelegate__DelegateSignature_Params params {};
+		params.bIsAvailable = bIsAvailable;
+		params.Error = Error;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailabilityAtLocation
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Longitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Latitude                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailabilityAtLocation");
+		
+		UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailabilityAtLocation_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.Longitude = Longitude;
+		params.Latitude = Latitude;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailability
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailability(class UObject* WorldContextObject)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailability");
+		
+		UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailability_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> DelegateFunction AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationDelegate__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Longitude                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Latitude                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              Altitude                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      Error                                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UGetGeoLocationAsyncTaskBlueprintProxy::GetGeoLocationDelegate__DelegateSignature(float Longitude, float Latitude, float Altitude, const class FString& Error)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("DelegateFunction AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationDelegate__DelegateSignature");
+		
+		UGetGeoLocationAsyncTaskBlueprintProxy_GetGeoLocationDelegate__DelegateSignature_Params params {};
+		params.Longitude = Longitude;
+		params.Latitude = Latitude;
+		params.Altitude = Altitude;
+		params.Error = Error;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FVector                                     WorldPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UGetGeoLocationAsyncTaskBlueprintProxy* UGetGeoLocationAsyncTaskBlueprintProxy::GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, const struct FVector& WorldPosition)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition");
+		
+		UGetGeoLocationAsyncTaskBlueprintProxy_GetGeoLocationAtWorldPosition_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		params.WorldPosition = WorldPosition;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGetGeoLocationAsyncTaskBlueprintProxy.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UGetGeoLocationAsyncTaskBlueprintProxy::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UClass*                                      ComponentClass                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FGuid                                       NativeID                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARLifeCycleComponent::ServerSpawnARActor(class UClass* ComponentClass, const struct FGuid& NativeID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor");
+		
+		UARLifeCycleComponent_ServerSpawnARActor_Params params {};
+		params.ComponentClass = ComponentClass;
+		params.NativeID = NativeID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AARActor*                                    Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARLifeCycleComponent::ServerDestroyARActor(class AARActor* Actor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor");
+		
+		UARLifeCycleComponent_ServerDestroyARActor_Params params {};
+		params.Actor = Actor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorToBeDestroyedDelegate__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AARActor*                                    Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARLifeCycleComponent::InstanceARActorToBeDestroyedDelegate__DelegateSignature(class AARActor* Actor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorToBeDestroyedDelegate__DelegateSignature");
+		
+		UARLifeCycleComponent_InstanceARActorToBeDestroyedDelegate__DelegateSignature_Params params {};
+		params.Actor = Actor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorSpawnedDelegate__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UClass*                                      ComponentClass                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FGuid                                       NativeID                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class AARActor*                                    SpawnedActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UARLifeCycleComponent::InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, const struct FGuid& NativeID, class AARActor* SpawnedActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorSpawnedDelegate__DelegateSignature");
+		
+		UARLifeCycleComponent_InstanceARActorSpawnedDelegate__DelegateSignature_Params params {};
+		params.ComponentClass = ComponentClass;
+		params.NativeID = NativeID;
+		params.SpawnedActor = SpawnedActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARLifeCycleComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARLifeCycleComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARLifeCycleComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARPin.GetTrackingState
+	 * 		Flags  -> ()
+	 */
+	EARTrackingState UARPin::GetTrackingState()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetTrackingState");
+		
+		UARPin_GetTrackingState_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.GetTrackedGeometry
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UARTrackedGeometry* UARPin::GetTrackedGeometry()
 	{
@@ -2110,7 +4374,6 @@ namespace CG
 		UARPin_GetTrackedGeometry_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2119,9 +4382,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997350
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.GetPinnedComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class USceneComponent* UARPin::GetPinnedComponent()
 	{
@@ -2132,7 +4395,6 @@ namespace CG
 		UARPin_GetPinnedComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2141,9 +4403,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01997140
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.GetLocalToWorldTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform UARPin::GetLocalToWorldTransform()
 	{
@@ -2154,7 +4416,6 @@ namespace CG
 		UARPin_GetLocalToWorldTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2163,9 +4424,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.GetLocalToTrackingTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform UARPin::GetLocalToTrackingTransform()
 	{
@@ -2176,7 +4437,6 @@ namespace CG
 		UARPin_GetLocalToTrackingTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2185,9 +4445,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996D20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.GetDebugName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FName UARPin::GetDebugName()
 	{
@@ -2198,7 +4458,6 @@ namespace CG
 		UARPin_GetDebugName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2207,9 +4466,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPin.DebugDraw
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UWorld*                                      World                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                Color                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2229,15 +4488,14 @@ namespace CG
 		params.PersistForSeconds = PersistForSeconds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARPin.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARPin.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARPin::StaticClass()
@@ -2250,11 +4508,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199DAA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<unsigned char>                              ImageData                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              ImageData                                                  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void AARSharedWorldGameMode::SetPreviewImageData(TArray<unsigned char> ImageData)
 	{
@@ -2266,16 +4524,15 @@ namespace CG
 		params.ImageData = ImageData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D7D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void AARSharedWorldGameMode::SetARWorldSharingIsReady()
 	{
@@ -2286,18 +4543,17 @@ namespace CG
 		AARSharedWorldGameMode_SetARWorldSharingIsReady_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D6F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<unsigned char>                              ARWorldData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              ARWorldData                                                (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void AARSharedWorldGameMode::SetARSharedWorldData(TArray<unsigned char> ARWorldData)
 	{
@@ -2309,16 +4565,15 @@ namespace CG
 		params.ARWorldData = ARWorldData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CD60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
-	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
 	{
@@ -2329,7 +4584,6 @@ namespace CG
 		AARSharedWorldGameMode_GetARSharedWorldGameState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2338,8 +4592,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AARSharedWorldGameMode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AARSharedWorldGameMode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AARSharedWorldGameMode::StaticClass()
@@ -2352,9 +4606,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
 	{
@@ -2371,8 +4625,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AARSharedWorldGameState.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AARSharedWorldGameState.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AARSharedWorldGameState::StaticClass()
@@ -2385,9 +4639,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D6A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ServerMarkReadyForReceiving
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+	 * 		Flags  -> ()
 	 */
 	void AARSharedWorldPlayerController::ServerMarkReadyForReceiving()
 	{
@@ -2398,19 +4652,18 @@ namespace CG
 		AARSharedWorldPlayerController_ServerMarkReadyForReceiving_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CC60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdatePreviewImageData
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void AARSharedWorldPlayerController::ClientUpdatePreviewImageData(int32_t Offset, TArray<unsigned char> Buffer)
 	{
@@ -2423,19 +4676,18 @@ namespace CG
 		params.Buffer = Buffer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CB60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdateARWorldData
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              Buffer                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void AARSharedWorldPlayerController::ClientUpdateARWorldData(int32_t Offset, TArray<unsigned char> Buffer)
 	{
@@ -2448,16 +4700,15 @@ namespace CG
 		params.Buffer = Buffer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CA60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientInitSharedWorld
-	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PreviewImageSize                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ARWorldDataSize                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2473,15 +4724,14 @@ namespace CG
 		params.ARWorldDataSize = ARWorldDataSize;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AARSharedWorldPlayerController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AARSharedWorldPlayerController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AARSharedWorldPlayerController::StaticClass()
@@ -2494,9 +4744,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAREnvironmentCaptureProbe*                  InCaptureProbe                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2510,15 +4760,14 @@ namespace CG
 		params.InCaptureProbe = InCaptureProbe;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AARSkyLight.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AARSkyLight.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AARSkyLight::StaticClass()
@@ -2531,8 +4780,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTexture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTexture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTexture::StaticClass()
@@ -2545,8 +4794,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTextureCameraImage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTextureCameraImage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTextureCameraImage::StaticClass()
@@ -2559,8 +4808,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTextureCameraDepth.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTextureCameraDepth.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTextureCameraDepth::StaticClass()
@@ -2573,8 +4822,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAREnvironmentCaptureProbeTexture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAREnvironmentCaptureProbeTexture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAREnvironmentCaptureProbeTexture::StaticClass()
@@ -2587,8 +4836,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTraceResultDummy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTraceResultDummy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTraceResultDummy::StaticClass()
@@ -2601,9 +4850,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.IsTracked
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UARTrackedGeometry::IsTracked()
 	{
@@ -2614,7 +4863,6 @@ namespace CG
 		UARTrackedGeometry_IsTracked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2623,9 +4871,33 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D590
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.HasSpatialMeshUsageFlag
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EARSpatialMeshUsageFlags                           InFlag                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARTrackedGeometry::HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.HasSpatialMeshUsageFlag");
+		
+		UARTrackedGeometry_HasSpatialMeshUsageFlag_Params params {};
+		params.InFlag = InFlag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 	{
@@ -2636,7 +4908,6 @@ namespace CG
 		UARTrackedGeometry_GetUnderlyingMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2645,11 +4916,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996EA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetTrackingState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARTrackingState UARTrackedGeometry::GetTrackingState()
+	EARTrackingState UARTrackedGeometry::GetTrackingState()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2658,7 +4929,6 @@ namespace CG
 		UARTrackedGeometry_GetTrackingState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2667,11 +4937,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D4A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetObjectClassification
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARObjectClassification UARTrackedGeometry::GetObjectClassification()
+	EARObjectClassification UARTrackedGeometry::GetObjectClassification()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2680,7 +4950,6 @@ namespace CG
 		UARTrackedGeometry_GetObjectClassification_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2689,9 +4958,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D440
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetName
+	 * 		Flags  -> ()
+	 */
+	class FString UARTrackedGeometry::GetName()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetName");
+		
+		UARTrackedGeometry_GetName_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform UARTrackedGeometry::GetLocalToWorldTransform()
 	{
@@ -2702,7 +4992,6 @@ namespace CG
 		UARTrackedGeometry_GetLocalToWorldTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2711,9 +5000,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01996FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform UARTrackedGeometry::GetLocalToTrackingTransform()
 	{
@@ -2724,7 +5013,6 @@ namespace CG
 		UARTrackedGeometry_GetLocalToTrackingTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2733,9 +5021,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLastUpdateTimestamp
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UARTrackedGeometry::GetLastUpdateTimestamp()
 	{
@@ -2746,7 +5034,6 @@ namespace CG
 		UARTrackedGeometry_GetLastUpdateTimestamp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2755,9 +5042,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D340
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UARTrackedGeometry::GetLastUpdateFrameNumber()
 	{
@@ -2768,7 +5055,6 @@ namespace CG
 		UARTrackedGeometry_GetLastUpdateFrameNumber_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2777,9 +5063,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D1A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetDebugName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FName UARTrackedGeometry::GetDebugName()
 	{
@@ -2790,7 +5076,6 @@ namespace CG
 		UARTrackedGeometry_GetDebugName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2799,8 +5084,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedGeometry.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedGeometry.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedGeometry::StaticClass()
@@ -2813,9 +5098,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UARPlaneGeometry* UARPlaneGeometry::GetSubsumedBy()
 	{
@@ -2826,7 +5111,6 @@ namespace CG
 		UARPlaneGeometry_GetSubsumedBy_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2835,11 +5119,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D4E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetOrientation
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	AugmentedReality_EARPlaneOrientation UARPlaneGeometry::GetOrientation()
+	EARPlaneOrientation UARPlaneGeometry::GetOrientation()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2848,7 +5132,6 @@ namespace CG
 		UARPlaneGeometry_GetOrientation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2857,9 +5140,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D2B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetExtent
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UARPlaneGeometry::GetExtent()
 	{
@@ -2870,7 +5153,6 @@ namespace CG
 		UARPlaneGeometry_GetExtent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2879,9 +5161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D170
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetCenter
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UARPlaneGeometry::GetCenter()
 	{
@@ -2892,7 +5174,6 @@ namespace CG
 		UARPlaneGeometry_GetCenter_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2901,9 +5182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D030
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FVector> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace()
 	{
@@ -2914,7 +5195,6 @@ namespace CG
 		UARPlaneGeometry_GetBoundaryPolygonInLocalSpace_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2923,8 +5203,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARPlaneGeometry.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARPlaneGeometry.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARPlaneGeometry::StaticClass()
@@ -2937,8 +5217,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedPoint.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedPoint.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedPoint::StaticClass()
@@ -2951,9 +5231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedImage.GetEstimateSize
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	struct FVector2D UARTrackedImage::GetEstimateSize()
 	{
@@ -2964,7 +5244,6 @@ namespace CG
 		UARTrackedImage_GetEstimateSize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2973,9 +5252,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D1E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedImage.GetDetectedImage
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UARCandidateImage* UARTrackedImage::GetDetectedImage()
 	{
@@ -2986,7 +5265,6 @@ namespace CG
 		UARTrackedImage_GetDetectedImage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2995,8 +5273,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedImage.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedImage.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedImage::StaticClass()
@@ -3009,8 +5287,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedQRCode.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedQRCode.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedQRCode::StaticClass()
@@ -3023,13 +5301,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D5C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EAREye                            Eye                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAREye                                             Eye                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(AugmentedReality_EAREye Eye)
+	struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(EAREye Eye)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3039,7 +5317,6 @@ namespace CG
 		params.Eye = Eye;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3048,13 +5325,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D3A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EAREye                            Eye                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EAREye                                             Eye                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(AugmentedReality_EAREye Eye)
+	struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(EAREye Eye)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3064,7 +5341,6 @@ namespace CG
 		params.Eye = Eye;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3073,13 +5349,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CD90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		AugmentedReality_EARFaceBlendShape                 BlendShape                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARFaceBlendShape                                  BlendShape                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UARFaceGeometry::GetBlendShapeValue(AugmentedReality_EARFaceBlendShape BlendShape)
+	float UARFaceGeometry::GetBlendShapeValue(EARFaceBlendShape BlendShape)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3089,7 +5365,6 @@ namespace CG
 		params.BlendShape = BlendShape;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3098,11 +5373,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199CE20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetBlendShapes
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	TMap<AugmentedReality_EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes()
+	TMap<EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -3111,7 +5386,6 @@ namespace CG
 		UARFaceGeometry_GetBlendShapes_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3120,8 +5394,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARFaceGeometry.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARFaceGeometry.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARFaceGeometry::StaticClass()
@@ -3134,9 +5408,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D270
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UAREnvironmentCaptureProbe::GetExtent()
 	{
@@ -3147,7 +5421,6 @@ namespace CG
 		UAREnvironmentCaptureProbe_GetExtent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3156,9 +5429,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D200
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture()
 	{
@@ -3169,7 +5442,6 @@ namespace CG
 		UAREnvironmentCaptureProbe_GetEnvironmentCaptureTexture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3178,8 +5450,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAREnvironmentCaptureProbe.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAREnvironmentCaptureProbe.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAREnvironmentCaptureProbe::StaticClass()
@@ -3192,9 +5464,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D1E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedObject.GetDetectedObject
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UARCandidateObject* UARTrackedObject::GetDetectedObject()
 	{
@@ -3205,7 +5477,6 @@ namespace CG
 		UARTrackedObject_GetDetectedObject_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3214,8 +5485,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedObject.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedObject.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedObject::StaticClass()
@@ -3228,9 +5499,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARTrackedPose.GetTrackedPoseData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FARPose3D UARTrackedPose::GetTrackedPoseData()
 	{
@@ -3241,7 +5512,6 @@ namespace CG
 		UARTrackedPose_GetTrackedPoseData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3250,8 +5520,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackedPose.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackedPose.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackedPose::StaticClass()
@@ -3264,8 +5534,153 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTrackableNotifyComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARMeshGeometry.GetObjectClassificationAtLocation
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector                                     InWorldLocation                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EARObjectClassification                            OutClassification                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		struct FVector                                     OutClassificationLocation                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		float                                              MaxLocationDiff                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UARMeshGeometry::GetObjectClassificationAtLocation(const struct FVector& InWorldLocation, EARObjectClassification* OutClassification, struct FVector* OutClassificationLocation, float MaxLocationDiff)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARMeshGeometry.GetObjectClassificationAtLocation");
+		
+		UARMeshGeometry_GetObjectClassificationAtLocation_Params params {};
+		params.InWorldLocation = InWorldLocation;
+		params.MaxLocationDiff = MaxLocationDiff;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (OutClassification != nullptr)
+			*OutClassification = params.OutClassification;
+		if (OutClassificationLocation != nullptr)
+			*OutClassificationLocation = params.OutClassificationLocation;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARMeshGeometry.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARMeshGeometry::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARMeshGeometry");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchor.GetLongitude
+	 * 		Flags  -> ()
+	 */
+	float UARGeoAnchor::GetLongitude()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchor.GetLongitude");
+		
+		UARGeoAnchor_GetLongitude_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchor.GetLatitude
+	 * 		Flags  -> ()
+	 */
+	float UARGeoAnchor::GetLatitude()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchor.GetLatitude");
+		
+		UARGeoAnchor_GetLatitude_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchor.GetAltitudeSource
+	 * 		Flags  -> ()
+	 */
+	EARAltitudeSource UARGeoAnchor::GetAltitudeSource()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchor.GetAltitudeSource");
+		
+		UARGeoAnchor_GetAltitudeSource_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function AugmentedReality.ARGeoAnchor.GetAltitudeMeters
+	 * 		Flags  -> ()
+	 */
+	float UARGeoAnchor::GetAltitudeMeters()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGeoAnchor.GetAltitudeMeters");
+		
+		UARGeoAnchor_GetAltitudeMeters_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARGeoAnchor.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UARGeoAnchor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AugmentedReality.ARGeoAnchor");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTrackableNotifyComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTrackableNotifyComponent::StaticClass()
@@ -3278,8 +5693,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARTypesDummyClass.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARTypesDummyClass.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARTypesDummyClass::StaticClass()
@@ -3292,9 +5707,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D9C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetFriendlyName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FString                                      NewName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3308,18 +5723,17 @@ namespace CG
 		params.NewName = NewName;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D890
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetCandidateObjectData
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<unsigned char>                              InCandidateObject                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<unsigned char>                              InCandidateObject                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	void UARCandidateObject::SetCandidateObjectData(TArray<unsigned char> InCandidateObject)
 	{
@@ -3331,16 +5745,15 @@ namespace CG
 		params.InCandidateObject = InCandidateObject;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D7F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetBoundingBox
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FBox                                        InBoundingBox                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -3354,16 +5767,15 @@ namespace CG
 		params.InBoundingBox = InBoundingBox;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D310
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetFriendlyName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FString UARCandidateObject::GetFriendlyName()
 	{
@@ -3374,7 +5786,6 @@ namespace CG
 		UARCandidateObject_GetFriendlyName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3383,9 +5794,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetCandidateObjectData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<unsigned char> UARCandidateObject::GetCandidateObjectData()
 	{
@@ -3396,7 +5807,6 @@ namespace CG
 		UARCandidateObject_GetCandidateObjectData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3405,9 +5815,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D0F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetBoundingBox
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FBox UARCandidateObject::GetBoundingBox()
 	{
@@ -3418,7 +5828,6 @@ namespace CG
 		UARCandidateObject_GetBoundingBox_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3427,8 +5836,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UARCandidateObject.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UARCandidateObject.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UARCandidateObject::StaticClass()

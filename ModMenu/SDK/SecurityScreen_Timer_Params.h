@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_X3BG[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -31,28 +31,26 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.Bind Texture Target
 	 */
-	struct ASecurityScreen_Timer_C_Bind_Texture_Target_Params
+	struct ASecurityScreen_Timer_C_BindTextureTarget_Params
 	{
 	public:
-		class UTexture*                                            Texture_Target;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UTexture*                                            TextureTarget;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.Find Camera
 	 */
-	struct ASecurityScreen_Timer_C_Find_Camera_Params
+	struct ASecurityScreen_Timer_C_FindCamera_Params
 	{
 	public:
-		bool                                                       Is_Valid;                                                // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		class UTextureRenderTarget*                                Texture_Target;                                          // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		bool                                                       IsValid;                                                 // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_558S[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UTextureRenderTarget*                                TextureTarget;                                           // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -62,7 +60,6 @@ namespace CG
 	{
 	public:
 		class UClass*                                              Class;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -72,7 +69,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -81,30 +77,26 @@ namespace CG
 	struct ASecurityScreen_Timer_C_SetToInstructionCard_Params
 	{
 	public:
-		E_InstructionCard_Type_E_InstructionCard_Type              Type;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		E_InstructionCard_Type                                     Type;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.ReceiveBeginPlay
 	 */
 	struct ASecurityScreen_Timer_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.Set To Static
 	 */
-	struct ASecurityScreen_Timer_C_Set_To_Static_Params
-	{
-	};
+	struct ASecurityScreen_Timer_C_SetToStatic_Params
+	{	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.MakeTimersVisible
 	 */
 	struct ASecurityScreen_Timer_C_MakeTimersVisible_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.ExecuteUbergraph_SecurityScreen_Timer
@@ -113,15 +105,14 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_BY70[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.OnStopVideo__DelegateSignature
 	 */
 	struct ASecurityScreen_Timer_C_OnStopVideo__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SecurityScreen_Timer.SecurityScreen_Timer_C.OnScreenActive__DelegateSignature
@@ -129,8 +120,7 @@ namespace CG
 	struct ASecurityScreen_Timer_C_OnScreenActive__DelegateSignature_Params
 	{
 	public:
-		class ASecurityScreenDisplay_C*                            Screen;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ASecurityScreenDisplay_C*                            SCREEN;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

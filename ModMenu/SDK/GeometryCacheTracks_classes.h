@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class GeometryCacheTracks.MovieSceneGeometryCacheSection
-	 * Size -> 0x0040 (FullSize[0x0120] - InheritedSize[0x00E0])
+	 * Size -> 0x0040 (FullSize[0x0128] - InheritedSize[0x00E8])
 	 */
 	class UMovieSceneGeometryCacheSection : public UMovieSceneSection
 	{
 	public:
-		struct FMovieSceneGeometryCacheParams                      Params;                                                  // 0x00E0(0x0040) Edit, NativeAccessSpecifierPublic
+		struct FMovieSceneGeometryCacheParams                      Params;                                                  // 0x00E8(0x0040) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -29,12 +29,13 @@ namespace CG
 
 	/**
 	 * Class GeometryCacheTracks.MovieSceneGeometryCacheTrack
-	 * Size -> 0x0010 (FullSize[0x0068] - InheritedSize[0x0058])
+	 * Size -> 0x0018 (FullSize[0x00A8] - InheritedSize[0x0090])
 	 */
 	class UMovieSceneGeometryCacheTrack : public UMovieSceneNameableTrack
 	{
 	public:
-		TArray<class UMovieSceneSection*>                          AnimationSections;                                       // 0x0058(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_OEOJ[0x8];                                   // 0x0090(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class UMovieSceneSection*>                          AnimationSections;                                       // 0x0098(0x0010) ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 
 	public:
 		static UClass* StaticClass();

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * WidgetBlueprintGeneratedClass UtilityTunnleText.UtilityTunnleText_C
-	 * Size -> 0x0000 (FullSize[0x0230] - InheritedSize[0x0230])
+	 * Size -> 0x0000 (FullSize[0x0260] - InheritedSize[0x0260])
 	 */
 	class UUtilityTunnleText_C : public UUserWidget
 	{

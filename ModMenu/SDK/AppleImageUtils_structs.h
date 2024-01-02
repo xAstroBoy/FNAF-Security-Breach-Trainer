@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,26 +17,30 @@ namespace CG
 	/**
 	 * Enum AppleImageUtils.EAppleTextureType
 	 */
-	enum class AppleImageUtils_EAppleTextureType : uint8_t
+	enum class EAppleTextureType : uint8_t
 	{
-		EAppleTextureType__Unknown               = 0,
-		EAppleTextureType__Image                 = 1,
-		EAppleTextureType__PixelBuffer           = 2,
-		EAppleTextureType__Surface               = 3,
-		EAppleTextureType__MetalTexture          = 4,
-		EAppleTextureType__EAppleTextureType_MAX = 5
+		Unknown      = 0,
+		Image        = 1,
+		PixelBuffer  = 2,
+		Surface      = 3,
+		MetalTexture = 4,
+		MAX          = 5
 	};
 
 	/**
 	 * Enum AppleImageUtils.ETextureRotationDirection
 	 */
-	enum class AppleImageUtils_ETextureRotationDirection : uint8_t
+	enum class ETextureRotationDirection : uint8_t
 	{
-		ETextureRotationDirection__None                          = 0,
-		ETextureRotationDirection__Left                          = 1,
-		ETextureRotationDirection__Right                         = 2,
-		ETextureRotationDirection__Down                          = 3,
-		ETextureRotationDirection__ETextureRotationDirection_MAX = 4
+		None          = 0,
+		Left          = 1,
+		Right         = 2,
+		Down          = 3,
+		LeftMirrored  = 4,
+		RightMirrored = 5,
+		DownMirrored  = 6,
+		UpMirrored    = 7,
+		MAX           = 8
 	};
 
 	// --------------------------------------------------
@@ -50,8 +54,7 @@ namespace CG
 	{
 	public:
 		class FString                                              Error;                                                   // 0x0000(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<unsigned char>                                      ImageData;                                               // 0x0010(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<unsigned char>                                      ImageData;                                               // 0x0010(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 }

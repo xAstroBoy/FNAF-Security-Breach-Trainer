@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum DirectionEnum.DirectionEnum
 	 */
-	enum class DirectionEnum_EDirectionEnum : uint8_t
+	enum class EDirectionEnum : uint8_t
 	{
-		DirectionEnum__NewEnumerator0    = 0,
-		DirectionEnum__NewEnumerator1    = 1,
-		DirectionEnum__NewEnumerator2    = 2,
-		DirectionEnum__NewEnumerator3    = 3,
-		DirectionEnum__DirectionEnum_MAX = 4
+		DirectionEnumNewEnumerator0    = 0,
+		DirectionEnumNewEnumerator1    = 1,
+		DirectionEnumNewEnumerator2    = 2,
+		DirectionEnumNewEnumerator3    = 3,
+		DirectionEnumDirectionEnum_MAX = 4
 	};
 
 }

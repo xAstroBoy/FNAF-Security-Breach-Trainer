@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -51,22 +48,19 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.GateOpen__FinishedFunc
 	 */
 	struct ATurnstileBarOpenable_C_GateOpen__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.GateOpen__UpdateFunc
 	 */
 	struct ATurnstileBarOpenable_C_GateOpen__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.SetDoorLockPlayer
@@ -75,7 +69,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -85,7 +78,6 @@ namespace CG
 	{
 	public:
 		class FName                                                ItemName;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -95,15 +87,13 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewSecurityLevel;                                        // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.ReceiveBeginPlay
 	 */
 	struct ATurnstileBarOpenable_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.SetDoorLockAI
@@ -112,15 +102,13 @@ namespace CG
 	{
 	public:
 		bool                                                       Lock;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.ForceDoorOpen
 	 */
 	struct ATurnstileBarOpenable_C_ForceDoorOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.BndEvt__AIDetector_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
@@ -133,8 +121,8 @@ namespace CG
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bFromSweep;                                              // 0x001C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_MOAF[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FHitResult                                          SweepResult;                                             // 0x0020(0x0088)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
@@ -147,43 +135,37 @@ namespace CG
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.Open For AI
 	 */
-	struct ATurnstileBarOpenable_C_Open_For_AI_Params
-	{
-	};
+	struct ATurnstileBarOpenable_C_OpenForAI_Params
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.Close For AI
 	 */
-	struct ATurnstileBarOpenable_C_Close_For_AI_Params
-	{
-	};
+	struct ATurnstileBarOpenable_C_CloseForAI_Params
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.Unblock Player
 	 */
-	struct ATurnstileBarOpenable_C_Unblock_Player_Params
-	{
-	};
+	struct ATurnstileBarOpenable_C_UnblockPlayer_Params
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.Set Gate Collision
 	 */
-	struct ATurnstileBarOpenable_C_Set_Gate_Collision_Params
-	{
-	};
+	struct ATurnstileBarOpenable_C_SetGateCollision_Params
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.ForceDoorClose
 	 */
 	struct ATurnstileBarOpenable_C_ForceDoorClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function TurnstileBarOpenable.TurnstileBarOpenable_C.ExecuteUbergraph_TurnstileBarOpenable
@@ -192,7 +174,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

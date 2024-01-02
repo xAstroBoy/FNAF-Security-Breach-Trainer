@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,72 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void ABackstageRoxyAndMontyVO_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay");
-		
-		ABackstageRoxyAndMontyVO_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void ABackstageRoxyAndMontyVO_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap");
-		
-		ABackstageRoxyAndMontyVO_C_ReceiveActorBeginOverlap_Params params {};
-		params.OtherActor = OtherActor;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void ABackstageRoxyAndMontyVO_C::ReceiveTick(float DeltaSeconds)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveTick");
-		
-		ABackstageRoxyAndMontyVO_C_ReceiveTick_Params params {};
-		params.DeltaSeconds = DeltaSeconds;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorEndOverlap
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -97,9 +34,72 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveTick
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ABackstageRoxyAndMontyVO_C::ReceiveTick(float DeltaSeconds)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveTick");
+		
+		ABackstageRoxyAndMontyVO_C_ReceiveTick_Params params {};
+		params.DeltaSeconds = DeltaSeconds;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void ABackstageRoxyAndMontyVO_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveBeginPlay");
+		
+		ABackstageRoxyAndMontyVO_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void ABackstageRoxyAndMontyVO_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ReceiveActorBeginOverlap");
+		
+		ABackstageRoxyAndMontyVO_C_ReceiveActorBeginOverlap_Params params {};
+		params.OtherActor = OtherActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BackstageRoxyAndMontyVO.BackstageRoxyAndMontyVO_C.ExecuteUbergraph_BackstageRoxyAndMontyVO
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -119,8 +119,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABackstageRoxyAndMontyVO_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABackstageRoxyAndMontyVO_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABackstageRoxyAndMontyVO_C::StaticClass()

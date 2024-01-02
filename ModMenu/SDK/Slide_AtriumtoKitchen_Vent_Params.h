@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,28 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.GetInstructionOverride
+	 * Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.FinishedSliding
 	 */
-	struct ASlide_AtriumtoKitchen_Vent_C_GetInstructionOverride_Params
-	{
-	public:
-		class FText                                                Instruction;                                             // 0x0000(0x0018)  (Parm, OutParm)
-
-	};
+	struct ASlide_AtriumtoKitchen_Vent_C_FinishedSliding_Params
+	{	};
 
 	/**
 	 * Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.On Slide Entered
 	 */
-	struct ASlide_AtriumtoKitchen_Vent_C_On_Slide_Entered_Params
-	{
-	};
-
-	/**
-	 * Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.FinishedSliding
-	 */
-	struct ASlide_AtriumtoKitchen_Vent_C_FinishedSliding_Params
-	{
-	};
+	struct ASlide_AtriumtoKitchen_Vent_C_OnSlideEntered_Params
+	{	};
 
 	/**
 	 * Function Slide_AtriumtoKitchen_Vent.Slide_AtriumtoKitchen_Vent_C.ExecuteUbergraph_Slide_AtriumtoKitchen_Vent
@@ -45,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

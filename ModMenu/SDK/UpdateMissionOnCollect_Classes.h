@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,7 +24,7 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
-		void On_Item_Collected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo);
+		void OnItemCollected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo);
 		void OnMessageAdded_Event_1(const class FName& MessageName, const struct FFNAFMessageTableStruct& MessageInfo);
 		void ReceiveBeginPlay();
 		void ExecuteUbergraph_UpdateMissionOnCollect(int32_t EntryPoint);

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,51 +20,44 @@ namespace CG
 	struct ABP_StageButton_C_GetButton_Params
 	{
 	public:
-		class ABasicButton_C*                                      AsBasic_Button;                                          // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class ABasicButton_C*                                      AsBasicButton;                                           // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.UserConstructionScript
 	 */
 	struct ABP_StageButton_C_UserConstructionScript_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.Up->Down__FinishedFunc
 	 */
-	struct ABP_StageButton_C_Up__Down__FinishedFunc_Params
-	{
-	};
+	struct ABP_StageButton_C_UpDown__FinishedFunc_Params
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.Up->Down__UpdateFunc
 	 */
-	struct ABP_StageButton_C_Up__Down__UpdateFunc_Params
-	{
-	};
+	struct ABP_StageButton_C_UpDown__UpdateFunc_Params
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.Down->Up__FinishedFunc
 	 */
-	struct ABP_StageButton_C_Down__Up__FinishedFunc_Params
-	{
-	};
+	struct ABP_StageButton_C_DownUp__FinishedFunc_Params
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.Down->Up__UpdateFunc
 	 */
-	struct ABP_StageButton_C_Down__Up__UpdateFunc_Params
-	{
-	};
+	struct ABP_StageButton_C_DownUp__UpdateFunc_Params
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.PostSaveGame
 	 */
 	struct ABP_StageButton_C_PostSaveGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.OnStoreGameData
@@ -73,7 +66,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -83,22 +75,19 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.MoveDown
 	 */
 	struct ABP_StageButton_C_MoveDown_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.MoveUp
 	 */
 	struct ABP_StageButton_C_MoveUp_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.ChangeColor
@@ -107,7 +96,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ChangeColor;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -117,7 +105,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -128,36 +115,31 @@ namespace CG
 	public:
 		class UWorldStateHandlerComponent*                         Handler;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bState;                                                  // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.ReceiveBeginPlay
 	 */
 	struct ABP_StageButton_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.ButtonPressed
 	 */
 	struct ABP_StageButton_C_ButtonPressed_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.Startup
 	 */
 	struct ABP_StageButton_C_Startup_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.PostGameLoad
 	 */
 	struct ABP_StageButton_C_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_StageButton.BP_StageButton_C.OnCheckpointLoad
@@ -166,7 +148,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -176,7 +157,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

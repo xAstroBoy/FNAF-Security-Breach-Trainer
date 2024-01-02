@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              SplineFollowerActor;                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		TArray<class ASplinePathway_C*>                            PossibleSplines;                                         // 0x0008(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<class ASplinePathway_C*>                            PossibleSplines;                                         // 0x0008(0x0010)  (Parm, OutParm)
 	};
 
 }

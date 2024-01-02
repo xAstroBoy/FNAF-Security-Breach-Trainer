@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBFL_FNAF9_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_PreMainMenuCleanup(class UObject* __WorldContext);
+		void PreMainMenuCleanup(class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum SplineFollowDirection.SplineFollowDirection
 	 */
-	enum class SplineFollowDirection_ESplineFollowDirection : uint8_t
+	enum class ESplineFollowDirection : uint8_t
 	{
-		SplineFollowDirection__NewEnumerator0            = 0,
-		SplineFollowDirection__NewEnumerator1            = 1,
-		SplineFollowDirection__SplineFollowDirection_MAX = 2
+		SplineFollowDirectionNewEnumerator0            = 0,
+		SplineFollowDirectionNewEnumerator1            = 1,
+		SplineFollowDirectionSplineFollowDirection_MAX = 2
 	};
 
 }

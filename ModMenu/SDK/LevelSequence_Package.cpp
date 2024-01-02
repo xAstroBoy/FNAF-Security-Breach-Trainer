@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,22 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDefaultLevelSequenceInstanceData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnimSequenceLevelSequenceLink.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UAnimSequenceLevelSequenceLink::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LevelSequence.AnimSequenceLevelSequenceLink");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDefaultLevelSequenceInstanceData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDefaultLevelSequenceInstanceData::StaticClass()
@@ -26,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequenceMetaData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceMetaData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequenceMetaData::StaticClass()
@@ -40,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequence.RemoveMetaDataByClass
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -56,16 +70,15 @@ namespace CG
 		params.InClass = InClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -79,7 +92,6 @@ namespace CG
 		params.InClass = InClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -88,9 +100,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequence.FindMetaDataByClass
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -104,7 +116,6 @@ namespace CG
 		params.InClass = InClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -113,9 +124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56280
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequence.CopyMetaData
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     InMetaData                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -129,7 +140,6 @@ namespace CG
 		params.InMetaData = InMetaData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -138,8 +148,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequence.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequence.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequence::StaticClass()
@@ -152,8 +162,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequenceBurnInInitSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceBurnInInitSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequenceBurnInInitSettings::StaticClass()
@@ -166,9 +176,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56CC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FSoftClassPath                              InBurnInClass                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -182,15 +192,14 @@ namespace CG
 		params.InBurnInClass = InBurnInClass;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequenceBurnInOptions.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceBurnInOptions.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequenceBurnInOptions::StaticClass()
@@ -203,9 +212,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F57000
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ShowBurnin
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceActor::ShowBurnin()
 	{
@@ -216,16 +225,15 @@ namespace CG
 		ALevelSequenceActor_ShowBurnin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56F80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ULevelSequence*                              InSequence                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -239,16 +247,15 @@ namespace CG
 		params.InSequence = InSequence;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56EF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetReplicatePlayback
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               ReplicatePlayback                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -262,42 +269,18 @@ namespace CG
 		params.ReplicatePlayback = ReplicatePlayback;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56DB0
-	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetEventReceivers
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
-	 * Parameters:
-	 * 		TArray<class AActor*>                              AdditionalReceivers                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetEventReceivers");
-		
-		ALevelSequenceActor_SetEventReceivers_Params params {};
-		params.AdditionalReceivers = AdditionalReceivers;
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x01F56B90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetBindingByTag
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        BindingTag                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAllowBindingsFromAsset                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void ALevelSequenceActor::SetBindingByTag(const class FName& BindingTag, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
@@ -312,19 +295,18 @@ namespace CG
 		params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56A40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetBinding
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMovieSceneObjectBindingID                  Binding                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAllowBindingsFromAsset                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
 	void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
@@ -339,16 +321,15 @@ namespace CG
 		params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ResetBindings
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceActor::ResetBindings()
 	{
@@ -359,16 +340,15 @@ namespace CG
 		ALevelSequenceActor_ResetBindings_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56970
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ResetBinding
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMovieSceneObjectBindingID                  Binding                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -382,16 +362,15 @@ namespace CG
 		params.Binding = Binding;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56840
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBindingByTag
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -407,16 +386,15 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56750
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBinding
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMovieSceneObjectBindingID                  Binding                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -432,16 +410,15 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature
-	 * 		Flags  -> (Public, Delegate)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceActor::OnLevelSequenceLoaded__DelegateSignature()
 	{
@@ -458,9 +435,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F566E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.LoadSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class ULevelSequence* ALevelSequenceActor::LoadSequence()
 	{
@@ -471,7 +448,6 @@ namespace CG
 		ALevelSequenceActor_LoadSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -480,9 +456,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F566C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.HideBurnin
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceActor::HideBurnin()
 	{
@@ -493,16 +469,15 @@ namespace CG
 		ALevelSequenceActor_HideBurnin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.GetSequencePlayer
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class ULevelSequencePlayer* ALevelSequenceActor::GetSequencePlayer()
 	{
@@ -513,7 +488,6 @@ namespace CG
 		ALevelSequenceActor_GetSequencePlayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -522,9 +496,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56640
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.GetSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class ULevelSequence* ALevelSequenceActor::GetSequence()
 	{
@@ -535,7 +509,6 @@ namespace CG
 		ALevelSequenceActor_GetSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -544,9 +517,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56520
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.FindNamedBindings
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -560,7 +533,6 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -569,9 +541,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56470
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.FindNamedBinding
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -585,7 +557,6 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -594,9 +565,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56170
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.AddBindingByTag
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        BindingTag                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -614,16 +585,15 @@ namespace CG
 		params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56030
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.AddBinding
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMovieSceneObjectBindingID                  Binding                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -641,15 +611,14 @@ namespace CG
 		params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ALevelSequenceActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ALevelSequenceActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ALevelSequenceActor::StaticClass()
@@ -662,9 +631,23 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceAnimSequenceLink.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULevelSequenceAnimSequenceLink::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LevelSequence.LevelSequenceAnimSequenceLink");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnIn.SetSettings
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     InSettings                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -684,9 +667,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F566A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
-	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 */
 	class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 	{
@@ -697,7 +680,6 @@ namespace CG
 		ULevelSequenceBurnIn_GetSettingsClass_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -706,8 +688,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequenceBurnIn.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceBurnIn.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequenceBurnIn::StaticClass()
@@ -720,9 +702,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.OnCreated
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ULevelSequenceDirector::OnCreated()
 	{
@@ -739,8 +721,125 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequenceDirector.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.GetSequence
+	 * 		Flags  -> ()
+	 */
+	class UMovieSceneSequence* ULevelSequenceDirector::GetSequence()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.GetSequence");
+		
+		ULevelSequenceDirector_GetSequence_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.GetBoundObjects
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FMovieSceneObjectBindingID                  ObjectBinding                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	TArray<class UObject*> ULevelSequenceDirector::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.GetBoundObjects");
+		
+		ULevelSequenceDirector_GetBoundObjects_Params params {};
+		params.ObjectBinding = ObjectBinding;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.GetBoundObject
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FMovieSceneObjectBindingID                  ObjectBinding                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class UObject* ULevelSequenceDirector::GetBoundObject(const struct FMovieSceneObjectBindingID& ObjectBinding)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.GetBoundObject");
+		
+		ULevelSequenceDirector_GetBoundObject_Params params {};
+		params.ObjectBinding = ObjectBinding;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.GetBoundActors
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FMovieSceneObjectBindingID                  ObjectBinding                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	TArray<class AActor*> ULevelSequenceDirector::GetBoundActors(const struct FMovieSceneObjectBindingID& ObjectBinding)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.GetBoundActors");
+		
+		ULevelSequenceDirector_GetBoundActors_Params params {};
+		params.ObjectBinding = ObjectBinding;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.GetBoundActor
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FMovieSceneObjectBindingID                  ObjectBinding                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class AActor* ULevelSequenceDirector::GetBoundActor(const struct FMovieSceneObjectBindingID& ObjectBinding)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.GetBoundActor");
+		
+		ULevelSequenceDirector_GetBoundActor_Params params {};
+		params.ObjectBinding = ObjectBinding;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceDirector.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequenceDirector::StaticClass()
@@ -753,8 +852,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULegacyLevelSequenceDirectorBlueprint.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULegacyLevelSequenceDirectorBlueprint.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULegacyLevelSequenceDirectorBlueprint::StaticClass()
@@ -767,9 +866,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56600
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent()
 	{
@@ -780,7 +879,6 @@ namespace CG
 		ULevelSequencePlayer_GetActiveCameraComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -789,16 +887,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56300
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class ULevelSequence*                              LevelSequence                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FMovieSceneSequencePlaybackSettings         Settings                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class ALevelSequenceActor*                         OutActor                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
+	class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -810,7 +908,6 @@ namespace CG
 		params.Settings = Settings;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -822,8 +919,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelSequencePlayer.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequencePlayer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelSequencePlayer::StaticClass()
@@ -836,9 +933,23 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F57020
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelSequenceProjectSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULevelSequenceProjectSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LevelSequence.LevelSequenceProjectSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DesyncThresholdSeconds                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -852,16 +963,15 @@ namespace CG
 		params.DesyncThresholdSeconds = DesyncThresholdSeconds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56730
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.Play
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceMediaController::Play()
 	{
@@ -872,16 +982,15 @@ namespace CG
 		ALevelSequenceMediaController_Play_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F56710
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds
-	 * 		Flags  -> (Final, Native, Private)
+	 * 		Flags  -> ()
 	 */
 	void ALevelSequenceMediaController::OnRep_ServerStartTimeSeconds()
 	{
@@ -892,16 +1001,15 @@ namespace CG
 		ALevelSequenceMediaController_OnRep_ServerStartTimeSeconds_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3F20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.GetSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class ALevelSequenceActor* ALevelSequenceMediaController::GetSequence()
 	{
@@ -912,7 +1020,6 @@ namespace CG
 		ALevelSequenceMediaController_GetSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -921,9 +1028,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01DFA660
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UMediaComponent* ALevelSequenceMediaController::GetMediaComponent()
 	{
@@ -934,7 +1041,6 @@ namespace CG
 		ALevelSequenceMediaController_GetMediaComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -943,8 +1049,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ALevelSequenceMediaController.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ALevelSequenceMediaController.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ALevelSequenceMediaController::StaticClass()

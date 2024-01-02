@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,8 +27,8 @@ namespace CG
 		class FName                                                MissionToActivate;                                       // 0x0288(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Give_Hourly_Mission();
-		void On_Audio_Finished();
+		void GiveHourlyMission();
+		void OnAudioFinished();
 		void ExecuteUbergraph_HourlyMissionUpdate(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

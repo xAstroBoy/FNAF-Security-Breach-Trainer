@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * Enum ClothingSystemRuntimeNv.EClothingWindMethodNv
 	 */
-	enum class ClothingSystemRuntimeNv_EClothingWindMethodNv : uint8_t
+	enum class EClothingWindMethodNv : uint8_t
 	{
-		EClothingWindMethodNv__Legacy                    = 0,
-		EClothingWindMethodNv__Accurate                  = 1,
-		EClothingWindMethodNv__EClothingWindMethodNv_MAX = 2
+		Legacy   = 0,
+		Accurate = 1,
+		MAX      = 2
 	};
 
 	// --------------------------------------------------
@@ -38,7 +38,6 @@ namespace CG
 		float                                                      StiffnessMultiplier;                                     // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      StretchLimit;                                            // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      CompressionLimit;                                        // 0x000C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

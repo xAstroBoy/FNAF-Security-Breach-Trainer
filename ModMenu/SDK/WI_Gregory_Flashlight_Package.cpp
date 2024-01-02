@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,85 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Finished_D0CEEEA149A8A35D1658658D2797BF05
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_Gregory_Flashlight_C::Finished_D0CEEEA149A8A35D1658658D2797BF05()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Finished_D0CEEEA149A8A35D1658658D2797BF05");
-		
-		UWI_Gregory_Flashlight_C_Finished_D0CEEEA149A8A35D1658658D2797BF05_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowDeadFlashlightWarning
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_Gregory_Flashlight_C::ShowDeadFlashlightWarning()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowDeadFlashlightWarning");
-		
-		UWI_Gregory_Flashlight_C_ShowDeadFlashlightWarning_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.PickedUpFlashlight
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_Gregory_Flashlight_C::PickedUpFlashlight()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.PickedUpFlashlight");
-		
-		UWI_Gregory_Flashlight_C_PickedUpFlashlight_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowPowerLevel
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UWI_Gregory_Flashlight_C::ShowPowerLevel()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowPowerLevel");
-		
-		UWI_Gregory_Flashlight_C_ShowPowerLevel_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UWI_Gregory_Flashlight_C::Construct()
 	{
@@ -107,9 +31,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowPowerLevel
+	 * 		Flags  -> ()
+	 */
+	void UWI_Gregory_Flashlight_C::ShowPowerLevel()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowPowerLevel");
+		
+		UWI_Gregory_Flashlight_C_ShowPowerLevel_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.FadeOutBatteryImage
+	 * 		Flags  -> ()
+	 */
+	void UWI_Gregory_Flashlight_C::FadeOutBatteryImage()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.FadeOutBatteryImage");
+		
+		UWI_Gregory_Flashlight_C_FadeOutBatteryImage_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ExecuteUbergraph_WI_Gregory_Flashlight
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -129,9 +91,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.PowerLevelDispatch__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            PowerLevel                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -151,8 +113,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UWI_Gregory_Flashlight_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UWI_Gregory_Flashlight_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UWI_Gregory_Flashlight_C::StaticClass()

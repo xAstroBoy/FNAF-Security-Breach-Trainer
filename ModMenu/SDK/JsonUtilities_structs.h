@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,8 +22,7 @@ namespace CG
 	{
 	public:
 		class FString                                              JsonString;                                              // 0x0000(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SA7V[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_01ET[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
 	};
 
 }

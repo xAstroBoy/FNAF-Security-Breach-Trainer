@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * UserDefinedEnum E_Elevator_DoorSweep_Alignment.E_Elevator_DoorSweep_Alignment
 	 */
-	enum class E_Elevator_DoorSweep_Alignment_E_Elevator_DoorSweep_Alignment : uint8_t
+	enum class E_Elevator_DoorSweep_Alignment : uint8_t
 	{
-		E_Elevator_DoorSweep_Alignment__NewEnumerator0           = 0,
-		E_Elevator_DoorSweep_Alignment__NewEnumerator1           = 1,
-		E_Elevator_DoorSweep_Alignment__NewEnumerator2           = 2,
-		E_Elevator_DoorSweep_Alignment__E_Elevator_DoorSweep_MAX = 3
+		NewEnumerator0           = 0,
+		NewEnumerator1           = 1,
+		NewEnumerator2           = 2,
+		E_Elevator_DoorSweep_MAX = 3
 	};
 
 }

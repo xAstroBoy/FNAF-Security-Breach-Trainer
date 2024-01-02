@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,16 +20,15 @@ namespace CG
 	struct ASSD_Backstage_Office_C_SwitchCamera_Params
 	{
 	public:
-		int32_t                                                    Cam_Index;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		int32_t                                                    CamIndex;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_83LX[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function SSD_Backstage_Office.SSD_Backstage_Office_C.ReceiveBeginPlay
 	 */
 	struct ASSD_Backstage_Office_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SSD_Backstage_Office.SSD_Backstage_Office_C.ReceiveTick
@@ -38,15 +37,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function SSD_Backstage_Office.SSD_Backstage_Office_C.OnDoorOverlapped
 	 */
 	struct ASSD_Backstage_Office_C_OnDoorOverlapped_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SSD_Backstage_Office.SSD_Backstage_Office_C.ExecuteUbergraph_SSD_Backstage_Office
@@ -55,7 +52,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

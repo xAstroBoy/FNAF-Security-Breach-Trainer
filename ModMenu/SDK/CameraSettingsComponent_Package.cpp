@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CameraSettingsComponent.CameraSettingsComponent_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UCameraSettingsComponent_C::ReceiveBeginPlay()
 	{
@@ -31,19 +31,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function CameraSettingsComponent.CameraSettingsComponent_C.On Settings Updated
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function CameraSettingsComponent.CameraSettingsComponent_C.OnSaveGameSettingsSaved
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class USaveGameSettings_C*                         Settings                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UCameraSettingsComponent_C::On_Settings_Updated(class USaveGameSettings_C* Settings)
+	void UCameraSettingsComponent_C::OnSaveGameSettingsSaved(class USaveGameSettings_C* Settings)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function CameraSettingsComponent.CameraSettingsComponent_C.On Settings Updated");
+			fn = UObject::FindObject<UFunction>("Function CameraSettingsComponent.CameraSettingsComponent_C.OnSaveGameSettingsSaved");
 		
-		UCameraSettingsComponent_C_On_Settings_Updated_Params params {};
+		UCameraSettingsComponent_C_OnSaveGameSettingsSaved_Params params {};
 		params.Settings = Settings;
 		
 		auto flags = fn->FunctionFlags;
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CameraSettingsComponent.CameraSettingsComponent_C.ExecuteUbergraph_CameraSettingsComponent
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -75,8 +75,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCameraSettingsComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCameraSettingsComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCameraSettingsComponent_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass PlayerAndAIHideInActor.PlayerAndAIHideInActor_C
-	 * Size -> 0x0023 (FullSize[0x0349] - InheritedSize[0x0326])
+	 * Size -> 0x0021 (FullSize[0x0349] - InheritedSize[0x0328])
 	 */
 	class APlayerAndAIHideInActor_C : public AHideInActor_C
 	{
 	public:
-		unsigned char                                              UnknownData_FC5P[0x2];                                   // 0x0326(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0328(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UChildActorComponent*                                AIHideCue;                                               // 0x0330(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UBillboardComponent*                                 AIReleasePosition;                                       // 0x0338(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash

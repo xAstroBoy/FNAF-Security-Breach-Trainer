@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,10 @@ namespace CG
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.Get Gregory Pawn
 	 */
-	struct AHourlyMoonManSequence_C_Get_Gregory_Pawn_Params
+	struct AHourlyMoonManSequence_C_GetGregoryPawn_Params
 	{
 	public:
 		class AGregory_C*                                          Gregory;                                                 // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -30,8 +29,7 @@ namespace CG
 	struct AHourlyMoonManSequence_C_OnGameClockTick_Funcn_Params
 	{
 	public:
-		float                                                      deltaTime;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		float                                                      DeltaTime;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -61,15 +57,13 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.PostSaveGame
 	 */
 	struct AHourlyMoonManSequence_C_PostSaveGame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnWorldStateChanged_Event
@@ -77,9 +71,8 @@ namespace CG
 	struct AHourlyMoonManSequence_C_OnWorldStateChanged_Event_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       NewState;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		fnaf9_EFNAFGameState                                       PreviousState;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EFNAFGameState                                             NewState;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		EFNAFGameState                                             PreviousState;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -91,22 +84,19 @@ namespace CG
 		class UVisualSourceComponent*                              VisualSource;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AActor*                                              UpdatedActor;                                            // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bVisible;                                                // 0x0010(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.ReceiveBeginPlay
 	 */
 	struct AHourlyMoonManSequence_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.KillPlayer
 	 */
 	struct AHourlyMoonManSequence_C_KillPlayer_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnMMDetected_Event
@@ -116,15 +106,13 @@ namespace CG
 	public:
 		class AActor*                                              UpdatedActor;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bVisible;                                                // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.SpawnMMActor
 	 */
 	struct AHourlyMoonManSequence_C_SpawnMMActor_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.ReceiveTick
@@ -133,15 +121,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.DestroyMM
 	 */
 	struct AHourlyMoonManSequence_C_DestroyMM_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnMMSpawnPointDetected
@@ -150,8 +136,7 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  MMSpawnPoint;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		bool                                                       Visible;                                                 // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       visible;                                                 // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -161,31 +146,28 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  MMActor;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		bool                                                       Visible;                                                 // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       visible;                                                 // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_3ZX7[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UVisualSourceComponent*                              VisualSource;                                            // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.SetGregorySight
 	 */
 	struct AHourlyMoonManSequence_C_SetGregorySight_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.GetClosestMoonmanNew
 	 */
 	struct AHourlyMoonManSequence_C_GetClosestMoonmanNew_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnDeathSeq
 	 */
 	struct AHourlyMoonManSequence_C_OnDeathSeq_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.ResetMMStates
@@ -194,15 +176,13 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  MMSpawnPoint;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyeBlinkSetup
 	 */
 	struct AHourlyMoonManSequence_C_EyeBlinkSetup_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.SpawnPointRegistered
@@ -211,7 +191,6 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  InSpawnPoint;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -221,7 +200,6 @@ namespace CG
 	{
 	public:
 		class AMoonmanSpawnPoint*                                  InSpawnPoint;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -230,30 +208,26 @@ namespace CG
 	struct AHourlyMoonManSequence_C_OnGameClockTick_Event_Params
 	{
 	public:
-		float                                                      deltaTime;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		float                                                      DeltaTime;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyesShut1
 	 */
 	struct AHourlyMoonManSequence_C_EyesShut1_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.EyesOpen2
 	 */
 	struct AHourlyMoonManSequence_C_EyesOpen2_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.PostGameLoad
 	 */
 	struct AHourlyMoonManSequence_C_PostGameLoad_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.OnCheckpointLoad
@@ -262,29 +236,25 @@ namespace CG
 	{
 	public:
 		class UFNAFSaveData*                                       SaveDataObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.ForceDestroyAllSpawnedMoonman
 	 */
 	struct AHourlyMoonManSequence_C_ForceDestroyAllSpawnedMoonman_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.On Level Load Finished
 	 */
-	struct AHourlyMoonManSequence_C_On_Level_Load_Finished_Params
-	{
-	};
+	struct AHourlyMoonManSequence_C_OnLevelLoadFinished_Params
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.End Moon Man Sequence
 	 */
-	struct AHourlyMoonManSequence_C_End_Moon_Man_Sequence_Params
-	{
-	};
+	struct AHourlyMoonManSequence_C_EndMoonManSequence_Params
+	{	};
 
 	/**
 	 * Function HourlyMoonManSequence.HourlyMoonManSequence_C.ExecuteUbergraph_HourlyMoonManSequence
@@ -293,7 +263,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_JSC9[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

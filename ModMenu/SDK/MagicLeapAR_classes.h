@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class ULuminARSessionFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_StartLuminARSession(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class ULuminARSessionConfig* Configuration);
+		void StartLuminARSession(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class ULuminARSessionConfig* Configuration);
 		static UClass* StaticClass();
 	};
 
@@ -32,8 +32,8 @@ namespace CG
 	class ULuminARFrameFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_LuminARLineTrace(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, TArray<struct FARTraceResult>* OutHitResults);
-		MagicLeapAR_ELuminARTrackingState STATIC_GetTrackingState();
+		bool LuminARLineTrace(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, TArray<struct FARTraceResult>* OutHitResults);
+		ELuminARTrackingState GetTrackingState();
 		static UClass* StaticClass();
 	};
 
@@ -44,28 +44,44 @@ namespace CG
 	class ULuminARImageTrackingFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		class ULuminARCandidateImage* STATIC_AddLuminRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth, bool bUseUnreliablePose, bool bImageIsStationary);
+		class ULuminARCandidateImage* AddLuminRuntimeCandidateImageEx(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth, bool bUseUnreliablePose, bool bImageIsStationary, EMagicLeapImageTargetOrientation InAxisOrientation);
+		class ULuminARCandidateImage* AddLuminRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth, bool bUseUnreliablePose, bool bImageIsStationary);
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class MagicLeapAR.LuminAROrigin
+	 * Size -> 0x00C0 (FullSize[0x02E8] - InheritedSize[0x0228])
+	 */
+	class ALuminAROrigin : public AAROriginActor
+	{
+	public:
+		class UMRMeshComponent*                                    MRMeshComponent;                                         // 0x0228(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UMaterialInterface*                                  PlaneSurfaceMaterial;                                    // 0x0230(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UMaterialInterface*                                  WireframeMaterial;                                       // 0x0238(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_0HNP[0xA8];                                  // 0x0240(0x00A8) MISSED OFFSET (PADDING)
+
+	public:
 		static UClass* StaticClass();
 	};
 
 	/**
 	 * Class MagicLeapAR.LuminARSessionConfig
-	 * Size -> 0x0098 (FullSize[0x0140] - InheritedSize[0x00A8])
+	 * Size -> 0x0090 (FullSize[0x01A0] - InheritedSize[0x0110])
 	 */
 	class ULuminARSessionConfig : public UARSessionConfig
 	{
 	public:
-		unsigned char                                              UnknownData_HLKF[0x8];                                   // 0x00A8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FMagicLeapPlanesQuery                               PlanesQuery;                                             // 0x00B0(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPublic
-		int32_t                                                    MaxPlaneQueryResults;                                    // 0x0110(0x0004) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		int32_t                                                    MinPlaneArea;                                            // 0x0114(0x0004) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bArbitraryOrientationPlaneDetection;                     // 0x0118(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LEKB[0x3];                                   // 0x0119(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FVector                                             PlaneSearchExtents;                                      // 0x011C(0x000C) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>          PlaneQueryFlags;                                         // 0x0128(0x0010) ZeroConstructor, Deprecated, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bDiscardZeroExtentPlanes;                                // 0x0138(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bDefaultUseUnreliablePose;                               // 0x0139(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_68FE[0x6];                                   // 0x013A(0x0006) MISSED OFFSET (PADDING)
+		struct FMagicLeapPlanesQuery                               PlanesQuery;                                             // 0x0110(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPublic
+		int32_t                                                    MaxPlaneQueryResults;                                    // 0x0170(0x0004) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    MinPlaneArea;                                            // 0x0174(0x0004) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bArbitraryOrientationPlaneDetection;                     // 0x0178(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_IZEI[0x3];                                   // 0x0179(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FVector                                             PlaneSearchExtents;                                      // 0x017C(0x000C) ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<EMagicLeapPlaneQueryFlags>                          PlaneQueryFlags;                                         // 0x0188(0x0010) ZeroConstructor, Deprecated, NativeAccessSpecifierPublic
+		bool                                                       bDiscardZeroExtentPlanes;                                // 0x0198(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bDefaultUseUnreliablePose;                               // 0x0199(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_3TXL[0x6];                                   // 0x019A(0x0006) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -78,7 +94,7 @@ namespace CG
 	class ULuminARLightEstimate : public UARBasicLightEstimate
 	{
 	public:
-		TArray<float>                                              AmbientIntensityNits;                                    // 0x0040(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		TArray<float>                                              AmbientIntensityNits;                                    // 0x0040(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
 
 	public:
 		TArray<float> GetAmbientIntensityNits();
@@ -94,11 +110,13 @@ namespace CG
 	public:
 		bool                                                       bUseUnreliablePose;                                      // 0x0058(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bImageIsStationary;                                      // 0x0059(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_9YAB[0x6];                                   // 0x005A(0x0006) MISSED OFFSET (PADDING)
+		EMagicLeapImageTargetOrientation                           AxisOrientation;                                         // 0x005A(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_95SQ[0x5];                                   // 0x005B(0x0005) MISSED OFFSET (PADDING)
 
 	public:
 		bool GetUseUnreliablePose();
 		bool GetImageIsStationary();
+		EMagicLeapImageTargetOrientation GetAxisOrientation();
 		static UClass* StaticClass();
 	};
 

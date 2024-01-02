@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * UserDefinedEnum AIPlayerRange.AIPlayerRange
 	 */
-	enum class AIPlayerRange_EAIPlayerRange : uint8_t
+	enum class EAIPlayerRange : uint8_t
 	{
-		AIPlayerRange__NewEnumerator0    = 0,
-		AIPlayerRange__NewEnumerator1    = 1,
-		AIPlayerRange__NewEnumerator2    = 2,
-		AIPlayerRange__AIPlayerRange_MAX = 3
+		AIPlayerRangeNewEnumerator0    = 0,
+		AIPlayerRangeNewEnumerator1    = 1,
+		AIPlayerRangeNewEnumerator2    = 2,
+		AIPlayerRangeAIPlayerRange_MAX = 3
 	};
 
 }

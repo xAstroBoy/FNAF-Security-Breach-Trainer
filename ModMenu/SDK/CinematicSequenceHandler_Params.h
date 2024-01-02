@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,16 +17,14 @@ namespace CG
 	/**
 	 * Function CinematicSequenceHandler.CinematicSequenceHandler_C.Run Cinematics
 	 */
-	struct UCinematicSequenceHandler_C_Run_Cinematics_Params
-	{
-	};
+	struct UCinematicSequenceHandler_C_RunCinematics_Params
+	{	};
 
 	/**
 	 * Function CinematicSequenceHandler.CinematicSequenceHandler_C.On Sequence Finished
 	 */
-	struct UCinematicSequenceHandler_C_On_Sequence_Finished_Params
-	{
-	};
+	struct UCinematicSequenceHandler_C_OnSequenceFinished_Params
+	{	};
 
 	/**
 	 * Function CinematicSequenceHandler.CinematicSequenceHandler_C.ExecuteUbergraph_CinematicSequenceHandler
@@ -35,7 +33,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_62UL[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

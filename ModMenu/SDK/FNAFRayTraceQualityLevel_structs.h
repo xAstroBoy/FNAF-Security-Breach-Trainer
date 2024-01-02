@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum FNAFRayTraceQualityLevel.FNAFRayTraceQualityLevel
 	 */
-	enum class FNAFRayTraceQualityLevel_EFNAFRayTraceQualityLevel : uint8_t
+	enum class EFNAFRayTraceQualityLevel : uint8_t
 	{
-		FNAFRayTraceQualityLevel__NewEnumerator0               = 0,
-		FNAFRayTraceQualityLevel__NewEnumerator1               = 1,
-		FNAFRayTraceQualityLevel__NewEnumerator2               = 2,
-		FNAFRayTraceQualityLevel__NewEnumerator3               = 3,
-		FNAFRayTraceQualityLevel__FNAFRayTraceQualityLevel_MAX = 4
+		FNAFRayTraceQualityLevelNewEnumerator0               = 0,
+		FNAFRayTraceQualityLevelNewEnumerator1               = 1,
+		FNAFRayTraceQualityLevelNewEnumerator2               = 2,
+		FNAFRayTraceQualityLevelNewEnumerator3               = 3,
+		FNAFRayTraceQualityLevelFNAFRayTraceQualityLevel_MAX = 4
 	};
 
 }

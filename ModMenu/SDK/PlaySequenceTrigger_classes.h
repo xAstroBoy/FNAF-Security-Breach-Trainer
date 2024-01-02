@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass PlaySequenceTrigger.PlaySequenceTrigger_C
-	 * Size -> 0x0124 (FullSize[0x039C] - InheritedSize[0x0278])
+	 * Size -> 0x00D8 (FullSize[0x0350] - InheritedSize[0x0278])
 	 */
 	class APlaySequenceTrigger_C : public APlayerTriggerWithConditionComps
 	{
@@ -28,60 +28,61 @@ namespace CG
 		class UGameTypeCheckDestroy*                               GameTypeCheckDestroy;                                    // 0x0298(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UCameraOverrideComponent_C*                          CameraOverrideComponent;                                 // 0x02A0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Sequence[0x28];                                          // 0x02A8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		class FScriptMulticastDelegate                             On_Sequence_Stop;                                        // 0x02D0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
+		class FScriptMulticastDelegate                             OnSequenceStop;                                          // 0x02D0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		unsigned char                                              CineCamera[0x28];                                        // 0x02E0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class AActor*                                              PlayerCam;                                               // 0x0308(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                sequence_key;                                            // 0x0310(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       DisablePlayerInput;                                      // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_5ET1[0x3];                                   // 0x0319(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0DXI[0x3];                                   // 0x0319(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                WwiseCinematicState;                                     // 0x031C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                WwiseCinematicStateGroup;                                // 0x0324(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_3M6Z[0x4];                                   // 0x032C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              LMMSplineFollowerActor[0x28];                            // 0x032C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		bool                                                       DestroyAI;                                               // 0x0358(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_VG6L[0x7];                                   // 0x0359(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              LMMSplineFollowerManager[0x28];                          // 0x0359(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		bool                                                       PlayLeadingEmitter;                                      // 0x0388(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_OQMI[0x7];                                   // 0x0389(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UAkAudioEvent*                                       EmitterStopEvent;                                        // 0x0390(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Hide_Hud;                                                // 0x0398(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       CanSkipSequence;                                         // 0x0399(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       AllowSkipSequence;                                       // 0x039A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       Hide_Progress_Wheel;                                     // 0x039B(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       DestroyAI;                                               // 0x032C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       PlayLeadingEmitter;                                      // 0x032D(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_8JDZ[0x2];                                   // 0x032E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UAkAudioEvent*                                       EmitterStopEvent;                                        // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       CanSkipSequence;                                         // 0x0338(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       AllowSkipSequence;                                       // 0x0339(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       HideProgressWheel;                                       // 0x033A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       ForceShowHUD;                                            // 0x033B(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       DisableJumpingLandingAudio;                              // 0x033C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       LeaveJumpingLandingDisabledOnStop;                       // 0x033D(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_H8NS[0x2];                                   // 0x033E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             OnEventTriggered;                                        // 0x0340(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetHUDInstruction(class FText* Instruction);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void PlaySequence();
+		void PlaySequence(bool* success);
 		void DisableControls();
 		void EnableControls();
 		void HideHUD();
 		void ShowHUD();
-		void OnFailure_56BB6C5E4037A8483E9B1BAA3EE8682C();
-		void OnSuccess_56BB6C5E4037A8483E9B1BAA3EE8682C();
-		void OnFailure_12EE6E58404520D80FA17EAF05D17267(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
-		void OnSuccess_12EE6E58404520D80FA17EAF05D17267(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnFailure_186E16724F80E6CCC3E85EBC8C2480E6();
+		void OnSuccess_186E16724F80E6CCC3E85EBC8C2480E6();
+		void OnFailure_41459E60402E1327B5B42AB4CEC2E163(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
+		void OnSuccess_41459E60402E1327B5B42AB4CEC2E163(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnTriggered();
-		void Take_Over_Camera();
-		void On_Sequence_Stop_Event();
-		void On_Sequence_Finished_Event();
+		void TakeOverCamera();
+		void OnSequenceStopEvent();
+		void OnSequenceFinishedEvent();
 		void ReceiveBeginPlay();
-		void On_Sequence_Starting();
+		void OnSequenceStarting();
 		void OnCheckpointLoad(class UFNAFSaveData* SaveDataObject);
 		void BndEvt__PlayerInteractHoldComponent_K2Node_ComponentBoundEvent_1_OnHoldCompleted__DelegateSignature();
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void OnPlayerInteractCancel();
 		void OnSkip();
 		void ExecuteUbergraph_PlaySequenceTrigger(int32_t EntryPoint);
-		void On_Sequence_Stop__DelegateSignature();
+		void OnEventTriggered__DelegateSignature();
+		void OnSequenceStop__DelegateSignature();
 		static UClass* StaticClass();
 	};
 

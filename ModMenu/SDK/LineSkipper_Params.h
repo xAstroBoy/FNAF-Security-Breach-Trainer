@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,9 +17,8 @@ namespace CG
 	/**
 	 * Function LineSkipper.LineSkipper_C.Skip Line
 	 */
-	struct ALineSkipper_C_Skip_Line_Params
-	{
-	};
+	struct ALineSkipper_C_SkipLine_Params
+	{	};
 
 	/**
 	 * Function LineSkipper.LineSkipper_C.ExecuteUbergraph_LineSkipper
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

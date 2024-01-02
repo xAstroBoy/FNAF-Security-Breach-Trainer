@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * Enum ImageWriteQueue.EDesiredImageFormat
 	 */
-	enum class ImageWriteQueue_EDesiredImageFormat : uint8_t
+	enum class EDesiredImageFormat : uint8_t
 	{
-		EDesiredImageFormat__PNG                     = 0,
-		EDesiredImageFormat__JPG                     = 1,
-		EDesiredImageFormat__BMP                     = 2,
-		EDesiredImageFormat__EXR                     = 3,
-		EDesiredImageFormat__EDesiredImageFormat_MAX = 4
+		PNG = 0,
+		JPG = 1,
+		BMP = 2,
+		EXR = 3,
+		MAX = 4
 	};
 
 	// --------------------------------------------------
@@ -36,14 +36,13 @@ namespace CG
 	struct FImageWriteOptions
 	{
 	public:
-		ImageWriteQueue_EDesiredImageFormat                        Format;                                                  // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JFZX[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EDesiredImageFormat                                        Format;                                                  // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_L203[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptDelegate                                      OnComplete;                                              // 0x0004(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic
 		int32_t                                                    CompressionQuality;                                      // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOverwriteFile;                                          // 0x0018(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAsync;                                                  // 0x0019(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BXRF[0x46];                                  // 0x001A(0x0046) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_5E2T[0x46];                                  // 0x001A(0x0046) MISSED OFFSET (PADDING)
 	};
 
 }

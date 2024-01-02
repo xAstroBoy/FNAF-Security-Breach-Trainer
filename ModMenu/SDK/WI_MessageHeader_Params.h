@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,11 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function WI_MessageHeader.WI_MessageHeader_C.OnFocusReceived
+	 */
+	struct UWI_MessageHeader_C_OnFocusReceived_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0038(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+		struct FEventReply                                         ReturnValue;                                             // 0x0040(0x00B8)  (Parm, OutParm, ReturnParm)
+	};
+
+	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.RemoveFocus
 	 */
 	struct UWI_MessageHeader_C_RemoveFocus_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.Get_MessageBox_Visibility_1
@@ -27,58 +37,50 @@ namespace CG
 	struct UWI_MessageHeader_C_Get_MessageBox_Visibility_1_Params
 	{
 	public:
-		UMG_ESlateVisibility                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ESlateVisibility                                           ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InuputNext
 	 */
 	struct UWI_MessageHeader_C_InuputNext_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputPrevious
 	 */
 	struct UWI_MessageHeader_C_InputPrevious_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputClose
 	 */
 	struct UWI_MessageHeader_C_InputClose_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputBack
 	 */
 	struct UWI_MessageHeader_C_InputBack_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputPrimary
 	 */
 	struct UWI_MessageHeader_C_InputPrimary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputSecondary
 	 */
 	struct UWI_MessageHeader_C_InputSecondary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputTertiary
 	 */
 	struct UWI_MessageHeader_C_InputTertiary_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputMoveAxis
@@ -87,7 +89,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -97,7 +98,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -107,15 +107,13 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputOpen
 	 */
 	struct UWI_MessageHeader_C_InputOpen_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputZoom
@@ -124,7 +122,6 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Axis;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -134,7 +131,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Increment;                                               // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -144,22 +140,19 @@ namespace CG
 	{
 	public:
 		struct FVector2D                                           Direction;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.Reset
 	 */
 	struct UWI_MessageHeader_C_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.InputAccept
 	 */
 	struct UWI_MessageHeader_C_InputAccept_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_MessageHeader.WI_MessageHeader_C.BndEvt__ExpandableArea_786_K2Node_ComponentBoundEvent_1_OnExpandableAreaExpansionChanged__DelegateSignature
@@ -169,7 +162,22 @@ namespace CG
 	public:
 		class UExpandableArea*                                     Area;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bIsExpanded;                                             // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
 
+	/**
+	 * Function WI_MessageHeader.WI_MessageHeader_C.BndEvt__Header_K2Node_ComponentBoundEvent_0_HeaderClicked__DelegateSignature
+	 */
+	struct UWI_MessageHeader_C_BndEvt__Header_K2Node_ComponentBoundEvent_0_HeaderClicked__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function WI_MessageHeader.WI_MessageHeader_C.Tick
+	 */
+	struct UWI_MessageHeader_C_Tick_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -179,7 +187,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

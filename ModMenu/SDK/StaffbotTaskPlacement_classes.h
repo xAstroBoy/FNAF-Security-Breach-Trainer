@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,8 +29,8 @@ namespace CG
 		bool                                                       HasProp;                                                 // 0x0250(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       CanResetProp;                                            // 0x0251(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       DestroyProp;                                             // 0x0252(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_8P2W[0x5];                                   // 0x0253(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class AStaffBotWorker_SplineFollower_C*>            Staffbots;                                               // 0x0258(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_O01T[0x5];                                   // 0x0253(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<class AStaffBotWorker_SplineFollower_C*>            Staffbots;                                               // 0x0258(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 
 	public:
 		void UserConstructionScript();
@@ -38,7 +38,7 @@ namespace CG
 		void BndEvt__OverlapBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 		void ResetPropEvent();
 		void BndEvt__OverlapBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
-		void Set_Has_Prop_Event(bool HasProp);
+		void SetHasPropEvent(bool HasProp);
 		void ExecuteUbergraph_StaffbotTaskPlacement(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

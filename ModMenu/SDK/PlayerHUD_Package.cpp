@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetInteractViewLocation
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Valid                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     WorldLocation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,13 +39,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetInteractViewAngles
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_ECameraAngleFlags                            AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECameraAngleFlags                                  AnglesToCheck                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck)
+	void UPlayerHUD_C::GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -63,9 +63,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetHUDInstruction
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -87,14 +87,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetInteractibleType
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		InteractibleType_EInteractibleType                 Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		InteractiblePressType_EInteractiblePressType       PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractibleType                                  Type                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EInteractiblePressType                             PressType                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType)
+	void UPlayerHUD_C::GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -114,14 +114,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.CanPlayerInteract
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanInteract                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		fnaf9_EConditionFailReason                         CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               CantReason                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason)
+	void UPlayerHUD_C::CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -141,9 +141,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.UpdateUIOnTick
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Output                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -165,9 +165,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetInstructionOverride
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        Instruction                                                (Parm, OutParm)
 	 */
@@ -189,9 +189,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.InteractIgnoresTrace
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               IgnoreTrace                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -213,14 +213,33 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.SequenceEvent__ENTRYPOINTPlayerHUD_1
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::SequenceEvent__ENTRYPOINTPlayerHUD_1()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.SequenceEvent__ENTRYPOINTPlayerHUD_1");
+		
+		UPlayerHUD_C_SequenceEvent__ENTRYPOINTPlayerHUD_1_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.CheckPlayerPawnRestrictions
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<fnaf9_EPlayerPawnType>                      TargetArray                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<EPlayerPawnType>                            TargetArray                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 * 		class FText                                        Result                                                     (Parm, OutParm)
 	 */
-	void UPlayerHUD_C::CheckPlayerPawnRestrictions(TArray<fnaf9_EPlayerPawnType> TargetArray, class FText* Result)
+	void UPlayerHUD_C::CheckPlayerPawnRestrictions(TArray<EPlayerPawnType> TargetArray, class FText* Result)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -239,9 +258,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.ResetProgressWheel
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::ResetProgressWheel()
 	{
@@ -258,17 +277,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Get Stamina Percent
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	float UPlayerHUD_C::Get_Stamina_Percent()
+	float UPlayerHUD_C::GetStaminaPercent()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Get Stamina Percent");
 		
-		UPlayerHUD_C_Get_Stamina_Percent_Params params {};
+		UPlayerHUD_C_GetStaminaPercent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -279,15 +298,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.GetItemOrMessageName
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FText                                        ItemDisplayName                                            (Parm, OutParm)
-	 * 		class UTexture2D*                                  Item_Display_Icon                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UTexture2D*                                  ItemDisplayIcon                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::GetItemOrMessageName(const class FName& InputPin, class FText* ItemDisplayName, class UTexture2D** Item_Display_Icon)
+	void UPlayerHUD_C::GetItemOrMessageName(const class FName& InputPin, class FText* ItemDisplayName, class UTexture2D** ItemDisplayIcon)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -302,15 +321,67 @@ namespace CG
 		
 		if (ItemDisplayName != nullptr)
 			*ItemDisplayName = params.ItemDisplayName;
-		if (Item_Display_Icon != nullptr)
-			*Item_Display_Icon = params.Item_Display_Icon;
+		if (ItemDisplayIcon != nullptr)
+			*ItemDisplayIcon = params.ItemDisplayIcon;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_15B15A4D4874B9BBFB090A8E21833B77
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnFailure_15B15A4D4874B9BBFB090A8E21833B77(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_15B15A4D4874B9BBFB090A8E21833B77");
+		
+		UPlayerHUD_C_OnFailure_15B15A4D4874B9BBFB090A8E21833B77_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_15B15A4D4874B9BBFB090A8E21833B77
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnSuccess_15B15A4D4874B9BBFB090A8E21833B77(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_15B15A4D4874B9BBFB090A8E21833B77");
+		
+		UPlayerHUD_C_OnSuccess_15B15A4D4874B9BBFB090A8E21833B77_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Finished_150D8164404ADE44D3D17D8F55A7B8A7
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::Finished_150D8164404ADE44D3D17D8F55A7B8A7()
 	{
@@ -327,9 +398,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_868BB5014224F3E09C1895B3C52D074E
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::OnFailure_868BB5014224F3E09C1895B3C52D074E()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_868BB5014224F3E09C1895B3C52D074E");
+		
+		UPlayerHUD_C_OnFailure_868BB5014224F3E09C1895B3C52D074E_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_868BB5014224F3E09C1895B3C52D074E
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::OnSuccess_868BB5014224F3E09C1895B3C52D074E()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_868BB5014224F3E09C1895B3C52D074E");
+		
+		UPlayerHUD_C_OnSuccess_868BB5014224F3E09C1895B3C52D074E_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Finished_DB237C8C45C17E7AA2665584748A4975
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::Finished_DB237C8C45C17E7AA2665584748A4975()
 	{
@@ -346,9 +455,99 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_15B15A4D4874B9BBFB090A8EB394CA85
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnFailure_15B15A4D4874B9BBFB090A8EB394CA85(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_15B15A4D4874B9BBFB090A8EB394CA85");
+		
+		UPlayerHUD_C_OnFailure_15B15A4D4874B9BBFB090A8EB394CA85_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_15B15A4D4874B9BBFB090A8EB394CA85
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnSuccess_15B15A4D4874B9BBFB090A8EB394CA85(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_15B15A4D4874B9BBFB090A8EB394CA85");
+		
+		UPlayerHUD_C_OnSuccess_15B15A4D4874B9BBFB090A8EB394CA85_Params params {};
+		params.WrittenAchievementName = WrittenAchievementName;
+		params.WrittenProgress = WrittenProgress;
+		params.WrittenUserTag = WrittenUserTag;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_868BB5014224F3E09C1895B3573AF6BC
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::OnFailure_868BB5014224F3E09C1895B3573AF6BC()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_868BB5014224F3E09C1895B3573AF6BC");
+		
+		UPlayerHUD_C_OnFailure_868BB5014224F3E09C1895B3573AF6BC_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_868BB5014224F3E09C1895B3573AF6BC
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::OnSuccess_868BB5014224F3E09C1895B3573AF6BC()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_868BB5014224F3E09C1895B3573AF6BC");
+		
+		UPlayerHUD_C_OnSuccess_868BB5014224F3E09C1895B3573AF6BC_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_BF721F5A4230E920D7AB0496A5DE48C6
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::OnFailure_BF721F5A4230E920D7AB0496A5DE48C6()
 	{
@@ -365,9 +564,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_BF721F5A4230E920D7AB0496A5DE48C6
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::OnSuccess_BF721F5A4230E920D7AB0496A5DE48C6()
 	{
@@ -384,9 +583,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_AB03661843CC503A6CB2D5BF99086A7C
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -410,9 +609,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_AB03661843CC503A6CB2D5BF99086A7C
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -436,99 +635,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_7DBB82C44AE86FE3123C8CA2C34C6B7D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UPlayerHUD_C::OnFailure_7DBB82C44AE86FE3123C8CA2C34C6B7D()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_7DBB82C44AE86FE3123C8CA2C34C6B7D");
-		
-		UPlayerHUD_C_OnFailure_7DBB82C44AE86FE3123C8CA2C34C6B7D_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_7DBB82C44AE86FE3123C8CA2C34C6B7D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UPlayerHUD_C::OnSuccess_7DBB82C44AE86FE3123C8CA2C34C6B7D()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_7DBB82C44AE86FE3123C8CA2C34C6B7D");
-		
-		UPlayerHUD_C_OnSuccess_7DBB82C44AE86FE3123C8CA2C34C6B7D_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnFailure_B754F15B4449FCC342E9AAB708667094
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UPlayerHUD_C::OnFailure_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnFailure_B754F15B4449FCC342E9AAB708667094");
-		
-		UPlayerHUD_C_OnFailure_B754F15B4449FCC342E9AAB708667094_Params params {};
-		params.WrittenAchievementName = WrittenAchievementName;
-		params.WrittenProgress = WrittenProgress;
-		params.WrittenUserTag = WrittenUserTag;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnSuccess_B754F15B4449FCC342E9AAB708667094
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		int32_t                                            WrittenUserTag                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UPlayerHUD_C::OnSuccess_B754F15B4449FCC342E9AAB708667094(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnSuccess_B754F15B4449FCC342E9AAB708667094");
-		
-		UPlayerHUD_C_OnSuccess_B754F15B4449FCC342E9AAB708667094_Params params {};
-		params.WrittenAchievementName = WrittenAchievementName;
-		params.WrittenProgress = WrittenProgress;
-		params.WrittenUserTag = WrittenUserTag;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Finished_185BD7B94C5005FD6F01E39AB745E86F
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::Finished_185BD7B94C5005FD6F01E39AB745E86F()
 	{
@@ -545,9 +654,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Finished_10D10B594F13742D8823F39890BDEC3D
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::Finished_10D10B594F13742D8823F39890BDEC3D()
 	{
@@ -564,9 +673,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Finished_7533C45845F3B117AD0CED818D58DFA6
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::Finished_7533C45845F3B117AD0CED818D58DFA6()
 	{
@@ -583,17 +692,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Information Anim Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Construct
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::On_Information_Anim_Finished()
+	void UPlayerHUD_C::Construct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Information Anim Finished");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Construct");
 		
-		UPlayerHUD_C_On_Information_Anim_Finished_Params params {};
+		UPlayerHUD_C_Construct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -602,20 +711,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Update Hold Progress
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Tick
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		float                                              Percent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::Update_Hold_Progress(float Percent)
+	void UPlayerHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Update Hold Progress");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Tick");
 		
-		UPlayerHUD_C_Update_Hold_Progress_Params params {};
-		params.Percent = Percent;
+		UPlayerHUD_C_Tick_Params params {};
+		params.MyGeometry = MyGeometry;
+		params.InDeltaTime = InDeltaTime;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -624,17 +735,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.AllowShortcutCommand
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Cancel_Hold_Progress()
+	void UPlayerHUD_C::AllowShortcutCommand()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.AllowShortcutCommand");
 		
-		UPlayerHUD_C_Cancel_Hold_Progress_Params params {};
+		UPlayerHUD_C_AllowShortcutCommand_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -643,58 +754,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Complete Hold Progress
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UPlayerHUD_C::Complete_Hold_Progress()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Complete Hold Progress");
-		
-		UPlayerHUD_C_Complete_Hold_Progress_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Init Hold Progress
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UPlayerHUD_C::Init_Hold_Progress()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Init Hold Progress");
-		
-		UPlayerHUD_C_Init_Hold_Progress_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Security Level Updated
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerHoverExit
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::On_Security_Level_Updated(int32_t NewLevel)
+	void UPlayerHUD_C::OnPlayerHoverExit(class APawn* PlayerPawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Security Level Updated");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnPlayerHoverExit");
 		
-		UPlayerHUD_C_On_Security_Level_Updated_Params params {};
-		params.NewLevel = NewLevel;
+		UPlayerHUD_C_OnPlayerHoverExit_Params params {};
+		params.PlayerPawn = PlayerPawn;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -703,9 +776,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerHoverEnter
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnPlayerHoverEnter(class APawn* PlayerPawn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnPlayerHoverEnter");
+		
+		UPlayerHUD_C_OnPlayerHoverEnter_Params params {};
+		params.PlayerPawn = PlayerPawn;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Update
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Level                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               HasRtx                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -729,20 +824,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Party Level Updated
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Setup Interactible Display
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UObject*                                     Interactible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::On_Party_Level_Updated(int32_t NewLevel)
+	void UPlayerHUD_C::SetupInteractibleDisplay(class UObject* Interactible)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Party Level Updated");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Setup Interactible Display");
 		
-		UPlayerHUD_C_On_Party_Level_Updated_Params params {};
-		params.NewLevel = NewLevel;
+		UPlayerHUD_C_SetupInteractibleDisplay_Params params {};
+		params.Interactible = Interactible;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -751,19 +846,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Setup Collected Display
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        CollectedItem                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::Setup_Collected_Display(const class FName& CollectedItem)
+	void UPlayerHUD_C::SetupCollectedDisplay(const class FName& CollectedItem)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Setup Collected Display");
 		
-		UPlayerHUD_C_Setup_Collected_Display_Params params {};
+		UPlayerHUD_C_SetupCollectedDisplay_Params params {};
 		params.CollectedItem = CollectedItem;
 		
 		auto flags = fn->FunctionFlags;
@@ -773,19 +868,117 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Party Pass Used
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Information Anim Finished
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::On_Party_Pass_Used(int32_t NewLevel)
+	void UPlayerHUD_C::OnInformationAnimFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Party Pass Used");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Information Anim Finished");
 		
-		UPlayerHUD_C_On_Party_Pass_Used_Params params {};
+		UPlayerHUD_C_OnInformationAnimFinished_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Update Hold Progress
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              Percent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::UpdateHoldProgress(float Percent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Update Hold Progress");
+		
+		UPlayerHUD_C_UpdateHoldProgress_Params params {};
+		params.Percent = Percent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::CancelHoldProgress()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Cancel Hold Progress");
+		
+		UPlayerHUD_C_CancelHoldProgress_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Complete Hold Progress
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::CompleteHoldProgress()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Complete Hold Progress");
+		
+		UPlayerHUD_C_CompleteHoldProgress_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Init Hold Progress
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::InitHoldProgress()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Init Hold Progress");
+		
+		UPlayerHUD_C_InitHoldProgress_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Security Level Updated
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnSecurityLevelUpdated(int32_t NewLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Security Level Updated");
+		
+		UPlayerHUD_C_OnSecurityLevelUpdated_Params params {};
 		params.NewLevel = NewLevel;
 		
 		auto flags = fn->FunctionFlags;
@@ -795,17 +988,61 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Begin Save
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Party Level Updated
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::On_Begin_Save()
+	void UPlayerHUD_C::OnPartyLevelUpdated(int32_t NewLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Party Level Updated");
+		
+		UPlayerHUD_C_OnPartyLevelUpdated_Params params {};
+		params.NewLevel = NewLevel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Party Pass Used
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		int32_t                                            NewLevel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerHUD_C::OnPartyPassUsed(int32_t NewLevel)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Party Pass Used");
+		
+		UPlayerHUD_C_OnPartyPassUsed_Params params {};
+		params.NewLevel = NewLevel;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Begin Save
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::OnBeginSave()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Begin Save");
 		
-		UPlayerHUD_C_On_Begin_Save_Params params {};
+		UPlayerHUD_C_OnBeginSave_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -814,17 +1051,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On End Save
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::On_End_Save()
+	void UPlayerHUD_C::OnEndSave()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On End Save");
 		
-		UPlayerHUD_C_On_End_Save_Params params {};
+		UPlayerHUD_C_OnEndSave_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -833,19 +1070,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Trailer Mode Changed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               TrailerEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UPlayerHUD_C::On_Trailer_Mode_Changed(bool TrailerEnabled)
+	void UPlayerHUD_C::OnTrailerModeChanged(bool TrailerEnabled)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Trailer Mode Changed");
 		
-		UPlayerHUD_C_On_Trailer_Mode_Changed_Params params {};
+		UPlayerHUD_C_OnTrailerModeChanged_Params params {};
 		params.TrailerEnabled = TrailerEnabled;
 		
 		auto flags = fn->FunctionFlags;
@@ -855,17 +1092,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Hide Objective List
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Hide_Objective_List()
+	void UPlayerHUD_C::HideObjectiveList()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Hide Objective List");
 		
-		UPlayerHUD_C_Hide_Objective_List_Params params {};
+		UPlayerHUD_C_HideObjectiveList_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -874,17 +1111,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Set Skip Info
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Set_Skip_Info()
+	void UPlayerHUD_C::SetSkipInfo()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Set Skip Info");
 		
-		UPlayerHUD_C_Set_Skip_Info_Params params {};
+		UPlayerHUD_C_SetSkipInfo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -893,9 +1130,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.SetRechargeStationText
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               On                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -915,20 +1152,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Item Collected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ItemName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FFNAFInventoryTableStruct                   InventoryItemInfo                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 	 */
-	void UPlayerHUD_C::On_Item_Collected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
+	void UPlayerHUD_C::OnItemCollected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Item Collected");
 		
-		UPlayerHUD_C_On_Item_Collected_Params params {};
+		UPlayerHUD_C_OnItemCollected_Params params {};
 		params.ItemName = ItemName;
 		params.InventoryItemInfo = InventoryItemInfo;
 		
@@ -939,20 +1176,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Setup Requirement Display
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		fnaf9_EConditionFailReason                         Requirements                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EConditionFailReason                               Requirements                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     Interactable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::Setup_Requirement_Display(fnaf9_EConditionFailReason Requirements, class UObject* Interactable)
+	void UPlayerHUD_C::SetupRequirementDisplay(EConditionFailReason Requirements, class UObject* Interactable)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Setup Requirement Display");
 		
-		UPlayerHUD_C_Setup_Requirement_Display_Params params {};
+		UPlayerHUD_C_SetupRequirementDisplay_Params params {};
 		params.Requirements = Requirements;
 		params.Interactable = Interactable;
 		
@@ -963,17 +1200,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Stop Requirement Display
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Stop_Requirement_Display()
+	void UPlayerHUD_C::StopRequirementDisplay()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Stop Requirement Display");
 		
-		UPlayerHUD_C_Stop_Requirement_Display_Params params {};
+		UPlayerHUD_C_StopRequirementDisplay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -982,19 +1219,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Set Informational Message
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        InText                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
-	void UPlayerHUD_C::Set_Informational_Message(const class FText& InText)
+	void UPlayerHUD_C::SetInformationalMessage(const class FText& InText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Set Informational Message");
 		
-		UPlayerHUD_C_Set_Informational_Message_Params params {};
+		UPlayerHUD_C_SetInformationalMessage_Params params {};
 		params.InText = InText;
 		
 		auto flags = fn->FunctionFlags;
@@ -1004,17 +1241,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Hide Informational Message
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Hide_Informational_Message()
+	void UPlayerHUD_C::HideInformationalMessage()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Hide Informational Message");
 		
-		UPlayerHUD_C_Hide_Informational_Message_Params params {};
+		UPlayerHUD_C_HideInformationalMessage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1023,17 +1260,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Stamina Depleted
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::On_Stamina_Depleted()
+	void UPlayerHUD_C::OnStaminaDepleted()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Stamina Depleted");
 		
-		UPlayerHUD_C_On_Stamina_Depleted_Params params {};
+		UPlayerHUD_C_OnStaminaDepleted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1042,17 +1279,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.On Stamina Replenished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::On_Stamina_Replenished()
+	void UPlayerHUD_C::OnStaminaReplenished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.On Stamina Replenished");
 		
-		UPlayerHUD_C_On_Stamina_Replenished_Params params {};
+		UPlayerHUD_C_OnStaminaReplenished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1061,13 +1298,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.ShowInstructions
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_InstructionCard_Type_E_InstructionCard_Type      Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type                             Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::ShowInstructions(E_InstructionCard_Type_E_InstructionCard_Type Type)
+	void UPlayerHUD_C::ShowInstructions(E_InstructionCard_Type Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1083,9 +1320,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.HideInstructions
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::HideInstructions()
 	{
@@ -1102,9 +1339,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.PlayInstructionCardAnim
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::PlayInstructionCardAnim()
 	{
@@ -1121,19 +1358,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Setup Objective Display
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FText                                        InText                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
-	void UPlayerHUD_C::Setup_Objective_Display(const class FText& InText)
+	void UPlayerHUD_C::SetupObjectiveDisplay(const class FText& InText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Setup Objective Display");
 		
-		UPlayerHUD_C_Setup_Objective_Display_Params params {};
+		UPlayerHUD_C_SetupObjectiveDisplay_Params params {};
 		params.InText = InText;
 		
 		auto flags = fn->FunctionFlags;
@@ -1143,17 +1380,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Stop Objective Display
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerHUD_C::Stop_Objective_Display()
+	void UPlayerHUD_C::StopObjectiveDisplay()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Stop Objective Display");
 		
-		UPlayerHUD_C_Stop_Objective_Display_Params params {};
+		UPlayerHUD_C_StopObjectiveDisplay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1162,96 +1399,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UPlayerHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Tick");
-		
-		UPlayerHUD_C_Tick_Params params {};
-		params.MyGeometry = MyGeometry;
-		params.InDeltaTime = InDeltaTime;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UPlayerHUD_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Construct");
-		
-		UPlayerHUD_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerHoverExit
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UPlayerHUD_C::OnPlayerHoverExit(class APawn* PlayerPawn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnPlayerHoverExit");
-		
-		UPlayerHUD_C_OnPlayerHoverExit_Params params {};
-		params.PlayerPawn = PlayerPawn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerHoverEnter
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UPlayerHUD_C::OnPlayerHoverEnter(class APawn* PlayerPawn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.OnPlayerHoverEnter");
-		
-		UPlayerHUD_C_OnPlayerHoverEnter_Params params {};
-		params.PlayerPawn = PlayerPawn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.ShowCollectedItemDisplay
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::ShowCollectedItemDisplay()
 	{
@@ -1268,9 +1418,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.DebugStopShowingItemsCollected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::DebugStopShowingItemsCollected()
 	{
@@ -1287,9 +1437,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.MoveMissionHUD
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::MoveMissionHUD()
 	{
@@ -1306,9 +1456,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerInteract
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       PlayerPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class APlayerController*                           PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1330,9 +1480,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.OnPlayerInteractCancel
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::OnPlayerInteractCancel()
 	{
@@ -1349,9 +1499,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.HideRequirementPanel
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerHUD_C::HideRequirementPanel()
 	{
@@ -1368,20 +1518,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.Setup Interactible Display
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.BeginSkipFade
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UObject*                                     Interactible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		float                                              DelayDuration                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerHUD_C::Setup_Interactible_Display(class UObject* Interactible)
+	void UPlayerHUD_C::BeginSkipFade(float DelayDuration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.Setup Interactible Display");
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.BeginSkipFade");
 		
-		UPlayerHUD_C_Setup_Interactible_Display_Params params {};
-		params.Interactible = Interactible;
+		UPlayerHUD_C_BeginSkipFade_Params params {};
+		params.DelayDuration = DelayDuration;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -1390,9 +1540,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.ShowSkip
+	 * 		Flags  -> ()
+	 */
+	void UPlayerHUD_C::ShowSkip()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerHUD.PlayerHUD_C.ShowSkip");
+		
+		UPlayerHUD_C_ShowSkip_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerHUD.PlayerHUD_C.ExecuteUbergraph_PlayerHUD
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1412,8 +1581,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlayerHUD_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlayerHUD_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlayerHUD_C::StaticClass()

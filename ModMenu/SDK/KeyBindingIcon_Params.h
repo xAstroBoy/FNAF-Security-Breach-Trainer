@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,28 +15,37 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function KeyBindingIcon.KeyBindingIcon_C.ChangeStyle
+	 */
+	struct UKeyBindingIcon_C_ChangeStyle_Params
+	{	};
+
+	/**
 	 * Function KeyBindingIcon.KeyBindingIcon_C.SetKeyName
 	 */
 	struct UKeyBindingIcon_C_SetKeyName_Params
 	{
 	public:
 		class FName                                                Name;                                                    // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function KeyBindingIcon.KeyBindingIcon_C.Set Icon
 	 */
-	struct UKeyBindingIcon_C_Set_Icon_Params
-	{
-	};
+	struct UKeyBindingIcon_C_SetIcon_Params
+	{	};
 
 	/**
 	 * Function KeyBindingIcon.KeyBindingIcon_C.ToggleIcon
 	 */
 	struct UKeyBindingIcon_C_ToggleIcon_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function KeyBindingIcon.KeyBindingIcon_C.Construct
+	 */
+	struct UKeyBindingIcon_C_Construct_Params
+	{	};
 
 	/**
 	 * Function KeyBindingIcon.KeyBindingIcon_C.PreConstruct
@@ -45,8 +54,13 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
+
+	/**
+	 * Function KeyBindingIcon.KeyBindingIcon_C.RequestKeyRedraw
+	 */
+	struct UKeyBindingIcon_C_RequestKeyRedraw_Params
+	{	};
 
 	/**
 	 * Function KeyBindingIcon.KeyBindingIcon_C.ExecuteUbergraph_KeyBindingIcon
@@ -55,7 +69,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

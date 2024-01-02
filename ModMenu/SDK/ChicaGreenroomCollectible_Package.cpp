@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnFailure_F4AD70CC4B8771615B07A38E185D79AB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnSuccess_F4AD70CC4B8771615B07A38E185D79AB
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        WrittenAchievementName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              WrittenProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,9 +64,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnFailure_A91445044E68314BD471929DF90DE4E5
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AChicaGreenroomCollectible_C::OnFailure_A91445044E68314BD471929DF90DE4E5()
 	{
@@ -83,9 +83,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnSuccess_A91445044E68314BD471929DF90DE4E5
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AChicaGreenroomCollectible_C::OnSuccess_A91445044E68314BD471929DF90DE4E5()
 	{
@@ -102,9 +102,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnCollect
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AChicaGreenroomCollectible_C::OnCollect()
 	{
@@ -121,17 +121,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.On Timer Ended
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AChicaGreenroomCollectible_C::On_Timer_Ended()
+	void AChicaGreenroomCollectible_C::OnTimerEnded()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.On Timer Ended");
 		
-		AChicaGreenroomCollectible_C_On_Timer_Ended_Params params {};
+		AChicaGreenroomCollectible_C_OnTimerEnded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -140,17 +140,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.Setup Hourly Sequence
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AChicaGreenroomCollectible_C::Setup_Hourly_Sequence()
+	void AChicaGreenroomCollectible_C::SetupHourlySequence()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.Setup Hourly Sequence");
 		
-		AChicaGreenroomCollectible_C_Setup_Hourly_Sequence_Params params {};
+		AChicaGreenroomCollectible_C_SetupHourlySequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -159,9 +159,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.OnLoadCollected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AChicaGreenroomCollectible_C::OnLoadCollected()
 	{
@@ -178,17 +178,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.On Finished Loading
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AChicaGreenroomCollectible_C::On_Finished_Loading()
+	void AChicaGreenroomCollectible_C::OnFinishedLoading()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.On Finished Loading");
 		
-		AChicaGreenroomCollectible_C_On_Finished_Loading_Params params {};
+		AChicaGreenroomCollectible_C_OnFinishedLoading_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -197,17 +197,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.Setup Time
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AChicaGreenroomCollectible_C::Setup_Time()
+	void AChicaGreenroomCollectible_C::SetupTime()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.Setup Time");
 		
-		AChicaGreenroomCollectible_C_Setup_Time_Params params {};
+		AChicaGreenroomCollectible_C_SetupTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -216,9 +216,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ChicaGreenroomCollectible.ChicaGreenroomCollectible_C.ExecuteUbergraph_ChicaGreenroomCollectible
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -238,8 +238,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AChicaGreenroomCollectible_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AChicaGreenroomCollectible_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AChicaGreenroomCollectible_C::StaticClass()

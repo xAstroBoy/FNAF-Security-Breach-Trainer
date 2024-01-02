@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class CustomMeshComponent.CustomMeshComponent
-	 * Size -> 0x0010 (FullSize[0x0430] - InheritedSize[0x0420])
+	 * Size -> 0x0018 (FullSize[0x0490] - InheritedSize[0x0478])
 	 */
 	class UCustomMeshComponent : public UMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_JYK6[0x10];                                  // 0x0420(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_653D[0x8];                                   // 0x0478(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_UJTJ[0x10];                                  // 0x0480(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);

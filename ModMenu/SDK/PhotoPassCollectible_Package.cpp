@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PhotoPassCollectible.PhotoPassCollectible_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void APhotoPassCollectible_C::ReceiveBeginPlay()
 	{
@@ -31,20 +31,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Collected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ItemName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FFNAFInventoryTableStruct                   InventoryItemInfo                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 	 */
-	void APhotoPassCollectible_C::On_Item_Collected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
+	void APhotoPassCollectible_C::OnItemCollected(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Collected");
 		
-		APhotoPassCollectible_C_On_Item_Collected_Params params {};
+		APhotoPassCollectible_C_OnItemCollected_Params params {};
 		params.ItemName = ItemName;
 		params.InventoryItemInfo = InventoryItemInfo;
 		
@@ -55,20 +55,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Removed
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ItemName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FFNAFInventoryTableStruct                   InventoryItemInfo                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 	 */
-	void APhotoPassCollectible_C::On_Item_Removed(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
+	void APhotoPassCollectible_C::OnItemRemoved(const class FName& ItemName, const struct FFNAFInventoryTableStruct& InventoryItemInfo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PhotoPassCollectible.PhotoPassCollectible_C.On Item Removed");
 		
-		APhotoPassCollectible_C_On_Item_Removed_Params params {};
+		APhotoPassCollectible_C_OnItemRemoved_Params params {};
 		params.ItemName = ItemName;
 		params.InventoryItemInfo = InventoryItemInfo;
 		
@@ -79,9 +79,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PhotoPassCollectible.PhotoPassCollectible_C.ExecuteUbergraph_PhotoPassCollectible
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -101,8 +101,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APhotoPassCollectible_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APhotoPassCollectible_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APhotoPassCollectible_C::StaticClass()

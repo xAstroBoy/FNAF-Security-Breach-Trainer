@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothConfigNv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothConfigNv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothConfigNv::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothingSimulationFactoryNv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothingSimulationFactoryNv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothingSimulationFactoryNv::StaticClass()
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x027F5120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function ClothingSystemRuntimeNv.ClothingSimulationInteractorNv.SetAnimDriveDamperStiffness
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              InStiffness                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -56,15 +56,14 @@ namespace CG
 		params.InStiffness = InStiffness;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothingSimulationInteractorNv.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothingSimulationInteractorNv.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothingSimulationInteractorNv::StaticClass()
@@ -77,8 +76,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClothPhysicalMeshDataNv_Legacy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClothPhysicalMeshDataNv_Legacy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClothPhysicalMeshDataNv_Legacy::StaticClass()

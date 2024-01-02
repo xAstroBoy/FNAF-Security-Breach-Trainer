@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,14 +18,21 @@ namespace CG
 	 * Function PlayerTeleportHandler.PlayerTeleportHandler_C.ReceiveBeginPlay
 	 */
 	struct APlayerTeleportHandler_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PlayerTeleportHandler.PlayerTeleportHandler_C.On Destination Loaded
 	 */
-	struct APlayerTeleportHandler_C_On_Destination_Loaded_Params
+	struct APlayerTeleportHandler_C_OnDestinationLoaded_Params
+	{	};
+
+	/**
+	 * Function PlayerTeleportHandler.PlayerTeleportHandler_C.ReceiveTick
+	 */
+	struct APlayerTeleportHandler_C_ReceiveTick_Params
 	{
+	public:
+		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -35,15 +42,14 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_CCA3[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function PlayerTeleportHandler.PlayerTeleportHandler_C.OnTeleportFinished__DelegateSignature
 	 */
 	struct APlayerTeleportHandler_C_OnTeleportFinished__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,16 +20,14 @@ namespace CG
 	struct APowerStation_Actor_C_GetPlayerInteractor_Params
 	{
 	public:
-		class APowerStationPlayerInteractible_C*                   AsPower_Station_Player_Interactible;                     // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class APowerStationPlayerInteractible_C*                   AsPowerStationPlayerInteractible;                        // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.ForceEnterPowerStation
 	 */
 	struct APowerStation_Actor_C_ForceEnterPowerStation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.SetPlayerCollision
@@ -38,43 +36,37 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.PlungerMovement__FinishedFunc
 	 */
 	struct APowerStation_Actor_C_PlungerMovement__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.PlungerMovement__UpdateFunc
 	 */
 	struct APowerStation_Actor_C_PlungerMovement__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.DoorMovement__FinishedFunc
 	 */
 	struct APowerStation_Actor_C_DoorMovement__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.DoorMovement__UpdateFunc
 	 */
 	struct APowerStation_Actor_C_DoorMovement__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.ReceiveBeginPlay
 	 */
 	struct APowerStation_Actor_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
@@ -87,8 +79,8 @@ namespace CG
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bFromSweep;                                              // 0x001C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_Z0E3[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FHitResult                                          SweepResult;                                             // 0x0020(0x0088)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
@@ -102,23 +94,21 @@ namespace CG
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bFromSweep;                                              // 0x001C(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_2TPC[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FHitResult                                          SweepResult;                                             // 0x0020(0x0088)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.Setup From Load
 	 */
-	struct APowerStation_Actor_C_Setup_From_Load_Params
-	{
-	};
+	struct APowerStation_Actor_C_SetupFromLoad_Params
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.PowerPump
 	 */
 	struct APowerStation_Actor_C_PowerPump_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.DoorOpenClose
@@ -127,15 +117,13 @@ namespace CG
 	{
 	public:
 		bool                                                       Open;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.TriggerFreddyPawnAnimation
 	 */
 	struct APowerStation_Actor_C_TriggerFreddyPawnAnimation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.ReceiveTick
@@ -144,7 +132,6 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -157,7 +144,6 @@ namespace CG
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -170,22 +156,19 @@ namespace CG
 		class AActor*                                              OtherActor;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UPrimitiveComponent*                                 OtherComp;                                               // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    OtherBodyIndex;                                          // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.PlayDoorOpenSFXCinematic
 	 */
 	struct APowerStation_Actor_C_PlayDoorOpenSFXCinematic_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.PlayDoorCloseSFXCinematic
 	 */
 	struct APowerStation_Actor_C_PlayDoorCloseSFXCinematic_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.OnOverlapFreddyTrigger
@@ -193,16 +176,14 @@ namespace CG
 	struct APowerStation_Actor_C_OnOverlapFreddyTrigger_Params
 	{
 	public:
-		class AActor*                                              Other_Actor;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.FreddyReachedPowerStation
 	 */
 	struct APowerStation_Actor_C_FreddyReachedPowerStation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PowerStation_Actor.PowerStation_Actor_C.ExecuteUbergraph_PowerStation_Actor
@@ -211,7 +192,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

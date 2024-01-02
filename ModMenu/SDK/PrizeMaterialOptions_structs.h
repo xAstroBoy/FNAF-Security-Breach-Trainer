@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,17 +17,17 @@ namespace CG
 	/**
 	 * UserDefinedEnum PrizeMaterialOptions.PrizeMaterialOptions
 	 */
-	enum class PrizeMaterialOptions_EPrizeMaterialOptions : uint8_t
+	enum class EPrizeMaterialOptions : uint8_t
 	{
-		PrizeMaterialOptions__NewEnumerator0           = 0,
-		PrizeMaterialOptions__NewEnumerator1           = 1,
-		PrizeMaterialOptions__NewEnumerator2           = 2,
-		PrizeMaterialOptions__NewEnumerator3           = 3,
-		PrizeMaterialOptions__NewEnumerator4           = 4,
-		PrizeMaterialOptions__NewEnumerator5           = 5,
-		PrizeMaterialOptions__NewEnumerator6           = 6,
-		PrizeMaterialOptions__NewEnumerator7           = 7,
-		PrizeMaterialOptions__PrizeMaterialOptions_MAX = 8
+		PrizeMaterialOptionsNewEnumerator0           = 0,
+		PrizeMaterialOptionsNewEnumerator1           = 1,
+		PrizeMaterialOptionsNewEnumerator2           = 2,
+		PrizeMaterialOptionsNewEnumerator3           = 3,
+		PrizeMaterialOptionsNewEnumerator4           = 4,
+		PrizeMaterialOptionsNewEnumerator5           = 5,
+		PrizeMaterialOptionsNewEnumerator6           = 6,
+		PrizeMaterialOptionsNewEnumerator7           = 7,
+		PrizeMaterialOptionsPrizeMaterialOptions_MAX = 8
 	};
 
 }

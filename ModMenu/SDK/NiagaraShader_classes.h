@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -11,6 +11,19 @@
 
 namespace CG
 {
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class NiagaraShader.NiagaraScriptBase
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UNiagaraScriptBase : public UObject
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
 }
 
 #ifdef _MSC_VER

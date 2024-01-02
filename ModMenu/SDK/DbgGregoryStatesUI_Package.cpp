@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,146 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_GregoryCrouch_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.UpdateCheckboxStates
+	 * 		Flags  -> ()
 	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_GregoryCrouch_CheckedState_1()
+	void UDbgGregoryStatesUI_C::UpdateCheckboxStates()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_GregoryCrouch_CheckedState_1");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.UpdateCheckboxStates");
 		
-		UDbgGregoryStatesUI_C_Get_GregoryCrouch_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyEnterExit_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_FreddyEnterExit_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyEnterExit_CheckedState_1");
-		
-		UDbgGregoryStatesUI_C_Get_FreddyEnterExit_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyCall_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_FreddyCall_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyCall_CheckedState_1");
-		
-		UDbgGregoryStatesUI_C_Get_FreddyCall_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_RoxyEyes_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_RoxyEyes_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_RoxyEyes_CheckedState_1");
-		
-		UDbgGregoryStatesUI_C_Get_RoxyEyes_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_ChicaBeak_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_ChicaBeak_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_ChicaBeak_CheckedState_1");
-		
-		UDbgGregoryStatesUI_C_Get_ChicaBeak_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_MontyClaws_CheckedState_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
-	 */
-	SlateCore_ECheckBoxState UDbgGregoryStatesUI_C::Get_MontyClaws_CheckedState_1()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_MontyClaws_CheckedState_1");
-		
-		UDbgGregoryStatesUI_C_Get_MontyClaws_CheckedState_1_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UDbgGregoryStatesUI_C::BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature");
-		
-		UDbgGregoryStatesUI_C_BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_UpdateCheckboxStates_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -160,20 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Construct
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::Construct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Construct");
 		
-		UDbgGregoryStatesUI_C_BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_Construct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -182,20 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature");
 		
-		UDbgGregoryStatesUI_C_BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -204,20 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature");
 		
-		UDbgGregoryStatesUI_C_BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -226,20 +88,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature");
 		
-		UDbgGregoryStatesUI_C_BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -248,20 +107,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature");
 		
-		UDbgGregoryStatesUI_C_BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -270,20 +126,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsChecked                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
 	 */
-	void UDbgGregoryStatesUI_C::BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature");
 		
-		UDbgGregoryStatesUI_C_BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature_Params params {};
-		params.bIsChecked = bIsChecked;
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -292,9 +145,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature");
+		
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void UDbgGregoryStatesUI_C::BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature");
+		
+		UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.ExecuteUbergraph_DbgGregoryStatesUI
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -314,8 +205,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDbgGregoryStatesUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDbgGregoryStatesUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDbgGregoryStatesUI_C::StaticClass()

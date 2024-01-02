@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -45,6 +45,16 @@ namespace CG
 	};
 
 	/**
+	 * Class AudioExtensions.DummyEndpointSettings
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class UDummyEndpointSettings : public UAudioEndpointSettingsBase
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
 	 * Class AudioExtensions.OcclusionPluginSourceSettingsBase
 	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 	 */
@@ -55,20 +65,20 @@ namespace CG
 	};
 
 	/**
-	 * Class AudioExtensions.SoundModulationPluginSourceSettingsBase
+	 * Class AudioExtensions.ReverbPluginSourceSettingsBase
 	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 	 */
-	class USoundModulationPluginSourceSettingsBase : public UObject
+	class UReverbPluginSourceSettingsBase : public UObject
 	{
 	public:
 		static UClass* StaticClass();
 	};
 
 	/**
-	 * Class AudioExtensions.ReverbPluginSourceSettingsBase
+	 * Class AudioExtensions.SoundModulatorBase
 	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 	 */
-	class UReverbPluginSourceSettingsBase : public UObject
+	class USoundModulatorBase : public UObject
 	{
 	public:
 		static UClass* StaticClass();

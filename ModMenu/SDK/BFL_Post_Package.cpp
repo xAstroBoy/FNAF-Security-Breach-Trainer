@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEvent_EnsureConstants_MultiplePositions
-	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TArray<struct FTransform>                          Positions                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		AkAudio_EAkMultiPositionType                       MultiPositionType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		TArray<struct FTransform>                          Positions                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	 * 		EAkMultiPositionType                               MultiPositionType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAkAudioEvent*                               Return_AkEvent                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TArray<struct FTransform>                          Return_Positions                                           (Parm, OutParm, HasGetValueTypeHash)
-	 * 		AkAudio_EAkMultiPositionType                       Return_MultiPositionType                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		TArray<struct FTransform>                          Return_Positions                                           (Parm, OutParm)
+	 * 		EAkMultiPositionType                               Return_MultiPositionType                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBFL_Post_C::STATIC_PostEvent_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, TArray<struct FTransform>* Positions, AkAudio_EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, TArray<struct FTransform>* Return_Positions, AkAudio_EAkMultiPositionType* Return_MultiPositionType)
+	void UBFL_Post_C::PostEvent_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, TArray<struct FTransform>* Positions, EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, TArray<struct FTransform>* Return_Positions, EAkMultiPositionType* Return_MultiPositionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -51,9 +51,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEventWithSubtitles_EnsureConstants_MultiplePositions
-	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ namespace CG
 	 * 		float                                              MaxRadiusPercent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               SanitizeSubtitleKey                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               HighPriority                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TArray<struct FTransform>                          Positions                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	 * 		AkAudio_EAkMultiPositionType                       MultiPositionType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		TArray<struct FTransform>                          Positions                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	 * 		EAkMultiPositionType                               MultiPositionType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAkAudioEvent*                               Return_AkEvent                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Return_Actor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,10 +70,10 @@ namespace CG
 	 * 		float                                              Return_MaxRadiusPercent                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Return_SanitizeSubtitleKey                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Return_HighPriority                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		TArray<struct FTransform>                          Return_Positions                                           (Parm, OutParm, HasGetValueTypeHash)
-	 * 		AkAudio_EAkMultiPositionType                       Return_MultiPositionType                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		TArray<struct FTransform>                          Return_Positions                                           (Parm, OutParm)
+	 * 		EAkMultiPositionType                               Return_MultiPositionType                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBFL_Post_C::STATIC_PostEventWithSubtitles_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, TArray<struct FTransform>* Positions, AkAudio_EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority, TArray<struct FTransform>* Return_Positions, AkAudio_EAkMultiPositionType* Return_MultiPositionType)
+	void UBFL_Post_C::PostEventWithSubtitles_EnsureConstants_MultiplePositions(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, TArray<struct FTransform>* Positions, EAkMultiPositionType MultiPositionType, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority, TArray<struct FTransform>* Return_Positions, EAkMultiPositionType* Return_MultiPositionType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -115,9 +115,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BFL_Post.BFL_Post_C.PostEventWithSubtitles_EnsureConstants
-	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UAkAudioEvent*                               AkEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -133,7 +133,7 @@ namespace CG
 	 * 		bool                                               Return_SanitizeSubtitleKey                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Return_HighPriority                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBFL_Post_C::STATIC_PostEventWithSubtitles_EnsureConstants(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority)
+	void UBFL_Post_C::PostEventWithSubtitles_EnsureConstants(class UAkAudioEvent* AkEvent, class AActor* Actor, bool Wait, float MaxRadiusPercent, bool SanitizeSubtitleKey, bool HighPriority, class UObject* __WorldContext, class UAkAudioEvent** Return_AkEvent, class AActor** Return_Actor, bool* Return_Wait, float* Return_MaxRadiusPercent, bool* Return_SanitizeSubtitleKey, bool* Return_HighPriority)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -168,8 +168,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBFL_Post_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBFL_Post_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBFL_Post_C::StaticClass()

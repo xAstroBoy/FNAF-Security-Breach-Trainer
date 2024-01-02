@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 	public:
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 		void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void Finish_Movement(class APawn* ControlledPawn);
+		void FinishMovement(class APawn* ControlledPawn);
 		void ExecuteUbergraph_FollowSpline(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

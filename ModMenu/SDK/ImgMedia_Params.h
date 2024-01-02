@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,33 @@ namespace CG
 	{
 	public:
 		class FString                                              Path;                                                    // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function ImgMedia.ImgMediaSource.SetMipLevelDistance
+	 */
+	struct UImgMediaSource_SetMipLevelDistance_Params
+	{
+	public:
+		float                                                      Distance;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function ImgMedia.ImgMediaSource.RemoveTargetObject
+	 */
+	struct UImgMediaSource_RemoveTargetObject_Params
+	{
+	public:
+		class AActor*                                              InActor;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function ImgMedia.ImgMediaSource.RemoveGlobalCamera
+	 */
+	struct UImgMediaSource_RemoveGlobalCamera_Params
+	{
+	public:
+		class AActor*                                              InActor;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -31,7 +57,6 @@ namespace CG
 	{
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -40,8 +65,26 @@ namespace CG
 	struct UImgMediaSource_GetProxies_Params
 	{
 	public:
-		TArray<class FString>                                      OutProxies;                                              // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<class FString>                                      OutProxies;                                              // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function ImgMedia.ImgMediaSource.AddTargetObject
+	 */
+	struct UImgMediaSource_AddTargetObject_Params
+	{
+	public:
+		class AActor*                                              InActor;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		float                                                      Width;                                                   // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function ImgMedia.ImgMediaSource.AddGlobalCamera
+	 */
+	struct UImgMediaSource_AddGlobalCamera_Params
+	{
+	public:
+		class AActor*                                              InActor;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 }

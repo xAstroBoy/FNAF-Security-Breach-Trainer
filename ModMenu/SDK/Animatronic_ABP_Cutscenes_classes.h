@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Animatronic_ABP_Cutscenes.Animatronic_ABP_Cutscenes_C
-	 * Size -> 0x0000 (FullSize[0x8E09] - InheritedSize[0x8E09])
+	 * Size -> 0x0000 (FullSize[0xA388] - InheritedSize[0xA388])
 	 */
 	class UAnimatronic_ABP_Cutscenes_C : public UAnimatronic_ABP_MASTER_C
 	{

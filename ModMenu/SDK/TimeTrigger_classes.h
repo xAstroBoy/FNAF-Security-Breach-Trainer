@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,19 +22,19 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x00B0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		int32_t                                                    Previous_Minute;                                         // 0x00B8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		int32_t                                                    PreviousMinute;                                          // 0x00B8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    TimeRunOutHour;                                          // 0x00BC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    TimeRunOutMinute;                                        // 0x00C0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_FXYM[0x4];                                   // 0x00C4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PNDF[0x4];                                   // 0x00C4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             TimerInvoked;                                            // 0x00C8(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void Start_Timer(int32_t Current_Time_Hour, int32_t Current_Time_Minute, int32_t TImer_End_Hour, int32_t Timer_End_Minute, const class FScriptDelegate& Timer_End_Event);
-		void Handle_Minute_Check(int32_t CurrentMinute);
+		void StartTimer(int32_t CurrentTimeHour, int32_t CurrentTimeMinute, int32_t TimerEndHour, int32_t TimerEndMinute, const class FScriptDelegate& TimerEndEvent, bool DoNotDespawnAI);
+		void HandleMinuteCheck(int32_t CurrentMinute);
 		void ReceiveBeginPlay();
-		void On_Timer_Started();
-		void On_Game_Clock_TIme_Has_Changed(int32_t Hour, int32_t Minute);
-		void On_Clock_State_Changed(bool bIsRunning);
+		void OnTimerStarted();
+		void OnGameClockTImeHasChanged(int32_t Hour, int32_t Minute);
+		void OnClockStateChanged(bool bIsRunning);
 		void ExecuteUbergraph_TimeTrigger(int32_t EntryPoint);
 		void TimerInvoked__DelegateSignature();
 		static UClass* StaticClass();

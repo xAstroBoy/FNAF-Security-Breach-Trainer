@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		int32_t                                                    StateToSet;                                              // 0x0250(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void On_Vent_Exited();
+		void OnVentExited();
 		void ExecuteUbergraph_VentExit_UpdateMission(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

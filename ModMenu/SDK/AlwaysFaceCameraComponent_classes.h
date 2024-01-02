@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass AlwaysFaceCameraComponent.AlwaysFaceCameraComponent_C
-	 * Size -> 0x0008 (FullSize[0x01F8] - InheritedSize[0x01F0])
+	 * Size -> 0x0010 (FullSize[0x0208] - InheritedSize[0x01F8])
 	 */
 	class UAlwaysFaceCameraComponent_C : public USceneComponent
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x01F0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		unsigned char                                              UnknownData_IFZP[0x8];                                   // 0x01F8(0x0008) Fix Super Size
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0200(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void ReceiveTick(float DeltaSeconds);

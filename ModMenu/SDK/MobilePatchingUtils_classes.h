@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UMobileInstalledContent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_PIF1[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5JB3[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		bool Mount(int32_t PakOrder, const class FString& MountPoint);
@@ -37,7 +37,7 @@ namespace CG
 	class UMobilePendingContent : public UMobileInstalledContent
 	{
 	public:
-		unsigned char                                              UnknownData_1MYK[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_D5UU[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 	public:
 		void StartInstall(const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed);
@@ -57,11 +57,11 @@ namespace CG
 	class UMobilePatchingLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_RequestContent(const class FString& RemoteManifestURL, const class FString& CloudURL, const class FString& InstallDirectory, const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed);
-		bool STATIC_HasActiveWiFiConnection();
-		TArray<class FString> STATIC_GetSupportedPlatformNames();
-		class UMobileInstalledContent* STATIC_GetInstalledContent(const class FString& InstallDirectory);
-		class FString STATIC_GetActiveDeviceProfileName();
+		void RequestContent(const class FString& RemoteManifestURL, const class FString& CloudURL, const class FString& InstallDirectory, const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed);
+		bool HasActiveWiFiConnection();
+		TArray<class FString> GetSupportedPlatformNames();
+		class UMobileInstalledContent* GetInstalledContent(const class FString& InstallDirectory);
+		class FString GetActiveDeviceProfileName();
 		static UClass* StaticClass();
 	};
 

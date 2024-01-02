@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * Enum MagicLeapLightEstimation.EMagicLeapLightEstimationCamera
 	 */
-	enum class MagicLeapLightEstimation_EMagicLeapLightEstimationCamera : uint8_t
+	enum class EMagicLeapLightEstimationCamera : uint8_t
 	{
-		EMagicLeapLightEstimationCamera__Left                                = 0,
-		EMagicLeapLightEstimationCamera__Right                               = 1,
-		EMagicLeapLightEstimationCamera__FarLeft                             = 2,
-		EMagicLeapLightEstimationCamera__FarRight                            = 3,
-		EMagicLeapLightEstimationCamera__EMagicLeapLightEstimationCamera_MAX = 4
+		Left     = 0,
+		Right    = 1,
+		FarLeft  = 2,
+		FarRight = 3,
+		MAX      = 4
 	};
 
 	// --------------------------------------------------
@@ -38,9 +38,8 @@ namespace CG
 	public:
 		float                                                      ColorTemperatureKelvin;                                  // 0x0000(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        AmbientColor;                                            // 0x0004(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_06SM[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_K2O5[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTimespan                                           Timestamp;                                               // 0x0018(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -50,9 +49,8 @@ namespace CG
 	struct FMagicLeapLightEstimationAmbientGlobalState
 	{
 	public:
-		TArray<float>                                              AmbientIntensityNits;                                    // 0x0000(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<float>                                              AmbientIntensityNits;                                    // 0x0000(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		struct FTimespan                                           Timestamp;                                               // 0x0010(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,15 @@ namespace CG
 	class AOGM_PrizeCounter_C : public AMGM_OfficeGameManger_C
 	{
 	public:
-		unsigned char                                              UnknownData_ZXFM[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YCFX[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02B8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class USceneComponent*                                     MontyFarReturnToStartWaypoint;                           // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UTimeCheckComponent_C*                               TImeCheckForOvertime;                                    // 0x02C8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UTimeCheckComponent_C*                               TimeCheckComponent;                                      // 0x02D0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     WaypointSetOne2;                                         // 0x02D8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     WaypointSetTwo2;                                         // 0x02E0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UArrowComponent*                                     Roxy_End;                                                // 0x02E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		class UArrowComponent*                                     Monty_End;                                               // 0x02F0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UArrowComponent*                                     RoxyEnd;                                                 // 0x02E8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UArrowComponent*                                     MontyEnd;                                                // 0x02F0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     Scene;                                                   // 0x02F8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     WaypointSetTwo1;                                         // 0x0300(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UArrowComponent*                                     WaypointSetOne1;                                         // 0x0308(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
@@ -37,7 +37,7 @@ namespace CG
 		class USpawnAISceneComponent_C*                            RoxySpawnComponent;                                      // 0x0318(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USpawnAISceneComponent_C*                            MontySpawnComponent;                                     // 0x0320(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       PlayerInRange;                                           // 0x0328(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_2SGO[0x3];                                   // 0x0329(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QUNB[0x3];                                   // 0x0329(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      CurrentDownload;                                         // 0x032C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class APrizeCounter_EmergencyUIActor_C*                    EmergencyUI;                                             // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      DownloadTime;                                            // 0x0338(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -46,9 +46,9 @@ namespace CG
 		float                                                      PowerRate;                                               // 0x0344(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              DoorControllers[0x10];                                   // 0x0348(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		float                                                      CurrentPower;                                            // 0x0358(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_CR3T[0x4];                                   // 0x035C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              SeekerPatrolPathMonty[0x28];                             // 0x035C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		TArray<class AActor*>                                      Animatronics;                                            // 0x0388(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		unsigned char                                              UnknownData_P4PW[0x4];                                   // 0x035C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              SeekerPatrolPathMonty[0x28];                             // 0x0360(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		TArray<class AActor*>                                      Animatronics;                                            // 0x0388(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		class FName                                                PlayerLeftBoundsBB;                                      // 0x0398(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              SplineManagerRoxie[0x28];                                // 0x03A0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Lights[0x10];                                            // 0x03C8(0x0010) UNKNOWN PROPERTY: ArrayProperty
@@ -64,21 +64,21 @@ namespace CG
 		float                                                      DoorWaitTime;                                            // 0x0410(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      DoorWaitTimeRandomDeviation;                             // 0x0414(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      RepathTime;                                              // 0x0418(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_AL2H[0x4];                                   // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              RoxyEndOfGamePath[0x28];                                 // 0x041C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_OJW2[0x4];                                   // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              RoxyEndOfGamePath[0x28];                                 // 0x0420(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      RepathTimeRandomDeviation;                               // 0x0448(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_4B0I[0x4];                                   // 0x044C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              LineSkipper[0x28];                                       // 0x044C(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_RHV7[0x4];                                   // 0x044C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              LineSkipper[0x28];                                       // 0x0450(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       CountdownTimerPlaying;                                   // 0x0478(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_CHWW[0x7];                                   // 0x0479(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              Buttons[0x10];                                           // 0x0479(0x0010) UNKNOWN PROPERTY: ArrayProperty
+		unsigned char                                              UnknownData_OBHZ[0x7];                                   // 0x0479(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              Buttons[0x10];                                           // 0x0480(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		unsigned char                                              MontyEndOfGamePath[0x28];                                // 0x0490(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		int32_t                                                    PatrolPathIndex;                                         // 0x04B8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                GameFinishedBB;                                          // 0x04BC(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                PatrolPathIndexBB;                                       // 0x04C4(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                BehaviorBB;                                              // 0x04CC(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_0TVY[0x4];                                   // 0x04D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              DoorMeters[0x10];                                        // 0x04D4(0x0010) UNKNOWN PROPERTY: ArrayProperty
+		unsigned char                                              UnknownData_S5I9[0x4];                                   // 0x04D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              DoorMeters[0x10];                                        // 0x04D8(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		class ABP_PowerMeter_Door_C*                               DoorMeter1;                                              // 0x04E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class ABP_PowerMeter_Door_C*                               DoorMeter2;                                              // 0x04F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class APrizeCounter_RoxyAndMontySpawnCheck_C*              EnemyRespawnTriggerRef;                                  // 0x04F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -89,11 +89,11 @@ namespace CG
 		class FName                                                WayPointLocationBB;                                      // 0x0540(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                ExitLocationBB;                                          // 0x0548(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsFinished;                                              // 0x0550(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_S2PS[0x7];                                   // 0x0551(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              Door_Arcade[0x28];                                       // 0x0551(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_9LCG[0x7];                                   // 0x0551(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              Door_Arcade[0x28];                                       // 0x0558(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Door_Counter_1[0x28];                                    // 0x0580(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              Door_Counter_2[0x28];                                    // 0x05A8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		TArray<class AAISeeker_C*>                                 ShatteredBots;                                           // 0x05D0(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class AAISeeker_C*>                                 ShatteredBots;                                           // 0x05D0(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		struct FTransform                                          RoxyRespawnTransform;                                    // 0x05E0(0x0030) Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		struct FTransform                                          MontyRespawnTransform;                                   // 0x0610(0x0030) Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		class FName                                                OutsideOfBoundsBB;                                       // 0x0640(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -101,21 +101,21 @@ namespace CG
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		void GetDoors(TArray<class ABP_DoorMaster_C*>* DoorsFromOGM);
 		void SetupAfterBadgeVO();
 		void UpdateDoorMeters();
 		void SetDoorPowerMeters();
-		void On_Skip();
-		void PlayerRequestEnd(E_EndMiniGameType_E_EndMiniGameType EndType);
-		void Set_Lights(bool On);
+		void OnSkip();
+		void PlayerRequestEnd(E_EndMiniGameType EndType);
+		void SetLights(bool On);
 		void SetupAI(class AAISeeker_C* AISeeker, class ASeekerPatrolPath_C* PatrolPath);
 		void OnPlayerLeave(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex);
 		void SetDoorControllers(bool Enabled);
-		void SetDoors(bool Open, bool Automatic, bool Set_AI);
+		void SetDoors(bool Open, bool Automatic, bool SetAI);
 		void UpdatePowerDrain(float DeltaSeconds, bool* PowerDrained);
-		void On_Start();
+		void OnStart();
 		void OnFailure_B1E616F34ED2CAC9BC4CBFAF62C62B22();
 		void OnSuccess_B1E616F34ED2CAC9BC4CBFAF62C62B22();
 		void OnFailure_4B3476E0418404A714850DBADF881B77(const class FName& WrittenAchievementName, float WrittenProgress, int32_t WrittenUserTag);

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,19 +21,17 @@ namespace CG
 	struct FTrackRenderData
 	{
 	public:
-		unsigned char                                              UnknownData_4E7C[0x70];                                  // 0x0000(0x0070) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_B2WH[0x70];                                  // 0x0000(0x0070) MISSED OFFSET (PADDING)
 	};
 
 	/**
 	 * ScriptStruct GeometryCache.GeometryCacheMeshData
-	 * Size -> 0x00A8
+	 * Size -> 0x00B0
 	 */
 	struct FGeometryCacheMeshData
 	{
 	public:
-		unsigned char                                              UnknownData_C9Q4[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_Q7BH[0xB0];                                  // 0x0000(0x00B0) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -43,8 +41,7 @@ namespace CG
 	struct FGeometryCacheVertexInfo
 	{
 	public:
-		unsigned char                                              UnknownData_A8YW[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_ZP0U[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -54,8 +51,7 @@ namespace CG
 	struct FGeometryCacheMeshBatchInfo
 	{
 	public:
-		unsigned char                                              UnknownData_1LQ9[0xC];                                   // 0x0000(0x000C) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_A7Q6[0xC];                                   // 0x0000(0x000C) MISSED OFFSET (PADDING)
 	};
 
 }

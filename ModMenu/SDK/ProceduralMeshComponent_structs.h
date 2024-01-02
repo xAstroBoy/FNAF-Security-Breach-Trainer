@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * Enum ProceduralMeshComponent.EProcMeshSliceCapOption
 	 */
-	enum class ProceduralMeshComponent_EProcMeshSliceCapOption : uint8_t
+	enum class EProcMeshSliceCapOption : uint8_t
 	{
-		EProcMeshSliceCapOption__NoCap                       = 0,
-		EProcMeshSliceCapOption__CreateNewSectionForCap      = 1,
-		EProcMeshSliceCapOption__UseLastSectionForCap        = 2,
-		EProcMeshSliceCapOption__EProcMeshSliceCapOption_MAX = 3
+		NoCap                  = 0,
+		CreateNewSectionForCap = 1,
+		UseLastSectionForCap   = 2,
+		MAX                    = 3
 	};
 
 	// --------------------------------------------------
@@ -37,8 +37,7 @@ namespace CG
 	public:
 		struct FVector                                             TangentX;                                                // 0x0000(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bFlipTangentY;                                           // 0x000C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RW3J[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_SZ9I[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -56,7 +55,6 @@ namespace CG
 		struct FVector2D                                           UV1;                                                     // 0x0034(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           UV2;                                                     // 0x003C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           UV3;                                                     // 0x0044(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -66,13 +64,12 @@ namespace CG
 	struct FProcMeshSection
 	{
 	public:
-		TArray<struct FProcMeshVertex>                             ProcVertexBuffer;                                        // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<uint32_t>                                           ProcIndexBuffer;                                         // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FProcMeshVertex>                             ProcVertexBuffer;                                        // 0x0000(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<uint32_t>                                           ProcIndexBuffer;                                         // 0x0010(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		struct FBox                                                SectionLocalBox;                                         // 0x0020(0x001C) ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bEnableCollision;                                        // 0x003C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSectionVisible;                                         // 0x003D(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RRY6[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_AFGX[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (PADDING)
 	};
 
 }

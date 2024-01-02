@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UMovieSceneCaptureProtocolBase::IsCapturing()
 	{
@@ -25,7 +25,6 @@ namespace CG
 		UMovieSceneCaptureProtocolBase_IsCapturing_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,11 +33,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0199D4C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
-	MovieSceneCapture_EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState()
+	EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -47,7 +46,6 @@ namespace CG
 		UMovieSceneCaptureProtocolBase_GetState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -56,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneCaptureProtocolBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneCaptureProtocolBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneCaptureProtocolBase::StaticClass()
@@ -70,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneAudioCaptureProtocolBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneAudioCaptureProtocolBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneAudioCaptureProtocolBase::StaticClass()
@@ -84,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UNullAudioCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UNullAudioCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UNullAudioCaptureProtocol::StaticClass()
@@ -98,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMasterAudioSubmixCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMasterAudioSubmixCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMasterAudioSubmixCaptureProtocol::StaticClass()
@@ -112,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneImageCaptureProtocolBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneImageCaptureProtocolBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneImageCaptureProtocolBase::StaticClass()
@@ -126,8 +124,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCompositionGraphCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCompositionGraphCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCompositionGraphCaptureProtocol::StaticClass()
@@ -140,8 +138,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFrameGrabberProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFrameGrabberProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFrameGrabberProtocol::StaticClass()
@@ -154,8 +152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImageSequenceProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImageSequenceProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImageSequenceProtocol::StaticClass()
@@ -168,8 +166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCompressedImageSequenceProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCompressedImageSequenceProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCompressedImageSequenceProtocol::StaticClass()
@@ -182,8 +180,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImageSequenceProtocol_BMP.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImageSequenceProtocol_BMP.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImageSequenceProtocol_BMP::StaticClass()
@@ -196,8 +194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImageSequenceProtocol_PNG.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImageSequenceProtocol_PNG.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImageSequenceProtocol_PNG::StaticClass()
@@ -210,8 +208,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImageSequenceProtocol_JPG.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImageSequenceProtocol_JPG.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImageSequenceProtocol_JPG::StaticClass()
@@ -224,8 +222,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UImageSequenceProtocol_EXR.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UImageSequenceProtocol_EXR.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UImageSequenceProtocol_EXR::StaticClass()
@@ -238,8 +236,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneCaptureInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneCaptureInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneCaptureInterface::StaticClass()
@@ -252,9 +250,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A370
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      ProtocolType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -268,16 +266,15 @@ namespace CG
 		params.ProtocolType = ProtocolType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A2F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      ProtocolType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -291,16 +288,15 @@ namespace CG
 		params.ProtocolType = ProtocolType;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A030
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetImageCaptureProtocol()
 	{
@@ -311,7 +307,6 @@ namespace CG
 		UMovieSceneCapture_GetImageCaptureProtocol_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -320,9 +315,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69F90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetAudioCaptureProtocol()
 	{
@@ -333,7 +328,6 @@ namespace CG
 		UMovieSceneCapture_GetAudioCaptureProtocol_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -342,8 +336,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneCapture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneCapture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneCapture::StaticClass()
@@ -356,8 +350,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULevelCapture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULevelCapture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULevelCapture::StaticClass()
@@ -370,11 +364,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.IsCaptureInProgress
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UMovieSceneCaptureEnvironment::STATIC_IsCaptureInProgress()
+	bool UMovieSceneCaptureEnvironment::IsCaptureInProgress()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -383,7 +377,6 @@ namespace CG
 		UMovieSceneCaptureEnvironment_IsCaptureInProgress_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -392,11 +385,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69FE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	int32_t UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
+	int32_t UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -405,7 +398,6 @@ namespace CG
 		UMovieSceneCaptureEnvironment_GetCaptureFrameNumber_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -414,11 +406,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69FB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	float UMovieSceneCaptureEnvironment::STATIC_GetCaptureElapsedTime()
+	float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -427,7 +419,6 @@ namespace CG
 		UMovieSceneCaptureEnvironment_GetCaptureElapsedTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -436,11 +427,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69BE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindImageCaptureProtocol
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::STATIC_FindImageCaptureProtocol()
+	class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindImageCaptureProtocol()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -449,7 +440,6 @@ namespace CG
 		UMovieSceneCaptureEnvironment_FindImageCaptureProtocol_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -458,11 +448,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69BB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindAudioCaptureProtocol
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::STATIC_FindAudioCaptureProtocol()
+	class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindAudioCaptureProtocol()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -471,7 +461,6 @@ namespace CG
 		UMovieSceneCaptureEnvironment_FindAudioCaptureProtocol_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -480,8 +469,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMovieSceneCaptureEnvironment.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMovieSceneCaptureEnvironment.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMovieSceneCaptureEnvironment::StaticClass()
@@ -494,9 +483,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A580
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::StopCapturingFinalPixels()
 	{
@@ -507,16 +496,15 @@ namespace CG
 		UUserDefinedCaptureProtocol_StopCapturingFinalPixels_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A3F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FCapturedPixelsID                           StreamID                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -530,16 +518,15 @@ namespace CG
 		params.StreamID = StreamID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A120
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UTexture*                                    Buffer                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCapturedPixelsID                           BufferID                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -555,16 +542,15 @@ namespace CG
 		params.BufferID = BufferID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnWarmUp()
 	{
@@ -581,9 +567,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnTick()
 	{
@@ -600,9 +586,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnStartCapture()
 	{
@@ -619,9 +605,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A0F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	bool UUserDefinedCaptureProtocol::OnSetup()
 	{
@@ -632,7 +618,6 @@ namespace CG
 		UUserDefinedCaptureProtocol_OnSetup_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -641,9 +626,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnPreTick()
 	{
@@ -660,9 +645,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived
-	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FCapturedPixels                             Pixels                                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FCapturedPixelsID                           ID                                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -686,9 +671,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnPauseCapture()
 	{
@@ -705,9 +690,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnFinalize()
 	{
@@ -724,9 +709,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnCaptureFrame()
 	{
@@ -743,9 +728,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A0C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UUserDefinedCaptureProtocol::OnCanFinalize()
 	{
@@ -756,7 +741,6 @@ namespace CG
 		UUserDefinedCaptureProtocol_OnCanFinalize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -765,9 +749,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UUserDefinedCaptureProtocol::OnBeginFinalize()
 	{
@@ -784,9 +768,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A010
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics()
 	{
@@ -797,7 +781,6 @@ namespace CG
 		UUserDefinedCaptureProtocol_GetCurrentFrameMetrics_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -806,9 +789,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69C10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename
-	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FFrameMetrics                               InFrameMetrics                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -822,7 +805,6 @@ namespace CG
 		params.InFrameMetrics = InFrameMetrics;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -831,8 +813,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UUserDefinedCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UUserDefinedCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UUserDefinedCaptureProtocol::StaticClass()
@@ -845,9 +827,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F6A5A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FCapturedPixels                             PixelData                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FCapturedPixelsID                           StreamID                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -867,16 +849,15 @@ namespace CG
 		params.bCopyImageData = bCopyImageData;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69F10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame()
 	{
@@ -887,7 +868,6 @@ namespace CG
 		UUserDefinedImageCaptureProtocol_GenerateFilenameForCurrentFrame_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -896,9 +876,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01F69D00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UTexture*                                    Buffer                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCapturedPixelsID                           StreamID                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -914,7 +894,6 @@ namespace CG
 		params.StreamID = StreamID;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -923,8 +902,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UUserDefinedImageCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UUserDefinedImageCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UUserDefinedImageCaptureProtocol::StaticClass()
@@ -937,8 +916,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UVideoCaptureProtocol.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UVideoCaptureProtocol.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UVideoCaptureProtocol::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,12 +27,14 @@ namespace CG
 		class FScriptMulticastDelegate                             OnCanActivate;                                           // 0x02B8(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
+		void SetActivationStateOfAllActivators(EActivatableState NewParam);
+		void CheckAllActivatorsOff(bool* AllOff, int32_t* Count);
 		void GetNumberActivated(int32_t* NumberActivated);
 		void CheckAllActivatorsOn(bool* AllOn, int32_t* Count);
 		void ReceiveBeginPlay();
 		void ActivateObject(class AActor* Activator);
 		void DeactivateObject(class AActor* Deactivator);
-		void Deactivate_Inputs();
+		void DeactivateInputs();
 		void ExecuteUbergraph_MultiInputActivator(int32_t EntryPoint);
 		void OnCanActivate__DelegateSignature(int32_t Count, class AActor* Activator);
 		void OnCantActivate__DelegateSignature(int32_t Count, class AActor* Activator);

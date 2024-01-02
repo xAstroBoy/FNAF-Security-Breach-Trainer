@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,28 +17,28 @@ namespace CG
 	/**
 	 * Enum MagicLeapPlanes.EMagicLeapPlaneQueryFlags
 	 */
-	enum class MagicLeapPlanes_EMagicLeapPlaneQueryFlags : uint8_t
+	enum class EMagicLeapPlaneQueryFlags : uint8_t
 	{
-		EMagicLeapPlaneQueryFlags__Vertical                      = 0,
-		EMagicLeapPlaneQueryFlags__Horizontal                    = 1,
-		EMagicLeapPlaneQueryFlags__Arbitrary                     = 2,
-		EMagicLeapPlaneQueryFlags__OrientToGravity               = 3,
-		EMagicLeapPlaneQueryFlags__PreferInner                   = 4,
-		EMagicLeapPlaneQueryFlags__Ceiling                       = 5,
-		EMagicLeapPlaneQueryFlags__Floor                         = 6,
-		EMagicLeapPlaneQueryFlags__Wall                          = 7,
-		EMagicLeapPlaneQueryFlags__Polygons                      = 8,
-		EMagicLeapPlaneQueryFlags__EMagicLeapPlaneQueryFlags_MAX = 9
+		Vertical        = 0,
+		Horizontal      = 1,
+		Arbitrary       = 2,
+		OrientToGravity = 3,
+		PreferInner     = 4,
+		Ceiling         = 5,
+		Floor           = 6,
+		Wall            = 7,
+		Polygons        = 8,
+		MAX             = 9
 	};
 
 	/**
 	 * Enum MagicLeapPlanes.EMagicLeapPlaneQueryType
 	 */
-	enum class MagicLeapPlanes_EMagicLeapPlaneQueryType : uint8_t
+	enum class EMagicLeapPlaneQueryType : uint8_t
 	{
-		EMagicLeapPlaneQueryType__Bulk                         = 0,
-		EMagicLeapPlaneQueryType__Delta                        = 1,
-		EMagicLeapPlaneQueryType__EMagicLeapPlaneQueryType_MAX = 2
+		Bulk  = 0,
+		Delta = 1,
+		MAX   = 2
 	};
 
 	// --------------------------------------------------
@@ -51,8 +51,7 @@ namespace CG
 	struct FMagicLeapPolygon
 	{
 	public:
-		TArray<struct FVector>                                     Vertices;                                                // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FVector>                                     Vertices;                                                // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -63,8 +62,7 @@ namespace CG
 	{
 	public:
 		struct FMagicLeapPolygon                                   Polygon;                                                 // 0x0000(0x0010) Edit, BlueprintVisible, NativeAccessSpecifierPublic
-		TArray<struct FMagicLeapPolygon>                           Holes;                                                   // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FMagicLeapPolygon>                           Holes;                                                   // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -75,8 +73,7 @@ namespace CG
 	{
 	public:
 		struct FGuid                                               ID;                                                      // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FMagicLeapPlaneBoundary>                     Boundaries;                                              // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FMagicLeapPlaneBoundary>                     Boundaries;                                              // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -90,11 +87,10 @@ namespace CG
 		struct FRotator                                            PlaneOrientation;                                        // 0x000C(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FRotator                                            ContentOrientation;                                      // 0x0018(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector2D                                           PlaneDimensions;                                         // 0x0024(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_CIPE[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>          PlaneFlags;                                              // 0x0030(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_YYXY[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<EMagicLeapPlaneQueryFlags>                          PlaneFlags;                                              // 0x0030(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 		struct FGuid                                               ID;                                                      // 0x0040(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FGuid                                               InnerID;                                                 // 0x0050(0x0010) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -104,7 +100,7 @@ namespace CG
 	struct FMagicLeapPlanesQuery
 	{
 	public:
-		TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>          Flags;                                                   // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<EMagicLeapPlaneQueryFlags>                          Flags;                                                   // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 		class UBoxComponent*                                       SearchVolume;                                            // 0x0010(0x0008) Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    MaxResults;                                              // 0x0018(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MinHoleLength;                                           // 0x001C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -115,8 +111,7 @@ namespace CG
 		float                                                      SimilarityThreshold;                                     // 0x004C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSearchVolumeTrackingSpace;                              // 0x0050(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bResultTrackingSpace;                                    // 0x0051(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3XCV[0xE];                                   // 0x0052(0x000E) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_46H6[0xE];                                   // 0x0052(0x000E) MISSED OFFSET (PADDING)
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,39 +15,22 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Finished_D0CEEEA149A8A35D1658658D2797BF05
+	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Construct
 	 */
-	struct UWI_Gregory_Flashlight_C_Finished_D0CEEEA149A8A35D1658658D2797BF05_Params
-	{
-	};
-
-	/**
-	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowDeadFlashlightWarning
-	 */
-	struct UWI_Gregory_Flashlight_C_ShowDeadFlashlightWarning_Params
-	{
-	};
-
-	/**
-	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.PickedUpFlashlight
-	 */
-	struct UWI_Gregory_Flashlight_C_PickedUpFlashlight_Params
-	{
-	};
+	struct UWI_Gregory_Flashlight_C_Construct_Params
+	{	};
 
 	/**
 	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ShowPowerLevel
 	 */
 	struct UWI_Gregory_Flashlight_C_ShowPowerLevel_Params
-	{
-	};
+	{	};
 
 	/**
-	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.Construct
+	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.FadeOutBatteryImage
 	 */
-	struct UWI_Gregory_Flashlight_C_Construct_Params
-	{
-	};
+	struct UWI_Gregory_Flashlight_C_FadeOutBatteryImage_Params
+	{	};
 
 	/**
 	 * Function WI_Gregory_Flashlight.WI_Gregory_Flashlight_C.ExecuteUbergraph_WI_Gregory_Flashlight
@@ -56,7 +39,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -66,7 +48,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PowerLevel;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

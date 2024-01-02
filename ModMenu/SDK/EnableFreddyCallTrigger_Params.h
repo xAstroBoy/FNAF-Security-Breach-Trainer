@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function EnableFreddyCallTrigger.EnableFreddyCallTrigger_C.OnTriggered
 	 */
 	struct AEnableFreddyCallTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function EnableFreddyCallTrigger.EnableFreddyCallTrigger_C.ReceiveBeginPlay
 	 */
 	struct AEnableFreddyCallTrigger_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function EnableFreddyCallTrigger.EnableFreddyCallTrigger_C.ExecuteUbergraph_EnableFreddyCallTrigger
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

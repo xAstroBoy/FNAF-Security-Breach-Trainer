@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,17 +20,15 @@ namespace CG
 	struct UCustomMeshComponent_SetCustomMeshTriangles_Params
 	{
 	public:
-		TArray<struct FCustomMeshTriangle>                         Triangles;                                               // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		TArray<struct FCustomMeshTriangle>                         Triangles;                                               // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
 	 */
 	struct UCustomMeshComponent_ClearCustomMeshTriangles_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
@@ -38,8 +36,7 @@ namespace CG
 	struct UCustomMeshComponent_AddCustomMeshTriangles_Params
 	{
 	public:
-		TArray<struct FCustomMeshTriangle>                         Triangles;                                               // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FCustomMeshTriangle>                         Triangles;                                               // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 }

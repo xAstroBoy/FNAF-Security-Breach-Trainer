@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,11 +25,12 @@ namespace CG
 		struct FVector                                             LocationOffset;                                          // 0x0040(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FRotator                                            RotationOffset;                                          // 0x004C(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             Scale;                                                   // 0x0058(0x000C) Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8SFQ[0x1C];                                  // 0x0064(0x001C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              Attached : 1;                                            // 0x0080(0x0001) BIT_FIELD Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TFDU[0x3];                                   // 0x0081(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       bAbsoluteScale;                                          // 0x0064(0x0001) Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_UZYG[0x1B];                                  // 0x0065(0x001B) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       Attached : 1;                                            // 0x0080(0x0001) BIT_FIELD Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_OFAA[0x3];                                   // 0x0081(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                SocketName;                                              // 0x0084(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1JVO[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SE71[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		class UFXSystemComponent* GetSpawnedEffect();
@@ -48,9 +49,24 @@ namespace CG
 		struct FVector                                             LocationOffset;                                          // 0x0040(0x000C) Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FRotator                                            RotationOffset;                                          // 0x004C(0x000C) Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bDestroyAtEnd;                                           // 0x0058(0x0001) Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PBMK[0x7];                                   // 0x0059(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XL84[0x7];                                   // 0x0059(0x0007) MISSED OFFSET (PADDING)
 
 	public:
+		class UFXSystemComponent* GetSpawnedEffect(class UMeshComponent* MeshComp);
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced
+	 * Size -> 0x0050 (FullSize[0x00B0] - InheritedSize[0x0060])
+	 */
+	class UAnimNotifyState_TimedNiagaraEffectAdvanced : public UAnimNotifyState_TimedNiagaraEffect
+	{
+	public:
+		unsigned char                                              UnknownData_4C96[0x50];                                  // 0x0060(0x0050) MISSED OFFSET (PADDING)
+
+	public:
+		float GetNotifyProgress(class UMeshComponent* MeshComp);
 		static UClass* StaticClass();
 	};
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		struct FBlackboardKeySelector                              CurrentBackstageDoor;                                    // 0x00B0(0x0028) Edit, BlueprintVisible
 		struct FBlackboardKeySelector                              PathBlockedBB;                                           // 0x00D8(0x0028) Edit, BlueprintVisible
 		bool                                                       CanDrainPower;                                           // 0x0100(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       Force_Stop;                                              // 0x0101(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       ForceStop;                                               // 0x0101(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void GetDoorManager(class ABP_DoorMaster_C** Door);

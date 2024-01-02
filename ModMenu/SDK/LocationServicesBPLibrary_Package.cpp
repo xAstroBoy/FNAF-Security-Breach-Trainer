@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBDB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StopLocationServices
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool ULocationServices::STATIC_StopLocationServices()
+	bool ULocationServices::StopLocationServices()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -25,7 +25,6 @@ namespace CG
 		ULocationServices_StopLocationServices_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -34,11 +33,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBD80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StartLocationServices
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool ULocationServices::STATIC_StartLocationServices()
+	bool ULocationServices::StartLocationServices()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -47,7 +46,6 @@ namespace CG
 		ULocationServices_StartLocationServices_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -56,13 +54,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBD00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		LocationServicesBPLibrary_ELocationAccuracy        Accuracy                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ELocationAccuracy                                  Accuracy                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool ULocationServices::STATIC_IsLocationAccuracyAvailable(LocationServicesBPLibrary_ELocationAccuracy Accuracy)
+	bool ULocationServices::IsLocationAccuracyAvailable(ELocationAccuracy Accuracy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -72,7 +70,6 @@ namespace CG
 		params.Accuracy = Accuracy;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -81,15 +78,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBC00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.InitLocationServices
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		LocationServicesBPLibrary_ELocationAccuracy        Accuracy                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ELocationAccuracy                                  Accuracy                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              UpdateFrequency                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MinDistanceFilter                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool ULocationServices::STATIC_InitLocationServices(LocationServicesBPLibrary_ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter)
+	bool ULocationServices::InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -101,7 +98,6 @@ namespace CG
 		params.MinDistanceFilter = MinDistanceFilter;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -110,11 +106,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBBE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class ULocationServicesImpl* ULocationServices::STATIC_GetLocationServicesImpl()
+	class ULocationServicesImpl* ULocationServices::GetLocationServicesImpl()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -123,7 +119,6 @@ namespace CG
 		ULocationServices_GetLocationServicesImpl_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -132,11 +127,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBBA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	struct FLocationServicesData ULocationServices::STATIC_GetLastKnownLocation()
+	struct FLocationServicesData ULocationServices::GetLastKnownLocation()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -145,7 +140,6 @@ namespace CG
 		ULocationServices_GetLastKnownLocation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -154,11 +148,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AFBB70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool ULocationServices::STATIC_AreLocationServicesEnabled()
+	bool ULocationServices::AreLocationServicesEnabled()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -167,7 +161,6 @@ namespace CG
 		ULocationServices_AreLocationServicesEnabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -176,8 +169,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULocationServices.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULocationServices.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULocationServices::StaticClass()
@@ -190,8 +183,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULocationServicesImpl.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULocationServicesImpl.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULocationServicesImpl::StaticClass()

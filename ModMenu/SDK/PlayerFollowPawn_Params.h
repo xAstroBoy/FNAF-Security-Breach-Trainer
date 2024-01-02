@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -11,6 +11,18 @@
 
 namespace CG
 {
+	// --------------------------------------------------
+	// # Structs
+	// --------------------------------------------------
+	/**
+	 * Function PlayerFollowPawn.PlayerFollowPawn_C.GetLevelStreamViewpoint
+	 */
+	struct APlayerFollowPawn_C_GetLevelStreamViewpoint_Params
+	{
+	public:
+		class ULevelStreamViewpoint*                               ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
 }
 
 #ifdef _MSC_VER

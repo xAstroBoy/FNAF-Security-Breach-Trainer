@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,15 +26,15 @@ namespace CG
 		unsigned char                                              DoorActors[0x10];                                        // 0x0238(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		int32_t                                                    SettingSecurity;                                         // 0x0248(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                SettingNewItem;                                          // 0x024C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_Z6TL[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2F96[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnDoorsOpened;                                           // 0x0258(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		unsigned char                                              DoorsNeedingUpdate[0x50];                                // 0x0268(0x0050) UNKNOWN PROPERTY: SetProperty
 		bool                                                       LockState;                                               // 0x02B8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void CanDeactivate(bool* CanDeactivate);
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		bool HasDoorInitialized();
 		bool IsDoorLockedForPlayer();
 		bool IsDoorOpen();
@@ -46,22 +46,22 @@ namespace CG
 		void SetActivated();
 		void DeactivateObject(class AActor* Deactivator);
 		void SetDeactivated();
-		void SetDoorLockAI(bool Lock);
 		void ForceDoorOpen();
 		void ForceDoorClose();
-		void Lock_Door_On_Loaded(class AActor* LoadedActor);
-		void Unlock_Door_On_Loaded(class AActor* LoadedActor);
-		void Open_Door_On_Loaded(class AActor* LoadedActor);
-		void Close_Door_On_Loaded(class AActor* LoadedActor);
+		void LockDoorOnLoaded(class AActor* LoadedActor);
+		void UnlockDoorOnLoaded(class AActor* LoadedActor);
+		void OpenDoorOnLoaded(class AActor* LoadedActor);
+		void CloseDoorOnLoaded(class AActor* LoadedActor);
 		void SetDoorLockPlayer(bool Lock);
 		void SetSecurityLevel(int32_t NewSecurityLevel);
 		void SetDoorRequiredItem(const class FName& ItemName);
-		void Set_Security_On_Loaded(class AActor* LoadedActor);
-		void Set_Item_On_Loaded(class AActor* LoadedActor);
+		void SetSecurityOnLoaded(class AActor* LoadedActor);
+		void SetItemOnLoaded(class AActor* LoadedActor);
 		void ActivateObject(class AActor* Activator);
 		void ReceiveBeginPlay();
-		void Door_Destroy_Setup(class AActor* LoadedActor);
-		void On_Door_Destroyed(class AActor* Actor, Engine_EEndPlayReason EndPlayReason);
+		void DoorDestroySetup(class AActor* LoadedActor);
+		void OnDoorDestroyed(class AActor* Actor, EEndPlayReason EndPlayReason);
+		void SetDoorLockAI(bool Lock);
 		void ExecuteUbergraph_DoorManager(int32_t EntryPoint);
 		void OnDoorsOpened__DelegateSignature();
 		static UClass* StaticClass();

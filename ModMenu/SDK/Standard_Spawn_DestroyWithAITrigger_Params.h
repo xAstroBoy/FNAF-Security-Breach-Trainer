@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function Standard_Spawn_DestroyWithAITrigger.Standard_Spawn_DestroyWithAITrigger_C.OnTriggered
 	 */
 	struct AStandard_Spawn_DestroyWithAITrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Standard_Spawn_DestroyWithAITrigger.Standard_Spawn_DestroyWithAITrigger_C.OnAIAlerted
@@ -29,7 +28,6 @@ namespace CG
 	public:
 		class FName                                                Alert;                                                   // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FVector                                             Location;                                                // 0x0008(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -39,7 +37,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

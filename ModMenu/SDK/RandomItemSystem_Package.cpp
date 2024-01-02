@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,65 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC7170
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RandomItemSystem.RandomItemGroup.GetNumLocations
+	 * 		Flags  -> ()
+	 */
+	int32_t ARandomItemGroup::GetNumLocations()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RandomItemSystem.RandomItemGroup.GetNumLocations");
+		
+		ARandomItemGroup_GetNumLocations_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RandomItemSystem.RandomItemGroup.GetItemDisplayInformation
+	 * 		Flags  -> ()
+	 */
+	class FString ARandomItemGroup::GetItemDisplayInformation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RandomItemSystem.RandomItemGroup.GetItemDisplayInformation");
+		
+		ARandomItemGroup_GetItemDisplayInformation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ARandomItemGroup.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ARandomItemGroup::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class RandomItemSystem.RandomItemGroup");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.SetupItem
-	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARandomItemGroup*                            ItemGroup                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRandomStream                               RandomStream                                               (Parm, OutParm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
@@ -29,7 +85,6 @@ namespace CG
 		params.ItemGroup = ItemGroup;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -39,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC7090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.Randomize
-	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      RandomItemCls                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRandomStream                               RandomStream                                               (Parm, OutParm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
@@ -56,7 +111,6 @@ namespace CG
 		params.RandomItemCls = RandomItemCls;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -66,15 +120,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC6F70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RandomItemSystem.ItemRandomizer.PickRandomLocationFromGroup
-	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARandomItemGroup*                            Group                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRandomStream                               RandomStream                                               (Parm, OutParm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		struct FVector                                     OutLocation                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            OutLocationIndex                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void AItemRandomizer::PickRandomLocationFromGroup(class ARandomItemGroup* Group, struct FRandomStream* RandomStream, struct FVector* OutLocation)
+	void AItemRandomizer::PickRandomLocationFromGroup(class ARandomItemGroup* Group, struct FRandomStream* RandomStream, int32_t* OutLocationIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,20 +138,19 @@ namespace CG
 		params.Group = Group;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
 		if (RandomStream != nullptr)
 			*RandomStream = params.RandomStream;
-		if (OutLocation != nullptr)
-			*OutLocation = params.OutLocation;
+		if (OutLocationIndex != nullptr)
+			*OutLocationIndex = params.OutLocationIndex;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AItemRandomizer.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AItemRandomizer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AItemRandomizer::StaticClass()
@@ -110,20 +163,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC73D0
-	 * 		Name   -> Function RandomItemSystem.RandomItemGroup.GetItemDisplayInformation
-	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RandomItemSystem.RandomItemGroupWithLocations.GetPossibleLocations
+	 * 		Flags  -> ()
 	 */
-	class FString ARandomItemGroup::GetItemDisplayInformation()
+	TArray<struct FVector> ARandomItemGroupWithLocations::GetPossibleLocations()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RandomItemSystem.RandomItemGroup.GetItemDisplayInformation");
+			fn = UObject::FindObject<UFunction>("Function RandomItemSystem.RandomItemGroupWithLocations.GetPossibleLocations");
 		
-		ARandomItemGroup_GetItemDisplayInformation_Params params {};
+		ARandomItemGroupWithLocations_GetPossibleLocations_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -132,15 +184,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ARandomItemGroup.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ARandomItemGroupWithLocations.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
-	UClass* ARandomItemGroup::StaticClass()
+	UClass* ARandomItemGroupWithLocations::StaticClass()
 	{
 		static UClass* ptr = nullptr;
 		if (!ptr)
-			ptr = UObject::FindClass("Class RandomItemSystem.RandomItemGroup");
+			ptr = UObject::FindClass("Class RandomItemSystem.RandomItemGroupWithLocations");
 		return ptr;
 	}
 

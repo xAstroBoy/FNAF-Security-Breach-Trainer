@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_9
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_8
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C* PlanarReflection2                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ABP_PlanarReflectionsShowOnlyFreddyGregory_C* PlanarReflection2                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_9(class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C* PlanarReflection2)
+	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_8(class ABP_PlanarReflectionsShowOnlyFreddyGregory_C* PlanarReflection2)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_9");
+			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_8");
 		
-		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_9_Params params {};
+		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_8_Params params {};
 		params.PlanarReflection2 = PlanarReflection2;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,31 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_8
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_8(class ASequencerVO_C* SequencerVO)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_8");
-		
-		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_8_Params params {};
-		params.SequencerVO = SequencerVO;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_7
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -78,9 +56,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_6
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -100,20 +78,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_5
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class ACineCameraActor*                            CineCameraActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_5(class ACineCameraActor* CineCameraActor)
+	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_5(class ASequencerVO_C* SequencerVO)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_5");
 		
 		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_5_Params params {};
-		params.CineCameraActor = CineCameraActor;
+		params.SequencerVO = SequencerVO;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -122,9 +100,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_4
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACineCameraActor*                            CineCameraActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -144,19 +122,41 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_3
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class AFreddyEnterExitPawn_C*                      FreddyEnterExitPawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ACineCameraActor*                            CineCameraActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class AFreddyEnterExitPawn_C* FreddyEnterExitPawn)
+	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class ACineCameraActor* CineCameraActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_3");
 		
 		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3_Params params {};
+		params.CineCameraActor = CineCameraActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AFreddyEnterExitPawn_C*                      FreddyEnterExitPawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class AFreddyEnterExitPawn_C* FreddyEnterExitPawn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2");
+		
+		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2_Params params {};
 		params.FreddyEnterExitPawn = FreddyEnterExitPawn;
 		
 		auto flags = fn->FunctionFlags;
@@ -166,19 +166,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_1
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACinematic_Actor_Freddy_C*                   Cinematic_Actor_Freddy                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class ACinematic_Actor_Freddy_C* Cinematic_Actor_Freddy)
+	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class ACinematic_Actor_Freddy_C* Cinematic_Actor_Freddy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2");
+			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_1");
 		
-		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2_Params params {};
+		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1_Params params {};
 		params.Cinematic_Actor_Freddy = Cinematic_Actor_Freddy;
 		
 		auto flags = fn->FunctionFlags;
@@ -188,53 +188,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_1
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class ACinematic_TargetActor_C*                    Cinematic_TargetActor                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class ACinematic_TargetActor_C* Cinematic_TargetActor)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_1");
-		
-		USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1_Params params {};
-		params.Cinematic_TargetActor = Cinematic_TargetActor;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.Cinematic_TargetActor_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class ACinematic_TargetActor_C*                    Cinematic_TargetActor                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void USequenceDirector_C::Cinematic_TargetActor_Event_1(class ACinematic_TargetActor_C* Cinematic_TargetActor)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MedScan_Sequence.SequenceDirector_C.Cinematic_TargetActor_Event_1");
-		
-		USequenceDirector_C_Cinematic_TargetActor_Event_1_Params params {};
-		params.Cinematic_TargetActor = Cinematic_TargetActor;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.Cinematic_Actor_Freddy_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACinematic_Actor_Freddy_C*                   Cinematic_Actor_Freddy                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -254,9 +210,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.FreddyEnterExitPawn_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AFreddyEnterExitPawn_C*                      FreddyEnterExitPawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -276,9 +232,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.CineCameraActor_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACineCameraActor*                            CineCameraActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -298,9 +254,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.CineCameraActor_Event_2
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACineCameraActor*                            CineCameraActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -320,9 +276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequencerVO_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAkAudioEvent*                               VO                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -348,9 +304,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequencerVO_Event_2
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAkAudioEvent*                               VO                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -376,13 +332,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.PlanarReflection2_Event_1
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C* PlanarReflection2                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ABP_PlanarReflectionsShowOnlyFreddyGregory_C* PlanarReflection2                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USequenceDirector_C::PlanarReflection2_Event_1(class ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C* PlanarReflection2)
+	void USequenceDirector_C::PlanarReflection2_Event_1(class ABP_PlanarReflectionsShowOnlyFreddyGregory_C* PlanarReflection2)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -398,9 +354,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.SequencerVO_Event_3
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASequencerVO_C*                              SequencerVO                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAkAudioEvent*                               VO                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -428,9 +384,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MedScan_Sequence.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -450,8 +406,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USequenceDirector_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USequenceDirector_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USequenceDirector_C::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,45 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnPreviewKeyDown
+	 */
+	struct UWI_ButtonRemapping_C_OnPreviewKeyDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+		struct FKeyEvent                                           InKeyEvent;                                              // 0x0038(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm)
+		struct FEventReply                                         ReturnValue;                                             // 0x0070(0x00B8)  (Parm, OutParm, ReturnParm)
+	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.RemoveAxisMapping
+	 */
+	struct UWI_ButtonRemapping_C_RemoveAxisMapping_Params
+	{
+	public:
+		class FName                                                KeyName;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindAxis
+	 */
+	struct UWI_ButtonRemapping_C_RebindAxis_Params
+	{
+	public:
+		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+		class FName                                                KeyName;                                                 // 0x0018(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.CheckIfInUse
 	 */
 	struct UWI_ButtonRemapping_C_CheckIfInUse_Params
 	{
 	public:
-		struct FKey                                                KeyToCheck;                                              // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
+		struct FInputChord                                         InputChord;                                              // 0x0000(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+		bool                                                       KeyInUse;                                                // 0x0020(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_4W1S[0x3];                                   // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FName                                                ActionNameInUse;                                         // 0x0024(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -33,7 +65,6 @@ namespace CG
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		struct FFocusEvent                                         InFocusEvent;                                            // 0x0038(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 		struct FEventReply                                         ReturnValue;                                             // 0x0040(0x00B8)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
@@ -43,15 +74,13 @@ namespace CG
 	{
 	public:
 		class UOptions_ControlsUI_C*                               ControlsUI;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.Brush Style
 	 */
-	struct UWI_ButtonRemapping_C_Brush_Style_Params
-	{
-	};
+	struct UWI_ButtonRemapping_C_BrushStyle_Params
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIcon
@@ -61,8 +90,8 @@ namespace CG
 	public:
 		bool                                                       Gamepad;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       Key1;                                                    // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_2ZNV[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FKey                                                NewKey;                                                  // 0x0008(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -72,17 +101,6 @@ namespace CG
 	{
 	public:
 		class URichTextBlock*                                      RichText_Key;                                            // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature
-	 */
-	struct UWI_ButtonRemapping_C_BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature_Params
-	{
-	public:
-		struct FInputChord                                         SelectedKey;                                             // 0x0000(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -92,17 +110,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController
-	 */
-	struct UWI_ButtonRemapping_C_UpdateIconsFromSaved_BasedOnController_Params
-	{
-	public:
-		bool                                                       bIsUsingGamepad;                                         // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -113,22 +120,19 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_K2Node_ComponentBoundEvent_0_OnIsSelectingKeyChanged__DelegateSignature
 	 */
 	struct UWI_ButtonRemapping_C_BndEvt__InputKeySelector_K2Node_ComponentBoundEvent_0_OnIsSelectingKeyChanged__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ResetToDefaultKeys
 	 */
 	struct UWI_ButtonRemapping_C_ResetToDefaultKeys_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature
@@ -137,38 +141,42 @@ namespace CG
 	{
 	public:
 		struct FInputChord                                         SelectedKey;                                             // 0x0000(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_3_OnIsSelectingKeyChanged__DelegateSignature
 	 */
 	struct UWI_ButtonRemapping_C_BndEvt__InputKeySelector_Key2_K2Node_ComponentBoundEvent_3_OnIsSelectingKeyChanged__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
-	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature
 	 */
-	struct UWI_ButtonRemapping_C_OnFocusLost_Params
+	struct UWI_ButtonRemapping_C_BndEvt__WalkForward_BindButton_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature_Params
 	{
 	public:
-		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
+		struct FInputChord                                         SelectedKey;                                             // 0x0000(0x0020)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.Revert_ChangesNotSaved
 	 */
 	struct UWI_ButtonRemapping_C_Revert_ChangesNotSaved_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.SaveMappingsToInstance
 	 */
 	struct UWI_ButtonRemapping_C_SaveMappingsToInstance_Params
+	{	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ToggleIsRemapping
+	 */
+	struct UWI_ButtonRemapping_C_ToggleIsRemapping_Params
 	{
+	public:
+		bool                                                       CurrentlyRemappingButton;                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -178,15 +186,13 @@ namespace CG
 	{
 	public:
 		bool                                                       HideKey1;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateFnafInstanceMappings
 	 */
 	struct UWI_ButtonRemapping_C_UpdateFnafInstanceMappings_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.RemoveSpecificBindings
@@ -195,15 +201,73 @@ namespace CG
 	{
 	public:
 		struct FKey                                                KeyToRemove;                                             // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ReapplyPreviousMappings
 	 */
 	struct UWI_ButtonRemapping_C_ReapplyPreviousMappings_Params
+	{	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingConfirmed
+	 */
+	struct UWI_ButtonRemapping_C_RebindingConfirmed_Params
+	{	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.UpdateIconsFromSaved_BasedOnController
+	 */
+	struct UWI_ButtonRemapping_C_UpdateIconsFromSaved_BasedOnController_Params
 	{
+	public:
+		bool                                                       bIsUsingGamepad;                                         // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnRemovedFromFocusPath
+	 */
+	struct UWI_ButtonRemapping_C_OnRemovedFromFocusPath_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnAddedToFocusPath
+	 */
+	struct UWI_ButtonRemapping_C_OnAddedToFocusPath_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnFocusLost
+	 */
+	struct UWI_ButtonRemapping_C_OnFocusLost_Params
+	{
+	public:
+		struct FFocusEvent                                         InFocusEvent;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BoundUpdateTrigger_ControllerType
+	 */
+	struct UWI_ButtonRemapping_C_BoundUpdateTrigger_ControllerType_Params
+	{	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature
+	 */
+	struct UWI_ButtonRemapping_C_BndEvt__WI_ButtonRemapping_EntireWidgetButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature_Params
+	{	};
+
+	/**
+	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.RebindingCanceled
+	 */
+	struct UWI_ButtonRemapping_C_RebindingCanceled_Params
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.ExecuteUbergraph_WI_ButtonRemapping
@@ -212,22 +276,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnHovered__DelegateSignature
 	 */
 	struct UWI_ButtonRemapping_C_OnHovered__DelegateSignature_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_ButtonRemapping.WI_ButtonRemapping_C.OnClicked__DelegateSignature
 	 */
 	struct UWI_ButtonRemapping_C_OnClicked__DelegateSignature_Params
-	{
-	};
+	{	};
 
 }
 

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,31 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.OverrideHoldToCollectTime
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              HoldToCollectTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerInteractHoldComponent_C::OverrideHoldToCollectTime(float HoldToCollectTime)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.OverrideHoldToCollectTime");
+		
+		UPlayerInteractHoldComponent_C_OverrideHoldToCollectTime_Params params {};
+		params.HoldToCollectTime = HoldToCollectTime;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.IsHolding
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	bool UPlayerInteractHoldComponent_C::IsHolding()
 	{
@@ -33,41 +55,36 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.GetPlayerHUD
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class UPlayerHUD_C*                                PlayerHUD                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Start Hold Timer
+	 * 		Flags  -> ()
 	 */
-	void UPlayerInteractHoldComponent_C::GetPlayerHUD(class UPlayerHUD_C** PlayerHUD)
+	void UPlayerInteractHoldComponent_C::StartHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.GetPlayerHUD");
+			fn = UObject::FindObject<UFunction>("Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Start Hold Timer");
 		
-		UPlayerInteractHoldComponent_C_GetPlayerHUD_Params params {};
+		UPlayerInteractHoldComponent_C_StartHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		if (PlayerHUD != nullptr)
-			*PlayerHUD = params.PlayerHUD;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Stop Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerInteractHoldComponent_C::Stop_Hold_Timer()
+	void UPlayerInteractHoldComponent_C::StopHoldTimer()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Stop Hold Timer");
 		
-		UPlayerInteractHoldComponent_C_Stop_Hold_Timer_Params params {};
+		UPlayerInteractHoldComponent_C_StopHoldTimer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -76,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -98,28 +115,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Start Hold Timer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UPlayerInteractHoldComponent_C::Start_Hold_Timer()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.Start Hold Timer");
-		
-		UPlayerInteractHoldComponent_C_Start_Hold_Timer_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.ExecuteUbergraph_PlayerInteractHoldComponent
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -139,9 +137,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractHoldComponent.PlayerInteractHoldComponent_C.OnHoldCompleted__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerInteractHoldComponent_C::OnHoldCompleted__DelegateSignature()
 	{
@@ -158,8 +156,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlayerInteractHoldComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlayerInteractHoldComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlayerInteractHoldComponent_C::StaticClass()

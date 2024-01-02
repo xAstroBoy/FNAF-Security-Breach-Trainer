@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,17 +17,18 @@ namespace CG
 	/**
 	 * UserDefinedEnum AIVoiceOverType.AIVoiceOverType
 	 */
-	enum class AIVoiceOverType_EAIVoiceOverType : uint8_t
+	enum class EAIVoiceOverType : uint8_t
 	{
-		AIVoiceOverType__NewEnumerator0      = 0,
-		AIVoiceOverType__NewEnumerator1      = 1,
-		AIVoiceOverType__NewEnumerator2      = 2,
-		AIVoiceOverType__NewEnumerator3      = 3,
-		AIVoiceOverType__NewEnumerator4      = 4,
-		AIVoiceOverType__NewEnumerator5      = 5,
-		AIVoiceOverType__NewEnumerator6      = 6,
-		AIVoiceOverType__NewEnumerator7      = 7,
-		AIVoiceOverType__AIVoiceOverType_MAX = 8
+		AIVoiceOverTypeNewEnumerator0      = 0,
+		AIVoiceOverTypeNewEnumerator1      = 1,
+		AIVoiceOverTypeNewEnumerator2      = 2,
+		AIVoiceOverTypeNewEnumerator3      = 3,
+		AIVoiceOverTypeNewEnumerator4      = 4,
+		AIVoiceOverTypeNewEnumerator5      = 5,
+		AIVoiceOverTypeNewEnumerator6      = 6,
+		AIVoiceOverTypeNewEnumerator7      = 7,
+		AIVoiceOverTypeNewEnumerator8      = 8,
+		AIVoiceOverTypeAIVoiceOverType_MAX = 9
 	};
 
 }

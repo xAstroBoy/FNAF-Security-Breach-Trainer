@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -31,15 +30,13 @@ namespace CG
 	{
 	public:
 		float                                                      Time;                                                    // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.FazerblastDestroy_Event
 	 */
 	struct UStaffbotBPInterface_C_FazerblastDestroy_Event_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.AlertEvent
@@ -47,16 +44,14 @@ namespace CG
 	struct UStaffbotBPInterface_C_AlertEvent_Params
 	{
 	public:
-		bool                                                       IsAlerting;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       isAlerting;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.PlayerSpendsPartyPass_Event
 	 */
 	struct UStaffbotBPInterface_C_PlayerSpendsPartyPass_Event_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.PlayerHasPartyPass_Event
@@ -65,7 +60,6 @@ namespace CG
 	{
 	public:
 		bool                                                       HasPartyPass;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -75,7 +69,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsStunned;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -85,7 +78,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Target;                                                  // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -95,7 +87,6 @@ namespace CG
 	{
 	public:
 		struct FVector                                             Target;                                                  // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -104,8 +95,7 @@ namespace CG
 	struct UStaffbotBPInterface_C_R_IK_Arm_Event_Params
 	{
 	public:
-		bool                                                       Is_ON;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       IsOn;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -115,7 +105,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsON;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -125,7 +114,6 @@ namespace CG
 	{
 	public:
 		bool                                                       AimAtPlayer;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -135,23 +123,21 @@ namespace CG
 	{
 	public:
 		bool                                                       DoTask;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_5MOP[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class AStaffbotTaskPlacement_C*                            TargetTask;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.PerformEvent
 	 */
 	struct UStaffbotBPInterface_C_PerformEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.SellEvent
 	 */
 	struct UStaffbotBPInterface_C_SellEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StaffbotBPInterface.StaffbotBPInterface_C.JumpscareEvent
@@ -160,7 +146,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanJumpscare;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -170,8 +155,8 @@ namespace CG
 	{
 	public:
 		bool                                                       IsWarning;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_ADKG[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		int32_t                                                    WarningCount;                                            // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,13 +29,13 @@ namespace CG
 
 	/**
 	 * Class MaterialShaderQualitySettings.ShaderPlatformQualitySettings
-	 * Size -> 0x0030 (FullSize[0x0058] - InheritedSize[0x0028])
+	 * Size -> 0x0038 (FullSize[0x0060] - InheritedSize[0x0028])
 	 */
 	class UShaderPlatformQualitySettings : public UObject
 	{
 	public:
-		struct FMaterialQualityOverrides                           QualityOverrides[0x3];                                   // 0x0028(0x001B) Edit, Config, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q9XH[0x15];                                  // 0x0043(0x0015) MISSED OFFSET (PADDING)
+		struct FMaterialQualityOverrides                           QualityOverrides[0x4];                                   // 0x0028(0x0024) Edit, Config, NoDestructor, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_BJB1[0x14];                                  // 0x004C(0x0014) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMaterialExpressionSpriteTextureSampler.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMaterialExpressionSpriteTextureSampler.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMaterialExpressionSpriteTextureSampler::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperCharacter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperCharacter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperCharacter::StaticClass()
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C9D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -56,7 +56,6 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -65,9 +64,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetTotalDuration
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPaperFlipbook::GetTotalDuration()
 	{
@@ -78,7 +77,6 @@ namespace CG
 		UPaperFlipbook_GetTotalDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -87,9 +85,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bClampToEnds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -105,7 +103,6 @@ namespace CG
 		params.bClampToEnds = bClampToEnds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -114,9 +111,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtFrame
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            FrameIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -130,7 +127,6 @@ namespace CG
 		params.FrameIndex = FrameIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -139,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BFD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumKeyFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UPaperFlipbook::GetNumKeyFrames()
 	{
@@ -152,7 +148,6 @@ namespace CG
 		UPaperFlipbook_GetNumKeyFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -161,9 +156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BFA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UPaperFlipbook::GetNumFrames()
 	{
@@ -174,7 +169,6 @@ namespace CG
 		UPaperFlipbook_GetNumFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -183,9 +177,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BCF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bClampToEnds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -201,7 +195,6 @@ namespace CG
 		params.bClampToEnds = bClampToEnds;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -210,8 +203,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperFlipbook.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperFlipbook.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperFlipbook::StaticClass()
@@ -224,8 +217,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperFlipbookActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperFlipbookActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperFlipbookActor::StaticClass()
@@ -238,9 +231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DBF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Stop
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperFlipbookComponent::Stop()
 	{
@@ -251,16 +244,15 @@ namespace CG
 		UPaperFlipbookComponent_Stop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetSpriteColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                NewColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -274,16 +266,15 @@ namespace CG
 		params.NewColor = NewColor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D5F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlayRate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewRate                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -297,16 +288,15 @@ namespace CG
 		params.NewRate = NewRate;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D740
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NewFramePosition                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bFireEvents                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -322,16 +312,15 @@ namespace CG
 		params.bFireEvents = bFireEvents;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewPosition                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bFireEvents                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -347,16 +336,15 @@ namespace CG
 		params.bFireEvents = bFireEvents;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D570
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetNewTime
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewTime                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -370,16 +358,15 @@ namespace CG
 		params.NewTime = NewTime;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D4E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetLooping
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewLooping                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -393,16 +380,15 @@ namespace CG
 		params.bNewLooping = bNewLooping;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D150
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetFlipbook
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPaperFlipbook*                              NewFlipbook                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -416,7 +402,6 @@ namespace CG
 		params.NewFlipbook = NewFlipbook;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -425,9 +410,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D060
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.ReverseFromEnd
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperFlipbookComponent::ReverseFromEnd()
 	{
@@ -438,16 +423,15 @@ namespace CG
 		UPaperFlipbookComponent_ReverseFromEnd_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D040
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Reverse
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperFlipbookComponent::Reverse()
 	{
@@ -458,16 +442,15 @@ namespace CG
 		UPaperFlipbookComponent_Reverse_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CEA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.PlayFromStart
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperFlipbookComponent::PlayFromStart()
 	{
@@ -478,16 +461,15 @@ namespace CG
 		UPaperFlipbookComponent_PlayFromStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Play
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperFlipbookComponent::Play()
 	{
@@ -498,16 +480,15 @@ namespace CG
 		UPaperFlipbookComponent_Play_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CDD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook
-	 * 		Flags  -> (Final, Native, Protected)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPaperFlipbook*                              OldFlipbook                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -521,16 +502,15 @@ namespace CG
 		params.OldFlipbook = OldFlipbook;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C9A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsReversing
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UPaperFlipbookComponent::IsReversing()
 	{
@@ -541,7 +521,6 @@ namespace CG
 		UPaperFlipbookComponent_IsReversing_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -550,9 +529,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C970
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsPlaying
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UPaperFlipbookComponent::IsPlaying()
 	{
@@ -563,7 +542,6 @@ namespace CG
 		UPaperFlipbookComponent_IsPlaying_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -572,9 +550,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsLooping
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UPaperFlipbookComponent::IsLooping()
 	{
@@ -585,7 +563,6 @@ namespace CG
 		UPaperFlipbookComponent_IsLooping_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -594,9 +571,30 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BFF0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetSpriteColor
+	 * 		Flags  -> ()
+	 */
+	struct FLinearColor UPaperFlipbookComponent::GetSpriteColor()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetSpriteColor");
+		
+		UPaperFlipbookComponent_GetSpriteColor_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlayRate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPaperFlipbookComponent::GetPlayRate()
 	{
@@ -607,7 +605,6 @@ namespace CG
 		UPaperFlipbookComponent_GetPlayRate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -616,9 +613,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UPaperFlipbookComponent::GetPlaybackPositionInFrames()
 	{
@@ -629,7 +626,6 @@ namespace CG
 		UPaperFlipbookComponent_GetPlaybackPositionInFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -638,9 +634,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C020
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPaperFlipbookComponent::GetPlaybackPosition()
 	{
@@ -651,7 +647,6 @@ namespace CG
 		UPaperFlipbookComponent_GetPlaybackPosition_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -660,9 +655,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UPaperFlipbookComponent::GetFlipbookLengthInFrames()
 	{
@@ -673,7 +668,6 @@ namespace CG
 		UPaperFlipbookComponent_GetFlipbookLengthInFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -682,9 +676,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLength
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPaperFlipbookComponent::GetFlipbookLength()
 	{
@@ -695,7 +689,6 @@ namespace CG
 		UPaperFlipbookComponent_GetFlipbookLength_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -704,9 +697,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BAD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float UPaperFlipbookComponent::GetFlipbookFramerate()
 	{
@@ -717,7 +710,6 @@ namespace CG
 		UPaperFlipbookComponent_GetFlipbookFramerate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -726,9 +718,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BAA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbook
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 	{
@@ -739,7 +731,6 @@ namespace CG
 		UPaperFlipbookComponent_GetFlipbook_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -748,8 +739,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperFlipbookComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperFlipbookComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperFlipbookComponent::StaticClass()
@@ -762,8 +753,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperGroupedSpriteActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperGroupedSpriteActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperGroupedSpriteActor::StaticClass()
@@ -776,9 +767,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DD20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            InstanceIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  NewInstanceTransform                                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -800,7 +791,6 @@ namespace CG
 		params.bTeleport = bTeleport;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -809,9 +799,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DC10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor
-	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            InstanceIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                NewInstanceColor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -829,7 +819,6 @@ namespace CG
 		params.bMarkRenderStateDirty = bMarkRenderStateDirty;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -838,9 +827,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DB60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     WorldSpaceSortAxis                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -854,16 +843,15 @@ namespace CG
 		params.WorldSpaceSortAxis = WorldSpaceSortAxis;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CEE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            InstanceIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -877,7 +865,6 @@ namespace CG
 		params.InstanceIndex = InstanceIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -886,9 +873,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            InstanceIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  OutInstanceTransform                                       (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -905,7 +892,6 @@ namespace CG
 		params.bWorldSpace = bWorldSpace;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -917,9 +903,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BB60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	int32_t UPaperGroupedSpriteComponent::GetInstanceCount()
 	{
@@ -930,7 +916,6 @@ namespace CG
 		UPaperGroupedSpriteComponent_GetInstanceCount_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -939,9 +924,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B8D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.ClearInstances
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperGroupedSpriteComponent::ClearInstances()
 	{
@@ -952,16 +937,15 @@ namespace CG
 		UPaperGroupedSpriteComponent_ClearInstances_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B4C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.AddInstance
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FTransform                                  Transform                                                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UPaperSprite*                                Sprite                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -981,7 +965,6 @@ namespace CG
 		params.Color = Color;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -990,8 +973,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperGroupedSpriteComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperGroupedSpriteComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperGroupedSpriteComponent::StaticClass()
@@ -1004,8 +987,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperRuntimeSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperRuntimeSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperRuntimeSettings::StaticClass()
@@ -1018,8 +1001,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperSprite.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperSprite.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperSprite::StaticClass()
@@ -1032,8 +1015,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperSpriteActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperSpriteActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperSpriteActor::StaticClass()
@@ -1046,8 +1029,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperSpriteAtlas.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperSpriteAtlas.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperSpriteAtlas::StaticClass()
@@ -1060,15 +1043,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CA70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPaperSprite*                                Sprite                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSlateBrush UPaperSpriteBlueprintLibrary::STATIC_MakeBrushFromSprite(class UPaperSprite* Sprite, int32_t Width, int32_t Height)
+	struct FSlateBrush UPaperSpriteBlueprintLibrary::MakeBrushFromSprite(class UPaperSprite* Sprite, int32_t Width, int32_t Height)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1080,7 +1063,6 @@ namespace CG
 		params.Height = Height;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1089,8 +1071,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperSpriteBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperSpriteBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperSpriteBlueprintLibrary::StaticClass()
@@ -1103,9 +1085,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D880
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSpriteColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                NewColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1119,16 +1101,15 @@ namespace CG
 		params.NewColor = NewColor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D150
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSprite
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPaperSprite*                                NewSprite                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1142,7 +1123,6 @@ namespace CG
 		params.NewSprite = NewSprite;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1151,9 +1131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BAA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.GetSprite
-	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	class UPaperSprite* UPaperSpriteComponent::GetSprite()
 	{
@@ -1164,7 +1144,6 @@ namespace CG
 		UPaperSpriteComponent_GetSprite_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1173,8 +1152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperSpriteComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperSpriteComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperSpriteComponent::StaticClass()
@@ -1187,8 +1166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperTerrainActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperTerrainActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperTerrainActor::StaticClass()
@@ -1201,9 +1180,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D900
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTerrainComponent.SetTerrainColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                NewColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1217,15 +1196,14 @@ namespace CG
 		params.NewColor = NewColor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTerrainComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTerrainComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTerrainComponent::StaticClass()
@@ -1238,8 +1216,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTerrainMaterial.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTerrainMaterial.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTerrainMaterial::StaticClass()
@@ -1252,8 +1230,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTerrainSplineComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTerrainSplineComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTerrainSplineComponent::StaticClass()
@@ -1266,8 +1244,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTileLayer.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTileLayer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTileLayer::StaticClass()
@@ -1280,8 +1258,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTileMap.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTileMap.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTileMap::StaticClass()
@@ -1294,8 +1272,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction APaperTileMapActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction APaperTileMapActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* APaperTileMapActor::StaticClass()
@@ -1308,9 +1286,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079DAE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMapColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                NewColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1324,16 +1302,15 @@ namespace CG
 		params.NewColor = NewColor;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D150
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMap
-	 * 		Flags  -> (Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPaperTileMap*                               NewTileMap                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1347,7 +1324,6 @@ namespace CG
 		params.NewTileMap = NewTileMap;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1356,9 +1332,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTile
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Y                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1378,16 +1354,15 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D410
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FLinearColor                                NewColor                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Layer                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1403,16 +1378,15 @@ namespace CG
 		params.Layer = Layer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D1F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerCollision
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Layer                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bHasCollision                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1438,16 +1412,15 @@ namespace CG
 		params.bRebuildCollision = bRebuildCollision;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079D080
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Thickness                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRebuildCollision                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1463,16 +1436,15 @@ namespace CG
 		params.bRebuildCollision = bRebuildCollision;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CF80
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.ResizeMap
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NewWidthInTiles                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            NewHeightInTiles                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1488,16 +1460,15 @@ namespace CG
 		params.NewHeightInTiles = NewHeightInTiles;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CEC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.RebuildCollision
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperTileMapComponent::RebuildCollision()
 	{
@@ -1508,16 +1479,15 @@ namespace CG
 		UPaperTileMapComponent_RebuildCollision_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CE50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.OwnsTileMap
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UPaperTileMapComponent::OwnsTileMap()
 	{
@@ -1528,7 +1498,6 @@ namespace CG
 		UPaperTileMapComponent_OwnsTileMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1537,9 +1506,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CDB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.MakeTileMapEditable
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UPaperTileMapComponent::MakeTileMapEditable()
 	{
@@ -1550,20 +1519,19 @@ namespace CG
 		UPaperTileMapComponent_MakeTileMapEditable_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C5F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTilePolygon
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            TileX                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TileY                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FVector>                             Points                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FVector>                             Points                                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            LayerIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bWorldSpace                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1580,7 +1548,6 @@ namespace CG
 		params.bWorldSpace = bWorldSpace;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1590,9 +1557,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C5B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileMapColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FLinearColor UPaperTileMapComponent::GetTileMapColor()
 	{
@@ -1603,7 +1570,6 @@ namespace CG
 		UPaperTileMapComponent_GetTileMapColor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1612,9 +1578,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCornerPosition
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            TileX                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TileY                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1634,7 +1600,6 @@ namespace CG
 		params.bWorldSpace = bWorldSpace;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1643,9 +1608,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C2F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCenterPosition
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            TileX                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TileY                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1665,7 +1630,6 @@ namespace CG
 		params.bWorldSpace = bWorldSpace;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1674,9 +1638,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C1E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTile
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Y                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1694,7 +1658,6 @@ namespace CG
 		params.Layer = Layer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1703,9 +1666,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BE60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetMapSize
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            MapWidth                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            MapHeight                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1720,7 +1683,6 @@ namespace CG
 		UPaperTileMapComponent_GetMapSize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1734,9 +1696,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079BDC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetLayerColor
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Layer                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1750,7 +1712,6 @@ namespace CG
 		params.Layer = Layer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1759,9 +1720,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B8F0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.CreateNewTileMap
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            MapWidth                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            MapHeight                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1785,16 +1746,15 @@ namespace CG
 		params.bCreateLayer = bCreateLayer;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B680
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.AddNewLayer
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 	{
@@ -1805,7 +1765,6 @@ namespace CG
 		UPaperTileMapComponent_AddNewLayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1814,8 +1773,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTileMapComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTileMapComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTileMapComponent::StaticClass()
@@ -1828,8 +1787,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPaperTileSet.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPaperTileSet.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPaperTileSet::StaticClass()
@@ -1842,9 +1801,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079CC00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.MakeTile
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            TileIndex                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UPaperTileSet*                               TileSet                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1852,7 +1811,7 @@ namespace CG
 	 * 		bool                                               bFlipV                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bFlipD                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FPaperTileInfo UTileMapBlueprintLibrary::STATIC_MakeTile(int32_t TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
+	struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32_t TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1866,7 +1825,6 @@ namespace CG
 		params.bFlipD = bFlipD;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1875,13 +1833,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C870
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPaperTileInfo                              Tile                                                       (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class FName UTileMapBlueprintLibrary::STATIC_GetTileUserData(const struct FPaperTileInfo& Tile)
+	class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInfo& Tile)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1891,7 +1849,6 @@ namespace CG
 		params.Tile = Tile;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1900,13 +1857,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079C7A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPaperTileInfo                              Tile                                                       (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	struct FTransform UTileMapBlueprintLibrary::STATIC_GetTileTransform(const struct FPaperTileInfo& Tile)
+	struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaperTileInfo& Tile)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1916,7 +1873,6 @@ namespace CG
 		params.Tile = Tile;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1925,9 +1881,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x0079B6B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.BreakTile
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPaperTileInfo                              Tile                                                       (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TileIndex                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1936,7 +1892,7 @@ namespace CG
 	 * 		bool                                               bFlipV                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bFlipD                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UTileMapBlueprintLibrary::STATIC_BreakTile(const struct FPaperTileInfo& Tile, int32_t* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
+	void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int32_t* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1946,7 +1902,6 @@ namespace CG
 		params.Tile = Tile;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1964,8 +1919,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTileMapBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTileMapBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTileMapBlueprintLibrary::StaticClass()

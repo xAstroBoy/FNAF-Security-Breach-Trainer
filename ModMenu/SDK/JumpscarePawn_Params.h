@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,36 +18,31 @@ namespace CG
 	 * Function JumpscarePawn.JumpscarePawn_C.Timeline_0__FinishedFunc
 	 */
 	struct AJumpscarePawn_C_Timeline_0__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Timeline_0__UpdateFunc
 	 */
 	struct AJumpscarePawn_C_Timeline_0__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Timeline_1__FinishedFunc
 	 */
 	struct AJumpscarePawn_C_Timeline_1__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Timeline_1__UpdateFunc
 	 */
 	struct AJumpscarePawn_C_Timeline_1__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Timeline_1__NewTrack_2__EventFunc
 	 */
 	struct AJumpscarePawn_C_Timeline_1__NewTrack_2__EventFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.InpActEvt_PrimaryAction_K2Node_InputActionEvent_1
@@ -56,15 +51,13 @@ namespace CG
 	{
 	public:
 		struct FKey                                                Key;                                                     // 0x0000(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.On Jumpscare Kill Timer Up
 	 */
-	struct AJumpscarePawn_C_On_Jumpscare_Kill_Timer_Up_Params
-	{
-	};
+	struct AJumpscarePawn_C_OnJumpscareKillTimerUp_Params
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.ReceivePossessed
@@ -73,22 +66,19 @@ namespace CG
 	{
 	public:
 		class AController*                                         NewController;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Stop
 	 */
 	struct AJumpscarePawn_C_Stop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.Possess Gregory
 	 */
-	struct AJumpscarePawn_C_Possess_Gregory_Params
-	{
-	};
+	struct AJumpscarePawn_C_PossessGregory_Params
+	{	};
 
 	/**
 	 * Function JumpscarePawn.JumpscarePawn_C.ReceiveTick
@@ -97,7 +87,6 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -107,7 +96,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_5XN1[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

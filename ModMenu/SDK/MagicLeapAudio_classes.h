@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,10 +21,10 @@ namespace CG
 	class UMagicLeapAudioFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool STATIC_SetOnAudioJackUnpluggedDelegate(const class FScriptDelegate& ResultDelegate);
-		bool STATIC_SetOnAudioJackPluggedDelegate(const class FScriptDelegate& ResultDelegate);
-		bool STATIC_SetMicMute(bool IsMuted);
-		bool STATIC_IsMicMuted();
+		bool SetOnAudioJackUnpluggedDelegate(const class FScriptDelegate& ResultDelegate);
+		bool SetOnAudioJackPluggedDelegate(const class FScriptDelegate& ResultDelegate);
+		bool SetMicMute(bool IsMuted);
+		bool IsMicMuted();
 		static UClass* StaticClass();
 	};
 

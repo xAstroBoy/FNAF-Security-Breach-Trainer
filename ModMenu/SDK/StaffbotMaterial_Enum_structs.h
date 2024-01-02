@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,34 +17,34 @@ namespace CG
 	/**
 	 * UserDefinedEnum StaffbotMaterial_Enum.StaffbotMaterial_Enum
 	 */
-	enum class StaffbotMaterial_Enum_EStaffbotMaterial_Enum : uint8_t
+	enum class EStaffbotMaterial_Enum : uint8_t
 	{
-		StaffbotMaterial_Enum__NewEnumerator0       = 0,
-		StaffbotMaterial_Enum__NewEnumerator13      = 1,
-		StaffbotMaterial_Enum__NewEnumerator14      = 2,
-		StaffbotMaterial_Enum__NewEnumerator15      = 3,
-		StaffbotMaterial_Enum__NewEnumerator16      = 4,
-		StaffbotMaterial_Enum__NewEnumerator17      = 5,
-		StaffbotMaterial_Enum__NewEnumerator18      = 6,
-		StaffbotMaterial_Enum__NewEnumerator19      = 7,
-		StaffbotMaterial_Enum__NewEnumerator20      = 8,
-		StaffbotMaterial_Enum__NewEnumerator21      = 9,
-		StaffbotMaterial_Enum__NewEnumerator22      = 10,
-		StaffbotMaterial_Enum__NewEnumerator23      = 11,
-		StaffbotMaterial_Enum__NewEnumerator24      = 12,
-		StaffbotMaterial_Enum__NewEnumerator25      = 13,
-		StaffbotMaterial_Enum__NewEnumerator29      = 14,
-		StaffbotMaterial_Enum__NewEnumerator30      = 15,
-		StaffbotMaterial_Enum__NewEnumerator31      = 16,
-		StaffbotMaterial_Enum__NewEnumerator32      = 17,
-		StaffbotMaterial_Enum__NewEnumerator33      = 18,
-		StaffbotMaterial_Enum__NewEnumerator34      = 19,
-		StaffbotMaterial_Enum__NewEnumerator38      = 20,
-		StaffbotMaterial_Enum__NewEnumerator37      = 21,
-		StaffbotMaterial_Enum__NewEnumerator35      = 22,
-		StaffbotMaterial_Enum__NewEnumerator36      = 23,
-		StaffbotMaterial_Enum__NewEnumerator39      = 24,
-		StaffbotMaterial_Enum__StaffbotMaterial_MAX = 25
+		StaffbotMaterial_EnumNewEnumerator0       = 0,
+		StaffbotMaterial_EnumNewEnumerator13      = 1,
+		StaffbotMaterial_EnumNewEnumerator14      = 2,
+		StaffbotMaterial_EnumNewEnumerator15      = 3,
+		StaffbotMaterial_EnumNewEnumerator16      = 4,
+		StaffbotMaterial_EnumNewEnumerator17      = 5,
+		StaffbotMaterial_EnumNewEnumerator18      = 6,
+		StaffbotMaterial_EnumNewEnumerator19      = 7,
+		StaffbotMaterial_EnumNewEnumerator20      = 8,
+		StaffbotMaterial_EnumNewEnumerator21      = 9,
+		StaffbotMaterial_EnumNewEnumerator22      = 10,
+		StaffbotMaterial_EnumNewEnumerator23      = 11,
+		StaffbotMaterial_EnumNewEnumerator24      = 12,
+		StaffbotMaterial_EnumNewEnumerator25      = 13,
+		StaffbotMaterial_EnumNewEnumerator29      = 14,
+		StaffbotMaterial_EnumNewEnumerator30      = 15,
+		StaffbotMaterial_EnumNewEnumerator31      = 16,
+		StaffbotMaterial_EnumNewEnumerator32      = 17,
+		StaffbotMaterial_EnumNewEnumerator33      = 18,
+		StaffbotMaterial_EnumNewEnumerator34      = 19,
+		StaffbotMaterial_EnumNewEnumerator38      = 20,
+		StaffbotMaterial_EnumNewEnumerator37      = 21,
+		StaffbotMaterial_EnumNewEnumerator35      = 22,
+		StaffbotMaterial_EnumNewEnumerator36      = 23,
+		StaffbotMaterial_EnumNewEnumerator39      = 24,
+		StaffbotMaterial_EnumStaffbotMaterial_MAX = 25
 	};
 
 }

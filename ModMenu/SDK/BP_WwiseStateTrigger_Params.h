@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function BP_WwiseStateTrigger.BP_WwiseStateTrigger_C.OnTriggered
 	 */
 	struct ABP_WwiseStateTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function BP_WwiseStateTrigger.BP_WwiseStateTrigger_C.ExecuteUbergraph_BP_WwiseStateTrigger
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

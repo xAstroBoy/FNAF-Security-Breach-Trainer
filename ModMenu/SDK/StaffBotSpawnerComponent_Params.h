@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,24 +21,22 @@ namespace CG
 	{
 	public:
 		struct FVector                                             SpawnTransform_Location;                                 // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_14SO[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class ASplinePathwayManager_C*                             SplineManager;                                           // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class AStaffBotBase_C*                                     ReturnValue;                                             // 0x0018(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function StaffBotSpawnerComponent.StaffBotSpawnerComponent_C.Spawn Staff Bots
 	 */
-	struct UStaffBotSpawnerComponent_C_Spawn_Staff_Bots_Params
-	{
-	};
+	struct UStaffBotSpawnerComponent_C_SpawnStaffBots_Params
+	{	};
 
 	/**
 	 * Function StaffBotSpawnerComponent.StaffBotSpawnerComponent_C.Destroy Staff Bots
 	 */
-	struct UStaffBotSpawnerComponent_C_Destroy_Staff_Bots_Params
-	{
-	};
+	struct UStaffBotSpawnerComponent_C_DestroyStaffBots_Params
+	{	};
 
 	/**
 	 * Function StaffBotSpawnerComponent.StaffBotSpawnerComponent_C.ReceiveEndPlay
@@ -46,8 +44,7 @@ namespace CG
 	struct UStaffBotSpawnerComponent_C_ReceiveEndPlay_Params
 	{
 	public:
-		Engine_EEndPlayReason                                      EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EEndPlayReason                                             EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -57,7 +54,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

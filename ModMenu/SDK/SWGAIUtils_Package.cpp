@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00695050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGAIUtils.SWGAIUtilLibrary.ClearAllBlackboardValues
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UBlackboardComponent*                        Blackboard                                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGAIUtilLibrary::STATIC_ClearAllBlackboardValues(class UBlackboardComponent* Blackboard)
+	void USWGAIUtilLibrary::ClearAllBlackboardValues(class UBlackboardComponent* Blackboard)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -28,15 +28,14 @@ namespace CG
 		params.Blackboard = Blackboard;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USWGAIUtilLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USWGAIUtilLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USWGAIUtilLibrary::StaticClass()

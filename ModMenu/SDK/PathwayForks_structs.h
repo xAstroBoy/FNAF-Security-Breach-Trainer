@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,7 @@ namespace CG
 	struct FPathwayForks
 	{
 	public:
-		TArray<class ASplinePathFork_C*>                           Forks_3_B119F3DD413FACA95A937893543AA477;                // 0x0000(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, HasGetValueTypeHash
-
+		TArray<class ASplinePathFork_C*>                           Forks_3_B119F3DD413FACA95A937893543AA477;                // 0x0000(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate
 	};
 
 }

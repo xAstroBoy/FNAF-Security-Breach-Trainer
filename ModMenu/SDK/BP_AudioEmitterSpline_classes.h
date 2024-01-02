@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_AudioEmitterSpline.BP_AudioEmitterSpline_C
-	 * Size -> 0x0061 (FullSize[0x0289] - InheritedSize[0x0228])
+	 * Size -> 0x0062 (FullSize[0x028A] - InheritedSize[0x0228])
 	 */
 	class ABP_AudioEmitterSpline_C : public AActor
 	{
@@ -29,16 +29,17 @@ namespace CG
 		float                                                      FalloffDistance;                                         // 0x0254(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      TickInterval;                                            // 0x0258(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       bSoundIsActive;                                          // 0x025C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_EF23[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              OcclusionTrace[0x28];                                    // 0x025D(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_CLM0[0x3];                                   // 0x025D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              OcclusionTrace[0x28];                                    // 0x0260(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		bool                                                       EmitterPlaying;                                          // 0x0288(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       AutoPost;                                                // 0x0289(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
 		void StopEmitter();
-		void PlayEmitter();
 		void ReceiveBeginPlay();
 		void ReceiveTick(float DeltaSeconds);
 		void ToggleInRange(bool InRange);
+		void PlayEmitter();
 		void ExecuteUbergraph_BP_AudioEmitterSpline(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

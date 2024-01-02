@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CautionBotManager.CautionBotManager_C.Register Caution Bot
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACautionBot_C*                               CautionBot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACautionBotManager_C::Register_Caution_Bot(class ACautionBot_C* CautionBot)
+	void ACautionBotManager_C::RegisterCautionBot(class ACautionBot_C* CautionBot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function CautionBotManager.CautionBotManager_C.Register Caution Bot");
 		
-		ACautionBotManager_C_Register_Caution_Bot_Params params {};
+		ACautionBotManager_C_RegisterCautionBot_Params params {};
 		params.CautionBot = CautionBot;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,19 +34,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CautionBotManager.CautionBotManager_C.Unregister Caution Bot
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ACautionBot_C*                               CautionBot                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACautionBotManager_C::Unregister_Caution_Bot(class ACautionBot_C* CautionBot)
+	void ACautionBotManager_C::UnregisterCautionBot(class ACautionBot_C* CautionBot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function CautionBotManager.CautionBotManager_C.Unregister Caution Bot");
 		
-		ACautionBotManager_C_Unregister_Caution_Bot_Params params {};
+		ACautionBotManager_C_UnregisterCautionBot_Params params {};
 		params.CautionBot = CautionBot;
 		
 		auto flags = fn->FunctionFlags;
@@ -56,19 +56,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CautionBotManager.CautionBotManager_C.On Spill
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      SpillActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ACautionBotManager_C::On_Spill(class AActor* SpillActor)
+	void ACautionBotManager_C::OnSpill(class AActor* SpillActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function CautionBotManager.CautionBotManager_C.On Spill");
 		
-		ACautionBotManager_C_On_Spill_Params params {};
+		ACautionBotManager_C_OnSpill_Params params {};
 		params.SpillActor = SpillActor;
 		
 		auto flags = fn->FunctionFlags;
@@ -78,9 +78,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function CautionBotManager.CautionBotManager_C.ExecuteUbergraph_CautionBotManager
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -100,8 +100,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ACautionBotManager_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ACautionBotManager_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ACautionBotManager_C::StaticClass()

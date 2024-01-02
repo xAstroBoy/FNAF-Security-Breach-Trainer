@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * UserDefinedEnum FlashlightRechargeState.FlashlightRechargeState
 	 */
-	enum class FlashlightRechargeState_EFlashlightRechargeState : uint8_t
+	enum class EFlashlightRechargeState : uint8_t
 	{
-		FlashlightRechargeState__NewEnumerator0              = 0,
-		FlashlightRechargeState__NewEnumerator1              = 1,
-		FlashlightRechargeState__NewEnumerator2              = 2,
-		FlashlightRechargeState__NewEnumerator3              = 3,
-		FlashlightRechargeState__NewEnumerator4              = 4,
-		FlashlightRechargeState__FlashlightRechargeState_MAX = 5
+		FlashlightRechargeStateNewEnumerator0              = 0,
+		FlashlightRechargeStateNewEnumerator1              = 1,
+		FlashlightRechargeStateNewEnumerator2              = 2,
+		FlashlightRechargeStateNewEnumerator3              = 3,
+		FlashlightRechargeStateNewEnumerator4              = 4,
+		FlashlightRechargeStateFlashlightRechargeState_MAX = 5
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,21 +17,21 @@ namespace CG
 	/**
 	 * UserDefinedEnum AnimatronicModeEnum.AnimatronicModeEnum
 	 */
-	enum class AnimatronicModeEnum_EAnimatronicModeEnum : uint8_t
+	enum class EAnimatronicModeEnum : uint8_t
 	{
-		AnimatronicModeEnum__NewEnumerator0          = 0,
-		AnimatronicModeEnum__NewEnumerator1          = 1,
-		AnimatronicModeEnum__NewEnumerator2          = 2,
-		AnimatronicModeEnum__NewEnumerator5          = 3,
-		AnimatronicModeEnum__NewEnumerator6          = 4,
-		AnimatronicModeEnum__NewEnumerator7          = 5,
-		AnimatronicModeEnum__NewEnumerator8          = 6,
-		AnimatronicModeEnum__NewEnumerator9          = 7,
-		AnimatronicModeEnum__NewEnumerator10         = 8,
-		AnimatronicModeEnum__NewEnumerator11         = 9,
-		AnimatronicModeEnum__NewEnumerator12         = 10,
-		AnimatronicModeEnum__NewEnumerator13         = 11,
-		AnimatronicModeEnum__AnimatronicModeEnum_MAX = 12
+		AnimatronicModeEnumNewEnumerator0          = 0,
+		AnimatronicModeEnumNewEnumerator1          = 1,
+		AnimatronicModeEnumNewEnumerator2          = 2,
+		AnimatronicModeEnumNewEnumerator5          = 3,
+		AnimatronicModeEnumNewEnumerator6          = 4,
+		AnimatronicModeEnumNewEnumerator7          = 5,
+		AnimatronicModeEnumNewEnumerator8          = 6,
+		AnimatronicModeEnumNewEnumerator9          = 7,
+		AnimatronicModeEnumNewEnumerator10         = 8,
+		AnimatronicModeEnumNewEnumerator11         = 9,
+		AnimatronicModeEnumNewEnumerator12         = 10,
+		AnimatronicModeEnumNewEnumerator13         = 11,
+		AnimatronicModeEnumAnimatronicModeEnum_MAX = 12
 	};
 
 }

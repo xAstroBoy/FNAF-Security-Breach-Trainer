@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,8 +25,8 @@ namespace CG
 		struct FFNAFMissionInfo                                    MissionInfo;                                             // 0x0028(0x0048)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		struct FFNAFMissionTaskInfo                                TaskInfo;                                                // 0x0070(0x00D8)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		int32_t                                                    StateIndex;                                              // 0x0148(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_PLM9[0x4];                                   // 0x014C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FText                                                FormattedText;                                           // 0x0150(0x0018)  (Parm, OutParm)
-
 	};
 
 }

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,53 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.InpActEvt_X_K2Node_InputKeyEvent_2
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AWestArcadeHolesManager_C::InpActEvt_X_K2Node_InputKeyEvent_2(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WestArcadeHolesManager.WestArcadeHolesManager_C.InpActEvt_X_K2Node_InputKeyEvent_2");
+		
+		AWestArcadeHolesManager_C_InpActEvt_X_K2Node_InputKeyEvent_2_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.InpActEvt_M_K2Node_InputKeyEvent_1
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FKey                                        Key                                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	 */
+	void AWestArcadeHolesManager_C::InpActEvt_M_K2Node_InputKeyEvent_1(const struct FKey& Key)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function WestArcadeHolesManager.WestArcadeHolesManager_C.InpActEvt_M_K2Node_InputKeyEvent_1");
+		
+		AWestArcadeHolesManager_C_InpActEvt_M_K2Node_InputKeyEvent_1_Params params {};
+		params.Key = Key;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AWestArcadeHolesManager_C::ReceiveBeginPlay()
 	{
@@ -31,28 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.Update
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AWestArcadeHolesManager_C::Update()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function WestArcadeHolesManager.WestArcadeHolesManager_C.Update");
-		
-		AWestArcadeHolesManager_C_Update_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function WestArcadeHolesManager.WestArcadeHolesManager_C.ExecuteUbergraph_WestArcadeHolesManager
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -72,8 +97,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AWestArcadeHolesManager_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AWestArcadeHolesManager_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AWestArcadeHolesManager_C::StaticClass()

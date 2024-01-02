@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,43 +18,31 @@ namespace CG
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_87005B5146310D84D0BBA7A88DF76D17
 	 */
 	struct UWI_Gregory_Stamina_C_Finished_87005B5146310D84D0BBA7A88DF76D17_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_910C77124225AE12E5D9A1AE2A438FA4
 	 */
 	struct UWI_Gregory_Stamina_C_Finished_910C77124225AE12E5D9A1AE2A438FA4_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Finished_9E22A3BA404DFC4AEBDD15A4C95B41C4
 	 */
 	struct UWI_Gregory_Stamina_C_Finished_9E22A3BA404DFC4AEBDD15A4C95B41C4_Params
-	{
-	};
-
-	/**
-	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct
-	 */
-	struct UWI_Gregory_Stamina_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Depleted
 	 */
-	struct UWI_Gregory_Stamina_C_On_Stamina_Depleted_Params
-	{
-	};
+	struct UWI_Gregory_Stamina_C_OnStaminaDepleted_Params
+	{	};
 
 	/**
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.On Stamina Replenished
 	 */
-	struct UWI_Gregory_Stamina_C_On_Stamina_Replenished_Params
-	{
-	};
+	struct UWI_Gregory_Stamina_C_OnStaminaReplenished_Params
+	{	};
 
 	/**
 	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Tick
@@ -64,7 +52,21 @@ namespace CG
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 		float                                                      InDeltaTime;                                             // 0x0038(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.Construct
+	 */
+	struct UWI_Gregory_Stamina_C_Construct_Params
+	{	};
+
+	/**
+	 * Function WI_Gregory_Stamina.WI_Gregory_Stamina_C.SetGregoryReferenceAndBindings
+	 */
+	struct UWI_Gregory_Stamina_C_SetGregoryReferenceAndBindings_Params
+	{
+	public:
+		class AGregory_C*                                          Gregory;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -74,7 +76,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -84,7 +85,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    PowerLevel;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

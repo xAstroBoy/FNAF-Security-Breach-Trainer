@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,177 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetNavigationData
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class ANavigationData*                             NavigationData                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetNavigationData(class ANavigationData** NavigationData)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetNavigationData");
+		
+		AMainGameGM_C_GetNavigationData_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (NavigationData != nullptr)
+			*NavigationData = params.NavigationData;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetGMPowerStationManager
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class APowerStationManager_C*                      PowerStationManager                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetGMPowerStationManager(class APowerStationManager_C** PowerStationManager)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetGMPowerStationManager");
+		
+		AMainGameGM_C_GetGMPowerStationManager_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (PowerStationManager != nullptr)
+			*PowerStationManager = params.PowerStationManager;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetGMTextFormatter
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UMissionTextFormatterFactory_C*              MissionTextFormatter                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetGMTextFormatter(class UMissionTextFormatterFactory_C** MissionTextFormatter)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetGMTextFormatter");
+		
+		AMainGameGM_C_GetGMTextFormatter_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (MissionTextFormatter != nullptr)
+			*MissionTextFormatter = params.MissionTextFormatter;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetPlayerHUD
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UPlayerHUD_C*                                PlayerHUD                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetPlayerHUD(class UPlayerHUD_C** PlayerHUD)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetPlayerHUD");
+		
+		AMainGameGM_C_GetPlayerHUD_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (PlayerHUD != nullptr)
+			*PlayerHUD = params.PlayerHUD;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetGregoryRef
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AGregory_C*                                  Gregory                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetGregoryRef(class AGregory_C** Gregory)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetGregoryRef");
+		
+		AMainGameGM_C_GetGregoryRef_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Gregory != nullptr)
+			*Gregory = params.Gregory;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.HasGMLoaded
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               HasLoaded                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGameGM_C::HasGMLoaded(bool* HasLoaded)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.HasGMLoaded");
+		
+		AMainGameGM_C_HasGMLoaded_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (HasLoaded != nullptr)
+			*HasLoaded = params.HasLoaded;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetFreddyRef
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AFreddy_C*                                   Freddy                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetFreddyRef(class AFreddy_C** Freddy)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetFreddyRef");
+		
+		AMainGameGM_C_GetFreddyRef_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Freddy != nullptr)
+			*Freddy = params.Freddy;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetFlashlightManager
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AFlashlightRechargeStationManager_C*         FlashlightManager                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -36,9 +204,52 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetInventoryDataTable
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UDataTable*                                  Data                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::GetInventoryDataTable(class UDataTable** Data)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetInventoryDataTable");
+		
+		AMainGameGM_C_GetInventoryDataTable_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (Data != nullptr)
+			*Data = params.Data;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetHasGMLoaded
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::GetHasGMLoaded()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.GetHasGMLoaded");
+		
+		AMainGameGM_C_GetHasGMLoaded_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.StartLoading
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::StartLoading()
 	{
@@ -55,9 +266,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.CheckShatteredAchivements
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::CheckShatteredAchivements()
 	{
@@ -74,9 +285,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.SetGregory
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AGregory_C*                                  GregoryPawn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -96,9 +307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.GetGregory
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AGregory_C*                                  GregoryPawn                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -120,9 +331,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.ListenForLoaded
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FScriptDelegate                              Event                                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 	 */
@@ -142,9 +353,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.FinishLoading
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::FinishLoading()
 	{
@@ -161,11 +372,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.SkipAheadFinished
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
 	void AMainGameGM_C::SkipAheadFinished(TArray<class FName>* SkippedTasks)
 	{
@@ -185,9 +396,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.SpawnFreddyNearby
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::SpawnFreddyNearby()
 	{
@@ -204,22 +415,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.SpawnMMSequence Actors
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      MMActor                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               Visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               visible                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AMainGameGM_C::SpawnMMSequence_Actors(class AActor* MMActor, bool Visible)
+	void AMainGameGM_C::SpawnMMSequenceActors(class AActor* MMActor, bool visible)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.SpawnMMSequence Actors");
 		
-		AMainGameGM_C_SpawnMMSequence_Actors_Params params {};
+		AMainGameGM_C_SpawnMMSequenceActors_Params params {};
 		params.MMActor = MMActor;
-		params.Visible = Visible;
+		params.visible = visible;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -228,9 +439,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.FindPlayerStart
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AController*                                 Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FString                                      IncomingName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
@@ -254,21 +465,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.Find Furthest Actor
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class AActor*>                              Actors                                                     (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<class AActor*>                              Actors                                                     (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 * 		class AActor*                                      TargetActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      FurthestActor                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGameGM_C::Find_Furthest_Actor(TArray<class AActor*>* Actors, class AActor* TargetActor, class AActor** FurthestActor)
+	void AMainGameGM_C::FindFurthestActor(TArray<class AActor*>* Actors, class AActor* TargetActor, class AActor** FurthestActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Find Furthest Actor");
 		
-		AMainGameGM_C_Find_Furthest_Actor_Params params {};
+		AMainGameGM_C_FindFurthestActor_Params params {};
 		params.TargetActor = TargetActor;
 		
 		auto flags = fn->FunctionFlags;
@@ -283,20 +494,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnPlayerFlashlightVis
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnGMCallFreddy
+	 * 		Flags  -> ()
 	 */
-	void AMainGameGM_C::OnPlayerFlashlightVis(bool bEnable)
+	void AMainGameGM_C::OnGMCallFreddy()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnPlayerFlashlightVis");
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnGMCallFreddy");
 		
-		AMainGameGM_C_OnPlayerFlashlightVis_Params params {};
-		params.bEnable = bEnable;
+		AMainGameGM_C_OnGMCallFreddy_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -305,126 +513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void AMainGameGM_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.ReceiveBeginPlay");
-		
-		AMainGameGM_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnForceSpawnVanny
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 */
-	void AMainGameGM_C::OnForceSpawnVanny()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnForceSpawnVanny");
-		
-		AMainGameGM_C_OnForceSpawnVanny_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.Call Freddy
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AMainGameGM_C::Call_Freddy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Call Freddy");
-		
-		AMainGameGM_C_Call_Freddy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.On Time End
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AMainGameGM_C::On_Time_End()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.On Time End");
-		
-		AMainGameGM_C_On_Time_End_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnAIPawnsVis
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void AMainGameGM_C::OnAIPawnsVis(bool bEnable)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnAIPawnsVis");
-		
-		AMainGameGM_C_OnAIPawnsVis_Params params {};
-		params.bEnable = bEnable;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.Start_RechargeSequence
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AMainGameGM_C::Start_RechargeSequence()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Start_RechargeSequence");
-		
-		AMainGameGM_C_Start_RechargeSequence_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnRoomHeatDisplayChanged
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -444,17 +535,156 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function MainGameGM.MainGameGM_C.Respawn Vanessa
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnAIPawnsVis
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AMainGameGM_C::Respawn_Vanessa()
+	void AMainGameGM_C::OnAIPawnsVis(bool bEnable)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnAIPawnsVis");
+		
+		AMainGameGM_C_OnAIPawnsVis_Params params {};
+		params.bEnable = bEnable;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnPlayerFlashlightVis
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AMainGameGM_C::OnPlayerFlashlightVis(bool bEnable)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnPlayerFlashlightVis");
+		
+		AMainGameGM_C_OnPlayerFlashlightVis_Params params {};
+		params.bEnable = bEnable;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.ReceiveBeginPlay
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.ReceiveBeginPlay");
+		
+		AMainGameGM_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnForceSpawnVanny
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::OnForceSpawnVanny()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.OnForceSpawnVanny");
+		
+		AMainGameGM_C_OnForceSpawnVanny_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.Call Freddy
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::CallFreddy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Call Freddy");
+		
+		AMainGameGM_C_CallFreddy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.On Time End
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::OnTimeEnd()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.On Time End");
+		
+		AMainGameGM_C_OnTimeEnd_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.Start_RechargeSequence
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::Start_RechargeSequence()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Start_RechargeSequence");
+		
+		AMainGameGM_C_Start_RechargeSequence_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.Respawn Vanessa
+	 * 		Flags  -> ()
+	 */
+	void AMainGameGM_C::RespawnVanessa()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.Respawn Vanessa");
 		
-		AMainGameGM_C_Respawn_Vanessa_Params params {};
+		AMainGameGM_C_RespawnVanessa_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -463,17 +693,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.On Game End
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGameGM_C::On_Game_End()
+	void AMainGameGM_C::OnGameEnd()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.On Game End");
 		
-		AMainGameGM_C_On_Game_End_Params params {};
+		AMainGameGM_C_OnGameEnd_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -482,11 +712,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.DebugTeleport
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
 	void AMainGameGM_C::DebugTeleport(TArray<class FName>* SkippedTasks)
 	{
@@ -506,17 +736,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.On Debug Teleport Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AMainGameGM_C::On_Debug_Teleport_Finished()
+	void AMainGameGM_C::OnDebugTeleportFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.On Debug Teleport Finished");
 		
-		AMainGameGM_C_On_Debug_Teleport_Finished_Params params {};
+		AMainGameGM_C_OnDebugTeleportFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -525,20 +755,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.On Freddy Teleport Query Finished
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UEnvQueryInstanceBlueprintWrapper*           QueryInstance                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		AIModule_EEnvQueryStatus                           QueryStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EEnvQueryStatus                                    QueryStatus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AMainGameGM_C::On_Freddy_Teleport_Query_Finished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, AIModule_EEnvQueryStatus QueryStatus)
+	void AMainGameGM_C::OnFreddyTeleportQueryFinished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.On Freddy Teleport Query Finished");
 		
-		AMainGameGM_C_On_Freddy_Teleport_Query_Finished_Params params {};
+		AMainGameGM_C_OnFreddyTeleportQueryFinished_Params params {};
 		params.QueryInstance = QueryInstance;
 		params.QueryStatus = QueryStatus;
 		
@@ -549,9 +779,75 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.SetFreddyRef
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AFreddy_C*                                   Freddy                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::SetFreddyRef(class AFreddy_C* Freddy)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.SetFreddyRef");
+		
+		AMainGameGM_C_SetFreddyRef_Params params {};
+		params.Freddy = Freddy;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.SetGregoryRef
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AGregory_C*                                  Gregory                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::SetGregoryRef(class AGregory_C* Gregory)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.SetGregoryRef");
+		
+		AMainGameGM_C_SetGregoryRef_Params params {};
+		params.Gregory = Gregory;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function MainGameGM.MainGameGM_C.SetPlayerHUD
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UPlayerHUD_C*                                PlayerHUD                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void AMainGameGM_C::SetPlayerHUD(class UPlayerHUD_C* PlayerHUD)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function MainGameGM.MainGameGM_C.SetPlayerHUD");
+		
+		AMainGameGM_C_SetPlayerHUD_Params params {};
+		params.PlayerHUD = PlayerHUD;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.ExecuteUbergraph_MainGameGM
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -571,9 +867,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnFinishedLoading__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::OnFinishedLoading__DelegateSignature()
 	{
@@ -590,11 +886,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnDebugSkip__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	 * 		TArray<class FName>                                SkippedTasks                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
 	void AMainGameGM_C::OnDebugSkip__DelegateSignature(TArray<class FName>* SkippedTasks)
 	{
@@ -614,9 +910,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MainGameGM.MainGameGM_C.OnAreaLoaded__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AMainGameGM_C::OnAreaLoaded__DelegateSignature()
 	{
@@ -633,8 +929,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AMainGameGM_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AMainGameGM_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AMainGameGM_C::StaticClass()

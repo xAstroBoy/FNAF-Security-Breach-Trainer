@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,15 +21,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function StunableInterface.StunableInterface_C.Unstun
 	 */
 	struct UStunableInterface_C_Unstun_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StunableInterface.StunableInterface_C.IsStunned
@@ -38,15 +36,13 @@ namespace CG
 	{
 	public:
 		bool                                                       IsStunned;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function StunableInterface.StunableInterface_C.Stun
 	 */
 	struct UStunableInterface_C_Stun_Params
-	{
-	};
+	{	};
 
 }
 

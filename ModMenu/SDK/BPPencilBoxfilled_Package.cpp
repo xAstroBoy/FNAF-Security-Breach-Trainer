@@ -1,10 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
-#include "BPPencilBoxfilled_Package.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -13,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABPPencilBoxfilled_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABPPencilBoxfilled_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ABPPencilBoxfilled_C::StaticClass()

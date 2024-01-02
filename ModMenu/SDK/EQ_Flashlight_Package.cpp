@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Get Anim Item Type
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		GregoryAnimItemEnum_EGregoryAnimItemEnum           AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		EGregoryAnimItemEnum                               AnimType                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_Flashlight_C::Get_Anim_Item_Type(GregoryAnimItemEnum_EGregoryAnimItemEnum* AnimType)
+	void AEQ_Flashlight_C::GetAnimItemType(EGregoryAnimItemEnum* AnimType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Get Anim Item Type");
 		
-		AEQ_Flashlight_C_Get_Anim_Item_Type_Params params {};
+		AEQ_Flashlight_C_GetAnimItemType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PutAway
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::PutAway()
 	{
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomFlicker01Timeline__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::RandomFlicker01Timeline__FinishedFunc()
 	{
@@ -74,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomFlicker01Timeline__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::RandomFlicker01Timeline__UpdateFunc()
 	{
@@ -93,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_0__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_0__FinishedFunc()
 	{
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_0__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_0__UpdateFunc()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_1__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_1__FinishedFunc()
 	{
@@ -150,9 +150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_1__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_1__UpdateFunc()
 	{
@@ -169,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_2__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_2__FinishedFunc()
 	{
@@ -188,9 +188,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_2__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_2__UpdateFunc()
 	{
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_3__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_3__FinishedFunc()
 	{
@@ -226,9 +226,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_3__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_3__UpdateFunc()
 	{
@@ -245,9 +245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_4__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_4__FinishedFunc()
 	{
@@ -264,9 +264,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_4__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_4__UpdateFunc()
 	{
@@ -283,9 +283,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_5__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_5__FinishedFunc()
 	{
@@ -302,9 +302,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_5__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_5__UpdateFunc()
 	{
@@ -321,9 +321,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_6__FinishedFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_6__FinishedFunc()
 	{
@@ -340,9 +340,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Timeline_6__UpdateFunc
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::Timeline_6__UpdateFunc()
 	{
@@ -359,17 +359,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Toggle State
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PrimaryAction
+	 * 		Flags  -> ()
 	 */
-	void AEQ_Flashlight_C::Toggle_State()
+	void AEQ_Flashlight_C::PrimaryAction()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Toggle State");
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.PrimaryAction");
 		
-		AEQ_Flashlight_C_Toggle_State_Params params {};
+		AEQ_Flashlight_C_PrimaryAction_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -378,9 +378,50 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Set State
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               On                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AEQ_Flashlight_C::SetState(bool On)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Set State");
+		
+		AEQ_Flashlight_C_SetState_Params params {};
+		params.On = On;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Toggle State
+	 * 		Flags  -> ()
+	 */
+	void AEQ_Flashlight_C::ToggleState()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Toggle State");
+		
+		AEQ_Flashlight_C_ToggleState_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::ReceiveBeginPlay()
 	{
@@ -397,9 +438,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.RandomPowerFlicker
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::RandomPowerFlicker()
 	{
@@ -416,9 +457,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PowerDownFlicker
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::PowerDownFlicker()
 	{
@@ -435,9 +476,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.StartRandomPowerFlickerTimer
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::StartRandomPowerFlickerTimer()
 	{
@@ -454,9 +495,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -476,9 +517,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ForceOff
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::ForceOff()
 	{
@@ -495,20 +536,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.Set State
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.AudioFlicker
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               On                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		float                                              NewIntensity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AEQ_Flashlight_C::Set_State(bool On)
+	void AEQ_Flashlight_C::AudioFlicker(float NewIntensity)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.Set State");
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.AudioFlicker");
 		
-		AEQ_Flashlight_C_Set_State_Params params {};
-		params.On = On;
+		AEQ_Flashlight_C_AudioFlicker_Params params {};
+		params.NewIntensity = NewIntensity;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -517,28 +558,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.PrimaryAction
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void AEQ_Flashlight_C::PrimaryAction()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.PrimaryAction");
-		
-		AEQ_Flashlight_C_PrimaryAction_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.ExecuteUbergraph_EQ_Flashlight
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -558,9 +580,50 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.OnFlashlightPowerOut__DelegateSignature
+	 * 		Flags  -> ()
+	 */
+	void AEQ_Flashlight_C::OnFlashlightPowerOut__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.OnFlashlightPowerOut__DelegateSignature");
+		
+		AEQ_Flashlight_C_OnFlashlightPowerOut__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.FlashlightStateChange__DelegateSignature
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Active                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void AEQ_Flashlight_C::FlashlightStateChange__DelegateSignature(bool Active)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EQ_Flashlight.EQ_Flashlight_C.FlashlightStateChange__DelegateSignature");
+		
+		AEQ_Flashlight_C_FlashlightStateChange__DelegateSignature_Params params {};
+		params.Active = Active;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function EQ_Flashlight.EQ_Flashlight_C.AttemptActivateDeadFlashlight__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AEQ_Flashlight_C::AttemptActivateDeadFlashlight__DelegateSignature()
 	{
@@ -577,8 +640,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AEQ_Flashlight_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AEQ_Flashlight_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AEQ_Flashlight_C::StaticClass()

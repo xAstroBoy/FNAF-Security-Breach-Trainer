@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,13 +21,15 @@ namespace CG
 	class UAlerterInterface_C : public UInterface
 	{
 	public:
-		void SetAlertInfo(TArray<fnaf9_EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts);
-		void GetAlertInfo(TArray<fnaf9_EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts);
+		void GetAlertInfoComplex(TArray<struct FAnimatronicTypeData>* TypesToAlert, int32_t* NumberOfAlerts);
+		void SetAlertInfoComplex(TArray<struct FAnimatronicTypeData> TypesToAlert, int32_t NumberOfAlerts);
+		void SetAlertInfo(TArray<EFNAFAISpawnType> TypesToAlert, int32_t NumberOfAlerts);
+		void GetAlertInfo(TArray<EFNAFAISpawnType>* TypesToAlert, int32_t* NumberOfAlerts);
 		void IsWarningFinished(bool* Finished);
-		void Stop_Warning();
-		void Start_Warning(int32_t WarningCount);
-		void Stop_Alert(const class FName& Alert);
-		void Start_Alert(const class FName& Alert);
+		void StopWarning();
+		void StartWarning(int32_t WarningCount);
+		void StopAlert(const class FName& Alert);
+		void StartAlert(const class FName& Alert);
 		static UClass* StaticClass();
 	};
 

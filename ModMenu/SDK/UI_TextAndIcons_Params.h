@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,18 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_TextAndIcons.UI_TextAndIcons_C.Updateicons
+	 * Function UI_TextAndIcons.UI_TextAndIcons_C.UpdateIcons
 	 */
-	struct UUI_TextAndIcons_C_Updateicons_Params
-	{
-	};
+	struct UUI_TextAndIcons_C_UpdateIcons_Params
+	{	};
 
 	/**
 	 * Function UI_TextAndIcons.UI_TextAndIcons_C.SetFonts
 	 */
 	struct UUI_TextAndIcons_C_SetFonts_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function UI_TextAndIcons.UI_TextAndIcons_C.SetTextFields
@@ -39,7 +37,6 @@ namespace CG
 		class FText                                                Middle;                                                  // 0x0020(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm)
 		class FName                                                ActionMappingName2;                                      // 0x0038(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class FText                                                RightSide;                                               // 0x0040(0x0018)  (BlueprintVisible, BlueprintReadOnly, Parm)
-
 	};
 
 	/**
@@ -49,7 +46,6 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -59,7 +55,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

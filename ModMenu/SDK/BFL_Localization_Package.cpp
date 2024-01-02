@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,13 +12,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BFL_Localization.BFL_Localization_C.ToggleLocalizationQA
-	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBFL_Localization_C::STATIC_ToggleLocalizationQA(class UObject* __WorldContext)
+	void UBFL_Localization_C::ToggleLocalizationQA(class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -34,8 +34,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBFL_Localization_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBFL_Localization_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBFL_Localization_C::StaticClass()

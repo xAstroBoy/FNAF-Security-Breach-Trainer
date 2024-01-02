@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -22,13 +22,15 @@ namespace CG
 	{
 	public:
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0228(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              Holes[0x10];                                             // 0x0238(0x0010) UNKNOWN PROPERTY: ArrayProperty
-		class AStaticMeshActor*                                    CurrentItem;                                             // 0x0248(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UChildActorComponent*                                WestArcadeHolesManagerOG;                                // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
+		class UDebugLoaderTamash_C*                                DebugLoaderTamash;                                       // 0x0240(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UMYDebugTamash_C*                                    MYDebugTamash;                                           // 0x0248(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		void InpActEvt_X_K2Node_InputKeyEvent_2(const struct FKey& Key);
+		void InpActEvt_M_K2Node_InputKeyEvent_1(const struct FKey& Key);
 		void ReceiveBeginPlay();
-		void Update();
 		void ExecuteUbergraph_WestArcadeHolesManager(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

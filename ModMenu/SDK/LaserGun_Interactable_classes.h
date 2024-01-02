@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		void GameExit();
 		void GameEnd();
 		void GameStart();
-		void ForceKill(bool Animate_);
+		void ForceKill(bool Animate);
 		void LaserHit(class AEQ_LaserGun_C* Gun, const struct FHitResult& HitResult);
 		static UClass* StaticClass();
 	};

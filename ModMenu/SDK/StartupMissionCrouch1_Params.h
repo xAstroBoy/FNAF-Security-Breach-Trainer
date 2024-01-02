@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function StartupMissionCrouch1.StartupMissionCrouch1_C.OnTriggered
 	 */
 	struct AStartupMissionCrouch1_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function StartupMissionCrouch1.StartupMissionCrouch1_C.On Timer Up
 	 */
-	struct AStartupMissionCrouch1_C_On_Timer_Up_Params
-	{
-	};
+	struct AStartupMissionCrouch1_C_OnTimerUp_Params
+	{	};
 
 	/**
 	 * Function StartupMissionCrouch1.StartupMissionCrouch1_C.ExecuteUbergraph_StartupMissionCrouch1
@@ -35,7 +33,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

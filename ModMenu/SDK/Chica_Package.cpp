@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Chica.Chica_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void AChica_C::ReceiveBeginPlay()
 	{
@@ -31,19 +31,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Chica.Chica_C.On Garbage Detected
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     GarbageLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void AChica_C::On_Garbage_Detected(const struct FVector& GarbageLocation)
+	void AChica_C::OnGarbageDetected(const struct FVector& GarbageLocation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.On Garbage Detected");
 		
-		AChica_C_On_Garbage_Detected_Params params {};
+		AChica_C_OnGarbageDetected_Params params {};
 		params.GarbageLocation = GarbageLocation;
 		
 		auto flags = fn->FunctionFlags;
@@ -53,17 +53,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Chica.Chica_C.Smash In Compactor
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void AChica_C::Smash_In_Compactor()
+	void AChica_C::SmashInCompactor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Smash In Compactor");
 		
-		AChica_C_Smash_In_Compactor_Params params {};
+		AChica_C_SmashInCompactor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -72,19 +72,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Chica.Chica_C.Set Creep Mode
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void AChica_C::Set_Creep_Mode(bool enable)
+	void AChica_C::SetCreepMode(bool enable)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Set Creep Mode");
 		
-		AChica_C_Set_Creep_Mode_Params params {};
+		AChica_C_SetCreepMode_Params params {};
 		params.enable = enable;
 		
 		auto flags = fn->FunctionFlags;
@@ -94,9 +94,85 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Chica.Chica_C.Start Head Spin Timer
+	 * 		Flags  -> ()
+	 */
+	void AChica_C::StartHeadSpinTimer()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Start Head Spin Timer");
+		
+		AChica_C_StartHeadSpinTimer_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Chica.Chica_C.Stop Head Spin Timer
+	 * 		Flags  -> ()
+	 */
+	void AChica_C::StopHeadSpinTimer()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Stop Head Spin Timer");
+		
+		AChica_C_StopHeadSpinTimer_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Chica.Chica_C.Spin Head
+	 * 		Flags  -> ()
+	 */
+	void AChica_C::SpinHead()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Spin Head");
+		
+		AChica_C_SpinHead_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function Chica.Chica_C.Stop Head Spin
+	 * 		Flags  -> ()
+	 */
+	void AChica_C::StopHeadSpin()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function Chica.Chica_C.Stop Head Spin");
+		
+		AChica_C_StopHeadSpin_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Chica.Chica_C.ExecuteUbergraph_Chica
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -116,8 +192,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AChica_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AChica_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AChica_C::StaticClass()

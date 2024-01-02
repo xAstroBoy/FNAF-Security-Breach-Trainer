@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UImageWriteBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_ExportToDisk(class UTexture* Texture, const class FString& Filename, const struct FImageWriteOptions& Options);
+		void ExportToDisk(class UTexture* Texture, const class FString& Filename, const struct FImageWriteOptions& Options);
 		static UClass* StaticClass();
 	};
 

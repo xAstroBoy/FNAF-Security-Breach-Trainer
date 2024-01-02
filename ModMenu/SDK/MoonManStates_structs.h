@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,12 @@ namespace CG
 	/**
 	 * UserDefinedEnum MoonManStates.MoonManStates
 	 */
-	enum class MoonManStates_EMoonManStates : uint8_t
+	enum class EMoonManStates : uint8_t
 	{
-		MoonManStates__NewEnumerator0    = 0,
-		MoonManStates__NewEnumerator1    = 1,
-		MoonManStates__NewEnumerator2    = 2,
-		MoonManStates__MoonManStates_MAX = 3
+		MoonManStatesNewEnumerator0    = 0,
+		MoonManStatesNewEnumerator1    = 1,
+		MoonManStatesNewEnumerator2    = 2,
+		MoonManStatesMoonManStates_MAX = 3
 	};
 
 }

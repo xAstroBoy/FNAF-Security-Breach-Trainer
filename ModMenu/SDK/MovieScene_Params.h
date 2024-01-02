@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewRowIndex;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InPreRollFrames;                                         // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -41,7 +39,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InPostRollFrames;                                        // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -51,7 +48,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NewPriority;                                             // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -61,7 +57,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInIsLocked;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -71,7 +66,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInIsActive;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -80,8 +74,7 @@ namespace CG
 	struct UMovieSceneSection_SetCompletionMode_Params
 	{
 	public:
-		MovieScene_EMovieSceneCompletionMode                       InCompletionMode;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMovieSceneCompletionMode                                  InCompletionMode;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -90,8 +83,7 @@ namespace CG
 	struct UMovieSceneSection_SetBlendType_Params
 	{
 	public:
-		MovieScene_EMovieSceneBlendType                            InBlendType;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMovieSceneBlendType                                       InBlendType;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -101,7 +93,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -111,7 +102,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -121,7 +111,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -131,7 +120,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -141,7 +129,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -151,7 +138,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -160,8 +146,7 @@ namespace CG
 	struct UMovieSceneSection_GetCompletionMode_Params
 	{
 	public:
-		MovieScene_EMovieSceneCompletionMode                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		EMovieSceneCompletionMode                                  ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -171,7 +156,6 @@ namespace CG
 	{
 	public:
 		struct FOptionalMovieSceneBlendType                        ReturnValue;                                             // 0x0000(0x0002)  (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -181,8 +165,7 @@ namespace CG
 	{
 	public:
 		class FName                                                InBindingName;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FMovieSceneObjectBindingID>                  ReturnValue;                                             // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FMovieSceneObjectBindingID>                  ReturnValue;                                             // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -193,22 +176,19 @@ namespace CG
 	public:
 		class FName                                                InBindingName;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FMovieSceneObjectBindingID                          ReturnValue;                                             // 0x0008(0x0018)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
 	 */
 	struct UMovieSceneSequencePlayer_StopAtCurrentTime_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.Stop
 	 */
 	struct UMovieSceneSequencePlayer_Stop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.SetTimeRange
@@ -218,7 +198,6 @@ namespace CG
 	public:
 		float                                                      StartTime;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      Duration;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -228,18 +207,6 @@ namespace CG
 	{
 	public:
 		float                                                      PlayRate;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
-	 */
-	struct UMovieSceneSequencePlayer_SetPlaybackRange_Params
-	{
-	public:
-		float                                                      NewStartTime;                                            // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		float                                                      NewEndTime;                                              // 0x0004(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -248,8 +215,7 @@ namespace CG
 	struct UMovieSceneSequencePlayer_SetPlaybackPosition_Params
 	{
 	public:
-		float                                                      NewPlaybackPosition;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		struct FMovieSceneSequencePlaybackParams                   PlaybackParams;                                          // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -259,7 +225,6 @@ namespace CG
 	{
 	public:
 		struct FFrameRate                                          FrameRate;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -270,7 +235,7 @@ namespace CG
 	public:
 		int32_t                                                    StartFrame;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32_t                                                    Duration;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		float                                                      SubFrames;                                               // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -280,7 +245,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bInDisableCameraCuts;                                    // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -290,7 +254,6 @@ namespace CG
 	{
 	public:
 		float                                                      TimeInSeconds;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -301,7 +264,6 @@ namespace CG
 	public:
 		class FString                                              InLabel;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -311,15 +273,13 @@ namespace CG
 	{
 	public:
 		struct FFrameTime                                          NewPosition;                                             // 0x0000(0x0008)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.Scrub
 	 */
 	struct UMovieSceneSequencePlayer_Scrub_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent
@@ -328,7 +288,6 @@ namespace CG
 	{
 	public:
 		struct FFrameTime                                          StoppedTime;                                             // 0x0000(0x0008)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -337,10 +296,16 @@ namespace CG
 	struct UMovieSceneSequencePlayer_RPC_ExplicitServerUpdateEvent_Params
 	{
 	public:
-		MovieScene_EUpdatePositionMethod                           Method;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EUpdatePositionMethod                                      Method;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_6OE1[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		struct FFrameTime                                          RelevantTime;                                            // 0x0004(0x0008)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
+
+	/**
+	 * Function MovieScene.MovieSceneSequencePlayer.RestoreState
+	 */
+	struct UMovieSceneSequencePlayer_RestoreState_Params
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds
@@ -349,7 +314,6 @@ namespace CG
 	{
 	public:
 		float                                                      TimeInSeconds;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -360,7 +324,6 @@ namespace CG
 	public:
 		class FString                                              InLabel;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -370,15 +333,22 @@ namespace CG
 	{
 	public:
 		struct FFrameTime                                          NewPosition;                                             // 0x0000(0x0008)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function MovieScene.MovieSceneSequencePlayer.PlayTo
+	 */
+	struct UMovieSceneSequencePlayer_PlayTo_Params
+	{
+	public:
+		struct FMovieSceneSequencePlaybackParams                   PlaybackParams;                                          // 0x0000(0x0028)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.PlayReverse
 	 */
 	struct UMovieSceneSequencePlayer_PlayReverse_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.PlayLooping
@@ -387,22 +357,19 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NumLoops;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.Play
 	 */
 	struct UMovieSceneSequencePlayer_Play_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.Pause
 	 */
 	struct UMovieSceneSequencePlayer_Pause_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds
@@ -411,17 +378,6 @@ namespace CG
 	{
 	public:
 		float                                                      TimeInSeconds;                                           // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.JumpToPosition
-	 */
-	struct UMovieSceneSequencePlayer_JumpToPosition_Params
-	{
-	public:
-		float                                                      NewPlaybackPosition;                                     // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -432,7 +388,6 @@ namespace CG
 	public:
 		class FString                                              InLabel;                                                 // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -442,7 +397,6 @@ namespace CG
 	{
 	public:
 		struct FFrameTime                                          NewPosition;                                             // 0x0000(0x0008)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -452,7 +406,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -462,7 +415,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -472,15 +424,13 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop
 	 */
 	struct UMovieSceneSequencePlayer_GoToEndAndStop_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.GetStartTime
@@ -489,7 +439,15 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function MovieScene.MovieSceneSequencePlayer.GetSequence
+	 */
+	struct UMovieSceneSequencePlayer_GetSequence_Params
+	{
+	public:
+		class UMovieSceneSequence*                                 ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -499,37 +457,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
-	 */
-	struct UMovieSceneSequencePlayer_GetPlaybackStart_Params
-	{
-	public:
-		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
-	 */
-	struct UMovieSceneSequencePlayer_GetPlaybackPosition_Params
-	{
-	public:
-		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
-	 */
-	struct UMovieSceneSequencePlayer_GetPlaybackEnd_Params
-	{
-	public:
-		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -539,18 +466,7 @@ namespace CG
 	{
 	public:
 		class UObject*                                             InObject;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<struct FMovieSceneObjectBindingID>                  ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	};
-
-	/**
-	 * Function MovieScene.MovieSceneSequencePlayer.GetLength
-	 */
-	struct UMovieSceneSequencePlayer_GetLength_Params
-	{
-	public:
-		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FMovieSceneObjectBindingID>                  ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -560,7 +476,6 @@ namespace CG
 	{
 	public:
 		struct FFrameRate                                          ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -570,7 +485,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -580,7 +494,6 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -590,7 +503,6 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -600,7 +512,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -610,7 +521,6 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -620,16 +530,14 @@ namespace CG
 	{
 	public:
 		struct FMovieSceneObjectBindingID                          ObjectBinding;                                           // 0x0000(0x0018)  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		TArray<class UObject*>                                     ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<class UObject*>                                     ReturnValue;                                             // 0x0018(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
 	 * Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
 	 */
 	struct UMovieSceneSequencePlayer_ChangePlaybackDirection_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function MovieScene.MovieSceneSubSection.SetSequence
@@ -638,7 +546,6 @@ namespace CG
 	{
 	public:
 		class UMovieSceneSequence*                                 Sequence;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -648,7 +555,6 @@ namespace CG
 	{
 	public:
 		class UMovieSceneSequence*                                 ReturnValue;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -659,7 +565,6 @@ namespace CG
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      InPlayRate;                                              // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -669,7 +574,6 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 InStopTime;                                              // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -679,7 +583,6 @@ namespace CG
 	{
 	public:
 		struct FQualifiedFrameTime                                 InStartTime;                                             // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -691,7 +594,6 @@ namespace CG
 		struct FQualifiedFrameTime                                 InCurrentTime;                                           // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      InPlayRate;                                              // 0x0010(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FFrameTime                                          ReturnValue;                                             // 0x0014(0x0008)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -702,7 +604,6 @@ namespace CG
 	public:
 		float                                                      Interp;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                                      ReturnValue;                                             // 0x0004(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 }

@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapLightingTrackingComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapLightingTrackingComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapLightingTrackingComponent::StaticClass()
@@ -26,11 +26,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A896A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.IsTrackerValid
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapLightEstimationFunctionLibrary::STATIC_IsTrackerValid()
+	bool UMagicLeapLightEstimationFunctionLibrary::IsTrackerValid()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -39,7 +39,6 @@ namespace CG
 		UMagicLeapLightEstimationFunctionLibrary_IsTrackerValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -48,13 +47,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A89610
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.GetColorTemperatureState
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapLightEstimationColorTemperatureState ColorTemperatureState                                      (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapLightEstimationFunctionLibrary::STATIC_GetColorTemperatureState(struct FMagicLeapLightEstimationColorTemperatureState* ColorTemperatureState)
+	bool UMagicLeapLightEstimationFunctionLibrary::GetColorTemperatureState(struct FMagicLeapLightEstimationColorTemperatureState* ColorTemperatureState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -63,7 +62,6 @@ namespace CG
 		UMagicLeapLightEstimationFunctionLibrary_GetColorTemperatureState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -75,13 +73,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A89560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.GetAmbientGlobalState
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FMagicLeapLightEstimationAmbientGlobalState GlobalAmbientState                                         (Parm, OutParm, NativeAccessSpecifierPublic)
 	 */
-	bool UMagicLeapLightEstimationFunctionLibrary::STATIC_GetAmbientGlobalState(struct FMagicLeapLightEstimationAmbientGlobalState* GlobalAmbientState)
+	bool UMagicLeapLightEstimationFunctionLibrary::GetAmbientGlobalState(struct FMagicLeapLightEstimationAmbientGlobalState* GlobalAmbientState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -90,7 +88,6 @@ namespace CG
 		UMagicLeapLightEstimationFunctionLibrary_GetAmbientGlobalState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -102,11 +99,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A89540
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.DestroyTracker
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	void UMagicLeapLightEstimationFunctionLibrary::STATIC_DestroyTracker()
+	void UMagicLeapLightEstimationFunctionLibrary::DestroyTracker()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -115,18 +112,17 @@ namespace CG
 		UMagicLeapLightEstimationFunctionLibrary_DestroyTracker_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00A89510
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary.CreateTracker
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	bool UMagicLeapLightEstimationFunctionLibrary::STATIC_CreateTracker()
+	bool UMagicLeapLightEstimationFunctionLibrary::CreateTracker()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -135,7 +131,6 @@ namespace CG
 		UMagicLeapLightEstimationFunctionLibrary_CreateTracker_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -144,8 +139,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMagicLeapLightEstimationFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMagicLeapLightEstimationFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMagicLeapLightEstimationFunctionLibrary::StaticClass()

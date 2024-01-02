@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,9 +17,8 @@ namespace CG
 	/**
 	 * Function Cinematic_Actor_Base.Cinematic_Actor_Base_C.Set Up Materials
 	 */
-	struct ACinematic_Actor_Base_C_Set_Up_Materials_Params
-	{
-	};
+	struct ACinematic_Actor_Base_C_SetUpMaterials_Params
+	{	};
 
 }
 

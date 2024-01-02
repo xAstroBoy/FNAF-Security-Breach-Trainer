@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -20,9 +20,8 @@ namespace CG
 	struct UChaosDestructionListener_SortTrailingEvents_Params
 	{
 	public:
-		TArray<struct FChaosTrailingEventData>                     TrailingEvents;                                          // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		GeometryCollectionEngine_EChaosTrailingSortMethod          SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FChaosTrailingEventData>                     TrailingEvents;                                          // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		EChaosTrailingSortMethod                                   SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -31,9 +30,8 @@ namespace CG
 	struct UChaosDestructionListener_SortCollisionEvents_Params
 	{
 	public:
-		TArray<struct FChaosCollisionEventData>                    CollisionEvents;                                         // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		GeometryCollectionEngine_EChaosCollisionSortMethod         SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FChaosCollisionEventData>                    CollisionEvents;                                         // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		EChaosCollisionSortMethod                                  SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -42,9 +40,8 @@ namespace CG
 	struct UChaosDestructionListener_SortBreakingEvents_Params
 	{
 	public:
-		TArray<struct FChaosBreakingEventData>                     BreakingEvents;                                          // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		GeometryCollectionEngine_EChaosBreakingSortMethod          SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
+		TArray<struct FChaosBreakingEventData>                     BreakingEvents;                                          // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+		EChaosBreakingSortMethod                                   SortMethod;                                              // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -54,7 +51,6 @@ namespace CG
 	{
 	public:
 		struct FChaosTrailingEventRequestSettings                  InSettings;                                              // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -64,7 +60,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsEnabled;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -74,7 +69,6 @@ namespace CG
 	{
 	public:
 		struct FChaosCollisionEventRequestSettings                 InSettings;                                              // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -84,7 +78,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsEnabled;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -94,7 +87,6 @@ namespace CG
 	{
 	public:
 		struct FChaosBreakingEventRequestSettings                  InSettings;                                              // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -104,7 +96,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsEnabled;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -114,7 +105,6 @@ namespace CG
 	{
 	public:
 		class AGeometryCollectionActor*                            GeometryCollectionActor;                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -124,7 +114,6 @@ namespace CG
 	{
 	public:
 		class AChaosSolverActor*                                   ChaosSolverActor;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -134,7 +123,6 @@ namespace CG
 	{
 	public:
 		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -144,7 +132,6 @@ namespace CG
 	{
 	public:
 		class AGeometryCollectionActor*                            GeometryCollectionActor;                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -154,7 +141,6 @@ namespace CG
 	{
 	public:
 		class AChaosSolverActor*                                   ChaosSolverActor;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -167,7 +153,6 @@ namespace CG
 		struct FVector                                             End;                                                     // 0x000C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FHitResult                                          OutHit;                                                  // 0x0018(0x0088)  (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x00A0(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -177,7 +162,6 @@ namespace CG
 	{
 	public:
 		bool                                                       bNewNotifyBreaks;                                        // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -187,7 +171,15 @@ namespace CG
 	{
 	public:
 		struct FChaosPhysicsCollisionInfo                          CollisionInfo;                                           // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCollectionEngine.GeometryCollectionComponent.OnRep_RepData
+	 */
+	struct UGeometryCollectionComponent_OnRep_RepData_Params
+	{
+	public:
+		struct FGeometryCollectionRepData                          OldData;                                                 // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -197,7 +189,6 @@ namespace CG
 	{
 	public:
 		class UGeometryCollectionComponent*                        FracturedComponent;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -207,7 +198,15 @@ namespace CG
 	{
 	public:
 		class UGeometryCollectionComponent*                        FracturedComponent;                                      // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
 
+	/**
+	 * Function GeometryCollectionEngine.GeometryCollectionComponent.NetAbandonCluster
+	 */
+	struct UGeometryCollectionComponent_NetAbandonCluster_Params
+	{
+	public:
+		int32_t                                                    TransformIndex;                                          // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -217,10 +216,10 @@ namespace CG
 	{
 	public:
 		bool                                                       Enabled;                                                 // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		GeometryCollectionSimulationCore_EGeometryCollectionPhysicsTypeEnum Target;                                                  // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		EGeometryCollectionPhysicsTypeEnum                         Target;                                                  // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_Z4HU[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UFieldSystemMetaData*                                MetaData;                                                // 0x0008(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UFieldNodeBase*                                      Field;                                                   // 0x0010(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -231,7 +230,6 @@ namespace CG
 	public:
 		float                                                      Radius;                                                  // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             Position;                                                // 0x0004(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -241,7 +239,6 @@ namespace CG
 	{
 	public:
 		struct FChaosPhysicsCollisionInfo                          CollisionInfo;                                           // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
@@ -251,15 +248,13 @@ namespace CG
 	{
 	public:
 		struct FChaosPhysicsCollisionInfo                          CollisionInfo;                                           // 0x0000(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
 	};
 
 	/**
 	 * Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState
 	 */
 	struct UStaticMeshSimulationComponent_ForceRecreatePhysicsState_Params
-	{
-	};
+	{	};
 
 }
 

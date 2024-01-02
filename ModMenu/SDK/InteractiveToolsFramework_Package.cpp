@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInputBehavior::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAnyButtonInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAnyButtonInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAnyButtonInputBehavior::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveGizmoBuilder::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAxisAngleGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAxisAngleGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAxisAngleGizmoBuilder::StaticClass()
@@ -68,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveGizmo::StaticClass()
@@ -82,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAxisAngleGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAxisAngleGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAxisAngleGizmo::StaticClass()
@@ -96,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAxisPositionGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAxisPositionGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAxisPositionGizmoBuilder::StaticClass()
@@ -110,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAxisPositionGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAxisPositionGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAxisPositionGizmo::StaticClass()
@@ -124,8 +124,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoConstantAxisSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoConstantAxisSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoConstantAxisSource::StaticClass()
@@ -138,8 +138,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoConstantFrameAxisSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoConstantFrameAxisSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoConstantFrameAxisSource::StaticClass()
@@ -152,8 +152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoWorldAxisSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoWorldAxisSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoWorldAxisSource::StaticClass()
@@ -166,8 +166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoComponentAxisSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoComponentAxisSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoComponentAxisSource::StaticClass()
@@ -180,8 +180,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveToolPropertySet.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveToolPropertySet.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveToolPropertySet::StaticClass()
@@ -194,8 +194,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBrushBaseProperties.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBrushBaseProperties.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBrushBaseProperties::StaticClass()
@@ -208,8 +208,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveTool::StaticClass()
@@ -222,8 +222,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USingleSelectionTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USingleSelectionTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USingleSelectionTool::StaticClass()
@@ -236,8 +236,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMeshSurfacePointTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMeshSurfacePointTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMeshSurfacePointTool::StaticClass()
@@ -250,8 +250,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBaseBrushTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBaseBrushTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBaseBrushTool::StaticClass()
@@ -264,8 +264,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBrushStampIndicatorBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBrushStampIndicatorBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBrushStampIndicatorBuilder::StaticClass()
@@ -278,8 +278,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UBrushStampIndicator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UBrushStampIndicator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UBrushStampIndicator::StaticClass()
@@ -292,8 +292,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClickDragInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClickDragInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClickDragInputBehavior::StaticClass()
@@ -306,8 +306,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULocalClickDragInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULocalClickDragInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULocalClickDragInputBehavior::StaticClass()
@@ -320,8 +320,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveToolBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveToolBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveToolBuilder::StaticClass()
@@ -334,8 +334,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClickDragToolBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClickDragToolBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClickDragToolBuilder::StaticClass()
@@ -348,8 +348,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UClickDragTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UClickDragTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UClickDragTool::StaticClass()
@@ -362,8 +362,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AInternalToolFrameworkActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AInternalToolFrameworkActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AInternalToolFrameworkActor::StaticClass()
@@ -376,8 +376,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AGizmoActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AGizmoActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AGizmoActor::StaticClass()
@@ -390,9 +390,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9DF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bWorldIn                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -406,16 +406,15 @@ namespace CG
 		params.bWorldIn = bWorldIn;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
-	 * 		Flags  -> (Final, Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bHoveringIn                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -429,15 +428,14 @@ namespace CG
 		params.bHoveringIn = bHoveringIn;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoBaseComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoBaseComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoBaseComponent::StaticClass()
@@ -450,8 +448,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoArrowComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoArrowComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoArrowComponent::StaticClass()
@@ -464,8 +462,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoBoxComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoBoxComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoBoxComponent::StaticClass()
@@ -478,8 +476,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoCircleComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoCircleComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoCircleComponent::StaticClass()
@@ -492,9 +490,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9BF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FTransform                                  NewTransform                                               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -508,16 +506,15 @@ namespace CG
 		params.NewTransform = NewTransform;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9A40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.GetTransform
-	 * 		Flags  -> (Native, Public, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FTransform UGizmoTransformSource::GetTransform()
 	{
@@ -528,7 +525,6 @@ namespace CG
 		UGizmoTransformSource_GetTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -537,8 +533,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoTransformSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoTransformSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoTransformSource::StaticClass()
@@ -551,9 +547,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9AB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
-	 * 		Flags  -> (Native, Public, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UGizmoAxisSource::HasTangentVectors()
 	{
@@ -564,7 +560,6 @@ namespace CG
 		UGizmoAxisSource_HasTangentVectors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -573,9 +568,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9950
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     TangentXOut                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     TangentYOut                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -589,7 +584,6 @@ namespace CG
 		UGizmoAxisSource_GetTangentVectors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -601,9 +595,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A98A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetOrigin
-	 * 		Flags  -> (Native, Public, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UGizmoAxisSource::GetOrigin()
 	{
@@ -614,7 +608,6 @@ namespace CG
 		UGizmoAxisSource_GetOrigin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -623,9 +616,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9860
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetDirection
-	 * 		Flags  -> (Native, Public, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector UGizmoAxisSource::GetDirection()
 	{
@@ -636,7 +629,6 @@ namespace CG
 		UGizmoAxisSource_GetDirection_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -645,8 +637,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoAxisSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoAxisSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoAxisSource::StaticClass()
@@ -659,9 +651,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9CD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
-	 * 		Flags  -> (Native, Public, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bHovering                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -675,15 +667,14 @@ namespace CG
 		params.bHovering = bHovering;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoClickTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoClickTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoClickTarget::StaticClass()
@@ -696,9 +687,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.EndUpdate
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoStateTarget::EndUpdate()
 	{
@@ -709,16 +700,15 @@ namespace CG
 		UGizmoStateTarget_EndUpdate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BA31A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoStateTarget::BeginUpdate()
 	{
@@ -729,15 +719,14 @@ namespace CG
 		UGizmoStateTarget_BeginUpdate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoStateTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoStateTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoStateTarget::StaticClass()
@@ -750,9 +739,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9AE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -766,16 +755,15 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A98E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-	 * 		Flags  -> (Native, Public, Const)
+	 * 		Flags  -> ()
 	 */
 	float UGizmoFloatParameterSource::GetParameter()
 	{
@@ -786,7 +774,6 @@ namespace CG
 		UGizmoFloatParameterSource_GetParameter_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -795,9 +782,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9840
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoFloatParameterSource::EndModify()
 	{
@@ -808,16 +795,15 @@ namespace CG
 		UGizmoFloatParameterSource_EndModify_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoFloatParameterSource::BeginModify()
 	{
@@ -828,15 +814,14 @@ namespace CG
 		UGizmoFloatParameterSource_BeginModify_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoFloatParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoFloatParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoFloatParameterSource::StaticClass()
@@ -849,9 +834,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9B60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
-	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   NewValue                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -865,16 +850,15 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
-	 * 		Flags  -> (Native, Public, HasDefaults, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector2D UGizmoVec2ParameterSource::GetParameter()
 	{
@@ -885,7 +869,6 @@ namespace CG
 		UGizmoVec2ParameterSource_GetParameter_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -894,9 +877,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9840
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoVec2ParameterSource::EndModify()
 	{
@@ -907,16 +890,15 @@ namespace CG
 		UGizmoVec2ParameterSource_EndModify_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x029A9820
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
-	 * 		Flags  -> (Native, Public)
+	 * 		Flags  -> ()
 	 */
 	void UGizmoVec2ParameterSource::BeginModify()
 	{
@@ -927,15 +909,14 @@ namespace CG
 		UGizmoVec2ParameterSource_BeginModify_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoVec2ParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoVec2ParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoVec2ParameterSource::StaticClass()
@@ -948,8 +929,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoLineHandleComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoLineHandleComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoLineHandleComponent::StaticClass()
@@ -962,8 +943,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoRectangleComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoRectangleComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoRectangleComponent::StaticClass()
@@ -976,8 +957,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoLambdaHitTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoLambdaHitTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoLambdaHitTarget::StaticClass()
@@ -990,8 +971,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoComponentHitTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoComponentHitTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoComponentHitTarget::StaticClass()
@@ -1004,8 +985,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInputBehaviorSet.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInputBehaviorSet.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInputBehaviorSet::StaticClass()
@@ -1018,8 +999,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInputBehaviorSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInputBehaviorSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInputBehaviorSource::StaticClass()
@@ -1032,8 +1013,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInputRouter.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInputRouter.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInputRouter::StaticClass()
@@ -1046,8 +1027,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractionMechanic.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractionMechanic.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractionMechanic::StaticClass()
@@ -1060,8 +1041,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveGizmoManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveGizmoManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveGizmoManager::StaticClass()
@@ -1074,8 +1055,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UToolContextTransactionProvider.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UToolContextTransactionProvider.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UToolContextTransactionProvider::StaticClass()
@@ -1088,8 +1069,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveToolManager.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveToolManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveToolManager::StaticClass()
@@ -1102,8 +1083,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UToolFrameworkComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UToolFrameworkComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UToolFrameworkComponent::StaticClass()
@@ -1116,8 +1097,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveToolsContext.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveToolsContext.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveToolsContext::StaticClass()
@@ -1130,8 +1111,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AIntervalGizmoActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AIntervalGizmoActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AIntervalGizmoActor::StaticClass()
@@ -1144,8 +1125,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UIntervalGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UIntervalGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UIntervalGizmoBuilder::StaticClass()
@@ -1158,8 +1139,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UIntervalGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UIntervalGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UIntervalGizmo::StaticClass()
@@ -1172,8 +1153,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoBaseFloatParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoBaseFloatParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoBaseFloatParameterSource::StaticClass()
@@ -1186,8 +1167,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoAxisIntervalParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoAxisIntervalParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoAxisIntervalParameterSource::StaticClass()
@@ -1200,8 +1181,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UKeyAsModifierInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UKeyAsModifierInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UKeyAsModifierInputBehavior::StaticClass()
@@ -1214,8 +1195,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMeshSurfacePointToolBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMeshSurfacePointToolBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMeshSurfacePointToolBuilder::StaticClass()
@@ -1228,8 +1209,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMouseHoverBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMouseHoverBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMouseHoverBehavior::StaticClass()
@@ -1242,8 +1223,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMultiClickSequenceInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMultiClickSequenceInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMultiClickSequenceInputBehavior::StaticClass()
@@ -1256,8 +1237,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMultiSelectionTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMultiSelectionTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMultiSelectionTool::StaticClass()
@@ -1270,8 +1251,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoLocalFloatParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoLocalFloatParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoLocalFloatParameterSource::StaticClass()
@@ -1284,8 +1265,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoBaseVec2ParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoBaseVec2ParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoBaseVec2ParameterSource::StaticClass()
@@ -1298,8 +1279,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoLocalVec2ParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoLocalVec2ParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoLocalVec2ParameterSource::StaticClass()
@@ -1312,8 +1293,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoAxisTranslationParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoAxisTranslationParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoAxisTranslationParameterSource::StaticClass()
@@ -1326,8 +1307,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoPlaneTranslationParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoPlaneTranslationParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoPlaneTranslationParameterSource::StaticClass()
@@ -1340,8 +1321,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoAxisRotationParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoAxisRotationParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoAxisRotationParameterSource::StaticClass()
@@ -1354,8 +1335,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoUniformScaleParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoUniformScaleParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoUniformScaleParameterSource::StaticClass()
@@ -1368,8 +1349,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoAxisScaleParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoAxisScaleParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoAxisScaleParameterSource::StaticClass()
@@ -1382,8 +1363,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoPlaneScaleParameterSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoPlaneScaleParameterSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoPlaneScaleParameterSource::StaticClass()
@@ -1396,8 +1377,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlanePositionGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlanePositionGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlanePositionGizmoBuilder::StaticClass()
@@ -1410,8 +1391,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlanePositionGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlanePositionGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlanePositionGizmo::StaticClass()
@@ -1424,8 +1405,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USelectionSet.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USelectionSet.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USelectionSet::StaticClass()
@@ -1438,8 +1419,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UMeshSelectionSet.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UMeshSelectionSet.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UMeshSelectionSet::StaticClass()
@@ -1452,8 +1433,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USingleClickInputBehavior.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USingleClickInputBehavior.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USingleClickInputBehavior::StaticClass()
@@ -1466,8 +1447,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USingleClickToolBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USingleClickToolBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USingleClickToolBuilder::StaticClass()
@@ -1480,8 +1461,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USingleClickTool.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USingleClickTool.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USingleClickTool::StaticClass()
@@ -1494,8 +1475,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoNilStateTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoNilStateTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoNilStateTarget::StaticClass()
@@ -1508,8 +1489,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoLambdaStateTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoLambdaStateTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoLambdaStateTarget::StaticClass()
@@ -1522,8 +1503,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoObjectModifyStateTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoObjectModifyStateTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoObjectModifyStateTarget::StaticClass()
@@ -1536,8 +1517,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoTransformChangeStateTarget.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoTransformChangeStateTarget.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoTransformChangeStateTarget::StaticClass()
@@ -1550,8 +1531,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ATransformGizmoActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ATransformGizmoActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ATransformGizmoActor::StaticClass()
@@ -1564,8 +1545,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTransformGizmoBuilder.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTransformGizmoBuilder.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTransformGizmoBuilder::StaticClass()
@@ -1578,8 +1559,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTransformGizmo.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTransformGizmo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTransformGizmo::StaticClass()
@@ -1592,8 +1573,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTransformProxy.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTransformProxy.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTransformProxy::StaticClass()
@@ -1606,8 +1587,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoBaseTransformSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoBaseTransformSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoBaseTransformSource::StaticClass()
@@ -1620,8 +1601,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoComponentWorldTransformSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoComponentWorldTransformSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoComponentWorldTransformSource::StaticClass()
@@ -1634,8 +1615,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoScaledTransformSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoScaledTransformSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoScaledTransformSource::StaticClass()
@@ -1648,8 +1629,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGizmoTransformProxyTransformSource.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGizmoTransformProxyTransformSource.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGizmoTransformProxyTransformSource::StaticClass()

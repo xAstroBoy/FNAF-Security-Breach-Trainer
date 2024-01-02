@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,11 +12,11 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.GetCollisionMode
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	Engine_ECollisionEnabled ADbgPlayerPawn_C::GetCollisionMode()
+	ECollisionEnabled ADbgPlayerPawn_C::GetCollisionMode()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -33,19 +33,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.Set Collision Mode
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		Engine_ECollisionEnabled                           NewType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		ECollisionEnabled                                  NewType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ADbgPlayerPawn_C::Set_Collision_Mode(Engine_ECollisionEnabled NewType)
+	void ADbgPlayerPawn_C::SetCollisionMode(ECollisionEnabled NewType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function DbgPlayerPawn.DbgPlayerPawn_C.Set Collision Mode");
 		
-		ADbgPlayerPawn_C_Set_Collision_Mode_Params params {};
+		ADbgPlayerPawn_C_SetCollisionMode_Params params {};
 		params.NewType = NewType;
 		
 		auto flags = fn->FunctionFlags;
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function DbgPlayerPawn.DbgPlayerPawn_C.ExecuteUbergraph_DbgPlayerPawn
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -77,8 +77,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ADbgPlayerPawn_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ADbgPlayerPawn_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ADbgPlayerPawn_C::StaticClass()

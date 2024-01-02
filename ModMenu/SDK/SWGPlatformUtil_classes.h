@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	class USWGPlatformSettings : public UDeveloperSettings
 	{
 	public:
-		SWGPlatformUtil_ESWGPlatform                               BuildPlatform;                                           // 0x0038(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_T3OU[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (PADDING)
+		ESWGPlatform                                               BuildPlatform;                                           // 0x0038(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_BBBT[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -35,15 +35,19 @@ namespace CG
 	class USWGPlatformUtilFunctions : public UBlueprintFunctionLibrary
 	{
 	public:
-		void STATIC_SwitchOnPlatform(SWGPlatformUtil_ESWGPlatform* Platform);
-		void STATIC_StartActivity(class APlayerController* PlayerController, const class FString& ActivityId);
-		void STATIC_SetActivityAvailability(class APlayerController* PlayerController, const class FString& ActivityId, bool bEnabled);
-		void STATIC_IsInEditorSwitch(SWGPlatformUtil_ESWGEditor* Editor);
-		bool STATIC_IsInEditor();
-		class FString STATIC_GetVersionString();
-		class FString STATIC_GetGPU();
-		SWGPlatformUtil_ESWGPlatform STATIC_GetBuildPlatform();
-		void STATIC_EndActivity(class APlayerController* PlayerController, const class FString& ActivityId, SWGPlatformUtil_EGameActivityEndType Outcome);
+		void SwitchOnPlatform(ESWGPlatform* Platform);
+		void StartActivity(class APlayerController* PlayerController, const class FString& ActivityId);
+		void SetActivityAvailability(class APlayerController* PlayerController, const class FString& ActivityId, bool bEnabled);
+		void IsInEditorSwitch(ESWGEditor* Editor);
+		bool IsInEditor();
+		bool GPUSupportsRayTracing();
+		ESWGXboxPlatform GetXboxSpecificPlatform();
+		class FString GetVersionString();
+		class FString GetGPU();
+		struct FKey GetGamepadBackKey();
+		struct FKey GetGamepadAcceptKey();
+		ESWGPlatform GetBuildPlatform();
+		void EndActivity(class APlayerController* PlayerController, const class FString& ActivityId, EGameActivityEndType Outcome);
 		static UClass* StaticClass();
 	};
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,30 +16,32 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass FirstPersonFreddyArms_ABP.FirstPersonFreddyArms_ABP_C
-	 * Size -> 0x0289 (FullSize[0x04F9] - InheritedSize[0x0270])
+	 * Size -> 0x02A1 (FullSize[0x0559] - InheritedSize[0x02B8])
 	 */
 	class UFirstPersonFreddyArms_ABP_C : public UAnimInstance
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0270(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0278(0x0030)
-		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_2;                        // 0x02A8(0x0028)
-		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult;                          // 0x02D0(0x0028)
-		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x02F8(0x0078)
-		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_2;                             // 0x0370(0x0030)
-		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x03A0(0x0078)
-		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0418(0x0030)
-		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0448(0x00B0)
-		bool                                                       PlayAnim;                                                // 0x04F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_7MLD[0x8];                                   // 0x02B8(0x0008) Fix Super Size
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02C0(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x02C8(0x0030)
+		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_2;                        // 0x02F8(0x0028)
+		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult;                          // 0x0320(0x0028)
+		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer_2;                          // 0x0348(0x0080)
+		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_2;                             // 0x03C8(0x0030)
+		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x03F8(0x0080)
+		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0478(0x0030)
+		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x04A8(0x00B0)
+		bool                                                       PlayAnim;                                                // 0x0558(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
+		void GetMoveSpeedInput(float* MoveSpeed);
 		void AnimGraph(struct FPoseLink* AnimGraph);
 		void Open();
 		void OpenDone();
 		void SetHeadAimTarget(const struct FVector& AimLocation);
 		void StartScan();
 		void CanRunEvent(bool CanRun);
-		void Stun_Event(bool Is_Stunned);
+		void StunEvent(bool IsStunned);
 		void CanRummageEvent();
 		void IsFirstPersonEvent();
 		void IsNotFirstPersonEvent();
@@ -58,7 +60,7 @@ namespace CG
 		void ForceAnimOverride(bool enable);
 		void FreddyCorrupted(bool Off);
 		void RoxyCrying(bool Off);
-		void VoAnimEvent(class UAkAudioEvent* AK_Event);
+		void VoAnimEvent(class UAkAudioEvent* AKEvent);
 		void CanHackEvent(bool Off);
 		void CanDieEvent(bool Off);
 		void EndoSpawnInBowlingEvent();
@@ -68,10 +70,12 @@ namespace CG
 		void FreddyEndIdle(bool Off);
 		void CutSceneSpineBlender(bool Off, class ULevelSequencePlayer* Sequence);
 		void CutsceneGrateEvent(class ULevelSequencePlayer* SequencePlayer);
-		void Spotlight_Aim_Actor(class AActor* AimActor);
-		void Searching(fnaf9_EHideObjectType Hide_Type);
-		void TurnEvent(float TurnDegrees);
+		void SpotlightAimActor(class AActor* AimActor);
+		void IsHangingEvent(bool IsHanging);
+		void OverlappingDoor(bool Overlapping, class AActor* Instigator);
 		void SearchingDone();
+		void Searching(EHideObjectType HideType);
+		void TurnEvent(float TurnDegrees);
 		void HeadAimEvent(bool OnOff);
 		void CanJumpscareEvent();
 		void Breakthrough();

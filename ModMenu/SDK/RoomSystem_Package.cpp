@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.HideCueObjectInterface.SetupWorldCue
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UHideCueObjectInterface::SetupWorldCue()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.HideCueObjectInterface.ResetWorldCue
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UHideCueObjectInterface::ResetWorldCue()
 	{
@@ -50,8 +50,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UHideCueObjectInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UHideCueObjectInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UHideCueObjectInterface::StaticClass()
@@ -64,9 +64,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.IsPlayerInAttackRange
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	bool UAIHideLocationInterface::IsPlayerInAttackRange()
 	{
@@ -85,9 +85,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetHideLocationAndRotation
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    Rotation                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetHideCueActor
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	class AActor* UAIHideLocationInterface::GetHideCueActor()
 	{
@@ -133,9 +133,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.AIHideLocationInterface.GetAIEjectLocationAndRotation
-	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    Rotation                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -160,8 +160,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAIHideLocationInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAIHideLocationInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAIHideLocationInterface::StaticClass()
@@ -174,9 +174,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetSecurityLevel
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NewSecurityLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -196,9 +196,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorRequiredItem
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class FName                                        ItemName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -218,9 +218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorLockPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Lock                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -240,9 +240,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.SetDoorLockAI
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Lock                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -262,9 +262,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorOpen
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UDoorInterface::IsDoorOpen()
 	{
@@ -283,9 +283,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorLockedForPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UDoorInterface::IsDoorLockedForPlayer()
 	{
@@ -304,9 +304,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.IsDoorLockedForAI
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UDoorInterface::IsDoorLockedForAI()
 	{
@@ -325,9 +325,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.HasDoorInitialized
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	bool UDoorInterface::HasDoorInitialized()
 	{
@@ -346,9 +346,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.ForceDoorOpen
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDoorInterface::ForceDoorOpen()
 	{
@@ -365,9 +365,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.DoorInterface.ForceDoorClose
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UDoorInterface::ForceDoorClose()
 	{
@@ -384,8 +384,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UDoorInterface.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDoorInterface.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UDoorInterface::StaticClass()
@@ -398,13 +398,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2FC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.SetPOIVisited
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPOIIndex                                   Index                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UPOIBlueprintLibrary::STATIC_SetPOIVisited(const struct FPOIIndex& Index)
+	void UPOIBlueprintLibrary::SetPOIVisited(const struct FPOIIndex& Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -414,20 +414,19 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2F30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.IsValid
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPOIIndex                                   Index                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UPOIBlueprintLibrary::STATIC_IsValid(const struct FPOIIndex& Index)
+	bool UPOIBlueprintLibrary::IsValid(const struct FPOIIndex& Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -437,7 +436,6 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -446,13 +444,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2E00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.HasPOIBeenVisited
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPOIIndex                                   Index                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UPOIBlueprintLibrary::STATIC_HasPOIBeenVisited(const struct FPOIIndex& Index)
+	bool UPOIBlueprintLibrary::HasPOIBeenVisited(const struct FPOIIndex& Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -462,7 +460,6 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -471,14 +468,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2CF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.GetPOIResultsFromIndices
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIIndex>                           Indices                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPOIResult>                          Results                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIIndex>                           Indices                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          Results                                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UPOIBlueprintLibrary::STATIC_GetPOIResultsFromIndices(TArray<struct FPOIIndex> Indices, TArray<struct FPOIResult>* Results)
+	void UPOIBlueprintLibrary::GetPOIResultsFromIndices(TArray<struct FPOIIndex> Indices, TArray<struct FPOIResult>* Results)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -488,7 +485,6 @@ namespace CG
 		params.Indices = Indices;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -498,13 +494,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2C50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.GetPOIInfoFromIndex
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPOIIndex                                   Index                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	struct FPointOfInterestRuntimeInfo UPOIBlueprintLibrary::STATIC_GetPOIInfoFromIndex(const struct FPOIIndex& Index)
+	struct FPointOfInterestRuntimeInfo UPOIBlueprintLibrary::GetPOIInfoFromIndex(const struct FPOIIndex& Index)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -514,7 +510,6 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -523,14 +518,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2B40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIBlueprintLibrary.CreatePOIIndicesFromResults
-	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIResult>                          Results                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPOIIndex>                           Indices                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          Results                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIIndex>                           Indices                                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UPOIBlueprintLibrary::STATIC_CreatePOIIndicesFromResults(TArray<struct FPOIResult> Results, TArray<struct FPOIIndex>* Indices)
+	void UPOIBlueprintLibrary::CreatePOIIndicesFromResults(TArray<struct FPOIResult> Results, TArray<struct FPOIIndex>* Indices)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -540,7 +535,6 @@ namespace CG
 		params.Results = Results;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -550,8 +544,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPOIBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPOIBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPOIBlueprintLibrary::StaticClass()
@@ -564,13 +558,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC2E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.POIResultBlueprintLibrary.HasPOIBeenVisited
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPointOfInterestRuntimeInfo                 Info                                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UPOIResultBlueprintLibrary::STATIC_HasPOIBeenVisited(const struct FPointOfInterestRuntimeInfo& Info)
+	bool UPOIResultBlueprintLibrary::HasPOIBeenVisited(const struct FPointOfInterestRuntimeInfo& Info)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -580,7 +574,6 @@ namespace CG
 		params.Info = Info;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -589,8 +582,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPOIResultBlueprintLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPOIResultBlueprintLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPOIResultBlueprintLibrary::StaticClass()
@@ -603,9 +596,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC46B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.SetPOIVisited
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -619,16 +612,15 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4630
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ResetPOIHeat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -642,16 +634,15 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4590
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.IsLocationInRoom
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -665,7 +656,6 @@ namespace CG
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -674,9 +664,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4560
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetTotalRoomArea
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float ARoomAreaBase::GetTotalRoomArea()
 	{
@@ -687,7 +677,6 @@ namespace CG
 		ARoomAreaBase_GetTotalRoomArea_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -696,9 +685,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4480
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomPoints
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              PointDelta                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -712,7 +701,6 @@ namespace CG
 		params.PointDelta = PointDelta;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -721,9 +709,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4450
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoints
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TMap<int32_t, struct FVector> ARoomAreaBase::GetRoomEntryPoints()
 	{
@@ -734,7 +722,6 @@ namespace CG
 		ARoomAreaBase_GetRoomEntryPoints_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -743,9 +730,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC43B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomEntryPoint
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryIndex                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -759,7 +746,6 @@ namespace CG
 		params.EntryIndex = EntryIndex;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -768,9 +754,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4270
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRoomAdjacency
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -784,7 +770,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -793,9 +778,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4230
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetRandomLocationInRoom
-	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	struct FVector ARoomAreaBase::GetRandomLocationInRoom()
 	{
@@ -806,7 +791,6 @@ namespace CG
 		ARoomAreaBase_GetRandomLocationInRoom_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -815,9 +799,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC41A0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointsOfInterestInfo
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FPointOfInterestRuntimeInfo> ARoomAreaBase::GetPointsOfInterestInfo()
 	{
@@ -828,7 +812,6 @@ namespace CG
 		ARoomAreaBase_GetPointsOfInterestInfo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -837,9 +820,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4110
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointsOfInterest
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FVector> ARoomAreaBase::GetPointsOfInterest()
 	{
@@ -850,7 +833,6 @@ namespace CG
 		ARoomAreaBase_GetPointsOfInterest_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -859,9 +841,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4070
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPointOfInterestInfoByIndex
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -875,7 +857,6 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -884,9 +865,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC4050
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetPlayerHeat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float ARoomAreaBase::GetPlayerHeat()
 	{
@@ -897,7 +878,6 @@ namespace CG
 		ARoomAreaBase_GetPlayerHeat_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -906,9 +886,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BB4400
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetMapName
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class FName ARoomAreaBase::GetMapName()
 	{
@@ -919,7 +899,6 @@ namespace CG
 		ARoomAreaBase_GetMapName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -928,9 +907,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3FD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetDoors
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class AActor*> ARoomAreaBase::GetDoors()
 	{
@@ -941,7 +920,6 @@ namespace CG
 		ARoomAreaBase_GetDoors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -950,9 +928,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3F40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetDetectors
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class UBoxComponent*> ARoomAreaBase::GetDetectors()
 	{
@@ -963,7 +941,6 @@ namespace CG
 		ARoomAreaBase_GetDetectors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -972,9 +949,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3F20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetCharacterDetectorRoot
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class USceneComponent* ARoomAreaBase::GetCharacterDetectorRoot()
 	{
@@ -985,7 +962,6 @@ namespace CG
 		ARoomAreaBase_GetCharacterDetectorRoot_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -994,9 +970,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3EF0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllHideActors
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class AActor*> ARoomAreaBase::GetAllHideActors()
 	{
@@ -1007,7 +983,6 @@ namespace CG
 		ARoomAreaBase_GetAllHideActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1016,9 +991,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3E90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAIHideActors
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class AActor*> ARoomAreaBase::GetAllAIHideActors()
 	{
@@ -1029,7 +1004,6 @@ namespace CG
 		ARoomAreaBase_GetAllAIHideActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1038,9 +1012,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3EC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAdjacentRooms
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FRoomAdjacencyInfo> ARoomAreaBase::GetAllAdjacentRooms()
 	{
@@ -1051,7 +1025,6 @@ namespace CG
 		ARoomAreaBase_GetAllAdjacentRooms_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1060,9 +1033,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3EC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAllAdjacentRoomInfos
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<struct FRoomAdjacencyInfo> ARoomAreaBase::GetAllAdjacentRoomInfos()
 	{
@@ -1073,7 +1046,6 @@ namespace CG
 		ARoomAreaBase_GetAllAdjacentRoomInfos_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1082,9 +1054,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3DB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAIHeat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	float ARoomAreaBase::GetAIHeat()
 	{
@@ -1095,7 +1067,6 @@ namespace CG
 		ARoomAreaBase_GetAIHeat_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1104,9 +1075,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3DD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.GetAdjacentInfoFromDoor
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Door                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1120,7 +1091,6 @@ namespace CG
 		params.Door = Door;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1129,9 +1099,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3D30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.ClearPOIVisited
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1145,16 +1115,15 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC3C60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomAreaBase.AdjustPOIHeat
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Amount                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1170,15 +1139,14 @@ namespace CG
 		params.Amount = Amount;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ARoomAreaBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ARoomAreaBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ARoomAreaBase::StaticClass()
@@ -1191,9 +1159,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC6130
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.StartRoomSystem
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void URoomSystem::StartRoomSystem()
 	{
@@ -1204,19 +1172,18 @@ namespace CG
 		URoomSystem_StartRoomSystem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5FD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.RemovePOIsFromArray
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIIndex>                           POIsToRemove                                               (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPOIResult>                          POIArray                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIIndex>                           POIsToRemove                                               (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          POIArray                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
 	TArray<struct FPOIResult> URoomSystem::RemovePOIsFromArray(TArray<struct FPOIIndex>* POIsToRemove, TArray<struct FPOIResult>* POIArray)
 	{
@@ -1227,7 +1194,6 @@ namespace CG
 		URoomSystem_RemovePOIsFromArray_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1241,9 +1207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5F50
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.PlayerExitedRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               RoomExited                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1257,16 +1223,15 @@ namespace CG
 		params.RoomExited = RoomExited;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5ED0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.PlayerEnteredRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               RoomEntered                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1280,16 +1245,15 @@ namespace CG
 		params.RoomEntered = RoomEntered;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5E40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.IsPlayerInRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1303,7 +1267,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1312,11 +1275,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5CE0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetWeightedRandomPOIFromArray
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIResult>                          POIArray                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          POIArray                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOutValid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FPOIResult                                  OutResult                                                  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1330,7 +1293,6 @@ namespace CG
 		params.POIArray = POIArray;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1342,9 +1304,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5C40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetRoomAtLocation
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1358,7 +1320,6 @@ namespace CG
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1367,13 +1328,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5800
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPOIsInRange
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     WorldLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPOIResult>                          OutPointIndices                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          OutPointIndices                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
 	void URoomSystem::GetPOIsInRange(const struct FVector& WorldLocation, float Radius, TArray<struct FPOIResult>* OutPointIndices)
 	{
@@ -1386,7 +1347,6 @@ namespace CG
 		params.Radius = Radius;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1396,13 +1356,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5670
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPOIsInNavigableRange
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APawn*                                       NavigationPawn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FPOIResult>                          OutPOIs                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          OutPOIs                                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 * 		struct FLatentActionInfo                           LatentActionInfo                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
 	void URoomSystem::GetPOIsInNavigableRange(class APawn* NavigationPawn, float Radius, TArray<struct FPOIResult>* OutPOIs, const struct FLatentActionInfo& LatentActionInfo)
@@ -1417,7 +1377,6 @@ namespace CG
 		params.LatentActionInfo = LatentActionInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1427,9 +1386,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5BA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerVisitAgeForRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1443,7 +1402,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1452,9 +1410,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5B00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerTimeInRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1468,7 +1426,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1477,9 +1434,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC59C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerRoomInfo
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FPlayerRoomInfo                             RoomInfo                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -1495,7 +1452,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1507,9 +1463,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5940
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetPlayerCurrentRooms
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TArray<class ARoomAreaBase*> URoomSystem::GetPlayerCurrentRooms()
 	{
@@ -1520,7 +1476,6 @@ namespace CG
 		URoomSystem_GetPlayerCurrentRooms_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1529,11 +1484,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5510
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetHighestHeatPOIFromArray
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<struct FPOIResult>                          POIArray                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		TArray<struct FPOIResult>                          POIArray                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		bool                                               bValid                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FPOIResult                                  OutResult                                                  (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1547,7 +1502,6 @@ namespace CG
 		params.POIArray = POIArray;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1559,9 +1513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC53C0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetClosestPointOfInterest
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     WorldLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bOutValid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1577,7 +1531,6 @@ namespace CG
 		params.WorldLocation = WorldLocation;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1589,9 +1542,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5270
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetAllRoomDistancesFromRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ARoomAreaBase*                               Room                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1605,7 +1558,6 @@ namespace CG
 		params.Room = Room;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1614,9 +1566,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5170
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.GetAllRoomDistancesFromPlayerRoom
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	TMap<class ARoomAreaBase*, int32_t> URoomSystem::GetAllRoomDistancesFromPlayerRoom()
 	{
@@ -1627,7 +1579,6 @@ namespace CG
 		URoomSystem_GetAllRoomDistancesFromPlayerRoom_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1636,9 +1587,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00BC5090
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RoomSystem.RoomSystem.AdjustClosestPointOfInterestHeat
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     WorldLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Amount                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1654,15 +1605,14 @@ namespace CG
 		params.Amount = Amount;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URoomSystem.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URoomSystem.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URoomSystem::StaticClass()
@@ -1675,8 +1625,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URoomSystemSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URoomSystemSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URoomSystemSettings::StaticClass()
@@ -1689,8 +1639,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URoomVisibilityData.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URoomVisibilityData.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URoomVisibilityData::StaticClass()

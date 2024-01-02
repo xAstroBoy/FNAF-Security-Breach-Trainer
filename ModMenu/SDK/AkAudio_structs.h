@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,500 +17,500 @@ namespace CG
 	/**
 	 * Enum AkAudio.EAkCallbackType
 	 */
-	enum class AkAudio_EAkCallbackType : uint8_t
+	enum class EAkCallbackType : uint8_t
 	{
-		EAkCallbackType__EndOfEvent          = 0,
-		EAkCallbackType__Marker              = 1,
-		EAkCallbackType__Duration            = 2,
-		EAkCallbackType__Starvation          = 3,
-		EAkCallbackType__MusicPlayStarted    = 4,
-		EAkCallbackType__MusicSyncBeat       = 5,
-		EAkCallbackType__MusicSyncBar        = 6,
-		EAkCallbackType__MusicSyncEntry      = 7,
-		EAkCallbackType__MusicSyncExit       = 8,
-		EAkCallbackType__MusicSyncGrid       = 9,
-		EAkCallbackType__MusicSyncUserCue    = 10,
-		EAkCallbackType__MusicSyncPoint      = 11,
-		EAkCallbackType__MIDIEvent           = 12,
-		EAkCallbackType__EAkCallbackType_MAX = 13
+		EndOfEvent       = 0,
+		Marker           = 1,
+		Duration         = 2,
+		Starvation       = 3,
+		MusicPlayStarted = 4,
+		MusicSyncBeat    = 5,
+		MusicSyncBar     = 6,
+		MusicSyncEntry   = 7,
+		MusicSyncExit    = 8,
+		MusicSyncGrid    = 9,
+		MusicSyncUserCue = 10,
+		MusicSyncPoint   = 11,
+		MIDIEvent        = 12,
+		MAX              = 13
 	};
 
 	/**
 	 * Enum AkAudio.EAkResult
 	 */
-	enum class AkAudio_EAkResult : uint8_t
+	enum class EAkResult : uint8_t
 	{
-		EAkResult__NotImplemented              = 0,
-		EAkResult__Success                     = 1,
-		EAkResult__Fail                        = 2,
-		EAkResult__PartialSuccess              = 3,
-		EAkResult__NotCompatible               = 4,
-		EAkResult__AlreadyConnected            = 5,
-		EAkResult__InvalidFile                 = 6,
-		EAkResult__AudioFileHeaderTooLarge     = 7,
-		EAkResult__MaxReached                  = 8,
-		EAkResult__InvalidID                   = 9,
-		EAkResult__IDNotFound                  = 10,
-		EAkResult__InvalidInstanceID           = 11,
-		EAkResult__NoMoreData                  = 12,
-		EAkResult__InvalidStateGroup           = 13,
-		EAkResult__ChildAlreadyHasAParent      = 14,
-		EAkResult__InvalidLanguage             = 15,
-		EAkResult__CannotAddItseflAsAChild     = 16,
-		EAkResult__InvalidParameter            = 17,
-		EAkResult__ElementAlreadyInList        = 18,
-		EAkResult__PathNotFound                = 19,
-		EAkResult__PathNoVertices              = 20,
-		EAkResult__PathNotRunning              = 21,
-		EAkResult__PathNotPaused               = 22,
-		EAkResult__PathNodeAlreadyInList       = 23,
-		EAkResult__PathNodeNotInList           = 24,
-		EAkResult__DataNeeded                  = 25,
-		EAkResult__NoDataNeeded                = 26,
-		EAkResult__DataReady                   = 27,
-		EAkResult__NoDataReady                 = 28,
-		EAkResult__InsufficientMemory          = 29,
-		EAkResult__Cancelled                   = 30,
-		EAkResult__UnknownBankID               = 31,
-		EAkResult__BankReadError               = 32,
-		EAkResult__InvalidSwitchType           = 33,
-		EAkResult__FormatNotReady              = 34,
-		EAkResult__WrongBankVersion            = 35,
-		EAkResult__FileNotFound                = 36,
-		EAkResult__DeviceNotReady              = 37,
-		EAkResult__BankAlreadyLoaded           = 38,
-		EAkResult__RenderedFX                  = 39,
-		EAkResult__ProcessNeeded               = 40,
-		EAkResult__ProcessDone                 = 41,
-		EAkResult__MemManagerNotInitialized    = 42,
-		EAkResult__StreamMgrNotInitialized     = 43,
-		EAkResult__SSEInstructionsNotSupported = 44,
-		EAkResult__Busy                        = 45,
-		EAkResult__UnsupportedChannelConfig    = 46,
-		EAkResult__PluginMediaNotAvailable     = 47,
-		EAkResult__MustBeVirtualized           = 48,
-		EAkResult__CommandTooLarge             = 49,
-		EAkResult__RejectedByFilter            = 50,
-		EAkResult__InvalidCustomPlatformName   = 51,
-		EAkResult__DLLCannotLoad               = 52,
-		EAkResult__DLLPathNotFound             = 53,
-		EAkResult__NoJavaVM                    = 54,
-		EAkResult__OpenSLError                 = 55,
-		EAkResult__PluginNotRegistered         = 56,
-		EAkResult__DataAlignmentError          = 57,
-		EAkResult__EAkResult_MAX               = 58
+		NotImplemented              = 0,
+		Success                     = 1,
+		Fail                        = 2,
+		PartialSuccess              = 3,
+		NotCompatible               = 4,
+		AlreadyConnected            = 5,
+		InvalidFile                 = 6,
+		AudioFileHeaderTooLarge     = 7,
+		MaxReached                  = 8,
+		InvalidID                   = 9,
+		IDNotFound                  = 10,
+		InvalidInstanceID           = 11,
+		NoMoreData                  = 12,
+		InvalidStateGroup           = 13,
+		ChildAlreadyHasAParent      = 14,
+		InvalidLanguage             = 15,
+		CannotAddItseflAsAChild     = 16,
+		InvalidParameter            = 17,
+		ElementAlreadyInList        = 18,
+		PathNotFound                = 19,
+		PathNoVertices              = 20,
+		PathNotRunning              = 21,
+		PathNotPaused               = 22,
+		PathNodeAlreadyInList       = 23,
+		PathNodeNotInList           = 24,
+		DataNeeded                  = 25,
+		NoDataNeeded                = 26,
+		DataReady                   = 27,
+		NoDataReady                 = 28,
+		InsufficientMemory          = 29,
+		Cancelled                   = 30,
+		UnknownBankID               = 31,
+		BankReadError               = 32,
+		InvalidSwitchType           = 33,
+		FormatNotReady              = 34,
+		WrongBankVersion            = 35,
+		FileNotFound                = 36,
+		DeviceNotReady              = 37,
+		BankAlreadyLoaded           = 38,
+		RenderedFX                  = 39,
+		ProcessNeeded               = 40,
+		ProcessDone                 = 41,
+		MemManagerNotInitialized    = 42,
+		StreamMgrNotInitialized     = 43,
+		SSEInstructionsNotSupported = 44,
+		Busy                        = 45,
+		UnsupportedChannelConfig    = 46,
+		PluginMediaNotAvailable     = 47,
+		MustBeVirtualized           = 48,
+		CommandTooLarge             = 49,
+		RejectedByFilter            = 50,
+		InvalidCustomPlatformName   = 51,
+		DLLCannotLoad               = 52,
+		DLLPathNotFound             = 53,
+		NoJavaVM                    = 54,
+		OpenSLError                 = 55,
+		PluginNotRegistered         = 56,
+		DataAlignmentError          = 57,
+		MAX                         = 58
 	};
 
 	/**
 	 * Enum AkAudio.EAkAndroidAudioAPI
 	 */
-	enum class AkAudio_EAkAndroidAudioAPI : uint8_t
+	enum class EAkAndroidAudioAPI : uint8_t
 	{
-		EAkAndroidAudioAPI__AAudio                 = 0,
-		EAkAndroidAudioAPI__OpenSL_ES              = 1,
-		EAkAndroidAudioAPI__EAkAndroidAudioAPI_MAX = 2
+		AAudio    = 0,
+		OpenSL_ES = 1,
+		MAX       = 2
 	};
 
 	/**
 	 * Enum AkAudio.EAkAudioSessionMode
 	 */
-	enum class AkAudio_EAkAudioSessionMode : uint8_t
+	enum class EAkAudioSessionMode : uint8_t
 	{
-		EAkAudioSessionMode__Default                 = 0,
-		EAkAudioSessionMode__VoiceChat               = 1,
-		EAkAudioSessionMode__GameChat                = 2,
-		EAkAudioSessionMode__VideoRecording          = 3,
-		EAkAudioSessionMode__Measurement             = 4,
-		EAkAudioSessionMode__MoviePlayback           = 5,
-		EAkAudioSessionMode__VideoChat               = 6,
-		EAkAudioSessionMode__EAkAudioSessionMode_MAX = 7
+		Default        = 0,
+		VoiceChat      = 1,
+		GameChat       = 2,
+		VideoRecording = 3,
+		Measurement    = 4,
+		MoviePlayback  = 5,
+		VideoChat      = 6,
+		MAX            = 7
 	};
 
 	/**
 	 * Enum AkAudio.EAkAudioSessionCategoryOptions
 	 */
-	enum class AkAudio_EAkAudioSessionCategoryOptions : uint8_t
+	enum class EAkAudioSessionCategoryOptions : uint8_t
 	{
-		EAkAudioSessionCategoryOptions__MixWithOthers                      = 0,
-		EAkAudioSessionCategoryOptions__DuckOthers                         = 1,
-		EAkAudioSessionCategoryOptions__AllowBluetooth                     = 2,
-		EAkAudioSessionCategoryOptions__DefaultToSpeaker                   = 3,
-		EAkAudioSessionCategoryOptions__EAkAudioSessionCategoryOptions_MAX = 4
+		MixWithOthers    = 0,
+		DuckOthers       = 1,
+		AllowBluetooth   = 2,
+		DefaultToSpeaker = 3,
+		MAX              = 4
 	};
 
 	/**
 	 * Enum AkAudio.EAkAudioSessionCategory
 	 */
-	enum class AkAudio_EAkAudioSessionCategory : uint8_t
+	enum class EAkAudioSessionCategory : uint8_t
 	{
-		EAkAudioSessionCategory__Ambient                     = 0,
-		EAkAudioSessionCategory__SoloAmbient                 = 1,
-		EAkAudioSessionCategory__PlayAndRecord               = 2,
-		EAkAudioSessionCategory__EAkAudioSessionCategory_MAX = 3
+		Ambient       = 0,
+		SoloAmbient   = 1,
+		PlayAndRecord = 2,
+		MAX           = 3
 	};
 
 	/**
 	 * Enum AkAudio.EReflectionFilterBits
 	 */
-	enum class AkAudio_EReflectionFilterBits : uint8_t
+	enum class EReflectionFilterBits : uint8_t
 	{
-		EReflectionFilterBits__Wall                      = 0,
-		EReflectionFilterBits__Ceiling                   = 1,
-		EReflectionFilterBits__Floor                     = 2,
-		EReflectionFilterBits__EReflectionFilterBits_MAX = 3
+		Wall    = 0,
+		Ceiling = 1,
+		Floor   = 2,
+		MAX     = 3
 	};
 
 	/**
 	 * Enum AkAudio.AkCodecId
 	 */
-	enum class AkAudio_EAkCodecId : uint8_t
+	enum class EAkCodecId : uint8_t
 	{
-		AkCodecId__None          = 0,
-		AkCodecId__PCM           = 1,
-		AkCodecId__ADPCM         = 2,
-		AkCodecId__XMA           = 3,
-		AkCodecId__Vorbis        = 4,
-		AkCodecId__AAC           = 5,
-		AkCodecId__ATRAC9        = 6,
-		AkCodecId__OpusNX        = 7,
-		AkCodecId__AkOpus        = 8,
-		AkCodecId__AkOpusWEM     = 9,
-		AkCodecId__AkCodecId_MAX = 10
+		AkCodecIdNone          = 0,
+		AkCodecIdPCM           = 1,
+		AkCodecIdADPCM         = 2,
+		AkCodecIdXMA           = 3,
+		AkCodecIdVorbis        = 4,
+		AkCodecIdAAC           = 5,
+		AkCodecIdATRAC9        = 6,
+		AkCodecIdOpusNX        = 7,
+		AkCodecIdAkOpus        = 8,
+		AkCodecIdAkOpusWEM     = 9,
+		AkCodecIdAkCodecId_MAX = 10
 	};
 
 	/**
 	 * Enum AkAudio.EAkMidiCcValues
 	 */
-	enum class AkAudio_EAkMidiCcValues : uint8_t
+	enum class EAkMidiCcValues : uint8_t
 	{
-		EAkMidiCcValues__AkMidiCcBankSelectCoarse  = 0,
-		EAkMidiCcValues__AkMidiCcModWheelCoarse    = 1,
-		EAkMidiCcValues__AkMidiCcBreathCtrlCoarse  = 2,
-		EAkMidiCcValues__AkMidiCcCtrl3Coarse       = 3,
-		EAkMidiCcValues__AkMidiCcFootPedalCoarse   = 4,
-		EAkMidiCcValues__AkMidiCcPortamentoCoarse  = 5,
-		EAkMidiCcValues__AkMidiCcDataEntryCoarse   = 6,
-		EAkMidiCcValues__AkMidiCcVolumeCoarse      = 7,
-		EAkMidiCcValues__AkMidiCcBalanceCoarse     = 8,
-		EAkMidiCcValues__AkMidiCcCtrl9Coarse       = 9,
-		EAkMidiCcValues__AkMidiCcPanPositionCoarse = 10,
-		EAkMidiCcValues__AkMidiCcExpressionCoarse  = 11,
-		EAkMidiCcValues__AkMidiCcEffectCtrl1Coarse = 12,
-		EAkMidiCcValues__AkMidiCcEffectCtrl2Coarse = 13,
-		EAkMidiCcValues__AkMidiCcCtrl14Coarse      = 14,
-		EAkMidiCcValues__AkMidiCcCtrl15Coarse      = 15,
-		EAkMidiCcValues__AkMidiCcGenSlider1        = 16,
-		EAkMidiCcValues__AkMidiCcGenSlider2        = 17,
-		EAkMidiCcValues__AkMidiCcGenSlider3        = 18,
-		EAkMidiCcValues__AkMidiCcGenSlider4        = 19,
-		EAkMidiCcValues__AkMidiCcCtrl20Coarse      = 20,
-		EAkMidiCcValues__AkMidiCcCtrl21Coarse      = 21,
-		EAkMidiCcValues__AkMidiCcCtrl22Coarse      = 22,
-		EAkMidiCcValues__AkMidiCcCtrl23Coarse      = 23,
-		EAkMidiCcValues__AkMidiCcCtrl24Coarse      = 24,
-		EAkMidiCcValues__AkMidiCcCtrl25Coarse      = 25,
-		EAkMidiCcValues__AkMidiCcCtrl26Coarse      = 26,
-		EAkMidiCcValues__AkMidiCcCtrl27Coarse      = 27,
-		EAkMidiCcValues__AkMidiCcCtrl28Coarse      = 28,
-		EAkMidiCcValues__AkMidiCcCtrl29Coarse      = 29,
-		EAkMidiCcValues__AkMidiCcCtrl30Coarse      = 30,
-		EAkMidiCcValues__AkMidiCcCtrl31Coarse      = 31,
-		EAkMidiCcValues__AkMidiCcBankSelectFine    = 32,
-		EAkMidiCcValues__AkMidiCcModWheelFine      = 33,
-		EAkMidiCcValues__AkMidiCcBreathCtrlFine    = 34,
-		EAkMidiCcValues__AkMidiCcCtrl3Fine         = 35,
-		EAkMidiCcValues__AkMidiCcFootPedalFine     = 36,
-		EAkMidiCcValues__AkMidiCcPortamentoFine    = 37,
-		EAkMidiCcValues__AkMidiCcDataEntryFine     = 38,
-		EAkMidiCcValues__AkMidiCcVolumeFine        = 39,
-		EAkMidiCcValues__AkMidiCcBalanceFine       = 40,
-		EAkMidiCcValues__AkMidiCcCtrl9Fine         = 41,
-		EAkMidiCcValues__AkMidiCcPanPositionFine   = 42,
-		EAkMidiCcValues__AkMidiCcExpressionFine    = 43,
-		EAkMidiCcValues__AkMidiCcEffectCtrl1Fine   = 44,
-		EAkMidiCcValues__AkMidiCcEffectCtrl2Fine   = 45,
-		EAkMidiCcValues__AkMidiCcCtrl14Fine        = 46,
-		EAkMidiCcValues__AkMidiCcCtrl15Fine        = 47,
-		EAkMidiCcValues__AkMidiCcCtrl20Fine        = 48,
-		EAkMidiCcValues__AkMidiCcCtrl21Fine        = 49,
-		EAkMidiCcValues__AkMidiCcCtrl22Fine        = 50,
-		EAkMidiCcValues__AkMidiCcCtrl23Fine        = 51,
-		EAkMidiCcValues__AkMidiCcCtrl24Fine        = 52,
-		EAkMidiCcValues__AkMidiCcCtrl25Fine        = 53,
-		EAkMidiCcValues__AkMidiCcCtrl26Fine        = 54,
-		EAkMidiCcValues__AkMidiCcCtrl27Fine        = 55,
-		EAkMidiCcValues__AkMidiCcCtrl28Fine        = 56,
-		EAkMidiCcValues__AkMidiCcCtrl29Fine        = 57,
-		EAkMidiCcValues__AkMidiCcCtrl30Fine        = 58,
-		EAkMidiCcValues__AkMidiCcCtrl31Fine        = 59,
-		EAkMidiCcValues__AkMidiCcHoldPedal         = 60,
-		EAkMidiCcValues__AkMidiCcPortamentoOnOff   = 61,
-		EAkMidiCcValues__AkMidiCcSustenutoPedal    = 62,
-		EAkMidiCcValues__AkMidiCcSoftPedal         = 63,
-		EAkMidiCcValues__AkMidiCcLegatoPedal       = 64,
-		EAkMidiCcValues__AkMidiCcHoldPedal2        = 65,
-		EAkMidiCcValues__AkMidiCcSoundVariation    = 66,
-		EAkMidiCcValues__AkMidiCcSoundTimbre       = 67,
-		EAkMidiCcValues__AkMidiCcSoundReleaseTime  = 68,
-		EAkMidiCcValues__AkMidiCcSoundAttackTime   = 69,
-		EAkMidiCcValues__AkMidiCcSoundBrightness   = 70,
-		EAkMidiCcValues__AkMidiCcSoundCtrl6        = 71,
-		EAkMidiCcValues__AkMidiCcSoundCtrl7        = 72,
-		EAkMidiCcValues__AkMidiCcSoundCtrl8        = 73,
-		EAkMidiCcValues__AkMidiCcSoundCtrl9        = 74,
-		EAkMidiCcValues__AkMidiCcSoundCtrl10       = 75,
-		EAkMidiCcValues__AkMidiCcGeneralButton1    = 76,
-		EAkMidiCcValues__AkMidiCcGeneralButton2    = 77,
-		EAkMidiCcValues__AkMidiCcGeneralButton3    = 78,
-		EAkMidiCcValues__AkMidiCcGeneralButton4    = 79,
-		EAkMidiCcValues__AkMidiCcReverbLevel       = 80,
-		EAkMidiCcValues__AkMidiCcTremoloLevel      = 81,
-		EAkMidiCcValues__AkMidiCcChorusLevel       = 82,
-		EAkMidiCcValues__AkMidiCcCelesteLevel      = 83,
-		EAkMidiCcValues__AkMidiCcPhaserLevel       = 84,
-		EAkMidiCcValues__AkMidiCcDataButtonP1      = 85,
-		EAkMidiCcValues__AkMidiCcDataButtonM1      = 86,
-		EAkMidiCcValues__AkMidiCcNonRegisterCoarse = 87,
-		EAkMidiCcValues__AkMidiCcNonRegisterFine   = 88,
-		EAkMidiCcValues__AkMidiCcAllSoundOff       = 89,
-		EAkMidiCcValues__AkMidiCcAllControllersOff = 90,
-		EAkMidiCcValues__AkMidiCcLocalKeyboard     = 91,
-		EAkMidiCcValues__AkMidiCcAllNotesOff       = 92,
-		EAkMidiCcValues__AkMidiCcOmniModeOff       = 93,
-		EAkMidiCcValues__AkMidiCcOmniModeOn        = 94,
-		EAkMidiCcValues__AkMidiCcOmniMonophonicOn  = 95,
-		EAkMidiCcValues__AkMidiCcOmniPolyphonicOn  = 96,
-		EAkMidiCcValues__EAkMidiCcValues_MAX       = 97
+		AkMidiCcBankSelectCoarse  = 0,
+		AkMidiCcModWheelCoarse    = 1,
+		AkMidiCcBreathCtrlCoarse  = 2,
+		AkMidiCcCtrl3Coarse       = 3,
+		AkMidiCcFootPedalCoarse   = 4,
+		AkMidiCcPortamentoCoarse  = 5,
+		AkMidiCcDataEntryCoarse   = 6,
+		AkMidiCcVolumeCoarse      = 7,
+		AkMidiCcBalanceCoarse     = 8,
+		AkMidiCcCtrl9Coarse       = 9,
+		AkMidiCcPanPositionCoarse = 10,
+		AkMidiCcExpressionCoarse  = 11,
+		AkMidiCcEffectCtrl1Coarse = 12,
+		AkMidiCcEffectCtrl2Coarse = 13,
+		AkMidiCcCtrl14Coarse      = 14,
+		AkMidiCcCtrl15Coarse      = 15,
+		AkMidiCcGenSlider1        = 16,
+		AkMidiCcGenSlider2        = 17,
+		AkMidiCcGenSlider3        = 18,
+		AkMidiCcGenSlider4        = 19,
+		AkMidiCcCtrl20Coarse      = 20,
+		AkMidiCcCtrl21Coarse      = 21,
+		AkMidiCcCtrl22Coarse      = 22,
+		AkMidiCcCtrl23Coarse      = 23,
+		AkMidiCcCtrl24Coarse      = 24,
+		AkMidiCcCtrl25Coarse      = 25,
+		AkMidiCcCtrl26Coarse      = 26,
+		AkMidiCcCtrl27Coarse      = 27,
+		AkMidiCcCtrl28Coarse      = 28,
+		AkMidiCcCtrl29Coarse      = 29,
+		AkMidiCcCtrl30Coarse      = 30,
+		AkMidiCcCtrl31Coarse      = 31,
+		AkMidiCcBankSelectFine    = 32,
+		AkMidiCcModWheelFine      = 33,
+		AkMidiCcBreathCtrlFine    = 34,
+		AkMidiCcCtrl3Fine         = 35,
+		AkMidiCcFootPedalFine     = 36,
+		AkMidiCcPortamentoFine    = 37,
+		AkMidiCcDataEntryFine     = 38,
+		AkMidiCcVolumeFine        = 39,
+		AkMidiCcBalanceFine       = 40,
+		AkMidiCcCtrl9Fine         = 41,
+		AkMidiCcPanPositionFine   = 42,
+		AkMidiCcExpressionFine    = 43,
+		AkMidiCcEffectCtrl1Fine   = 44,
+		AkMidiCcEffectCtrl2Fine   = 45,
+		AkMidiCcCtrl14Fine        = 46,
+		AkMidiCcCtrl15Fine        = 47,
+		AkMidiCcCtrl20Fine        = 48,
+		AkMidiCcCtrl21Fine        = 49,
+		AkMidiCcCtrl22Fine        = 50,
+		AkMidiCcCtrl23Fine        = 51,
+		AkMidiCcCtrl24Fine        = 52,
+		AkMidiCcCtrl25Fine        = 53,
+		AkMidiCcCtrl26Fine        = 54,
+		AkMidiCcCtrl27Fine        = 55,
+		AkMidiCcCtrl28Fine        = 56,
+		AkMidiCcCtrl29Fine        = 57,
+		AkMidiCcCtrl30Fine        = 58,
+		AkMidiCcCtrl31Fine        = 59,
+		AkMidiCcHoldPedal         = 60,
+		AkMidiCcPortamentoOnOff   = 61,
+		AkMidiCcSustenutoPedal    = 62,
+		AkMidiCcSoftPedal         = 63,
+		AkMidiCcLegatoPedal       = 64,
+		AkMidiCcHoldPedal2        = 65,
+		AkMidiCcSoundVariation    = 66,
+		AkMidiCcSoundTimbre       = 67,
+		AkMidiCcSoundReleaseTime  = 68,
+		AkMidiCcSoundAttackTime   = 69,
+		AkMidiCcSoundBrightness   = 70,
+		AkMidiCcSoundCtrl6        = 71,
+		AkMidiCcSoundCtrl7        = 72,
+		AkMidiCcSoundCtrl8        = 73,
+		AkMidiCcSoundCtrl9        = 74,
+		AkMidiCcSoundCtrl10       = 75,
+		AkMidiCcGeneralButton1    = 76,
+		AkMidiCcGeneralButton2    = 77,
+		AkMidiCcGeneralButton3    = 78,
+		AkMidiCcGeneralButton4    = 79,
+		AkMidiCcReverbLevel       = 80,
+		AkMidiCcTremoloLevel      = 81,
+		AkMidiCcChorusLevel       = 82,
+		AkMidiCcCelesteLevel      = 83,
+		AkMidiCcPhaserLevel       = 84,
+		AkMidiCcDataButtonP1      = 85,
+		AkMidiCcDataButtonM1      = 86,
+		AkMidiCcNonRegisterCoarse = 87,
+		AkMidiCcNonRegisterFine   = 88,
+		AkMidiCcAllSoundOff       = 89,
+		AkMidiCcAllControllersOff = 90,
+		AkMidiCcLocalKeyboard     = 91,
+		AkMidiCcAllNotesOff       = 92,
+		AkMidiCcOmniModeOff       = 93,
+		AkMidiCcOmniModeOn        = 94,
+		AkMidiCcOmniMonophonicOn  = 95,
+		AkMidiCcOmniPolyphonicOn  = 96,
+		MAX                       = 97
 	};
 
 	/**
 	 * Enum AkAudio.EAkMidiEventType
 	 */
-	enum class AkAudio_EAkMidiEventType : uint8_t
+	enum class EAkMidiEventType : uint8_t
 	{
-		EAkMidiEventType__AkMidiEventTypeInvalid           = 0,
-		EAkMidiEventType__AkMidiEventTypeNoteOff           = 1,
-		EAkMidiEventType__AkMidiEventTypeNoteOn            = 2,
-		EAkMidiEventType__AkMidiEventTypeNoteAftertouch    = 3,
-		EAkMidiEventType__AkMidiEventTypeController        = 4,
-		EAkMidiEventType__AkMidiEventTypeProgramChange     = 5,
-		EAkMidiEventType__AkMidiEventTypeChannelAftertouch = 6,
-		EAkMidiEventType__AkMidiEventTypePitchBend         = 7,
-		EAkMidiEventType__AkMidiEventTypeSysex             = 8,
-		EAkMidiEventType__AkMidiEventTypeEscape            = 9,
-		EAkMidiEventType__AkMidiEventTypeMeta              = 10,
-		EAkMidiEventType__EAkMidiEventType_MAX             = 11
+		AkMidiEventTypeInvalid           = 0,
+		AkMidiEventTypeNoteOff           = 1,
+		AkMidiEventTypeNoteOn            = 2,
+		AkMidiEventTypeNoteAftertouch    = 3,
+		AkMidiEventTypeController        = 4,
+		AkMidiEventTypeProgramChange     = 5,
+		AkMidiEventTypeChannelAftertouch = 6,
+		AkMidiEventTypePitchBend         = 7,
+		AkMidiEventTypeSysex             = 8,
+		AkMidiEventTypeEscape            = 9,
+		AkMidiEventTypeMeta              = 10,
+		MAX                              = 11
 	};
 
 	/**
 	 * Enum AkAudio.ERTPCValueType
 	 */
-	enum class AkAudio_ERTPCValueType : uint8_t
+	enum class ERTPCValueType : uint8_t
 	{
-		ERTPCValueType__Default            = 0,
-		ERTPCValueType__Global             = 1,
-		ERTPCValueType__GameObject         = 2,
-		ERTPCValueType__PlayingID          = 3,
-		ERTPCValueType__Unavailable        = 4,
-		ERTPCValueType__ERTPCValueType_MAX = 5
+		Default     = 0,
+		Global      = 1,
+		GameObject  = 2,
+		PlayingID   = 3,
+		Unavailable = 4,
+		MAX         = 5
 	};
 
 	/**
 	 * Enum AkAudio.EAkCurveInterpolation
 	 */
-	enum class AkAudio_EAkCurveInterpolation : uint8_t
+	enum class EAkCurveInterpolation : uint8_t
 	{
-		EAkCurveInterpolation__Log3                      = 0,
-		EAkCurveInterpolation__Sine                      = 1,
-		EAkCurveInterpolation__Log1                      = 2,
-		EAkCurveInterpolation__InvSCurve                 = 3,
-		EAkCurveInterpolation__Linear                    = 4,
-		EAkCurveInterpolation__SCurve                    = 5,
-		EAkCurveInterpolation__Exp1                      = 6,
-		EAkCurveInterpolation__SineRecip                 = 7,
-		EAkCurveInterpolation__Exp3                      = 8,
-		EAkCurveInterpolation__LastFadeCurve             = 9,
-		EAkCurveInterpolation__Constant                  = 10,
-		EAkCurveInterpolation__EAkCurveInterpolation_MAX = 11
+		Log3          = 0,
+		Sine          = 1,
+		Log1          = 2,
+		InvSCurve     = 3,
+		Linear        = 4,
+		SCurve        = 5,
+		Exp1          = 6,
+		SineRecip     = 7,
+		Exp3          = 8,
+		LastFadeCurve = 9,
+		Constant      = 10,
+		MAX           = 11
 	};
 
 	/**
 	 * Enum AkAudio.AkActionOnEventType
 	 */
-	enum class AkAudio_EAkActionOnEventType : uint8_t
+	enum class EAkActionOnEventType : uint8_t
 	{
-		AkActionOnEventType__Stop                    = 0,
-		AkActionOnEventType__Pause                   = 1,
-		AkActionOnEventType__Resume                  = 2,
-		AkActionOnEventType__Break                   = 3,
-		AkActionOnEventType__ReleaseEnvelope         = 4,
-		AkActionOnEventType__AkActionOnEventType_MAX = 5
+		AkActionOnEventTypeStop                    = 0,
+		AkActionOnEventTypePause                   = 1,
+		AkActionOnEventTypeResume                  = 2,
+		AkActionOnEventTypeBreak                   = 3,
+		AkActionOnEventTypeReleaseEnvelope         = 4,
+		AkActionOnEventTypeAkActionOnEventType_MAX = 5
 	};
 
 	/**
 	 * Enum AkAudio.AkMultiPositionType
 	 */
-	enum class AkAudio_EAkMultiPositionType : uint8_t
+	enum class EAkMultiPositionType : uint8_t
 	{
-		AkMultiPositionType__SingleSource            = 0,
-		AkMultiPositionType__MultiSources            = 1,
-		AkMultiPositionType__MultiDirections         = 2,
-		AkMultiPositionType__AkMultiPositionType_MAX = 3
+		AkMultiPositionTypeSingleSource            = 0,
+		AkMultiPositionTypeMultiSources            = 1,
+		AkMultiPositionTypeMultiDirections         = 2,
+		AkMultiPositionTypeAkMultiPositionType_MAX = 3
 	};
 
 	/**
 	 * Enum AkAudio.AkSpeakerConfiguration
 	 */
-	enum class AkAudio_EAkSpeakerConfiguration : uint8_t
+	enum class EAkSpeakerConfiguration : uint8_t
 	{
-		AkSpeakerConfiguration__Ak_Speaker_Front_Left          = 0,
-		AkSpeakerConfiguration__Ak_Speaker_Front_Right         = 1,
-		AkSpeakerConfiguration__Ak_Speaker_Front_Center        = 2,
-		AkSpeakerConfiguration__Ak_Speaker_Low_Frequency       = 3,
-		AkSpeakerConfiguration__Ak_Speaker_Back_Left           = 4,
-		AkSpeakerConfiguration__Ak_Speaker_Back_Right          = 5,
-		AkSpeakerConfiguration__Ak_Speaker_Back_Center         = 6,
-		AkSpeakerConfiguration__Ak_Speaker_Side_Left           = 7,
-		AkSpeakerConfiguration__Ak_Speaker_Side_Right          = 8,
-		AkSpeakerConfiguration__Ak_Speaker_Top                 = 9,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Front_Left   = 10,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Front_Center = 11,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Front_Right  = 12,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Back_Left    = 13,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Back_Center  = 14,
-		AkSpeakerConfiguration__Ak_Speaker_Height_Back_Right   = 15,
-		AkSpeakerConfiguration__Ak_Speaker_MAX                 = 16
+		AkSpeakerConfigurationAk_Speaker_Front_Left          = 0,
+		AkSpeakerConfigurationAk_Speaker_Front_Right         = 1,
+		AkSpeakerConfigurationAk_Speaker_Front_Center        = 2,
+		AkSpeakerConfigurationAk_Speaker_Low_Frequency       = 3,
+		AkSpeakerConfigurationAk_Speaker_Back_Left           = 4,
+		AkSpeakerConfigurationAk_Speaker_Back_Right          = 5,
+		AkSpeakerConfigurationAk_Speaker_Back_Center         = 6,
+		AkSpeakerConfigurationAk_Speaker_Side_Left           = 7,
+		AkSpeakerConfigurationAk_Speaker_Side_Right          = 8,
+		AkSpeakerConfigurationAk_Speaker_Top                 = 9,
+		AkSpeakerConfigurationAk_Speaker_Height_Front_Left   = 10,
+		AkSpeakerConfigurationAk_Speaker_Height_Front_Center = 11,
+		AkSpeakerConfigurationAk_Speaker_Height_Front_Right  = 12,
+		AkSpeakerConfigurationAk_Speaker_Height_Back_Left    = 13,
+		AkSpeakerConfigurationAk_Speaker_Height_Back_Center  = 14,
+		AkSpeakerConfigurationAk_Speaker_Height_Back_Right   = 15,
+		AkSpeakerConfigurationAk_Speaker_MAX                 = 16
 	};
 
 	/**
 	 * Enum AkAudio.AkChannelConfiguration
 	 */
-	enum class AkAudio_EAkChannelConfiguration : uint8_t
+	enum class EAkChannelConfiguration : uint8_t
 	{
-		AkChannelConfiguration__Ak_Parent                  = 0,
-		AkChannelConfiguration__Ak_MainMix                 = 1,
-		AkChannelConfiguration__Ak_Passthrough             = 2,
-		AkChannelConfiguration__Ak_LFE                     = 3,
-		AkChannelConfiguration__AK_Audio_Objects           = 4,
-		AkChannelConfiguration__Ak_1                       = 5,
-		AkChannelConfiguration__Ak_2                       = 6,
-		AkChannelConfiguration__Ak_201                     = 7,
-		AkChannelConfiguration__Ak_3                       = 8,
-		AkChannelConfiguration__Ak_301                     = 9,
-		AkChannelConfiguration__Ak_4                       = 10,
-		AkChannelConfiguration__Ak_401                     = 11,
-		AkChannelConfiguration__Ak_5                       = 12,
-		AkChannelConfiguration__Ak_501                     = 13,
-		AkChannelConfiguration__Ak_7                       = 14,
-		AkChannelConfiguration__Ak_5_1                     = 15,
-		AkChannelConfiguration__Ak_7_1                     = 16,
-		AkChannelConfiguration__Ak_7_101                   = 17,
-		AkChannelConfiguration__Ak_Auro_9                  = 18,
-		AkChannelConfiguration__Ak_Auro_10                 = 19,
-		AkChannelConfiguration__Ak_Auro_11                 = 20,
-		AkChannelConfiguration__Ak_Auro_13                 = 21,
-		AkChannelConfiguration__Ak_Ambisonics_1st_order    = 22,
-		AkChannelConfiguration__Ak_Ambisonics_2nd_order    = 23,
-		AkChannelConfiguration__Ak_Ambisonics_3rd_order    = 24,
-		AkChannelConfiguration__Ak_Ambisonics_4th_order    = 25,
-		AkChannelConfiguration__Ak_Ambisonics_5th_order    = 26,
-		AkChannelConfiguration__AkChannelConfiguration_MAX = 27
+		AkChannelConfigurationAk_Parent                  = 0,
+		AkChannelConfigurationAk_MainMix                 = 1,
+		AkChannelConfigurationAk_Passthrough             = 2,
+		AkChannelConfigurationAk_LFE                     = 3,
+		AkChannelConfigurationAK_Audio_Objects           = 4,
+		AkChannelConfigurationAk_1                       = 5,
+		AkChannelConfigurationAk_2                       = 6,
+		AkChannelConfigurationAk_201                     = 7,
+		AkChannelConfigurationAk_3                       = 8,
+		AkChannelConfigurationAk_301                     = 9,
+		AkChannelConfigurationAk_4                       = 10,
+		AkChannelConfigurationAk_401                     = 11,
+		AkChannelConfigurationAk_5                       = 12,
+		AkChannelConfigurationAk_501                     = 13,
+		AkChannelConfigurationAk_7                       = 14,
+		AkChannelConfigurationAk_5_1                     = 15,
+		AkChannelConfigurationAk_7_1                     = 16,
+		AkChannelConfigurationAk_7_101                   = 17,
+		AkChannelConfigurationAk_Auro_9                  = 18,
+		AkChannelConfigurationAk_Auro_10                 = 19,
+		AkChannelConfigurationAk_Auro_11                 = 20,
+		AkChannelConfigurationAk_Auro_13                 = 21,
+		AkChannelConfigurationAk_Ambisonics_1st_order    = 22,
+		AkChannelConfigurationAk_Ambisonics_2nd_order    = 23,
+		AkChannelConfigurationAk_Ambisonics_3rd_order    = 24,
+		AkChannelConfigurationAk_Ambisonics_4th_order    = 25,
+		AkChannelConfigurationAk_Ambisonics_5th_order    = 26,
+		AkChannelConfigurationAkChannelConfiguration_MAX = 27
 	};
 
 	/**
 	 * Enum AkAudio.AkAcousticPortalState
 	 */
-	enum class AkAudio_EAkAcousticPortalState : uint8_t
+	enum class EAkAcousticPortalState : uint8_t
 	{
-		AkAcousticPortalState__Closed                    = 0,
-		AkAcousticPortalState__Open                      = 1,
-		AkAcousticPortalState__AkAcousticPortalState_MAX = 2
+		AkAcousticPortalStateClosed                    = 0,
+		AkAcousticPortalStateOpen                      = 1,
+		AkAcousticPortalStateAkAcousticPortalState_MAX = 2
 	};
 
 	/**
 	 * Enum AkAudio.PanningRule
 	 */
-	enum class AkAudio_EPanningRule : uint8_t
+	enum class EPanningRule : uint8_t
 	{
-		PanningRule__PanningRule_Speakers   = 0,
-		PanningRule__PanningRule_Headphones = 1,
-		PanningRule__PanningRule_MAX        = 2
+		PanningRulePanningRule_Speakers   = 0,
+		PanningRulePanningRule_Headphones = 1,
+		PanningRulePanningRule_MAX        = 2
 	};
 
 	/**
 	 * Enum AkAudio.AkMeshType
 	 */
-	enum class AkAudio_EAkMeshType : uint8_t
+	enum class EAkMeshType : uint8_t
 	{
-		AkMeshType__StaticMesh     = 0,
-		AkMeshType__CollisionMesh  = 1,
-		AkMeshType__AkMeshType_MAX = 2
+		AkMeshTypeStaticMesh     = 0,
+		AkMeshTypeCollisionMesh  = 1,
+		AkMeshTypeAkMeshType_MAX = 2
 	};
 
 	/**
 	 * Enum AkAudio.EAkCommSystem
 	 */
-	enum class AkAudio_EAkCommSystem : uint8_t
+	enum class EAkCommSystem : uint8_t
 	{
-		EAkCommSystem__Socket            = 0,
-		EAkCommSystem__HTCS              = 1,
-		EAkCommSystem__EAkCommSystem_MAX = 2
+		Socket = 0,
+		HTCS   = 1,
+		MAX    = 2
 	};
 
 	/**
 	 * Enum AkAudio.EAkChannelMask
 	 */
-	enum class AkAudio_EAkChannelMask : uint8_t
+	enum class EAkChannelMask : uint8_t
 	{
-		EAkChannelMask__FrontLeft          = 0,
-		EAkChannelMask__FrontRight         = 1,
-		EAkChannelMask__FrontCenter        = 2,
-		EAkChannelMask__LowFrequency       = 3,
-		EAkChannelMask__BackLeft           = 4,
-		EAkChannelMask__BackRight          = 5,
-		EAkChannelMask__BackCenter         = 6,
-		EAkChannelMask__SideLeft           = 7,
-		EAkChannelMask__SideRight          = 8,
-		EAkChannelMask__Top                = 9,
-		EAkChannelMask__HeightFrontLeft    = 10,
-		EAkChannelMask__HeightFrontCenter  = 11,
-		EAkChannelMask__HeightFrontRight   = 12,
-		EAkChannelMask__HeightBackLeft     = 13,
-		EAkChannelMask__HeightBackCenter   = 14,
-		EAkChannelMask__HeightBackRight    = 15,
-		EAkChannelMask__EAkChannelMask_MAX = 16
+		FrontLeft         = 0,
+		FrontRight        = 1,
+		FrontCenter       = 2,
+		LowFrequency      = 3,
+		BackLeft          = 4,
+		BackRight         = 5,
+		BackCenter        = 6,
+		SideLeft          = 7,
+		SideRight         = 8,
+		Top               = 9,
+		HeightFrontLeft   = 10,
+		HeightFrontCenter = 11,
+		HeightFrontRight  = 12,
+		HeightBackLeft    = 13,
+		HeightBackCenter  = 14,
+		HeightBackRight   = 15,
+		MAX               = 16
 	};
 
 	/**
 	 * Enum AkAudio.EAkChannelConfigType
 	 */
-	enum class AkAudio_EAkChannelConfigType : uint8_t
+	enum class EAkChannelConfigType : uint8_t
 	{
-		EAkChannelConfigType__Anonymous                = 0,
-		EAkChannelConfigType__Standard                 = 1,
-		EAkChannelConfigType__Ambisonic                = 2,
-		EAkChannelConfigType__EAkChannelConfigType_MAX = 3
+		Anonymous = 0,
+		Standard  = 1,
+		Ambisonic = 2,
+		MAX       = 3
 	};
 
 	/**
 	 * Enum AkAudio.EAkPanningRule
 	 */
-	enum class AkAudio_EAkPanningRule : uint8_t
+	enum class EAkPanningRule : uint8_t
 	{
-		EAkPanningRule__Speakers           = 0,
-		EAkPanningRule__Headphones         = 1,
-		EAkPanningRule__EAkPanningRule_MAX = 2
+		Speakers   = 0,
+		Headphones = 1,
+		MAX        = 2
 	};
 
 	/**
 	 * Enum AkAudio.EAkFitToGeometryMode
 	 */
-	enum class AkAudio_EAkFitToGeometryMode : uint8_t
+	enum class EAkFitToGeometryMode : uint8_t
 	{
-		EAkFitToGeometryMode__OrientedBox              = 0,
-		EAkFitToGeometryMode__AlignedBox               = 1,
-		EAkFitToGeometryMode__ConvexPolyhedron         = 2,
-		EAkFitToGeometryMode__EAkFitToGeometryMode_MAX = 3
+		OrientedBox      = 0,
+		AlignedBox       = 1,
+		ConvexPolyhedron = 2,
+		MAX              = 3
 	};
 
 	// --------------------------------------------------
@@ -525,14 +525,13 @@ namespace CG
 	public:
 		class FString                                              AudioDeviceShareset;                                     // 0x0000(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   DeviceID;                                                // 0x0010(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		AkAudio_EAkPanningRule                                     PanningRule;                                             // 0x0014(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7QHZ[0x3];                                   // 0x0014(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-		AkAudio_EAkChannelConfigType                               ChannelConfigType;                                       // 0x0018(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PQOB[0x3];                                   // 0x0018(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		EAkPanningRule                                             PanningRule;                                             // 0x0014(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_6X6X[0x3];                                   // 0x0015(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		EAkChannelConfigType                                       ChannelConfigType;                                       // 0x0018(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_F557[0x3];                                   // 0x0019(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 		uint32_t                                                   ChannelMask;                                             // 0x001C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   NumberOfChannels;                                        // 0x0020(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XJYO[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_0ALU[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -553,8 +552,7 @@ namespace CG
 		bool                                                       CalcEmitterVirtualPosition;                              // 0x001A(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseObstruction;                                          // 0x001B(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseOcclusion;                                            // 0x001C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_860C[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_WAPH[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -571,9 +569,8 @@ namespace CG
 		struct FAkMainOutputSettings                               MainOutputSettings;                                      // 0x0010(0x0028) Edit, NativeAccessSpecifierPublic
 		float                                                      StreamingLookAheadRatio;                                 // 0x0038(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   NumberOfRefillsInVoice;                                  // 0x003C(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JAR5[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LXJD[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAkSpatialAudioSettings                             SpatialAudioSettings;                                    // 0x0040(0x0020) Edit, NoDestructor, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -584,8 +581,7 @@ namespace CG
 	{
 	public:
 		uint32_t                                                   SampleRate;                                              // 0x0060(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0A8B[0x4];                                   // 0x0064(0x0004) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_BMT5[0x4];                                   // 0x0064(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -599,9 +595,8 @@ namespace CG
 		uint16_t                                                   DiscoveryBroadcastPort;                                  // 0x0004(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   CommandPort;                                             // 0x0006(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   NotificationPort;                                        // 0x0008(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9NYF[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A3WI[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              NetworkName;                                             // 0x0010(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -612,8 +607,7 @@ namespace CG
 	{
 	public:
 		bool                                                       InitializeSystemComms;                                   // 0x0020(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OVKO[0x7];                                   // 0x0021(0x0007) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_7VGQ[0x7];                                   // 0x0021(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -627,17 +621,16 @@ namespace CG
 		uint32_t                                                   IO_Granularity;                                          // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      TargetAutoStreamBufferLength;                            // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseStreamCache;                                          // 0x000C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2BRA[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_II7I[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   MaximumPinnedBytesInCache;                               // 0x0010(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       EnableGameSyncPreparation;                               // 0x0014(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RJY1[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FZNG[0x3];                                   // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   ContinuousPlaybackLookAhead;                             // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   MonitorQueuePoolSize;                                    // 0x001C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   MaximumHardwareTimeoutMs;                                // 0x0020(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       DebugOutOfRangeCheckEnabled;                             // 0x0024(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_80NO[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_D3EA[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      DebugOutOfRangeLimit;                                    // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -648,8 +641,7 @@ namespace CG
 	{
 	public:
 		bool                                                       EnableMultiCoreRendering;                                // 0x002C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AU7Z[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_Q3PI[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -661,8 +653,7 @@ namespace CG
 	public:
 		uint32_t                                                   AudioAPI;                                                // 0x0030(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       RoundFrameSizeToHardwareSize;                            // 0x0034(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1FXO[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_336T[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -673,7 +664,6 @@ namespace CG
 	{
 	public:
 		class FString                                              ItemProperty;                                            // 0x0000(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -686,7 +676,6 @@ namespace CG
 		class FString                                              ItemName;                                                // 0x0000(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              ItemPath;                                                // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              ItemId;                                                  // 0x0020(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -698,7 +687,6 @@ namespace CG
 	public:
 		struct FAkWwiseObjectDetails                               ItemPicked;                                              // 0x0000(0x0030) Edit, EditConst, NativeAccessSpecifierPublic
 		class FString                                              ItemPath;                                                // 0x0030(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -717,7 +705,6 @@ namespace CG
 		float                                                      BarDuration;                                             // 0x0018(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      GridDuration;                                            // 0x001C(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      GridOffset;                                              // 0x0020(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -728,12 +715,11 @@ namespace CG
 	{
 	public:
 		class UAkAcousticTexture*                                  AcousticTexture;                                         // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              bEnableOcclusionOverride : 1;                            // 0x0008(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2Q96[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       bEnableOcclusionOverride : 1;                            // 0x0008(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_FCBF[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      OcclusionValue;                                          // 0x000C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      SurfaceArea;                                             // 0x0010(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_79VU[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_REGN[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -746,7 +732,6 @@ namespace CG
 		uint32_t                                                   Texture;                                                 // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Occlusion;                                               // 0x0004(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Name;                                                    // 0x0008(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -760,7 +745,6 @@ namespace CG
 		uint16_t                                                   Point1;                                                  // 0x0002(0x0002) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   Point2;                                                  // 0x0004(0x0002) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint16_t                                                   Surface;                                                 // 0x0006(0x0002) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -770,12 +754,11 @@ namespace CG
 	struct FAkGeometryData
 	{
 	public:
-		TArray<struct FVector>                                     Vertices;                                                // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FAkAcousticSurface>                          Surfaces;                                                // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FAkTriangle>                                 Triangles;                                               // 0x0020(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<class UPhysicalMaterial*>                           ToOverrideAcousticTexture;                               // 0x0030(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<class UPhysicalMaterial*>                           ToOverrideOcclusion;                                     // 0x0040(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<struct FVector>                                     Vertices;                                                // 0x0000(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FAkAcousticSurface>                          Surfaces;                                                // 0x0010(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FAkTriangle>                                 Triangles;                                               // 0x0020(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<class UPhysicalMaterial*>                           ToOverrideAcousticTexture;                               // 0x0030(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<class UPhysicalMaterial*>                           ToOverrideOcclusion;                                     // 0x0040(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -786,8 +769,7 @@ namespace CG
 	{
 	public:
 		bool                                                       UseHeadMountedDisplayAudioDevice;                        // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4MTG[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_RNEB[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -799,9 +781,8 @@ namespace CG
 	public:
 		class FString                                              Name;                                                    // 0x0000(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   PluginID;                                                // 0x0010(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7NAK[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3E68[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              DLL;                                                     // 0x0018(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -811,12 +792,11 @@ namespace CG
 	struct FAkAudioSession
 	{
 	public:
-		AkAudio_EAkAudioSessionCategory                            AudioSessionCategory;                                    // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OEQP[0x3];                                   // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		EAkAudioSessionCategory                                    AudioSessionCategory;                                    // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_LQD2[0x3];                                   // 0x0001(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 		uint32_t                                                   AudioSessionCategoryOptions;                             // 0x0004(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		AkAudio_EAkAudioSessionMode                                AudioSessionMode;                                        // 0x0008(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3FBF[0x3];                                   // 0x0008(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-
+		EAkAudioSessionMode                                        AudioSessionMode;                                        // 0x0008(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_WXII[0x3];                                   // 0x0009(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	};
 
 	/**
@@ -828,8 +808,7 @@ namespace CG
 	public:
 		uint32_t                                                   ACPBatchBufferSize;                                      // 0x0030(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseHardwareCodecLowLatencyMode;                          // 0x0034(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_K7VG[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_8CN4[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -841,8 +820,7 @@ namespace CG
 	public:
 		bool                                                       UseHardwareCodecLowLatencyMode;                          // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bVorbisHwAcceleration;                                   // 0x0031(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GL8I[0x2];                                   // 0x0032(0x0002) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_UU0B[0x2];                                   // 0x0032(0x0002) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -853,8 +831,7 @@ namespace CG
 	{
 	public:
 		struct FVector4                                            AbsorptionValues;                                        // 0x0000(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_02C6[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_4LXA[0x10];                                  // 0x0010(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -865,7 +842,6 @@ namespace CG
 	{
 	public:
 		class FString                                              ItemProperty;                                            // 0x0000(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -878,10 +854,9 @@ namespace CG
 		class UAkAcousticTexture*                                  Texture;                                                 // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Occlusion;                                               // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       EnableSurface;                                           // 0x000C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KGAZ[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HUK7[0x3];                                   // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SurfaceArea;                                             // 0x0010(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_II84[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_4MMT[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -891,10 +866,9 @@ namespace CG
 	struct FAkCommunicationSettingsWithCommSelection : public FAkCommunicationSettings
 	{
 	public:
-		AkAudio_EAkCommSystem                                      CommunicationSystem;                                     // 0x0020(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PXWN[0x3];                                   // 0x0020(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-		unsigned char                                              UnknownData_97C7[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
-
+		EAkCommSystem                                              CommunicationSystem;                                     // 0x0020(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_7SGB[0x3];                                   // 0x0021(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_DVPB[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -905,9 +879,8 @@ namespace CG
 	{
 	public:
 		bool                                                       UseHeadMountedDisplayAudioDevice;                        // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_08AF[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0OHZ[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   MaxSystemAudioObjects;                                   // 0x0034(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -918,8 +891,7 @@ namespace CG
 	{
 	public:
 		bool                                                       UseHeadMountedDisplayAudioDevice;                        // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1TKK[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_K6J9[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -931,7 +903,6 @@ namespace CG
 	public:
 		uint32_t                                                   CachedSize;                                              // 0x0000(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   NonCachedSize;                                           // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -943,8 +914,7 @@ namespace CG
 	public:
 		uint16_t                                                   MaximumNumberOfXMAVoices;                                // 0x0030(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseHardwareCodecLowLatencyMode;                          // 0x0032(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V4DU[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_RYZQ[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -956,7 +926,6 @@ namespace CG
 	public:
 		uint32_t                                                   CachedSize;                                              // 0x0000(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   NonCachedSize;                                           // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -968,8 +937,7 @@ namespace CG
 	public:
 		uint16_t                                                   MaximumNumberOfXMAVoices;                                // 0x0030(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseHardwareCodecLowLatencyMode;                          // 0x0032(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JJTH[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_32IT[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -981,7 +949,6 @@ namespace CG
 	public:
 		uint32_t                                                   CachedSize;                                              // 0x0000(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   NonCachedSize;                                           // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -993,24 +960,9 @@ namespace CG
 	public:
 		uint16_t                                                   MaximumNumberOfXMAVoices;                                // 0x0030(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       UseHardwareCodecLowLatencyMode;                          // 0x0032(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JPWR[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9A8Z[0x1];                                   // 0x0033(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint16_t                                                   MaximumNumberOfOpusVoices;                               // 0x0034(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_EAV9[0x2];                                   // 0x0036(0x0002) MISSED OFFSET (PADDING)
-
-	};
-
-	/**
-	 * ScriptStruct AkAudio.AkAudioEventTrackKey
-	 * Size -> 0x0020
-	 */
-	struct FAkAudioEventTrackKey
-	{
-	public:
-		float                                                      Time;                                                    // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_870M[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UAkAudioEvent*                                       AkAudioEvent;                                            // 0x0008(0x0008) Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		class FString                                              EventName;                                               // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		unsigned char                                              UnknownData_0YG0[0x2];                                   // 0x0036(0x0002) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1022,11 +974,10 @@ namespace CG
 	public:
 		float                                                      ArriveTangent;                                           // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      LeaveTangent;                                            // 0x0004(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		Engine_ERichCurveTangentWeightMode                         TangentWeightMode;                                       // 0x0008(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JSX0[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		ERichCurveTangentWeightMode                                TangentWeightMode;                                       // 0x0008(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_XQ8E[0x3];                                   // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      ArriveTangentWeight;                                     // 0x000C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      LeaveTangentWeight;                                      // 0x0010(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1037,11 +988,10 @@ namespace CG
 	{
 	public:
 		float                                                      Value;                                                   // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		Engine_ERichCurveInterpMode                                InterpMode;                                              // 0x0004(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		Engine_ERichCurveTangentMode                               TangentMode;                                             // 0x0005(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Z6S0[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		ERichCurveInterpMode                                       InterpMode;                                              // 0x0004(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		ERichCurveTangentMode                                      TangentMode;                                             // 0x0005(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_GLC8[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FMovieSceneTangentDataSerializationHelper           Tangent;                                                 // 0x0008(0x0014) NoDestructor, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1051,15 +1001,14 @@ namespace CG
 	struct FMovieSceneFloatChannelSerializationHelper
 	{
 	public:
-		Engine_ERichCurveExtrapolation                             PreInfinityExtrap;                                       // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		Engine_ERichCurveExtrapolation                             PostInfinityExtrap;                                      // 0x0001(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZP53[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<int32_t>                                            Times;                                                   // 0x0008(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FMovieSceneFloatValueSerializationHelper>    Values;                                                  // 0x0018(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		ERichCurveExtrapolation                                    PreInfinityExtrap;                                       // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		ERichCurveExtrapolation                                    PostInfinityExtrap;                                      // 0x0001(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_AAGP[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<int32_t>                                            Times;                                                   // 0x0008(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
+		TArray<struct FMovieSceneFloatValueSerializationHelper>    Values;                                                  // 0x0018(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		float                                                      DefaultValue;                                            // 0x0028(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bHasDefaultValue;                                        // 0x002C(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V5Y7[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_YBJP[0x3];                                   // 0x002D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1069,8 +1018,7 @@ namespace CG
 	struct FAKWaapiJsonObject
 	{
 	public:
-		unsigned char                                              UnknownData_DGOG[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_6M2J[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1080,8 +1028,7 @@ namespace CG
 	struct FAkWaapiSubscriptionId
 	{
 	public:
-		unsigned char                                              UnknownData_WNBO[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_MK7Y[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1092,13 +1039,12 @@ namespace CG
 	{
 	public:
 		class FString                                              ExternalSrcName;                                         // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		AkAudio_EAkCodecId                                         CodecID;                                                 // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UEOY[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		EAkCodecId                                                 CodecID;                                                 // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_J9WQ[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Filename;                                                // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UAkExternalMediaAsset*                               ExternalSourceAsset;                                     // 0x0028(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IsStreamed;                                              // 0x0030(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_F9TO[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_ZPAB[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1108,9 +1054,8 @@ namespace CG
 	struct FAkMidiEventBase
 	{
 	public:
-		AkAudio_EAkMidiEventType                                   Type;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EAkMidiEventType                                           Type;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Chan;                                                    // 0x0001(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1121,7 +1066,6 @@ namespace CG
 	{
 	public:
 		unsigned char                                              ProgramNum;                                              // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1132,7 +1076,6 @@ namespace CG
 	{
 	public:
 		unsigned char                                              Value;                                                   // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1144,7 +1087,6 @@ namespace CG
 	public:
 		unsigned char                                              Note;                                                    // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Value;                                                   // 0x0003(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1157,7 +1099,6 @@ namespace CG
 		unsigned char                                              ValueLsb;                                                // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              ValueMsb;                                                // 0x0003(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    FullValue;                                               // 0x0004(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1167,9 +1108,8 @@ namespace CG
 	struct FAkMidiCc : public FAkMidiEventBase
 	{
 	public:
-		AkAudio_EAkMidiCcValues                                    Cc;                                                      // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EAkMidiCcValues                                            Cc;                                                      // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Value;                                                   // 0x0003(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1181,7 +1121,6 @@ namespace CG
 	public:
 		unsigned char                                              Note;                                                    // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Velocity;                                                // 0x0003(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1193,7 +1132,6 @@ namespace CG
 	public:
 		unsigned char                                              Param1;                                                  // 0x0002(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              Param2;                                                  // 0x0003(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1205,10 +1143,9 @@ namespace CG
 	public:
 		class FString                                              AudioDeviceSharesetName;                                 // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    IdDevice;                                                // 0x0010(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		AkAudio_EPanningRule                                       PanRule;                                                 // 0x0014(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		AkAudio_EAkChannelConfiguration                            ChannelConfig;                                           // 0x0015(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_HC9F[0x2];                                   // 0x0016(0x0002) MISSED OFFSET (PADDING)
-
+		EPanningRule                                               PanRule;                                                 // 0x0014(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		EAkChannelConfiguration                                    ChannelConfig;                                           // 0x0015(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_ECLI[0x2];                                   // 0x0016(0x0002) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1219,7 +1156,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ChannelMask;                                             // 0x0000(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1229,8 +1165,7 @@ namespace CG
 	struct FAkReverbDescriptor
 	{
 	public:
-		unsigned char                                              UnknownData_BMEM[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_L79T[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1242,8 +1177,7 @@ namespace CG
 	public:
 		unsigned char                                              AcousticTexture[0x28];                                   // 0x0000(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      OcclusionValue;                                          // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_N7V2[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_1B1H[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1253,8 +1187,7 @@ namespace CG
 	struct FAkSurfaceEdgeInfo
 	{
 	public:
-		unsigned char                                              UnknownData_WKY5[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_KU2U[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1264,8 +1197,7 @@ namespace CG
 	struct FAkSurfaceEdgeVerts
 	{
 	public:
-		unsigned char                                              UnknownData_7R78[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_QHE0[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1276,7 +1208,6 @@ namespace CG
 	{
 	public:
 		class FString                                              FieldName;                                               // 0x0000(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1287,7 +1218,6 @@ namespace CG
 	{
 	public:
 		class FString                                              Uri;                                                     // 0x0000(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1298,7 +1228,6 @@ namespace CG
 	{
 	public:
 		class UMovieSceneAkAudioEventSection*                      Section;                                                 // 0x0020(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -1309,7 +1238,6 @@ namespace CG
 	{
 	public:
 		class UMovieSceneAkAudioRTPCSection*                       Section;                                                 // 0x0020(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 }

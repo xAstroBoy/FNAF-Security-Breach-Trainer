@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,134 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkSourceFactory.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkSourceFactory::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkSourceFactory");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkRole.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkRole::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkRole");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkBasicRole.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkBasicRole::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkBasicRole");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkAnimationRole.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkAnimationRole::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkAnimationRole");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkTransformRole.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkTransformRole::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkTransformRole");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkCameraRole.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkCameraRole::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkCameraRole");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkController.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkController::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkController");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkSourceSettings.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkSourceSettings::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkSourceSettings");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkCurveRemapSettings.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkCurveRemapSettings::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkCurveRemapSettings");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkFrameInterpolationProcessor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkFrameInterpolationProcessor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULiveLinkFrameInterpolationProcessor::StaticClass()
@@ -152,22 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkFramePreProcessor.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkFramePreProcessor::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkFramePreProcessor");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkFrameTranslator.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkFrameTranslator.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULiveLinkFrameTranslator::StaticClass()
@@ -180,8 +40,162 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkLightRole.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkVirtualSubject.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkVirtualSubject::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkVirtualSubject");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkFramePreProcessor.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkFramePreProcessor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkFramePreProcessor");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkSourceFactory.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkSourceFactory::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkSourceFactory");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkSourceSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkSourceSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkSourceSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkRole.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkRole::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkRole");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkBasicRole.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkBasicRole::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkBasicRole");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkAnimationRole.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkAnimationRole::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkAnimationRole");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkTransformRole.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkTransformRole::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkTransformRole");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkCameraRole.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkCameraRole::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkCameraRole");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkController.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkController::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkController");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkCurveRemapSettings.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* ULiveLinkCurveRemapSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkCurveRemapSettings");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkLightRole.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULiveLinkLightRole::StaticClass()
@@ -194,8 +208,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkSubjectSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ULiveLinkSubjectSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ULiveLinkSubjectSettings::StaticClass()
@@ -203,20 +217,6 @@ namespace CG
 		static UClass* ptr = nullptr;
 		if (!ptr)
 			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkSubjectSettings");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ULiveLinkVirtualSubject.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* ULiveLinkVirtualSubject::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class LiveLinkInterface.LiveLinkVirtualSubject");
 		return ptr;
 	}
 

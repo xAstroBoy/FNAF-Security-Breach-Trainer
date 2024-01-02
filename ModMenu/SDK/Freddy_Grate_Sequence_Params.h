@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,13 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Freddy_Grate_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_6
+	 */
+	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_6_Params
+	{
+	public:
+		class AOGM_BackStage_C*                                    OGM_BackStage;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function Freddy_Grate_Sequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_5
 	 */
 	struct USequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_5_Params
 	{
 	public:
 		class AFreddyGuideSick_C*                                  FreddyGuideSick2;                                        // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -31,7 +39,6 @@ namespace CG
 	{
 	public:
 		class ACinematic_Actor_Freddy_C*                           FreddyGuideSick;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -41,7 +48,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate_Cover_Dented;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -51,7 +57,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -61,7 +66,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -71,7 +75,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -81,7 +84,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate;                                               // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -91,7 +93,6 @@ namespace CG
 	{
 	public:
 		class AStaticMeshActor*                                    MOD_Grate_Cover_Dented;                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -101,7 +102,6 @@ namespace CG
 	{
 	public:
 		class ACinematic_Actor_Freddy_C*                           FreddyGuideSick;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -111,7 +111,15 @@ namespace CG
 	{
 	public:
 		class AFreddyGuideSick_C*                                  FreddyGuideSick2;                                        // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
 
+	/**
+	 * Function Freddy_Grate_Sequence.SequenceDirector_C.OGM_BackStage_Event_1
+	 */
+	struct USequenceDirector_C_OGM_BackStage_Event_1_Params
+	{
+	public:
+		class AOGM_BackStage_C*                                    OGM_BackStage;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -121,7 +129,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_KEAA[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,37 +17,37 @@ namespace CG
 	/**
 	 * Enum GameplayTasks.ETaskResourceOverlapPolicy
 	 */
-	enum class GameplayTasks_ETaskResourceOverlapPolicy : uint8_t
+	enum class ETaskResourceOverlapPolicy : uint8_t
 	{
-		ETaskResourceOverlapPolicy__StartOnTop                     = 0,
-		ETaskResourceOverlapPolicy__StartAtEnd                     = 1,
-		ETaskResourceOverlapPolicy__ETaskResourceOverlapPolicy_MAX = 2
+		StartOnTop = 0,
+		StartAtEnd = 1,
+		MAX        = 2
 	};
 
 	/**
 	 * Enum GameplayTasks.EGameplayTaskState
 	 */
-	enum class GameplayTasks_EGameplayTaskState : uint8_t
+	enum class EGameplayTaskState : uint8_t
 	{
-		EGameplayTaskState__Uninitialized          = 0,
-		EGameplayTaskState__AwaitingActivation     = 1,
-		EGameplayTaskState__Paused                 = 2,
-		EGameplayTaskState__Active                 = 3,
-		EGameplayTaskState__Finished               = 4,
-		EGameplayTaskState__EGameplayTaskState_MAX = 5
+		Uninitialized      = 0,
+		AwaitingActivation = 1,
+		Paused             = 2,
+		Active             = 3,
+		Finished           = 4,
+		MAX                = 5
 	};
 
 	/**
 	 * Enum GameplayTasks.EGameplayTaskRunResult
 	 */
-	enum class GameplayTasks_EGameplayTaskRunResult : uint8_t
+	enum class EGameplayTaskRunResult : uint8_t
 	{
-		EGameplayTaskRunResult__Error                      = 0,
-		EGameplayTaskRunResult__Failed                     = 1,
-		EGameplayTaskRunResult__Success_Paused             = 2,
-		EGameplayTaskRunResult__Success_Active             = 3,
-		EGameplayTaskRunResult__Success_Finished           = 4,
-		EGameplayTaskRunResult__EGameplayTaskRunResult_MAX = 5
+		Error            = 0,
+		Failed           = 1,
+		Success_Paused   = 2,
+		Success_Active   = 3,
+		Success_Finished = 4,
+		MAX              = 5
 	};
 
 	// --------------------------------------------------
@@ -60,8 +60,7 @@ namespace CG
 	struct FGameplayResourceSet
 	{
 	public:
-		unsigned char                                              UnknownData_5176[0x2];                                   // 0x0000(0x0002) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_BSM3[0x2];                                   // 0x0000(0x0002) MISSED OFFSET (PADDING)
 	};
 
 }

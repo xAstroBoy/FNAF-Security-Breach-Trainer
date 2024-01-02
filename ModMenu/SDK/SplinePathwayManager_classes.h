@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,18 +25,18 @@ namespace CG
 		unsigned char                                              StartingSplines[0x10];                                   // 0x0230(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		unsigned char                                              AllSplines[0x10];                                        // 0x0240(0x0010) UNKNOWN PROPERTY: ArrayProperty
 		TMap<class ASplinePathway_C*, struct FPathwayForks>        SplineForks;                                             // 0x0250(0x0050) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
-		TArray<class ASplinePathFork_C*>                           AllForks;                                                // 0x02A0(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, HasGetValueTypeHash
+		TArray<class ASplinePathFork_C*>                           AllForks;                                                // 0x02A0(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 
 	public:
 		void GetChildForkPaths(class ASplinePathway_C** SplineIn, TArray<class ASplinePathFork_C*>* ForksUsed, class ASplinePathFork_C* OriginalFork, TArray<class ASplinePathway_C*>* OnesToCheck, TArray<class ASplinePathFork_C*>* OutForks);
 		void FindClosestSplineAndPointSoftRef(const struct FVector& WorldLocation, class ASplinePathway_C** Spline, struct FVector* SplineLocation);
 		void FindClosestSplineUsingForks(struct FVector* WorldLocation, TArray<class ASplinePathway_C*>* Splines, class ASplinePathway_C** SplineOut, class ASplinePathFork_C** ForkOut);
 		void SetupForks();
-		void SelectStartSpline(class ASplinePathway_C** Start_Spline);
+		void SelectStartSpline(class ASplinePathway_C** StartSpline);
 		void RecurseSpline();
 		void FindClosestDistAlongSpline(class ASplinePathway_C* Spline, const struct FVector& WorldLocation, float* DistAlongSpline);
 		void FindClosestSplineAndPoint(const struct FVector& WorldLocation, TArray<class ASplinePathway_C*>* Splines, class ASplinePathway_C** Spline, struct FVector* SplineLocation);
-		void SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, SplineFollowDirection_ESplineFollowDirection Direction);
+		void SetupNewSplinePath(class ASplinePathway_C* NextSpline, struct FSplineFollowerContext* StructRef, bool UseDistance, float Distance, ESplineFollowDirection Direction);
 		void GetPositionAtDistance(float DeltaDistance, struct FSplineFollowerContext* Context, struct FVector* WorldLocation, struct FVector* Forward);
 		void UserConstructionScript();
 		static UClass* StaticClass();

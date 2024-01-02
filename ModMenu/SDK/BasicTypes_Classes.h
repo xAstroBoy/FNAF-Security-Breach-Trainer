@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -90,12 +90,11 @@ namespace CG
 	class FUObjectItem
 	{
 	public:
-		UObject*                                                   Object;                                                  // 0x0000(0x0000)
-		int32_t                                                    Flags;                                                   // 0x0000(0x0000)
-		int32_t                                                    ClusterIndex;                                            // 0x0000(0x0000)
-		int32_t                                                    SerialNumber;                                            // 0x0000(0x0000)
-	private:
-		uint8_t                                                    Padding_0[0x4];                                          // 0x0000(0x0000)
+		class UObject*                                             Object;                                                  // 0x0000(0x0008)
+		int32_t                                                    Flags;                                                   // 0x0008(0x0004)
+		int32_t                                                    ClusterIndex;                                            // 0x000C(0x0004)
+		int32_t                                                    SerialNumber;                                            // 0x0010(0x0004)
+		unsigned char                                              pad_UBL93BM28O[0x04];                                    // 0x0014(0x0004)
 
 	public:
 		bool IsUnreachable() const;
@@ -109,7 +108,7 @@ namespace CG
 	class TUObjectArray
 	{
 	private:
-		static constexpr int32_t                                   NumElementsPerChunk = 64 * 1024;                         // 0x0000(0x0000)
+		static const constexpr int32_t                             NumElementsPerChunk = 64 * 1024;                         // 0x0000(0x0000)
 		FUObjectItem**                                             Objects;                                                 // 0x0000(0x0000)
 		FUObjectItem*                                              PreAllocatedObjects;                                     // 0x0000(0x0000)
 	public:
@@ -136,11 +135,10 @@ namespace CG
 	class FNameEntryHeader
 	{
 	public:
-		static constexpr uint32_t                                  ProbeHashBits = 5;                                       // 0x0000(0x0000)
+		static const constexpr uint32_t                            ProbeHashBits = 5;                                       // 0x0000(0x0000)
 		uint16_t                                                   bIsWide : 1;                                             // 0x0000(0x0000)
 		uint16_t                                                   LowercaseProbeHash : ProbeHashBits;                      // 0x0000(0x0000)
 		uint16_t                                                   Len : 10;                                                // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -175,7 +173,8 @@ namespace CG
 	private:
 		uint8_t                                                    FrwLock[0x8];                                            // 0x0000(0x0000)
 	public:
-		static constexpr int32_t                                   Stride = 0x02;                                           // 0x0000(0x0000)
+		static const constexpr int32_t                             Stride = 0x02;                                           // 0x0000(0x0000)
+		static const constexpr int32_t                             MaxOffset = Stride * (1 << 16);                          // 0x0000(0x0000)
 		int32_t                                                    CurrentBlock;                                            // 0x0000(0x0000)
 		int32_t                                                    CurrentByteCursor;                                       // 0x0000(0x0000)
 		uint8_t*                                                   Blocks[8192];                                            // 0x0000(0x0000)
@@ -199,7 +198,7 @@ namespace CG
 		int32_t                                                    WideCount;                                               // 0x0000(0x0000)
 
 	public:
-		FNameEntry* GetNext(uintptr_t& nextFNameAddress) const;
+		FNameEntry* GetNext(uintptr_t& nextFNameAddress, uint32_t* comparisonId) const;
 		int32_t Count() const;
 		bool IsValidIndex(int32_t index) const;
 		FNameEntry* GetById(int32_t id) const;
@@ -313,14 +312,32 @@ namespace CG
 	};
 
 	/**
+	 * PredefinedClass BasicTypes.FTextData
+	 * Size -> 0x0000
+	 */
+	class FTextData
+	{
+	private:
+		uint8_t                                                    UnknownData[0x28];                                       // 0x0000(0x0000)
+	public:
+		wchar_t*                                                   Name;                                                    // 0x0000(0x0000)
+		int32_t*                                                   Length;                                                  // 0x0000(0x0000)
+	};
+
+	/**
 	 * PredefinedClass BasicTypes.FText
 	 * Size -> 0x0000
 	 */
 	class FText
 	{
 	private:
-		uint8_t                                                    UnknownData[0x18];                                       // 0x0000(0x0000)
+		FTextData*                                                 Data;                                                    // 0x0000(0x0000)
+		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
 
+	public:
+		wchar_t* Get() const;
+		std::string ToString() const;
+		std::wstring ToWString() const;
 	};
 
 	/**
@@ -331,7 +348,6 @@ namespace CG
 	{
 	private:
 		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -342,7 +358,6 @@ namespace CG
 	{
 	private:
 		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -353,9 +368,41 @@ namespace CG
 	{
 	private:
 		uint8_t                                                    UnknownData[0x01];                                       // 0x0000(0x0000)
-
 	};
 
+	#ifdef _MSC_VER
+		#pragma pack(pop)
+	#endif	/**
+	 * PredefinedClass BasicTypes.TPair
+	 * Size -> 0x0000
+	 */
+	template<typename KeyType, typename ValueType>
+	class TPair
+	{
+	public:
+		KeyType                                                    First;                                                   // 0x0000(0x0000)
+		ValueType                                                  Second;                                                  // 0x0000(0x0000)
+	};
+	#ifdef _MSC_VER
+		#pragma pack(push, 0x01)
+	#endif
+	#ifdef _MSC_VER
+		#pragma pack(pop)
+	#endif	/**
+	 * PredefinedClass BasicTypes.TSetElement
+	 * Size -> 0x0000
+	 */
+	template<typename ElementType>
+	class TSetElement
+	{
+	public:
+		ElementType                                                Value;                                                   // 0x0000(0x0000)
+		int32_t                                                    HashNextId;                                              // 0x0000(0x0000)
+		int32_t                                                    HashIndex;                                               // 0x0000(0x0000)
+	};
+	#ifdef _MSC_VER
+		#pragma pack(push, 0x01)
+	#endif
 	/**
 	 * PredefinedClass BasicTypes.TMap
 	 * Size -> 0x0000
@@ -363,9 +410,20 @@ namespace CG
 	template<typename Key, typename Value>
 	class TMap
 	{
+	public:
+		TArray<TSetElement<TPair<Key, Value>>>                     Data;                                                    // 0x0000(0x0000)
 	private:
-		uint8_t                                                    UnknownData[0x50];                                       // 0x0000(0x0000)
-
+		uint8_t                                                    UnknownData01[0x04];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData02[0x04];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData03[0x08];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData04[0x08];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData_MayBeSize[0x04];                             // 0x0000(0x0000)
+		uint8_t                                                    UnknownData_MayBeFlag[0x04];                             // 0x0000(0x0000)
+		uint8_t                                                    UnknownData05[0x08];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData06[0x08];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData07[0x08];                                     // 0x0000(0x0000)
+		uint8_t                                                    UnknownData_MayBeSize02[0x04];                           // 0x0000(0x0000)
+		uint8_t                                                    UnknownData08[0x04];                                     // 0x0000(0x0000)
 	};
 
 	/**
@@ -376,7 +434,6 @@ namespace CG
 	{
 	private:
 		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -387,7 +444,6 @@ namespace CG
 	{
 	private:
 		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -400,7 +456,6 @@ namespace CG
 		FStructBaseChain**                                         StructBaseChainArray;                                    // 0x0000(0x0000)
 		int32_t                                                    NumStructBasesInChainMinusOne;                           // 0x0000(0x0000)
 		uint8_t                                                    Padding_0[0x04];                                         // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -481,8 +536,7 @@ namespace CG
 	template<class T>
 	class TAutoWeakObjectPtr : public TAutoPointer<T, TWeakObjectPtr<T>>
 	{
-		friend class FString;
-	};
+		friend class FString;	};
 
 	/**
 	 * PredefinedClass BasicTypes.TPersistentObjectPtr
@@ -495,7 +549,6 @@ namespace CG
 		FWeakObjectPtr                                             WeakPtr;                                                 // 0x0000(0x0000)
 		int32_t                                                    TagAtLastTest;                                           // 0x0000(0x0000)
 		TObjectID                                                  ObjectID;                                                // 0x0000(0x0000)
-
 	};
 
 	/**
@@ -503,16 +556,14 @@ namespace CG
 	 * Size -> 0x0000
 	 */
 	class FLazyObjectPtr : public TPersistentObjectPtr<FUniqueObjectGuid_>
-	{
-	};
+	{	};
 
 	/**
 	 * PredefinedClass BasicTypes.FAssetPtr
 	 * Size -> 0x0000
 	 */
 	class FAssetPtr : public TPersistentObjectPtr<FStringAssetReference_>
-	{
-	};
+	{	};
 
 	/**
 	 * PredefinedClass BasicTypes.TAssetPtr
@@ -520,8 +571,7 @@ namespace CG
 	 */
 	template<typename ObjectType>
 	class TAssetPtr : public FAssetPtr
-	{
-	};
+	{	};
 
 	/**
 	 * PredefinedClass BasicTypes.TLazyObjectPtr
@@ -529,16 +579,14 @@ namespace CG
 	 */
 	template<typename ObjectType>
 	class TLazyObjectPtr : public FLazyObjectPtr
-	{
-	};
+	{	};
 
 	/**
 	 * PredefinedClass BasicTypes.ObjectNames
 	 * Size -> 0x0000
 	 */
 	class ObjectNames
-	{
-	};
+	{	};
 
 }
 

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	{
 	public:
 		bool                                                       isFreddyNearStation;                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		unsigned char                                              UnknownData_0CKE[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -30,26 +30,25 @@ namespace CG
 	struct AFreddyAIController_C_SetAIState_Params
 	{
 	public:
-		FreddyAIState_EFreddyAIState                               State;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EFreddyAIState                                             State;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_MPE1[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.Setup Freddy Power Loss Timer
 	 */
-	struct AFreddyAIController_C_Setup_Freddy_Power_Loss_Timer_Params
-	{
-	};
+	struct AFreddyAIController_C_SetupFreddyPowerLossTimer_Params
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.On World State Changed
 	 */
-	struct AFreddyAIController_C_On_World_State_Changed_Params
+	struct AFreddyAIController_C_OnWorldStateChanged_Params
 	{
 	public:
-		fnaf9_EFNAFGameState                                       NewState;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		fnaf9_EFNAFGameState                                       PreviousState;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EFNAFGameState                                             NewState;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		EFNAFGameState                                             PreviousState;                                           // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_M2VW[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -59,7 +58,6 @@ namespace CG
 	{
 	public:
 		class AGregory_C*                                          GregoryPawn;                                             // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -69,7 +67,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -79,7 +76,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -89,7 +85,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -99,7 +94,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -109,79 +103,6 @@ namespace CG
 	{
 	public:
 		class FName                                                NotifyName;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess
-	 */
-	struct AFreddyAIController_C_ReceiveUnPossess_Params
-	{
-	public:
-		class APawn*                                               UnpossessedPawn;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.SnapToPowerStation
-	 */
-	struct AFreddyAIController_C_SnapToPowerStation_Params
-	{
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation
-	 */
-	struct AFreddyAIController_C_GoTo_PowerStation_Params
-	{
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power
-	 */
-	struct AFreddyAIController_C_On_Tick_Freddy_Power_Params
-	{
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.Call Freddy
-	 */
-	struct AFreddyAIController_C_Call_Freddy_Params
-	{
-	public:
-		class AGregory_C*                                          GregoryPawn;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.ReceiveTick
-	 */
-	struct AFreddyAIController_C_ReceiveTick_Params
-	{
-	public:
-		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay
-	 */
-	struct AFreddyAIController_C_ReceiveBeginPlay_Params
-	{
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation
-	 */
-	struct AFreddyAIController_C_FreddyReachedPowerStation_Params
-	{
-	};
-
-	/**
-	 * Function FreddyAIController.FreddyAIController_C.FreddyNearStation
-	 */
-	struct AFreddyAIController_C_FreddyNearStation_Params
-	{
 	};
 
 	/**
@@ -191,15 +112,76 @@ namespace CG
 	{
 	public:
 		class APawn*                                               PossessedPawn;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.ReceiveUnPossess
+	 */
+	struct AFreddyAIController_C_ReceiveUnPossess_Params
+	{
+	public:
+		class APawn*                                               UnpossessedPawn;                                         // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.SnapToPowerStation
+	 */
+	struct AFreddyAIController_C_SnapToPowerStation_Params
+	{	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.GoTo_PowerStation
+	 */
+	struct AFreddyAIController_C_GoTo_PowerStation_Params
+	{	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.On Tick Freddy Power
+	 */
+	struct AFreddyAIController_C_OnTickFreddyPower_Params
+	{	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.Call Freddy
+	 */
+	struct AFreddyAIController_C_CallFreddy_Params
+	{
+	public:
+		class AGregory_C*                                          GregoryPawn;                                             // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.ReceiveTick
+	 */
+	struct AFreddyAIController_C_ReceiveTick_Params
+	{
+	public:
+		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.ReceiveBeginPlay
+	 */
+	struct AFreddyAIController_C_ReceiveBeginPlay_Params
+	{	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.FreddyReachedPowerStation
+	 */
+	struct AFreddyAIController_C_FreddyReachedPowerStation_Params
+	{	};
+
+	/**
+	 * Function FreddyAIController.FreddyAIController_C.FreddyNearStation
+	 */
+	struct AFreddyAIController_C_FreddyNearStation_Params
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.OrientFreddyNearStationEvent
 	 */
 	struct AFreddyAIController_C_OrientFreddyNearStationEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.OrientFreddyInsideStationEvent
@@ -208,29 +190,25 @@ namespace CG
 	{
 	public:
 		bool                                                       InsideStation;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.MoveIntoPowerStation
 	 */
 	struct AFreddyAIController_C_MoveIntoPowerStation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.FreddyLeaveRechargeStation
 	 */
 	struct AFreddyAIController_C_FreddyLeaveRechargeStation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.AttemptDestroy
 	 */
 	struct AFreddyAIController_C_AttemptDestroy_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FreddyAIController.FreddyAIController_C.ExecuteUbergraph_FreddyAIController
@@ -239,7 +217,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

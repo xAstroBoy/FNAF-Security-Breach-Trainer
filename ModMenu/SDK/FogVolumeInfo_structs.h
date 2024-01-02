@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * UserDefinedStruct FogVolumeInfo.FogVolumeInfo
-	 * Size -> 0x0038
+	 * Size -> 0x0054
 	 */
 	struct FFogVolumeInfo
 	{
@@ -25,12 +25,14 @@ namespace CG
 		struct FLinearColor                                        FogInscatteringColor_19_A09457F3453121D6BAC69F9BB24AA75C; // 0x0004(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      FogMaxOpacity_22_C631F454418F9E31F3B683BBC0460B6F;       // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      StartDistance_9_155562FF4BFEC7CAE6B4B2AA5F3DE599;        // 0x0018(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      FogCutoffDistance_12_74832EE84B69C2CAAE31BABF0C06DB51;   // 0x001C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       VolumetricFog_15_7B7404964AA4FD3E55ECAEA5FFD560F6;       // 0x0020(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_RCFO[0x3];                                   // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		float                                                      ScatteringDistribution_18_9FC02B49419B893F53CF6785E37691ED; // 0x0024(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FLinearColor                                        VolumetricEmissive_25_4630006447AE98F7D184ABB9FB82F522;  // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-
+		float                                                      DLC_FogCutoffDistance_33_74832EE84B69C2CAAE31BABF0C06DB51; // 0x001C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      ScatteringDistribution_18_9FC02B49419B893F53CF6785E37691ED; // 0x0020(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FLinearColor                                        DLC_VolumetricEmissive_34_4630006447AE98F7D184ABB9FB82F522; // 0x0024(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      InterpSpeed_28_5B37CB0647E7BAB4B2BF858BCD36F821;         // 0x0034(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      DLC_VolumeFogDistance_35_0F83344142A7DC52C37AA787B9EBE67F; // 0x0038(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FLinearColor                                        DLC_VolumeFogAlbedo_38_E60577F0475729876A1995B714C1148A; // 0x003C(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      DLC_ExtinctionScale_41_869CED6F4906E334CA4FC2976DAEB637; // 0x004C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		float                                                      DLC_HeightFallOff_44_EC0085404008F681029067B065788696;   // 0x0050(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 	};
 
 }

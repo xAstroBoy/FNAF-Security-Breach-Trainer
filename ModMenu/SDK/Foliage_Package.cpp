@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFoliageInstancedStaticMeshComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFoliageInstancedStaticMeshComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFoliageInstancedStaticMeshComponent::StaticClass()
@@ -26,16 +26,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BADCB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UStaticMesh*                                 StaticMesh                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     CenterPosition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UFoliageStatistics::STATIC_FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, const struct FVector& CenterPosition, float Radius)
+	int32_t UFoliageStatistics::FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, const struct FVector& CenterPosition, float Radius)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -48,7 +48,6 @@ namespace CG
 		params.Radius = Radius;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -57,15 +56,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BADB90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount
-	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UStaticMesh*                                 StaticMesh                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FBox                                        Box                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	int32_t UFoliageStatistics::STATIC_FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, const struct FBox& Box)
+	int32_t UFoliageStatistics::FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, const struct FBox& Box)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -77,7 +76,6 @@ namespace CG
 		params.Box = Box;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -86,8 +84,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFoliageStatistics.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFoliageStatistics.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFoliageStatistics::StaticClass()
@@ -100,8 +98,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFoliageType.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFoliageType.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFoliageType::StaticClass()
@@ -114,8 +112,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFoliageType_Actor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFoliageType_Actor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFoliageType_Actor::StaticClass()
@@ -128,8 +126,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UFoliageType_InstancedStaticMesh.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFoliageType_InstancedStaticMesh.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UFoliageType_InstancedStaticMesh::StaticClass()
@@ -142,8 +140,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AInstancedFoliageActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AInstancedFoliageActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AInstancedFoliageActor::StaticClass()
@@ -156,9 +154,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BAD980
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Foliage.InteractiveFoliageActor.CapsuleTouched
-	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UPrimitiveComponent*                         OverlappedComp                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Other                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -182,15 +180,14 @@ namespace CG
 		params.OverlapInfo = OverlapInfo;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AInteractiveFoliageActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AInteractiveFoliageActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AInteractiveFoliageActor::StaticClass()
@@ -203,8 +200,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UInteractiveFoliageComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInteractiveFoliageComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UInteractiveFoliageComponent::StaticClass()
@@ -217,8 +214,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AProceduralFoliageBlockingVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AProceduralFoliageBlockingVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AProceduralFoliageBlockingVolume::StaticClass()
@@ -231,8 +228,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UProceduralFoliageComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UProceduralFoliageComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UProceduralFoliageComponent::StaticClass()
@@ -245,9 +242,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x01BADE00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function Foliage.ProceduralFoliageSpawner.Simulate
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            NumSteps                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -261,15 +258,14 @@ namespace CG
 		params.NumSteps = NumSteps;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UProceduralFoliageSpawner.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UProceduralFoliageSpawner.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UProceduralFoliageSpawner::StaticClass()
@@ -282,8 +278,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UProceduralFoliageTile.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UProceduralFoliageTile.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UProceduralFoliageTile::StaticClass()
@@ -296,8 +292,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction AProceduralFoliageVolume.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AProceduralFoliageVolume.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* AProceduralFoliageVolume::StaticClass()

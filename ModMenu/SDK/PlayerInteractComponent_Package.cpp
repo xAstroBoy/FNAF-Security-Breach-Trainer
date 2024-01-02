@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,31 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ForceRemoveInteractible
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AActor*                                      InteractibleObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UPlayerInteractComponent_C::ForceRemoveInteractible(class AActor* InteractibleObject)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.ForceRemoveInteractible");
+		
+		UPlayerInteractComponent_C_ForceRemoveInteractible_Params params {};
+		params.InteractibleObject = InteractibleObject;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.CancelCurrentClosest
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerInteractComponent_C::CancelCurrentClosest()
 	{
@@ -31,20 +53,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.CancelInteraction
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UObject*                                     Obeject                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UObject*                                     Object                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerInteractComponent_C::CancelInteraction(class UObject* Obeject)
+	void UPlayerInteractComponent_C::CancelInteraction(class UObject* Object)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.CancelInteraction");
 		
 		UPlayerInteractComponent_C_CancelInteraction_Params params {};
-		params.Obeject = Obeject;
+		params.Object = Object;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -53,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ResetInteractible
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerInteractComponent_C::ResetInteractible()
 	{
@@ -72,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ResetInteractibleHUD
-	 * 		Flags  -> (Private, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     Interactible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -94,9 +116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ChangeInteractible
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     Interactible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -116,9 +138,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.DetermineClosestInteractible
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerInteractComponent_C::DetermineClosestInteractible()
 	{
@@ -135,9 +157,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UPlayerInteractComponent_C::ReceiveBeginPlay()
 	{
@@ -154,20 +176,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.On Owner Begin Overlap
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OverlappedActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerInteractComponent_C::On_Owner_Begin_Overlap(class AActor* OverlappedActor, class AActor* OtherActor)
+	void UPlayerInteractComponent_C::OnOwnerBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.On Owner Begin Overlap");
 		
-		UPlayerInteractComponent_C_On_Owner_Begin_Overlap_Params params {};
+		UPlayerInteractComponent_C_OnOwnerBeginOverlap_Params params {};
 		params.OverlappedActor = OverlappedActor;
 		params.OtherActor = OtherActor;
 		
@@ -178,20 +200,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.On Owner End Overlap
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      OverlappedActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      OtherActor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UPlayerInteractComponent_C::On_Owner_End_Overlap(class AActor* OverlappedActor, class AActor* OtherActor)
+	void UPlayerInteractComponent_C::OnOwnerEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.On Owner End Overlap");
 		
-		UPlayerInteractComponent_C_On_Owner_End_Overlap_Params params {};
+		UPlayerInteractComponent_C_OnOwnerEndOverlap_Params params {};
 		params.OverlappedActor = OverlappedActor;
 		params.OtherActor = OtherActor;
 		
@@ -202,9 +224,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ReceiveTick
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -224,17 +246,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.Attempt Interact
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerInteractComponent_C::Attempt_Interact()
+	void UPlayerInteractComponent_C::AttemptInteract()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.Attempt Interact");
 		
-		UPlayerInteractComponent_C_Attempt_Interact_Params params {};
+		UPlayerInteractComponent_C_AttemptInteract_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -243,17 +265,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.Cancel Current Interact
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void UPlayerInteractComponent_C::Cancel_Current_Interact()
+	void UPlayerInteractComponent_C::CancelCurrentInteract()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.Cancel Current Interact");
 		
-		UPlayerInteractComponent_C_Cancel_Current_Interact_Params params {};
+		UPlayerInteractComponent_C_CancelCurrentInteract_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -262,19 +284,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.Set Interact Enable
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UPlayerInteractComponent_C::Set_Interact_Enable(bool Enabled)
+	void UPlayerInteractComponent_C::SetInteractEnable(bool Enabled)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.Set Interact Enable");
 		
-		UPlayerInteractComponent_C_Set_Interact_Enable_Params params {};
+		UPlayerInteractComponent_C_SetInteractEnable_Params params {};
 		params.Enabled = Enabled;
 		
 		auto flags = fn->FunctionFlags;
@@ -284,9 +306,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.AttemptMaintenanceInteract
+	 * 		Flags  -> ()
+	 */
+	void UPlayerInteractComponent_C::AttemptMaintenanceInteract()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function PlayerInteractComponent.PlayerInteractComponent_C.AttemptMaintenanceInteract");
+		
+		UPlayerInteractComponent_C_AttemptMaintenanceInteract_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.ExecuteUbergraph_PlayerInteractComponent
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -306,9 +347,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function PlayerInteractComponent.PlayerInteractComponent_C.OnInteractibleChanged__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     Interactible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -328,8 +369,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UPlayerInteractComponent_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UPlayerInteractComponent_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UPlayerInteractComponent_C::StaticClass()

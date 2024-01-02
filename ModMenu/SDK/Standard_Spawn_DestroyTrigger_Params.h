@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function Standard_Spawn_DestroyTrigger.Standard_Spawn_DestroyTrigger_C.OnTriggered
 	 */
 	struct AStandard_Spawn_DestroyTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Standard_Spawn_DestroyTrigger.Standard_Spawn_DestroyTrigger_C.ExecuteUbergraph_Standard_Spawn_DestroyTrigger
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

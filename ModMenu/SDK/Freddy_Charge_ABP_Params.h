@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,35 +15,52 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.GetMoveSpeedInput
+	 */
+	struct UFreddy_Charge_ABP_C_GetMoveSpeedInput_Params
+	{
+	public:
+		float                                                      MoveSpeed;                                               // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.AnimGraph
 	 */
 	struct UFreddy_Charge_ABP_C_AnimGraph_Params
 	{
 	public:
 		struct FPoseLink                                           AnimGraph;                                               // 0x0000(0x0010)  (Parm, OutParm, NoDestructor)
-
 	};
+
+	/**
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.IsFirstPersonEvent
+	 */
+	struct UFreddy_Charge_ABP_C_IsFirstPersonEvent_Params
+	{	};
+
+	/**
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.IsNotFirstPersonEvent
+	 */
+	struct UFreddy_Charge_ABP_C_IsNotFirstPersonEvent_Params
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.RummagingDoneEvent
 	 */
 	struct UFreddy_Charge_ABP_C_RummagingDoneEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.OnAnimInstanceSwap
 	 */
 	struct UFreddy_Charge_ABP_C_OnAnimInstanceSwap_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Breakthrough
 	 */
 	struct UFreddy_Charge_ABP_C_Breakthrough_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.ForceScanStates
@@ -55,7 +72,6 @@ namespace CG
 		bool                                                       CanScan;                                                 // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       CanScanL;                                                // 0x0002(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 		bool                                                       CanScanR;                                                // 0x0003(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -65,22 +81,19 @@ namespace CG
 	{
 	public:
 		bool                                                       CanJump;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.LandEvent
 	 */
 	struct UFreddy_Charge_ABP_C_LandEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.StopScan
 	 */
 	struct UFreddy_Charge_ABP_C_StopScan_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.PoundDoorEvent
@@ -89,7 +102,6 @@ namespace CG
 	{
 	public:
 		bool                                                       PoundDoor;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -99,7 +111,6 @@ namespace CG
 	{
 	public:
 		bool                                                       CanWave;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -109,7 +120,6 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -119,7 +129,6 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -129,7 +138,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -139,7 +147,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -149,7 +156,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -159,7 +165,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -169,7 +174,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -178,8 +182,7 @@ namespace CG
 	struct UFreddy_Charge_ABP_C_VoAnimEvent_Params
 	{
 	public:
-		class UAkAudioEvent*                                       AK_Event;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		class UAkAudioEvent*                                       AKEvent;                                                 // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -189,7 +192,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -199,22 +201,19 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.EndoSpawnInBowlingEvent
 	 */
 	struct UFreddy_Charge_ABP_C_EndoSpawnInBowlingEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.EndoBowlingCrawlEvent
 	 */
 	struct UFreddy_Charge_ABP_C_EndoBowlingCrawlEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.LeapLoopEvent
@@ -223,7 +222,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -235,7 +233,6 @@ namespace CG
 		struct FVector                                             ActorLocation;                                           // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FVector                                             Destination;                                             // 0x000C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      Distance;                                                // 0x0018(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -245,7 +242,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -255,8 +251,8 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_VOVV[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class ULevelSequencePlayer*                                Sequence;                                                // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -266,55 +262,50 @@ namespace CG
 	{
 	public:
 		class ULevelSequencePlayer*                                SequencePlayer;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Spotlight Aim Actor
 	 */
-	struct UFreddy_Charge_ABP_C_Spotlight_Aim_Actor_Params
+	struct UFreddy_Charge_ABP_C_SpotlightAimActor_Params
 	{
 	public:
 		class AActor*                                              AimActor;                                                // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
-	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Freddy_Charge_ABP_AnimGraphNode_LookAt_224770D848B70D15F76844B2B0C46257
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.IsHangingEvent
 	 */
-	struct UFreddy_Charge_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Freddy_Charge_ABP_AnimGraphNode_LookAt_224770D848B70D15F76844B2B0C46257_Params
+	struct UFreddy_Charge_ABP_C_IsHangingEvent_Params
 	{
+	public:
+		bool                                                       IsHanging;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
-	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.IsNotFirstPersonEvent
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.OverlappingDoor
 	 */
-	struct UFreddy_Charge_ABP_C_IsNotFirstPersonEvent_Params
+	struct UFreddy_Charge_ABP_C_OverlappingDoor_Params
 	{
-	};
-
-	/**
-	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.IsFirstPersonEvent
-	 */
-	struct UFreddy_Charge_ABP_C_IsFirstPersonEvent_Params
-	{
+	public:
+		bool                                                       Overlapping;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_HOAQ[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class AActor*                                              Instigator;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.CanRummageEvent
 	 */
 	struct UFreddy_Charge_ABP_C_CanRummageEvent_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Stun Event
 	 */
-	struct UFreddy_Charge_ABP_C_Stun_Event_Params
+	struct UFreddy_Charge_ABP_C_StunEvent_Params
 	{
 	public:
-		bool                                                       Is_Stunned;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
+		bool                                                       IsStunned;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -324,36 +315,31 @@ namespace CG
 	{
 	public:
 		bool                                                       CanRun;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.StartScan
 	 */
 	struct UFreddy_Charge_ABP_C_StartScan_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.OpenDone
 	 */
 	struct UFreddy_Charge_ABP_C_OpenDone_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Open
 	 */
 	struct UFreddy_Charge_ABP_C_Open_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.SearchingDone
 	 */
 	struct UFreddy_Charge_ABP_C_SearchingDone_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Searching
@@ -361,8 +347,7 @@ namespace CG
 	struct UFreddy_Charge_ABP_C_Searching_Params
 	{
 	public:
-		fnaf9_EHideObjectType                                      Hide_Type;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EHideObjectType                                            HideType;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -372,15 +357,19 @@ namespace CG
 	{
 	public:
 		float                                                      TurnDegrees;                                             // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.CanJumpscareEvent
 	 */
 	struct UFreddy_Charge_ABP_C_CanJumpscareEvent_Params
-	{
-	};
+	{	};
+
+	/**
+	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Freddy_Charge_ABP_AnimGraphNode_LookAt_224770D848B70D15F76844B2B0C46257
+	 */
+	struct UFreddy_Charge_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Freddy_Charge_ABP_AnimGraphNode_LookAt_224770D848B70D15F76844B2B0C46257_Params
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.BlueprintUpdateAnimation
@@ -389,7 +378,6 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaTimeX;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -399,7 +387,6 @@ namespace CG
 	{
 	public:
 		bool                                                       OnOff;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -409,15 +396,13 @@ namespace CG
 	{
 	public:
 		struct FVector                                             AimLocation;                                             // 0x0000(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.Wave
 	 */
 	struct UFreddy_Charge_ABP_C_Wave_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Freddy_Charge_ABP.Freddy_Charge_ABP_C.ExecuteUbergraph_Freddy_Charge_ABP
@@ -426,7 +411,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

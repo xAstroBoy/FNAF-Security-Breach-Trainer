@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,15 +18,13 @@ namespace CG
 	 * Function AmbientAudio.AmbientAudio_C.ReceiveBeginPlay
 	 */
 	struct UAmbientAudio_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AmbientAudio.AmbientAudio_C.PlaySound
 	 */
 	struct UAmbientAudio_C_PlaySound_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function AmbientAudio.AmbientAudio_C.ExecuteUbergraph_AmbientAudio
@@ -35,7 +33,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_JA3I[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

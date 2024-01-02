@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function LoadingDock_Escalator_MissionTrigger.LoadingDock_Escalator_MissionTrigger_C.OnTriggered
 	 */
 	struct ALoadingDock_Escalator_MissionTrigger_C_OnTriggered_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LoadingDock_Escalator_MissionTrigger.LoadingDock_Escalator_MissionTrigger_C.ExecuteUbergraph_LoadingDock_Escalator_MissionTrigger
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

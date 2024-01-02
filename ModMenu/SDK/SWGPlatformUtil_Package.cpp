@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USWGPlatformSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USWGPlatformSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USWGPlatformSettings::StaticClass()
@@ -26,13 +26,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696C90
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.SwitchOnPlatform
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		SWGPlatformUtil_ESWGPlatform                       Platform                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ESWGPlatform                                       Platform                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGPlatformUtilFunctions::STATIC_SwitchOnPlatform(SWGPlatformUtil_ESWGPlatform* Platform)
+	void USWGPlatformUtilFunctions::SwitchOnPlatform(ESWGPlatform* Platform)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -41,7 +41,6 @@ namespace CG
 		USWGPlatformUtilFunctions_SwitchOnPlatform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -51,14 +50,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696BC0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.StartActivity
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APlayerController*                           PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      ActivityId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGPlatformUtilFunctions::STATIC_StartActivity(class APlayerController* PlayerController, const class FString& ActivityId)
+	void USWGPlatformUtilFunctions::StartActivity(class APlayerController* PlayerController, const class FString& ActivityId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -69,22 +68,21 @@ namespace CG
 		params.ActivityId = ActivityId;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696AB0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.SetActivityAvailability
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APlayerController*                           PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      ActivityId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bEnabled                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGPlatformUtilFunctions::STATIC_SetActivityAvailability(class APlayerController* PlayerController, const class FString& ActivityId, bool bEnabled)
+	void USWGPlatformUtilFunctions::SetActivityAvailability(class APlayerController* PlayerController, const class FString& ActivityId, bool bEnabled)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -96,20 +94,19 @@ namespace CG
 		params.bEnabled = bEnabled;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696A20
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.IsInEditorSwitch
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		SWGPlatformUtil_ESWGEditor                         Editor                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		ESWGEditor                                         Editor                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGPlatformUtilFunctions::STATIC_IsInEditorSwitch(SWGPlatformUtil_ESWGEditor* Editor)
+	void USWGPlatformUtilFunctions::IsInEditorSwitch(ESWGEditor* Editor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -118,7 +115,6 @@ namespace CG
 		USWGPlatformUtilFunctions_IsInEditorSwitch_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -128,11 +124,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968E0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.IsInEditor
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	bool USWGPlatformUtilFunctions::STATIC_IsInEditor()
+	bool USWGPlatformUtilFunctions::IsInEditor()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -141,7 +137,6 @@ namespace CG
 		USWGPlatformUtilFunctions_IsInEditor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -150,11 +145,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696990
-	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetVersionString
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GPUSupportsRayTracing
+	 * 		Flags  -> ()
 	 */
-	class FString USWGPlatformUtilFunctions::STATIC_GetVersionString()
+	bool USWGPlatformUtilFunctions::GPUSupportsRayTracing()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SWGPlatformUtil.SWGPlatformUtilFunctions.GPUSupportsRayTracing");
+		
+		USWGPlatformUtilFunctions_GPUSupportsRayTracing_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetXboxSpecificPlatform
+	 * 		Flags  -> ()
+	 */
+	ESWGXboxPlatform USWGPlatformUtilFunctions::GetXboxSpecificPlatform()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetXboxSpecificPlatform");
+		
+		USWGPlatformUtilFunctions_GetXboxSpecificPlatform_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetVersionString
+	 * 		Flags  -> ()
+	 */
+	class FString USWGPlatformUtilFunctions::GetVersionString()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -163,7 +200,6 @@ namespace CG
 		USWGPlatformUtilFunctions_GetVersionString_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -172,11 +208,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00696910
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGPU
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	class FString USWGPlatformUtilFunctions::STATIC_GetGPU()
+	class FString USWGPlatformUtilFunctions::GetGPU()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -185,7 +221,6 @@ namespace CG
 		USWGPlatformUtilFunctions_GetGPU_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -194,11 +229,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006968E0
-	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetBuildPlatform
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGamepadBackKey
+	 * 		Flags  -> ()
 	 */
-	SWGPlatformUtil_ESWGPlatform USWGPlatformUtilFunctions::STATIC_GetBuildPlatform()
+	struct FKey USWGPlatformUtilFunctions::GetGamepadBackKey()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGamepadBackKey");
+		
+		USWGPlatformUtilFunctions_GetGamepadBackKey_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGamepadAcceptKey
+	 * 		Flags  -> ()
+	 */
+	struct FKey USWGPlatformUtilFunctions::GetGamepadAcceptKey()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetGamepadAcceptKey");
+		
+		USWGPlatformUtilFunctions_GetGamepadAcceptKey_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.GetBuildPlatform
+	 * 		Flags  -> ()
+	 */
+	ESWGPlatform USWGPlatformUtilFunctions::GetBuildPlatform()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -207,7 +284,6 @@ namespace CG
 		USWGPlatformUtilFunctions_GetBuildPlatform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -216,15 +292,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x006967D0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SWGPlatformUtil.SWGPlatformUtilFunctions.EndActivity
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class APlayerController*                           PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      ActivityId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		SWGPlatformUtil_EGameActivityEndType               Outcome                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EGameActivityEndType                               Outcome                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USWGPlatformUtilFunctions::STATIC_EndActivity(class APlayerController* PlayerController, const class FString& ActivityId, SWGPlatformUtil_EGameActivityEndType Outcome)
+	void USWGPlatformUtilFunctions::EndActivity(class APlayerController* PlayerController, const class FString& ActivityId, EGameActivityEndType Outcome)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -236,15 +312,14 @@ namespace CG
 		params.Outcome = Outcome;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USWGPlatformUtilFunctions.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USWGPlatformUtilFunctions.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USWGPlatformUtilFunctions::StaticClass()

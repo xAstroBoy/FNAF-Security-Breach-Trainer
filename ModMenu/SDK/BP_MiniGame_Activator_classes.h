@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_MiniGame_Activator.BP_MiniGame_Activator_C
-	 * Size -> 0x002A (FullSize[0x0252] - InheritedSize[0x0228])
+	 * Size -> 0x002B (FullSize[0x0253] - InheritedSize[0x0228])
 	 */
 	class ABP_MiniGame_Activator_C : public AActor
 	{
@@ -27,18 +27,19 @@ namespace CG
 		class USphereComponent*                                    Sphere;                                                  // 0x0240(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0248(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		bool                                                       CanUse;                                                  // 0x0250(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		E_MiniGame_Activator_Type_E_MiniGame_Activator_Type        Type;                                                    // 0x0251(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		E_MiniGame_Activator_Type                                  Type;                                                    // 0x0251(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       InRealWorld;                                             // 0x0252(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void GetActivatableState(class AActor* Activator, ActivatableState_EActivatableState* CurrentState);
-		void CanActivate(class AActor* Activator, bool* CanActivate, fnaf9_EConditionFailReason* CantReason);
+		void GetActivatableState(class AActor* Activator, EActivatableState* CurrentState);
+		void CanActivate(class AActor* Activator, bool* CanActivate, EConditionFailReason* CantReason);
 		void CanDeactivate(bool* CanDeactivate);
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void UpdateUIOnTick(bool* Output);
 		void GetInstructionOverride(class FText* Instruction);
 		void PlayerEnter(class UObject* Pawn, class APlayerController* PlayerController);
@@ -49,7 +50,7 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		void LoadMiniGolfCourse(int32_t CourseIndex);
-		void Load_Mini_Game_Level(const class FName& LevelName);
+		void LoadMiniGameLevel(const class FName& LevelName);
 		void DeactivateObject(class AActor* Deactivator);
 		void SetActivated();
 		void OnActivatorDone(class AActor* Activator);

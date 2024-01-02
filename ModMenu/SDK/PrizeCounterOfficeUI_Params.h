@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,6 @@ namespace CG
 	{
 	public:
 		class FText                                                ReturnValue;                                             // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
-
 	};
 
 	/**
@@ -31,7 +30,6 @@ namespace CG
 	{
 	public:
 		float                                                      ReturnValue;                                             // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -41,22 +39,19 @@ namespace CG
 	{
 	public:
 		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PrizeCounterOfficeUI.PrizeCounterOfficeUI_C.MakeTimerVisible
 	 */
 	struct UPrizeCounterOfficeUI_C_MakeTimerVisible_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PrizeCounterOfficeUI.PrizeCounterOfficeUI_C.MakeTimerNotVisible
 	 */
 	struct UPrizeCounterOfficeUI_C_MakeTimerNotVisible_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PrizeCounterOfficeUI.PrizeCounterOfficeUI_C.ExecuteUbergraph_PrizeCounterOfficeUI
@@ -65,7 +60,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

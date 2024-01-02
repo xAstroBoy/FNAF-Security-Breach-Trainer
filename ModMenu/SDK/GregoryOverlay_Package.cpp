@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,20 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.LoadHud
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.RunIconToggle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               On                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UGregoryOverlay_C::LoadHud()
+	void UGregoryOverlay_C::RunIconToggle(bool On)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.LoadHud");
+			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.RunIconToggle");
 		
-		UGregoryOverlay_C_LoadHud_Params params {};
+		UGregoryOverlay_C_RunIconToggle_Params params {};
+		params.On = On;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,9 +34,55 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.CrouchToggle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               InputPin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UGregoryOverlay_C::CrouchToggle(bool InputPin)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.CrouchToggle");
+		
+		UGregoryOverlay_C_CrouchToggle_Params params {};
+		params.InputPin = InputPin;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.GetCorrentPawnCrouchIcon
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UUserWidget*                                 CrouchingIcon                                              (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UGregoryOverlay_C::GetCorrentPawnCrouchIcon(class UUserWidget** CrouchingIcon)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.GetCorrentPawnCrouchIcon");
+		
+		UGregoryOverlay_C_GetCorrentPawnCrouchIcon_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (CrouchingIcon != nullptr)
+			*CrouchingIcon = params.CrouchingIcon;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGregoryOverlay_C::Construct()
 	{
@@ -50,20 +99,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ChangeBackgroundImage
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UImage*                                      New_Image                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UImage*                                      NewImage                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGregoryOverlay_C::ChangeBackgroundImage(class UImage* New_Image)
+	void UGregoryOverlay_C::ChangeBackgroundImage(class UImage* NewImage)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.ChangeBackgroundImage");
 		
 		UGregoryOverlay_C_ChangeBackgroundImage_Params params {};
-		params.New_Image = New_Image;
+		params.NewImage = NewImage;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -72,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.DestroyThisHUD
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      DestroyedActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -94,20 +143,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ToggleReticle
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               HoldingFazerBlaster                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               ShowRedDot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UGregoryOverlay_C::ToggleReticle(bool HoldingFazerBlaster)
+	void UGregoryOverlay_C::ToggleReticle(bool ShowRedDot)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.ToggleReticle");
 		
 		UGregoryOverlay_C_ToggleReticle_Params params {};
-		params.HoldingFazerBlaster = HoldingFazerBlaster;
+		params.ShowRedDot = ShowRedDot;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -116,17 +165,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ShowHeldItemWidget
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class AEquippable_C*                               Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UGregoryOverlay_C::ShowHeldItemWidget()
+	void UGregoryOverlay_C::ShowHeldItemWidget(class AEquippable_C* Target)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.ShowHeldItemWidget");
 		
 		UGregoryOverlay_C_ShowHeldItemWidget_Params params {};
+		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -135,9 +187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.Hide
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               HideProgressWheel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -157,9 +209,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.Show
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void UGregoryOverlay_C::Show()
 	{
@@ -176,9 +228,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ShowFlashlightPowerLevel
+	 * 		Flags  -> ()
+	 */
+	void UGregoryOverlay_C::ShowFlashlightPowerLevel()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function GregoryOverlay.GregoryOverlay_C.ShowFlashlightPowerLevel");
+		
+		UGregoryOverlay_C_ShowFlashlightPowerLevel_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function GregoryOverlay.GregoryOverlay_C.ExecuteUbergraph_GregoryOverlay
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -198,8 +269,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UGregoryOverlay_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UGregoryOverlay_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UGregoryOverlay_C::StaticClass()

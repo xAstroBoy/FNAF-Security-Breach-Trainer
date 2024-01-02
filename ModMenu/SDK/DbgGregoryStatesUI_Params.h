@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,134 +15,58 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_GregoryCrouch_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.UpdateCheckboxStates
 	 */
-	struct UDbgGregoryStatesUI_C_Get_GregoryCrouch_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_UpdateCheckboxStates_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyEnterExit_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Construct
 	 */
-	struct UDbgGregoryStatesUI_C_Get_FreddyEnterExit_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_Construct_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_FreddyCall_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_Get_FreddyCall_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_RoxyEyes_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_Get_RoxyEyes_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_ChicaBeak_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_Get_ChicaBeak_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.Get_MontyClaws_CheckedState_1
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_Get_MontyClaws_CheckedState_1_Params
-	{
-	public:
-		SlateCore_ECheckBoxState                                   ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature
+	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature
 	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
-
-	/**
-	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
-	 */
-	struct UDbgGregoryStatesUI_C_BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature_Params
-	{
-	public:
-		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-	};
+	struct UDbgGregoryStatesUI_C_BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature_Params
+	{	};
 
 	/**
 	 * Function DbgGregoryStatesUI.DbgGregoryStatesUI_C.ExecuteUbergraph_DbgGregoryStatesUI
@@ -151,7 +75,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_0ZBK[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

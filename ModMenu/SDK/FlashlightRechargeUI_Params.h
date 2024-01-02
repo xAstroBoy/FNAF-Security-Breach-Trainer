@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,19 +17,17 @@ namespace CG
 	/**
 	 * Function FlashlightRechargeUI.FlashlightRechargeUI_C.Update Percentage
 	 */
-	struct UFlashlightRechargeUI_C_Update_Percentage_Params
+	struct UFlashlightRechargeUI_C_UpdatePercentage_Params
 	{
 	public:
 		float                                                      Percentage;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function FlashlightRechargeUI.FlashlightRechargeUI_C.Reset
 	 */
 	struct UFlashlightRechargeUI_C_Reset_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function FlashlightRechargeUI.FlashlightRechargeUI_C.ExecuteUbergraph_FlashlightRechargeUI
@@ -38,7 +36,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

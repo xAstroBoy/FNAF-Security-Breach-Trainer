@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,14 +24,14 @@ namespace CG
 		void OnPlayerHoverExit(class APawn* PlayerPawn);
 		void OnPlayerHoverEnter(class APawn* PlayerPawn);
 		void GetInteractViewLocation(bool* Valid, struct FVector* WorldLocation);
-		void GetInteractViewAngles(fnaf9_ECameraAngleFlags* AnglesToCheck);
+		void GetInteractViewAngles(ECameraAngleFlags* AnglesToCheck);
 		void GetHUDInstruction(class FText* Instruction);
 		void InteractIgnoresTrace(bool* IgnoreTrace);
 		void GetInstructionOverride(class FText* Instruction);
 		void UpdateUIOnTick(bool* Output);
-		void CanPlayerInteract(bool* CanInteract, fnaf9_EConditionFailReason* CantReason);
+		void CanPlayerInteract(bool* CanInteract, EConditionFailReason* CantReason);
 		void OnPlayerInteractCancel();
-		void GetInteractibleType(InteractibleType_EInteractibleType* Type, InteractiblePressType_EInteractiblePressType* PressType);
+		void GetInteractibleType(EInteractibleType* Type, EInteractiblePressType* PressType);
 		void OnPlayerInteract(class APawn* PlayerPawn, class APlayerController* PlayerController);
 		static UClass* StaticClass();
 	};

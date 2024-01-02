@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,20 +17,20 @@ namespace CG
 	/**
 	 * UserDefinedEnum Areas.Areas
 	 */
-	enum class Areas_EAreas : uint8_t
+	enum class EAreas : uint8_t
 	{
-		Areas__NewEnumerator9  = 0,
-		Areas__NewEnumerator0  = 1,
-		Areas__NewEnumerator1  = 2,
-		Areas__NewEnumerator2  = 3,
-		Areas__NewEnumerator7  = 4,
-		Areas__NewEnumerator3  = 5,
-		Areas__NewEnumerator4  = 6,
-		Areas__NewEnumerator5  = 7,
-		Areas__NewEnumerator6  = 8,
-		Areas__NewEnumerator8  = 9,
-		Areas__NewEnumerator10 = 10,
-		Areas__Areas_MAX       = 11
+		AreasNewEnumerator9  = 0,
+		AreasNewEnumerator0  = 1,
+		AreasNewEnumerator1  = 2,
+		AreasNewEnumerator2  = 3,
+		AreasNewEnumerator7  = 4,
+		AreasNewEnumerator3  = 5,
+		AreasNewEnumerator4  = 6,
+		AreasNewEnumerator5  = 7,
+		AreasNewEnumerator6  = 8,
+		AreasNewEnumerator8  = 9,
+		AreasNewEnumerator10 = 10,
+		AreasAreas_MAX       = 11
 	};
 
 }

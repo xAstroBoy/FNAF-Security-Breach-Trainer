@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass Animatronic_ABP_Chica.Animatronic_ABP_Chica_C
-	 * Size -> 0x000F (FullSize[0x8E18] - InheritedSize[0x8E09])
+	 * Size -> 0x0008 (FullSize[0xA390] - InheritedSize[0xA388])
 	 */
 	class UAnimatronic_ABP_Chica_C : public UAnimatronic_ABP_MASTER_C
 	{
 	public:
-		unsigned char                                              UnknownData_KFBN[0x7];                                   // 0x8E09(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x8E10(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0xA388(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void footstep();

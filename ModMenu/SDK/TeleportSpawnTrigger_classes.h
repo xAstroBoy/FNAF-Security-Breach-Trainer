@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -25,11 +25,11 @@ namespace CG
 		class UStaticMeshComponent*                                Sphere;                                                  // 0x02B8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USphereComponent*                                    DistanceSphere;                                          // 0x02C0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		float                                                      ReactivationTime;                                        // 0x02C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_1CTS[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class APawn*                                               Spawned_Pawn;                                            // 0x02D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       Should_Reactivate_On_Spawn;                              // 0x02D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_2MSO[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		unsigned char                                              Seeker_Patrol_Path[0x28];                                // 0x02D9(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		unsigned char                                              UnknownData_RJUF[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class APawn*                                               SpawnedPawn;                                             // 0x02D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       ShouldReactivateOnSpawn;                                 // 0x02D8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_6MNY[0x7];                                   // 0x02D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              SeekerPatrolPath[0x28];                                  // 0x02E0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 
 	public:
 		void Teleport(class APawn* Pawn);
@@ -37,10 +37,10 @@ namespace CG
 		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void OnAISpawned(class APawn* SpawnedPawn);
 		void OnAISpawnedFailure(class APawn* SpawnedPawn);
-		void Event_Post_Spawn_Logic(class APawn* Pawn);
-		void Enable_Trigger();
-		void Disable_Trigger();
-		void Reactivation_Timer();
+		void EventPostSpawnLogic(class APawn* Pawn);
+		void EnableTrigger();
+		void DisableTrigger();
+		void ReactivationTimer();
 		void ExecuteUbergraph_TeleportSpawnTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -24,10 +24,10 @@ namespace CG
 		class UArrowComponent*                                     Arrow;                                                   // 0x0228(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class UBillboardComponent*                                 Billboard;                                               // 0x0230(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0238(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
-		TMap<FreddyVOType_EFreddyVOType, struct FFreddyVOTypeArray> FreddyVO;                                                // 0x0240(0x0050) Edit, BlueprintVisible
+		TMap<EFreddyVOType, struct FFreddyVOTypeArray>             FreddyVO;                                                // 0x0240(0x0050) Edit, BlueprintVisible
 
 	public:
-		void GetFreddyVO(FreddyVOType_EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog);
+		void GetFreddyVO(EFreddyVOType VOType, TArray<class UDialogueWave*>* FreddyDialog);
 		void GetFreddyActionLocationAndRotation(struct FVector* Location, struct FRotator* Rotation);
 		static UClass* StaticClass();
 	};

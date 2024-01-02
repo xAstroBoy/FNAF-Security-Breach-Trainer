@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3D60
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AudioCapture.AudioCapture.StopCapturingAudio
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAudioCapture::StopCapturingAudio()
 	{
@@ -25,16 +25,15 @@ namespace CG
 		UAudioCapture_StopCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3D40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AudioCapture.AudioCapture.StartCapturingAudio
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	void UAudioCapture::StartCapturingAudio()
 	{
@@ -45,16 +44,15 @@ namespace CG
 		UAudioCapture_StartCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3D10
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AudioCapture.AudioCapture.IsCapturingAudio
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
 	bool UAudioCapture::IsCapturingAudio()
 	{
@@ -65,7 +63,6 @@ namespace CG
 		UAudioCapture_IsCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -74,9 +71,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3C70
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AudioCapture.AudioCapture.GetAudioCaptureDeviceInfo
-	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FAudioCaptureDeviceInfo                     OutInfo                                                    (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -89,7 +86,6 @@ namespace CG
 		UAudioCapture_GetAudioCaptureDeviceInfo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -101,8 +97,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAudioCapture.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAudioCapture.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAudioCapture::StaticClass()
@@ -115,11 +111,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00AF3C40
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function AudioCapture.AudioCaptureFunctionLibrary.CreateAudioCapture
-	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 */
-	class UAudioCapture* UAudioCaptureFunctionLibrary::STATIC_CreateAudioCapture()
+	class UAudioCapture* UAudioCaptureFunctionLibrary::CreateAudioCapture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -128,7 +124,6 @@ namespace CG
 		UAudioCaptureFunctionLibrary_CreateAudioCapture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -137,8 +132,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAudioCaptureFunctionLibrary.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAudioCaptureFunctionLibrary.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAudioCaptureFunctionLibrary::StaticClass()
@@ -151,8 +146,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UAudioCaptureComponent.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UAudioCaptureComponent.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UAudioCaptureComponent::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,11 +15,48 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Camera.Camera_C.StunAllInView
+	 */
+	struct ACamera_C_StunAllInView_Params
+	{	};
+
+	/**
+	 * Function Camera.Camera_C.PlayerVisible
+	 */
+	struct ACamera_C_PlayerVisible_Params
+	{
+	public:
+		bool                                                       IsPlayerVisible;                                         // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_XX4W[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function Camera.Camera_C.GetRenderTargetManager
+	 */
+	struct ACamera_C_GetRenderTargetManager_Params
+	{	};
+
+	/**
+	 * Function Camera.Camera_C.SetSecurityNodes
+	 */
+	struct ACamera_C_SetSecurityNodes_Params
+	{
+	public:
+		bool                                                       Show;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_UMVO[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function Camera.Camera_C.GetCameraModel
+	 */
+	struct ACamera_C_GetCameraModel_Params
+	{	};
+
+	/**
 	 * Function Camera.Camera_C.GetRenderTarget
 	 */
 	struct ACamera_C_GetRenderTarget_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.RenderCheck
@@ -28,7 +65,6 @@ namespace CG
 	{
 	public:
 		bool                                                       Active;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -38,22 +74,19 @@ namespace CG
 	{
 	public:
 		bool                                                       EnableSight;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.TickRenderFrame
 	 */
 	struct ACamera_C_TickRenderFrame_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.SetUpTextureTarget2d
 	 */
 	struct ACamera_C_SetUpTextureTarget2d_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.DestroyReference
@@ -62,7 +95,6 @@ namespace CG
 	{
 	public:
 		class UObject*                                             ReferencedObject;                                        // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -73,15 +105,13 @@ namespace CG
 	public:
 		class UObject*                                             Referencer;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		class UTextureRenderTarget2D*                              TextureTarget;                                           // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.SetTrackingRotation
 	 */
 	struct ACamera_C_SetTrackingRotation_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.SetCameraEnabled
@@ -90,7 +120,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -100,7 +129,6 @@ namespace CG
 	{
 	public:
 		float                                                      StickInput;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -110,7 +138,6 @@ namespace CG
 	{
 	public:
 		float                                                      StickInput;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -120,15 +147,13 @@ namespace CG
 	{
 	public:
 		float                                                      DeltaSeconds;                                            // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.ReceiveBeginPlay
 	 */
 	struct ACamera_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.Tilt
@@ -137,7 +162,6 @@ namespace CG
 	{
 	public:
 		float                                                      StickInput;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -147,48 +171,42 @@ namespace CG
 	{
 	public:
 		bool                                                       Off;                                                     // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.Set Initial View
 	 */
-	struct ACamera_C_Set_Initial_View_Params
-	{
-	};
+	struct ACamera_C_SetInitialView_Params
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.UpdatePanTilt
 	 */
 	struct ACamera_C_UpdatePanTilt_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.OnOfficeModeStarted
 	 */
 	struct ACamera_C_OnOfficeModeStarted_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.Set Focused
 	 */
-	struct ACamera_C_Set_Focused_Params
+	struct ACamera_C_SetFocused_Params
 	{
 	public:
 		bool                                                       Focused;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.Set Light On
 	 */
-	struct ACamera_C_Set_Light_On_Params
+	struct ACamera_C_SetLightOn_Params
 	{
 	public:
 		bool                                                       bNewVisibility;                                          // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -197,8 +215,7 @@ namespace CG
 	struct ACamera_C_ReceiveEndPlay_Params
 	{
 	public:
-		Engine_EEndPlayReason                                      EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		EEndPlayReason                                             EndPlayReason;                                           // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -209,22 +226,19 @@ namespace CG
 	public:
 		class AActor*                                              UpdatedActor;                                            // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bVisible;                                                // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function Camera.Camera_C.StartServoAudio
 	 */
 	struct ACamera_C_StartServoAudio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.StopServoAudio
 	 */
 	struct ACamera_C_StopServoAudio_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.SetCaptureQuality
@@ -233,8 +247,19 @@ namespace CG
 	{
 	public:
 		bool                                                       High;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
+
+	/**
+	 * Function Camera.Camera_C.UpdateSceneCaptureSettings
+	 */
+	struct ACamera_C_UpdateSceneCaptureSettings_Params
+	{	};
+
+	/**
+	 * Function Camera.Camera_C.LevelsLoaded
+	 */
+	struct ACamera_C_LevelsLoaded_Params
+	{	};
 
 	/**
 	 * Function Camera.Camera_C.ExecuteUbergraph_Camera
@@ -243,7 +268,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -253,7 +277,6 @@ namespace CG
 	{
 	public:
 		class ACamera_C*                                           Camera;                                                  // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

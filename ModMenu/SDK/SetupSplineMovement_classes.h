@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -29,7 +29,7 @@ namespace CG
 		float                                                      MovementSpeed;                                           // 0x00F8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Setup_Spline_Movement(class APawn* Pawn);
+		void SetupSplineMovement(class APawn* Pawn);
 		void ExecuteUbergraph_SetupSplineMovement(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

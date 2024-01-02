@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,20 +12,42 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.MatchPlayerCameraSettings
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class USceneCaptureComponent2D*                    Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void USecurityCameraUI_C::MatchPlayerCameraSettings(class USceneCaptureComponent2D* Target)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.MatchPlayerCameraSettings");
+		
+		USecurityCameraUI_C_MatchPlayerCameraSettings_Params params {};
+		params.Target = Target;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Get Direction
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Dir                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            Direction                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Get_Direction(const struct FVector2D& Dir, int32_t* Direction)
+	void USecurityCameraUI_C::GetDirection(const struct FVector2D& Dir, int32_t* Direction)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Get Direction");
 		
-		USecurityCameraUI_C_Get_Direction_Params params {};
+		USecurityCameraUI_C_GetDirection_Params params {};
 		params.Dir = Dir;
 		
 		auto flags = fn->FunctionFlags;
@@ -38,21 +60,21 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Get Camera Comparison Value
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UWidget*                                     CameraIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            Dir                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Get_Camera_Comparison_Value(class UWidget* CameraIcon, int32_t Dir, float* Value)
+	void USecurityCameraUI_C::GetCameraComparisonValue(class UWidget* CameraIcon, int32_t Dir, float* Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Get Camera Comparison Value");
 		
-		USecurityCameraUI_C_Get_Camera_Comparison_Value_Params params {};
+		USecurityCameraUI_C_GetCameraComparisonValue_Params params {};
 		params.CameraIcon = CameraIcon;
 		params.Dir = Dir;
 		
@@ -66,11 +88,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SortRow
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		TArray<class UCameraIcon_C*>                       RowToSort                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash)
+	 * 		TArray<class UCameraIcon_C*>                       RowToSort                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	 */
 	void USecurityCameraUI_C::SortRow(TArray<class UCameraIcon_C*>* RowToSort)
 	{
@@ -90,12 +112,12 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.FindCurrentCameraRow
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		TArray<class UCameraIcon_C*>                       CameraRow                                                  (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
+	 * 		TArray<class UCameraIcon_C*>                       CameraRow                                                  (Parm, OutParm, ContainsInstancedReference)
 	 * 		int32_t                                            WhichRow                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
 	void USecurityCameraUI_C::FindCurrentCameraRow(int32_t* Index, TArray<class UCameraIcon_C*>* CameraRow, int32_t* WhichRow)
@@ -120,9 +142,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SetupCameraRows
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              StdDev                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              MinClamp                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -146,9 +168,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SetVisibleCameras
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::SetVisibleCameras()
 	{
@@ -165,9 +187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.CalculateIconsStdDev
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              StandardDeviation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              LowestYValue                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -195,11 +217,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetMouseVisible
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	UMG_ESlateVisibility USecurityCameraUI_C::GetMouseVisible()
+	ESlateVisibility USecurityCameraUI_C::GetMouseVisible()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -216,9 +238,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetNextGolfCamera
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UCameraIcon_C*                               NextCam                                                    (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -240,9 +262,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SlopeDegrees
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Point1                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector2D                                   Point2                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -272,15 +294,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetCameraInDirection
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UCameraIcon_C*                               LSelectedCamera                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		class UCameraIcon_C*                               End_Camera                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UCameraIcon_C*                               EndCamera                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::GetCameraInDirection(class UCameraIcon_C* LSelectedCamera, const struct FVector2D& Direction, class UCameraIcon_C** End_Camera)
+	void USecurityCameraUI_C::GetCameraInDirection(class UCameraIcon_C* LSelectedCamera, const struct FVector2D& Direction, class UCameraIcon_C** EndCamera)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -294,27 +316,27 @@ namespace CG
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (End_Camera != nullptr)
-			*End_Camera = params.End_Camera;
+		if (EndCamera != nullptr)
+			*EndCamera = params.EndCamera;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Get Nearest
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UCameraIcon_C*                               StartCamera                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UCameraIcon_C*                               EndCamera                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Get_Nearest(const struct FVector2D& Direction, class UCameraIcon_C* StartCamera, class UCameraIcon_C** EndCamera)
+	void USecurityCameraUI_C::GetNearest(const struct FVector2D& Direction, class UCameraIcon_C* StartCamera, class UCameraIcon_C** EndCamera)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Get Nearest");
 		
-		USecurityCameraUI_C_Get_Nearest_Params params {};
+		USecurityCameraUI_C_GetNearest_Params params {};
 		params.Direction = Direction;
 		params.StartCamera = StartCamera;
 		
@@ -328,9 +350,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.OnMouseWheel
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -354,11 +376,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetVisibility_1
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	UMG_ESlateVisibility USecurityCameraUI_C::GetVisibility_1()
+	ESlateVisibility USecurityCameraUI_C::GetVisibility_1()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -375,11 +397,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetControllerVisible
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
-	UMG_ESlateVisibility USecurityCameraUI_C::GetControllerVisible()
+	ESlateVisibility USecurityCameraUI_C::GetControllerVisible()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -396,9 +418,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.GetLightOnColor
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+	 * 		Flags  -> ()
 	 */
 	struct FLinearColor USecurityCameraUI_C::GetLightOnColor()
 	{
@@ -417,9 +439,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.DoTick
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::DoTick()
 	{
@@ -436,9 +458,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SetFirstCamera
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::SetFirstCamera()
 	{
@@ -455,9 +477,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.CycleCamera2dPlane
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   InputDirection                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UCameraIcon_C*                               Output                                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -481,9 +503,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.CycleCamera
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            inc                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -503,69 +525,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputOpen
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void USecurityCameraUI_C::InputOpen()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputOpen");
-		
-		USecurityCameraUI_C_InputOpen_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputDpadDirection
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void USecurityCameraUI_C::InputDpadDirection(const struct FVector2D& Direction)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputDpadDirection");
-		
-		USecurityCameraUI_C_InputDpadDirection_Params params {};
-		params.Direction = Direction;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void USecurityCameraUI_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Construct");
-		
-		USecurityCameraUI_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Tick
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	 * 		float                                              InDeltaTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -587,9 +549,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SetupCameras
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::SetupCameras()
 	{
@@ -606,19 +568,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Camera Clicked
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class ASecurityCamera*                             Camera                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::Camera_Clicked(class ASecurityCamera* Camera)
+	void USecurityCameraUI_C::CameraClicked(class ASecurityCamera* Camera)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Camera Clicked");
 		
-		USecurityCameraUI_C_Camera_Clicked_Params params {};
+		USecurityCameraUI_C_CameraClicked_Params params {};
 		params.Camera = Camera;
 		
 		auto flags = fn->FunctionFlags;
@@ -628,17 +590,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Cameras Off
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void USecurityCameraUI_C::Cameras_Off()
+	void USecurityCameraUI_C::CamerasOff()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Cameras Off");
 		
-		USecurityCameraUI_C_Cameras_Off_Params params {};
+		USecurityCameraUI_C_CamerasOff_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -647,17 +609,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputPrimary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputOpen
+	 * 		Flags  -> ()
 	 */
-	void USecurityCameraUI_C::InputPrimary()
+	void USecurityCameraUI_C::InputOpen()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputPrimary");
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputOpen");
 		
-		USecurityCameraUI_C_InputPrimary_Params params {};
+		USecurityCameraUI_C_InputOpen_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -666,9 +628,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.SetToStatic
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::SetToStatic()
 	{
@@ -685,69 +647,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputAccept
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void USecurityCameraUI_C::InputAccept()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputAccept");
-		
-		USecurityCameraUI_C_InputAccept_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputLookAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void USecurityCameraUI_C::InputLookAxis(const struct FVector2D& Axis)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputLookAxis");
-		
-		USecurityCameraUI_C_InputLookAxis_Params params {};
-		params.Axis = Axis;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputTertiary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void USecurityCameraUI_C::InputTertiary()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputTertiary");
-		
-		USecurityCameraUI_C_InputTertiary_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputMoveAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -767,17 +669,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__Vision_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputLookAxis
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::BndEvt__Vision_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
+	void USecurityCameraUI_C::InputLookAxis(const struct FVector2D& Axis)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__Vision_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputLookAxis");
 		
-		USecurityCameraUI_C_BndEvt__Vision_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature_Params params {};
+		USecurityCameraUI_C_InputLookAxis_Params params {};
+		params.Axis = Axis;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -786,9 +691,47 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputTertiary
+	 * 		Flags  -> ()
+	 */
+	void USecurityCameraUI_C::InputTertiary()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputTertiary");
+		
+		USecurityCameraUI_C_InputTertiary_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Construct
+	 * 		Flags  -> ()
+	 */
+	void USecurityCameraUI_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.Construct");
+		
+		USecurityCameraUI_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__ZoomIN_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::BndEvt__ZoomIN_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature()
 	{
@@ -805,9 +748,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.PressZoomIN
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::PressZoomIN()
 	{
@@ -824,9 +767,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__ZoomIN_K2Node_ComponentBoundEvent_3_OnButtonReleasedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::BndEvt__ZoomIN_K2Node_ComponentBoundEvent_3_OnButtonReleasedEvent__DelegateSignature()
 	{
@@ -843,9 +786,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__ZoomOut_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::BndEvt__ZoomOut_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature()
 	{
@@ -862,9 +805,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.BndEvt__ZoomOut_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature
-	 * 		Flags  -> (BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::BndEvt__ZoomOut_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature()
 	{
@@ -881,9 +824,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.PressZoomOut
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::PressZoomOut()
 	{
@@ -900,17 +843,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputSecondary
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputDpadDirection
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		struct FVector2D                                   Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void USecurityCameraUI_C::InputSecondary()
+	void USecurityCameraUI_C::InputDpadDirection(const struct FVector2D& Direction)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputSecondary");
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputDpadDirection");
 		
-		USecurityCameraUI_C_InputSecondary_Params params {};
+		USecurityCameraUI_C_InputDpadDirection_Params params {};
+		params.Direction = Direction;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -919,9 +865,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Zoom
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -941,17 +887,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputBack
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputSecondary
+	 * 		Flags  -> ()
 	 */
-	void USecurityCameraUI_C::InputBack()
+	void USecurityCameraUI_C::InputSecondary()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputBack");
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputSecondary");
 		
-		USecurityCameraUI_C_InputBack_Params params {};
+		USecurityCameraUI_C_InputSecondary_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -960,9 +906,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputClose
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::InputClose()
 	{
@@ -979,17 +925,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputPrevious
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputPrimary
+	 * 		Flags  -> ()
 	 */
-	void USecurityCameraUI_C::InputPrevious()
+	void USecurityCameraUI_C::InputPrimary()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputPrevious");
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputPrimary");
 		
-		USecurityCameraUI_C_InputPrevious_Params params {};
+		USecurityCameraUI_C_InputPrimary_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -998,9 +944,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.ReFocus
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::ReFocus()
 	{
@@ -1017,9 +963,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputZoom
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1039,9 +985,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.OnCameraLevelsLoaded
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::OnCameraLevelsLoaded()
 	{
@@ -1058,9 +1004,66 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputAccept
+	 * 		Flags  -> ()
+	 */
+	void USecurityCameraUI_C::InputAccept()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputAccept");
+		
+		USecurityCameraUI_C_InputAccept_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputBack
+	 * 		Flags  -> ()
+	 */
+	void USecurityCameraUI_C::InputBack()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputBack");
+		
+		USecurityCameraUI_C_InputBack_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputPrevious
+	 * 		Flags  -> ()
+	 */
+	void USecurityCameraUI_C::InputPrevious()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function SecurityCameraUI.SecurityCameraUI_C.InputPrevious");
+		
+		USecurityCameraUI_C_InputPrevious_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InuputNext
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::InuputNext()
 	{
@@ -1077,9 +1080,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.NextCamInList
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::NextCamInList()
 	{
@@ -1096,9 +1099,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputOptionAxis
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector2D                                   Axis                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1118,9 +1121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.Reset
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void USecurityCameraUI_C::Reset()
 	{
@@ -1137,9 +1140,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.InputCycle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1159,9 +1162,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityCameraUI.SecurityCameraUI_C.ExecuteUbergraph_SecurityCameraUI
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1181,8 +1184,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USecurityCameraUI_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USecurityCameraUI_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USecurityCameraUI_C::StaticClass()

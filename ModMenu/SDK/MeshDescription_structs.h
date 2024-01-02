@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,13 +17,13 @@ namespace CG
 	/**
 	 * Enum MeshDescription.EComputeNTBsOptions
 	 */
-	enum class MeshDescription_EComputeNTBsOptions : uint8_t
+	enum class EComputeNTBsOptions : uint8_t
 	{
-		EComputeNTBsOptions__None                    = 0,
-		EComputeNTBsOptions__Normals                 = 1,
-		EComputeNTBsOptions__Tangents                = 2,
-		EComputeNTBsOptions__WeightedNTBs            = 3,
-		EComputeNTBsOptions__EComputeNTBsOptions_MAX = 4
+		None         = 0,
+		Normals      = 1,
+		Tangents     = 2,
+		WeightedNTBs = 3,
+		MAX          = 4
 	};
 
 	// --------------------------------------------------
@@ -37,7 +37,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    IDValue;                                                 // 0x0000(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-
 	};
 
 	/**
@@ -45,48 +44,42 @@ namespace CG
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FPolygonGroupID : public FElementID
-	{
-	};
+	{	};
 
 	/**
 	 * ScriptStruct MeshDescription.PolygonID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FPolygonID : public FElementID
-	{
-	};
+	{	};
 
 	/**
 	 * ScriptStruct MeshDescription.VertexID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FVertexID : public FElementID
-	{
-	};
+	{	};
 
 	/**
 	 * ScriptStruct MeshDescription.VertexInstanceID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FVertexInstanceID : public FElementID
-	{
-	};
+	{	};
 
 	/**
 	 * ScriptStruct MeshDescription.EdgeID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FEdgeID : public FElementID
-	{
-	};
+	{	};
 
 	/**
 	 * ScriptStruct MeshDescription.TriangleID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
 	struct FTriangleID : public FElementID
-	{
-	};
+	{	};
 
 }
 

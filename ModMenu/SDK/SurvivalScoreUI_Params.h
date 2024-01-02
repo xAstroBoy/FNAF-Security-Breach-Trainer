@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,8 +18,7 @@ namespace CG
 	 * Function SurvivalScoreUI.SurvivalScoreUI_C.Construct
 	 */
 	struct USurvivalScoreUI_C_Construct_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SurvivalScoreUI.SurvivalScoreUI_C.ExecuteUbergraph_SurvivalScoreUI
@@ -28,7 +27,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,34 +16,30 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * WidgetBlueprintGeneratedClass DbgGregoryStatesUI.DbgGregoryStatesUI_C
-	 * Size -> 0x0040 (FullSize[0x0270] - InheritedSize[0x0230])
+	 * Size -> 0x0040 (FullSize[0x02A0] - InheritedSize[0x0260])
 	 */
 	class UDbgGregoryStatesUI_C : public UUserWidget
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0230(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UCheckBox*                                           ChicaBeak;                                               // 0x0238(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           FreddyCall;                                              // 0x0240(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           FreddyEnterExit;                                         // 0x0248(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           Gregory_Sight;                                           // 0x0250(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           GregoryCrouch;                                           // 0x0258(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           MontyClaws;                                              // 0x0260(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UCheckBox*                                           RoxyEyes;                                                // 0x0268(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0260(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UCheckBoxUI_C*                                       CallFreddy_Checkbox;                                     // 0x0268(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       CanEnterExitFreddy_Checkbox;                             // 0x0270(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       ChicaBeak_Checkbox;                                      // 0x0278(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       GregoryCrouch_Checkbox;                                  // 0x0280(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       GregorySight_Checkbox;                                   // 0x0288(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       MontyClaws_Checkbox;                                     // 0x0290(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UCheckBoxUI_C*                                       RoxyEyes_Checkbox;                                       // 0x0298(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		SlateCore_ECheckBoxState Get_GregoryCrouch_CheckedState_1();
-		SlateCore_ECheckBoxState Get_FreddyEnterExit_CheckedState_1();
-		SlateCore_ECheckBoxState Get_FreddyCall_CheckedState_1();
-		SlateCore_ECheckBoxState Get_RoxyEyes_CheckedState_1();
-		SlateCore_ECheckBoxState Get_ChicaBeak_CheckedState_1();
-		SlateCore_ECheckBoxState Get_MontyClaws_CheckedState_1();
-		void BndEvt__ChicaBeak_K2Node_ComponentBoundEvent_35_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__RoxyEyes_K2Node_ComponentBoundEvent_36_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__ClockRunning_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__FreddyCall_K2Node_ComponentBoundEvent_47_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__FreddyEnterExit_K2Node_ComponentBoundEvent_48_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__GregoryCrouch_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-		void BndEvt__Gregory_Sight_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+		void UpdateCheckboxStates();
+		void Construct();
+		void BndEvt__DbgGregoryStatesUI_CallFreddy_Checkbox_K2Node_ComponentBoundEvent_0_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_CanEnterExitFreddy_Checkbox_K2Node_ComponentBoundEvent_2_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_MontyClaws_Checkbox_K2Node_ComponentBoundEvent_4_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_RoxyEyes_Checkbox_K2Node_ComponentBoundEvent_5_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_ChicaBeak_Checkbox_K2Node_ComponentBoundEvent_6_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_GregoryCrouch_Checkbox_K2Node_ComponentBoundEvent_7_CheckedStateChanged__DelegateSignature();
+		void BndEvt__DbgGregoryStatesUI_GregorySight_Checkbox_K2Node_ComponentBoundEvent_8_CheckedStateChanged__DelegateSignature();
 		void ExecuteUbergraph_DbgGregoryStatesUI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

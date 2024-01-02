@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,25 +15,31 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function SaveGameSettings.SaveGameSettings_C.GetDefaultCrouchToggleValue
+	 */
+	struct USaveGameSettings_C_GetDefaultCrouchToggleValue_Params
+	{
+	public:
+		bool                                                       Output_Get;                                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
 	 * Function SaveGameSettings.SaveGameSettings_C.ResetControlsSettingsToDefault
 	 */
 	struct USaveGameSettings_C_ResetControlsSettingsToDefault_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SaveGameSettings.SaveGameSettings_C.ResetVideoSettingsToDefault
 	 */
 	struct USaveGameSettings_C_ResetVideoSettingsToDefault_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SaveGameSettings.SaveGameSettings_C.ResetAudioSettingsToDefault
 	 */
 	struct USaveGameSettings_C_ResetAudioSettingsToDefault_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function SaveGameSettings.SaveGameSettings_C.GetMediaForCurrentHour
@@ -41,9 +47,9 @@ namespace CG
 	struct USaveGameSettings_C_GetMediaForCurrentHour_Params
 	{
 	public:
-		int32_t                                                    Lasted_Played_Hour;                                      // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		class UMediaSource*                                        Game_Hour_Video;                                         // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		int32_t                                                    LastedPlayedHour;                                        // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_9VTX[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class UMediaSource*                                        GameHourVideo;                                           // 0x0008(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -58,7 +64,7 @@ namespace CG
 		float                                                      Contrast;                                                // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      Gamma;                                                   // 0x0010(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		float                                                      ForceFeedbackIntensityMultiplier;                        // 0x0014(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		ELocalizationCulture                                       Localization;                                            // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 }

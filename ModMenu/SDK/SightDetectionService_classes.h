@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -26,12 +26,12 @@ namespace CG
 
 	public:
 		void ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void On_Sight_Changed(class AActor* UpdatedActor, bool bVisible);
+		void OnSightChanged(class AActor* UpdatedActor, bool bVisible);
 		void ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-		void Sight_Setup(class USightComponent* SightComponent);
-		void Sight_Cleanup(class USightComponent* SightComponent);
+		void SightSetup(class USightComponent* SightComponent);
+		void SightCleanup(class USightComponent* SightComponent);
 		void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-		void Internal_Sight_Setup(class APawn* ControlledPawn);
+		void InternalSightSetup(class APawn* ControlledPawn);
 		void ExecuteUbergraph_SightDetectionService(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * WidgetBlueprintGeneratedClass WI_Empty.WI_Empty_C
-	 * Size -> 0x0010 (FullSize[0x0240] - InheritedSize[0x0230])
+	 * Size -> 0x0030 (FullSize[0x0290] - InheritedSize[0x0260])
 	 */
 	class UWI_Empty_C : public UUserWidget
 	{
 	public:
-		class AFreddy_C*                                           FreddyReference;                                         // 0x0230(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		class UUserWidget*                                         ParentWidgetReference;                                   // 0x0238(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		unsigned char                                              FreddyReference[0x28];                                   // 0x0260(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		class UUserWidget*                                         ParentWidgetReference;                                   // 0x0288(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 
 	public:
 		static UClass* StaticClass();

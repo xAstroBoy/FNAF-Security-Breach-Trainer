@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum E_Elevator_Type.E_Elevator_Type
 	 */
-	enum class E_Elevator_Type_E_Elevator_Type : uint8_t
+	enum class E_Elevator_Type : uint8_t
 	{
-		E_Elevator_Type__NewEnumerator0 = 0,
-		E_Elevator_Type__NewEnumerator1 = 1,
-		E_Elevator_Type__E_Elevator_MAX = 2
+		NewEnumerator0 = 0,
+		NewEnumerator1 = 1,
+		E_Elevator_MAX = 2
 	};
 
 }

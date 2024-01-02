@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.GetTimeAsPercentage
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	float ASecurityScreen_Timer_C::GetTimeAsPercentage()
 	{
@@ -33,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.GetTimeAsText
-	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	class FText ASecurityScreen_Timer_C::GetTimeAsText()
 	{
@@ -54,20 +54,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.Bind Texture Target
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UTexture*                                    Texture_Target                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UTexture*                                    TextureTarget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreen_Timer_C::Bind_Texture_Target(class UTexture* Texture_Target)
+	void ASecurityScreen_Timer_C::BindTextureTarget(class UTexture* TextureTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreen_Timer.SecurityScreen_Timer_C.Bind Texture Target");
 		
-		ASecurityScreen_Timer_C_Bind_Texture_Target_Params params {};
-		params.Texture_Target = Texture_Target;
+		ASecurityScreen_Timer_C_BindTextureTarget_Params params {};
+		params.TextureTarget = TextureTarget;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -76,36 +76,36 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.Find Camera
-	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Is_Valid                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		class UTextureRenderTarget*                        Texture_Target                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               IsValid                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class UTextureRenderTarget*                        TextureTarget                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreen_Timer_C::Find_Camera(bool* Is_Valid, class UTextureRenderTarget** Texture_Target)
+	void ASecurityScreen_Timer_C::FindCamera(bool* IsValid, class UTextureRenderTarget** TextureTarget)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreen_Timer.SecurityScreen_Timer_C.Find Camera");
 		
-		ASecurityScreen_Timer_C_Find_Camera_Params params {};
+		ASecurityScreen_Timer_C_FindCamera_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
-		if (Is_Valid != nullptr)
-			*Is_Valid = params.Is_Valid;
-		if (Texture_Target != nullptr)
-			*Texture_Target = params.Texture_Target;
+		if (IsValid != nullptr)
+			*IsValid = params.IsValid;
+		if (TextureTarget != nullptr)
+			*TextureTarget = params.TextureTarget;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.SetToWidget
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UClass*                                      Class                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -125,9 +125,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.WidgetToggle
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               Enabled                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -147,13 +147,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.SetToInstructionCard
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		E_InstructionCard_Type_E_InstructionCard_Type      Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		E_InstructionCard_Type                             Type                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreen_Timer_C::SetToInstructionCard(E_InstructionCard_Type_E_InstructionCard_Type Type)
+	void ASecurityScreen_Timer_C::SetToInstructionCard(E_InstructionCard_Type Type)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -169,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreen_Timer_C::ReceiveBeginPlay()
 	{
@@ -188,17 +188,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.Set To Static
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ASecurityScreen_Timer_C::Set_To_Static()
+	void ASecurityScreen_Timer_C::SetToStatic()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreen_Timer.SecurityScreen_Timer_C.Set To Static");
 		
-		ASecurityScreen_Timer_C_Set_To_Static_Params params {};
+		ASecurityScreen_Timer_C_SetToStatic_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.MakeTimersVisible
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreen_Timer_C::MakeTimersVisible()
 	{
@@ -226,9 +226,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.ExecuteUbergraph_SecurityScreen_Timer
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -248,9 +248,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.OnStopVideo__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void ASecurityScreen_Timer_C::OnStopVideo__DelegateSignature()
 	{
@@ -267,20 +267,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function SecurityScreen_Timer.SecurityScreen_Timer_C.OnScreenActive__DelegateSignature
-	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class ASecurityScreenDisplay_C*                    Screen                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class ASecurityScreenDisplay_C*                    SCREEN                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ASecurityScreen_Timer_C::OnScreenActive__DelegateSignature(class ASecurityScreenDisplay_C* Screen)
+	void ASecurityScreen_Timer_C::OnScreenActive__DelegateSignature(class ASecurityScreenDisplay_C* SCREEN)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function SecurityScreen_Timer.SecurityScreen_Timer_C.OnScreenActive__DelegateSignature");
 		
 		ASecurityScreen_Timer_C_OnScreenActive__DelegateSignature_Params params {};
-		params.Screen = Screen;
+		params.SCREEN = SCREEN;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -289,8 +289,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ASecurityScreen_Timer_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ASecurityScreen_Timer_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ASecurityScreen_Timer_C::StaticClass()

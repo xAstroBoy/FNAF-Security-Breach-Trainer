@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -21,18 +21,16 @@ namespace CG
 	{
 	public:
 		class AActor*                                              SplineFollowerActor;                                     // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		TArray<class ASplinePathway_C*>                            PossibleSplines;                                         // 0x0008(0x0010)  (Parm, OutParm, HasGetValueTypeHash)
-
+		TArray<class ASplinePathway_C*>                            PossibleSplines;                                         // 0x0008(0x0010)  (Parm, OutParm)
 	};
 
 	/**
 	 * Function SplinePathFork.SplinePathFork_C.On Spline Follower Overlapped
 	 */
-	struct ASplinePathFork_C_On_Spline_Follower_Overlapped_Params
+	struct ASplinePathFork_C_OnSplineFollowerOverlapped_Params
 	{
 	public:
 		class ASplineFollowerBase_C*                               SplineFollower;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -42,7 +40,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -52,7 +49,6 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OtherActor;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 	/**
@@ -62,7 +58,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

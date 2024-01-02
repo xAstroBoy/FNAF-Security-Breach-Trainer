@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,22 +18,19 @@ namespace CG
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.StopEmitter
 	 */
 	struct APRE_MOD_TransferVent_Strait_02_C_StopEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.PlayEmitter
 	 */
 	struct APRE_MOD_TransferVent_Strait_02_C_PlayEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.ReceiveBeginPlay
 	 */
 	struct APRE_MOD_TransferVent_Strait_02_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.ToggleInRange
@@ -42,15 +39,13 @@ namespace CG
 	{
 	public:
 		bool                                                       InRange;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.GetOcclusion
 	 */
 	struct APRE_MOD_TransferVent_Strait_02_C_GetOcclusion_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function PRE_MOD_TransferVent_Strait_02.PRE_MOD_TransferVent_Strait_02_C.ExecuteUbergraph_PRE_MOD_TransferVent_Strait_02
@@ -59,7 +54,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
+		unsigned char                                              UnknownData_JR1M[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

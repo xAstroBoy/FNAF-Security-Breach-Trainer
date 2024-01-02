@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -28,9 +28,9 @@ namespace CG
 		class FScriptMulticastDelegate                             OnFadeInFinished;                                        // 0x00D0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
-		void Change_Area_By_Location(const struct FVector& Location);
-		void Change_Area_By_Player();
-		void On_Area_Change_Finished();
+		void ChangeAreaByLocation(const struct FVector& Location);
+		void ChangeAreaByPlayer();
+		void OnAreaChangeFinished();
 		void ExecuteUbergraph_LightAreaChanger(int32_t EntryPoint);
 		void OnFadeInFinished__DelegateSignature();
 		void OnAreaChangeFinished__DelegateSignature();

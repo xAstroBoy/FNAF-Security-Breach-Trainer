@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -15,11 +15,19 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function DebuggableAICharacter.DebuggableAICharacter_C.DLCRabbitDisplayAlertText
+	 */
+	struct ADebuggableAICharacter_C_DLCRabbitDisplayAlertText_Params
+	{
+	public:
+		bool                                                       Display;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
 	 * Function DebuggableAICharacter.DebuggableAICharacter_C.ReceiveBeginPlay
 	 */
 	struct ADebuggableAICharacter_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function DebuggableAICharacter.DebuggableAICharacter_C.OnDebugVis
@@ -28,7 +36,6 @@ namespace CG
 	{
 	public:
 		bool                                                       enable;                                                  // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -38,7 +45,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

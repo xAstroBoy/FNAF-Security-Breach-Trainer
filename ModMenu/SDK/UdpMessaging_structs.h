@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,14 +17,14 @@ namespace CG
 	/**
 	 * Enum UdpMessaging.EUdpMessageFormat
 	 */
-	enum class UdpMessaging_EUdpMessageFormat : uint8_t
+	enum class EUdpMessageFormat : uint8_t
 	{
-		EUdpMessageFormat__None                   = 0,
-		EUdpMessageFormat__Json                   = 1,
-		EUdpMessageFormat__TaggedProperty         = 2,
-		EUdpMessageFormat__CborPlatformEndianness = 3,
-		EUdpMessageFormat__CborStandardEndianness = 4,
-		EUdpMessageFormat__EUdpMessageFormat_MAX  = 5
+		None                   = 0,
+		Json                   = 1,
+		TaggedProperty         = 2,
+		CborPlatformEndianness = 3,
+		CborStandardEndianness = 4,
+		MAX                    = 5
 	};
 
 	// --------------------------------------------------
@@ -37,8 +37,7 @@ namespace CG
 	struct FUdpMockMessage
 	{
 	public:
-		TArray<unsigned char>                                      Data;                                                    // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
+		TArray<unsigned char>                                      Data;                                                    // 0x0000(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 }

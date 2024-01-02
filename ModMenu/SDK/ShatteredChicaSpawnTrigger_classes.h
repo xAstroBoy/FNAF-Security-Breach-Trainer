@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,9 +27,9 @@ namespace CG
 		bool                                                       RequireTrigger;                                          // 0x0320(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		void ReceiveActorBeginOverlap(class AActor* OtherActor);
 		void ReceiveBeginPlay();
-		void Event_Post_Spawn_Logic(class APawn* Pawn);
+		void ReceiveActorBeginOverlap(class AActor* OtherActor);
+		void EventPostSpawnLogic(class APawn* Pawn);
 		void OnTriggered();
 		void ExecuteUbergraph_ShatteredChicaSpawnTrigger(int32_t EntryPoint);
 		static UClass* StaticClass();

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,12 +17,13 @@ namespace CG
 	/**
 	 * UserDefinedEnum EndoAIStates.EndoAIStates
 	 */
-	enum class EndoAIStates_EndoAIStates : uint8_t
+	enum class EndoAIStates : uint8_t
 	{
-		EndoAIStates__NewEnumerator0   = 0,
-		EndoAIStates__NewEnumerator1   = 1,
-		EndoAIStates__NewEnumerator2   = 2,
-		EndoAIStates__EndoAIStates_MAX = 3
+		NewEnumerator0 = 0,
+		NewEnumerator1 = 1,
+		NewEnumerator2 = 2,
+		NewEnumerator3 = 3,
+		MAX            = 4
 	};
 
 }

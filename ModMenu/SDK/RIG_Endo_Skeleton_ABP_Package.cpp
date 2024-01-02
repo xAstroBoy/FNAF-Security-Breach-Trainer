@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,9 +12,33 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.GetMoveSpeedInput
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              MoveSpeed                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::GetMoveSpeedInput(float* MoveSpeed)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.GetMoveSpeedInput");
+		
+		URIG_Endo_Skeleton_ABP_C_GetMoveSpeedInput_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (MoveSpeed != nullptr)
+			*MoveSpeed = params.MoveSpeed;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimGraph
-	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,9 +60,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CameraShake
+	 * 		Flags  -> ()
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CameraShake()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CameraShake");
+		
+		URIG_Endo_Skeleton_ABP_C_CameraShake_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Handstep
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::Handstep()
 	{
@@ -55,9 +98,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.footstep
-	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::footstep()
 	{
@@ -74,20 +117,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.VoAnimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OverlappingDoor
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		class UAkAudioEvent*                               AK_Event                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               Overlapping                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class AActor*                                      Instigator                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_Endo_Skeleton_ABP_C::VoAnimEvent(class UAkAudioEvent* AK_Event)
+	void URIG_Endo_Skeleton_ABP_C::OverlappingDoor(bool Overlapping, class AActor* Instigator)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.VoAnimEvent");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OverlappingDoor");
 		
-		URIG_Endo_Skeleton_ABP_C_VoAnimEvent_Params params {};
-		params.AK_Event = AK_Event;
+		URIG_Endo_Skeleton_ABP_C_OverlappingDoor_Params params {};
+		params.Overlapping = Overlapping;
+		params.Instigator = Instigator;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -96,19 +141,87 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.RoxyCrying
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Spotlight Aim Actor
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class AActor*                                      AimActor                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void URIG_Endo_Skeleton_ABP_C::RoxyCrying(bool Off)
+	void URIG_Endo_Skeleton_ABP_C::SpotlightAimActor(class AActor* AimActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.RoxyCrying");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Spotlight Aim Actor");
 		
-		URIG_Endo_Skeleton_ABP_C_RoxyCrying_Params params {};
+		URIG_Endo_Skeleton_ABP_C_SpotlightAimActor_Params params {};
+		params.AimActor = AimActor;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutsceneGrateEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class ULevelSequencePlayer*                        SequencePlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CutsceneGrateEvent(class ULevelSequencePlayer* SequencePlayer)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutsceneGrateEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_CutsceneGrateEvent_Params params {};
+		params.SequencePlayer = SequencePlayer;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutSceneSpineBlender
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		class ULevelSequencePlayer*                        Sequence                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CutSceneSpineBlender(bool Off, class ULevelSequencePlayer* Sequence)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutSceneSpineBlender");
+		
+		URIG_Endo_Skeleton_ABP_C_CutSceneSpineBlender_Params params {};
+		params.Off = Off;
+		params.Sequence = Sequence;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyEndIdle
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::FreddyEndIdle(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyEndIdle");
+		
+		URIG_Endo_Skeleton_ABP_C_FreddyEndIdle_Params params {};
 		params.Off = Off;
 		
 		auto flags = fn->FunctionFlags;
@@ -118,119 +231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.LeapLoopEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::LeapLoopEvent(bool Off)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.LeapLoopEvent");
-		
-		URIG_Endo_Skeleton_ABP_C_LeapLoopEvent_Params params {};
-		params.Off = Off;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyCorrupted
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::FreddyCorrupted(bool Off)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyCorrupted");
-		
-		URIG_Endo_Skeleton_ABP_C_FreddyCorrupted_Params params {};
-		params.Off = Off;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ForceAnimOverride
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::ForceAnimOverride(bool enable)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ForceAnimOverride");
-		
-		URIG_Endo_Skeleton_ABP_C_ForceAnimOverride_Params params {};
-		params.enable = enable;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EnterFreddyOverrideEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EnterFreddyOverrideEvent(bool Off)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EnterFreddyOverrideEvent");
-		
-		URIG_Endo_Skeleton_ABP_C_EnterFreddyOverrideEvent_Params params {};
-		params.Off = Off;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanLeapEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::CanLeapEvent(bool Off)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanLeapEvent");
-		
-		URIG_Endo_Skeleton_ABP_C_CanLeapEvent_Params params {};
-		params.Off = Off;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.UpdateLeapInfo
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     ActorLocation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Destination                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -254,9 +257,207 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.LeapLoopEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::LeapLoopEvent(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.LeapLoopEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_LeapLoopEvent_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanDieEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CanDieEvent(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanDieEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_CanDieEvent_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanHackEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CanHackEvent(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanHackEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_CanHackEvent_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.VoAnimEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		class UAkAudioEvent*                               AKEvent                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::VoAnimEvent(class UAkAudioEvent* AKEvent)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.VoAnimEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_VoAnimEvent_Params params {};
+		params.AKEvent = AKEvent;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.RoxyCrying
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::RoxyCrying(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.RoxyCrying");
+		
+		URIG_Endo_Skeleton_ABP_C_RoxyCrying_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyCorrupted
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::FreddyCorrupted(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyCorrupted");
+		
+		URIG_Endo_Skeleton_ABP_C_FreddyCorrupted_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ForceAnimOverride
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::ForceAnimOverride(bool enable)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ForceAnimOverride");
+		
+		URIG_Endo_Skeleton_ABP_C_ForceAnimOverride_Params params {};
+		params.enable = enable;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EnterFreddyOverrideEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::EnterFreddyOverrideEvent(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EnterFreddyOverrideEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_EnterFreddyOverrideEvent_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanLeapEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::CanLeapEvent(bool Off)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanLeapEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_CanLeapEvent_Params params {};
+		params.Off = Off;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanLieDownEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -276,31 +477,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyEndIdle
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::FreddyEndIdle(bool Off)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.FreddyEndIdle");
-		
-		URIG_Endo_Skeleton_ABP_C_FreddyEndIdle_Params params {};
-		params.Off = Off;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.IsSickEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -320,9 +499,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanWaveEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanWave                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -342,33 +521,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutSceneSpineBlender
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 * 		class ULevelSequencePlayer*                        Sequence                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::CutSceneSpineBlender(bool Off, class ULevelSequencePlayer* Sequence)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutSceneSpineBlender");
-		
-		URIG_Endo_Skeleton_ABP_C_CutSceneSpineBlender_Params params {};
-		params.Off = Off;
-		params.Sequence = Sequence;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.PoundDoorEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               PoundDoor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -388,9 +543,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.StopScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::StopScan()
 	{
@@ -407,53 +562,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutsceneGrateEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class ULevelSequencePlayer*                        SequencePlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::CutsceneGrateEvent(class ULevelSequencePlayer* SequencePlayer)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CutsceneGrateEvent");
-		
-		URIG_Endo_Skeleton_ABP_C_CutsceneGrateEvent_Params params {};
-		params.SequencePlayer = SequencePlayer;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Spotlight Aim Actor
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class AActor*                                      AimActor                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::Spotlight_Aim_Actor(class AActor* AimActor)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Spotlight Aim Actor");
-		
-		URIG_Endo_Skeleton_ABP_C_Spotlight_Aim_Actor_Params params {};
-		params.AimActor = AimActor;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.LandEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::LandEvent()
 	{
@@ -470,9 +581,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.JumpEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanJump                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -492,9 +603,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ForceScanStates
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OverrideScan                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               CanScan                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -520,9 +631,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Breakthrough
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::Breakthrough()
 	{
@@ -539,9 +650,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OnAnimInstanceSwap
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::OnAnimInstanceSwap()
 	{
@@ -558,9 +669,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.RummagingDoneEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::RummagingDoneEvent()
 	{
@@ -577,9 +688,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.IsNotFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::IsNotFirstPersonEvent()
 	{
@@ -596,9 +707,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.IsFirstPersonEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::IsFirstPersonEvent()
 	{
@@ -615,28 +726,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanRummageEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::CanRummageEvent()
 	{
@@ -653,104 +745,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C
-	 * 		Flags  -> (BlueprintEvent)
-	 */
-	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C");
-		
-		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.StartScan
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::StartScan()
 	{
@@ -767,9 +764,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C
+	 * 		Flags  -> ()
+	 */
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C");
+		
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_ModifyBone_C0C70AEF40AB5AAB89A364B038D51A4C_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.SetHeadAimTarget
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		struct FVector                                     AimLocation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -789,17 +805,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OpenDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::OpenDone()
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OpenDone");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B");
 		
-		URIG_Endo_Skeleton_ABP_C_OpenDone_Params params {};
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_4D16C8F149A1BF671B2783BFA524B02B_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -808,17 +824,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Open
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::Open()
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Open");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A");
 		
-		URIG_Endo_Skeleton_ABP_C_Open_Params params {};
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LookAt_D400E08D47BD7EF232A174993E01B69A_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -827,17 +843,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.SearchingDone
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::SearchingDone()
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.SearchingDone");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D");
 		
-		URIG_Endo_Skeleton_ABP_C_SearchingDone_Params params {};
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_LayeredBoneBlend_2DB8B9FD495A3226938D76A3B4EDD43D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -846,20 +862,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Searching
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		fnaf9_EHideObjectType                              Hide_Type                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::Searching(fnaf9_EHideObjectType Hide_Type)
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Searching");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE");
 		
-		URIG_Endo_Skeleton_ABP_C_Searching_Params params {};
-		params.Hide_Type = Hide_Type;
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_AimOffsetLookAt_2D4C8F4544CC53C09863CBB08E99AFFE_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -868,20 +881,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.TurnEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              TurnDegrees                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::TurnEvent(float TurnDegrees)
+	void URIG_Endo_Skeleton_ABP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.TurnEvent");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92");
 		
-		URIG_Endo_Skeleton_ABP_C_TurnEvent_Params params {};
-		params.TurnDegrees = TurnDegrees;
+		URIG_Endo_Skeleton_ABP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_RIG_Endo_Skeleton_ABP_AnimGraphNode_TransitionResult_75A36FAB4FBB2A8608BCF4ACCD74EA92_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -890,9 +900,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.BlueprintUpdateAnimation
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              DeltaTimeX                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -912,9 +922,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanJumpscareEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::CanJumpscareEvent()
 	{
@@ -931,20 +941,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Stun Event
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
-	 * 		bool                                               Is_Stunned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		bool                                               IsStunned                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void URIG_Endo_Skeleton_ABP_C::Stun_Event(bool Is_Stunned)
+	void URIG_Endo_Skeleton_ABP_C::StunEvent(bool IsStunned)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Stun Event");
 		
-		URIG_Endo_Skeleton_ABP_C_Stun_Event_Params params {};
-		params.Is_Stunned = Is_Stunned;
+		URIG_Endo_Skeleton_ABP_C_StunEvent_Params params {};
+		params.IsStunned = IsStunned;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -953,20 +963,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanHackEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OpenDone
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::CanHackEvent(bool Off)
+	void URIG_Endo_Skeleton_ABP_C::OpenDone()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanHackEvent");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.OpenDone");
 		
-		URIG_Endo_Skeleton_ABP_C_CanHackEvent_Params params {};
-		params.Off = Off;
+		URIG_Endo_Skeleton_ABP_C_OpenDone_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -975,20 +982,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
-	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanDieEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               Off                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Open
+	 * 		Flags  -> ()
 	 */
-	void URIG_Endo_Skeleton_ABP_C::CanDieEvent(bool Off)
+	void URIG_Endo_Skeleton_ABP_C::Open()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanDieEvent");
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Open");
 		
-		URIG_Endo_Skeleton_ABP_C_CanDieEvent_Params params {};
-		params.Off = Off;
+		URIG_Endo_Skeleton_ABP_C_Open_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -997,9 +1001,72 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.SearchingDone
+	 * 		Flags  -> ()
+	 */
+	void URIG_Endo_Skeleton_ABP_C::SearchingDone()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.SearchingDone");
+		
+		URIG_Endo_Skeleton_ABP_C_SearchingDone_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Searching
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		EHideObjectType                                    HideType                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::Searching(EHideObjectType HideType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.Searching");
+		
+		URIG_Endo_Skeleton_ABP_C_Searching_Params params {};
+		params.HideType = HideType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.TurnEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		float                                              TurnDegrees                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::TurnEvent(float TurnDegrees)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.TurnEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_TurnEvent_Params params {};
+		params.TurnDegrees = TurnDegrees;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.CanRunEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               CanRun                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1019,9 +1086,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_L_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_L_Foot_Down()
 	{
@@ -1038,9 +1105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_R_Foot_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_R_Foot_Down()
 	{
@@ -1057,9 +1124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.BlueprintBeginPlay
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::BlueprintBeginPlay()
 	{
@@ -1076,9 +1143,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_L_Hand_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_L_Hand_Down()
 	{
@@ -1095,9 +1162,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_R_Hand_Down
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_R_Hand_Down()
 	{
@@ -1114,9 +1181,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_enterLocoEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_enterLocoEvent()
 	{
@@ -1133,9 +1200,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.AnimNotify_EnteredIdleEvent
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::AnimNotify_EnteredIdleEvent()
 	{
@@ -1152,9 +1219,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EndoSpawnInBowlingEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::EndoSpawnInBowlingEvent()
 	{
@@ -1171,9 +1238,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.EndoBowlingCrawlEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
 	void URIG_Endo_Skeleton_ABP_C::EndoBowlingCrawlEvent()
 	{
@@ -1190,9 +1257,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.HeadAimEvent
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               OnOff                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -1212,9 +1279,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.IsHangingEvent
+	 * 		Flags  -> ()
+	 * Parameters:
+	 * 		bool                                               IsHanging                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void URIG_Endo_Skeleton_ABP_C::IsHangingEvent(bool IsHanging)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.IsHangingEvent");
+		
+		URIG_Endo_Skeleton_ABP_C_IsHangingEvent_Params params {};
+		params.IsHanging = IsHanging;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function RIG_Endo_Skeleton_ABP.RIG_Endo_Skeleton_ABP_C.ExecuteUbergraph_RIG_Endo_Skeleton_ABP
-	 * 		Flags  -> (Final)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -1234,8 +1323,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction URIG_Endo_Skeleton_ABP_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction URIG_Endo_Skeleton_ABP_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* URIG_Endo_Skeleton_ABP_C::StaticClass()

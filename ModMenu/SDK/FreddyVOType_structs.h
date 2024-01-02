@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum FreddyVOType.FreddyVOType
 	 */
-	enum class FreddyVOType_EFreddyVOType : uint8_t
+	enum class EFreddyVOType : uint8_t
 	{
-		FreddyVOType__NewEnumerator0   = 0,
-		FreddyVOType__NewEnumerator1   = 1,
-		FreddyVOType__FreddyVOType_MAX = 2
+		FreddyVOTypeNewEnumerator0   = 0,
+		FreddyVOTypeNewEnumerator1   = 1,
+		FreddyVOTypeFreddyVOType_MAX = 2
 	};
 
 }

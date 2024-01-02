@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,6 @@ namespace CG
 		class FString                                              CinematicWwiseState_23_17A2CF6B4BB155BB3F402DA8ED022202; // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
 		class FString                                              PostVideoWwiseState_25_40470A1846B938FF0F520286667105B1; // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash
 		bool                                                       PlayFazerblastDialogue_27_6A5885FD4DEE9E682EE888AEF138E812; // 0x0038(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-
 	};
 
 }

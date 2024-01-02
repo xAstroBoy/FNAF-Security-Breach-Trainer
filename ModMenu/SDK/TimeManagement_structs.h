@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,36 +17,36 @@ namespace CG
 	/**
 	 * Enum TimeManagement.EFrameNumberDisplayFormats
 	 */
-	enum class TimeManagement_EFrameNumberDisplayFormats : uint8_t
+	enum class EFrameNumberDisplayFormats : uint8_t
 	{
-		EFrameNumberDisplayFormats__NonDropFrameTimecode           = 0,
-		EFrameNumberDisplayFormats__DropFrameTimecode              = 1,
-		EFrameNumberDisplayFormats__Seconds                        = 2,
-		EFrameNumberDisplayFormats__Frames                         = 3,
-		EFrameNumberDisplayFormats__MAX_Count                      = 4,
-		EFrameNumberDisplayFormats__EFrameNumberDisplayFormats_MAX = 5
+		NonDropFrameTimecode = 0,
+		DropFrameTimecode    = 1,
+		Seconds              = 2,
+		Frames               = 3,
+		MAX_Count            = 4,
+		MAX                  = 5
 	};
 
 	/**
 	 * Enum TimeManagement.ETimedDataInputState
 	 */
-	enum class TimeManagement_ETimedDataInputState : uint8_t
+	enum class ETimedDataInputState : uint8_t
 	{
-		ETimedDataInputState__Connected                = 0,
-		ETimedDataInputState__Unresponsive             = 1,
-		ETimedDataInputState__Disconnected             = 2,
-		ETimedDataInputState__ETimedDataInputState_MAX = 3
+		Connected    = 0,
+		Unresponsive = 1,
+		Disconnected = 2,
+		MAX          = 3
 	};
 
 	/**
 	 * Enum TimeManagement.ETimedDataInputEvaluationType
 	 */
-	enum class TimeManagement_ETimedDataInputEvaluationType : uint8_t
+	enum class ETimedDataInputEvaluationType : uint8_t
 	{
-		ETimedDataInputEvaluationType__None                              = 0,
-		ETimedDataInputEvaluationType__Timecode                          = 1,
-		ETimedDataInputEvaluationType__PlatformTime                      = 2,
-		ETimedDataInputEvaluationType__ETimedDataInputEvaluationType_MAX = 3
+		None         = 0,
+		Timecode     = 1,
+		PlatformTime = 2,
+		MAX          = 3
 	};
 
 	// --------------------------------------------------
@@ -61,7 +61,6 @@ namespace CG
 	public:
 		float                                                      DistanceToNewestSampleSeconds;                           // 0x0000(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      DistanceToOldestSampleSeconds;                           // 0x0004(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-
 	};
 
 	/**
@@ -71,8 +70,7 @@ namespace CG
 	struct FTimedDataChannelSampleTime
 	{
 	public:
-		unsigned char                                              UnknownData_G6GS[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
-
+		unsigned char                                              UnknownData_ALQG[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 }

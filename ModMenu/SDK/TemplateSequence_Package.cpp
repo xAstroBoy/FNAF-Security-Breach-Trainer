@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTemplateSequence.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequence.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTemplateSequence::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCameraAnimationSequence.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCameraAnimationSequence.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCameraAnimationSequence::StaticClass()
@@ -40,9 +40,51 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADABB0
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USequenceCameraShakeCameraStandIn.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* USequenceCameraShakeCameraStandIn::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.SequenceCameraShakeCameraStandIn");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USequenceCameraShakePattern.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* USequenceCameraShakePattern::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.SequenceCameraShakePattern");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USequenceCameraShakeSequencePlayer.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* USequenceCameraShakeSequencePlayer::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.SequenceCameraShakeSequencePlayer");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UTemplateSequence*                           InSequence                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -56,20 +98,20 @@ namespace CG
 		params.InSequence = InSequence;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAB30
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetBinding
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bOverridesDefault                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ATemplateSequenceActor::SetBinding(class AActor* Actor)
+	void ATemplateSequenceActor::SetBinding(class AActor* Actor, bool bOverridesDefault)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -77,18 +119,18 @@ namespace CG
 		
 		ATemplateSequenceActor_SetBinding_Params params {};
 		params.Actor = Actor;
+		params.bOverridesDefault = bOverridesDefault;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAB00
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.LoadSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UTemplateSequence* ATemplateSequenceActor::LoadSequence()
 	{
@@ -99,7 +141,6 @@ namespace CG
 		ATemplateSequenceActor_LoadSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -108,9 +149,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAAD0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequencePlayer
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UTemplateSequencePlayer* ATemplateSequenceActor::GetSequencePlayer()
 	{
@@ -121,7 +162,6 @@ namespace CG
 		ATemplateSequenceActor_GetSequencePlayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -130,9 +170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADAAA0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequence
-	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * 		Flags  -> ()
 	 */
 	class UTemplateSequence* ATemplateSequenceActor::GetSequence()
 	{
@@ -143,7 +183,6 @@ namespace CG
 		ATemplateSequenceActor_GetSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -152,8 +191,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ATemplateSequenceActor.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ATemplateSequenceActor.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* ATemplateSequenceActor::StaticClass()
@@ -166,16 +205,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00ADA930
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function TemplateSequence.TemplateSequencePlayer.CreateTemplateSequencePlayer
-	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UTemplateSequence*                           TemplateSequence                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FMovieSceneSequencePlaybackSettings         Settings                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class ATemplateSequenceActor*                      OutActor                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UTemplateSequencePlayer* UTemplateSequencePlayer::STATIC_CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ATemplateSequenceActor** OutActor)
+	class UTemplateSequencePlayer* UTemplateSequencePlayer::CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ATemplateSequenceActor** OutActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -187,7 +226,6 @@ namespace CG
 		params.Settings = Settings;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -199,8 +237,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTemplateSequencePlayer.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequencePlayer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTemplateSequencePlayer::StaticClass()
@@ -213,8 +251,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTemplateSequenceSection.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequenceSection.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTemplateSequenceSection::StaticClass()
@@ -227,8 +265,50 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTemplateSequenceTrack.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequenceSystem.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UTemplateSequenceSystem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.TemplateSequenceSystem");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequencePropertyScalingInstantiatorSystem.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UTemplateSequencePropertyScalingInstantiatorSystem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.TemplateSequencePropertyScalingInstantiatorSystem");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequencePropertyScalingEvaluatorSystem.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UTemplateSequencePropertyScalingEvaluatorSystem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class TemplateSequence.TemplateSequencePropertyScalingEvaluatorSystem");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTemplateSequenceTrack.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTemplateSequenceTrack::StaticClass()

@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,16 +17,16 @@ namespace CG
 	/**
 	 * UserDefinedEnum InteractibleType.InteractibleType
 	 */
-	enum class InteractibleType_EInteractibleType : uint8_t
+	enum class EInteractibleType : uint8_t
 	{
-		InteractibleType__NewEnumerator0       = 0,
-		InteractibleType__NewEnumerator1       = 1,
-		InteractibleType__NewEnumerator2       = 2,
-		InteractibleType__NewEnumerator3       = 3,
-		InteractibleType__NewEnumerator4       = 4,
-		InteractibleType__NewEnumerator5       = 5,
-		InteractibleType__NewEnumerator6       = 6,
-		InteractibleType__InteractibleType_MAX = 7
+		InteractibleTypeNewEnumerator0       = 0,
+		InteractibleTypeNewEnumerator1       = 1,
+		InteractibleTypeNewEnumerator2       = 2,
+		InteractibleTypeNewEnumerator3       = 3,
+		InteractibleTypeNewEnumerator4       = 4,
+		InteractibleTypeNewEnumerator5       = 5,
+		InteractibleTypeNewEnumerator6       = 6,
+		InteractibleTypeInteractibleType_MAX = 7
 	};
 
 }

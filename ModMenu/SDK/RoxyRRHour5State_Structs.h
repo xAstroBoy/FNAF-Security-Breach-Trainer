@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -17,11 +17,11 @@ namespace CG
 	/**
 	 * UserDefinedEnum RoxyRRHour5State.RoxyRRHour5State
 	 */
-	enum class RoxyRRHour5State_ERoxyRRHour5State : uint8_t
+	enum class ERoxyRRHour5State : uint8_t
 	{
-		RoxyRRHour5State__NewEnumerator0       = 0,
-		RoxyRRHour5State__NewEnumerator1       = 1,
-		RoxyRRHour5State__RoxyRRHour5State_MAX = 2
+		RoxyRRHour5StateNewEnumerator0       = 0,
+		RoxyRRHour5StateNewEnumerator1       = 1,
+		RoxyRRHour5StateRoxyRRHour5State_MAX = 2
 	};
 
 }

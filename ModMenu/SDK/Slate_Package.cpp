@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,8 +12,8 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UButtonWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UButtonWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UButtonWidgetStyle::StaticClass()
@@ -26,8 +26,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UCheckBoxWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UCheckBoxWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UCheckBoxWidgetStyle::StaticClass()
@@ -40,8 +40,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UComboBoxWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UComboBoxWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UComboBoxWidgetStyle::StaticClass()
@@ -54,8 +54,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UComboButtonWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UComboButtonWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UComboButtonWidgetStyle::StaticClass()
@@ -68,8 +68,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableTextBoxWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableTextBoxWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableTextBoxWidgetStyle::StaticClass()
@@ -82,8 +82,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UEditableTextWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UEditableTextWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UEditableTextWidgetStyle::StaticClass()
@@ -96,8 +96,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UProgressWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UProgressWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UProgressWidgetStyle::StaticClass()
@@ -110,8 +110,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UScrollBarWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UScrollBarWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UScrollBarWidgetStyle::StaticClass()
@@ -124,8 +124,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UScrollBoxWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UScrollBoxWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UScrollBoxWidgetStyle::StaticClass()
@@ -138,8 +138,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USlateSettings.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USlateSettings.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USlateSettings::StaticClass()
@@ -152,8 +152,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction USpinBoxWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction USpinBoxWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* USpinBoxWidgetStyle::StaticClass()
@@ -166,8 +166,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UTextBlockWidgetStyle.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UTextBlockWidgetStyle.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UTextBlockWidgetStyle::StaticClass()
@@ -180,8 +180,8 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction UToolMenuBase.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UToolMenuBase.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
 	UClass* UToolMenuBase::StaticClass()

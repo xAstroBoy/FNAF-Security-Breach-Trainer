@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 /**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
 #ifdef _MSC_VER
@@ -18,43 +18,37 @@ namespace CG
 	 * Function LeftFanVent.LeftFanVent_C.Rotation__FinishedFunc
 	 */
 	struct ALeftFanVent_C_Rotation__FinishedFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.Rotation__UpdateFunc
 	 */
 	struct ALeftFanVent_C_Rotation__UpdateFunc_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.StopEmitter
 	 */
 	struct ALeftFanVent_C_StopEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.PlayEmitter
 	 */
 	struct ALeftFanVent_C_PlayEmitter_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.ReceiveBeginPlay
 	 */
 	struct ALeftFanVent_C_ReceiveBeginPlay_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.Repeat
 	 */
 	struct ALeftFanVent_C_Repeat_Params
-	{
-	};
+	{	};
 
 	/**
 	 * Function LeftFanVent.LeftFanVent_C.ToggleInRange
@@ -63,7 +57,6 @@ namespace CG
 	{
 	public:
 		bool                                                       InRange;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
 	};
 
 	/**
@@ -73,7 +66,6 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 	};
 
 }

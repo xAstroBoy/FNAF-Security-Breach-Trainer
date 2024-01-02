@@ -1,9 +1,9 @@
 ﻿/**
- * Name: FNAF Security Breach
- * Version: 2
+ * Name: FNAFSB
+ * Version: 1
  */
 
-#include "../pch.h"
+#include "pch.h"
 
 namespace CG
 {
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.TurnSSR_ON
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::TurnSSR_ON()
+	void ABP_PlanarReflectionsShowOnlyFreddyGregory_C::TurnSSR_ON()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.TurnSSR_ON");
 		
-		ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C_TurnSSR_ON_Params params {};
+		ABP_PlanarReflectionsShowOnlyFreddyGregory_C_TurnSSR_ON_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * 		Flags  -> ()
 	 */
-	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::ReceiveBeginPlay()
+	void ABP_PlanarReflectionsShowOnlyFreddyGregory_C::ReceiveBeginPlay()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ReceiveBeginPlay");
 		
-		ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C_ReceiveBeginPlay_Params params {};
+		ABP_PlanarReflectionsShowOnlyFreddyGregory_C_ReceiveBeginPlay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,19 +50,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.Set Refelection
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		bool                                               bNewVisibility                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::Set_Refelection(bool bNewVisibility)
+	void ABP_PlanarReflectionsShowOnlyFreddyGregory_C::SetRefelection(bool bNewVisibility)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.Set Refelection");
 		
-		ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C_Set_Refelection_Params params {};
+		ABP_PlanarReflectionsShowOnlyFreddyGregory_C_SetRefelection_Params params {};
 		params.bNewVisibility = bNewVisibility;
 		
 		auto flags = fn->FunctionFlags;
@@ -72,19 +72,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00EE72B0
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy-Gregory
-	 * 		Flags  -> (Final, HasDefaults)
+	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory(int32_t EntryPoint)
+	void ABP_PlanarReflectionsShowOnlyFreddyGregory_C::ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddyGregory(int32_t EntryPoint)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>("Function BP_PlanarReflectionsShowOnlyFreddy-Gregory.BP_PlanarReflectionsShowOnlyFreddy-Gregory_C.ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy-Gregory");
 		
-		ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C_ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddy_Gregory_Params params {};
+		ABP_PlanarReflectionsShowOnlyFreddyGregory_C_ExecuteUbergraph_BP_PlanarReflectionsShowOnlyFreddyGregory_Params params {};
 		params.EntryPoint = EntryPoint;
 		
 		auto flags = fn->FunctionFlags;
@@ -94,11 +94,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		Offset -> 0x00000000
-	 * 		Name   -> PredefindFunction ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C.StaticClass
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction ABP_PlanarReflectionsShowOnlyFreddyGregory_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
-	UClass* ABP_PlanarReflectionsShowOnlyFreddy_Gregory_C::StaticClass()
+	UClass* ABP_PlanarReflectionsShowOnlyFreddyGregory_C::StaticClass()
 	{
 		static UClass* ptr = nullptr;
 		if (!ptr)
